@@ -7,7 +7,8 @@ Notes:
 * There are no authentication mechanisms in place at the moment, so any client can potentially connect to any exposed port. This could be resolved before a proper public release.
 * There can be only one IPC port. Support for multiple ports may be added later.
 
-See also: [[Design of XMMS2]]
+===See also:===
+* [[Design of XMMS2]]
 
 [[Category:Components]]
 [[Category:XMMS2 Technical Details]]
