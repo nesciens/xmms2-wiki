@@ -3,7 +3,7 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': <font style="color: blue">''None''</font>
+'''Developer''': <font style="color: blue">''close to [[Release:DR1 | DR1]]''</font>
 
 '''Notes''': XMMS2 is still under heavy development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 
