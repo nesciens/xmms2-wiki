@@ -6,6 +6,9 @@ XMMS2 itself and the design goals. I will try to clarify them.
 
 == General Questions ==
 
+* Q: WTF?
+* A: I dunno... can I chage this thing?
+
 * Q: Why rewrite XMMS?
 * A: XMMS is an old project (started in 1997) and was not expected to become as popular as it did. The internal design of XMMS is somewhat ... troublesome, if not completely broken. Also, the frameworks around XMMS have changed a lot. The general opinion among the developers was that if ANYTHING should happen, it would be a complete rewrite.
 
