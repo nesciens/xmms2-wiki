@@ -1,11 +1,11 @@
 Use templates instead of colours directly:
 
-[[Template:Component good]]
-[[Template:Component partialgood]]
-[[Template:Component broken]]
-[[Template:Component pendchanges]]
-[[Template:Component planned]]
-[[Template:Component unknown]]
+* [[Template:Component good]]
+* [[Template:Component partialgood]]
+* [[Template:Component broken]]
+* [[Template:Component pendchanges]]
+* [[Template:Component planned]]
+* [[Template:Component unknown]]
 
 --[[User:Eleusis|Eleusis]] 15:15, 16 Feb 2005 (CET)
 
