@@ -1,3 +1,10 @@
+{{Newsitem|date=10 February 2005 (2005-02-10) WST|author=[[Sham Chukoury]]|title=Wiki got a facelift|text=I've finished giving the wiki a bit of an overhaul, with gratuitous use of templates to implement all kinds of funky thinks like:
+* This news section
+* a new navigation bar
+* a components status table
+* a release status box
+
+Other alterations include categorisation of most pages, and a re-organisation of page navigation. Enjoy. :P}}
 {{Newsitem|date=9 February 2005 (2005-02-09)|author=[[Sham Chukoury]]|title=News page added!|text=The XMMS2 wiki now has a news page!}}
 
 
