@@ -1,6 +1,6 @@
 My xmms2 related work:
 * xmmsclient-ecore
-* Euphoria, a graphical xmms2 client based on the Enlightenment Foundation Libraries (EFL). Get it from the Enlightenment CVS repository.
+* Euphoria, a graphical xmms2 client based on the Enlightenment Foundation Libraries (EFL). The code in the Enlightenment CVS repository is *ancient*, don't try to build it - instead, use this snapshot: http://code-monkey.de/files/euphoria-snap.tar.bz2 until the current codebase is available in CVS again.
 * Ruby bindings for xmmsclient
 * an experimental audioscrobbler client (not published yet ;p)
 
