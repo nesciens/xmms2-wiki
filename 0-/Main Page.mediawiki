@@ -1,4 +1,26 @@
-Wiki software successfully installed.
 
-Please see [http://meta.wikipedia.org/wiki/MediaWiki_i18n documentation on customizing the interface]
-and the [http://meta.wikipedia.org/wiki/MediaWiki_User%27s_Guide User's Guide] for usage and configuration help.
+= Welcome to the XMMS2 Wiki. =
+
+This page tries to gather as much information as possible about XMMS2. Expect this to be filled with interesting information soon.
+
+== Documentation ==
+
+ * ["Read me first!"]
+ * ["Install instructions"]
+ * ["Using the application"]
+ * ["Developer corner"]
+ * ["Reporting bugs"]
+
+== People involved ==
+
+=== Main development ===
+ * ["Tobias RundstrÃ¶m"]
+ * ["Anders Gustafsson"]
+
+=== Contributors and Hangarounds ===
+ * ["Peter Alm"]
+ * ["Thomas Nilsson"]
+ * ["Michael Lindgren"]
+ * ["Daniel Svensson"]
+ * ["Chris Morgan"]
+ * ["Matti HÃ¤mÃ¤lÃ¤inen"]
