@@ -16,7 +16,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Output
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | ALSA
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA|ALSA]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | OSS
 |-
