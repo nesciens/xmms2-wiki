@@ -1,3 +1,5 @@
 Contributing with strange ideas, finding silly bugs, alsa & sun output plugins and some small hacks here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden.
 
+Private stashbag includes C#-bindings. Will be public when I'm satisfied.
+
 Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail nano at nittionio dot nu
