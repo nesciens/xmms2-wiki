@@ -1,0 +1,7 @@
+Mostly hangaround, but occasionally reviews XMMS2 code and is working on his own '''gXMMS2 client''', which is a Gtk+1 GUI client for XMMS2.
+
+Author of [http://www.tnsp.org/xmms-sid.php XMMS-SID], a SID-plugin for XMMS1.
+
+E-mail: ccr at tnsp dot org
+
+Homepage: [http://ccr.tnsp.org/ http://ccr.tnsp.org/]
