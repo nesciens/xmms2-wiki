@@ -1,6 +1,7 @@
 {{Navbar}}
 
 CoreAudio output
+
 Cocoa/Carbon glue for the CoreFoundation eventloop.
 
 [[Category:Platforms]]
