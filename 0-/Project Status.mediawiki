@@ -1,3 +1,5 @@
+{{Navbar}}
+
 {{ReleaseStatus}}
 
 {{ComponentStatus}}
@@ -5,3 +7,5 @@
 {{StatusLegend}}
 
 {{PlatformSupportStatus}}
+
+[[Category:General]]
