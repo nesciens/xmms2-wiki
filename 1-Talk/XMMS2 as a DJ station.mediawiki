@@ -1,3 +1,1 @@
-latency, ability to listen to every sound frame while seeking (like when you're looking for a cue point), perhaps looping on one frame, the ability to set up loop points in any track, 
-
-and yeah.. if the diffrent tunen should live in the same xmms2d we would have to have a very competent mixer inside xmms2d instead of using a hardware mixer instead outside the computer, which i at least would prefer.
+Latency, ability to listen to every sound frame while seeking (like when you're looking for a cue point, scrolling with a jogwheel or something), looping on one frame, the ability to set up loop points in any track, and yeah.. if the diffrent tunes should live in the same xmms2d we would have to have a very competent mixer inside xmms2d together with a low latency control mechanism for this instead of using a hardware mixer instead outside the computer, personally I would go with the latter.
