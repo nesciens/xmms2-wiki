@@ -1,0 +1,11 @@
+Below is a list of the most recent file uploads.
+All times shown are server time (UTC).
+<ul><li>09:01, 4 Apr 2005 [[User:Srad|Srad]] uploaded "[[:Image:Xmms2-2.jpg|Xmms2-2.jpg]]" <em>(Adaum Raul another logo concept)</em></li>
+<li>09:00, 4 Apr 2005 [[User:Srad|Srad]] uploaded "[[:Image:Xmms2-1.jpg|Xmms2-1.jpg]]" <em>(Adaum Raul logo concept)</em></li>
+<li>08:51, 22 Mar 2005 [[User:Shadowskill|Shadowskill]] uploaded "[[:Image:Xmm2logo00.png|Xmm2logo00.png]]" <em>(&#39;shadowskill&#39; &#39;s logo proposal)</em></li>
+<li>18:07, 28 Dec 2004 [[User:Eleusis|Eleusis]] uploaded "[[:Image:Xmms2d_arch.png|Xmms2d_arch.png]]" <em>(simple overview of xmms2d design)</em></li>
+<li>00:46, 24 Aug 2004 [[User:Nano|Nano]] uploaded "[[:Image:Xmms2_medialib.png|Xmms2_medialib.png]]" <em>(ER diagram of the Medialib database.)</em></li>
+<li>22:48, 23 Aug 2004 [[User:Nano|Nano]] uploaded "[[:Image:Xmms2_medialib.png|Xmms2_medialib.png]]" <em>(ER diagram of the Medialib database.)</em></li>
+<li>22:41, 23 Aug 2004 [[User:Nano|Nano]] uploaded "[[:Image:Xmms2_medialib.png|Xmms2_medialib.png]]" <em>(ER diagram of the Medialib database.)</em></li>
+
+</ul>
