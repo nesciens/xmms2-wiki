@@ -4,13 +4,13 @@ This matter has moderate level of complexity due to differences in formats havin
 
 * There should be a way to query number of available sub-tunes from decoder plugin. The decoder could return number of tunes IF KNOWN, or some special values if the number is known only after execution (not feasible to detect while adding files to playlist)
 
-* Core should support non-linear numbering of sub-tunes, e.g. it should be possible for a plugin to tell core "I have sub-tunes #1, #7 and #18 available, but no others." This is because the plugin may want to discard some subtunes depending on user's settings or other reasons.
-
 == Method #1 ==
 
-* Based on above information, the core should add to playlist/medialib/whatever the sub-tunes (IF KNOWN)
+* Core should support non-linear numbering of sub-tunes, e.g. it should be possible for a plugin to tell core "I have sub-tunes #1, #7 and #18 available, but no others." This is because the plugin may want to discard some subtunes depending on user's settings or other reasons.
 
-* If number of subtunes is not known, just add the main file/tune. For this to work, there should be asub-tune selector control in clients, see method #2 for that.
+* Based on ackquired information, the core should add to playlist/medialib/whatever the sub-tunes (IF number of subtunes is known)
+
+* If number of subtunes is NOT known, just add the main file/tune. For this to work, there should be a sub-tune selector control in clients, see method #2 for that.
 
 == Method #2 ==
 
