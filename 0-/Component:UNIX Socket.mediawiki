@@ -1,0 +1,1 @@
+UNIX sockets may be used by clients to talk to the daemon if they're all running on the same system. (Assuming the system supports UNIX sockets) This is the default IPC mechanism, with a path of ''unix:///tmp/xmms-ipc-user''.
