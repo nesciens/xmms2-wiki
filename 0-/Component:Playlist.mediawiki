@@ -1,36 +1,6 @@
 {{Navbar}}
 
-New playlist implementation.
-
-The new implementation I have in mind is split into three parts.
-
-* [[Component:Output | Output]] redesign - In order to have a simple easy to understand playlist we should redesign the output. It needs to make use of a very easy list as the new playlist is going to be.
-* Make the playlist_entry_t just an mid (medialib id) - We could save all strings in the medialib and just let the entry be a uint, all operations are done directly against the medialib.
-**Pros
-*** We could hold a HUGE playlist.
-*** No memory allocations except a uint when adding a entry.
-*** We don't need to worry about where to find the information. It's all in the db.
-** Cons
-*** We are depending on sqlite.
-* Redo the playlist - The playlist could be just a array since the playlist_entry is a int. Easy to index and change in, not much overhead.
-
-Overall problems with this approach is that we need to break the client API, because we will remove the playlist id and only have mids and positions. That means that client acts on positions instead. xmms_playlist_remove (id) becomes xmms_playlist_remove (pos).
-
-== Updated API calls in client lib ==
-
-All playlist commands now expect a position not a id number. The list command will give you the pos for each entry. The position counter ''starts at 1'' 0 means that there are no current position.
-
-The medialib entries has a id. You can ask for mediainfo with the medialib id without having the entry in the playlist (BONUS). The medialib id will always be > 0. 0 means error or no entry. 
-
-=== New Methods ===
-* xmmsc_playlist_current_pos - returns the position of the playlist
-
-=== Changed methods ===
-* xmmsc_playlist_set_next - removed type field and made it absolute all the time.
-* xmmsc_playlist_getmediainfo is now named xmmsc_medialib_get_info
-* xmmsc_playlist_medialibadd is now named xmmsc_medialib_add_to_playlist
-* xmmsc_broadcast_playlist_entry_changed is now named xmmsc_broadcast_medialib_entry_changed
-
+The playlist is simply an array of xmms_playlist_entry_t (ie integers) pointing to an id in the media database. The interface from output is /xmms_playlist_current_entry/ to retrieve the song to play now and /xmms_playlist_advance/ to go to the song supposed to be played next. The interface for clients is /set_pos/ and /set_pos_rel/, which sets updates the next entry to play (returned by /xmms_playlist_current_entry/. They jumps to an absolute respective relative to current position in the playlist. Observe that they DON'T stop playing of current song, you need to give the output some extra love with xmms_output_tickle to make it play the song.
 
 ===See also:===
 * [[Design of XMMS2]]
