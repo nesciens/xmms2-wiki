@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Contributing with strange ideas, finding silly bugs and some small hacks here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden.
 
 Private stashbag includes .NET-bindings (only tested with mono). Will be public when I'm satisfied. A conceptual GTK# client exists, mostly for testing I think. And yeah.. some OS X stuff is beginning to take form too. 
@@ -12,3 +14,5 @@ Windows, IA-32<br>
 
 
 Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, nano@nittionio.nu.
+
+[[Category: People]]
