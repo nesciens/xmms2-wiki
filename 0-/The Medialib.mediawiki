@@ -1,3 +1,5 @@
+{{Navbar}}
+
 The Medialib (media library) is where XMMS2 stores metadata about files as it plays them. It is implemented using an ''sqlite'' database, so queries and data updates are all performed using standard SQL queries. Having a media library allows XMMS2 to 'remember' the songs it has played, and thus allows users to easily re-create their favourite playlists.
 
 == What the medialib stores ==
