@@ -1,0 +1,3 @@
+Control XMMS2 from your cellphone. Currently nobody's working on this, feel free to start hacking.
+
+http://bemused.sourceforge.net/
