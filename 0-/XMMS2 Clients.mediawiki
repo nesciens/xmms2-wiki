@@ -1,4 +1,6 @@
-There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
+{{Navbar}}
+
+There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured. If you are a new XMMS2 client developer, you're welcome to add your client to the list.. and drop by our IRC channel to let us know what you're doing, so we may work closely together. ;)
 
 
 == XMMS2 CLI client ==
@@ -15,7 +17,7 @@ xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmea
 
 == HaX ==
 
-HaX is a PyGTK & Python client for XMMS2. It is still mostly in the planning stages, but code is slowly getting built. The client itself is composed of various modules that perform specific tasks, such as handling the core logic of performing actions on the XMMS2 daemon, signals, and a GUI event handler. At the moment, the most interesting aspect of HaX is the separation of application logic and presentation interface by using Glade - in effect, a 'rich' skin interface. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
+HaX is a flexible and modular Python client for XMMS2. What started off as a PyGTK project has evolved into a reusable collection of modules that may be used to quickly build other Python XMMS2 clients, integrate a player client into a larger Python application, or simply provide smarter 'skinning' abilities. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
 
 == xmms2-py-qt playlist client ==
 
@@ -41,3 +43,6 @@ A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being develope
 == Python OSD client ==
 
 This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
+
+[[Category: General]]
+[[Category: Users]]
