@@ -1,0 +1,50 @@
+I got a few idea on how that could work (the design), so I'll try to explain what could be done.
+First of all, I'm not a DJ so dj's are more than welcome to tell their needs.
+
+== The setup (for a typical session) ==
+* 2 output streams (one for the mix and one for the earphone). So we probably need 2 sound cards.
+* An input/output plugin for xmm2d to send the stream to a xmm2d dedicated to mix the streams.
+* An xmms2d running for each stream plus one the mix the streams as sound cards can mix the streams by itself, the mixer might not be necessary.
+* Either a core that support multiple input/output or an input/output plugin that mix/duplicate the stream(s) from/on multiple input/output lugins. (I realize while writing this that it might no be necessary, but still nice to have.)
+* A client.
+
+== How that could work together? ==
+The client start a bunch of xmms2d, one for each source. Each one can apply some effects on the
+stream. The DJ can choose where he want to output each stream, earphone/main stream. The streams
+choosen to be part of the main stream are passed to the mixer daemon which output to the sound card
+and as whe also have a multiple output plugin we can also output the stream in icecast.
+
+<div><pre>
+ sources
+
+   1 ---effects---+               +---sound card
+                   \             /
+   2 ---effects-----+---Mixer---+
+                   /             \
+   3 ---effects---+               +---ICEcast
+
+   4 ---effects--- earphone
+</pre></div>
+
+== Let's get a bit further ==
+Suppose we want to have an effect on multiple streams, let just put another
+xmms2d in the middle and perhaps output the resulting stream to 2 other xmms2d
+that add it with new sources and add another effect. So we have a new topology:
+
+<div><pre>
+sources
+
+   1 ---effects---+                 +---effects---+
+                   \               /               \
+                    +---effects---+                 +----Mixer--- ...
+                   /               \               /
+   2 ---effects---+                 +---effects---+
+                                   /
+   3 ---effects-------------------+
+</pre></div>
+
+That looks nice on paper, but having 7+ xmms2d plus a gui running at the same time might not be the
+so great. There is probably a way to get all that in one daemon, but having 10 sources playing at
+the same time might and it might not break the great design of xmms2.
+
+Feel free to add your comments, ideas, new designs...
