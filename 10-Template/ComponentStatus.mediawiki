@@ -24,7 +24,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Diskwriter | Diskwriter]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Jack | Jack]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:Jack | Jack]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Sun | Sun]]
 |-
@@ -88,6 +88,24 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |}
 |-
 | colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Visualisation | Visualisation]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Client Library | Client Library]]
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Python bindings | Python bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Ruby bindings | Ruby bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:EFL bindings | EFL bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Carbon bindings | Carbon bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Cocoa bindings | Cocoa bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Glib bindings | Glib bindings]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:Qt bindings | Qt bindings]]
+|}
 |}
 
 <nowiki>*</nowiki> Please note that, while we try to maintain this data as up to date as possible, it is not automagically generated in any manner, so don't expect up-to-the-minute status updates.
