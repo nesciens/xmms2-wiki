@@ -1,0 +1,14 @@
+{| style="border: 1px dotted #000"
+|+ '''Status colour legend'''
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Component is good
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Component is partially good
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | Component is broken
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | Component is in development
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bff" | Component is planned
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Component status unknown
+|}
