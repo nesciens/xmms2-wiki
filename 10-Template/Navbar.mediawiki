@@ -2,7 +2,7 @@
 [[Main Page]]&nbsp;|
 [[Read me first!]]&nbsp;|
 [[FAQ]]&nbsp;|
-[[General info]]&nbsp;|
+[[General information | General info]]&nbsp;|
 [[Users]]&nbsp;|
 [[Developer Corner|Developers]]&nbsp;|
 [[About]]
