@@ -21,7 +21,7 @@ HaX is a flexible and modular Python client for XMMS2. What started off as a PyG
 
 == medialib-ui playlist client ==
 
-This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset and can be cloned from [[BitKeeper]] repos bk://genesis.xmms.se:5555/medialib-ui. Written by [[TobiasRundstrÃ¶m]].
+This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset and can be cloned from [[Using BitKeeper] BitKeeper] repos bk://genesis.xmms.se:5555/medialib-ui. Written by [[Tobias RundstrÃ¶m]].
 
 == XMMS2Curse and Unnamed PHP client ==
 
