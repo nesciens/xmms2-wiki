@@ -13,7 +13,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:TCP Socket | TCP Socket]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Output | Output]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Output | Output]]
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA | ALSA]]
@@ -29,9 +29,9 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:coreaudio | coreaudio]]
 |}
 |-
-| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Medialib | Medialib]]
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Medialib | Medialib]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Playlist | Playlist]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Playlist | Playlist]]
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:m3u | m3u]]
@@ -56,7 +56,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:ices | ices]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:samba | samba]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:samba | samba]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:cdde | cdde]]
 |}
