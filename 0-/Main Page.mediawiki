@@ -14,7 +14,7 @@ This page tries to gather as much information as possible about XMMS2. Expect th
 
 === Main development ===
 * [[Tobias RundstrÃ¶m]]
-* [[Anders Gustafsson]]
+* [[User:Anders Gustafsson|Anders Gustafsson]]
 
 === Contributors and Hangarounds ===
 * [[Peter Alm]]
