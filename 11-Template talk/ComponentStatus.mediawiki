@@ -1,9 +1,9 @@
 CSS colour codes for representing status:
-good (OK) #bfb (green)
-partially good #ffb (yellow)
-broken #fbb (red)
-in development/pending changes #bbf (blue)
-planned #bff (blue-green)
-unknown #ddd (grey)
+* good (OK) #bfb (green)
+* partially good #ffb (yellow)
+* broken #fbb (red)
+* in development/pending changes #bbf (blue)
+* planned #bff (blue-green)
+* unknown #ddd (grey)
 
 [[User:Eleusis|Eleusis]] 05:06, 10 Feb 2005 (CET)
