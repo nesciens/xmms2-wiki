@@ -1,0 +1,33 @@
+== Obtaining the source ==
+
+XMMS2 is still not released to the public, thus are there no binaries or relased sources. You can download daily snapshots at [http://xmms2.xmms.org/snapshots/ the snapshot page] or directly with BitKeeper by running ''bk clone bk://xmms2.xmms.org:5555/xmms2''.
+
+== Dependencies ==
+
+You will '''need''' the following things to build XMMS2.
+
+ * [http://www.python.org/ Python] / [http://www.scons.org/ SCons].
+ * [http://www.gtk.org/ GLib]
+ * [http://www.underbit.com/products/mad/ MAD]
+ * [http://www.freedesktop.org/software/dbus/ DBus]
+ * [http://www.sqlite.org SQLite]
+
+These libraries are not '''needed''' but probably a good idea.
+
+ * [http://curl.haxx.se Curl]
+ * [http://www.xiph.org Vorbisfile]
+ * [http://www.alsa-project.org ALSA]
+ * [http://sidplay2.sourceforge.net/ SIDplay2]
+ * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
+
+== Compiling ==
+
+Run ''scons'' to first run the configuration. Tweak the options until you are satisfied. Then run ''scons'' again.
+
+== Installing ==
+
+Run ''scons <prefix>'' to install XMMS2. Where prefix is usually /usr/local.
+
+== Cleaning up ==
+
+''scons -c'' will clean the objects and binaries.
