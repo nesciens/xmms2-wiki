@@ -48,5 +48,9 @@ This is a quickly hacked up client that displays the artist and title of a song 
 
 This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
 
+== XMMS2-Scrobbler ==
+
+XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
+
 [[Category: General]]
 [[Category: Users]]
