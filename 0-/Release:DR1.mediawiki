@@ -16,9 +16,9 @@
 * Update ''README'', ''INSTALL'' files
 * Fix ''python_loop'' in python bindings
 * Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
+* Get some real test data/testcases (devising procedures/processes to make sure every module works as expected, plus defining a set of sound samples of various formats to make sure decoder plugins work)
 * ''Maybe'' fix ''scons install'' hang issue
 * ''Maybe'' move the wiki to a better machine
-* ''Maybe'' get some real test data/testcases (devising procedures/processes to make sure every module works as expected, plus defining a set of sound samples of various formats to make sure decoder plugins work)
 
 == Done (Release Notes) ==
 
