@@ -34,5 +34,5 @@ Select the five first entries from the Medialib, fetch duration from the Propert
 
 
 Related links:
-http://www.sqlite.org
-http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+* http://www.sqlite.org
+* http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
