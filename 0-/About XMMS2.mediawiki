@@ -6,6 +6,7 @@ Question is inherently complicated and thus is the answer too. XMMS2 as a projec
 
 As the years went by, GStreamer was born - a generic multimedia framework with lots of flexible modularity and extensible plugin-architehcture. GStreamer is an interesting concept, but XMMS, despite the name, was never meant to be a generic multimedia player. XMMS has always essentially been audio player, the video-plugins were just ugly glue for technical experimentation.
 
+[... todo ...]
 
 == What is XMMS2? ==
 
