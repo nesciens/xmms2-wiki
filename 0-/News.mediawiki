@@ -1,0 +1,7 @@
+'''BETA NEWS PAGE'''
+
+News about what's happening with XMMS2.
+
+{{News}}
+
+<small>''Page credits: adapted from [http://www.sosdg.org/~larne/w/BMP_Homepage Beep Media Player] News.''</small>
