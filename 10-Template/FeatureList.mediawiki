@@ -1,0 +1,14 @@
+;Client-server model :
+* Allows XMMS2 to have various multiple interfaces (as clients).
+** Command line interfaces
+** GTK clients (matching GNOME & XFCE4 look and feel)
+** KDE clients (matching KDE look and feel)
+* Network transparency means you can run and control XMMS2 remotely, (e.g. run XMMS2 on your 'media box' and control it over network using a bluetooth-enabled PDA (TCP))
+** Disclaimer: This is still a ''theoretical'' possibility, for now.
+;Wide format support :
+Can play FLAC, mp3, MOD, SID, speex, ogg vorbis, wave files.
+;Clean separation of [[Component:Transport | transport]] and [[Component:Decoder | decoder]] subsystems :
+Allows for more flexible access to media. (e.g. play mp3 files from a Samba share without having to mount it on the local filesystem)
+;[[The Medialib | Medialib]] :
+Database-driven media library stores metadata about songs as they're played, so songs can be quickly recalled and new playlists easily made.
+;Visualisation support
