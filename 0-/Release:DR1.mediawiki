@@ -1,0 +1,25 @@
+{{Navbar}}
+
+'''Developer Release 1''' is the first release of XMMS 2 code, intended primarily for developers who might be interested in contributing code, plugins and working on clients. What it means:
+
+* Core functionality in the daemon has been implemented and major design changes are not planned.
+* The client API is relatively stable, so clients can be written without developers having to put a lot of work in maintaining the API to the latest version.
+
+'''NOTE:''' We are ''not'' at the DR1 stage yet, but we're close.
+
+== To Do ==
+* Fix include files {{Bug|93}}
+* Decoder API fix {{Bug|128}}
+* Fix [[Component:Medialib | Medialib]] logging
+* Ensure complete Doxygen coverage
+* Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
+* Update ''README'', ''INSTALL'' files
+* Fix ''python_loop'' in python bindings
+* Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
+* ''Maybe'' fix ''scons install'' hang issue
+* ''Maybe'' move the wiki to a better machine
+* ''Maybe'' get some real test data
+
+== Done (Release Notes) ==
+
+[[Category:Releases]]
