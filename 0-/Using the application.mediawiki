@@ -46,14 +46,14 @@ Talking to the daemon via TCP (Note: this example is for the daemon listening to
 
 == First steps using xmms2 client ==
 
+Add all files in a directory to the playlist (recursively adds files in subdirectories as well):
+
   xmms2 radd /path/to/music
 
-this will add all files recursivly
+Play:
 
-  xmms2 start
+  xmms2 play
 
-the daemon will start playing
+Query the medialib database (e.g. your favourite band):
 
   xmms2 mlib query "select * from Media where artist = 'Korn' order by album"
-
-query the database for your fav band
