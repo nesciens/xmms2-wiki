@@ -8,6 +8,7 @@ There are a number of client programs currently being developed for use with XMM
 * HaX
 * xmms2-py-qt playlist client
 * PHP client
+* Cocoa client
 
 == Experimental/Very simple clients ==
 
@@ -40,6 +41,10 @@ This client is unofficially known as 'X2Player' and is primarily a tool for mani
 == PHP client ==
 
 A PHP client for XMMS2 can be found on [http://cochrane.chrippa.org/xmms2/ Chrippa's web site].
+
+== Cocoa client ==
+
+A Cocoa client is being developed for OS X by nano.
 
 == OSD client ==
 
