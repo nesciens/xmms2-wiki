@@ -5,7 +5,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 {| style="border: 1px dotted #000"
 ! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Component !! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Sub-components
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | IPC (Inter Process Communication)
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | IPC (Inter Process Communication)
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:UNIX Socket | UNIX Socket]]
@@ -18,13 +18,13 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Output | Output]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA | ALSA]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:ALSA | ALSA]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:OSS | OSS]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Diskwriter | Diskwriter]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Jack | Jack]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Jack | Jack]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Sun | Sun]]
 |-
@@ -56,8 +56,6 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:FTP | FTP]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:ices | ices]]
-|-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:samba | samba]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:cdde | cdde]]
@@ -72,7 +70,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:modplug | modplug]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:sid | sid]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:sid | sid]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:speex | speex]]
 |-
@@ -85,6 +83,8 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:equaliser | eq (equaliser)]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:ices | ices]]
 |}
 |-
 | colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Visualisation | Visualisation]]
