@@ -6,19 +6,19 @@ XMMS2 is still not released to the public, thus are there no binaries or relased
 
 You will '''need''' the following things to build XMMS2.
 
- * [http://www.python.org/ Python] / [http://www.scons.org/ SCons].
- * [http://www.gtk.org/ GLib]
- * [http://www.underbit.com/products/mad/ MAD]
- * [http://www.freedesktop.org/software/dbus/ DBus]
- * [http://www.sqlite.org SQLite]
+* [http://www.python.org/ Python] / [http://www.scons.org/ SCons].
+* [http://www.gtk.org/ GLib]
+* [http://www.underbit.com/products/mad/ MAD]
+* [http://www.freedesktop.org/software/dbus/ DBus]
+* [http://www.sqlite.org SQLite]
 
 These libraries are not '''needed''' but probably a good idea.
 
- * [http://curl.haxx.se Curl]
- * [http://www.xiph.org Vorbisfile]
- * [http://www.alsa-project.org ALSA]
- * [http://sidplay2.sourceforge.net/ SIDplay2]
- * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
+* [http://curl.haxx.se Curl]
+* [http://www.xiph.org Vorbisfile]
+* [http://www.alsa-project.org ALSA]
+* [http://sidplay2.sourceforge.net/ SIDplay2]
+* [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
 
 == Compiling ==
 
