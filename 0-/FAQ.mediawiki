@@ -1,0 +1,18 @@
+{{Navbar}}
+
+This FAQ exists as a complement to the [[Read me first!]] page. Less important questions (which may still be asked frequently) come here. You're free to add new questions and answers here. :)
+
+== General ==
+=== When will XMMS2 be released for public consumption? ===
+* A: We don't know. Probably "when it's done". RSN.
+
+== Usage ==
+'''Hint''': ''Also see the [[Users]] page''
+
+=== How do I use XMMS2? ===
+* A: XMMS2 is based on the client-server model, where most of the logic resides inside the server (XMMS2D). With a client, you can send commands to the daemon and play music. For now we only have a commandline client. To install, read the INSTALL file. For usage of xmms2 cli client see the included manpage and [[Using the application]].
+
+=== What other clients are in progress? ===
+* A: See [[XMMS2 Clients]].
+
+[[Category: Questions and answers]]
