@@ -5,6 +5,7 @@
 General information, for users and developers alike.
 
 ; [[FAQ]] : Useful collection of Frequently Asked Questions.
+; [[Features]] : Comprehensive list of features offered by XMMS2.
 ; [[Install instructions]] : Helpful info about how to build and install XMMS2.
 ; [[XMMS2 Clients]] : Informative list of known XMMS2 clients. New client developers are encouraged to add descriptions of their clients.
 ; [[Reporting bugs]] : Guidance for those who may have found bugs in XMMS2.
