@@ -1,5 +1,14 @@
-Contributing with strange ideas, finding silly bugs, alsa & sun output plugins and some small hacks here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden.
+Contributing with strange ideas, finding silly bugs, alsa output, smb transport and some small hacks here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden.
 
-Private stashbag includes C#-bindings. Will be public when I'm satisfied.
+Private stashbag includes .NET-bindings (only tested with mono). Will be public when I'm satisfied. A GTK# client is under development, mostly for testing I think.
 
-Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail nano at nittionio dot nu
+
+'''Platforms:'''<br>
+Mac OS-X, PPC G4 (mostly)<br>
+Linux, PPC G4<br>
+Linux, IA-32<br>
+Windows, IA-32<br>
+
+
+
+Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, nano@nittionio.nu.
