@@ -33,7 +33,7 @@ After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_conn
 
  xmmsc_connection_t *connection;
  connection = xmmsc_init ("My client name");
-
+ 
  if (!xmmsc_connect (connection, NULL)) {
    fprintf (stderr, "Connection failed, error: %s", xmmsc_get_last_error (connection));
  }
@@ -46,6 +46,22 @@ After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_conn
      xmmsc_ipc_io_in_callback (connection->ipc);
    }
  }
+
+The above code is a hack that has not been tested. Someone could probably provide a better example. This will dispatch all the notifiers we have.
+
+== Sending commands to XMMS2 ==
+There are three types of commands that could be sent to the server. There are '''methodcalls''', which just executes something in the server and return the result. There are '''broadcasts''' that are important and will notifiy you about the current state in the server and there are '''signals''' that will update you on status in the server but are unimportant for the state. 
+
+=== Methodcalls ===
+There are two types of methodcalls, one type that just will execute something on the serverside and not give you any response except failure and there are the ones that gives you a result. Both types returns a ''xmmsc_result_t''. 
+
+=== Broadcasts ===
+
+=== Signals ===
+
+ xmmsc_result_t *res;
+ res = xmmsc_playback_play (connection);
+ xmmsc_result_unref (res);
 
 * Reference [[Design of XMMS2]] (section "XMMS2 Client Library" in particular. Or move that section to here?)
 * Clients should respect ''XMMS_PATH'' environment variable, if set.
