@@ -1,0 +1,3 @@
+Writes most code while travelling by train.
+
+Email: [mailto:andersg@xmms.org] (Yes, I hate those silly localpart <at> example DOT org instead of localpart@example.org)
