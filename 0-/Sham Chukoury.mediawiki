@@ -1,3 +1,5 @@
+{{Navbar}}
+
 What I do on XMMS2:
 
 * Play with Python bindings
@@ -6,3 +8,5 @@ What I do on XMMS2:
 * Make sure stuff on the wiki makes sense
 
 You can find out more at my site - [http://eleusis.f2o.org eleusis.f2o.org] - and my [http://eleusis.f2o.org/projects/xmms2/ xmms2 project page].
+
+[[Category:People]]
