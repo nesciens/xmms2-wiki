@@ -1,0 +1,1 @@
+[http://bugs.xmms2.xmms.se/view.php?id={{1}} bug #{{1}}]
