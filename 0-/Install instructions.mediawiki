@@ -1,6 +1,6 @@
 == Obtaining the source ==
 
-XMMS2 is still not released to the public, thus are there no binaries or relased sources. You can download daily snapshots at [http://xmms2.xmms.org/snapshots/ the snapshot page] or directly with BitKeeper by running ''bk clone bk://xmms2.xmms.org:5555/xmms2''.
+XMMS2 is still not released to the public, thus are there no binaries or released sourcepackages. You can download daily repository snapshots from [http://xmms2.xmms.org/snapshots/ the snapshot page] or directly via BitKeeper by running ''bk clone bk://xmms2.xmms.org:5555/xmms2''.
 
 == Dependencies ==
 
