@@ -7,7 +7,7 @@ This is the simple client that currently comes with XMMS2 itself. (source code f
 
 == Euphoria ==
 
-Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] currently in development. Euphoria has been abandonened by the author [[Tilman Sauerbeck]] although the initial results looked very nice. Perhaps somebody else is willing to take over maintainance. But don't expect you can build this client.
+Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development. Euphoria is maintained by [[Tilman Sauerbeck]] and is currently being rewritten. Please note that the Euphoria code in the EFL CVS repository is ''not'' the latest code and should not be built.
 
 == xmms2-shell ==
 
@@ -36,7 +36,7 @@ Both clients can be found on http://www.nittionio.nu/xmms2/
 
 == GNUstep client ==
 
-A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]]. But except for some nice screenshots there is nothing else to see on this page.
+A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
 
 == Python OSD client ==
 
