@@ -10,7 +10,7 @@ As the years went by, GStreamer was born - a generic multimedia framework with l
 
 [... todo ...]
 
-== What is XMMS2? ==
+== What is XMMS2? How is it different? ==
 
 Being namely the descendant of XMMS and especially marked second generation, people will have all kinds of expectations what XMMS2 will and will not be. I'll first list the whats and whatnots shortly and explain the reasons more thoroughly afterwards.
 
