@@ -11,15 +11,8 @@ Some diffrent ways of handling urls and files:<br />
 
 Some possible functions in the clientlib:
 
- gchar *xmmsc_get_picture_filename (uint mid); 
-Returns a filename or null if no file is found or something.
-
  x_list_t *xmmsc_get_picture_urls (uint mid);
 Returns a list of urls and the user from wich the user pick the correct one and stores it in some path.
-
- void xmmsc_set_picture_filename (uint mid, gchar *filename);
-Store the filename in medialib.
-
 
 Some links:<br />
 http://www.amazon.com/ -  generic<br />
