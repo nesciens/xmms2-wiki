@@ -15,3 +15,5 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 *[[XMMS2 as a DJ station]]
 *[[The music library]]
 *[[Album Covers]]
+*[[MIDI client]]
+*[[medialib querier]]
