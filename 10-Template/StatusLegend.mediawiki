@@ -6,7 +6,7 @@
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | Component is broken
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | Component is in development
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | Component is pending changes
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bff" | Component is planned
 |-
