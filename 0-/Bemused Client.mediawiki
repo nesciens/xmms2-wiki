@@ -1,5 +1,6 @@
-Control XMMS2 from your cellphone. Currently nobody's working on this, feel free to start hacking. Perhaps this will serve better as just a base to extend. Like we have medialib and stuff like that. Would be nice to be able to search for music and add to playlist and stuff like that. 
+Control XMMS2 from your cellphone. Currently nobody's working on this, feel free to start hacking. 
 
-http://bemused.sourceforge.net/
+JavaME: http://elektron.its.tudelft.nl/~jkohne76/<br />
+Symbian: http://bemused.sourceforge.net/
 
 [[Category: Developer ideas]]
