@@ -1,0 +1,15 @@
+Some way to get album covers. (ok.. xmms2 is a music player so this is slightly off topic)
+
+The medialib has the url to the image (like http://amazon.com/blabla/images/albumcover.jpg), and a cached filename. A client looks for the cached file in the cache directory and if it doesn't exist the url needs to be fetched again.
+
+From the client view it would be nice to just use a search command and let somebody else do the "hard" work. If there's no information in the medialib about any url or cached filename the "artist - album" would be searched for and a list of urls to possible images would be returned with name of album and artist.
+People can add their own album cover fetchers and the search method will use them, maybe when regestiring fetchers in the search method the fetchers will say what genre could be found with it so for an example if an album is of type "trance" then the "psyshop.com-fetcher" is the first to be used, then continiue with the rest and return result to client.
+
+When the client has a list of urls and albums the user selects the correct cover and tells xmms2 to store that in the medialib, and the file in the cache directory.
+
+A client could add a file, then there will only be a cached filename, like you download a cover and add it to xmms2 and then delete the file. Who will store the file and who will name it? 
+Like, the client and server does not have to be on the same computer, is it possible to load files over the link between client and server? To start with xmms2 doesn't support client/server on diffrent computers yet so album covers could be locked to local xmms2d for now... or should the client check for the cached filename, and if not found, fetch the url and store it to the cached filename? What about one client to many xmms2d's? Still networking stuff which is not available yet, but some day.
+
+If a song has no album info, search and add the first cover. Ok.. this is somewhat client specefic what people like.
+
+Just some thoughts.. fill in.
