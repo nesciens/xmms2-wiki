@@ -1,1 +1,5 @@
+{{Navbar}}
+
 Email : object at gmail dot com
+
+[[Category: People]]
