@@ -86,7 +86,7 @@ An example of what you might find in the property table for a medialib entry:
 
 Select the five first entries from the Medialib, fetch duration from the Property table:
   sqlite> SELECT m.id, artist, album, title, p.value 
-          FROM Media m, Property p 
+          FROM Property p, Media m 
           ON m.id=p.id AND p.key="duration" LIMIT 5;
   1|Helt Off |Helt Off |Klibbiga Toner                |257384
   2|Helt Off |Helt Off |Hur Beter Du Dig Man?         |203023
@@ -97,7 +97,7 @@ Select the five first entries from the Medialib, fetch duration from the Propert
 
 Select Top-10 most played songs from the Medialib:
   sqlite> SELECT l.id, m.artist, m.album, m.title, COUNT (l.id) AS count 
-          FROM Log l, Media m 
+          FROM Media m, Log l 
           ON l.id=m.id 
           GROUP BY l.id 
           ORDER BY count DESC LIMIT 10;
@@ -115,7 +115,8 @@ Select Top-10 most played songs from the Medialib:
 
 Select the five most recently playd songs:
   sqlite> SELECT l.id, m.artist, m.album, m.title 
-          FROM Log l, Media m ON l.id=m.id 
+          FROM Media m, Log l 
+          ON l.id=m.id 
           GROUP BY l.id 
           ORDER BY l.starttime DESC LIMIT 5;
   9936| Aphex Twin | 26 Mixes for Cash (disc 2) | Radiator (original mix)
