@@ -10,5 +10,6 @@ General information, for users and developers alike.
 ; [[XMMS2 Clients]] : Informative list of known XMMS2 clients. New client developers are encouraged to add descriptions of their clients.
 ; [[Reporting bugs]] : Guidance for those who may have found bugs in XMMS2.
 ; [[Logo]] : Information about the XMMS2 logo.
+; [[:Category:Releases | Releases]] : XMMS2 releases.
 
 [[Category: General]]
