@@ -26,7 +26,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Sun
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | coreaudio
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | coreaudio
 |}
 |-
 | colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Medialib
@@ -58,7 +58,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | samba
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | cdde
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | cdde
 |}
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Decoder
