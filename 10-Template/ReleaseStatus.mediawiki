@@ -6,4 +6,6 @@
 '''Developer''': <font style="color: blue">''None''</font>
 
 '''Notes''': XMMS2 is still under heavy development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
+
+''See also'': [[Project Status]]
 </div>
