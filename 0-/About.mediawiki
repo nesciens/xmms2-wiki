@@ -1,3 +1,5 @@
+{{Navbar}}
+
 ''XMMS2 (X(cross)platform Music Multiplexing System) is designed to be a kickass music-player.''
 
 == People involved ==
