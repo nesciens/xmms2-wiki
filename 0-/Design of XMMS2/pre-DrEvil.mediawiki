@@ -1,0 +1,89 @@
+= XMMS2 Server Design =
+
+The server is the part of XMMS2 that outputs music and keeps track of the playlist, effects, visualisation and the music library. The parts of the server is divided into objects. The object intercommunicate with signals.
+
+== The server objects ==
+
+Each object holds a very special functionality and these objects are exposed to the client for communication. The main objects are:
+
+=== Main ===
+Controls the server. Creates the playlist and the output object.
+
+=== Output ===
+The Output object is the one that "drives" XMMS2. It will take a playlist entry from the playlist and start the transport and the decoder for that entry. The output will then read from the decoders and output the decoded data to the soundcard.
+
+=== Playlist ===
+The playlist object is responsible to know what entries that should be played and in which order. It also holds the mediainformation for the entries in the playlist.
+
+=== Transport ===
+When a entry is selected for playback the output will create a transport object for the URL. The URL will be feed to the apropiate plugin and will the plugin will determine the mimetype for the entry.
+
+=== Decoder ===
+Once the transport has told us which mimetype it hold it will feed that to a decoder object. The decoder will read encoded data from the transport and decode it.
+
+== The plugins ==
+
+The plugins are in a way subclasses of the Objects. It inherits the methods of the objects and they are always paired.
+
+== Communication with clients ==
+
+Is done in two ways. First way is a methodcall from the client to the server (i.e playlist_next or playlist_list). The server will respond to that command.
+
+The other way is for continuesly updates. Like how long we have played a song or the information for a song is updated. This is called a onchange signal. 
+
+= XMMS2 Client Library =
+
+Each client holds a connection to the server <tt>xmmsc_connection_t</tt>. Commands will be sent on this connection struct and onchange signals are recieved. The Client library is able to do both syncronous and asyncronous operations.
+
+== Sending a methodcall ==
+
+After established a connection you can start calling methods in the server. This can be done like:
+
+ xmmsc_result_t *res;
+ res = xmmsc_playlist_next (connection);
+ xmmsc_result_wait (res);
+ xmmsc_result_unref (res);
+
+or with argument to some of the methods.
+
+ res = xmmsc_playlist_add (connection, "file://home/tru/test.ogg");
+
+== Resultsets ==
+Always when you call a method you will be returned a <tt>xmmsc_result_t</tt> this will be used for determinate if the methodcall was successful and extrating the results. You can use the resultset async or just sync.
+
+=== async ===
+When you have done you methodcall you should setup a callback funcition for the resultset. This function will be called when the server has filled in the resultset with the result. Example:
+
+ res = xmmsc_playlist_add (connection, myfile);
+ xmmsc_result_notifier_set (res, callbackfunc, userdata);
+ xmmsc_result_unref (res);
+
+
+The callback function could look something like this:
+
+ void myfunc (xmmsc_result_t *res, void *userdatata) {
+   if xmmsc_result_iserror (res) {
+     printf ("Error!\n");
+   } else {
+     printf ("Item added to playlist!\n");
+   }
+ }
+
+=== sync ===
+The above example but in syncmode will look something like this:
+
+ res = xmmsc_playlist_add (connection, myfile);
+ xmmsc_result_wait (res);
+ if (xmmsc_result_iserror (res)) {
+   print ("error!\n");
+ } else {
+   print ("item was added to playlist!\n");
+ }
+ xmmsc_result_unref (res);
+
+The `xmmsc_result_wait` will block until the answer is ready.
+
+=== Extracting data from a resultset ===
+Some methodcalls have a answer for you. You can (after the resultset is filled) extract information from the resultset with different calls. You must know what type that is returned in the resultset (see the doxygen manual for information about the different methodcalls).
+
+The functions for value extractions are described at http://xmms2.xmms.se/doxygen/html/group__ResultValueRetivial.html
