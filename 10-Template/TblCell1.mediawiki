@@ -1,1 +1,1 @@
-| {{{params}}} | {{{cellcontent}}}
+border-bottom: 1px dotted #000; border-left: 1px dotted #000;
