@@ -18,3 +18,10 @@
 * [[Tilman Sauerbeck]]
 * [[Kristian Benoit]]
 * [[Sham Chukoury]]
+
+== Contact info ==
+;E-Mail :
+* tru at xmms dot org
+* andersg at xmms dot org
+
+;IRC : irc.xmms.se:6667 #xmms2
