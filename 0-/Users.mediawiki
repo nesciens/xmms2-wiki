@@ -1,5 +1,7 @@
 {{Navbar}}
 
+{{ReleaseStatus}}
+
 Essential information for XMMS2 users. Please see the [[General information | general info]] page as well, for instructions on how to install XMMS2.
 
 ; [[Using the application | Using XMMS2]] : Helpful pointers to get you cranking up your music collection in no time. :)
