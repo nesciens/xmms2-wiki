@@ -18,3 +18,10 @@ This matter has moderate level of complexity due to differences in formats havin
 
 
 == Method #2 ==
+
+
+== Other special requirements for special formats ==
+
+XMMS2 core and clients must support following for succesful working of special formats like SID.
+
+* Any information (song length, title, etc.) may be unknown or it may change during decoding. Core must support a way to signal such changes and update information.
