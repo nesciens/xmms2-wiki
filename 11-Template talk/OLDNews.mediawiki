@@ -1,0 +1,9 @@
+See the [http://meta.wikimedia.org/wiki/Help:Template Mediawiki Template Help] page for general info about how templates work. News entries work like this (example):
+
+<nowiki>
+{{Newsitem|date=9 February 2005 (2005-02-09)|author=[[Sham Chukoury]]|title=News page added!|text=The XMMS2 wiki now has a news page!}}
+</nowiki>
+
+Notes about formatting:
+* Dates must be '%e %B %Y (%Y-%m-%d)' (see date(1)), i.e. '<date> <month> <year> (<ISO8601-style date>)'
+* Author names should preferably link to the wiki user page, i.e. <nowiki>[[Joe Bloggs]]</nowiki>
