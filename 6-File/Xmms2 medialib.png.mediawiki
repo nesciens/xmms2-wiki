@@ -1,0 +1,1 @@
+ER diagram of the Medialib database.
