@@ -17,13 +17,38 @@ A playlist should provide a way to:
 * reverse itself.
 
 == How to (How we want to) implement a playlist ? ==
-A playlist can be implemented as a doubly linked list of items.
+A playlist can be implemented as a tracklist (doubly linked list of items).
+It could also be a doubly linked ring of items (a list without beginning/end.
 An item is the association of a media track and it's metadata.
 Here's the BNF:
 
- <playlist>::<item><playlist>|()
+ <trackring>::<playlist><item><playlist>
+ <tracklist>::<playlist><item><playlist>|()
  <item>::<media track><meta data>
  <media track>::[ogg]|[mp3]|[ice]|[wave]|...
  <meta data>::[filename][trackname][author][albumname]...
 
-To be continued ... time to sleep now -_-
+The best would probably be to have playlist plugins to have multiple playlist models
+available for the user, so if we want we could make an external lib (a playlist manager lib)
+that could place the playlist in shared memory to be able to share that playlist with
+other players so that we have a standard playlist for all applications. weird ...
+Anyway these are just ideas, but I think the playlist should at least be redesign to have all
+the above requirements. (which are mostly what xmms present to the user).
+When someone ask for shuffle mode, we dont want the nicely sorted playlist to be shuffled and
+we want every song to be played only once. To achive this goal we can copy the playlist into a
+new one that we will shuffle than we'll keep on listing the original list but play through the
+shuffled one. To manage this, we'll need another level in the playlist, a playlist interface.
+The playlist interface should know if it is in shuffle or in normal mode and direct the call
+to the right object.
+
+Here's a little schemas:
+
+             +-------------------+
+             | PlaylistInterface |
+             +-------------------+
+             |                   |
+ +------------------+     +------------------+
+ | OriginalPlaylist |     | ShuffledPlaylist |
+ +------------------+     +------------------+
+
+So please add your ideas and comments about the playlist before someone redesign the whole thing.
