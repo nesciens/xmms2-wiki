@@ -22,7 +22,7 @@ These libraries are not '''needed''' but probably a good idea.
 
 == Compiling ==
 
-Run ''scons'' to first run the configuration. Tweak the options until you are satisfied. Then run ''scons'' again.
+Run ''scons'' to first run the configuration. Tweak the options until you are satisfied. Then run ''scons NOCACHE=1''.
 
 == Installing ==
 
