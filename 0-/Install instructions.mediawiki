@@ -21,6 +21,7 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.alsa-project.org ALSA]
 * [http://sidplay2.sourceforge.net/ SIDplay2]
 * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
+* [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] - For python bindings.
 
 == Compiling ==
 
