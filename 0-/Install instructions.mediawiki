@@ -23,10 +23,11 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
 * [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] - For python bindings.
 
-== Compiling ==
+== Configuring ==
+Run ''scons'' to first run the configuration. Tweak the options, running ''scons NOCACHE=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are configuration groups listed in ''xmmsconf.py''. (Sorry, there is currently no user-friendly way of listing the modules)
 
-Run ''scons'' to first run the configuration. Tweak the options until you are satisfied, running ''scons NOCACHE=1'' each time till satisfied.
-Run ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/some/custom/path''.
+== Compiling ==
+Simply run ''scons'' to compile, or ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/some/custom/path''.
 
 == Installing ==
 
