@@ -9,10 +9,13 @@ Some diffrent ways of handling urls and files:<br />
 '''(4)''' Not storing anything in the medialib, just storing the album in cached directory as artist-album.ext<br />
 
 
+When a fetcher is loaded it announces a list of genres it has to offer and its search function.
+
+
 Some possible functions in the clientlib:
 
- x_list_t *xmmsc_get_picture_urls (uint mid);
-Returns a list of urls and the user from wich the user pick the correct one and stores it in some path.
+ x_list_t *xmmsc_get_picture_urls (guint mid, gboolean all);
+Selects the artist, album, genre from the medialib and starts with the appropriate fetcher based on genre. If not found the function could be called to search all possible fetchers for data.
 
 Some links:<br />
 http://www.amazon.com/ -  generic<br />
