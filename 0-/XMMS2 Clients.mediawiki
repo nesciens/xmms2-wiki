@@ -9,6 +9,7 @@ There are a number of client programs currently being developed for use with XMM
 * xmms2-py-qt playlist client
 * PHP client
 * Cocoa client
+* GNUstep client
 
 == Experimental/Very simple clients ==
 
@@ -49,3 +50,7 @@ A Cocoa client is being developed for OS X by [[Daniel Svensson]].
 == OSD client ==
 
 This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can [http://eleusis.f2o.org/projects/xmms2/xmms2-osd.tar.bz2 download] the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
+
+== GNUstep client ==
+
+A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
