@@ -7,3 +7,5 @@ See the [http://meta.wikimedia.org/wiki/Help:Template Mediawiki Template Help] p
 Notes about formatting:
 * Dates must be '%e %B %Y (%Y-%m-%d)' (see date(1)), i.e. '<date> <month> <year> (<ISO8601-style date>)'
 * Author names should preferably link to the wiki user page, i.e. <nowiki>[[Joe Bloggs]]</nowiki>
+* Most recent posts should be at the top
+* Maybe there should be a [[News archive]] page, where older posts are moved to, so the news page doesn't keep growing longer and longer...
