@@ -16,6 +16,22 @@ The new implementation I have in mind is split into three parts.
 
 Overall problems with this approach is that we need to break the client API, because we will remove the playlist id and only have mids and positions. That means that client acts on positions instead. xmms_playlist_remove (id) becomes xmms_playlist_remove (pos).
 
+== Updated API calls in client lib ==
+
+All playlist commands now expect a position not a id number. The list command will give you the pos for each entry. The position counter ''starts at 1'' 0 means that there are no current position.
+
+The medialib entries has a id. You can ask for mediainfo with the medialib id without having the entry in the playlist (BONUS). The medialib id will always be > 0. 0 means error or no entry. 
+
+=== New Methods ===
+* xmmsc_playlist_current_pos - returns the position of the playlist
+
+=== Changed methods ===
+* xmmsc_playlist_set_next - removed type field and made it absolute all the time.
+* xmmsc_playlist_getmediainfo is now named xmmsc_medialib_get_info
+* xmmsc_playlist_medialibadd is now named xmmsc_medialib_add_to_playlist
+* xmmsc_broadcast_playlist_entry_changed is now named xmmsc_broadcast_medialib_entry_changed
+
+
 ===See also:===
 * [[Design of XMMS2]]
 
