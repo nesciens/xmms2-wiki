@@ -12,9 +12,3 @@ This wiki tries to gather as much information as possible about XMMS2. Please us
 
 List of features currently offered by XMMS2:
 {{FeatureList}}
-
-{{ComponentStatus}}
-
-{{StatusLegend}}
-
-{{PlatformSupportStatus}}
