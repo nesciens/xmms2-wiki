@@ -9,8 +9,9 @@ First of all, you may want to get to know the XMMS2 design and source:
 
 Before you start to hack you should also read the documents about [[Using BitKeeper]] and [[XMMS2 Codingstyle]].
 
-Here are my strange ideas about XMMS2, if you want to hack on them or comment them please follow the links..
+Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links..
 
 *[[Smart playlists]]
 *[[XMMS2 as a DJ station]]
 *[[The music library]]
+*[[Audio Covers]]
