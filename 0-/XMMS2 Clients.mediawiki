@@ -30,10 +30,11 @@ A client made in PHP is being worked on by [[Christopher Rosell]]. [http://cochr
 A client based on ncurses is also being worked on by [[Christopher Rosell]]. Written in python.
 [http://evangelion.se/xmms2/xmms2curse-20041217.png Early screenshot]
 
-== Cocoa client ==
+== Hippopotamus ==
 
-A Cocoa client is being developed for OS X by [[Daniel Svensson]].
+A Cocoa client is being developed for OS X by [[Daniel Svensson]]. There is also an OSD client for OS X called '''InYourFace''' that sooner or later will be merged with '''Hippopotamus''' in some way... or will continue on its own mystical path.
 
+Both clients can be found on http://www.nittionio.nu/xmms2/
 
 == GNUstep client ==
 
