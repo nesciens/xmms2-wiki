@@ -4,7 +4,9 @@ This is one of the fundamental questions concerning XMMS2-project as whole. Why 
 
 Question is inherently complicated and thus is the answer too. XMMS2 as a project had been cooking for a long, long time, before GStreamer, MusicPD or similar projects had started. Need for XMMS1 replacement has been evident for years, current codebase and framework wasn't exactly well-designed from beginning. Lately XMMS1 hasn't been actively developed further, which can be attributed to lack of active developers, but also to broken codebase. Adding new features is bulky, some of the most wanted ones would be near impossible to add. Some parts of XMMS1 are beyond patching, re-writing of the framework was needed.
 
-As the years went by, GStreamer was born - a generic multimedia framework with lots of flexible modularity and extensible plugin-architehcture. GStreamer is an interesting concept, but XMMS, despite the name, was never meant to be a generic multimedia player. XMMS has always essentially been audio player, the video-plugins were just ugly glue for technical experimentation.
+As the years went by, GStreamer was born - a generic multimedia framework with lots of flexible modularity and extensible plugin-architehcture. GStreamer is an interesting concept, but XMMS, despite the name, was never meant to be a generic multimedia player. XMMS has always essentially been audio player, the video-plugins were just ugly glue for technical experimentation. GStreamer's goal is to be a generic multimedia framework, which greatly contributes to it's bloatness. Implementing everything in very generic way tends to waste resources and GStreamer developers haven't exactly been sparing them in other ways either. XMMS2 does not need the video-related crud that GStreamer has, also XMMS2 aims for platform independency, which is not GStreamer's goal in strict sense.
+
+
 
 [... todo ...]
 
