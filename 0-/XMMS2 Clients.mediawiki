@@ -8,6 +8,7 @@ There are a number of client programs currently being developed for use with XMM
 * HaX
 * xmms2-py-qt playlist client
 * PHP client
+* XMMS2Curse
 * Cocoa client
 * GNUstep client
 
@@ -41,7 +42,12 @@ This client is unofficially known as 'X2Player' and is primarily a tool for mani
 
 == PHP client ==
 
-Chrippa is working on a client made in PHP. [http://cochrane.chrippa.org/xmms2/ Running example].
+A client made in PHP is being worked on by Christopher Rosell. [http://cochrane.chrippa.org/xmms2/ Running example].
+
+== XMMS2Curse ==
+
+A client based on ncurses is also being worked on by Christopher Rosell. Written in python.
+[http://evangelion.se/xmms2/xmms2curse-20041217.png Early screenshot]
 
 == Cocoa client ==
 
