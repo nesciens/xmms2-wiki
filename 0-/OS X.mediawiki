@@ -1,5 +1,6 @@
 {{Navbar}}
 
-Info about XMMS2 on Mac OS X.
+CoreAudio output
+Cocoa/Carbon glue for the CoreFoundation eventloop.
 
 [[Category:Platforms]]
