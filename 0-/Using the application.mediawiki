@@ -1,0 +1,16 @@
+xmms2d can be started by either typing 'xmms2d' after installing the application or trying perform some action with 'xmms2'.
+
+ xmms2d
+ xmms2 add some.nice.music.ogg
+ xmms2 play
+
+Tada, music!
+
+If this doesn't work you can probably figure out what the problem is from the server log, most likely it's because you don't have permission to access the soundcard device(s) or you are using the wrong output plugin. The latter can be changed with:
+
+ xmms2 config core.outputplugin oss-or-alsa-or-whatever-plugin-you-should-use
+ xmms2 quit
+
+Start xmms2d again and now it should work.
+
+Type 'xmms2' to list the available commands.
