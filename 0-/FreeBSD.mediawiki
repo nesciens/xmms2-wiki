@@ -1,5 +1,5 @@
 {{Navbar}}
 
-Info about XMMS2 on BSD.
+Builds on FreeBSD 5.2, but can't play more than one song. Builds and works perfectly on FreeBSD 5.3
 
 [[Category:Platforms]]
