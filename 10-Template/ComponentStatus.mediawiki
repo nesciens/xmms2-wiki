@@ -11,6 +11,8 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:UNIX Socket | UNIX Socket]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:TCP Socket | TCP Socket]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:Distributed Objects | Distributed Objects]]
 |}
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Output | Output]]
