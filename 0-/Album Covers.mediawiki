@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Ok, XMMS2 is a pure music player so this is slightly off topic... But at least I think it's very nice to have a picture on the curren album playing. I know many people agree with me and I also know that there will be more than one client implementing this feature (possible clients: osx, windows, linux gtk/gnome/kde/euphoria, misc webfrontends). This is why I propose a generic way getting hold on album covers. The core of this idea is that a central repository of fetchers exists and the client just asks for a album cover and gets on url in return.
 
 
@@ -28,3 +30,5 @@ Summary:
 * Some nice client api.
 * Some smart way to store the files so that they will not be overwritten or redownloaded. The 4:th scenario seems most likly, and then it would be up to the client to store the cover.
 * Some way to write fetchers, this is easy to do in python or some other highlevel language, but this adds complexity when attaching it to the clientlib.
+
+[[Category: Developer ideas]]
