@@ -1,0 +1,6 @@
+;2005-04-05:
+ 15:12 -!- tilman [tilman@code-monkey.de] has quit [leaving]
+ 15:12 -!- tilman [tilman@code-monkey.de] has joined #xmms2
+ 15:13 <tilman> oops.
+ 15:17 <tru> tilman: pressed the wrong "button"? :)
+ 15:23 <tilman> tru: i confused "ctrl-a d" and "/quit" O_o
