@@ -112,6 +112,19 @@ Select Top-10 most played songs from the Medialib:
     887| Mesh            |In This Place Forever       |You Didn't Want Me            |2
    2933| psilodumputer   |                            |psilodumputer                 |2
 
+
+Select the five most recently playd songs:
+  sqlite> SELECT l.id, m.artist, m.album, m.title 
+          FROM Log l, Media m ON l.id=m.id 
+          GROUP BY l.id 
+          ORDER BY l.starttime DESC LIMIT 5;
+  9936| Aphex Twin | 26 Mixes for Cash (disc 2) | Radiator (original mix)
+  9934| Aphex Twin | 26 Mixes for Cash (disc 2) | Windowlicker (Acid edit)
+  9848| Aphex Twin | Richard D. James Album     | Girl/Boy Song (Redruth Mix)
+  9847| Aphex Twin | Richard D. James Album     | Girl/Boy Song (Â£18 Snarerush Mix)
+  9846| Aphex Twin | Richard D. James Album     | Beetles
+
+
 Related links:
 * http://www.sqlite.org
 * http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
