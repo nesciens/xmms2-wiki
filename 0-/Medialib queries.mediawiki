@@ -1,0 +1,38 @@
+Select five random songs:
+  sqlite> SELECT id, artist, album, title 
+          FROM Media 
+          ORDER BY RANDOM() LIMIT 5;
+  227|Elvis Costello    |My Aim Is True                 |Pay It Back
+  497|MÃºm               |Finally We Are No One          |Faraway Swimmingpool
+  549|Organism 12       |Petar PÃ¥ DÃ¶da Saker Med Pinnar |Kaffe & Ont Blod
+  444|Miranda           |Rerecorded (WHYCD020)          |Eyedentify 2004
+   31|Apoptygma Berzerk |7                              |Nearer
+
+
+Select five random albums:
+  sqlite> SELECT id, artist, album 
+          FROM Media 
+          GROUP BY LOWER(album) ORDER BY RANDOM() LIMIT 5;
+  336|Grateful Dead     |American Beauty
+  132|Apoptygma Berzerk |Unicorn
+  137|Apoptygma Berzerk |Until the End of the World I
+  578|Pat Metheny       |We Live Here
+  510|MÃºm               |Yesterday Was Dramatic - Today Is OK
+
+
+Select the five first entries from the Medialib, fetch duration from the Property table:
+  sqlite> SELECT m.id, artist, album, title, p.value 
+          FROM Media m, Property p 
+          ON m.id=p.id AND p.key="duration" LIMIT 5;
+  1|Helt Off |Helt Off |Klibbiga Toner                |257384
+  2|Helt Off |Helt Off |Hur Beter Du Dig Man?         |203023
+  3|Helt Off |Helt Off |Va Skulle Du GÃ¶ra (Om Och Om) |251611
+  4|Helt Off |Helt Off |DÃ¶dar O Sorterar Dom Sen      |279562
+  5|Helt Off |Helt Off |Underlan                      |305005
+
+
+
+
+Related links:
+http://www.sqlite.org
+http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
