@@ -83,3 +83,5 @@
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | eq (equaliser)
 |}
 |}
+
+{{ed|ComponentStatus|component status}}
