@@ -1,3 +1,7 @@
+== Foreword ==
+
+My intention is to address various questions about feasibility and goals of the XMMS2 project and contrast the design in comparision to other similar projects (including GStreamer, mdp, BeepMP, etc.) This document is not as much about "how", but more of "why".
+
 == Why is XMMS2? ==
 
 This is one of the fundamental questions concerning XMMS2-project as whole. Why bother to work on a next generation XMMS while there are various existing and more advanced projects already in progress, some ready for production use?
