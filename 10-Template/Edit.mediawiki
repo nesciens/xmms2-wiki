@@ -1,0 +1,1 @@
+<font class="noprint" style=" white-space:nowrap; font-size:smaller; ">[{{SERVER}}{{localurl:{{{1}}}|action=edit}} edit]</font>
