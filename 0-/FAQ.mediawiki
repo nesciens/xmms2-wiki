@@ -18,4 +18,7 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 === Does XMMS2 run on my favourite platform/operating system? ===
 * A: See the [[Project Status#XMMS2_Platform_Support_Status | Platform support status table]] for an overview. For information about mobile platforms (Palm PDA, Sharp Zaurus, etc), see [[Mobile platforms]].
 
+=== XMMS2 is not working. What should I do? ===
+* A: You should do it right, of course. Stop doing it wrong, and it'll start working.
+
 [[Category: Questions and answers]]
