@@ -31,7 +31,7 @@ The medialib entries have an id. You can ask for mediainfo with the medialib id 
 * ''xmmsc_playlist_medialibadd'' is now named ''xmmsc_medialib_add_to_playlist''
 * ''xmmsc_broadcast_playlist_entry_changed'' is now named ''xmmsc_broadcast_medialib_entry_changed''.
 
-===See also:===
+==See also==
 * [[Design of XMMS2]]
 
 [[Category:Components]]
