@@ -1,3 +1,5 @@
+{{Newsitem|date=21 February 2005 (2005-02-21) WST|author=[[Sham Chukoury]]|title=Logo proposals|text=Considering the recent trickle of new logo proposals, I've made a [[Logo]] page to keep track of it all. Got any cooler designs? Send it in! ;)}}
+
 {{Newsitem|date=10 February 2005 (2005-02-10) WST|author=[[Sham Chukoury]]|title=Wiki got a facelift|text=I've finished giving the wiki a bit of an overhaul, with gratuitous use of templates to implement all kinds of funky things like:
 * This news section
 * a new navigation bar
