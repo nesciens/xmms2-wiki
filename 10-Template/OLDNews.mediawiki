@@ -5,7 +5,9 @@
 * a release status box
 
 Other alterations include categorisation of most pages, and a re-organisation of page navigation. Enjoy. :P}}
-{{Newsitem|date=9 February 2005 (2005-02-09)|author=[[Sham Chukoury]]|title=News page added!|text=The XMMS2 wiki now has a news page!}}
+{{Newsitem|date=9 February 2005 (2005-02-09)|author=[[Sham Chukoury]]|title=News page added!|text=The XMMS2 wiki now has a news page!
+
+The news templates are simply adapted from the [http://beepmp.sf.net Beep Media Player] news page.}}
 
 
 ===News tools===
