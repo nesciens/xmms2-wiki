@@ -1,0 +1,29 @@
+== What is a playlist ? ==
+A playlist is an ordered collection of media data and their metadata.
+A playlist should provide a way to:
+* add track;
+* remove track;
+* remove multiple tracks;
+* add multiple tracks;
+* move a collection item after/before a specified item;
+* move a collection item relatively to its position;
+* clear the whole list;
+* provide the current position in the list;
+* set the current position in the list;
+* provide the next collection item as specified by a scheme (none, repeat_all, repeat_one, shuffle, shuffle_repeat).
+* save itself;
+* add items from a playlist;
+* sort the item as specified by a metadata field;
+* reverse itself.
+
+== How to (How we want to) implement a playlist ? ==
+A playlist can be implemented as a doubly linked list of items.
+An item is the association of a media track and it's metadata.
+Here's the BNF:
+
+ <playlist>::<item><playlist>|()
+ <item>::<media track><meta data>
+ <media track>::[ogg]|[mp3]|[ice]|[wave]|...
+ <meta data>::[filename][trackname][author][albumname]...
+
+To be continued ... time to sleep now -_-
