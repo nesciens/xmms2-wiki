@@ -41,7 +41,7 @@ Consider this as an informational ''guide'' - it is here simply to provide a com
   // This is a C++ comment, not a C comment
 
 * Code is generally documented using [http://www.doxygen.org Doxygen]. Please [http://www.stack.nl/~dimitri/doxygen/manual.html learn] how to use this tool, if you want to contribute code to XMMS2.
-* Doxygen comments should be in the following form. Imperative tense should be used (i.e. "Activate frobnozzle gadget" NOT "Activates frobnozzle gadget"). The first sentense should be short and just give a extremly breif description. Detailed description should be in the following sentenses. The comment text should start on the next line AFTER "/**". There should be an empty line between the description and params/returnvalue. The "*" on the continued lines should be lined up with the FIRST asterisk in "/**"
+* Doxygen comments should be in the following form. Imperative tense should be used (i.e. "Activate frobnozzle gadget" NOT "Activates frobnozzle gadget"). The first sentence should be short and just give an extremely brief description. Detailed description should be in the following sentences. The comment text should start on the next line AFTER "/**". There should be an empty line between the description and params/return value. The "*" on the continued lines should be lined up with the FIRST asterisk in "/**"
 
  /**
   * Activate frobnozzle gadget.
