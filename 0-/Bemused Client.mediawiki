@@ -2,4 +2,4 @@ Control XMMS2 from your cellphone. Currently nobody's working on this, feel free
 
 http://bemused.sourceforge.net/
 
-[[Category: Developer Ideas]]
+[[Category: Developer ideas]]
