@@ -1,3 +1,5 @@
+{{Navbar}}
+
 General information, for users and developers alike.
 
 ; [[FAQ]] : Useful collection of Frequently Asked Questions.
