@@ -24,7 +24,7 @@ This is the simple client that currently comes with XMMS2 itself. (source code f
 
 == Euphoria ==
 
-Euphoria is an graphical XMMS2 client for the [http://enlightenment.org Enlightenment] desktop environment currently in development. It is built on top of enlightenment's very flexible graphics libraries and as such, should integrate very nicely with that environment. Euphoria is maintained by [[Tilman Sauerbeck]]. More information about the development status can be found on Euphoria's [http://cia.navi.cx/stats/project/e/e17/apps/euphoria CIA Open Source Notification System] page.
+Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] currently in development. Euphoria is maintained by [[Tilman Sauerbeck]].
 
 == xmms2-shell ==
 
