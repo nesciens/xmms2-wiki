@@ -95,6 +95,22 @@ Select the five first entries from the Medialib, fetch duration from the Propert
   5|Helt Off |Helt Off |Underlan                      |305005
 
 
+Select Top-10 most played songs from the Medialib:
+  sqlite> SELECT l.id, m.artist, m.album, m.title, COUNT (l.id) AS count 
+          FROM Log l, Media m 
+          ON l.id=m.id 
+          GROUP BY l.id 
+          ORDER BY count DESC LIMIT 10;
+      3| Helt Off        |Helt Off                    |Va Skulle Du GÃ¶ra (Om Och Om) |5
+      2| Helt Off        |Helt Off                    |Hur Beter Du Dig Man?         |4
+      4| Helt Off        |Helt Off                    |DÃ¶dar O Sorterar Dom Sen      |4
+      1| Helt Off        |Helt Off                    |Klibbiga Toner                |3
+   2919| Psilodumputer   |                            |London Microfestival 2001     |3
+  12430| Badly Drawn Boy |About A Boy (OST)           |Something To Talk About       |2
+    818| Black Sabbath   |Sabotage (Black Box: Disc 6)|Hole In The Sky               |2
+  13944|                 |                            |                              |2
+    887| Mesh            |In This Place Forever       |You Didn't Want Me            |2
+   2933| psilodumputer   |                            |psilodumputer                 |2
 
 Related links:
 * http://www.sqlite.org
