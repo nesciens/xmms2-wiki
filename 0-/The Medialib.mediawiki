@@ -19,5 +19,15 @@ See examples of queries: [[Medialib queries]].
 
 (''mlib ER diagram goes here'')
 
+== Optimisation ==
+There are various ways query evaluation may be optimised, with the medialib. Certain indexes may be defined to speed up common queries - however the caveat is that common queries may not be known until suitable clients are written after the developer release! Client writers need to be aware that there are various ways of optimising the performance of their SQL queries:
+
+* Writing queries that take advantage of available indexes
+* Joining tables while being aware of sqlite's table joining algorithm (nested loops). Writing equivalent queries in different ways may result in performance variations. (For example ''"select * from t1, t2 ..."'' vs ''"select * from t2, t1 ..."'')
+
+For more information, please see the [http://www.sqlite.org/cvstrac/wiki?p=PerformanceTuning Performance Tuning] and [http://www.sqlite.org/cvstrac/wiki?p=PerformanceConsiderations Performance Considerations] pages on the [http://www.sqlite.org/cvstrac/wiki sqlite wiki].
+
 == Related links ==
 * http://www.sqlite.org
+* http://sqlite.org/vdbe.html
+* http://www.sqlite.org/php2004/slides-all.html
