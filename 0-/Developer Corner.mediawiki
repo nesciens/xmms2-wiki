@@ -1,6 +1,10 @@
 Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
 
-First of you may want to get to know the XMMS2 design and source. You can find the Doxygen documentation here: http://xmms2.xmms.se/doxygen/html/index.html and this page somewhat describes the [[Design of XMMS2]].
+First of all, you may want to get to know the XMMS2 design and source:
+
+*[[Design of XMMS2]]
+*[http://xmms2.xmms.se/doxygen/html/index.html Doxygen documentation]
+*[[XMMS2 Source Trees]]
 
 Before you start to hack you should also read the documents about [[Using BitKeeper]] and [[XMMS2 Codingstyle]].
 
