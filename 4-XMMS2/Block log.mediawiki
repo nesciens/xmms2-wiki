@@ -1,0 +1,3 @@
+This is a log of user blocking and unblocking actions. Automatically
+blocked IP addresses are not be listed. See the [[Special:Ipblocklist|IP block list]] for
+the list of currently operational bans and blocks.
