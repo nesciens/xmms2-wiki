@@ -6,5 +6,6 @@ There is currently no official XMMS2 logo, so you are welcome to have a go at ma
 * [http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
 * [http://www.genmaster.co.nr ''genmaster'''s proposals]
 * Geh's proposals - [http://www.crazy-bird.org/xmms2/logo.png logo.png], [http://www.crazy-bird.org/xmms2/logo1.png logo1.png]
+* [[Daniel's proposal]]
 
 [[Category: General]]
