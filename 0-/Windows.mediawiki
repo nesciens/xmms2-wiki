@@ -1,1 +1,5 @@
+{{Navbar}}
+
 Info about XMMS2 on Windows.
+
+[[Category:Platforms]]
