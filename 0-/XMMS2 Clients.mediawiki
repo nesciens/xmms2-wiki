@@ -44,7 +44,7 @@ Chrippa is working on a client made in PHP. [http://cochrane.chrippa.org/xmms2/ 
 
 == Cocoa client ==
 
-A Cocoa client is being developed for OS X by nano.
+A Cocoa client is being developed for OS X by [[Daniel Svensson]].
 
 == OSD client ==
 
