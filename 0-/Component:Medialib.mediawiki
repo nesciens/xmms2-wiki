@@ -5,6 +5,22 @@ The Medialib (media library) is where XMMS2 stores metadata about files as it pl
 == Notes ==
 This component is pending changes and may be merged with the [[Component:Playlist|playlist component]].
 
+The new design should be something like this
+
+ create table Media (MID, KEY, VALUE);
+ create table Log (MID, STARTTIME, STOPTIME, VALUE);
+ 
+This means all values are flat in the media table.
+
+We should also have some kind of grouping. Like this:
+
+ create table groups (type, name, key, id);
+ create table groupmembers (id, mid);
+ create table groupproperties (id, key, value);
+
+Where a grouptype could be a album, artist, playlist, whatever.
+
+
 ===See also:===
 * [[The Medialib]]
 * [[Design of XMMS2]]
