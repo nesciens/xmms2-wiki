@@ -14,8 +14,9 @@ When a fetcher is loaded it announces a list of genres it has to offer and its s
 
 Some possible functions in the clientlib:
 
- x_list_t *xmmsc_get_picture_urls (guint mid, gboolean all);
+ x_list_t *xmmsc_get_picture_urls (guint mid, gboolean limit_to_genre);
 Selects the artist, album, genre from the medialib and starts with the appropriate fetcher based on genre. If not found the function could be called to search all possible fetchers for data.
+Another thing that might come into play is protected cd covers that are not allowed to be stored permanently on a physical device.
 
 Some links:<br />
 http://www.amazon.com/ -  generic<br />
@@ -25,5 +26,5 @@ http://composers.c64.org/ - SID<br />
 
 Summary:
 * Some nice client api.
-* Some smart way to store the files so that they will not be overwritten or redownloaded.
+* Some smart way to store the files so that they will not be overwritten or redownloaded. The 4:th scenario seems most likly, and then it would be up to the client to store the cover.
 * Some way to write fetchers, this is easy to do in python or some other highlevel language, but this adds complexity when attaching it to the clientlib.
