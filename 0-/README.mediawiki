@@ -3,7 +3,7 @@
 This is the new generation of the XMMS player.
 There are a lot of questions about the reason for XMMS2,
 XMMS2 itself and the design goals. I will try to clarify them.
-If you have further questions, please contact us - do not edit this page and add new questions. :)
+If you have further questions, please ''contact us'' - '''DO NOT''' edit this page and add new questions. :) (such questions will be removed without answer)
 
 == General Questions ==
 
@@ -50,5 +50,3 @@ If you have further questions, please contact us - do not edit this page and add
 
 * Q: When will XMMS2 be released for public consumption?
 * A: We don't know. Probably "when it's done". RSN.
-
-* Q: Could you change the name of XMMS2 when it is ready for mass consumtion? I Don't like XMMS.
