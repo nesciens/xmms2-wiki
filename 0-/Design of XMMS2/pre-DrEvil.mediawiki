@@ -1,3 +1,5 @@
+{{Navbar}}
+
 = XMMS2 Server Design =
 
 The server is the part of XMMS2 that outputs music and keeps track of the playlist, effects, visualisation and the music library. The server is divided into objects that intercommunicate using signals.
