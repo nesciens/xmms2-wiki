@@ -1,0 +1,7 @@
+{{ReleaseStatus}}
+
+{{ComponentStatus}}
+
+{{StatusLegend}}
+
+{{PlatformSupportStatus}}
