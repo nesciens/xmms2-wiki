@@ -1,6 +1,6 @@
 {{Navbar}}
 
-This plugin allows for output on Sun systems?
+This plugin allows for output on systems using the Sun Audio stuff, like Solaris and OpenBSD.
 
 ===See also:===
 * [[Component:Output | Output]]
