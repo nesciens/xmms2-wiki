@@ -1,26 +1,26 @@
-
 = Welcome to the XMMS2 Wiki. =
 
 This page tries to gather as much information as possible about XMMS2. Expect this to be filled with interesting information soon.
 
 == Documentation ==
 
- * ["Read me first!"]
- * ["Install instructions"]
- * ["Using the application"]
- * ["Developer corner"]
- * ["Reporting bugs"]
+ * [[Read me first!]]
+ * [[Install instructions]]
+ * [[Using the application]]
+ * [[Developer Corner]]
+ * [[Reporting bugs]]
 
 == People involved ==
 
 === Main development ===
- * ["Tobias RundstrÃ¶m"]
- * ["Anders Gustafsson"]
+ * [[Tobias RundstrÃ¶m]]
+ * [[Anders Gustafsson]]
 
 === Contributors and Hangarounds ===
- * ["Peter Alm"]
- * ["Thomas Nilsson"]
- * ["Michael Lindgren"]
- * ["Daniel Svensson"]
- * ["Chris Morgan"]
- * ["Matti HÃ¤mÃ¤lÃ¤inen"]
+ * [[Peter Alm]]
+ * [[Thomas Nilsson]]
+ * [[Michael Lindgren]]
+ * [[Daniel Svensson]]
+ * [[Chris Morgan]]
+ * [[Matti HÃ¤mÃ¤lÃ¤inen]]
+ * [[Tilman Sauerbeck]]
