@@ -1,6 +1,6 @@
 = XMMS2 Server Design =
 
-The server is the part of XMMS2 that outputs music and keeps track of the playlist, effects, visualisation and the music library. The parts of the server are divided into objects. The objects intercommunicate using signals.
+The server is the part of XMMS2 that outputs music and keeps track of the playlist, effects, visualisation and the music library. The server is divided into objects that intercommunicate using signals.
 
 == The server objects ==
 
@@ -13,23 +13,23 @@ Controls the server. Creates the playlist and the output object.
 The Output object is the one that "drives" XMMS2. It takes a playlist entry from the playlist and starts the transport and the decoder for that entry. The output then reads from the decoders and outputs the decoded data to the soundcard.
 
 === Playlist ===
-The playlist object is responsible for knowing what entries that should be played and in which order. It also holds the media information for the entries in the playlist.
+The playlist object is responsible for knowing which entries should be played and in which order. It also holds the media information for the entries within itself.
 
 === Transport ===
-When an entry is selected for playback, the output will create a transport object for the URL. The URL will be fed to the apropiate plugin, which will determine the mimetype for the entry.
+When an entry is selected for playback, the output will create a transport object for the URL. The URL will be fed to the appropiate plugin, which will determine the mimetype for the entry.
 
 === Decoder ===
 Once the transport has told us which mimetype it holds, it will feed that to a decoder object. The decoder will read encoded data from the transport and decode it.
 
 == The plugins ==
 
-The plugins are, in a way, subclasses of the Objects. They inherit the objects' methods and they are always paired.
+The plugins are, in a way, subclasses of the Objects. They inherit the objects' methods and are always paired with their respective parent objects.
 
 == Communication with clients ==
 
-Is done in two ways. First way is a methodcall from the client to the server (i.e playlist_next or playlist_list). The server will respond to that command.
+Client-server communication is done in two ways. The first way is by doing a methodcall from the client to the server (i.e playlist_next or playlist_list). The server will respond to that command.
 
-The other way is for continuous updates. Like for how long we have played a song or the information for a song. This is called an onchange signal.
+The other way is for continuous updates - like for how long we have played a song or the information for a song. This is called an onchange signal.
 
 = XMMS2 Client Library =
 
