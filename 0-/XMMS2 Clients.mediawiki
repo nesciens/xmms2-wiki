@@ -1,0 +1,46 @@
+There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
+
+== Clients ==
+
+* XMMS2 CLI client
+* Euphoria
+* xmms2-shell
+* HaX
+* xmms2-py-qt playlist client
+* PHP client
+
+== Experimental/Very simple clients ==
+
+* OSD client
+
+
+----
+
+
+== XMMS2 CLI client ==
+
+This is the simple client that currently comes with XMMS2 itself. (source code found in src/clients/cli/xmms2_client.c) It supports most, if not all, operations possible using the xmmsclient library. See the [[Using the application]] page for more information about how to use this client.
+
+== Euphoria ==
+
+Euphoria is an graphical XMMS2 client for the [http://enlightenment.org Enlightenment] desktop environment currently in development. It is built on top of enlightenment's very flexible graphics libraries and as such, should integrate very nicely with that environment. Euphoria is maintained by [http://code-monkey.de/ Tilman Sauerbeck]. More information about the development status can be found on Euphoria's [http://cia.navi.cx/stats/project/e/e17/apps/euphoria CIA Open Source Notification System] page.
+
+== xmms2-shell ==
+
+xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. A lot of the code simply wraps around the XMMS2 Python bindings or is equivalent to the code in the CLI client. xmms2-shell is maintained by [http://eleusis.f2o.org/ Sham Chukoury] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
+
+== HaX ==
+
+HaX is a PyGTK & Python client for XMMS2. It is still mostly in the planning stages, but code is slowly getting built. The client itself is composed of various modules that perform specific tasks, such as handling the core logic of performing actions on the XMMS2 daemon, signals, and a GUI event handler. At the moment, the most interesting aspect of HaX is the separation of application logic and presentation interface by using Glade - in effect, a 'rich' skin interface. It should be noted that the HaX-core module is shared with xmms2-shell, enabling both clients to interact with the daemon in technically the same manner (but with completely different user interfaces). HaX is also maintained by [http://eleusis.f2o.org/ Sham Chukoury] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
+
+== xmms2-py-qt playlist client ==
+
+This client is unofficially known as 'X2Player' and is primarily a tool for manipulating the XMMS2 daemon's playlist and medialib. X2Player is written in PyQt & Python and is maintained by [[Tobias RundstrÃ¶m]].
+
+== PHP client ==
+
+A PHP client for XMMS2 can be found on [http://cochrane.chrippa.org/xmms2/ Chrippa's web site].
+
+== OSD client ==
+
+This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from xmms2-shell and the test python client in the XMMS2 source tree. You can [http://eleusis.f2o.org/projects/xmms2/xmms2-osd.tar.bz2 download] the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
