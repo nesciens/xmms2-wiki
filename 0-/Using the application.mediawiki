@@ -43,3 +43,13 @@ Talking to the daemon via TCP (Note: this example is for the daemon listening to
 
   export XMMS_PATH="tcp://10.0.0.1:7777"
   xmms2 list
+
+== First steps using xmms2 client ==
+*  xmms2 radd /path/to/music
+this will add all files recursivly
+
+*  xmms2 start
+the daemon will start playing
+
+*  xmms2 mlib query "select * from Media where artist = 'Korn' order by album"
+query the database for your fav band
