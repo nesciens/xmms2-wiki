@@ -14,7 +14,7 @@ You will '''need''' the following things to build XMMS2.
 
 These libraries are not '''needed''' but probably a good idea.
 
-* [http://curl.haxx.se Curl]
+* [http://curl.haxx.se Curl (>= 7.11.2)]
 * [http://www.xiph.org Vorbisfile]
 * [http://www.alsa-project.org ALSA]
 * [http://sidplay2.sourceforge.net/ SIDplay2]
