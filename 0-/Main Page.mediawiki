@@ -10,6 +10,7 @@ This page tries to gather as much information as possible about XMMS2. Expect th
 * [[Using the application]]
 * [[Developer Corner]]
 * [[Reporting bugs]]
+* [[XMMS2 Clients]]
 
 == People involved ==
 
