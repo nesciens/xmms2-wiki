@@ -28,6 +28,3 @@ This page tries to gather as much information as possible about XMMS2. Expect th
 * [[Tilman Sauerbeck]]
 * [[Kristian Benoit]]
 * [[Sham Chukoury]]
-
-----
-WIKI-Sponsored links (removed)
