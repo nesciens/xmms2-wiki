@@ -11,3 +11,5 @@ This wiki tries to gather as much information as possible about XMMS2. Please us
 {{ComponentStatus}}
 
 {{StatusLegend}}
+
+{{PlatformSupportStatus}}
