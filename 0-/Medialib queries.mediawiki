@@ -127,5 +127,6 @@ Select the five most recently playd songs:
 
 
 Related links:
-* http://www.sqlite.org
+* http://www.sqlite.org/
+* http://www.sqlite.org/vdbe.html
 * http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
