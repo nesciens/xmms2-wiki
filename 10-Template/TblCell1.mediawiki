@@ -1,1 +1,1 @@
-{{{params}}} | {{{cellcontent}}}
+| {{{params}}} | {{{cellcontent}}}
