@@ -1,0 +1,3 @@
+<table>
+<tr><td align="right"><a href="/index.php?title=Special:Allpages&amp;from=About" title ="Special:Allpages">About</a></td><td> to </td><td align="left">XMMS2 as a DJ station</td></tr>
+</table>
