@@ -21,7 +21,7 @@ We should also have some kind of grouping. Like this:
 Where a grouptype could be a album, artist, playlist, whatever.
 
 
-==See also:==
+==See also==
 * [[The Medialib]]
 * [[Design of XMMS2]]
 
