@@ -1,13 +1,13 @@
+{{Navbar}}
+
 = Welcome to the XMMS2 Wiki. =
 
+This wiki tries to gather as much information as possible about XMMS2. Please use the navigation bar above to browse around. Feel free to add more information (except where indicated otherwise). You could also help us replace that default flower logo with a nice XMMS2 logo! :)
 
-This page tries to gather as much information as possible about XMMS2. Expect this to be filled with interesting information soon. This page is a wiki, so you could even help filling it with information. You could also help us replace that default-logo with the flower!
+== XMMS2 News==
 
-== Documentation ==
+{{News}}
 
-* [[Read me first!]]
-* [[Install instructions]]
-* [[Using the application]]
-* [[Developer Corner]]
-* [[Reporting bugs]]
-* [[XMMS2 Clients]]
+{{ComponentStatus}}
+
+{{StatusLegend}}
