@@ -13,7 +13,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | TCP Socket
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Output
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Output
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | ALSA
@@ -29,9 +29,9 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | coreaudio
 |}
 |-
-| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Medialib
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Medialib
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Playlist
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Playlist
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | m3u
