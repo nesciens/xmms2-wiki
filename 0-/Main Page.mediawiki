@@ -9,4 +9,3 @@ This wiki tries to gather as much information as possible about XMMS2. Please us
 == XMMS2 News ==
 
 {{News}}
-s
