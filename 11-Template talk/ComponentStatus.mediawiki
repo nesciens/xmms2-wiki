@@ -1,4 +1,4 @@
-Use templates instead of colours directly:
+Use templates instead of colours directly (note: this seems a bit unstable on the current mwiki version):
 
 * [[Template:Component good]]
 * [[Template:Component partialgood]]
