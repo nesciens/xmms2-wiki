@@ -65,7 +65,7 @@ Select five random albums:
   510|MÃºm               |Yesterday Was Dramatic - Today Is OK
 
 
-An example of what you can find in the property table for a medialib entry:
+An example of what you might find in the property table for a medialib entry:
   sqlite> SELECT key, value FROM Property WHERE id=887; 
   resolved                |1
   musicbrainz_albumid     |e6253a2b-ddc9-442b-8c45-f6e0daf616e3
@@ -79,6 +79,7 @@ An example of what you can find in the property table for a medialib entry:
   musicbrainz_albumstatus |official
   musicbrainz_sortname    |Mesh
   tracknumber             |4
+(Note that this data differs from entry to entry. However, there are some properties that usually are present in entries, like duration, bitrate, samplerate and resolved)
 
 
 Select the five first entries from the Medialib, fetch duration from the Property table:
@@ -90,9 +91,6 @@ Select the five first entries from the Medialib, fetch duration from the Propert
   3|Helt Off |Helt Off |Va Skulle Du GÃ¶ra (Om Och Om) |251611
   4|Helt Off |Helt Off |DÃ¶dar O Sorterar Dom Sen      |279562
   5|Helt Off |Helt Off |Underlan                      |305005
-
-
-
 
 
 
