@@ -26,7 +26,8 @@ Run ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/som
 
 == Installing ==
 
-Run ''scons <prefix>'' to install XMMS2. Where prefix is usually /usr/local.
+In most cases, you only need to run ''scons <prefix>'' to install XMMS2, where prefix is usually /usr/local.
+If you built XMMS by running ''scons PREFIX=/some/custom/path'' (see 'Compiling' instructions above), you need to run ''scons PREFIX=/some/custom/path /some/custom/path'' to install.
 
 == Cleaning up ==
 
