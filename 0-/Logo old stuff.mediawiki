@@ -1,13 +1,18 @@
 {{Navbar}}
 
-There is currently no official XMMS2 logo, so you are welcome to have a go at making one. :) Here is a list of proposals so far:
+There is currently no official XMMS2 logo, so you are welcome to have a go at making one. :)
 
-*[http://people.0x63.nu/~andersg/xmms2-logo-02.png Anders' 'X2' concept]
-*[http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
-*[http://www.genmaster.co.nr ''genmaster'''s proposals]
-*Geh's proposals &ndash; [http://www.crazy-bird.org/xmms2/logo.png logo.png], [http://www.crazy-bird.org/xmms2/logo1.png logo1.png]
-*[[Daniel's proposal]]
-*[[boarder8925's logo proposals]]
-*shadowskill's proposal [http://wiki.xmms2.xmms.se/index.php/Image:Xmm2logo00.png logo]
+=== Note about submissions ===
+To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
+
+=== Proposals ===
+
+* [http://people.0x63.nu/~andersg/xmms2-logo-02.png Anders' 'X2' concept]
+* [http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
+* [http://www.genmaster.co.nr ''genmaster'''s proposals]
+* Geh's proposals &ndash; [http://www.crazy-bird.org/xmms2/logo.png logo.png], [http://www.crazy-bird.org/xmms2/logo1.png logo1.png]
+* [[Daniel's proposal]]
+* [[boarder8925's logo proposals]]
+* [[Media:Xmm2logo00.png | shadowskill's proposal]]
 
 [[Category: General]]
