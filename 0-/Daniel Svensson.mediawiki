@@ -10,9 +10,10 @@ Mac OS-X, PPC G4 (mostly)<br>
 Linux, PPC G4<br>
 Linux, IA-32<br>
 Windows, IA-32<br>
+Linux, SPARC64<br>
 
 
 
-Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, nano@nittionio.nu.
+Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, daniel@nittionio.nu.
 
 [[Category: People]]
