@@ -1,3 +1,5 @@
+{{Navbar}}
+
 I got a few idea on how that could work (the design), so I'll try to explain what could be done.
 First of all, I'm not a DJ so dj's are more than welcome to tell their needs.
 
@@ -48,3 +50,5 @@ so great. There is probably a way to get all that in one daemon, but having 10 s
 the same time might and it might not break the great design of xmms2.
 
 Feel free to add your comments, ideas, new designs...
+
+[[Category: Developer ideas]]
