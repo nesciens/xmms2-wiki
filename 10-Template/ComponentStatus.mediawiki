@@ -5,7 +5,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 {| style="border: 1px dotted #000"
 ! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Component !! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Sub-components
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | IPC (Inter Process Communication)
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | IPC (Inter Process Communication)
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:UNIX Socket | UNIX Socket]]
@@ -15,7 +15,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:Distributed Objects | Distributed Objects]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Output | Output]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Output | Output]]
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:ALSA | ALSA]]
@@ -31,9 +31,9 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:coreaudio | coreaudio]]
 |}
 |-
-| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Medialib | Medialib]]
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Medialib | Medialib]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Playlist | Playlist]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Playlist | Playlist]]
 | style="border-bottom: 1px dotted #000" |
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:m3u | m3u]]
