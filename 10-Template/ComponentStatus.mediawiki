@@ -1,0 +1,85 @@
+== XMMS2 Components Status ==
+
+{| style="border: 1px dotted #000"
+! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Component !! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Sub-components
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | IPC (Inter Process Communication)
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | UNIX Socket
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | TCP Socket
+|}
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Output
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | ALSA
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | OSS
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Diskwriter
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Jack
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Sun
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | coreaudio
+|}
+|-
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Medialib
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Playlist
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | m3u
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | pls
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | html
+|}
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Transport
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | file
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | curl
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | HTTP
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | FTP
+|}
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | ices
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | samba
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | cdde
+|}
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Decoder
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | FLAC
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | mad
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | modplug
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | sid
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | speex
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | vorbis
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | wave
+|}
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Effect plugins
+| style="border-bottom: 1px dotted #000" |
+{|
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | eq (equaliser)
+|}
+|}
