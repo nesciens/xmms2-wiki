@@ -1,1 +1,4 @@
-[[About XMMS2]]
+I'm working on a rant/document [[about XMMS2]], especially the following topics:
+- Why XMMS2?
+- What XMMS2 is and what it is not?
+- How is XMMS2 different from GStreamer?
