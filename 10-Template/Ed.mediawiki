@@ -1,0 +1,1 @@
+<small class="editlink noprint">[{{SERVER}}{{localurl:Template:{{{1}}}|action=edit}} edit {{{2}}}]</small>
