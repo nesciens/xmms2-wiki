@@ -1,24 +1,5 @@
 There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
 
-== Clients ==
-
-* XMMS2 CLI client
-* Euphoria
-* xmms2-shell
-* HaX
-* xmms2-py-qt playlist client
-* PHP client
-* XMMS2Curse
-* Cocoa client
-* GNUstep client
-
-== Experimental/Very simple clients ==
-
-* OSD client
-
-
-----
-
 
 == XMMS2 CLI client ==
 
@@ -30,11 +11,11 @@ Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enli
 
 == xmms2-shell ==
 
-xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. A lot of the code simply wraps around the XMMS2 Python bindings or is equivalent to the code in the CLI client. xmms2-shell is maintained by [http://eleusis.f2o.org/ Sham Chukoury] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
+xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. A lot of the code simply wraps around the XMMS2 Python bindings or is equivalent to the code in the CLI client. xmms2-shell is maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
 
 == HaX ==
 
-HaX is a PyGTK & Python client for XMMS2. It is still mostly in the planning stages, but code is slowly getting built. The client itself is composed of various modules that perform specific tasks, such as handling the core logic of performing actions on the XMMS2 daemon, signals, and a GUI event handler. At the moment, the most interesting aspect of HaX is the separation of application logic and presentation interface by using Glade - in effect, a 'rich' skin interface. HaX is also maintained by [http://eleusis.f2o.org/ Sham Chukoury] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
+HaX is a PyGTK & Python client for XMMS2. It is still mostly in the planning stages, but code is slowly getting built. The client itself is composed of various modules that perform specific tasks, such as handling the core logic of performing actions on the XMMS2 daemon, signals, and a GUI event handler. At the moment, the most interesting aspect of HaX is the separation of application logic and presentation interface by using Glade - in effect, a 'rich' skin interface. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
 
 == xmms2-py-qt playlist client ==
 
@@ -59,9 +40,6 @@ A Cocoa client is being developed for OS X by [[Daniel Svensson]].
 A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
 
 
-----
+== Python OSD client ==
 
-
-== OSD client ==
-
-This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can [http://eleusis.f2o.org/projects/xmms2/xmms2-osd.tar.bz2 download] the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
+This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
