@@ -1,9 +1,23 @@
+{{Navbar}}
+
 New playlist implementation.
 
-The new implementation I have in mind is splitted in to three parts.
+The new implementation I have in mind is split into three parts.
 
-* [[Component:Output]] redesign - In order to have a simple easy to understand playlist we should redesign the output. It needs to make use of a very easy list as the new playlist is going to be.
-* Make the playlist_entry_t just a mid - We could save all strings in the medialib and just let the entry be a uint, all operations are done directly against the medialib. The pros about this is: we could hold a HUGE playlist, no memory allocations except a uint when adding a entry. We don't need to worry about where to find the information. It's all in the db. Cons: we are depending on sqlite.
+* [[Component:Output | Output]] redesign - In order to have a simple easy to understand playlist we should redesign the output. It needs to make use of a very easy list as the new playlist is going to be.
+* Make the playlist_entry_t just an mid (medialib id) - We could save all strings in the medialib and just let the entry be a uint, all operations are done directly against the medialib.
+**Pros
+*** We could hold a HUGE playlist.
+*** No memory allocations except a uint when adding a entry.
+*** We don't need to worry about where to find the information. It's all in the db.
+** Cons
+*** We are depending on sqlite.
 * Redo the playlist - The playlist could be just a array since the playlist_entry is a int. Easy to index and change in, not much overhead.
 
 Overall problems with this approach is that we need to break the client API, because we will remove the playlist id and only have mids and positions. That means that client acts on positions instead. xmms_playlist_remove (id) becomes xmms_playlist_remove (pos).
+
+===See also:===
+* [[Design of XMMS2]]
+
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
