@@ -1,0 +1,9 @@
+<div style="float: right; border: dotted 1px grey; text-align: center; padding:0.5em">
+'''''XMMS2 Release Status'''''
+
+'''Stable''': <font style="color: green">''None''</font>
+
+'''Developer''': <font style="color: blue">''None''</font>
+
+'''Notes''': XMMS2 is still under heavy development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
+</div>
