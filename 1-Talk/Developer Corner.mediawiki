@@ -52,3 +52,15 @@ Here's a little schemas:
  +------------------+     +------------------+
 
 So please add your ideas and comments about the playlist before someone redesign the whole thing.
+
+== A comment on the original/shuffled playlists ==
+
+It's a great idea to have the playlist revert to the original ordering when shuffled mode is unselected.
+There might be an easier way to achieve this than keeping two incarnations of the same playlist, however.
+An alternative idea is to keep the order of the playlist structure, and add an additional pointer which,
+when set, redefines the order in which one would read the list.
+Conceptually, a list item could look similar to this:
+
+ +----------------------------------------------------------------------------------------------------------+
+ | item *next | string url | string artist | string album | string title | int length | item *shuffled_next |
+ +----------------------------------------------------------------------------------------------------------+
