@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Info about XMMS2 on Linux.
 
 [[Category:Platforms]]
