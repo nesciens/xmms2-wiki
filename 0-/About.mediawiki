@@ -1,0 +1,18 @@
+''XMMS2 (X(cross)platform Music Multiplexing System) is designed to be a kickass music-player.''
+
+== People involved ==
+
+=== Main development ===
+* [[Tobias RundstrÃ¶m]]
+* [[User:Anders Gustafsson|Anders Gustafsson]]
+
+=== Contributors and Hangarounds ===
+* [[Peter Alm]]
+* [[Thomas Nilsson]]
+* [[Michael Lindgren]]
+* [[Daniel Svensson]]
+* [[Chris Morgan]]
+* [[Matti HÃ¤mÃ¤lÃ¤inen]]
+* [[Tilman Sauerbeck]]
+* [[Kristian Benoit]]
+* [[Sham Chukoury]]
