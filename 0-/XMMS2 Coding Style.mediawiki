@@ -1,21 +1,23 @@
+{{Navbar}}
+
 This document describes the coding style to be used when working on code that is maintained as part of the XMMS2 codebase. This includes everything in the main tree: the daemon, libraries, some plugins and clients. It does not apply to third party XMMS2 clients.
 
-Consider this as an informational ''guide'' - it is here simply to provide a common style that all XMMS2 developers and contributors can refer to, and rely on. A lot of this is from http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5 The sections below apply to C, as well as other languages, unless otherwise indicated.
+Consider this as an informational ''guide'' - it is here simply to provide a common style that all XMMS2 developers and contributors can refer to, and rely on. A lot of this is from http://lxr.linux.no/source/Documentation/CodingStyle The sections below apply to C, as well as other languages, unless otherwise indicated.
 
 == Indentation ==
 
 * Single tabs (\t)
 * Tabs are ''usually'' equivalent to 8 characters in length. However, XMMS2 code should be written with a tab-width of 4 characters. (This affects the line length, as discussed in the next section) Note that tabs should not be substituded with 4 real spaces, in code. (some editors, such as vim, may do this, depending on settings)
-* "The whole idea behind indentation is to clearly define where a block of control starts and ends." [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L23] Always indent when needed - that is, after ''if'', ''do'', ''while'' statements, function declarations (''void foo (bar) {''), and so on.
+* "The whole idea behind indentation is to clearly define where a block of control starts and ends." [http://lxr.linux.no/source/Documentation/CodingStyle#L23] Always indent when needed - that is, after ''if'', ''do'', ''while'' statements, function declarations (''void foo (bar) {''), and so on.
 
 == Breaking long lines and strings ==
 * Lines should not be longer than 80 characters (columns) long. (Note that this assumes 4-character long tab widths for indents)
-* "Statements longer than 80 columns will be broken into sensible chunks. Descendants are always substantially shorter than the parent and are placed substantially to the right. The same applies to function headers with a long argument list. Long strings are as well broken into shorter strings." [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L57]
+* "Statements longer than 80 columns will be broken into sensible chunks. Descendants are always substantially shorter than the parent and are placed substantially to the right. The same applies to function headers with a long argument list. Long strings are as well broken into shorter strings." [http://lxr.linux.no/source/Documentation/CodingStyle#L57]
 
 == Placing Braces ==
-* An opening brace must be last on the relevant line. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L80]
-* An exception to the above guideline is for function declarations, where the opening brace is at the beginning of the next line. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L84]
-* "Note that the closing brace is empty on a line of its own, _except_ in the cases where it is followed by a continuation of the same statement, ie a "while" in a do-statement or an "else" in an if-statement <nowiki>[...]</nowiki>" [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L97]
+* An opening brace must be last on the relevant line. [http://lxr.linux.no/source/Documentation/CodingStyle#L80]
+* An exception to the above guideline is for function declarations, where the opening brace is at the beginning of the next line. [http://lxr.linux.no/source/Documentation/CodingStyle#L84]
+* "Note that the closing brace is empty on a line of its own, _except_ in the cases where it is followed by a continuation of the same statement, ie a "while" in a do-statement or an "else" in an if-statement <nowiki>[...]</nowiki>" [http://lxr.linux.no/source/Documentation/CodingStyle#L97]
 * These guidelines do not apply to certain languages, e.g. Python
 
 == Naming ==
@@ -23,9 +25,9 @@ Consider this as an informational ''guide'' - it is here simply to provide a com
 * Local variables should be short and to the point.
 
 == Functions ==
-* "Functions should be short and sweet, and do just one thing.  They should fit on one or two screenfuls of text (the ISO/ANSI screen size is 80x24, as we all know), and do one thing and do that well." [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L160] (Functional cohesion)
-* For complex functions, break the code up into helper functions, or inline code if performance-critical. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L170]
-* Try to keep the number of local variables in a function around 7 (plus or minus two or three). If more variables are needed, think about splitting the code into multiple functions. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L178]
+* "Functions should be short and sweet, and do just one thing.  They should fit on one or two screenfuls of text (the ISO/ANSI screen size is 80x24, as we all know), and do one thing and do that well." [http://lxr.linux.no/source/Documentation/CodingStyle#L160] (Functional cohesion)
+* For complex functions, break the code up into helper functions, or inline code if performance-critical. [http://lxr.linux.no/source/Documentation/CodingStyle#L170]
+* Try to keep the number of local variables in a function around 7 (plus or minus two or three). If more variables are needed, think about splitting the code into multiple functions. [http://lxr.linux.no/source/Documentation/CodingStyle#L178]
 
 == Centralised exiting of functions ==
 * Functions should generally have a single exit (return) point.
@@ -42,5 +44,7 @@ Consider this as an informational ''guide'' - it is here simply to provide a com
 * Python code, on the other hand, is documented using [http://epydoc.sourceforge.net/ Epydoc] and is rather easy to [http://epydoc.sourceforge.net/epytext.html learn].
 
 == Macros, Enums, Inline functions and RTL ==
-* Names of macros defining constants and labels in enums should be capitalized. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L344]
+* Names of macros defining constants and labels in enums should be capitalized. [http://lxr.linux.no/source/Documentation/CodingStyle#L344]
 * Macro names should be capitalised.
+
+[[Category:Code and bugs]]
