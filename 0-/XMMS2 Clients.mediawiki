@@ -21,10 +21,6 @@ HaX is a PyGTK & Python client for XMMS2. It is still mostly in the planning sta
 
 This client is unofficially known as 'X2Player' and is primarily a tool for manipulating the XMMS2 daemon's playlist and medialib. X2Player is written in PyQt & Python and is maintained by [[Tobias RundstrÃ¶m]].
 
-== PHP client ==
-
-A client made in PHP is being worked on by [[Christopher Rosell]]. [http://cochrane.chrippa.org/xmms2/ Running example].
-
 == XMMS2Curse and Unnamed PHP client ==
 
 XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]]. 
