@@ -22,6 +22,7 @@ These libraries are not '''needed''' but probably a good idea.
 == Compiling ==
 
 Run ''scons'' to first run the configuration. Tweak the options until you are satisfied. Then run ''scons NOCACHE=1''.
+Run ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/some/custom/path''.
 
 == Installing ==
 
