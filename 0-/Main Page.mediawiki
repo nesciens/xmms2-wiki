@@ -4,7 +4,7 @@ This page tries to gather as much information as possible about XMMS2. Expect th
 
 == Documentation ==
 
-* [[Read me first!]]
+* [[Read me fist!]]
 * [[Install instructions]]
 * [[Using the application]]
 * [[Developer Corner]]
