@@ -1,0 +1,7 @@
+This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now.
+
+* Reference [[Design of XMMS2]] (section "XMMS2 Client Library" in particular. Or move that section to here?)
+* Clients should respect ''XMMS_PATH'' environment variable, if set.
+* Clients can store their config data in ''~/.xmms2/clients/''. Simple clients may get by with single conf files, like ''myclient.conf'', while more complex clients may use a subdirectory, such as ''advancedclient/''.
+* Clients should not store daemon config keys and values in their own config - they should query the daemon instead. (some exceptions apply, for example, the IPC path to use)
+* Clients using broadcast/signal callbacks (result notifiers) need to make sure I/O events are dispatched, for the callbacks to work properly. This is done by integrating ''xmmsc_ipc_io_in_callback'' with the clients' event loops. (TODO: more info about ''xmmsc_ipc_setup_with_gmain'' & Qt equivalent)
