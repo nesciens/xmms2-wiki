@@ -36,8 +36,7 @@ Both clients can be found on http://www.nittionio.nu/xmms2/
 
 == GNUstep client ==
 
-A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
-
+A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]]. But except for some nice screenshots there is nothing else to see on this page.
 
 == Python OSD client ==
 
