@@ -42,7 +42,7 @@ XMMS2 itself and the design goals. I will try to clarify them.
 * A: XMMS2 is based on the client-server model, where most of the logic resides inside the server (XMMS2D). With a client, you can send commands to the daemon and play music. For now we only have a commandline client. To install, read the INSTALL file. For usage of xmms2 cli client see the included manpage.
 
 * Q: What other clients are in progress?
-* A: We probably will have an offical client based on some kind of skinned-widget library that is still in development (libl44t, questions about this is directed to andersg at xmms dot org). Other people are working on a GTK+ client and an E17 client (enlightenment).
+* A: See [[XMMS2 Clients]].
 
 * Q: When will XMMS2 be released for public consumption?
 * A: We don't know. Probably "when it's done". RSN.
