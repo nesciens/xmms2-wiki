@@ -13,7 +13,7 @@
 * Ensure complete Doxygen coverage
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 * Update ''README'', ''INSTALL'' files
-* Complete ''sample_t'' fixup (ices)
+* Complete ''sample_t'' fixup (ices) - I don't feel that Ices is superimportant, maybe just disable it? FLAC would be nice to have on the other hand. 
 * Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
 * Get some real test data/testcases (devising procedures/processes to make sure every module works as expected, plus defining a set of sound samples of various formats to make sure decoder plugins work)
 * ''Maybe'' move the wiki to a better machine
