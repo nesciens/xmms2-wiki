@@ -2,6 +2,15 @@
 
 There is currently no official XMMS2 logo, so you are welcome to have a go at making one. :)
 
+=== Logo guidelines (a.k.a: what do we want?) ===
+An XMMS2 logo should be futuristic, cool and stylish. Not plotted with detail but clean. It should not feel like XMMS with just a 2 slapped on there. XMMS2 is a compleatly new codebase and has not much todo with old XMMS.
+
+* Logo has to be vectorized
+* Logo (or parts of) has to work as a 32x32 icon.
+* Logo has to work on homepage, tshirts, giveaways whatever :)
+* Logo has to have low number of colors, like two or three. (or preferable only black?)
+
+
 === Note about submissions ===
 To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
 
