@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
 
 Select all genres:
@@ -130,3 +132,5 @@ Related links:
 * http://www.sqlite.org/
 * http://www.sqlite.org/vdbe.html
 * http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+
+[[Category:XMMS2 Technical Details]]
