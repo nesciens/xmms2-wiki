@@ -1,4 +1,4 @@
-Mostly hangaround, but occasionally reviews XMMS2 code and is working on his own '''gXMMS2 client''', which is a Gtk+1 GUI client for XMMS2.
+Mostly hangaround, but occasionally reviews XMMS2 code and is working on his own '''gXMMS2 client''', which is a Gtk+1 GUI client for XMMS2. Aim of gXMMS2 is to become mostly identical to XMMS1's look & feel at some point, but with additional features made possible by XMMS2 including medialib, etc.
 
 Author of [http://www.tnsp.org/xmms-sid.php XMMS-SID], a SID-plugin for XMMS1.
 
