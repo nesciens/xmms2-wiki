@@ -1,3 +1,5 @@
+Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
+
 Select all genres:
   sqlite> SELECT genre 
           FROM Media 
