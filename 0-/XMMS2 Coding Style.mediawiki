@@ -30,9 +30,16 @@ Consider this as an informational ''guide'' - it is here simply to provide a com
 == Centralised exiting of functions ==
 * Functions should generally have a single exit (return) point.
 
-== Commenting ==
+== Commenting and Documentation ==
 * Comments should explain '''what''' the code is doing, not '''how'''. The ''how'' should be more or less obvious from the way the code is written.
 * Generally try to avoid putting comments in a function body - put comments at the head of the function instead (explaining what the function does)
+* C code should use C-style comments only:
+
+  /* this is a C comment */
+  // This is a C++ comment, not a C comment
+
+* Code is generally documented using [http://www.doxygen.org Doxygen]. Please [http://www.stack.nl/~dimitri/doxygen/manual.html learn] how to use this tool, if you want to contribute code to XMMS2.
+* Python code, on the other hand, is documented using [http://epydoc.sourceforge.net/ Epydoc] and is rather easy to [http://epydoc.sourceforge.net/epytext.html learn].
 
 == Macros, Enums, Inline functions and RTL ==
 * Names of macros defining constants and labels in enums should be capitalized. [http://lxr.linux.no/source/Documentation/CodingStyle?v=2.6.5#L344]
