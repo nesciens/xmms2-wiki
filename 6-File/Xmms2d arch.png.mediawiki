@@ -1,0 +1,1 @@
+simple overview of xmms2d design
