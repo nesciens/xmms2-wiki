@@ -1,5 +1,7 @@
 = Welcome to the XMMS2 Wiki. =
 
+(Guys! You have to do something with this! Everyone can edit text on your pages! Thanks!)
+
 This page tries to gather as much information as possible about XMMS2. Expect this to be filled with interesting information soon. This page is a wiki, so you could even help filling it with information. You could also help us replace that default-logo with the flower!
 
 == Documentation ==
