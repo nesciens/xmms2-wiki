@@ -1,0 +1,2 @@
+Below is a list of page locks/unlocks.
+See [[XMMS2_Wiki:Protected page]] for more information.
