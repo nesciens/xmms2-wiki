@@ -68,9 +68,9 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | mad
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | modplug
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | modplug
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | sid
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | sid
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | speex
 |-
