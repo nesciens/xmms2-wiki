@@ -14,3 +14,14 @@ If this doesn't work you can probably figure out what the problem is from the se
 Start xmms2d again and now it should work.
 
 Type 'xmms2' to list the available commands.
+
+== xmms2d options ==
+
+Here is a list of currently available xmms2d options:
+
+* -v - Increase verbosity
+* -V - Show XMMS2 version
+* -n - Disable logging
+* -o - Specify output plugin
+* -d - Daemonize, that is, run xmms2d without attaching it to a terminal
+* -p - Specify plugin path
