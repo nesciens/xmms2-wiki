@@ -1,20 +1,28 @@
 Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
 
-First of all, you may want to get to know the XMMS2 design and source:
+== XMMS2 Technical Details ==
 
 *[[Design of XMMS2]]
+*[[The Medialib]]
 *[http://xmms2.xmms.se/doxygen/html/index.html Doxygen documentation]
+*[[Writing XMMS2 Clients]] (''incomplete'')
+
+== Code.. and bugs! ==
+
+Before you start to hack you should read the documents about [[Using BitKeeper]] and the [[XMMS2 Coding Style]]!
+
+*[[Using BitKeeper]]
 *[[XMMS2 Source Trees]]
+*[[XMMS2 Coding Style]]
 *[http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
 
-Before you start to hack you should also read the documents about [[Using BitKeeper]] and [[XMMS2 Codingstyle]].
+
+== Ideas ==
 
 Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links..
 
 *[[Smart playlists]]
 *[[XMMS2 as a DJ station]]
-*[[The music library]]
 *[[Album Covers]]
 *[[MIDI client]]
 *[[medialib querier]]
-*[[Writing XMMS2 Clients]]
