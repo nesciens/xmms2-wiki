@@ -15,7 +15,7 @@ Before you start to hack you should read the documents about [[Using BitKeeper]]
 *[[XMMS2 Source Trees]]
 *[[XMMS2 Coding Style]]
 *[http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
-
+*[[Reporting bugs]]
 
 == Ideas ==
 
