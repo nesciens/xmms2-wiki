@@ -1,3 +1,5 @@
+{{Navbar}}
+
 This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now.
 
 = XMMS2 Client Guide =
