@@ -1,6 +1,6 @@
 == XMMS2 Platform Support Status ==
 
-List of platforms under which XMMS2 may be built and run. (Colours have the same meaning as component status colours.)
+List of platforms under which XMMS2 may be built and run. (Colours have the same meaning as [[Template:StatusLegend | component status colours]].)
 
 {| style="border: 1px dotted #000"
 ! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Platform
