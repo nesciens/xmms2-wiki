@@ -1,5 +1,34 @@
 This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now.
 
+= XMMS2 Client Guide =
+
+This guide will help you understand how to build an XMMS client. It's not aimed at any language more like a reference of how different signals work.
+
+== Choosing a Language ==
+XMMS2 client library comes with bindings to many languages, you should choose a language that suits you well. I recomend a Interpetated language since all compution is done in the server and a interpretated language will let you develop faster.
+
+== Connecting to XMMS2d ==
+To be able to communicate with xmms2d you need to connect. The clientlib provides a datastructure that symbolizes the connection called ''xmmsc_connection_t''. First you have to initialize the connection with ''xmmsc_init()''. Like this:
+
+ xmmsc_connection_t *connection;
+ connection = xmmsc_init ("My client name");
+
+The clientname is what will be presented to the xmms2d. This can not be NULL.
+
+Now we connect:
+
+ if (!xmmsc_connect (connection, NULL)) {
+   fprintf (stderr, "Connection failed, error: %s", xmmsc_get_last_error (connection));
+ }
+
+
+
+== Choosing a mainloop ==
+XMMS2 clients should be written asyncronous if they are using a GUI and therefore the choice of mainloop is kind of important. If you are using a widget toolkit there is a big chance that that toolkit provides you with a mainloop. For example GTK has GMainLoop and QT has it own too. You'll need to setup a callback from the mainloop to the xmmsipc. XMMS2 clientlib provides wrappers for some mainloops, but even if we don't provide a loop it will be fairly easy todo it yourself. 
+
+=== Intergrate xmmsipc in your mainloop ===
+After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_connection_t'' struct will be filled with a ipctransport. To extract the socket from this call ''xmmsc_ipc_fd_get()''. Then you feed this to your selectloop. When something is inbound on this socket you have to call ''xmmsc_ipc_io_in_callback()'' and when it disconnects you should call ''xmmsc_ipc_disconnect()''. Here we add select to our example:
+
 * Reference [[Design of XMMS2]] (section "XMMS2 Client Library" in particular. Or move that section to here?)
 * Clients should respect ''XMMS_PATH'' environment variable, if set.
 * Clients can store their config data in ''~/.xmms2/clients/''. Simple clients may get by with single conf files, like ''myclient.conf'', while more complex clients may use a subdirectory, such as ''advancedclient/''.
