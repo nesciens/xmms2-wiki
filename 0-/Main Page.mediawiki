@@ -4,9 +4,14 @@
 
 This wiki tries to gather as much information as possible about XMMS2. Please use the navigation bar above to browse around. Feel free to add more information (except where indicated otherwise). You could also help us replace that default flower logo with a nice XMMS2 logo! :)
 
-== XMMS2 News==
+== XMMS2 News ==
 
 {{News}}
+
+== XMMS2 Features ==
+
+List of features currently offered by XMMS2:
+{{FeatureList}}
 
 {{ComponentStatus}}
 
