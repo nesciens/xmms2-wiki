@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Some kind of tool to generate nice lists of music from the medialib.
 
 Lists that can be used to fill a portable mediaplayer.
@@ -9,3 +11,5 @@ Takes a max-size as argument and some kind expression of what kind of songs to p
                  crappy album, and btw, the most played metal-albums would be
                  nice too. And Hey! I just want full albums, don't splitt them,
                  except these songs, which are the only good ones on their albums.
+
+[[Category: Developer ideas]]
