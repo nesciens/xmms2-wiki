@@ -2,6 +2,9 @@
 
 The server is the part of XMMS2 that outputs music and keeps track of the playlist, effects, visualisation and the music library. The server is divided into objects that intercommunicate using signals.
 
+== Overview ==
+[[Image:Xmms2d_arch.png]]
+
 == The server objects ==
 
 Each object holds a very special functionality and these objects are exposed to the client for communication. The main objects are:
