@@ -1,4 +1,4 @@
-If you think you found a bug in XMMS2, please report it to the bugtracker at http://xmms2.xmms.org/mantis
+If you think you found a bug in XMMS2, please report it to the bugtracker at http://bugs.xmms2.xmms.org/
 
 If you encountered a crash, please also provide a backtrace.
 
