@@ -3,7 +3,7 @@
 '''Developer Release 1''' is the first release of XMMS 2 code, intended primarily for developers who might be interested in contributing code, plugins and working on clients. What it means:
 
 * Core functionality in the daemon has been implemented and major design changes are not planned.
-* The client API is relatively stable, so clients can be written without developers having to put a lot of work in maintaining the API to the latest version.
+* The client API is relatively stable, so clients can be written without developers having to put a lot of work in maintaining API compatibility to the latest version.
 
 '''NOTE:''' We are ''not'' at the DR1 stage yet, but we're close.
 
