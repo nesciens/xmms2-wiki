@@ -10,7 +10,6 @@
 == To Do ==
 * Fix include files {{Bug|93}}
 * Decoder API fix {{Bug|128}}
-* Fix [[Component:Medialib | Medialib]] logging
 * Ensure complete Doxygen coverage
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 * Update ''README'', ''INSTALL'' files
@@ -25,3 +24,4 @@
 == Done (Release Notes) ==
 
 [[Category:Releases]]
+* Fix [[Component:Medialib | Medialib]] logging
