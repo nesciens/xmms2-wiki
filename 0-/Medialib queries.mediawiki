@@ -31,6 +31,21 @@ Select the five first entries from the Medialib, fetch duration from the Propert
   5|Helt Off |Helt Off |Underlan                      |305005
 
 
+An example of what you can find in the property table for a medialib entry:
+  sqlite> SELECT key, value FROM Property WHERE id=887; 
+  resolved                |1
+  musicbrainz_albumid     |e6253a2b-ddc9-442b-8c45-f6e0daf616e3
+  musicbrainz_trmid       |482efcb5-0f7f-4eaf-98ab-8e1133507137
+  samplerate              |44100
+  duration                |276000
+  musicbrainz_artistid    |9aec0d9a-c5b3-45ab-839c-d60f18534437
+  bitrate                 |192
+  musicbrainz_albumtype   |album
+  musicbrainz_trackid     |7d8122d1-a965-40d4-8b0d-1a0051c3cb0b
+  musicbrainz_albumstatus |official
+  musicbrainz_sortname    |Mesh
+  tracknumber             |4
+
 
 
 Related links:
