@@ -15,6 +15,9 @@ The Output object is the one that "drives" XMMS2. It takes a playlist entry from
 === Playlist ===
 The playlist object is responsible for knowing which entries should be played and in which order. It also holds the media information for the entries within itself.
 
+==== Internal design ====
+The playlist is basically 2 classes and 3 objects. A manager that interract with the rest of the object and manage the 2 lists. One is the real playlist and the other one is the effective playlist. They are managing what is related to the GLists. The real is the playlist the user sees. The effective retain the information lost on deletion and the order the tracks are played.
+
 === Transport ===
 When an entry is selected for playback, the output will create a transport object for the URL. The URL will be fed to the appropiate plugin, which will determine the mimetype for the entry.
 
