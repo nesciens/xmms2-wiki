@@ -1,1 +1,3 @@
 copied from Wikipedia template: http://en.wikipedia.org/wiki/Template:Edit
+
+--> This template is probably useless and may be deleted. <--
