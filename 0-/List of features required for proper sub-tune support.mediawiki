@@ -10,15 +10,11 @@ This matter has moderate level of complexity due to differences in formats havin
 
 * Based on above information, the core should add to playlist/medialib/whatever the sub-tunes (IF KNOWN)
 
-* If number of subtunes is not known, just add the main file/tune. For this to work, there should be a special sub-tune selector control in clients (for CLI clients adding arbitrary subtunes should suffice) AND:
-
-  - A way for clients to query the number of subtunes.
-
-  - A way for plugins to signal clients/core that information has changed (number of subtunes for example).
+* If number of subtunes is not known, just add the main file/tune. For this to work, there should be asub-tune selector control in clients, see method #2 for that.
 
 == Method #2 ==
 
-* Just use a sub-tune selector as described in method #1.
+* Use a sub-tune selector (for CLI clients adding arbitrary subtunes should suffice).
 
 * A way for clients to query the number of subtunes.
 
