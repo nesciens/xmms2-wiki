@@ -25,10 +25,12 @@ This client is unofficially known as 'X2Player' and is primarily a tool for mani
 
 A client made in PHP is being worked on by [[Christopher Rosell]]. [http://cochrane.chrippa.org/xmms2/ Running example].
 
-== XMMS2Curse ==
+== XMMS2Curse and Unnamed PHP client ==
 
-A client based on ncurses is also being worked on by [[Christopher Rosell]]. Written in python.
-[http://evangelion.se/xmms2/xmms2curse-20041217.png Early screenshot]
+XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]]. 
+Unnamed PHP client is kind of dead at this time.
+
+More info here: http://evangelion.se/xmms2/
 
 == Hippopotamus ==
 
