@@ -31,3 +31,4 @@ For more information, please see the [http://www.sqlite.org/cvstrac/wiki?p=Perfo
 * http://www.sqlite.org
 * http://sqlite.org/vdbe.html
 * http://www.sqlite.org/php2004/slides-all.html
+* http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
