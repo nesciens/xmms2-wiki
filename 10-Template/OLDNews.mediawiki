@@ -1,9 +1,6 @@
 {{Newsitem|date=5 April 2005 (2005-04-05) CET|author=[[Tobias RundstrÃ¶m]]|title=Getting close to DR1|text=So finally we are cleaning up for a Developer Release. This will be exciting, all the team is confident that the current codebase is really neat. Keep an eye out as the [[Release:DR1 | Developer Release 1]] todo list items get taken care of. :)}}
-
 {{Newsitem|date=8 March 2005 (2005-03-08) CET|author=[[Tobias RundstrÃ¶m]]|title=Big changes|text=Good news, after a month of almost no code committed to the XMMS2 trees there are now a lot of big updates in the main tree. Anders finally merged his sample_t changes and I got around to change the xmms_ipc_msg_t struct. Next big thing is the playlist update that should be comming soon. There will soon be a wrap-up meeting about the first DR release. Stay tuned.}}
-
 {{Newsitem|date=21 February 2005 (2005-02-21) WST|author=[[Sham Chukoury]]|title=Logo proposals|text=Considering the recent trickle of new logo proposals, I've made a [[Logo]] page to keep track of it all. Got any cooler designs? Send it in! ;)}}
-
 {{Newsitem|date=10 February 2005 (2005-02-10) WST|author=[[Sham Chukoury]]|title=Wiki got a facelift|text=I've finished giving the wiki a bit of an overhaul, with gratuitous use of templates to implement all kinds of funky things like:
 * This news section
 * a new navigation bar
