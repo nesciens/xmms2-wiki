@@ -1,0 +1,4 @@
+<div style="border-left: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 0 0 0 0.5em; margin: 0 0 3em 0.5em"><big>'''{{{title}}}'''</big><br><small>{{{date}}} Submitted By <i>{{{author}}}</i></small>
+----
+<p style="padding: 0 8em 0 4em;">{{{text}}}</p>
+</div>
