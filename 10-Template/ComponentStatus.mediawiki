@@ -20,7 +20,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | OSS
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Diskwriter
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Diskwriter
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Jack
 |-
@@ -38,7 +38,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | pls
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | html
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | html
 |}
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Transport
@@ -76,13 +76,13 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | vorbis
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | wave
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | wave
 |}
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Effect plugins
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | eq (equaliser)
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | eq (equaliser)
 |}
 |}
 
