@@ -90,6 +90,6 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Visualisation | Visualisation]]
 |}
 
-* Please note that, while we try to maintain this data as up to date as possible, it is not automagically generated in any manner, so don't expect up-to-the-minute status updates.
+<nowiki>*</nowiki> Please note that, while we try to maintain this data as up to date as possible, it is not automagically generated in any manner, so don't expect up-to-the-minute status updates.
 
 {{ed|ComponentStatus|component status}}
