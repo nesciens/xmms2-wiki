@@ -4,4 +4,4 @@ My xmms2 related work:
 * Ruby bindings for xmmsclient
 * an experimental audioscrobbler client (not published yet ;p)
 
-You can reach me at tilman at code-monkey de
+There's probably more information at my website, http://code-monkey.de
