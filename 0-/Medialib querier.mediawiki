@@ -6,6 +6,9 @@ Lists that can be used to fill a portable mediaplayer.
 
 Takes a max-size as argument and some kind expression of what kind of songs to prefer when sizeof(medialib) > sizeof(mediaplayer)
 
+Maybe there should be a way to rate the songs so that one could specify to give preference to higher-rated songs.
+
+
  13:37 < anders> Fill my mp3player with random songs, but I prefer synth, and
                  make sure the latest added albums are there, exept this really
                  crappy album, and btw, the most played metal-albums would be
