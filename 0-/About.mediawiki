@@ -45,6 +45,6 @@ So, XMMS2 is definitely an audio player. But it is ''not'' a multimedia player -
 
 ;IRC : 
 * irc.xmms.se:6667 #xmms2 
-* [[#xmms2 IRC Quotes]] 
+* [[xmms2 IRC Quotes]] 
 
 [[Category: General]]
