@@ -42,7 +42,7 @@ This client is unofficially known as 'X2Player' and is primarily a tool for mani
 
 == PHP client ==
 
-A client made in PHP is being worked on by Christopher Rosell. [http://cochrane.chrippa.org/xmms2/ Running example].
+A client made in PHP is being worked on by [[Christopher Rosell]]. [http://cochrane.chrippa.org/xmms2/ Running example].
 
 == XMMS2Curse ==
 
