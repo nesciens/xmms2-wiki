@@ -1,6 +1,10 @@
+{{Navbar}}
+
 Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
 
 == XMMS2 Technical Details ==
+
+For those who want to know more about how it works, and how to get clients to play nice.
 
 *[[Design of XMMS2]]
 *[[The Medialib]]
@@ -9,7 +13,7 @@ Here we collect all information about developing on/against XMMS2. I also store 
 
 == Code.. and bugs! ==
 
-Before you start to hack you should read the documents about [[Using BitKeeper]] and the [[XMMS2 Coding Style]]!
+For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the documents about [[Using BitKeeper]] and the [[XMMS2 Coding Style]]!
 
 *[[Using BitKeeper]]
 *[[XMMS2 Source Trees]]
