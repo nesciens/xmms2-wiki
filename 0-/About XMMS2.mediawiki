@@ -4,7 +4,7 @@ http://www.ratol.fi/~mhamalai/xmms2s.png
 
 == Foreword ==
 
-My intention is to address various questions about feasibility and goals of the XMMS2 project and contrast the design in comparision to other similar projects (including GStreamer, mdp, BeepMP, etc.) This document is not as much about "how", but more of "why".
+Intention of this document is to address various questions about feasibility and goals of the XMMS2 project and contrast the design in comparision to other similar projects (including GStreamer, mdp, BeepMP, etc.) This document is not as much about "how", but more of "why".
 
 == Why is XMMS2? ==
 
