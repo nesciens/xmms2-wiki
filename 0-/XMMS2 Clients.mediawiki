@@ -44,5 +44,9 @@ A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being develope
 
 This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
 
+== XMMS2-AMP ==
+
+This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
+
 [[Category: General]]
 [[Category: Users]]
