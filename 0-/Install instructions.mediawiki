@@ -59,4 +59,8 @@ The MAD source package does not install a ''mad.pc'' file for ''pkg-config'' to 
  Libs: -L${libdir} -lmad -lm
  Cflags: -I${includedir}
 
+== See Also ==
+* [[Using BitKeeper]]
+* [http://xmms2.xmms.org/snapshots/ snapshot page]
+
 [[Category: General]]
