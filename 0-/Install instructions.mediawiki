@@ -31,3 +31,7 @@ Run ''scons <prefix>'' to install XMMS2. Where prefix is usually /usr/local.
 == Cleaning up ==
 
 ''scons -c'' will clean the objects and binaries.
+
+=== Uninstalling ===
+''scons -c /path/'' will uninstall any files installed under /path
+For example, if you installed xmms2 under /usr/local (default), run ''scons -c /usr/local''
