@@ -1,3 +1,5 @@
+{{Navbar}}
+
 = README =
 
 This is the new generation of the XMMS player.
