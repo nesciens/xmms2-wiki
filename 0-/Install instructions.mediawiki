@@ -9,8 +9,8 @@ You will '''need''' the following things to build XMMS2.
 * [http://www.python.org/ Python] / [http://www.scons.org/ SCons].
 * [http://www.gtk.org/ GLib]
 * [http://www.underbit.com/products/mad/ MAD]
-* [http://www.freedesktop.org/software/dbus/ DBus]
-* [http://www.sqlite.org SQLite]
+* [http://www.freedesktop.org/software/dbus/ DBus] (>= 0.22)
+* [http://www.sqlite.org SQLite] (2.8.x)
 
 These libraries are not '''needed''' but probably a good idea.
 
