@@ -43,4 +43,4 @@ A PHP client for XMMS2 can be found on [http://cochrane.chrippa.org/xmms2/ Chrip
 
 == OSD client ==
 
-This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from xmms2-shell and the test python client in the XMMS2 source tree. You can [http://eleusis.f2o.org/projects/xmms2/xmms2-osd.tar.bz2 download] the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
+This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can [http://eleusis.f2o.org/projects/xmms2/xmms2-osd.tar.bz2 download] the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
