@@ -1,14 +1,23 @@
 {| style="border: 1px dotted #000"
 |+ '''Status colour legend'''
+|-
+! Colour !! Description
+|-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Component is good
+| style="border-bottom: 1px dotted #000" | Works in all or most common cases.
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Component is partially good
+| style="border-bottom: 1px dotted #000" | Compiles, but has some issues at runtime.
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | Component is broken
+| style="border-bottom: 1px dotted #000" | Doesn't compile, or has major runtime issues.
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | Component is pending changes
+| style="border-bottom: 1px dotted #000" | May currently work, but will soon undergo some design or other extensive change.
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bff" | Component is planned
+| style="border-bottom: 1px dotted #000" | Component doesn't exist yet, but is planned.
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Component status unknown
+| style="border-bottom: 1px dotted #000" | Status currently unknown.
 |}
