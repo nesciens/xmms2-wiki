@@ -1,1 +1,1 @@
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | {{{1}}}
+| style="background-color: #bfb; border-left: 10px dotted #ccc; border-bottom: 1px dotted #ccc" | {{{1}}}
