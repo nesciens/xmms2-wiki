@@ -5,6 +5,7 @@ First of all, you may want to get to know the XMMS2 design and source:
 *[[Design of XMMS2]]
 *[http://xmms2.xmms.se/doxygen/html/index.html Doxygen documentation]
 *[[XMMS2 Source Trees]]
+*[http://xmms2.xmms.org/mantis/ XMMS2 Bug Tracking System]
 
 Before you start to hack you should also read the documents about [[Using BitKeeper]] and [[XMMS2 Codingstyle]].
 
