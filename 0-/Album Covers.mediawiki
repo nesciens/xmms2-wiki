@@ -31,4 +31,11 @@ Summary:
 * Some smart way to store the files so that they will not be overwritten or redownloaded. The 4:th scenario seems most likly, and then it would be up to the client to store the cover.
 * Some way to write fetchers, this is easy to do in python or some other highlevel language, but this adds complexity when attaching it to the clientlib.
 
+== Comments ==
+
+[[Sham Chukoury]] 2005-02-10
+
+I reckon maybe album covers could be handled client-side only, using metatada grabbed from the playlist/mlib...
+----
+
 [[Category: Developer ideas]]
