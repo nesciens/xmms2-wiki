@@ -40,7 +40,7 @@ This client is unofficially known as 'X2Player' and is primarily a tool for mani
 
 == PHP client ==
 
-A PHP client for XMMS2 can be found on [http://cochrane.chrippa.org/xmms2/ Chrippa's web site].
+Chrippa is working on a client made in PHP. [http://cochrane.chrippa.org/xmms2/ Running example].
 
 == Cocoa client ==
 
