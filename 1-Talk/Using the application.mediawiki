@@ -1,0 +1,3 @@
+this page should be turned into a more detailed info page about the cli client
+
+[[User:Eleusis|Eleusis]] 21:49, 9 Feb 2005 (CET)
