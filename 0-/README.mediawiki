@@ -34,7 +34,7 @@ XMMS2 itself and the design goals. I will try to clarify them.
 * A: Our aim is to be able to port XMMS basically everywhere, but development is mainly done on Linux/x86, Linux/PPC and Mac OSX. Support for other platforms is currently secondary, although it has been known to work on OpenBSD and Solaris.
 
 * Q: What about Windows?
-* A: Our code should run on Windows without any problems, being ANSI-C. The major showstopper currently is that the D-BUS library has not been ported to Win32 yet, and since XMMS2 is heavily based around this library, we have to wait for a port. Of course you can port it yourself and thus help XMMS2 and other projects using D-BUS.
+* A: Our code should run on Windows without any problems, being ANSI-C.
 
 == Common questions about usage: ==
 
