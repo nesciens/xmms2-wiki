@@ -8,81 +8,81 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | IPC (Inter Process Communication)
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | UNIX Socket
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:UNIX Socket | UNIX Socket]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | TCP Socket
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:TCP Socket | TCP Socket]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Output
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Output | Output]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA|ALSA]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA | ALSA]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | OSS
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:OSS | OSS]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Diskwriter
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Diskwriter | Diskwriter]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | Jack
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:Jack | Jack]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Sun
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Sun | Sun]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | coreaudio
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:coreaudio | coreaudio]]
 |}
 |-
-| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Medialib
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Medialib | Medialib]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | Playlist
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:Playlist | Playlist]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | m3u
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:m3u | m3u]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | pls
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:pls | pls]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | html
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:html | html]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Transport
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Transport | Transport]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | file
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:file | file]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | curl
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:curl | curl]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | HTTP
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:HTTP | HTTP]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | FTP
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:FTP | FTP]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | ices
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:ices | ices]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | samba
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:samba | samba]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | cdde
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:cdde | cdde]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Decoder
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Decoder | Decoder]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | FLAC
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:FLAC | FLAC]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | mad
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:mad | mad]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | modplug
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:modplug | modplug]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | sid
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:sid | sid]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | speex
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:speex | speex]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | vorbis
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:vorbis | vorbis]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | wave
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:wave | wave]]
 |}
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | Effect plugins
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Effects | Effect plugins]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | eq (equaliser)
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:equaliser | eq (equaliser)]]
 |}
 |}
 
