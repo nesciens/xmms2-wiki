@@ -1,6 +1,6 @@
 I'm working on a rant/document [[about XMMS2]], especially the following topics:
-<nowiki>
-- Why XMMS2?
-- What XMMS2 is and what it is not?
-- How is XMMS2 different from GStreamer?
-</nowiki>
+* Why XMMS2?
+* What XMMS2 is and what it is not?
+* How is XMMS2 different from other projects?
+
+My intention is to address various questions about feasibility and goals of the XMMS2 project and contrast the design in comparision to other similar projects (including GStreamer, mdp, BeepMP, etc.)
