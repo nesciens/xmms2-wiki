@@ -1,5 +1,9 @@
+{{Navbar}}
+
 kristian <dot> benoit <at> usherbrooke <dot> ca
 
 I'm studying computer science at the University of Sherbrooke,
 I used to be in stage at Matrox ltd.
 I'm a generalist in xmms2, I fixed a few bug/feature request in the playlist.
+
+[[Category: People]]
