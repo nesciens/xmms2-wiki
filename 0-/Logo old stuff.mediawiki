@@ -13,7 +13,7 @@ An XMMS2 logo should be futuristic, cool and stylish. Not plotted with detail bu
 === Note about submissions ===
 To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
 
-=== Proposals ===
+== Proposals ==
 
 * [http://people.0x63.nu/~andersg/xmms2-logo-02.png Anders' 'X2' concept]
 * [http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
@@ -23,10 +23,11 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 * [[boarder8925's logo proposals]]
 * [[Media:Xmm2logo00.png | shadowskill's proposal]]
 * [http://srad.multiply.com/ Adaum Raul]: [[Media:Xmms2-1.jpg | concept 1]], [[Media:Xmms2-2.jpg | concept 2]]
-* [http://www.creatigraph.com/xmms.png Fred' 'Fun' just a test..] - contact fred@creatigraph.com
-* [http://www.creatigraph.com/xmms-2.png Fred' 'Fun' vertion-2..] - contact fred@creatigraph.com
-* [http://www.creatigraph.com/xmms-nb.png Fred' 'Fun' bw-test..] - contact fred@creatigraph.com
-* [http://www.creatigraph.com/xmms-test.png Fred' 'Fun' page-test..] - contact fred@creatigraph.com
+* Fred (fred@creatigraph.com):
+** [http://www.creatigraph.com/xmms.png Fred' 'Fun' just a test..]
+** [http://www.creatigraph.com/xmms-2.png Fred' 'Fun' vertion-2..]
+** [http://www.creatigraph.com/xmms-nb.png Fred' 'Fun' bw-test..]
+** [http://www.creatigraph.com/xmms-test.png Fred' 'Fun' page-test..]
 
 
 [[Category: General]]
