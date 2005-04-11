@@ -30,3 +30,31 @@ Where a grouptype could be a album, artist, playlist, whatever.
 
 [[Category:Components]]
 [[Category:XMMS2 Technical Details]]
+
+= Indexthread (mediainfo reader) =
+
+== How it works today ==
+
+playlist calls medialib_entry_new() entry_new puts the new mid in the readerqueue and wakes the condition.
+The reader will do the following:
+* Check if the entry is in the database (resolved=1)
+** If resolved==1 the thread will compare the last modification timestamp (with lastmod call on transport) to the value in the db
+*** If transport lmod > db lmod the entry is reindexed (by running get_medinfo on the decoder)
+*** else thread will select next entry
+** else resolved==0 index the entry
+
+when a entry is indexed the resolved flag is set to 1
+
+== How It SHOLUD work ==
+
+playlist calls medialib_entry_new() which will add a entry with the resolved=0 and wake the readerqueue.
+The reader will do the following:
+* while(select url from Media where resolved = 0 limit 1)
+* for each file check the lmod just like above
+* if transport_open() fails it should remove the entry from the lib
+* index the file
+* update resolved flag
+
+when we rehash we set the entries we want to rehash resolved flag to 0 and wake the readerqueue.
+
+the new design will remove the use for the lock and the memory allocation of the queue. much faster!!!11!!
