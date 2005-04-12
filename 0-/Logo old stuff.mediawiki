@@ -28,6 +28,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** [http://www.creatigraph.com/xmms-2.png Fred' 'Fun' vertion-2..]
 ** [http://www.creatigraph.com/xmms-nb.png Fred' 'Fun' bw-test..]
 ** [http://www.creatigraph.com/xmms-test.png Fred' 'Fun' page-test..]
+* [[Henrik's proposal]]
 
 
 [[Category: General]]
