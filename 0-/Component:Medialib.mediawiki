@@ -20,17 +20,6 @@ We should also have some kind of grouping. Like this:
 
 Where a grouptype could be a album, artist, playlist, whatever.
 
-
-==See also==
-* [[The Medialib]]
-* [[Design of XMMS2]]
-
-==External Links==
-* [http://en.wikipedia.org/wiki/Comparison_of_media_players Comparison of media players]
-
-[[Category:Components]]
-[[Category:XMMS2 Technical Details]]
-
 = Indexthread (mediainfo reader) =
 
 == How it works today ==
@@ -58,3 +47,14 @@ The reader will do the following:
 when we rehash we set the entries we want to rehash resolved flag to 0 and wake the readerqueue.
 
 the new design will remove the use for the lock and the memory allocation of the queue. much faster!!!11!!
+
+
+==See also==
+* [[The Medialib]]
+* [[Design of XMMS2]]
+
+==External Links==
+* [http://en.wikipedia.org/wiki/Comparison_of_media_players Comparison of media players]
+
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
