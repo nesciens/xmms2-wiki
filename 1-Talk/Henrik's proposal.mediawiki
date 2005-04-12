@@ -1,13 +1,13 @@
-08:46 <anders> <3 <3 <3 <3 <3 <3 <3 <3
-08:46 <eleusis> :D
-08:47 <eleusis> too bad he got the XMMS acronym wrong :P
-08:47 <eleusis> for xmms2
-09:03 <tru> do we want to follow up on henriks logotype? or do we think it sucks? :)
-09:03 <eleusis> i think it's an interesting idea
-09:04 <eleusis> but it doesn't seem to have much to do with music :P
-09:10 <anders> I think it should be in latin.. Something like: "sigillum player musicum 
-               platformii crossum"
-09:14 <tru> I think the idea is good. but I think the X2 i the middle should be a pattern 
-            that you could use without the frame. 
-09:16 <anders> Yes, I was just about to point that out.
-09:16 <anders> That it's a bit to "bloated" to be able to do a very small icon..
+ 08:46 <anders> <3 <3 <3 <3 <3 <3 <3 <3
+ 08:46 <eleusis> :D
+ 08:47 <eleusis> too bad he got the XMMS acronym wrong :P
+ 08:47 <eleusis> for xmms2
+ 09:03 <tru> do we want to follow up on henriks logotype? or do we think it sucks? :)
+ 09:03 <eleusis> i think it's an interesting idea
+ 09:04 <eleusis> but it doesn't seem to have much to do with music :P
+ 09:10 <anders> I think it should be in latin.. Something like: "sigillum player musicum 
+                platformii crossum"
+ 09:14 <tru> I think the idea is good. but I think the X2 i the middle should be a pattern 
+             that you could use without the frame. 
+ 09:16 <anders> Yes, I was just about to point that out.
+ 09:16 <anders> That it's a bit to "bloated" to be able to do a very small icon..
