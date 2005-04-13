@@ -18,12 +18,12 @@
 * Get some real test data/testcases (devising procedures/processes to make sure every module works as expected, plus defining a set of sound samples of various formats to make sure decoder plugins work)
 * ''Maybe'' move the wiki to a better machine
 * '''See also''': [http://genesis.xmms.se/~andersg/xmms2-short-term-roadmap.txt Anders' roadmap]
-* Fix so that we don't crash on quit {{Bug|158}}
 
 == Done (Release Notes) ==
 * Fix [[Component:Medialib | Medialib]] logging
 * Fix ''python_loop'' in python bindings
 * ''Maybe'' fix ''scons install'' hang issue
 * Don't quit when we don't get the output inited {{Bug|157}}
+* Fix so that we don't crash on quit {{Bug|158}}
 
 [[Category:Releases]]
