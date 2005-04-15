@@ -24,7 +24,7 @@ Some links:<br />
 http://www.amazon.com/ -  generic<br />
 http://www.psyshop.com/ - trance<br />
 http://composers.c64.org/ - SID<br />
-
+http://www.metal-archives.com/ - metal<br />
 
 Summary:
 * Some nice client api.
