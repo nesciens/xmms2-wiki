@@ -26,4 +26,10 @@
 * Don't quit when we don't get the output inited {{Bug|157}}
 * Fix so that we don't crash on quit {{Bug|158}}
 
+=== 2005-04-16 ===
+* we now use sqlite3
+* removed all encoded paths in xmms, this means that we don't need to call encode/decode path all the time. it was a legacy from dbus anyway.
+* lot of sqlite tuning. trying to get the speed up.
+* added xmms2 mlib addpath command that just sends a path to the server who recursivly adds all the entries under that path to the medialib.
+
 [[Category:Releases]]
