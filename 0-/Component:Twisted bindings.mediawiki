@@ -1,0 +1,1 @@
+Twisted is a asyncronous core for Python. XMMS2 ships a reactor that can interact with twisted. Read more about twisted at http://www.twistedmatrix.com/
