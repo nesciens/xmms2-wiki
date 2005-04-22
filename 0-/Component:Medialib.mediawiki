@@ -20,21 +20,17 @@ We should also have some kind of grouping. Like this:
 
 Where a grouptype could be a album, artist, playlist, whatever.
 
+= Compilation thoughts =
+
+Clients should display complations / VA albums nicely instead of cludged under each artist. We should have a flag in medialib if a entry is a part of a compilation or not. This should be read from id3/vorbiscomment if available (don't count on it) and we should have an alternative detection mode. My suggestion is something like this:
+
+* Either we can set a path in the configuration where albums should be treated as va. ie. xmms2 config medialib.va_album_path=/music/Compilations;/music/Soundtracks, files under this directory will have the XMMS_MEDIALIB_ENTRY_PROPERTY_COMPLILATION set to 1.
+* Or we do something more funky where we in the reader thread keep track of albums and match COMPILATION=1 if the artist on the albums track are different. This could be a problem if you don't add all the tracks on the album at the same time, also if different albums are named the same, how do we handle that?
+
+
 = Indexthread (mediainfo reader) =
 
-== How it works today ==
-
-playlist calls medialib_entry_new() entry_new puts the new mid in the readerqueue and wakes the condition.
-The reader will do the following:
-* Check if the entry is in the database (resolved=1)
-** If resolved==1 the thread will compare the last modification timestamp (with lastmod call on transport) to the value in the db
-*** If transport lmod > db lmod the entry is reindexed (by running get_medinfo on the decoder)
-*** else thread will select next entry
-** else resolved==0 index the entry
-
-when a entry is indexed the resolved flag is set to 1
-
-== How It SHOLUD work ==
+== How it works ==
 
 playlist calls medialib_entry_new() which will add a entry with the resolved=0 and wake the readerqueue.
 The reader will do the following:
@@ -45,9 +41,6 @@ The reader will do the following:
 * update resolved flag
 
 when we rehash we set the entries we want to rehash resolved flag to 0 and wake the readerqueue.
-
-the new design will remove the use for the lock and the memory allocation of the queue. much faster!!!11!!
-
 
 ==See also==
 * [[The Medialib]]
