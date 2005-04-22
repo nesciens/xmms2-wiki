@@ -2,6 +2,15 @@
 
 Info about the libao output plugin...
 
+This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/libao here]
+
+
+== TODO ==
+
+There are some comments in the code about what needs to be done.  This is somewhat of a summary of those comments.
+
+It needs some work to fully utilize the libao api.  For example, the ao_driver_info() call could be used to obtain some kind of configuration information.  And libao has a separate call for opening file based outputs (kind of like the disk-write plugin for xmms1). It would be nice to figure out what the default plugin is and then use the appropriate call.
+
 ==See also:==
 * [[Component:Output | Output]]
 
