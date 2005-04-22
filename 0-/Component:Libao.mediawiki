@@ -1,0 +1,10 @@
+{{Navbar}}
+
+Info about the libao output plugin...
+
+==See also:==
+* [[Component:Output | Output]]
+
+[[Category:Output Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
