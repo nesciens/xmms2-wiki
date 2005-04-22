@@ -1,0 +1,21 @@
+{{Navbar}}
+
+You can submit code for inclusion into the main XMMS2 tree for various reasons:
+
+* bug fixes
+* new plugins or features
+* cleanups, better documentation
+
+The XMMS2 development team reserves the right to include to exclude code at its own discretion.
+
+== Requirements ==
+In order to be considered for inclusion, your code should meet the following requirements:
+
+* comply with the [[XMMS2 Coding Style]]
+* be licensed under the [http://www.gnu.org/copyleft/lesser.html LGPL]. (or under a [http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses GPL-compatible] license?)
+* does not violate the [[Design of XMMS2]] (e.g. some really dodgy hack to allow XMMS2 to play video.. somehow)
+
+== How to do it ==
+[[About#Contact_info | Contact us]] either via the mailing list or on IRC. You may attach patches to e-mails, or publish the code on the web and provide a URL. If you're fixing bugs, or otherwise modifying code already in the main tree, you may want to read the [[Using BitKeeper]] page.
+
+[[Category:Developer info]]
