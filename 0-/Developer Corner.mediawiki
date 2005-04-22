@@ -21,6 +21,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 *[http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
 *[[Reporting bugs]]
 *[http://openlogging.org:8080/forsaken.debian.as/tru-20030128124806-16918-64fddd717141b6fa OpenLogging page] (tracks changeset activity)
+*[[Submitting code]]
 
 == Ideas ==
 
