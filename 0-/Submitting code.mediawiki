@@ -15,6 +15,11 @@ In order to be considered for inclusion, your code should meet the following req
 * be licensed under the [http://www.gnu.org/copyleft/lesser.html LGPL]. (or under a [http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses GPL-compatible] license?)
 * does not violate the [[Design of XMMS2]] (e.g. some really dodgy hack to allow XMMS2 to play video.. somehow)
 
+=== Suggestions ===
+
+* Make sure that your code Works(tm) before submitting it, and that it doesn't introduce any major bugs (no bugs at all, would be preferred, of course ;).
+* It could make it easier for us if you provide the necessary ''SConscript'' files to build your code, if needed. (or modify the ''SConstruct'', ''xmmsconf.py'' or ''xmmsenv.py'' files as needed - but ''please'' try not to break the existing build system)
+
 == How to do it ==
 [[About#Contact_info | Contact us]] either via the mailing list or on IRC. You may attach patches to e-mails, or publish the code on the web and provide a URL. If you're fixing bugs, or otherwise modifying code already in the main tree, you may want to read the [[Using BitKeeper]] page.
 
