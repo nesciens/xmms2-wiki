@@ -2,7 +2,7 @@
 
 Info about the libao output plugin...
 
-This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/libao here].
+This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/ao here].
 
 == Configuration ==
 Libao uses a default driver that is specified in its configuration files (/etc/libao.conf for ''system-wide options'' and ~/.libao for ''personal options'').  The personal file take precedence over the system-wide files. Lines in these files take the form:
