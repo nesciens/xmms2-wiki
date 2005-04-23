@@ -2,14 +2,34 @@
 
 Info about the libao output plugin...
 
-This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/libao here]
+This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/libao here].
 
+== Configuration ==
+Libao uses a default driver that is specified in its configuration files (/etc/libao.conf for ''system-wide options'' and ~/.libao for ''personal options'').  The personal file take precedence over the system-wide files. Lines in these files take the form:
+
+option=value
+
+Supported options are :
+
+default_driver - this specifes the driver that libao should use by default.
+
+Acceptable values are
+* null
+* alsa - old alsa (dont use this.  i think you want the other one)
+* alsa09 - new version of alsa 
+* esd - ESound Daemon
+* irix
+* oss - Open Sound System
+* sun
+* aixs
+
+The XMMS2 plugin does not currently support ''write to file'' plugins even though libao does.
 
 == TODO ==
 
 There are some comments in the code about what needs to be done.  This is somewhat of a summary of those comments.
 
-It needs some work to fully utilize the libao api.  For example, the ao_driver_info() call could be used to obtain some kind of configuration information.  And libao has a separate call for opening file based outputs (kind of like the disk-write plugin for xmms1). It would be nice to figure out what the default plugin is and then use the appropriate call.
+It needs some work to fully utilize the libao api.  For example, the ao_driver_info() call could be used to obtain some kind of configuration information. 
 
 ==See also:==
 * [[Component:Output | Output]]
