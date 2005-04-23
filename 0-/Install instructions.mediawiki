@@ -8,7 +8,7 @@ XMMS2 has still not been released to the public, thus there are no binaries or r
 
 You will '''need''' the following things to build XMMS2.
 
-* [http://www.python.org/ Python] / [http://www.scons.org/ SCons]. (>= 0.94)
+* [http://www.python.org/ Python] (>=2.2.1)/ [http://www.scons.org/ SCons]. (>= 0.94)
 * [http://www.gtk.org/ GLib] (>= 2.2.0)
 * [http://www.underbit.com/products/mad/ MAD]
 * [http://www.sqlite.org SQLite] (3.2.x)
