@@ -1,3 +1,7 @@
+;2005-04-23
+ 17:25 <nano> DraX: You BSD dudes seem to get confused on feature completeness vs bloat all the
+             time.
+
 ;2005-04-11:
  22:42 <tru> anders: do you want to review or should we push it to master and let nano and 
              eleusis find the problems? ;)
