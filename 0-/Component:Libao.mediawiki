@@ -22,6 +22,7 @@ Acceptable values are
 * oss - Open Sound System
 * sun
 * aixs
+* arts - KDE sound server (this is supported in devel builds of libao)
 
 The XMMS2 plugin does not currently support ''write to file'' plugins even though libao does.
 
