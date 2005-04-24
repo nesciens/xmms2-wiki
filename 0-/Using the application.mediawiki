@@ -28,6 +28,8 @@ Here is a list of currently available xmms2d options:
 * -d - Daemonize, that is, run xmms2d without attaching it to a terminal
 * -p - Specify plugin path
 
+If you want xmms2d to listen for requests via TCP you should alter the config. xmms2 config core.ipcsocket tcp://0:<port> and then restart.
+
 == xmms2 client options ==
 
 The basic CLI (command line interface) xmms2 client can use alternative paths for IPC. Simply set the XMMS_PATH environment variable to the appropriate path and then use the client.
