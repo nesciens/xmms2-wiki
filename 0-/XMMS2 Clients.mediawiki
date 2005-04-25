@@ -9,7 +9,7 @@ This is the simple client that currently comes with XMMS2 itself. (source code f
 
 == Euphoria ==
 
-Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development. Euphoria is maintained by [[Tilman Sauerbeck]] and is currently being rewritten. Please note that the Euphoria code in the EFL CVS repository is ''not'' the latest code and should not be built.
+Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development. Euphoria is maintained by [[Tilman Sauerbeck]] and is currently being rewritten. It can be found in the Enlightenment CVS repository.
 
 == xmms2-shell ==
 
