@@ -1,0 +1,5 @@
+{{Navbar}}
+
+Generally I make sure xmms2 runs on FreeBSD. Though I am also developing a gtk2+ client in C called [[XMMS2_Clients#xmms2play|xmms2play]].
+
+I can be reached at drax at stampede dot org.
