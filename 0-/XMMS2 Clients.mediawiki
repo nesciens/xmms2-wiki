@@ -55,5 +55,9 @@ This will be a fully featured client that includes a highly configurable skinnin
 
 XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
 
+== xmms2play ==
+
+xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalistic design. It does not include as playlist, instead intending for external applications such as medialib-ui to be used for that purpose. [http://www.stampede.org/~drax/xmms2play-0.03.tar.gz|xmms2play-0.03] is the first release with a marquee and as such the marquee is a little buggy (it will sometimes put extra characters onto the end of the rotated string). Client written by [[Alexander Botero-Lowry]].
+
 [[Category: General]]
 [[Category: Users]]
