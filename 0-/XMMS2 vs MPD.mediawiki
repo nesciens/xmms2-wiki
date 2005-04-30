@@ -28,11 +28,11 @@ All the metadata in the [[Component:Medialib | Medialib]] can be searched using 
 ; Easy to import new songs:
 MPD can check for new songs in the given 'music directory' after starting up. This is not comparable to XMMS2, as XMMS2 only knows about URLs added to its playlist, not whole directories of music files.
 ; Buffer support for playback (prevents skipping due to high load or network latency):
-Unknown
+XMMS2 supports this.
 ; Gapless playback (great for live albums):
 Unknown
 ; Crossfading support:
-Unknown
+XMMS2 does not support crossfading yet.
 ; Seeking support:
 Works in XMMS2, as well as any decent music player out there. ;)
 ; Save, Load, and Manage Playlists (in m3u format)
