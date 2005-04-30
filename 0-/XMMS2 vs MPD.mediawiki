@@ -1,0 +1,83 @@
+{{Navbar}}
+
+From an MPD ([http://www.musicpd.org Music Player Daemon]) user's perspective, XMMS2 does not seem very different. That is true, to a certain extent - both MPD and XMMS2 are daemons that play music files and can be controlled remotely over a network. Read on for more details..
+
+== Similarities ==
+Generally obvious similarities.. Both XMMS2 and MPD:
+
+* have a metadata database or library.
+* can be controlled remotely over a network, by multiple clients.
+
+== Feature comparison ==
+This list taken from the [http://mpd.wikicities.com/wiki/Features MPD feature list] (Copyright not asserted, fair use assumed)
+
+; Can play over a network stream using icecast2:
+XMMS2 supports icecast via the [[Component:ices | icecast]] effect plugin.
+; Plays MP3, Ogg Vorbis, FLAC, MP4/AAC, Mod, Musepack, and wave files:
+XMMS2 can currently play MP3, Ogg Vorbis, FLAC, Mod, wave files. Other formats can be supported via appropriate decoder plugins.
+; Remotely control MPD over a network (IPv4 and IPv6 supported):
+XMMS2 can be controlled via UNIX sockets or TCP sockets. IPv4 sockets are known to work.
+; Play MP3 and Ogg Vorbis streams:
+XMMS2 can play MP3 and Ogg Vorbis streams over various transport protocols: [[Component:HTTP | HTTP]], [[Component:samba | Samba]], and a few others, via [[Component:GnomeVFS | GnomeVFS]].
+; Easy to Install:
+XMMS2 has not had any stable releases yet, therefore this cannot be compared.
+; Stores ID3 (id3v1 and id3v2) tag information (MP3s, FLAC's, and AAC's); Stores Vorbis Comments information (Ogg's and FLAC's); Stores apev2 tag information (musepack); Stores MP4 metadata information (MP4/AAC's):
+Various decoder plugins pass metadata to the daemon to be stored in the [[Component:Medialib | Medialib]] when playing files.
+; ID3/Vorbis information can be searched:
+All the metadata in the [[Component:Medialib | Medialib]] can be searched using SQL queries.
+; Easy to import new songs:
+MPD can check for new songs in the given 'music directory' after starting up. This is not comparable to XMMS2, as XMMS2 only knows about URLs added to its playlist, not whole directories of music files.
+; Buffer support for playback (prevents skipping due to high load or network latency):
+Unknown
+; Gapless playback (great for live albums):
+Unknown
+; Crossfading support:
+Unknown
+; Seeking support:
+Works in XMMS2, as well as any decent music player out there. ;)
+; Save, Load, and Manage Playlists (in m3u format)
+XMMS2 can load and save playlists in the following formats: [[Component:m3u | M3U]], [[Component:pls | PLS]], [[Component:html | HTML]]. More playlist formats can be supported via appropriate plugins. XMMS2 can also save playlists to the [[Component:Medialib | Medialib]] and reload them.
+; Volume control (OSS, Alsa, and software mixers)
+Works in XMMS2, as well as any decent music player out there. ;)
+; Wide range of audio devices supported:
+XMMS2 can output to the following: [[Component:ALSA | ALSA]], [[Component:OSS | OSS]], [[Component:Diskwriter | Disk]], [[Component:Jack | Jack]], [[Component:Sun | Sun]], [[Component:coreaudio | coreaudio]]. More output methods can be supported via appropriate plugins.
+; Minimal hardware requirements:
+So far, development of XMMS2 has focused on making sure things work as they're supposed to, and on ensuring a consistent design of the system. There have been no real optimisations to make things run as fast as possible, but that can probably be achieved before a stable release. xmms2d is known to have worked on a Pentium 133MHz machine with 48MB RAM (running Debian Stable).
+; Tested on Compatibility many different operating systems:
+XMMS2 is known to work on Linux, Mac OS X and various flavours of BSD. Support for Microsoft Windows is definitely planned, with possible support for mobile devices.
+
+== Comparison with MPD2 roadmap ==
+This list taken from [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans Music Player Daemon Version 2 Plans] (Copyright not asserted, fair use assumed)
+
+=== Main plans ===
+
+; Language<nowiki>:</nowiki> C++:
+XMMS2 is written in C.
+; Make everything OO:
+Not comparable.
+; Use threads (will allow much more flexibility for what we want todo):
+XMMS2 uses threads to run the main components: [[Component:Transport | Transport]], [[Component:Decoder | Decoder]], [[Component:Output | Output]]. See also: [[Design of XMMS2]]
+; Plugin architecture w/ a python interface for scripting:
+XMMS2 uses plugins to read data, decode it, output sound data, read and write playlists.
+; Playlists; Allow creation of playlists* on the fly; Allow attaching a playlist to an audio device or stream; Playlist plugins to get different types of playlists:
+(No idea what 'creation of playlist on the fly' means..) XMMS2 only has a single playlist. XMMS2 can load and save playlists in the following formats: [[Component:m3u | M3U]], [[Component:pls | PLS]], [[Component:html | HTML]]. More playlist formats can be supported via appropriate plugins. XMMS2 can also save playlists to the [[Component:Medialib | Medialib]] and reload them.
+; Queue Playlist:
+?
+; DB:
+The Medialib in XMMS2 is not as flexible as the DB planned for MPD2. At the moment, there is only one SQLite database always located at ''~/.xmms2/medialib.db''. The problem with adding different database backends is that those different backends may require variations on SQL statements to optimise their behaviour. (Or else it would make life very difficult for client writers who want to execute medialib queries as fast and efficiently as possible) Using non-SQL backends also incurs the overhead of translating from an SQL statement to whatever scheme the backend uses. Medialib plugins, for example, to support TopicMap (XTM) metadata storage ''may'' be possible, but will require a fair bit of work, and no one on the XMMS2 development team is sufficiently interested at this point.
+
+=== Other suggestions ===
+
+; split MPD to 3 parts:
+See [[Design of XMMS2]]
+; learning of playlists<nowiki>:</nowiki> whenever a song is played in full length it is rated up, when it is skipped it is rated down. Highly rated songs should be played more often in shuffle mode.:
+This can be implemented client-side, using data from the Log table in the Medialib. A variant of this (favourite titles) is currently implemented in [[XMMS2_Clients#medialib-ui_playlist_client | medialib-ui]].
+; Make the playback of single files possible, i.e. files which are not (yet) in the database.:
+XMMS2 does this, and adds the files' metadata to the Medialib.
+; Support for Audio CD playback.:
+XMMS2 can play Audio CDs via the [[Component:cdde | CDDE]] decoder plugin.
+; Add support for audioscrobbler's feature "Recommendation" - appends songs that are similar to the one playing at the moment:
+This can be implemented client-side. See [[XMMS2 Clients#XMMS2-Scrobbler | XMMS2-Scrobbler]]
+
+[[Category:Users]]
+[[Category:General]]
