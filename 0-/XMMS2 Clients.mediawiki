@@ -57,7 +57,13 @@ XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client wri
 
 == xmms2play ==
 
-xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalistic design. It does not include as playlist, instead intending for external applications such as medialib-ui to be used for that purpose. [http://www.stampede.org/~drax/xmms2play-0.04.tar.gz xmms2play-0.04] introduces a argument to remove the buttons for those that wish to use xmms2play only as a display (-d), it also adds the button that will be used to execute an external playlist/medialib client but no exec code is written yet. Most of the bugs having to do with the display of text in the marquee have been repaired and hopefully by 0.05 there will be no more problems at all. 
+xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalistic design. It does not include as playlist, instead intending for external applications such as medialib-ui to be used for that purpose. xmms2play-0.05 is accessible via a monotone repository, and will be released as a tarball soon. Changes include the fixing of the much dreaded artifacting problem in the marquee (read: I am a complete idiot) better -d support (the size is more appropriate), and functioning code in the playlist button, the program which is executed by the PL button can be changed in xmms2play/include/cmds.h. To access the monotone tree
+
+ monotone --db=~/xmms2play.db db init
+ monotone --db=~/xmms2play.db genkey <email address>
+ monotone --db=~/xmms2play.db pull genesis.xmms.se se.xmms.genesis.xmms2play
+ monotone --db=~/xmms2play.db --branch=se.xmms.genesis.xmms2play checkout ./xmms2play
+
 Client written by [[Alexander Botero-Lowry]].
 
 [[Category: General]]
