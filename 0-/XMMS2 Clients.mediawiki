@@ -2,60 +2,33 @@
 
 There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured. If you are a new XMMS2 client developer, you're welcome to add your client to the list.. and drop by our IRC channel to let us know what you're doing, so we may work closely together. ;)
 
+= Console clients =
+Clients that can be used from a command line, console or terminal.
 
 == XMMS2 CLI client ==
 
 This is the simple client that currently comes with XMMS2 itself. (source code found in src/clients/cli/xmms2_client.c) It supports most, if not all, operations possible using the xmmsclient library. See the [[Using the application]] page for more information about how to use this client.
 
-== Euphoria ==
-
-Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development. Euphoria is maintained by [[Tilman Sauerbeck]] and is currently being rewritten. It can be found in the Enlightenment CVS repository.
-
 == xmms2-shell ==
 
-xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. A lot of the code simply wraps around the XMMS2 Python bindings or is equivalent to the code in the CLI client. xmms2-shell is maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
+xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. xmms2-shell depends on [[XMMS2_Clients#HaX | HaX]]'s HaXCore to provide a simpler interface to the XMMS2 python bindings. xmms2-shell is maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
 
-== HaX ==
+== XMMS2Curse ==
 
-HaX is a flexible and modular Python client for XMMS2. What started off as a PyGTK project has evolved into a reusable collection of modules that may be used to quickly build other Python XMMS2 clients, integrate a player client into a larger Python application, or simply provide smarter 'skinning' abilities. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
-
-== medialib-ui playlist client ==
-
-This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset and can be cloned from [[Using BitKeeper] BitKeeper] repos bk://genesis.xmms.se:5555/medialib-ui. Written by [[Tobias RundstrÃ¶m]].
-
-== TwistedXMMS2 ==
-A webclient using twisted.web. in bitkeepr 'bk://genesis.xmms.se:5555/twistedxmms2'. Under development by [[Tobias RundstrÃ¶m]]
-
-== XMMS2Curse and Unnamed PHP client ==
-
-XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]]. 
-Unnamed PHP client is kind of dead at this time.
+XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]].
 
 More info here: http://evangelion.se/xmms2/
 
-== Hippopotamus ==
+= Graphical clients =
+Clients that require X Windows or other graphical windowing systems.
 
-A Cocoa client is being developed for OS X by [[Daniel Svensson]]. There is also an OSD client for OS X called '''InYourFace''' that sooner or later will be merged with '''Hippopotamus''' in some way... or will continue on its own mystical path.
+== EFL (Enlightenment Foundation Libraries) ==
+=== Euphoria ===
 
-Both clients can be found on http://www.nittionio.nu/xmms2/
+Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development. Euphoria is maintained by [[Tilman Sauerbeck]] and is currently being rewritten. It can be found in the Enlightenment CVS repository.
 
-== GNUstep client ==
-
-A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
-
-== Python OSD client ==
-
-This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
-
-== XMMS2-AMP ==
-
-This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
-
-== XMMS2-Scrobbler ==
-
-XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
-
-== xmms2play ==
+== GTK ==
+=== xmms2play ===
 
 xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalistic design. It does not include as playlist, instead intending for external applications such as medialib-ui to be used for that purpose. xmms2play-0.05 is accessible via a monotone repository, and will be released as a tarball soon. Changes include the fixing of the much dreaded artifacting problem in the marquee (read: I am a complete idiot) better -d support (the size is more appropriate), and functioning code in the playlist button, the program which is executed by the PL button can be changed in xmms2play/include/cmds.h. To access the monotone tree
 
@@ -65,6 +38,50 @@ xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those t
  monotone --db=~/xmms2play.db --branch=se.xmms.genesis.xmms2play checkout ./xmms2play
 
 Client written by [[Alexander Botero-Lowry]].
+
+== Qt ==
+=== medialib-ui playlist client ===
+
+This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset and can be cloned from [[Using BitKeeper] BitKeeper] repos bk://genesis.xmms.se:5555/medialib-ui. Written by [[Tobias RundstrÃ¶m]].
+
+== Others ==
+=== HaX ===
+
+HaX is a flexible and modular Python client for XMMS2. What started off as a PyGTK project has evolved into a reusable collection of modules that may be used to quickly build other Python XMMS2 clients, integrate a player client into a larger Python application, or simply provide smarter 'skinning' abilities. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
+
+=== Hippopotamus ===
+
+A Cocoa client is being developed for OS X by [[Daniel Svensson]]. There is also an OSD client for OS X called '''InYourFace''' that sooner or later will be merged with '''Hippopotamus''' in some way... or will continue on its own mystical path.
+
+Both clients can be found on http://www.nittionio.nu/xmms2/
+
+=== GNUstep client ===
+
+A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
+
+=== Python OSD client ===
+
+This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
+
+=== XMMS2-AMP ===
+
+This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
+
+== Web clients ==
+Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
+
+=== XMMS2www ===
+Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.
+
+More info here: http://evangelion.se/xmms2/
+
+=== TwistedXMMS2 ===
+A webclient using twisted.web. in bitkeepr 'bk://genesis.xmms.se:5555/twistedxmms2'. Under development by [[Tobias RundstrÃ¶m]]
+
+=== XMMS2-Scrobbler ===
+
+XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
+
 
 [[Category: General]]
 [[Category: Users]]
