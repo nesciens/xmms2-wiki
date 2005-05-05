@@ -12,8 +12,6 @@
 * Decoder API fix {{Bug|128}}
 * Ensure complete Doxygen coverage
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
-* Update ''README'', ''INSTALL'' files
-
 * Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
 * Get some real test data/testcases (devising procedures/processes to make sure every module works as expected, plus defining a set of sound samples of various formats to make sure decoder plugins work)
 * ''Maybe'' move the wiki to a better machine
@@ -36,5 +34,8 @@
 * removed all encoded paths in xmms, this means that we don't need to call encode/decode path all the time. it was a legacy from dbus anyway.
 * lot of sqlite tuning. trying to get the speed up.
 * added xmms2 mlib addpath command that just sends a path to the server who recursivly adds all the entries under that path to the medialib.
+
+=== 2005-05-05 ===
+* Update ''README'', ''INSTALL'' files
 
 [[Category:Releases]]
