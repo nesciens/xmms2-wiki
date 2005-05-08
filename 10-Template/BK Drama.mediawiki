@@ -1,7 +1,7 @@
 <div style="border: double 3px #b66; text-align: center; padding:0.5em">
 '''''BitKeeper Drama'''''
 
-Since [http://www.bitkeeper.com BitMover] has decided to [http://www.bitkeeper.com/press/2005-04-05.html cease supporting] the free (as in beer) version of BitKeeper, we are currently evaluating alternative SCMs to switch to. We are looking for BK-style distributed repository systems, so centralised systems such as Subversion and CVS are out of the question. We will continue to use BitKeeper until we find a suitable alternative. Stay tuned..
+Since [http://www.bitkeeper.com BitMover] has decided to [http://www.bitkeeper.com/press/2005-04-05.html cease supporting] the free (as in beer) version of BitKeeper, we are currently evaluating alternative SCMs to switch to. We are looking for BK-style distributed repository systems, so centralised systems such as Subversion and CVS are out of the question. The devel team still uses BK since we have not chosen a new SCM yet. The BK is not available for others then devel team at this point. Please try our snapshots page instead.
 
 </div>
 <!-- http://wiki.xmms2.xmms.se/index.php?title=Template:BK_Drama&action=edit -->
