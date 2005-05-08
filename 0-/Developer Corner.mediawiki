@@ -13,7 +13,7 @@ For those who want to know more about how it works, and how to get clients to pl
 
 == Code.. and bugs! ==
 
-For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the documents about [[Using BitKeeper]] and the [[XMMS2 Coding Style]]!
+For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the [[XMMS2 Coding Style]].
 
 *[[XMMS2 Coding Style]]
 *[http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
