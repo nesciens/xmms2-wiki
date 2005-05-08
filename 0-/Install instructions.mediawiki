@@ -2,7 +2,7 @@
 
 == Obtaining the source ==
 
-XMMS2 has still not been released to the public, thus there are no binaries or released source packages. You can download daily repository snapshots from [http://xmms2.xmms.org/snapshots/ the snapshot page] or directly via BitKeeper by running ''bk clone bk://xmms2.xmms.se:5555/xmms2''. For more info about BitKeeper, please see the [[Using BitKeeper]] page.
+XMMS2 has still not been released to the public, thus there are no binaries or released source packages. You can download daily repository snapshots from [http://xmms2.xmms.org/snapshots/ the snapshot page].
 
 == Dependencies ==
 
@@ -51,7 +51,6 @@ The INSTALLDIR option provides a way to prepend a path to ''all'' install pathes
 For example, if you installed xmms2 under /usr/local (default), run ''scons -c /usr/local''
 
 == See Also ==
-* [[Using BitKeeper]]
 * [http://xmms2.xmms.org/snapshots/ snapshot page]
 
 [[Category: General]]
