@@ -8,7 +8,7 @@
 '''NOTE:''' We are ''not'' at the DR1 stage yet, but we're close.
 
 == To Do ==
-* Fix include files {{Bug|93}}
+
 * Decoder API fix {{Bug|128}}
 * Ensure complete Doxygen coverage
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
@@ -24,6 +24,8 @@
 * Don't quit when we don't get the output inited {{Bug|157}}
 * Fix so that we don't crash on quit {{Bug|158}}
 * FLAC updated to sample_t
+* Fix include files {{Bug|93}}
+
 
 === 2005-04-20 ===
 * Huge debug message cleanup
