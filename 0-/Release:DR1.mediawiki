@@ -40,4 +40,12 @@
 === 2005-05-05 ===
 * Update ''README'', ''INSTALL'' files
 
+== Release Text ==
+
+After over two years of development XMMS Team releases the first preview of next generation XMMS. XMMS2 is a complete rewrite of XMMS codebase and have been focusing on portability, code separation and stability. Some advanced features of XMMS2 is that the playing part is seperated from the GUI, which means that you can communicate with the playing part via IPC commands. This will allow developers to create advanced GUI's and not have to care about the music playing part.
+
+We have reached Developer Release 1, this means that the player is NOT ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that we have a very nice working codebase and we are happy to invite developers to help us with this. Feedback and testing is also very helpful at this stage.
+
+For more information see our wiki website: http://wiki.xmms2.xmms.se/
+
 [[Category:Releases]]
