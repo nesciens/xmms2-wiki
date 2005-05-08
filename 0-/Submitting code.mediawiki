@@ -21,6 +21,6 @@ In order to be considered for inclusion, your code should meet the following req
 * It could make it easier for us if you provide the necessary ''SConscript'' files to build your code, if needed. (or modify the ''SConstruct'', ''xmmsconf.py'' or ''xmmsenv.py'' files as needed - but ''please'' try not to break the existing build system)
 
 == How to do it ==
-[[About#Contact_info | Contact us]] either via the mailing list or on IRC. You may attach patches to e-mails, or publish the code on the web and provide a URL. If you're fixing bugs, or otherwise modifying code already in the main tree, you may want to read the [[Using BitKeeper]] page.
+[[About#Contact_info | Contact us]] either via the mailing list or on IRC. You may attach patches to e-mails, or publish the code on the web and provide a URL.
 
 [[Category:Developer info]]
