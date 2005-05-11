@@ -1,3 +1,7 @@
 Could the author of this suggestion please identify him/herself? ;) If i recall correctly, music/metadata sharing and DAAP were ideas raised by ''shank'' - the MPD (Music Player Daemon) developer - in our IRC channel, a while ago. I believe he also suggested he'd like to join the XMMS2 team to further develop these ideas, after releasing MPD v1. As for ''that one company and their ever so popular music software'', I assume you're referring to Apple and iTunes? Please try to be as clear as possible when providing suggestions, etc - we're trying to develop software here, not read minds and guess assumptions. ;)
 
 [[User:Eleusis|Eleusis]] 04:00, 11 May 2005 (CEST)
+
+Well, making xmms2 as a DAAP server wouldn't be impossible. Question is if it fits. I am quite happy with not trying to bloat our *MUSIC* player as far as we can.
+
+[[User:TobiasRundstrÃ¶m|tru]] 09:00, 11 May 2005 (CEST)
