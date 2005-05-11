@@ -6,6 +6,8 @@ XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features 
 
 This wiki tries to gather as much information as possible about XMMS2. Please use the navigation bar above to browse around. Feel free to add more information (except where indicated otherwise). You could also help us replace that default flower logo with a nice XMMS2 logo! :)
 
+'''Note about adding or editing wiki contents''': We welcome some suggestions, feedback and generally useful content (e.g. [[Logo | logos]], helping us keep [[Developer Corner#XMMS2_Technical_Details | technical details]] up to date, and so on). If you do contribute, '''please''' leave your contact details (or [[About#Contact_info | contact us]]) so that we may 1) properly credit your contributions, 2) contact you for further details, if necessary. Thank you.
+
 == XMMS2 News ==
 
 {{News}}
