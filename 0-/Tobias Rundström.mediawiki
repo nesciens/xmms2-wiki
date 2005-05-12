@@ -1,9 +1,10 @@
 {{Navbar}}
 
-Email at tru at xmms dot org
+Email at [http://www.mindrelease.net/~lina/gallery/garndreads/DSCN2777?full=1 tru] at xmms dot org
 
 Does most of the hacking on XMMS2 and tries to organize the ones that want to help out. Is together with [[User:Anders Gustafsson|Anders Gustafsson]] dictator of all code that should be commited to the main tree. Primary platforms are Linux-x86 and MacOSX-PPC.
 
 Listen to mostly electronic music with XMMS2, such as EBM and Synth.
+
 
 [[Category: People]]
