@@ -1,0 +1,27 @@
+{{Navbar}}
+
+'''Developer Release 2''' is the second release of XMMS 2 code. What it means:
+
+* Fix more bugs?
+* No one really knows yet. ;)
+
+NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
+
+<span style="color: red">This page only exists at this stage as a place to collect todo items and ideas for DR2.</span>
+
+== To Do ==
+* ''maybe'' change mime type handling {{Bug|65}} (see bug notes)
+** this may change the plugin API
+* '''really''' write a bunch of test scripts, optionally with a set of test sound samples.
+** maybe this should be kept separate from the main tree? the sound samples, especially, could be quite large
+* ''maybe'' get some more plugins in. :P
+** Ogg -> flac, vorbis
+** MKA
+* DAAP?
+** transport plugin? (XMMS2 as client) client should be able to browse DAAP shares and add daap:// urls, perhaps.
+** effect plugin? (XMMS2 as daemon) though it might be better if this is left to a dedicated DAAP daemon: daapd
+** [[Music Sharing]]
+
+== Done ==
+
+[[Category:Releases]]
