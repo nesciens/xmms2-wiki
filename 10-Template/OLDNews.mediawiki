@@ -1,5 +1,3 @@
-{{BK_Drama}}
-<!-- remove BK_Drama from here once things become less dramatic, of course :P -->
 
 {{Newsitem|date=20 may 2005 (2005-05-20) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 1|text=After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the GUI, which means that you can communicate with the player via IPC commands. This will allow developers to create advanced GUIs and not have to care about the music playing part.
 
