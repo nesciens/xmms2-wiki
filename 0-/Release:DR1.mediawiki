@@ -43,8 +43,10 @@
 
 After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the GUI, which means that you can communicate with the player via IPC commands. This will allow developers to create advanced GUIs and not have to care about the music playing part.
 
-We have reached Developer Release 1; this means that the player is NOT ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that we have a very nice working codebase and we are happy to invite developers to help us with this. Feedback and testing is also very helpful at this stage.
+We have reached Developer Release 1; this means that the player is NOT ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that we have a very nice working codebase and we are happy to invite developers to help us with this. At this point there is no mature and stable clients, we hope that clients will mature after this release. Please download and contribute. Feedback and testing is also very helpful at this stage.
 
-Download the source at http://www.xmms.org/files/2.x/xmms-1.99DR1.tar.gz
+We are also happy to include a music clip donated by industrial act Dismantled (http://www.dismantled.org/) in the distrbution.
+
+Download the source at http://www.xmms.org/files/2.x/xmms2-0.1DR1.tar.gz
 
 [[Category:Releases]]
