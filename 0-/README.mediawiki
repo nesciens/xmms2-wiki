@@ -37,6 +37,6 @@ If you have further questions, please [[About#Contact info | contact us]] - '''D
 * A: Our code should run on Windows without any problems, being ANSI-C.
 
 * Q: How do I get in contact with you guys?
-* A: E-Mail: <i>tru at xmms dot org</i> and <i>andersg at xmms dot org</i> IRC: irc.xmms.se:6667 #xmms2
+* A: Please see our [[About]] page for [[About#Contact_info | contact details]].
 
 [[Category: Questions and answers]]
