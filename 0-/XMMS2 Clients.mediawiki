@@ -32,6 +32,12 @@ Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enli
 
 xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalistic design. It does not include as playlist, instead intending for external applications such as medialib-ui to be used for that purpose. xmms2play-0.05 is accessible via a monotone repository, and will be released as a tarball soon. Changes include the fixing of the much dreaded artifacting problem in the marquee (read: I am a complete idiot) better -d support (the size is more appropriate), and functioning code in the playlist button, the program which is executed by the PL button can be changed in xmms2play/include/cmds.h. Client written by [[Alexander Botero-Lowry]].
 
+=== gkrellxmms2 ===
+
+gkrellxmms2 is a plugin for GKrellM2 to control some basic functions of the XMMS2 audio player (PLAY, PAUSE, SKIP+/-, STOP). It also shows the current artist and track name and the current position in the track.
+Written by Johannes Heimansberg.
+The plugin can be found on http://wejp.homelinux.org/wejp/xmms2/?lang=en
+
 == Qt ==
 === medialib-ui playlist client ===
 
