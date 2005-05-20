@@ -16,3 +16,8 @@
  15:13 <tilman> oops.
  15:17 <tru> tilman: pressed the wrong "button"? :)
  15:23 <tilman> tru: i confused "ctrl-a d" and "/quit" O_o
+
+;2005-05-19:
+ [22:55:51][tilman]: we used bk and people used it even if it's non-free software
+ [22:56:07][tilman]: now we're prolly gonna use a free scm and people bitch because it requires free software?
+ [22:56:12][tilman]: something's wrong there
