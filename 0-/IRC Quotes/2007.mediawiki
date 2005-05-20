@@ -1,3 +1,23 @@
+;2005-05-20:
+ [17:08:42][tilman]: is dr1 officially out now or what/
+ [17:08:43][tilman]: ?
+ [17:10:15][tru]: ah.
+ [17:10:28][tru]: THAT was one thing on my todo list today :)
+ [17:11:36][nano]: :)
+ [17:18:13][max]: tru@darkangel.(none) is pushing ln@shamrock.dyndns.org|ChangeSet|20050519235746|03970 
+          ln@shamrock.dyndns.org|ChangeSet|20050520000649|03956 
+          ln@shamrock.dyndns.org|ChangeSet|20050520003515|03941 
+          tru@darkangel.(none)|ChangeSet|20050520151941|00000  to /xmms2/xmms2
+ [17:18:21][tru]:   TAG: XMMS2_0.1DR1
+ [17:18:37][tilman]: heh
+ [17:19:21][tru]: http://genesis.xmms.se/~tru/xmms2-0.1DR1.tar.gz
+
+
+;2005-05-19:
+ [22:55:51][tilman]: we used bk and people used it even if it's non-free software
+ [22:56:07][tilman]: now we're prolly gonna use a free scm and people bitch because it requires free software?
+ [22:56:12][tilman]: something's wrong there
+
 ;2005-04-23
  17:25 <nano> DraX: You BSD dudes seem to get confused on feature completeness vs bloat all the
              time.
@@ -16,8 +36,3 @@
  15:13 <tilman> oops.
  15:17 <tru> tilman: pressed the wrong "button"? :)
  15:23 <tilman> tru: i confused "ctrl-a d" and "/quit" O_o
-
-;2005-05-19:
- [22:55:51][tilman]: we used bk and people used it even if it's non-free software
- [22:56:07][tilman]: now we're prolly gonna use a free scm and people bitch because it requires free software?
- [22:56:12][tilman]: something's wrong there
