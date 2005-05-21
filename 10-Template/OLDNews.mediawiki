@@ -20,6 +20,7 @@ of interfaces will accelerate.
 
 We are also happy to include a music clip donated by industrial act Dismantled (http://www.dismantled.org/) in the distrbution.
 
+Download at http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
 }}
 {{Newsitem|date=24 April 2005 (2005-04-24) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 <3 Dismantled|text=Still closing on DR1 and we have wonderful news to tell you. [http://dismantled.org/ Dismantled] offered a clip to use as intro song in XMMS2, this will ship with all XMMS2 sources and is a very nice clip of a great song. Thanks a lot Gary.}}
 {{Newsitem|date=5 April 2005 (2005-04-05) CET|author=[[Tobias RundstrÃ¶m]]|title=Getting close to DR1|text=So finally we are cleaning up for a Developer Release. This will be exciting, all the team is confident that the current codebase is really neat. Keep an eye out as the [[Release:DR1 | Developer Release 1]] todo list items get taken care of. :)}}
