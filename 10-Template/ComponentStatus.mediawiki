@@ -68,7 +68,7 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Decoder | Decoder]]
 | style="border-bottom: 1px dotted #000" |
 {|
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:FLAC | FLAC]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:FLAC | FLAC]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:mad | mad]]
 |-
