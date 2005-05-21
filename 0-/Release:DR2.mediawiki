@@ -26,6 +26,11 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 ** <strike>effect plugin? (XMMS2 as daemon)</strike>. Way better left to a dedicated DAAP daemon; daapd.
 ** [[Music Sharing]]
 
+=== From DR1 ===
+* Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
+* ''Maybe'' move the wiki to a better machine
+* Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
+
 == Done ==
 
 [[Category:Releases]]
