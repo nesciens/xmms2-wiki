@@ -2,6 +2,8 @@
 
 = Welcome to the XMMS2 Wiki. =
 
+{{ReleaseStatus}}
+
 XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features a client-server model, allowing multiple (even simultaneous!) user interfaces, both textual and graphical. All common audio formats are supported using plugins. On top of this, there is a flexible media library to organize your music. See the [[Features | features]] page for more details.
 
 This wiki tries to gather as much information as possible about XMMS2. Please use the navigation bar above to browse around. Feel free to add more information (except where indicated otherwise). You could also help us replace that default flower logo with a nice XMMS2 logo! :)
