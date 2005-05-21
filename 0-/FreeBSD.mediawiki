@@ -1,5 +1,5 @@
 {{Navbar}}
 
-Builds on FreeBSD 5.2, but can't play more than one song. Builds and works perfectly on FreeBSD 5.3. As of 050321 xmms2 is once again working on FreeBSD 5.3.
+DR1 is supported; A port can be found at http://www.stampede.org/~drax/xmms2-port.tar.gz
 
 [[Category:Platforms]]
