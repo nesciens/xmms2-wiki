@@ -40,13 +40,10 @@
 * Update ''README'', ''INSTALL'' files
 
 == Release Text ==
+After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the user interface in a client/server model. This simplifies the process of creating alternate user interfaces and allow interface developers to concentrate on designing the interface for their special need and not having to care about the music playing part.
 
-After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the GUI, which means that you can communicate with the player via IPC commands. This will allow developers to create advanced GUIs and not have to care about the music playing part.
+XMMS2 has now reached Developer Release 1! The target audience for this release is developers, the player is NOT yet ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that the codebase is very nice and developers are encouraged to help creating plugins and clients that will make XMMS2 the de facto standard for music playing, like XMMS1 has been for almost a decade. At this point there are no mature and stable GUI clients, but this preview is released in the hope that the development of interfaces will accelerate. 
 
-We have reached Developer Release 1; this means that the player is NOT ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that we have a very nice working codebase and we are happy to invite developers to help us with this. At this point there are no mature and stable clients; we hope that clients will mature after this release. Please download and contribute. Feedback and testing is also very helpful at this stage.
-
-We are also happy to include a music clip donated by Industrial act Dismantled (http://www.dismantled.org/) in the distrbution.
-
-Download the source at http://www.xmms.org/files/2.x/xmms2-0.1DR1.tar.gz
+http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
 
 [[Category:Releases]]
