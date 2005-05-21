@@ -3,9 +3,11 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': <font style="color: blue">''close to [[Release:DR1 | DR1]]''</font>
+'''Developer''': [[Release:DR1 | Developer Release 1]]
 
-'''Notes''': XMMS2 is still under heavy development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
+'''Notes''':
+* DR1 was released 2005-05-20, check it out!
+* XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 
 ''See also'': [[Project Status]]
 </div>
