@@ -2,9 +2,12 @@
 
 If you think you found a bug in XMMS2, please report it to the bugtracker at http://bugs.xmms2.xmms.se/
 
-If you encountered a crash, please also provide a backtrace.
-
 The reason why the bugreporting tool requires you to register an account with a valid email adress is quite simple - we have little to no interest in bugreports from people we can't get hold of for additional information. Complaints about this will fall on deaf ears.
+
+If you encountered a crash:
+* please provide a backtrace.
+* provide the contents of the xmms2d log file, typically ''/tmp/xmmsd.<timestamp>'', where ''<timestamp>'' is the time at which xmms2d was started, in UNIX format (seconds since 00:00:00 UTC, January 1, 1970). An example would be ''/tmp/xmmsd.1116742525''.
+** The log file may be named ''xmmsd.<iso8601 date>.<hour><minutes><seconds>'' instead, for example, ''xmmsd.2005-05-22.182805'' if the daemon was started at 18:28:05 on 22 May 2005.
 
 [[Category: Code and bugs]]
 [[Category: General]]
