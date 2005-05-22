@@ -5,7 +5,7 @@
 * Core functionality in the daemon has been implemented and major design changes are not planned.
 * The client API is relatively stable, so clients can be written without developers having to put a lot of work in maintaining API compatibility to the latest version.
 
-'''NOTE:''' DR1 was released on 2005-05-20.
+'''NOTE:''' DR1 was released on 2005-05-21.
 
 == Release Text ==
 After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the user interface in a client/server model. This simplifies the process of creating alternate user interfaces and allow interface developers to concentrate on designing the interface for their special need and not having to care about the music playing part.
