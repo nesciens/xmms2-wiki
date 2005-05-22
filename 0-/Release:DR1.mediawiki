@@ -7,6 +7,13 @@
 
 '''NOTE:''' DR1 was released on 2005-05-20.
 
+== Release Text ==
+After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the user interface in a client/server model. This simplifies the process of creating alternate user interfaces and allow interface developers to concentrate on designing the interface for their special need and not having to care about the music playing part.
+
+XMMS2 has now reached Developer Release 1! The target audience for this release is developers, the player is NOT yet ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that the codebase is very nice and developers are encouraged to help creating plugins and clients that will make XMMS2 the de facto standard for music playing, like XMMS1 has been for almost a decade. At this point there are no mature and stable GUI clients, but this preview is released in the hope that the development of interfaces will accelerate. 
+
+http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
+
 == Done (Release Notes) ==
 * Ensure complete Doxygen coverage
 * Fix [[Component:Medialib | Medialib]] logging
@@ -16,7 +23,6 @@
 * Fix so that we don't crash on quit {{Bug|158}}
 * FLAC updated to sample_t
 * Fix include files {{Bug|93}}
-
 
 === 2005-04-20 ===
 * Huge debug message cleanup
@@ -31,11 +37,6 @@
 === 2005-05-05 ===
 * Update ''README'', ''INSTALL'' files
 
-== Release Text ==
-After over two years of development, the XMMS Team releases the first preview of the next generation XMMS. XMMS2 is a complete rewrite of the XMMS codebase and has been focusing on portability, code separation and stability. An advanced feature of XMMS2 is that the music player process runs separately from the user interface in a client/server model. This simplifies the process of creating alternate user interfaces and allow interface developers to concentrate on designing the interface for their special need and not having to care about the music playing part.
 
-XMMS2 has now reached Developer Release 1! The target audience for this release is developers, the player is NOT yet ready for public consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This simply means that the codebase is very nice and developers are encouraged to help creating plugins and clients that will make XMMS2 the de facto standard for music playing, like XMMS1 has been for almost a decade. At this point there are no mature and stable GUI clients, but this preview is released in the hope that the development of interfaces will accelerate. 
-
-http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
 
 [[Category:Releases]]
