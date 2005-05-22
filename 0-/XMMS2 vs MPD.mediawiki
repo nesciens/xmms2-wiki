@@ -21,7 +21,7 @@ XMMS2 can be controlled via UNIX sockets or TCP sockets. IPv4 sockets are known 
 XMMS2 can play MP3 and Ogg Vorbis streams over various transport protocols: [[Component:HTTP | HTTP]], [[Component:samba | Samba]], as well as a few others accessible via [[Component:GnomeVFS | GnomeVFS]].
 ; Easy to Install:
 XMMS2 has not had any stable releases yet, therefore this cannot be compared.
-; Stores ID3 (id3v1 and id3v2) tag information (MP3s, FLAC's, and AAC's); Stores Vorbis Comments information (Ogg's and FLAC's); Stores apev2 tag information (musepack); Stores MP4 metadata information (MP4/AAC's):
+; Stores ID3 (id3v1 and id3v2) tag information (MP3s, FLACs, and AACs); Stores Vorbis Comments information (Oggs and FLACs); Stores apev2 tag information (musepack); Stores MP4 metadata information (MP4/AACs):
 Various decoder plugins pass metadata to the daemon to be stored in the [[Component:Medialib | Medialib]] when playing files.
 ; ID3/Vorbis information can be searched:
 All the metadata in the [[Component:Medialib | Medialib]] can be searched using SQL queries.
