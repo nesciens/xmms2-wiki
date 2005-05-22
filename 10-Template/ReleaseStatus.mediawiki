@@ -6,7 +6,7 @@
 '''Developer''': [[Release:DR1 | Developer Release 1]]
 
 '''Notes''':
-* DR1 was released 2005-05-20, check it out!
+* DR1 was released 2005-05-21,<br /> check it out and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 
 ''See also'': [[Project Status]]
