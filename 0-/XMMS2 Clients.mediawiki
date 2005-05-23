@@ -38,6 +38,13 @@ gkrellxmms2 is a plugin for GKrellM2 to control some basic functions of the XMMS
 Written by Johannes Heimansberg.
 The plugin can be found on http://wejp.homelinux.org/wejp/xmms2/?lang=en
 
+=== perlamp ===
+
+Perlamp should be a front-end that allows it to open Wxxamp modern skins. 
+The current status is a prove-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.
+Actually the Maki script support is in a very good state, other areas are not.
+Interested parties please contact [[Ralf Engels]]
+
 == Qt ==
 === medialib-ui playlist client ===
 
