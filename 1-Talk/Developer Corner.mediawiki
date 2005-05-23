@@ -64,3 +64,7 @@ Conceptually, a list item could look similar to this:
  +----------------------------------------------------------------------------------------------------------+
  | item *next | string url | string artist | string album | string title | int length | item *shuffled_next |
  +----------------------------------------------------------------------------------------------------------+
+
+
+Idea: Why not use a stack for the already played songs and determine for an unplayed song on demand.
+After all we don't need to know the next song on advance, we only need to know the already played songs.
