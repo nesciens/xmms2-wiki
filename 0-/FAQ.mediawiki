@@ -22,7 +22,7 @@ A: See [[XMMS2 vs MPD]]
 * A: See the [[Project Status#XMMS2_Platform_Support_Status | Platform support status table]] for an overview. For information about mobile platforms (Palm PDA, Sharp Zaurus, etc), see [[Mobile platforms]].
 
 === XMMS2 is not working. What should I do? ===
-* A: This is development code with no warranties or guarantees. You will have to fix it yourself.
+* A: You should do it right, of course. Stop doing it wrong, and it'll start working.
 
 == Development ==
 === How do I contribute code to XMMS2? ===
