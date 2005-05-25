@@ -7,3 +7,9 @@ A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
 
 === Debian sid ===
  deb http://genesis.xmms.se/debian unstable main
+
+== Ports ==
+
+=== CRUX Linux ===
+
+Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/rugek.httpup
