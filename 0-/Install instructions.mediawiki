@@ -14,8 +14,7 @@ You will '''need''' the following things to build XMMS2.
 * [http://www.underbit.com/products/mad/ MAD]
 * [http://www.sqlite.org SQLite] (3.2.x)
 
-The following apt-get line will install the necessary packages on a Debian system (at least sarge, taken from build-dependencies)  "apt-get install debmake debhelper scons python2.3 python2.3-dev python2.3-pyrex ruby1.8 ruby1.8-dev libsdl-ttf2.0-dev
-libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev"
+The following apt-get line will install the necessary packages on a Debian system (at least sarge)  "apt-get install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev"
 
 These libraries are not '''needed''' but probably a good idea.
 
@@ -26,6 +25,8 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
 * [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] - For python bindings.
 * [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
+
+"apt-get install python2.3-pyrex ruby1.8 ruby1.8-dev"
 
 == Configuring ==
 Run ''scons'' to first run the configuration. Tweak the options, running ''scons CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are configuration groups listed in ''xmmsconf.py''. (Sorry, there is currently no user-friendly way of listing the modules )
