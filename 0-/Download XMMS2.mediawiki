@@ -1,8 +1,6 @@
 == Source ==
 Look at our sourceforge page for releases : http://sf.net/projects/xmms2
 
-A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
-
 == Binary Packages ==
 
 === Debian sid ===
@@ -13,3 +11,7 @@ A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
 === CRUX Linux ===
 
 Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/rugek.httpup
+
+=== FreeBSD ===
+
+A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.g
