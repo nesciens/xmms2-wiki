@@ -1,6 +1,8 @@
 == Source ==
 Look at our sourceforge page for releases : http://sf.net/projects/xmms2
 
+A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
+
 == Binary Packages ==
 
 === Debian sid ===
