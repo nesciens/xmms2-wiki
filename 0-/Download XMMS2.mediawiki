@@ -1,0 +1,7 @@
+== Source ==
+Look at our sourceforge page for releases : http://sf.net/projects/xmms2
+
+== Binary Packages ==
+
+=== Debian sid ===
+ deb http://genesis.xmms.se/debian unstable main
