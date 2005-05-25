@@ -26,7 +26,7 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 
 == Configuring ==
-Run ''scons'' to first run the configuration. Tweak the options, running ''scons CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are configuration groups listed in ''xmmsconf.py''. (Sorry, there is currently no user-friendly way of listing the modules)
+Run ''scons'' to first run the configuration. Tweak the options, running ''scons CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are configuration groups listed in ''xmmsconf.py''. (Sorry, there is currently no user-friendly way of listing the modules )
 
 == Compiling ==
 Simply run ''scons'' to compile, or ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/some/custom/path''.
