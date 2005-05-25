@@ -14,6 +14,7 @@ You will '''need''' the following things to build XMMS2.
 * [http://www.underbit.com/products/mad/ MAD]
 * [http://www.sqlite.org SQLite] (3.2.x)
 
+The following apt-get line will install the necessary packages on a Debian system (at least sarge)  "apt-get install python scons libgtk2.0-0 libglib2.0-0 libmad0 libsqlite3-0".
 
 These libraries are not '''needed''' but probably a good idea.
 
