@@ -2,7 +2,7 @@
 
 == Obtaining the source ==
 
-XMMS2 has still not been released to the public, thus there are no binaries or released source packages. You can download daily repository snapshots from [http://xmms2.xmms.org/snapshots/ the snapshot page].
+XMMS2 has still not been released to the public, thus there are no binaries or released source packages. You can download daily repository snapshots from [http://git.xmms.se/snapshots/ the snapshot page].
 
 == Dependencies ==
 
