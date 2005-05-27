@@ -4,4 +4,4 @@ Support for dnotify, inotify (Linux) or kqueue (BSD). There are two thing this c
 Listen to all songs in medialib and update the mediainfo in the db if a file changes. This should be a setting medialib.update_metadata_automaticly.
 
 === Notification when adding new songs ===
-Automaticly add songs to the medialib when you upload files to a specific directory. Configvalue for the path. should we watch all recursive directories for new files? or should we be able to add multiple paths to the configuration?
+Automaticly add songs to the medialib when you upload files to a specific directory. Configvalue for the path. should we watch all recursive directories for new files? or should we be able to add multiple paths to the configuration? It should also check the directory on xmms2d startup to see if any changes have occured and add those songs/update those songs in the medialib.
