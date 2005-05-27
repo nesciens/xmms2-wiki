@@ -48,7 +48,7 @@ Interested parties please contact [[Ralf Engels]]
 == Qt ==
 === medialib-ui playlist client ===
 
-This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset and can be cloned from BitKeeper repos bk://genesis.xmms.se:5555/medialib-ui. Written by [[Tobias RundstrÃ¶m]].
+This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset. The code is available in the [[GIT|http://git.xmms.se]] repository.  Written by [[Tobias RundstrÃ¶m]].
 
 == Others ==
 === HaX ===
