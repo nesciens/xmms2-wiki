@@ -1,8 +1,12 @@
-This should be a option to automaticly play random songs from the medialib. This could be done in several ways:
+{{Navbar}}
+
+This should be an option to automatically play random songs from the medialib. This could be done in several ways:
 
 * Adding new files to the playlist when you reach the last entry
 ** when we reach the last entry we add X new songs to the playlist
 ** could be combined with a "remove entry from playlist when played"
-* Cheating in someway so that you don't add them to the playlist.
+* Cheating in some way so that you don't add them to the playlist.
 
 The SQL statement for choosing the "random" song should be configurable.
+
+[[Category:Developer ideas]]
