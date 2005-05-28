@@ -28,4 +28,5 @@ A: See [[XMMS2 vs MPD]]
 === How do I contribute code to XMMS2? ===
 * A: Please see the [[Submitting code]] page.
 
+ÐÑƒ Ð²Ñ‹ Ð±Ð»Ð¸Ð½ Ð¿Ñ€Ð¸ÐºÐ°Ð»ÑƒÐµÑ‚ÐµÑÑŒ
 [[Category: Questions and answers]]
