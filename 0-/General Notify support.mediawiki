@@ -1,3 +1,5 @@
+{{Navbar}}
+
 Support for dnotify, inotify (Linux) or kqueue (BSD). There are two thing this can help with in the medialibrary.
 
 === Notification of changes to songs in medialib ===
@@ -5,3 +7,5 @@ Listen to all songs in medialib and update the mediainfo in the db if a file cha
 
 === Notification when adding new songs ===
 Automaticly add songs to the medialib when you upload files to a specific directory. Configvalue for the path. should we watch all recursive directories for new files? or should we be able to add multiple paths to the configuration? It should also check the directory on xmms2d startup to see if any changes have occured and add those songs/update those songs in the medialib.
+
+[[Category:Developer ideas]]
