@@ -13,6 +13,8 @@ This is the simple client that currently comes with XMMS2 itself. (source code f
 
 xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. xmms2-shell depends on [[XMMS2_Clients#HaX | HaX]]'s HaXCore to provide a simpler interface to the XMMS2 python bindings. xmms2-shell is maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
 
+Ð­Ñ‚Ð° Ð½Ð¸Ñ‡Ðµ ÑˆÑ‚ÑƒÐºÐ°. Ð¢Ð¾ÐºÐ° Ð·Ð°ÐµÐ±ÑƒÐµÑ‚ Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ Ð¿Ð¸ÑÐ°Ñ‚ÑŒ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹
+
 == XMMS2Curse ==
 
 XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]].
