@@ -36,11 +36,9 @@ xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those t
 
 === gkrellxmms2 ===
 
-Ð§Ðµ-Ñ‚Ð° ÑÑ‚Ð° ÑˆÑ‚ÑƒÐºÐ° Ñƒ Ð¼ÐµÐ½Ñ Ð½Ðµ Ð·Ð°Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð»Ð°
-
 gkrellxmms2 is a plugin for GKrellM2 to control some basic functions of the XMMS2 audio player (PLAY, PAUSE, SKIP+/-, STOP). It also shows the current artist and track name and the current position in the track.
 Written by Johannes Heimansberg.
-The plugin can be found on http://wejp.homelinux.org/wejp/xmms2/?lang=en
+The plugin can be found on http://wejp.homelinux.org/wejp/xmms2/
 
 === perlamp ===
 
