@@ -13,8 +13,6 @@ This is the simple client that currently comes with XMMS2 itself. (source code f
 
 xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written this so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. xmms2-shell depends on [[XMMS2_Clients#HaX | HaX]]'s HaXCore to provide a simpler interface to the XMMS2 python bindings. xmms2-shell is maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/shell/ xmms2-shell project] page.
 
-Ð­Ñ‚Ð° Ð½Ð¸Ñ‡Ðµ ÑˆÑ‚ÑƒÐºÐ°. Ð¢Ð¾ÐºÐ° Ð·Ð°ÐµÐ±ÑƒÐµÑ‚ Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ Ð¿Ð¸ÑÐ°Ñ‚ÑŒ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹
-
 == XMMS2Curse ==
 
 XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]].
@@ -47,14 +45,10 @@ The current status is a prove-of-concept written in Perl with perlgtk that allow
 Actually the Maki script support is in a very good state, other areas are not.
 Interested parties please contact [[Ralf Engels]]
 
-Ð˜ ÑÑ‚Ð° Ñ‚Ð¾Ð¶Ðµ
-
 == Qt ==
 === medialib-ui playlist client ===
 
 This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset. The code is available in the [[http://git.xmms.se|GIT]] repository. The client is very flexible and can be extended by adding own Python code in configuration directory. Written by [[Tobias RundstrÃ¶m]].
-
-Ð¡ÑÑ‹Ð»Ð¾Ñ‡ÐºÐ° Ð½Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚
 
 == Others ==
 === HaX ===
