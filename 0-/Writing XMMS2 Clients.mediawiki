@@ -4,7 +4,7 @@ This page should eventually become a guide about things to consider when writing
 
 = XMMS2 Client Guide =
 
-This guide will help you understand how to build an XMMS client. It's not aimed at any language more like a reference of how different signals work.
+This guide will help you understand how to build an XMMS2 client. It's not aimed at any language more like a reference of how different signals work.
 
 == Choosing a Language ==
 XMMS2 client library comes with bindings to many languages, you should choose a language that suits you well. I recomend a Interpetated language since all compution is done in the server and a interpretated language will let you develop faster.
