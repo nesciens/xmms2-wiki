@@ -91,7 +91,7 @@ XMMS2 does this, and adds the files' metadata to the Medialib.
 XMMS2 can play Audio CDs via the [[Component:cdde | CDDE]] decoder plugin.
 ; Add support for audioscrobbler's feature "Recommendation" - appends songs that are similar to the one playing at the moment:
 This can be implemented client-side. See [[XMMS2 Clients#XMMS2-Scrobbler | XMMS2-Scrobbler]]
-; How can I add a song from a networked client (for example using GTK2) which then selects a file on its filesystem (thinking HOST1 runs XMMS2 and HOST2 selects /home/i/asdf.ogg to be played) - how should this work out? Or will you be creating a custom Open File dialog? Then it won't be useful in a usability-centric desktop, right?
+
 
 [[Category:Users]]
 [[Category:General]]
