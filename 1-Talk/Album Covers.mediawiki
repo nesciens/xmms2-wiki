@@ -1,0 +1,5 @@
+XMMS2 should be capable to play simoultaneusly multiple audio files and internet radio streams, and sending them to the speakers connected to the sound card.<br>
+e.g.
+* audio_file_1 to the front speakers
+* internet_radio_stream to the rear speakers
+* etc, etc
