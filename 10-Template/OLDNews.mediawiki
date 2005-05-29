@@ -1,6 +1,8 @@
 {{Newsitem|date=29 May 2005 (2005-05-29) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1 Aftermath|text=Since the release of [[Release:DR1|DR1]] the team has been focused on fixing bugs found by the community. We are planing on releasing [[Release:DR1.1|DR1.1]] real soon. Do you have any outstanding issues with XMMS2? Please [[Reporting bugs|report]] them!
 
-We have also started to think about [[Release:DR2|DR2]]. Add your feature requests to the bug-reporting page and maybe we will include them in DR2.}}
+We have also started to think about [[Release:DR2|DR2]]. Add your feature requests to the bug-reporting page and maybe we will include them in DR2.
+
+In other news we note that XMMS2 DR1 appered in LWN (http://www.lwn.net).}}
 {{Newsitem|date=20 may 2005 (2005-05-20) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 1|text=After over two years of development, the XMMS Team releases the first
 preview of the next generation XMMS. XMMS2 is a complete rewrite of
 the XMMS codebase and has been focusing on portability, code
