@@ -41,7 +41,7 @@ The plugin can be found on http://wejp.homelinux.org/wejp/xmms2/
 === perlamp ===
 
 Perlamp should be a front-end that allows it to open Wxxamp modern skins. 
-The current status is a prove-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.
+The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.
 Actually the Maki script support is in a very good state, other areas are not.
 Interested parties please contact [[Ralf Engels]]
 
