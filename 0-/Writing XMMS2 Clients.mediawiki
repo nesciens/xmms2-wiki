@@ -10,7 +10,7 @@ This guide will help you understand how to build an XMMS2 client. It's not aimed
 The XMMS2 client library comes with bindings to many languages. You should choose a language that suits you well. I recommend an interpreted language, since all computation is done in the server, and an interpreted language will let you develop faster.
 
 == Connecting to XMMS2d ==
-To be able to communicate with xmms2d you need to connect. The clientlib provides a datastructure that symbolizes the connection called ''xmmsc_connection_t''. First you have to initialize the connection with ''xmmsc_init()''. Like this:
+To be able to communicate with xmms2d you need to connect. The clientlib provides a data structure that symbolizes the connection called ''xmmsc_connection_t''. First you have to initialize the connection with ''xmmsc_init()''. Like this:
 
  xmmsc_connection_t *connection;
  connection = xmmsc_init ("My client name");
