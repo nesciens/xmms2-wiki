@@ -7,7 +7,7 @@ This page should eventually become a guide about things to consider when writing
 This guide will help you understand how to build an XMMS2 client. It's not aimed at any language more like a reference of how different signals work.
 
 == Choosing a Language ==
-XMMS2 client library comes with bindings to many languages. You should choose a language that suits you well. I recommend an interpreted language, since all computation is done in the server, and an interpreted language will let you develop faster.
+The XMMS2 client library comes with bindings to many languages. You should choose a language that suits you well. I recommend an interpreted language, since all computation is done in the server, and an interpreted language will let you develop faster.
 
 == Connecting to XMMS2d ==
 To be able to communicate with xmms2d you need to connect. The clientlib provides a datastructure that symbolizes the connection called ''xmmsc_connection_t''. First you have to initialize the connection with ''xmmsc_init()''. Like this:
