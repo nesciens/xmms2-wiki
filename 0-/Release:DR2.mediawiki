@@ -11,10 +11,18 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 <span style="color: red">This page only exists at this stage as a place to collect todo items and ideas for DR2.</span>
 
 == To Do ==
-* ''maybe'' change mime type handling {{Bug|65}} (see bug notes)
+
+=== Likely ===
+* change mime type handling {{Bug|65}} (see bug notes)
 ** this will most probably change the plugin API
 * provide wave-data for vis-clients, not just frequency-data.
-* '''really''' write a bunch of test scripts, optionally with a set of test sound samples.
+* id3v2.4 support {{Bug|152}}
+* [[Random songs support]] {{Bug|90}}
+* [[General Notify support]] {{Bug|50}}
+* Start-up Hooks
+
+=== Unlikely ===
+* write a bunch of test scripts, optionally with a set of test sound samples.
 ** maybe this should be kept separate from the main tree? the sound samples, especially, could be quite large.
 *** Yes this should definitely be a separate repository, where testing procedures are defined and media files for testing and scripts to do automatic testing are available for download.
 * Have a good method for building out-of-tree (third party) plugins.
