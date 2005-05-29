@@ -19,7 +19,7 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 * id3v2.4 support {{Bug|152}}
 * [[Random songs support]] {{Bug|90}}
 * [[General Notify support]] {{Bug|50}}
-* Start-up Hooks
+
 
 === Unlikely ===
 * write a bunch of test scripts, optionally with a set of test sound samples.
@@ -40,5 +40,6 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 
 == Done ==
+* Start-up Hooks (2005-05-29)
 
 [[Category:Releases]]
