@@ -55,7 +55,7 @@ The above code is a hack that has not been tested. Someone could probably provid
 There are three types of commands that could be sent to the server. There are '''methodcalls''', which just execute something in the server and return the result. There are '''broadcasts''' that are important and will notifiy you about the current state in the server and there are '''signals''' that will update you on status in the server, but are unimportant for the state. 
 
 === Methodcalls ===
-There are two types of methodcalls, one type that just will execute something on the serverside and not give you any response except failure and there are the ones that gives you a result. Both types return a ''xmmsc_result_t''. 
+There are two types of methodcalls, one type that will just execute something on the serverside and not give you any response except failure and there are the ones that gives you a result. Both types return a ''xmmsc_result_t''.
 
 === Broadcasts ===
 
