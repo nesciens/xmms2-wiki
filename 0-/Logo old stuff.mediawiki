@@ -37,6 +37,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 * jochen from isign softart logo suggestion:
 ** [http://www.isign-softart.de/images/xmms2_256x254.png reel-to-reel]
 * Jarno (jarno[at]huittinen[dot]com)
-** [http://www.huittinen.com/~jarno/xmms2/xmms2-vers1.jpg First proposal]
+** [http://www.huittinen.com/~jarno/xmms2/xmms2-vers1.jpg 1. proposal]
+** [http://www.huittinen.com/~jarno/xmms2/xmms2-vers2.jpg 2. proposal]
 
 [[Category: General]]
