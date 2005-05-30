@@ -24,6 +24,12 @@ A: See [[XMMS2 vs MPD]]
 === XMMS2 is not working. What should I do? ===
 * A: You should do it right, of course. Stop doing it wrong, and it'll start working.
 
+=== How do I load an m3u playlist? ===
+* A: You'll need to import the playlist into an mlib playlist first, then load the mlib playlist. (This also means that once you've loaded a playlist this way, you don't need the m3u file anymore)
+ xmms2 mlib import_playlist <name> playlist.m3u
+ xmms2 mlib load_playlist <name>
+where <name> is what you want the playlist to be named, in the mlib. Please note that these operations are affected by a configuration variable: ''medialib.playlist_load_on_import'', which defaults to ''0''. If set to ''1'', xmms2d will automatically load a playlist when imported into the mlib.
+
 == Development ==
 === How do I contribute code to XMMS2? ===
 * A: Please see the [[Submitting code]] page.
