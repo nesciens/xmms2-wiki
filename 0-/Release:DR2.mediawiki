@@ -39,7 +39,7 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 * ''Maybe'' move the wiki to a better machine
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 
-== Done ==
+=== Done ===
 * Start-up Hooks (2005-05-29)
 
 [[Category:Releases]]
