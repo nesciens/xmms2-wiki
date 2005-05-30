@@ -1,7 +1,13 @@
 {{Navbar}}
 
-CoreAudio output
+== Installation notes ==
+* SQLite3 shipped with tiger works.
+* if you compile with fink add the CPPPATH=/sw/include argument when compiling with scons
 
-Cocoa/Carbon glue for the CoreFoundation eventloop.
+== CoreAudio output ==
+XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hacked ESD.
+
+== Cocoa/Carbon glue for the CoreFoundation eventloop. ==
+Daniel has written a CF eventloop handler for the client lib. expect information about it here.
 
 [[Category:Platforms]]
