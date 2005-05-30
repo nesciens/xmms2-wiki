@@ -15,8 +15,13 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 
 == Proposals ==
 * Kropemann's Retro Propaganda
-** [http://nosuchdomain.net/xmms2_v1.png .png]
-** [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg]
+** [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png]
+** [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png]
+** [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png]
+** [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png]
+** [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png]
+** [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
+
 * [http://people.0x63.nu/~andersg/xmms2-logo-02.png Anders' 'X2' concept]
 * [http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
 * [http://www.genmaster.co.nr ''genmaster'''s proposals]
