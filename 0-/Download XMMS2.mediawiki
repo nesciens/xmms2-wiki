@@ -1,10 +1,14 @@
 == Source ==
-Look at our sourceforge page for releases : http://sf.net/projects/xmms2
+* Look at our sourceforge page for releases: http://sf.net/projects/xmms2
+* Daily snapshots are available at: http://git.xmms.se/snapshots/
+* The Git repository is viewable at: http://git.xmms.se
 
 == Binary Packages ==
 
 === Debian sid ===
  deb http://genesis.xmms.se/debian unstable main
+
+<small>Debian packages can also be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information.</small>
 
 == Ports ==
 
@@ -15,3 +19,6 @@ Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/ru
 === FreeBSD ===
 
 A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
+
+[[Category:General]]
+[[Category:Users]]
