@@ -20,8 +20,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 *[[Reporting bugs]]
 *[http://openlogging.org:8080/forsaken.debian.as/tru-20030128124806-16918-64fddd717141b6fa OpenLogging page] (tracks changeset activity)
 *[[Submitting code]]
-*[http://git.xmms.se/ Git repository]
-*[http://git.xmms.se/snapshots/ Git snapshots]
+*[Download_XMMS2 Source Code]
 *[http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO]
 
 == Ideas ==
