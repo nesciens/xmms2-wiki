@@ -1,8 +1,10 @@
 {{Navbar}}
 
+This page covers the process of installing XMMS2 from source code. You may also use [[Download XMMS2#Binary_Packages | binary packages]] if you want.
+
 == Obtaining the source ==
 
-XMMS2 has still not been released to the public, thus there are no binaries or released source packages. You can download daily repository snapshots from [http://git.xmms.se/snapshots/ the snapshot page].
+Check the [[Download XMMS2 | download]] page for information on how to obtain the XMMS2 source code.
 
 == Dependencies ==
 
@@ -27,6 +29,12 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 
 "apt-get install python2.3-pyrex ruby1.8 ruby1.8-dev"
+
+== Platform-specific notes ==
+Some supported platforms may have variations on build requirements:
+* [[FreeBSD]]
+* [[OS_X]]
+* [[Windows]]
 
 == Configuring ==
 Run ''scons'' to first run the configuration. Tweak the options, running ''scons CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are configuration groups listed in ''xmmsconf.py''. (Sorry, there is currently no user-friendly way of listing the modules )
@@ -54,6 +62,6 @@ The INSTALLDIR option provides a way to prepend a path to ''all'' install pathes
 For example, if you installed xmms2 under /usr/local (default), run ''scons -c /usr/local''
 
 == See Also ==
-* [http://xmms2.xmms.org/snapshots/ snapshot page]
+* [[Download XMMS2]]
 
 [[Category: General]]
