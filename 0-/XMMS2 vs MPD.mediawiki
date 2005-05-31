@@ -10,16 +10,16 @@ Generally obvious similarities.. Both XMMS2 and MPD:
 
 == Architechtural Notes ==
 
-When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe there had been another development of XMMS2. But when looking at it in a retrospective we have taken quite different programing philosophies. While the user experiance might be generally the same, the programing and internals are very different. If you are not interested in the internals read on.
+When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe there had been another development of XMMS2. But when looking at it in a retrospective we have taken quite different programing philosophies. While the user experiance might be generally the same, the programming and internals are very different. If you are not interested in the internals read on.
 
-* MPD is a try-try-again structure. For a client this mean that you have to "poll" the server all the time for status updates. 
-** XMMS2 supports a sofisticated notification system where updates are sent to all clients that subscribes to those notifications.
-* MPD clients often impliment their own version of the MPD protocol. There is a clientlib for MPD but it seems more or less unused. 
-** XMMS2 has a well tested and very good implimented clientlib that supports all the features. This clientlib is also available wrapped in Python, Ruby and C#.
+* MPD is a try-try-again structure. For a client this means that you have to "poll" the server all the time for status updates. 
+** XMMS2 supports a sophisticated notification system where updates are sent to all clients that subscribe to those notifications.
+* MPD clients often implement their own version of the MPD protocol. There is a clientlib for MPD but it seems more or less unused. 
+** XMMS2 has a well tested and very well implemented clientlib that supports all the features. This clientlib is also available wrapped in Python, Ruby and C#.
 * MPD uses their own database format to store metadata.
 ** XMMS2 uses SQLite which gives a very flexible medialib.
 
-Note that XMMS team has had disscussions with MPD author and we all agreed that goals for MPD2 is very similar of XMMS2. A collabiration might be possible in the future.
+Note that XMMS team has had discussions with the MPD author and we all agreed that goals for MPD2 are very similar to those of XMMS2. A collaboration might be possible in the future.
 
 == Feature comparison ==
 This list taken from the [http://mpd.wikicities.com/wiki/Features MPD feature list] (Copyright not asserted, fair use assumed)
