@@ -40,4 +40,4 @@ where <name> is what you want the playlist to be named, in the mlib. Please note
 [[Category: Questions and answers]]
 
 === Why cogito/git? What was wrong with cvs? ===
-* A: Thats like asking "Why icecream? What was wrong with meatloaf?" when you want a desert.
+* A: Thats like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert.
