@@ -24,6 +24,9 @@ A: See [[XMMS2 vs MPD]]
 === XMMS2 is not working. What should I do? ===
 * A: You should do it right, of course. Stop doing it wrong, and it'll start working.
 
+=== While trying to start xmms2, I get ''ERROR: Could not create default configfile!!'' ===
+* A: This can happen when you've installed XMMS2 for the first time. You need to run ''xmms2d'' first, then run ''xmms2'' to control the daemon. Running ''xmms2d'' will create the configuration directory as required, so that XMMS2 clients can then create their own configuration files. For more information, please see [[Using the application]].
+
 === How do I load an m3u playlist? ===
 * A: You'll need to import the playlist into an mlib playlist first, then load the mlib playlist. (This also means that once you've loaded a playlist this way, you don't need the m3u file anymore)
  xmms2 mlib import_playlist <name> playlist.m3u
