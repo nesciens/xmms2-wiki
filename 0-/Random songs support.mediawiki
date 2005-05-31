@@ -1,5 +1,7 @@
 {{Navbar}}
 
+''' DONE in DR2 '''
+
 This should be an option to automatically play random songs from the medialib. This could be done in several ways:
 
 * Adding new files to the playlist when you reach the last entry
