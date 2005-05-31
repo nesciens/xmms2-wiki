@@ -14,14 +14,7 @@ An XMMS2 logo should be futuristic, cool and stylish. Not plotted with detail bu
 To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
 
 == Proposals ==
-* Kropemann's Retro Propaganda (kropemann at users dot sf dot net) comments and suggestions welcome
-** [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png]
-** [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png]
-** [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png]
-** [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png]
-** [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png]
-** [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
---
+
 * [http://people.0x63.nu/~andersg/xmms2-logo-02.png Anders' 'X2' concept]
 * [http://people.0x63.nu/~andersg/xmms2swan.jpg Anders' 'black swan' concept]
 * [http://www.genmaster.co.nr ''genmaster'''s proposals]
@@ -44,5 +37,12 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 * Jarno (jarno[at]huittinen[dot]com)
 ** [http://www.huittinen.com/~jarno/xmms2/xmms2-vers1.jpg 1. proposal]
 ** [http://www.huittinen.com/~jarno/xmms2/xmms2-vers2.jpg 2. proposal]
+* Kropemann's Retro Propaganda (kropemann at users dot sf dot net) comments and suggestions welcome
+** [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png]
+** [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png]
+** [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png]
+** [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png]
+** [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png]
+** [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
 
 [[Category: General]]
