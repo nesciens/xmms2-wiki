@@ -2,6 +2,34 @@
 
 This is maintenance release, fixing bugs found in [[Release:DR1]]. This shows that we have a high paced release-soon type of scheme. New features will go into [[Release:DR2]].
 
+== ChangeLog - Short Version ==
+Since DR1 we have fixed over 20 bugs. Here is some of the outstanding issues we corrected:
+* Tobias RundstrÃ¶m <tru@xmms.org>
+** Fixed a bug that generated wrong contents of the pkg-config files.
+** Fix bug #173, shuffle problems with playlist
+** Fix bug #179, don't move entries outside the playlist.
+** Initialize playlist and plugins in the right order. Could cause memory violation in rare cases.
+** Added some new commands to the CLI client.
+* Anders Gustafsson <andersg@xmms.org>
+**    Simplify m3u and pls plugins.
+**    Remove seek-glitch.
+**    ALSA: Make default alsamixer "default" not "hw:0"
+**    ALSA: Don't change volume in open in alsa.c.
+* Tilman Sauerbeck <tilman@code-monkey.de>
+**    Ruby bindings: added a bunch of methods to XmmsClient (bug #171).
+**    Ruby bindings: Fixed bug #185. Need to rb_require 'glib2' instead of 'glib'.
+**    CLI: remove doesn't accept invalid ids anymore.
+**    ALSA: Use longs instead of ints to store volume, fixes problems on ia64 platforms.
+**    Bug #177, PlaylistEntries has entry as unique - won't allow more then one of the same entry in the playlist
+**    When we remove an entry from the playlist, 'currentpos' needs to be decreased if the current entry has been removed.
+* Michael Lindgren <lindgren@debian.as>
+**    BUG: 182, fix handling of icy-metaint.
+* Jens Taprogge <jens.taprogge@rwth-aachen.de>
+**    Improved Debian packages
+* Sham Chukoury <eleusis@eleusis.f2o.org>
+**    Change logfile name patch.
+
+
 == ChangeLog ==
 * Tobias RundstrÃ¶m <tru@xmms.org>
 ** Fixed a bug that generated wrong contents of the pkg-config files.
