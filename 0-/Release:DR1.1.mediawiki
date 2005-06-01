@@ -15,6 +15,7 @@ Since DR1 we have fixed over 20 bugs. Here is some of the outstanding issues we 
 **    Remove seek-glitch.
 **    ALSA: Make default alsamixer "default" not "hw:0"
 **    ALSA: Don't change volume in open in alsa.c.
+** BUG 180: Fix xmms_medialib_select to handle %s in query
 * Tilman Sauerbeck <tilman@code-monkey.de>
 **    Ruby bindings: added a bunch of methods to XmmsClient (bug #171).
 **    Ruby bindings: Fixed bug #185. Need to rb_require 'glib2' instead of 'glib'.
@@ -28,7 +29,6 @@ Since DR1 we have fixed over 20 bugs. Here is some of the outstanding issues we 
 **    Improved Debian packages
 * Sham Chukoury <eleusis@eleusis.f2o.org>
 **    Change logfile name patch.
-
 
 == ChangeLog ==
 * Tobias RundstrÃ¶m <tru@xmms.org>
