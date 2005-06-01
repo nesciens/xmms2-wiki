@@ -20,6 +20,7 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 * [[Random songs support]] {{Bug|90}}
 * [[General Notify support]] {{Bug|50}}
 * Allow open/init in output-plugins to fail. And make open in oss/alsa non blocking. Report error accordingly.
+* fix a sql-quoting function for clients.
 
 === Unlikely ===
 * write a bunch of test scripts, optionally with a set of test sound samples.
