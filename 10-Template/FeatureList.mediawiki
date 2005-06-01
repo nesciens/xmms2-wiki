@@ -1,4 +1,6 @@
 ;Client-server model :
+== Headline text ==
+[http://www.example.com link title][http://www.example.com link title]
 * Allows XMMS2 to have various multiple interfaces (as clients).
 ** Command line interfaces
 ** GTK clients (matching GNOME & XFCE4 look and feel)
