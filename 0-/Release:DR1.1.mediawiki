@@ -20,8 +20,7 @@ This is maintenance release, fixing bugs found in [[Release:DR1]]. This shows th
 **    CLI: Make searches non-case sensetive
 * Anders Gustafsson <andersg@xmms.org>
 **    Simplify m3u and pls plugins.
-***      Introduce a xmms_transport_read_line which reads one line from the
-***      transport. Make m3u and pls plugins use it.
+***      Introduce a xmms_transport_read_line which reads one line from the transport. Make m3u and pls plugins use it.
 **    Avoid race by reffing transport before starting transport thread.
 **    Hold write_mutex while flushing, so its serialized wrt writes.
 **    Flush call moved from xmms_decoder_seek to xmms_output_seek.
