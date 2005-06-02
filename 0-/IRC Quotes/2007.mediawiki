@@ -1,4 +1,11 @@
 ;2005-06-02
+
+ 18:45 <shdf> tru: hopefully your player will become superior =)
+ 18:46 <eleusis> i'm not sure what the metric for 'superior' music player is..
+ 18:48 <shdf> eleusis: for me it's something like: quicktime < realplayer < win media player < mpg123 <
+             xmms :)
+
+;2005-06-02
  10:45 <sacarasc> im wearing a thong
  10:46 <tru> o_O
  10:46 <eleusis> what kind of thong?
