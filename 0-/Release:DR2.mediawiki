@@ -4,11 +4,7 @@
 
 * Make adjustments in the API according to needs of new plugins/clients. Hopefully these are very minor (or totally non-existent if we are lucky)
 * Fix bugs
-* No one really knows yet. ;)
-
-NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
-
-<span style="color: red">This page only exists at this stage as a place to collect todo items and ideas for DR2.</span>
+* Add tons with new bugs and new features that will make xmms2 crash in new exiting ways.
 
 == To Do ==
 
@@ -24,11 +20,11 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 * Make medialib async for internal callers {{Bug|190}}
 * Add support for multiple IPC sockets {{Bug|89}}
 * fix a sql-quoting function for clients.
-
-=== Unlikely ===
 * write a bunch of test scripts, optionally with a set of test sound samples.
 ** maybe this should be kept separate from the main tree? the sound samples, especially, could be quite large.
 *** Yes this should definitely be a separate repository, where testing procedures are defined and media files for testing and scripts to do automatic testing are available for download.
+
+=== Unlikely ===
 * Have a good method for building out-of-tree (third party) plugins.
 * ''maybe'' get some more plugins in. :P
 ** Ogg -> flac, vorbis
@@ -37,10 +33,6 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 ** transport plugin? (XMMS2 as client) client should be able to browse DAAP shares and add daap:// urls, perhaps.
 ** <strike>effect plugin? (XMMS2 as daemon)</strike>. Way better left to a dedicated DAAP daemon; daapd.
 ** [[Music Sharing]]
-
-=== From DR1 ===
-* Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
-* ''Maybe'' move the wiki to a better machine
 
 == Done ==
 * Start-up Hooks (2005-05-29)
