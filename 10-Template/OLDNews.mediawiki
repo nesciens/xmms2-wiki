@@ -1,4 +1,6 @@
-{{Newsitem|date=1 June 2005 (2005-06-01) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1.1 Released|text=We are happy to announce that [[Release:DR1.1|DR1.1]] has been released! This adresses over 20 issues in the first release. Look at the release page to see the changes. The team will now focus on [[Release:DR2]], with new exiting features.}}
+{{Newsitem|date=2 June 2005 (2005-06-02) WST|author=[[Sham Chukoury]]|title=XMMS2 on LWN|text=Hot on the heels of DR1.1, the XMMS2 article on LWN.net is now available to non-subscribers: http://lwn.net/Articles/137333/ :)}}
+
+{{Newsitem|date=1 June 2005 (2005-06-01) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1.1 Released|text=We are happy to announce that [[Release:DR1.1|DR1.1]] has been released! This adresses over 20 issues in the first release. Look at the release page to see the changes. The team will now focus on [[Release:DR2|DR2]], with new, exciting features.}}
 
 {{Newsitem|date=29 May 2005 (2005-05-29) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1 Aftermath|text=Since the release of [[Release:DR1|DR1]] the team has been focused on fixing bugs found by the community. We are planing on releasing [[Release:DR1.1|DR1.1]] real soon. Do you have any outstanding issues with XMMS2? Please [[Reporting bugs|report]] them!
 
