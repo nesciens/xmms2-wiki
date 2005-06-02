@@ -4,9 +4,9 @@ this page should be turned into a more detailed info page about the cli client
 
 
 Information on how to use the Medialib would be much appreciated. The current example query is outdated and no longer produces any results (the database is apparently structured completely different, more flexibly). The following query for example will return all tracks by the artist 'Korn' together with their id's:
-"select m2.value as title, m1.id as id from Media as m1, Media as m2 where m1.key='artist' and m1.value='Goo Goo Dolls' and m1.id=m2.id and m2.key='title'"
+''"select m2.value as title, m1.id as id from Media as m1, Media as m2 where m1.key='artist' and m1.value='Goo Goo Dolls' and m1.id=m2.id and m2.key='title'"''
 
 The following query should achive about the same results as the current example query ("select * from Media where artist = 'Korn' order by album"), but i don't know if there's an easier way of doing it:
-"select m1.id as id, m2.value as title, m3.value as album from Media as m1, Media as m2, Media as m3 where m1.key='artist' and m1.value='Korn' and m1.id=m2.id and m2.key='title' and m1.id=m3.id and m3.key='album' order by m3.value"
+''"select m1.id as id, m2.value as title, m3.value as album from Media as m1, Media as m2, Media as m3 where m1.key='artist' and m1.value='Korn' and m1.id=m2.id and m2.key='title' and m1.id=m3.id and m3.key='album' order by m3.value"''
 
 [kumakae] 11:51, 2 June 2005 (CEST)
