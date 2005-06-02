@@ -15,11 +15,14 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 === Likely ===
 * change mime type handling {{Bug|65}} (see bug notes)
 ** this will most probably change the plugin API
-* provide wave-data for vis-clients, not just frequency-data.
+* provide wave-data for vis-clients, not just frequency-data. {{Bug|192}}
 * id3v2.4 support {{Bug|152}}
 * [[Random songs support]] {{Bug|90}}
 * [[General Notify support]] {{Bug|50}}
-* Allow open/init in output-plugins to fail. And make open in oss/alsa non blocking. Report error accordingly.
+* Allow open/init in output-plugins to fail. And make open in oss/alsa non blocking. Report error accordingly. {{Bug|191}}
+* Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
+* Make medialib async for internal callers {{Bug|190}}
+* Add support for multiple IPC sockets {{Bug|89}}
 * fix a sql-quoting function for clients.
 
 === Unlikely ===
@@ -38,7 +41,6 @@ NOTE: We are not at the DR2 stage yet, in fact, we may be very far away.
 === From DR1 ===
 * Make sure that we are consistent in the naming of functions: ''xmms_<module>_<submodule>_<operation>'' e.g. ''transport_plugin_get''()
 * ''Maybe'' move the wiki to a better machine
-* Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 
 == Done ==
 * Start-up Hooks (2005-05-29)
