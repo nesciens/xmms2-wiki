@@ -18,6 +18,25 @@
  10:53 <ruskie> :)
  10:53 <sacarasc> im english, dont insult me you convict ;p
 
+;2005-05-31
+ 03:00:46 <Knirch>	no PCM data for DR2?
+ 03:01:01 <eleusis>	this git web thing is sexy
+ 03:01:11 <tru>	Knirch: what?
+ 03:01:21 <eleusis>	PCM for vis, i think
+ 03:02:40 <tru>	yes. but.
+ 03:02:42 <tru>	hello
+ 03:02:48 <tru>	I can't code that fast.
+ 03:02:52 <eleusis>	;)
+ 03:03:09 <Knirch>	faster, harder, scooter!
+ 03:03:15 <eleusis>	this is the 21st century, tru.. you have to code in INTERNET TIME
+ 03:03:36 <eleusis>	none of this 15th-century punched card bollocks with babbage :P
+ 03:03:46 <Knirch>	:DD
+ 03:03:48 <eleusis>	and jacquard
+ 03:03:56 <tru>	japscat?
+ 03:03:59 <eleusis>	:D
+ 03:04:04 <Knirch>	:D
+ 03:04:04 <eleusis>	hahaha
+
 ;2005-05-20:
  [17:08:42][tilman]: is dr1 officially out now or what/
  [17:08:43][tilman]: ?
