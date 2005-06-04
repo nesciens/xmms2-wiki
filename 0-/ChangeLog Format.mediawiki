@@ -1,3 +1,5 @@
+''' THIS IS A PROPOSAL '''
+
 When you have done a change to the git tree and want to commit it. The ChangeLog should be formated like this:
 
 <TAG>:Text
@@ -10,5 +12,25 @@ Where TAG should be one of the following:
 * PRIVATE: a change that won't be propagated i a ChangeLog. mostly unimportant things like spelling misstakes.
 * DOC: documentation / comment updates.
 
+Perhaps the following tags might also be useful:
+* CLI: command line client
+* ALSA, OSS, VORBIS (plugin name): changes to various plugins (''src/plugins'')
+* PYTHON: changes to Python bindings
+* RUBY: changes to Ruby bindings
+* C# binding? (this category is represented on Mantis, I don't know if it's still valid)
+* MLIB: changes to medialib (including sqlite?)
+* SCONS: changes to scons conf/build system
+* IPC: changes to IPC layer
+* TRANSPORT, DECODER, OUTPUT: changes to these modules...
+* CONFIG: changes to daemon config system
+* PLAYLIST: changes to playlist module
 
-''' THIS IS A PROPOSAL '''
+Perhaps not so useful, but I'll list them anyway...
+* VIS: visualisation data
+* OTHER: doesn't fit under any categories above? (or maybe just leave out the tag!)
+* PLUGIN: changes to plugin API?
+* HEADER: changes to include files?
+
+Once a firmer consensus on this proposal is achieved, some of these tags will be used to categorise bugs on the Mantis bug tracker.
+
+[[Category:Developer info]]
