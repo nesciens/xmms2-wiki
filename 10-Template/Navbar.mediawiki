@@ -3,8 +3,13 @@
 [[Read me first!]]&nbsp;|
 [[FAQ]]&nbsp;|
 [[Project Status]]&nbsp;|
-[[General information | General info]]&nbsp;|
-[[Users]]&nbsp;|
-[[Developer Corner|Developers]]&nbsp;|
 [[About]]
+
+<div>
+'''Information and resources for''':
+<span style="border: 1px dotted yellow">[[General information | Everyone]]</span>&nbsp;|
+<span style="border: 1px dotted green">[[Users]]</span>&nbsp;|
+<span style="border: 1px dotted blue">[[Developer Corner|Developers]]</span>
+</div>
+
 </center>
