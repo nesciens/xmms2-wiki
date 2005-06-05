@@ -47,6 +47,7 @@ After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_conn
    if (ret > 0) {
      xmmsc_ipc_io_in_callback (connection->ipc);
    }
+   usleep(10); // so we don't overload the proc when theres no incoming data
  }
 
 The above code is a hack that has not been tested. Someone could probably provide a better example. This will dispatch all the notifiers we have.
