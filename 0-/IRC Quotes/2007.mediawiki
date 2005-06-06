@@ -1,3 +1,15 @@
+;2005-06-06
+ [04:34:28][smallfoot-]: hehe
+ [04:37:40][smallfoot-]: i saw wiki of xmms2
+ [04:37:48][smallfoot-]: it shows some api to use
+ [04:37:57][smallfoot-]: but it doesnt show the protocol
+ [04:38:04][smallfoot-]: i think a XML based protocol would be neat
+ [04:38:18][jmsaunders]: I have a friend who despises XML
+ [04:38:36][smallfoot-]: why
+ [04:38:41][jmsaunders]: I'm not really sure
+ [04:38:51][smallfoot-]: sure its a little overhead, but its greatly extensible
+
+
 ;2005-06-02
 
  18:45 <shdf> tru: hopefully your player will become superior =)
