@@ -64,6 +64,6 @@ Play:
 
 Query the medialib database (e.g. your favourite band):
 
-  xmms2 mlib query "select * from Media where artist = 'Korn' order by album"
+  xmms2 mlib query "select * from songs where artist = 'Korn' order by album"
 
 [[Category: Users]]
