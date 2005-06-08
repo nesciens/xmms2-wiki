@@ -1,3 +1,6 @@
+;2005-06-08
+ 16:07 <ccr> I don't know about you, but some people really do have too much time ... and I'm certain they're stealing that time from me.
+
 ;2005-06-06
  [04:34:28][smallfoot-]: hehe
  [04:37:40][smallfoot-]: i saw wiki of xmms2
@@ -8,7 +11,6 @@
  [04:38:36][smallfoot-]: why
  [04:38:41][jmsaunders]: I'm not really sure
  [04:38:51][smallfoot-]: sure its a little overhead, but its greatly extensible
-
 
 ;2005-06-02
 
