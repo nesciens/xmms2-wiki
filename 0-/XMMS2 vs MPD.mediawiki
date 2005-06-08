@@ -10,12 +10,12 @@ Generally obvious similarities.. Both XMMS2 and MPD:
 
 == Architechtural Notes ==
 
-When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe there had been another development of XMMS2. But when looking at it in a retrospective we have taken quite different programing philosophies. While the user experience might be generally the same, the programming and internals are very different. If you are not interested in the internals read on.
+When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe XMMS2 might have been developed differently. But when looking at it retrospectively, we have adopted fairly different programming philosophies. While the user experience might generally be the same, the programming and internals are very different. If you are not interested in the internals, skip this section.
 
-* MPD is a try-try-again structure. For a client this means that you have to "poll" the server all the time for status updates. 
+* MPD is a try-try-again structure. For a client, this means that you have to "poll" the server all the time for status updates. 
 ** XMMS2 supports a sophisticated notification system where updates are sent to all clients that subscribe to those notifications.
-* MPD clients often implement their own version of the MPD protocol. There is a clientlib for MPD but it seems more or less unused. 
-** XMMS2 has a well tested and very well implemented clientlib that supports all the features. This clientlib is also available wrapped in Python, Ruby and C#.
+* MPD clients often implement their own version of the MPD protocol. There is a clientlib for MPD but it seems more or less unused.
+** XMMS2 has a well-tested and very well implemented clientlib that supports all the features. This clientlib is also available wrapped in Python, Ruby and C#.
 * MPD uses their own database format to store metadata.
 ** XMMS2 uses SQLite which gives a very flexible medialib.
 
@@ -75,7 +75,7 @@ XMMS2 uses plugins to read data, decode it, output sound data, read and write pl
 ; Playlists; Allow creation of playlists* on the fly; Allow attaching a playlist to an audio device or stream; Playlist plugins to get different types of playlists:
 (No idea what 'creation of playlist on the fly' means..) XMMS2 only has a single playlist. XMMS2 can load and save playlists in the following formats: [[Component:m3u | M3U]], [[Component:pls | PLS]], [[Component:html | HTML]]. More playlist formats can be supported via appropriate plugins. XMMS2 can also save playlists to the [[Component:Medialib | Medialib]] and reload them.
 ; Queue Playlist:
-They are temporary playlists, when you have a playlist in the correct order you might want to play some songs in a special order. So you queue these songs, and the player will play them in that order, and then continue as before. Idon't know if this is suppported in XMMS2
+Queue playlists are described as being "temporary playlists: when you have a playlist in the correct order you might want to play some songs in a special order. So you queue these songs, and the player will play them in that order, and then continue as before." This could be implemented client-side, with XMMS2. The XMMS2 playlist itself is just that - an ordered list of streams to be played, as far as the daemon is concerned. Clients may use the medialib and more sophisticated manipulation of playlist data for a different user experience.
 ; DB:
 The Medialib in XMMS2 is not as flexible as the DB planned for MPD2. At the moment, there is only one SQLite database always located at ''~/.xmms2/medialib.db''. The problem with adding different database backends is that those different backends may require variations on SQL statements to optimise their behaviour. (Or else it would make life very difficult for client writers who want to execute medialib queries as fast and efficiently as possible) Using non-SQL backends also incurs the overhead of translating from an SQL statement to whatever scheme the backend uses. Medialib plugins, for example, to support TopicMap (XTM) metadata storage ''may'' be possible, but will require a fair bit of work, and no one on the XMMS2 development team is sufficiently interested at this point.
 
