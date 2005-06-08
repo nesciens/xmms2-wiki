@@ -12,6 +12,8 @@
  [04:38:41][jmsaunders]: I'm not really sure
  [04:38:51][smallfoot-]: sure its a little overhead, but its greatly extensible
 
+Note: Yes the above is a funny because the guy has NO idea of what he is talking about.. No we do not intend to support an XML API for a application that needs to rapidly update a lot of clients. A little overhead? heh.
+
 ;2005-06-02
 
  18:45 <shdf> tru: hopefully your player will become superior =)
