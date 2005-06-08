@@ -10,7 +10,7 @@ Generally obvious similarities.. Both XMMS2 and MPD:
 
 == Architechtural Notes ==
 
-When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe there had been another development of XMMS2. But when looking at it in a retrospective we have taken quite different programing philosophies. While the user experiance might be generally the same, the programming and internals are very different. If you are not interested in the internals read on.
+When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe there had been another development of XMMS2. But when looking at it in a retrospective we have taken quite different programing philosophies. While the user experience might be generally the same, the programming and internals are very different. If you are not interested in the internals read on.
 
 * MPD is a try-try-again structure. For a client this means that you have to "poll" the server all the time for status updates. 
 ** XMMS2 supports a sophisticated notification system where updates are sent to all clients that subscribe to those notifications.
