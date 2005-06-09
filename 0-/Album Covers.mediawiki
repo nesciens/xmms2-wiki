@@ -37,5 +37,8 @@ Summary:
 
 I reckon maybe album covers could be handled client-side only, using metatada grabbed from the playlist/mlib...
 ----
+[[Daniel Svensson]] 2005-06-09
+
+I tend to agree now after thinking about it for half a year ;)
 
 [[Category: Developer ideas]]
