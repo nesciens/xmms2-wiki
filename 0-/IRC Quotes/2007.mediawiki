@@ -1,3 +1,21 @@
+;2005-06-09
+13:41 <nano> Ok, Ã¤r det nÃ¥gon som vÃ¥gat tÃ¤nka pÃ¥ internationalisering av
+              felmeddelanden frÃ¥n xmms2d Ã¤n?
+13:41 <tru> bingo bingo bingo.
+13:41 -!- mode/#xmms2 [+vvv fox Nubbe ruskie] by anders
+13:41 -!- mode/#xmms2 [+vvv shdf zinx eleusis] by anders
+13:41 -!- mode/#xmms2 [+vvv ccr ydo jlt] by anders
+13:41 -!- mode/#xmms2 [+vvv jlt_ oebb Knirch] by anders
+13:41 -!- mode/#xmms2 [+vvv ganja tilman lindgren] by anders
+13:41 <nano> sul
+13:41 -!- mode/#xmms2 [+vvv nano tazle beable2] by anders
+13:41 -!- mode/#xmms2 [+vv cocobo tru] by anders
+13:41 <tru> jag tror min mirkk fÃ¶rsvann in i en tunnel.
+13:41 -!- mode/#xmms2 [-v nano] by anders
+13:42 -!- mode/#xmms2 [+m] by anders
+13:42 -!- mode/#xmms2 [+v anders] by anders
+13:42 <anders> HÃ¶rde du nÃ¥got, tru?
+
 ;2005-06-08
  16:07 <ccr> I don't know about you, but some people really do have too much time ... and I'm certain they're stealing that time from me.
 
