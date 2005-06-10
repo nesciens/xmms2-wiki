@@ -54,9 +54,13 @@ Talking to the daemon via TCP (Note: this example is for the daemon listening to
 
 == First steps using xmms2 client ==
 
-Add all files in a directory to the playlist (recursively adds files in subdirectories as well):
+Add all files in a directory to the medialib (recursively adds files in subdirectories as well):
 
-  xmms2 radd /path/to/music
+  xmms2 mlib addpath /path/to/music
+
+Add files to the playlist:
+
+  xmms2 add /some/path/*.ogg
 
 Play:
 
@@ -64,6 +68,10 @@ Play:
 
 Query the medialib database (e.g. your favourite band):
 
-  xmms2 mlib query "select * from songs where artist = 'Korn' order by album"
+  xmms2 mlib search artist="Kultiration"
+
+Query the medialib database and add the result to your playlist:
+
+  xmms2 mlib searchadd artist="Kultiration"
 
 [[Category: Users]]
