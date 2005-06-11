@@ -118,7 +118,7 @@ Select Top-10 most played songs from the Medialib:
    2933| psilodumputer   |                            |psilodumputer                 |2
 
 
-Select the five most recently playd songs:
+Select the five most recently played songs:
   sqlite> SELECT l.id, m.artist, m.album, m.title 
           FROM Media m, Log l 
           ON l.id=m.id 
