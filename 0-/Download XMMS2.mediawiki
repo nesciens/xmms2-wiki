@@ -8,7 +8,7 @@
 === Debian sid ===
  deb http://genesis.xmms.se/debian unstable main
 
-<small>Debian packages can also be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information.</small>
+<small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
 
 == Ports ==
 
