@@ -10,8 +10,6 @@ An XMMS2 logo should be futuristic, cool and stylish. Not plotted with detail bu
 * Logo has to work on homepage, tshirts, giveaways whatever. :)
 * Logo should have a low number of colours, like two or three. (or even only black) This is simply to make sure that the logo looks good with few colours (e.g. some icons). Feel free to submit logos in 'full-colour' versions with equivalent 'low-colour' versions.
 
-more playboy needed
-
 === Note about submissions ===
 To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
 
