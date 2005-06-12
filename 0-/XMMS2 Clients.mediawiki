@@ -51,6 +51,10 @@ gxmms2 is a GTK2 based XMMS2 client. Its main window is small and simple. It inc
 Client written by Johannes Heimansberg.
 It can be found on http://wejp.homelinux.org/wejp/xmms2/ soon.
 
+===juxtapose===
+
+"Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.  Picture soon, but for now you can have a look at http://www.commercialconspiracy.co.uk/xmms2/juxtapose.py
+
 == Qt ==
 === medialib-ui playlist client ===
 
