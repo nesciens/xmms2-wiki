@@ -68,12 +68,6 @@ This is a standalone medialib and playlist client. Aimed at functionality instea
 
 HaX is a flexible and modular Python client for XMMS2. What started off as a PyGTK project has evolved into a reusable collection of modules that may be used to quickly build other Python XMMS2 clients, integrate a player client into a larger Python application, or simply provide smarter 'skinning' abilities. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
 
-=== Hippopotamus ===
-
-A Cocoa client is being developed for OS X by [[Daniel Svensson]]. There is also an OSD client for OS X called '''InYourFace''' that sooner or later will be merged with '''Hippopotamus''' in some way... or will continue on its own mystical path.
-
-Both clients can be found on http://www.nittionio.nu/xmms2/
-
 === GNUstep client ===
 
 A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
