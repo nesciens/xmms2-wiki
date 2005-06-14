@@ -55,7 +55,7 @@ It can be found on http://wejp.homelinux.org/wejp/xmms2/
 
 "Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.  Picture soon, but for now you can have a look at http://www.commercialconspiracy.co.uk/xmms/juxtapose.py
 
-=== GNOME XmmsClient Panel Applet ===
+=== PanelhÃ¶na - GNOME Panel Applet ===
 A simple GNOME Panel Applet that you can drop files on and xmms2 starts playing the dropped song. RMB for a menu with related items, LMB for [http://www.apple.com/macosx/features/spotlight/ spotlight] like searching of the medialib. http://www.nittionio.nu/xmms2/, written by [[Daniel Svensson]].
 
 == Qt ==
