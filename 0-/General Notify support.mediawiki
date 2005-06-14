@@ -8,4 +8,6 @@ Listen to all songs in medialib and update the mediainfo in the db if a file cha
 === Notification when adding new songs ===
 Automatically add songs to the medialib when you upload files to a specific directory. Configvalue for the path. Should we watch all recursive directories for new files? Or should we be able to add multiple paths to the configuration? It should also check the directory on xmms2d startup to see if any changes have occurred and add those songs/update those songs in the medialib.
 
+Maybe famd or gamin can be used to notify xmms2d of new files or file deletions.
+
 [[Category:Developer ideas]]
