@@ -5,3 +5,7 @@ Could the author of this suggestion please identify him/herself? ;) If i recall 
 Well, making xmms2 as a DAAP server wouldn't be impossible. Question is if it fits. I am quite happy with not trying to bloat our *MUSIC* player as far as we can.
 
 [[User:TobiasRundstrÃ¶m|tru]] 09:00, 11 May 2005 (CEST)
+
+I wonder if [http://www.deleet.de/projekte/daap/daapd/ DAAPD] could hook into the Medialib somehow - that would seem more elegant, and it would eliminate the need to write much (any?) daap-specific code in XMMS2 itself.  Not sure whether daapd or XMMS2 would have to jump through more hoops, code-wise, to make this happen.
+
+On a related note, I wonder if autodiscovery of TCP-ready XMMS2 servers via [http://www.porchdogsoft.com/products/howl/ Howl] would be desirable...
