@@ -9,8 +9,6 @@ A: We don't know. Probably "when it's done". RSN.
 * What is the difference between MPD (Music Player Daemon) and XMMS2?:
 A: See [[XMMS2 vs MPD]]
 
-* Will you be allowing for 'skinning' to allow us to customize the look?
-
 == Usage ==
 '''Hint''': ''Also see the [[Users]] page''
 
