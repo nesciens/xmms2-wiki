@@ -6,7 +6,7 @@ You can submit code for inclusion into the main XMMS2 tree for various reasons:
 * new plugins or features
 * cleanups, better documentation
 
-The XMMS2 development team reserves the right to include to exclude code at its own discretion.
+The XMMS2 development team reserves the right to include or to exclude code at its own discretion.
 
 == Requirements ==
 In order to be considered for inclusion, your code should meet the following requirements:
