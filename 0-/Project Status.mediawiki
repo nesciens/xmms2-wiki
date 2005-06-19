@@ -1,5 +1,4 @@
 {{Navbar}}
-{{BK_Drama}}
 
 {{ReleaseStatus}}
 
