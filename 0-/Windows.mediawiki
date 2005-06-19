@@ -1,13 +1,5 @@
 {{Navbar}}
 
-Should work soon. 
-
-Will to start with be based on cygwin. This is the fastest way of getting things running. When this is complete and we have a WaveOut working a real native port (mingw) can start, but from what I can tell it's just a matter of replacing a few functions with glib ones, and perhaps on some places add a #ifdef XMMS_OS_WINDOWS. 
-
-The current situation is that the core of xmms2 compiles. However, when linking the plugins there are errors when .dll-files call methods that live in .exe-land. I (Daniel) am not very familiar with Windows so some help would be nice.
-
-Stuff that do compile and seems to work is: xmms2.exe, xmms2d.exe, libxmmsclient.dll
-
-If anybody wants to start hacking on this on your own there is a sketch of what waveout.c probably should look like, although it has never been compiled ;)
+Work in progress, wait and see. 
 
 [[Category:Platforms]]
