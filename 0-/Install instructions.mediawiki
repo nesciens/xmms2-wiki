@@ -25,7 +25,7 @@ These libraries are not '''needed''' but probably a good idea.
 * [http://www.alsa-project.org ALSA]
 * [http://sidplay2.sourceforge.net/ SIDplay2]
 * [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
-* [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings.
+* [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings, NOTE that pyrex generates code that gcc4 does NOT compile, you need an older gcc.
 * [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 
 "apt-get install python2.3-pyrex ruby1.8 ruby1.8-dev"
