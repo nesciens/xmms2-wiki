@@ -80,6 +80,11 @@ This is a quickly hacked up client that displays the artist and title of a song 
 
 This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
 
+=== xmms2_blue ===
+
+This client interfaces xmms2d to a Bluetooth enabled phone.  It is still fairly experimental, but basic functionality should work.  The protocol used is described in Ericsson and Sony Ericsson documents.  So most likely the client will only work with phones of those brands.
+The sources can be obtained form the blue branch of [mailto:jlt_xmms2@shamrock.dyndns.org Jens Taprogge]'s xmms2 git tree [http://git.xmms.se/ http://git.xmms.se/].
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
