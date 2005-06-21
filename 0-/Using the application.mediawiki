@@ -30,9 +30,9 @@ Here is a list of currently available xmms2d options:
 
 If you want xmms2d to listen for requests via TCP you should alter the config. 
 
- xmms2 config core.ipcsocket tcp://0:<port> 
+ xmms2 config core.ipcsocket tcp://127.0.0.1:<port> 
 
-and then restart xmms2d. Now xmms2d will listen to that port for incoming remote clients. '''FreeBSD users please note''': This example currently fails - try using a host address other than '0'.
+and then restart xmms2d. Now xmms2d will listen to that port for incoming remote clients.
 
 == xmms2 client options ==
 
