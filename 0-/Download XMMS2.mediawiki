@@ -3,9 +3,6 @@
 * Daily snapshots are available at: http://git.xmms.se/snapshots/
 * The Git repository is viewable at: http://git.xmms.se
 
-
-Linux-forever
-
 == Binary Packages ==
 
 === Debian sid ===
