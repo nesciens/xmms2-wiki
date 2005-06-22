@@ -47,10 +47,17 @@ equivalent:
   export XMMS_PATH="unix:///tmp/my-socket"
   xmms2 list
 
+for (t)csh users:
+
+  setenv XMMS_PATH "unix:///tmp/my-socket"
+  xmms2 list
+
 Talking to the daemon via TCP (Note: this example is for the daemon listening to port 7777 on a machine with address 10.0.0.1 This does not imply port 7777 is the default TCP port):
 
   export XMMS_PATH="tcp://10.0.0.1:7777"
   xmms2 list
+
+for (t)csh use setenv and do not include the =.
 
 == First steps using xmms2 client ==
 
