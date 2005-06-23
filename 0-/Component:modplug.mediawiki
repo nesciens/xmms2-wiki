@@ -1,0 +1,8 @@
+ModPlug is primarily a 'module' files player ; the author, Olivier Lapicque, extended it to a 'modules' rendering engine. 
+A plug-in for xmms1 already exists, and the actual maintainer is Konstanty. You can check it at [http://modplug-xmms.sourceforge.net Sourceforge].
+
+Modules are a very old but still evolving music format, based on the association of several samples that can be played at the time and the frequency given ; the most recent formats allow hundreds of samples to be played at the same time. Nice effects (volume and span fading, vibratos, filters) can be applied to the samples.
+
+This format is consequently a mix between sample files and configuration and layout parameters, and the result is a not so large file (admitted that size can vary extremely between the composers strategy).
+
+Modules files are rendered by an engine capable of reproducing the effects applied, so the quality of the output depends a lot on the engine.
