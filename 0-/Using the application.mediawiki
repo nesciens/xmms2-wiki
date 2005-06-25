@@ -1,6 +1,6 @@
 {{Navbar}}
 
-xmms2d can be started by either typing 'xmms2d' after installing the application or trying perform some action with 'xmms2'.
+xmms2d can be started by typing 'xmms2d' after installing the application. You can then interact with the daemon using the 'xmms2' command-line client.
 
  xmms2d
  xmms2 add some.nice.music.ogg
