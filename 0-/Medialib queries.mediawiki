@@ -3,12 +3,11 @@
 Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
 
 
-WARNING: OUTDATED !! (The stuff below is still possible, but the SQL queries may differ)
-
 Select all genres:
-  sqlite> SELECT genre 
+  sqlite> SELECT value 
           FROM Media 
-          GROUP BY LOWER (genre) ORDER BY genre;
+          WHERE key="genre"
+          GROUP BY LOWER (value) ORDER BY value;
   Alternative
   Blues
   Classic Rock
@@ -19,7 +18,7 @@ Select all genres:
 
 Select all artists:
   sqlite> SELECT artist 
-          FROM Media 
+          FROM Songs 
           GROUP BY LOWER (artist) ORDER BY artist; 
   Alien Vs. The Cat
   Apoptygma Berzerk
@@ -29,7 +28,7 @@ Select all artists:
 
 Select all albums by an artist:
   sqlite> SELECT album 
-          FROM Media 
+          FROM Songs 
           WHERE artist LIKE "Lamb" 
           GROUP BY LOWER (album) ORDER BY album; 
   Between Darkness and Wonder
@@ -40,7 +39,7 @@ Select all albums by an artist:
 
 Select five random songs:
   sqlite> SELECT id, artist, album, title 
-          FROM Media 
+          FROM Songs 
           ORDER BY RANDOM() LIMIT 5;
   227|Elvis Costello    |My Aim Is True                 |Pay It Back
   497|MÃºm               |Finally We Are No One          |Faraway Swimmingpool
@@ -50,9 +49,9 @@ Select five random songs:
 
 
 Select five random songs from the 'Psychedelic' genre:
-  sqlite> SELECT artist, album, title 
-          FROM Media 
-          WHERE LOWER (genre) like "Psychedelic" 
+  sqlite> SELECT s.artist, s.album, s.title 
+          FROM Songs s, Media m
+          WHERE m.key="genre" AND LOWER (m.value) LIKE "Psychedelic" and s.id=m.id 
           ORDER BY RANDOM() LIMIT 5;
   Prometheus        |Robot-O-Chan          |Snake & Ladders
   Infected Mushroom |Cities Of The Future  |Cream
@@ -63,7 +62,7 @@ Select five random songs from the 'Psychedelic' genre:
 
 Select five random albums:
   sqlite> SELECT id, artist, album 
-          FROM Media 
+          FROM Songs 
           GROUP BY LOWER (album) ORDER BY RANDOM() LIMIT 5;
   336|Grateful Dead     |American Beauty
   132|Apoptygma Berzerk |Unicorn
@@ -73,7 +72,7 @@ Select five random albums:
 
 
 An example of what you might find in the property table for a medialib entry:
-  sqlite> SELECT key, value FROM Property WHERE id=887; 
+  sqlite> SELECT key, value FROM Media WHERE id=887; 
   resolved                |1
   musicbrainz_albumid     |e6253a2b-ddc9-442b-8c45-f6e0daf616e3
   musicbrainz_trmid       |482efcb5-0f7f-4eaf-98ab-8e1133507137
@@ -89,10 +88,10 @@ An example of what you might find in the property table for a medialib entry:
 (Note that this data differs from entry to entry. However, there are some properties that usually are present in entries, like duration, bitrate, samplerate and resolved)
 
 
-Select the five first entries from the Medialib, fetch duration from the Property table:
-  sqlite> SELECT m.id, artist, album, title, p.value 
-          FROM Property p, Media m 
-          ON m.id=p.id AND p.key="duration" LIMIT 5;
+Select the five first entries from the Medialib, fetch duration:
+  sqlite> SELECT s.id, s.artist, s.album, s.title, m.value 
+          FROM Songs s, Media m 
+          WHERE m.key="duration" and s.id=m.id LIMIT 5;
   1|Helt Off |Helt Off |Klibbiga Toner                |257384
   2|Helt Off |Helt Off |Hur Beter Du Dig Man?         |203023
   3|Helt Off |Helt Off |Va Skulle Du GÃ¶ra (Om Och Om) |251611
@@ -101,9 +100,9 @@ Select the five first entries from the Medialib, fetch duration from the Propert
 
 
 Select Top-10 most played songs from the Medialib:
-  sqlite> SELECT l.id, m.artist, m.album, m.title, COUNT (l.id) AS count 
-          FROM Media m, Log l 
-          ON l.id=m.id 
+  sqlite> SELECT l.id, s.artist, s.album, s.title, COUNT (l.id) AS count 
+          FROM Songs s, Log l 
+          WHERE l.id=s.id 
           GROUP BY l.id 
           ORDER BY count DESC LIMIT 10;
       3| Helt Off        |Helt Off                    |Va Skulle Du GÃ¶ra (Om Och Om) |5
@@ -119,10 +118,9 @@ Select Top-10 most played songs from the Medialib:
 
 
 Select the five most recently played songs:
-  sqlite> SELECT l.id, m.artist, m.album, m.title 
-          FROM Media m, Log l 
-          ON l.id=m.id 
-          GROUP BY l.id 
+  sqlite> SELECT l.id, s.artist, s.album, s.title 
+          FROM Songs s, Log l 
+          WHERE l.id=s.id 
           ORDER BY l.starttime DESC LIMIT 5;
   9936| Aphex Twin | 26 Mixes for Cash (disc 2) | Radiator (original mix)
   9934| Aphex Twin | 26 Mixes for Cash (disc 2) | Windowlicker (Acid edit)
