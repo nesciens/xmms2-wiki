@@ -12,8 +12,6 @@
 * change mime type handling {{Bug|65}} (see bug notes)
 ** this will most probably change the plugin API
 * provide wave-data for vis-clients, not just frequency-data. {{Bug|192}}
-* id3v2.4 support {{Bug|152}}
-* [[General Notify support]] {{Bug|50}}
 * Allow open/init in output-plugins to fail. And make open in oss/alsa non blocking. Report error accordingly. {{Bug|191}}
 * Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
 * Make medialib async for internal callers {{Bug|190}}
@@ -36,5 +34,8 @@
 == Done ==
 * Start-up Hooks (2005-05-29)
 * [[Random songs support]] {{Bug|90}}
+* id3v2.4 support {{Bug|152}}
+* [[General Notify support]] {{Bug|50}}
+
 
 [[Category:Releases]]
