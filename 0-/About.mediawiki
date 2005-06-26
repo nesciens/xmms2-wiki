@@ -4,7 +4,7 @@
 
 == Why XMMS2? ==
 
-Why bother working on a next generation XMMS while there are various existing and more advanced projects already in progress, some ready for production use?Because XMMS is just too damn popular to be allowed to die, of course! But seriously, while the field of 'audio playback' in general is something of an old beaten path, there is still much room for improvement.
+Why bother working on a next generation XMMS while there are various existing and more advanced projects already in progress, some ready for production use? Because XMMS is just too damn popular to be allowed to die, of course! But seriously, while the field of 'audio playback' in general is something of an old beaten path, there is still much room for improvement.
 
 Constant progress is happening in the field of digital audio playback, including: new compression/encoding schemes, better and more flexible encapsulation and container formats, more efficient encoders and decoders, better ways of managing collections of music files, new ways of letting users interact with their music and so on. XMMS2 jumps into the mix with the goal of trying to provide an improved music listening experience for users. 
 
@@ -13,7 +13,7 @@ The XMMS2 project started in late 2002 as an idea to make a "kick-ass music play
 Developers of another fork of XMMS, BMP, the "Beep media player", comment on XMMS:
 ''The XMMS code we inherited is old and messy. In more specific terms, it is poorly structured, poorly documented and littered with duplications. It is difficult to modify or extend one component of XMMS without breaking another. We spent most of our time fixing problems that were introduced after seemingly innocent modifications.''
 
-The XMMS2 team is committed to producing a better music player, while diligently maintaining a robust and flexible design. The goal is to make the system easy for developers to maintain and integrate with. In terms of the listening experience, XMMS2 makes it possible for anyone to easily manage their music collection and to interact with it in a flexible manner. 
+The XMMS2 team is committed to producing a better music player, while diligently maintaining a robust and flexible design. The goal is to make the system easy for developers to maintain and integrate with. In terms of the listening experience, XMMS2 makes it possible for anyone to easily manage their music collection and to interact with it in a flexible manner.
 
 == What is XMMS2? How is it different? ==
 
