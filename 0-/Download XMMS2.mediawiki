@@ -1,7 +1,7 @@
-==+Source+==
-*+Look+at+our+sourceforge+page+for+releases:+http://sf.net/projects/xmms2
-*+Daily+snapshots+are+available+at:+http://git.xmms.se/snapshots/
-*+The+Git+repository+is+viewable+at:+http://git.xmms.se
+== Source ==
+* Look at our sourceforge page for releases: http://sf.net/projects/xmms2
+* Daily snapshots are available at: http://git.xmms.se/snapshots/
+* The Git repository is viewable at: http://git.xmms.se
 
 == Binary Packages ==
 
