@@ -2,7 +2,7 @@ A brief historical timeline of the XMMS2 project.
 
 = 2002 =
 == (Late 2002) ==
-[[Tobias_RundstrÃ¶m]] and Peter Alm talk about making a "kickass player" during a boring day at work. The idea is to build a C++ project as a library which could be embedded into different clients.
+[[Tobias RundstrÃ¶m]] and Peter Alm talk about making a "kickass player" during a boring day at work. The idea is to build a C++ project as a library which could be embedded into different clients.
 
 = 2003 =
 == January ==
