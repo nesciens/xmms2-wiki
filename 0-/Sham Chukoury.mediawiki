@@ -2,10 +2,12 @@
 
 What I do on XMMS2:
 
+* Keep the wiki nice and up to date, with spiffy templates, categories and sometimes colours
+* Fiddle with Doxygen & XML to try and produce nicer documentation about XMMS2
+* Be a spelling & grammar nazi, and proofread just about anything XMMS2-related
 * Play with Python bindings
-* Write python-based XMMS2 clients
-* Fix simple bugs with the CLI client & IPC
-* Make sure stuff on the wiki makes sense
+* Write python-based [[XMMS2 Clients]]
+* Fix simple bugs when I can
 
 You can find out more at my site - [http://eleusis.f2o.org eleusis.f2o.org] - and my [http://eleusis.f2o.org/projects/xmms2/ xmms2 project page].
 
