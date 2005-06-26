@@ -63,5 +63,6 @@ For example, if you installed xmms2 under /usr/local (default), run ''scons -c /
 
 == See Also ==
 * [[Download XMMS2]]
+* [[Using the application]]
 
 [[Category: General]]
