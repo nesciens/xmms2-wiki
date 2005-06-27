@@ -28,7 +28,7 @@ Fine! Now we are connected. The second argument to ''xmmsc_connect'' is the path
 Since we are connected, we can now start sending commands to the server. But first we have to setup a way to get the responses. This guide will describe the asynchronous way of dealing with responses.
 
 == Choosing a mainloop ==
-XMMS2 clients should be written asynchronous, if they are using a GUI. Therefore, the choice of mainloop is kind of important. If you are using a widget toolkit, there is a big chance that that toolkit provides you with a mainloop. For example, GTK has GMainLoop, and QT has it own, too. You'll need to setup a callback from the mainloop to the xmmsipc. XMMS2 clientlib provides wrappers for some mainloops, but even if we don't provide a loop, it will be fairly easy to do it yourself. 
+XMMS2 clients should be written asynchronous, if they are using a GUI. Therefore, the choice of mainloop is kind of important. If you are using a widget toolkit, there is a big chance that that toolkit provides you with a mainloop. For example, GTK has GMainLoop, and QT has its own, too. You'll need to setup a callback from the mainloop to the xmmsipc. XMMS2 clientlib provides wrappers for some mainloops, but even if we don't provide a loop, it will be fairly easy to do it yourself. 
 
 === Integrate xmmsipc in your mainloop ===
 After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_connection_t'' struct will be filled with a ipctransport. To extract the socket from this call ''xmmsc_ipc_fd_get()''. Then you feed this to your selectloop. When something is inbound on this socket you have to call ''xmmsc_ipc_io_in_callback()'' and when it disconnects you should call ''xmmsc_ipc_disconnect()''. Here we add select to our example:
