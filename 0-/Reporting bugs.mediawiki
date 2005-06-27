@@ -9,6 +9,7 @@ If you encountered a crash:
 * Provide the contents of the xmms2d log file, typically ''/tmp/xmmsd.<timestamp>'', where ''<timestamp>'' is the time at which xmms2d was started, in the following format: "<iso8601 date>.<hour><minutes><seconds>". An example would be ''xmmsd.2005-05-22.182805'' if the daemon was started at 18:28:05 on 22 May 2005.
 ** The log file may alternatively have a timestamp in UNIX time format (seconds since 00:00:00 UTC, January 1, 1970). An example would be ''/tmp/xmmsd.1116742525''.
 * In the bug report, try and clarify what you were doing with XMMS2 when the crash occurred. For example "I added 12 Ogg Vorbis file from /home/bloggs/music/foo/, tried to jump to the 5th song, then XMMS2 crashed."
+** In short, try and explain how we can reproduce the bug so we can try to fix it.
 * Try and specify which version of XMMS2 you were using. For example, by running ''xmms2d --version'' (example output: ''XMMS version 0.1 DR1.1-WIP (git-commit: d380b65e6c2afa93ec2f6e371b8003455c9db7be)''). You may also specify where you got the source code or binaries from.
 * Any extra information about your system setup would be appreciated:
 ** Operating System (or Linux distribution name and version).
