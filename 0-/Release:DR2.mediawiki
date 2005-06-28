@@ -22,7 +22,6 @@
 ** This is a PITA... DR3?
 * Add support for multiple IPC sockets {{Bug|89}}
 ** DR3?
-* fix a sql-quoting function for clients.
 * write a bunch of test scripts, optionally with a set of test sound samples.
 ** DR3?
 ** maybe this should be kept separate from the main tree? the sound samples, especially, could be quite large.
@@ -43,6 +42,6 @@
 * [[Random songs support]] {{Bug|90}}
 * id3v2.4 support {{Bug|152}}
 * [[General Notify support]] {{Bug|50}}
-
+* fix a sql-quoting function for clients.
 
 [[Category:Releases]]
