@@ -15,16 +15,7 @@ Developers of another fork of XMMS, BMP, the "Beep media player", comment on XMM
 
 The XMMS2 team is committed to producing a better music player, while diligently maintaining a robust and flexible design. The goal is to make the system easy for developers to maintain and integrate with. In terms of the listening experience, XMMS2 makes it possible for anyone to easily manage their music collection and to interact with it in a flexible manner.
 
-== What is XMMS2? How is it different? ==
-
-Being namely the descendant of XMMS and especially marked second generation, people will have all kinds of expectations what XMMS2 will and will not be. I'll first list the whats and whatnots shortly and explain the reasons more thoroughly afterwards.
-
-* XMMS2 is a music player, it plays audio.
-* XMMS2 is not a video player.
-* XMMS2 does have a GUI, but it is not integrated. Instead, we talk about clients, and there can be many clients connected to the daemon.
-* There will be one "official" GUI client and one "official" commandline client.
-
-So, XMMS2 is definitely an audio player. But it is ''not'' a multimedia player - it will not play videos. It has a modular framework and plugin architecture for audio processing, visualisation and output, but this framework
+tereferekuku
 
 == People involved ==
 
