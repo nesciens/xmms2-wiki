@@ -8,7 +8,7 @@ Generally obvious similarities.. Both XMMS2 and MPD:
 * have a metadata database or library.
 * can be controlled remotely over a network, by multiple clients.
 
-== Architechtural Notes ==
+== Architectural Notes ==
 
 When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe XMMS2 might have been developed differently. But when looking at it retrospectively, we have adopted fairly different programming philosophies. While the user experience might generally be the same, the programming and internals are very different. If you are not interested in the internals, skip this section.
 
