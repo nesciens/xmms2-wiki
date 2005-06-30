@@ -57,4 +57,5 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** [http://www.kam.szm.sk/xmms2/logo_a.png logo_a.png]
 ** [http://www.kam.szm.sk/xmms2/logo_b.png logo_b.png]
 * [http://xaos.vexillium.org/pub/other/xmms2/logo1.png xmms2 logo made by xaos] ([http://xaos.vexillium.org/pub/other/xmms2/logo1.svg SVG here])
+* [http://xaos.vexillium.org/pub/other/xmms2/xmms2.png another xmms2 logo made by xaos] ([http://xaos.vexillium.org/pub/other/xmms2/xmms2.svg SVG here])
 [[Category: General]]
