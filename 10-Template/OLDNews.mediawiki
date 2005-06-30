@@ -1,3 +1,5 @@
+{{Newsitem|date=30 June 2005 (2005-06-30) CET|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet!|text=Hello all. We are soon going to release [[Release:DR2|DR2]]. In the mean time you can checkout the [http://www.tobi.nu/ slides] from my presentation I held at [http://www.europython.org EuroPython] about XMMS2. We are also starting to hammer out the offical client. Here is a [http://people.0x63.nu/~andersg/snap-050630-132322.png teaser].}}
+
 {{Newsitem|date=2 June 2005 (2005-06-02) WST|author=[[Sham Chukoury]]|title=XMMS2 on LWN|text=Hot on the heels of DR1.1, the XMMS2 article on LWN.net is now available to non-subscribers: http://lwn.net/Articles/137333/ :)}}
 
 {{Newsitem|date=1 June 2005 (2005-06-01) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1.1 Released|text=We are happy to announce that [[Release:DR1.1|DR1.1]] has been released! This adresses over 20 issues in the first release. Look at the release page to see the changes. The team will now focus on [[Release:DR2|DR2]], with new, exciting features.}}
