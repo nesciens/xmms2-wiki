@@ -1,0 +1,9 @@
+{{Navbar}}
+
+Mostly a hangaround (like many others) right now, very much interested in modular design of XMMS2. Working on at least an AAC/MP4 plugin using faad2 library and probably could do something related to ices also.
+
+Author of never finished and not updated [http://xmms-oggcaster.sf.net/ XMMS OggCaster] plugin. (got little frustrated due to the inflexible XMMS1 design and forced use of GTK 1.x)
+
+E-Mail: juhovh at iki dot fi
+
+[[Category: People]]
