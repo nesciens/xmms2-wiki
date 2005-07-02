@@ -1,2 +1,25 @@
+== XMMS2 Platform Support Status ==
 
-hallo dit is altijd nog radio flappie fm[[Media:Example.mp3]] en luister maar mooi mee op het internet en wel mooi[http://www.example.com link title]
+List of platforms under which XMMS2 may be built and run. (Colours have the same meaning as [[Template:StatusLegend | component status colours]].)
+
+{| style="border: 1px dotted #000"
+! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Platform
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Linux]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[OS X | Mac OS X]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[FreeBSD]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[NetBSD]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[OpenBSD]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Solaris]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Windows | Microsoft Windows]]
+|-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bff" | [[PalmOS]]
+|}
+
+{{ed|PlatformSupportStatus|platform support status}}
