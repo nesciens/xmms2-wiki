@@ -1,0 +1,5 @@
+{{Navbar}}
+
+Info about XMMS2 on NetBSD
+
+[[Category:Platforms]]
