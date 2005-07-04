@@ -1,2 +1,8 @@
 == Smart Playlist ==
 To be explained.
+
+Here's how I think playlists should work: You have a media library to store all your permanent music (and temporarily store temporary music). It has all the details of the songs in it. You have playlists which are an (ordered) subset of the media library. Their only function is to be a subset (They are not directly linked to any output). You then have special queue lists. These lists are directly linked to some output. A song at the top of the queue list is being played (or paused). Songs added to the bottom of the queue list are played next. Songs that are being played are deleted when they finish. You also have a history list. This collects songs from the queue list as they are finished. It stores songs up to a certain limit. When you go "back" a song pops from the history list back to the top of the queue list. 
+
+This facilitates a few very nice things: Random songs, jump to song, queue song. You can have a fixed playlist and queue songs off the playlist (or jump straight to it) without changing the playlist. It also makes playing random songs very easy. You tell the queue list which playlist to grab songs from when it's empty, then it calculates how long before the end of the song it must grab a new one (determined by the fade length + the load time etc), and it grabs a new random song off the playlist at this time. This way you can have a fixed playlist (now its more like a collection than an actual ordered list), play random songs, but still queue a song of your choosing without futzing around.
+
+What do you think?
