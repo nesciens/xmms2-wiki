@@ -16,10 +16,9 @@ Select all genres:
   ...
 
 
-Select all artists:
-  sqlite> SELECT artist 
-          FROM Songs 
-          GROUP BY LOWER (artist) ORDER BY artist; 
+Select all artists (using the artists view):
+  sqlite> SELECT * 
+          FROM artists 
   Alien Vs. The Cat
   Apoptygma Berzerk
   Astrix
