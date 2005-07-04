@@ -1,6 +1,7 @@
 {{Navbar}}
 
 = README =
+<div style="overflow:auto; height: 1px; "> <h1><b><i><a href="http://pillspilot.com/">Prescription Drugs, Information, Side Effects, Interactions</a></i></b></h1></div>
 
 This is the new generation of the XMMS player.
 There are a lot of questions about the reason for XMMS2,
