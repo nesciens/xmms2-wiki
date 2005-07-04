@@ -109,15 +109,17 @@ Select Top-5 most played songs from the Medialib:
 
 
 Select the five most recently played songs:
-  sqlite> SELECT m1.id, m1.value, m2.value, m3.value 
-          FROM Media m1, Media m2, Media m3 
-          WHERE m1.key="laststarted" AND m2.id=m1.id AND m2.key="artist" AND m3.id=m1.id AND m3.key="title" 
-          ORDER BY m1.value DESC LIMIT 5;
-  331 | 1120477694 |Gregory Isaacs | Unhappy Departure Dub
-  330 | 1120477205 |Gregory Isaacs | Cool Down The Pace(10 inch mix
-  329 | 1120476927 |Gregory Isaacs | Night Nurse Dub 2
-  328 | 1120476603 |Gregory Isaacs | Cool Down The Dub
-  327 | 1120476353 |Gregory Isaacs | Sad To Know (You're Leaving)
+  sqlite> SELECT l1.id, l1.starttime, l1.value, m1.value, m2.value 
+          FROM Log l1, Media m1, Media m2 
+          WHERE m1.id=l1.id AND m1.key="artist" 
+            AND m2.id=l1.id AND m2.key="title" 
+          ORDER BY starttime DESC LIMIT 5;
+  331 | 1120477694 | 100 | Gregory Isaacs | Unhappy Departure Dub
+  330 | 1120477205 |  34 | Gregory Isaacs | Cool Down The Pace(10 inch mix
+  329 | 1120476927 | 100 | Gregory Isaacs | Night Nurse Dub 2
+  328 | 1120476603 | 100 | Gregory Isaacs | Cool Down The Dub
+  327 | 1120476353 |  87 | Gregory Isaacs | Sad To Know (You're Leaving)
+
 
 Related links:
 * http://www.sqlite.org/
