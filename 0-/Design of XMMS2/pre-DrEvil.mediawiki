@@ -69,7 +69,7 @@ When you have done your methodcall, you should set up a callback function for th
 The callback function could look something like this:
 
  void myfunc (xmmsc_result_t *res, void *userdatata) {
-   if xmmsc_result_iserror (res) {
+   if (xmmsc_result_iserror (res)) {
      printf ("Error!\n");
    } else {
      printf ("Item added to playlist!\n");
