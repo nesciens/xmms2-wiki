@@ -1,3 +1,12 @@
+;2005-07-06 - We know where the fulkod is.
+ 09:24 <eleusis> with xmms2d -d, if the process aborts due to this log init 
+                assertion failure, the process hangs :P
+ 09:25 <eleusis> i think the daemonisation sequence should really be improved 
+                soon ;)
+ 09:25 <tru> I think the whole init process and forking thing is quite ugly.
+ 09:25 <anders_> The whole daemonization-stuff should be fixed.
+
+
 ;2005-06-09
  13:41 <nano> Ok, Ã¤r det nÃ¥gon som vÃ¥gat tÃ¤nka pÃ¥ internationalisering av
               felmeddelanden frÃ¥n xmms2d Ã¤n?
