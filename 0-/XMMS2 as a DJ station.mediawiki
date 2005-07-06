@@ -56,7 +56,9 @@ Feel free to add your comments, ideas, new designs...
 
 [[Category: Developer ideas]]
 
-[[DJ'ing Currently in XMMS]]
+
+== DJ'ing Currently In XMMS1 ==
+
 
 I thought I could contribute to this idea by telling you how I currently DJ using XMMS.  I first switch to the jack plugin, start jackd with the following (to avoid lots of buffering from things such as clicking on windows and tabs):
 
