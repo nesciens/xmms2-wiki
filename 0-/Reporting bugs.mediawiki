@@ -16,5 +16,7 @@ If you encountered a crash:
 ** Version numbers of the tools you used to build XMMS2, if you built from source. (SCons, gcc, pyrex, python, etc)
 ** Version numbers of library dependencies of XMMS2. (See [[Install instructions#Dependencies | the installation instructions]] for a list of dependencies)
 
+Check out http://www.dirac.org/linux/gdb/ for more info and a tutorial about GDB.
+
 [[Category: Code and bugs]]
 [[Category: General]]
