@@ -33,4 +33,7 @@ Perhaps not so useful, but I'll list them anyway...
 
 Once a firmer consensus on this proposal is achieved, some of these tags will be used to categorise bugs on the Mantis bug tracker.
 
+== See Also ==
+* http://exodus.xmms.se/~andersg/changelog-propolas.txt
+
 [[Category:Developer info]]
