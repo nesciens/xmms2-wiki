@@ -55,3 +55,13 @@ Changing pitch by sending offset values to the resampler would perhaps be possib
 Feel free to add your comments, ideas, new designs...
 
 [[Category: Developer ideas]]
+
+I thought I could contribute to this idea by telling you how I currently DJ using XMMS.  I first switch to the jack plugin, start jackd with the following (to avoid lots of buffering from things such as clicking on windows and tabs):
+
+jackd -P 1 -d alsa -r 44100 -n 5
+
+I then start playing something in xmms, to create the output ports.  Then, I determine which ports these are, by using "jack_lsp".  I'll usually get two ports like: bio2jack_0_32083:out_0 bio2jack_0_32083:out_1.  I then use oddcastv3 to broadcast (it uses a config file for the server info), i.e.
+
+oddcastv3 -c /home/xevix/radio.cfg bio2jack_0_32083:out_0 bio2jack_0_32083:out_1
+
+Lastly, to connect my microphone to the newly created oddcast jack outputs, I use Jack Patch Bay and connect the two inputs from microphone to each of the 2 bio2jack ports, and voila.  To mute and unmute the microphone, I designated hotkeys in KDE which run the appropriate alsamixer commands, and to automate this entire process I created a shell script.  Hope this helps with your ideas... and hope this proves that you don't need two sound cards =).
