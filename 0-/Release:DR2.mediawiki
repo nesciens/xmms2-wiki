@@ -1,12 +1,4 @@
 {{Navbar}}
-{{Navbar}}
-
-
-{{Navbar}}{{Navbar}}
-
-
-
-{{Navbar}}
 
 
 '''Developer Release 2''' is the second release of XMMS 2 code. What it means:
