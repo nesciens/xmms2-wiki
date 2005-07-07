@@ -1,3 +1,10 @@
+;2005-07-07 - Peter teaches advanced topics to the n00bs
+ 10:48 <puzzles> i don't even know what a mutex is
+ 10:48 <tru> a lock.
+ 10:49 <puzzles> well then i don't know what a lock is :)
+ 10:49 <juhovh> http://en.wikipedia.org/wiki/Mutual_exclusion
+ 10:49 <[Peter]> it's like the one you have on your toilet door. You don't want anyone to go and take a shit at the same time as you
+
 ;2005-07-06 - We know where the fulkod is.
  09:24 <eleusis> with xmms2d -d, if the process aborts due to this log init 
                 assertion failure, the process hangs :P
