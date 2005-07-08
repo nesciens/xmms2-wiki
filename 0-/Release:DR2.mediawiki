@@ -37,7 +37,7 @@
 ** <strike>effect plugin? (XMMS2 as daemon)</strike>. Way better left to a dedicated DAAP daemon; daapd.
 ** [[Music Sharing]]
 
-== Done? ==
+== Done ==
 * Start-up Hooks (2005-05-29)
 * [[Random songs support]] {{Bug|90}}
 * id3v2.4 support {{Bug|152}}
