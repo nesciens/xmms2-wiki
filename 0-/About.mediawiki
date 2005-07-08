@@ -2,7 +2,7 @@
 
 ''Unfortunately, no one can be told what XMMS2 is. You have to see it for yourself.''
 
-== Why XMMS2? == xyz
+== Why XMMS2? ==
 
 Why bother working on a next generation XMMS while there are various existing and more advanced projects already in progress, some ready for production use? Because XMMS is just too damn popular to be allowed to die, of course! But seriously, while the field of 'audio playback' in general is something of an old beaten path, there is still much room for improvement.
 
