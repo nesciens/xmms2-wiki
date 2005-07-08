@@ -20,8 +20,16 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:ALSA | ALSA]]
 |-
+
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:OSS | OSS]]
 |-
+
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:ESD | ESD]]
+|-
+
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:aRts | aRts]]
+|-
+
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Diskwriter | Diskwriter]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Jack | Jack]]
