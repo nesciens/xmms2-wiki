@@ -1,0 +1,5 @@
+You can use ESD (Enlightened Sound Daemon) for output this way: Just start your xmms2d via ESD-wrapper. You also need OSS-output. Then xmms2d thinks its writing to OSS-device but actually it goes to ESD:
+
+    esddsp xmms2d -o oss
+
+Then just run your xmms2 in normal way.
