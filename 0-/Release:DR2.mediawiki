@@ -1,6 +1,5 @@
 {{Navbar}}
 
-
 '''Developer Release 2''' is the second release of XMMS 2 code. What it means:
 
 * Make adjustments in the API according to needs of new plugins/clients. Hopefully these are very minor (or totally non-existent if we are lucky)
