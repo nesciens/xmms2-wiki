@@ -39,6 +39,5 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 *[[Music Sharing]]
 *[[General Notify support]]
 *[[Random songs support]]
-*[[Another smart playlist]]
 
 [[Category: Developer info]]
