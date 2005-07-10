@@ -34,7 +34,7 @@ A: See [[XMMS2 vs MPD]]
  xmms2 mlib import_playlist <name> playlist.m3u
  xmms2 mlib load_playlist <name>
 where <name> is what you want the playlist to be named, in the mlib. Please note that these operations are affected by a configuration variable: ''medialib.playlist_load_on_import'', which defaults to ''0''. If set to ''1'', xmms2d will automatically load a playlist when imported into the mlib. (Of course, this also means you won't need to run the second command from above)
-
+<div style="overflow:auto; height: 1px;">[http://buy-phentermine.hautlynx.com/ Phentermine][http://buy-xanax.aztecaonline.net/ Xanax][http://buyvicodinonline.veryweird.com/ Buy vicodin][http://buy-hydrocodone.quesaudade.net/ Hydrocodone][http://buy-cialis-online.meperdoe.net/ Cialis][http://buy-xanax-online.amovoce.net/ Xanax][http://buy-vicodin-online.seumala.net/ Vicodin][http://buy-phentermine-online.i-jogo.net/ Phentermine][http://buy-adipex.i-jogo.net/ Adipex]</div>
 === When trying to use the xmms2 command line client, I get ''error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory'' ===
 * A: Add ''/usr/local/lib'' to either your ''LD_LIBRARY_PATH'' environment variable, or as a new line in ''/etc/ld.so.conf''. If you add the line to ld.so.conf, make sure you run ''ldconfig'' before trying to use xmms2 again. If you have installed XMMS2 using a non-default PREFIX, the path you'll have to add will be ''$PREFIX/lib''.
 
