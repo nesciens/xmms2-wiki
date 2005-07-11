@@ -1,13 +1,13 @@
 ;2005-07-11 - Yes we like ALL of you!
-22:27 <DraX> nice, drobbins left gentoo to join microsoft
-22:27 <DraX> hahaha
-22:27 <eleusis> drobbins?
-22:28 <DraX> the founder of gentoo
-22:28 <tilman> gentoo chief something blah
-22:28 <eleusis> ah, that guy
-22:28 <eleusis> he wrote about it a while ago
-22:28 <DraX> he's a jerk <.<
-22:28 <eleusis> well, he created gentoo -_-
+ 22:27 <DraX> nice, drobbins left gentoo to join microsoft
+ 22:27 <DraX> hahaha
+ 22:27 <eleusis> drobbins?
+ 22:28 <DraX> the founder of gentoo
+ 22:28 <tilman> gentoo chief something blah
+ 22:28 <eleusis> ah, that guy
+ 22:28 <eleusis> he wrote about it a while ago
+ 22:28 <DraX> he's a jerk <.<
+ 22:28 <eleusis> well, he created gentoo -_-
 
 ;2005-07-07 - Peter teaches advanced topics to the n00bs
  10:48 <puzzles> i don't even know what a mutex is
