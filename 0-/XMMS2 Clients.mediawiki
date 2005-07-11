@@ -58,6 +58,11 @@ It can be found on http://wejp.homelinux.org/wejp/xmms2/
 === PanelhÃ¶na, the GNOME Panel Applet ===
 A simple GNOME Panel Applet that you can drop files on and xmms2 starts playing the dropped song. RMB for a menu with related items, LMB for [http://www.apple.com/macosx/features/spotlight/ spotlight] like searching of the medialib. http://www.nittionio.nu/xmms2/, written by [[Daniel Svensson]].
 
+=== Shellac ===
+Shellac is a XMMS2 client written in Python with Pygtk with a very customizable GUI.
+It is still under development.
+For now it can be found at http://hem.bredband.net/b298027/, written by Magnus Bjernstad
+
 == Qt ==
 === medialib-ui playlist client ===
 
