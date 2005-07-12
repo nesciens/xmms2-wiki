@@ -1,0 +1,1 @@
+I noticed that there is an "unknown" status for arts support...is it even worth supporting arts?  Is anyone even maintaining it still?  God, what an awful sound daemon... I think the kde team is actively looking for a replacement (or, at least I hope so).
