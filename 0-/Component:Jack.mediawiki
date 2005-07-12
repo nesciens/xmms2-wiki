@@ -1,6 +1,6 @@
 {{Navbar}}
 
-This plugin allows for output via the JACK Audio Connection Kit.
+This plugin allows for output via the [http://jackit.sf.net JACK Audio Connection Kit].
 
 ===See also:===
 * [[Component:Output | Output]]
