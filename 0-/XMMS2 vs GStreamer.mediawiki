@@ -1,0 +1,10 @@
+== NO WE DON'T USE GSTREAMER ==
+And there is 1000 reasons why here are some
+* The lib is called G(ay)Streamer - hello, what's cool with that
+* The lib takes on new definitions of the word ''bloat''
+* It's slow
+* It's huge
+* It's coded by a horde of monkeys
+* GAY
+* GAY
+* GAY
