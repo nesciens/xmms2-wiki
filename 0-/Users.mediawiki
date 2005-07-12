@@ -8,5 +8,6 @@ Essential information for XMMS2 users. Please see the [[General information | ge
 ; [[Using the application | Using XMMS2]] : Helpful pointers to get you cranking up your music collection in no time. :)
 ; [[XMMS2 Clients]] : Awesome list of cool XMMS2 clients to put you in control of your auditory experience. :)
 ; [[XMMS2 vs MPD]] : Lists the similarities and differences between XMMS2 and MPD, featurewise, and in terms of design goals.
+; [[XMMS2 vs GStreamer]] : GAH!
 
 [[Category: Users]]
