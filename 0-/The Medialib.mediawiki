@@ -47,5 +47,6 @@ For more information, please see the [http://www.sqlite.org/cvstrac/wiki?p=Perfo
 * http://www.sqlite.org/php2004/slides-all.html
 * http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
 * [http://en.wikipedia.org/wiki/Comparison_of_media_players Comparison of media players] (Wikipedia)
+* [http://wiki.musicbrainz.org/wiki.pl?PicardTagger Picard Tagger]
 
 [[Category:XMMS2 Technical Details]]
