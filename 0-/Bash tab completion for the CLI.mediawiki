@@ -1,6 +1,6 @@
 {{Navbar}}
 
-xmms2 mlib searchadd artist=the<tab> 
+  $ xmms2 mlib searchadd artist=the<tab> 
 
 Then some bash completion magic would do
 
@@ -22,12 +22,11 @@ by values from xmms2 configlist|grep 'out'
 
 
   $ xmms2 jump the<tab> 
-by values from xmms2 list|grep name, and translate to playlist id on exec (is this possible?)
+by values from xmms2 list|grep name, and translate to playlist id on exec (if this is possible)
 
 
-(if above is possible)
   $ xmms2 addid the<tab>
-by values from a xmms2 mlib query and translate to medialib id on exec
+by values from a xmms2 mlib query and translate to medialib id on exec (if this is possible)
 
 
   $ xmms2 sort a<tab>
