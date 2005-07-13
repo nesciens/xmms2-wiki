@@ -49,6 +49,10 @@ That looks nice on paper, but having 7+ xmms2d plus a gui running at the same ti
 so great. There is probably a way to get all that in one daemon, but having 10 sources playing at
 the same time might and it might not break the great design of xmms2.
 
+_____________________________________________________________________________________
+
+One thing that I wonder is, how do the big boys (Cubase, Logic, etc.) do it?  I have a midrange computer (Sempron 3000, 1gig ram, SB audigy platinum).  When sequencing with Cubase, I am able to have 8 individual wave files each with at least 4 different effect/not including different EQ setting per channel, and then compression for each channel on top of all that.  Even with that load, it is able to run in realtime and I can dynamically change all the parameters without any lag... just a though.
+
 == Misc Features ==
 Changing pitch by sending offset values to the resampler would perhaps be possible? After feeding a config value to the resampler one could feed it to an effect plugin too that compensates for the somewhat smurfified voices. This could be a nice feature for normal clients too, like a fast-forward button that sends a config value on press and another on release. BPM counter should fit somewhere too. We already seek by samples which is accurate engouh, but looping on the same sample would probably not be the easiest without uglifying the code. This is something you want to happen with very low latency..from playing->looping at a single sample, same goes for the pitch too, but with a small buffer we might be there? Will probably not happen unless someone figures out how to do this without messing up the current clean and shiny code. 
 
