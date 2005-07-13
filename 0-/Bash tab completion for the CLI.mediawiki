@@ -1,3 +1,5 @@
+{{Navbar}}
+
 xmms2 mlib searchadd artist=the<tab> 
 
 Then some bash completion magic would do
@@ -30,3 +32,6 @@ by values from a xmms2 mlib query and translate to medialib id on exec
 
   $ xmms2 sort a<tab>
 by some predefined values, artist, title, duration, album etc etc
+
+
+[[Category:Developer ideas]]
