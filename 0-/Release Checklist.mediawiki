@@ -1,0 +1,16 @@
+This is a list of things that should probably be done or checked when doing a release.
+
+* Version number set
+* Release snapshot ready & uploaded to sourceforge
+* Update debian packages
+* wiki:
+** news post [[Template:News]]
+** release status box [[Template:ReleaseStatus]]
+* doxygen + epydoc + rdoc docs generated & published to genesis (/exodus?)
+* README in sync with 'Read me first!' wiki page
+* INSTALL in sync with 'Installation instructions' wiki page
+* AUTHORS in sync with contributors list on 'About' page?
+
+Other things which currently would not really be possible:
+* no release critical bugs? - criteria?
+* pass build and runtime tests?
