@@ -38,10 +38,10 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:coreaudio | coreaudio]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Libao | Libao]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ddd" | [[Component:Libao | Libao]]
 |}
 |-
-| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Medialib | Medialib]]
+| colspan="2" style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Component:Medialib | Medialib]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Playlist | Playlist]]
 | style="border-bottom: 1px dotted #000" |
@@ -126,6 +126,6 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 |}
 |}
 
-<nowiki>*</nowiki> Please note that, while we try to maintain this data as up to date as possible, it is not automagically generated in any manner, so don't expect up-to-the-minute status updates.
+<nowiki>*</nowiki> Please note that, while we may try to maintain this data as up to date as possible, it is not automagically generated in any manner, so don't expect up-to-the-minute status updates.
 
 {{ed|ComponentStatus|component status}}
