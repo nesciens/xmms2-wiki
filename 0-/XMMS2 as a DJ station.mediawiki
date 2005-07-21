@@ -10,7 +10,7 @@ First of all, I'm not a DJ so dj's are more than welcome to tell their needs.
 * Either a core that support multiple input/output or an input/output plugin that mix/duplicate the stream(s) from/on multiple input/output lugins. (I realize while writing this that it might no be necessary, but still nice to have.)
 * A client.
 
-** Another idea: Howabout running two xmms2d and two clients, both outputting to jack. And then another custom program could be created to manage the jack  
+* Another idea: Howabout running two xmms2d and two clients, both outputting to jack. And then another custom program could be created to manage the jack  
 stuff. For example, crossfading between the two xmms2d, effects(such as pitchshifting, and other beatmatching things). A button could be for switching the headphone/cue channel between either source. Then jack can output to your speakers, cue channel streaming software and recording software. Further more this could be optimised for radio by having the custom jack/xmms2d client manage other inputs for incoming VOIP, external sources such as vinyl, cd players, tape players, and be intergrated with a usb mixing board for hands on control. This could become a complete solution for radio built with ruby/xmms2/EFL's edje and jack. :D
 
 == How that could work together? ==
