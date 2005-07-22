@@ -22,7 +22,7 @@ More info here: http://evangelion.se/xmms2/
 
 x2c is a client written in C using curses (not specifically ncurses all code is tested with NetBSD's curses and ncurses). It was started because sadly XMMS2Curse seems to be no longer avaliable. A screenshot of the work in progress can be ogled at [http://www.stampede.org/~drax/x2c.jpg]
 
-== ixmm2 ==
+== ixmms2 ==
 
 An irssi client which at the moment will only display the currently playing song in xmms2, it assumes all your music is properly tagged. Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 HERE.]
 
