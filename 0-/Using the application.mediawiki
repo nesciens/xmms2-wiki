@@ -22,11 +22,13 @@ Type 'xmms2' to list the available commands.
 Here is a list of currently available xmms2d options:
 
 * -v - Increase verbosity
-* -V - Show XMMS2 version
+* -V (or --version) - Show XMMS2 version
 * -n - Disable logging
-* -o - Specify output plugin
+* -o <x> - Specify <x> as output plugin
 * -d - Daemonize, that is, run xmms2d without attaching it to a terminal
-* -p - Specify plugin path
+* -p <path> - Specify plugin directory path
+* -h (or --help) - Print help (show list of options)
+* -c (or --conf) - Specify alternate configuration file
 
 If you want xmms2d to listen for requests via TCP you should alter the config. 
 
