@@ -24,7 +24,7 @@ x2c is a client written in C using curses (not specifically ncurses all code is 
 
 == ixmms2 ==
 
-An irssi client which at the moment will only display the currently playing song in xmms2, it assumes all your music is properly tagged. Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 HERE.]
+An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged. Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 HERE.]
 
 = Graphical clients =
 Clients that require X Windows or other graphical windowing systems.
