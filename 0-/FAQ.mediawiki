@@ -29,12 +29,16 @@ A: See [[XMMS2 vs MPD]]
 === While trying to start xmms2, I get ''ERROR: Could not create default configfile!!'' ===
 * A: This can happen when you've installed XMMS2 for the first time. You need to run ''xmms2d'' first, then run ''xmms2'' to control the daemon. Running ''xmms2d'' will create the configuration directory as required, so that XMMS2 clients can then create their own configuration files. For more information, please see [[Using the application]].
 
-=== How do I load an m3u playlist? ===
-* A: You'll need to import the playlist into an mlib playlist first, then load the mlib playlist. (This also means that once you've loaded a playlist this way, you don't need the m3u file anymore)
- xmms2 mlib import_playlist <name> playlist.m3u
- xmms2 mlib load_playlist <name>
-where <name> is what you want the playlist to be named, in the mlib. Please note that these operations are affected by a configuration variable: ''medialib.playlist_load_on_import'', which defaults to ''0''. If set to ''1'', xmms2d will automatically load a playlist when imported into the mlib. (Of course, this also means you won't need to run the second command from above)
-<div style="overflow:auto; height: 1px;">[http://buy-phentermine.hautlynx.com/ Phentermine][http://buy-xanax.aztecaonline.net/ Xanax][http://buyvicodinonline.veryweird.com/ Buy vicodin][http://buy-hydrocodone.quesaudade.net/ Hydrocodone][http://buy-cialis-online.meperdoe.net/ Cialis][http://buy-xanax-online.amovoce.net/ Xanax][http://buy-vicodin-online.seumala.net/ Vicodin][http://buy-phentermine-online.i-jogo.net/ Phentermine][http://buy-adipex.i-jogo.net/ Adipex]</div>
+=== How do I load a playlist? ===
+* A: Use the ''addpls'' command of the command line client, for example:
+
+ tru@darkangel:~/xmms2/xmms2$ xmms2 addpls http://www.digitalgunfire.com/playlist.pls
+ Added playlist http://www.digitalgunfire.com/playlist.pls
+ tru@darkangel:~/xmms2/xmms2$ xmms2 list
+ ->[0/30] m - Digital Gunfire (Sweden Mirror) (00:00)
+   [1/31]  - Digital Gunfire (Boston Mirror) (00:00)
+   [2/32]  - Digital Gunfire (Indiana Mirror) (00:00)
+
 === When trying to use the xmms2 command line client, I get ''error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory'' ===
 * A: Add ''/usr/local/lib'' to either your ''LD_LIBRARY_PATH'' environment variable, or as a new line in ''/etc/ld.so.conf''. If you add the line to ld.so.conf, make sure you run ''ldconfig'' before trying to use xmms2 again. If you have installed XMMS2 using a non-default PREFIX, the path you'll have to add will be ''$PREFIX/lib''.
 
