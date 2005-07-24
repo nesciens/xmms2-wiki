@@ -1,3 +1,7 @@
+;2005-07-23 - Show Your Faith
+ <Fatal> i've ported launchd to netbsd...
+ <Fatal> ...just kidding, believe in jesus
+
 ;2005-07-22 - Straight as a curve
  23:20 <tru> it was a gay bug.
  23:20 <tru> but I fixed it.
