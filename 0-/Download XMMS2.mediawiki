@@ -5,7 +5,9 @@
 == Source ==
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
 * Daily snapshots are available at: http://git.xmms.se/snapshots/
-* The Git repository is viewable at: http://git.xmms.se
+* The GIT repository is viewable at: http://git.xmms.se
+
+About the GIT repository: You would usually want code from the ''xmms2.git'' tree.
 
 == Binary Packages ==
 
