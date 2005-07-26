@@ -1,5 +1,7 @@
 {{Navbar}}
 
+'''Note''': you should read the [[Install instructions]] page as well.
+
 == Source ==
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
 * Daily snapshots are available at: http://git.xmms.se/snapshots/
