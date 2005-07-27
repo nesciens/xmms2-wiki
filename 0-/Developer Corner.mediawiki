@@ -25,6 +25,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 == Proposals ==
 * [[ChangeLog Format]]
 * [[Release Checklist]]
+* [[Testing]]
 
 == Ideas ==
 
