@@ -9,7 +9,7 @@
 
 About the GIT repository: You would usually want code from the ''xmms2.git'' tree.
 
-== [[Binary Packages]] ==
+== Binary Packages ==
 
 === Debian ===
  deb http://exodus.xmms.se/debian stable main
