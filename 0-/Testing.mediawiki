@@ -1,0 +1,7 @@
+Ideas about things that should go in a 'test suite' to make sure xmms2 builds and runs correctly..
+
+* Change songs several times in a row (stress-test?)
+* Chain multiple operations into likely sequences (scenarios), repeat
+** Need example scenarios
+* Mlib song import speed?
+* Removing multiple playlist items (or removing single items in quick succession)
