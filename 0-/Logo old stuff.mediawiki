@@ -63,4 +63,5 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** [http://geocities.yahoo.com.br/fijaral/x2ms.png (x2ms.png - big-file)]
 ** [http://geocities.yahoo.com.br/fijaral/x2ms-2.png (x2ms-2.png - small-file)]
 *** [http://geocities.yahoo.com.br/fijaral/x2ms.inkscape.svg (InkScape SVG File)]
+* [http://mem.neverendnight.com/img/headphones2.png MEM's grey headphones]
 [[Category: General]]
