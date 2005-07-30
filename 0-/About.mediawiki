@@ -37,9 +37,11 @@ So, XMMS2 is definitely an audio player. But it is ''not'' a multimedia player -
 * [[Thomas Nilsson]]
 * [[Michael Lindgren]]
 * [[Daniel Svensson]]
+* [[Olle HÃ¤llnÃ¤s]]
 * [[Chris Morgan]]
 * [[Matti HÃ¤mÃ¤lÃ¤inen]]
 * [[Tilman Sauerbeck]]
+* [[Christopher Rosell]]
 * [[Kristian Benoit]]
 * [[Sham Chukoury]]
 * [[Alexander Botero-Lowry]]
@@ -47,6 +49,10 @@ So, XMMS2 is definitely an audio player. But it is ''not'' a multimedia player -
 * [[Tuure Laurinolli]]
 * [[Juho VÃ¤hÃ¤-Herttua]]
 * [[Alexander Rigbo]]
+* [[Daniel Pearson]]
+* [[Vegard Nossum]]
+* [[Magnus Bjernstad]]
+* [[Ma Xuan]]
 
 == Contact info ==
 ;E-Mail :
