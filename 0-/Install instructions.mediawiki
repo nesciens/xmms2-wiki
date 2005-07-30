@@ -18,7 +18,7 @@ You will '''need''' the following things to build XMMS2.
 
 The following apt-get line will install the necessary packages on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
 
-These libraries are not '''needed''' but probably a good idea.
+These libraries are not '''needed''' for building xmms2d itself, but may be needed for plugins.
 
 * [http://curl.haxx.se Curl] (>= 7.11.2)
 * [http://www.xiph.org Vorbisfile]
