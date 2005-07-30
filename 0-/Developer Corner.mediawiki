@@ -31,16 +31,17 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 
 Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links..
 
-*[[Smart playlists]]
-*[[XMMS2 as a DJ station]]
-*[[Album Covers]]
-*[[MIDI client]]
-*[[medialib querier]]
-*[[List of features required for proper sub-tune support]]
-*[[Mobile platforms]]
-*[[Music Sharing]]
-*[[General Notify support]]
-*[[Random songs support]]
-*[[Bash tab completion for the CLI]]
+* [[Smart playlists]]
+* [[XMMS2 as a DJ station]]
+* [[Album Covers]]
+* [[MIDI client]]
+* [[medialib querier]]
+* [[List of features required for proper sub-tune support]]
+* [[Mobile platforms]]
+* [[Music Sharing]]
+* [[General Notify support]]
+* [[Random songs support]]
+* [[Bash tab completion for the CLI]]
+* [[Bemused Client]]
 
 [[Category: Developer info]]
