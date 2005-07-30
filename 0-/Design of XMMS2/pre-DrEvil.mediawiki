@@ -7,6 +7,12 @@ The server is the part of XMMS2 that outputs music and keeps track of the playli
 == Overview ==
 [[Image:Xmms2d_arch.png]]
 
+''Block diagram showing the XMMS2 daemon's internals''
+
+http://exodus.xmms.se/~tru/xmms2-core.png
+
+''A fancier block diagram showing the daemon's internals while playing an ogg file''
+
 == The server objects ==
 
 Each object holds a very special functionality and these objects are exposed to the client for communication. The main objects are:
