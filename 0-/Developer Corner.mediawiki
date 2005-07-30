@@ -6,10 +6,11 @@ Here we collect all information about developing on/against XMMS2. I also store 
 
 For those who want to know more about how it works, and how to get clients to play nice.
 
-*[[Design of XMMS2]]
-*[[The Medialib]]
-*[http://xmms2.xmms.se/doxygen/index.html Doxygen documentation]
-*[[Writing XMMS2 Clients]] (''incomplete'')
+* [[Design of XMMS2]]
+* [[The Medialib]]
+* [http://xmms2.xmms.se/doxygen/index.html Doxygen documentation]
+* [http://xmms2.xmms.se/epydoc/index.html Python bindings documentation]
+* [[Writing XMMS2 Clients]] (''incomplete'')
 
 == Code.. and bugs! ==
 
