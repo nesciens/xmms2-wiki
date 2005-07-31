@@ -1,3 +1,16 @@
+;2005-07-31 - Language barriers
+ 21:31 <tilman> i think i'll mail the fucking french government and tell them to make sure french
+                pupils learn to speak english better o_O
+ 21:31 <tru> :D
+ 21:31 <tru> I will second that!
+ 21:32 <tilman> duuuuude
+ 21:32 <tilman> (21:29) <    GuYgUy> oh yes, this die
+ 21:32 <tilman> (21:31) <@   tilman> ???
+ 21:33 <tilman> (21:31) <    GuYgUy> the playlist_item
+ 21:33 <tilman> (21:31) <@   tilman> what about it?
+ 21:33 <tilman> (21:32) <    GuYgUy> nothing append
+ 21:33 <tilman> o_O_O_O_O
+
 ;2005-07-23 - Show Your Faith
  <Fatal> i've ported launchd to netbsd...
  <Fatal> ...just kidding, believe in jesus
