@@ -28,7 +28,8 @@ These libraries are not '''needed''' for building xmms2d itself, but may be need
 * [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings, NOTE that pyrex generates code that gcc4 does NOT compile, you need an older gcc.
 * [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 
-"apt-get install python2.3-pyrex ruby1.8 ruby1.8-dev"
+For debian, one can use:
+"apt-get install python2.3-pyrex python2.3-dev ruby1.8 ruby1.8-dev"
 
 == Platform-specific notes ==
 Some supported platforms may have variations on build requirements:
