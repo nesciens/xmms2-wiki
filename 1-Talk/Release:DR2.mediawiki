@@ -1,0 +1,90 @@
+==New Features==
+* Alexander Botero-Lowry:
+** Added man pages. {{Bug:272}}
+** Make OSS plugin work on OpenBSD {{Bug:236}}
+** NetBSD support {{Bug:225}}
+* Alexander Rigbo:
+** Add xmmsc_medialib_playlists_list command. {{Bug:229}}
+** Added clientlib function to delete a playlist. {{Bug:221}}
+* Magnus Bjernstad:
+** translate numeric genres to names. {{Bug:237}}
+** Added medialib_path_import to PythonAPI {{Bug:240}}
+** Added medialib_get_id to PythonAPI {{Bug:240}}
+** added playlist_remove to PythonAPI {{Bug:240}}
+** Added playlists_list command. {{Bug:240}}
+** Add configval_register to python bindings {{Bug:232}}
+* Tilman Sauerbeck:
+** Updated to new xmmsclient API. Removed typed methods to retrieve result value, use Result#value instead. {{Bug:235}}
+* Tobias Rundstrom:
+** Added medialib_playlist_loaded method to Python. {{Bug:280}}
+** Added medialib_playlist_loaded signal. {{Bug:280}}
+** Added a command in the cli for instant loading of playlists. {{Bug:220}}
+** Added support for integers in medialib. {{Bug:254}}
+** Report bitrate in bps instead of kbps. {{Bug:246}}
+** Updated Python bindings to new list / dict API. {{Bug:235}}
+** Make lists and dicts able to carry ints as well as strings in the same resultset. {{Bug:235}}
+* Tuure Laurinolli:
+** Use a xmms_socket_error_recoverable instead of looking for EINTR and EAGAIN everywhere. {{Bug:116}}
+** Use portable headers. {{Bug:116}}
+** Added portable headers. {{Bug:116}}
+** Added portable network code. {{Bug:116}}
+** Added the use of supported_platforms in all relevant files. {{Bug:116}}
+** Added buildframework for subsequent windows patches. {{Bug:116}}
+** Disable XMMS_DBG macro on windows. {{Bug:116}}
+* Vegard Nossum:
+** Added new URL parser that also supports IPv6 {{Bug:245}}
+==Bugs fixed==
+* Alexander Botero-Lowry:
+** Added a flush command in the OSS driver to fix sampleformat changes. {{Bug:248}}
+* Anders Gustafsson:
+** Use the correct symbol in ossaudio-test. {{Bug:288}}
+** Don't steal another xmms2d's ipc unix-socket. {{Bug:283}}
+** Fix get_mediainfo in flac by actually using mode flag in init. {{Bug:258}}
+** Give startup/shutdown.d-scripts full environment. {{Bug:285}}
+** Call init in decoders before get_mediainfo, mode arg to init. {{Bug:128}}
+** Make it build on OpenBSD. {{Bug:214}}
+* Ma Xuan:
+** Make sure that ringbuffer data is correct after seeking. {{Bug:243}}
+* Michael Lindgren:
+** Better errorhandling in html export command. {{Bug:222}}
+* Sham Chukoury:
+** Allow config file to be specified as command line option {{Bug:256}}
+** Fix output.plugin config property not registered when plugin specified on cmd line {{Bug:253}}
+** Fix log init sequence, remove unused log regexp {{Bug:234}}
+* Tilman Sauerbeck:
+** Updated Wave plugin to new decoder plugin API. {{Bug:128}}
+* Tobias Rundstrom:
+** Add 64bytes ints on file operations. {{Bug:270}}
+** Remove EXTINFO parser from m3u plugin since it often gives us bad data. {{Bug:262}}
+** Fixed some strange things in ipc layer that could cause busy-loops on disconnect. {{Bug:261}}
+** Validate all strings inserted into DB to be UTF-8 {{Bug:265}}
+** FIxed a bug in medialib that could return wild integers if property was not found. {{Bug:0}}
+** Fix position problems with sorting. {{Bug:264}}
+** Bugfix output plugin configvalue. {{Bug:253}}
+** Fixed a deadlock in the transport layer. {{Bug:233}}
+** Fixed a stupid bug with config value changed signal. Changed from list to a dict. {{Bug:242}}
+** g_direct_hash on string keys are *not* a good idea {{Bug:241}}
+** xmms2d now handle long strings. {{Bug:228}}
+** Fixed so that we signal before we quit if IPC failed. {{Bug:217}}
+** SO_REUSEADDR was moved to a better place. {{Bug:226}}
+** Better error handling in log functions. {{Bug:216}}
+** Passing the environ to scons {{Bug:215}}
+** Fix bug #189 by removing entries from the playlist that are not valid. {{Bug:0}}
+* Vegard Nossum:
+** Fixed NULL strings to msg_put_string {{Bug:211}}
+==Clientlib Changes==
+* Tilman Sauerbeck:
+** Properly sort the list that's returned by xmms_config_listvalues(). {{Bug:0}}
+** Empty lists in results are now handled properly. {{Bug:0}}
+* Tobias Rundstrom:
+** changed OUTPUT_STATUS_ to PLAYBACK_STATUS_ {{Bug:0}}
+** removed xmmsc_result_get_playlistchange since this now is a dict {{Bug:0}}
+** Re-add xmmsc_medialib_get_id that was mysteriously removed? {{Bug:0}}
+** don't unref xmmsc_connection until we have used it fully. {{Bug:0}}
+** added xmmsc_configval_register. Clients can now register configuration values. {{Bug:0}}
+** added get_id function to medialib. Returns id number for a URL {{Bug:0}}
+** add xmmsc_medialib_remove_entry that removes something from the medialib {{Bug:0}}
+** Added playlist_insert command. For inserting entries on a given position. {{Bug:0}}
+* Tuure Laurinolli:
+** added xmmsc_sqlite_prepare_string for correct sql escaping. {{Bug:0}}
+** Added query generators that can create select statements for multiple criterions. {{Bug:0}}
