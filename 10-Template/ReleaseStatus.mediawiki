@@ -3,10 +3,10 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DR1.1 | Developer Release 1.1]]
+'''Developer''': [[Release:DR2 | Developer Release 2]]
 
 '''Notes''':
-* DR1.1 was released 2005-06-01,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
+* DR2 was released 2005-08-04,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 
 ''See also'': [[Project Status]]
