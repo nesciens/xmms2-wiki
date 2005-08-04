@@ -15,6 +15,9 @@ We've come quite a long way since DR1 and DR1.1, and not just code-wise.. Our ''
 * A new 'contribs' page at http://xmms2.xmms.org/contrib/
 * The [http://bugs.xmms2.xmms.se Bug tracker] becoming more and more integral to the process of working on XMMS2 code, especially with:
 * The use of specific [[ChangeLog Format | commit tags]] to categorise changes to the code tree.
+* Not related specifically to the XMMS2 team, but new [[ XMMS2 Clients]] have been popping up like mushrooms, as developers have dared to install XMMS2 and been inspired to create some funky clients.
+* An increased rate of contributions and bug fixes from other users and developers than just the XMMS2 team. (keep them coming!)
+* Also thanks to the freenode channel, we've been receiving feature requests from certain specialised users (read: DJs) about things they'd like to see in XMMS2. Stay tuned while we work on these..
 
 This release breaks the client API, the plugin API, as well as your current medialib. Please understand that this is pre-release software and should only be downloaded and used by developers not end-users.
 
