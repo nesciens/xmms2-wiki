@@ -1,3 +1,12 @@
+;2005-08-04 - Talk nerdy to me
+ [21:15:33][anders]: Fil med desync!
+ [21:16:03][tru]: anders: fast det var det inte.
+ [21:16:10][tru]: anders: det var UCS2 buggen.
+ [21:17:56][anders]: Javisst.
+ [21:18:02][anders]: Men jag hoppade och studsade lite Ã¤ndÃ¥.
+ [21:18:12][anders]: Jag har aldrig fÃ¥tt se en fil med desyncheaders!
+
+
 ;2005-07-31 - Language barriers
  21:31 <tilman> i think i'll mail the fucking french government and tell them to make sure french
                 pupils learn to speak english better o_O
