@@ -28,15 +28,15 @@
 ** Added new URL parser that also supports IPv6 {{Bug|245}}
 ==Bugs fixed==
 * Alexander Botero-Lowry:
+** Use the correct symbol in ossaudio-test. {{Bug|288}}
 ** Added a flush command in the OSS driver to fix sampleformat changes. {{Bug|248}}
+** Make it build on OpenBSD. {{Bug|214}}
 * Anders Gustafsson:
 ** Fix to UCS2 encoded text frames in id3v2.2/2.3 {{Bug|290}}
-** Use the correct symbol in ossaudio-test. {{Bug|288}}
 ** Don't steal another xmms2d's ipc unix-socket. {{Bug|283}}
 ** Fix get_mediainfo in flac by actually using mode flag in init. {{Bug|258}}
 ** Give startup/shutdown.d-scripts full environment. {{Bug|285}}
 ** Call init in decoders before get_mediainfo, mode arg to init. {{Bug|128}}
-** Make it build on OpenBSD. {{Bug|214}}
 * Ma Xuan:
 ** Make sure that ringbuffer data is correct after seeking. {{Bug|243}}
 * Michael Lindgren:
@@ -66,6 +66,7 @@
 ** Fix bug #189 by removing entries from the playlist that are not valid.
 * Vegard Nossum:
 ** Fixed NULL strings to msg_put_string {{Bug|211}}
+
 ==Clientlib Changes==
 * Tilman Sauerbeck:
 ** Properly sort the list that's returned by xmms_config_listvalues().
