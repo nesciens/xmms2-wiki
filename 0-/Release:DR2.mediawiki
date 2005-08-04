@@ -27,7 +27,7 @@ To download source code please surf to the [[Download XMMS2 | Download]] page.
 Oh, and happy birthday to Sham!
 
 == ChangeLog ==
-=New Features=
+===New Features===
 * Alexander Botero-Lowry:
 ** Added man pages. {{Bug|272}}
 ** NetBSD support {{Bug|225}}
@@ -55,7 +55,7 @@ Oh, and happy birthday to Sham!
 ** Partial windows support for clientlib {{Bug|116}}
 * Vegard Nossum:
 ** Added new URL parser that also supports IPv6 {{Bug|245}}
-=Bugs fixed=
+===Bugs fixed===
 * Alexander Botero-Lowry:
 ** Use the correct symbol in ossaudio-test. {{Bug|288}}
 ** Added a flush command in the OSS driver to fix sampleformat changes. {{Bug|248}}
@@ -95,7 +95,7 @@ Oh, and happy birthday to Sham!
 ** Fix bug #189 by removing entries from the playlist that are not valid.
 * Vegard Nossum:
 ** Fixed NULL strings to msg_put_string {{Bug|211}}
-=Clientlib Changes=
+===Clientlib Changes===
 * Tilman Sauerbeck:
 ** Properly sort the list that's returned by xmms_config_listvalues().
 ** Empty lists in results are now handled properly.
@@ -108,7 +108,7 @@ Oh, and happy birthday to Sham!
 * Tuure Laurinolli:
 ** added xmmsc_sqlite_prepare_string for correct sql escaping.
 ** Added query generators that can create select statements for multiple criterions.
-=Other Changes=
+===Other Changes===
 * Daniel Pearson:
 ** PYTHON: Added syncronous proxy class for API
 ** PYTHON: Added output_status enum to API
