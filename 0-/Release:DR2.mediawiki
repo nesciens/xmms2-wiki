@@ -6,6 +6,17 @@
 * Fix bugs
 * Add tons with new bugs and new features that will make xmms2 crash in exciting new ways.
 
+== Release notes ==
+
+Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 Developer Release 2. Delayed for a couple of weeks due to  summer, beer, women and other real life nonsense we release a featurepacked second version of XMMS2. This release is direct feedback from DR1 on both APIs, functionallity and behaviour. We would like to thanks everyone that provided us with feedback, patches and encouragement.
+
+This release breaks both API and your current medialib. Please understand that this is pre-release software and should only be downloaded and used by developers not end-users.
+
+To review the ChangeLog please check the wiki http://wiki.xmms2.xmms.se/
+To download source code please surf to http://sourceforge.net/projects/xmms2
+
+Oh, and happy birthday to Sham!
+
 == To Do ==
 
 === Likely ===
