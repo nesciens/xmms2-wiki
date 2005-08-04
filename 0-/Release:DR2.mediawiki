@@ -8,7 +8,7 @@
 
 == Release notes ==
 
-Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 Developer Release 2. Delayed for a couple of weeks due to  summer, beer, women and other real life nonsense we release a featurepacked second version of XMMS2. This release is direct feedback from DR1 on both APIs, functionallity and behaviour. We would like to thanks everyone that provided us with feedback, patches and encouragement.
+Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 Developer Release 2. Delayed for a couple of weeks due to  summer, beer, women and other real life nonsense we release a featurepacked second version of XMMS2. This release is direct feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone that provided us with feedback, patches and encouragement.
 
 This release breaks both API and your current medialib. Please understand that this is pre-release software and should only be downloaded and used by developers not end-users.
 
