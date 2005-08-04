@@ -26,7 +26,7 @@ Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/ru
 
 === FreeBSD ===
 
-A FreeBSD Port  is avaliable at http://www.stampede.org/~drax/xmms2-port.tar.gz
+A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-DR2-port.tar.gz
 
 [[Category:General]]
 [[Category:Users]]
