@@ -1,6 +1,6 @@
 {{Newsitem|date=4 August 2005 (2005-08-04) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2|text=Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Release:DR2|Developer Release 2]]. Delayed for a couple of weeks due to summer, beer, (plastic) women and other real life nonsense, we release a feature-packed second version of XMMS2. This release is the direct result of feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone who provided us with feedback, patches and encouragement.
 
-To review the ChangeLog please check the [[Release:DR2|Release Page]] and to download source code please surf to the [[Download]] page.}}
+To review the ChangeLog please check the [[Release:DR2|Release Page]] and to download source code please surf to the [[Download XMMS2|Download]] page.}}
 
 {{Newsitem|date=30 June 2005 (2005-06-30) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 and the Snake|text=Hello all. We are soon going to release [[Release:DR2|DR2]]. In the mean time you can checkout the [http://www.tobi.nu/ slides] from my presentation I held at [http://www.europython.org EuroPython] about XMMS2. We are also starting to hammer out the offical client. Here is a [http://people.0x63.nu/~andersg/snap-050630-132322.png teaser].}}
 
