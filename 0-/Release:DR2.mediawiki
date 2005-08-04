@@ -26,36 +26,7 @@ To download source code please surf to the [[Download XMMS2 | Download]] page.
 
 Oh, and happy birthday to Sham!
 
-== To Do ==
 
-=== Likely ===
-* change mime type handling {{Bug|65}} (see bug notes)
-** this will most probably change the plugin API
-** DR3?
-* provide wave-data for vis-clients, not just frequency-data. {{Bug|192}}
-** DR3?
-* Allow open/init in output-plugins to fail. And make open in oss/alsa non blocking. Report error accordingly. {{Bug|191}}
-** I really want this for DR2
-* Fix/investigate config system {{Bug|99}}, {{Bug|97}}, {{Bug|19}}
-** Hmm. I should really do this for DR2
-* Make medialib async for internal callers {{Bug|190}}
-** This is a PITA... DR3?
-* Add support for multiple IPC sockets {{Bug|89}}
-** DR3?
-* write a bunch of test scripts, optionally with a set of test sound samples.
-** DR3?
-** maybe this should be kept separate from the main tree? the sound samples, especially, could be quite large.
-*** Yes this should definitely be a separate repository, where testing procedures are defined and media files for testing and scripts to do automatic testing are available for download.
-
-=== Unlikely ===
-* Have a good method for building out-of-tree (third party) plugins.
-* ''maybe'' get some more plugins in. :P
-** Ogg -> flac, vorbis
-** MKA
-* DAAP?
-** transport plugin? (XMMS2 as client) client should be able to browse DAAP shares and add daap:// urls, perhaps.
-** <strike>effect plugin? (XMMS2 as daemon)</strike>. Way better left to a dedicated DAAP daemon; daapd.
-** [[Music Sharing]]
 
 == Done ==
 * Start-up Hooks (2005-05-29)
