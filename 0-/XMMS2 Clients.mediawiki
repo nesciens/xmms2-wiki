@@ -71,7 +71,7 @@ It is still under development.
 For now it can be found at http://hem.bredband.net/b298027/, written by Magnus Bjernstad
 
 === RXmms2 ===
-RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all the functionality of XMMS that you're used to while adding new advanced features like medialib operations. RXmms2 was conceived and is maintained by [[Dan Chokola]]. The RXmms2 homepage can be found at [http://dan.chokola.com/rxmms2.rhtml].
+RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all the functionality of XMMS that you're used to while adding new advanced features like medialib operations. RXmms2 was conceived and is maintained by [[Dan Chokola]]. The RXmms2 homepage can be found at http://dan.chokola.com/rxmms2.rhtml.
 
 == Qt ==
 === medialib-ui playlist client ===
