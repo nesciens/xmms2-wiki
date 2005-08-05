@@ -27,6 +27,7 @@ Here is the .pc file I use. Drop it in /sw/lib/pkgconfig
 
 
 * if you compile with fink add the CPPPATH=/sw/include argument when compiling with scons
+* if  you compiled dependencies with darwinports, try the following command: scons CPPPATH=/opt/local/include LIBPATH=/opt/local/lib
 
 == CoreAudio output ==
 XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hacked ESD.
