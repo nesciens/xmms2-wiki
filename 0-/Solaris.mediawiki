@@ -2,4 +2,6 @@
 
 Info about XMMS2 on Solaris.
 
+The ipc/clientlib needs some love
+
 [[Category:Platforms]]
