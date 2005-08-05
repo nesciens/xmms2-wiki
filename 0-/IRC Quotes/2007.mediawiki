@@ -1,3 +1,22 @@
+;2005-08-05 - 1 2 3, repeat.
+ 11:26 <sofciq> can anyone tell me what may be wrong if I get an error like this 
+                when I try to run Euphoria: /euphoria:12:in `require': No such file 
+               to load -- xmmsclient (LoadError)
+ 11:26 <sofciq>         from ./euphoria:12
+ 11:26 <sofciq>  ?
+ 11:27 <tru> you don't have ruby bindings for xmmsclient.
+ 11:27 <sofciq> xmms2 itself run from from the command line works fine
+ 11:27 <eleusis> you may not have the ruby bindings installed
+ 11:27 <optical> looks like the ruby bindings is not installed
+ 11:27 <optical> heh
+ 11:27 <tru> let's say it all again!
+ 11:27 <eleusis> ok, ready?
+ 11:27 <optical> go!
+ 11:28 <eleusis> 1.. 2.. 3..
+ 11:28 <eleusis> you may not have the ruby bindings installed
+ 11:28 <tru> you don't have ruby bindings for xmmsclient.
+ 11:28 <optical> sofciq: do you have the ruby bindings installed?
+
 ;2005-08-04 - Talk nerdy to me
  [21:15:33][anders]: Fil med desync!
  [21:16:03][tru]: anders: fast det var det inte.
