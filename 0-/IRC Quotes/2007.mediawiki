@@ -1,4 +1,4 @@
-;2005-08-05 - 1 2 3, repeat.
+=== 2005-08-05 - 1 2 3, repeat. ===
  11:26 <sofciq> can anyone tell me what may be wrong if I get an error like this 
                 when I try to run Euphoria: /euphoria:12:in `require': No such file 
                to load -- xmmsclient (LoadError)
@@ -17,7 +17,7 @@
  11:28 <tru> you don't have ruby bindings for xmmsclient.
  11:28 <optical> sofciq: do you have the ruby bindings installed?
 
-;2005-08-04 - Talk nerdy to me
+=== 2005-08-04 - Talk nerdy to me ===
  [21:15:33][anders]: Fil med desync!
  [21:16:03][tru]: anders: fast det var det inte.
  [21:16:10][tru]: anders: det var UCS2 buggen.
@@ -26,7 +26,7 @@
  [21:18:12][anders]: Jag har aldrig fÃ¥tt se en fil med desyncheaders!
 
 
-;2005-07-31 - Language barriers
+=== 2005-07-31 - Language barriers ===
  21:31 <tilman> i think i'll mail the fucking french government and tell them to make sure french
                 pupils learn to speak english better o_O
  21:31 <tru> :D
@@ -39,18 +39,18 @@
  21:33 <tilman> (21:32) <    GuYgUy> nothing append
  21:33 <tilman> o_O_O_O_O
 
-;2005-07-23 - Show Your Faith
+=== 2005-07-23 - Show Your Faith ===
  <Fatal> i've ported launchd to netbsd...
  <Fatal> ...just kidding, believe in jesus
 
-;2005-07-22 - Straight as a curve
+=== 2005-07-22 - Straight as a curve ===
  23:20 <tru> it was a gay bug.
  23:20 <tru> but I fixed it.
  23:22 <DraX> you're like one of those scary camps scary christian parents send their kids to
               to try and make them straight :P
 
 
-;2005-07-11 - Yes we like ALL of you!
+=== 2005-07-11 - Yes we like ALL of you! ===
  22:27 <DraX> nice, drobbins left gentoo to join microsoft
  22:27 <DraX> hahaha
  22:27 <eleusis> drobbins?
@@ -61,7 +61,7 @@
  22:28 <DraX> he's a jerk <.<
  22:28 <eleusis> well, he created gentoo -_-
 
-;2005-07-07 - Peter teaches advanced topics to the n00bs
+=== 2005-07-07 - Peter teaches advanced topics to the n00bs ===
  10:48 <puzzles> i don't even know what a mutex is
  10:48 <tru> a lock.
  10:49 <puzzles> well then i don't know what a lock is :)
@@ -69,7 +69,7 @@
  10:49 <[Peter]> it's like the one you have on your toilet door. You don't want 
                  anyone to go and take a shit at the same time as you
 
-;2005-07-06 - We know where the fulkod is.
+=== 2005-07-06 - We know where the fulkod is. ===
  09:24 <eleusis> with xmms2d -d, if the process aborts due to this log init 
                 assertion failure, the process hangs :P
  09:25 <eleusis> i think the daemonisation sequence should really be improved 
@@ -78,7 +78,7 @@
  09:25 <anders_> The whole daemonization-stuff should be fixed.
 
 
-;2005-06-09
+=== 2005-06-09 ===
  13:41 <nano> Ok, Ã¤r det nÃ¥gon som vÃ¥gat tÃ¤nka pÃ¥ internationalisering av
               felmeddelanden frÃ¥n xmms2d Ã¤n?
  13:41 <tru> bingo bingo bingo.
@@ -96,11 +96,11 @@
  13:42 -!- mode/#xmms2 [+v anders] by anders
  13:42 <anders> HÃ¶rde du nÃ¥got, tru?
 
-;2005-06-08
+=== 2005-06-08 ===
  16:07 <ccr> I don't know about you, but some people really do have too much time ... 
              and I'm certain they're stealing that time from me.
 
-;2005-06-06
+=== 2005-06-06 ===
  [04:34:28][smallfoot-]: hehe
  [04:37:40][smallfoot-]: i saw wiki of xmms2
  [04:37:48][smallfoot-]: it shows some api to use
@@ -111,14 +111,14 @@
  [04:38:41][jmsaunders]: I'm not really sure
  [04:38:51][smallfoot-]: sure its a little overhead, but its greatly extensible
 
-;2005-06-02
+=== 2005-06-02 ===
 
  18:45 <shdf> tru: hopefully your player will become superior =)
  18:46 <eleusis> i'm not sure what the metric for 'superior' music player is..
  18:48 <shdf> eleusis: for me it's something like: quicktime < realplayer < win media player < mpg123 <
              xmms :)
 
-;2005-06-02
+=== 2005-06-02 ===
  10:45 <sacarasc> im wearing a thong
  10:46 <tru> o_O
  10:46 <eleusis> what kind of thong?
@@ -131,7 +131,7 @@
  10:53 <ruskie> :)
  10:53 <sacarasc> im english, dont insult me you convict ;p
 
-;2005-05-31
+=== 2005-05-31 ===
  03:00:46 <Knirch>	no PCM data for DR2?
  03:01:01 <eleusis>	this git web thing is sexy
  03:01:11 <tru>	Knirch: what?
@@ -150,7 +150,7 @@
  03:04:04 <Knirch>	:D
  03:04:04 <eleusis>	hahaha
 
-;2005-05-20:
+=== 2005-05-20 ===
  [17:08:42][tilman]: is dr1 officially out now or what/
  [17:08:43][tilman]: ?
  [17:10:15][tru]: ah.
@@ -165,16 +165,16 @@
  [17:19:21][tru]: http://genesis.xmms.se/~tru/xmms2-0.1DR1.tar.gz
 
 
-;2005-05-19:
+=== 2005-05-19 ===
  [22:55:51][tilman]: we used bk and people used it even if it's non-free software
  [22:56:07][tilman]: now we're prolly gonna use a free scm and people bitch because it requires free software?
  [22:56:12][tilman]: something's wrong there
 
-;2005-04-23
+=== 2005-04-23 ===
  17:25 <nano> DraX: You BSD dudes seem to get confused on feature completeness vs bloat all the
              time.
 
-;2005-04-11:
+=== 2005-04-11 ===
  22:42 <tru> anders: do you want to review or should we push it to master and let nano and 
              eleusis find the problems? ;)
  22:42 <anders> lol.
@@ -182,7 +182,7 @@
                and always biches as hell, (2) it's pushed to master anyway and nano and eleusis finds
                the bugs.
 
-;2005-04-05:
+=== 2005-04-05 ===
  15:12 -!- tilman [tilman@code-monkey.de] has quit [leaving]
  15:12 -!- tilman [tilman@code-monkey.de] has joined #xmms2
  15:13 <tilman> oops.
