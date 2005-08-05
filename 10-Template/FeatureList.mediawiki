@@ -13,10 +13,5 @@ Allows for more flexible access to media. (e.g. play mp3 files from a Samba shar
 ;[[The Medialib | Medialib]] :
 Database-driven media library stores metadata about songs as they're played, so songs can be quickly recalled and new playlists easily made. The medialib import process is *very* fast. It imports 1200 songs in 6 minutes on a P3 1.5GHz system.
 ;Visualisation support
-;Slow speed support :
-Allows for sluggish GUI responses to emulate a cool, "retro" music player feel
-;Bug support :
-Contains extra bugs (for example, it will just crash if you play an unsupported format instead of returning an error message) for more linux fun
-;General shittiness
-We plan to add a user interface forty times worse than that of iTunes, and fuck everything up in general
+
 {{ed|FeatureList|feature list}}
