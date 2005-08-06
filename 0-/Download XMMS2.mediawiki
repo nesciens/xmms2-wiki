@@ -30,7 +30,6 @@ A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-DR2-port.tar.
 
 === Gentoo Linux ===
 
-Some ebuilds are available here: http://www.zugaina.org/gentoo/media-sound.html.en
-
+Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 [[Category:General]]
 [[Category:Users]]
