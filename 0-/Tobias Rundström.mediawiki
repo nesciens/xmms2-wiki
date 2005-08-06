@@ -1,10 +1,25 @@
 {{Navbar}}
 
-Email at [http://www.mindrelease.net/~lina/gallery/garndreads/DSCN2777?full=1 tru] at xmms dot org
+Email at tru at xmms dot org
 
 Does most of the hacking on XMMS2 and tries to organize the ones that want to help out. Is together with [[User:Anders Gustafsson|Anders Gustafsson]] dictator of all code that should be commited to the main tree. Primary platforms are Linux-x86 and MacOSX-PPC.
 
 Listen to mostly electronic music with XMMS2, such as EBM and Synth.
+
+== Diary ==
+
+{{Newsitem|date=6 August 2005 (2005-08-06) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2|text=So, I finaly got around to release DR2. The changes are many for developers, but not so many for the end user. The big changes was for the API here, lot of new functionallity and lot of things that makes more sense I guess.
+
+DR2.1 is something that must be released, we have already fixed two kind of critical bugs that was found the day after DR2 release (of course). First one is id3v2.3 parsing {{Bug|293}}, latin1 encoded fields will be ignored and secondly the xmmsclient-ecore binding for ruby didn't build {{Bug|294}}. I will give DR2 a week or so then release DR2.1.
+
+Next up is the final DR. My plan is to let DR3 be the last Developer Release. To ensure this we need to fix the really major API breaking and refactoring in this release. Some things that I probably will work on for DR3 is:
+
+* {{Bug|181}} - Sending notifications to clients about medialib changes.
+* {{Bug|190}} - Remove the global SQLite lock. This is a PITA I guess. If we do this change we will require that SQLite is compiled threadsafe, which there is no way of knowing.
+* General PythonBindings clenup.
+
+In future notes on this page I will go deeper into how I will solve the bugs/features. But now I have XMMS2 break for a couple of days to let it go.
+}}
 
 
 [[Category: People]]
