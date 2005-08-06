@@ -28,5 +28,9 @@ Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/ru
 
 A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-DR2-port.tar.gz
 
+=== Gentoo Linux ===
+
+Some ebuilds are available here: http://www.zugaina.org/gentoo/media-sound.html.en
+
 [[Category:General]]
 [[Category:Users]]
