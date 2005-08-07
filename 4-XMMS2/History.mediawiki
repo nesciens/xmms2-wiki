@@ -92,7 +92,11 @@ XMMS2 moves from BitKeeper to Git. (takes a few days)
 ;1st:
 XMMS2 Developer Release 1.1 is done - mostly a bugfix release after DR1.
 
+== August ==
+;4th:
+Developer Release 2 came out. Exactly one day later, they fixed 2 critical bugs.
+
 == Now ==
-We're all just chillin until we decide to get serious about DR2. Or something. :P
+We're all just chillin until we decide to get serious about DR3. Or something. :P
 
 [[Category:General]]
