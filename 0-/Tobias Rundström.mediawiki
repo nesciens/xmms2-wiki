@@ -18,7 +18,7 @@ Next up is the final DR. My plan is to let DR3 be the last Developer Release. To
 
 * {{Bug|181}} - Sending notifications to clients about medialib changes.
 * {{Bug|190}} - Remove the global SQLite lock. This is a PITA I guess. If we do this change we will require that SQLite is compiled threadsafe, which there is no way of knowing.
-* General PythonBindings clenup.
+* General PythonBindings cleanup.
 
 In future notes on this page I will go deeper into how I will solve the bugs/features. But now I have XMMS2 break for a couple of days to let it go.
 
