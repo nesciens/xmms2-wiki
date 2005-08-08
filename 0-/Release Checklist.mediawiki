@@ -11,6 +11,7 @@ This is a list of things that should probably be done or checked when doing a re
 * README in sync with 'Read me first!' wiki page
 * INSTALL in sync with 'Installation instructions' wiki page
 * AUTHORS in sync with contributors list on 'About' page?
+* Update [[History]] page
 
 Other things which currently would not really be possible:
 * no release critical bugs? - criteria?
