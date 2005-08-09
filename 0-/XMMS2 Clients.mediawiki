@@ -62,9 +62,6 @@ It can be found on http://wejp.homelinux.org/wejp/xmms2/
 
 "Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.  It lives here: [http://juxtapose.sourceforge.net http://juxtapose.sourceforge.net]
 
-=== PanelhÃ¶na, the GNOME Panel Applet ===
-A simple GNOME Panel Applet that you can drop files on and xmms2 starts playing the dropped song. RMB for a menu with related items, LMB for [http://www.apple.com/macosx/features/spotlight/ spotlight] like searching of the medialib. http://www.nittionio.nu/xmms2/, written by [[Daniel Svensson]].
-
 === Shellac ===
 Shellac is a XMMS2 client written in Python with Pygtk with a very customizable GUI.
 It is still under development.
