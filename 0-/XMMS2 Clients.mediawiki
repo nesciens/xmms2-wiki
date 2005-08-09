@@ -110,6 +110,12 @@ Quite ghetto and insecure php client (xmms2 simple client wrapper), not the same
 
 More info here: http://pastebin.ca/19609
 
+== XMMS2 xml-rpc ==
+
+A ruby client thats an xml-rpc server, Also included is a php xml-rpc client. 
+
+Snag here: http://rawdod.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2
+
 == TwistedXMMS2 ==
 A webclient using twisted.web. in bitkeepr 'bk://genesis.xmms.se:5555/twistedxmms2'. Under development by [[Tobias RundstrÃ¶m]]
 
