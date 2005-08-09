@@ -104,6 +104,12 @@ Previously on this page as 'Unnamed PHP client'. This project is reported as 'ki
 
 More info here: http://evangelion.se/xmms2/
 
+== XMMS2php ==
+
+Quite ghetto and insecure php client (xmms2 simple client wrapper), not the same as 'Unnamed PHP client', but 'dead at this time and dead in most futures'
+
+More info here: http://pastebin.ca/19609
+
 == TwistedXMMS2 ==
 A webclient using twisted.web. in bitkeepr 'bk://genesis.xmms.se:5555/twistedxmms2'. Under development by [[Tobias RundstrÃ¶m]]
 
