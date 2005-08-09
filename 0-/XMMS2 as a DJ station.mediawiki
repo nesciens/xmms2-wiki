@@ -79,3 +79,7 @@ oddcastv3 -c /home/xevix/radio.cfg bio2jack_0_32083:out_0 bio2jack_0_32083:out_1
 Lastly, to connect my microphone to the newly created oddcast jack outputs, I use Jack Patch Bay and connect the two inputs from microphone to each of the 2 bio2jack ports, and voila.  To mute and unmute the microphone, I designated hotkeys in KDE which run the appropriate alsamixer commands, and to automate this entire process I created a shell script.  Hope this helps with your ideas... and hope this proves that you don't need two sound cards =).
 
 - XeviX (silverwolf86@hotmail.com)
+
+
+== External Links ==
+* [http://bpmdj.sourceforge.net/aftersplash.html bpmdj]
