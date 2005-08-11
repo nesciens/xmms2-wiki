@@ -28,7 +28,7 @@ If you have further questions, please [[About#Contact info | contact us]] - '''D
 : Wrong. In "XMMS2", XMMS stands for X(cross)platform Music Multiplexing System.
 
 ; Seems like you are using a non-standard buildsystem, why not Make?
-: Make is a really good buildsystem, although to get all functionality needed for a bigger project you'll need automake, autoconf and libtool. We had a lot of problems getting these tools to do what we wanted, so we evaluated the alternatives. SCons is a good alternative. If you do not want to install Python and SCons on your system, there will be binaries available for the most common platforms.
+: Make is a really good buildsystem, although to get all functionality needed for a bigger project you'll need automake, autoconf and libtool. We had a lot of problems getting these tools to do what we wanted, so we evaluated the alternatives. [http://www.scons.org/refer.php SCons] is a good alternative. If you do not want to install Python and SCons on your system, there will be binaries available for the most common platforms.
 
 ; What platforms will you support?
 : Our aim is to be able to port XMMS basically everywhere, but development is mainly done on Linux/x86, Linux/PPC and Mac OSX. Support for other platforms is currently secondary, although it has been known to work on OpenBSD and Solaris.
