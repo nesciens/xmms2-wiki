@@ -1,3 +1,14 @@
+=== 2005-08-11 - XMMS2: Life is beautiful ===
+ <battersea>	do you have that feeling sometimes
+ <battersea>	when everything is going bad
+ <eleusis>	sometimes :|
+ <puzzles>	yeah
+ <battersea>	and then you put on a song with xmms2
+ <puzzles>	hahaha
+ <battersea>	and then you have to cry because life is actually so beautiful
+ <battersea>	and no matter how bad it gets
+ <battersea>	there will always be people writing xmms2 clients?
+
 === 2005-08-09 - Chryst ===
  <eleusis> so
  <eleusis> 'Chalyx'
