@@ -121,6 +121,20 @@ Select the five most recently played songs:
   327 | 1120476353 |  87 | Gregory Isaacs | Sad To Know (You're Leaving)
 
 
+
+Select the name and size (number of songs) of all the playlists:
+
+  sqlite> SELECT name, MAX(cnt) AS size
+          FROM Playlist,
+               (  SELECT id, 0 FROM Playlist
+                UNION
+                  SELECT Playlist_id, count(entry) AS cnt
+                  FROM PlaylistEntries)
+          WHERE id=playlist_id
+          GROUP BY playlist_id;
+
+
+
 Related links:
 * http://www.sqlite.org/
 * http://www.sqlite.org/vdbe.html
