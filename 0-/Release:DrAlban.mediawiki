@@ -41,4 +41,7 @@
 == Done ==
 
 
+== See Also ==
+* http://exodus.xmms.se/~tru/proposed-changes-DR3.txt
+
 [[Category:Releases]]
