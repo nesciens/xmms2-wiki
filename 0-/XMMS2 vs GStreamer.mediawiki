@@ -1,1 +1,84 @@
-TBA
+;<nowiki>Aug 09 14:38:12 WST</nowiki>
+ <juhovh>	anyway, I don't like the gstreamer approach
+ <eleusis>	juhovh: why not?
+ <eleusis>	it looks like an economically good concept
+ <juhovh>	eleusis: the same reason I like the idea of
+ 		XMMS2 that music player is not a video player
+ 		and it shouldn't be
+ <juhovh>	eleusis: of course gstreamer has its advantages
+ 		but maybe I'm old fashioned
+ <eleusis>	juhovh: explain? :D
+ <juhovh>	it's too big to fit in my brain!
+ <eleusis>	you want an audio-only framework?
+ <juhovh>	phew, there
+ *	eleusis looks @ tru
+ <eleusis>	tru: gstreamer vs xmms2 :P
+ <juhovh>	eleusis: I don't want frameworks, I want one
+ 		good application that plays music
+ <eleusis>	juhovh: ok, but in that case, why does it matter
+ 		to you that gstreamer also supports video?
+ <eleusis>	if the app you're using only allows for audio,
+ 		why would it matter whether the backend supports
+ 		video as well?
+ <juhovh>	hmm
+ <juhovh>	why would it need to?
+ <juhovh>	I think xinelib is quite good solution for
+ 		video+audio playing
+ <eleusis>	juhovh: it doesn't *need* to.. the question
+ 		is, why would *you* care? :P
+ <tru>	eleusis: the definition of bloat is "supports things
+ that is not being used"
+ <eleusis>	heh
+ <tru>	bloat leads to complicated code
+ <tru>	which leads to bugs.
+ <tru>	instead we can support *exactly* the things we need.
+ <tru>	and have no problem with bugs related to huge frameworks.
+ <tru>	imho.
+ <eleusis>	so the gist of the 'xmms2 vs gstreamer' argument
+ 		is that xmms2 wants to avoid complex frameworks
+ 		due to debugging complexity?
+ <juhovh>	that's probably the main reason, I don't want
+ 		stuff I will never use
+ <juhovh>	or maybe complexity in general?
+ <tru>	eleusis: and of course maintain portablilty, keep depends low
+ <eleusis>	what about the economic argument.. that once a
+ 		particular gstreamer plugin is available, all
+ 		gstreamer-using apps get to use	that plugin without
+ 		further modification?
+ <juhovh>	it should also be about maintainability
+ <tru>	and overhead.
+ <juhovh>	yeah
+ <juhovh>	but as I said I just need two applications, one
+ 		for audio and one for video :P
+ <tru>	eleusis: of course. it's the "do not invent the wheel"
+ <juhovh>	reinvent
+ <juhovh>	someone has to do the invention
+ <tru>	eleusis: but otoh I don't work on xmms2 to take over the world.
+ <eleusis>	so we invent a smaller wheel to avoid the
+ 		bloated gstreamer wheel? :D
+ <tru>	I do it because it's fun.
+ <eleusis>	i know
+ <juhovh>	[http://gstreamer.freedesktop.org/data/images/gst-editor/gst-editor-ambisonics.png gst-editor-ambisonics.png]
+ <juhovh>	I mean, just look at it
+ <juhovh>	maybe we should get some editor like this
+ <eleusis>	tbh, i haven't looked at gstreamer's internals,
+ 		so i don't know how bloated it really is, if you
+ 		want to use it for audio only..	but my impression
+ 		was that it's a very general framework that's
+ 		designed to just move data between different plugins..
+ <juhovh>	my impression is that it does everything related
+ 		to any audio or video
+ <eleusis>	i.e. my impression is that it's not particularly
+ 		optimised, or has specific code to make it suitable
+ 		for audio and video only
+ <juhovh>	which would mean all editing, filtering, decoding, encoding
+ <battersea>	their feature list is saying: "Extremely lightweight
+ 		data passing means very high performance/low latency" ;)
+ <eleusis>	ja
+ <eleusis>	so the impression is that it just moves data
+ 		around, it doesn't do anything fancy to the data
+ 		itself - it lets the plugins do that
+ <juhovh>	their core library should do about that
+ <eleusis>	do what?
+ <juhovh>	move data around
+ <eleusis>	yeah..
