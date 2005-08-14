@@ -9,7 +9,7 @@ Where TAG should be one of the following:
 * FEATURE: general feature add in the daemon.
 * BUG: fix for a bug filed in mantis, should also refer to that bug ''BUG: #177 - Fixed chrashbug in medialib''
 * CLIENTLIB: important if you change anything in the clientlib. this will be tracked by bindings and client developers.
-* PRIVATE: a change that won't be propagated i a ChangeLog. mostly unimportant things like spelling misstakes.
+* OTHER: a change that won't be propagated i a ChangeLog. mostly unimportant things like spelling misstakes.
 * DOC: documentation / comment updates.
 
 Perhaps the following tags might also be useful:
@@ -27,7 +27,6 @@ Perhaps the following tags might also be useful:
 
 Perhaps not so useful, but I'll list them anyway...
 * VIS: visualisation data
-* OTHER: doesn't fit under any categories above? (or maybe just leave out the tag!)
 * PLUGIN: changes to plugin API?
 * HEADER: changes to include files?
 
