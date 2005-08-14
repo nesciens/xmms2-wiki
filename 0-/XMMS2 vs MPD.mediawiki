@@ -60,7 +60,7 @@ So far, development of XMMS2 has focused on making sure things work as they're s
 XMMS2 is known to work on Linux, Mac OS X and various flavours of BSD. Support for Microsoft Windows is definitely planned, with possible support for mobile devices.
 
 == Comparison with MPD2 roadmap ==
-This list taken from [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans Music Player Daemon Version 2 Plans] (Copyright not asserted, fair use assumed)
+This list taken from [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans Music Player Daemon Version 2 Plans] (GFDL)
 
 === Main plans ===
 
