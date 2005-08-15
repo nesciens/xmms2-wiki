@@ -9,13 +9,20 @@ Where TAG should be one of the following:
 * BUG: Fix for a bug filed in mantis, should also refer to that bug ''BUG(177) - Fixed chrashbug in medialib''
 * FEATURE: general feature added in the daemon. Since feature requests are also filed on the bug tracker, this tag should also be followed by a bug number.
 * CLIENTLIB: important if you change anything in the clientlib. this will be tracked by bindings and client developers.
-* OTHER: a change that won't be propagated i a ChangeLog. mostly unimportant things like spelling mistakes.
+* OTHER: a change that won't be propagated in the ChangeLog. mostly unimportant things like spelling mistakes.
 * DOC: documentation / comment updates.
+* <SECTION>MAJOR or <SECTION>MINOR:
+** PLUGINMINOR: backwards but not forward compatible changes in some plugin ABI
+** PLUGINMAJOR: non backwards compatible changes in some plugin ABI
+** CLIENTMINOR backwards but not forward compatible changes in clientlib ABI
+** CLIENTMAJOR non backwards compatible changes in clientlib ABI
+** PYTHONMINOR backwards but not forward compatible changes in python bindings
+** PYTHONMAJOR non backwards compatible changes in python bindings
+* PROTOCOL changes in client/server protocol - requires new clientlib. does NOT imply changes in the in the clientlib ABI!
 
 Perhaps the following tags might also be useful:
 * CLI: command line client
 * ALSA, OSS, VORBIS (plugin name): changes to various plugins (''src/plugins'')
-* PYTHON: changes to Python bindings
 * RUBY: changes to Ruby bindings
 * C# binding? (this category is represented on Mantis, I don't know if it's still valid)
 * MLIB: changes to medialib (including sqlite?)
@@ -27,10 +34,7 @@ Perhaps the following tags might also be useful:
 
 Perhaps not so useful, but I'll list them anyway...
 * VIS: visualisation data
-* PLUGIN: changes to plugin API?
 * HEADER: changes to include files?
-
-Once a firmer consensus on this proposal is achieved, some of these tags will be used to categorise bugs on the Mantis bug tracker.
 
 == See Also ==
 * http://exodus.xmms.se/~andersg/changelog-propolas.txt
