@@ -1,0 +1,1 @@
+Daniel is mostly concerned with the Python client bindings, and has been known to contribute bugfixes and enhancements when the mood strikes him. You may send him email at daniel@nanoo.org.
