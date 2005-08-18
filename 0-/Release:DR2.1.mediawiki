@@ -2,8 +2,34 @@
 
 This is a maintenance release, fixing bugs found in [[Release:DR2]].
 
-== Release notes ==
+= Release notes =
 
-== ChangeLog ==
+= ChangeLog =
+
+==New Features==
+* Alexander Botero-Lowry:
+** Install the manpages with SCons {{Bug|300}}
+* Tobias Rundstrom:
+** SCons configuration now logs ConfigErrors to config.log. {{Bug|307}}
+==Bugs fixed==
+* Alexander Botero-Lowry:
+** Fixed typo in OSS plugin. {{Bug|326}}
+* Alexander Rigbo:
+** Initialize GError variable before using it. {{Bug|318}}
+* Anders Gustafsson:
+** Remove leftover debug assertion in resampler. {{Bug|314}}
+** Remove bogus code in id3v2-reader that made tags not read. {{Bug|293}}
+* Daniel Svensson:
+** cmdline -i <url> sets ipcpath {{Bug|316}}
+** Added srand before rand. {{Bug|315}}
+* Jens Taprogge:
+** Fixed ruby compilation. {{Bug|294}}
+* SÃ©bastien Cevey:
+** Fixed some incorrect documentation. {{Bug|308}}
+* Tobias Rundstrom:
+** Handle exception on UTF-8 convertion error. {{Bug|325}}
+** Removed global result refholder. {{Bug|301}}
+** Better errorhandling when we can't initialize the outputplugin. {{Bug|296}}
+
 
 [[Category:Releases]]
