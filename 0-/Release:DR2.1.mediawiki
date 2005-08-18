@@ -1,0 +1,9 @@
+{{Navbar}}
+
+This is a maintenance release, fixing bugs found in [[Release:DR2]].
+
+== Release notes ==
+
+== ChangeLog ==
+
+[[Category:Releases]]
