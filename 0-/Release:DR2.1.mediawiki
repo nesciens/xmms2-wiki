@@ -4,11 +4,11 @@ This is a maintenance release, fixing bugs found in [[Release:DR2]].
 
 = Release notes =
 
-Good news everyone! XMMS2 Team is releasing a bugfix release of the current DR (Developer Release) called DR2.1. This corrects some annoyances found by the community. Most outstanding was a ID3v2.3 parsing error.
+Good news everyone! The XMMS2 Team is releasing a bugfix release of the current DR (Developer Release) called DR2.1. This corrects some annoyances found by the community. Most outstanding was a ID3v2.3 parsing error.
 
 This release is compatible with DR2 and will not break API, medialib or client communication (we think).
 
-We are now focusing on the last DR. Work has started in the devel branch. The planned features/changes are colleted under {{Bug|317}} and the commits could be viewed here: http://git.xmms.se/?p=xmms2-devel.git;a=summary. Your feedback is important for DR3 since we are aiming to stablize the API after this.
+We are now focusing on the last DR. Work has started in the devel branch. The planned features/changes are collected under {{Bug|317}} and the commits can be viewed here: http://git.xmms.se/?p=xmms2-devel.git;a=summary. Your feedback is important for DR3 since we are aiming to stablize the API after this.
 
 Source is available at sourceforge as usual.
 
