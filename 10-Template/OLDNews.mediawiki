@@ -1,3 +1,12 @@
+{{Newsitem|date=20 August 2005 (2005-08-20) WST|author=[[Sham Chukoury]]|title=Wiki issues|text=There have been a few changes to the wiki backend and things might still be a bit shaky.. You might encounter this particular scenario:
+
+Clicking on a link to a wiki page (say, page B) from another wiki page (say, page A) might lead you to a URL like ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_B</nowiki>'' and result in a ''404 Page not found'' error. The '/wiki' bit in the URL is erroneous.
+
+To fix this, go back to page A, append '?action=purge' (without quotes) to the URL (i.e. ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_A?action=purge</nowiki>'') and press Enter (or click 'Go' or whatever, to load the URL). This will cause the wiki to purge cached links and re-generate them. This only has to be done once for any broken page, so subsequent users won't have to worry about this.
+
+If you still have any other problems with the wiki (or other XMMS2 pages), please drop by #xmms2 on irc.freenode.net and let us know.
+
+Thanks for your patience.}}
 {{Newsitem|date=19 August 2005 (2005-08-19) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2.1|text=Good news everyone! The XMMS2 Team is releasing a bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.1|DR2.1]]. This corrects some annoyances found by the community, the most prominent of those being an ID3v2.3 parsing error.
 
 This release is compatible with DR2 and will not break the plugin API, medialib or client communication (we think).
@@ -21,31 +30,7 @@ To review the ChangeLog please check the [[Release:DR2|Release Page]] and to dow
 We have also started to think about [[Release:DR2|DR2]]. Add your feature requests to the bug-reporting page and maybe we will include them in DR2.
 
 In other news we note that XMMS2 DR1 appered in LWN (http://www.lwn.net).}}
-{{Newsitem|date=20 may 2005 (2005-05-20) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 1|text=After over two years of development, the XMMS Team releases the first
-preview of the next generation XMMS. XMMS2 is a complete rewrite of
-the XMMS codebase and has been focusing on portability, code
-separation and stability. An advanced feature of XMMS2 is that the
-music player process runs separately from the user interface in a
-client/server model. This simplifies the process of creating alternate
-user interfaces and allow interface developers to concentrate on
-designing the interface for their special need and not having to care
-about the music playing part.
 
-XMMS2 has now reached Developer Release 1! The target audience for
-this release is developers, the player is NOT yet ready for public
-consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This
-simply means that the codebase is very nice and developers are
-encouraged to help creating plugins and clients that will make XMMS2
-the de facto standard for music playing, like XMMS1 has been for
-almost a decade. At this point there are no mature and stable GUI
-clients, but this preview is released in the hope that the development
-of interfaces will accelerate.
-
-We are also happy to include a music clip donated by industrial act Dismantled (http://www.dismantled.org/) in the distrbution.
-
-Download at http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
-}}
-{{Newsitem|date=24 April 2005 (2005-04-24) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 <3 Dismantled|text=Still closing on DR1 and we have wonderful news to tell you. [http://dismantled.org/ Dismantled] offered a clip to use as intro song in XMMS2, this will ship with all XMMS2 sources and is a very nice clip of a great song. Thanks a lot Gary.}}
 
 ===News tools===
 * [[News Archive]]
