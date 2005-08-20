@@ -96,7 +96,10 @@ XMMS2 Developer Release 1.1 is done - mostly a bugfix release after DR1.
 ;4th:
 Developer Release 2 is done. Exactly one day later, we fix 2 critical bugs.
 
+;19th:
+Developer Release 2.1 is done, fixing a few bugs found in DR2.
+
 == Now ==
-We're all just chillin until we decide to get serious about DR2.1. Or something. :P
+We're all just chillin until we decide to get serious about DR3. Or something. :P
 
 [[Category:General]]
