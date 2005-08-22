@@ -1,6 +1,9 @@
 =={{{title}}}==
 Submitted by: ''{{{author}}}''
+
 Description: ''{{{description}}}''
+
 More info: {{{moreinfo}}}
+
 Files:
 {{{files}}}
