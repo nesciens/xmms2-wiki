@@ -1,3 +1,10 @@
+=== 2005-08-22 - \o/ ===
+ 15:59 <+oebb> \o/
+ 15:59 <+oebb>  |/
+ 15:59 <+oebb> / \
+ 15:59 < tilman> oebb: i hope you put that extra / there by accident o_O
+ 16:00 < tazle> tilman: "is that a typo or are you jsut excited to see me?"
+
 === 2005-08-12 - The ''wee'' convention ===
  06:20:19 <puzzles> there are three reasons to say "wee" on #xmms2: 1) you got laid 2) you're drunk
                     3) you just got a cool feature to work in your client
