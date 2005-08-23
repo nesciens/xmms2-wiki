@@ -75,6 +75,10 @@ RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all 
 
 This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client. It's written in python with PyQT widgetset. The code is available in the http://git.xmms.se repository. The client is very flexible and can be extended by adding own Python code in configuration directory. Written by [[Tobias RundstrÃ¶m]].
 
+=== SAXm2s ===
+
+saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function. The code is available in the arch-repository at http://www.cs.drexel.edu/~jfo24/archives/2004 or as source from http://linsam.homelinux.com/projs/saxm2s-0.5.1.tbz2. Written by [[John O'Meara]].
+
 == Others ==
 === HaX ===
 
