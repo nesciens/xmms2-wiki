@@ -1,0 +1,17 @@
+== .emacs configuration for xmms2 source editing
+
+Put this at the end of your .emacs to follow style guidelines.
+
+ (defun xmms2-c-mode ()
+   "C mode with adjusted defaults for use with the xmms2."
+   (interactive)
+   (c-mode)
+   (c-set-style "K&R")
+   (setq tab-width 4)
+   (setq indent-tabs-mode t)
+   (setq c-basic-offset 4))
+ 
+ 
+ (setq auto-mode-alist 
+       (cons '("/home/marco/dev/xmms2.*/.*\\.[ch]$" . xmms2-c-mode)  
+ 	    auto-mode-alist))
