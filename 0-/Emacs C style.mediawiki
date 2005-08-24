@@ -1,4 +1,4 @@
-== .emacs configuration for xmms2 source editing
+== .emacs configuration for xmms2 source editing ==
 
 Put this at the end of your .emacs to follow style guidelines.
 
