@@ -80,7 +80,7 @@ Dismantled agrees to offer a clip as an intro/demo song for XMMS2.
 
 == May ==
 ;20th:
-XMMS2 Developer Release 1 is done.
+XMMS2 [[Release:DR1 | Developer Release 1]] is done.
 
 ;21st:
 XMMS2 moves from BitKeeper to Git. (takes a few days)
@@ -90,14 +90,14 @@ XMMS2 moves from BitKeeper to Git. (takes a few days)
 
 == June ==
 ;1st:
-XMMS2 Developer Release 1.1 is done - mostly a bugfix release after DR1.
+XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix release after DR1.
 
 == August ==
 ;4th:
-Developer Release 2 is done. Exactly one day later, we fix 2 critical bugs.
+[[Release:DR2 | Developer Release 2]] is done. Exactly one day later, we fix 2 critical bugs.
 
 ;19th:
-Developer Release 2.1 is done, fixing a few bugs found in DR2.
+[[Release:DR2.1 | Developer Release 2.1]] is done, fixing a few bugs found in DR2.
 
 == Now ==
 We're all just chillin until we decide to get serious about DR3. Or something. :P
