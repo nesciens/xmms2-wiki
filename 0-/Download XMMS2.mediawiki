@@ -24,7 +24,7 @@ Rugek has a port ofepository: http://rugek.btcl.de/dist/rugek.httpup
 
 === FreeBSD ===
 
-A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-DR2-port.tar.gz
+A
 
 === Gentoo Linux ===
 
