@@ -22,9 +22,7 @@ These packages are built for ''Debian sarge'' (the current stable release) but w
 
 Rugek has a port ofepository: http://rugek.btcl.de/dist/rugek.httpup
 
-=== FreeBSD ===
 
-A
 
 === Gentoo Linux ===
 
