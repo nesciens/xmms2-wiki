@@ -19,9 +19,8 @@ These packages are built for ''Debian sarge'' (the current stable release) but w
 
 == Ports ==
 
-=== CRUX Linux ===
 
-Rugek has a port of XMMS2 in his httpup repository: http://rugek.btcl.de/dist/rugek.httpup
+Rugek has a port ofepository: http://rugek.btcl.de/dist/rugek.httpup
 
 === FreeBSD ===
 
