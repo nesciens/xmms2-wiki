@@ -29,3 +29,8 @@ Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html
 === Crux GNU/Linux ===
 
 Rugek has a port repository with Xmms2 here: http://rugek.btcl.de/dist/rugek.httpup
+
+
+=== Arch Linux ===
+
+xmms2 snapshots and gxmms2 are avaiable through AUR
