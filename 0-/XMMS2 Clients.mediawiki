@@ -77,7 +77,7 @@ This is a standalone medialib and playlist client. Aimed at functionality instea
 
 === SAXm2s ===
 
-saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function. The code is available in the arch-repository at http://www.cs.drexel.edu/~jfo24/archives/2004 or as source from http://linsam.homelinux.com/projs/saxm2s-0.5.1.tbz2. Written by [[John O'Meara]].
+saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function. Info and screenshots can be found at http://www.cs.drexel.edu/~jfo24/projs/saxm2s/ and the current version can be downloaded directly from http://linsam.homelinux.com/projs/saxm2s-0.5.1.tbz2. Written by [[John O'Meara]].
 
 == Others ==
 === HaX ===
