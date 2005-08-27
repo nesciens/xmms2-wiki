@@ -1,1 +1,1 @@
-This wiki is collecting information for XMMS2... http://www.xmms.org/
+#REDIRECT [[About]]
