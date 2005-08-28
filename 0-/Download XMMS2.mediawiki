@@ -19,18 +19,17 @@ These packages are built for ''Debian sarge'' (the current stable release) but w
 
 == Ports ==
 
-=== Gentoo Linux ===
-
-Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
-[[Category:General]]
-[[Category:Users]]
-
+=== FreeBSD ===
+A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-port.shar
 
 === Crux GNU/Linux ===
-
 Rugek has a port repository with Xmms2 here: http://rugek.btcl.de/dist/rugek.httpup
 
-
 === Arch Linux ===
-
 xmms2 snapshots and gxmms2 are avaiable through AUR
+
+=== Gentoo Linux ===
+Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
+
+[[Category:General]]
+[[Category:Users]]
