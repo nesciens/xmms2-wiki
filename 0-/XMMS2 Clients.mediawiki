@@ -120,9 +120,6 @@ A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.
 
 Snag here: http://rawdod.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2
 
-== TwistedXMMS2 ==
-A webclient using twisted.web. in bitkeepr 'bk://genesis.xmms.se:5555/twistedxmms2'. Under development by [[Tobias RundstrÃ¶m]]
-
 == XMMS2-Scrobbler ==
 
 XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
