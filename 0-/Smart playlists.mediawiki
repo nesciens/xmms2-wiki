@@ -6,3 +6,5 @@ Here's how I think playlists should work: You have a media library to store all 
 This facilitates a few very nice things: Random songs, jump to song, queue song. You can have a fixed playlist and queue songs off the playlist (or jump straight to it) without changing the playlist. It also makes playing random songs very easy. You tell the queue list which playlist to grab songs from when it's empty, then it calculates how long before the end of the song it must grab a new one (determined by the fade length + the load time etc), and it grabs a new random song off the playlist at this time. This way you can have a fixed playlist (now its more like a collection than an actual ordered list), play random songs, but still queue a song of your choosing without futzing around.
 
 What do you think?
+
+* [http://www.omninerd.com/news/news.php?nid=260 Playing Favorites] some good articles about smart playlist and itunes algorithm
