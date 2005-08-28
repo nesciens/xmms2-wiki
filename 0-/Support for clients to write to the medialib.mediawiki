@@ -6,11 +6,8 @@ Alright I have started to work on this but I need some feedback on the functiona
 The problem is the extraction here we have three choises:
 
 # the original idea was to expand the Media table in the medialib with a new column called source, this would indicate if a value came from the server (plugins etc) or the client. The advantage of this was that you where able to override a server set property without removing the orginal value. Then the client could: 
-
-##set a config value and tell you if you wanted data from the server or from the client
-or 
+##set a config value and tell you if you wanted data from the server or from the client or
 ## have a flag to the medialib_get_info() call that would tell you what kind of data you had. 
-
 # The second approach is to just have a policy which is forced upon entering data and optional when recieving. Like all properties from the client is named with a dash first (i.e: "_title") and then when the client retrieved all entries it could choose which to use.
 
 I think I like 2 most. the problem with it is that you are locked to just two origins. 1 could be expanded to support an infinite number of origins, but the problem is that you have to change the API or have a global configuration variable for what data you want.
