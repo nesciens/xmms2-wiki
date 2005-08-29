@@ -13,3 +13,5 @@ The problem is the extraction here we some choises:
 I think I like 2 most. the problem with it is that you are locked to just two origins. 1 could be expanded to support an infinite number of origins, but the problem is that you have to change the API or have a global configuration variable for what data you want.
 
 What do you guys think?
+
+I think that 2 is just an ugly hackish shortsigthed crappy way to implement 1. -- <i>anders</i>
