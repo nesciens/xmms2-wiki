@@ -1,0 +1,1 @@
+The second option definitely looks nicer to me too, and if there is a real need (which I can't really see happening, but you never know) we could introduce more "special" characters, i.e. *coverart_url or ^coverart_url
