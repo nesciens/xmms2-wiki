@@ -1,0 +1,1 @@
+Where can I find the xmms2d configuration file format explained ?
