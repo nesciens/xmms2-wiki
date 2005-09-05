@@ -1,0 +1,17 @@
+{{Navbar}}
+
+This is a maintenance release, fixing bugs found in [[Release:DR2.1]].
+
+= Release notes =
+
+Good news everyone! The XMMS2 Team is releasing a bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called DR2.2. 
+
+Some outstanding issues has forced us to release another maintainence release in the DR2 serie instead of making a DR3 release. A couple of huge memoryleaks has been tracked down. Another annoying bug is that XMMS2 doesn't work at all with newer SQLite (3.2.5 and higher) because of a policy change, we where missusing the API and they did it a hard error. This has NOT been fixed in this maintainence release since it was a major change to our internal API. It has been fixed in the upcomming DR3 release.
+
+Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
+
+Now have a nice day!
+
+= ChangeLog =
+
+[[Category:Releases]]
