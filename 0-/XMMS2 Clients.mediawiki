@@ -26,6 +26,10 @@ x2c is a client written in C using curses (not specifically ncurses all code is 
 
 An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged. Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 HERE.]
 
+== nyello ==
+
+nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]).  It will offer advanced features such as powerful medialib query patterns, collections and clever random playback. nyello is developed by [[SÃ©bastien Cevey]] and its [http://git.xmms.se/?p=nyello.git;a=summary development tree] can be found in the http://git.xmms.se repository.
+
 = Graphical clients =
 Clients that require X Windows or other graphical windowing systems.
 
