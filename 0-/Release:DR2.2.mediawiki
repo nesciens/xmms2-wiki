@@ -14,4 +14,24 @@ Now have a nice day!
 
 = ChangeLog =
 
+==Bugs fixed==
+* G. Gallino:
+** Added checking for negative gain value. {{Bug|297}}
+* Sebastien Cevey:
+** Fixed buggy xmmsc_result_list_first {{Bug|342}}
+* Tilman Sauerbeck:
+** Fix refcounting for ruby clientbindings {{Bug|187}}
+** Fix refcounting problems in Python clientbindings. {{Bug|349}}
+** :Fixed a memory leak in results that store lists. {{Bug|353}}
+* Tobias Rundstrom:
+** Fix bad documentation in xmmsclient python bindings. {{Bug|328}}
+** Plug memory leak in xmms_object_emit_f {{Bug|341}}
+==Other Changes==
+* Tilman Sauerbeck:
+** complain about result refcount missuage in clientlib.
+** Small fix in ruby testscript.
+** Cleanup of ruby error handling.
+* Tobias Rundstrom:
+** Added check so that we don't try to compile with a new version of
+
 [[Category:Releases]]
