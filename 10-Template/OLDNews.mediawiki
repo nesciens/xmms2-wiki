@@ -1,3 +1,12 @@
+{{Newsitem|date=07 September 2005 (2005-09-07) WST|author=[[Sham Chukoury]]|title=Developer Release 2.2|text=More good news everyone! The XMMS2 Team is releasing another bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called DR2.2. 
+
+Some outstanding issues have forced us to release another maintenance release in the DR2 series instead of making a DR3 release, including the fixing of a couple of huge memory leaks. Another annoying bug is that XMMS2 doesn't work at all with newer SQLite (3.2.5 and higher) releases because of a policy change; we were misusing the API and they made such usage fail with a hard error. This has '''not''' been fixed in this maintenance release since it is a major change to our internal API. It will be fixed in the upcoming [[Release:DR3 | DR3]] release.
+
+Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
+
+''XMMS2: it might not be able to prevent natural disasters or government fuckups, but it will play your music awesomely! (and makes your mom rock)''
+
+Now have a nice day!}}
 {{Newsitem|date=20 August 2005 (2005-08-20) WST|author=[[Sham Chukoury]]|title=Wiki issues|text=There have been a few changes to the wiki backend and things might still be a bit shaky.. You might encounter this particular scenario:
 
 Clicking on a link to a wiki page (say, page B) from another wiki page (say, page A) might lead you to a URL like ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_B</nowiki>'' and result in a ''404 Page not found'' error. The '/wiki' bit in the URL is erroneous.
