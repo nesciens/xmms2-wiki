@@ -99,6 +99,10 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 ;19th:
 [[Release:DR2.1 | Developer Release 2.1]] is done, fixing a few bugs found in DR2.
 
+== September ==
+;7th:
+[[Release:DR2.2 | Developer Release 2.2]] is done, fixing bugs found in DR2.1.
+
 == Now ==
 We're all just chillin until we decide to get serious about DR3. Or something. :P
 
