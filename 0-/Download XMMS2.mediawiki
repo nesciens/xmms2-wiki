@@ -29,7 +29,7 @@ Rugek has a port repository with Xmms2 here: http://rugek.btcl.de/dist/rugek.htt
 xmms2 snapshots and gxmms2 are avaiable through AUR
 
 === Gentoo Linux ===
-Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
+Some ebuilds are avaialable here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 
 [[Category:General]]
 [[Category:Users]]
