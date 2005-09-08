@@ -1,4 +1,4 @@
-'''{{{name}}}'''<br />
+<h2>{{{name}}}</h2>
 by ''{{{author}}}''
 
 '''Homepage''': {{{website}}}<br />
