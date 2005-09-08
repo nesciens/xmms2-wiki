@@ -1,0 +1,8 @@
+'''{{{name}}}'''
+by ''{{{author}}}''
+Homepage: {{{website}}}
+Latest version: {{{version}}}
+Development language: {{{devlanguage}}}
+User Interface: {{{ui}}}
+Screenshots: {{{screenshots}}}
+Description: {{{description}}}
