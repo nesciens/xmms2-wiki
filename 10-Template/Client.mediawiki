@@ -1,10 +1,10 @@
 '''{{{name}}}'''<br />
 by ''{{{author}}}''
 
-Homepage: {{{website}}}<br />
-Latest version: {{{version}}}<br />
-Development language: {{{devlanguage}}}<br />
-User Interface: {{{ui}}}<br />
-Screenshots: {{{screenshots}}}
+'''Homepage''': {{{website}}}<br />
+'''Latest version''': {{{version}}}<br />
+'''Development language''': {{{devlanguage}}}<br />
+'''User Interface''': {{{ui}}}<br />
+'''Screenshots''': {{{screenshots}}}
 
-Description: {{{description}}}
+{{{description}}}
