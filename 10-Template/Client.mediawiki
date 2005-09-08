@@ -5,6 +5,7 @@ by ''{{{author}}}''
 '''Latest version''': {{{version}}}<br />
 '''Development language''': {{{devlanguage}}}<br />
 '''User Interface''': {{{ui}}}<br />
-'''Screenshots''': {{{screenshots}}}
+'''Screenshots''': {{{screenshots}}}<br />
+[[Client:{{{name}}} | Discuss]]
 
 {{{description}}}
