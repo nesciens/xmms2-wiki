@@ -1,3 +1,9 @@
+=== 2005-09-09 - Poor bot :/ ===
+ [22:46:31][scry]: insufficient "keycmd" auth (have 12, need 300)
+ [22:47:23][nano-]: scry: How are you planning to get the other 288?
+ [22:47:24][scry]: beats me
+
+
 === 2005-09-06 - Sex with ... women? ===
  23:50 <ccr> well, sex is good. but those fucking stinking bitches always want something else
              too. why couln't they be like men in  that sense.
