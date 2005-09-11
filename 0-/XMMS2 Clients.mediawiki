@@ -49,7 +49,7 @@ Shellac is a XMMS2 client written in Python with Pygtk with a very customizable 
 It is still under development.
 For now it can be found at http://hem.bredband.net/b298027/, written by Magnus Bjernstad
 
-{{Client| name=RXMMS2| author=[[Daniel Chokola]]| website=[http://dan.chokola.com/rxmms2.rhtml Homepage]| version=Not currently in version control.| devlanguage=Ruby| ui=Gtk2| screenshots=[http://dan.chokola.com/images/misc/rxmms2.png]| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all the functionality of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and . RXmms2 was conceived and is maintained by [[Daniel Chokola]]. The RXmms2 homepage can be found at http://dan.chokola.com/rxmms2.rhtml.}}
+{{Client| name=RXMMS2| author=[[Daniel Chokola]]| website=[http://dan.chokola.com/rxmms2.rhtml Homepage]| version=Not currently in version control.| devlanguage=Ruby| ui=Gtk2| screenshots=[http://dan.chokola.com/images/rxmms2/rxmms2.png]| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all the functionality of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and . RXmms2 was conceived and is maintained by [[Daniel Chokola]]. The RXmms2 homepage can be found at http://dan.chokola.com/rxmms2.rhtml.}}
 
 == Qt ==
 === medialib-ui playlist client ===
