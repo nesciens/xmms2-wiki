@@ -1,1 +1,8 @@
 The second option definitely looks nicer to me too, and if there is a real need (which I can't really see happening, but you never know) we could introduce more "special" characters, i.e. *coverart_url or ^coverart_url
+
+== 1 + 2 = 3 ==
+
+If 1 + 2 could be combined like so:
+_''property'' = server-set values and
+''source''_''property'' = client-set values,
+we could keep the current API and still use an infinite number of possible sources. Also it would be easy to block all write access to _''property'' values.
