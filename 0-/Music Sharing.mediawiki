@@ -2,7 +2,7 @@
 
 People are coming to expect music sharing thanks to that one company and their ever so popular music software.
 
-I do not suggest that xmm2 should attempt to custom design a new streaming format, but it should be backwards compatible (or at least have the modules built in) so that users on a multisystem network can share thier music (in as far as backwards compatibility would be legal).  Personally, I would love for xmm2 to also function as a DAAP server, and be able to browse and listen (not download).  I won't even suggest that we use this software to download music from that one music store.
+I do not suggest that xmms2 should attempt to custom design a new streaming format, but it should be backwards compatible (or at least have the modules built in) so that users on a multisystem network can share their music (in as far as backwards compatibility would be legal).  Personally, I would love for xmms2 to also function as a DAAP server, and be able to browse and listen (not download).  I won't even suggest that we use this software to download music from that one music store.
 
 There are also other formats that could be added with modules.   
 
