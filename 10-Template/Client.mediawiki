@@ -1,4 +1,4 @@
-<h2>{{{name}}}</h2>
+==={{{name}}}===
 by ''{{{author}}}''
 
 '''Homepage''': {{{website}}}<br />
