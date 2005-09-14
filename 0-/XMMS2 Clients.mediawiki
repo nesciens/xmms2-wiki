@@ -103,7 +103,7 @@ Snag here: http://rawdod.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2
 
 == XMMS2-Scrobbler ==
 
-XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler.html over there].
+XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler over there].
 
 == XMMS2 Webterface ==
 The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2. It's written by [[Daniel Chokola]] and can be downloaded [http://dan.chokola.com/xmms2-webterface.rhtml here]. You can play with a demo [http://home.chokola.com:8888/xmms2.rhtml here].
