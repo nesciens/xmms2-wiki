@@ -39,6 +39,17 @@ If you want xmms2d to listen for requests via TCP you should alter the config.
 
 and then restart xmms2d. Now xmms2d will listen to that port for incoming remote clients.
 
+This only works if the client runs on the same machine (127.0.0.1) as the server. To connect from a machine within for example your homenetwork the server needs to know the address of the network interface of your computer. So for example if your network interface has the IP address 192.168.2.20 you need to configure:
+
+ xmms2 config core.ipcsocket tcp://192.168.2.20:<port>
+
+Now you can connect to the xmms2 server from another machine in your private network. You need to tell '''all''' clients (even the local ones) to connect to the server via this IP address. Add the line
+
+ ipcpath=tcp://192.168.2.20:<port>
+
+to the config file ~/.xmms2/clients/cli.conf for the command line client. Other clients may be configured some other way. Now all clients that know your box by this IP address can connect. Thats all computers in your local Network. If you have a static IP address and configure the server to listen for connections to that address you can connect from any (well) computer in the world.
+The development snapshot 20050914 crashes on connection release of remote connections.
+
 == xmms2 client options ==
 
 The basic CLI (command line interface) xmms2 client can use alternative paths for IPC. Simply set the XMMS_PATH environment variable to the appropriate path and then use the client.
