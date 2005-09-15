@@ -1,7 +1,7 @@
-=== 2005-09-15 Beer ===
-<ccr> shd, didn't you stop drinking? :)
-<ccr> or maybe it was someone else I know
-<shd> ccr: hmm. well. i stopped because i ran out of beer =)
+=== 2005-09-15 - Beer ===
+ <ccr> shd, didn't you stop drinking? :)
+ <ccr> or maybe it was someone else I know
+ <shd> ccr: hmm. well. i stopped because i ran out of beer =)
 
 === 2005-09-09 - Poor bot :/ ===
  [22:46:31][scry]: insufficient "keycmd" auth (have 12, need 300)
