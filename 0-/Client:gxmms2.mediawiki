@@ -1,2 +1,2 @@
-Excellent client.  Compiled with no trouble under debian unstable amd64 and xmms2-devel, .<br/>
+Excellent client.  Compiled with no trouble under debian unstable amd64 and xmms2-devel.<br/>
 - [[Chris_Morgan | cmorgan <cmorgan@alum.wpi.edu>]] 2005-09-15
