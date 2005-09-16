@@ -120,6 +120,8 @@ The sources can be obtained form the ''blue'' branch of [mailto:jlt_xmms2@shamro
 '''xmms2Plugin''' is a module for the [http://www.irssi.org irssi] irc client to be used to control playback and query
 information like playlist or the currently played song. See the README included with it for more details. You can download it [http://atomantstuff.dyndns.org here].
 
+== LIRC Clients ==
+
 {{Client| name=lxmms2| author=[[Johannes Heimansberg]]| website=[http://wejp.homelinux.org/wejp/xmms2/#lxmms2 http://wejp.homelinux.org/wejp/xmms2/#lxmms2]| version=0.0.1| devlanguage=C| ui=IR remote control| screenshots=None| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
 
 [[Category: General]]
