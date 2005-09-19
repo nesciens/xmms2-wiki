@@ -124,14 +124,15 @@ Select the five most recently played songs:
 
 Select the name and size (number of songs) of all the playlists:
 
-  sqlite> SELECT name, MAX(cnt) AS size
-          FROM Playlist,
-               (  SELECT id, 0 FROM Playlist
-                UNION
-                  SELECT Playlist_id, count(entry) AS cnt
-                  FROM PlaylistEntries)
-          WHERE id=playlist_id
+  sqlite> SELECT name, COUNT(entry) AS size
+          FROM Playlist
+          LEFT JOIN PlaylistEntries ON id=playlist_id
           GROUP BY playlist_id;
+  name        size      
+  ----------  ----------
+  emptylist   0         
+  autosaved   3         
+  test        2         
 
 
 
