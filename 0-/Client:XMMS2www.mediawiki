@@ -1,0 +1,1 @@
+{{Client| name=XMMS2www| author=[[Christopher Rosell]]| website=http://evangelion.se/xmms2/| version=Unknown| devlanguage=Unknown| ui=Unknown| screenshots=N/A| description=Previously known as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
