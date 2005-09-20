@@ -5,17 +5,17 @@ There are a number of client programs currently being developed for use with XMM
 = Console clients =
 Clients that can be used from a command line, console or terminal.
 
-{{Client|name=XMMS2 CLI client|author=XMMS2 Team|website=[[Using the application]]|version= [[Release:DR2.2|DR2.2]]|devlanguage=C|ui=Console|screenshots=N/A|description=This is the simple client that currently comes with XMMS2 itself. (source code found in ''src/clients/cli/xmms2_client.c'') It supports most, if not all, operations possible using the xmmsclient library. See the [[Using the application]] page for more information about how to use this client.}}
+{{ClientSummary| name=XMMS2 CLI client| description=This is the simple client that currently comes with XMMS2 itself. (source code found in src/clients/cli/xmms2_client.c) It supports most, if not all, operations possible using the xmmsclient library.}}
 
-{{Client| name=xmms2-shell| author=[[Sham Chukoury]]| website=http://eleusis.f2o.org/projects/xmms2/shell/| version=N/A| devlanguage=Python| ui=Console| screenshots=N/A| description=xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client. It was originally written  so as to provide a better context in which to interact with the XMMS2 daemon, rather than having to run the CLI client for a single action at a time. xmms2-shell is currently pending a rewrite.}}
+{{ClientSummary| name=xmms2-shell| description=xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client.}}
 
-{{Client| name=XMMS2Curse| author=[[Christopher Rosell]]| website=http://evangelion.se/xmms2/| version=Unknown| devlanguage=Python| ui=Console (ncurses)| screenshots=N/A| description=XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]].}}
+{{ClientSummary| name=XMMS2Curse| description=XMMS2Curse is a python client using ncurses for its interface.}}
 
-{{Client| name=xmms2curses| author=[[Alexander Botero-Lowry]]| website=[http://www.stampede.org/~drax/x2c.jpg stampede.org]| version=Unknown| devlanguage=C| ui=Console (ncurses)| screenshots=http://www.stampede.org/~drax/x2c.jpg| description=x2c is a client written in C using curses (not specifically ncurses, all code is tested with NetBSD's curses and ncurses). It was started because, sadly, XMMS2Curse seems to be no longer avaliable. A screenshot of the work in progress can be ogled at [http://www.stampede.org/~drax/x2c.jpg]}}
+{{ClientSummary| name=xmms2curses| description=x2c is a client written in C using curses (not specifically ncurses, all code is tested with NetBSD's curses and ncurses).}}
 
-{{Client| name=ixmms2| author=plb| website=[http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 Boxwhore.org]| version=Unknown| devlanguage=Perl| ui=Console (irssi?)| screenshots=N/A| description=An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged. Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=19&lid=183 HERE.]}}
+{{ClientSummary| name=ixmms2| description=An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged.}}
 
-{{Client| name=nyello| author=[[SÃ©bastien Cevey]]| website=http://sirius.cine7.net/nyello/| version=[http://sirius.cine7.net/nyello/releases/nyello-0.3.0.tar.bz2 0.3.0]| devlanguage=C++| ui=Console| screenshots=[http://sirius.cine7.net/nyello/screenshots/help.png] [http://sirius.cine7.net/nyello/screenshots/search-and-enqueue.png]| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]).  It will offer advanced features such as powerful medialib query patterns, collections and clever random playback. nyello is developed by [[SÃ©bastien Cevey]] and its [http://git.xmms.se/?p=nyello.git;a=summary development tree] is hosted in the http://git.xmms.se repository.}}
+{{ClientSummary| name=nyello| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]). It will offer advanced features such as powerful medialib query patterns, collections and clever random playback.}}
 
 = Graphical clients =
 Clients that require X Windows or other graphical windowing systems.
