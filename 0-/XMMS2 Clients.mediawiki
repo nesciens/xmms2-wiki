@@ -1,6 +1,6 @@
 {{Navbar}}
 
-There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured. If you are a new XMMS2 client developer, you're welcome to add your client to the list.. and drop by our IRC channel to let us know what you're doing, so we may work closely together. ;)
+There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured. If you are a new XMMS2 client developer, you're welcome to add your client to the list.. and drop by our IRC channel to let us know what you're doing, so we may work closely together. ;) '''See also''': [[Contribs]]
 
 = Console clients =
 Clients that can be used from a command line, console or terminal.
