@@ -1,0 +1,1 @@
+{{Client| name=lxmms2| author=[[Johannes Heimansberg]]| website=[http://wejp.homelinux.org/wejp/xmms2/#lxmms2 http://wejp.homelinux.org/wejp/xmms2/#lxmms2]| version=0.0.1| devlanguage=C| ui=IR remote control| screenshots=None| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
