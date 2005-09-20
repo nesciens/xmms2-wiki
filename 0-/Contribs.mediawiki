@@ -14,3 +14,5 @@ Scripts and other miscellaneous contributions to XMMS2. If you think you have so
 Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | moreinfo= | files=* [http://xmms2.xmms.se/contrib/files/play-pause.py play-pause.py]}}
 
 [[Category:Users]]
+
+{{Contrib| title=XChat2 info script| author=[[Sham Chukoury]]| description=XChat 2 python script that displays the title and artist of the currently playing song. Supports querying of xmms2 daemons running on different IPC paths.| moreinfo=http://eleusis.f2o.org/projects/xmms2/| files=* [http://eleusis.f2o.org/projects/xmms2/xmms2-indirect.tar.bz2 xmms2-indirect.tar.bz2]}}
