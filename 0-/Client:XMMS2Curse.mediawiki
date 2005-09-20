@@ -1,0 +1,1 @@
+{{Client| name=XMMS2Curse| author=[[Christopher Rosell]]| website=http://evangelion.se/xmms2/| version=Unknown| devlanguage=Python| ui=Console (ncurses)| screenshots=N/A| description=XMMS2Curse is a python client using ncurses for its interface. Under development by [[Christopher Rosell]].}}
