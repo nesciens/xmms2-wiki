@@ -67,29 +67,13 @@ For now it can be found at http://hem.bredband.net/b298027/, written by Magnus B
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
-== XMMS2www ==
-Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.
+{{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
 
-More info here: http://evangelion.se/xmms2/
+{{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
 
-== XMMS2php ==
+{{ClientSummary| name=XMMS2-Scrobbler| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
 
-Quite ghetto and insecure php client (xmms2 simple client wrapper), not the same as 'Unnamed PHP client', but 'dead at this time and dead in most futures'
-
-More info here: http://pastebin.ca/19609
-
-== XMMS2 xml-rpc ==
-
-A ruby client thats an xml-rpc server, Also included is a php xml-rpc client. 
-
-Snag here: http://rawdod.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2
-
-== XMMS2-Scrobbler ==
-
-XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client written by [[Tilman Sauerbeck]]. Learn more about it [http://code-monkey.de/projects/xmms2-scrobbler over there].
-
-== XMMS2 Webterface ==
-The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2. It's written by [[Daniel Chokola]] and can be downloaded [http://dan.chokola.com/xmms2-webterface.rhtml here]. You can play with a demo [http://home.chokola.com:8888/xmms2.rhtml here].
+{{ClientSummary| name=XMMS2 Webterface| description=The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2.}}
 
 = Other Clients =
 
