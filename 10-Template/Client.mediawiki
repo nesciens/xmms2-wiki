@@ -6,6 +6,6 @@ by ''{{{author}}}''
 '''Development language''': {{{devlanguage}}}<br />
 '''User Interface''': {{{ui}}}<br />
 '''Screenshots''': {{{screenshots}}}<br />
-[[Client:{{{name}}} | Discuss]]
+[[Talk:Client:{{{name}}} | Discuss]]
 
 {{{description}}}
