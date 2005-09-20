@@ -85,3 +85,4 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 [[Category: General]]
 [[Category: Users]]
+[[Category: Clients]]
