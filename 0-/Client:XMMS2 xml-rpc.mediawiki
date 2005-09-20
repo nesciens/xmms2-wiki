@@ -1,0 +1,1 @@
+{{Client| name=XMMS2 xml-rpc| author=David Richards| website=Unknown (http://rawdod.com ?)| version=[http://rawdod.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2  Unknown]| devlanguage=Ruby, PHP| ui=Unknown| screenshots=N/A| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
