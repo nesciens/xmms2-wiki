@@ -1,0 +1,1 @@
+{{Client| name=juxtapose| author=[[Joe Turner]]| website=[http://juxtapose.sourceforge.net http://juxtapose.sourceforge.net]| version=0.1| devlanguage=Python| ui=GTK+2| screenshots=[http://juxtapose.sourceforge.net/images/jux_main.png]| description="Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.}}
