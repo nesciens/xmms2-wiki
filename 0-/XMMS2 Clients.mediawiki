@@ -53,25 +53,16 @@ For now it can be found at http://hem.bredband.net/b298027/, written by Magnus B
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
 
 == Others ==
-=== HaX ===
 
-HaX is a flexible and modular Python client for XMMS2. What started off as a PyGTK project has evolved into a reusable collection of modules that may be used to quickly build other Python XMMS2 clients, integrate a player client into a larger Python application, or simply provide smarter 'skinning' abilities. HaX is also maintained by [[Sham Chukoury]] and more information can be found at the [http://eleusis.f2o.org/projects/xmms2/hax/ HaX project] page.
+{{ClientSummary| name=Chalyx| description=Chalyx (previously known as HaX) is a flexible and modular Python client for XMMS2.}}
 
-=== GNUstep client ===
+{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed by [[Banlu Kemiyatorn]].}}
 
-A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed for GNUstep by [[Banlu Kemiyatorn]].
+{{ClientSummary| name=xmms2-osd| description=This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped.}}
 
-=== Python OSD client ===
+{{ClientSummary| name=fvwm2xmms| description=fvwm2xmms is a basic display client written around fvwm2. It shows the currently playing song in an FvwmButtons box on the desktop.}}
 
-This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped. A lot of the code comes from the original xmms2-shell and the test python client in the XMMS2 source tree. You can download the script from Sham's [http://eleusis.f2o.org/projects/xmms2/ XMMS2 page].
-
-=== fvwm2 client ===
-
-fvwm2xmms [http://www.complete-systems.net/~alex/fvwm2xmms.tar.gz http://www.complete-systems.net/~alex/fvwm2xmms.tar.gz] is a basic display client written around fvwm2. It shows the currently playing song in an FvwmButtons box on the desktop. The required additions to fvwm2rc are also included in the tar ball. It is written in c and uses glib2 for its mainloop.
-
-=== XMMS2-AMP ===
-
-This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'. This client will be designed to be beautiful, yet simple, and incredibly powerful. It will also feature a media library similar to the one that winamp 5 uses, with some added features. [mailto:philipthrasher@gmail.com Contact Philip Thrasher] for more information.
+{{ClientSummary| name=XMMS2-AMP| description=This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'.}}
 
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
