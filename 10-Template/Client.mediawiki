@@ -9,3 +9,7 @@ by ''{{{author}}}''
 [[Talk:Client:{{{name}}} | Discuss]]
 
 {{{description}}}
+
+[[XMMS2 Clients More xmms2 clients]]
+
+[[Category:Clients]]
