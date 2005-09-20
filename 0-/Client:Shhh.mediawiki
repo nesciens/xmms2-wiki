@@ -1,0 +1,1 @@
+{{Client| name=Shhh| author=[[Banlu Kemiyatorn]]| website=http://home.gna.org/garma/shhh/| version=N/A| devlanguage=Unknown (C?)| ui=GNUStep| screenshots=See homepage| description=A GNUstep client called Shhh is being developed by Banlu Kemiyatorn.}}
