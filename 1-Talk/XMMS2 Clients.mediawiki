@@ -1,0 +1,8 @@
+= How to add a new client =
+# Use the [[Template:ClientSummary]] template on the [[XMMS2 Clients]] page - this will show the client name and a short description (emphasis on 'short' description). The client name will be a hyperlink to the real client page, typically ''Client:Name''
+# Follow the linked name (should be red) to the new client page and use the [[Template:Client]] template there to provide more detailed information about the client. For examples, see the code for existing client pages, e.g. [[Client:nyello]] (click on the 'edit' link at the top).
+
+== Notes ==
+* The 'author' field on the Client template is obviously there to show who wrote the client. If you're a client author, you should probably set this field to be a hyperlink to your home page, or a page containing your contact information.
+* You don't need to upload client screenshots to this wiki. You may just provide the urls to the images hosted elsewhere (e.g. on the client's web site). Mediawiki seems to automagically convert urls ending in .jpg to an image tag - for example, see [[Client:xmms2curses]].
+* The 'ui' field (User Interface) should describe the type of user interface provided by the application. For graphical clients, this may simply be the graphical toolkit used, for example, GTK2, Qt, EFL, etc.
