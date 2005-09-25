@@ -6,3 +6,8 @@ The significance being, that some people prefer to keep one CD as one file (for 
 It would be nice if XMMS2 could accomodate reading mka-files, and display the tracks within in the playlist, preferably hierarchically - expand the track-titles for a CD on double-click, else keep the entry for each CD to a single line.
 
 There is currently a plugin for XMMS which allows you to play a single media-file indexed by a CUE-file, but it's not quite the best solution.
+
+----
+
+* http://bugs.xmms2.xmms.se/view.php?id=144
+[[User:Eleusis|Eleusis]] 12:01, 25 Sep 2005 (CEST)
