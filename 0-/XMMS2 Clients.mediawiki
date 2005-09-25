@@ -43,7 +43,7 @@ Clients that require X Windows or other graphical windowing systems.
 {{ClientSummary| name=Shellac| description=Shellac is a XMMS2 client written in Python with Pygtk with a very customizable GUI.
 It is still under development.For now it can be found at http://hem.bredband.net/b298027/}}
 
-{{ClientSummary| name=RXMMS2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide all the functionality of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser.}}
+{{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
 
 == Qt ==
 
