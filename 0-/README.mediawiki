@@ -9,10 +9,34 @@ If you have further questions, please [[About#Contact info | contact us]] - '''D
 
 == General Questions ==
 
-; Why didn't you do this sooner?
-: We don't give a damn fucking shit about the user. We like GTK1, and we're going to stick to it as long as possible. Anyone who has a problem can just shove it.
+; Why rewrite XMMS?
+: XMMS is an old project (started in 1997) and was not expected to become as popular as it did. The internal design of XMMS is somewhat ... troublesome, if not completely broken. Also, the frameworks around XMMS have changed a lot. The general opinion among the developers was that if ANYTHING should happen, it would be a complete rewrite.
+
+; Who is responsible for XMMS2?
+: [[Peter Alm]] (original author of XMMS) did the first designs and the initial code. Most of the code is written by [[Tobias RundstrÃ¶m]] and [[User:Anders Gustafsson|Anders Gustafsson]]. The project is being maintained by Tobias and Anders. A big thanks goes out to [[Thomas Nilsson]] too, he bitches well.
+
+; Those are not the same developers who maintain XMMS?
+: That's true. XMMS2 is a separate project. Rest assured, XMMS will live on for a long long time. XMMS2 will not be ready any time soon to take over from XMMS1.
+
+; What are the design goals of XMMS2?
+: XMMS2 is designed to be a kickass music-player. We wanted to rectify various problems with the XMMS APIs. For example, splitting the input-plugin into transport- and decoder-plugins. We also wanted the UI to be separate from the core engine, in order to allow other interfaces than a Gtk+ GUI.
+
+; Why just a musicplayer?
+: A lot of people ask us about video. But video will not be included, nor will it be supported in XMMS2, in fact video-support is even less possible than in XMMS1. This choice has numerous reasons. Music and video are very separate things, despite what many people like to think. The architecture of XMMS2 is designed such that it handles audio wonderfully well - handling video is simply not part of this project's scope and will '''not''' be added. And we believe that we can make the best musicplayer out there, but not the best videoplayer, so we stick to what we are best at. There are other choices, if you wish to play video and audio via the same application.
+
+; But XMMS stands for X MultiMedia System, that includes video!
+: Wrong. In "XMMS2", XMMS stands for X(cross)platform Music Multiplexing System.
+
+; Seems like you are using a non-standard buildsystem, why not Make?
+: Make is a really good buildsystem, although to get all functionality needed for a bigger project you'll need automake, autoconf and libtool. We had a lot of problems getting these tools to do what we wanted, so we evaluated the alternatives. [http://www.scons.org/refer.php SCons] is a good alternative. If you do not want to install Python and SCons on your system, there will be binaries available for the most common platforms.
+
+; What platforms will you support?
+: Our aim is to be able to port XMMS basically everywhere, but development is mainly done on Linux/x86, Linux/PPC and Mac OSX. Support for other platforms is currently secondary, although it has been known to work on OpenBSD and Solaris.
 
 ; What about Windows?
-: We hate it.
+: Our code should run on Windows without any problems, being ANSI-C.
+
+; How do I get in contact with you guys?
+: Please see our [[About]] page for [[About#Contact_info | contact details]].
 
 [[Category: Questions and answers]]
