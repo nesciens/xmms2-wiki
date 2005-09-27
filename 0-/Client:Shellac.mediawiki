@@ -1,3 +1,2 @@
-{{Client | name=Shellac| author=Magnus Bjernstad| website=http://hem.bredband.net/b298027/| version= Unknown| devlanguage=Python| ui=GTK (GTK2?)| screenshots=N/A| description=
-Shellac is a XMMS2 client written in Python with Pygtk with a very customizable GUI.
-It is still under development.}}
+{{Client | name=Shellac| author=Magnus Bjernstad| website=http://hem.bredband.net/b298027/| version= 20050927| devlanguage=Python| ui=GTK+2| screenshots=N/A| description=
+Shellac is a XMMS2 client written in Python with Pygtk with a very customizable GUI.}}
