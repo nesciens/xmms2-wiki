@@ -13,7 +13,6 @@
  [22:47:23][nano-]: scry: How are you planning to get the other 288?
  [22:47:24][scry]: beats me
 
-
 === 2005-09-06 - Sex with ... women? ===
  23:50 <ccr> well, sex is good. but those fucking stinking bitches always want something else
              too. why couln't they be like men in  that sense.
@@ -25,7 +24,6 @@
 === 2005-08-26 - ===
  11:22 < puzzles> wtf am i doing awake?
  11:22 < eleusis> complaining
-
 
 === 2005-08-22 - \o/ ===
  15:59 <+oebb> \o/
@@ -96,7 +94,6 @@
  [21:18:02][anders]: Men jag hoppade och studsade lite Ã¤ndÃ¥.
  [21:18:12][anders]: Jag har aldrig fÃ¥tt se en fil med desyncheaders!
 
-
 === 2005-07-31 - Language barriers ===
  21:31 <tilman> i think i'll mail the fucking french government and tell them to
                 make sure french pupils learn to speak english better o_O
@@ -146,7 +143,6 @@
                 soon ;)
  09:25 <tru> I think the whole init process and forking thing is quite ugly.
  09:25 <anders_> The whole daemonization-stuff should be fixed.
-
 
 === 2005-06-09 - We do not suppress any bugs === 
  13:41 <nano> Ok, Ã¤r det nÃ¥gon som vÃ¥gat tÃ¤nka pÃ¥ internationalisering av
@@ -233,7 +229,6 @@
  [17:18:21][tru]:   TAG: XMMS2_0.1DR1
  [17:18:37][tilman]: heh
  [17:19:21][tru]: http://genesis.xmms.se/~tru/xmms2-0.1DR1.tar.gz
-
 
 === 2005-05-19 ===
  [22:55:51][tilman]: we used bk and people used it even if it's non-free software
