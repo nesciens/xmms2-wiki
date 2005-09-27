@@ -1,13 +1,11 @@
 This page is for ideas for clients that have yet to be made. 
 
+=== Firefox / Konqueror Extension Client ===
 
-=== Firefox / Konqorer Extension Client ===
-
-For any particular webpage you may goto this would give you a list of all audio files linked to on the page, and then via a toolbar or context menu would allow you to do the following on a per file basis: Enque as next in playlist, Enque as last in playlist, Add to media library, or play now. If play now is chosen then the current track should pick up right where it left off once that file is done playing. 
-
+For any particular webpage you may go to, this would give you a list of all audio files linked to on the page, and then via a toolbar or context menu, would allow you to do the following on a per file basis: Enqueue as next in playlist, Enqueue as last in playlist, Add to media library, or play now. If play now is chosen, then the current track should pick up right where it left off once that file is done playing.
 
 === Alarm Clock client === 
 
-This should fade up the music over a period of 10 minutes to maximise dream recall. ( sleep 30m; xmms2d stop works pretty well for going to sleep ;D )
+This should fade up the music over a period of 10 minutes to maximise dream recall. (sleep 30m; xmms2d stop works pretty well for going to sleep ;D )
 
 [[Category:General]]
