@@ -1,7 +1,7 @@
 === 2005-09-27 - Haskell ===
-<tilman> is that haskell or pseudo code? ;)
-<nano> haskell
-<Knirch> haskell is used by programmers or pseudo programmers?
+ <tilman> is that haskell or pseudo code? ;)
+ <nano> haskell
+ <Knirch> haskell is used by programmers or pseudo programmers?
 
 === 2005-09-15 - Beer ===
  <ccr> shd, didn't you stop drinking? :)
