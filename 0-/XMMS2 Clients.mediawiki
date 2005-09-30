@@ -44,6 +44,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
 
+{{ClientSummary| name=Azrael| description=A client written in C.}}
+
 == Qt ==
 
 {{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
