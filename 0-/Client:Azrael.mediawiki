@@ -1,0 +1,1 @@
+{{Client |name=Azrael| author=[[Costin Chirvasuta]]| website=http://azrael-xmms.go.ro| version=0.1pre1| devlanguage=C| ui=GTK2| screenshots=N/A| description=A simple client written in GTK2. Future releases should have a playlist :)}}
