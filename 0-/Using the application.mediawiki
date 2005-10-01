@@ -73,7 +73,9 @@ Talking to the daemon via TCP (Note: this example is for the daemon listening to
   export XMMS_PATH="tcp://10.0.0.1:7777"
   xmms2 list
 
-for (t)csh use setenv and do not include the =.
+for (t)csh users:
+  setenv XMMS_PATH "tcp://10.0.0.1:7777
+  xmms2 list
 
 == First steps using xmms2 client ==
 
