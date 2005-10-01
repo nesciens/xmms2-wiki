@@ -1,3 +1,10 @@
+=== 2005-09-29 - Blah blah ===
+ 20:47 <Fatal> am i the only one reading this?
+ 20:47 <Fatal> while True:
+ 20:47 <Fatal>    < eleusis> bla bla bla
+ 20:47 <Fatal>    < deadchip> bla bla bla bla ^ 2
+ 20:47 <Fatal>    < qball> durr, lol
+
 === 2005-09-27 - Haskell ===
  <tilman> is that haskell or pseudo code? ;)
  <nano> haskell
