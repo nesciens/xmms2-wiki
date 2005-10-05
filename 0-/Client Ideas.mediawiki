@@ -24,5 +24,12 @@ Adjust values as needed
 === DBUS ===
 
 Isn't DBUS a better choice than a proprietary IPC protocol?
+ 
+ Proprietary Software:
+ Software which is privately owned or controlled is known as proprietary software. However, the extent to which proprietary 
+ rights can be claimed or maintained in relation to software is a matter of considerable controversy (see software patent debate).
+
+Use the correct terminology. And btw, the answer is NO
+
 
 [[Category:General]]
