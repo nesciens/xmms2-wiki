@@ -29,8 +29,6 @@ Isn't DBUS a better choice than a [http://git.xmms.se/?p=xmms2-devel.git;a=tree;
  Software which is privately owned or controlled is known as proprietary software. However, the extent to which proprietary 
  rights can be claimed or maintained in relation to software is a matter of considerable controversy (see software patent debate).
 
-Use the correct terminology. And btw, the answer is NO
-
-Ehm. The answer is YES. Luckily it doesn't matter for xmms2 which is best.
+Use the correct terminology. But of course D-BUS is better then some closed source protocol, luckily it doesn't matter for xmms2.
 
 [[Category:General]]
