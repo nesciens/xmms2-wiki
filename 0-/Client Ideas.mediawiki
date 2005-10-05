@@ -8,7 +8,7 @@ For any particular webpage you may go to, this would give you a list of all audi
 
 This should fade up the music over a period of 10 minutes to maximise dream recall. (sleep 30m; xmms2d stop works pretty well for going to sleep ;D )
 
-=== DBUS ====
+=== DBUS ===
 
 Isn't DBUS a better choice than a proprietary IPC protocol?
 
