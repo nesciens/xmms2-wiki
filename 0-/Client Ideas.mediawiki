@@ -31,5 +31,6 @@ Isn't DBUS a better choice than a proprietary IPC protocol?
 
 Use the correct terminology. And btw, the answer is NO
 
+Ehm. The answer is YES. Luckily it doesn't matter for xmms2 which is best.
 
 [[Category:General]]
