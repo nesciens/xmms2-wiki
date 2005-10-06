@@ -12,3 +12,13 @@ The following query should achive about the same results as the current example 
  select m1.id as id, m2.value as title, m3.value as album from Media as m1, Media as m2, Media as m3 where m1.key='artist' and m1.value='Korn' and m1.id=m2.id and m2.key='title' and m1.id=m3.id and m3.key='album' order by m3.value
 
 [kumakae] 11:51, 2 June 2005 (CEST)
+
+
+----
+
+I usually have a randomized playlist, and have to questions:
+
+1. does xmms2d uses imms? I havent been able to find about it, but I remember it did
+2. on the cli, I sometimes want to play a specific song, so I use the mlib to search for it, and check its id. Then I would think I could jump to that id (or to remove that id from the current playlist) but jump and remove work on the absolute position inside the playlist, so currently what I do is grep the list for /id and then jump to its position inside the playlist. Is there any easier way of doing it? or can/could mlib jump and play any arbitrary file in the database even if it's not in the current playlist?
+
+[anonymous]
