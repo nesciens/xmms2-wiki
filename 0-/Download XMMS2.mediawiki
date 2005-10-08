@@ -6,7 +6,7 @@
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
 * The GIT repository (with snapshots) is viewable at: http://git.xmms.se
 
-About the GIT repository: You would usually want code from the ''xmms2-stable.git'' tree.
+About the GIT repository: You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
 
 == Binary Packages ==
 
