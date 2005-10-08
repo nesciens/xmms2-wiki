@@ -110,5 +110,9 @@ Or with the direct url:
   xmms2 add http://207.200.96.225:8020
   xmms2 play
 
+Enabling an effect:
+
+  xmms2 config effect.order.0 some-effect-name
+  xmms2 config effect.some-effect-name.enabled 1
 
 [[Category: Users]]
