@@ -1,24 +1,16 @@
 {{Navbar}}
 
-Please also view the manual pages. If you have the XMMS2 source they're in doc/xmms2.1 and doc/xmms2d.8. A patch is in the works to actually install them. They can also be viewed at [[http://alex.foxybanana.com/manpages.html http://alex.foxybanana.com/manpages.html]].
+Please also view the manual pages - if you have the XMMS2 source they're in doc/xmms2.1 and doc/xmms2d.8. They can also be viewed at http://alex.foxybanana.com/manpages.html
 
+= The Daemon =
 
-xmms2d can be started by typing 'xmms2d' after installing the application. You can then interact with the daemon using the 'xmms2' command-line client.
+xmms2d can be started by typing 'xmms2d' after installing the application. You can then interact with the daemon using one of many [[#The clients | clients]]
 
  xmms2d
  xmms2 add some.nice.music.ogg
  xmms2 play
 
 Tada, music!
-
-If this doesn't work you can probably figure out what the problem is from the server log, most likely it's because you don't have permission to access the soundcard device(s) or you are using the wrong output plugin. The latter can be changed with:
-
- xmms2 config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
- xmms2 quit
-
-Start xmms2d again and now it should work.
-
-Type 'xmms2' to list the available commands.
 
 == xmms2d options ==
 
@@ -28,27 +20,38 @@ Here is a list of currently available xmms2d options:
 * -V (or --version) - Show XMMS2 version
 * -n - Disable logging
 * -o <x> - Specify <x> as output plugin
+* -i <url> - Listen to socket 'url'
 * -d - Daemonize, that is, run xmms2d without attaching it to a terminal
 * -p <path> - Specify plugin directory path
 * -h (or --help) - Print help (show list of options)
 * -c (or --conf) - Specify alternate configuration file
 
-If you want xmms2d to listen for requests via TCP you should alter the config. 
+== Configuring the daemon ==
+Changing output plugin:
+
+ xmms2 config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
+ xmms2 quit
+
+Start xmms2d again and now it should work.
+
+Making xmms2d listen for requests via TCP:
 
  xmms2 config core.ipcsocket tcp://127.0.0.1:<port> 
 
 and then restart xmms2d. Now xmms2d will listen to that port for incoming remote clients.
 
-This only works if the client runs on the same machine (127.0.0.1) as the server. To connect from a machine within for example your homenetwork the server needs to know the address of the network interface of your computer. So for example if your network interface has the IP address 192.168.2.20 you need to configure:
+This only works if the client runs on the same machine (127.0.0.1) as the server. To connect from a machine within for example your home network, the server needs to know the address of the network interface of your computer. So for example if your network interface has the IP address 192.168.2.20 you need to configure:
 
  xmms2 config core.ipcsocket tcp://192.168.2.20:<port>
 
-Now you can connect to the xmms2 server from another machine in your private network. You need to tell '''all''' clients (even the local ones) to connect to the server via this IP address. Add the line
+Now you can connect to the xmms2 server from another machine in your private network. You need to tell '''all''' clients (even the local ones) to connect to the server via this IP address. For the command line client, you can add the line
 
  ipcpath=tcp://192.168.2.20:<port>
 
-to the config file ~/.xmms2/clients/cli.conf for the command line client. Other clients may be configured some other way. Now all clients that know your box by this IP address can connect. Thats all computers in your local Network. If you have a static IP address and configure the server to listen for connections to that address you can connect from any (well) computer in the world.
-The development snapshot 20050914 crashes on connection release of remote connections.
+to the config file ~/.xmms2/clients/cli.conf. Generally, XMMS2 clients use the value of the ''XMMS_PATH'' environment variable to find the daemon.
+
+= The clients =
+You can interact with the daemon using the 'xmms2' command-line client, which comes in the source tree, or [[XMMS2 Clients other clients]].
 
 == xmms2 client options ==
 
