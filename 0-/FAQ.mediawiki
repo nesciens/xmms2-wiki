@@ -58,4 +58,4 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 * A: That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert.
 
 === Why doesn't the CLI client have a play/pause toggle function? ===
-* A: There is a very simple client available on the [[http://exodus.xmms.se/contrib/ contrib page]] that just toggles play/pause.
+* A: There is a very simple client available on the [[contribs]] that just toggles play/pause.
