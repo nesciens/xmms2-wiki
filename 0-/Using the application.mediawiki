@@ -1,6 +1,6 @@
 {{Navbar}}
 
-Please also view the manual pages. If you have the XMMS2 source they're in doc/xmms2.1 and doc/xmms2d.8. A patch is in the works to actually install them. They can also be viewed at [[http://alex.foxybanana.com/manpages.html http://alex.complete-systems.net/manpages.html]].
+Please also view the manual pages. If you have the XMMS2 source they're in doc/xmms2.1 and doc/xmms2d.8. A patch is in the works to actually install them. They can also be viewed at [[http://alex.foxybanana.com/manpages.html http://alex.foxybanana.com/manpages.html]].
 
 
 xmms2d can be started by typing 'xmms2d' after installing the application. You can then interact with the daemon using the 'xmms2' command-line client.
