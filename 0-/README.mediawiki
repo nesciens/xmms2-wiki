@@ -5,7 +5,7 @@
 This is the new generation of the XMMS player.
 There are a lot of questions about the reason for XMMS2,
 XMMS2 itself and the design goals. I will try to clarify them. Please also refer to the [[FAQ]] page for additional information.
-If you have further questions, please [[About#Contact info | contact us]] - '''DO NOT''' edit this page and add new questions. :) (such questions will be removed without answer) If you ''really'' need to add a question to the wiki, please use the [[FAQ]] page.
+If you have further questions, please [[About#Contact info | contact us]] - '''DO NOT''' edit this page and add new questions. :) (such questions will be removed without answer)
 
 == General Questions ==
 
