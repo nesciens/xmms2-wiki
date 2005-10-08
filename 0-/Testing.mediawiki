@@ -5,3 +5,4 @@ Ideas about things that should go in a 'test suite' to make sure xmms2 builds an
 ** Need example scenarios
 * Mlib song import speed?
 * Removing multiple playlist items (or removing single items in quick succession)
+* Unit testing using libcheck - http://check.sf.net
