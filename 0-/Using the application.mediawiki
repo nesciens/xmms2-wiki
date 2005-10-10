@@ -30,9 +30,6 @@ Here is a list of currently available xmms2d options:
 Changing output plugin:
 
  xmms2 config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
- xmms2 quit
-
-Start xmms2d again and now it should work.
 
 Making xmms2d listen for requests via TCP:
 
