@@ -1,5 +1,5 @@
 {{Navbar}}
 
-Work in progress, wait and see. 
+The clientlib compiles. As for the xmms2d, all but visualisation.c and main.c compiles. Work left is probably writing a main_win32.c because of the huge diffrences.
 
 [[Category:Platforms]]
