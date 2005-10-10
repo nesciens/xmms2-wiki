@@ -46,7 +46,7 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Azrael| description=A client written in C.}}
 
-{{ClientSummary| name=Liste| description=A pyGTK client for XMMS2.}}
+{{ClientSummary| name=Listen| description=A pyGTK client for XMMS2.}}
 
 == Qt ==
 
