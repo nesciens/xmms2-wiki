@@ -8,7 +8,6 @@ by ''Mehdai abaakouk''
 '''Screenshots''': [http://theli.free.fr/img/screenshot.png]<br />
 [[Talk:Client:Listen | Discuss]]
 
-{{{description}}}
 Listen is a pyGTK client for XMMS2
 
 Features
