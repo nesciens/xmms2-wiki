@@ -1,5 +1,5 @@
 ===Listen===
-by ''Mehdai abaakouk''
+by ''Mehdi abaakouk''
 
 '''Homepage''': http://theli.free.fr<br />
 '''Latest version''': 0.5-11<br />
