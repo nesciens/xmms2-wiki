@@ -46,6 +46,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Azrael| description=A client written in C.}}
 
+{{ClientSummary| name=Liste| description=A pyGTK client for XMMS2.}}
+
 == Qt ==
 
 {{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
