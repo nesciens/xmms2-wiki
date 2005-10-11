@@ -1,27 +1,13 @@
-===Listen===
-by ''Mehdi abaakouk''
-
-'''Homepage''': http://theli.free.fr<br />
-'''Latest version''': 0.5-11<br />
-'''Development language''': python<br />
-'''User Interface''': GTK<br />
-'''Screenshots''': [http://theli.free.fr/img/screenshot.png]<br />
-[[Talk:Client:Listen | Discuss]]
-
-Listen is a pyGTK client for XMMS2
+{{Client| name=Listen| author=Mehdi abaakouk| website=http://theli.free.fr| version=0.5-11| devlanguage=python| ui=GTK| screenshots=[http://theli.free.fr/img/screenshot.png]| description=Listen is a pyGTK client for XMMS2
 
 Features
 
-- Playlist editor with support repeat, shuffle, sort
-- Search in entire media library
-- Some utilitie to view information about artist or album provided by wikipedia
-- View lyrics fo a song
-- A customisable OSD (thanks to project Quodlibet)
-- Automatic download cover
-- Partial IPOD support (read and play only)
-- Drag and drop
-- Export playlist
-
-[[XMMS2 Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+* Playlist editor with support repeat, shuffle, sort
+* Search in entire media library
+* Some utilitie to view information about artist or album provided by wikipedia
+* View lyrics fo a song
+* A customisable OSD (thanks to project Quodlibet)
+* Automatic download cover
+* Partial IPOD support (read and play only)
+* Drag and drop
+* Export playlist}}
