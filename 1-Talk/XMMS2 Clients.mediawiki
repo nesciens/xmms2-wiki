@@ -1,5 +1,5 @@
 = How to add a new client =
-# Use the [[Template:ClientSummary]] template on the [[XMMS2 Clients]] page - this will show the client name and a short description (emphasis on 'short' description). The client name will be a hyperlink to the real client page, typically ''Client:Name''
+# Use the [[Template:ClientSummary]] template on the [[XMMS2 Clients]] page - this will show the client name and a short description (emphasis on 'short' description). The client name will be a hyperlink to the real client page, typically ''Client:Name''. '''This does not mean that you need to modify the template itself.''' If you don't know how to use MediaWiki templates, please read [[MetaWikiPedia:Template | this]] first.
 # Follow the linked name (should be red) to the new client page and use the [[Template:Client]] template there to provide more detailed information about the client. For examples, see the code for existing client pages, e.g. [[Client:nyello]] (click on the 'edit' link at the top).
 
 == Notes ==
