@@ -1,2 +1,2 @@
-'''[[Client:Listen]]'''<br />
-listen is a pyGTKXMMS2 client
+'''[[Client:{{{name}}} | {{{name}}}]]'''<br />
+{{{description}}}
