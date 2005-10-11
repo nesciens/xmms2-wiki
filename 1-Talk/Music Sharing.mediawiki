@@ -11,3 +11,7 @@ I wonder if [http://www.deleet.de/projekte/daap/daapd/ DAAPD] could hook into th
 On a related note, I wonder if autodiscovery of TCP-ready XMMS2 servers via [http://www.porchdogsoft.com/products/howl/ Howl] would be desirable...
 
 [[User:Sauron|Sauron]] 09:07, 15 June 2005 (CEST)
+
+== Vote for DAAP ==
+
+Would just like to throw in a vote for a DAAP enabled/aware XMMS2... Rhythmbox recently added code to be able to browse/play/share tunes via DAAP which I have helped test (it's in CVS) and it's a godsend! Using mt-daapd (www.mt-daapd.org) on my streaming server I'm finally able to play my music painlessly on all three platforms (Windows: iTunes, Mac: iTunes, Linux: Rhythmbox). As far as I understand (though I haven't actually checked it out), VLC also does DAAP in its latest release. It's the wave of the future as far as cross platform music sharing/browsing/streaming, gentlemen! :-)
