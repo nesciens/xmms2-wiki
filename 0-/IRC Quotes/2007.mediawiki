@@ -1,3 +1,6 @@
+=== 2005-10-12 ===
+ [21:46:04][ccr]: oh no, it's puzzles time
+
 === 2005-09-29 - Blah blah ===
  20:47 <Fatal> am i the only one reading this?
  20:47 <Fatal> while True:
