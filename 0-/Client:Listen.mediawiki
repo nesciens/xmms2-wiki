@@ -10,4 +10,5 @@ Features
 * Automatic download cover
 * Partial IPOD support (read and play only)
 * Drag and drop
+* Play shoucast/icecast radio
 * Export playlist}}
