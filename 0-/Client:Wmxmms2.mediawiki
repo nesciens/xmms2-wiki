@@ -1,8 +1,8 @@
 ===Wmxmms2===
 
-by Remy Bosch
+by Remy Bosch (reboli _a-t_ casema _d-o-t_ nl)
 
-'''Homepage''': http://reboli.tk (Link tp project is left-bottem)<br />
+'''Homepage''': http://reboli.tk (Link to project is left-bottem)<br />
 '''Latest version''': 0.5<br />
 '''Development language''': C<br />
 '''User Interface''': Dockapp<br />
