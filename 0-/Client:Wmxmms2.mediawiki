@@ -1,0 +1,15 @@
+==={{{name}}}===
+
+by Remy Bosch
+
+'''Homepage''': http://reboli.tk<br />
+'''Latest version''': 0.5<br />
+'''Development language''': C<br />
+'''User Interface''': Dockapp<br />
+'''Screenshots''': See homepage<br />
+
+{{{description}}}
+
+[[XMMS2 Clients | More xmms2 clients]]
+
+[[Category:Clients]]
