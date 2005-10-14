@@ -1,15 +1,1 @@
-===Wmxmms2===
-
-by Remy Bosch (reboli _a-t_ casema _d-o-t_ nl)
-
-'''Homepage''': http://reboli.tk (Link to project is left-bottem)<br />
-'''Latest version''': 0.5<br />
-'''Development language''': C<br />
-'''User Interface''': Dockapp<br />
-'''Screenshots''': See homepage<br />
-
-A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).
-
-[[XMMS2 Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+{{Client| name=Wmxmms2| author=Remy Bosch (reboli _a-t_ casema _d-o-t_ nl)| website=http://home.casema.nl/remybosch/reboli_tk/files/wmxmms2.html| version=0.5| devlanguage=C| ui=Dockapp| screenshots=See homepage| description=A dockapp for WindowMaker. Shows the song, status and how far along the song is (playtime).}}
