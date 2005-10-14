@@ -1,14 +1,14 @@
-==={{{name}}}===
+===Wmxmms2===
 
 by Remy Bosch
 
-'''Homepage''': http://reboli.tk<br />
+'''Homepage''': http://reboli.tk (Link tp project is left-bottem)<br />
 '''Latest version''': 0.5<br />
 '''Development language''': C<br />
 '''User Interface''': Dockapp<br />
 '''Screenshots''': See homepage<br />
 
-{{{description}}}
+A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).
 
 [[XMMS2 Clients | More xmms2 clients]]
 
