@@ -66,6 +66,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=XMMS2-AMP| description=This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'.}}
 
+{{ClientSummary| name=Wmxmms2| description=A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).}}
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
