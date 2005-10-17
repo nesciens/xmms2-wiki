@@ -46,7 +46,7 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 * [[Bash tab completion for the CLI]]
 * [[Bemused Client]]
 * [[Support for clients to write to the medialib]]
-* [[Support radio output like shoutcast]]
+* [[Support for radio output like icecast]]
 * [[Client Ideas]]
 
 [[Category: Developer info]]
