@@ -21,7 +21,7 @@ These libraries are not '''needed''' for building xmms2d itself, but will add ex
 
 *For transport plugins:
 ** [http://curl.haxx.se Curl] (>= 7.11.2)
-*For input plugins:
+*For decoder plugins:
 ** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev)
 ** [http://www.audiocoding.com/ FAAD]
 ** [http://www.xiph.org Vorbisfile]
