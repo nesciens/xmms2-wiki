@@ -2,4 +2,6 @@
 
 The clientlib compiles. As for the xmms2d, all but visualisation.c and main.c compiles. Work left is probably writing a main_win32.c because of the huge diffrences.
 
+With a working clientlib it's possible to write a Windows client that connects to a xmms2d over tcp://ip:port. If you don't feel like compiling the clientlib yourself here's a [http://exodus.xmms.se/~nano/xmmsclient-win32.tar.gz precompiled version] 
+
 [[Category:Platforms]]
