@@ -1,3 +1,6 @@
+{{Newsitem|date=19 October 2005 (2005-10-19) WST|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet.|text=We are not dead, the [[Release:DR3|Developer Release 3]] is still being worked on. There are quite a bit of important fixes in [[Anders Gustafsson|anders]] [http://git.xmms.se/?p=xmms2-anders.git;a=summary tree]. There will soon end up in -devel and then we hopefully make a push to get DR3 out of the door. Keep the patches and [[Contact|feedback]]comming!
+}}
+
 {{Newsitem|date=07 September 2005 (2005-09-07) WST|author=[[Sham Chukoury]]|title=Developer Release 2.2|text=More good news everyone! The XMMS2 Team is releasing another bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.2 | DR2.2]]. 
 
 Some outstanding issues have forced us to release another maintenance release in the DR2 series instead of making a DR3 release, including the fixing of a couple of huge memory leaks. Another annoying bug is that XMMS2 doesn't work at all with newer SQLite (3.2.5 and higher) releases because of a policy change; we were misusing the API and they made such usage fail with a hard error. This has '''not''' been fixed in this maintenance release since it is a major change to our internal API. It will be fixed in the upcoming [[Release:DR3 | DR3]] release.
