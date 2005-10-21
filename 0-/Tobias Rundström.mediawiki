@@ -10,7 +10,7 @@ Listen to mostly electronic music with XMMS2, such as EBM and Synth.
 
 === Developer Release 2 ===
 
-So, I finaly got around to release DR2. The changes are many for developers, but not so many for the end user. The big changes was for the API here, lot of new functionallity and lot of things that makes more sense I guess.
+So, I finally got around to release DR2. The changes are many for developers, but not so many for the end user. The big changes was for the API here, lot of new functionallity and lot of things that makes more sense I guess.
 
 DR2.1 is something that must be released, we have already fixed two kind of critical bugs that was found the day after DR2 release (of course). First one is id3v2.3 parsing {{Bug|293}}, latin1 encoded fields will be ignored and secondly the xmmsclient-ecore binding for ruby didn't build {{Bug|294}}. I will give DR2 a week or so then release DR2.1.
 
