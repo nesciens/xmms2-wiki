@@ -102,6 +102,8 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Component:equaliser | eq (equaliser)]]
 |-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:replaygain | replaygain]]
+|-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #fbb" | [[Component:ices | ices]]
 |}
 |-
