@@ -85,6 +85,7 @@ The Medialib in XMMS2 is not as flexible as the DB planned for MPD2. At the mome
 See [[Design of XMMS2]]
 ; learning of playlists<nowiki>:</nowiki> whenever a song is played in full length it is rated up, when it is skipped it is rated down. Highly rated songs should be played more often in shuffle mode.:
 This can be implemented client-side, using data from the Log table in the Medialib. A variant of this (favourite titles) is currently implemented in [[XMMS2_Clients#medialib-ui_playlist_client | medialib-ui]].
+: precluding implementing this server-side is undesirable.  Multiple users sharing a replay device may wish to share ratings.  Users who change clients will not wish to have their settings reset.  A truly sophisticated rating system can use significant resources, and having the option to place them on the replay device is highly desirable [[User:JoshuaRodman|JoshuaRodman]] 03:50, 26 Oct 2005 (CEST)
 ; Make the playback of single files possible, i.e. files which are not (yet) in the database.:
 XMMS2 does this, and adds the files' metadata to the Medialib.
 ; Support for Audio CD playback.:
