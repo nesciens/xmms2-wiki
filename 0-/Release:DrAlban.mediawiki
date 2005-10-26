@@ -8,6 +8,8 @@
 
 == To Do ==
 
+See {{Bug|317}} for a list of bugs that are related to DR3.
+
 === Likely ===
 * provide wave-data for vis-clients, not just frequency-data. {{Bug|192}}
 ** DR3?
