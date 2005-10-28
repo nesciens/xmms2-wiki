@@ -31,7 +31,9 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 
 == Ideas ==
 
-Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links..
+Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links. *NOTE:* Don't just add a new thing here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
+
+
 * [[Container format support]]
 * [[Smart playlists]]
 * [[XMMS2 as a DJ station]]
@@ -48,6 +50,6 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 * [[Support for clients to write to the medialib]]
 * [[Support for radio output like icecast]]
 * [[Client Ideas]]
-* [[play/pause toggle support]]
+
 
 [[Category: Developer info]]
