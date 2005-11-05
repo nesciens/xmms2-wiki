@@ -3,6 +3,6 @@ Control XMMS2 from your cellphone. Currently nobody's working on this, feel free
 JavaME: http://elektron.its.tudelft.nl/~jkohne76/<br />
 Symbian: http://bemused.sourceforge.net/
 
-Update: I'm now working on this (currently I call it XMMuSed2)  -- Markus Vuori <markus@vuoret.net>
+Update: I'm now working on this (currently I call it XMMuSed2)  -- Markus Vuori <markus at vuoret dt net>
 
 [[Category: Developer ideas]]
