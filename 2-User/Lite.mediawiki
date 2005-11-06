@@ -1,0 +1,9 @@
+Hi. I'm a coder since 1980 and a linux user since 1994.
+I live in central Finland with my children and my wife.
+I was born in 1972.
+
+I like very much the languages like ruby and perl, but 
+looks like I need to code the XMMuSed2 either in C or Python. 
+
+I work as a perl monkey for Skillnet Oy (Finland) and my
+personal homepages (in Finnish) are at http://vuoret.net/markus/
