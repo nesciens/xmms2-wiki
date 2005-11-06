@@ -1,6 +1,6 @@
 {{Navbar}}
 
-This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now. You should drop by #xmms2 on Freenode if you need help writing a client.
+This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now. You should drop by #xmms2 on Freenode if you need help writing a client (you should probably drop by there even if you don't need help).
 
 = XMMS2 Client Guide =
 
