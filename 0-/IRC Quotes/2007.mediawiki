@@ -1,4 +1,18 @@
-=== 2005-10-25 - Entertainment ===
+=== 2005-11-08 - Entertainment: Part 2 ===
+ [20:29:52]::: puzzles is now known as |p|u|z|z|l|e|s|
+ [20:30:26][|p|u|z|z|l|e|s|]: \m/
+ [20:30:38][tru]: omg
+ [20:31:36][nano]: why? whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy?
+ [20:31:57][|p|u|z|z|l|e|s|]: it looks cool, and as an added bonus, it pisses 
+           you off :)
+ [20:32:11][|p|u|z|z|l|e|s|]: i wonder where tilman is, he would surely have 
+           some clever input
+ [20:33:13][tilman]: sorry, i'm not +o anymore
+ [20:33:17][tilman]: no clever input today
+ [20:33:24]::: mode/#xmms2 [+o tilman] by tru
+ [20:33:28]::: mode/#xmms2 [+o tilman] by Fatal
+
+=== 2005-10-25 - Entertainment: Part 1 ===
  <Fatal> sadly, but not a surprise, puzzles will be here all night to entertain those who doesn't have a life
  <puzzles> that's what i'm here for
  <tilman> \o/
