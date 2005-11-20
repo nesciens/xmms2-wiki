@@ -6,6 +6,71 @@
 * Fix bugs
 * Add tons with new bugs and new features that will make xmms2 crash in exciting new ways.
 
+
+= Release notes =
+XMMS2 Team releases a new Developer Release to the wild, named DR-Alban. This
+file documents the changes between DR2.2 and DR-Alban.
+
+==Versioning==
+During the process of DR2.2 we decided to change the versioning. We now
+name our Developer Release after known "Doctors". Former pre-DR3 has
+become DRAlban and DR3 will be DR-FeelGood.
+
+==Noteworthy feature additions==
+=== {{Bug|273}}: Added AAC/MP4 plugin ===
+Juho Vaha-Herttua contributed a AAC/MP4 plugin based on libfaad.
+
+=== {{Bug|428}}: Added MusePack Plugin ===
+Daniel Svensson contributed a MusePack plugin.
+
+=== {{Bug|65}}: Add new magic code. ===
+Tilman Sauerbeck added magic recognition of mediafiles. This removes
+the old and stupid recognition scheme (look at the extension) and
+now we try to identify which plugin should handle a file via content
+recognition.
+
+=== {{Bug|276}}: Add xmms2-launcher program. ===
+Anders Gustafsson removed the deamonisation from XMMS2D. You now use
+xmms2-launcher to put xmms2d in the background.
+
+=== {{Bug|190}}: Remove gigantic SQLite3 lock. ===
+Tobias RundstrÃ¶m removed the gigantic SQLite lock. We can now have
+concurrent SQLite connection at the same time. Will improve preformance for
+most operations. Please note that old SQLite3 versions can be buggy with
+this change. Make sure you are using SQLite version 3.2.6 or higher.
+
+=== {{Bug|282}}: Added support for writing data to medialib from clients. ===
+Tobias RundstrÃ¶m also added support to write data to the medialib from
+clients. You can now associate own values with entries in the medialib.
+Opens a lot of new functionallity for clients.
+
+== Noteworthy bug fixes ==
+Both ringbuffer and transport code got a lot of eyes during this release.
+This should eliminate a lot of problems with deadlocking and timing
+problems during playback and seeking.
+
+{{Bug|334}}:Fixed noise in Jack plugin.
+Our Jack output plugin maintainer Chris Morgan fixed a lot of problems with
+the Jack plugin.
+
+Another 50 bugs has been squished and stability should really improve with
+this release.
+
+== Notes to client authors ==
+This release will break all exsisting APIs. You need to rework your clients
+to handle sources and some other minor changes.
+
+== Notes to users ==
+This release will remove your medialib. Make a backup if you want to keep
+information in there.
+
+== Thanks ==
+Lot of new developers has joined up with XMMS2 team during this period.
+Thanks for all support and help.
+
+
+= old page =
+
 == To Do ==
 
 See {{Bug|317}} for a list of bugs that are related to DR3.
