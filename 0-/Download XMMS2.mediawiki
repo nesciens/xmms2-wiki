@@ -13,9 +13,16 @@ About the GIT repository: You would usually want code from the ''xmms2-stable.gi
 === Debian ===
  deb http://exodus.xmms.se/debian stable main
 
-These packages are built for ''Debian sarge'' (the current stable release) but work on ''Debian sid'' just as well.  Use of the packages on Debian-based distributions such as ''Ubuntu'' is untested as of yet.  We would like to hear your reports.
+These packages are built for ''Debian sarge'' (the current stable release) but work on ''Debian sid'' just as well.  Use of the packages on most Debian-based distributions is untested as of yet, though ''Ubuntu 5.10'' appears to work.  We would like to hear your reports.
 
 <small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
+
+=== Ubuntu ===
+The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have yet to be tested thoroughly.
+Add the following line to your ''/etc/apt/sources.list'' (same line as debian above):
+ deb http://exodus.xmms.se/debian stable main
+
+Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (OGG).
 
 == Ports ==
 
