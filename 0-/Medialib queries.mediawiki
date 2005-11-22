@@ -141,4 +141,7 @@ Related links:
 * http://www.sqlite.org/vdbe.html
 * http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
 
+This tool might be useful to optimize queries.
+* http://www.sqlite.org/cvstrac/wiki?p=IdxChk
+
 [[Category:XMMS2 Technical Details]]
