@@ -2,10 +2,6 @@
 
 Current* list of components and sub-components (modules/plugins) of the XMMS2 daemon and their (colour-coded) status.
 
-
-Q: The meaning of the background color is described below, but does the text coloring have some meaning as well?
-
-
 {| style="border: 1px dotted #000"
 ! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Component !! style="border-bottom: 1px dotted #000; border-left: 1px dotted #000" | Sub-components
 |-
