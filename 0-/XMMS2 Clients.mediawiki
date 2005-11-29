@@ -68,6 +68,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Wmxmms2| description=A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).}}
 
+{{ClientSummary| name=X4X| description=A client written in java using SWT/Xwidgets for the gui. Once done it should get a kick off client to be used on every OS supporting java and the xmmsclientlib.}}
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
