@@ -1,1 +1,10 @@
 lasse.hojgaard[AT]gmail.com : Haven't tried it yet, but it looks very sexy!
+
+james<AT>humphreys<DOT>be (dcs3jah):
+It is very sexy. It's really easy to install on Ubuntu (it's got a repository), and looks a lot like Rhythmbox.  Simple, well organised interface with CD-burning ability (haven't tried that yet)
+
+Two improvements that I'd suggest though are:
+* Stop it freezing when album cover and music info come up when starting a track.  Needs multi-threading?
+* Organise music using library as it is now, but also add a tab that allows browsing by directory.  I spent ages sorting my music by directory, and now it's useless...
+
+Other than that, it's great.
