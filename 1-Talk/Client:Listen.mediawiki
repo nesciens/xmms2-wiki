@@ -8,3 +8,6 @@ Two improvements that I'd suggest though are:
 * Organise music using library as it is now, but also add a tab that allows browsing by directory.  I spent ages sorting my music by directory, and now it's useless...
 
 Other than that, it's great.
+
+cteeple@charter.net:
+  Looks great, but did you drop this project?  I have tried all the sites I can to dl this and all of the links are broken.
