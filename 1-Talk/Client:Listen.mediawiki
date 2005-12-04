@@ -10,4 +10,5 @@ Two improvements that I'd suggest though are:
 Other than that, it's great.
 
 cteeple@charter.net:
-  Looks great, but did you drop this project?  I have tried all the sites I can to dl this and all of the links are broken.
+  Looks great, but did you drop this project?  I have tried
+ all the sites I can to dl this and all of the links are broken.
