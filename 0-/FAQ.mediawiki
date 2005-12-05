@@ -12,7 +12,11 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 * A: See [[XMMS2 vs MPD]]
 
 === Why doesn't XMMS2 use Dbus? ===
-* A: This is really just an implementation detail, everyone should use the clientlib and not have to care about how it talks to the server. XMMS2 used to use [[Wikipedia:Dbus | Dbus]] for its client-server communication. It used the peer-to-peer functionality in Dbus, which didn't involve an indirection through a bus. When this mode of operation ceased to be supported, we decided to drop Dbus, as it had caused much trouble chasing an unstable api over which we had no control. There were many other problems as well, such as with the bindings for glib. If Dbus had been as stable as it is today, back then, we might not have switched. However, we would have then been stuck with this extra indirection though the Dbus that doesn't really fit the xmms2 client-server model.
+* A: This is really just an implementation detail, everyone should use the clientlib and not have to care about how it talks to the server. It could be using xmlrpc or corba or magic or morse-over-sigusr1, it is all abstracted away in the client library.
+
+* A2: XMMS2 used to use [[Wikipedia:Dbus | Dbus]] for its client-server communication. It used the peer-to-peer functionality in Dbus, which didn't involve an indirection through a bus. When this mode of operation ceased to be supported, we decided to drop Dbus, as it had caused much trouble chasing an unstable api over which we had no control. There were many other problems as well, such as with the bindings for glib. If Dbus had been as stable as it is today, back then, we might not have switched. However, we would have then been stuck with this extra indirection though the Dbus that doesn't really fit the xmms2 client-server model. 
+
+* A3: XMMS2 is developed with portability in mind. DBus doesn't exist for windows, and it is hard to justify depending on DBus on other unices than Linux too.
 
 == Usage ==
 '''Hint''': ''Also see the [[Users]] page''
