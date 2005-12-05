@@ -2,11 +2,11 @@
 
 = Welcome to the XMMS2 Wiki. =
 
-{{ReleaseStatus}}
-
 XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features a client-server model, allowing multiple (even simultaneous!) user interfaces, both textual and graphical. All common audio formats are supported using plugins. On top of this, there is a flexible media library to organize your music. See the [[Features | features]] page for more details.
 
 == If you... ==
+[[image:Lost signpost cropped.jpg|right|200px|Lost?]]
+
 * '''are just browsing..'''
 ** check out the [[Read me first!]] and [[About]] pages to see what this is all about.
 ** the [[Features]] page lists some of the features you can expect from XMMS2.
@@ -27,6 +27,8 @@ XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features 
 ** if you want to contribute to this wiki, check out the [[XMMS2:Wikitodo | to-do list]] and [[XMMS2:Wikiguidelines | guidelines]] for the wiki, or just edit what you can. Please note that this wiki does not allow anonymous edits, as we'd like to know who is changing what, and when, so please [[Special:Userlogin | register and log in]].
 
 Enjoy your stay!
+
+{{ReleaseStatus}}
 
 == XMMS2 News ==
 
