@@ -1,4 +1,4 @@
-<div style="float: right; border: dotted 1px grey; text-align: center; padding:0.5em; background-color:#f00">
+<div style="float: right; border: dotted 1px grey; text-align: center; padding:0.5em; background-color:#fff">
 '''''XMMS2 Release Status'''''
 
 '''Stable''': <font style="color: green">''None''</font>
