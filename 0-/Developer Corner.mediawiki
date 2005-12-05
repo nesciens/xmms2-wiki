@@ -24,6 +24,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 *[[Download_XMMS2|Source Code]]
 *[http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO] and related [[ChangeLog Format]]
 *[[Generic properties policy]]
+*[[XMMS2 Development Process]]
 
 == Proposals ==
 * [[ChangeLog Format]]
