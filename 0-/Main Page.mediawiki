@@ -1,3 +1,5 @@
+__NOTOC__
+
 {{Navbar}}
 
 = Welcome to the XMMS2 Wiki. =
