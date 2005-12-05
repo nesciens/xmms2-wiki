@@ -1,0 +1,9 @@
+{{Navbar}}
+
+This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms.se bug tracker] is the to-do list for XMMS2 - see [[Reporting bugs]] for details. If you're new to this wiki, see the [[XMMS2:Wikiguidelines | wiki guidelines]].
+
+* (continuously) improve navigation around the wiki.
+* make and maintain a list of templates used.
+* [[Project Status]] is very poorly maintained. It probably needs to be replaced with something that is semi-automatically updated - possibly with integration with mantis.
+
+(''add more todo items to this list')
