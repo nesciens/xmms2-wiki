@@ -1,3 +1,6 @@
+{{Newsitem|date=05 December 2005 (2005-12-05) CET|author=[[Tobias RundstrÃ¶m]]|title=GFX artist needed!|text=XMMS2 project seeks a GFX / Web graphic artist. We need to lay down a graphic profile for everything XMMS2 related. Are you interested? Please [[About#Contact_info|contact]] us!
+}}
+
 {{Newsitem|date=19 October 2005 (2005-10-19) CLST|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet.|text=We are not dead, the [[Release:DR3|Developer Release 3]] is still being worked on. There are quite a few important fixes in [[User:Anders Gustafsson|anders']] [http://git.xmms.se/?p=xmms2-anders.git;a=summary tree] that will soon end up in -devel and then we'll hopefully make a push to get DR3 out of the door. Keep the patches and [[About#Contact_info|feedback]] coming!
 }}
 
