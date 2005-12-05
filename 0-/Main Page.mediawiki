@@ -14,12 +14,16 @@ XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features 
 ** the [[Features]] page lists some of the features you can expect from XMMS2.
 ** and you're a bit technically inclined, you might find [[Design of XMMS2]] interesting.
 ** and want to talk to us, you can find our [[About#Contact_info | contact details]] on the About page.
+** you might be interested in the [[History | history]] of the project.
+** and are wondering about [http://musicpd.org MPD] and GStreamer, you might want to check out [[XMMS2 vs MPD]] and [[XMMS2 vs GStreamer]].
 * '''want to use XMMS2..'''
 ** check out the [[Download XMMS2 | download]] page for information about obtaining sources/binaries.
 ** follow the [[Install instructions | installation instructions]].
 ** read up on how to [[Using the application | use the application]], and get yourself some more [[XMMS2 Clients]].
+** check out the [[Users | user info page]].
 * '''are currently using XMMS2'''
 ** and found a problem, maybe you'd like to check if the [[FAQ]] covers it, or else [[Reporting bugs | report it]].
+** check out the [[Users | user info page]].
 * '''want to contribute something to the project..'''
 ** maybe you'd like to make a nice [[Logo | logo]].
 ** check out the [[Developer Corner]] for information about [[Developer Corner#XMMS2_Technical_Details | technical details]], [[Developer Corner#Code.._and_bugs.21 | guidelines]] for working with XMMS2 code and various [[Developer Corner#Ideas | development ideas]].
