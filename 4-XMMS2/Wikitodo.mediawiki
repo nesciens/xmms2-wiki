@@ -5,5 +5,7 @@ This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms
 * (continuously) improve navigation around the wiki.
 * make and maintain a list of templates used.
 * [[Project Status]] is very poorly maintained. It probably needs to be replaced with something that is semi-automatically updated - possibly with integration with mantis.
+* Try and improve information about tools and dependencies needed to build, install and/or package XMMS2. Possibly provide distro-specific instructions about installing tools and dependencies.
+* Have a packaging guidelines page?
 
 (''add more todo items to this list')
