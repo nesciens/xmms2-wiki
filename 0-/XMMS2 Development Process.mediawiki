@@ -38,5 +38,6 @@ In summary: The Mantis issue tracker is a '''vital''' component of, and primary 
 
 = See Also =
 * [[Submitting code]]
+* [[IRC Quotes#2005-04-11 | Alternate XMMS2 development process]]
 
 [[Category:Code and bugs]]
