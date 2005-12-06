@@ -14,7 +14,7 @@ These are the trees found at http://git.xmms.se
 * [http://git.xmms.se/?p=xmms2-jlt.git;a=summary xmms2-jlt]
 ** [[Jens Taprogge | Jens]]' tree - where changes relating to Debian packaging are made.
 * [http://git.xmms.se/?p=xmms2-nano.git;a=summary xmms2-nano]
-** [[Daniel Pearson | Daniel]]'s tree.
+** [[Daniel Svensson | Daniel]]'s tree.
 * [http://git.xmms.se/?p=xmms2-stable.git;a=summary xmms2-stable]
 ** The stable tree, where code from the ''xmms2-devel'' tree ends up prior to a release.
 * [http://git.xmms.se/?p=xmms2-tilman.git;a=summary xmms2-tilman]
