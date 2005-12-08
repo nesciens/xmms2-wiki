@@ -1,3 +1,12 @@
+{{Newsitem|date=08 December 2005 (2005-12-08) WST| author=[[Sham Chukoury]]| title=Configuration file format changes| text=The configuration file format for ''xmms2d'' (''xmms2.conf'') was changed recently. However ''xmms2d'' will not automatically preserve your configuration settings - instead, it will revert to default settings and subsequently overwrite the configuration file. If you want to preserve your settings, try this command:
+
+ sed -e "s/value/property/g" xmms2.conf>tmp;mv tmp xmms2.conf;
+
+and add a 'version' attribute to the root ''<xmms>'' tag:
+
+ <xmms version="0.02">
+}}
+
 {{Newsitem|date=05 December 2005 (2005-12-05) CET|author=[[Tobias RundstrÃ¶m]]|title=GFX artist needed!|text=XMMS2 project seeks a GFX / Web graphic artist. We need to lay down a graphic profile for everything XMMS2 related. Are you interested? Please [[About#Contact_info|contact]] us!
 }}
 
