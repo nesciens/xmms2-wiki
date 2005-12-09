@@ -26,6 +26,7 @@ NOT:
 == Breaking long lines and strings ==
 * Lines should not be longer than 80 characters (columns) long. (Note that this assumes 4-character long tab widths for indents)
 * "Statements longer than 80 columns will be broken into sensible chunks. Descendants are always substantially shorter than the parent and are placed substantially to the right. The same applies to function headers with a long argument list. Long strings are as well broken into shorter strings." [http://lxr.linux.no/source/Documentation/CodingStyle#L57]
+* See section above for example how to indent the continuation lines with spaces instead of tabs for the part that is indented more than the first line in multi line statements.
 
 == Placing Braces ==
 * An opening brace must be last on the relevant line. [http://lxr.linux.no/source/Documentation/CodingStyle#L80]
