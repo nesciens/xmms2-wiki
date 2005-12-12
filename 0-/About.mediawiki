@@ -53,6 +53,7 @@ So, XMMS2 is definitely an audio player. But it is ''not'' a multimedia player -
 * [[Vegard Nossum]]
 * [[Magnus Bjernstad]]
 * [[Ma Xuan]]
+* [[Dan Chokola]]
 
 == Contact info ==
 ;E-Mail :
