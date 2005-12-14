@@ -18,7 +18,7 @@ become DRAlban and DR3 will be DR-FeelGood.
 
 ==Noteworthy feature additions==
 === {{Bug|273}}: Added AAC/MP4 plugin ===
-Juho Vaha-Herttua contributed a AAC/MP4 plugin based on libfaad.
+Juho VÃ¤hÃ¤-Herttua contributed a AAC/MP4 plugin based on libfaad.
 
 === {{Bug|428}}: Added MusePack Plugin ===
 Daniel Svensson contributed a MusePack plugin.
