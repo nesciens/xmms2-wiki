@@ -13,8 +13,7 @@ file documents the changes between DR2.2 and DR-Alban.
 
 ==Versioning==
 During the process of DR2.2 we decided to change the [[versioning]]. We now
-name our Developer Release after known "Doctors". Former pre-DR3 has
-become DRAlban and DR3 will be DR-FeelGood.
+name our Developer Release after known "Doctors". The current release is DrAlban and next release will be [[Release:DrBombay|DrBombay]].
 
 ==Noteworthy feature additions==
 === {{Bug|273}}: Added AAC/MP4 plugin ===
