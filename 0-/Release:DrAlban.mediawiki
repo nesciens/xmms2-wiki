@@ -44,16 +44,10 @@ clients. You can now associate own values with entries in the medialib.
 Opens a lot of new functionallity for clients.
 
 == Noteworthy bug fixes ==
-Both ringbuffer and transport code got a lot of eyes during this release cycle.
-This should eliminate a lot of problems with deadlocking and timing
-problems during playback and seeking.
-
-{{Bug|334}}:Fixed noise in Jack plugin.
-Our Jack output plugin maintainer - Chris Morgan - fixed a lot of problems with
-the Jack plugin.
-
-Another 50 bugs have been squished and stability should really improve with
-this release.
+* Both ringbuffer and transport code got a lot of eyes during this release cycle. This should eliminate a lot of problems with deadlocking and timing problems during playback and seeking.
+* {{Bug|334}}:Fixed noise in Jack plugin. Our Jack output plugin maintainer - Chris Morgan - fixed a lot of problems with the Jack plugin.
+* {{Bug|205}}: FLAC seeking problems has been worked around.
+*Another 50 bugs have been squished and stability should really improve with this release.
 
 == Notes to client authors ==
 This release will break all existing APIs. You need to rework your clients
