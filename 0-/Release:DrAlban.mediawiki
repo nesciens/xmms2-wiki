@@ -62,6 +62,7 @@ to handle sources and some other minor changes.
 == Notes to users ==
 * This release will remove your medialib. Make a backup if you want to keep information in there.
 * The option to run xmms2d in background (-d) has been removed. Try xmms2-launcher instead.
+* Using older versions of SQLite (< 3.2.6) could cause strange problems. Please upgrade.
 
 == Thanks ==
 Lot of new developers has joined up with XMMS2 team during this period.
