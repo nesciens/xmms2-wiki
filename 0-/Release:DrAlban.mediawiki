@@ -1,12 +1,4 @@
 {{Navbar}}
-
-'''Developer Release 3''' is the third major developer release of XMMS 2 code. What it means:
-
-* Make adjustments in the API according to needs of new plugins/clients. Hopefully these are very minor (or totally non-existent if we are lucky)
-* Fix bugs
-* Add tons with new bugs and new features that will make xmms2 crash in exciting new ways.
-
-
 = Release notes =
 XMMS2 Team releases a new Developer Release to the wild, named DrAlban. This
 page documents the changes between DR2.2 and DR-Alban.
