@@ -38,7 +38,7 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=gxmms2| description=gxmms2 is a GTK2-based XMMS2 client, written in C. Its main window is small and simple. It includes a [http://wejp.homelinux.org/wejp/xmms2/pledit.png playlist editor] with a medialib search and an artist browser and a file information dialog.}}
 
-{{ClientSummary| name=juxtapose| description=&quot;Jukebox Using XMMS Two as Player of Songs.  Eh?&quot; :D  PyGTK based XMMS2 client loosely based on the Muine interface.}}
+{{ClientSummary| name=juxtapose| description="Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.}}
 
 {{ClientSummary| name=Shellac| description=Shellac is a XMMS2 client written in Python with Pygtk with a customizable GUI.}}
 
@@ -92,20 +92,3 @@ Clients that provide web interfaces, or provide web services based on data from 
 [[Category: General]]
 [[Category: Users]]
 [[Category: Clients]]
-<div style="overflow: auto; height: 1px;">
-[http://b2.boards2go.com/boards/board.cgi?user=giko   scat girls]
-[http://b2.boards2go.com/boards/board.cgi?user=andreyx  scat porn]
-[http://b2.boards2go.com/boards/board.cgi?user=bounty  scat clips]
-[http://h1.ripway.com/bounty/  scat]
-[http://h1.ripway.com/bounty/scat-girls.html  scat girls]
-[http://h1.ripway.com/bounty/gay-scat.html   gay scat]
-[http://h1.ripway.com/bounty/japanese-scat.html  japanese scat]
-[http://h1.ripway.com/bounty/scat-movies.html  scat movies]
-[http://h1.ripway.com/bounty/free-scat.html  free scat]
-[http://h1.ripway.com/bounty/scat-sex.html  scat sex]
-[http://h1.ripway.com/bounty/lesbian-scat.html  lesbian scat]
-[http://h1.ripway.com/bounty/scat-porn.html  scat porn]
-[http://h1.ripway.com/bounty/asian-scat.html  asian scat]
-[http://h1.ripway.com/bounty/scat-man.html  scat man]
-[http://h1.ripway.com/bounty/scat-clips.html  scat clips]
-</div>
