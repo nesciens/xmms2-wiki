@@ -70,6 +70,17 @@ to handle sources and some other minor changes.
 * The option to run xmms2d in background (-d) has been removed. Try xmms2-launcher instead.
 * Using older versions of SQLite (< 3.2.6) could cause strange problems. Please upgrade.
 
+== Phone home feature ==
+This release also includes a phone-home agent, which provides
+the developers (and other interested parties) basic test
+coverage data. It sends an udp packet for each song played with
+information about which output-, decoder- and transport plugin
+is used and what operating system xmms2 is running on. The
+information is sent anonymously and doesn't even contain the
+name of the song. This helps the developers to approximate how much testing different components in xmms2 get, which will help in making it a better music player. If you never have had xmms2 installed before this feature will be enabled automatically. If you already have xmms2 installed you can manually put the xmms2-et-launcher.sh script in .xmms2/startup.d (or simply remove that directory to get it fresh from the skel).
+
+
+
 == Thanks ==
 Lot of new developers has joined up with XMMS2 team during this period.
 Thanks for all support and help.
