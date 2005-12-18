@@ -53,6 +53,18 @@ Opens a lot of new functionallity for clients.
 This release will break all existing APIs. You need to rework your clients
 to handle sources and some other minor changes.
 
+* Clients can now write to the medialib. (See xmmsc_medialib_entry_property_set() and xmmsc_medialib_entry_property_set_with_source())
+** The medialib dicts have changed! There is now a propdict which holds a dict with client names as keys and another dict under each key. As a result, there are new foreach functions.
+** Server info is stored under the "server" key (This is where all the mediainfo you're used to resides.); client info is stored under "client/<clientname>"
+** A new convenience function, xmmsc_result_source_preference_set(), can be used to set the default source of your mediainfo dicts.
+* Client names must now be alphanumeric with no spaces. This is so that they can be stored in the medialib safely for use as dict keys. Example: "xmms2-cli" is acceptable whereas "xmms2 cli" will give an error.
+* Mediainfo contains new information.
+** "samplerate", "bitrate", and "channels" keys have been divided into *:in and *:out keys. The "samplerate:in" key, for example, is the samplerate given by the decoder plugin (i.e. that of the file itself; the FAAD plugin is an exception since libfaad uses internal upsampling).
+** "samplefmt:in", "samplefmt:out", "transport", and "decoder" are new keys that give more information from the plugins used to play the file.
+* xmmsc_plugin_list() function provides a list of all the loaded plugins to the client.
+* Encoding of URLs has been a long-standing issue that was resolved. Since URLs have no known encoding when they are passed to the server, they are encoded using the principles of URL-encoding to validate as UTF-8 which is safe for the medialib.
+** There was a new function added to decode URLs to their original, unknown, encoding: xmmsc_result_decode_url(). This function must be used with Extreme Care(TM). Developers writing clients using this function must '''always''' be aware that there is no known encoding and the string is thus, unfit for display until it has been validated and/or converted to a known encoding.
+
 == Notes to users ==
 * This release will remove your medialib. Make a backup if you want to keep information in there.
 * The option to run xmms2d in background (-d) has been removed. Try xmms2-launcher instead.
