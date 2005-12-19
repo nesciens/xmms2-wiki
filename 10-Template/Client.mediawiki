@@ -1,5 +1,5 @@
 ==={{Name}}===
-by ''Costin Chirvasuta''
+by ''{{Author}}''
 
 '''Homepage''': azrael-xmms.go.ro<br />
 '''Latest version''': 0.3<br />
