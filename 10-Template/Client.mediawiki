@@ -1,4 +1,4 @@
-==={{Name}}===
+==={{{name}}}===
 by ''{{Author}}''
 
 '''Homepage''': azrael-xmms.go.ro<br />
