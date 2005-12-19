@@ -1,1 +1,1 @@
-{{Client |name=Azrael| author=[[Costin Chirvasuta]]| website=http://azrael-xmms.go.ro| version=0.2.1| devlanguage=C| ui=GTK2| screenshots=http://azrael-xmms.go.ro/azrael.png| description=A player that features nice visuals and easy operation. Future releases should have a playlist :)}}
+{{Client |name=Azrael| author=[[Costin Chirvasuta]]| website=http://azrael-xmms.go.ro| version=0.2.1| devlanguage=C| ui=GTK2| screenshots=N/A| description=A player that features nice visuals and easy operation. Future releases should have a playlist :)}}
