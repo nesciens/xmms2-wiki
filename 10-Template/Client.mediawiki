@@ -1,4 +1,4 @@
-==={{{NAME}}}===
+===[{{Name}}]===
 by ''Costin Chirvasuta''
 
 '''Homepage''': azrael-xmms.go.ro<br />
