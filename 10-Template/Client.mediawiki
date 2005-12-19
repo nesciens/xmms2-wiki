@@ -1,14 +1,14 @@
 ==={{{name}}}===
-by ''{{Author}}''
+by ''{{{author}}}''
 
-'''Homepage''': azrael-xmms.go.ro<br />
-'''Latest version''': 0.3<br />
-'''Development language''': C<br />
-'''User Interface''': GTK<br />
-'''Screenshots''': N/A<br />
-[[Talk:Client:Azrael | Discuss]]
+'''Homepage''': {{{website}}}<br />
+'''Latest version''': {{{version}}}<br />
+'''Development language''': {{{devlanguage}}}<br />
+'''User Interface''': {{{ui}}}<br />
+'''Screenshots''': {{{screenshots}}}<br />
+[[Talk:Client:{{{name}}} | Discuss]]
 
-A player that features nice visuals and easy operation. It now has a playlist.
+{{{description}}}
 
 [[XMMS2 Clients | More xmms2 clients]]
 
