@@ -30,6 +30,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 * [[ChangeLog Format]]
 * [[Release Checklist]]
 * [[Testing]]
+* [[XMMS2:Wikipolicy]]
 
 == Ideas ==
 
