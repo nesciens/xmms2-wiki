@@ -1,0 +1,3 @@
+This is currently a proposed policy document regarding the usage of the XMMS2 wiki. Feel free to add suggestions.
+
+* Don't just add questions to the FAQ or other pages, add them to the related talk page (click on the 'discussion' tab at the top of the page) or better still - ask your questions on the on [[About#Contact_info | mailing list or IRC]].
