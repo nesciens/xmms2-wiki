@@ -3,4 +3,5 @@ Oh, so you are about to edit the wiki. Cool, community effort and collaboration 
 BUT! To help keeping the information in this wiki (at least some minimal degree of) structured please read and follow this policy (well, the reading isn't important as long as you follow it).
 
 * Don't just add questions to the FAQ or other pages, add them to the related talk page (click on the 'discussion' tab at the top of the page) or better still - ask your questions on the on [[About#Contact_info | mailing list or IRC]].
+* The above rule applies to all pages, it's better to ask questions on mailing list or irc. However, it is a good idea to add the ANSWER to those questions to the wiki.
 * Don't forget to categorize new pages by adding <nowiki>[[Category:The category]]</nowiki>
