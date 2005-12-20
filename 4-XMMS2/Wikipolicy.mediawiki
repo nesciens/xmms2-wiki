@@ -1,3 +1,6 @@
-This is currently a proposed policy document regarding the usage of the XMMS2 wiki. Feel free to add suggestions.
+Oh, so you are about to edit the wiki. Cool, community effort and collaboration is what opensource is all about (that's why this is a wiki and everyone is allowed to make changes, but you already knew that).
+
+BUT! To help keeping the information in this wiki (at least some minimal degree of) structured please read and follow this policy (well, the reading isn't important as long as you follow it).
 
 * Don't just add questions to the FAQ or other pages, add them to the related talk page (click on the 'discussion' tab at the top of the page) or better still - ask your questions on the on [[About#Contact_info | mailing list or IRC]].
+* Don't forget to categorize new pages by adding <nowiki>[[Category:The category]]</nowiki>
