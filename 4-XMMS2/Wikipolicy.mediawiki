@@ -5,3 +5,4 @@ BUT! To help keep the information in this wiki (at least some minimal degree) st
 * Don't just add questions to the FAQ or other pages, add them to the related talk page (click on the 'discussion' tab at the top of the page) or better still - ask your questions on the on [[About#Contact_info | mailing list or IRC]].
 * The above rule applies to all pages, it's better to ask questions on mailing list or irc. However, it is a good idea to add the ANSWER to those questions to the wiki.
 * Don't forget to categorize new pages by adding <nowiki>[[Category:The category]]</nowiki>. You can see existing categories at [[Special:Categories]].
+* If you're an XMMS2 client developer, know [[Talk:XMMS2_Clients#How_to_add_a_new_client | how to add information about your client]] to the wiki.
