@@ -6,3 +6,4 @@
 * The 'author' field on the Client template is obviously there to show who wrote the client. If you're a client author, you should probably set this field to be a hyperlink to your home page, or a page containing your contact information.
 * You don't need to upload client screenshots to this wiki. You may just provide the urls to the images hosted elsewhere (e.g. on the client's web site). Mediawiki seems to automagically convert urls ending in .jpg to an image tag - for example, see [[Client:xmms2curses]].
 * The 'ui' field (User Interface) should describe the type of user interface provided by the application. For graphical clients, this may simply be the graphical toolkit used, for example, GTK2, Qt, EFL, etc.
+* Make sure you add the talkpage for your client to your watchlist.
