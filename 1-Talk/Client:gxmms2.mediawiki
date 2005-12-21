@@ -12,7 +12,7 @@ Excellent client.  Compiled with no trouble under debian unstable amd64 and xmms
 * Medialib
 ** Font sizes could be a lot smaller, more text == good.
   - Usually font sizes are controlled globally for all gtk applications, though I will add an option
-    to the config file where you can overwrite the default font size setting for the medialib.
+    to the config file where you can overwrite the default font size setting for the medialib. (Done)
 ** A optional tree like structure of the medialib browser.
 ** I think it would be nice to see the search in grouped layout. I.e. search for album Foo will show all albums matching on foo and then you could expand that entry to add individual files. Same with artists..
 ** possibility to see the stored playlists (same here GtkTree?)
