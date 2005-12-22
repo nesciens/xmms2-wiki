@@ -27,7 +27,7 @@ Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  
 == Ports ==
 
 === FreeBSD ===
-A FreeBSD Port is avaliable at http://www.stampede.org/~drax/xmms2-port.shar
+xmms2 is now included in the FreeBSD ports tree. It can be found in audio/xmms2.
 
 === NetBSD ===
 A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsrc is available at http://pkgsrc-wip.sourceforge.net/.
