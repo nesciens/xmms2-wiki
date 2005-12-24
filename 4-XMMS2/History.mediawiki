@@ -103,7 +103,14 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 ;7th:
 [[Release:DR2.2 | Developer Release 2.2]] is done, fixing bugs found in DR2.1.
 
+== December ==
+;18th:
+[[Release:DrAlban | DrAlban]] is done, adding a number of features, bug fixes and some client API changes.
+
+;21st:
+[http://planet.xmms.se Planet XMMS2] goes live.
+
 == Now ==
-We're all just chillin until we decide to get serious about DR3. Or something. :P
+We're all just chillin until we decide to get serious about DrBombay. Or something. :P
 
 [[Category:General]]
