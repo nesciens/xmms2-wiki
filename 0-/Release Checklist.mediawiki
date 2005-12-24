@@ -1,3 +1,5 @@
+{{Navbar}}
+
 This is a list of things that should probably be done or checked when doing a release.
 
 * Version number set
@@ -16,3 +18,5 @@ This is a list of things that should probably be done or checked when doing a re
 Other things which currently would not really be possible:
 * no release critical bugs? - criteria?
 * pass build and runtime tests?
+
+[[Category:Policies and guidelines]]
