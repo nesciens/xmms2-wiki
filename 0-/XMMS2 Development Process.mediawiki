@@ -2,7 +2,7 @@
 
 This is an overview of the XMMS2 development process - it covers the process to go through when modifying code that ends up in the main code tree (''xmms2-devel''), as well as outlining other trees.
 
-= Code trees =
+== Code trees ==
 
 These are the trees found at http://git.xmms.se
 * [http://git.xmms.se/?p=xmms2-anders.git;a=summary xmms2-anders]
@@ -22,22 +22,58 @@ These are the trees found at http://git.xmms.se
 * [http://git.xmms.se/?p=xmms2-tru.git;a=summary xmms2-tru]
 ** [[Tobias RundstrÃ¶m | Tobias]]'s tree - where even more code ninja happens.
 
-= Change process =
+== Change process ==
 
-* Get an idea for a feature/plugin, or find a bug somewhere. Optionally discuss it with other people in the XMMS2 community.
+* Get an idea for a feature/plugin, or find a bug somewhere. Optionally [[About#Contact info | discuss it]] with other people in the XMMS2 community.
 # [[Reporting bugs | File a bug or feature report]]. You will need to register on the Mantis bug tracker if you don't already have an account.
 #* If you've already got code to submit (e.g. a new plugin), you'll still need to file a report - it's how we track changes to the codebase. Skip step 2.
 # If you're not lazy and you think you're up to it, work on the bug or feature or plugin and submit your file(s) via Mantis.
 #* If your code is too complex to submit via Mantis (e.g. too many files), you might want to [[About#Contact info | contact us]] via e-mail or IRC to discuss a more convenient way of submitting your code.
 #* You can seek feedback from the XMMS2 community by offering code and patches for review while working on the problem, before submission.
 # If your submission is deemed of good enough quality (i.e. works, doesn't introduce any obvious bugs, memleaks, and so on), it will be merged into one of the code trees and eventually end up in ''xmms2-devel''.
+#* When committing a change, a number of [[ChangeLog Format | commit tags]] will be used. See [[#Repository-tracker integration | Repository-tracker integration]]
 # The bug/feature report will be closed on mantis with the matching git commit ID.
 # You'll probably end up in the ''AUTHORS'' file, if you're not in there already.
 
 In summary: The Mantis issue tracker is a '''vital''' component of, and primary entry point to the XMMS2 development process. Use it well.
 
-= See Also =
+=== Repository-tracker integration ===
+
+The XMMS2 Mantis issue tracker and gitweb repository interface are integrated web services that refer to each other:
+* When resolving an issue, a git commit ID is required, which allows us to easily track down which commit reportedly fixed a certain issue.
+* The gitweb interface parses the various [[ChangeLog Format | commit tags]] and provides hyperlinks back to the issue tracker so that anyone can figure out exactly what bug is fixed, or what feature is implemented, by a specific commit.
+
+The development process has largely evolved thanks to the de-facto standardised commit tags and subsequent service integration. 
+
+==== Examples of using commit tags ====
+
+''Changing the mime-handling to make decoders register magic.''
+* Is a feature request in mantis, add FEATURE(123)
+* would change the decoder api and force plugins to do the registering, old plugins wont work, add PLUGINMAJOR
+
+  FEATURE(123),PLUGINMAJOR: New shiny mimehandling
+----
+
+''Adding pcm-visdata.''
+* Feature request in mantis - FEATURE(321)
+* Adds new features to clientlib. Existing features are not affected, old clients will continue to work, but new clients using the new feature will not work with old clientlib. CLIENTMINOR
+
+  FEATURE(321),CLIENTMINOR: Add pcm-visdata
+
+== Releases ==
+There is no firm release calendar or roadmap for XMMS2. The release cycle is typified as follows:
+
+# File a new feature request titled to the next release name as per [[Versioning]].
+# Identify bugs to fix and features to implement as reported on the issue tracker and add them as child issues of the release issue.
+# Once all (or most of) the children issues of the release issue have been resolved, prepare a release, as per [[Release Checklist]]
+#* Some issues may be re-categorised as low-priority issues, dropped from the current release cycle and moved forward to the next release cycle. This can happen especially if there have been a number of important updates to the codebase and no releases have been made for a fairly long time.
+
+== See Also ==
 * [[Submitting code]]
 * [[IRC Quotes#2005-04-11 | Alternate XMMS2 development process]]
+* [[ChangeLog Format]]
+* [[Versioning]]
+* [[Release Checklist]]
 
 [[Category:Code and bugs]]
+[[Category:Policies and guidelines]]
