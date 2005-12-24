@@ -39,7 +39,7 @@ In summary: The Mantis issue tracker is a '''vital''' component of, and primary 
 
 === Repository-tracker integration ===
 
-The XMMS2 Mantis issue tracker and gitweb repository interface are integrated web services that refer to each other:
+The XMMS2 [http://bugs.xmms2.xmms.se Mantis issue tracker] and [http://git.xmms.se gitweb repository interface] are integrated web services that refer to each other:
 * When resolving an issue, a git commit ID is required, which allows us to easily track down which commit reportedly fixed a certain issue.
 * The gitweb interface parses the various [[ChangeLog Format | commit tags]] and provides hyperlinks back to the issue tracker so that anyone can figure out exactly what bug is fixed, or what feature is implemented, by a specific commit.
 
