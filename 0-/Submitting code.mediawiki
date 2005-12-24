@@ -24,3 +24,4 @@ In order to be considered for inclusion, your code should meet the following req
 [[About#Contact_info | Contact us]] either via the mailing list or on IRC. You may attach patches to e-mails, or publish the code on the web and provide a URL.
 
 [[Category:Developer info]]
+[[Category:Policies and guidelines]]
