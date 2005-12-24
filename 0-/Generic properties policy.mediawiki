@@ -9,4 +9,6 @@ Proposed Album Art, source = client/generic/arturl
 * album_front - front of album
 * album_back - back of album
 
+All values should give a url to the album cover
+
 Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in Talk.
