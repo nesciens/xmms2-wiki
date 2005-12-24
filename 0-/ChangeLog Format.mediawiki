@@ -76,3 +76,4 @@ Perhaps not so useful, but I'll list them anyway...
 * [[XMMS2 Development Process]]
 
 [[Category:Developer info]]
+[[Category:Policies and guidelines]]
