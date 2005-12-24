@@ -1,0 +1,1 @@
+Policies, guidelines and standards relating to XMMS2 development
