@@ -14,5 +14,6 @@ This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms
 ** Pages with sections about data in log files: ''None?''
 * [[Using the application]] does not mention ''xmms2-launcher'' at all.
 * [[Support for clients to write to the medialib]] needs to be reviewed
+* [[Generic properties policy]] should really be expanded.
 
 (''add more todo items to this list')
