@@ -1,4 +1,39 @@
-''' THIS IS A PROPOSAL '''
+{{Navbar}}
+
+''This proposal is now a de-facto standard in the [[XMMS2 Development Process]].''
+
+When code in one of the [[XMMS2 Development Process#Code trees | XMMS2 code trees]] has been modified, the commit message should have one of the several following tags in the format ''<TAG>: <description>'':
+
+* BUG(n):
+** Refer to a specific bug report in mantis
+* FEATURE(n):
+** Refer to a specific feature request in mantis
+* OTHER
+** Changes that do not have corresponding entries in mantis - '''SHOULD BE AVOIDED!'''
+** Reserve this for minor changes that don't affect functionality: code cleanups, spelling fixes, etc.
+* RELEASE
+** For commits that denote release-status code.
+
+The commit message '''may''' also contain the following tags:
+
+* PLUGINMINOR
+** Backwards but not forward compatible changes in some plugin ABI
+* PLUGINMAJOR
+** Non-backwards compatible changes in some plugin ABI
+* CLIENTMINOR
+** Backwards but not forward compatible changes in clientlib ABI
+* CLIENTMAJOR
+** Non-backwards compatible changes in clientlib ABI
+* PYTHONMINOR
+** Backwards but not forward compatible changes in clientlib ABI
+* PYTHONMAJOR
+** Non-backwards compatible changes in clientlib ABI
+* PROTOCOL
+** Changes in client/server protocol requires new clientlib. Does NOT imply changes in the clientlib ABI!
+
+== Original Proposal ==
+
+''This is the original proposal text - not all proposed tags are now used.''
 
 When you have done a change to the git tree and want to commit it. The commit message should have tags as follows:
 
@@ -38,5 +73,6 @@ Perhaps not so useful, but I'll list them anyway...
 
 == See Also ==
 * http://exodus.xmms.se/~andersg/changelog-propolas.txt
+* [[XMMS2 Development Process]]
 
 [[Category:Developer info]]
