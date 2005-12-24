@@ -17,20 +17,28 @@ For those who want to know more about how it works, and how to get clients to pl
 
 For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the [[XMMS2 Coding Style]].
 
-*[[XMMS2 Coding Style]]
-*[http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
-*[[Reporting bugs]]
-*[[Submitting code]]
-*[[Download_XMMS2|Source Code]]
-*[http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO] and related [[ChangeLog Format]]
-*[[Generic properties policy]]
-*[[XMMS2 Development Process]]
+* [[XMMS2 Coding Style]]
+* [http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
+* [[Reporting bugs]]
+* [[Submitting code]]
+* [[Download_XMMS2|Source Code]]
+* [http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO] and related [[ChangeLog Format]]
+* [[ChangeLog Format]]
+
+== Policies and guidelines ==
+
+Policies and guidelines about processes and services related to the project as well as guidelines for client developers.
+
+=== XMMS2 ===
+* [[XMMS2 Development Process]]
+* [[Release Checklist]]
+* [[XMMS2:Wikipolicy | Wiki usage guidelines]]
+
+=== Clients ===
+* [[Generic properties policy]]
 
 == Proposals ==
-* [[ChangeLog Format]]
-* [[Release Checklist]]
 * [[Testing]]
-* [[XMMS2:Wikipolicy]]
 
 == Ideas ==
 
