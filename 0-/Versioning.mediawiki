@@ -1,3 +1,5 @@
+{{Navbar}}
+
 == DR Phase ==
 * DrAlban
 * DrBombay
@@ -8,6 +10,10 @@
 * DrG***
 ...
 * DrWho
+...
+* DrZoidberg
 
 == After DR Phase ==
 Korv names?
+
+[[Category:Policies and guidelines]]
