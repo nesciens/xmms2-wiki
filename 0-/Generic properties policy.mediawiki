@@ -11,4 +11,4 @@ Proposed Album Art, source = client/generic/arturl
 
 All values should give a url to the album cover
 
-Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in Talk.
+Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in [[Talk:Generic properties policy|Talk page]] or on the mailinglist.
