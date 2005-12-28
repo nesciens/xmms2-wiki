@@ -3,7 +3,7 @@
 == DR Phase ==
 ''The not yet released ones are ofcourse up for discussion''
 
-* DrAlban
+* [[Release:DrAlban|DrAlban]] - Released 05-12-18
 * DrBombay
 * DrCox
 * DrDoolittle
