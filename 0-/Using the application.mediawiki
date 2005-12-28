@@ -4,7 +4,7 @@ Please also view the manual pages - if you have the XMMS2 source they're in doc/
 
 = The Daemon =
 
-xmms2d can be started by typing 'xmms2d' after installing the application. You can then interact with the daemon using one of many [[#The clients | clients]]
+xmms2d can be started by typing 'xmms2d' after installing the application. (To daemonise the process, use ''xmms2-launcher'' instead of ''xmms2d'') You can then interact with the daemon using one of many [[#The clients | clients]]
 
  xmms2d
  xmms2 add some.nice.music.ogg
@@ -17,11 +17,11 @@ Tada, music!
 Here is a list of currently available xmms2d options:
 
 * -v - Increase verbosity
+* -q - Decrease verbosity
 * -V (or --version) - Show XMMS2 version
 * -n - Disable logging
 * -o <x> - Specify <x> as output plugin
 * -i <url> - Listen to socket 'url'
-* -d - Daemonize, that is, run xmms2d without attaching it to a terminal
 * -p <path> - Specify plugin directory path
 * -h (or --help) - Print help (show list of options)
 * -c (or --conf) - Specify alternate configuration file
