@@ -1,13 +1,21 @@
 {{Navbar}}
 
 == DR Phase ==
+''The not yet released ones are ofcourse up for discussion''
+
 * DrAlban
 * DrBombay
 * DrCox
 * DrDoolittle
-* DrE???
+...
 * DrFeelgood
-* DrG***
+...
+* DrJekyll
+...
+* DrMcCoy
+* DrNo
+...
+* DrStrangelove
 ...
 * DrWho
 ...
