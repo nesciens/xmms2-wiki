@@ -15,3 +15,8 @@ cteeple@charter.net:
 
 James<AT>humphreys<DOT>be:
 I downloaded Listen just over a week ago I think, then the website went down ("Under construction" is all it says).  I doubt the project has died - I reckon the page is just being revamped.
+
+james<at>humphreys<dot>be:
+I got in contact with the developer and development of Listen for XMMS2 has been discontinued, and I believe it is being switched to Gstreamer (with its own media backend).  First release might be January or February. Apparently, there are features available in Gstreamer which aren't available in XMMS2 yet (daap, ipod, musicbrainz).
+
+Shame, I really liked it.
