@@ -1,1 +1,1 @@
-{{Client| name=XMMS2-Scrobbler| author=[[Tilman Sauerbeck]]| website=http://code-monkey.de/projects/xmms2-scrobbler| version=Unknown| devlanguage=Ruby| ui=None| screenshots=N/A| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
+{{Client| name=XMMS2-Scrobbler| author=[[Tilman Sauerbeck]]| website=http://code-monkey.de/pages/xmms2-scrobbler| version=Unknown| devlanguage=Ruby| ui=None| screenshots=N/A| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
