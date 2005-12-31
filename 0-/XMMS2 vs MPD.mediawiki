@@ -27,7 +27,7 @@ This list taken from the [http://mpd.wikicities.com/wiki/Features MPD feature li
 ; Can play over a network stream using icecast2:
 XMMS2 supports icecast via the [[Component:ices | icecast]] effect plugin.
 ; Plays MP3, Ogg Vorbis, FLAC, MP4/AAC, Mod, Musepack, and wave files:
-XMMS2 can currently play MP3, Ogg Vorbis, FLAC, Mod, wave files. Other formats can be supported via appropriate decoder plugins.
+XMMS2 can currently play MP3, Ogg Vorbis, FLAC, Mod, wave files. Other formats can be supported via appropriate decoder plugins. See also: [[Media formats]]
 ; Remotely control MPD over a network (IPv4 and IPv6 supported):
 XMMS2 can be controlled via UNIX sockets or TCP sockets. IPv4 sockets are known to work.
 ; Play MP3 and Ogg Vorbis streams:
