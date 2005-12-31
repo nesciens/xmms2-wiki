@@ -6,7 +6,7 @@
 ** KDE clients (matching KDE look and feel)
 * Network transparency means you can run and control XMMS2 remotely, (e.g. run XMMS2 on your 'media box' and control it over network using a bluetooth-enabled PDA (TCP) - see [[Mobile platforms]])
 
-;Wide format support :
+;[[Media formats | Wide format support]] :
 Can play FLAC, mp3, MOD, SID, speex, ogg vorbis, wave files.
 ;Clean separation of [[Component:Transport | transport]] and [[Component:Decoder | decoder]] subsystems :
 Allows for more flexible access to media. (e.g. play mp3 files from a Samba share without having to mount it on the local filesystem)
