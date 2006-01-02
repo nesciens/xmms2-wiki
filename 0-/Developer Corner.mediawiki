@@ -62,6 +62,7 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 * [[Support for clients to write to the medialib]]
 * [[Support for radio output like icecast]]
 * [[Client Ideas]]
+* [[Collections]]
 
 
 [[Category: Developer info]]
