@@ -13,7 +13,7 @@ You will '''need''' the following things to build XMMS2.
 * [http://www.python.org/ Python] (>=2.2.1)
 * [http://www.scons.org/ SCons]. (>= 0.96.90)
 * [http://www.gtk.org/ GLib] (>= 2.6.0)
-* [http://www.sqlite.org SQLite] (3.2.x) (preferably at least 3.2.4 for good performance)''</span>
+* [http://www.sqlite.org SQLite] (3.2.x) (preferably at least 3.2.4 for good performance)
 
 The following apt-get line will install the necessary packages on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
 
