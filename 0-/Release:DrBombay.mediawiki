@@ -1,0 +1,7 @@
+''This will be the releasenotes for DrBombay''
+
+DrBombay is a bugfix release for DrAlban.
+
+It does not contain any new features, but a number of important bugfixes.
+
+'''IMPORTANT''': It also breaks medialib compability without upgrade. So you will have to recreate your medialib.
