@@ -99,3 +99,5 @@ Where it gets more tricky is with Smart Playlists.  Whenever one song finishes p
 Okay, it's by far not a complete overview of the problems, but I hope I exposed ''one'' (my) view of the question and pointers to subsequent problems related to the implementation of collections either in the client or the server.
 
 I am curious to hear about what '''you''' have in mind when it comes to collections, and possible solutions to the problem they might cause.
+
+[[Category:Developer ideas]]
