@@ -89,6 +89,8 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 {{ClientSummary| name=lxmms2| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
 
+{{ClientSummary| name=xmms2joystick| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
+
 [[Category: General]]
 [[Category: Users]]
 [[Category: Clients]]
