@@ -1,10 +1,24 @@
 ''This will be the releasenotes for DrBombay''
 
-DrBombay is a bugfix release for DrAlban.
+DrBombay is a bugfix release for [[Release:DrAlban]]. These releasenotes describes changes between DrAlban and DrBombay.
 
 It does not contain any new features, but a number of important bugfixes.
 
+== Noteworthy bug fixes ==
+* {{Bug:527}}: Fixed crash on playlist_insert on empty playlists.
+* {{Bug:541}}: "enabled" configvalue is now created when effect plugins are loaded, not when they are enabled for the first time. This removes lots of confusion when adding an effect.
+* {{Bug:545}}: Encode url correctly when added to medialib in other ways than via the playlist.
+
+== Notes to client authors ==
+* xmmsc_sqlite_prepare_string now takes '''const char *''' instead.
+* PropDict's has_key() in pythonbindings now works correctly with implicit source.
+* size property is now available on media.
+
+== Notes to users ==
 '''IMPORTANT''': It also breaks medialib compability without upgrade. So you will have to recreate your medialib.
 
+Also glib at least version 2.6 is required and enforced.
+
+XMMS2 now ships with a new intro clip!
 
 [[Category:Releases]]
