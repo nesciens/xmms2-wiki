@@ -1,0 +1,1 @@
+{{Client| name=xmms2joystick| author=Mathgl| website=[http://wiki.mathgl.info/Xmms2Joystick]| version=0.1| devlanguage=C| ui=joystick remote control| screenshots=None| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
