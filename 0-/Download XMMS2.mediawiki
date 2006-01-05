@@ -45,5 +45,8 @@ xmms2 snapshots and gxmms2 are avaiable through AUR
 === Gentoo Linux ===
 Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 
+There's another set of ebuilds available at: http://stuge.se/gentoo/
+These latter ebuilds have more USE flags, the 0.2 DrAlban ebuild also has a local phonehome USE flag that has to be explicitly set in order to enable the xmms2-et client.
+
 [[Category:General]]
 [[Category:Users]]
