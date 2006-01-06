@@ -47,7 +47,8 @@ Note: There is some faad2 breakage in Gentoo. None of the following ebuilds depe
 
 Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 
-There's another set of ebuilds available at: http://stuge.se/gentoo/<br>
+There's another set of ebuilds available at: http://stuge.se/gentoo/
+
 These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. The 0.2 DrAlban ebuild also has a new local "phonehome" USE flag that has to be set in order to enable the xmms2-et client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
 
 [[Category:General]]
