@@ -30,12 +30,6 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 === Does XMMS2 run on my favourite platform/operating system? ===
 * A: See the [[Project Status#XMMS2_Platform_Support_Status | Platform support status table]] for an overview. For information about mobile platforms (Palm PDA, Sharp Zaurus, etc), see [[Mobile platforms]].
 
-=== XMMS2 is not working. What should I do? ===
-* A: You should do it right, of course. Stop doing it wrong, and it'll start working.
-
-=== While trying to start xmms2, I get ''ERROR: Could not create default configfile!!'' ===
-* A: This can happen when you've installed XMMS2 for the first time. You need to run ''xmms2d'' first, then run ''xmms2'' to control the daemon. Running ''xmms2d'' will create the configuration directory as required, so that XMMS2 clients can then create their own configuration files. For more information, please see [[Using the application]].
-
 === How do I load a playlist? ===
 * A: Use the ''addpls'' command of the command line client, for example:
 
@@ -46,12 +40,6 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
    [1/31]  - Digital Gunfire (Boston Mirror) (00:00)
    [2/32]  - Digital Gunfire (Indiana Mirror) (00:00)
 
-=== When trying to use the xmms2 command line client, I get ''error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory'' ===
-* A: Add ''/usr/local/lib'' to either your ''LD_LIBRARY_PATH'' environment variable, or as a new line in ''/etc/ld.so.conf''. If you add the line to ld.so.conf, make sure you run ''ldconfig'' before trying to use xmms2 again. If you have installed XMMS2 using a non-default PREFIX, the path you'll have to add will be ''$PREFIX/lib''.
-
-=== When trying to use a Ruby or Python XMMS2 client, I get ''can't find xmmsclient'' ===
-* A: This means you're missing the Ruby or Python client library bindings. To build the Python module, you'll need to install [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] and Python dev headers. To build the Ruby module, you'll need to install the Ruby dev headers. Once you have those, run ''scons CONFIG=1'' to re-build XMMS2.
-
 === Does XMMS2 do crossfading? ===
 * A: Not yet, this is a requested feature that might be added in the future.
 
@@ -59,10 +47,34 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 === How do I contribute code to XMMS2? ===
 * A: Please see the [[Submitting code]] page.
 
-[[Category: Questions and answers]]
-
 === Why cogito/git? What was wrong with cvs? ===
 * A: That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert.
 
 === Why doesn't the CLI client have a play/pause toggle function? ===
 * A: There is a very simple client available on the [[contribs]] that just toggles play/pause.
+
+== Troubleshooting ==
+=== XMMS2 is not working. What should I do? ===
+* A: You should do it right, of course. Stop doing it wrong, and it'll start working. No, seriously, see if your problem can be solved below, if not, try the mailing list or IRC. If you run xmms2-launcher or xmms2d, try using the -v option for more output. Remember that the xmms2-launcher program puts all output from the xmms2 daemon into a log file: /tmp/xmms2.log. This output will be very helpful in diagnosing your problems.
+
+=== While trying to start xmms2, I get ''ERROR: Could not create default configfile!!'' ===
+* A: This can happen when you've installed XMMS2 for the first time. You need to run ''xmms2d'' or ''xmms2-launcher'' first, then run ''xmms2'' to control the daemon. Running ''xmms2d'' will create the configuration directory as required, so that XMMS2 clients can then create their own configuration files. For more information, please see [[Using the application]].
+
+=== When trying to use the xmms2 command line client, I get ''error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory'' ===
+* A: Add ''/usr/local/lib'' to either your ''LD_LIBRARY_PATH'' environment variable, or as a new line in ''/etc/ld.so.conf''. If you add the line to ld.so.conf, make sure you run ''ldconfig'' before trying to use xmms2 again. If you have installed XMMS2 using a non-default PREFIX, the path you'll have to add will be ''$PREFIX/lib''.
+
+=== When trying to use a Ruby or Python XMMS2 client, I get ''can't find xmmsclient'' ===
+* A: This means you're missing the Ruby or Python client library bindings. To build the Python module, you'll need to install [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] and Python dev headers. To build the Ruby module, you'll need to install the Ruby dev headers. Once you have those, run ''scons CONFIG=1'' to re-build XMMS2.
+
+=== I can't play MP3s, what kind of media player is this? ===
+* A: XMMS2 only installs plugins for the libraries installed on your system. You're probably missing libmad. See the [http://wiki.xmms2.xmms.se/index.php/Install_instructions Install Instructions] for more information.
+
+=== I have libmad installed, but I still can't play MP3s, what gives? ===
+* A: If you built your copy of xmms2 from source, and especially if you're on a binary distribution like ubuntu or debian, chances are you're missing needed header files. You need to install the -dev package for libmad on your system. This will install the requisite mad.h header file that xmms2 uses to link to the MAD library. Again, see the [http://wiki.xmms2.xmms.se/index.php/Install_instructions Install Instructions] for more information.
+
+=== When I add my media collection to the playlist, x files don't show up. ===
+* A: One cause is that you're missing a plugin required to decode the file. If you notice a certain type of file is missing, such as all your MP3s or Oggs, you should read the [http://wiki.xmms2.xmms.se/index.php/Install_instructions Install Instructions] or read above for help. This is where your log can come in handy.
+
+* A2: Another possible cause is that your file has an uncommon mix of formats. If you notice that only certain files are missing, such as certain MP3s, this is likely the case. As of this writing, certain MP3s have a [http://bugs.xmms2.xmms.se/view.php?id=495 known bug] which causes them to fail detection. This type of file is pretty rare, however, so you can probably just hang tight and you won't miss these MP3s too much.
+
+[[Category: Questions and answers]]
