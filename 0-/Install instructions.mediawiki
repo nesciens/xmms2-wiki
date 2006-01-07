@@ -22,9 +22,9 @@ The following apt-get line will install the necessary packages, and plugin packa
 These libraries are '''not needed''' for building xmms2d itself, but will add extra functionality you might need. You will probably want MAD at the very least as without it, you can't play MP3s.
 
 *For transport plugins:
-** [http://curl.haxx.se Curl] (>= 7.11.2) - For listening to streams.
+** [http://curl.haxx.se Curl] (>= 7.11.2) - For listening to streams over HTTP.
 *For decoder plugins:
-** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev) - For listening to MPEGs.
+** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev) - For listening to MPEG files (MPEG 1 & 2 layers I, II and III - includes MP3)
 ** [http://www.audiocoding.com/ FAAD] - For listening to AAC.
 ** [http://www.xiph.org Vorbisfile] - For listening to Ogg Vorbis.
 ** [http://sidplay2.sourceforge.net/ SIDplay2] - For listening to SIDs.
@@ -33,7 +33,7 @@ These libraries are '''not needed''' for building xmms2d itself, but will add ex
 ** [http://www.alsa-project.org ALSA] - For ALSA output.
 ** [http://jackit.sourceforge.net Jack] (try 0.100.0 if you have problems with other versions) - For Jack output.
 *For language bindings (required by some clients):
-** [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings, NOTE that pyrex generates code that gcc4 does NOT compile, you need an older gcc.
+** [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings.
 ** [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 
 As with the packages above, be sure to grab -dev or -headers packages if building on a binary distro!
