@@ -6,7 +6,7 @@ The reason why the bugreporting tool requires you to register an account with a 
 
 If you encountered a crash:
 * Please provide a backtrace.
-* Provide the output of xmms2d, which, if you used xmms2-launcher, resides in ''/tmp/xmms2.log''. (Please use the -v option where appropriate to get verbose debugging output.)
+* Provide the output of xmms2d, which, if you used xmms2-launcher, resides in ''/tmp/xmms2.log''. (See [[Understanding xmms2d output]])
 * In the bug report, try and clarify what you were doing with XMMS2 when the crash occurred. For example "I added 12 Ogg Vorbis file from /home/bloggs/music/foo/, tried to jump to the 5th song, then XMMS2 crashed."
 ** In short, try and explain how we can reproduce the bug so we can try to fix it.
 * Try and specify which version of XMMS2 you were using. For example, by running ''xmms2d --version'' (example output: ''XMMS version 0.1 DR1.1-WIP (git-commit: d380b65e6c2afa93ec2f6e371b8003455c9db7be)''). You may also specify where you got the source code or binaries from.
@@ -18,6 +18,7 @@ If you encountered a crash:
 == Troubleshooting ==
 ''Add troubleshooting tips here''
 
+Check out the [[FAQ#Troubleshooting | FAQ]]
 Check out http://www.dirac.org/linux/gdb/ for more info and a tutorial about GDB.
 
 [[Category: Code and bugs]]
