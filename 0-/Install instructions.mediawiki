@@ -13,25 +13,30 @@ You will '''need''' the following things to build XMMS2.
 * [http://www.python.org/ Python] (>=2.2.1)
 * [http://www.scons.org/ SCons]. (>= 0.96.90)
 * [http://www.gtk.org/ GLib] (>= 2.6.0)
-* [http://www.sqlite.org SQLite] (3.2.x) (preferably at least 3.2.4 for good performance)
+* [http://www.sqlite.org SQLite] (>=3.2.4) (will work for versions < 3.2.4, but with poor performance and potential bugs)
 
-The following apt-get line will install the necessary packages on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
+If you are building XMMS2 on a binary distro, be sure to install -dev or -headers versions of these packages (if available). XMMS2 uses these headers to link to shared libraries on your system and will not build.
 
-These libraries are not '''needed''' for building xmms2d itself, but will add extra functionality you might need. You will probably want MAD at the very least as without it, you can't play MP3s.
+The following apt-get line will install the necessary packages, and plugin packages below, on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
+
+These libraries are '''not needed''' for building xmms2d itself, but will add extra functionality you might need. You will probably want MAD at the very least as without it, you can't play MP3s.
 
 *For transport plugins:
-** [http://curl.haxx.se Curl] (>= 7.11.2)
+** [http://curl.haxx.se Curl] (>= 7.11.2) - For listening to streams.
 *For decoder plugins:
-** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev)
-** [http://www.audiocoding.com/ FAAD]
-** [http://www.xiph.org Vorbisfile]
-** [http://sidplay2.sourceforge.net/ SIDplay2]
-** [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID]
+** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev) - For listening to MPEGs.
+** [http://www.audiocoding.com/ FAAD] - For listening to AAC.
+** [http://www.xiph.org Vorbisfile] - For listening to Ogg Vorbis.
+** [http://sidplay2.sourceforge.net/ SIDplay2] - For listening to SIDs.
+** [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID] - For listening to SIDs.
 *For output plugins:
-** [http://www.alsa-project.org ALSA]
+** [http://www.alsa-project.org ALSA] - For ALSA output.
+** [http://jackit.sourceforge.net Jack] (try 0.100.0 if you have problems with other versions) - For Jack output.
 *For language bindings (required by some clients):
 ** [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (>=0.9.3) - For python bindings, NOTE that pyrex generates code that gcc4 does NOT compile, you need an older gcc.
 ** [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
+
+As with the packages above, be sure to grab -dev or -headers packages if building on a binary distro!
 
 For debian, one can use:
 "apt-get install python2.3-pyrex python2.3-dev ruby1.8 ruby1.8-dev"
