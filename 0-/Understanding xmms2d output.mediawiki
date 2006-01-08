@@ -1,3 +1,5 @@
+{{Navbar}}
+
 The XMMS2 daemon outputs a lot of information that can help you and developers get to the root of, and solution to a problem. By default, the daemon only shows minimal information, warnings, and errors. Appending the ''-v'' option to ''xmms2d'' or ''xmms2-launcher'' will change this behavior to output a lot more debugging information. When trying to debug a problem, you will almost invariably need to use the ''-v'' option. The following will assume you use the ''-v'' option.
 
 When the daemon is initialized you see:
@@ -66,5 +68,5 @@ Finally, the xmms2d output on close looks like the following:
 
 Here I've used the CLI client to close the daemon. When closing, the daemon runs scripts in ~/.xmms2/shutdown.d/ in the same fashion as startup.d. These scripts are called before IPC is killed so you can gracefully close your clients or do any last-minute stuff to your playlist. Then everything is stopped (in this case, nothing was playing at the time so only ALSA was closed) and the log prints a final message to let you know it's shut down gracefully.
 
-[[Category: Code and bugs]]
+[[Category: Questions and answers]]
 [[Category: General]]
