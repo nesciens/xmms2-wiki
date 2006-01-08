@@ -84,5 +84,5 @@ Here I've used the CLI client to close the daemon. When closing, the daemon runs
 == See Also ==
 * [[Design of XMMS2]]
 
-[[Category: Questions and answers]]
-[[Category: General]]
+[[Category: Users]]
+[[Category: XMMS2 Technical Details]]
