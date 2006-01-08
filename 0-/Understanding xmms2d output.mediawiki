@@ -3,28 +3,37 @@
 The XMMS2 daemon outputs a lot of information that can help you and developers get to the root of, and solution to a problem. By default, the daemon only shows minimal information, warnings, and errors. Appending the ''-v'' option to ''xmms2d'' or ''xmms2-launcher'' will change this behavior to output a lot more debugging information. When trying to debug a problem, you will almost invariably need to use the ''-v'' option. The following will assume you use the ''-v'' option.
 
 When the daemon is initialized you see:
+
  --- Starting new xmms2d ---
  INFO: Initialized logging system :)
+
 This is useful to determine where new log output begins and old log output has ended if, for example, the daemon has crashed (and didn't print its "INFO: Logging says bye bye :)" message). After this, you should see several messages that look like:
+
  DEBUG: src/xmms/plugin.c:578: Scanning directory: /usr/lib/xmms2
  DEBUG: src/xmms/plugin.c:599: Trying to load file: /usr/lib/xmms2/libxmms_eq.so
  DEBUG: src/xmms/plugin.c:927: Registering plugin: Equalizer effect 0.2 DrAlban+WIP (git commit: 38db2c711ac53dcd71228191873e5d7e0b055d9f + local changes)
  DEBUG: src/xmms/plugin.c:957: INFO: URL = http://www.xmms.org/
  DEBUG: src/xmms/plugin.c:957: INFO: Author = XMMS Team
-These are the plugins that are being loaded. This can be very valueable if certain plugin features aren't working for you and you want to see if the plugin is even loading on startup. You may also notice that some plugins add debug output like the following:
+
+These are the plugins that are being loaded. This can be very valuable if certain plugin features aren't working for you and you want to see if the plugin is even loading on startup. You may also notice that some plugins add debug output like the following:
+
  DEBUG: src/xmms/magic.c:271: adding magic spec to tree 'wave header'
+
 Magic specs are used to determine a filetype based on the location of certain key bytes in a file. You will encounter magic checks later in the output.
 
 The next section of daemon output looks like this:
+
  DEBUG: src/xmms/playlist.c:673: newpos! 1
  INFO: Using output: alsa
  DEBUG: src/xmms/output.c:687: Trying to open output
  DEBUG: src/plugins/alsa/alsa.c:229: Probing device: default
  DEBUG: src/xmms/ipc.c:773: Starting ipc thread!
  DEBUG: src/xmms/main.c:138: Running scripts in /home/dan/.xmms2/startup.d
-This is the daemon finishing up its initialization routine. The last playlist and its position upon closing the daemon are loaded and the output plugin is initialized. Here you can see the ALSA output has initialized properly. This is another valuable place to diagnose playback problems with XMMS2. Finally, IPC (Inter-Process Communication) is brought up and the daemon is ready to accept commands from clients. As such, scripts in ~/.xmms2/startup.d/ are run. You can start your favorite clients using the startup.d folder, for example.
+
+This is the daemon finishing up its initialization routine. The last playlist and its position upon closing the daemon are loaded, and the output plugin is initialized. Here you can see the ALSA output has initialized properly. This is another valuable place to diagnose playback problems with XMMS2. Finally, IPC (Inter-Process Communication) is brought up and the daemon is ready to accept commands from clients. As such, scripts in ~/.xmms2/startup.d/ are run. You can start your favorite clients using the startup.d folder, for example.
 
 At this point, there is no more output from the daemon until either it is killed by a SIGTERM or a client connects. Let's say you had a playlist loaded and you pressed the play button on your favorite client:
+
  DEBUG: src/xmms/ipc.c:503: Client connect?!
  DEBUG: src/xmms/main.c:257: Client gxmms2 with protocol version 1 sent hello!
  INFO: Opening url 'file:///data/music/mp3/Danny+Howells/Danny+Howells+-+Live+at+Redlight+%283-8-2003%29.mp3'
@@ -33,6 +42,7 @@ At this point, there is no more output from the daemon until either it is killed
  INFO: Using plugin: File transport 0.2 DrAlban+WIP (git commit: 38db2c711ac53dcd71228191873e5d7e0b055d9f + local changes)
  DEBUG: src/plugins/file/file.c:109: xmms_file_init (0x80ce638, file:///data/music/mp3/Danny Howells/Danny Howells - Live at Redlight (3-8-2003).mp3)
  DEBUG: src/plugins/file/file.c:123: Opening /data/music/mp3/Danny Howells/Danny Howells - Live at Redlight (3-8-2003).mp3
+
 Pressing play may seem to react almost instantaneously, but there is actually a lot going on behind the scenes. First, the media library ID is used to look up the URL for the media. Then the url is passed to each transport plugin until one of the plugins matches this type of transport. Then the transport plugin is used to read part of the media and it's submitted to the magic checks that were set up in the initialization routine.
 
  DEBUG: src/xmms/decoder.c:741: performing magic check for mad
@@ -40,10 +50,12 @@ Pressing play may seem to react almost instantaneously, but there is actually a 
  DEBUG: src/xmms/magic.c:429: matching tree 'mpeg header'
  INFO: Using plugin: MAD decoder 0.2 DrAlban+WIP (git commit: 38db2c711ac53dcd71228191873e5d7e0b055d9f + local changes)
  INFO: Selected conversion from S16-2-44100 to S16-2-44100 of 1+112 formats
+
 We can see here that after trying to match the 'id3 header' and 'mpeg header' checks, the MAD decoder was selected and it begins preparing to decode. It's at this point that the decoder plugin determines all information about the file necessary for decoding. This includes the sample format, number of channels, and samplerate of the file. This is used to set up a converter for the output plugin (in this case, no conversion is necessary) and decoding begins.
 
  DEBUG: src/plugins/vol/vol.c:158: VOLUME Sample format set to Signed 16-bit
  DEBUG: src/plugins/vol/vol.c:159: VOLUME Clip level set at: 32767
+
 Then, the decoded information is passed through any effect plugins. In this case, my software volume control plugin is enabled and provides some debugging info. After all the enabled effects plugins have altered the output stream, it is passed to the output plugin.
 
  DEBUG: src/xmms/output.c:916: Starting playback!
@@ -55,6 +67,7 @@ Then, the decoded information is passed through any effect plugins. In this case
  DEBUG: src/xmms/transport.c:422: Let's start buffering
  DEBUG: src/plugins/mad/mad.c:150: Try seek 46853120 bytes
  DEBUG: src/xmms/transport.c:422: Let's start buffering
+
 Here, the output plugin starts requesting data from the decoder as needed, which in turn requests data from the transport plugin. The output plugin does any last-minute initialization needed to get the audio device ready, then the data is fed to the soundcard and the user smiles peacefully.
 
 That said, there is a lot going on here and thus, a lot that can go wrong. You should '''always''' use verbose output when you have a bug involving playback.
@@ -67,6 +80,9 @@ Finally, the xmms2d output on close looks like the following:
  INFO: Logging says bye bye :)
 
 Here I've used the CLI client to close the daemon. When closing, the daemon runs scripts in ~/.xmms2/shutdown.d/ in the same fashion as startup.d. These scripts are called before IPC is killed so you can gracefully close your clients or do any last-minute stuff to your playlist. Then everything is stopped (in this case, nothing was playing at the time so only ALSA was closed) and the log prints a final message to let you know it's shut down gracefully.
+
+== See Also ==
+* [[Design of XMMS2]]
 
 [[Category: Questions and answers]]
 [[Category: General]]
