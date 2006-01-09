@@ -81,6 +81,8 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 {{ClientSummary| name=XMMS2 Webterface| description=The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2.}}
 
+{{ClientSummary| name="TurboX2"| description=XMMS2 web interface with all the bling bling that comes with the evil buzzword "Web 2.0".}}
+
 = Other Clients =
 
 {{ClientSummary| name=xmms2_blue| description=The xmms2_blue client interfaces xmms2d to a Bluetooth enabled phone. It is still fairly experimental, but basic functionality should work.}}
