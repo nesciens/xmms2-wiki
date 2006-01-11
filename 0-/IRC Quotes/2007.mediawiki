@@ -1,21 +1,21 @@
 === 2005-01-10 - Of Holographic Storage and Pr0n ===
-[19:07] <puzzles> http://en.wikipedia.org/wiki/Holographic_Versatile_Disc
-[19:07] <deadchip> Nintendo's Gamecube cannot play DVDs but uses a modified DVD for its game media.
-[19:07] <deadchip> o_O
-[19:07] <deadchip> puzzles: www.inphase-technologies.com
-[19:08] <deadchip> HVD is bullshit, inphase has made this real already
-[19:09] <deadchip> oh well they have too many companies in there for HVD being bullshit
-[19:09] <puzzles> These disks have the capacity to hold up to 3.9 terabytes (TB) of information, which is approximately 160 times the capacity of single-layer Blu-ray Discs.
-[19:09] <deadchip> but InPhase has it already
-[19:09] <puzzles> i just wet myself
-[19:09] <deadchip> mhah
-[19:09] <deadchip> the InPhase media have 200TB storage capacity
-[19:09] <deadchip> o_O
-[19:09] <puzzles> yeah i've read about the inphase stuff
-[19:09] <puzzles> that's cool too
-[19:09] <deadchip> LOL "cool too"
-[19:09] <theefer> who needs that much storage anyway? pointless.
-[19:10] <deadchip> "He who has the least pr0n throw the first stone."
+ [19:07] <puzzles> http://en.wikipedia.org/wiki/Holographic_Versatile_Disc
+ [19:07] <deadchip> Nintendo's Gamecube cannot play DVDs but uses a modified DVD for its game media.
+ [19:07] <deadchip> o_O
+ [19:07] <deadchip> puzzles: www.inphase-technologies.com
+ [19:08] <deadchip> HVD is bullshit, inphase has made this real already
+ [19:09] <deadchip> oh well they have too many companies in there for HVD being bullshit
+ [19:09] <puzzles> These disks have the capacity to hold up to 3.9 terabytes (TB) of information, which is approximately 160 times the capacity of single-layer Blu-ray Discs.
+ [19:09] <deadchip> but InPhase has it already
+ [19:09] <puzzles> i just wet myself
+ [19:09] <deadchip> mhah
+ [19:09] <deadchip> the InPhase media have 200TB storage capacity
+ [19:09] <deadchip> o_O
+ [19:09] <puzzles> yeah i've read about the inphase stuff
+ [19:09] <puzzles> that's cool too
+ [19:09] <deadchip> LOL "cool too"
+ [19:09] <theefer> who needs that much storage anyway? pointless.
+ [19:10] <deadchip> "He who has the least pr0n throw the first stone."
 
 === 2005-12-27 - orphans knows murphy ===
  15:19 <orphans> that should (and by should i mean probably wont) work
