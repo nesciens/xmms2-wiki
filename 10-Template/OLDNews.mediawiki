@@ -1,3 +1,5 @@
+{{Newsitem|date=13 January 2006 (2006-01-13)| author=[[User:Anders Gustafsson]]| title=The tiger took my family| text=Friday 13:th is a good day for a release. [[Release:DrBombay|XMMS2 0.2 DrBombay]] was just released! It is a bugfix release for DrAlban, and fixes a few annoyances. Source is available for download from [http://sf.net/projects/xmms2 sourceforce]. Debian packages will be available in a few days as usual.}}
+
 {{Newsitem|date=18 December 2005 (2005-12-18) CET| author=[[Tobias RundstrÃ¶m]]| title=Hello XMMS2, tell me how you're doing!| text=Good news everyone! [[Release:DrAlban|XMMS2 0.2 DrAlban]] was just released! Long overdue and not really following our release often, release early scheme. To make up for this we have tons of features. Please visit the release page to get more information. Source is available at [http://sf.net/projects/xmms2 sourceforce] as usual. Debian packages will be available in a few days as usual.
 }}
 
