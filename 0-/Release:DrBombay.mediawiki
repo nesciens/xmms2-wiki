@@ -1,5 +1,3 @@
-''This will be the releasenotes for DrBombay''
-
 DrBombay is a bugfix release for [[Release:DrAlban]]. These releasenotes describes changes between DrAlban and DrBombay.
 
 It does not contain any new features, but a number of important bugfixes.
