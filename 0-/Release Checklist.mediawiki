@@ -5,6 +5,7 @@ This is a list of things that should probably be done or checked when doing a re
 * Version number set
 * Release snapshot ready & uploaded to sourceforge
 * Update freshmeat page
+* Send announcement to mailinglist
 * Update debian packages
 * wiki:
 ** news post [[Template:News]]
