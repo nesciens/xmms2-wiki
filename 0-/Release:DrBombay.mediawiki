@@ -8,6 +8,7 @@ It does not contain any new features, but a number of important bugfixes.
 * {{Bug|527}}: Fixed crash on playlist_insert on empty playlists.
 * {{Bug|541}}: "enabled" configvalue is now created when effect plugins are loaded, not when they are enabled for the first time. This removes lots of confusion when adding an effect.
 * {{Bug|545}}: Encode url correctly when added to medialib in other ways than via the playlist.
+* {{Bug|578}}: Fix buffersize calculation in resampler.
 
 == Notes to client authors ==
 * xmmsc_sqlite_prepare_string now takes '''const char *''' instead.
