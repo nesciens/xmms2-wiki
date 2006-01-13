@@ -1,0 +1,21 @@
+{{Navbar}}
+
+This topic has been discussed intermittently - from different aspects - on IRC, with no real resolution. This page is here to aggregate the related points so we can make some progress on the topic. Feel free to add to this page..
+
+== Client communication ==
+
+The XMMS2 IPC model is primarily client-server, however there are scenarios where it might be useful to have a more peer-to-peer approach, where clients talk to each other so that:
+
+# clients themselves stay small and only perform simple tasks (''Make each program do one thing well.'' [http://www.faqs.org/docs/artu/ch01s06.html])
+# there is little duplication of functionality as a client of a certain type may provide certain service(s) to other clients.
+
+== Capabilities ==
+
+We can perhaps identify specific capabilities or services provided by clients, so that:
+
+* in a peer-to-peer model, some clients (in the sense of ''xmms2d client'') can advertise and/or look for peer clients offering certain capabilities.
+** for example, cover-art viewer, playlist randomiser, etc
+* in the client-server model, the daemon could simply keep a register of what clients have been started and what service(s) they provide (what their capabilities are), so that new clients starting up can know whether to enable or disable certain functionality. (e.g. to avoid conflicts)
+** a probable problem in this model is how to coordinate the process so that the user doesn't end up with clients that virtually 'deadlock' on enabling/disabling certain features.
+
+[[Category:Developer ideas]]
