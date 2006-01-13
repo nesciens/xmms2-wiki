@@ -32,7 +32,7 @@ xmms2 is now included in the FreeBSD ports tree. It can be found in audio/xmms2.
 === NetBSD ===
 A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsrc is available at http://pkgsrc-wip.sourceforge.net/.
 
-=== Crux GNU/Linux ===
+=== CRUX ===
 Rugek has a port repository with Xmms2 here: http://rugek.btcl.de/dist/rugek.httpup
 
 === Arch Linux ===
