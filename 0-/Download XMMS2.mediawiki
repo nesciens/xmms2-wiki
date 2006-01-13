@@ -34,10 +34,6 @@ A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsr
 
 === Crux GNU/Linux ===
 Rugek has a port repository with Xmms2 here: http://rugek.btcl.de/dist/rugek.httpup
- /etc/ports/rugek.httpup: rugek's repo
-
-ROOT_DIR=/usr/ports/rugek
-URL=http://rugek.btcl.de/crux-ports/rugek
 
 === Arch Linux ===
 xmms2 snapshots and gxmms2 are avaiable through AUR
