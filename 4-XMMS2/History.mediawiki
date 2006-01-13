@@ -110,6 +110,11 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 ;21st:
 [http://planet.xmms.se Planet XMMS2] goes live.
 
+= 2006 =
+== January ==
+;13th:
+[[Release:DrBombay | DrBombay]] is released, fixing some annoying bugs in DrAlban.
+
 == Now ==
 We're all just chillin until we decide to get serious about DrBombay. Or something. :P
 
