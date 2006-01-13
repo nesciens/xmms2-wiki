@@ -18,4 +18,15 @@ We can perhaps identify specific capabilities or services provided by clients, s
 * in the client-server model, the daemon could simply keep a register of what clients have been started and what service(s) they provide (what their capabilities are), so that new clients starting up can know whether to enable or disable certain functionality. (e.g. to avoid conflicts)
 ** a probable problem in this model is how to coordinate the process so that the user doesn't end up with clients that virtually 'deadlock' on enabling/disabling certain features.
 
+== Comments ==
+
+I think this should made as simple as possible.
+
+We already have client configvalue, so we can configure other clients, that solves most problems.
+Also executing other commands solves a good deal of problems. In my_simle_client I might have a "view coverart" button and a "manage medialib" button. When user clicks those my_simple_client simply execute "xmms2-coverart-viewer" or "xmms2-medialib-manager". (update-alternatives rocks!).
+
+Do we need to solve any other problems?
+
+[[User:Anders Gustafsson|Anders Gustafsson]] 08:34, 13 Jan 2006 (CET)
+
 [[Category:Developer ideas]]
