@@ -4,8 +4,8 @@
 ''The not yet released ones are ofcourse up for discussion''
 
 * [[Release:DrAlban|DrAlban]] - Released 05-12-18
-* [[Release:DrBombay|DrBombay]] - Unreleased
-* DrCox
+* [[Release:DrBombay|DrBombay]] - Released 06-01-13
+* [[Release:DrCox|DrCox]] - Unreleased
 * DrDoolittle
 ...
 * DrFeelgood
