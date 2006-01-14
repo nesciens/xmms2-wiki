@@ -27,6 +27,10 @@ Also executing other commands solves a good deal of problems. In my_simle_client
 
 Do we need to solve any other problems?
 
-[[User:Anders Gustafsson|Anders Gustafsson]] 08:34, 13 Jan 2006 (CET)
+--[[User:Anders Gustafsson|Anders Gustafsson]] 08:34, 13 Jan 2006 (CET)
+
+I agree with Anders.  I really doubt client devs want to bother sharing internal components of their client using P2P mechanisms.  Sounds much more complicated than what anyone would ever want to do.  Let's keep it simple and use programs as modules instead.
+
+--[[User:Theefer|Theefer]] 01:22, 14 Jan 2006 (CET)
 
 [[Category:Developer ideas]]
