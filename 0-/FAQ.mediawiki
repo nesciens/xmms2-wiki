@@ -78,7 +78,7 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 * A2: Another possible cause is that your file has an uncommon mix of formats. If you notice that only certain files are missing, such as certain MP3s, this is likely the case. As of this writing, certain MP3s have a [http://bugs.xmms2.xmms.se/view.php?id=495 known bug] which causes them to fail detection. This type of file is pretty rare, however, so you can probably just hang tight and you won't miss these MP3s too much.
 
 === When I start xmms2d or xmms2-launcher I get ''ERROR: Couldn't initialize IPC socket'' or ''startup failed!'' ===
-* A: There are a few possible causes for this. Check that the user running xmms2d has read/write permission on /tmp. Check that there is no currently-running xmms2d process (''ps ax | grep xmms2d'' should do it). Finally, make sure the ipcsocket in your ~/.xmms2/xmms2.conf is read/writable if you've changed the default IPC socket.
+* A: There are a few possible causes for this. Check that the user running xmms2d has read/write permission on /tmp. Check that there is no currently-running xmms2d process (''ps ax | grep xmms2d'' should do it). Finally, make sure the ipcsocket in your ~/.xmms2/xmms2.conf is read/writable if you've changed the default IPC socket (unix:///tmp/xmms-ipc-<user>).
 
 === Help, I found a bug! ===
 A: So, you found a problem that couldn't be solved here. Please read the page on [http://wiki.xmms2.xmms.se/index.php/Reporting_bugs reporting bugs] then submit a bug report. If you want you can also use IRC or the mailing list to be more interactive with the developers. In either case, you should be sure to check your e-mail and changes on your bug report page regularly and submit any extra information required.
