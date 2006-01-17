@@ -1,7 +1,37 @@
 {{Navbar}}
 
-The clientlib compiles. As for the xmms2d, all but visualisation.c and main.c compiles. Work left is probably writing a main_win32.c because of the huge diffrences.
+Status:
+* xmmsclient working
+* xmmsclient-glib working
+* xmmsclient-python working
+* xmms2 cli working
+* xmms2d not working
 
-With a working clientlib it's possible to write a Windows client that connects to a xmms2d over tcp://ip:port. If you don't feel like compiling the clientlib yourself here's a [http://exodus.xmms.se/~nano/xmmsclient-win32.tar.gz precompiled version] 
+There are some minor compiling issues preventing xmms2d from compiling, however, main.c must be replaced with a windows specific version which does something good<tm>. An output plugin must also be written, there is a non-tested version somewhere in the [http://bugs.xmms2.xmms.se BTS] to start from, must at least be updated to the current API to get working.
+
+You can get a precompiled DrBombay+WiP of the working parts [http://exodus.xmms.se/~nano/test.zip here].
+
+
+ C:\xmms2\test>set XMMS_PATH=tcp://192.168.10.1:6666
+ 
+ C:\xmms2\test>xmms2.exe list
+ ->[0/2] Of Montreal - Disconnect the Dots (04:25)
+   [1/3] Of Montreal - Lysergic Bliss (04:04)
+   [2/4] Of Montreal - Will You Come and Fetch Me (01:59)
+   [3/5] Of Montreal - My British Tour Diary (02:19)
+   [4/6] Of Montreal - Rapture Rapes The Muses (03:03)
+   [5/7] Of Montreal - Eros' Entropic Tundra (03:13)
+   [6/8] Of Montreal - City Bird (02:20)
+   [7/9] Of Montreal - Erroneous Escape Into Eric Eckles (02:48)
+   [8/10] Of Montreal - Chrissie Kiss the Corpse (02:40)
+   [9/11] Of Montreal - Your Magic Is Working (03:43)
+   [10/12] Of Montreal - Climb the Ladder (03:26)
+   [11/13] Of Montreal - How Lester Lost His Wife (02:31)
+   [12/14] Of Montreal - Spike the Senses (03:11)
+   [13/15] Of Montreal - Vegan In Furs (03:53)
+ 
+ Total playtime: 0:43:41
+ 
+ C:\xmms2\test>
 
 [[Category:Platforms]]
