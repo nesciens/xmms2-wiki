@@ -1,16 +1,21 @@
 {{Navbar}}
 
 Status:
+
 * xmmsclient working
 * xmmsclient-glib working
 * xmmsclient-python working
 * xmms2 cli working
-* xmms2d not working
+* xmms2d semi-working
 
-There are some minor compiling issues preventing xmms2d from compiling, however, main.c must be replaced with a windows specific version which does something good<tm>. An output plugin must also be written, there is a non-tested version somewhere in the [http://bugs.xmms2.xmms.se BTS] to start from, must at least be updated to the current API to get working.
+
+The xmms2d server is compilable with some small nasty hacks. The current problem is that plugins needs symbols inside of xmms2d.exe which is not allowed on win32. This can be solved with a libxmms2.dll that the server and plugins call upon. This enables plugins to link correctly, however plugins are still not loaded. 
+
 
 You can get a precompiled DrBombay+WiP of the working parts [http://exodus.xmms.se/~nano/test.zip here].
 
+
+Output from the client connected to a server running on Linux:
 
  C:\xmms2\test>set XMMS_PATH=tcp://192.168.10.1:6666
  
