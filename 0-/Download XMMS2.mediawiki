@@ -22,7 +22,7 @@ The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have ye
 Add the following line to your ''/etc/apt/sources.list'' (same line as debian above):
  deb http://exodus.xmms.se/debian stable main
 
-Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (OGG).
+Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (Ogg Vorbis).
 
 == Ports ==
 
