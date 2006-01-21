@@ -33,4 +33,9 @@ I agree with Anders.  I really doubt client devs want to bother sharing internal
 
 --[[User:Theefer|Theefer]] 01:22, 14 Jan 2006 (CET)
 
+I think it would be a good idea if clients that do background type functions (randomizer, audioscrobbler, osd) registered an "enabled" config value. So that one could simply disable a client when it is being redundent or not needed. For example usually I want my music random, but sometimes I want to listen to a whole album, so I'd like to be able to disable the randomizer without having to kill it and then restart it when I'm done.
+
+--[[User:Alesbl|Alesbl]] 01:46, 21 Jan 2006 (CET)
+
+
 [[Category:Developer ideas]]
