@@ -47,7 +47,7 @@ Now you can connect to the xmms2 server from another machine in your private net
 to the config file ~/.xmms2/clients/cli.conf. Generally, XMMS2 clients use the value of the ''XMMS_PATH'' environment variable to find the daemon.
 
 = The clients =
-You can interact with the daemon using the 'xmms2' command-line client, which comes in the source tree, or [[XMMS2_Clients | XMMS2 Clients other clients]].
+You can interact with the daemon using the 'xmms2' command-line client, which comes in the source tree, or [[XMMS2_Clients | other clients]].
 
 == xmms2 client options ==
 
