@@ -1,0 +1,5 @@
+It would be really nice (imho) if playlists could contain playlists.
+So you could e.g. create a playlist for an artist and sub-playlists for each album of this artist.
+Then you could choose to play all songs of this artist or just one specific album.
+
+Does this make sense? I think it would be a nice feature...
