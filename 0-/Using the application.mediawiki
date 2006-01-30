@@ -7,7 +7,6 @@ Please also view the manual pages - if you have the XMMS2 source they're in doc/
 xmms2d can be started by typing 'xmms2d' after installing the application. (To daemonise the process, use ''xmms2-launcher'' instead of ''xmms2d'') You can then interact with the daemon using one of many [[#The clients | clients]]
 
  xmms2d
- xmms2 add some.nice.music.ogg
  xmms2 play
 
 Tada, music!
