@@ -66,5 +66,9 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 * [http://mem.neverendnight.com/headphones.png MEM's grey headphones]
 * [[:Image:Xmms2 logo.png | Tobias Lamers' proposal]] (god at heavensdoor.net)
 * qster's suggestion: How about a [http://qster.com/images/XMMS2_Shark.png mascot]?
+* [http://jiobel.jogger.pl jiobel] ''jiobel.c /at/ gmail.com''
+** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_1.png 1.]
+** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_2.png 2.]
+** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_3.png 3.]
 
 [[Category: General]]
