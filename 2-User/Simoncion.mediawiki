@@ -1,3 +1,5 @@
 [http://simoncion.livejournal.com homepage]
-[http://unix.eng.ua.edu/~simoncion/pix/uglykittenone_lg.jpg]
+
+[[Image:"http://unix.eng.ua.edu/~simoncion/pix/uglykittenone_lg.jpg"]]
+
 This is me. Have a nice day.
