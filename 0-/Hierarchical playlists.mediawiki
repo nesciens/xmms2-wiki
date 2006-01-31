@@ -14,3 +14,9 @@ m2.id = m1.id left join Media m3 on m3.id = m1.id and m3.key='album' left join M
 To get the user experience of your idea would just require a client that generated a tree view of all artists, and then within each aritst was an entry for each album. 
 
 --[[User:Alesbl|Alesbl]] 10:05, 31 Jan 2006 (CET)
+
+----
+
+Maybe [[Collections]] is what you really want?
+
+-- [[User:Anders Gustafsson|Anders Gustafsson]] 10:08, 31 Jan 2006 (CET)
