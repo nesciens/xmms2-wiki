@@ -3,3 +3,14 @@ So you could e.g. create a playlist for an artist and sub-playlists for each alb
 Then you could choose to play all songs of this artist or just one specific album.
 
 Does this make sense? I think it would be a nice feature...
+
+----
+
+Is this entirely necessary? This is why we have the media library. 
+
+This query would select all songs by an artist: select distinct m1.id from Media m1 join Media m2 on 
+m2.id = m1.id left join Media m3 on m3.id = m1.id and m3.key='album' left join Media m4 on m4.id = m1.id and m4.key='tracknr' where m1.key='artist' and m1.value='<artist>' and m2.key='title' order by m3.value, m4.value;
+
+To get the user experience of your idea would just require a client that generated a tree view of all artists, and then within each aritst was an entry for each album. 
+
+--[[User:Alesbl|Alesbl]] 10:05, 31 Jan 2006 (CET)
