@@ -20,3 +20,14 @@ To get the user experience of your idea would just require a client that generat
 Maybe [[Collections]] is what you really want?
 
 -- [[User:Anders Gustafsson|Anders Gustafsson]] 10:08, 31 Jan 2006 (CET)
+
+----
+
+The artist-album example was just an example. Surely it would be possible to implement that behaviour with a medialib query, but other scenarios could include "songs with a distinct mood" parent of "album that I like". 
+
+That is somehow similar to Collections I suppose. But collections seem to be harder to manage for an average user.
+In the end it is probably an issue of the user interface.
+
+From a commandline point of view (original xmms2 client) the hierarchical playlists seem to me to be easier to handle.
+
+--[[User:MITService|MITService]] 09:54, 1 Feb 2006 (CET)
