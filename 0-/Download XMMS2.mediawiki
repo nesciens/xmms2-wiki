@@ -47,7 +47,7 @@ There's another set of ebuilds available at: http://stuge.se/gentoo/
 
 These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. The 0.2 DrAlban ebuild also has a new local "phonehome" USE flag that has to be set in order to enable the xmms2-et client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
 
-There are plans to add xmms2 to Gentoo in the near future. You can track the progress at [http://bugs.gentoo.org/show_bug.cgi?id=93583]
+There are plans to add xmms2 to Gentoo in the near future. You can track the progress at [http://bugs.gentoo.org/show_bug.cgi?id=93583 here]
 
 [[Category:General]]
 [[Category:Users]]
