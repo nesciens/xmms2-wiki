@@ -17,8 +17,6 @@ Clients that can be used from a command line, console or terminal.
 
 {{ClientSummary| name=xmms2curses| description=x2c is a client written in C using curses (not specifically ncurses, all code is tested with NetBSD's curses and ncurses).}}
 
-{{ClientSummary| name=ixmms2| description=An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged.}}
-
 {{ClientSummary| name=nyello| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]). It will offer advanced features such as powerful medialib query patterns, collections and clever random playback.}}
 
 = Graphical clients =
@@ -88,8 +86,6 @@ Clients that provide web interfaces, or provide web services based on data from 
 {{ClientSummary| name=xmms2_blue| description=The xmms2_blue client interfaces xmms2d to a Bluetooth enabled phone. It is still fairly experimental, but basic functionality should work.}}
 
 {{ClientSummary| name=xmms2Plugin| description=xmms2Plugin is a module for the [http://www.irssi.org irssi] irc client to be used to control playback and query information like playlist or the currently played song.}}
-
-{{ClientSummary| name=ixmms2| description=An irssi client which now supports basic control functions as well as displaying currently playing song see the script for details, it assumes all your music is properly tagged.}}
 
 {{ClientSummary| name=lxmms2| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
 
