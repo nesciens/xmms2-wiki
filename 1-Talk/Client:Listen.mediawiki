@@ -20,3 +20,9 @@ james<at>humphreys<dot>be:
 I got in contact with the developer and development of Listen for XMMS2 has been discontinued, and I believe it is being switched to Gstreamer (with its own media backend).  First release might be January or February. Apparently, there are features available in Gstreamer which aren't available in XMMS2 yet (daap, ipod, musicbrainz).
 
 Shame, I really liked it.
+
+Add to your sources.list (DEBIAN) to download it...
+deb http://theli.free.fr/_breezy /
+
+after: 
+sudo apt-get install listen
