@@ -21,7 +21,10 @@ I got in contact with the developer and development of Listen for XMMS2 has been
 
 Shame, I really liked it.
 
-Add to your sources.list (DEBIAN) to download it...
+-------------------------------------------------
+
+Add to your sources.list (DEBIAN) to download it:
+
 deb http://theli.free.fr/_breezy /
 
 after: 
