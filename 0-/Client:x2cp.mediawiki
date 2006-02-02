@@ -1,0 +1,15 @@
+==={{{x2cp}}}===
+by ''{{{Jonathan Sharyari}}}''
+
+'''Homepage''': {{{x2cp.sourceforge.net}}}<br />
+'''Latest version''': {{{0.01}}}<br />
+'''Development language''': {{{C++}}}<br />
+'''User Interface''': {{{ncurses}}}<br />
+'''Screenshots''': {{{http://x2cp.sourceforge.net/images/x2cp001-1.png}}}<br />
+[[Talk:Client:{{{name}}} | Discuss]]
+
+{{{X2CP is a ncurses client, which can show the songs in you playlist and supports basic navigation. It does not yet support adding files to it without an external program. The colors are configurable and it accepts a few parameters if you want hotkeys.}}}
+
+[[XMMS2 Clients | More xmms2 clients]]
+
+[[Category:Clients]]
