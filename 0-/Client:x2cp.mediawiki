@@ -1,0 +1,15 @@
+==={{{name}}}===
+by ''{{{author}}}''
+
+'''Homepage''': {{{website}}}<br />
+'''Latest version''': {{{version}}}<br />
+'''Development language''': {{{devlanguage}}}<br />
+'''User Interface''': {{{ui}}}<br />
+'''Screenshots''': {{{screenshots}}}<br />
+[[Talk:Client:{{{name}}} | Discuss]]
+
+{{{description}}}
+
+[[XMMS2 Clients | More xmms2 clients]]
+
+[[Category:Clients]]
