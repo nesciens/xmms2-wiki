@@ -12,8 +12,9 @@ This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms
 * The log filename format has changed, as well as the whole process of logging messages from the daemon - revise pages mentioning log filenames and those with sections about data in the log files in general.
 ** Pages mentioning log filenames: [[Reporting bugs]]
 ** Pages with sections about data in log files: ''None?''
-* [[Using the application]] does not mention ''xmms2-launcher'' at all.
+* [[Using the application]] could probably explain a bit more about how to use ''xmms2-launcher''
 * [[Support for clients to write to the medialib]] needs to be reviewed
 * [[Generic properties policy]] should really be expanded.
+* Keep [[Client:x2cp]] around until Sharyari clarifies what he's doing
 
 (''add more todo items to this list')
