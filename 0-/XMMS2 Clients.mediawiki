@@ -19,6 +19,8 @@ Clients that can be used from a command line, console or terminal.
 
 {{ClientSummary| name=nyello| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]). It will offer advanced features such as powerful medialib query patterns, collections and clever random playback.}}
 
+{{ClientSummary| name=x2cp| description=nyello is another ncurses client, basic playlist navigation, colors and bugs.}}
+
 = Graphical clients =
 Clients that require X Windows or other graphical windowing systems.
 
