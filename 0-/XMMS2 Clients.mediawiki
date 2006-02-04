@@ -22,6 +22,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Euphoria| description=Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development.}}
 
+{{ClientSummary| name=Eloquence| description=A module for the Enlightenment DR17 desktop enviroment that shows the songname on the desktop and also give some options for simple commands (play, pause, next, prev, shuffle).}}
+
 == GTK ==
 
 {{ClientSummary| name=gkrellxmms2| description=gkrellxmms2 is a plugin for GKrellM2 to control the XMMS2 audio player. It has buttons for play/pause, next /previous track and stop. It also shows the current artist and track name and the current position in the track.}}
