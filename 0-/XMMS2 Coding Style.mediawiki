@@ -47,6 +47,9 @@ NOT:
 == Centralised exiting of functions ==
 * Functions should generally have a single exit (return) point.
 
+== Trailing whitespace ==
+* Avoid trailing whitespace.
+
 == Commenting and Documentation ==
 * Comments should explain '''what''' the code is doing, not '''how'''. The ''how'' should be more or less obvious from the way the code is written.
 * Generally try to avoid putting comments in a function body - put comments at the head of the function instead (explaining what the function does)
