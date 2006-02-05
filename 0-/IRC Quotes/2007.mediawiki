@@ -1,3 +1,16 @@
+=== 2006-02-05 - Sure I can help ===
+ 15:42 <univac> puzzles: ruby has 'sys.byteorder' - from python?
+ 15:44 <tilman> are you the hero of stupid questions?
+ 15:44 <tilman> a) puzzles doesn't know jack shit about python
+ 15:44 <tilman> b) wtf?
+ 15:44 <tilman> c) olol
+ 15:44 <univac> :|
+ 15:44 <tilman> d) #ruby-lang :)
+ 15:46 <eleusis> heh
+ 15:46 <tilman> oh
+ 15:46 <tilman> and for a helpful answer:
+ 15:46 <tilman> e) ri Array#pack resp ri String#unpack
+
 === 2006-01-10 - Of Holographic Storage and Pr0n ===
  [19:07] <puzzles> http://en.wikipedia.org/wiki/Holographic_Versatile_Disc
  [19:07] <deadchip> Nintendo's Gamecube cannot play DVDs but uses a modified DVD for its game media.
