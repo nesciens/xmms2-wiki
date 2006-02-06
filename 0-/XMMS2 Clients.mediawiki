@@ -62,6 +62,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=X4X| description=A client written in java using SWT/Xwidgets for the gui. Once done it should get a kick off client to be used on every OS supporting java and the xmmsclientlib.}}
 
+{{ClientSummary| name=EkoXMMS2| description=EkoXMMS2 is a simple XMMS2 client plugin written for X-Chat.}}
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
