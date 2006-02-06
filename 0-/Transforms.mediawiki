@@ -1,0 +1,44 @@
+==Overview==
+A.K.A. "xforms", "transformations" or "decoder/transport API unification". Transforms are a unification of the transport, decoder, and effect plugin API's. Current plugins will cease to exist and be replaced by cleaner, simpler xforms. To eliminate confusion, the merging of the transport and decoder plugins is at an API level only. They will still be separated.
+
+A transform is something that takes some kind of data and outputs another kind of data. For example:
+* mad - reads "audio/mpeg" and outputs "audio/pcm-data"
+* file - reads "application/x-url" and outputs "application/octet-stream"
+* eq - reads "audio/pcm-data" and outputs "audio/pcm-data"
+The last example shows that you can even output the same data type, as is the case with effects.
+
+==How They Work==
+Each transform plugin has a ''stream type'' to define what data it accepts. And an xform (as in the xform object in the API) defines another ''stream type'', which describes the type of data it outputs. This makes the instantiation of the chain of transforms look something along the lines:
+ goaltype = output->supported_types; /* "audio/pcm-data" */
+ xform = xmms_xform_new (NULL);
+ xmms_xform_set_output_type (xform,
+                             "mime", "application/x-url",
+                             "url", url);
+ while (xmms_streamtype_match(xform->out_type, goaltypes)) {
+     plugin = xmms_xform_plugin_find (xform->out_type);
+     xform = xmms_xform_new (plugin);
+ }
+
+The xform API aims to be as simple as possible; each transform plugin only has a few methods; ''init'', ''destroy'', ''read'' and ''seek''. The read method is modelled after the read(2) syscall, and should read a number of bytes into a supplied buffer. The read method might call "xmms_xform_read" to read data from the previous xform in the chain.
+
+==Potential Uses==
+Magic code can also be used in a transform. Transforms with magic take "application/octet-stream" as input and output the data type it detects. This sounds like it will introduce a bit of overhead at first, but keep in mind that there is no buffering involved, all magic resolving is set within the init function, and the read method of the magic transform is simply:
+ static gint
+ xmms_magic_plugin_read (xmms_xform_t *xf, void *b, gint len,
+ xmms_error_t *err)
+ {
+ 	return xmms_xform_read (xf, b, len, err);
+ }
+
+This makes everything very unbuffered, which isn't really nice in all cases. However, buffers can be implemented as transform plugins and added to the chain as well! A buffer transform simply outputs the same type as it inputs, but implements a buffer in another thread. Such a plugin will probably be inserted at the end of the chain. But there are also practical cases where a buffer could be used elsewhere along the chain. Here are some examples illustrating both cases:
+* file -> magic -> ogg -> vorbis -> buffer
+* curl -> icy-meta -> buffer -> magic -> ogg -> vorbis -> buffer
+
+Currently the audio format converter is a transform, as well.
+
+A future addition might be some kind of smart buffer that does some kind of measurement on the read rates and tries to decide if it should do buffering at all. But that is something that can be done at a (much) later stage.
+
+==Implementation Status==
+===2006/02/06===
+This is how it works in Anders' local tree right now, so things might still change. Basic playback is working, but the code needs some cleanup before it can be comitted, and features such as seeking and mediainfo are not yet implemented. The plugins will probably look like this:
+http://exodus.xmms.se/~andersg/mad.c.txt http://exodus.xmms.se/~andersg/file.c.txt
