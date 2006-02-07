@@ -21,6 +21,8 @@ Each transform plugin has a ''stream type'' to define what data it accepts. And 
 
 The xform API aims to be as simple as possible; each transform plugin only has a few methods; ''init'', ''destroy'', ''read'' and ''seek''. The read method is modelled after the read(2) syscall, and should read a number of bytes into a supplied buffer. The read method might call "xmms_xform_read" to read data from the previous xform in the chain.
 
+==A Step-By-Step Example==
+
 ==Potential Uses==
 The magic file type detection is also implemented as a xform. The magic xform takes "application/octet-stream" as input and outputs the data type it detects. This sounds like it will introduce a bit of overhead at first, but keep in mind that there is no buffering involved, all magic resolving is set within the init function, and the read method of the magic transform is simply:
  static gint
