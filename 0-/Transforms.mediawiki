@@ -22,17 +22,19 @@ Each transform plugin has a ''stream type'' to define what data it accepts. And 
 The xform API aims to be as simple as possible; each transform plugin only has a few methods; ''init'', ''destroy'', ''read'' and ''seek''. The read method is modelled after the read(2) syscall, and should read a number of bytes into a supplied buffer. The read method might call "xmms_xform_read" to read data from the previous xform in the chain.
 
 ==A Step-By-Step Example==
-Say you wish to play file "foo.ogg" with XMMS2, here's how the transform chain is built.
+Say you wish to play file "file:///media/foo.ogg" with XMMS2, here's how the transform chain is built:
 
-# A fake xform is built, which outputs a stream (which EOF's directly, no one ever reads from it) with type {'mime': 'application/x-url', 'url': 'foo.ogg'}
-# The list of xform plugins is traversed for a plugin that can handle that type. (The file plugin will be selected.)
-# The file plugin says that it can output data of type: {'mime': 'application/octet-stream'}
-# The list of xform plugins is traversed again for a plugin that can handle that type. (The magic plugin will be selected.)
-# The initializer method of the magic xform does magic file detection and finds out that it is mimetype 'audio/oggvorbis'.
+# A fake xform is built, which outputs a stream (which EOF's directly, no one ever reads from it) with type {'mime': 'application/x-url', 'url': 'file://media/foo.ogg'}
+# The list of xform plugins is traversed for a plugin that can handle that type. (The file plugin will be selected as it has the input stream type constraint: {'mime': 'application/x-url', 'url': 'file://*'})
+# A file xform is initialized from the plugin and the init-method is called. The init method tells that it can output data of type: {'mime': 'application/octet-stream'}
+# The list of xform plugins is traversed again for a plugin that can handle that type. (The magic plugin will be selected as it has the input stream type constraint: {'mime': 'application/octet-stream'})
+# The init-method of the magic xform does magic file detection and finds out that it is mimetype 'audio/oggvorbis' so the stream type will be {'mime': 'audio/oggvorbis'}
 # The list of xform plugins is traversed again for a plugin that can handle that type. (The vorbis plugin will be selected.)
 # The vorbis plugin's initialization results in a new stream type {'mime': 'audio/pcm-data', 'fmt': 'S16', 'rate': 44100, 'channels': 2}
 # We notice that this format is in our goal_list, i.e. a format that the output supports. We are finished creating a transform chain!
-# If, however, the format is not in the goal_list, the format converter transform is invoked (as it matches the type {'mime': 'audio/pcm-data'}) and the converter will convert the audio format to one in the goal_list.
+# If, however, the format is not in the goal_list, the list of xform plugins will be traversed again for a plugin that can handle that type and the converter plugin will be found (its input type constraint is {'mime': 'audio/pcm-data'}). The converter will convert the audio format to one in the goal_list.
+
+The finished chain of xforms will be used by the output to get the audiodata out:
 # The output will read from the last plugin in the chain (i.e. vorbis) and will call its read method to get more data.
 # That read method might want to read more data from its underlying xform, and calls xform_read.
 # That will invoke the read method on the magic plugin which just calls xform_read again, which invokes the read method on the file xform plugin.
