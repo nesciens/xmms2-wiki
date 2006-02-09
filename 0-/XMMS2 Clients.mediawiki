@@ -94,8 +94,6 @@ These clients have been discontinued, abandoned, or are otherwise not maintained
 
 {{ClientSummary| name=perlamp| description=Perlamp should be a front-end that allows it to open Wxxamp modern skins. The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.}}
 
-{{ClientSummary| name=Listen| description=A pyGTK client for XMMS2.}}
-
 {{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
 
 {{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed by [[Banlu Kemiyatorn]].}}
