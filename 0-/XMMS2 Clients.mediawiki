@@ -38,19 +38,14 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Azrael| description=A client written in C.}}
 
-{{ClientSummary| name=Listen| description=A pyGTK client for XMMS2.}}
 
 == Qt ==
-
-{{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
 
 == Others ==
 
 {{ClientSummary| name=Chalyx| description=Chalyx (previously known as HaX) is a flexible and modular Python client for XMMS2.}}
-
-{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed by [[Banlu Kemiyatorn]].}}
 
 {{ClientSummary| name=xmms2-osd| description=This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped.}}
 
@@ -69,7 +64,6 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 {{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
 
-{{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
 
 {{ClientSummary| name=XMMS2-Scrobbler| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
 
@@ -99,6 +93,14 @@ These clients have been discontinued, abandoned, or are otherwise not maintained
 {{ClientSummary| name=xmms2play| description=xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalist design. It does not include a playlist, instead intending for external applications such as [[Client:medialib-ui | medialib-ui]] to be used for that purpose.}}
 
 {{ClientSummary| name=perlamp| description=Perlamp should be a front-end that allows it to open Wxxamp modern skins. The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.}}
+
+{{ClientSummary| name=Listen| description=A pyGTK client for XMMS2.}}
+
+{{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
+
+{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed by [[Banlu Kemiyatorn]].}}
+
+{{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
 
 [[Category: General]]
 [[Category: Users]]
