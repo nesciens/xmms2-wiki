@@ -16,6 +16,8 @@ This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms
 * [[Support for clients to write to the medialib]] needs to be reviewed
 * [[Generic properties policy]] should really be expanded.
 * [[Developer Corner#Ideas | Developer ideas]] needs to be restructured to show the status of such ideas - proposals, (in discussion?), work in progress, implemented/completed.
+** Possibly hook this into "if you want to propose a feature for xmms2" or something
+** Possibly modify [[XMMS2 Development Process]] -> add developer idea, discussion, file bug (more formal) -> ??? -> implement -> close bug
 * Mention http://test.xmms.se somewhere
 ** maybe [[Testing]]
 
