@@ -38,6 +38,7 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=Azrael| description=A client written in C.}}
 
+{{ClientSummary| name=snett| description=snett is a strange-quark clone written in Ruby. It allows playback control and limited access to playlists stored in the medialib.}}
 
 == Qt ==
 
