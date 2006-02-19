@@ -1,0 +1,1 @@
+{{Client |name=snett| author=[[Tilman Sauerbeck]]| website=http://code-monkey.de/pages/snett| version=0.0.1| devlanguage=Ruby| ui=GTK2| screenshots=[http://code-monkey.de/pages/snett]| description=A strange-quark clone written in Ruby - it's a funky icon with a context menu that features playback control and limited access to playlists stored in the medialib.}}
