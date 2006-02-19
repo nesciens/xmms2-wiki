@@ -1,0 +1,15 @@
+The new playlist will be able to have different backends. And all playlist is handled the same way. It should follow the current API quite closely with some modifications.
+
+# All playlist calls should have a "identifier" argument ( playlist_new (identifier), playlist_clear (identifier), playlist_add (identifier) )
+# Signals should be emitted with the identifer argument
+# a new call that switchs current playlist to identifer should be implemented (playlist_switch (identifer))
+
+The primary storage backend for playlists should probably be a sqlite db. (not using the current medialib.db, but playlists.db because of locking issues).
+
+
+Rough todo list:
+* Make playlist module able to switch backend
+* add identifer to each call
+* make a sqlite backend
+* remove current playlists implementation in medialib.c
+* add other backends?
