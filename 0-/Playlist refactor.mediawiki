@@ -13,3 +13,12 @@ Rough todo list:
 * make a sqlite backend
 * remove current playlists implementation in medialib.c
 * add other backends?
+
+
+Backends:
+
+backends should be able to only overrule certain calls to playlist module. like xmms_playlist_advance for example.
+possible api:
+
+ b = xmms_playlist_backend_register ("backend name");
+ xmms_playlist_backend_add_method (XMMS_PLAYLIST_BACKEND_ADVANCE, my_advance);
