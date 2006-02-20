@@ -4,3 +4,7 @@ Is there going to be a medialib refactor in a similar fashion? It would be great
 no -- tobias
 
 super --puzzles
+
+A longer answer: No, because making the SQL backend switchable will result in a lot of problems for the client authors, since we allow direct access to the DB via SQL queries. Imagine the end-user horror. "OMGWTFBBQ gxmms2 doesn't work with my db, it gives me 1000 sqlerrors KTHXPLZ" or "OMGFFSWTFKORV when I run this special client made by a client author that want a oracle backend it doesn't work with sqlite!!!! PLZFIX! KTHXPLZ!"
+
+-- tobias
