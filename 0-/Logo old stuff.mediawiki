@@ -70,5 +70,10 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos.png 1.]
 ** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_2.png 2.]
 ** [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_3.png 3.]
-
+* MarMor's proposals
+** 3 color variant: [[Media:G12541-large.png | hi res version]], [[Media:G12541-small.png | low res version]], [[Media:G12625-small.png | simplified low res version]]
+*** [[Media:G11436.png | wide variant]]
+**** 2 wide "love" variants: [[Media:G9643.png | variant 1]], [[Media:G9643a.png | variant 2]]
+** 2 color variant: [[Media:G12447-large.png | hi res version]], [[Media:G12447-small.png | low res version]]
+*** older variant, 2 colors: [[Media:G875-large.png | hi res version]], [[Media:G875-small.png | low res version]]
 [[Category: General]]
