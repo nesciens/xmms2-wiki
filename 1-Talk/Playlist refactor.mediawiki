@@ -1,4 +1,6 @@
-Is there going to be a medialib refactor in a similar fashion? It would be great to allow different medialib backends in the same way. Postgresql for all the people that want to omfg-optimize their medialib processes, and possibly different sqlite table types for people who want really lightweight medialibs (i.e. me ;)
+Is there going to be a medialib refactor in a similar fashion? It would be great to allow different medialib backends in the same way. Postgresql for all the people that want to omfg-optimize their medialib processes, and possibly different sqlite table types for people who want really lightweight medialibs (i.e. me ;) --dan
 
 
 no -- tobias
+
+super --puzzles
