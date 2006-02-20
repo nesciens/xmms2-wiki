@@ -10,3 +10,17 @@ A longer answer: No, because making the SQL backend switchable will result in a 
 -- tobias
 
 that is understandable --puzz
+
+== Back-end configuration? ==
+
+In my opinion, all playlists should always be stored in the database, even when dynamically generated.  Otherwise, you would have playlists that do not resume with the same content when you restart the server, which is not very intuitive.
+
+The system tru described sounds sane to me, basically a system of server-side hooks which would manage the behaviour of the playlist. Originally I thought of doing something similar client-side but clearly, it's cleaner if it can be done on the server so we avoid clients competing to run their own hooks.
+
+The back-end system would allow iTunes-like smart playlists, by feeding the playlist with entries randomly queried from the medialib, or possibly from other playlists.
+
+However, one point remains blurry for me.  Obviously, the clients will want to customize advanced backends (e.g. choose the number of songs in history, or the query to find entries to enqueue).  Such a mechanism could be rather easy for simple config values (number of songs as integer), using playlist_backend_config_{set/get} functions for instance.  But how about the "query to find entries to enqueue"? Either it would be an abstract structure (adds complexity, needs to be defined), or simply a query string.  In the latter case, clients would have to do two transformations: Filter-UI -> query *and* query -> Filter-UI.  Sucks.
+
+Any ideas on this?
+
+--[[User:Theefer|Theefer]] 19:59, 20 Feb 2006 (CET)
