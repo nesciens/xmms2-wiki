@@ -1,6 +1,6 @@
 == Release Notes ==
 
-Good news everyone. New release.
+Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox.
 
 === Upgrading ===
 
@@ -29,6 +29,10 @@ During the testing period a lot of problems was found and correct with the Media
 
 * {{Bug|607}} -  Add support for DragonFlyBSD
 * {{Bug|619}} -  HP-UX portability.
+
+=== Notes to client authors ===
+
+No big changes for the API in this release. Some additions was made. Namely the mixer API and {{Bug|600}} that gives you the ability to display the progress of the mediainfo reader in your client.
 
 === Full ChangeLog ===
 
