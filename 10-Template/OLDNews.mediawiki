@@ -1,3 +1,12 @@
+{{Newsitem|date=21 Febrary 2006 CLST (2006-02-21)| author=[[Tobias RundstrÃ¶m]]| title=So how's that coma going for ya there?| text=Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox. The XMMS2 community is still growing with new users and contributors, just like any opensource project your involvment is necessary to bring the project forward. Please join us on IRC or our Maillist to participate.
+
+Source is available for download from [http://sf.net/projects/xmms2 sourceforge].
+
+A heartwarm thanks goes out to all contributors, hang-arounds and fans.
+
+Next release is [[Release:DrDoolittle|DrDoolittle]] which (despite the name) probably going to include some big changes.}}
+
+
 {{Newsitem|date=13 January 2006 (2006-01-13)| author=[[User:Anders Gustafsson]]| title=The tiger took my family| text=Friday 13th is a good day for a release. [[Release:DrBombay|XMMS2 0.2 DrBombay]] has just been released! It is a bugfix release for [[Release:DrAlban|DrAlban]], and fixes a few annoyances. Source is available for download from [http://sf.net/projects/xmms2 sourceforge]. Debian packages will be available in a few days as usual.}}
 
 {{Newsitem|date=18 December 2005 (2005-12-18) CET| author=[[Tobias RundstrÃ¶m]]| title=Hello XMMS2, tell me how you're doing!| text=Good news everyone! [[Release:DrAlban|XMMS2 0.2 DrAlban]] was just released! Long overdue and not really following our release often, release early scheme. To make up for this we have tons of features. Please visit the release page to get more information. Source is available at [http://sf.net/projects/xmms2 sourceforce] as usual. Debian packages will be available in a few days as usual.
