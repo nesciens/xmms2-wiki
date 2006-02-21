@@ -1,0 +1,58 @@
+Alexander Botero-Lowry
+;{{Bug|598}} -  Remove old code blocks.
+;{{Bug|437}} -  Update documentation for xmms2d.
+Anders Gustafsson
+;{{Bug|121}} -  Fix race when writing message to clients.
+;{{Bug|587}} -  Fix rounding error in resampler.
+;{{Bug|595}} -  Make xmms_medialib_entry_new* propagate errors.
+;{{Bug|613}} -  Make it work on SQLite 3.3.3
+;{{Bug|607}} -  Add support for DragonFlyBSD (from Robert Sebastian Gerus)
+;{{Bug|620}} -  Set default output with scons magic instead.
+;{{Bug|619}} -  Allow platforms with "-" in name.
+;{{Bug|619}} -  HP-UX portability.
+;{{Bug|623}} -  Don't start medialib sessions recursivly in xmms_medialib_select_and_add
+;{{Bug|624}} -  Set create correctly in xmms_sqlite_open
+;{{Bug|625}} -  Use ifnull(max(id),0) in prepare_playlist to avoid error with no playlists
+;{{Bug|626}} -  Make xmms_sqlite_query_table report errors via xmms_error_t
+;{{Bug|627}} -  Only report errors with xmms_log_error, use xmms_log_info for info
+;{{Bug|633}} -  Add medialib_begin debugging.
+;{{Bug|629}} -  Store url in transport to make life easier for playlistplugins.
+;{{Bug|634}} -  Make et report number of playlist loads and medialib resolves.
+Bernhard Leiner
+;{{Bug|136}} -  Update sun output plugin.
+Chris Morgan
+;{{Bug|576}} -  Fixes so that xmms2d doesn't abort when jackserver isn't reachable
+Daniel Chokola
+;{{Bug|323}} -  Report FLAC bitrate from header.
+Daniel Svensson
+;{{Bug|611}} -  XMMS2 cli client split to many files
+;{{Bug|610}} -  make query param to xmmsc_medialib_add_to_playlist const
+;{{Bug|577}} -  Teach APEv2 tag parser to parse more tags.
+;{{Bug|612}} -  Extract year from APEv2 tags.
+;{{Bug|618}} -  in xmms2 list only increase total_playtime with valid values.
+;{{Bug|382}} -  Don't mix async/sync in xmms2 cli status
+Juho VÃ¤hÃ¤-Herttua
+;{{Bug|608}} -  Fix faad plugin to handle MusicBrainz tags.
+Sebastian Cevey
+;{{Bug|606}} -  Add relative seeking to clientlib.
+Sebastien Cevey
+;{{Bug|615}} -  xmmsc_init now takes a const char* instead of a char*.
+Tilman Sauerbeck
+;{{Bug|601}} -  Rename the "configlist" command to "config_list" for consistency.
+;{{Bug|602}} - Mark the 'autosaved' playlist as an internal one.
+;{{Bug|603}} -  Make xmms_medialib_entry_to_list() fail if 'entry' is zero.
+;{{Bug|549}} - Ruby documentation update from Dan Chokola with some tweaks and additions by myself.
+;{{Bug|599}} - C89 cleanup patch from Alexander Botero-Lowry.
+;{{Bug|604}} - Add volume control to the CLI. Patch by Dan Chokola.
+;{{Bug|600}} - Ruby bindings for the new mediainfo reader calls.
+Tobias Rundstrom
+;{{Bug|579}} -  Add topsongs command to CLI client.
+;{{Bug|580}} -  Let callback based plugins propagate error from the status_method.
+;{{Bug|590}} -  Check medialib id before adding it to playlist.
+;{{Bug|600}} -  Added a status broadcast and a counter for the mediainfo reader.
+;{{Bug|600}} -  Add pythonbindings for the mediainfo reader status.
+;{{Bug|29}} -  Wrap the new volume API for Python.
+;{{Bug|605}} -  Let callback based plugins propagate errors.
+;{{Bug|29}} -  Fixed volume api in coreaudio plugin.
+;{{Bug|622}} -  Add transaction support to medialib.
+;{{Bug|627}} -  Report errors with xmms_log_error in wave plugin.
