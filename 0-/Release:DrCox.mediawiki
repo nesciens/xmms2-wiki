@@ -1,3 +1,12 @@
+== Release Notes ==
+
+Good news everyone. It exactly 
+
+=== Noteworthy changes ===
+
+=== Full ChangeLog ===
+
+
 '''Alexander Botero-Lowry'''
 * {{Bug|598}} -  Remove old code blocks.
 * {{Bug|437}} -  Update documentation for xmms2d.
@@ -9,7 +18,6 @@
 * {{Bug|607}} -  Add support for DragonFlyBSD (from Robert Sebastian Gerus)
 * {{Bug|620}} -  Set default output with scons magic instead.
 * {{Bug|619}} -  Allow platforms with "-" in name.
-* {{Bug|619}} -  HP-UX portability.
 * {{Bug|623}} -  Don't start medialib sessions recursivly in xmms_medialib_select_and_add
 * {{Bug|624}} -  Set create correctly in xmms_sqlite_open
 * {{Bug|625}} -  Use ifnull(max(id),0) in prepare_playlist to avoid error with no playlists
@@ -45,6 +53,8 @@
 * {{Bug|599}} - C89 cleanup patch from Alexander Botero-Lowry.
 * {{Bug|604}} - Add volume control to the CLI. Patch by Dan Chokola.
 * {{Bug|600}} - Ruby bindings for the new mediainfo reader calls.
+'''Tobias Nygren'''
+* {{Bug|619}} -  HP-UX portability.
 '''Tobias Rundstrom'''
 * {{Bug|579}} -  Add topsongs command to CLI client.
 * {{Bug|580}} -  Let callback based plugins propagate error from the status_method.
