@@ -46,6 +46,7 @@ Good news everyone. It exactly
 '''Sebastien Cevey'''
 * {{Bug|615}} -  xmmsc_init now takes a const char* instead of a char*.
 '''Tilman Sauerbeck'''
+* {{Bug|29}} and {{Bug|484}} - New mixer API.
 * {{Bug|601}} -  Rename the "configlist" command to "config_list" for consistency.
 * {{Bug|602}} - Mark the 'autosaved' playlist as an internal one.
 * {{Bug|603}} -  Make xmms_medialib_entry_to_list() fail if 'entry' is zero.
