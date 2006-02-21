@@ -84,7 +84,7 @@ No big changes for the API in this release. Some additions was made. Namely the 
 * {{Bug|600}} - Ruby bindings for the new mediainfo reader calls.
 '''Tobias Nygren'''
 * {{Bug|619}} -  HP-UX portability.
-'''Tobias Rundstrom'''
+'''Tobias RundstrÃ¶m'''
 * {{Bug|579}} -  Add topsongs command to CLI client.
 * {{Bug|580}} -  Let callback based plugins propagate error from the status_method.
 * {{Bug|590}} -  Check medialib id before adding it to playlist.
