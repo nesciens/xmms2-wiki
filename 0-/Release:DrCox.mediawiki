@@ -1,6 +1,8 @@
 == Release Notes ==
 
-Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox.
+Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox. The XMMS2 community is still growing with new users and contributors, just like any opensource project your involvment is necessary to bring the project forward. Please join us on IRC or our Maillist to participate.
+
+A heartwarm thanks goes out to all contributors, hang-arounds and fans.
 
 === Upgrading ===
 
