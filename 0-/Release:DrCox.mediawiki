@@ -1,10 +1,10 @@
 == Release Notes ==
 
-Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox. The XMMS2 community is still growing with new users and contributors, just like any opensource project your involvment is necessary to bring the project forward. Please join us on IRC or our Maillist to participate.
+Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox. The XMMS2 community is still growing with new users and contributors, just like any opensource project your involvment is necessary to bring the project forward. Please join us on IRC or our mailing list to participate.
 
 A heartwarm thanks goes out to all contributors, hang-arounds and fans.
 
-Next release is [[Release:DrDoolittle|DrDoolittle]] which (despite the name) probably going to include some big changes.
+Next release is [[Release:DrDoolittle|DrDoolittle]] which (despite the name) is probably going to include some big changes.
 
 === Upgrading ===
 
@@ -18,7 +18,7 @@ The biggest feature introduced in DrCox is the new Mixer API. The new API suppor
 
 * {{Bug|121}} -  Fix race when writing message to clients.
 
-A but that has been with us for a long time that got fixed just days after the last release. Should rid us of problems with the IPC layer.
+A bug that has been with us for a long time that got fixed just days after the last release. Should rid us of problems with the IPC layer.
 
 * {{Bug|613}} -  Make it work on SQLite 3.3.3
 
@@ -27,7 +27,7 @@ An important fix to be compatible with newer SQLite. Please upgrade to sqlite 3.
 * {{Bug|624}} -  Set create correctly in xmms_sqlite_open
 * {{Bug|622}} -  Add transaction support to medialib.
 
-During the testing period a lot of problems was found and correct with the Medialib, it should now work even better and be more stable.
+During the testing period a lot of problems were found and corrected within the nedialib, it should now work even better and be more stable.
 
 === New platforms ===
 
@@ -36,7 +36,7 @@ During the testing period a lot of problems was found and correct with the Media
 
 === Notes to client authors ===
 
-No big changes for the API in this release. Some additions was made.
+No big changes for the API in this release. Some additions were made.
 
 *{{Bug|29}} - The Mixer API has client functions.
 *{{Bug|600}} - Gives you the ability to display the progress of the mediainfo reader in your client.
