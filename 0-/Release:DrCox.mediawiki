@@ -4,6 +4,8 @@ Good news everyone. New release from the XMMS2 Team. DrCox is a bugfix / regress
 
 A heartwarm thanks goes out to all contributors, hang-arounds and fans.
 
+Next release is [[Release:DrDoolittle|DrDoolittle]] which (despite the name) probably going to include some big changes.
+
 === Upgrading ===
 
 The medialib will dissapear due to changes in the tables. Please make a backup of it (xmms2d makes one for you also) if you want to keep your data.
