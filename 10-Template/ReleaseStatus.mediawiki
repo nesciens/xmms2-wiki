@@ -3,10 +3,10 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrBombay | 0.2 DrBombay]]
+'''Developer''': [[Release:DrCox | 0.2 DrCox]]
 
 '''Notes''':
-* DrBombay was released 2006-01-13,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
+* DrBombay was released 2006-02-21,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 * More up-to-date code can be found <br /> in the [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel.git] tree.
 
