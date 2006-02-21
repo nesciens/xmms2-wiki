@@ -1,11 +1,36 @@
 == Release Notes ==
 
-Good news everyone. It exactly 
+Good news everyone. New release.
+
+=== Upgrading ===
+
+The medialib will dissapear due to changes in the tables. Please make a backup of it (xmms2d makes one for you also) if you want to keep your data.
 
 === Noteworthy changes ===
 
-=== Full ChangeLog ===
+* {{Bug|29}} and {{Bug|484}} - New mixer API.
 
+The biggest feature introduced in DrCox is the new Mixer API. The new API supports multiple channels and doesn't suck so much for the clients to implement. All outputs (except JACK) has been ported to the new API. So enjoy.
+
+* {{Bug|121}} -  Fix race when writing message to clients.
+
+A but that has been with us for a long time that got fixed just days after the last release. Should rid us of problems with the IPC layer.
+
+* {{Bug|613}} -  Make it work on SQLite 3.3.3
+
+An important fix to be compatible with newer SQLite. Please upgrade to sqlite 3.3.4 since 3.3.3 holds a stupid multithread bug.
+
+* {{Bug|624}} -  Set create correctly in xmms_sqlite_open
+* {{Bug|622}} -  Add transaction support to medialib.
+
+During the testing period a lot of problems was found and correct with the Medialib, it should now work even better and be more stable.
+
+=== New platforms ===
+
+* {{Bug|607}} -  Add support for DragonFlyBSD
+* {{Bug|619}} -  HP-UX portability.
+
+=== Full ChangeLog ===
 
 '''Alexander Botero-Lowry'''
 * {{Bug|598}} -  Remove old code blocks.
@@ -41,10 +66,9 @@ Good news everyone. It exactly
 * {{Bug|382}} -  Don't mix async/sync in xmms2 cli status
 '''Juho VÃ¤hÃ¤-Herttua'''
 * {{Bug|608}} -  Fix faad plugin to handle MusicBrainz tags.
-'''Sebastian Cevey'''
-* {{Bug|606}} -  Add relative seeking to clientlib.
 '''Sebastien Cevey'''
 * {{Bug|615}} -  xmmsc_init now takes a const char* instead of a char*.
+* {{Bug|606}} -  Add relative seeking to clientlib.
 '''Tilman Sauerbeck'''
 * {{Bug|29}} and {{Bug|484}} - New mixer API.
 * {{Bug|601}} -  Rename the "configlist" command to "config_list" for consistency.
