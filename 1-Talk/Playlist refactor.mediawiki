@@ -28,3 +28,7 @@ Any ideas on this?
 ::I would store the SQL-query within subsets/dynamic lists and limit the query style to primitive functions. Just simple compare operators like "=", "LIKE", "<", ">", "!=". This is an easy alternative to a whole abstraction layer which all in all also would end up into that primitives. Those queries could easily be stripped down into their parts and then could be displayed colorful! ;)
 ::What we might left out is the prefix "SELECT * FROM Media" which is obvious.
 ::--[[User:Karsten|Karsten]] 00:14, 21 Feb 2006 (CET)
+
+
+I had something pretty similar to Karsten's suggestion in mind. Except that sql is a tiny bit more abstracted away. I'll try to make a description of that later.
+[[User:Anders Gustafsson|Anders Gustafsson]] 22:43, 22 Feb 2006 (CET)
