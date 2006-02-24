@@ -6,11 +6,11 @@ Should be written to source "client/generic"
 
 Proposed Album Art, source = client/generic/arturl and client/generic/arturl_unverified
 
-* album_front_large - front of album - at least 600x600
+* album_front_large - front of album - at least 320x320
 * album_front_small - front of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size'' for itunes music store is 170x170
 * album_front_thumbnail - front of album - 100x100, only 100x100
 
-* album_back_large - back of album - at least 600x600
+* album_back_large - back of album - at least 320x320
 * album_back_small - back of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size'' for itunes music store is 170x170
 * album_back_thumbnail - back of album - 100x100, only 100x100
 
