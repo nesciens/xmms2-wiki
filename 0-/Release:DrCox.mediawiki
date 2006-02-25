@@ -103,3 +103,5 @@ No big changes for the API in this release. Some additions were made.
 * {{Bug|29}} -  Fixed volume api in coreaudio plugin.
 * {{Bug|622}} -  Add transaction support to medialib.
 * {{Bug|627}} -  Report errors with xmms_log_error in wave plugin.
+
+[[Category:Releases]]
