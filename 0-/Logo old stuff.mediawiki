@@ -79,8 +79,8 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 [[Category: General]]
 * Sebastien Kerguen's proposals:
 ** # 01:
-*** [http://rapidshare.de/files/14047220/sebastien_kerguen_xmms2_logo_01.zip.html ZIP file] (that contains the SVG file and all PNG icons (all sizes))
+*** [http://rapidshare.de/files/14047220/sebastien_kerguen_xmms2_logo_01.zip.html ZIP file] that contains the SVG file and all PNG icons (all sizes) - (click on the FREE button then enter the 3 letters password and click DOWNLOAD)
 *** [http://img148.imageshack.us/img148/7325/logoxmms20164x648io.png PNG example] (64x64 PNG icon)
 ** Concepts/ideas: 
-*** [http://img520.imageshack.us/img520/1558/logos6wp.png Here] are some other ideas, not yet rendered in SVG (some can't be, others wouldn't be clear enough as a 32x32 icon).
+*** [http://img520.imageshack.us/img520/1558/logos6wp.png Here] are some other ideas, not yet rendered in SVG (some can't be, others wouldn't be clear/readable enough as a 32x32 icon).
 *** My favourite ones : 11 - 17 - 21 - 22 - 24 - 33 - 34
