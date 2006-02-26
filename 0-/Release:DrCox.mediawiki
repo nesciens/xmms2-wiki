@@ -27,7 +27,7 @@ An important fix to be compatible with newer SQLite. Please upgrade to sqlite 3.
 * {{Bug|624}} -  Set create correctly in xmms_sqlite_open
 * {{Bug|622}} -  Add transaction support to medialib.
 
-During the testing period a lot of problems were found and corrected within the nedialib, it should now work even better and be more stable.
+During the testing period a lot of problems were found and corrected within the medialib, it should now work even better and be more stable.
 
 === New platforms ===
 
