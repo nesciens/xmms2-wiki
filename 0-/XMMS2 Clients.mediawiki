@@ -44,6 +44,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
 
+{{ClientSummary | name=Promoe| description=Winamp classic clone a'la xmms1. Written in c++/qt4. The name is not final.
+
 == Others ==
 
 {{ClientSummary| name=Chalyx| description=Chalyx (previously known as HaX) is a flexible and modular Python client for XMMS2.}}
