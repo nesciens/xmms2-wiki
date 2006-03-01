@@ -1,3 +1,13 @@
+=== 2006-03-01 - Speak yoda with me you dirty hacker ===
+ 19:36 <anders_> puzzles: The magic stuff is changed with xforms.
+ 19:37 <puzzles> anders_: in yoda-speak, say it
+ 19:37 <anders_> puzzles: With xform magic stuff changed is.
+
+=== 2006-03-01 - IKEA, thank you very much ===
+ 16:12 <puzzles> well ikea to you, too, __filip_
+ 16:12 <juhovh> ikea?
+ 16:13 <puzzles> isn't that how you say "hello" in swedish?
+
 === 2006-02-05 - Sure I can help ===
  15:42 <univac> puzzles: ruby has 'sys.byteorder' - from python?
  15:44 <tilman> are you the hero of stupid questions?
