@@ -1,4 +1,3 @@
-
 This page tries to list all properties that different clients write into the medialib and that can be useful for other clients too.
 
 Should be written to source "client/generic"
@@ -10,14 +9,14 @@ Should be written to source "client/generic"
 Proposed Album Art, source = client/generic/arturl and client/generic/arturl_unverified
 
 * album_front_large - front of album - at least 320x320
-* album_front_small - front of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size`` for itunes music store is 170x170
+* album_front_small - front of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size`` for itunes music store is 170x170 This is '''Required'''.
 * album_front_thumbnail - front of album - 100x100, only 100x100
 
 * album_back_large - back of album - at least 320x320
 * album_back_small - back of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size`` for itunes music store is 170x170
 * album_back_thumbnail - back of album - 100x100, only 100x100
 
-All values should give a url to the album cover
+All values should give a url to the album cover. A client that fetches album art should be sure to try to fill in missing art. For example if a client gathers a Large image it should created scaled images to fill in the small and thumbnail sizes. Clients should NOT scale up. so if you have a small only (the case for amazon) the client should scale down a thumbnail, but not scale up a large. 
 
 Any art that a client ``guesses`` should be put into arturl_unverified first until a verifier client moves them over to client/generic/arturl. This way we can make educated guesses in the background and then the user can verify them as time permits. 
 
