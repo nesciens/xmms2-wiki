@@ -1,3 +1,6 @@
+
+This page tries to list all properties that different clients write into the medialib and that can be useful for other clients too.
+
 Should be written to source "client/generic"
 
 * rank - value from 0-99 where 99 is best
@@ -21,3 +24,5 @@ Any art that a client ``guesses`` should be put into arturl_unverified first unt
 Clients should use client/generic/arturl, but may use client/generic/arturl_unverified if they denote that the art is unverified. 
 
 Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in [[Talk:Generic properties policy|Talk page]] or on the mailinglist.
+
+[[Category:XMMS2 Technical Details]]
