@@ -1,1 +1,2 @@
 There was no information on how to build this in the git snapshot 02.03.06
+* That's because it's not done/ready to be built yet. Patience :-).
