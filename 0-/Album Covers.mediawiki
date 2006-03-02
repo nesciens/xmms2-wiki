@@ -1,6 +1,6 @@
 {{Navbar}}
 
-Outdated.. clientside feature, perhaps store images in sqlite as blobs, investigation needed
+Clients should use the client/generic/arturl source with the various album_front_* properties. These properties are all urls, but urls can be to a file:// of course so covers can be locally cached. Any client that automatically looks up album art should put it into the client/generic/arturl_unverified source until it can be verified by the user. xmms2covers is on the way, and one can play with some of it by grabbing it from GIT. It currently can pull from musicbrainz or from the iTunes music store, but modules can be added to expand this. 
 
 Some links:<br />
 http://www.amazon.com/ -  generic<br />
