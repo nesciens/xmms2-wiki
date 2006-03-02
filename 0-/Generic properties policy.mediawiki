@@ -1,6 +1,6 @@
 Should be written to source "client/generic"
 
-* rank - value from 0-4 where 4 is best
+* rank - value from 0-99 where 99 is best
 * comment - a searchable comment
 * tag - comma seperated tags. tags could be "anything"
 
