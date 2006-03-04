@@ -3,7 +3,13 @@
 Clients should use the client/generic/arturl source with the various album_*_* properties. These properties are all urls, but urls can be to a file:// of course so covers can be locally cached. Locally cached covers should go to ~/.xmms2/clients/generic/art/ the filenames should be the md5 checksum of the "$artist-$album" all in lowercase, followed by the size which should be one of small, large, or thumbnail. Information about the actual sizes can be found at [[Generic properties policy]].
 An example filename might be 33aa73b5ddbccffcb485c42c2b14fae7-thumbnail.jpg
 
-Any client that automatically looks up album art should put it into the client/generic/arturl_unverified source until it can be verified by the user. xmms2covers is on the way, and one can play with some of it by grabbing it from GIT. It currently can pull from musicbrainz or from the iTunes music store, but modules can be added to expand this. 
+Any client that automatically looks up album art should put it into the client/generic/arturl_unverified source until it can be verified by the user. xmms2covers is on the way, and one can play with some of it by grabbing it from GIT. xmms2covers includes a verifier and a querier, the querier is module based. The querier also downscales art (from large to small to thumbnail and from small to thumbnail). These down scaled images are treated as locally cached images except that they are at first placed in ~/.xmms2/clients/generic/art/unverified/ when they are verified they should be moved into ~/.xmms2/clients/generic/art/ and the property should be moved to the arturl source and the url (a file:// url) updated. 
+
+XMMS2Covers currently has the following modules for getting album art:<br />
+MusicBrainz <br />
+iTunes Music Store <br />
+Discogs <br />
+Industrial-Music.com <br />
 
 Some links:<br />
 http://www.amazon.com/ -  generic<br />
