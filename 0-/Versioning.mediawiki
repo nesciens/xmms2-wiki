@@ -5,10 +5,12 @@
 
 * [[Release:DrAlban|DrAlban]] - Released 05-12-18
 * [[Release:DrBombay|DrBombay]] - Released 06-01-13
-* [[Release:DrCox|DrCox]] - Unreleased
+* [[Release:DrCox|DrCox]] - Released 06-02-21
 * DrDoolittle
 ...
 * DrFeelgood
+...
+* DrHofmann
 ...
 * DrJekyll
 ...
