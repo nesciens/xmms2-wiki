@@ -16,9 +16,15 @@ Proposed Album Art, source = client/generic/arturl and client/generic/arturl_unv
 * album_back_small - back of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size`` for itunes music store is 170x170
 * album_back_thumbnail - back of album - 100x100, only 100x100
 
+* artist_art_large - an artist image - at least 320x320
+* artist_art_small - an artist image - at least 140x140 REQUIRED
+* artist_art_thumbnail - an artist image - 100x100, ONLY 100x100
+
 All values should give a url to the album cover. A client that fetches album art should be sure to try to fill in missing art. For example if a client gathers a Large image it should create scaled images to fill in the small and thumbnail sizes. These should be stored locally in ~/.xmms2/clients/generic/art . Clients should NOT scale up. so if you have a small only (the case for amazon) the client should scale down a thumbnail, but not scale up a large. 
 
 Any art that a client ``guesses`` should be put into arturl_unverified first until a verifier client moves them over to client/generic/arturl. This way we can make educated guesses in the background and then the user can verify them as time permits. 
+
+xmms2covers will resize down, so if you have only small it will fill in thunbnail, and if you have only large it will fill in small and thumbnail. 
 
 Clients should use client/generic/arturl, but may use client/generic/arturl_unverified if they denote that the art is unverified. 
 
