@@ -3,4 +3,4 @@ There was no information on how to build this in the git snapshot 02.03.06
 
 qmake-qt4; make
 
-You need latest -devel, and possibly latest -tru. Build dependencies are qt4 and libsigc++2 headers. the first line of promoe was written about 2 weeks ago so it's still in heavy development, but it's progressing fast and is already very nice imho.
+You need latest -devel, and possibly latest -tru. Build dependencies are qt4 and libsigc++2 headers. the first line of promoe was written feb 12:th so it's still in early development, but it's progressing fast and is already very nice imho.
