@@ -84,6 +84,8 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 {{ClientSummary| name=xmms2joystick| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
 
+{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being maintained by [[Banlu Kemiyatorn]].}}
+
 = Deprecated Clients =
 These clients have been discontinued, abandoned, or are otherwise not maintained anymore.
 
@@ -98,8 +100,6 @@ These clients have been discontinued, abandoned, or are otherwise not maintained
 {{ClientSummary| name=perlamp| description=Perlamp should be a front-end that allows it to open Wxxamp modern skins. The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.}}
 
 {{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
-
-{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being developed by [[Banlu Kemiyatorn]].}}
 
 {{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
 
