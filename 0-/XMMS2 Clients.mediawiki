@@ -62,6 +62,8 @@ Clients that require X Windows or other graphical windowing systems.
 
 {{ClientSummary| name=EkoXMMS2| description=EkoXMMS2 is a simple XMMS2 client plugin written for X-Chat.}}
 
+{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being maintained by [[Banlu Kemiyatorn]].}}
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
@@ -83,8 +85,6 @@ Clients that provide web interfaces, or provide web services based on data from 
 {{ClientSummary| name=lxmms2| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
 
 {{ClientSummary| name=xmms2joystick| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
-
-{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being maintained by [[Banlu Kemiyatorn]].}}
 
 = Deprecated Clients =
 These clients have been discontinued, abandoned, or are otherwise not maintained anymore.
