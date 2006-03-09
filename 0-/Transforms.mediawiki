@@ -60,3 +60,5 @@ A future addition might be some kind of smart buffer that does some kind of meas
 ===2006/02/06===
 This is how it works in Anders' local tree right now, so things might still change. Basic playback is working, but the code needs some cleanup before it can be comitted, and features such as seeking and mediainfo are not yet implemented. The plugins will probably look like this:
 http://exodus.xmms.se/~andersg/mad.c.txt http://exodus.xmms.se/~andersg/file.c.txt
+
+[[Category:Developer ideas]]
