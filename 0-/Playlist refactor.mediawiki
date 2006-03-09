@@ -23,4 +23,8 @@ possible api:
  b = xmms_playlist_backend_register ("backend name");
  xmms_playlist_backend_add_method (XMMS_PLAYLIST_BACKEND_ADVANCE, my_advance);
 
-This is pretty much related to [[Collections]].
+== See Also ==
+* [[Collections]]
+* [http://exodus.xmms.se/~andersg/playlists-and-stuff.txt How I Learned to Stop Worrying and Love Collections]
+
+[[Category:Developer ideas]]
