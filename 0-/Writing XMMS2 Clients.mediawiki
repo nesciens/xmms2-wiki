@@ -37,7 +37,7 @@ XMMS2 clients should be written asynchronous, if they are using a GUI. Therefore
 After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_connection_t'' struct will be filled with a ipctransport. To extract the socket from this call ''xmmsc_ipc_fd_get()''. Then you feed this to your selectloop. When something is inbound on this socket you have to call ''xmmsc_ipc_io_in_callback()'' and when it disconnects you should call ''xmmsc_ipc_disconnect()''. Here we add select to our example:
 
  xmmsc_connection_t *connection;
- connection = xmmsc_init ("My client name");
+ connection = xmmsc_init ("My_client_name");
  
  if (!xmmsc_connect (connection, NULL)) {
    fprintf (stderr, "Connection failed, error: %s", xmmsc_get_last_error (connection));
