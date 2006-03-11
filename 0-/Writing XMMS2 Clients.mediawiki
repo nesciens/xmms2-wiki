@@ -13,9 +13,9 @@ The XMMS2 client library comes with bindings to many languages. You should choos
 To be able to communicate with xmms2d you need to connect. The clientlib provides a data structure that symbolizes the connection called ''xmmsc_connection_t''. First, you have to initialize the connection with ''xmmsc_init()''. Like this:
 
  xmmsc_connection_t *connection;
- connection = xmmsc_init ("My client name");
+ connection = xmmsc_init ("My_client_name");
 
-The clientname is what will be presented to the xmms2d. This can not be NULL.
+The clientname is what will be presented to the xmms2d. This can not be NULL, and no whitespaces allowed.
 
 Now we connect:
 
