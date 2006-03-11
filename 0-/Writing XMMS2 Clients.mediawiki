@@ -63,6 +63,23 @@ There are two types of methodcalls, one type that will just execute something on
 
 === Broadcasts ===
 
+ void my_pls_changed (xmmsc_result_t *res)
+ {
+   int signal;
+   xmmsc_result_dict_get_int (res, "type", &signal);
+   switch (signal) {
+      case XMMS_PLAYLIST_CHANGED_ADD: printf ("item added"); 
+   } 
+ }
+
+ int main (int argc, char **argv)
+ {
+   xmmsc_result_t *res = xmmsc_broadcast_playlist_changed (connection);
+   xmmsc_result_notifier_set (res, my_pls_changed);
+   
+   start_some_main_loop
+ }
+
 === Signals ===
 
  xmmsc_result_t *res;
