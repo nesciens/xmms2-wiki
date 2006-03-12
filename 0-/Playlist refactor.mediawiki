@@ -25,6 +25,6 @@ possible api:
 
 == See Also ==
 * [[Collections]]
-* [http://exodus.xmms.se/~andersg/playlists-and-stuff.txt How I Learned to Stop Worrying and Love Collections]
+{{Playlist Collections Discussion}}
 
 [[Category:Developer ideas]]
