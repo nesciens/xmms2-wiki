@@ -100,4 +100,8 @@ Okay, it's by far not a complete overview of the problems, but I hope I exposed 
 
 I am curious to hear about what '''you''' have in mind when it comes to collections, and possible solutions to the problem they might cause.
 
+== See Also ==
+* [[Playlist refactor]]
+{{Playlist Collections Discussion}}
+
 [[Category:Developer ideas]]
