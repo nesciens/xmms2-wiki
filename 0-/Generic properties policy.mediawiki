@@ -24,7 +24,7 @@ All values should give a url to the album cover. A client that fetches album art
 
 Any art that a client ``guesses`` should be put into arturl_unverified first until a verifier client moves them over to client/generic/arturl. This way we can make educated guesses in the background and then the user can verify them as time permits. 
 
-xmms2covers will resize down, so if you have only small it will fill in thunbnail, and if you have only large it will fill in small and thumbnail. 
+Client authors should be careful to note that "large" does not equal 600x600. Large image size is anything greater than 600x600, and thus client authors should consider checking image size and potentially scaling any large images they might run into. 
 
 Clients should use client/generic/arturl, but may use client/generic/arturl_unverified if they denote that the art is unverified. 
 
