@@ -7,15 +7,14 @@
 
 * DrEvil (april / may)
 ** Transformation/xforms plugins (anders)
-** Playlist refactoring (tru)
 ** libxmmsclient++ (theefer / Eclipser)
+** Promoe ? (tru)
 
 * DrFeelgood (july / august)
 ** WMA (juhovh)
-** Promoe ? (tru)
+** generated ipc (anders / tru)
 
 * DrG????? (september / november)
 ** swig (anders)
-** generated ipc (anders / tru)
 ** collections (anders / tru / theefer)
 ** DAAP (juhovh, drax)
