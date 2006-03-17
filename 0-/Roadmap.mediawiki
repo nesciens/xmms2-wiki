@@ -8,7 +8,7 @@
 * DrEvil (april / may)
 ** Transformation/xforms plugins (anders)
 ** Playlist refactoring (tru)
-** libxmmsclient++ (theefer)
+** libxmmsclient++ (theefer / Eclipser)
 
 * DrFeelgood (july / august)
 ** WMA (juhovh)
