@@ -1,0 +1,21 @@
+== Roadmap for newly added features ==
+
+* DrDoolittle (end march)
+** mDNS (done)
+** Java bindings (done)
+** SQLite speedups (done)
+
+* DrEvil (april / may)
+** Transformation/xforms plugins (anders)
+** Playlist refactoring (tru)
+** libxmmsclient++ (theefer)
+
+* DrFeelgood (july / august)
+** WMA (juhovh)
+** Promoe ? (tru)
+
+* DrG????? (september / november)
+** swig (anders)
+** generated ipc (anders / tru)
+** collections (anders / tru / theefer)
+** DAAP (juhovh, drax)
