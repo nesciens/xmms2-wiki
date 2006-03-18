@@ -1,0 +1,3 @@
+Perhaps it'd help to merge some elements from [[Release Checklist]] into here?<br>
+Or are they just the broad spectrum of "before we call it 1.0 <xyz> features need to be complete"?<br>
+[[User:VxJasonxV|VxJasonxV]] 12:56, 18 Mar 2006 (CET)
