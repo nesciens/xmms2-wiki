@@ -71,6 +71,7 @@ Todo:
 * playlistplugins
 * convert plugins
 * effects
+* config stuff
 
 [[User:Anders Gustafsson|Anders Gustafsson]] 03:17, 18 Mar 2006 (CET)
 
