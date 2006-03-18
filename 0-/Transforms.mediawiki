@@ -64,6 +64,7 @@ http://exodus.xmms.se/~andersg/mad.c.txt http://exodus.xmms.se/~andersg/file.c.t
 ===2006-03-18===
 I just pushed a preview to my tree. Basic stuff should work. Only file, mad and modplug plugins are converted. Seeking doesn't work, playlistplugins doesn't work, id3v1-tags doesn't work. The xforms plugins uses a new plugin format, please comment on this!
 
+Todo:
 * rework output to buffer
 * change other plugin types to use new api.
 * seeking
