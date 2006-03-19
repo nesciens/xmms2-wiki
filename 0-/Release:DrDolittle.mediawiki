@@ -4,12 +4,53 @@
 
 === Upgrading ===
 
+Due to significant changes to the SQLite schema the medialib will (once again) be totaly removed if you upgrade. Tilman provided a ruby script for moving your old medialib into the new one. 
 
 === Noteworthy changes ===
 
+==== Feature additions ====
+This release will feature a [[mDNS]] agent ({{Bug|455}}) that will allow you to announce the availability of xmms2 servers on your local network. Client authors are suggested to implement browsing capabillities into their code.
+
+The kind guys at X4X (http://x4x.sf.net) supplied XMMS2 clientlib with Java bindings {{Bug|198}}. They are now shipped with the default distribution.
+
+One of the old wishlist bugs has been the abillity to make xmms2d to listen to mulitple sockets {{Bug|644}}. This has been implemented by Karsten Krispin. Just semicolon separate the paths in the config and you are ready to go.
+
+Major speedups has been done for the Medialib ({{Bug|662}}), especially when importing songs to the Medialib. Please always use xmmsc_medialib_import_path() when mass-adding files, cli command is "xmms2 mlib addpath".
+
+==== Bug fixes ====
+
+The following bugs has been flaged as important and fixed.
+
+{{Bug|631}} and {{Bug|681}} fixes two serious misses in the MAD plugin. 631 made some VBR mp3s to have wrong duration and 681 could make xmms2d crash when calculating the duration of errenous mp3s.
+
+{{Bug|688}} - Has been a problem for some time. The mixer events from ALSA wasn't handled properly. This would remove the problems with setting volume in ALSA. The problem was with ALSA documentation and a bugreport has been filed to the alsa team.
+
+{{Bug|655}} Fixes a common crash in the volume broadcast.
+
 === New platforms ===
 
+No new platforms has been added to DrDoolittle
+
 === Notes to client authors ===
+
+One function call was renamed: xmmsc_main_status is now called xmmsc_main_stats. See bug {{Bug|652}} for details.
+
+Heaps of new functions was wrapped in Ruby bindings:
+* {{Bug|653}} - Wrap xmmsc_configval_list() in the Ruby bindings.
+* {{Bug|653}} - Wrap xmmsc_medialib_playlist_remove() in the Ruby bindings.
+* {{Bug|682}} - The argument to Xmms::Client#plugin_list is optional now.
+* {{Bug|653}} - Wrap xmmsc_medialib_get_id() in the Ruby bindings
+
+A new function was also added:
+* {{Bug|630}} -  Added a medialib_entry_add signal.
+
+And the config functions changed behaviour:
+* {{Bug|664}} - broadcast_configval_changed now uses the config property's key as the dict entry's key and the config property's value as the dict entry's value.
+* {{Bug|669}} - xmmsc_configval_list() now returns a dict that contains the config property's names and values instead of a list of names.
+
+=== Notes to plugin authors ===
+
+The only change that affects plugin authors is the split of name and version in xmms_plugin_new() see bug {{Bug|650}}.
 
 === Full ChangeLog ===
 
@@ -27,6 +68,8 @@
 * {{Bug|635}} - Ruby 1.9 dectection.
 * {{Bug|648}} - Fix error message.
 * {{Bug|672}} - Tweak Ruby module/class names.
+'''Karsten Krispin'''
+* {{Bug|644}} - Add multiple socket support for xmms2d
 '''Georg Schild'''
 * {{Bug|198}} - Java bindings.
 '''Sebastien Cevey'''
@@ -53,15 +96,12 @@
 * {{Bug|662}} - Optimization for SQLite
 * {{Bug|455}} - Added mDNS agent.
 * {{Bug|631}} - Fix XING headers in MP3 files with CRC headers.
-* {{Bug|667}} - Move decoder_init_for_decoding into the while loop.
 * {{Bug|670}} - change clientlib functions taking char* where const char* would be sufficient
 * {{Bug|673}} - Remove , at end of enums.
 * {{Bug|668}} - Set error string when asking for a ID that doesn't exsist.
 * {{Bug|668}} - Make sure that medialib id is set before sending signal.
 * {{Bug|643}} - Make quit function in main set a timeout and return.
 * {{Bug|676}} - Fix rubybindings for OSX
-* {{Bug|644}} - Add multiple socket support for xmms2d
 * {{Bug|681}} - Don't FPE in MAD's duration calculation.
-
 
 [[Category:Releases]]
