@@ -1,6 +1,10 @@
 == Release Notes ==
 
-{{Relnotes_DrDoolittle}}
+Holy handgranates! It's release time again! Much earlier then expected and much cooler than the critics claim! XMMS2 Team announces Dr. Doolittle. This release is forged by the wormholes of Stargate, Swedish schlager music, Chilean beaches and a lament for a loved one. DrDoolittle is a minor-feature addition and bug-fix release instead of the expected major-break-the-world release. We decided that enough critical fixes and small features was available to make a release. You can watch the new [[Roadmap]] in order to see what's going on with future releases.
+
+Note that some of the API calls has been changed in this release (details in full release notes) and clients needs to be upgraded. The API breaking will (hopefully) stop when Dr. releases ends.
+
+XMMS2 Team would like to thank everyone involved in this release, your efforts are appriciated as always. 
 
 === Upgrading ===
 
