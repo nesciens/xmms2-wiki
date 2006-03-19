@@ -30,4 +30,7 @@ Clients should use client/generic/arturl, but may use client/generic/arturl_unve
 
 Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in [[Talk:Generic properties policy|Talk page]] or on the mailinglist.
 
+== See Also ==
+* [[Support for clients to write to the medialib]]
+
 [[Category:XMMS2 Technical Details]]
