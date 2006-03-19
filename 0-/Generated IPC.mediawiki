@@ -1,0 +1,1 @@
+Generated IPC is best explained by anders document: http://exodus.xmms.se/~andersg/generated-ipc.txt
