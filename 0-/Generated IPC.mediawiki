@@ -173,3 +173,5 @@ It could also allow bypassing the conversion we do to day, by getting data direc
  {
  	return list->curr_val;
  }
+
+[[Category:Developer ideas]]
