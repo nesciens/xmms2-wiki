@@ -11,3 +11,8 @@ There is currently a plugin for XMMS which allows you to play a single media-fil
 
 * http://bugs.xmms2.xmms.se/view.php?id=144
 [[User:Eleusis|Eleusis]] 12:01, 25 Sep 2005 (CEST)
+
+== See Also ==
+* [[Transforms]]
+
+[[Category:Developer ideas]]
