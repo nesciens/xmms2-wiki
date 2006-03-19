@@ -15,4 +15,7 @@ Maybe there should be a way to rate the songs so that one could specify to give 
                  nice too. And Hey! I just want full albums, don't splitt them,
                  except these songs, which are the only good ones on their albums.
 
+== See Also ==
+* [[Collections]]
+
 [[Category: Developer ideas]]
