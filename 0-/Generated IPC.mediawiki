@@ -40,7 +40,7 @@ Each binding would need to define how to convert the types to and from messages.
   <arg><uint /><doc>Where to move it</doc></arg>
  </method>
 
-The same file should be used to generate the server side.
+The same file should be used to generate the server side. The diffrent targets could easily be generated with XSLT. An example of similar XSLT use can be found [https://svn.cronos.be/svn/codegen/trunk/Documentation/creating_codegen_xslt_templates.txt here], and [https://svn.cronos.be/svn/codegen/trunk/Documentation/sample-class-source.xml here], and of course [http://www.w3.org/Style/XSL/ here]. [http://320e88ea593700b3.paste.se/ Here] is a stupid example that selects some data and generates something bogous.
 
 ===Examples===
 
