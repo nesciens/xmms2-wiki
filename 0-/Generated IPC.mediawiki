@@ -46,13 +46,13 @@ The same file should be used to generate the server side. The diffrent targets c
 
 In the pure lowlevel C-api this:
 
-<object name="playlist">
- <method name="move">
-  <doc>Moves an item in the playlist to another position.</doc>
-  <arg><uint /><doc>Position of the item to be moved</doc></arg>
-  <arg><uint /><doc>Where to move it</doc></arg>
- </method>
-</object>
+ <object name="playlist">
+  <method name="move">
+   <doc>Moves an item in the playlist to another position.</doc>
+   <arg><uint /><doc>Position of the item to be moved</doc></arg>
+   <arg><uint /><doc>Where to move it</doc></arg>
+  </method>
+ </object>
 
 could be translated into:
 
@@ -122,28 +122,28 @@ Much more compact, but more important; stricter typehandling, handle_list and ha
 
 It could also allow bypassing the conversion we do to day, by getting data direct from the message. The xmmsh_list_uint_* functions that the bindings needs to provide could work like this:
 
-int
-xmmsh_list_uint_valid (xmmsh_list_uint_t *list)
-{
-	if (!list->parsed) {
-		msg_get_uint (list->msg, &list->len);
-		list->parsed = 1;
-		list->pos = 0;
-		if (list->len > 0)
-			msg_get_uint (list->msg, &list->curr_val);
-	}
-	return list->pos < list->len;
-}
+ int
+ xmmsh_list_uint_valid (xmmsh_list_uint_t *list)
+ {
+ 	if (!list->parsed) {
+ 		msg_get_uint (list->msg, &list->len);
+ 		list->parsed = 1;
+ 		list->pos = 0;
+ 		if (list->len > 0)
+ 			msg_get_uint (list->msg, &list->curr_val);
+ 	}
+ 	return list->pos < list->len;
+ }
 
-void
-xmmsh_list_uint_next (xmmsh_list_uint_t *list)
-{
-	list->pos++;
-	msg_get_uint (list->msg, &list->curr_val);
-}
+ void
+ xmmsh_list_uint_next (xmmsh_list_uint_t *list)
+ {
+ 	list->pos++;
+ 	msg_get_uint (list->msg, &list->curr_val);
+ }
 
-int
-xmmsh_list_uint_value (xmmsh_list_uint_t *list)
-{
-	return list->curr_val;
-}
+ int 
+ xmmsh_list_uint_value (xmmsh_list_uint_t *list)
+ {
+ 	return list->curr_val;
+ }
