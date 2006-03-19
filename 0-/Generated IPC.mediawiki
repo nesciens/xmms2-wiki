@@ -40,7 +40,33 @@ Each binding would need to define how to convert the types to and from messages.
   <arg><uint /><doc>Where to move it</doc></arg>
  </method>
 
-The same file should be used to generate the server side. The diffrent targets could easily be generated with XSLT. An example of similar XSLT use can be found [https://svn.cronos.be/svn/codegen/trunk/Documentation/creating_codegen_xslt_templates.txt here], and [https://svn.cronos.be/svn/codegen/trunk/Documentation/sample-class-source.xml here], and of course [http://www.w3.org/Style/XSL/ here]. [http://320e88ea593700b3.paste.se/ Here] is a stupid example that selects some data and generates something bogous.
+The same file should be used to generate the server side.
+
+The diffrent targets could easily be generated with XSLT. An example of similar XSLT use can be found [https://svn.cronos.be/svn/codegen/trunk/Documentation/creating_codegen_xslt_templates.txt here], and [https://svn.cronos.be/svn/codegen/trunk/Documentation/sample-class-source.xml here], and of course [http://www.w3.org/Style/XSL/ here]. [http://320e88ea593700b3.paste.se/ Here] is a stupid example that selects some data and generates something bogous.
+
+Observe that the use of xml here is just an example. It might be better to use another format. Things that comes into mind is some magic annotation in the server c source code where the methods are defined (a bit like today, but better) and doing it in python.
+
+ XMMS_IPC_EXPORTED(playlist, list) GList *
+ xmms_playlist_list (xmms_playlist_t *playlist, xmms_error_t *err)
+ {
+  ...
+ }
+
+or:
+
+ {
+ 'playback': XObject(methods={'start': Method(),
+                              'stop': Method(),
+                              'curr_time': Method(returns=Uint()),
+                              },
+                     signals={'curr_time': Signal(value=Uint()),
+                              })
+ 'playlist': XObject(methods={'list': Method(returns=List(Uint())),
+                              'move': Method(args=[Uint(), Uint()])
+                              })
+ }
+
+
 
 ===Examples===
 
