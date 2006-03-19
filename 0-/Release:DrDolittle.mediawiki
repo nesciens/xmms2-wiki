@@ -1,1 +1,67 @@
+== Release Notes ==
+
+{{Relnotes_DrDoolittle}}
+
+=== Upgrading ===
+
+
+=== Noteworthy changes ===
+
+=== New platforms ===
+
+=== Notes to client authors ===
+
+=== Full ChangeLog ===
+
+'''Alexander Botero-Lowry'''
+* {{Bug|630}} - Added a medialib_entry_add signal.
+* {{Bug|641}} - property_remove method
+'''Daniel Chokola'''
+* {{Bug|649}} - Add plugin_list to ruby bindings
+* {{Bug|655}} - Fix crash in volume broadcast
+* {{Bug|664}} - broadcast_configval_changed now uses the config property's key as the dict entry's key and the config property's value as the dict entry's value.
+* {{Bug|650}} - Split plugin "name" string and add plugin versioning
+* {{Bug|653}} - Ruby:: add bindings for xmmsc_main_stats
+* {{Bug|653}} - Wrap xmmsc_io_need_out_set_callback() in the Ruby bindings.
+* {{Bug|669}} - xmmsc_configval_list() now returns a dict that contains the config property's names and values instead of a list of names.
+* {{Bug|635}} - Ruby 1.9 dectection.
+* {{Bug|648}} - Fix error message.
+* {{Bug|672}} - Tweak Ruby module/class names.
+'''Georg Schild'''
+* {{Bug|198}} - Java bindings.
+'''Sebastien Cevey'''
+* {{Bug|616}} - format_pretty_list in cli should check $COLUMNS
+* {{Bug|654}} - Support for * wildcard in sources
+'''Tilman Sauerbeck'''
+* {{Bug|637}} - Added result typification.
+* {{Bug|630}} - Unsuckify the Ruby method.
+* {{Bug|672}} - Update the sample script, too.
+* {{Bug|653}} - Wrap xmmsc_configval_list() in the Ruby bindings.
+* {{Bug|653}} - Wrap xmmsc_medialib_playlist_remove() in the Ruby bindings.
+* {{Bug|682}} - The argument to Xmms::Client#plugin_list is optional now.
+* {{Bug|685}} - Unbreak xmmsc_configval_list(). The bug was introduced by the patch for bug 669.
+* {{Bug|687}} - Fixed the converter.c builder.
+* {{Bug|685}} - Fix bad memory usage in xmms_config_property_register().
+* {{Bug|653}} - Wrap xmmsc_medialib_get_id() in the Ruby bindings. Based on a broken patch by Dan Chokola.
+* {{Bug|660}} - Emit the current volume in broadcast_volume_changed.
+* {{Bug|689}} - Initialize the command argument in xmms_object_emit_f().
+* {{Bug|690}} - Remove output->object_mutex since it's not needed.
+* {{Bug|688}} - snd_mixer_handle_events() returns the number of events that occured on success (this isn't documented), so we need to check for err < 0 to determine if an error occured or not.
+'''Tobias RundstrÃ¶m'''
+* {{Bug|658}} - Fix complation for C89 compilers.
+* {{Bug|652}} - rename xmmsc_main_status() -> xmmsc_main_stats()
+* {{Bug|662}} - Optimization for SQLite
+* {{Bug|455}} - Added mDNS agent.
+* {{Bug|631}} - Fix XING headers in MP3 files with CRC headers.
+* {{Bug|667}} - Move decoder_init_for_decoding into the while loop.
+* {{Bug|670}} - change clientlib functions taking char* where const char* would be sufficient
+* {{Bug|673}} - Remove , at end of enums.
+* {{Bug|668}} - Set error string when asking for a ID that doesn't exsist.
+* {{Bug|668}} - Make sure that medialib id is set before sending signal.
+* {{Bug|643}} - Make quit function in main set a timeout and return.
+* {{Bug|676}} - Fix rubybindings for OSX
+* {{Bug|644}} - Add multiple socket support for xmms2d
+* {{Bug|681}} - Don't FPE in MAD's duration calculation.
+
+
 [[Category:Releases]]
