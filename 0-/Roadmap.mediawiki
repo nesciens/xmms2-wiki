@@ -1,3 +1,5 @@
+{{Navbar}}
+
 == Roadmap for newly added features ==
 
 * DrDoolittle (end march)
@@ -18,3 +20,8 @@
 ** swig (anders)
 ** [[Collections]] (anders / tru / theefer)
 ** DAAP (juhovh, drax)
+
+== See Also ==
+* [[Versioning]]
+
+[[Category:General]]
