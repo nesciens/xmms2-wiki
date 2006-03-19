@@ -1,7 +1,7 @@
 The change described in this text mainly aims on solving two problems:
 
- * Collections (and probably other stuff) will need more complex types
- * Autogeneration of bindings.
+* Collections (and probably other stuff) will need more complex types
+* Autogeneration of bindings.
 
 Collections might be implemented as a DAG, which could be serialised into a dict or a list of dicts, but that is not elegant. There are probably other methods that already would benefit from a more complex return value.
 
