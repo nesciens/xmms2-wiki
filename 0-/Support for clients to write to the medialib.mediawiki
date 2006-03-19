@@ -1,3 +1,5 @@
+'''''This idea has been implemented'''''
+
 Alright I have started to work on this but I need some feedback on the functionality. I have three ideas that I am following right now basic in all of them are that there is going to be two new calls in the clientlib:
 
  xmmsc_medialib_property_set_str(c, id, property, value);
@@ -27,3 +29,8 @@ would make xmmsc_result_get_dict_entry_int32 behave like today, but using the sp
 The foreach-func should be extended to include the source.
 
 Btw, there are not many nodes, so we could proabaly just ditch the hashtable internally, and store them in a list of (key, source, property) instead.
+
+== See Also ==
+* [[Generic properties policy]]
+
+[[Category:Developer ideas]]
