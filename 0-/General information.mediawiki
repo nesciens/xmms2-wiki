@@ -13,5 +13,6 @@ General information, for users and developers alike.
 ; [[:Category:Releases | Releases]] : XMMS2 releases.
 ; [[History]] : A brief historical timeline of the XMMS2 project.
 ; [[Intro Clips]] : Intro clips included with XMMS2 releases.
+; [[Roadmap]] : Where XMMS2 is going.
 
 [[Category: General]]
