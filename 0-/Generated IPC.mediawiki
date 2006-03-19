@@ -1,1 +1,149 @@
-Generated IPC is best explained by anders document: http://exodus.xmms.se/~andersg/generated-ipc.txt
+The change described in this text mainly aims on solving two problems:
+
+ * Collections (and probably other stuff) will need more complex types
+ * Autogeneration of bindings.
+
+Collections might be implemented as a DAG, which could be serialised into a dict or a list of dicts, but that is not elegant. There are probably other methods that already would benefit from a more complex return value.
+
+The bindings for statically typed langages have made it evident that it would be nice if parts of the bindings could be automatically generated.
+
+Lets say an xml-file is used as the basis for the interface. It could look like this:
+
+ <xmmsipc>
+  <object name="playback">
+   <method name="start" />
+   <method name="stop" />
+   <method name="curr_time" />
+    <return><uint/></return>
+   </method>
+   <method name="jump">
+    <arg><uint/></arg>
+   </method>
+  </object>
+  <object name="playlist">
+   <method name="list">
+    <return><list><uint/></list></return>
+   </method>
+   <method name="move">
+    <arg><uint /></arg>
+    <arg><uint /></arg>
+   </method>
+  </object>
+ </xmmsipc>
+
+
+Each binding would need to define how to convert the types to and from messages. And much of the boring work could be automatically generated. Oh, I said something about minimizing boring work? Then it should probably look like this:
+
+ <method name="move">
+  <doc>Moves a item in the playlist to another position</doc>
+  <arg><uint /><doc>Position of the item to be moved</doc></arg>
+  <arg><uint /><doc>Where to move it</doc></arg>
+ </method>
+
+The same file should be used to generate the server side.
+
+===Examples===
+
+In the pure lowlevel C-api this:
+
+<object name="playlist">
+ <method name="move">
+  <doc>Moves an item in the playlist to another position.</doc>
+  <arg><uint /><doc>Position of the item to be moved</doc></arg>
+  <arg><uint /><doc>Where to move it</doc></arg>
+ </method>
+</object>
+
+could be translated into:
+
+ /**
+  * Moves an item in the playlist to another position.
+  */
+ xmms_result_void_t *
+ xmmsc_playlist_move (xmmsc *c, uint a, uint b)
+ {
+ 	m = msg_new (c);
+ 	msg_put_uint (a);
+ 	msg_put_uint (b);
+ 	conn_send (m)
+ 	return result_new_void (m->cookie);
+ }
+
+The c++ bindings might use the definition file to generate something like, or what ever, I'm no c++ user.
+
+ result<_void> *
+ playlist::move (uint a, uint b)
+ {
+ 	r = xmmsc_playlist_move (m_conn, a, b);
+ 	return new result<_void>(r);
+ }
+
+Even python and ruby would probably find this useful!
+
+Using it for serverside stuff would make it possible to get rid of lots of not so obvious hacks in xmms_object.h and ipc.c. This is actually a third motivation for this, but I have not yet decided on how it should look on serverside.
+
+Signals and broadcasts should also be handled.
+
+ <object name="playback">
+  <signal name="curr_time">
+   <value>uint</value>
+  </signal>
+ <object>
+
+
+
+
+It should also make it easy to do a bit more highlevel c api. That has the types already unpacked in the callbacks.
+
+ void
+ handle_list (xmmsh_error_t *err, xmmsh_list_uint_t *list, void *userdata)
+ {
+ 	if (iserr(err)) { crap; }
+ 	while (xmmsh_list_uint_valid (list)) {
+ 	      x = xmmsh_list_uint_value (list);
+ 	      xmmsh_list_uint_next (list);
+ 	}
+ }
+
+ void
+ handle_curr (xmmsh_error_t *err, uint pos, uint mid, void *userdata)
+ {
+ 	if (iserr(err)) { crap; }
+ 	printf ("Currently at pos %d in playlist (mid=%d)", pos, mid);
+ }
+
+ void
+ do_stuff(){
+        xmmsh_playlist_curr (conn, handle_curr, korv);
+ 	xmmsh_playlist_list (conn, handle_list, korv);
+ }
+
+Much more compact, but more important; stricter typehandling, handle_list and handle_curr must have the right signature, otherwise compiler will warn when it is passed to xmmsh_playlist_list.
+
+It could also allow bypassing the conversion we do to day, by getting data direct from the message. The xmmsh_list_uint_* functions that the bindings needs to provide could work like this:
+
+int
+xmmsh_list_uint_valid (xmmsh_list_uint_t *list)
+{
+	if (!list->parsed) {
+		msg_get_uint (list->msg, &list->len);
+		list->parsed = 1;
+		list->pos = 0;
+		if (list->len > 0)
+			msg_get_uint (list->msg, &list->curr_val);
+	}
+	return list->pos < list->len;
+}
+
+void
+xmmsh_list_uint_next (xmmsh_list_uint_t *list)
+{
+	list->pos++;
+	msg_get_uint (list->msg, &list->curr_val);
+}
+
+int
+xmmsh_list_uint_value (xmmsh_list_uint_t *list)
+{
+	return list->curr_val;
+}
