@@ -6,7 +6,7 @@
 ** SQLite speedups (done)
 
 * DrEvil (april / may)
-** [[Transformations]] plugins (anders)
+** [[Transforms]] plugins (anders)
 ** libxmmsclient++ (theefer / Eclipser)
 ** [[Client:Promoe]] ? (tru)
 
