@@ -16,7 +16,7 @@
 ** WMA (juhovh) / MMS (nano)
 ** [[Generated IPC]] (anders / tru)
 
-* DrG????? (september / november)
+* DrGonzo (september / november)
 ** swig (anders)
 ** [[Collections]] (anders / tru / theefer)
 ** DAAP (juhovh, drax)
