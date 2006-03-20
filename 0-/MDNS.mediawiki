@@ -1,3 +1,3 @@
-mDNS is also known as zeroconf, bonjour and so on. This makes XMMS2 to announce it's availablity via the mDNS protocol. Currently there are two different implementations in XMMS2. One for the [http://www.avahi.org avahi] library and the other for MacOSX's sdDNS library. SCons will build the one that you have installed.
+mDNS is also known as zeroconf, bonjour and so on. This makes XMMS2 announce it's availablity via the mDNS protocol. Currently there are two different implementations in XMMS2. One for the [http://www.avahi.org avahi] library and the other for MacOSX's sdDNS library. SCons will build the one that you have installed.
 
 Clients should implement mDNS lookup by looking up _xmms2._tcp service. An example is in the [[Client:Promoe]] ServerBrowser.
