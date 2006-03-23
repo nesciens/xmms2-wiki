@@ -84,3 +84,5 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** Concepts/ideas: 
 *** [http://img520.imageshack.us/img520/1558/logos6wp.png Here] are some other ideas, not yet rendered in SVG (some can't be, others wouldn't be clear/readable enough as a 32x32 icon).
 *** My favourite ones : 11 - 17 - 21 - 22 - 24 - 33 - 34
+* jhuss's proposals:
+** [http://jesus.jhuss.com/xmms2.png xmm2 concept] big image and 32x32 comcept of xmms2
