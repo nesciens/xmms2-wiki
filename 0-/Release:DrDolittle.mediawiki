@@ -61,6 +61,10 @@ The only change that affects plugin authors is the split of name and version in 
 '''Alexander Botero-Lowry'''
 * {{Bug|630}} - Added a medialib_entry_add signal.
 * {{Bug|641}} - property_remove method
+'''Anders Gustafsson'''
+* {{Bug|695}} - Fix race when seeking in vorbis.
+'''Chris Morgan'''
+* {{Bug|696}} - Update jack plugin to new Volume API
 '''Daniel Chokola'''
 * {{Bug|649}} - Add plugin_list to ruby bindings
 * {{Bug|655}} - Fix crash in volume broadcast
@@ -94,6 +98,8 @@ The only change that affects plugin authors is the split of name and version in 
 * {{Bug|689}} - Initialize the command argument in xmms_object_emit_f().
 * {{Bug|690}} - Remove output->object_mutex since it's not needed.
 * {{Bug|688}} - snd_mixer_handle_events() returns the number of events that occured on success (this isn't documented), so we need to check for err < 0 to determine if an error occured or not.
+* {{Bug|699}} - Make sure xmms_output_open() unlocks the API mutex.
+* {{Bug|705}} - Fixed a typemap bug in the Java bindings.
 '''Tobias RundstrÃ¶m'''
 * {{Bug|658}} - Fix complation for C89 compilers.
 * {{Bug|652}} - rename xmmsc_main_status() -> xmmsc_main_stats()
@@ -107,5 +113,7 @@ The only change that affects plugin authors is the split of name and version in 
 * {{Bug|643}} - Make quit function in main set a timeout and return.
 * {{Bug|676}} - Fix rubybindings for OSX
 * {{Bug|681}} - Don't FPE in MAD's duration calculation.
+* {{Bug|675}} - Temporary fix for JAVA_HOME for DrDolittle release.
+* {{Bug|703}} - Make sure that we check return value of snd_pcm_open() in ALSA plugin
 
 [[Category:Releases]]
