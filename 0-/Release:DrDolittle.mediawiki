@@ -59,6 +59,9 @@ And the config functions changed behaviour:
 * {{Bug|664}} - broadcast_configval_changed now uses the config property's key as the dict entry's key and the config property's value as the dict entry's value.
 * {{Bug|669}} - xmmsc_configval_list() now returns a dict that contains the config property's names and values instead of a list of names.
 
+The following database properties was renamed:
+* {{Bug|684}} - Log.value is now named Log.percent.
+
 === Notes to plugin authors ===
 
 The only change that affects plugin authors is the split of name and version in xmms_plugin_new() see bug {{Bug|650}}.
