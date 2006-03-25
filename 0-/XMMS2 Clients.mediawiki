@@ -16,7 +16,7 @@ Clients that can be used from a command line, console or terminal.
 {{ClientSummary| name=x2cp| description=x2cp is another ncurses client, basic playlist navigation, colors and bugs.}}
 
 = Graphical clients =
-Clients that require X Windows or other graphical windowing systems.
+Clients that require X11 or other graphical windowing systems.
 
 == EFL (Enlightenment Foundation Libraries) ==
 
