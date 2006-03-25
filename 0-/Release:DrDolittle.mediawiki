@@ -37,6 +37,8 @@ Also this additional bugs where found in the RC testing phase:
 * {{Bug|696}} - Update jack plugin to new Volume API
 * {{Bug|699}} - Make sure xmms_output_open() unlocks the API mutex.
 * {{Bug|703}} - Make sure that we check return value of snd_pcm_open() in ALSA plugin
+* {{Bug|710}} - Make OSS format probing work in all cases.
+* {{Bug|711}} - Return NULL instead of assert in volume_get
 
 === New platforms ===
 
