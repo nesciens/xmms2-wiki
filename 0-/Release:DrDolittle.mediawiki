@@ -19,7 +19,7 @@ The kind guys at X4X (http://x4x.sf.net) supplied XMMS2 clientlib with Java bind
 
 One of the old wishlist bugs has been the abillity to make xmms2d to listen to mulitple sockets {{Bug|644}}. This has been implemented by Karsten Krispin. Just semicolon separate the paths in the config and you are ready to go.
 
-Major speedups has been done for the Medialib ({{Bug|662}}), especially when importing songs to the Medialib. Please always use xmmsc_medialib_import_path() when mass-adding files, cli command is "xmms2 mlib addpath".
+Major speedups has been done for the Medialib ({{Bug|662}}), especially when importing songs to the Medialib. Please always use xmmsc_medialib_import_path() when mass-adding files, cli command is "xmms2 mlib addpath". Also feedback from sqlite-users mail list was incorporated during RC phase ({{Bug|716}}). Thanks to Dr. Richard Hipp and others.
 
 ==== Bug fixes ====
 
