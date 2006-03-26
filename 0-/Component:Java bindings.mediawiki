@@ -1,0 +1,27 @@
+Since DrDolittle Xmms2 ships some bindings to the language Java. To get those bindings on your machine you need some prerequisites met and installed:
+
+* '''installed JDK''' ([http://java.sun.com Java development kit] a jre is not enough!) (>=1.4.2): no matter if blackdown or sun, both are tested, Java5 works too. Don't know gcj but afaik this works too. java, javac and jar have to be in path.
+* '''installed SWIG''' ([http://www.swig.org]) (>=1.3.25): swig has to be in path.
+* '''JAVA_HOME''' must be set, otherwise scons skips installation of the javabindings for now.
+
+
+After you have them installed you are either a developer and want to use them to develop something nifty or you are a user and have no idea which client to choose now.
+
+If you are a '''user''' go to http://x4x.sourceforge.net and grab X4X, atm the only java-client. Follow the X4X [http://x4x.sourceforge.net/wiki/index.php/Installation installationintructions] and hope everything works. Else visit #x4x on [irc://irc.freenode.net].
+
+If you are a '''developer''' you can check the sourcecode swig and we generated in src/clients/lib/java. You have some choices of using the javabindings now, but before everything build doxygen docu, you will need it. javadoc is possible too. After that you have two main choices:
+
+# Use the C-API style code: Your mainclass to use is org.xmms2.xmms2bindings.Xmmsclient. For documentation on the various functions check the c pendants, everything works exactly the same. Besides that option you have to choose if you use org.xmms2.JMain as your mainloop (which is recommended) or build your own (which is annoying, so use JMain!). I only explain the JMain-way a bit here, for ideas on building an own loop check our loop. To use JMain you have to implement CallbacksListener or extend CallbacksAdapter (you can only use one, not two, not three, only one). Just instantiate a JMain with your CallbacksListener as argument and use org.xmms2.xmms2bindings.Xmmsclient to work with xmms2. But be warned: NEVER USE WAIT() THEN. When you use a Mainloop, no matter which, you enter the async mode, so use result_notifier() instead of wait() then.
+# Use the nice and nifty new things I wrote today afternoon (They are DrDolittle+WIP). Your classes are org.xmms2.Xmms2, org.xmms2.Xmms2Listener/-Adapter, org.xmms2.Xmms2Event and org.xmms2.Title. It works without all the org.xmms2.xmms2bindings.* things since they are not nice to read. The whole thing works async but this also implies that you don't get your things directly. Since you built the doc as mentionend above just check the nice examples that are in org.xmms2.Xmms2. In short words do the following things:
+
+
+ Xmms2 bleh = Xmms2.getInstance("YourClientsName");
+ bleh.connect();
+ bleh.addXmms2Listener(new Xmms2Adapter(){
+  .....
+ });
+ bleh.play();
+ bleh.playlistList();
+ bleh.finalize();
+
+connect()/addListener()/finalize() are quite important so be careful using them. You get every kind of data (no matter you wanted it or the server broadcastet it) via the Listeners methods. When someone is on the way of using that new name please contact dangertools on #x4x or #xmms2 since this second API isn't tested quite much.
