@@ -2,6 +2,18 @@
 
 == Latest quotes ==
 
+=== 2006-03-27 - Digital Prison Break ===
+ <ScytheBlade1> I think you guys would be proud
+ <ScytheBlade1> I spent the day at a local university friday
+ <ScytheBlade1> To get internet, they wanted a student login
+ <ScytheBlade1> After 30 minutes of poking, I tunneled a VPN through :53/udp @ 2MB/sec
+ <ScytheBlade1> .... to get a copy of xmms2 on a friend's laptop ;)
+ <eleusis>      LOL
+ <eleusis>      digital prison break
+ <puzzles>      :D
+ <ScytheBlade1> He stared at me blankly
+ <ScytheBlade1> "xmms2? You went through all of that effort... for xmms2?"
+
 === 2006-03-11 - XMMS2, music, booze and sex ===
  <DraX>    i feel like coding :)
  <tru>     do it!
