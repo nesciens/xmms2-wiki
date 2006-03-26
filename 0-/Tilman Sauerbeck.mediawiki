@@ -6,6 +6,10 @@ My xmms2-related work:
 * Ruby bindings for xmmsclient
 * xmms2-scrobbler, an Audioscrobbler client currently in testing: http://code-monkey.de/projects/xmms2-scrobbler.html
 
+Misc. clients/scripts:
+* [http://exodus.xmms.se/~tilman/playlist-import.rb playlist-import.rb] imports playlists from an old medialib.db
+* [http://exodus.xmms.se/~tilman/punch.rb punch.rb] adds a song to the playlist and queues it as the next song to play
+
 There's probably more information at my website, http://code-monkey.de
 
 [[Category: People]]
