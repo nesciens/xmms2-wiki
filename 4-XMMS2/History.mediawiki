@@ -122,6 +122,8 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 == March ==
 ;27th;
 [[Release:DrDolittle | DrDolittle]] is released, with yet more minor feature additions and bug fixes. A new [[Roadmap]] is also announced, to track future release targets.
+ <sacarasc> DrDolittle, released 13:37 on the 27th March
+            (if you live in Mexico City or similar ;D)
 
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
