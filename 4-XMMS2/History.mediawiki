@@ -119,6 +119,10 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 ;21st;
 [[Release:DrCox | DrCox]] is released, fixing even more annoying bugs in DrBombay, including a fairly serious SQLite issue. DrCox also introduces a new mixer API.
 
+== March ==
+;27th;
+[[Release:DrDolittle | DrDolittle]] is released, with yet more minor feature additions and bug fixes. A new [[Roadmap]] is also announced, to track future release targets.
+
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
 
