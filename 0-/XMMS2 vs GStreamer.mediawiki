@@ -1,3 +1,51 @@
+
+== Tobias email to the xmms2-devel list ==
+Hello,
+
+I guess it's time to write a longer response to this.
+
+XMMS2 might be new, but it's also old. It started three years ago as a 
+personal project for me and Peter (original XMMS author). By that time 
+gstreamer was *very* immature and not a viable option. This might have 
+changed the last three years, I can't say I am that updated on the 
+progress of gstreamer.
+
+But from what I know about gstreamer and the philosophy of XMMS2 there 
+are some incompatibilities.
+
+First of all: GStreamer is built for audio AND VIDEO support. This of 
+course make an impact of the complexity of the code and size for it. 
+XMMS2 will never implement video support and will make decisions based 
+on that assumption. This makes GST and XMMS2 incompatible in the core.
+
+Secondly: Portability and "bloat". The core of XMMS2 is designed to work 
+on "everything". The clientlib has no dependences and the core / plugin 
+only depend on glib / sqlite3. To get a bigger beast like GST to work on 
+small portable platforms probably will be a lot harder for us. GST still 
+doesn't run on windows either.
+
+Thirdly: The things I have heard from other people about GST like the 
+lack of gapless playback and the slow imports of metadata makes me a bit 
+reluctant to embrace this fully. This is probably a effect of the first 
+statement.
+
+The bottom line is: With transformations in XMMS2, GST and XMMS2 will 
+overlap on several places, people may even say that they are redundant. 
+I can agree on that, but you have to keep in mind that XMMS2 and GST are 
+developed with totally different goals.
+
+XMMS2 will exist as a alternative to GST based players and I don't see 
+the real benefit for us to to switch to GST when we have a pretty good 
+ground right now. Had XMMS2 been redesigned from the ground and up 
+*today* maybe we should have chosen GST as our decoder framework, but 
+scrapping our code now, switching to GST and fiddle with their code 
+instead of our own seems a bit far fetched.
+
+A GST based transform for XMMS2 would on the other hand be something 
+that I would like to have in our standard distribution.
+
+
+== Some irc discussions ==
 ;<nowiki>Aug 09 14:38:12 WST</nowiki>
  <juhovh>	anyway, I don't like the gstreamer approach
  <eleusis>	juhovh: why not?
