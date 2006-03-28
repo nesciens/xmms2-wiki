@@ -1,0 +1,8 @@
+__TOC__
+==Prepare the environnement==
+*Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24\'''
+*Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
+*Download [http://prdownloads.sourceforge.net/mingw/MinGW-5.0.2.exe Mingw-5.0.2]. Double click the installer. Choose a mirror, then select '''Candidate''' when asked. At the next step, verify that '''Mingw base tools''' is checked. Install it in '''C:\xmms2_mingw'''
+*Download [http://prdownloads.sourceforge.net/mingw/MSYS-1.0.10.exe Msys 1.0.10] and install it in '''C:\xmms2_mingw'''. When asked for the post install, answer '''y'''. After that, when asked if you have mingw installed, answer '''y''' and then put the directory '''c:/xmms2_mingw''' (yes, with unix-like slashes).
+
+==Setting up the required libraries and the git snapshot==
