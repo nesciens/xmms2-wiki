@@ -1,4 +1,5 @@
 __TOC__
+Tested with [http://exodus.xmms.se/~nano/win32/xmms2-win32_older_snapshot_ion_bidon.tar.gz this modified snapshot]
 ==Prepare the environnement==
 *Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
 *Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
