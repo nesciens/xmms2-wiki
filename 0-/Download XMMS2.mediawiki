@@ -18,11 +18,16 @@ These packages are built for ''Debian sarge'' (the current stable release) but w
 <small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
 
 === Ubuntu ===
+==== Breezy Badger ====
 The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have yet to be tested thoroughly.
 Add the following line to your ''/etc/apt/sources.list'' (same line as debian above):
  deb http://exodus.xmms.se/debian stable main
 
 Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (Ogg Vorbis).
+
+==== Drapper Drake ====
+Packages is built specificly for Drapper are available:
+ deb http://exodus.xmms.se/debian drapper main
 
 == Ports ==
 
