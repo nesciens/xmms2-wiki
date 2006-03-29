@@ -25,7 +25,7 @@ __TOC__
 
 ==Test xmms2==
 *Download xmms-runtime.tar.gz, extract it and copy the files from the '''xmms2_runtime''' directory to '''C:\xmms2'''
-*Copy the following files in the '''C:\xmms2''' :
+*Copy the following files to '''C:\xmms2''' :
  src/clients/lib/xmmsclient/libxmmsclient.dll
  src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll
  src/plugins/null/libxmms_null.dll
