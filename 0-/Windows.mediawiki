@@ -1,5 +1,7 @@
 {{Navbar}}
 
+Some infos about the [[Windows/Mingw|Mingw compilation]]
+
 Status:
 
 * xmmsclient working
