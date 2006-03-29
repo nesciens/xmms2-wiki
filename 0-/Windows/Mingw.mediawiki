@@ -32,7 +32,7 @@ __TOC__
  src/xmms/libxmms2d.dll
  src/clients/cli/xmms2.exe
  src/xmms/xmms2d.exe
-*Go in the xmms2 directory (from cmd.exe or msys) and start the daemon :
+*Go in the '''C:\xmms2''' directory (from cmd.exe or msys) and start the daemon :
  ./xmms2d.exe -p . -i tcp://127.0.0.1:1234 -v
 :You will see that the null output is used
 *In another console, test with xmms2
