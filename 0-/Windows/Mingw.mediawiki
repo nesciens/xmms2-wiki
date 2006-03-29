@@ -1,8 +1,38 @@
 __TOC__
 ==Prepare the environnement==
-*Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24\'''
+*Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
 *Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
-*Download [http://prdownloads.sourceforge.net/mingw/MinGW-5.0.2.exe Mingw-5.0.2]. Double click the installer. Choose a mirror, then select '''Candidate''' when asked. At the next step, verify that '''Mingw base tools''' is checked. Install it in '''C:\xmms2_mingw'''
+*Download [http://prdownloads.sourceforge.net/mingw/MinGW-3.2.0-rc-3.exe MinGW-3.2.0-rc-3] and install it in '''C:\xmms2_mingw'''
+:'''Warning''' : other mingw installers or other gcc versions might not work.
 *Download [http://prdownloads.sourceforge.net/mingw/MSYS-1.0.10.exe Msys 1.0.10] and install it in '''C:\xmms2_mingw'''. When asked for the post install, answer '''y'''. After that, when asked if you have mingw installed, answer '''y''' and then put the directory '''c:/xmms2_mingw''' (yes, with unix-like slashes).
 
 ==Setting up the required libraries and the git snapshot==
+*Download xmms2_required_libraries.tar.gz, put them in the '''C:\xmms2_mingw''' directory and then extract them like this :
+ tar zxf xmms2_required_libraries.tar.gz -C /
+:Package contents : ''glib 2.8.6'' (include some dependencies) , ''sqlite 3.3.4'' and the ''scons.sh'' script (found in /bin)
+*Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot] and extract it in the '''C:\xmms2_mingw\home\<user>''' directory
+
+==Changes in the source code (long)==
+
+==Compilation==
+*Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
+*Type :
+ export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
+*Go in the directory '''/home/<user>/xmms2-stable.git...''' and type
+ scons.sh
+*To build the xmms2d dlls, type : 
+ mv src/xmms/library src/xmms/Library && mv src/xmms/Program src/xmms/program && scons.sh
+
+==Test xmms2==
+*Download xmms-runtime.tar.gz, extract it and copy the files from the '''xmms2_runtime''' directory to '''C:\xmms2'''
+*Copy the following files in the '''C:\xmms2''' :
+ src/clients/lib/xmmsclient/libxmmsclient.dll
+ src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll
+ src/plugins/null/libxmms_null.dll
+ src/xmms/libxmms2d.dll
+ src/clients/cli/xmms2.exe
+ src/xmms/xmms2d.exe
+*Go in the xmms2 directory (from cmd.exe or msys) and start the daemon :
+ ./xmms2d.exe -p . -i tcp://127.0.0.1:1234 -v
+:You will see that the null output is used
+*In another console, test with xmms2
