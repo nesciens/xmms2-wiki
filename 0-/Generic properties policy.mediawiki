@@ -2,7 +2,7 @@ This page tries to list all properties that different clients write into the med
 
 Should be written to source "client/generic"
 
-* rank - value from 0-99 where 99 is best
+* rating - value from 0-5 where 5 is best and 0 is no rating
 * comment - a searchable comment
 * tag - comma seperated tags. tags could be "anything"
 
