@@ -6,7 +6,7 @@
 * [[Release:DrAlban|DrAlban]] - Released 05-12-18
 * [[Release:DrBombay|DrBombay]] - Released 06-01-13
 * [[Release:DrCox|DrCox]] - Released 06-02-21
-* DrDoolittle
+* [[Release:DrDolittle|DrDolittle]] - Released 06-03-27
 * DrEvil
 * DrFeelgood
 * DrGonzo
