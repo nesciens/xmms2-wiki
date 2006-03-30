@@ -347,11 +347,247 @@ get_systemname (void)
 '''src/plugins/diskwrite/diskwrite.c line 194''' :
 *replace
 <pre>
+		mkdir (data->destdir, 0755);
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+		mkdir (data->destdir);
+#else
+		mkdir (data->destdir, 0755);
+#endif
+</pre>
 
+'''add the file src/xmms/Library containing''' :
+<pre>
+target="libxmms2d"
+systemlibrary=True
+
+source = ["main.c",
+          "sample.c", 
+          "config.c",
+          "mediainfo.c",
+          "sqlite.c",
+          "decoder.c",
+          "medialib.c", 
+          "effect.c",
+          "object.c",
+          "transport.c",
+          "error.c",
+          "output.c",
+          "unixsignal.c",
+          "playlist.c",
+          "visualisation.c",
+          "ipc.c",
+          "plsplugins.c",
+          "log.c",
+          "plugin.c",
+          "magic.c",
+          "ringbuf.c",
+        ]
+
+def config(env):
+        pluginenv = env.Copy()
+        env.Prepend(LIBPATH=["src/lib/xmmsipc"])
+        env.Prepend(LIBPATH=["src/lib/xmmssocket"])
+        env.Append(LIBS=['xmmsipc'])
+        env.Append(LIBS=["xmmssocket"])
+        env.Append(CPPPATH=["#src/includepriv"])
+        env.pkgconfig("glib-2.0 >= 2.6.0", fail=True)
+        env.pkgconfig("gmodule-2.0", fail=True)
+        env.pkgconfig("gthread-2.0", fail=True)
+        env.pkgconfig("sqlite3", fail=True)
+        
+        if env.platform != 'win32':
+                env.checklib("m", "sin", fail=True)
+        # we have a xmms2d - we might want plugins!
+        pluginenv.handle_targets("Plugin")
+        env.Append(LIBS=["wsock32"])
+        env.Append(LIBS=["ws2_32"])
+</pre>
+
+'''src/xmms/main.c line 53''' :
+*replace
+<pre>
+#include <pthread.h>
+</pre>
+:with :
+<pre>
+#ifndef __WIN32__
+#include <pthread.h>
+#else
+#include <windows.h>
+#include <time.h>
+#define sleep(x) Sleep(x)
+#endif
+</pre>
+
+'''src/xmms/main.c line 133''' :
+*replace
+<pre>
+		mkdir (scriptdir, 0755);
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+		mkdir (scriptdir);
+#else
+		mkdir (scriptdir, 0755);
+#endif
+</pre>
+
+'''src/xmms/main.c line 178''' :
+*replace
+<pre>
+		mkdir (configdir, 0755);
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+		mkdir (configdir);
+#else
+		mkdir (configdir, 0755);
+#endif
+</pre>
+
+'''src/xmms/main.c line 298''' :
+*replace
+<pre>
+static gboolean
+symlink_file (gchar *source, gchar *dest)
+{
+	gint r;
+
+	g_return_val_if_fail (source, FALSE);
+	g_return_val_if_fail (dest, FALSE);
+
+	r = symlink (source, dest);
+
+	return r != -1;
+}
+</pre>
+:with :
+<pre>
+static gboolean
+symlink_file (gchar *source, gchar *dest)
+{
+#ifndef __WIN32__
+	gint r;
+
+	g_return_val_if_fail (source, FALSE);
+	g_return_val_if_fail (dest, FALSE);
+
+	r = symlink (source, dest);
+
+	return r != -1;
+#else
+	return 1;
+#endif
+}
+</pre>
+
+'''src/xmms/main.c line 394''' :
+*replace
+<pre>
+	sigaddset (&signals, SIGHUP);
+	sigaddset (&signals, SIGTERM);
+	sigaddset (&signals, SIGINT);
+	sigaddset (&signals, SIGPIPE);
+	pthread_sigmask (SIG_BLOCK, &signals, NULL);
+</pre>
+:with :
+<pre>
+#ifndef __WIN32__
+	sigaddset (&signals, SIGHUP);
+	sigaddset (&signals, SIGTERM);
+	sigaddset (&signals, SIGINT);
+	sigaddset (&signals, SIGPIPE);
+	pthread_sigmask (SIG_BLOCK, &signals, NULL);
+#endif
+</pre>
+
+'''src/xmms/mediainfo.c line 36''' :
+*add
+<pre>
+#ifdef __WIN32__
+#include <time.h>
+#endif
+</pre>
+
+'''src/xmms/output.c line 38''' :
+*add
+<pre>
+#ifdef __WIN32__
+#include <windows.h>
+#define sleep(x) Sleep(x)
+#endif
+</pre>
+
+'''src/xmms/unixsignal.c line 40''' :
+*add at the start of the function ''sigwaiter''
+<pre>
+#ifndef __WIN32__
+</pre>
+:and put at the end of the function
+<pre>
+#endif
+</pre>
+
+'''src/xmms/unixsignal.c line 72''' :
+*add at the start of the function ''xmms_signal_init''
+<pre>
+#ifndef __WIN32__
+</pre>
+:and put at the end of the function
+<pre>
+#endif
+</pre>
+
+'''src/xmms/ipc.c line 22''' :
+*replace
+<pre>
+#include <sys/select.h>
+</pre>
+:with :
+<pre>
+#ifndef __WIN32__
+#include <sys/select.h>
+#endif
+</pre>
+
+'''src/xmms/ipc.c line 440''' :
+*replace
+<pre>
+	if (pipe (wakeup) == -1) {
+		xmms_log_error ("Could not create a pipe for client, too low rlimit or fdleak?");
+		return NULL;
+	}
+
+	flags = fcntl (wakeup[0], F_GETFL, 0);
+	if (flags != -1) {
+		flags |= O_NONBLOCK;
+		fcntl (wakeup[0], F_SETFL, flags);
+	}
+
+	flags = fcntl (wakeup[1], F_GETFL, 0);
+	if (flags != -1) {
+		flags |= O_NONBLOCK;
+		fcntl (wakeup[1], F_SETFL, flags);
+	}
 </pre>
 :with :
 <pre>
 
+</pre>
+
+'''src/plugins/diskwrite/Plugin line 3''' :
+*add
+<pre>
+def config(env):
+	if env.platform == 'win32':
+		env.Prepend(LIBPATH=["src/xmms"])
+		env.Append(LIBS=['xmms2d'])
+		env.pkgconfig("glib-2.0 >= 2.6.0", fail=True)
 </pre>
 
 ==Compilation==
