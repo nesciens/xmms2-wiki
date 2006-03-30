@@ -13,6 +13,168 @@ Tested with [http://exodus.xmms.se/~nano/win32/xmms2-win32_older_snapshot_ion_bi
 *Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>'''
 
 ==Changes in the source code (long)==
+'''SConstruct line 29''' :
+*replace
+<pre>
+if sys.platform == 'win32':
+	default_pyrex = 'pyrexc.py'
+	default_prefix = 'c:\\xmms2'
+	default_cxxflags = ['/Zi', '/TC']
+	default_cflags = ['/Zi', '/TC']
+	default_cpppath = ['z:\\xmms2\\winlibs\\include']
+else:
+	default_pyrex = 'pyrexc'
+	default_prefix = '/usr/local/'
+	default_cxxflags = ['-g', '-Wall', '-O0']
+	default_cflags = ['-g', '-Wall', '-O0']
+	if sys.platform == 'darwin':
+		default_cpppath = ['/sw/lib']
+	else:
+		default_cpppath = []
+</pre>
+:with :
+<pre>
+#if sys.platform == 'win32':
+#	default_pyrex = 'pyrexc.py'
+#	default_prefix = 'c:\\xmms2'
+#	default_cxxflags = ['/Zi', '/TC']
+#	default_cflags = ['/Zi', '/TC']
+#	default_cpppath = ['z:\\xmms2\\winlibs\\include']
+#else:
+default_pyrex = 'pyrexc'
+default_prefix = '/usr/local/'
+default_cxxflags = ['-g', '-Wall', '-O0']
+default_cflags = ['-g', '-Wall', '-O0']
+if sys.platform == 'darwin':
+	default_cpppath = ['/sw/lib']
+else:
+	default_cpppath = []
+</pre>
+
+'''src/include/xmmsc/xmmsc_sockets.h line 8''' :
+*replace
+<pre>
+#ifdef _MSC_VER
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+</pre>
+
+'''src/clients/cli/common.h line 24''' :
+*replace
+<pre>
+#include <sys/ioctl.h>
+</pre>
+:with :
+<pre>
+
+#ifndef __WIN32__
+#include <sys/ioctl.h>
+#endif
+</pre>
+
+'''src/clients/cli/cmd_mlib.c''' line 627 or at the top:
+*add
+<pre>
+#ifdef __WIN32__
+#include <windows.h>
+char *realpath(const char *pathname, char resolved_path[PATH_MAX])
+{
+  gint size = 0;
+  size = GetFullPathNameA(pathname, PATH_MAX, resolved_path, 0);
+  if (size > PATH_MAX)
+    {
+      return NULL;
+    }
+  else
+    {
+      return resolved_path;
+    }
+}
+#endif
+</pre>
+
+'''src/clients/cli/common.c line 18''' :
+*add
+<pre>
+#ifdef __WIN32__
+#include <windows.h>
+extern char *realpath(const char *pathname, char resolved_path[PATH_MAX]);
+#endif
+</pre>
+
+'''src/clients/cli/common.c line 116''' :
+*replace
+<pre>
+gint
+find_terminal_width() {
+	gint columns = 0;
+	struct winsize ws;
+	char *colstr, *endptr;
+
+	if (!ioctl(STDIN_FILENO, TIOCGWINSZ, &ws)) {
+		columns = ws.ws_col;
+	} 
+	else {
+		colstr = getenv("COLUMNS");
+		if(colstr != NULL) {
+			columns = strtol(colstr, &endptr, 10);
+		}
+	}
+
+	/* Default to 80 columns */
+	if(columns <= 0) {
+		columns = 80;
+	}
+
+	return columns;
+}
+</pre>
+:with :
+<pre>
+gint
+find_terminal_width() {
+#ifdef __WIN32__
+  return 80;
+#else
+	gint columns = 0;
+	struct winsize ws;
+	char *colstr, *endptr;
+
+	if (!ioctl(STDIN_FILENO, TIOCGWINSZ, &ws)) {
+		columns = ws.ws_col;
+	} 
+	else {
+		colstr = getenv("COLUMNS");
+		if(colstr != NULL) {
+			columns = strtol(colstr, &endptr, 10);
+		}
+	}
+
+	/* Default to 80 columns */
+	if(columns <= 0) {
+		columns = 80;
+	}
+
+	return columns;
+#endif
+}
+</pre>
+
+'''src/clients/cli/main.c line 106''' :
+*replace
+<pre>
+		mkdir (dir, 0755);
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+		mkdir (dir);
+#else
+		mkdir (dir, 0755);
+#endif
+</pre>
 
 ==Compilation==
 *Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
