@@ -83,7 +83,7 @@ Everything reworked to new plugin api.
 ::&#10063;curl
 ::&#10063;diskwrite
 ::&#10063;faad
-::&#10063;file
+::&#10003;file
 ::&#10063;flac
 ::&#10063;gnomevfs
 ::&#10063;ices
