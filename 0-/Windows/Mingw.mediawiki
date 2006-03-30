@@ -13,7 +13,7 @@ Tested with [http://exodus.xmms.se/~nano/win32/xmms2-win32_older_snapshot_ion_bi
 *Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>'''
 
 ==Changes in the source code (long)==
-'''SConstruct line 29''' :
+'''SConstruct line 29'''
 *replace
 <pre>
 if sys.platform == 'win32':
@@ -197,6 +197,7 @@ find_terminal_width() {
 </pre>
 
 '''src/clients/lib/xmmsclient/xmmsclient.c line 168''' :
+<div style="color:green">TO CHECK !</div>
 *replace
 <pre>
 	if (!ipcpath) {
@@ -325,13 +326,13 @@ get_systemname (void)
 </pre>
 
 '''src/clients/et/xmms2-et.c line 279''' :
+<div style="color:red">Warning! this will make xmms2-et unfunctional on windows but it will compile</div>
 *replace
 <pre>
 	inet_aton (DEST_IP, &dest_addr.sin_addr);
 </pre>
 :with :
 <pre>
-//this will make xmms2-et unfunctional on windows but it will compile
 #ifndef __WIN32__
 	inet_aton (DEST_IP, &dest_addr.sin_addr);
 #endif
