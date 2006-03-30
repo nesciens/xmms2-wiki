@@ -197,7 +197,7 @@ find_terminal_width() {
 </pre>
 
 '''src/clients/lib/xmmsclient/xmmsclient.c line 168''' :
-<div style="color:green">TO CHECK !</div>
+<div style="color:red">Warning! TO CHECK !</div>
 *replace
 <pre>
 	if (!ipcpath) {
