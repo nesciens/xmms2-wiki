@@ -557,6 +557,7 @@ symlink_file (gchar *source, gchar *dest)
 
 '''src/xmms/ipc.c line 440''' :
 *replace
+<div style="color:red">Warning; this will cause the daemon not to work, TODO !</div>
 <pre>
 	if (pipe (wakeup) == -1) {
 		xmms_log_error ("Could not create a pipe for client, too low rlimit or fdleak?");
@@ -577,17 +578,76 @@ symlink_file (gchar *source, gchar *dest)
 </pre>
 :with :
 <pre>
+#ifndef __WIN32__
+        if (pipe (wakeup) == -1) {
+		xmms_log_error ("Could not create a pipe for client, too low rlimit or fdleak?");
+		return NULL;
+	}
 
+	flags = fcntl (wakeup[0], F_GETFL, 0);
+	if (flags != -1) {
+		flags |= O_NONBLOCK;
+		fcntl (wakeup[0], F_SETFL, flags);
+	}
+
+	flags = fcntl (wakeup[1], F_GETFL, 0);
+	if (flags != -1) {
+		flags |= O_NONBLOCK;
+		fcntl (wakeup[1], F_SETFL, flags);
+	}
+#endif
 </pre>
 
-'''src/plugins/diskwrite/Plugin line 3''' :
-*add
+'''src/plugins/diskwrite/Plugin'''
+'''src/plugins/eq/Plugin'''
+'''src/plugins/file/Plugin'''
+'''src/plugins/html/Plugin'''
+'''src/plugins/m3u/Plugin'''
+'''src/plugins/null/Plugin'''
+'''src/plugins/pls/Plugin'''
+'''src/plugins/replaygain/Plugin'''
+'''src/plugins/wave/Plugin'''
+*add the following at the end :
 <pre>
 def config(env):
 	if env.platform == 'win32':
 		env.Prepend(LIBPATH=["src/xmms"])
 		env.Append(LIBS=['xmms2d'])
 		env.pkgconfig("glib-2.0 >= 2.6.0", fail=True)
+</pre>
+
+'''src/plugins/file/file.c line 29''' :
+*add
+<pre>
+#include <stdio.h>
+</pre>
+
+'''src/xmms/xmms2-launcher.c line 40''' :
+*add at the start of the main function
+<pre>
+#ifndef __WIN32__
+</pre>
+*and at the end of the main function (before ''exit(0)''):
+<pre>
+#else
+	system("xmms2d.exe");
+#endif
+	exit (0);
+</pre>
+
+'''src/xmms/Program line 37''' :
+*replace
+<pre>
+	if env.platform != 'win32':
+		env.checklib("m", "sin", fail=True)
+</pre>
+:with :
+<pre>
+	if env.platform != 'win32':
+		env.checklib("m", "sin", fail=True)
+	else:
+		env.Append(LIBS=["wsock32"])	
+		env.Append(LIBS=["ws2_32"])
 </pre>
 
 ==Compilation==
