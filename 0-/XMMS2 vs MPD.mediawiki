@@ -57,7 +57,7 @@ XMMS2 can output to the following: [[Component:ALSA | ALSA]], [[Component:OSS | 
 ; Minimal hardware requirements:
 So far, development of XMMS2 has focused on making sure things work as they're supposed to, and on ensuring a consistent design of the system. There have been no real optimisations to make things run as fast as possible, but that can probably be achieved before a stable release. xmms2d is known to have worked on a Pentium 133MHz machine with 48MB RAM (running Debian Stable).
 ; Tested on Compatibility many different operating systems:
-XMMS2 is known to work on Linux, Mac OS X and various flavours of BSD. Support for Microsoft Windows is definitely planned, with possible support for mobile devices.
+XMMS2 is known to work on Linux, Mac [[OS X]] and various flavours of BSD. Support for Microsoft [[Windows]] is definitely planned, with possible support for mobile devices.
 
 == Comparison with MPD2 roadmap ==
 This list taken from [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans Music Player Daemon Version 2 Plans] (GFDL)
