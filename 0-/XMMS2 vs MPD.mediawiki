@@ -91,7 +91,7 @@ XMMS2 does this, and adds the files' metadata to the Medialib.
 ; Support for Audio CD playback.:
 XMMS2 can play Audio CDs via the [[Component:cdde | CDDE]] decoder plugin.
 ; Add support for audioscrobbler's feature "Recommendation" - appends songs that are similar to the one playing at the moment:
-This can be implemented client-side. See [[XMMS2 Clients#XMMS2-Scrobbler | XMMS2-Scrobbler]]
+This can be implemented client-side. See [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]]
 
 
 [[Category:Users]]
