@@ -8,15 +8,16 @@ Tested with [http://exodus.xmms.se/~nano/win32/xmms2-win32_older_snapshot_ion_bi
 *Download [http://prdownloads.sourceforge.net/mingw/MSYS-1.0.10.exe Msys 1.0.10] and install it in '''C:\xmms2_mingw'''. When asked for the post install, answer '''y'''. After that, when asked if you have mingw installed, answer '''y''' and then put the directory '''c:/xmms2_mingw''' (yes, with unix-like slashes).
 
 ==Setting up the required libraries and the git snapshot==
-*Download [http://exodus.xmms.se/~nano/win32/xmms2_required_libraries.tar.gz xmms2_required_libraries.tar.gz], put them in the '''C:\xmms2_mingw''' directory and then extract them like this :
- tar zxf xmms2_required_libraries.tar.gz -C /
+*Download [http://exodus.xmms.se/~nano/win32/xmms2_required_libraries.tar.gz xmms2_required_libraries.tar.gz] and put it in '''C:\xmms2_mingw\home\<user>''' 
 :Package contents : ''glib 2.8.6'' (include some dependencies) , ''sqlite 3.3.4'' and the ''scons.sh'' script (found in /bin)
-*Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot] and extract it in the '''C:\xmms2_mingw\home\<user>''' directory
+*Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>'''
 
 ==Changes in the source code (long)==
 
 ==Compilation==
 *Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
+*Extract the needed libraries like this :
+ tar zxf xmms2_required_libraries.tar.gz -C /
 *Type :
  export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
 *Go in the directory '''/home/<user>/xmms2-stable.git...''' and type
