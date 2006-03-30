@@ -176,6 +176,79 @@ find_terminal_width() {
 #endif
 </pre>
 
+'''src/clients/cli/main.c line 21''' :
+*add
+<pre>
+#ifdef __WIN32__
+#include <io.h>
+#endif
+</pre>
+
+'''src/clients/lib/xmmsclient/xmmsclient.c line 21''' :
+*replace
+<pre>
+#include <pwd.h>
+</pre>
+:with :
+<pre>
+#ifndef __WIN32__
+#include <pwd.h>
+#endif
+</pre>
+
+'''src/clients/lib/xmmsclient/xmmsclient.c line 168''' :
+*replace
+<pre>
+	if (!ipcpath) {
+		struct passwd *pwd;
+
+		pwd = getpwuid (getuid ());
+		if (!pwd || !pwd->pw_name)
+			return false;
+
+		snprintf (path, sizeof(path), "unix:///tmp/xmms-ipc-%s", pwd->pw_name);
+	} else {
+</pre>
+:with :
+<pre>
+#ifndef __WIN32__
+	if (!ipcpath) {
+		struct passwd *pwd;
+
+		pwd = getpwuid (getuid ());
+		if (!pwd || !pwd->pw_name)
+			return false;
+
+		snprintf (path, sizeof(path), "unix:///tmp/xmms-ipc-%s", pwd->pw_name);
+	} else
+#endif
+	{
+</pre>
+
+'''src/clients/lib/xmmsclient-glib/Library line 8''' :
+*add
+<pre>
+	if env.platform == 'win32':
+		env.Prepend(LIBPATH=["src/clients/lib/xmmsclient"])
+		env.Append(LIBS=["xmmsclient"])
+		env.Prepend(LIBPATH=["src/lib/xmmsipc"])
+		env.Append(LIBS=["xmmsipc"])
+		env.Prepend(LIBPATH=["src/lib/xmmssocket"])
+		env.Append(LIBS=["xmmssocket"])
+		env.Append(LIBS=["wsock32"])
+		env.Append(LIBS=["ws2_32"])
+</pre>
+
+'''src/include/xmmsc/xmmsc_ipc_transport.h line 34''' :
+*replace
+<pre>
+int xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
+</pre>
+:with :
+<pre>
+xmms_socket_t xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
+</pre>
+
 ==Compilation==
 *Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
 *Extract the needed libraries like this :
