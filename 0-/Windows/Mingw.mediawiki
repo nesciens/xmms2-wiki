@@ -249,6 +249,111 @@ int xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
 xmms_socket_t xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
 </pre>
 
+'''src/clients/cli/Program line 18''' :
+*add
+<pre>
+	if env.platform == 'win32':
+		env.Append(LIBS=["wsock32"])
+</pre>
+
+'''src/clients/et/xmms2-et.c line 24''' :
+*replace
+<pre>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/utsname.h>
+</pre>
+:with :
+<pre>
+#ifdef __WIN32__
+#include <winsock2.h>
+#else
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <sys/utsname.h>
+#endif
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+</pre>
+
+'''src/clients/et/xmms2-et.c line 225''' :
+*replace
+<pre>
+static void
+get_systemname (void)
+{
+	struct utsname uts;
+
+	if (uname (&uts) == 0) {
+		system_name = g_strdup_printf ("%s %s %s",
+		                               uts.sysname,
+		                               uts.release,
+		                               uts.machine);
+	}
+}
+</pre>
+:with :
+<pre>
+static void
+get_systemname (void)
+{
+#ifdef __WIN32__
+  system_name = g_strdup_printf ("%s", "win32");
+#else
+	struct utsname uts;
+
+	if (uname (&uts) == 0) {
+		system_name = g_strdup_printf ("%s %s %s",
+		                               uts.sysname,
+		                               uts.release,
+		                               uts.machine);
+	}
+#endif
+}
+</pre>
+
+'''src/clients/et/xmms2-et.c line 279''' :
+*replace
+<pre>
+	inet_aton (DEST_IP, &dest_addr.sin_addr);
+</pre>
+:with :
+<pre>
+//this will make xmms2-et unfunctional on windows but it will compile
+#ifndef __WIN32__
+	inet_aton (DEST_IP, &dest_addr.sin_addr);
+#endif
+</pre>
+
+'''src/clients/et/Library line 11''' :
+*add
+<pre>
+	if env.platform == 'win32':
+		env.Append(LIBS=["wsock32"])
+</pre>
+
+'''src/plugins/diskwrite/diskwrite.c line 194''' :
+*replace
+<pre>
+
+</pre>
+:with :
+<pre>
+
+</pre>
+
 ==Compilation==
 *Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
 *Extract the needed libraries like this :
