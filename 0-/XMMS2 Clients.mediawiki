@@ -40,6 +40,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=snett| description=snett is a strange-quark clone written in Ruby. It allows playback control and limited access to playlists stored in the medialib.}}
 
+{{ClientSummary| name="XmmsDeskbar"| description="A xmms handler for deskbar."}}
+
 == Qt ==
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
