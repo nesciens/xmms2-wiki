@@ -40,7 +40,7 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=snett| description=snett is a strange-quark clone written in Ruby. It allows playback control and limited access to playlists stored in the medialib.}}
 
-{{ClientSummary| name="XmmsDeskbar"| description="A xmms handler for deskbar."}}
+{{ClientSummary| name=XmmsDeskbar| description=A xmms handler for deskbar.}}
 
 == Qt ==
 
