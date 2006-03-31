@@ -648,7 +648,6 @@ def config(env):
 #else
 	system("xmms2d.exe");
 #endif
-	exit (0);
 </pre>
 
 '''src/xmms/Program line 37''' :
