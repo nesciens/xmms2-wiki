@@ -3,6 +3,8 @@ Tested with the git stable snapshot cae0d4328c6405e36ff0c82b60b58c8daa8efe3e on 
 
 You can get [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and compile it. (to avoid making all the changes to the code)
 
+You can try hacking with [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_Nru_ion_bidon.diff this patch]
+
 ==Prepare the environment==
 *Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
 *Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
@@ -14,6 +16,7 @@ You can get [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the
 *Download [http://exodus.xmms.se/~nano/win32/xmms2_required_libraries.tar.gz xmms2_required_libraries.tar.gz] and put it in '''C:\xmms2_mingw\home\<user>''' 
 :Package contents : ''glib 2.8.6'' (include some dependencies) , ''sqlite 3.3.4'' and the ''scons.sh'' script (found in /bin)
 *Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>''' or download [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and extract it in '''C:\xmms2_mingw\home\<user>''' (to avoid making all the changes to the code)
+*If you have downloaded the snapshot, you can apply [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_Nru_ion_bidon.diff this patch] to it, that makes all the changes listed above.
 
 ==Changes in the source code (long)==
 '''SConstruct line 29'''
