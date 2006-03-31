@@ -3,7 +3,7 @@ Tested with the git stable snapshot cae0d4328c6405e36ff0c82b60b58c8daa8efe3e on 
 
 You can get [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and compile it. (to avoid making all the changes to the code)
 
-You can try hacking with [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_Nru_ion_bidon.diff this patch]
+You can try hacking with [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_Nru_ion_bidon.diff this patch] on the latest snapshot
 
 ==Prepare the environment==
 *Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
