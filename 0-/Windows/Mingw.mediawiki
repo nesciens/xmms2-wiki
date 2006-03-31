@@ -706,4 +706,11 @@ cp ./src/xmms/xmms2d.exe /c/xmms2
 *Go in '''/c/xmms2''' (from msys) (equivalent to ''C:\xmms2'') and start the daemon :
  ./xmms2d.exe -p . -i tcp://127.0.0.1:1234 -v
 :Hopefully, you will see that the null output is used
-*In another console, test with xmms2
+*In another console, type :
+<pre>
+export XMMS_PATH=tcp://127.0.0.1:1234
+</pre>
+*Run xmms2 :
+<pre>
+cd /c/xmms2 && ./xmms2.exe --help
+</pre>
