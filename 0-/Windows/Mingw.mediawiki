@@ -702,19 +702,21 @@ def config(env):
 or run this script from '''/home/<user>/xmms2-stable.git...''' :
 <pre>
 #!/usr/bin/sh
-rm -f /c/libxmmsclient.dll
-rm -f /c/libxmmsclient-glib.dll
-rm -f /c/libxmms_null.dll
-rm -f /c/libxmms2d.dll
-rm -f /c/xmms2.exe
-rm -f /c/xmms2d.exe
+rm -f /c/xmms2/libxmmsclient.dll
+rm -f /c/xmms2/libxmmsclient-glib.dll
+rm -f /c/xmms2/libxmms2d.dll
+rm -f /c/xmms2/xmms2.exe
+rm -f /c/xmms2/xmms2d.exe
+rm -f /c/xmms2/plugins/libxmms_null.dll
+
+mkdir -p /c/xmms2/plugins
 
 cp ./src/clients/lib/xmmsclient/libxmmsclient.dll /c/xmms2
 cp ./src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll /c/xmms2
 cp ./src/plugins/null/libxmms_null.dll /c/xmms2
-cp ./src/xmms/libxmms2d.dll /c/xmms2
 cp ./src/clients/cli/xmms2.exe /c/xmms2
 cp ./src/xmms/xmms2d.exe /c/xmms2
+cp ./src/xmms/libxmms2d.dll /c/xmms2/plugins
 </pre>
 
 *Go in '''/c/xmms2''' (from msys) (equivalent to ''C:\xmms2'') and start the daemon :
