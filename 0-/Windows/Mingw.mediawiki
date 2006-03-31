@@ -669,8 +669,6 @@ def config(env):
  export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
 *Go in the directory '''/home/<user>/xmms2-stable.git...''' and type
  scons.sh
-*To build the xmms2d dlls, type : 
- mv src/xmms/library src/xmms/Library && mv src/xmms/Program src/xmms/program && scons.sh
 
 ==Test xmms2==
 *Download [http://exodus.xmms.se/~nano/win32/xmms-runtime.tar.gz xmms-runtime.tar.gz], extract it and copy the files from the '''xmms2_runtime''' directory to '''C:\xmms2'''
