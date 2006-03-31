@@ -609,15 +609,16 @@ symlink_file (gchar *source, gchar *dest)
 #endif
 </pre>
 
-'''src/plugins/diskwrite/Plugin'''
-'''src/plugins/eq/Plugin'''
-'''src/plugins/file/Plugin'''
-'''src/plugins/html/Plugin'''
-'''src/plugins/m3u/Plugin'''
-'''src/plugins/null/Plugin'''
-'''src/plugins/pls/Plugin'''
-'''src/plugins/replaygain/Plugin'''
-'''src/plugins/wave/Plugin'''
+'''src/plugins/diskwrite/Plugin'''<br />
+'''src/plugins/eq/Plugin'''<br />
+'''src/plugins/file/Plugin'''<br />
+'''src/plugins/html/Plugin'''<br />
+'''src/plugins/m3u/Plugin'''<br />
+'''src/plugins/null/Plugin'''<br />
+'''src/plugins/pls/Plugin'''<br />
+'''src/plugins/replaygain/Plugin'''<br />
+'''src/plugins/wave/Plugin''' :
+
 *add the following at the end :
 <pre>
 def config(env):
