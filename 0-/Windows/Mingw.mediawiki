@@ -13,8 +13,7 @@ You can get [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the
 ==Setting up the required libraries and the git snapshot==
 *Download [http://exodus.xmms.se/~nano/win32/xmms2_required_libraries.tar.gz xmms2_required_libraries.tar.gz] and put it in '''C:\xmms2_mingw\home\<user>''' 
 :Package contents : ''glib 2.8.6'' (include some dependencies) , ''sqlite 3.3.4'' and the ''scons.sh'' script (found in /bin)
-*Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>''' or download [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and extract it in [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and compile it. (to avoid you to make all the changes to the code)
- (to avoid making all the changes to the code)
+*Download the [http://git.xmms.se/snapshot.cgi/xmms2-stable.git-snapshot-HEAD.tar.bz2 git xmms2-stable snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>''' or download [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and extract it in '''C:\xmms2_mingw\home\<user>''' (to avoid making all the changes to the code)
 
 ==Changes in the source code (long)==
 '''SConstruct line 29'''
