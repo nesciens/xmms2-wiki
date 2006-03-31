@@ -1,5 +1,8 @@
 __TOC__
-Tested with [http://exodus.xmms.se/~nano/win32/xmms2-win32_older_snapshot_ion_bidon.tar.gz this modified snapshot]
+Tested with the git stable snapshot cae0d4328c6405e36ff0c82b60b58c8daa8efe3e on 30.03.06.
+
+You can get [http://exodus.xmms.se/~nano/win32/xmms2-stable_30_03_06.tar.bz2 the 30.03.06 modified snapshot] and compile it. (to avoid you to make all the changes to the code)
+
 ==Prepare the environment==
 *Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
 *Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
