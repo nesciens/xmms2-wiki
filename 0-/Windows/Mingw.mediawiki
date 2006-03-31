@@ -740,5 +740,5 @@ export XMMS_PATH=tcp://127.0.0.1:1234
 cd /c/xmms2 && ./xmms2.exe
 </pre>
 *Debug informations :
-:*The client sends the hello command and remains in the function xmmsc_ipc_wait_for_event (src/clients/lib/xmmsclient/ipc.c) which is called every X seconds.
-:*The server never goes in the function xmms_ipc_source_accept (src/xmms/ipc.c).
+:*The client sends the hello command and remains in the function '''xmmsc_ipc_wait_for_event''' (src/clients/lib/xmmsclient/ipc.c) which is called every X seconds.
+:*The server never goes in the function '''xmms_ipc_source_accept''' (src/xmms/ipc.c).
