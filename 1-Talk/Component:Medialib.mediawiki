@@ -1,0 +1,13 @@
+= Compilations =
+
+The problem of how to determine whether or not an album is a compilation and how to deal with it has actually been solved by amaroK already.
+
+Each album has a "Compilation" flag. When you import your media, amaroK guesses whether or not the album is a compilation. All of the compilations are filed under an artist called "Various Artists" at the end of the media library.
+
+Detecting various artists shouldn't be very difficult -- all we have to do is check if there's more than one artist on a single album (or, to be safe, more than 3 artists because people sometimes have typos in their "artist" tags).
+
+A more advanced algorithm could even detect typos! Just strip extra whitespace from the artist field, then applying a SOUNDEX hash to each artist field. If the SOUNDEX values differ by a large enough number, then they're probably different artists.
+
+Also, there are lot of free web services that let you look up album information (last.fm, amazon, google, msnmusic, yahoo, rs). A simpler solution could be to just write a python script that connects to one of those services to assign them Compilation status.
+
+''-- epitronic''
