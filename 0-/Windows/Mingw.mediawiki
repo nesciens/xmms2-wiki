@@ -674,7 +674,7 @@ def config(env):
 #else
 # define XMMS_LIBSUFFIX ".so"
 #endif
-<pre>
+</pre>
 :with :
 <pre>
 #ifdef XMMS_OS_DARWIN
