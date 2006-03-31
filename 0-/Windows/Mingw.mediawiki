@@ -345,6 +345,7 @@ get_systemname (void)
 </pre>
 :with :
 <pre>
+//Warning! this will make xmms2-et unfunctional on windows but it will compile
 #ifndef __WIN32__
 	inet_aton (DEST_IP, &dest_addr.sin_addr);
 #endif
