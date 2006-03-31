@@ -591,6 +591,7 @@ symlink_file (gchar *source, gchar *dest)
 </pre>
 :with :
 <pre>
+//Warning; this will cause the daemon not to work, TODO !
 #ifndef __WIN32__
         if (pipe (wakeup) == -1) {
 		xmms_log_error ("Could not create a pipe for client, too low rlimit or fdleak?");
