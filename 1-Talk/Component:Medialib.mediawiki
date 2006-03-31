@@ -11,3 +11,9 @@ A more advanced algorithm could even detect typos! Just strip extra whitespace f
 Also, there are lot of free web services that let you look up album information (last.fm, amazon, google, msnmusic, yahoo, rs). A simpler solution could be to just write a python script that connects to one of those services to assign them Compilation status.
 
 ''-- epitronic''
+
+Hello, yes.
+
+Cool things is that xmms2 detects various artists for albums tagged with musicbrainz information already. A compilation flag is set for each song in that case. But This should of course be expanded in the future. I like a simple as possible solution. Please take your implementation ideas to the mail list!
+
+''-- Tobias''
