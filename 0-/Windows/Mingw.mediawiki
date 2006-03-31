@@ -736,7 +736,7 @@ cp ./src/plugins/null/libxmms_null.dll /c/xmms2/plugins
 <pre>
 export XMMS_PATH=tcp://127.0.0.1:1234
 </pre>
-*Run xmms2 :
+*Run xmms2 and debug to see why it's not working ?!
 <pre>
-cd /c/xmms2 && ./xmms2.exe --help
+cd /c/xmms2 && ./xmms2.exe
 </pre>
