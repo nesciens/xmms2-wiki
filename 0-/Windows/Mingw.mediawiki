@@ -184,6 +184,16 @@ find_terminal_width() {
 #endif
 </pre>
 
+'''src/clients/lib/xmmsclient/Library line 23''' :
+*replace
+<pre>
+		env.Append(LINKFLAGS=["/DEF:src/clients/lib/xmmsclient/xmmsclient.def"])
+</pre>
+:with :
+<pre>
+#		env.Append(LINKFLAGS=["/DEF:src/clients/lib/xmmsclient/xmmsclient.def"])
+</pre>
+
 '''src/clients/lib/xmmsclient/xmmsclient.c line 21''' :
 *replace
 <pre>
