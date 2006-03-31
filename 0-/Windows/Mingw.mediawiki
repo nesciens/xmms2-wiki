@@ -665,17 +665,27 @@ def config(env):
 		env.Append(LIBS=["ws2_32"])
 </pre>
 
-'''src/xmms/plugin.c line 609''' :
+'''src/xmms/plugin.c line 38''' :
 *replace
 <pre>
-		if (!strstr (name, XMMS_LIBSUFFIX))
-		  continue;
+#ifdef XMMS_OS_DARWIN
+# define XMMS_LIBSUFFIX ".dylib"
+#elif XMMS_OS_HPUX11 && !defined(__LP64__)
+# define XMMS_LIBSUFFIX ".sl"
+#else
+# define XMMS_LIBSUFFIX ".so"
+#endif
 <pre>
 :with :
 <pre>
-#ifndef __WIN32__
-		if (!strstr (name, XMMS_LIBSUFFIX))
-		  continue;
+#ifdef XMMS_OS_DARWIN
+# define XMMS_LIBSUFFIX ".dylib"
+#elif XMMS_OS_HPUX11 && !defined(__LP64__)
+# define XMMS_LIBSUFFIX ".sl"
+#elif defined(XMMS_OS_WIN32)
+# define XMMS_LIBSUFFIX ".dll"
+#else
+# define XMMS_LIBSUFFIX ".so"
 #endif
 </pre>
 
