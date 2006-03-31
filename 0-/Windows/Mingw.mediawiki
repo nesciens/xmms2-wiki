@@ -723,10 +723,10 @@ mkdir -p /c/xmms2/plugins
 
 cp ./src/clients/lib/xmmsclient/libxmmsclient.dll /c/xmms2
 cp ./src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll /c/xmms2
-cp ./src/plugins/null/libxmms_null.dll /c/xmms2
+cp ./src/xmms/libxmms2d.dll /c/xmms2
 cp ./src/clients/cli/xmms2.exe /c/xmms2
 cp ./src/xmms/xmms2d.exe /c/xmms2
-cp ./src/xmms/libxmms2d.dll /c/xmms2/plugins
+cp ./src/plugins/null/libxmms_null.dll /c/xmms2/plugins
 </pre>
 
 *Go in '''/c/xmms2''' (from msys) (equivalent to ''C:\xmms2'') and start the daemon :
