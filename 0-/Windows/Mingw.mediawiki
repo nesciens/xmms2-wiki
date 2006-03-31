@@ -665,6 +665,20 @@ def config(env):
 		env.Append(LIBS=["ws2_32"])
 </pre>
 
+'''src/xmms/plugin.c line 609''' :
+*replace
+<pre>
+		if (!strstr (name, XMMS_LIBSUFFIX))
+		  continue;
+<pre>
+:with :
+<pre>
+#ifndef __WIN32__
+		if (!strstr (name, XMMS_LIBSUFFIX))
+		  continue;
+#endif
+</pre>
+
 ==Compilation==
 *Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
 *Extract the needed libraries like this :
