@@ -1,0 +1,31 @@
+== Downstream Maintance ==
+
+''All examples are from the FreeBSD port''
+
+There are a number of things a downstream maintainer should consider when creating an XMMS2 package for their operating system of choice. The first area to consider is probably SCons releated:
+
+SCons doesn't like the Make enviornment much, which means things like CFLAGS won't be honored unless you explicitly declare them to SCons, further in XMMS2 we uses different variable names for a number of the common Make enviornment variables. 
+To envoke SCons for building XMMS2 in the FreeBSD world we use this:
+
+        cd ${WRKSRC} && \
+                ${SETENV} JAVA_HOME=${JAVA_HOME} scons CC=${CC} 
+                LINKFLAGS="${LDFLAGS}"   CCFLAGS="${CFLAGS}" \
+                LIBPATH=${LOCALBASE}/lib CPPPATH=${LOCALBASE}/include \  
+                PKGCONFIGDIR=${PREFIX}/libdata/pkgconfig  \ 
+                EXCLUDE="${EXCLUDE}" PREFIX="${PREFIX}" ${SCONS_TARGET}
+
+Imediately you'll notice the use of LINKFLAGS for LDFLAGS and CCFLAGS for CFLAGS, you'll also notice that instead of passing -L/usr/local/lib as an LD or LINK flag, it is instead passed as a LIBPATH, same goes for CPPPATH instead of -I/usr/local/include in C or CCFLAGS. 
+
+There are two other important things to look at here, EXCLUDE= is the first. In the GNU Autoconf world, one might make use of --disable-FEATURE, but in the XMMS2 SCons build enviornment we have EXCLUDE. EXCLUDE's job is to disable certain features, determined by their directory name. On a single user-basis this might manifest as "Oh..I don't really want a FLAC plugin but I have libflac installed on my system, so let me add flac to my EXCLUDE variable." For a package maintainer this makes that same process more possible on a grand scale, in the FreeBSD world one might use WITH_ knbos, to enable or disable certain features. For example:
+
+        .if defined(WITH_MUSEPACK)
+        LIB_DEPENDS+=   mpcdec.3:${PORTSDIR}/audio/libmpcdec
+        PLIST_SUB+=     MUSEPACK=""
+        .else
+        EXCLUDE+=       musepack
+        PLIST_SUB+=     MUSEPACK="@comment "
+        .endif
+
+Ok, so this is how FreeSBSD enables or disables the musepack plugin. The first part is obvious, set the dependency and make sure the plugin shows up in the packaging list, the port then allows scons to automagically detect that libmpcdec is installed and enable support for it. But what if the user doesn't want musepack support in XMMS2 but has libmpcdec installed? All they have to do is not define WITH_MUSEPACK, and it will be added to the EXCLUDE list that is later passed to SCons, and make sure that it is commented out of the packaging list. 
+
+The other little SCons caveat is JAVA_HOME. Currently the Java bindings build process is a little broken, and so to deal with that JAVA_HOME must be passed to SCons so that it knows where to look, which is fine, but the Java build script can only read it as an enviornmental variable. This will most likely only be an issue for DrDolittle
