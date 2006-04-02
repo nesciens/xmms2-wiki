@@ -78,10 +78,10 @@ Everything reworked to new plugin api.
 ::&#10063;pls
 ::&#10063;m3u
 :&#10063; convert plugins.
-::&#10063;alsa
+::&#10003;alsa
 ::&#10063;coreaudio
 ::&#10063;curl
-::&#10063;diskwrite
+::&#10003;diskwrite
 ::&#10063;faad
 ::&#10003;file
 ::&#10063;flac
@@ -91,13 +91,13 @@ Everything reworked to new plugin api.
 ::&#10003;mad (id3v1 not fixed yet)
 ::&#10003;modplug
 ::&#10063;musepack
-::&#10063;null
+::&#10003;null
 ::&#10003;oss
 ::&#10063;samba
 ::&#10063;sid
 ::&#10063;speex
 ::&#10063;sun
-::&#10063;wave
+::&#10003;wave
 ::&#10003;vorbis
 :&#10063; effects.
 ::&#10063;eq
