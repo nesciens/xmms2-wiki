@@ -32,5 +32,255 @@ by values from a xmms2 mlib query and translate to medialib id on exec (if this 
   $ xmms2 sort a<tab>
 by some predefined values, artist, title, duration, album etc etc
 
+----
+I started working on it. So command line get completed for:
+* commands
+* configuration options
+* configuration values
+* mlib commands
+* various file/directory completions
+* search key options
+* search key values
+* export format
+To have this working, copy attached shell script to /etc/bash_completion.d/xmms2 or have it invoked by bash in any way. Restart your bash and you're done :) There are some TODO/FIXME in the shell script to be worked on ...
+
+<pre>
+#-*- mode: shell-script;-*-
+# xmms2 client tab completion
+#   -- Nicolas Collignon <tsointsoin@gmail.com>
+
+have xmms2 &&
+_xmms2()
+{
+   local cur cmds keys
+   
+#complete -f -X '!*.@(pls|PLS|m3u|M3U|mp3|MP3|ogg|OGG)' xmms2
+
+   cur=${COMP_WORDS[COMP_CWORD]}
+   cmds='add addid addpls clear config_list config current \
+         help info jump list mlib move next pause play \
+         plugin_list prev quit radd remove seek shuffle sort \
+         stats status stop volume_list volume'
+         
+   # mlib meta data keys
+   keys='added album albumid artist artistid \
+         bitrate duration laststarted lmod mime \
+         title trackid tracknr url'
+   
+   # COMPREPLY=()
+
+   # complete command (1st arg)
+   if [[ $COMP_CWORD -eq 1 ]]; then
+      COMPREPLY=( $( compgen -W "$cmds" -- $cur ))
+
+   # complete option (2 args command)
+   elif [[ $COMP_CWORD -eq 2 ]]; then
+      case ${COMP_WORDS[1]} in
+      add)    # add <url>
+         # TODO
+         ;;
+      addid)  # addid <medialib_id> 
+         COMPREPLY=( $( xmms2 mlib query \
+                     "SELECT id FROM media WHERE key='url'" \
+                     | sed -ne 's|^id = \('$cur'[^ ]*\)$|\1|p' ))
+         ;;
+      
+      addpls) # addpl <url>
+         # FIXME: handle URI proto
+         _filedir
+         ;;
+      config) # config <key> <val>
+         COMPREPLY=( $( xmms2 config_list \
+                     | sed -ne 's|^\('$cur'[^ ]*\).*$|\1|p' ))
+         ;;
+      
+      help) # help [cmd]
+         COMPREPLY=( $( compgen -W "$cmds" -- $cur ))
+         ;;
+      
+      jump|move) # move <playlist_position> <new_position>
+                 # jump <playlist_position>
+         # FIXME this is the ID not the position !
+         COMPREPLY=( $( xmms2 mlib query \
+                     "SELECT pos FROM PlaylistEntries WHERE playlist_id= \
+                     (SELECT id FROM Playlist WHERE name='_xmms2cli')" \
+                     | sed -ne 's|^pos = \('$cur'.*\).*$|\1|p' ))
+         ;;
+
+      mlib) # mlib <cmd> [options ...]
+         COMPREPLY=( $( compgen -W \
+                  'add addpath \
+                   export_playlist \
+                   import_playlist \
+                   list_playlist loadall load_playlist \
+                   playlists_list \
+                   query queryadd \
+                   rehash remove_playlist \
+                   save_playlist \
+                   search searchadd' \
+                  -- $cur ))
+         ;;
+      
+      radd) # radd <directory>
+         _filedir -d
+         ;;
+      
+      remove) # remove <playlist_position>
+         # TODO
+         ;;
+      
+      seek)   # seek [+|-] <seconds>
+         COMPREPLY=( $( compgen -W '+ -' -- $cur ))
+         ;;
+      sort)   # sort <property>
+         COMPREPLY=( $( compgen -W "$keys" -- $cur ))
+         ;;
+      volume) # volume <channel> <level>
+         # TODO : xmms2 volume_list
+         ;;
+      *)
+         ;;
+      esac
+   
+   # complete options (3 args command)
+   elif [[ $COMP_CWORD -eq 3 ]]; then
+      case ${COMP_WORDS[1]} in
+      
+      config) # config <key> <val>
+         case ${COMP_WORDS[2]} in
+         # complete boolean (0/1) keys
+         effect.equalizer.enabled \
+         |effect.replaygain.enabled \
+         |medialib.dologging \
+         |playlist.load_autosaved \
+         |playlist.repeat_all \
+         |playlist.repeat_one \
+         |transport.curl_http.shoutcastinfo \
+         |transport.curl_http.useproxy \
+         |transport.curl_http.verbose)
+            COMPREPLY=( $( compgen -W '0 1' -- $cur ))
+            ;;
+         # complete files
+         core.ipcsocket|medialib.path)
+            _filedir
+            ;;
+         
+         # complete directories
+         core.shutdownpath \
+         |core.startuppath \
+         |output.diskwrite.destination_directory)
+            _filedir -d
+            ;;
+         # output plugin
+         output.plugin)
+            COMPREPLY=( $( xmms2 plugin_list \
+                        | sed -ne 's|^\('$cur'[^ ]*\).*output.*$|\1|p' ))
+            ;;
+         
+         # replaygain mode
+         effect.replaygain.mode)
+            COMPREPLY=( $( compgen -W 'track album' -- $cur ))
+            ;;
+
+         # add yours here ...
+         *)
+            ;;
+         esac
+         ;;
+
+      mlib) # mlib <cmd> [options..]
+
+         case ${COMP_WORDS[2]} in
+         
+         # export_playlist <name> <mime>
+         # list_playlist <name>
+         # load_playlist <name>
+         # remove_playlist <name>
+         # save_playlist <name>
+         export_paylist \
+         |list_playlist \
+         |load_playlist \
+         |remove_playlist\
+         |save_playlist )
+            # FIXME: add quotes + case insensitive
+            local old_ifs
+            old_ifs=$IFS
+            IFS="|"
+            COMPREPLY=( $( xmms2 mlib playlists_list \
+                        | sed -ne 's|^\('$cur'.*\).*$|\1\||p' ))
+            IFS=old_ifs
+            ;;
+         add) # add <url>
+            # FIXME: handle URI proto ?
+            _filedir
+            ;;
+      
+         addpath) # addpath <directory>
+            _filedir -d
+            ;;
+         
+         query|queryadd) # query <sql> <statement>
+            # TODO ?
+            ;;
+         search|searchadd) # search[add] key=value
+            if [[ "$cur" == *=* ]]; then
+               local key sql
+               key=${cur%%=*}
+               COMPREPLY=( $( xmms2 mlib query \
+                           "SELECT value FROM Media WHERE  \
+                            key='${key%\\*}' AND value LIKE '${cur#*=}%' " \
+                           | sed -ne 's|^value = \(.*\)$|\1|p' ))
+            else
+               COMPREPLY=( $( compgen -S '=' -W "$keys" -- $cur ))
+            fi
+            ;;
+         *)
+            ;;
+         esac
+         ;;
+         
+      move) # move <playlist_position> <new_position>
+         # TODO
+# xmms2 mlib query "SELECT PlaylistEntries.pos FROM PlaylistEntries WHERE pla
+ylist_id=(SELECT id FROM Playlist WHERE name='_xmms2cli')"
+         # FIXME LEFT JOIN ON() Playlist.name='_xmms2cli'
+#COMPREPLY=( $( xmms2 mlib query \
+#                    "SELECT pos FROM PlaylistEntries" \
+#                    | sed -ne 's|^pos = \('$cur'.*\).*$|\1|p' ))
+         ;;
+      *)
+         ;;
+      esac
+   # complete options (4 args command)
+   elif [[ $COMP_CWORD -eq 4 ]]; then
+      case ${COMP_WORDS[1]} in
+      mlib)
+         case ${COMP_WORDS[2]} in
+         import_playlist) # import_playlist <name> <url>
+            # TODO: don't complete dir if it doesn't contain a pls
+            # FIXME: quotes !
+            _filedir '@(pls|PLS|m3u|M3U)'
+            ;;
+      
+         export_playlist) # export_playlist <name> <mime>
+            COMPREPLY=( $( xmms2 plugin_list \
+                        | sed -ne 's|^\('$cur'[^ ]*\).*Playlist.*$|\1|p' ))
+            ;;
+         
+         *)
+            ;;
+         esac
+         ;;
+      *)
+         ;;
+      esac
+   fi
+
+   return 0
+}
+#have xmms2 && complete -F _xmms2 -o plusdirs -o nospace xmms2
+have xmms2 && complete -F _xmms2 -o nospace xmms2
+</pre>
+
 
 [[Category:Developer ideas]]
