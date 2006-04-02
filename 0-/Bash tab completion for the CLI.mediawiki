@@ -39,6 +39,7 @@ I started working on it. So command line get completed for:
 * configuration values
 * mlib commands
 * various file/directory completions
+* sort keys
 * search key options
 * search key values
 * export format
