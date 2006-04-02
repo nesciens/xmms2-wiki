@@ -100,6 +100,20 @@ Okay, it's by far not a complete overview of the problems, but I hope I exposed 
 
 I am curious to hear about what '''you''' have in mind when it comes to collections, and possible solutions to the problem they might cause.
 
+I think Collections my be implented with 2 SQL tables.
+
+table "Collections":
+ ID (integer key)   - the collection's ID
+ key (string)       - the common key to all children
+ operator (enum)    - the operator affected on key (equals,sup,less,contains...)
+ value (string)     - the matching value
+
+tables "CollectionsEntries":
+ ID (integer key)   - the medialib ID
+ cid (integer)      - the collection's ID
+
+One medialib entry can be in as many collection as you want. We have to take care of deleting any collection's entries when deleting item from medialib. If clients use almost always collections, database would contain a lot of duplicated data...
+
 == See Also ==
 * [[Playlist refactor]]
 {{Playlist Collections Discussion}}
