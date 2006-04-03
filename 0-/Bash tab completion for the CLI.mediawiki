@@ -242,8 +242,7 @@ _xmms2()
          
       move) # move <playlist_position> <new_position>
          # TODO
-# xmms2 mlib query "SELECT PlaylistEntries.pos FROM PlaylistEntries WHERE pla
-ylist_id=(SELECT id FROM Playlist WHERE name='_xmms2cli')"
+# xmms2 mlib query "SELECT PlaylistEntries.pos FROM PlaylistEntries WHERE playlist_id=(SELECT id FROM Playlist WHERE name='_xmms2cli')"
          # FIXME LEFT JOIN ON() Playlist.name='_xmms2cli'
 #COMPREPLY=( $( xmms2 mlib query \
 #                    "SELECT pos FROM PlaylistEntries" \
