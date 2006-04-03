@@ -1,0 +1,15 @@
+I think Collections my be implented with 2 SQL tables.
+
+table "Collections":
+ ID (integer key)   - the collection's ID
+ key (string)       - the common key to all children
+ operator (enum)    - the operator affected on key (equals,sup,less,contains...)
+ value (string)     - the matching value
+
+tables "CollectionsEntries":
+ ID (integer key)   - the medialib ID
+ cid (integer)      - the collection's ID
+
+One medialib entry can be in as many collection as you want. We have to take care of deleting any collection's entries when deleting item from medialib. If clients use almost always collections, database would contain a lot of duplicated data...
+
+-- [[User:Crazy | Crazy]] 03 Apr 2006
