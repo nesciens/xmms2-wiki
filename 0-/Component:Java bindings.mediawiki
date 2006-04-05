@@ -12,9 +12,10 @@ If you are a '''user''' go to http://x4x.sourceforge.net and grab X4X, atm the o
 If you are a '''developer''' you can check the sourcecode swig and we generated in src/clients/lib/java. You have some choices of using the javabindings now, but before everything build doxygen docu, you will need it. javadoc is possible too. After that you have two main choices:
 
 # Use the C-API style code: Your mainclass to use is org.xmms2.xmms2bindings.Xmmsclient. For documentation on the various functions check the c pendants, everything works exactly the same. Besides that option you have to choose if you use org.xmms2.JMain as your mainloop (which is recommended) or build your own (which is annoying, so use JMain!). I only explain the JMain-way a bit here, for ideas on building an own loop check our loop. To use JMain you have to implement CallbacksListener or extend CallbacksAdapter (you can only use one, not two, not three, only one). Just instantiate a JMain with your CallbacksListener as argument and use org.xmms2.xmms2bindings.Xmmsclient to work with xmms2. But be warned: NEVER USE WAIT() THEN. When you use a Mainloop, no matter which, you enter the async mode, so use result_notifier() instead of wait() then.
-# Use the nice and nifty new things I wrote today afternoon (They are DrDolittle+WIP). Your classes are org.xmms2.Xmms2, org.xmms2.Xmms2Listener/-Adapter, org.xmms2.Xmms2Event and org.xmms2.Title. It works without all the org.xmms2.xmms2bindings.* things since they are not nice to read. The whole thing works async but this also implies that you don't get your things directly. Since you built the doc as mentionend above just check the nice examples that are in org.xmms2.Xmms2. In short words do the following things:
+# Use the nice and nifty new things I wrote today afternoon (They are DrDolittle+WIP). Your classes are org.xmms2.Xmms2, org.xmms2.Xmms2Listener/-Adapter, org.xmms2.Xmms2Event and org.xmms2.Title. It works without all the org.xmms2.xmms2bindings.* things since they are not nice to read. Since you built the doc as mentionend above just check the nice examples that are in org.xmms2.Xmms2. In short words do the following things:
 
-
+===Async way===
+ 
  Xmms2 bleh = Xmms2.getInstance("YourClientsName");
  bleh.connect();
  bleh.addXmms2Listener(new Xmms2Adapter(){
@@ -31,6 +32,7 @@ This new and easy API follows more or less the MVC-pattern (if you ask yourself 
 
 The '''model''' in this case is the class implementing org.xmms2.Xmms2Listener, the '''controller''' is the class using org.xmms2.Xmms2 and the '''view''' is whatever UI-framework you choose ;)
 
+===Sync way===
 
 Since I think that there are still some needs of calling things sync but with blocking I implemented some more methods that work on a second connection but totally sync. That means that the methods return directly to the caller after they have finished. All functions which return some useful data are now available as functionNameAsync() and a functionNameSync() where the *Async() methods return to all connected listeners whereas the *Sync() methods return directly and only to the caller. To have that working in a simple way org.xmms2.Xmms2Backoffice now has two connections, named clientName1 and clientName2. The first one is used for the async things, the second one only for the sync methods. Here some quick example:
 
