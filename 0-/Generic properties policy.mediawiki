@@ -1,12 +1,26 @@
+__NOTOC__
+
 This page tries to list all properties that different clients write into the medialib and that can be useful for other clients too.
 
-Should be written to source "client/generic"
+===Generic===
+Source: "client/generic"
 
 * rating - value from 0-5 where 5 is best and 0 is no rating
 * comment - a searchable comment
 * tag - comma seperated tags. tags could be "anything"
 
-Proposed Album Art, source = client/generic/arturl and client/generic/arturl_unverified
+===Voting===
+Source: "client/generic/voting"
+
+* vote_score - total score
+* vote_count - number of votes
+
+For each vote "vote_count" is increased by one and "vote_score" is increased by a number 0-5. The client should calculate the average score by dividing vote_score by vote_count.
+
+This is similar to the "rating" property, but this allows many votes and calculates an average, whereas "rating" is just a single value that is set to the latest voting.
+
+===Album Art===
+Sources: "client/generic/arturl" and "client/generic/arturl_unverified"
 
 * album_front_large - front of album - at least 320x320
 * album_front_small - front of album - at least 140x140 - 160x160 is usually amazons standard size, the standard ``small size`` for itunes music store is 170x170 This is '''Required'''.
