@@ -1,59 +1,59 @@
-Build log generated Sat Apr  8 13:38:32 2006
+Build log generated Sat Apr  8 13:49:49 2006
 Build took 15 seconds
 Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
 
 ==Errors==
- [[BuildLog#h199|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
- [[BuildLog#h202|Error]] scons: *** [src/clients/lib/python/xmmsclient.so] Error 1
- [[BuildLog#h211|Error]] scons: *** [src/clients/lib/ruby/rb_xmmsclient.os] Error 1
- [[BuildLog#h221|Error]] scons: *** [src/clients/lib/ruby/xmmsclient.so] Error 1
+ [[BuildLog/GCC295#h199|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
+ [[BuildLog/GCC295#h202|Error]] scons: *** [src/clients/lib/python/xmmsclient.so] Error 1
+ [[BuildLog/GCC295#h211|Error]] scons: *** [src/clients/lib/ruby/rb_xmmsclient.os] Error 1
+ [[BuildLog/GCC295#h221|Error]] scons: *** [src/clients/lib/ruby/xmmsclient.so] Error 1
 ==Warnings==
- [[BuildLog#h44|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h50|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h56|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h62|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h68|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h74|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h80|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h86|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h102|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h134|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h142|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h217|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h234|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h241|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h247|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h253|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h259|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h264|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h270|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h274|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h280|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h286|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h292|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h298|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h304|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h309|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h314|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h318|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h322|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h326|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h330|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h334|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h339|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h341|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
- [[BuildLog#h347|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h352|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h358|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h362|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h368|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h373|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h378|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h382|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h388|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h392|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h398|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog#h404|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h44|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h50|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h56|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h62|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h68|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h74|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h80|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h86|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h102|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h134|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h142|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h217|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h234|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h241|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h247|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h253|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h259|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h264|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h270|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h274|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h280|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h286|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h292|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h298|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h304|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h309|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h314|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h318|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h322|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h326|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h330|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h334|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h339|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h341|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+ [[BuildLog/GCC295#h347|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h352|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h358|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h362|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h368|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h373|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h378|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h382|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h388|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h392|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h398|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h404|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
