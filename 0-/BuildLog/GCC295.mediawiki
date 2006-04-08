@@ -1,5 +1,7 @@
-Build log generated Sat Apr  8 13:00:36 2006
-Build took 17 seconds
+Build log generated Sat Apr  8 13:12:25 2006
+Build took 14 seconds
+Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
+
 ==Errors==
  [[BuildLog#h199|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
  [[BuildLog#h202|Error]] scons: *** [src/clients/lib/python/xmmsclient.so] Error 1
