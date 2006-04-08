@@ -1,0 +1,374 @@
+Build log generated Sat Apr  8 13:11:49 2006
+Build took 17 seconds
+Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
+
+==Warnings==
+ [[BuildLog#h345|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+==Full log==
+ scons: Reading SConscript files ...
+ Checking for Ruby 1.8 or greater...  1.8.2
+ Checking for Ruby 1.8 or greater...  1.8.2
+ Checking for Ruby 1.8 or greater...  1.8.2
+ Checking for glib-2.0  ... yes
+ Checking for avahi-client  ... no
+ Checking for C header file dns_sd.h... no
+ Checking for gamin  ... no
+ Checking for TTF_Init() in C library SDL_ttf... yes
+ Checking for glib-2.0 >= 2.6.0  ... yes
+ Checking for gmodule-2.0  ... yes
+ Checking for gthread-2.0  ... yes
+ Checking for sqlite3  ... yes
+ Checking for sin() in C library m... yes
+ Checking for glib-2.0  ... yes
+ Checking for alsa  ... yes
+ Checking for C header file AudioUnit/AudioUnit.h... no
+ Checking for gnome-vfs-2.0  ... no
+ Checking for C header file mad.h... yes
+ Checking for mad_synth_init() in C library mad... yes
+ Checking for modplug  ... no
+ Checking for libmodplug  ... yes
+ Checking for mpc_decoder_decode() in C library mpcdec... no
+ Checking for C header file sys/soundcard.h... yes
+ Checking for _oss_ioctl() in C library ossaudio... no
+ Checking for C header file libsmbclient.h... no
+ Checking for () in C library sidplay2... no
+ Checking for C header file sys/audioio.h... no
+ Checking for C header file vorbis/vorbisfile.h... yes
+ Checking for ov_open_callbacks() in C library vorbisfile... yes
+ =====================================
+  Configuration printout
+ =====================================
+ Enabled plugins: alsa, diskwrite, file, mad, id3v2, modplug, null, oss, vorbisfile, wave
+ Default output: alsa
+ scons: done reading SConscript files.
+ scons: Building targets ...
+ gzipper(["doc/xmms2.1.gz"], ["doc/xmms2.1"])
+ gzipper(["doc/xmms2d.8.gz"], ["doc/xmms2d.8"])
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_config.o src/clients/cli/cmd_config.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_mlib.o src/clients/cli/cmd_mlib.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_other.o src/clients/cli/cmd_other.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_playback.o src/clients/cli/cmd_playback.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_pls.o src/clients/cli/cmd_pls.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_status.o src/clients/cli/cmd_status.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/common.o src/clients/cli/common.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/main.o src/clients/cli/main.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/ipc.o src/clients/lib/xmmsclient/ipc.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/medialib.o src/clients/lib/xmmsclient/medialib.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/other.o src/clients/lib/xmmsclient/other.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/playback.o src/clients/lib/xmmsclient/playback.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/playlist.o src/clients/lib/xmmsclient/playlist.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/result.o src/clients/lib/xmmsclient/result.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xlist.o src/clients/lib/xmmsclient/xlist.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xqueue.o src/clients/lib/xmmsclient/xqueue.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xmmsclient.o src/clients/lib/xmmsclient/xmmsclient.c
+ ar r src/clients/lib/xmmsclient/libxmmsclient.a src/clients/lib/xmmsclient/ipc.o src/clients/lib/xmmsclient/medialib.o src/clients/lib/xmmsclient/other.o src/clients/lib/xmmsclient/playback.o src/clients/lib/xmmsclient/playlist.o src/clients/lib/xmmsclient/result.o src/clients/lib/xmmsclient/xlist.o src/clients/lib/xmmsclient/xqueue.o src/clients/lib/xmmsclient/xmmsclient.o
+ ranlib src/clients/lib/xmmsclient/libxmmsclient.a
+ ar: creating src/clients/lib/xmmsclient/libxmmsclient.a
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/xmmsclient-glib/xmmsclient-glib.o src/clients/lib/xmmsclient-glib/xmmsclient-glib.c
+ ar r src/clients/lib/xmmsclient-glib/libxmmsclient-glib.a src/clients/lib/xmmsclient-glib/xmmsclient-glib.o
+ ranlib src/clients/lib/xmmsclient-glib/libxmmsclient-glib.a
+ ar: creating src/clients/lib/xmmsclient-glib/libxmmsclient-glib.a
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/ipc.os src/clients/lib/xmmsclient/ipc.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/medialib.os src/clients/lib/xmmsclient/medialib.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/other.os src/clients/lib/xmmsclient/other.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/playback.os src/clients/lib/xmmsclient/playback.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/playlist.os src/clients/lib/xmmsclient/playlist.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/result.os src/clients/lib/xmmsclient/result.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xlist.os src/clients/lib/xmmsclient/xlist.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xqueue.os src/clients/lib/xmmsclient/xqueue.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/xmmsclient.os src/clients/lib/xmmsclient/xmmsclient.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/msg.o src/lib/xmmsipc/msg.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/socket_tcp.o src/lib/xmmsipc/socket_tcp.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/transport.o src/lib/xmmsipc/transport.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/url.o src/lib/xmmsipc/url.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/socket_unix.o src/lib/xmmsipc/socket_unix.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmsipc/transport_unix.o src/lib/xmmsipc/transport_unix.c
+ ar r src/lib/xmmsipc/libxmmsipc.a src/lib/xmmsipc/msg.o src/lib/xmmsipc/socket_tcp.o src/lib/xmmsipc/transport.o src/lib/xmmsipc/url.o src/lib/xmmsipc/socket_unix.o src/lib/xmmsipc/transport_unix.o
+ ranlib src/lib/xmmsipc/libxmmsipc.a
+ ar: creating src/lib/xmmsipc/libxmmsipc.a
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmssocket/socket_common.o src/lib/xmmssocket/socket_common.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/lib/xmmssocket/socket_unix.o src/lib/xmmssocket/socket_unix.c
+ ar r src/lib/xmmssocket/libxmmssocket.a src/lib/xmmssocket/socket_common.o src/lib/xmmssocket/socket_unix.o
+ ranlib src/lib/xmmssocket/libxmmssocket.a
+ ar: creating src/lib/xmmssocket/libxmmssocket.a
+ gcc-3.3 -shared -Wl,-soname,libxmmsclient.so.0 -o src/clients/lib/xmmsclient/libxmmsclient.so.0 src/clients/lib/xmmsclient/ipc.os src/clients/lib/xmmsclient/medialib.os src/clients/lib/xmmsclient/other.os src/clients/lib/xmmsclient/playback.os src/clients/lib/xmmsclient/playlist.os src/clients/lib/xmmsclient/result.os src/clients/lib/xmmsclient/xlist.os src/clients/lib/xmmsclient/xqueue.os src/clients/lib/xmmsclient/xmmsclient.os -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket
+ ln -s libxmmsclient.so.0 src/clients/lib/xmmsclient/libxmmsclient.so
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/xmmsclient-glib/xmmsclient-glib.os src/clients/lib/xmmsclient-glib/xmmsclient-glib.c
+ gcc-3.3 -shared -Wl,-soname,libxmmsclient-glib.so.0 -o src/clients/lib/xmmsclient-glib/libxmmsclient-glib.so.0 src/clients/lib/xmmsclient-glib/xmmsclient-glib.os -lglib-2.0
+ ln -s libxmmsclient-glib.so.0 src/clients/lib/xmmsclient-glib/libxmmsclient-glib.so
+ gcc-3.3 -o src/clients/cli/xmms2 src/clients/cli/main.o src/clients/cli/cmd_mlib.o src/clients/cli/cmd_pls.o src/clients/cli/cmd_playback.o src/clients/cli/cmd_config.o src/clients/cli/cmd_status.o src/clients/cli/cmd_other.o src/clients/cli/common.o -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -lxmmsclient -lxmmsclient-glib -lglib-2.0
+ gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/et/xmms2-et.o src/clients/et/xmms2-et.c
+ gcc-3.3 -o src/clients/et/xmms2-et src/clients/et/xmms2-et.o -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -lxmmsclient -lxmmsclient-glib -lglib-2.0
+ Generating 'src/clients/lib/python/xmmsclient.c' from 'src/clients/lib/python/xmmsclient.pyx'
+ gcc-3.3 -g -Wall -O0 -Wno-unused-function -Wno-unused-label -fPIC -Isrc/include -I/usr/include/python2.3 -c -o src/clients/lib/python/xmmsclient.os src/clients/lib/python/xmmsclient.c
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_10XMMSResult_more_init':
+ src/clients/lib/python/xmmsclient.c:958: warning: passing arg 2 of `xmmsc_result_notifier_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_set_need_out_fun':
+ src/clients/lib/python/xmmsclient.c:2695: warning: passing arg 2 of `xmmsc_io_need_out_callback_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_connect':
+ src/clients/lib/python/xmmsclient.c:2815: warning: passing arg 2 of `xmmsc_disconnect_callback_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_quit':
+ src/clients/lib/python/xmmsclient.c:2849: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:2859: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_plugin_list':
+ src/clients/lib/python/xmmsclient.c:2915: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:2925: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_start':
+ src/clients/lib/python/xmmsclient.c:2980: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:2990: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_stop':
+ src/clients/lib/python/xmmsclient.c:3043: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3053: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_tickle':
+ src/clients/lib/python/xmmsclient.c:3106: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3116: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_pause':
+ src/clients/lib/python/xmmsclient.c:3169: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3179: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_current_id':
+ src/clients/lib/python/xmmsclient.c:3232: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3242: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_ms':
+ src/clients/lib/python/xmmsclient.c:3298: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3308: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_ms_rel':
+ src/clients/lib/python/xmmsclient.c:3366: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3376: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_samples':
+ src/clients/lib/python/xmmsclient.c:3434: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3444: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_samples_rel':
+ src/clients/lib/python/xmmsclient.c:3502: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3512: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_status':
+ src/clients/lib/python/xmmsclient.c:3567: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3577: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_status':
+ src/clients/lib/python/xmmsclient.c:3630: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3640: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_current_id':
+ src/clients/lib/python/xmmsclient.c:3696: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3706: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_playtime':
+ src/clients/lib/python/xmmsclient.c:3762: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3772: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_playback_playtime':
+ src/clients/lib/python/xmmsclient.c:3825: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3835: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_volume_set':
+ src/clients/lib/python/xmmsclient.c:3894: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3904: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_volume_get':
+ src/clients/lib/python/xmmsclient.c:3961: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3971: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_volume_changed':
+ src/clients/lib/python/xmmsclient.c:4024: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4034: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_shuffle':
+ src/clients/lib/python/xmmsclient.c:4087: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4097: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_insert':
+ src/clients/lib/python/xmmsclient.c:4157: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4168: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_insert_id':
+ src/clients/lib/python/xmmsclient.c:4238: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4248: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_add':
+ src/clients/lib/python/xmmsclient.c:4309: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4320: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_add_id':
+ src/clients/lib/python/xmmsclient.c:4385: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4395: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_remove':
+ src/clients/lib/python/xmmsclient.c:4453: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4463: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_clear':
+ src/clients/lib/python/xmmsclient.c:4518: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4528: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_list':
+ src/clients/lib/python/xmmsclient.c:4581: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4591: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_sort':
+ src/clients/lib/python/xmmsclient.c:4648: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4659: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_set_next_rel':
+ src/clients/lib/python/xmmsclient.c:4724: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4734: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_set_next':
+ src/clients/lib/python/xmmsclient.c:4792: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4802: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_move':
+ src/clients/lib/python/xmmsclient.c:4863: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4873: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_current_pos':
+ src/clients/lib/python/xmmsclient.c:4930: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4940: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playlist_current_pos':
+ src/clients/lib/python/xmmsclient.c:4993: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5003: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playlist_changed':
+ src/clients/lib/python/xmmsclient.c:5059: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5069: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_configval_changed':
+ src/clients/lib/python/xmmsclient.c:5125: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5135: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_set':
+ src/clients/lib/python/xmmsclient.c:5199: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5211: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_get':
+ src/clients/lib/python/xmmsclient.c:5286: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5297: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_list':
+ src/clients/lib/python/xmmsclient.c:5359: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5369: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_register':
+ src/clients/lib/python/xmmsclient.c:5430: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5442: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_select':
+ src/clients/lib/python/xmmsclient.c:5517: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5528: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_add_entry':
+ src/clients/lib/python/xmmsclient.c:5625: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5636: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_save_current':
+ src/clients/lib/python/xmmsclient.c:5702: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5713: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_load':
+ src/clients/lib/python/xmmsclient.c:5779: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5790: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_get_info':
+ src/clients/lib/python/xmmsclient.c:5855: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5865: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_add_to_playlist':
+ src/clients/lib/python/xmmsclient.c:5924: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5935: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlists_list':
+ src/clients/lib/python/xmmsclient.c:5997: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6007: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_list':
+ src/clients/lib/python/xmmsclient.c:6063: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6073: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_import':
+ src/clients/lib/python/xmmsclient.c:6136: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6148: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_rehash':
+ src/clients/lib/python/xmmsclient.c:6223: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6233: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_get_id':
+ src/clients/lib/python/xmmsclient.c:6291: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6301: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_export':
+ src/clients/lib/python/xmmsclient.c:6364: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6376: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_remove':
+ src/clients/lib/python/xmmsclient.c:6451: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6462: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_path_import':
+ src/clients/lib/python/xmmsclient.c:6528: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6539: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_set':
+ src/clients/lib/python/xmmsclient.c:6618: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6631: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_remove':
+ src/clients/lib/python/xmmsclient.c:6741: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6753: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_added':
+ src/clients/lib/python/xmmsclient.c:6840: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6850: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_changed':
+ src/clients/lib/python/xmmsclient.c:6906: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6916: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_playlist_loaded':
+ src/clients/lib/python/xmmsclient.c:6972: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6982: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_visualisation_data':
+ src/clients/lib/python/xmmsclient.c:7038: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7048: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_mediainfo_reader_unindexed':
+ src/clients/lib/python/xmmsclient.c:7101: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7111: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_mediainfo_reader_status':
+ src/clients/lib/python/xmmsclient.c:7164: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7174: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__Pyx_GetStarArgs':
+ src/clients/lib/python/xmmsclient.c:8756: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c:8758: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c: In function `__Pyx_EndUnpack':
+ src/clients/lib/python/xmmsclient.c:8808: warning: suggest parentheses around assignment used as truth value
+ src/clients/lib/python/xmmsclient.c: At top level:
+ src/clients/lib/python/xmmsclient.c:1951: warning: `__pyx_doc_10xmmsclient_10XMMSResult___dealloc__' defined but not used
+ src/clients/lib/python/xmmsclient.c:2050: warning: `__pyx_doc_10xmmsclient_4XMMS___new__' defined but not used
+ src/clients/lib/python/xmmsclient.c:2247: warning: `__pyx_doc_10xmmsclient_4XMMS___dealloc__' defined but not used
+ gcc-3.3 -shared -o src/clients/lib/python/xmmsclient.so src/clients/lib/python/xmmsclient.os -Lsrc/clients/lib/xmmsclient -lxmmsclient
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_result.os src/clients/lib/ruby/rb_result.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_xmmsclient.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient_ecore.os src/clients/lib/ruby/rb_xmmsclient_ecore.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/ruby/rb_xmmsclient_glib.os src/clients/lib/ruby/rb_xmmsclient_glib.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient_main.os src/clients/lib/ruby/rb_xmmsclient_main.c
+ gcc-3.3 -shared -o src/clients/lib/ruby/xmmsclient.so src/clients/lib/ruby/rb_xmmsclient_main.os src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_result.os -Lsrc/clients/lib/xmmsclient -L/usr/lib/ruby/1.8/i386-linux -lxmmsclient
+ gcc-3.3 -g -Wall -O0 -Isrc/include -c -o src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.o src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c
+ ar r src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.a src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.o
+ ranlib src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.a
+ ar: creating src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.a
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -c -o src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.os src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c
+ gcc-3.3 -shared -Wl,-soname,libxmmsclient-ecore.so.0 -o src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.so.0 src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.os -Lsrc/clients/lib/xmmsclient -L/usr/lib -L/usr/lib -lxmmsclient -lecore -lm
+ ln -s libxmmsclient-ecore.so.0 src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.so
+ gcc-3.3 -shared -o src/clients/lib/ruby/xmmsclient_ecore.so src/clients/lib/ruby/rb_xmmsclient_ecore.os -Lsrc/clients/lib/xmmsclient-ecore -Lsrc/clients/lib/xmmsclient -L/usr/lib/ruby/1.8/i386-linux -L/usr/lib -L/usr/lib -lxmmsclient -lecore -lm -lxmmsclient-ecore
+ gcc-3.3 -shared -o src/clients/lib/ruby/xmmsclient_glib.so src/clients/lib/ruby/rb_xmmsclient_glib.os -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -L/usr/lib/ruby/1.8/i386-linux -lglib-2.0 -lxmmsclient -lxmmsclient-glib
+ gcc-3.3 -g -Wall -O0 -D_REENTRANT -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/SDL -c -o src/clients/sdl-vis/sdl-vis.o src/clients/sdl-vis/sdl-vis.c
+ gcc-3.3 -o src/clients/sdl-vis/sdl-vis src/clients/sdl-vis/sdl-vis.o -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -L/usr/lib -lxmmsclient -lxmmsclient-glib -lglib-2.0 -lSDL -lpthread -lSDL_ttf
+ Substituting vars from src/include/xmms/xmms_defs.h.in into src/include/xmms/xmms_defs.h
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/alsa -c -o src/plugins/alsa/alsa.os src/plugins/alsa/alsa.c
+ gcc-3.3 -shared -o src/plugins/alsa/libxmms_alsa.so src/plugins/alsa/alsa.os -lasound -lm -ldl -lpthread
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/diskwrite/diskwrite.os src/plugins/diskwrite/diskwrite.c
+ gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
+ gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3.os src/plugins/mad/id3.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v2plugin.os src/plugins/mad/id3v2plugin.c
+ gcc-3.3 -shared -o src/plugins/mad/libxmms_id3v2.so src/plugins/mad/id3v2plugin.os src/plugins/mad/id3.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/mad.os src/plugins/mad/mad.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/xing.os src/plugins/mad/xing.c
+ gcc-3.3 -shared -o src/plugins/mad/libxmms_mad.so src/plugins/mad/mad.os src/plugins/mad/xing.os -lmad
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmodplug -c -o src/plugins/modplug/modplug.os src/plugins/modplug/modplug.c
+ gcc-3.3 -shared -o src/plugins/modplug/libxmms_modplug.so src/plugins/modplug/modplug.os -lmodplug -lstdc++ -lm
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/null/null.os src/plugins/null/null.c
+ gcc-3.3 -shared -o src/plugins/null/libxmms_null.so src/plugins/null/null.os
+ gcc-3.3 -g -Wall -O0 -fPIC -DDEFAULT_DEVICE=\"/dev/dsp\" -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/oss/oss.os src/plugins/oss/oss.c
+ gcc-3.3 -shared -o src/plugins/oss/libxmms_oss.so src/plugins/oss/oss.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/vorbis/vorbisfile.os src/plugins/vorbis/vorbisfile.c
+ gcc-3.3 -shared -o src/plugins/vorbis/libxmms_vorbisfile.so src/plugins/vorbis/vorbisfile.os -lvorbisfile
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/wave/wave.os src/plugins/wave/wave.c
+ gcc-3.3 -shared -o src/plugins/wave/libxmms_wave.so src/plugins/wave/wave.os
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/config.o src/xmms/config.c
+ /usr/bin/python src/xmms/generate-converter.py > src/xmms/converter.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/converter_plugin.o src/xmms/converter_plugin.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/error.o src/xmms/error.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ipc.o src/xmms/ipc.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/log.o src/xmms/log.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/magic.o src/xmms/magic.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
+ src/xmms/mediainfo.c: In function `xmms_mediainfo_reader_thread':
+ <span id="h345">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf.o src/xmms/ringbuf.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
+ gcc-3.3 -g -Wall -O0 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
+ gcc-3.3 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o
+ gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
+ Substituting vars from xmms2.pc.in into xmms2-client-cpp.pc
+ Substituting vars from xmms2.pc.in into xmms2-client-ecore.pc
+ Substituting vars from xmms2.pc.in into xmms2-client-glib.pc
+ Substituting vars from xmms2.pc.in into xmms2-client.pc
+ Substituting vars from xmms2.pc.in into xmms2-plugin.pc
+ scons: done building targets.
