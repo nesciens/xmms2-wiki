@@ -1,18 +1,18 @@
-Build log generated Sat Apr  8 13:38:05 2006
-Build took 31 seconds
+Build log generated Sat Apr  8 13:47:19 2006
+Build took 30 seconds
 Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
 
 ==Warnings==
- [[BuildLog#h43|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
- [[BuildLog#h49|Warning]]: src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function
- [[BuildLog#h79|Warning]]: src/lib/xmmsipc/socket_tcp.c:67: warning: `fd' might be used uninitialized in this function
- [[BuildLog#h81|Warning]]: src/lib/xmmsipc/socket_tcp.c:169: warning: `fd' might be used uninitialized in this function
- [[BuildLog#h314|Warning]]: src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c:27: warning: `ret' might be used uninitialized in this function
- [[BuildLog#h320|Warning]]: src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c:27: warning: `ret' might be used uninitialized in this function
- [[BuildLog#h336|Warning]]: src/plugins/mad/id3.c:132: warning: `nval' might be used uninitialized in this function
- [[BuildLog#h358|Warning]]: src/xmms/ipc.c:361: warning: dereferencing type-punned pointer will break strict-aliasing rules
- [[BuildLog#h359|Warning]]: src/xmms/ipc.c:379: warning: dereferencing type-punned pointer will break strict-aliasing rules
- [[BuildLog#h365|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+ [[BuildLog/GCC33-O2#h43|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h49|Warning]]: src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h79|Warning]]: src/lib/xmmsipc/socket_tcp.c:67: warning: `fd' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h81|Warning]]: src/lib/xmmsipc/socket_tcp.c:169: warning: `fd' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h314|Warning]]: src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c:27: warning: `ret' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h320|Warning]]: src/clients/lib/xmmsclient-ecore/xmmsclient-ecore.c:27: warning: `ret' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h336|Warning]]: src/plugins/mad/id3.c:132: warning: `nval' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h358|Warning]]: src/xmms/ipc.c:361: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ [[BuildLog/GCC33-O2#h359|Warning]]: src/xmms/ipc.c:379: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ [[BuildLog/GCC33-O2#h365|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
