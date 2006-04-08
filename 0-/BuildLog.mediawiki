@@ -1,0 +1,6 @@
+Currently 4 automatic builds are done:
+
+[[BuildLog/GCC33]] - gcc 3.3 with default options.
+[[BuildLog/GCC33-O2]] - gcc 3.3 with -O2
+[[BuildLog/GCC295]] - gcc 2.95 with default options.
+[[BuildLog/GCC295-O2]] - gcc 3.3 with -O2
