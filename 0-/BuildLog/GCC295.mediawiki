@@ -1,6 +1,6 @@
-Build log generated Sat Apr  8 13:49:49 2006
-Build took 15 seconds
-Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
+Build log generated Sun Apr  9 13:38:28 2006
+Build took 14 seconds
+Version: 6b92784e357536f9af523caeb820034366fd1db5
 
 ==Errors==
  [[BuildLog/GCC295#h199|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
@@ -45,15 +45,16 @@ Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
  [[BuildLog/GCC295#h347|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
  [[BuildLog/GCC295#h352|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
  [[BuildLog/GCC295#h358|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h362|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h368|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h373|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h378|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h382|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h388|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h392|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h398|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
- [[BuildLog/GCC295#h404|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h359|Warning]]: src/xmms/output.c:64: warning: parameter has incomplete type
+ [[BuildLog/GCC295#h363|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h369|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h374|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h379|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h383|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h389|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h393|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h399|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
+ [[BuildLog/GCC295#h405|Warning]]: /usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -414,52 +415,53 @@ Version: bd337d99566426dc11f042a7fcf5e38c249d9c2f
                   from src/includepriv/xmmspriv/xmms_output.h:23,
                   from src/xmms/output.c:25:
  <span id="h358">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h359">src/xmms/output.c:64: warning: parameter has incomplete type</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/xmms/playlist.c:26:
- <span id="h362">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h363">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/include/xmms/xmms_object.h:23,
                   from src/includepriv/xmmspriv/xmms_plugin.h:23,
                   from src/xmms/plugin.c:18:
- <span id="h368">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h369">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf.o src/xmms/ringbuf.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/includepriv/xmmspriv/xmms_ringbuf.h:23,
                   from src/xmms/ringbuf.c:20:
- <span id="h373">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h374">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/include/xmms/xmms_log.h:23,
                   from src/xmms/ringbuf_xform.c:3:
- <span id="h378">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h379">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/xmms/sample.c:18:
- <span id="h382">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h383">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/include/xmms/xmms_object.h:23,
                   from src/include/xmms/xmms_config.h:26,
                   from src/xmms/sqlite.c:25:
- <span id="h388">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h389">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/xmms/streamtype.c:22:
- <span id="h392">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h393">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/include/xmms/xmms_object.h:23,
                   from src/includepriv/xmmspriv/xmms_unixsignal.h:23,
                   from src/xmms/unixsignal.c:25:
- <span id="h398">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h399">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
  In file included from /usr/include/glib-2.0/glib.h:52,
                   from src/include/xmms/xmms_object.h:23,
                   from src/includepriv/xmmspriv/xmms_plugin.h:23,
                   from src/xmms/xform.c:24:
- <span id="h404">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
+ <span id="h405">/usr/include/glib-2.0/glib/gmessages.h:109: warning: `visibility' attribute directive ignored</span>
  gcc-2.95 -g -Wall -O0 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
  gcc-2.95 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o
  gcc-2.95 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
