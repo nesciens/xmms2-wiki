@@ -1,10 +1,12 @@
-Build log generated Sun Apr  9 13:37:21 2006
-Build took 18 seconds
-Version: 6b92784e357536f9af523caeb820034366fd1db5
+Build log generated Mon Apr 10 13:37:23 2006
+Build took 20 seconds
+Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
 
 ==Warnings==
- [[BuildLog/GCC33#h345|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
- [[BuildLog/GCC33#h349|Warning]]: src/xmms/output.c:64: warning: parameter has incomplete type
+ [[BuildLog/GCC33#h322|Warning]]: src/plugins/id3v2/id3v2plugin.c:169: warning: `return' with no value, in function returning non-void
+ [[BuildLog/GCC33#h323|Warning]]: src/plugins/id3v2/id3v2plugin.c:172: warning: `return' with no value, in function returning non-void
+ [[BuildLog/GCC33#h349|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+ [[BuildLog/GCC33#h353|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -39,7 +41,7 @@ Version: 6b92784e357536f9af523caeb820034366fd1db5
  =====================================
   Configuration printout
  =====================================
- Enabled plugins: alsa, diskwrite, file, mad, id3v2, modplug, null, oss, vorbisfile, wave
+ Enabled plugins: alsa, diskwrite, file, id3v2, mad, modplug, null, oss, vorbisfile, wave
  Default output: alsa
  scons: done reading SConscript files.
  scons: Building targets ...
@@ -325,12 +327,16 @@ Version: 6b92784e357536f9af523caeb820034366fd1db5
  gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
  gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
- gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3.os src/plugins/mad/id3.c
- gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v2plugin.os src/plugins/mad/id3v2plugin.c
- gcc-3.3 -shared -o src/plugins/mad/libxmms_id3v2.so src/plugins/mad/id3v2plugin.os src/plugins/mad/id3.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
+ src/plugins/id3v2/id3v2plugin.c: In function `xmms_id3v2_seek':
+ <span id="h322">src/plugins/id3v2/id3v2plugin.c:169: warning: `return' with no value, in function returning non-void</span>
+ <span id="h323">src/plugins/id3v2/id3v2plugin.c:172: warning: `return' with no value, in function returning non-void</span>
+ gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v1.os src/plugins/mad/id3v1.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/mad.os src/plugins/mad/mad.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/xing.os src/plugins/mad/xing.c
- gcc-3.3 -shared -o src/plugins/mad/libxmms_mad.so src/plugins/mad/mad.os src/plugins/mad/xing.os -lmad
+ gcc-3.3 -shared -o src/plugins/mad/libxmms_mad.so src/plugins/mad/mad.os src/plugins/mad/xing.os src/plugins/mad/id3v1.os -lmad
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmodplug -c -o src/plugins/modplug/modplug.os src/plugins/modplug/modplug.c
  gcc-3.3 -shared -o src/plugins/modplug/libxmms_modplug.so src/plugins/modplug/modplug.os -lmodplug -lstdc++ -lm
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/null/null.os src/plugins/null/null.c
@@ -351,11 +357,12 @@ Version: 6b92784e357536f9af523caeb820034366fd1db5
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
  src/xmms/mediainfo.c: In function `xmms_mediainfo_reader_thread':
- <span id="h345">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
+ <span id="h349">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h349">src/xmms/output.c:64: warning: parameter has incomplete type</span>
+ <span id="h353">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf.o src/xmms/ringbuf.c
@@ -367,7 +374,7 @@ Version: 6b92784e357536f9af523caeb820034366fd1db5
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
  gcc-3.3 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o
- gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
+ gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o src/xmms/outputplugin.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
  Substituting vars from xmms2.pc.in into xmms2-client-cpp.pc
  Substituting vars from xmms2.pc.in into xmms2-client-ecore.pc
  Substituting vars from xmms2.pc.in into xmms2-client-glib.pc
