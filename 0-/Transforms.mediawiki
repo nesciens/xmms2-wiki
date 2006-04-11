@@ -84,7 +84,7 @@ Everything reworked to new plugin api.
 ::&#10003;diskwrite
 ::&#10063;faad
 ::&#10003;file
-::&#10063;flac
+::&#10003;flac
 ::&#10063;gnomevfs
 ::&#10063;ices
 ::&#10063;jack
