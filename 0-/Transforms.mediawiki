@@ -71,7 +71,7 @@ Everything reworked to new plugin api.
 ===Todo===
 :&#10003; rework output to buffer.
 :&#10003; change other plugin types to use new api.
-:&#10063; seeking.
+:&#10003; seeking.
 :&#10063; fix so metadata can be set after init.
 :&#10063; playlistplugins.
 ::&#10063;html
