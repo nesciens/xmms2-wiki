@@ -90,7 +90,7 @@ Everything reworked to new plugin api.
 ::&#10063;jack
 ::&#10003;mad
 ::&#10003;modplug
-::&#10063;musepack
+::&#10003;musepack (no apetags)
 ::&#10003;null
 ::&#10003;oss
 ::&#10063;samba
