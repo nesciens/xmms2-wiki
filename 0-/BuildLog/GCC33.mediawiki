@@ -1,10 +1,9 @@
-Build log generated Mon Apr 10 13:37:23 2006
+Build log generated Thu Apr 13 10:31:46 2006
 Build took 20 seconds
-Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
+Version: 8ea596f30db2d6abc1724ec63ea0b8d89e424207
 
 ==Warnings==
- [[BuildLog/GCC33#h322|Warning]]: src/plugins/id3v2/id3v2plugin.c:169: warning: `return' with no value, in function returning non-void
- [[BuildLog/GCC33#h323|Warning]]: src/plugins/id3v2/id3v2plugin.c:172: warning: `return' with no value, in function returning non-void
+ [[BuildLog/GCC33#h320|Warning]]: src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used
  [[BuildLog/GCC33#h349|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
  [[BuildLog/GCC33#h353|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
@@ -25,7 +24,8 @@ Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
  Checking for glib-2.0  ... yes
  Checking for alsa  ... yes
  Checking for C header file AudioUnit/AudioUnit.h... no
- Checking for gnome-vfs-2.0  ... no
+ Checking for C header file FLAC/all.h... yes
+ Checking for FLAC__seekable_stream_decoder_get_state() in C library FLAC... yes
  Checking for C header file mad.h... yes
  Checking for mad_synth_init() in C library mad... yes
  Checking for modplug  ... no
@@ -33,7 +33,6 @@ Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
  Checking for mpc_decoder_decode() in C library mpcdec... no
  Checking for C header file sys/soundcard.h... yes
  Checking for _oss_ioctl() in C library ossaudio... no
- Checking for C header file libsmbclient.h... no
  Checking for () in C library sidplay2... no
  Checking for C header file sys/audioio.h... no
  Checking for C header file vorbis/vorbisfile.h... yes
@@ -41,7 +40,7 @@ Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
  =====================================
   Configuration printout
  =====================================
- Enabled plugins: alsa, diskwrite, file, id3v2, mad, modplug, null, oss, vorbisfile, wave
+ Enabled plugins: alsa, diskwrite, file, flac, id3v2, mad, modplug, null, oss, vorbisfile, wave
  Default output: alsa
  scons: done reading SConscript files.
  scons: Building targets ...
@@ -327,11 +326,11 @@ Version: c1bdbd997dcd23f4c6a728191cd14c26525e0525
  gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
  gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/flac/flac.os src/plugins/flac/flac.c
+ <span id="h320">src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used</span>
+ gcc-3.3 -shared -o src/plugins/flac/libxmms_flac.so src/plugins/flac/flac.os -lFLAC
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
- src/plugins/id3v2/id3v2plugin.c: In function `xmms_id3v2_seek':
- <span id="h322">src/plugins/id3v2/id3v2plugin.c:169: warning: `return' with no value, in function returning non-void</span>
- <span id="h323">src/plugins/id3v2/id3v2plugin.c:172: warning: `return' with no value, in function returning non-void</span>
  gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v1.os src/plugins/mad/id3v1.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/mad.os src/plugins/mad/mad.c
