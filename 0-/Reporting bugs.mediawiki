@@ -3,7 +3,6 @@
 If you think you found a bug in XMMS2, please report it to the bugtracker at http://bugs.xmms2.xmms.se/ (CHECK FOR SIMILAR BUGS FIRST!)
 
 The reason why the bugreporting tool requires you to register an account with a valid email adress is quite simple - we have little to no interest in bugreports from people we can't get hold of for additional information. Complaints about this will fall on deaf ears.
-* Creating an account currently seems impossible because the confirmation email never arrives, though. --[[User:Raboof|Raboof]] 15:35, 14 April 2006 (CEST)
 
 If you encountered a crash:
 * Please provide a backtrace.
@@ -24,90 +23,3 @@ Check out http://www.dirac.org/linux/gdb/ for more info and a tutorial about GDB
 
 [[Category: Code and bugs]]
 [[Category: General]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div  style="display:none">
-[We are delicate. We do not delete your content.]
-[l_sp333]
-[http://sitepalace.com/indoortanningbeds/ indoor tanning beds]
-[http://sitepalace.com/cleo/daybedcomfortersets/ daybed comforter sets]
-[http://sitepalace.com/cleo/southwesternbedding/ southwestern bedding]
-[http://sitepalace.com/cleo/leathersectionalsofa/ leather sectional sofa]
-[http://home.graffiti.net/thomasville_bedding/ thomasville bedding]
-[http://home.graffiti.net/naturalizer_shoes/ naturalizer shoes]
-[http://home.graffiti.net/designer_dog_beds/ designer dog beds]
-[http://mujweb.cz/www/k1visa/ k1 visa]
-[http://mujweb.cz/www/k1visa/fiancee-visa/ fiancee visa]
-http://www.buddy4u.com/view/?u=free-nextel-ringtone free nextel ringtone]
-[http://www.buddy4u.com/view/?u=free-real-ringtone free real ringtone]
-[http://www.buddy4u.com/view/?u=free-polyphonic-ringtone free polyphonic ringtone]
-[http://rivotril.google.if.ua rivotril]
-[http://republika.pl/cleo06/cingular-ringtone.htm cingular ringtone]
-[http://republika.pl/cleo06/nail-fungus.htm nail fungus]
-[http://republika.pl/cleo06/bridesmaid-dress.htm bridesmaid dress]
-[http://republika.pl/cleo06/formal-prom-dresses.htm formal prom dresses]
-[http://republika.pl/cleo06/bcbg-shoes.htm bcbg shoes]
-[http://mysite.com.ua/xdem8200/pagesxdem8200/1_1.html tramadol hcl]
-[http://mywebpage.netscape.com/burochka/cingular-ringtone.htm cingular ringtone]
-[http://mywebpage.netscape.com/burochka/bcbg-shoes.htm bcbg shoes]
-[http://mywebpage.netscape.com/burochka/bridesmaid-dress.htm bridesmaid dress]
-[http://mywebpage.netscape.com/burochka/formal-prom-dresses.htm formal prom dresses]
-[http://mywebpage.netscape.com/burochka/nail-fungus.htm nail fungus]
-[http://www.buddy4u.com/view/?u=cell-phone-ringtone cell phone ringtone]
-[http://www.buddyprofile.com/viewprofile.php?username=tanningbed tanning bed]
-[http://www.buddyprofile.com/viewprofile.php?username=bcbgshoes bcbg shoes]
-[http://www.buddyprofile.com/viewprofile.php?username=naturalizershoes naturalizer shoes]
-[http://www.buddyprofile.com/viewprofile.php?username=leathersectionalsofa leather sectional sofa]
-[http://www.buddyprofile.com/viewprofile.php?username=designerdogbeds designer dog beds]
-[http://www.buddyprofile.com/viewprofile.php?username=heatedmattresspad heated mattress pad]
-[http://www.buddyprofile.com/viewprofile.php?username=bridesmaiddress bridesmaid dress]
-[http://www.buddyprofile.com/viewprofile.php?username=2006promdresses 2006 prom dresses]
-[http://www.buddyprofile.com/viewprofile.php?username=formalpromdresses formal prom dresses]
-[http://www.buddyprofile.com/viewprofile.php?username=sexypromdresses sexy prom dresses]
-[http://www.buddyprofile.com/viewprofile.php?username=cheappromdresses cheap prom dresses]
-[http://www.buddyprofile.com/viewprofile.php?username=nextelringtone nextel ringtone]
-[http://www.buddyprofile.com/viewprofile.php?username=verizonringtones verizon ringtone]
-[http://www.buddyprofile.com/viewprofile.php?username=cingularringtone cingular ringtone]
-[http://www.buddyprofile.com/viewprofile.php?username=freesprintringtone free sprint ringtone]
-[http://www.buddyprofile.com/viewprofile.php?username=freenextelringtone free nextel ringtone]
-[http://dianabol.google.if.ua dianabol]
-[http://tribulus-terrestris.blogs.eurosport.com tribulus terrestris]
-[http://nutrex-lipo-6.blogs.eurosport.com nutrex lipo 6]
-[http://tribex.blogs.eurosport.com Tribex]
-[http://xyience.blogs.eurosport.com Xyience]
-[http://vasopro.blogs.eurosport.com Vasopro]
-[http://caffeine.blogs.eurosport.com caffeine pills]
-[http://scifit.blogs.eurosport.com scifit]
-[http://twinlab.blogs.eurosport.com twinlab]
-[http://mysite.com.ua/xdem8200/pagesxdem8200/1_1.html tramadol hcl]
-[http://mp3.com/users/nextelringtone nextel ringtones]
-[http://mp3.com/users/freenextelringt free nextel ringtones]
-[http://mp3.com/users/freesprintring free sprint ringtones]
-[http://imean.com/blog/faxlesspaydayloans/ faxless payday loans]
-
-</div>
