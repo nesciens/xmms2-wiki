@@ -3,6 +3,7 @@
 If you think you found a bug in XMMS2, please report it to the bugtracker at http://bugs.xmms2.xmms.se/ (CHECK FOR SIMILAR BUGS FIRST!)
 
 The reason why the bugreporting tool requires you to register an account with a valid email adress is quite simple - we have little to no interest in bugreports from people we can't get hold of for additional information. Complaints about this will fall on deaf ears.
+* Creating an account currently seems impossible because the confirmation email never arrives, though. --[[User:Raboof|Raboof]] 15:35, 14 April 2006 (CEST)
 
 If you encountered a crash:
 * Please provide a backtrace.
