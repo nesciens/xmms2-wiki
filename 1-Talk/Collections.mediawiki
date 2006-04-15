@@ -13,3 +13,14 @@ tables "CollectionsEntries":
 One medialib entry can be in as many collection as you want. We have to take care of deleting any collection's entries when deleting item from medialib. If clients use almost always collections, database would contain a lot of duplicated data...
 
 -- [[User:Crazy | Crazy]] 03 Apr 2006
+
+
+When refactoring the playlist stuff, I have a sort of "queued playback commands" in mind.
+Imagine thoses commands as simple playlist/collection entries.
+
+If you put a stop somewhere into the playlist, the server will stop. If you place a repeat_one behine a song, the song will be repeated.
+
+This would be completely transparent to clients not aware of.
+The reason why it better should be implemented into the server is the latency. You cannot do it with enough accuracy via broadcast-notifications.
+
+--[[User:Karsten|Karsten]] 17:53, 15 April 2006 (CEST)
