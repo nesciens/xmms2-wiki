@@ -31,3 +31,7 @@ An idea would be either to somehow use xforms and specify the commands with the 
 Those commands are also added regulary to the mlib as entries which then could be edited (title in preferred language, other properties etc.).
 
 --[[User:Karsten|Karsten]] 18:08, 15 April 2006 (CEST)
+
+pause for 180s... 
+
+xforms, xmms2 add tone://freq:duration => tone://0:180000 *thinks*
