@@ -23,7 +23,7 @@ If you put a stop somewhere into the playlist, the server will stop. If you plac
 This would be completely transparent to clients not aware of.
 The reason why it better should be implemented into the server is the latency. You cannot do it with enough accuracy via broadcast-notifications.
 
-An idea would be either to somehow use xforms and specify the commands with the url
+An idea would be to somehow use xforms and specify the commands with the url
  command://stop
  command://repeat_one
  command://pause:180 (180 seconds)
