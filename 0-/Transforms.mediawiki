@@ -79,7 +79,7 @@ Everything reworked to new plugin api.
 ::&#10063;m3u
 :&#10063; convert plugins.
 ::&#10003;alsa
-::&#10063;coreaudio
+::&#10003;coreaudio
 ::&#10063;curl
 ::&#10003;diskwrite
 ::&#10063;faad
