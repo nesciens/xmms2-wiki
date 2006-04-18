@@ -2,6 +2,9 @@
 
 Put this at the end of your .emacs to follow style guidelines.
 
+This is not 100% correct! It doesn't do the correct indentation of multiline statements!!
+
+
  (defun xmms2-c-mode ()
    "C mode with adjusted defaults for use with the xmms2."
    (interactive)
