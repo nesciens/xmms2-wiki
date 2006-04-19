@@ -1,0 +1,25 @@
+== If you... ==
+[[image:Lost signpost cropped.jpg|right|200px|Lost?]]
+
+* '''are just browsing..'''
+** check out the [[Read me first!]] and [[About]] pages to see what this is all about.
+** the [[Features]] page lists some of the features you can expect from XMMS2.
+** and you're a bit technically inclined, you might find [[Design of XMMS2]] interesting.
+** and want to talk to us, you can find our [[About#Contact_info | contact details]] on the About page.
+** you might be interested in the [[History | history]] of the project.
+** and are wondering about [http://musicpd.org MPD] and GStreamer, you might want to check out [[XMMS2 vs MPD]] and [[XMMS2 vs GStreamer]].
+* '''want to use XMMS2..'''
+** check out the [[Download XMMS2 | download]] page for information about obtaining sources/binaries.
+** follow the [[Install instructions | installation instructions]].
+** read up on how to [[Using the application | use the application]], and get yourself some more [[XMMS2 Clients]].
+** check out the [[Users | user info page]].
+* '''are currently using XMMS2'''
+** and found a problem, maybe you'd like to check if the [[FAQ]] covers it, or else [[Reporting bugs | report it]].
+** check out the [[Users | user info page]].
+* '''want to contribute something to the project..'''
+** maybe you'd like to make a nice [[Logo | logo]].
+** check out the [[Developer Corner]] for information about [[Developer Corner#XMMS2_Technical_Details | technical details]], [[Developer Corner#Code.._and_bugs.21 | guidelines]] for working with XMMS2 code and various [[Developer Corner#Ideas | development ideas]].
+** if you're developing a client, maybe you'd like to add it to the [[XMMS2 Clients | clients]] page. You can also discover and add bits of wisdom to [[Writing XMMS2 Clients]].
+** if you want to develop a plugin, you should familiarise yourself with the [[Design of XMMS2]].
+** if you want to submit code that fixes a problem, or adds a feature, you should read up on our [[Developer Corner#Code.._and_bugs.21 | guidelines]] for working with XMMS2 code.
+** if you want to contribute to this wiki, check out the [[XMMS2:Wikitodo | to-do list]] and [[XMMS2:Wikiguidelines | guidelines]] for the wiki, or just edit what you can. Please note that this wiki does not allow anonymous edits, as we'd like to know who is changing what, and when, so please [[Special:Userlogin | register and log in]].
