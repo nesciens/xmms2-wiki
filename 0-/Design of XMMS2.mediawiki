@@ -1,1 +1,119 @@
-#REDIRECT [[Design of XMMS2/pre-DrEvil]]
+For the older version of this page, see [[Design of XMMS2/pre-DrEvil]].
+
+== Definitions ==
+;Stream
+:What is played by XMMS2. This can be a file (mp3, ogg vorbis, WAVE) or network stream (mp3 streaming over HTTP)
+
+;Medialib
+:A library containing metadata read from streams played by XMMS2. Clients may modify or add to this metadata.
+
+;''xmms2d''
+:The XMMS2 daemon. Referred to interchangeably as 'server' and 'daemon' here.
+
+== System Overview ==
+
+;Client-Server model
+The XMMS2 system is split into two main components: the server, and multiple clients. There are a few reasons for this architectural model:
+* It's the ultimate form of loose coupling between the part responsible for playing audio and the part controlling the former part. Therefore, users aren't restricted simply to modifying 'skins', they can interact with the player in various other ways.
+* There isn't a 1:1 mapping between the player and the controller interface - the user can run as many or as few interfaces as he chooses.
+
+=== Client roles ===
+An XMMS2 client provides an interface (graphical, command line, or otherwise) to:
+* Allow the user to control playback (play, pause, stop)
+* Allow the user to choose what to play (next, previous, add/remove to/from playlist)
+* Manage a collection of audio streams (via the medialib)
+* Alter the server's configuration
+* Display visualisation animations
+
+A client is not restricted to these functions - it may also do things unrelated to XMMS2 itself, such as connecting to portable digital audio players, etc
+
+=== Server roles ===
+The XMMS2 daemon (''xmms2d''):
+* Allows clients to connect to it via IPC sockets (TCP or UNIX sockets)
+* Responds to client commands
+* Maintains a playlist of streams to play
+* Maintains metadata stored in the medialib
+* Reads and decodes encoded audio data from streams before (optionally) applying effects and outputting the result to an audio device.
+* Responds to configuration changes
+* Provides visualisation data about the current audio data being played
+
+== Server Components ==
+
+=== Object System ===
+Despite being written in C, the daemon's designed to be composed of a number of discrete 'objects'. This has more to do with modularisation than with object orientation, and is achieved in two ways:
+# The code is organised in files such as ''output.c'' and ''output.h'' for the 'Output' object. The 'object' itself is defined as a struct, and functions to manipulate this struct are defined in the appropriate C file. From an OO perspective, the struct can be said to contain the object's attributes, and the functions to be the class methods. The API naming convention is similar to Glib's: <object>_<action>.
+# Basic object services are provided by ''object.c'' and ''object.h''. These services include:
+#* Object creation
+#* Reference counting
+#* Object destruction
+#* Signal emission (similar to Glib's signals) - responsible for propagating state changes to the IPC layer (see below) so that notification messages may be sent to clients.
+
+=== Configuration ===
+The daemon maintains its configuration in an XML file read on startup and saved on shutdown. The configuration file itself is serialised and deserialised using Glib's GNode and GMarkupParser. In memory, the configuration data is maintained as a hashtable of keys and associated values and is accessed by all parts of the daemon itself. The configuration API is also exposed to clients via the IPC layer so that configuration values may be read and modified by client applications.
+
+=== Inter-Process Communication ===
+The part of the daemon responsible for serialising and deserialising messages to/from clients. Other parts of the daemon register 'IPC signals' which extend the signal service provided by ''object.c'' - whenever the objects then emit registered signals, this layer marshals an appropriate notification message and sends it to connected clients that have requested the particular notification type. (see Middleware) Parts of the daemon also register 'IPC commands' that may be activated by clients - once a message arrives, it is deserialised and the specified command is executed in the daemon. As far as implementation goes, the IPC layer listens for client connections using a GSource attached to the daemon's GMainLoop and starts a thread to service each client connection accepted.
+
+=== Playback ===
+
+Playback is performed in this order: transport, decoding, effects, visualisation, and finally, output. For releases up to [[Release:DrDolittle | DrDolittle]], the daemon itself provided a plugin interface for each stage, so that the real work was done by a number of plugins, much like gstreamer. The main components involved in this process - transport, decoding, output - were run in their own separate thread. Following the release of [[Release:DrDolittle | DrDolittle]], the internal processing stages were generalised so as to provide a 'chain' of 'transformation' plugins whose job it is to transform data from one format to another. The order of operations remains the same (transport, decoding, etc), however, the explicit layers and plugin APIs have been merged into a single 'transform' phase. For more information about this process, see [[Transforms]].
+
+==== Transport ====
+The transport stage simply aims to read a stream from a given URL. Once a plugin is found for an appropriate URL type, the plugin is initialised and starts reading the stream. The data is buffered and the stream header used to determine the next plugin to use in the processing stream.
+
+==== Decode ====
+The decoder stage reads data buffered by the transport layer and passes it through appropriate decoder plugins so as to produce PCM audio data. (See [[Transforms]] for details about how this happens.)
+
+==== Effects ====
+Once audio data has been decoded from the stream, effects can be applied - this includes equalisation. In practice, the application of audio effects is done just after the decoding stage.
+
+==== Visualisation ====
+The visualisation component of ''xmms2d'' performs a fast fourier transform (fft) on the decoded audio data being sent to the output device. (This stage occurs just after the application of effects) The result of this operation can then be streamed as a 'signal' to clients, if requested. Clients may then use this data stream to display animations so the user can 'visualise' the audio.
+
+==== Output ====
+The final stage of the playback process is the output to a certain audio device, such as ALSA, OSS, JACK, etc. In practice, it's the Output object that's responsible for starting the playback process itself - it fetches the current playlist item, creates a new transport and decoder, begins playback, and reads buffered data from the effects layer and sends it to the audio device.
+
+=== Playlist ===
+The playlist in ''xmms2d'' is simply an ordered list of medialib IDs of the streams to be played. Storing only the ID numbers (32 bit unsigned integers) allows the playlist itself to have a small memory footprint and thus allow it to contain a large number of entries without significantly affecting performance.
+
+=== Medialib ===
+''see main article: [[The Medialib]]''
+
+The Medialib (media library) is where XMMS2 stores metadata about files as it plays them. It is implemented using an ''sqlite'' database, so queries and data updates are all performed using standard SQL queries. Having a media library allows XMMS2 to 'remember' the songs it has played, and thus allows users to easily re-create their favourite playlists.
+
+== Middleware ==
+-> image of xmmsipc here <-
+
+Communication between the daemon and clients is done via a couple of middleware libraries, in contrast to the MPD approach, where clients use a plaintext protocol over a TCP connection. The rationale for the middleware approach is to reduce the common overhead incurred by all clients when it comes to parsing plaintext when handling the protocol. Two libraries provide a higher level interface to client developers:
+# libxmmsipc - Abstracts the lower level IPC methods (UNIX and TCP sockets) and provides a 'transport' layer for exchanging messages.
+# libxmmsclient - (The client library) Provides an interface for clients to use to communicate with the daemon and handles the task of marshalling and unmarshalling messages over the IPC transport layer.
+
+=== Client library ===
+As explained above, the client library mainly provides an interface to clients and deals with the following concepts:
+
+==== Communication modes ====
+An XMMS2 client may communicate with the daemon in one of two modes:
+
+;Synchronously (sync)
+:The client requests a command, waits for the result, then continues processing.
+
+;Asynchronously (async)
+:The client requests one or more commands, sets notifiers for the results of those commands, then enters a mainloop where it makes sure to push data to, or read data from, the daemon when the IPC file descriptor is ready. As data comes in (in the form of results or signals), the client library executes the result notifiers previously set - these notifiers may do actions such as updating graphical widgets, and so on.
+
+It is not a good idea to mix the two modes of communication in the same process.
+
+==== Commands ====
+A command is an action requested from the daemon by a client. It can be something like 'start playback', 'add url to playlist', etc. Every command returns a result.
+
+==== Results ====
+A result is data returned from a command - it is a generic structure that can contain various data types (int, uint, string, list, dict, propdict - much like Glib's GValue type), as well as fields to specify whether an error occurred during the execution of a command.
+
+==== Signals ====
+A signal is a type of notification a client can request from the daemon and can be used by the client to stay up to date with the daemon's state. In practice, a signal is requested much like a command, and returns a result. Signals may only be used when the client is communicating asynchronously with the daemon.
+
+There are two types of signals: 'normal' signals and ''broadcast'' signals. The difference is subtle, but important - in principle, a broadcast signal is more important than a normal signal. That is, if a client fails to receive a broadcast signal result for some reason, its awareness of the daemon's state will be rendered inconsistent. Most signals are of the broadcast type; the exceptions are the ''playtime'' and ''visualisation'' signals. 'Restarting' a signal result refers to the condition where a client has finished processing data returned from a result and is ready to receive the next result in the series. Broadcast signal results are automatically restarted by the client library, but normal signal results have to be explicitly restarted by the client.
+
+== Clients ==
+XMMS2 clients may be written in a variety of languages, using libxmmsclient and its associated bindings. There are subtle differences in the API offered by the bindings for various languages. For more information, and useful code examples, please see the [http://git.xmms.se/?p=xmms2-tutorial.git;a=summary xmms2-tutorial] Git repository. ''xmms2-tutorial'' includes example client code in C, Ruby, Python and Java.
+
+[[Category:XMMS2 Technical Details]]
