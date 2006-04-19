@@ -71,7 +71,7 @@ Once audio data has been decoded from the stream, effects can be applied - this 
 The visualisation component of ''xmms2d'' performs a fast fourier transform (fft) on the decoded audio data being sent to the output device. (This stage occurs just after the application of effects) The result of this operation can then be streamed as a 'signal' to clients, if requested. Clients may then use this data stream to display animations so the user can 'visualise' the audio.
 
 ==== Output ====
-The final stage of the playback process is the output to a certain audio device, such as ALSA, OSS, JACK, etc. In practice, it's the Output object that's responsible for starting the playback process itself - it fetches the current playlist item, creates a new transport and decoder, begins playback, and reads buffered data from the effects layer and sends it to the audio device.
+The final stage of the playback process is the output to a certain audio device, such as ALSA, OSS, JACK, etc. In practice, it's the Output object that's responsible for starting the playback process itself. It fetches the current playlist item, creates a transform chain to transport and decode the stream, begins playback, and reads buffered data from the transform chain and sends it to the audio device.
 
 === Playlist ===
 The playlist in ''xmms2d'' is simply an ordered list of medialib IDs of the streams to be played. Storing only the ID numbers (32 bit unsigned integers) allows the playlist itself to have a small memory footprint and thus allow it to contain a large number of entries without significantly affecting performance.
