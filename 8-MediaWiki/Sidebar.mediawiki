@@ -6,7 +6,7 @@
 ** Download|download-url
 ** ProjectStatus|status-url
 ** GeneralInfo|general-url
-** UsersInfo|users-url
+** Foo|users-url
 ** DevsInfo|developers-url
 ** recentchanges-url|recentchanges
 ** portal-url|portal
