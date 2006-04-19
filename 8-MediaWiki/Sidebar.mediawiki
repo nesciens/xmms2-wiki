@@ -1,9 +1,17 @@
 * navigation
 ** mainpage|mainpage
 ** Readme|readme-url
+** Faq|faq-url
+** ProjectStatus|status-url
+** GeneralInfo|general-url
+** UsersInfo|users-url
+** DevsInfo|developers-url
+** About|about-url
+** Download|download-url
+** recentchanges|recentchanges-url
+
 ** portal-url|portal
 ** currentevents-url|currentevents
-** recentchanges-url|recentchanges
 ** randompage-url|randompage
 ** helppage|help
 ** sitesupport-url|sitesupport
