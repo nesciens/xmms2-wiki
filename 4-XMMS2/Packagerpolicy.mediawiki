@@ -62,3 +62,31 @@ Our next component of the plist to consider is libraries:
 * %%ECORE%%lib/libxmmsclient-ecore.so
 * lib/libxmmsclient-glib.so
 * lib/libxmmsclient.so
+
+XMMS2 also installs .a versions of all of these libraries. The first two libraries are mainly related to main loops. The first is to attack XMMS2 into an ecore mainloop. This is the mainloop used by Enlightenment, and so would most likely be used if developing or running an EFL XMMS2 client. libxmmsclient-glib on the other hand is the glib mainloop. This is used by many clients and so though XMMS2 can be built and some clients will work with out it, is enabled by default on FreeBSD. Now libxmmsclient is the real client library. This is necessary for all clients, and thus must be a dependency for any client installed. 
+
+Now we will move onto XMMS2 plugins (All of these plugins install to lib/xmms2 and follow this naming pattern: libxmms_${PLUGINNAME}.so), 
+
+These plugins require no dependencies: diskwrite, eq, file, html, m3u, null, pls, replaygain, wave
+
+These plguins are system specific: sun, oss, alsa 
+
+These plguins require dependencies: curl, faad, flac, gnomevfs, jack, mad, modplug, musepack, samba, sid, vorbisfile
+
+To function xmms2 requires at least one output plugin (sun, oss, alsa, jack, diskwrite, null), one transport plugin (curl, file, samba, gnomevfs) and one decoder plugin (mad, flac, faad, modplug, musepack, sid, vorbisfile, wave). We recommend that packagers install mad andvorbisfile by default. It is STRONGLY recommended that vorbisfile be installed by default because the sample clip installed with XMMS2 requires it (more on that later). Packagers should also pack whichever output plugins work for their system. Linux distributions might package alsa, oss and jack. FreeBSD packagers might package oss and jack, and NetBSD/OpenBSD packagers might package sun, oss (XMMS2 was originally ported to NetBSD and OpenBSD using libossaudio included by default with both OSes) and jack. Solaris packagers should be careful to remember that the sun output plugin may not work on Solaris as it was designed for the BSDs. It is also HIGHLY recommended/mandated that packagers install the file plugin by default. 
+
+XMMS2 installs five pkg-config files. These pkg-config files though often feature specific are installed whether the feature is enabled or not. They are: 
+
+* xmms2-client-cpp.pc - For the C++ bindings which are not included with DrDoolittle
+* xmms2-client-ecore.pc - For the ecore mainloop bindings
+* xmms2-client-glib.pc - For the glib mainloop bindings
+* xmms2-client.pc - For the xmms2 client library 
+* xmms2-plugin.pc - For the xmms2d plugin development
+
+XMMS2 installs 3 files in its data directory (defaults to /usr/local/share/xmms2):
+
+* %%DATADIR%%/mind.in.a.box-lament_snipplet.ogg - Intro clip encoded in Ogg Vorbis, and thus why we recommend that packagers include the vorbisfile plugin
+* %%DATADIR%%/scripts/startup.d/xmms2-et-launcher.sh - Startup script for the ET Phone Home client
+* %%DATADIR%%/scripts/startup.d/xmms2-mdns-launcher.sh - Startup script for the various mDNS responders
+
+Any scripts installed under %%DATADIR%%/scripts/startup.d will be executed when xmms2d starts up, and any scripts installed under %%DATADIR/script/shutdown.d/ will be executed when xmms2d is stopped safely.
