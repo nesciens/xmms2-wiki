@@ -8,7 +8,7 @@
 ** GeneralInfo|general-url
 ** UsersInfo|users-url
 ** DevsInfo|developers-url
-** Recentchanges|recentchanges-url
+** recentchanges-url|recentchanges
 ** portal-url|portal
 ** currentevents-url|currentevents
 ** randompage-url|randompage
