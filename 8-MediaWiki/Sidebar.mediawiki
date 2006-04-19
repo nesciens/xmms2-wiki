@@ -1,6 +1,6 @@
-
 * navigation
 ** mainpage|mainpage
+** Readme|readme-url
 ** portal-url|portal
 ** currentevents-url|currentevents
 ** recentchanges-url|recentchanges
