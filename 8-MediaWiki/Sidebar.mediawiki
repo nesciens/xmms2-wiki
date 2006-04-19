@@ -1,13 +1,13 @@
 * navigation
 ** mainpage|mainpage
-** About|about-url
-** Readme|readme-url
-** Faq|faq-url
-** Download|download-url
-** ProjectStatus|status-url
-** GeneralInfo|general-url
-** UsersInfo|users-url
-** DevsInfo|developers-url
+** about-url|About
+** readme-url|Readme
+** faq-url|FAQ
+** download-url|Download
+** status-url|Project Status
+** general-url|GeneralInfo
+** users-url|UsersInfo
+** developers-url|DevsInfo
 ** recentchanges-url|recentchanges
 ** portal-url|portal
 ** currentevents-url|currentevents
