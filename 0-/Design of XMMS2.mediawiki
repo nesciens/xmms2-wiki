@@ -82,7 +82,7 @@ The playlist in ''xmms2d'' is simply an ordered list of medialib IDs of the stre
 The Medialib (media library) is where XMMS2 stores metadata about files as it plays them. It is implemented using an ''sqlite'' database, so queries and data updates are all performed using standard SQL queries. Having a media library allows XMMS2 to 'remember' the songs it has played, and thus allows users to easily re-create their favourite playlists.
 
 == Middleware ==
--> image of xmmsipc here <-
+[[Image:Xmmsipc.png]]
 
 Communication between the daemon and clients is done via a couple of middleware libraries, in contrast to the MPD approach, where clients use a plaintext protocol over a TCP connection. The rationale for the middleware approach is to reduce the common overhead incurred by all clients when it comes to parsing plaintext when handling the protocol. Two libraries provide a higher level interface to client developers:
 # libxmmsipc - Abstracts the lower level IPC methods (UNIX and TCP sockets) and provides a 'transport' layer for exchanging messages.
