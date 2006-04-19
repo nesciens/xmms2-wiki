@@ -83,7 +83,7 @@ XMMS2 installs five pkg-config files. These pkg-config files though often featur
 * xmms2-client.pc - For the xmms2 client library 
 * xmms2-plugin.pc - For the xmms2d plugin development
 
-XMMS2 installs 3 files in its data directory (defaults to /usr/local/share/xmms2):
+XMMS2 installs 3 files in its data directory (defaults to ${PREFIX}/share/xmms2):
 
 * %%DATADIR%%/mind.in.a.box-lament_snipplet.ogg - Intro clip encoded in Ogg Vorbis, and thus why we recommend that packagers include the vorbisfile plugin
 * %%DATADIR%%/scripts/startup.d/xmms2-et-launcher.sh - Startup script for the ET Phone Home client
