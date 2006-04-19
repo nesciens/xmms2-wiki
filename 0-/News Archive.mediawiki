@@ -1,5 +1,39 @@
-{{Navbar}}
 Older news items.
+
+{{Newsitem|date=19 October 2005 (2005-10-19) CLST|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet.|text=We are not dead, the [[Release:DR3|Developer Release 3]] is still being worked on. There are quite a few important fixes in [[User:Anders Gustafsson|anders']] [http://git.xmms.se/?p=xmms2-anders.git;a=summary tree] that will soon end up in -devel and then we'll hopefully make a push to get DR3 out of the door. Keep the patches and [[About#Contact_info|feedback]] coming!
+}}
+
+{{Newsitem|date=07 September 2005 (2005-09-07) WST|author=[[Sham Chukoury]]|title=Developer Release 2.2|text=More good news everyone! The XMMS2 Team is releasing another bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.2 | DR2.2]]. 
+
+Some outstanding issues have forced us to release another maintenance release in the DR2 series instead of making a DR3 release, including the fixing of a couple of huge memory leaks. Another annoying bug is that XMMS2 doesn't work at all with newer SQLite (3.2.5 and higher) releases because of a policy change; we were misusing the API and they made such usage fail with a hard error. This has '''not''' been fixed in this maintenance release since it is a major change to our internal API. It will be fixed in the upcoming [[Release:DR3 | DR3]] release.
+
+Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
+
+''XMMS2: it might not be able to prevent natural disasters or government fuckups, but it will play your music awesomely! (and makes your mom rock)''
+
+Now have a nice day!}}
+{{Newsitem|date=20 August 2005 (2005-08-20) WST|author=[[Sham Chukoury]]|title=Wiki issues|text=There have been a few changes to the wiki backend and things might still be a bit shaky.. You might encounter this particular scenario:
+
+Clicking on a link to a wiki page (say, page B) from another wiki page (say, page A) might lead you to a URL like ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_B</nowiki>'' and result in a ''404 Page not found'' error. The '/wiki' bit in the URL is erroneous.
+
+To fix this, go back to page A, append '?action=purge' (without quotes) to the URL (i.e. ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_A?action=purge</nowiki>'') and press Enter (or click 'Go' or whatever, to load the URL). This will cause the wiki to purge cached links and re-generate them. This only has to be done once for any broken page, so subsequent users won't have to worry about this.
+
+If you still have any other problems with the wiki (or other XMMS2 pages), please drop by #xmms2 on irc.freenode.net and let us know.
+
+Thanks for your patience.}}
+{{Newsitem|date=19 August 2005 (2005-08-19) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2.1|text=Good news everyone! The XMMS2 Team is releasing a bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.1|DR2.1]]. This corrects some annoyances found by the community, the most prominent of those being an ID3v2.3 parsing error.
+
+This release is compatible with DR2 and will not break the plugin API, medialib or client communication (we think).
+
+Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
+
+Now have a nice day!}}
+
+{{Newsitem|date=4 August 2005 (2005-08-04) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2|text=Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Release:DR2|Developer Release 2]]. Delayed for a couple of weeks due to summer, beer, (plastic) women and other real life nonsense, we release a feature-packed second version of XMMS2. This release is the direct result of feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone who provided us with feedback, patches and encouragement.
+
+To review the ChangeLog please check the [[Release:DR2|Release Page]] and to download source code please surf to the [[Download XMMS2|Download]] page.}}
+
+{{Newsitem|date=30 June 2005 (2005-06-30) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 and the Snake|text=Hello all. We are soon going to release [[Release:DR2|DR2]]. In the mean time you can checkout the [http://www.tobi.nu/ slides] from my presentation I held at [http://www.europython.org EuroPython] about XMMS2. We are also starting to hammer out the offical client. Here is a [http://people.0x63.nu/~andersg/snap-050630-132322.png teaser].}}
 
 {{Newsitem|date=2 June 2005 (2005-06-02) WST|author=[[Sham Chukoury]]|title=XMMS2 on LWN|text=Hot on the heels of DR1.1, the XMMS2 article on LWN.net is now available to non-subscribers: http://lwn.net/Articles/137333/ :)}}
 
