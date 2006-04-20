@@ -1,0 +1,13 @@
+== Google's Summer of Code 2006 ==
+
+== Proposed projects ==
+
+* Auto-generated API and bindings
+* Collections
+* Development of the promoe client
+* Rework and improve the usability and look of the website
+* Support for DAAP
+* Support for more formats/stream types (WMA, MMS, Last.Fm, ...)
+
+You might also want to check out: 
+[http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
