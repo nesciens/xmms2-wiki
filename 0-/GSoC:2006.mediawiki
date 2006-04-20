@@ -1,10 +1,10 @@
 == Google's Summer of Code 2006 ==
 
-== Proposed projects ==
+=== Proposed projects ===
 
-* Auto-generated API and bindings
-* Collections
-* Development of the promoe client
+* [[Generated IPC | Auto-generated API and bindings]]
+* [[Collections]]
+* Development of the [[Client:Promoe | promoe client]]
 * Rework and improve the usability and look of the website
 * Support for DAAP
 * Support for more formats/stream types (WMA, MMS, Last.Fm, ...)
