@@ -10,8 +10,5 @@
 ** developers-url|DevsInfo
 ** Sitemap|Sitemap
 ** recentchanges-url|recentchanges
-** portal-url|portal
-** currentevents-url|currentevents
 ** randompage-url|randompage
 ** helppage|help
-** sitesupport-url|sitesupport
