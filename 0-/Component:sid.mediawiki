@@ -6,6 +6,6 @@ Add support for playing SID tunes to XMMS2. SID is the most common format used f
 HVSC (High Voltage Sid Collection) is a collection of almost every SID tune ever made and can be downloaded from <http://www.hvsc.c64.org/>
 
 =Links=
-http://sidplay2.sourceforge.net/
-http://en.wikipedia.org/wiki/MOS_Technology_SID
-http://www.hvsc.c64.org/
+* http://sidplay2.sourceforge.net/
+* http://en.wikipedia.org/wiki/MOS_Technology_SID
+* http://www.hvsc.c64.org/
