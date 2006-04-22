@@ -1,8 +1,9 @@
-{{Navbar}}
+{{ComponentHeader}}
 
-Info about the OSS (Open Sound System) output plugin.
+=Summary=
+Adds support for "Open Sound System" (OSS) to XMMS2.
 
-===See also:===
+=See also:=
 * [[Component:Output | Output]]
 
 [[Category:Output Plugins]]
