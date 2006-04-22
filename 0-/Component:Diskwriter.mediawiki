@@ -1,6 +1,7 @@
-{{Navbar}}
+{{ComponentHeader}}
 
-The diskwriter plugin outputs data to disk, rather than to the soundcard.
+=Summary=
+Enables XMMS2 to output to wav-files on disk instead of a soundcard.
 
 ===See also:===
 * [[Component:Output | Output]]
