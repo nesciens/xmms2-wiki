@@ -1,0 +1,11 @@
+{{ComponentHeader}}
+
+=Summary=
+Add support for playing SID tunes to XMMS2. SID is the most common format used for C64 tunes. SID is actually the sound chip (MOS Technology 6581 SID) used in the C64 and SID-files are basically programs that controll the SID chip.
+
+HVSC (High Voltage Sid Collection) is a collection of almost every SID tune ever made and can be downloaded from <http://www.hvsc.c64.org/>
+
+=Links=
+http://sidplay2.sourceforge.net/
+http://en.wikipedia.org/wiki/MOS_Technology_SID
+http://www.hvsc.c64.org/
