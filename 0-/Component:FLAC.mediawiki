@@ -1,0 +1,7 @@
+{{ComponentHeader}}
+
+=Summary=
+Adds support for playback of FLAC files. FLAC stands for Free Lossless Audio Codec, which is a audio compression format that does not remove/destroy any data when compressing. This gives higher quality at the expense of larger files compared to lossy formats such as vorbis or mp3.
+
+=Links=
+http://flac.sourceforge.net/
