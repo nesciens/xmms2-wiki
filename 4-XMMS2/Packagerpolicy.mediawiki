@@ -90,3 +90,7 @@ XMMS2 installs 3 files in its data directory (defaults to ${PREFIX}/share/xmms2)
 * %%DATADIR%%/scripts/startup.d/xmms2-mdns-launcher.sh - Startup script for the various mDNS responders
 
 Any scripts installed under %%DATADIR%%/scripts/startup.d will be executed when xmms2d starts up, and any scripts installed under %%DATADIR/script/shutdown.d/ will be executed when xmms2d is stopped safely.
+
+== Actual Packaging ==
+
+When you actually get to packaging things up and are looking for descriptions, it is requested that you use the descriptions that are liked from the Component Status list on the [[Project Status]] page. Each of these pages has a text blurb about the component so that if your operating system tends to break components into seperate packages you have a text blurb available for each component.
