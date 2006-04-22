@@ -1,8 +1,12 @@
-{{Navbar}}
+{{ComponentHeader}}
 
-Info about the ALSA output plugin.
+=Summary=
+Adds support for "Advanced Linux Sound Architecture" (ALSA) to XMMS2.
 
-===See also:===
+=Links=
+http://www.alsa-project.org/
+
+=See also:=
 * [[Component:Output | Output]]
 
 [[Category:Output Plugins]]
