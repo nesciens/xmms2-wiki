@@ -2,3 +2,9 @@
 
 =Summary=
 Adds support for playing MPEG-1 Layer I/II/III audio to XMMS2. This component is required for playback of "mp3" files.
+
+=Description=
+Uses libmad to decode. This component also reads id3v1 tags at the end of mp3 files.
+
+=Links=
+http://www.underbit.com/products/mad/
