@@ -99,9 +99,9 @@ Everything reworked to new plugin api.
 ::&#10063;sun
 ::&#10003;wave
 ::&#10003;vorbis
-:&#10063; effects.
+:&#10063;effects.
 ::&#10063;eq
-::&#10063;replaygain
+::&#10003;replaygain
 :&#10003; config stuff.
 
 [[Category:Developer ideas]]
