@@ -1,13 +1,13 @@
-Build log generated Sun Apr 23 13:38:10 2006
-Build took 30 seconds
-Version: 0fcc3d01d0433245965e23df9fef46c0be4beb81
+Build log generated Mon Apr 24 13:38:05 2006
+Build took 31 seconds
+Version: d863263659fbe7c5064f3c8fdadfa453dada2bfc
 
 ==Warnings==
- [[BuildLog/GCC33-O2#h44|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h50|Warning]]: src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h328|Warning]]: src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used
- [[BuildLog/GCC33-O2#h361|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
- [[BuildLog/GCC33-O2#h365|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33-O2#h46|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h52|Warning]]: src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h330|Warning]]: src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used
+ [[BuildLog/GCC33-O2#h363|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+ [[BuildLog/GCC33-O2#h367|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -26,6 +26,8 @@ Version: 0fcc3d01d0433245965e23df9fef46c0be4beb81
  Checking for glib-2.0  ... yes
  Checking for alsa  ... yes
  Checking for C header file AudioUnit/AudioUnit.h... no
+ Checking for faacDecInit2() in C library faad... no
+ Checking for NeAACDecInit2() in C library faad... no
  Checking for C header file FLAC/all.h... yes
  Checking for FLAC__seekable_stream_decoder_get_state() in C library FLAC... yes
  Checking for gnome-vfs-2.0  ... no
@@ -53,13 +55,13 @@ Version: 0fcc3d01d0433245965e23df9fef46c0be4beb81
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_mlib.o src/clients/cli/cmd_mlib.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_other.o src/clients/cli/cmd_other.c
  src/clients/cli/cmd_other.c: In function `cmd_plugin_list':
- <span id="h44">src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function</span>
+ <span id="h46">src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function</span>
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_playback.o src/clients/cli/cmd_playback.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_pls.o src/clients/cli/cmd_pls.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_status.o src/clients/cli/cmd_status.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/common.o src/clients/cli/common.c
  src/clients/cli/common.c: In function `format_pretty_list':
- <span id="h50">src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function</span>
+ <span id="h52">src/clients/cli/common.c:197: warning: `res' might be used uninitialized in this function</span>
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/main.o src/clients/cli/main.c
  gcc-3.3 -Wall -O2 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/ipc.o src/clients/lib/xmmsclient/ipc.c
  gcc-3.3 -Wall -O2 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/medialib.o src/clients/lib/xmmsclient/medialib.c
@@ -337,7 +339,7 @@ Version: 0fcc3d01d0433245965e23df9fef46c0be4beb81
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
  gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/flac/flac.os src/plugins/flac/flac.c
- <span id="h328">src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used</span>
+ <span id="h330">src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used</span>
  gcc-3.3 -shared -o src/plugins/flac/libxmms_flac.so src/plugins/flac/flac.os -lFLAC
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
@@ -370,11 +372,11 @@ Version: 0fcc3d01d0433245965e23df9fef46c0be4beb81
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
  src/xmms/mediainfo.c: In function `xmms_mediainfo_reader_thread':
- <span id="h361">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
+ <span id="h363">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h365">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h367">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
