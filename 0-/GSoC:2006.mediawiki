@@ -2,12 +2,31 @@
 
 === Proposed projects ===
 
-* [[Generated IPC | Auto-generated API and bindings]]
-* [[Collections]]
-* Development of the [[Client:Promoe | promoe client]]
-* Rework and improve the usability and look of the website
-* Support for DAAP
-* Support for more formats/stream types (WMA, MMS, Last.Fm, ...)
+Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)!
 
 You might also want to check out: 
 [http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
+
+
+==== [[Generated IPC | Auto-generated API and bindings]] ====
+
+Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files (using python and/or XSLT).
+
+==== [[Collections]] ====
+
+The access to the medialibrary should be abstracted from its implementation ; currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solved these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and clientlib API), before it is implemented in the core of the server (in C language).
+
+==== Development of the [[Client:Promoe | promoe client]] ====
+
+The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/Qt4.  It currently supports skins, playback control, playlists and simple medialibrary access, but still lacks most other features offered by XMMS2 (saved playlists, powerful medialibrary browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, DrEvil).
+
+==== Support for DAAP ====
+
+The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.
+
+==== Support for more formats/stream types ====
+
+New formats can be supported by writing decoder modules for the server (in C language) using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
+* WMA
+* MMS
+* Last.Fm
