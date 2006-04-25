@@ -72,6 +72,7 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 * [[Music Sharing]]
 * [[General Notify support]]
 * [[Support for radio output like icecast]]
+* [[Gapless Playback]]
 
 === Older Ideas ===
 * [[XMMS2 as a DJ station]]
