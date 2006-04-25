@@ -1,0 +1,4 @@
+Gapless playback is really cool; here are a few pages related to it:
+
+* http://foodisworse.typepad.com/hackpod/2004/09/gapless_playbac.html
+* http://wiki.hydrogenaudio.org/index.php?title=Gapless
