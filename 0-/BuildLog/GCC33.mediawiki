@@ -1,6 +1,6 @@
-Build log generated Mon Apr 24 13:37:21 2006
-Build took 19 seconds
-Version: d863263659fbe7c5064f3c8fdadfa453dada2bfc
+Build log generated Tue Apr 25 13:37:26 2006
+Build took 24 seconds
+Version: 09309187237772b0e84dffaf944076944e75a35c
 
 ==Warnings==
  [[BuildLog/GCC33#h323|Warning]]: src/plugins/flac/flac.c:442: warning: `xmms_flac_seek' defined but not used
