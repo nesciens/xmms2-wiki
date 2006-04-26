@@ -1,6 +1,6 @@
-Build log generated Tue Apr 25 13:38:39 2006
+Build log generated Wed Apr 26 13:38:39 2006
 Build took 15 seconds
-Version: 09309187237772b0e84dffaf944076944e75a35c
+Version: 3474a907ac32739a2f1e296de7de261dc137c849
 
 ==Errors==
  [[BuildLog/GCC295#h202|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
@@ -503,7 +503,6 @@ Version: 09309187237772b0e84dffaf944076944e75a35c
  gcc-2.95 -g -Wall -O0 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
  gcc-2.95 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o
  gcc-2.95 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o src/xmms/outputplugin.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
- Substituting vars from xmms2.pc.in into xmms2-client-cpp.pc
  Substituting vars from xmms2.pc.in into xmms2-client-ecore.pc
  Substituting vars from xmms2.pc.in into xmms2-client-glib.pc
  Substituting vars from xmms2.pc.in into xmms2-client.pc
