@@ -1,4 +1,4 @@
-== Google's Summer of Code 2006 ==
+== <strike>Google's</strike> XMMS2's Summer of Code 2006 ==
 
 === Proposed projects ===
 
