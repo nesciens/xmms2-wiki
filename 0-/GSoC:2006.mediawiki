@@ -14,6 +14,7 @@ Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manua
 
 ;Language: Python / XML
 ;Level: Advanced
+;Mentor: Anders (tilman?)
 
 ==== [[Collections]] ====
 
@@ -21,6 +22,7 @@ The access to the medialibrary should be abstracted from its implementation ; cu
 
 ;Language: C and SQL
 ;Level: Advanced
+;Mentor: Anders
 
 ==== Development of the [[Client:Promoe | promoe client]] ====
 
@@ -28,6 +30,7 @@ The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written
 
 ;Language: C++
 ;Level: Medium
+;Mentor: Tobias
 
 ==== Development of a GTK2/GNOME medialib centric client for xmms2 ====
 
@@ -35,6 +38,7 @@ This project would be to develop a client using the GTK2 toolkit and possibly GN
 
 ;Language: Python / C / C++ / Ruby / Perl
 ;Level: Medium
+;Mentor: Tobias
 
 ==== Evaluate a Switch to GStreamer ====
 
@@ -42,6 +46,7 @@ A lot of discussion has occured in the past about the issue of converting XMMS2 
 
 ;Language: English / C
 ;Level: Flamatory
+;Mentor: Sham
 
 ==== Support for DAAP ====
 
@@ -49,6 +54,7 @@ The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows
 
 ;Language: C
 ;Level: Medium
+;Mentor: Tobias
 
 ==== Support for more formats/stream types ====
 
@@ -59,9 +65,11 @@ New formats can be supported by writing decoder modules for the server using our
 
 ;Language: C
 ;Level: Medium to Advanced
+;Mentor: ??
 
 ==== Make the MediaWiki Interface look better and develop a Graphic Profile ====
 XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.
 
 ;Language: PHP / Python and Inkscape
 ;Level: Easy to Medium
+;Mentor: Sham
