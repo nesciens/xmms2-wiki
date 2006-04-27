@@ -1,6 +1,4 @@
-__NOTOC__
-
-== <strike>Google's</strike> XMMS2's Summer of Code 2006 ==
+== Google's Summer of Code 2006 ==
 
 === Proposed projects ===
 
