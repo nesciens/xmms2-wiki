@@ -20,6 +20,10 @@ The access to the medialibrary should be abstracted from its implementation ; cu
 
 The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/Qt4.  It currently supports skins, playback control, playlists and simple medialibrary access, but still lacks most other features offered by XMMS2 (saved playlists, powerful medialibrary browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, DrEvil).
 
+==== Evaluate a Switch to GStreamer ====
+
+A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion. A student interested in this project should observe that this project is  highly flamable and might end in a  big bolt of fire.
+
 ==== Support for DAAP ====
 
 The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.
