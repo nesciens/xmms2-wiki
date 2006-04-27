@@ -1,0 +1,30 @@
+You know, I'm finding it kind of hard not to take some of your shit personally, especially with your colourful language, like "Hurts the soul like a dead hooker." All it makes me want to do is yell '''''SHUT THE FUCK UP AND GET THE FUCK OUTTA HERE''''', because 1) you're new around here, and 2) I'm the one responsible for a lot of what you're criticising, and no one else seemed to have the sense to correct what I was doing before you got here. On the other hand, looking past the crap language, I can see you seem to make some good points. I suggest you tone down the language if we're going to work together. (Apologising over and over for your 'sarcasm getting away' from you doesn't cut it.)
+
+Regarding [[Design of XMMS2]] and specifically the [[Design of XMMS2#Clients | Clients]] section, I figured that the numerous README files and code examples were self-explanatory and therefore didn't warrant much elaboration on the wiki itself. The bulk of what there is to know about writing XMMS2 clients is explained in the [[Design of XMMS2#Middleware | Middleware]] section, and the rest is in the code examples found in [http://git.xmms.se/?p=xmms2-tutorial.git;a=summary xmms2-tutorial]. If you find more to write about XMMS2 clients, please do. If you want to refactor the Design of XMMS2 page, please go ahead.
+
+Got an idea for a better main page? Prototype it on a wiki page and let us see it.
+
+You're right about the [[Mobile platforms]] page, I did think "gee-whiz, it would be nice" when I created the page - I figured something like a stub might be useful, say, to start discussion about the subject. Unfortunately, there hasn't been much interest in the XMMS2 community about supporting mobile devices. For the record, there is at least one client named 'Blue' written by Jens Taprogge meant to run on a mobile phone. It's available in an obscure branch of his Git repository: http://git.xmms.se/?p=xmms2-jlt.git;a=shortlog;h=blue In anticipation of you asking "Well, why isn't this information on the [[Mobile platforms]] page?", may I suggest that you do what you think is right in correcting this, instead of posting more inflammatory questions.
+
+The [[Project Status]] page is indeed deprecated. I found that manually maintaining it was quite a chore - I haven't found a way of automating the process. I'm guessing that prerequisites to this would be:
+# Defining once and for all, the different components that make up XMMS2
+# Building a complete test suite for the different components
+# Getting all developers to develop alongside, and maintain this test suite
+# Finding some 'robot' for automatically updating the status page on the wiki, depending on test results
+Got a better idea? Let us know.
+
+Regarding formatting, etc, this is a wiki, so go ahead and improve where you can - you don't need formal approval for this. If a change is seen to be detrimental, it can be reverted.
+
+The 'sitemap' used to be a section on the main page that I recently moved. I haven't really re-evaluated it since then.
+
+The point of the [[History]] page is exactly what the title suggests - a page to track the history of XMMS2. I figured it might be useful to have a page where major milestones and events are recorded, so that a third party doesn't have to dig in a thousand places to see it. However, I agree that it is quite thin on content - unfortunately, we don't have a dedicated ''XMMS2 Historian''.
+
+The sidebar can be edited at [[Mediawiki:Sidebar]]. Indeed, the link to [[Users]] read as 'Information for: Users' in [[Template:Navbar]] which we decided to deprecate in favour of the sidebar - this process has not yet been completed.
+
+;''You might want to consider some kind of global resource to tell you who is actively working on what. If I show up and have an idea, I'd like to know that someone is actually working on it, or that no one is.'': Sounds like a great idea, suggestions on how we could implement this without impeding the development workflow too much?
+
+Regarding the updating of the wiki at release time - this is indeed done, as per [[Release Checklist]]. Or maybe I'm misunderstanding what you really mean by 'updating the wiki'.
+
+Like I said, this is a wiki, so please feel free to improve where you can. However, don't simply jump to conclusions about what's on here simply because you can't find some information, or misunderstand some information - if in doubt, ask us on IRC, or e-mail us. Maybe once you've been so informed, you'll be in a better position to advise us how to improve access to information, rather than simply rocking up and making inflammatory remarks. What I can say, is that you're probably the most enthusiastic contributor this wiki has seen in a while, despite your irritating attitude. Try keeping up the enthusiasm, though I believe the arrogance can be better left somewhere else.
+
+[[User:Eleusis|Eleusis]] 23:15, 27 April 2006 (CEST)
