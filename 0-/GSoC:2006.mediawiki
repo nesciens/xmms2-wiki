@@ -10,7 +10,10 @@ You might also want to check out:
 
 ==== [[Generated IPC | Auto-generated API and bindings]] ====
 
-Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files (using python and/or XSLT).
+Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files.
+
+;Language: Python / XML
+;Level: Advanced
 
 ==== [[Collections]] ====
 
