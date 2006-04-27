@@ -75,7 +75,11 @@ XMMS2 has been in long need of a good logo set, and our wiki is also in need of 
 ;Mentor: Sham
 
 ==== Port Visualization to xforms and extend them to give PCM data ====
-Currently visualization in XMMS2's devel branch is disabled with the transition to transform. This project would be to port visualization to the devel branch as an xform plugin and to extend it to give full PCM data. 
+Currently visualization in XMMS2's devel branch is disabled with the transition to transform. This project would be to port visualization to the devel branch as an xform plugin and to extend it to give full PCM data.
+
+;Language: C
+;Level: Medium to Advanced
+;Mentor: anders(?)
 
 === Ideas? ===
 
