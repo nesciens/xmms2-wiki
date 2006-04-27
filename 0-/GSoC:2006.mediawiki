@@ -22,7 +22,7 @@ The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written
 
 ==== Evaluate a Switch to GStreamer ====
 
-A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion. A student interested in this project should observe that this project is  highly flamable and might end in a  big bolt of fire.
+A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion and maybe do the implementation if deemed as a winning situation. A student interested in this project should observe that this project is highly flamable and might end in a big bolt of fire.
 
 ==== Support for DAAP ====
 
