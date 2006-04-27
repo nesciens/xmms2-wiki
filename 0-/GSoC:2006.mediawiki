@@ -17,30 +17,51 @@ Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manua
 
 ==== [[Collections]] ====
 
-The access to the medialibrary should be abstracted from its implementation ; currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solved these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and clientlib API), before it is implemented in the core of the server (in C language).
+The access to the medialibrary should be abstracted from its implementation ; currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solved these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and clientlib API), before it is implemented in the core of the server.
+
+;Language: C and SQL
+;Level: Advanced
 
 ==== Development of the [[Client:Promoe | promoe client]] ====
 
 The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/Qt4.  It currently supports skins, playback control, playlists and simple medialibrary access, but still lacks most other features offered by XMMS2 (saved playlists, powerful medialibrary browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, DrEvil).
 
+;Language: C++
+;Level: Medium
+
 ==== Development of a GTK2/GNOME medialib centric client for xmms2 ====
 
-This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhytymBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place (in python). 
+This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhytymBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.
+
+;Language: Python / C / C++ / Ruby / Perl
+;Level: Medium
 
 ==== Evaluate a Switch to GStreamer ====
 
 A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion and maybe do the implementation if deemed as a winning situation. A student interested in this project should observe that this project is highly flamable and might end in a big bolt of fire.
 
+;Language: English / C
+;Level: Flamatory
+
 ==== Support for DAAP ====
 
 The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.
 
+;Language: C
+;Level: Medium
+
 ==== Support for more formats/stream types ====
 
-New formats can be supported by writing decoder modules for the server (in C language) using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
+New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
 * WMA
 * MMS
 * Last.Fm
 
+;Language: C
+;Level: Medium to Advanced
+
 ==== Make the MediaWiki Interface look better and develop a Graphic Profile ====
 XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.
+
+;Language: PHP / Python and Inkscape
+;Level: Easy to Medium
