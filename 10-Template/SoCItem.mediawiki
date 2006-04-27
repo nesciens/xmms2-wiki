@@ -1,0 +1,7 @@
+=== {{{title}}} ===
+
+{{{description}}}
+
+* '''Language''': {{{lang}}}
+* '''Level''': {{{level}}}
+* '''Mentor''': {{{mentor}}}
