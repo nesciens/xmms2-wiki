@@ -38,3 +38,6 @@ New formats can be supported by writing decoder modules for the server (in C lan
 * WMA
 * MMS
 * Last.Fm
+
+==== Make the MediaWiki Interface look better and developer a Graphic Profile ====
+XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.
