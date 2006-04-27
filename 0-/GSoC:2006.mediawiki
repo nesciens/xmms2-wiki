@@ -1,92 +1,31 @@
-== Google's Summer of Code 2006 ==
-
-=== Proposed projects ===
+== Proposed projects ==
 
 Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)!
 
 You might also want to check out: 
 [http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
 
+{{SoCItem| title=[[Generated IPC | Auto-generated API and bindings]]| description=Currently, the C client library and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files.| lang=Python / XML| level=Advanced| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
-==== [[Generated IPC | Auto-generated API and bindings]] ====
+{{SoCItem| title=[[Collections]]| description=The access to [[The Medialib | the media library]] should be abstracted from its implementation. Currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solves these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and client library API), before it is implemented in the core of the server.| lang=C and SQL| level=Advanced| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
-Currently, the C clientlib and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files.
+{{SoCItem| title=[[Client:Promoe | promoe client]]| description=The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/Qt4.  It currently supports skins, playback control, playlists and simple media library access, but still lacks most other features offered by XMMS2 (saved playlists, powerful media library browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, [[Release:DrEvil | DrEvil]]).| lang=C++| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
-;Language: Python / XML
-;Level: Advanced
-;Mentor: Anders (tilman?)
+{{SoCItem| title=[[Client:"TurboX2" | "turbox2" client]]| description=The [[Client:"TurboX2" | "turbox2" client]]  is a web client written using [http://www.turbogears.org TurboGears]. It is currently - possibly - the most robust client with support for browsing the media library and manipulating the playlist. Development targets for the summer are largely to get it to be release quality, but development would also focus on "Views" which would allow for the media library to be represented in a templated fashion.| lang=Python, Javascript, XHTML/KID|level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
-==== [[Collections]] ====
+{{SoCItem| title=Evaluate a Switch to GStreamer| description=A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion and maybe do the implementation if deemed as a winning situation. A student interested in this project should observe that this project is highly flamable and might end in a big bolt of fire.| lang=English / C| level=Flametory| mentor=[[Sham Chukoury]]}}
 
-The access to the medialibrary should be abstracted from its implementation ; currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solved these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and clientlib API), before it is implemented in the core of the server.
+{{SoCItem| title=Support for DAAP| description=The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.| lang=C| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
-;Language: C and SQL
-;Level: Advanced
-;Mentor: Anders
-
-==== Development of the [[Client:Promoe | promoe client]] ====
-
-The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/Qt4.  It currently supports skins, playback control, playlists and simple medialibrary access, but still lacks most other features offered by XMMS2 (saved playlists, powerful medialibrary browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, DrEvil).
-
-;Language: C++
-;Level: Medium
-;Mentor: Tobias
-
-==== Development of the [[Client:"TurboX2" | "turbox2" client]] ====
-
-The [[Client:"TurboX2" | "turbox2" client]]  is a web client written using TurboGears. It currently is possibly the most robust client with support for browsing the media library and manipulating the playlist. Development targets for the summer are largely to get it to be release quality, but development would also focus on "Views" which would allow for the media library to be represented in a templated fashion.
-
-;Language: Python, Javascript, XHTML/KID
-;Level: Medium
-;Mentor: Tobias
-
-==== Evaluate a Switch to GStreamer ====
-
-A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion and maybe do the implementation if deemed as a winning situation. A student interested in this project should observe that this project is highly flamable and might end in a big bolt of fire.
-
-;Language: English / C
-;Level: Flametory
-;Mentor: Sham
-
-==== Support for DAAP ====
-
-The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.
-
-;Language: C
-;Level: Medium
-;Mentor: Tobias
-
-==== Support for more formats/stream types ====
-
-New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
+{{SoCItem| title=Support for more formats/stream types| description=New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
 * WMA
 * MMS
-* Last.Fm
+* Last.Fm| lang=C| level=Medium to Advanced| mentor=''TBA''}}
 
-;Language: C
-;Level: Medium to Advanced
-;Mentor: ??
+{{SoCItem| title=XMMS2 Wiki| description=XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.| lang=PHP / Python and SVG| level=Easy to Medium| mentor=[[Sham Chukoury]]}}
 
-==== Make the MediaWiki Interface look better and develop a Graphic Profile ====
-XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.
+{{SoCItem| title=Port Visualization to [[Transforms | transforms API]] and extend it to give PCM data| description=Currently visualization in XMMS2's devel branch is disabled with the transition to [[Transforms]]. This project would be to port visualization to the devel branch as a transform plugin and to extend it to give full PCM data.| lang=C| level=Medium to Advanced|mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
-;Language: PHP / Python and Inkscape
-;Level: Easy to Medium
-;Mentor: Sham
+== Other Ideas? ==
 
-==== Port Visualization to xforms and extend it to give PCM data ====
-Currently visualization in XMMS2's devel branch is disabled with the transition to transform. This project would be to port visualization to the devel branch as an xform plugin and to extend it to give full PCM data.
-
-;Language: C
-;Level: Medium to Advanced
-;Mentor: anders(?)
-
-=== Ideas? ===
-
-==== Development of a GTK2/GNOME medialib centric client for xmms2 ====
-
-This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhytymBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.
-
-;Language: Python / C / C++ / Ruby / Perl
-;Level: Medium
-;Mentor: Tobias
+{{SoCItem| title=GTK2/GNOME medialib centric client for xmms2| description=This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhythmBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.|lang=Python / C / C++ / Ruby / Perl| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
