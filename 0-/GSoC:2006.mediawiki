@@ -1,6 +1,6 @@
 == Proposed projects ==
 
-Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)!
+Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects.
 
 You might also want to check out: 
 [http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
@@ -13,7 +13,7 @@ You might also want to check out:
 
 {{SoCItem| title=[[Client:"TurboX2" | "turbox2" client]]| description=The [[Client:"TurboX2" | "turbox2" client]]  is a web client written using [http://www.turbogears.org TurboGears]. It is currently - possibly - the most robust client with support for browsing the media library and manipulating the playlist. Development targets for the summer are largely to get it to be release quality, but development would also focus on "Views" which would allow for the media library to be represented in a templated fashion.| lang=Python, Javascript, XHTML/KID|level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
-{{SoCItem| title=Evaluate a Switch to GStreamer| description=A lot of discussion has occured in the past about the issue of converting XMMS2 to GStreamer; This project would be to evalute the viability of that conversion and maybe do the implementation if deemed as a winning situation. A student interested in this project should observe that this project is highly flamable and might end in a big bolt of fire.| lang=English / C| level=Flametory| mentor=[[Sham Chukoury]]}}
+{{SoCItem| title=Evaluate a Switch to GStreamer| description=A lot of discussion has occurred in the past about the issue of converting XMMS2 to using GStreamer. This project would be to evalute the viability of that conversion and maybe do the implementation (proof of concept) if deemed a winning situation. (i.e. doing the conversion would have more pros than cons) On the other hand, if it isn't a winning situation, the outcome could contain suggested improvements to gstreamer to make it more suited for our use. You should probably look at and understand the [[Transforms]] concept currently implemented in XMMS2, when undertaking this task. A student interested in this project should observe that this subject may be highly controversial and flammable and might end in a big bolt of fire.| lang=English / C| level=Flametory| mentor=[[Sham Chukoury]]}}
 
 {{SoCItem| title=Support for DAAP| description=The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in xmms2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers.| lang=C| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
