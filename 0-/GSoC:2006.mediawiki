@@ -32,11 +32,11 @@ The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written
 ;Level: Medium
 ;Mentor: Tobias
 
-==== Development of a GTK2/GNOME medialib centric client for xmms2 ====
+==== Development of the [[Client:TurboX2 | "turbox2" client]] ====
 
-This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhytymBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.
+The [[Client:TurboX2 | "turbox2" client]]  is a web client written using TurboGears. It currently is possibly the most robust client with support for browsing the media library and manipulating the playlist. Development targets for the summer are largely to get it to be release quality, but development would also focus on "Views" which would allow for the media library to be represented in a templated fashion.
 
-;Language: Python / C / C++ / Ruby / Perl
+;Language: Python, Javascript, XHTML/KID
 ;Level: Medium
 ;Mentor: Tobias
 
@@ -73,3 +73,11 @@ XMMS2 has been in long need of a good logo set, and our wiki is also in need of 
 ;Language: PHP / Python and Inkscape
 ;Level: Easy to Medium
 ;Mentor: Sham
+
+=== Ideas? ======= Development of a GTK2/GNOME medialib centric client for xmms2 ====
+
+This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhytymBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.
+
+;Language: Python / C / C++ / Ruby / Perl
+;Level: Medium
+;Mentor: Tobias
