@@ -7,7 +7,7 @@ The XMMS2 project has been around since 2003 and has a rather extensive and stab
 * You need to be prepared to stay in regular contact with your mentor, via IRC or e-mail, and provide at least weekly status reports.
 * You will be expected to, at the very least, have a basic grasp of the language(s) involved in your chosen task, and have a knowledge of using revision control systems such as CVS, SVN or Git.
 * Include the following in your proposal ([http://wiki.creativecommons.org/Summer_of_Code_2006]):
-** Detailed description / design document 
+** Detailed description / design document (including a list of deliverables)
 ** An approximate schedule (timeline) 
 ** Brief description of past projects (including open source) that you've participated in 
 ** Brief resume/bio/contact information 
