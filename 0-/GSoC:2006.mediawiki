@@ -1,3 +1,6 @@
+== Why work on XMMS2? ==
+The XMMS2 project has been around since 2003 and have a quite extensive and stable code base by now. But there is still a lot of ideas to be implemented! We belive that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greated by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
+
 == Proposed projects ==
 
 Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects.
