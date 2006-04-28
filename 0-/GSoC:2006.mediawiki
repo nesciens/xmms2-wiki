@@ -1,13 +1,23 @@
+XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program.
+
 == Why work on XMMS2? ==
-The XMMS2 project has been around since 2003 and have a quite extensive and stable code base by now. But there is still a lot of ideas to be implemented! We belive that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greated by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
+The XMMS2 project has been around since 2003 and has a rather extensive and stable code base by now. But there are still a lot of ideas to be implemented! We believe that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greeted by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
 
 == Student Requirements ==
 * You need to be prepared to stay in regular contact with your mentor, via IRC or e-mail, and provide at least weekly status reports.
 * You will be expected to, at the very least, have a basic grasp of the language(s) involved in your chosen task, and have a knowledge of using revision control systems such as CVS, SVN or Git.
+* Include the following in your proposal ([http://wiki.creativecommons.org/Summer_of_Code_2006]):
+** Detailed description / design document 
+** An approximate schedule (timeline) 
+** Brief description of past projects (including open source) that you've participated in 
+** Brief resume/bio/contact information 
+
+== Deadlines ==
+Student applications open on May 1, 2006 and close May 8, 2006. Final decisions will be made by May 22, 2006 for submission to Google.
 
 == Proposed projects ==
 
-Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects.
+Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects. Please note that the XMMS2 team reserves the right to limit the number of projects accepted to ensure that mentors don't have to keep track of too many students.
 
 You might also want to check out: 
 [http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
@@ -34,6 +44,11 @@ You might also want to check out:
 
 {{SoCItem| title=Port Visualization to [[Transforms | transforms API]] and extend it to give PCM data| description=Currently visualization in XMMS2's devel branch is disabled with the transition to [[Transforms]]. This project would be to port visualization to the devel branch as a transform plugin and to extend it to give full PCM data.| lang=C| level=Medium to Advanced|mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
+{{SoCItem| title=Testing| description=Testing XMMS2 is currently done the informal way: build the code, run it and see if it works. The problem with this approach is that it's difficult, if not impossible, to automatically and exhaustively test each component of the system to make sure they work well within their accepted parameters. This task requires you to:
+* Develop a test suite, possibly using a unit-testing approach (e.g. with [http://check.sf.net libcheck]) or otherwise, as deemed appropriate.
+* Provide recommendations on how to change the development workflow to actively use and maintain the test suite. (to ensure that the test suite doesn't go stale within a few weeks)
+* Optionally devise a method for maintaining a 'component status' page based on automated test results. (For an example, see [[Project Status]])| lang=C / Python / Ruby| level=Medium| mentor=[[Sham Chukoury]]}}
+
 == Other Ideas? ==
 
 {{SoCItem| title=GTK2/GNOME medialib centric client for xmms2| description=This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhythmBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.|lang=Python / C / C++ / Ruby / Perl| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
@@ -42,3 +57,4 @@ You might also want to check out:
 The following resources don't apply directly to XMMS2, but they have some helpful tips:
 * Drupal's [http://drupal.org/node/59037 HOWTO: Write a Summer of Code application]
 * Wine's [http://wiki.winehq.org/SummerOfCode SummerOfCode page] (the 'things to consider' regarding C and low-level programming do not apply to XMMS2)
+* Adium's [http://trac.adiumx.com/wiki/ProposalGuidelines Proposal Guidelines]
