@@ -36,7 +36,7 @@ You might also want to check out:
 
 {{SoCItem| title=Support for more formats/stream types| description=New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
 * [http://www.monkeysaudio.com/ Monkey Audio]
-* [http://zakalwe.virtuaalipalvelin.net/uade/ Amiga format]
+* [http://zakalwe.virtuaalipalvelin.net/uade/ Amiga format] ([[List_of_features_required_for_proper_sub-tune_support|subtunes support]])
 * [http://craz.net/programs/itunes/alac.html ALAC (Apple Lossless Audio Codec)]
 * [http://www.last.fm Last.Fm]| lang=C| level=Medium to Advanced| mentor=''TBA''}}
 
