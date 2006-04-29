@@ -2,6 +2,22 @@
 
 == Latest quotes ==
 
+=== 2006-04-29 - Incorrectly gapfull ===
+
+<tilman> HAHAHAHA
+<tilman> i think xforms+vorbis is much less gapless than the old stuff
+<tilman> :D
+<tilman> "more gapfull" ._o
+<juhovh> really?
+<tilman> yes
+...
+<tilman> i should write down that these two tracks are quite good for testing gaplessness
+...
+<tilman> wait.
+<tilman> i didn't play track1+track2, i played track1+track8
+<eleusis> LOL
+<tilman> so it's not surprising it seemed gapfull
+
 === 2006-03-27 - Digital Prison Break ===
  <ScytheBlade1> I think you guys would be proud
  <ScytheBlade1> I spent the day at a local university friday
