@@ -35,9 +35,9 @@ You might also want to check out:
 {{SoCItem| title=Support for DAAP| description=The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in XMMS2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers. There are also ideas about DAAP sharing from XMMS2.| lang=C| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
 
 {{SoCItem| title=Support for more formats/stream types| description=New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
-* Monkey Audio
-* Amiga format
-* ALAC (Apple Lossless Audio Codec)
+* [http://www.monkeysaudio.com/ Monkey Audio]
+* [http://zakalwe.virtuaalipalvelin.net/uade/ Amiga format]
+* [http://craz.net/programs/itunes/alac.html ALAC (Apple Lossless Audio Codec)]
 * [http://www.last.fm Last.Fm]| lang=C| level=Medium to Advanced| mentor=''TBA''}}
 
 {{SoCItem| title=XMMS2 Wiki| description=XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.| lang=PHP / Python and SVG| level=Easy to Medium| mentor=[[Sham Chukoury]]}}
