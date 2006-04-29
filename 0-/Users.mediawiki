@@ -10,5 +10,6 @@ Essential information for XMMS2 users. Please see the [[General information | ge
 ; [[Contribs]] : User contributions to XMMS2 which don't fit in the source tree.
 ; [[XMMS2 vs MPD]] : Lists the similarities and differences between XMMS2 and MPD, featurewise, and in terms of design goals.
 ; [[XMMS2 vs GStreamer]] : Why we didn't choose GST for audio decoding.
+; [[Other Projects]] : Other music players.
 
 [[Category: Users]]
