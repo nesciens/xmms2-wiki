@@ -49,6 +49,8 @@ You might also want to check out:
 * Provide recommendations on how to change the development workflow to actively use and maintain the test suite. (to ensure that the test suite doesn't go stale within a few weeks)
 * Optionally devise a method for maintaining a 'component status' page based on automated test results. (For an example, see [[Project Status]])| lang=C / Python / Ruby| level=Medium| mentor=[[Sham Chukoury]]}}
 
+{{SoCItem| title=Handle temporarily unavailable media better than removing from medialib| description=This task is fully described with context in [http://bugs.xmms2.xmms.se/view.php?id=519 Bug #519]| lang=C| level=Medium| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
+
 == Other Ideas? ==
 
 {{SoCItem| title=GTK2/GNOME medialib centric client for xmms2| description=This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhythmBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.|lang=Python / C / C++ / Ruby / Perl| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
