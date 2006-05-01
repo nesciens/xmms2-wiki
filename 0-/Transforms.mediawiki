@@ -35,9 +35,9 @@ Say you wish to play file "file:///media/foo.ogg" with XMMS2, here's how the tra
 # If, however, the format is not in the goal_list, the list of xform plugins will be traversed again for a plugin that can handle that type and the converter plugin will be found (its input type constraint is {'mime': 'audio/pcm-data'}). The converter will convert the audio format to one in the goal_list.
 
 The finished chain of xforms will be used by the output to get the audiodata out:
-# The output will read from the last plugin in the chain (i.e. vorbis) and will call its read method to get more data.
-# That read method might want to read more data from its underlying xform, and calls xform_read.
-# That will invoke the read method on the magic plugin which just calls xform_read again, which invokes the read method on the file xform plugin.
+# The output will read from the last plugin in the chain (i.e. vorbis) and will call its read method to get more data. (see <code>xmms_output_filler()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/output.c src/xmms/output.c], <code>xmms_xform_this_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/xform.c src/xmms/xform.c] and <code>xmms_vorbis_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/vorbis/vorbisfile.c src/plugins/vorbis/vorbisfile.c])
+# That read method might want to read more data from its underlying xform, and calls xmms_xform_read. (see <code>vorbis_callback_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/vorbis/vorbisfile.c src/plugins/vorbis/vorbisfile.c] and <code>xmms_xform_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/xform.c src/xmms/xform.c])
+# That will invoke the read method on the magic plugin which just calls xmms_xform_read again, which invokes the read method on the file xform plugin. (see <code>xmms_magic_plugin_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/magic.c src/xmms/magic.c] and <code>xmms_file_read()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/file/file.c src/plugins/file/file.c])
 
 ==Potential Uses==
 The magic file type detection is also implemented as a xform. The magic xform takes "application/octet-stream" as input and outputs the data type it detects. This sounds like it will introduce a bit of overhead at first, but keep in mind that there is no buffering involved, all magic resolving is set within the init function, and the read method of the magic transform is simply:
