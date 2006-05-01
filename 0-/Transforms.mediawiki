@@ -24,13 +24,13 @@ The xform API aims to be as simple as possible; each transform plugin only has a
 ==A Step-By-Step Example==
 Say you wish to play file "file:///media/foo.ogg" with XMMS2, here's how the transform chain is built:
 
-# A fake xform is built, which outputs a stream (which EOF's directly, no one ever reads from it) with type {'mime': 'application/x-url', 'url': 'file://media/foo.ogg'}
-# The list of xform plugins is traversed for a plugin that can handle that type. (The file plugin will be selected as it has the input stream type constraint: {'mime': 'application/x-url', 'url': 'file://*'})
-# A file xform is initialized from the plugin and the init-method is called. The init method tells that it can output data of type: {'mime': 'application/octet-stream'}
-# The list of xform plugins is traversed again for a plugin that can handle that type. (The magic plugin will be selected as it has the input stream type constraint: {'mime': 'application/octet-stream'})
-# The init-method of the magic xform does magic file detection and finds out that it is mimetype 'audio/oggvorbis' so the stream type will be {'mime': 'audio/oggvorbis'}
-# The list of xform plugins is traversed again for a plugin that can handle that type. (The vorbis plugin will be selected.)
-# The vorbis plugin's initialization results in a new stream type {'mime': 'audio/pcm-data', 'fmt': 'S16', 'rate': 44100, 'channels': 2}
+# A fake xform is built, which outputs a stream (which EOF's directly, no one ever reads from it) with type {'mime': 'application/x-url', 'url': 'file://media/foo.ogg'} (<code>xmms_output_filler()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/output.c src/xmms/output.c])
+# The list of xform plugins is traversed for a plugin that can handle that type. (The file plugin will be selected as it has the input stream type constraint: {'mime': 'application/x-url', 'url': 'file://*'}) (<code>xmms_xform_chain_setup()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/xform.c src/xmms/xform.c])
+# A file xform is initialized from the plugin and the init-method is called. The init method tells that it can output data of type: {'mime': 'application/octet-stream'} (<code>xmms_file_plugin_setup()</code> and <code>xmms_file_init()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/file/file.c src/plugins/file/file.c])
+# The list of xform plugins is traversed again for a plugin that can handle that type. (The magic plugin will be selected as it has the input stream type constraint: {'mime': 'application/octet-stream'}) (<code>xmms_magic_plugin_setup()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/magic.c src/xmms/magic.c])
+# The init-method of the magic xform does magic file detection and finds out that it is mimetype 'audio/oggvorbis' so the stream type will be {'mime': 'audio/oggvorbis'} (<code>xmms_magic_plugin_init()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/xmms/magic.c src/xmms/magic.c])
+# The list of xform plugins is traversed again for a plugin that can handle that type. (The vorbis plugin will be selected.) (<code>xmms_vorbis_plugin_setup()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/vorbis/vorbisfile.c src/plugins/vorbis/vorbisfile.c])
+# The vorbis plugin's initialization results in a new stream type {'mime': 'audio/pcm-data', 'fmt': 'S16', 'rate': 44100, 'channels': 2} (<code>xmms_vorbis_init()</code> in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=src/plugins/vorbis/vorbisfile.c src/plugins/vorbis/vorbisfile.c])
 # We notice that this format is in our goal_list, i.e. a format that the output supports. We are finished creating a transform chain!
 # If, however, the format is not in the goal_list, the list of xform plugins will be traversed again for a plugin that can handle that type and the converter plugin will be found (its input type constraint is {'mime': 'audio/pcm-data'}). The converter will convert the audio format to one in the goal_list.
 
