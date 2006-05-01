@@ -1,0 +1,3 @@
+=== XMMS2 Wiki ===
+
+please note that this project will probably _not_ be accepted by google, there faq clearly states the work should be code and nothing else! See http://code.google.com/soc/studentfaq.html#27 [[User:Progster|Progster]]
