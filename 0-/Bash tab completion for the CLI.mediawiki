@@ -206,9 +206,10 @@ _xmms2()
             # FIXME: add quotes + case insensitive
             local old_ifs
             old_ifs=$IFS
-            IFS="|"
+            IFS='
+';
             COMPREPLY=( $( xmms2 mlib playlists_list \
-                        | sed -ne 's|^\('$cur'.*\).*$|\1\||p' ))
+                        | sed -ne 's|^\('$cur'.*\).*$|\1|p' ))
             IFS=old_ifs
             ;;
          add) # add <url>
@@ -224,13 +225,17 @@ _xmms2()
             # TODO ?
             ;;
          search|searchadd) # search[add] key=value
-            if [[ "$cur" == *=* ]]; then
-               local key sql
+            if [[ "$cur" == *=\"* ]]; then
+               local key sql old_ifs
+		old_ifs=$IFS
+		IFS='
+';
                key=${cur%%=*}
                COMPREPLY=( $( xmms2 mlib query \
                            "SELECT value FROM Media WHERE  \
-                            key='${key%\\*}' AND value LIKE '${cur#*=}%' " \
-                           | sed -ne 's|^value = \(.*\)$|\1|p' ))
+                            key='${key%\\*}' AND value LIKE '${cur#*=\"}%' " \
+                           | sed -ne 's|^value = \(.*\)$|"\1"|p' ))
+		IFS=$old_ifs
             else
                COMPREPLY=( $( compgen -S '=' -W "$keys" -- $cur ))
             fi
