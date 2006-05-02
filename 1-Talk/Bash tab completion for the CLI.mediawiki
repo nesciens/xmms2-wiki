@@ -1,0 +1,10 @@
+I changed the IFS for <tt>mlib</tt> playlist operations and <tt>mlib search|searchadd</tt> to newline to get rid of the ^J which was showing up in the bash completions. I also changed <tt>mlib search|searchadd</tt> to use quotes around the search string so that spaces wouldn't break the completions.
+
+so you'd do this:
+<pre>
+$ xmms2 mlib search="The 
+The Doors
+The Pogues
+$ xmms2 mlib search="The Pogues"
+</pre>
+[[User:Benj|Benj]] 04:41, 2 May 2006 (CEST)
