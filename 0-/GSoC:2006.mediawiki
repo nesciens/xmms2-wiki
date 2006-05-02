@@ -1,4 +1,4 @@
-XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program.
+XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program. To apply for the program, see the [http://code.google.com/soc/student_step1.html signup page].
 
 == Why work on XMMS2? ==
 The XMMS2 project has been around since 2003 and has a rather extensive and stable code base by now. But there are still a lot of ideas to be implemented! We believe that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greeted by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
