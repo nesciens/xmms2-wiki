@@ -2,9 +2,9 @@ I changed the IFS for <tt>mlib</tt> playlist operations and <tt>mlib search|sear
 
 so you'd do this:
 <pre>
-$ xmms2 mlib search="The 
+$ xmms2 mlib search artist="The 
 The Doors
 The Pogues
-$ xmms2 mlib search="The Pogues"
+$ xmms2 mlib search artist="The Pogues"
 </pre>
 [[User:Benj|Benj]] 04:41, 2 May 2006 (CEST)
