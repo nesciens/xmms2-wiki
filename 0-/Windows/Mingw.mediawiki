@@ -168,19 +168,6 @@ find_terminal_width() {
 }
 </pre>
 
-'''src/clients/cli/main.c line 106''' :
-*replace
-<pre>
-		mkdir (dir, 0755);
-</pre>
-:with :
-<pre>
-#ifdef __WIN32__
-		mkdir (dir);
-#else
-		mkdir (dir, 0755);
-#endif
-</pre>
 
 '''src/clients/cli/main.c line 21''' :
 *add
@@ -361,20 +348,6 @@ get_systemname (void)
 		env.Append(LIBS=["wsock32"])
 </pre>
 
-'''src/plugins/diskwrite/diskwrite.c line 194''' :
-*replace
-<pre>
-		mkdir (data->destdir, 0755);
-</pre>
-:with :
-<pre>
-#ifdef __WIN32__
-		mkdir (data->destdir);
-#else
-		mkdir (data->destdir, 0755);
-#endif
-</pre>
-
 '''add the file src/xmms/Library containing''' :
 <pre>
 target="libxmms2d"
@@ -436,34 +409,6 @@ def config(env):
 #include <windows.h>
 #include <time.h>
 #define sleep(x) Sleep(x)
-#endif
-</pre>
-
-'''src/xmms/main.c line 133''' :
-*replace
-<pre>
-		mkdir (scriptdir, 0755);
-</pre>
-:with :
-<pre>
-#ifdef __WIN32__
-		mkdir (scriptdir);
-#else
-		mkdir (scriptdir, 0755);
-#endif
-</pre>
-
-'''src/xmms/main.c line 178''' :
-*replace
-<pre>
-		mkdir (configdir, 0755);
-</pre>
-:with :
-<pre>
-#ifdef __WIN32__
-		mkdir (configdir);
-#else
-		mkdir (configdir, 0755);
 #endif
 </pre>
 
@@ -666,30 +611,6 @@ def config(env):
 	else:
 		env.Append(LIBS=["wsock32"])	
 		env.Append(LIBS=["ws2_32"])
-</pre>
-
-'''src/xmms/plugin.c line 38''' :
-*replace
-<pre>
-#ifdef XMMS_OS_DARWIN
-# define XMMS_LIBSUFFIX ".dylib"
-#elif XMMS_OS_HPUX11 && !defined(__LP64__)
-# define XMMS_LIBSUFFIX ".sl"
-#else
-# define XMMS_LIBSUFFIX ".so"
-#endif
-</pre>
-:with :
-<pre>
-#ifdef XMMS_OS_DARWIN
-# define XMMS_LIBSUFFIX ".dylib"
-#elif XMMS_OS_HPUX11 && !defined(__LP64__)
-# define XMMS_LIBSUFFIX ".sl"
-#elif defined(XMMS_OS_WIN32)
-# define XMMS_LIBSUFFIX ".dll"
-#else
-# define XMMS_LIBSUFFIX ".so"
-#endif
 </pre>
 
 ==Compilation==
