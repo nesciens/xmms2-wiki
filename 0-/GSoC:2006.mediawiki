@@ -8,12 +8,34 @@ The XMMS2 project has been around since 2003 and has a rather extensive and stab
 * You will be expected to, at the very least, have a basic grasp of the language(s) involved in your chosen task, and have a knowledge of using revision control systems such as CVS, SVN or Git.
 * Include the following in your proposal ([http://wiki.creativecommons.org/Summer_of_Code_2006]):
 ** Detailed description / design document (including a list of deliverables)
-** An approximate schedule (timeline) 
-** Brief description of past projects (including open source) that you've participated in 
-** Brief resume/bio/contact information 
+** An approximate schedule (timeline)
+** Brief description of past projects (including open source) that you've participated in
+** Brief resume/bio/contact information
+* Some more information that could be useful to us ([http://groups.google.com/group/Summer-Administrators-2006/msg/558001af3c9f8ffe]):
+** How much time do you expect to have for this project?
+** List of jobs, summer classes, and/or vacations that you'll need to work around
+** Description of any experience you have with various programming and scripting languages, operating systems, and so on.
+** Description of your usage experience/familiarity - or even development experience - with the project you are applying for.
+** Did you participate in a 2005 Summer of Code project?  If so, please describe your project and experience.
+** Details of your school/university/college enrollment: which institution, what your highest education level is so far, whether you're specialising or majoring in particular subjects..
+** Why are you well suited to complete this project?
 
 == Deadlines ==
 Student applications open on May 1, 2006 and close May 8, 2006. Final decisions will be made by May 22, 2006 for submission to Google.
+
+== News ==
+
+{{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Proposals trickling in| text=So, the floodgates have opened to student applications and XMMS2 has received a small handful of them so far. From what I've seen, it seems students aren't reading the [[#Student Requirements | Student Requirements]] section carefully: your proposal is exactly what it says it is - a '''proposal'''. Propose a task and detail it for us, don't simply say "I'd like to work on task X because I really really like you."
+
+First of all, the tasks described in [[#Proposed projects | Proposed projects]] aren't very detailed - it's up to each individual applicant to set out how they'd like to go about doing the task. Secondly, the tasks in the list are mostly ideas - each student is free to propose 'blue sky' ideas which we haven't thought of. That said, bear in mind that, as far as the XMMS2 project goes, we'd like to focus mainly on the core (xmms2 daemon) and project infrastructure, rather than third party clients. Work on existing third party clients may be ineligible as they are projects run more or less independently of the XMMS2 project itself.
+
+Don't panic! If you're having trouble figuring out a schedule for your proposal, or want clarifications on any proposed task, feel free to contact us. (Our mailing list is currently down, so talk to us on on IRC: #xmms2 on Freenode, or by contacting a mentor (e.g. ''eleusis@xmms.org'')
+
+Something else I noticed is that some students do little research on (or have poor knowledge of) XMMS2 before submitting their proposals. Please do take the time to do some research and read up on the project - you will find most of the useful information right here on this wiki. If you can't find something, or aren't clear about something in particular, like I said above, ''talk to us'' and we'll try to help you. :)
+
+Finally, try to consider the proposal as a formal document - give it some semblance of a structure and make sure you include all the relevant details (see [[#Student Requirements | Student Requirements]]). Working on your proposal doesn't just tell us what you want to do for XMMS2, but the process could also help you see more clearly what you're getting into.
+
+Good luck!}}
 
 == Proposed projects ==
 
