@@ -35,7 +35,9 @@ Something else I noticed is that some students do little research on (or have po
 
 Finally, try to consider the proposal as a formal document - give it some semblance of a structure and make sure you include all the relevant details (see [[#Student Requirements | Student Requirements]]). Working on your proposal doesn't just tell us what you want to do for XMMS2, but the process could also help you see more clearly what you're getting into.
 
-Good luck!}}
+Good luck!
+
+p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'. A 'proposed task' is an idea or a task that the XMMS2 team put forward (proposed) as something a student could work on, to contribute to the project. A student's 'proposal' may be derived from a 'proposed task', but is a document where the student lays out in detail what he/she is prepared to contribute and how he/she is proposing to do it over the Summer of Code period. This doesn't mean that a student proposal has to be perfect the first time around - mentors are willing to talk to individual students in order to refine the proposals prior to final ranking.}}
 
 == Proposed projects ==
 
