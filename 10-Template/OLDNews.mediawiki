@@ -1,4 +1,6 @@
-{{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Summer of Code news| text=I have added a [[Summer of Code 2006#News | News]] section on the [[Summer of Code 2006]] page. If you're a student interested in contributing to XMMS2 for SoC 2006, please check the page regularly for updates!}}
+{{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Summer of Code news| text=I have added a [[Summer of Code 2006#News | News]] section on the [[Summer of Code 2006]] page. If you're a student interested in contributing to XMMS2 for SoC 2006, please check the page regularly for updates!
+
+p.s. Please note that our mailing list is currently down. If you need to contact us, do so on IRC: #xmms2 on Freenode, or e-mail ''eleusis@xmms.org''.}}
 
 {{Newsitem|date=27 April 2006 WST (2006-04-27)| author=[[Sham Chukoury]]| title=XMMS2's Summer of Code| text=G'day folks. With Google's [http://code.google.com/summerofcode.html Summer of Code] returning this year, the XMMS2 team submitted a proposal to be a 'mentoring organisation'. <strike>Unfortunately, our proposal didn't make it through, but the proposed ideas are still here! If you're interested in some summer codin' fun (or winter codin' fun, for those of us in the other hemisphere), check out XMMS2's very own [[Summer of Code 2006]] ideas. ;)</strike>
 
