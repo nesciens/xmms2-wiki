@@ -27,7 +27,7 @@ If you would like to use the LaTeX template above, you will need to install dvi2
 
  > latex korv-proposal 
  > dvi2tty korv-proposal >korv-proposal.txt
- > $EDITOR korv-proposal
+ > $EDITOR korv-proposal.txt
 
 The file will need a bit of hand editing because it doesn't come out perfect (mostly issues with line wrapping and hyphenating).
 
