@@ -111,12 +111,12 @@ Old code like:
 
  xmms_medialib_session_t *session = xmms_medialib_begin_write ();
  xmms_medialib_entry_t entry = xmms_xform_entry_get (xform);
- xmms_medialib_entry_property_set_str (session, entry, XMMS_MEDIALIB_ENTRY_PROPERTY_MIME, "audio/mpeg");
+ xmms_medialib_entry_property_set_str (session, entry, XMMS_MEDIALIB_ENTRY_PROPERTY_ARTIST, mediainfo->artist);
  xmms_medialib_end (session);
  xmms_medialib_entry_send_update (entry);
 
 should be changed to:
 
- xmms_xform_metadata_set_str (xform, XMMS_MEDIALIB_ENTRY_PROPERTY_MIME, "audio/mpeg");
+ xmms_xform_metadata_set_str (xform, XMMS_MEDIALIB_ENTRY_PROPERTY_ARTIST, mediainfo->artist);
 
 [[Category:Developer ideas]]
