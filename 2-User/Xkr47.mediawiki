@@ -5,5 +5,6 @@ URL: [http://xkr47.outerspace.dyndns.org/ http://xkr47.outerspace.dyndns.org/]
 IRC: xkr47 @ IRCNet, freenode, quakenet, linknet
 
 =xmms2 involvement=
-* curl_http updated to xform api
+* curl_http, sid plugins updated to xform api
 * icymetaint plugin added (extracted from curl)
+* wav seeking
