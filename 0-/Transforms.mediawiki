@@ -95,7 +95,7 @@ Everything reworked to new plugin api.
 ::&#10003;null
 ::&#10003;oss
 ::&#10063;samba
-::&#10063;sid
+::&#10003;sid
 ::&#10063;speex
 ::&#10063;sun
 ::&#10003;wave
