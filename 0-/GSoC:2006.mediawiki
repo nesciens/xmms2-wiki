@@ -25,9 +25,9 @@ For an example of what your proposal could look like, see [http://exodus.xmms.se
 
 If you would like to use the LaTeX template above, you will need to install dvi2tty (which is a part of CTAN) then you can do this to get from the template to plain text:
 
-> latex korv-proposal
-> dvi2tty korv-proposal >korv-proposal.txt
-> $EDITOR korv-proposal
+ > latex korv-proposal 
+ > dvi2tty korv-proposal >korv-proposal.txt
+ > $EDITOR korv-proposal
 
 The file will need a bit of hand editing because it doesn't come out perfect (mostly issues with line wrapping and hyphenating).
 
