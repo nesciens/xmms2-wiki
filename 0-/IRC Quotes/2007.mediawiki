@@ -2,6 +2,22 @@
 
 == Latest quotes ==
 
+=== 2006-05-03 - Success! ===
+ [08:14:51][xkr47]: I used xmms and while it was great and all it sucked in many
+           ways and thus I so many times went out looking for alternatives
+           without finding anything even remotely covering what xmms could do..
+           but then I found xmms2 and somehow, yes, the scandinavian core team
+           helped convince me that it would have a possibility to beat xmms :)
+ [08:15:50][xkr47]: I think xmms2 has all the right things in the right place..
+           the developers together with the wiki and all other tools form like a
+           perfect machinery
+ [08:16:29][xkr47]: it's a joy joining an effort like that
+ [08:16:56][xkr47]: I have converted all my tools for xmms to xmms2 already
+ [08:17:21][xkr47]: so now I have identical cli tools to manipulate playlists,
+           categorize songs, control it with my "ati remote wonder" remote
+           control
+
+
 === 2006-04-29 - Incorrectly gapfull ===
 
  <tilman> HAHAHAHA
