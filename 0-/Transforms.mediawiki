@@ -77,11 +77,11 @@ Everything reworked to new plugin api.
 ::&#10063;html
 ::&#10063;pls
 ::&#10063;m3u
-:&#10063; convert plugins.
+:&#10063; convert plugins (see section below).
 ::&#10003;alsa
 ::&#10003;coreaudio
 ::&#10063;curl_ftp
-::&#10063;curl_http (split into curl + icy-metaint-parser) - DONE by [[User:xkr47]]
+::&#10003;curl_http (split into curl + icy-metaint-parser)
 ::&#10003;diskwrite
 ::&#10003;faad
 ::&#10003;file
@@ -104,5 +104,19 @@ Everything reworked to new plugin api.
 ::&#10063;eq
 ::&#10003;replaygain
 :&#10003; config stuff.
+
+===Plugin conversion guidelines===
+====Use xform metadata api====
+Old code like:
+
+ xmms_medialib_session_t *session = xmms_medialib_begin_write ();
+ xmms_medialib_entry_t entry = xmms_xform_entry_get (xform);
+ xmms_medialib_entry_property_set_str (session, entry, XMMS_MEDIALIB_ENTRY_PROPERTY_MIME, "audio/mpeg");
+ xmms_medialib_end (session);
+ xmms_medialib_entry_send_update (entry);
+
+should be changed to:
+
+ xmms_xform_metadata_set_str (xform, XMMS_MEDIALIB_ENTRY_PROPERTY_MIME, "audio/mpeg");
 
 [[Category:Developer ideas]]
