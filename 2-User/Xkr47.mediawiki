@@ -1,3 +1,9 @@
-[http://xkr47.outerspace.dyndns.org/ home page]
+=Contact=
+
+URL: [http://xkr47.outerspace.dyndns.org/ http://xkr47.outerspace.dyndns.org/]
 
 IRC: xkr47 @ IRCNet, freenode, quakenet, linknet
+
+=xmms2 involvement=
+* curl_http updated to xform api
+* icymetaint plugin added (extracted from curl)
