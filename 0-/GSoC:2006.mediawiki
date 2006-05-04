@@ -21,15 +21,7 @@ The XMMS2 project has been around since 2003 and has a rather extensive and stab
 ** Why are you well suited to complete this project?
 
 === Proposal Example ===
-For an example of what your proposal could look like, see [http://exodus.xmms.se/~alex/korv-proposal.pdf korv-proposal.pdf] ([http://exodus.xmms.se/~andersg/korv2.txt plaintext version], [http://exodus.xmms.se/~alex/korv-proposal.tex LaTeX source]).
-
-If you would like to use the LaTeX template above, you will need to install dvi2tty (which is a part of CTAN) then you can do this to get from the template to plain text:
-
- > latex korv-proposal 
- > dvi2tty korv-proposal >korv-proposal.txt
- > $EDITOR korv-proposal.txt
-
-The file will need a bit of hand editing because it doesn't come out perfect (mostly issues with line wrapping and hyphenating).
+For an example of what your proposal could look like, see [http://exodus.xmms.se/~andersg/SoC_example.txt SoC_example.txt]. Make sure your proposal is correctly linewrapped to fit in 80 cols (as google's interface doesn't reflow text).
 
 == Deadlines ==
 Student applications open on May 1, 2006 and close May 8, 2006. Final decisions will be made by May 22, 2006 for submission to Google.
