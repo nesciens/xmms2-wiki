@@ -1,3 +1,5 @@
 [http://icecast.org icecast] is a GPL streaming media server project that currently streams in MP3 format, with plans to add support for video and Vorbis formats.
 
 [[XMMS2]] has an icecast effect plugin with which you can broadcast your music to an icecast server.
+
+Unfortunately this plugin is currently broken.
