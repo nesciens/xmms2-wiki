@@ -3,6 +3,9 @@ This is using SCons version v0.96.1.D001 it hasn't been tested on other SCons ve
 
 --[[User:Oohal|Oohal]] 13:05, 8 May 2006 (CEST)
 
+This is the case with any PREFIX not just /usr; It might use more resources for /usr, but it can hang regardless of PREFIX, the problem is related to it scanning the contents of the prefix, which is whyit might use more resources for /usr vs /usr/local.
+
+--[[User:Alesbl|Alesbl]] 23:49, 8 May 2006 (CEST)
 
 Maybe there should be a full list of dependencies listed...
 
