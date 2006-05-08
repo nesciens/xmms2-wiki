@@ -2,7 +2,7 @@
 
 This document describes the coding style to be used when working on code that is maintained as part of the XMMS2 codebase. This includes everything in the main tree: the daemon, libraries, some plugins and clients. It does not apply to third party XMMS2 clients.
 
-Consider this as an informational ''guide'' - it is here simply to provide a common style that all XMMS2 developers and contributors can refer to, and rely on. A lot of this is from http://lxr.linux.no/source/Documentation/CodingStyle The sections below apply to C, as well as other languages, unless otherwise indicated.
+Consider this as an informational ''guide'' - it is here simply to provide a common style that all XMMS2 developers and contributors can refer to, and rely on. A lot of this is from http://lxr.linux.no/source/Documentation/CodingStyle The sections below apply to C, as well as other languages, unless otherwise indicated. For python style please read [http://www.python.org/dev/peps/pep-0008/ PEP 8].
 
 == Indentation ==
 
