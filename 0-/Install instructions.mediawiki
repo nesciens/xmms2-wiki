@@ -66,11 +66,11 @@ To only change the path the manual pages are installed in provide the MANDIR opt
 The INSTALLDIR option provides a way to prepend a path to ''all'' install pathes for package builders. When this option is set xmms2 still expects the files to be in the location without INSTALLDIR prepended.
 
 
-NOTE: There is a rather nasty bug with scons 0.96.1 that will cause it to start using massive amounts RAM and CPU cycles if you use a prefix of '/usr', you can get around this by running scons and then killing the process after this message:
+NOTE: There is a rather nasty bug with scons 0.96.1 that will cause it to start using massive amounts RAM and CPU cycles, you can get around this by running scons and then killing the process after this message:
 
  Install file: "mind.in.a.box-lament_snipplet.ogg" as "/usr/share/xmms2/mind.in.a.box-lament_snipplet.ogg"
 
-This is only needed when using '/usr' as the PREFIX. Scons 0.96.92 also works fine.
+Scons 0.96.92 also works fine.
 
 == Cleaning up ==
 
