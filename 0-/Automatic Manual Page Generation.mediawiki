@@ -11,6 +11,14 @@ With this in mind I offer a proposal for automatically generating the more dynam
 
 === Supported Sections ===
 
+Initial support for the dynamic generation of manual page sections will be for:
+
+* Commands
+* Options
+* Files
+* Environmental Variables
+* Additional Sections (this is currently intended for generating the ET Packet specfication, but could be used for anything that followed a similar list format and was composed of dynamic content)
+
 === Comment Format ===
 
 === Manual Page Template ===
