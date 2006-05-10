@@ -42,8 +42,8 @@ Much of the text in the manual page is best left done by hand. Particularly the 
  .P
  .\" End Synopsis
 With templating it may become something like,
- ##Template [Preamble]##
- ##Template [Synopsis]##
+.\" ##Template [Preamble]##
+.\" ##Template [Synopsis]##
 The preamble and synopsis text will be automatically generated from the Master Manual Page comment. 
 
 This method will follow through into later sections of the manual page as well. The current command listing in xmms2(1) begins something like this:
@@ -67,8 +67,8 @@ This method will follow through into later sections of the manual page as well. 
  .\" End Command-List[2]
  .\" Command-List continues...
 This could be templated to:
- ##Template [Command-Preamble]##
- ##Template [Command-List]##
+.\" ##Template [Command-Preamble]##
+.\" ##Template [Command-List]##
 The automatic generation of Preambles is to assure consistent wording of introductions to lists across all of the manual pages.
 
 === Implementation ===
