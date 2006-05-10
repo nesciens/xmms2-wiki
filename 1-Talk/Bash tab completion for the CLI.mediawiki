@@ -8,3 +8,8 @@ The Pogues
 $ xmms2 mlib search artist="The Pogues"
 </pre>
 [[User:Benj|Benj]] 04:41, 2 May 2006 (CEST)
+
+----
+Good work :). I was wondering how to fix the file-with-spaces problem...<br />
+Do you have any idea how to get list valid IDs for <b>jump</b>, <b>move</b> and <b>remove</b> commands ? This should be easy to fix.<br />
+[[User:Crazy|Crazy]] 19:29, 10 May 2006 (CEST)
