@@ -1,0 +1,18 @@
+== Automatic Manual Page Generation ==
+
+Maintaining manual pages is a very tedious task. At best it involves hand editing the manual page source every time a new feature is added (that is user visible), but often degenerates to periodic mass uptakes of numerous changes into the manual page. Manual page source is also reasonable annoying to write and very particular about placement and syntax. A simple command entry in the xmms2(1) man page might look like:
+ .TP
+ .I remove playlist_position
+ Removes a song from the playlist at the position given by 
+ .I playlist_position.
+Clearly just writing the entries can be tedious but it is also a pain to dig through the source and help output of the command to determine just how a command works and how it should be used.
+
+With this in mind I offer a proposal for automatically generating the more dynamic parts of the manual pages from comments in the source files, much like is done for the API using Doxygen.
+
+=== Supported Sections ===
+
+=== Comment Format ===
+
+=== Manual Page Template ===
+
+=== Implementation ===
