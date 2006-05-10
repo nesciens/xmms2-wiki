@@ -22,5 +22,43 @@ Initial support for the dynamic generation of manual page sections will be for:
 === Comment Format ===
 
 === Manual Page Template ===
+Much of the text in the manual page is best left done by hand. Particularly the description, and even the history and Author sections are not worth automating (or possibly made worse by automating). With that in mind, the proposed implementation will work with a manual page template. The template will consist of the static bits of the manual page with Template Commands in the places where dynamic content would be. The current opening of xmms2(1) looks something like, 
+ .TH XMMS2 1 
+ .SH NAME
+ .I xmms2
+ offers a simple command-line interface to the 
+ .B XMMS2
+ daemon.
+ .SH SYNOPSIS
+ .I xmms2
+ .B command
+ .P
+ .I xmms2
+ .B mlib
+ .B command
+ .P
+With templating it may become something like,
+ ##Template [Preamble]##
+ .SH SYNOPSIS
+ ##Template [Synopsis]##
+The preamble and synopsis text will be automatically generated from the Master Manual Page comment. 
+
+This method will follow through into later sections of the manual page as well. The current command listing in xmms2(1) begins something like this:
+ .I xmms2
+ includes many commands that allow the user to execute actions on
+ .I xmms2d.
+ .TP
+ .BR
+ These commands are currently recognized: 
+ .TP
+ .I add url
+ Adds a URL to the playlist.
+ .TP
+ .I addid medialib_id
+ Adds a song to the playlist using its Media Library ID.
+This could be templated to:
+ ##Template [Command-Preamble]##
+ ##Template [Command-List]##
+The automatic generationf Preambles is to assure consistent wording of introductions to lists across all of the manual pages.
 
 === Implementation ===
