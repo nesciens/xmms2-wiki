@@ -1,5 +1,5 @@
-Build log generated Wed May 10 13:38:12 2006
-Build took 31 seconds
+Build log generated Thu May 11 13:38:09 2006
+Build took 30 seconds
 Version: cf1cc297e095471f60ef026f4951365090234d8a
 
 ==Warnings==
