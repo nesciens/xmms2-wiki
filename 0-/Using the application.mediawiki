@@ -51,7 +51,7 @@ Multiple sockets are possible by setting core.ipcsocket to
  <path>;<path>;<path>
 
 
-When using ipv6 and wildcards (address "::") you might get problems depending on your system. Under Linux, letting a socket listen on "::" also means to listen on ipv4.
+When using ipv6 and wildcards (address "::") you might get problems depending on your system. Under Linux, letting a socket listen on "::" also means to listen on ipv4 (unless <code>/proc/sys/net/ipv6/bindv6only</code> is set to 1).
 
 = The clients =
 You can interact with the daemon using the 'xmms2' command-line client, which comes in the source tree, or [[XMMS2_Clients | other clients]].
