@@ -101,7 +101,7 @@ Everything reworked to new plugin api.
 ::&#10003;wave
 ::&#10003;vorbis
 :&#10063;effects.
-::&#10063;eq
+::&#10063;eq (supposedly to be replaced by [[Juho VÃ¤hÃ¤-Herttua]]'s more advanced equalizer plugin)
 ::&#10003;replaygain
 :&#10003; config stuff.
 
