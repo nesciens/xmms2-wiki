@@ -60,7 +60,7 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=Wmxmms2| description=A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).}}
 
-{{ClientSummary| name=X4X| description=A client written in java using [[http://crosswidgets.sourceforge.net | Xwidgets]] for the gui. X4X uses almost all functions of xmms2 and is the only client offering '''random playback'''.}}
+{{ClientSummary| name=X4X| description=A client written in java using [http://crosswidgets.sourceforge.net Xwidgets] for the gui. X4X uses almost all functions of xmms2 and is the only client offering '''random playback'''.}}
 
 {{ClientSummary| name=EkoXMMS2| description=EkoXMMS2 is a simple XMMS2 client plugin written for X-Chat.}}
 
