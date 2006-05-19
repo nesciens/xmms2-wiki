@@ -1,0 +1,34 @@
+=Summary=
+Adds support for equalizer (the process of modifying the frequency envelope of a sound) into XMMS2 using code from EQU project.
+
+=Description=
+The equalizer plugin introduces the following configuration variables into XMMS2:
+
+* equalizer.bands
+* equalizer.preamp
+* equalizer.extra_filtering
+* equalizer.use_legacy
+* equalizer.legacy[0-9]
+* equaliser.gain[00-30]
+
+
+Description of each configuration variable:
+
+* The equalizer.bands can get values of 10, 15, 25 or 31 and when it changes all equalizer.gain[00-30] values will be zeroed. It defines how many of the gain values will be used counting from 00.
+
+* The equalizer.preamp can get decimal values between [-20,20] and is always in use when equalizer plugin is enabled. This can be used to change the volume by software without affecting sound card settings.
+
+* The equalizer.extra_filtering can get a value of 0 or 1 and if it's 1 then the filtering is run twice (uses more CPU but gives better results).
+
+* The equalizer.use_legacy can get a value of 0 or 1. If it's 1 then gain values and band value are ignored and equalizer.legacy[0-9] values are used instead. More about the difference of these values below.
+
+* The equalizer.legacy[0-9] can get decimal values between [-20, 20]. The values are spaced with Winamp2/XMMS equalizer bands (60, 170, 310, 600, 1K, 3K, 6K, 12K, 14K, 16K) and can be used to load Winamp or XMMS presets. These can also be very useful if you want to just implement a simple traditional equalizer for winamp-like client.
+
+* The equalizer.gain[00-31] can get decimal values between [-20, 20]. The values are ISO spaced (31, 62, 125, 250, 500, 1K, 2K, 4K, 8K, 16K for 10 bands) which means each band is one octave or 1/3 octaves in case of 31 bands. These values should be used for standard and more advanced equalizer and are only used if use_legacy is set to 0. Also notice that as mentioned before, changing the number of bands will zero all these values.
+
+=Links=
+http://equ.sourceforge.net/
+
+[[Category:Effect Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
