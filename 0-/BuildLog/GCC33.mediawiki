@@ -1,10 +1,11 @@
-Build log generated Thu May 18 13:37:28 2006
-Build took 25 seconds
-Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
+Build log generated Fri May 19 13:37:29 2006
+Build took 27 seconds
+Version: 594967299e8adc782f5c72ae0004248c2c92d8e9
 
 ==Warnings==
- [[BuildLog/GCC33#h360|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
- [[BuildLog/GCC33#h364|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33#h338|Warning]]: src/plugins/id3v2/id3.c:426: warning: suggest parentheses around comparison in operand of &
+ [[BuildLog/GCC33#h369|Warning]]: src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'
+ [[BuildLog/GCC33#h373|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -30,6 +31,7 @@ Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
  Checking for gnome-vfs-2.0  ... no
  Checking for C header file mad.h... yes
  Checking for mad_synth_init() in C library mad... yes
+ Checking for libmms  ... no
  Checking for modplug  ... no
  Checking for libmodplug  ... yes
  Checking for C header file sys/soundcard.h... yes
@@ -39,10 +41,11 @@ Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
  Checking for C header file sys/audioio.h... no
  Checking for C header file vorbis/vorbisfile.h... yes
  Checking for ov_open_callbacks() in C library vorbisfile... yes
+ Checking for ffmpeg  ... no
  =====================================
   Configuration printout
  =====================================
- Enabled plugins: alsa, curl_http, diskwrite, file, flac, icymetaint, id3v2, mad, modplug, null, nulstripper, oss, replaygain, vorbisfile, wave
+ Enabled plugins: alsa, curl_http, diskwrite, equalizer, file, flac, icymetaint, id3v2, mad, modplug, null, nulstripper, oss, replaygain, vorbisfile, wave
  Default output: alsa
  scons: done reading SConscript files.
  scons: Building targets ...
@@ -329,6 +332,11 @@ Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
  gcc-3.3 -shared -o src/plugins/curl/libxmms_curl_http.so src/plugins/curl/curl_http.os -L/usr/lib -lcurl -lidn -lssl -lcrypto -ldl -lssl -lcrypto -ldl -lz
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/diskwrite/diskwrite.os src/plugins/diskwrite/diskwrite.c
  gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/eq.os src/plugins/equalizer/eq.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir.os src/plugins/equalizer/iir.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir_cfs.os src/plugins/equalizer/iir_cfs.c
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir_fpu.os src/plugins/equalizer/iir_fpu.c
+ gcc-3.3 -shared -o src/plugins/equalizer/libxmms_equalizer.so src/plugins/equalizer/eq.os src/plugins/equalizer/iir.os src/plugins/equalizer/iir_cfs.os src/plugins/equalizer/iir_fpu.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
  gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/flac/flac.os src/plugins/flac/flac.c
@@ -336,6 +344,8 @@ Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/icymetaint/icymetaint.os src/plugins/icymetaint/icymetaint.c
  gcc-3.3 -shared -o src/plugins/icymetaint/libxmms_icymetaint.so src/plugins/icymetaint/icymetaint.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
+ src/plugins/id3v2/id3.c: In function `xmms_id3v2_parse':
+ <span id="h338">src/plugins/id3v2/id3.c:426: warning: suggest parentheses around comparison in operand of &</span>
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
  gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v1.os src/plugins/mad/id3v1.c
@@ -366,11 +376,11 @@ Version: 8d79ff13514541eb168ce1bd6d52cfbb2e961bc9
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
  src/xmms/mediainfo.c: In function `xmms_mediainfo_reader_thread':
- <span id="h360">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
+ <span id="h369">src/xmms/mediainfo.c:237: warning: implicit declaration of function `time'</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h364">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h373">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
