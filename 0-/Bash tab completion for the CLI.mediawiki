@@ -237,7 +237,7 @@ _xmms2()
                            | sed -ne 's|^value = \(.*\)$|"\1"|p' ))
 		IFS=$old_ifs
             else
-               COMPREPLY=( $( compgen -S '=' -W "$keys" -- $cur ))
+               COMPREPLY=( $( compgen -S '="' -W "$keys" -- $cur ))
             fi
             ;;
          *)
