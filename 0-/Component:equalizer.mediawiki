@@ -1,3 +1,5 @@
+{{ComponentHeader}}
+
 =Summary=
 Adds support for equalizer (the process of modifying the frequency envelope of a sound) into XMMS2 using code from EQU project.
 
