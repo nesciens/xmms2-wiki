@@ -1,3 +1,17 @@
 [[User:VxJasonxV | VxJasonxV]] is a fanboy, and nothing more.
 
 (But is that really a bad thing? :) )
+
+== Contributions ==
+Contributed to the DrDoolittle ET packet tests.<br>
+Actively using GXMMS2 and providing feedback.
+
+== Capability for Abus- Testing ==
+Open for testing under a Linux Environment ( Gentoo Linux 2006.0 )<br>
+Current `uname -a`: Linux picard 2.6.16-gentoo-r6 #1 Sat May 6 00:18:12 MST 2006 i686 Pentium III (Coppermine) GNU/Linux<br>
+Open for testing in a Windows XP (SP2) Environment<br>
+Limited testing with Mac OS X (Tiger - 10.4) is also possible
+
+== Contact Info ==
+Reach me in IRC under the same username. ( irc.freenode.net / #xmms2 )<br>
+<pre>I'm a luser babyyyy, so why don't you kill meeee.</pre>
