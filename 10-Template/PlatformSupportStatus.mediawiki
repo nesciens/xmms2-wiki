@@ -15,7 +15,7 @@ List of platforms under which XMMS2 may be built and run. (Colours have the same
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[OpenBSD]]
 |-
-| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bff" | [[Solaris]]
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #ffb" | [[Solaris]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bbf" | [[Windows | Microsoft Windows]]
 |-
