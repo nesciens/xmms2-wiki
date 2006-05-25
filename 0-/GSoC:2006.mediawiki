@@ -30,8 +30,26 @@ Good luck!
 p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'. A 'proposed task' is an idea or a task that the XMMS2 team put forward (proposed) as something a student could work on, to contribute to the project. A student's 'proposal' may be derived from a 'proposed task', but is a document where the student lays out in detail what he/she is prepared to contribute and how he/she is proposing to do it over the Summer of Code period. This doesn't mean that a student proposal has to be perfect the first time around - mentors are willing to talk to individual students in order to refine the proposals prior to final ranking.}}
 
 == Accepted Projects ==
-* [[SoC:TurboX2|TurboX2 Summer of Code Page]]
-* [[SoC:Collections|Collections Summer of Code Page]]
+
+* Support for DAAP
+** '''Student''': Cole Thompson
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* [[SoC:TurboX2 | TurboX2 Release Engineering and Development]]
+** '''Student''': Alexander Botero-Lowry
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* [[SoC:Collections | Collections]]
+** '''Student''': SÃ©bastien Cevey
+** '''Mentor''': Anders Gustafsson
+
+* Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2
+** '''Student''': Mohsin Patel
+** '''Mentor''': Anders Gustafsson
+
+* XMMS2 Test Framework
+** '''Student''': Abdul Haseeb
+** '''Mentor''': Sham Chukoury
 
 == Proposed projects ==
 
