@@ -1,0 +1,40 @@
+= Presentation =
+
+[[User:Theefer|theefer]] speaking here, about his work on the ''Collections'' task for [http://code.google.com/soc|Google Summer of Code 2006].
+
+= Project Synopsis and Benefits to the Community =
+
+So far, the medialibrary is a simple sqlite database and clients access it by querying it directly in SQL language.  The lack of abstraction has recently been questionned by features requiring shared queries or "views" of the medialibrary.  These are not possible within the current SQL-based API.
+
+Collections address this issue and a few others (playlist unification, data duplication) by raising the abstraction level of queries in the clients and reworking the architecture of the medialibrary on the server.  The resulting design allows very advanced features (saved "views", dynamic and static collections, Party Shuffle-like playlists, etc), while the new clientlib API would make it easier to generate and share powerful queries, access the medialibrary and playlists in a uniform way, etc.
+
+For the community, this means new features available to the client developers and therefore to the users, including often requested features such as dynamic playlists.  Collections should also make the development of clients easier overall, by abstracting the generation of queries.
+
+Finally, this new architecture should position XMMS2 as an innovative alternative to other, more classical music player daemons, thus providing dynamism in the community and hopefully breeding new, unexpected ideas in XMMS2 clients!
+
+
+= Deliverables =
+
+:&#10063; The Specifications of the [[Collections_Concept|concept of Collections]] (informal description).
+:&#10063; The Design Document describing the technical implementation of the specifications (formal description).
+:&#10063; Implementation of collections as C data structures (used both server and client side).
+:&#10063; Implementation in the server of the concept and features described in the specifications; connection with the current medialibrary or a new storage system, to be discussed.
+:&#10063; New API functions in the clientlib to manage collections (with documentation).
+:&#10063; Simple commands to test collections in the xmms2 cli.
+
+==Optional:==
+:&#10063; Bindings for the collections API (esp. C++).
+:&#10063; Documentation about Collections for client developers.
+:&#10063; API function to generate a collection structure from a string given a determined, Google-like search syntax.
+
+
+= History =
+
+'''00:44, 26 May 2006 (CEST)''': First draft of the [[Collections_Concept]] published, added this SoC Collections page.
+
+
+= References =
+
+Apart from the links to the deliverables (above), here are a few pointers to extra informations concerning collections:
+* [[Collections|Current official ''Collections'' page of this wiki]]
+* [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/|A Better Music Player Manifesto]
