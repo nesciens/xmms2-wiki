@@ -1,0 +1,17 @@
+* You need to be prepared to stay in regular contact with your mentor, via IRC or e-mail, and provide at least weekly status reports.
+* You will be expected to, at the very least, have a basic grasp of the language(s) involved in your chosen task, and have a knowledge of using revision control systems such as CVS, SVN or Git.
+* Include the following in your proposal ([http://wiki.creativecommons.org/Summer_of_Code_2006]):
+** Detailed description / design document (including a list of deliverables)
+** An approximate schedule (timeline)
+** Brief description of past projects (including open source) that you've participated in
+** Brief resume/bio/contact information
+* Some more information that could be useful to us ([http://groups.google.com/group/Summer-Administrators-2006/msg/558001af3c9f8ffe]):
+** How much time do you expect to have for this project?
+** List of jobs, summer classes, and/or vacations that you'll need to work around
+** Description of any experience you have with various programming and scripting languages, operating systems, and so on.
+** Description of your usage experience/familiarity - or even development experience - with the project you are applying for.
+** Did you participate in a 2005 Summer of Code project?  If so, please describe your project and experience.
+** Details of your school/university/college enrollment: which institution, what your highest education level is so far, whether you're specialising or majoring in particular subjects..
+** Why are you well suited to complete this project?
+
+[[Category:Summer of Code 2006]]
