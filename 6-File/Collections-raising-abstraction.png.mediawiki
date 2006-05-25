@@ -1,0 +1,1 @@
+Diagram of the changes of abstraction of the access to the medialibrary introduced by collections.
