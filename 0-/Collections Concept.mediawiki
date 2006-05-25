@@ -165,3 +165,23 @@ Description of the operators:
 Notes:
 * List operators are especially useful to include or exclude some given media from a collection (using the set operators), and to create playlists!
 * Special functions should be made available to create, edit and reorder the list of ids in a list operator.
+
+== Formal definition of a Collection ==
+
+At that point, things might have become slightly confusing: what exactly is a collection?
+
+A set of media? An operator? A DAG? A label? A query?
+
+Technically, all of the above.  To avoid confusion in discussions about Collections, let's try to define the relations between these different forms.
+
+A '''collection''' is ''equivalent to'' a '''query''' in the Media Library, which ''matches'' a '''set of media'''.  The '''query''' is ''extracted from'' the '''DAG''' of all incoming edges to the '''operator''' ''referenced'' by the '''collection'''.
+
+Thus, a collection:
+* ''matches'' a '''set of media''';
+* ''references'' (or ''labels'') an '''operator''';
+* ''corresponds to'' a '''DAG''' (above the operator);
+* ''is equivalent to'' a '''query''';
+
+It is therefore important to know what exactly we mean when we refer to a ''collection''.
+
+Sometimes, it can be made clearer by explicitely calling '''collection structure''' the DAG corresponding to the collection, and '''content of the collection''' the set of media matched by the collection (e.g. a client will create a ''collection structure'' and save it on the server, before querying it to list the ''content of the collection'').
