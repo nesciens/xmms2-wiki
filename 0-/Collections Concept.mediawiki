@@ -1,0 +1,32 @@
+= Collections =
+== Overview ==
+
+Collections (currently scheduled for DrGonzo) mark an important change in the way XMMS2 interacts with its Media Library.
+
+A collection is a subset of the Media Library, or in other words, a group of songs.  It can be static or dynamic, ordered or not, but in the end it's just that: a set of media entries.
+
+For instance, a collection can be "all songs by Led Zeppelin before 1975" or "all songs added to the Media Library less than 10 days ago" (dynamic collections).  It can also be an arbitrary sequence of songs: "Smells Like Teen Spirit", "Hotel California" and "The Sounds of Silence" (static collection).  It can even be an automatic static list, e.g. "10 songs randomly fetched from the collection 'Any Music But Usher'".
+
+With just a few examples, we see that the concept of collections provides a solid basis for different concepts, previously separated in the API and the server: queries, views, playlists (static or "smart"), etc.  The goal of collections is indeed to unify them into one unique but powerful structure.
+
+For the client developer, collections will replace SQL queries and allow persistence of "views" of the Library, dynamic playlists, and other such features.  The user will benefit from the new features hence possible in the clients: Party Shuffle playlists, saved queries common to all clients, etc.
+
+== Rationale ==
+
+The current API allows powerful queries in the medialib db, saved playlists, etc.  Why change something if it's not broken?
+
+The problem is that it ''will'' be broken as soon as we try to introduce new features, such as dynamic playlists, saved queries, etc.  While they could be hacked as hooks in a client, this solution is neither elegant, nor robust.  Connect several such clients and they will start competing to change the playlist or won't be able to share saved views of the medialib.
+
+We can therefore conclude that these features must be implemented in the server, so that all clients can make a common use of them. However, since they require the selection of a subset of the library (e.g. "playlist containing only Beatles songs"), the only way to perform this currently is by using the corresponding SQL query. First, this implies that each client has created its own functions to generate the SQL query corresponding to the user's choice.  Second, parsing back the query into a usable structure (e.g. so that the user can edit its choice) is a major hassle.
+
+The solution to this problem is to unify the way queries are represented, in a higher level of abstraction.
+
+[[Image:Collections-raising-abstraction.png|Raise of abstraction of the API with collections]]
+
+In the diagram above, we clearly see the raise of the position of the API in the query flow.  As a consequence, the client only deals with an abstract representation of queries and the transformation to the SQL form is done by the server. This introduces a looser coupling between what the client sees and implementation of the Media Library on the server. Therefore, all clients and the server share the same representation of queries, which can be exchanged, read and written freely. Moreover, it allows to transparently change the storage system used by the Media Library.
+
+Having such a universal representation of queries makes it possible to add features based on sets of songs on the server, such as saved views or Party Shuffle playlists.  In addition to that, by using operators to make collections orderable, we can represent not only sets but also ''lists'' of songs ; this allows us to generalize the concept of collections to handle the playlists.
+
+This generalization can be exploited to refactor the playlist API. Instead of the current model, where there is one "active playlist" and separate "saved playlists" in the medialib, a more natural approach would be to always play one of the saved playlists, which would itself be a collection.  The interface would thus gain in uniformity.
+
+In conclusion, collections are a new step towards abstraction of the access and usage of the Media Library, unification of previously separate concepts on the server, improvement of shared structures among clients, and creation of new varieties of playlists.
