@@ -44,6 +44,7 @@ p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'.
 
 == Accepted Projects ==
 [[SoC:TurboX2|TurboX2 Summer of Code Page]]
+[[SoC:Collections|Collections Summer of Code Page]]
 
 == Proposed projects ==
 
