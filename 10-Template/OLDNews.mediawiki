@@ -1,3 +1,27 @@
+{{Newsitem| date=25 May 2006 WST (2006-05-25)| author=[[Sham Chukoury]]| title=Summer of Code really begins| text=Hello World. The application and evaluation periods of SoC2006 are finally over and selected applicants can now start working on their awesome proposals. Here at XMMS2, we received about 50 proposals, which was quite surprising.. we were expecting something of the order of a dozen or so.. ;) In the end, it did come down to almost a dozen good-quality proposals fighting for our attention, but we could only accept five of them. So, for 2006, the XMMS2 SoC projects are (in no particular order):
+
+* Support for DAAP
+** '''Student''': Cole Thompson
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* TurboX2 Release Engineering and Development
+** '''Student''': Alexander Botero-Lowry
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* [[Collections]]
+** '''Student''': SÃ©bastien Cevey
+** '''Mentor''': Anders Gustafsson
+
+* Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2
+** '''Student''': Mohsin Patel
+** '''Mentor''': Anders Gustafsson
+
+* XMMS2 Test Framework
+** '''Student''': Abdul Haseeb
+** '''Mentor''': Sham Chukoury
+
+The XMMS2 Team would like to thank all the students who applied and invite those who did not get accepted into SoC2006 to still make a contribution to XMMS2, if they're up to it.}}
+
 {{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Summer of Code news| text=I have added a [[Summer of Code 2006#News | News]] section on the [[Summer of Code 2006]] page. If you're a student interested in contributing to XMMS2 for SoC 2006, please check the page regularly for updates!
 
 p.s. Please note that our mailing list is currently down. If you need to contact us, do so on IRC: #xmms2 on Freenode, or e-mail ''eleusis@xmms.org''.}}
