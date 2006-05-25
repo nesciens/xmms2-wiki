@@ -2,6 +2,7 @@
 
 [[User:Theefer|theefer]] speaking here, about his work on the ''Collections'' task for [http://code.google.com/soc|Google Summer of Code 2006].
 
+
 = Project Synopsis and Benefits to the Community =
 
 So far, the medialibrary is a simple sqlite database and clients access it by querying it directly in SQL language.  The lack of abstraction has recently been questionned by features requiring shared queries or "views" of the medialibrary.  These are not possible within the current SQL-based API.
