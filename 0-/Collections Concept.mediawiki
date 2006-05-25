@@ -152,7 +152,7 @@ Description of the operators:
 
 List operators create static, ordered collections.  Unlike the other two (dynamic) types of operators, list operators actually /store/ their content, as a list of media ids.  This is represented on the figure as a green stack of squares.
 
-[[Image:Collection-operators-list.png|frame|center|Collection ''list'' operator]
+[[Image:Collection-operators-list.png|frame|center|Collection ''list'' operator]]
 
 The output of list operators is a medialist.
 
