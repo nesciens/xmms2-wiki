@@ -1,0 +1,1 @@
+Pages related to XMMS2's participation in Google's Summer of Code 2006.
