@@ -1,17 +1,18 @@
-Build log generated Wed May 24 13:38:13 2006
-Build took 34 seconds
-Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
+Build log generated Thu May 25 13:38:16 2006
+Build took 35 seconds
+Version: 03691b3a9049d29a8ff5a3820367b538da0185f8
 
 ==Warnings==
- [[BuildLog/GCC33-O2#h49|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h55|Warning]]: src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h376|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33-O2#h52|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h58|Warning]]: src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function
+ [[BuildLog/GCC33-O2#h386|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for glib-2.0  ... yes
+ Checking for C++ header file boost/signal.hpp... no
  Checking for avahi-client  ... no
  Checking for C header file dns_sd.h... no
  Checking for gamin  ... no
@@ -34,8 +35,10 @@ Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
  Checking for libmms  ... no
  Checking for modplug  ... no
  Checking for libmodplug  ... yes
+ Checking for mpc_decoder_decode() in C library mpcdec... no
  Checking for C header file sys/soundcard.h... yes
  Checking for _oss_ioctl() in C library ossaudio... no
+ Checking for C header file libsmbclient.h... no
  Checking for libsidplay2  ... yes
  Checking for resid_version_string() in C library resid-builder... no
  Checking for C header file sys/audioio.h... no
@@ -56,13 +59,13 @@ Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_mlib.o src/clients/cli/cmd_mlib.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_other.o src/clients/cli/cmd_other.c
  src/clients/cli/cmd_other.c: In function `cmd_plugin_list':
- <span id="h49">src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function</span>
+ <span id="h52">src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function</span>
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_playback.o src/clients/cli/cmd_playback.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_pls.o src/clients/cli/cmd_pls.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_status.o src/clients/cli/cmd_status.c
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/common.o src/clients/cli/common.c
  src/clients/cli/common.c: In function `format_pretty_list':
- <span id="h55">src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function</span>
+ <span id="h58">src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function</span>
  gcc-3.3 -Wall -O2 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/main.o src/clients/cli/main.c
  gcc-3.3 -Wall -O2 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/ipc.o src/clients/lib/xmmsclient/ipc.c
  gcc-3.3 -Wall -O2 -Isrc/include -Isrc/includepriv -c -o src/clients/lib/xmmsclient/medialib.o src/clients/lib/xmmsclient/medialib.c
@@ -331,46 +334,53 @@ Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
  ln -s libxmmsclient-ecore.so.0 src/clients/lib/xmmsclient-ecore/libxmmsclient-ecore.so
  gcc-3.3 -shared -o src/clients/lib/ruby/xmmsclient_ecore.so src/clients/lib/ruby/rb_xmmsclient_ecore.os -Lsrc/clients/lib/xmmsclient-ecore -Lsrc/clients/lib/xmmsclient -L/usr/lib/ruby/1.8/i386-linux -L/usr/lib -L/usr/lib -lxmmsclient -lecore -lm -lxmmsclient-ecore
  gcc-3.3 -shared -o src/clients/lib/ruby/xmmsclient_glib.so src/clients/lib/ruby/rb_xmmsclient_glib.os -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -L/usr/lib/ruby/1.8/i386-linux -lglib-2.0 -lxmmsclient -lxmmsclient-glib
+ g++ -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.o src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.cpp
+ ar r src/clients/lib/xmmsclient++-glib/libxmmsclient++-glib.a src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.o
+ ranlib src/clients/lib/xmmsclient++-glib/libxmmsclient++-glib.a
+ ar: creating src/clients/lib/xmmsclient++-glib/libxmmsclient++-glib.a
+ g++ -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.os src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.cpp
+ g++ -shared -Wl,-soname,libxmmsclient++-glib.so.0 -o src/clients/lib/xmmsclient++-glib/libxmmsclient++-glib.so.0 src/clients/lib/xmmsclient++-glib/xmmsclient++-glib.os -Lsrc/clients/lib/xmmsclient-glib -lxmmsclient-glib -lglib-2.0
+ ln -s libxmmsclient++-glib.so.0 src/clients/lib/xmmsclient++-glib/libxmmsclient++-glib.so
  gcc-3.3 -Wall -O2 -D_REENTRANT -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/SDL -c -o src/clients/sdl-vis/sdl-vis.o src/clients/sdl-vis/sdl-vis.c
  gcc-3.3 -o src/clients/sdl-vis/sdl-vis src/clients/sdl-vis/sdl-vis.o -Lsrc/clients/lib/xmmsclient-glib -Lsrc/clients/lib/xmmsclient -L/usr/lib -lxmmsclient -lxmmsclient-glib -lglib-2.0 -lSDL -lpthread -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/alsa -c -o src/plugins/alsa/alsa.os src/plugins/alsa/alsa.c
- gcc-3.3 -shared -o src/plugins/alsa/libxmms_alsa.so src/plugins/alsa/alsa.os -lasound -lm -ldl -lpthread
+ gcc-3.3 -shared -o src/plugins/alsa/libxmms_alsa.so src/plugins/alsa/alsa.os -lSDL_ttf -lasound -lm -ldl -lpthread
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/curl/curl_http.os src/plugins/curl/curl_http.c
- gcc-3.3 -shared -o src/plugins/curl/libxmms_curl_http.so src/plugins/curl/curl_http.os -L/usr/lib -lcurl -lidn -lssl -lcrypto -ldl -lssl -lcrypto -ldl -lz
+ gcc-3.3 -shared -o src/plugins/curl/libxmms_curl_http.so src/plugins/curl/curl_http.os -L/usr/lib -lSDL_ttf -lcurl -lidn -lssl -lcrypto -ldl -lssl -lcrypto -ldl -lz
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/diskwrite/diskwrite.os src/plugins/diskwrite/diskwrite.c
- gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os
+ gcc-3.3 -shared -o src/plugins/diskwrite/libxmms_diskwrite.so src/plugins/diskwrite/diskwrite.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/eq.os src/plugins/equalizer/eq.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir.os src/plugins/equalizer/iir.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir_cfs.os src/plugins/equalizer/iir_cfs.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/equalizer/iir_fpu.os src/plugins/equalizer/iir_fpu.c
- gcc-3.3 -shared -o src/plugins/equalizer/libxmms_equalizer.so src/plugins/equalizer/eq.os src/plugins/equalizer/iir.os src/plugins/equalizer/iir_cfs.os src/plugins/equalizer/iir_fpu.os
+ gcc-3.3 -shared -o src/plugins/equalizer/libxmms_equalizer.so src/plugins/equalizer/eq.os src/plugins/equalizer/iir.os src/plugins/equalizer/iir_cfs.os src/plugins/equalizer/iir_fpu.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/file/file.os src/plugins/file/file.c
- gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os
+ gcc-3.3 -shared -o src/plugins/file/libxmms_file.so src/plugins/file/file.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/flac/flac.os src/plugins/flac/flac.c
- gcc-3.3 -shared -o src/plugins/flac/libxmms_flac.so src/plugins/flac/flac.os -lFLAC
+ gcc-3.3 -shared -o src/plugins/flac/libxmms_flac.so src/plugins/flac/flac.os -lSDL_ttf -lFLAC
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/icymetaint/icymetaint.os src/plugins/icymetaint/icymetaint.c
- gcc-3.3 -shared -o src/plugins/icymetaint/libxmms_icymetaint.so src/plugins/icymetaint/icymetaint.os
+ gcc-3.3 -shared -o src/plugins/icymetaint/libxmms_icymetaint.so src/plugins/icymetaint/icymetaint.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
- gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os
+ gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v1.os src/plugins/mad/id3v1.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/mad.os src/plugins/mad/mad.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/xing.os src/plugins/mad/xing.c
- gcc-3.3 -shared -o src/plugins/mad/libxmms_mad.so src/plugins/mad/mad.os src/plugins/mad/xing.os src/plugins/mad/id3v1.os -lmad
+ gcc-3.3 -shared -o src/plugins/mad/libxmms_mad.so src/plugins/mad/mad.os src/plugins/mad/xing.os src/plugins/mad/id3v1.os -lSDL_ttf -lmad
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmodplug -c -o src/plugins/modplug/modplug.os src/plugins/modplug/modplug.c
- gcc-3.3 -shared -o src/plugins/modplug/libxmms_modplug.so src/plugins/modplug/modplug.os -lmodplug -lstdc++ -lm
+ gcc-3.3 -shared -o src/plugins/modplug/libxmms_modplug.so src/plugins/modplug/modplug.os -lSDL_ttf -lmodplug -lstdc++ -lm
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/null/null.os src/plugins/null/null.c
- gcc-3.3 -shared -o src/plugins/null/libxmms_null.so src/plugins/null/null.os
+ gcc-3.3 -shared -o src/plugins/null/libxmms_null.so src/plugins/null/null.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/nulstripper/nulstripper.os src/plugins/nulstripper/nulstripper.c
- gcc-3.3 -shared -o src/plugins/nulstripper/libxmms_nulstripper.so src/plugins/nulstripper/nulstripper.os
+ gcc-3.3 -shared -o src/plugins/nulstripper/libxmms_nulstripper.so src/plugins/nulstripper/nulstripper.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -DDEFAULT_DEVICE=\"/dev/dsp\" -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/oss/oss.os src/plugins/oss/oss.c
- gcc-3.3 -shared -o src/plugins/oss/libxmms_oss.so src/plugins/oss/oss.os
+ gcc-3.3 -shared -o src/plugins/oss/libxmms_oss.so src/plugins/oss/oss.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/replaygain/replaygain.os src/plugins/replaygain/replaygain.c
- gcc-3.3 -shared -o src/plugins/replaygain/libxmms_replaygain.so src/plugins/replaygain/replaygain.os
+ gcc-3.3 -shared -o src/plugins/replaygain/libxmms_replaygain.so src/plugins/replaygain/replaygain.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/vorbis/vorbisfile.os src/plugins/vorbis/vorbisfile.c
- gcc-3.3 -shared -o src/plugins/vorbis/libxmms_vorbisfile.so src/plugins/vorbis/vorbisfile.os -lvorbisfile
+ gcc-3.3 -shared -o src/plugins/vorbis/libxmms_vorbisfile.so src/plugins/vorbis/vorbisfile.os -lSDL_ttf -lvorbisfile
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/wave/wave.os src/plugins/wave/wave.c
- gcc-3.3 -shared -o src/plugins/wave/libxmms_wave.so src/plugins/wave/wave.os
+ gcc-3.3 -shared -o src/plugins/wave/libxmms_wave.so src/plugins/wave/wave.os -lSDL_ttf
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/config.o src/xmms/config.c
  /usr/bin/python src/xmms/generate-converter.py > src/xmms/converter.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/converter_plugin.o src/xmms/converter_plugin.c
@@ -383,7 +393,7 @@ Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h376">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h386">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
@@ -395,8 +405,10 @@ Version: a5696f8e0a6ca4787f8cb89ea941d758e5eb504e
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
  gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
  gcc-3.3 -Wall -O2 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
- gcc-3.3 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o
- gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o src/xmms/outputplugin.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
+ gcc-3.3 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o -lSDL_ttf -lm -lFLAC -lmad -lvorbisfile
+ gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o src/xmms/outputplugin.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lSDL_ttf -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
+ Substituting vars from xmms2.pc.in into xmms2-client-cpp-glib.pc
+ Substituting vars from xmms2.pc.in into xmms2-client-cpp.pc
  Substituting vars from xmms2.pc.in into xmms2-client-ecore.pc
  Substituting vars from xmms2.pc.in into xmms2-client-glib.pc
  Substituting vars from xmms2.pc.in into xmms2-client.pc
