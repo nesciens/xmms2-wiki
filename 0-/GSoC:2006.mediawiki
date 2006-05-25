@@ -1,24 +1,11 @@
-XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program. To apply for the program, see the [http://code.google.com/soc/student_step1.html signup page].
+XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program.
 
 == Why work on XMMS2? ==
 The XMMS2 project has been around since 2003 and has a rather extensive and stable code base by now. But there are still a lot of ideas to be implemented! We believe that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greeted by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
 
 == Student Requirements ==
-* You need to be prepared to stay in regular contact with your mentor, via IRC or e-mail, and provide at least weekly status reports.
-* You will be expected to, at the very least, have a basic grasp of the language(s) involved in your chosen task, and have a knowledge of using revision control systems such as CVS, SVN or Git.
-* Include the following in your proposal ([http://wiki.creativecommons.org/Summer_of_Code_2006]):
-** Detailed description / design document (including a list of deliverables)
-** An approximate schedule (timeline)
-** Brief description of past projects (including open source) that you've participated in
-** Brief resume/bio/contact information
-* Some more information that could be useful to us ([http://groups.google.com/group/Summer-Administrators-2006/msg/558001af3c9f8ffe]):
-** How much time do you expect to have for this project?
-** List of jobs, summer classes, and/or vacations that you'll need to work around
-** Description of any experience you have with various programming and scripting languages, operating systems, and so on.
-** Description of your usage experience/familiarity - or even development experience - with the project you are applying for.
-** Did you participate in a 2005 Summer of Code project?  If so, please describe your project and experience.
-** Details of your school/university/college enrollment: which institution, what your highest education level is so far, whether you're specialising or majoring in particular subjects..
-** Why are you well suited to complete this project?
+
+See [[Summer of Code 2006/Student_requirements]]
 
 === Proposal Example ===
 For an example of what your proposal could look like, see [http://exodus.xmms.se/~andersg/SoC_example.txt SoC_example.txt]. Make sure your proposal is correctly linewrapped to fit in 80 cols (as google's interface doesn't reflow text).
@@ -46,50 +33,14 @@ p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'.
 * [[SoC:TurboX2|TurboX2 Summer of Code Page]]
 * [[SoC:Collections|Collections Summer of Code Page]]
 
-
 == Proposed projects ==
 
-Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects. Please note that the XMMS2 team reserves the right to limit the number of projects accepted to ensure that mentors don't have to keep track of too many students.
-
-You might also want to check out: 
-[http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
-
-{{SoCItem| title=[[Generated IPC | Auto-generated API and bindings]]| description=Currently, the C client library and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files.| lang=Python / XML| level=Advanced| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
-
-{{SoCItem| title=[[Collections]]| description=The access to [[The Medialib | the media library]] should be abstracted from its implementation. Currently, clients use SQL queries to query it, and this restricts the possibilities of more advanced features (Party Shuffle-like playlists, saved views, sharing of queries among clients). The concept of [[Collections]] solves these issues by offering a higher-level representation of queries and a generalized structure for playlists. The design should first be discussed and finalized (both in terms of implementation and client library API), before it is implemented in the core of the server.| lang=C and SQL| level=Advanced| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
-
-{{SoCItem| title=[[Client:Promoe | promoe client]]| description=The [[Client:Promoe | promoe]] client is a Winamp/XMMS1 clone for XMMS2, written in C++/[http://www.trolltech.no Qt4].  It currently supports skins, playback control, playlists and simple media library access, but still lacks most other features offered by XMMS2 (saved playlists, powerful media library browsing, properties modification, etc). It should also be ported to use the new C++ bindings (scheduled for the next release, [[Release:DrEvil | DrEvil]]). Since Promoe is a skinable client this involves a lot of hacking on custom widgets and can be a very good way to learn more about the QT toolkit.| lang=C++| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
-
-{{SoCItem| title=[[Client:"TurboX2" | "turbox2" client]]| description=The [[Client:"TurboX2" | "turbox2" client]]  is a web client written using [http://www.turbogears.org TurboGears]. It is currently - possibly - the most robust client with support for browsing the media library and manipulating the playlist. Development targets for the summer are largely to get it to be release quality, but development would also focus on "Views" which would allow for the media library to be represented in a templated fashion.| lang=Python, Javascript, XHTML/KID|level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
-
-{{SoCItem| title=Evaluate a Switch to GStreamer| description=A lot of discussion has occurred in the past about the issue of converting XMMS2 to using [http://www.gstreamer.org GStreamer]. This project would be to evaluate the viability of that conversion and maybe do the implementation (proof of concept) if deemed a winning situation. (i.e. doing the conversion would have more pros than cons) On the other hand, if it isn't a winning situation, the outcome could contain suggested improvements to gstreamer to make it more suited for our use. You should probably look at and understand the [[Transforms]] concept currently implemented in XMMS2, when undertaking this task. A student interested in this project should observe that this subject may be highly controversial and flammable and might end in a big bolt of fire.| lang=English / C| level=Flametory| mentor=[[Sham Chukoury]]}}
-
-{{SoCItem| title=Support for DAAP| description=The [http://daap.sourceforge.net/ DAAP] protocol (used by Apple's iTunes) allows sharing of music libraries accross the network. Implementing it in XMMS2 (as a [[Transforms]] plugin) should allow remote browsing and streaming of music from other computers. There are also ideas about DAAP sharing from XMMS2.| lang=C| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
-
-{{SoCItem| title=Support for more formats/stream types| description=New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
-* [http://www.monkeysaudio.com/ Monkey Audio]
-* [http://zakalwe.virtuaalipalvelin.net/uade/ Amiga format] ([[List_of_features_required_for_proper_sub-tune_support|subtunes support]])
-* [http://craz.net/programs/itunes/alac.html ALAC (Apple Lossless Audio Codec)]
-* [http://www.last.fm Last.Fm]| lang=C| level=Medium to Advanced| mentor=''TBA''}}
-
-{{SoCItem| title=XMMS2 Wiki| description=XMMS2 has been in long need of a good logo set, and our wiki is also in need of being made a little less ugly. This is a great project for a student who is into web development and really wants to participate in XMMS2 development but doesn't really have a lot of C coding ability needed to do Core work.| lang=PHP / Python and SVG| level=Easy to Medium| mentor=[[Sham Chukoury]]}}
-[[Talk:Summer of Code 2006#XMMS2_Wiki | Discussion about this task]]
-
-{{SoCItem| title=Port Visualization to [[Transforms | transforms API]] and extend it to give PCM data| description=Currently visualization in XMMS2's devel branch is disabled with the transition to [[Transforms]]. This project would be to port visualization to the devel branch as a transform plugin and to extend it to give full PCM data.| lang=C| level=Medium to Advanced|mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
-
-{{SoCItem| title=Testing| description=Testing XMMS2 is currently done the informal way: build the code, run it and see if it works. The problem with this approach is that it's difficult, if not impossible, to automatically and exhaustively test each component of the system to make sure they work well within their accepted parameters. This task requires you to:
-* Develop a test suite, possibly using a unit-testing approach (e.g. with [http://check.sf.net libcheck]) or otherwise, as deemed appropriate.
-* Provide recommendations on how to change the development workflow to actively use and maintain the test suite. (to ensure that the test suite doesn't go stale within a few weeks)
-* Optionally devise a method for maintaining a 'component status' page based on automated test results. (For an example, see [[Project Status]])| lang=C / Python / Ruby| level=Medium| mentor=[[Sham Chukoury]]}}
-
-{{SoCItem| title=Handle temporarily unavailable media better than removing from medialib| description=This task is fully described with context in [http://bugs.xmms2.xmms.se/view.php?id=519 Bug #519]| lang=C| level=Medium| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
-
-== Other Ideas? ==
-
-{{SoCItem| title=GTK2/GNOME medialib centric client for xmms2| description=This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhythmBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.|lang=Python / C / C++ / Ruby / Perl| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
+See [[Summer of Code 2006/Proposed projects]]
 
 == Resources ==
 The following resources don't apply directly to XMMS2, but they have some helpful tips:
 * Drupal's [http://drupal.org/node/59037 HOWTO: Write a Summer of Code application]
 * Wine's [http://wiki.winehq.org/SummerOfCode SummerOfCode page] (the 'things to consider' regarding C and low-level programming do not apply to XMMS2)
 * Adium's [http://trac.adiumx.com/wiki/ProposalGuidelines Proposal Guidelines]
+
+[[Category:Summer of Code 2006]]
