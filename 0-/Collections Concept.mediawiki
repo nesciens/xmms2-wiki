@@ -106,3 +106,62 @@ It is important to understand that collections appear at every step of the graph
 
 
 The usage of operators is quite self-explanatory in this example, but let's have an exhaustive overview of the different types of operators available.
+
+== Collection Operators ==
+
+We can split the collection operators in three types:
+* Set operators
+* Filter operators
+* List operators
+
+=== Set Operators ===
+
+Set operators allow grouping and combination of multiple collections.
+
+[[Image:Collection-operators-set.png|frame|center|Collection ''set'' operators]]
+
+The output of set operators is a mediaset.
+
+Description of the operators:
+
+* '''<code>and</code>''': intersection operator. The resulting collection only contains media present in /both/ input collections.
+* '''<code>or</code>''': union operator. The resulting collection contains all media present in /either/ input collections.
+* '''<code>not</code>''': complement operator. The resulting collection contains all media /not/ present in the input collection.
+
+=== Filter Operators ===
+
+Filter operators impose restrictions on collections.
+
+[[Image:Collection-operators-filter.png|frame|center|Collection ''filter'' operators]]
+
+The output of filter operators is a mediaset.
+
+Filter operators are configured using their two properties:
+
+* The '''<code>field</code>''' property determines which property of the media should have its value extracted for comparison (<code>V<sub>m</sub></code>).
+* The '''<code>value</code>''' property determines the value to compare with (<code>V<sub>o</sub></code>)
+
+Description of the operators:
+
+* '''<code>match</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> exactly matches <code>V<sub>o</sub></code>.
+* '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> contains <code>V<sub>o</sub></code>.
+* '''<code>larger</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is larger than <code>V<sub>o</sub></code>.
+* '''<code>smaller</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is smaller than <code>V<sub>o</sub></code>.
+
+=== List Operators ===
+
+List operators create static, ordered collections.  Unlike the other two (dynamic) types of operators, list operators actually /store/ their content, as a list of media ids.  This is represented on the figure as a green stack of squares.
+
+[[Image:Collection-operators-list.png|frame|center|Collection ''list'' operator]
+
+The output of list operators is a medialist.
+
+Description of the operators:
+
+* '''<code>idlist</code>''': a static list of media ids.
+* '''<code>idqueue</code>''': a static list of media ids ; when used as a playlist, played songs are popped out of it.  The <code>history</code> property specifies how many played songs are kept before they are removed.
+* '''<code>party shuffle</code>''': a static list of media ids, populated by a random selection of songs from the input collection until the list size reaches the <code>upcoming</code> property. Played songs are popped similarly to the idqueue operator, using the <code>history</code> property. More property could be added to further customize this operator.
+
+Notes:
+* List operators are especially useful to include or exclude some given media from a collection (using the set operators), and to create playlists!
+* Special functions should be made available to create, edit and reorder the list of ids in a list operator.
