@@ -1,7 +1,7 @@
 ==Todo==
-:&#10003; Finish JavaScript implementation of PropDict and use it through out TurboX2 
-:&#10003; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
-:&#10003; Playlist Optimisation - general optimistation for large lists of data 
-:&#10003; General cleanup and refactoring - object orientation for the javascript and python is a plus
-:&#10003; Get a working implementation of Views with at least a View that mimics the current artist-album view
-:&#10003; Get things working with python's distutils so that TurboX2 can be redistriubted
+:&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
+:&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
+:&#10063; Playlist Optimisation - general optimistation for large lists of data 
+:&#10063; General cleanup and refactoring - object orientation for the javascript and python is a plus
+:&#10063; Get a working implementation of Views with at least a View that mimics the current artist-album view
+:&#10063; Get things working with python's distutils so that TurboX2 can be redistriubted
