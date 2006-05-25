@@ -42,6 +42,9 @@ Good luck!
 
 p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'. A 'proposed task' is an idea or a task that the XMMS2 team put forward (proposed) as something a student could work on, to contribute to the project. A student's 'proposal' may be derived from a 'proposed task', but is a document where the student lays out in detail what he/she is prepared to contribute and how he/she is proposing to do it over the Summer of Code period. This doesn't mean that a student proposal has to be perfect the first time around - mentors are willing to talk to individual students in order to refine the proposals prior to final ranking.}}
 
+== Accepted Projects ==
+[[SoC:TurboX2|TurboX2 Summer of Code Page]]
+
 == Proposed projects ==
 
 Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects. Please note that the XMMS2 team reserves the right to limit the number of projects accepted to ensure that mentors don't have to keep track of too many students.
