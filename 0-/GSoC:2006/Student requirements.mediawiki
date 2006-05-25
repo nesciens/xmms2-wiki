@@ -14,4 +14,7 @@
 ** Details of your school/university/college enrollment: which institution, what your highest education level is so far, whether you're specialising or majoring in particular subjects..
 ** Why are you well suited to complete this project?
 
+=== Proposal Example ===
+For an example of what your proposal could look like, see [http://exodus.xmms.se/~andersg/SoC_example.txt SoC_example.txt]. Make sure your proposal is correctly linewrapped to fit in 80 cols (as google's interface doesn't reflow text).
+
 [[Category:Summer of Code 2006]]
