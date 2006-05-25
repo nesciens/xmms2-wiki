@@ -36,3 +36,5 @@ You might also want to check out:
 == Other Ideas? ==
 
 {{SoCItem| title=GTK2/GNOME medialib centric client for xmms2| description=This project would be to develop a client using the GTK2 toolkit and possibly GNOME UI extensions. The goal of this client would be to be oriented around the Media Library in a fashion analagous to RhythmBox or iTunes, but with a distinctly XMMS2 colour. Students interested in working on this should contact [[Alexander Botero-Lowry]] as he has some code they might use as a starting place.|lang=Python / C / C++ / Ruby / Perl| level=Medium| mentor=[[Tobias RundstrÃ¶m]]}}
+
+[[Category:Summer of Code 2006]]
