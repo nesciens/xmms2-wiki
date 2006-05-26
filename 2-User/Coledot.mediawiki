@@ -1,0 +1,1 @@
+Cole Thompson, aka coledot, will be working on implementing DAAP support in XMMS2. He is a student at the University of Minnesota: Twin Cities, pursuing an undergrad degree in Computer Science. He can be reached at cole.thompson@gmail.com, or coledot on AIM.
