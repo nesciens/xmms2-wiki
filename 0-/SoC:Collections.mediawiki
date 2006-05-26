@@ -1,7 +1,6 @@
 = Presentation =
 
-[[User:Theefer|theefer]] speaking here, about his work on the ''Collections'' task for [http://code.google.com/soc|Google Summer of Code 2006].
-
+[[User:Theefer|theefer]] speaking here, about his work on the ''Collections'' task for [http://code.google.com/soc Google Summer of Code 2006].
 
 = Project Synopsis and Benefits to the Community =
 
