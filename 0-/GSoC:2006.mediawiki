@@ -33,7 +33,7 @@ p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'.
 
 == Accepted Projects ==
 
-* Support for DAAP
+* [[SoC:DAAP | Support for DAAP]]
 ** '''Student''': Cole Thompson
 ** '''Mentor''': Tobias RundstrÃ¶m
 
