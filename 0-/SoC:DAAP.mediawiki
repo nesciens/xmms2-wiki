@@ -1,0 +1,21 @@
+DAAP support is being worked on by [[User:Coledot|coledot]], as part of Google's Summer of Code 2006.
+
+== Overview ==
+
+With the increasing popularity of Apple's iTunes, many media players are attempting to duplicate its functionality. One well-known feature, introduced in iTunes version 4.0, is the ability to let a user share his or her music library over their local network via DAAP (Digital Audio Access Protocol). To include the ability to access such music shares would improve compatibility between XMMS2 and iTunes, as well as introduce an often-requested feature. The aim of this project is to implement the functionality for accessing these music shares.
+
+== TODO ==
+
+#Evaluate the available options for DAAP implementation. This includes DAAP libraries (e.g. libopendaap) and existing implementations (e.g. Rhythmbox). Each option will be reviewed to determine which one would work best for XMMS2. However, the possibility of using libopendaap is slim, since it lacks good documentation and is not widely used.
+#Design a method of communication between DAAP servers and the XMMS2 server, using the method determined above. This would require a Zeroconf implementation; Avahi [http://avahi.org/] would work great for this purpose.
+#Design an interface/API for XMMS2 clients to control access to DAAP shares. Somewhere in either this step or the step above, transforms will be included in the design, for the purpose of either requesting or serving music (or both?).
+#Implement the designs detailed in the previous two steps. Easier said than done, I'm sure. ;)
+#(Optional?) Write documentation detailing how a client can control DAAP; detail which functions can be used for access.
+#If time permits (and it's likely it will), design and implement the other direction; write up a DAAP server that shares the user's Medialib. This shouldn't be terribly difficult after gaining familiarity with the protocol from all the previous work.
+
+I have estimated the work above will take about 7 weeks to hammer out, but if additional time needs to be allocated, it will be available, as the Summer of Code runs for roughly 12 weeks.
+
+===Optional Ideas===
+These options are to be considered once the above is done and all major bugs are squished.
+*Some iTunes music shares are password protected; some method of authenticating would be nice in these cases.
+*more to come...
