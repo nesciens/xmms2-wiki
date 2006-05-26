@@ -1,3 +1,8 @@
+==Introduction==
+TurboX2 is one of the more advanced XMMS2 clients around. It has a lot of nice features and an interesting, interface with which to work. TurboX2 has suffered a bit of neglect, and could really use some love to get
+it up to release quality. The goal of this Summer of Code project more abstractly is to make a stable release
+that can be used without much issue on a number of web browsers and with an ease of installation that a moderately competent user could install and use it. 
+
 ==Todo==
 :&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
