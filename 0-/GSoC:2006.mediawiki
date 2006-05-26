@@ -10,7 +10,8 @@ See [[Summer of Code 2006/Student_requirements]]
 == Deadlines ==
 
 Current deadlines:
-* '''June 1st, 2006''' (2006-06-01): Mid-term evaluations due (mentors)
+* '''June 26th, 2006''' (2006-06-26): Mid-term evaluation period starts (mentors)
+* '''July 1st, 2006''' (2006-07-01): Mid-term evaluations due (mentors)
 
 == News ==
 
