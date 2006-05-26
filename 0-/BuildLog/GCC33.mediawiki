@@ -1,6 +1,6 @@
-Build log generated Thu May 25 13:37:28 2006
-Build took 26 seconds
-Version: 03691b3a9049d29a8ff5a3820367b538da0185f8
+Build log generated Fri May 26 13:37:29 2006
+Build took 27 seconds
+Version: e3b046b31df8dc83389baeb7f052fd4245ab8fa8
 
 ==Warnings==
  [[BuildLog/GCC33#h379|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
