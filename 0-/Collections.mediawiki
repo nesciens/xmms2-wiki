@@ -1,3 +1,5 @@
+''This concept is a work in progress as part of Google's [[Summer of Code 2006]]. For more information, see [[SoC:Collections]].''
+
 == Collections ==
 
 Some XMMS2 clients want to use collections.  It could be useful to brainstorm on that topic to see whether it is best implemented in the client or the server.  To do that, we should first agree on what ''is'' a collection and what it is used for.
