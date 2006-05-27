@@ -1,3 +1,23 @@
+== Release Notes ==
+
+=== Upgrading ===
+
+=== Noteworthy changes ===
+
+==== Feature additions ====
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+No new platforms has been added to DrEvil
+
+=== Notes to client authors ===
+
+=== Notes to plugin authors ===
+
+=== Full ChangeLog ===
+
 '''Alexander Botero-Lowry'''
 * {{Bug|665}} -  Updated manpages.
 * {{Bug|774}} -  Manpage for the xmms2-et program
