@@ -6,6 +6,8 @@ that can be used without much issue on a number of web browsers and with an ease
 ==PropDict==
 PropDict is more or less complete. I need to MochiKitify a lot of the code, because I'm going to pretend to myself that they do things more efficently then I do. (Though I looked and they iterate over Arrays to find indices just like I do). Otherwise PropDict is working nicely, with support for wildcard sources, has_key and get_value. Only major thing I might do is to throw an exception in the case of a get_value that doesn't return a result for consistency with how Python's PropDict works.
 
+'''Update''': So I decided to pull out those statistics I learned in High School supposidly and run a t-Test on the benchmark linked in resources. It seems that there is no statistically significant difference between the two data sets. Doesn't really matter which I use I guess.
+
 ==Todo==
 :&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
