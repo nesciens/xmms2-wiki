@@ -1,6 +1,6 @@
-Build log generated Fri May 26 13:38:16 2006
-Build took 33 seconds
-Version: e3b046b31df8dc83389baeb7f052fd4245ab8fa8
+Build log generated Sat May 27 13:38:14 2006
+Build took 34 seconds
+Version: 7d1afcb838fa14f9c170184c7a69899ae3f7c83a
 
 ==Warnings==
  [[BuildLog/GCC33-O2#h52|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
