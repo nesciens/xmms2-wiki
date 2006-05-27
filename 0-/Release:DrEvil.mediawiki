@@ -1,0 +1,101 @@
+'''Alexander Botero-Lowry'''
+* {{Bug|665}} -  Updated manpages.
+* {{Bug|774}} -  Manpage for the xmms2-et program
+'''Anders Gustafsson'''
+* {{Bug|144}} -  xform plugins
+* {{Bug|733}} -  Use new plugin api.
+* {{Bug|733}} -  Disable plugins not ported yet.
+* {{Bug|733}} -  Fix shutdown of new plugin api.
+* {{Bug|757}} -  Buffer in output.c
+* {{Bug|815}} -  Implement seeking in eq.
+* {{Bug|831}} -  Allow metadata to be set after init in xform plugins.
+* {{Bug|833}} -  Support arguments in url (not implemented in clientlib yet)
+* {{Bug|740}} -  Fix wildcard handling in source preference in python bindings.
+* {{Bug|741}} -  Put plugins/* in default source preference.
+* {{Bug|737}} -  Include correct file in sdl-vis.
+* {{Bug|744}} -  Kill xmms_audio_format_t
+* {{Bug|750}} -  Do xmms_medialib_entry_cleanup in xmms_xform_metadata_collect.
+* {{Bug|758}} -  Start cleaning up output.c
+* {{Bug|758}} -  Move api_mutex to outputplugin.c
+* {{Bug|758}} -  White space cleanups.
+* {{Bug|759}} -  Reenable id3v1 in mad.
+* {{Bug|760}} -  Fix seeking in id3v2 plugin.
+* {{Bug|620}} -  Remove some more uses of XMMS_OS_*
+* {{Bug|771}} -  Seeking in vorbis.
+* {{Bug|631}} -  Redo xing+crc fix that got lost in xforms conversion.
+* {{Bug|795}} -  Handle unsync-flag in id3v2 tags.
+* {{Bug|822}} -  Filler shouldn't go to running state if killed in stopped state.
+* {{Bug|830}} -  Fix race on filler buffer in output. (simplify locking too)
+* {{Bug|792}} -  Send medialib_entry_changed broadcasts correctly.
+* {{Bug|792}} -  Remove bad xmmsc_result_unref in broadcast handler, causing broadcast not to be called anymore.
+* {{Bug|840}} -  Remove the numerous amount of references to mad in id3v2 plugin.
+* {{Bug|840}} -  Minor whitespace cleanups in id3v2.
+'''Daniel KamiÃ±ski'''
+* {{Bug|734}} -  Add "mlib remove" command in cli.
+'''Daniel Svensson'''
+* {{Bug|144}} -  Update plugins
+* {{Bug|327}} -  Hide stderr when running configuration tools.
+* {{Bug|735}} -  Actually use xmms_plugin_type_t
+'''Georg Schild'''
+* {{Bug|720}} -  javabindings codecleanups
+* {{Bug|724}} -  Improve java bindings.
+* {{Bug|752}} -  Make javabindings build with gcc 2.95
+* {{Bug|766}} -  JMain needs xmmsc_io_disconnect() when spinning down
+* {{Bug|776}} -  Fix license on some files in java bindings.
+* {{Bug|777}} -  Fix java coding style.
+* {{Bug|778}} -  Fix parameter for pluginList*() in Xmms2.java to follow
+* {{Bug|810}} -  Improve javabindings (old and new). JMain works better now and Xmms2Backoffice uses wait/notify for locking
+'''Jonas Berlin'''
+* {{Bug|144}} -  Update curl to xforms API.
+* {{Bug|800}} -  Throw away peek buffer only when seek succeeds.
+* {{Bug|756}} -  Round duration correctly in cli.
+* {{Bug|772}} -  Reimplement seeking in wave plugin.
+* {{Bug|806}} -  Make id3v2 & nulstripper seek functions return correct value.
+* {{Bug|804}} -  Fix seeking of mp3 in wave.
+'''Jonne Lehtinen'''
+* {{Bug|745}} -  xmmsc_medialib_remove_entry should take uint32_t instead of int32_t
+'''Juho VÃ¤hÃ¤-Herttua'''
+* {{Bug|144}} -  Update plugins
+* {{Bug|784}} -  Gapless playback of Nero encoded AAC files.
+* {{Bug|815}} -  Replace the old equalizer with a new one from EQU project.
+* {{Bug|115}} -  Include ASF/WMA transform plugin which uses ffmpeg library.
+* {{Bug|769}} -  Fix ringbuf bug causing underrun loops on eos.
+* {{Bug|829}} -  Make equalizer plugin check for enabled config value.
+* {{Bug|678}} -  Glibify time() call in mediainfo.c.
+* {{Bug|832}} -  Fix pkgconfig value of WMA to be correct.
+'''Pauli Virtanen'''
+* {{Bug|725}} -  Wrapper for xmmsc_medialib_playlist_list in Python bindings
+'''Sebastien Cevey'''
+* {{Bug|755}} -  Change xmmsc_result_source_preference_set to take char**
+'''Tilman Sauerbeck'''
+* {{Bug|144}} -  Updated plugins
+* {{Bug|834}} -  Added Xmms::VERSION.
+* {{Bug|721}} -  Properly evaluate the dict in handle_config().
+* {{Bug|722}} -  Use xmms_ipc_msg_put_uint32() to store the unsigned int new_pos in xmmsc_playlist_move() instead _put_int32().
+* {{Bug|723}} -  Don't enforce that XMMS_PATH is set.
+* {{Bug|653}} -  Wrap xmmsc_medialib_playlist_list() in the Ruby bindings.
+* {{Bug|736}} -  Support MP3 data in wave files.
+* {{Bug|754}} -  Fixed propdict handling.
+* {{Bug|767}} -  Temporary fix. atm, only the first xform in the chain doesn't have a plugin set, so we gather meta data from all the xforms but the first one.
+* {{Bug|768}} -  Added nulstripper transform.
+* {{Bug|770}} -  Ported effect stuff to transforms. Replaygain only atm.
+* {{Bug|779}} -  Use peek instead of reads in nulstripper so we can get rid of the seek call.
+* {{Bug|780}} -  Cleaned up compute_gain() calls.
+* {{Bug|785}} -  Spelling fixes.
+* {{Bug|809}} -  Read replaygain tags for FLACs. Note that only 'modern' style rp tags are read. I don't know whether FLAC wrote 'old' style tags at a point.
+* {{Bug|808}} -  Unbreak FLAC tags.
+* {{Bug|811}} -  Unbreak xmms_output_volume_get().
+* {{Bug|773}} -  Only store id3v1 tags when the metadata property hasn't been set before (ie when there's no equivalent id3v2 tag). Not configurable yet.
+* {{Bug|653}} -  Add xmmsc_configval_register() to the Ruby bindings.
+* {{Bug|812}} -  Check arguments in xmmsc_*.
+* {{Bug|813}} -  Ignore seek requests for +0/-0 seconds. Also improved argument handling.
+* {{Bug|814}} -  Read "comment" tags for Vorbis and FLAC files.
+* {{Bug|816}} -  Don't do the utf8-to-locale conversion for data that will be g_print()'ed, because it will handle the conversion itself.
+'''Tobias Rundstrom'''
+* {{Bug|114}} -  Update plugins
+* {{Bug|761}} -  Make log function include file:row
+* {{Bug|840}} -  Cleanup id3v2 plugin, remove all refrences to mad
+* {{Bug|730}} -  Fix compilation flags for mDNS/dns_sd
+* {{Bug|739}} -  C89 fixes.
+* {{Bug|762}} -  Remove views from medialib.
+* {{Bug|781}} -  When a client edits mlib-entries the mlib_entry_changed_broadcast is now called
