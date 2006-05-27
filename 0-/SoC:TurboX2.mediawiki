@@ -18,3 +18,6 @@ PropDict is more or less complete. I need to MochiKitify a lot of the code, beca
 :&#10063; Get a working implementation of Views with at least a View that mimics the current artist-album view
 :&#10063; Get things working with python's distutils so that TurboX2 can be redistriubted
 ::&#10063; FreeBSD port!
+
+==Resources==
+[http://exodus.xmms.se/~alex/benchmark/test.html Benchmark of PropDict implementations] - The first five are PropDict using MochiKit's findValue() to find indicies of values in an array, the second is using my own method.
