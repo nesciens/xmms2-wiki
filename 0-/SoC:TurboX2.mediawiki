@@ -3,10 +3,18 @@ TurboX2 is one of the more advanced XMMS2 clients around. It has a lot of nice f
 it up to release quality. The goal of this Summer of Code project more abstractly is to make a stable release
 that can be used without much issue on a number of web browsers and with an ease of installation that a moderately competent user could install and use it. 
 
+==PropDict==
+PropDict is more or less complete. I need to MochiKitify a lot of the code, because I'm going to pretend to myself that they do things more efficently then I do. (Though I looked and they iterate over Arrays to find indices just like I do). Otherwise PropDict is working nicely, with support for wildcard sources, has_key and get_value. Only major thing I might do is to throw an exception in the case of a get_value that doesn't return a result for consistency with how Python's PropDict works.
+
 ==Todo==
 :&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
-:&#10063; Playlist Optimisation - general optimistation for large lists of data 
+:&#10063; Playlist Optimisation - general optimistation for large lists of data
+::&#10063; Do not update the playlist unless its contents have changed
+::&#10063; Find or write a lazy loading widget for the playlist and any other large list
+::&#10063; Ressurect the /mediainfo controller used to do resolving of mediainfo by ID
 :&#10063; General cleanup and refactoring - object orientation for the javascript and python is a plus
+::&#10063; Also look into making the Python backend async by somehow tying it into CherryPy's mainloop if possible
 :&#10063; Get a working implementation of Views with at least a View that mimics the current artist-album view
 :&#10063; Get things working with python's distutils so that TurboX2 can be redistriubted
+::&#10063; FreeBSD port!
