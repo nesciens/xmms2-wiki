@@ -1,0 +1,5 @@
+== Overview ==
+
+ALAC is an audio codec by Apple that uses lossless compression at low storage and decoding costs. The goal of this project is to
+1. Integrate an ALAC decoder for playing ALAC formatted files (.mp4) in XMMS2.
+2. Develop an ALAC encoder to stream XMMS2 music to Airport Express.
