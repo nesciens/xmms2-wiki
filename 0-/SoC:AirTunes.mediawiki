@@ -74,7 +74,7 @@ Clean-up and Document the project code.
 
 == References ==
 
-[1] http://craz.net/programs/itunes/alac.html
-[2] http://www.nanocrew.net/software/justeport/
-[3] http://sourceforge.net/projects/raop-play/
+[1] http://craz.net/programs/itunes/alac.html<br>
+[2] http://www.nanocrew.net/software/justeport/<br>
+[3] http://sourceforge.net/projects/raop-play/<br>
 [4] http://avahi.org/
