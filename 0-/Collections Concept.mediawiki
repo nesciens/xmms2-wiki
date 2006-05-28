@@ -121,6 +121,7 @@ Set operators allow grouping and combination of multiple collections.
 [[Image:Collection-operators-set.png|frame|center|Collection ''set'' operators]]
 
 The output of set operators is a mediaset.
+The input is a list of collections (two on the figure, but there can be more).
 
 Description of the operators:
 
@@ -135,6 +136,7 @@ Filter operators impose restrictions on collections.
 [[Image:Collection-operators-filter.png|frame|center|Collection ''filter'' operators]]
 
 The output of filter operators is a mediaset.
+The input is the collection to filter.
 
 Filter operators are configured using their two properties:
 
