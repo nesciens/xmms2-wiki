@@ -29,3 +29,53 @@ our own RAOP xform based on the reverse-engineered tools. A second goal is
 to implement the discovery of Airport Express(es) on local network using
 Appleâ€™s Bonjour service discovery protocol. This can be done using a Bonjour
 client library [4].
+
+----
+== Why this project? ==
+
+This project is also borne out of a personal need: I would like to stream my
+XMMS music library to the Airport Express. There are tools like
+[2] and [3] which allow you to do that under Linux but they are very hard
+and unintuitive to use. I would like to have a tool which is integrated in the
+music player itself (like iTunes). As a side-effect of this work, XMMS2 will
+also gain the ability to encode/decode ALAC codec. Once finished, I think
+XMMS2 will be the first media player under Linux to support both these
+ features.
+
+----
+
+== Proposed Timeline ==
+
+May 24th - June 10th:
+Read up on the ALAC decoder [1].
+Get familiar with XMMS2 architecture and the xforms plugin interface.
+
+June 11th - June 17th:
+Create a design spec for the ALAC encoder/decoder xforms plugins.
+
+June 18th - July 8th:
+Implement and test the ALAC decoder.
+
+July 9th - July 29th:
+Implement and test the ALAC decoder.
+
+July 16h - July 29th:
+Extend the plugin to handle iTunes authentication and sharing.
+Implement iTunes share discovery using Bonjour.
+
+July 30th - Aug 5th:
+Create a design spec for the RAOP xform plugins.
+
+Aug 6th - Aug 22nd:
+Implement and test the RAOP streaming xform plugin.
+Clean-up and Document the project code.
+
+
+----
+
+== References ==
+
+[1] http://craz.net/programs/itunes/alac.html
+[2] http://www.nanocrew.net/software/justeport/
+[3] http://sourceforge.net/projects/raop-play/
+[4] http://avahi.org/
