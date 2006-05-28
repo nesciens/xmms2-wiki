@@ -45,7 +45,7 @@ p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'.
 ** '''Student''': SÃ©bastien Cevey
 ** '''Mentor''': Anders Gustafsson
 
-* Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2
+* [[SoC:AirTunes | Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2]]
 ** '''Student''': Mohsin Patel
 ** '''Mentor''': Anders Gustafsson
 
