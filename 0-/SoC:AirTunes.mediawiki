@@ -8,3 +8,24 @@ ALAC is an audio codec by Apple that uses lossless compression at low storage an
 2. Develop an ALAC encoder to stream XMMS2 music to Airport Express.
 
 ----
+
+== Project Deliverables ==
+1. Implement an ALAC decoder in XMMS2 for playback
+In this task, I will write a Transforms plugin which will take an ALAC formatted
+file and will decode it into a PCM stream. ALAC is a closed standard but
+thankfully there is an existing reverse-engineered implementation of the ALAC
+decoder [1]. The main goal of this task would be to either integrate [1] or to
+write new code based on [1] (most probably former because [1] has a liberal
+license).
+
+2. Implement an ALAC encoder and remote streaming to Airport Express
+This task will require implementing an ALAC encoder based on the decoder
+in [1]. The xform for this task will be then used to chain into an â€œoutputâ€ xform to
+stream the data to Airport Express. The streaming protocol is called Remote
+Audio Output Protocol (RAOP) and has been reverse-engineered and
+implemented in open source tools like [2] and [3]. The main goal of this task is to
+derive the ALAC encoder from the open source decoder and then implement
+our own RAOP xform based on the reverse-engineered tools. A second goal is
+to implement the discovery of Airport Express(es) on local network using
+Appleâ€™s Bonjour service discovery protocol. This can be done using a Bonjour
+client library [4].
