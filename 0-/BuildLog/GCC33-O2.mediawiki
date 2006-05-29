@@ -1,14 +1,17 @@
-Build log generated Sun May 28 13:38:13 2006
-Build took 33 seconds
-Version: e454213f9b34eb9acdb727ffe1e363d8979cf875
+Build log generated Mon May 29 13:38:16 2006
+Build took 35 seconds
+Version: 80570eb2148f61a0f0c3fd67ec439c49b1343fdc
 
 ==Warnings==
  [[BuildLog/GCC33-O2#h53|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
  [[BuildLog/GCC33-O2#h59|Warning]]: src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h387|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33-O2#h315|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'
+ [[BuildLog/GCC33-O2#h316|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast
+ [[BuildLog/GCC33-O2#h317|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'
+ [[BuildLog/GCC33-O2#h318|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast
+ [[BuildLog/GCC33-O2#h392|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
- Checking for C header file sys/vfs.h... yes
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -23,6 +26,7 @@ Version: e454213f9b34eb9acdb727ffe1e363d8979cf875
  Checking for gthread-2.0  ... yes
  Checking for sqlite3  ... yes
  Checking for sin() in C library m... yes
+ Checking for C header file sys/vfs.h... yes
  Checking for glib-2.0  ... yes
  Checking for alsa  ... yes
  Checking for C header file AudioUnit/AudioUnit.h... no
@@ -283,37 +287,37 @@ Version: e454213f9b34eb9acdb727ffe1e363d8979cf875
  src/clients/lib/python/xmmsclient.c:6536: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:6547: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_set':
- src/clients/lib/python/xmmsclient.c:6626: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6639: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6628: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6641: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_remove':
- src/clients/lib/python/xmmsclient.c:6749: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6761: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6804: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6816: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_added':
- src/clients/lib/python/xmmsclient.c:6848: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6858: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6903: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6913: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_changed':
- src/clients/lib/python/xmmsclient.c:6914: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6924: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6969: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6979: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_playlist_loaded':
- src/clients/lib/python/xmmsclient.c:6980: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6990: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7035: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7045: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_visualisation_data':
- src/clients/lib/python/xmmsclient.c:7046: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7056: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7101: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7111: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_mediainfo_reader_unindexed':
- src/clients/lib/python/xmmsclient.c:7109: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7119: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7164: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7174: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_mediainfo_reader_status':
- src/clients/lib/python/xmmsclient.c:7172: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7182: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7227: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7237: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `initxmmsclient':
- src/clients/lib/python/xmmsclient.c:8113: warning: dereferencing type-punned pointer will break strict-aliasing rules
- src/clients/lib/python/xmmsclient.c:8117: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ src/clients/lib/python/xmmsclient.c:8169: warning: dereferencing type-punned pointer will break strict-aliasing rules
+ src/clients/lib/python/xmmsclient.c:8173: warning: dereferencing type-punned pointer will break strict-aliasing rules
  src/clients/lib/python/xmmsclient.c: In function `__Pyx_GetStarArgs':
- src/clients/lib/python/xmmsclient.c:8764: warning: suggest explicit braces to avoid ambiguous `else'
- src/clients/lib/python/xmmsclient.c:8766: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c:8820: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c:8822: warning: suggest explicit braces to avoid ambiguous `else'
  src/clients/lib/python/xmmsclient.c: In function `__Pyx_EndUnpack':
- src/clients/lib/python/xmmsclient.c:8816: warning: suggest parentheses around assignment used as truth value
+ src/clients/lib/python/xmmsclient.c:8872: warning: suggest parentheses around assignment used as truth value
  src/clients/lib/python/xmmsclient.c: At top level:
  src/clients/lib/python/xmmsclient.c:1959: warning: `__pyx_doc_10xmmsclient_10XMMSResult___dealloc__' defined but not used
  src/clients/lib/python/xmmsclient.c:2058: warning: `__pyx_doc_10xmmsclient_4XMMS___new__' defined but not used
@@ -321,6 +325,11 @@ Version: e454213f9b34eb9acdb727ffe1e363d8979cf875
  gcc-3.3 -shared -o src/clients/lib/python/xmmsclient.so src/clients/lib/python/xmmsclient.os -Lsrc/clients/lib/xmmsclient -lxmmsclient
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_result.os src/clients/lib/ruby/rb_result.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_xmmsclient.c
+ src/clients/lib/ruby/rb_xmmsclient.c: In function `c_medialib_entry_property_set':
+ <span id="h315">src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'</span>
+ <span id="h316">src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast</span>
+ <span id="h317">src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'</span>
+ <span id="h318">src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast</span>
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient_ecore.os src/clients/lib/ruby/rb_xmmsclient_ecore.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/ruby/rb_xmmsclient_glib.os src/clients/lib/ruby/rb_xmmsclient_glib.c
  Substituting vars from src/include/xmms/xmms_defs.h.in into src/include/xmms/xmms_defs.h
@@ -382,30 +391,30 @@ Version: e454213f9b34eb9acdb727ffe1e363d8979cf875
  gcc-3.3 -shared -o src/plugins/vorbis/libxmms_vorbisfile.so src/plugins/vorbis/vorbisfile.os -lSDL_ttf -lvorbisfile
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/wave/wave.os src/plugins/wave/wave.c
  gcc-3.3 -shared -o src/plugins/wave/libxmms_wave.so src/plugins/wave/wave.os -lSDL_ttf
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/config.o src/xmms/config.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/config.o src/xmms/config.c
  /usr/bin/python src/xmms/generate-converter.py > src/xmms/converter.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/converter_plugin.o src/xmms/converter_plugin.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/error.o src/xmms/error.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ipc.o src/xmms/ipc.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/log.o src/xmms/log.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/magic.o src/xmms/magic.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h387">src/xmms/output.c:63: warning: parameter has incomplete type</span>
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf.o src/xmms/ringbuf.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/statfs.o src/xmms/statfs.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
- gcc-3.3 -Wall -O2 -pthread -pthread -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/converter_plugin.o src/xmms/converter_plugin.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/error.o src/xmms/error.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ipc.o src/xmms/ipc.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/log.o src/xmms/log.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/magic.o src/xmms/magic.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
+ <span id="h392">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf.o src/xmms/ringbuf.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/statfs.o src/xmms/statfs.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
+ gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/xform.o src/xmms/xform.c
  gcc-3.3 -Wall -O2 -Isrc/include -c -o src/xmms/xmms2-launcher.o src/xmms/xmms2-launcher.c
  gcc-3.3 -o src/xmms/xmms2-launcher src/xmms/xmms2-launcher.o -lSDL_ttf -lm -lFLAC -lmad -lvorbisfile
  gcc-3.3 -Wl,--export-dynamic -pthread -pthread -o src/xmms/xmms2d src/xmms/main.o src/xmms/sample.o src/xmms/config.o src/xmms/mediainfo.o src/xmms/sqlite.o src/xmms/medialib.o src/xmms/object.o src/xmms/error.o src/xmms/output.o src/xmms/unixsignal.o src/xmms/playlist.o src/xmms/ipc.o src/xmms/log.o src/xmms/plugin.o src/xmms/magic.o src/xmms/ringbuf.o src/xmms/xform.o src/xmms/streamtype.o src/xmms/converter_plugin.o src/xmms/ringbuf_xform.o src/xmms/outputplugin.o src/xmms/statfs.o -Lsrc/lib/xmmssocket -Lsrc/lib/xmmsipc -lSDL_ttf -lxmmsipc -lxmmssocket -lglib-2.0 -lgmodule-2.0 -ldl -lglib-2.0 -lgthread-2.0 -lglib-2.0 -lsqlite3 -lm
