@@ -10,6 +10,8 @@ PropDict is more or less complete. I need to MochiKitify a lot of the code, beca
 
 '''Update''': So I decided to pull out those statistics I learned in High School supposidly and run a t-Test on the benchmark linked in resources. It seems that there is no statistically significant difference between the two data sets. Doesn't really matter which I use I guess.
 
+'''Further Updates''': PropDict is now integrated into the Status area and into the Medialib view. They both now also use the /mediainfo controller which means that they do resolving. As in, we put a temp text entry at an ID and then once we have mediainfo we swap out the temp text for real mediainfo data. The advantage of this is that it's half the work necessary to do lazy loading, it also means that you get an indication that things are working before they finish working, and part of the joy of AJAX is constant updates!
+
 ==Todo==
 :&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
