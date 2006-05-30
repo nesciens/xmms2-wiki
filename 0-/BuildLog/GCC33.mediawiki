@@ -1,6 +1,6 @@
-Build log generated Mon May 29 13:37:29 2006
+Build log generated Tue May 30 13:37:28 2006
 Build took 26 seconds
-Version: 80570eb2148f61a0f0c3fd67ec439c49b1343fdc
+Version: ef40d5086368a6140daf3ec7cce873fa72979096
 
 ==Warnings==
  [[BuildLog/GCC33#h308|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'
