@@ -5,6 +5,12 @@ that can be used without much issue on a number of web browsers and with an ease
 
 ==Schedule==
 For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
+
+==Performance==
+An issue I always fear about raising with TurboX2 is two fold: scalability and performance. Javascript operations can be expensive, and so can http request operations. In consideration of this there is always a blancing act between what should be done server side and what should be done client side. What I think it comes down to is that the client is best at interface and general looks, with that in mind I think automatically generated templating is not a great idea. The reason the client is better for this is an issue of flexiblity. The browser/client knows what the browser/client can do, information about the actual structure of the page is avaliable to the browser in a way it's not on the server side. So sizing and such can be done a lot better on the client side. The server is better at manipulating a lot of data, so it could be silly to have the client doing much manipulation. The server should push out complete data to the client. So that's why my tendency has been to move rendering and drawing operations into javascript. Still I'm afraid of the performance issues that have recently been reported to me, but I can't seem to reproduce them. I will continue to try different browsers to see if I can get a spike in CPU usage.
+
+
+
 ==PropDict==
 PropDict is more or less complete. I need to MochiKitify a lot of the code, because I'm going to pretend to myself that they do things more efficently then I do. (Though I looked and they iterate over Arrays to find indices just like I do). Otherwise PropDict is working nicely, with support for wildcard sources, has_key and get_value. Only major thing I might do is to throw an exception in the case of a get_value that doesn't return a result for consistency with how Python's PropDict works.
 
