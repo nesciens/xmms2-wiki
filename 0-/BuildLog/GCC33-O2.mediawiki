@@ -1,15 +1,11 @@
-Build log generated Tue May 30 13:38:18 2006
-Build took 37 seconds
-Version: ef40d5086368a6140daf3ec7cce873fa72979096
+Build log generated Wed May 31 13:38:17 2006
+Build took 36 seconds
+Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
 
 ==Warnings==
  [[BuildLog/GCC33-O2#h53|Warning]]: src/clients/cli/cmd_other.c:40: warning: `type' might be used uninitialized in this function
  [[BuildLog/GCC33-O2#h59|Warning]]: src/clients/cli/common.c:191: warning: `res' might be used uninitialized in this function
- [[BuildLog/GCC33-O2#h315|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'
- [[BuildLog/GCC33-O2#h316|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast
- [[BuildLog/GCC33-O2#h317|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'
- [[BuildLog/GCC33-O2#h318|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast
- [[BuildLog/GCC33-O2#h392|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33-O2#h387|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -325,11 +321,6 @@ Version: ef40d5086368a6140daf3ec7cce873fa72979096
  gcc-3.3 -shared -o src/clients/lib/python/xmmsclient.so src/clients/lib/python/xmmsclient.os -Lsrc/clients/lib/xmmsclient -lxmmsclient
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_result.os src/clients/lib/ruby/rb_result.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_xmmsclient.c
- src/clients/lib/ruby/rb_xmmsclient.c: In function `c_medialib_entry_property_set':
- <span id="h315">src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'</span>
- <span id="h316">src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast</span>
- <span id="h317">src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'</span>
- <span id="h318">src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast</span>
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient_ecore.os src/clients/lib/ruby/rb_xmmsclient_ecore.c
  gcc-3.3 -Wall -O2 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/ruby/rb_xmmsclient_glib.os src/clients/lib/ruby/rb_xmmsclient_glib.c
  Substituting vars from src/include/xmms/xmms_defs.h.in into src/include/xmms/xmms_defs.h
@@ -403,7 +394,7 @@ Version: ef40d5086368a6140daf3ec7cce873fa72979096
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h392">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h387">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -Wall -O2 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
