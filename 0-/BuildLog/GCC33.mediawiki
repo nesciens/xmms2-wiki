@@ -1,13 +1,9 @@
-Build log generated Tue May 30 13:37:28 2006
+Build log generated Wed May 31 13:37:28 2006
 Build took 26 seconds
-Version: ef40d5086368a6140daf3ec7cce873fa72979096
+Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
 
 ==Warnings==
- [[BuildLog/GCC33#h308|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'
- [[BuildLog/GCC33#h309|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast
- [[BuildLog/GCC33#h310|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'
- [[BuildLog/GCC33#h311|Warning]]: src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast
- [[BuildLog/GCC33#h385|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33#h380|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -316,11 +312,6 @@ Version: ef40d5086368a6140daf3ec7cce873fa72979096
  gcc-3.3 -shared -o src/clients/lib/python/xmmsclient.so src/clients/lib/python/xmmsclient.os -Lsrc/clients/lib/xmmsclient -lxmmsclient
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_result.os src/clients/lib/ruby/rb_result.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_xmmsclient.c
- src/clients/lib/ruby/rb_xmmsclient.c: In function `c_medialib_entry_property_set':
- <span id="h308">src/clients/lib/ruby/rb_xmmsclient.c:937: warning: implicit declaration of function `xmmsc_medialib_entry_property_set'</span>
- <span id="h309">src/clients/lib/ruby/rb_xmmsclient.c:940: warning: assignment makes pointer from integer without a cast</span>
- <span id="h310">src/clients/lib/ruby/rb_xmmsclient.c:942: warning: implicit declaration of function `xmmsc_medialib_entry_property_set_with_source'</span>
- <span id="h311">src/clients/lib/ruby/rb_xmmsclient.c:947: warning: assignment makes pointer from integer without a cast</span>
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient_ecore.os src/clients/lib/ruby/rb_xmmsclient_ecore.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/lib/ruby/rb_xmmsclient_glib.os src/clients/lib/ruby/rb_xmmsclient_glib.c
  Substituting vars from src/include/xmms/xmms_defs.h.in into src/include/xmms/xmms_defs.h
@@ -394,7 +385,7 @@ Version: ef40d5086368a6140daf3ec7cce873fa72979096
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h385">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h380">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
