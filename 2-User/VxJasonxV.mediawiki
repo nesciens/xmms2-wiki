@@ -3,7 +3,8 @@
 (But is that really a bad thing? :) )
 
 == Contributions ==
-Contributed to the DrDoolittle ET packet tests.<br>
+Contributed to the DrDolittle ET packet tests.<br>
+Contributed to the DrEvil ET packet tests.<br>
 Actively using GXMMS2 and providing feedback.
 
 == Capability for Abus- Testing ==
