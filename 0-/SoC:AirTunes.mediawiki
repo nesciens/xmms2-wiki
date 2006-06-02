@@ -48,29 +48,25 @@ XMMS2 will be the first media player under Linux to support both these features.
 
 == Proposed Timeline ==
 
-May 24th - June 10th:
+May 24th - June 15th:
+Create a design spec for the RAOP xform plugins.
+
+June 16th - June 29th:
+Implement and test the RAOP streaming xform plugin.
+
+June 30th - July 10th:
 Read up on the ALAC decoder [1].
 Get familiar with XMMS2 architecture and the xforms plugin interface.
 
-June 11th - June 17th:
+July 11th - July 17th:
 Create a design spec for the ALAC encoder/decoder xforms plugins.
 
-June 18th - July 8th:
+July 18th - August 16th:
 Implement and test the ALAC decoder.
 
-July 9th - July 29th:
-Implement and test the ALAC decoder.
-
-July 16h - July 29th:
+July 17h - August 22nd:
 Extend the plugin to handle iTunes authentication and sharing.
 Implement iTunes share discovery using Bonjour.
-
-July 30th - Aug 5th:
-Create a design spec for the RAOP xform plugins.
-
-Aug 6th - Aug 22nd:
-Implement and test the RAOP streaming xform plugin.
-Clean-up and Document the project code.
 
 
 ----
