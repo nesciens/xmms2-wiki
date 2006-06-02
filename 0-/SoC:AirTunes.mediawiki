@@ -64,7 +64,7 @@ Create a design spec for the ALAC encoder/decoder xforms plugins.
 July 18th - August 16th:
 Implement and test the ALAC decoder.
 
-July 17h - August 22nd:
+July 17th - August 22nd:
 Extend the plugin to handle iTunes authentication and sharing.
 Implement iTunes share discovery using Bonjour.
 
