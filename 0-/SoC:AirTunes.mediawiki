@@ -52,13 +52,13 @@ May 24th - June 15th:
 Create a design spec for the RAOP xform plugins.
 
 June 16th - June 29th:
-Implement and test the RAOP streaming xform plugin.
-
-June 30th - July 10th:
-Read up on the ALAC decoder [1].
 Get familiar with XMMS2 architecture and the xforms plugin interface.
 
+June 30th - July 10th:
+Implement and test the RAOP streaming xform plugin.
+
 July 11th - July 17th:
+Read up on the ALAC decoder [1].
 Create a design spec for the ALAC encoder/decoder xforms plugins.
 
 July 18th - August 16th:
