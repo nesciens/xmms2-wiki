@@ -1,85 +1,70 @@
 {{Navbar}}
 
-I got a few idea on how that could work (the design), so I'll try to explain what could be done.
-First of all, I'm not a DJ so dj's are more than welcome to tell their needs.
+== Why? ==
 
-== The setup (for a typical session) ==
-* 2 output streams (one for the mix and one for the earphone). So we probably need 2 sound cards.
-* An input/output plugin for xmm2d to send the stream to a xmm2d dedicated to mix the streams.
-* An xmms2d running for each stream plus one the mix the streams as sound cards can mix the streams by itself, the mixer might not be necessary.
-* Either a core that support multiple input/output or an input/output plugin that mix/duplicate the stream(s) from/on multiple input/output lugins. (I realize while writing this that it might no be necessary, but still nice to have.)
-* A client.
+DJing is fun! XMMS2 hacking is fun!
 
-== Another Idea ==
-Howabout running two xmms2d and two clients, both outputting to jack. And then another custom program could be created to manage the jack  
-stuff. For example, crossfading between the two xmms2d, effects(such as pitchshifting, and other beatmatching things). A button could be for switching the headphone/cue channel between either source. Then jack can output to your speakers, cue channel streaming software and recording software. Further more this could be optimised for radio by having the custom jack/xmms2d client manage other inputs for incoming VOIP, external sources such as vinyl, cd players, tape players, and be intergrated with a usb mixing board for hands on control. This could become a complete solution for radio built with ruby/xmms2/EFL's edje and jack. :D
 
-== How that could work together? ==
-The client start a bunch of xmms2d, one for each source. Each one can apply some effects on the
-stream. The DJ can choose where he want to output each stream, earphone/main stream. The streams
-choosen to be part of the main stream are passed to the mixer daemon which output to the sound card
-and as whe also have a multiple output plugin we can also output the stream in icecast.
+== How? ==
 
-<div><pre>
- sources
+                             +--xmms2d--+      +--headphones
+                            /            \     |
+   control-device--client--+              +--jackd--speakers
+                      |     \            /     |
+                      |      +--xmms2d--+      |
+                      +------------------------+
 
-   1 ---effects---+               +---sound card
-                   \             /
-   2 ---effects-----+---Mixer---+
-                   /             \
-   3 ---effects---+               +---ICEcast
 
-   4 ---effects--- earphone
-</pre></div>
+=== Xmms2d ===
 
-== Let's get a bit further ==
-Suppose we want to have an effect on multiple streams, let just put another
-xmms2d in the middle and perhaps output the resulting stream to 2 other xmms2d
-that add it with new sources and add another effect. So we have a new topology:
+Two or more xmms2ds each listening to a unique ipc socket, and using jack as output plugin. The xmms2 effect layer provides means for implementing all important DJ features like changing speed and equalising. A sophisticated equaliser already exists.
 
-<div><pre>
-sources
 
-   1 ---effects---+                 +---effects---+
-                   \               /               \
-                    +---effects---+                 +----Mixer--- ...
-                   /               \               /
-   2 ---effects---+                 +---effects---+
-                                   /
-   3 ---effects-------------------+
-</pre></div>
+=== Jackd ===
 
-That looks nice on paper, but having 7+ xmms2d plus a gui running at the same time might not be the
-so great. There is probably a way to get all that in one daemon, but having 10 sources playing at
-the same time might and it might not break the great design of xmms2.
+When running in realtime mode latencies of 2.9ms are easily achieved for a fairly modern computer. It's easy to manage the diffrent streams. Some scenarios:
+* Selecting what audio streams go to the speakers and what streams go to the headphones.
+* Connecting the output stream to an oddcast server enabling listeners from all over the world to hear your crazy mixes over the Internet.
+* Connecting the output stream to a recording program that stores your mixing session for later review.
 
-_____________________________________________________________________________________
 
-One thing that I wonder is, how do the big boys (Cubase, Logic, etc.) do it?  I have a midrange computer (Sempron 3000, 1gig ram, SB audigy platinum).  When sequencing with Cubase, I am able to have 8 individual wave files each with at least 4 different effect/not including different EQ setting per channel, and then compression for each channel on top of all that.  Even with that load, it is able to run in realtime and I can dynamically change all the parameters without any lag... just a though.
+=== Client ===
 
-== Misc Features ==
-Changing pitch by sending offset values to the resampler would perhaps be possible? After feeding a config value to the resampler one could feed it to an effect plugin too that compensates for the somewhat smurfified voices. This could be a nice feature for normal clients too, like a fast-forward button that sends a config value on press and another on release. BPM counter should fit somewhere too. We already seek by samples which is accurate engouh, but looping on the same sample would probably not be the easiest without uglifying the code. This is something you want to happen with very low latency..from playing->looping at a single sample, same goes for the pitch too, but with a small buffer we might be there? Will probably not happen unless someone figures out how to do this without messing up the current clean and shiny code. 
+A client capable of controlling two or more xmms2d's from a DJ friendly GUI.
 
-Feel free to add your comments, ideas, new designs...
+
+=== Control Device ===
+
+There are lots of cool hardware DJ controllers out there. Some using MIDI, some using USB joystick/keyboard protocol.
+
+
+== Then what? ==
+
+The development of a DJ client implementing the above items is in the works by [[Daniel Svensson]] and will hopefully grow somewhat usable during this summer. A test client that demonstrating the use of two xmms2d's connected to jack and a midi controller exists but main development starts when school ends (2:nd of June). There are a couple of technical issues that needs to be resolved, explained below.
+
+
+=== Phase Vocoder ===
+
+Juhovh has written a phase vocoder effect that allows for changing speed but keeping tone. On todo is to convert the code into an xmms2 xform effect plugin.
+
+
+=== BPM Detection ===
+
+Find a library suitable for BPM (beats per minute) detection. Maybe parts of BpmDJ could be turned into a library for this purpose. This will be performed clientside using the visualisation API.
+
+
+=== Cueing ===
+
+To find a cue point xmms2 needs to loop on a sample. This is not something that will be implemented in the server but instead could be done by seeking to a specific sample. To do this the clientlib API must be extended to signal playsamples updates, and the audable artefacts you get when seeking this much must be found and resolved.
+
+
+=== Waveform preview ===
+
+When loading a song in one of the decks you expect a modern DJ application to show a waveform preview of the song, perhaps one zoomed in, following playsamples updates, and one overview. This should be cached for fast loading. When a song is loaded and it's missing a waveform preview xmms2d switches to null output for fastest possible decoding of the file, and the client chews the audio data and stores a low resolution preview on disk. This will be performed clientside using the visualisation API.
+
+
+== Radio ==
+Further more this could be optimised for radio by having a custom jack/xmms2d client manage other inputs for incoming VOIP, external sources such as vinyl, cd players, tape players, and be intergrated with a usb mixing board for hands on control. This could become a complete solution for radio built with ruby/xmms2/EFL's edje and jack.
+
 
 [[Category: Developer ideas]]
-
-
-== DJ'ing Currently In XMMS1 ==
-
-
-I thought I could contribute to this idea by telling you how I currently DJ using XMMS.  I first switch to the jack plugin, start jackd with the following (to avoid lots of buffering from things such as clicking on windows and tabs):
-
-jackd -P 1 -d alsa -r 44100 -n 5
-
-I then start playing something in xmms, to create the output ports.  Then, I determine which ports these are, by using "jack_lsp".  I'll usually get two ports like: bio2jack_0_32083:out_0 bio2jack_0_32083:out_1.  I then use oddcastv3 to broadcast (it uses a config file for the server info), i.e.
-
-oddcastv3 -c /home/xevix/radio.cfg bio2jack_0_32083:out_0 bio2jack_0_32083:out_1
-
-Lastly, to connect my microphone to the newly created oddcast jack outputs, I use Jack Patch Bay and connect the two inputs from microphone to each of the 2 bio2jack ports, and voila.  To mute and unmute the microphone, I designated hotkeys in KDE which run the appropriate alsamixer commands, and to automate this entire process I created a shell script.  Hope this helps with your ideas... and hope this proves that you don't need two sound cards =).
-
-- XeviX (silverwolf86@hotmail.com)
-
-
-== External Links ==
-* [http://bpmdj.sourceforge.net/aftersplash.html bpmdj]
