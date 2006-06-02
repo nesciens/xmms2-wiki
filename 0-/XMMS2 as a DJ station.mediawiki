@@ -9,7 +9,7 @@ DJing is fun! XMMS2 hacking is fun!
 
                              +--xmms2d--+      +--headphones
                             /            \     |
-   control-device--client--+              +--jackd--speakers
+    controldevice--client--+              +--jackd--speakers
                       |     \            /     |
                       |      +--xmms2d--+      |
                       +------------------------+
@@ -36,7 +36,6 @@ A client capable of controlling two or more xmms2d's from a DJ friendly GUI.
 === Control Device ===
 
 There are lots of cool hardware DJ controllers out there. Some using MIDI, some using USB joystick/keyboard protocol.
-
 
 == Then what? ==
 
