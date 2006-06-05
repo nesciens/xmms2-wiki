@@ -187,3 +187,58 @@ Thus, a collection:
 It is therefore important to know what exactly we mean when we refer to a ''collection''.
 
 Sometimes, it can be made clearer by explicitely calling '''collection structure''' the DAG corresponding to the collection, and '''content of the collection''' the set of media matched by the collection (e.g. a client will create a ''collection structure'' and save it on the server, before querying it to list the ''content of the collection'').
+
+== <code>idlists</code> ==
+
+An '''<code>idlist</code>''' is an operator that stores a static list of media.
+
+It does not have any input; its output is the set of media it stores. When this output is used as the input for another operator (e.g. the <code>and</code> set operator), it is used as a set, that is in no particular order.  However, it is important to keep in mind that an <code>idlist</code> stores an '''ordered''' list of media.
+
+<Code>Idlists</Code> can therefore be used as playlists.  Only <code>idlist</code> operators can be saved in the ''Playlists'' namespace ; all collections in this namespace can be played as playlists and accessed using the standard collection and <code>idlist</code> modifiers.
+
+When an <code>idlist</code> operator is created, the list of media it contains must be specified.  It can be done either by providing a list of media ids, or by "feeding" the <code>idlist</code> with the content of a collection.  This is a key feature, as it allows to "instanciate" a collection as an <code>idlist</code> &mdash; a playlist &mdash; and therefore to ''play'' it!
+
+An <code>idlist</code> must be editable:
+* insertion of a new media at a given position ;
+* removal of a media at a given position ;
+* sorting of the list by one or several field ;
+* shuffling of the list ;
+* clearing of the list.
+
+These correspond to the functions provided by the current playlist API.  The next section explains how collections change the playlist management.
+
+== Playlists as Collections ==
+
+The playlist API needs a major refactoring.  Currently, there is one "active" playlist, which can be saved in the medialibrary under a given name.  The content of "saved" playlists can then be loaded into the "active" playlist. It is therefore similar to the way a player such as XMMS1 handles playlists (one active playlist, saved playlist files).
+
+The current API is very limited: saved playlists cannot be modified and the concept of an "active" playlist is confusing.
+
+The new playlist API is based on collections.  Hence, a playlist is simply a medialist saved in the ''Playlists'' namespace.  One of these medialists is referenced as the "current" playlist and songs are played sequentially from its content.  A <code>position</code> property in the collection indicated which song is played (or was last played, for non-current playlists).
+
+It is important to note that not all collections can be playlists: medialists can, but mediasets ''cannot''.  To be even more accurate, only '''<code>idlists</code>''' can be used as playlists.  The reason for this is hat otherwise, even with ''ordered'' sets of media, it would be impossible to reorder the playlist.  This would make playlists confusing in clients.
+
+Because the ''Playlists'' namespace only contains <code>idlist</code> collections, playlists always correspond to a static list of media (as opposed to a dynamic list obtained from a query); their content can therefore be modified, reordered, etc.
+
+However, this does not imply that all playlists have to be hand-picked.  List operators can automatically produce <code>idlists</code> from more complex sources, for instance the Party Shuffle operator.
+
+=== Advanced Collection Operator: Party Shuffle ===
+
+A '''Party Shuffle''' (inspired from the eponymous feature in iTunes) is a collection operator that takes a collection C as input and outputs a random medialist of media from C.  The size of the list of the list is determined by the <code>size</code> property of the operator.
+
+The resulting collection being a medialist, it can be used as a playlist.
+
+It is important to note that the output is '''not''' a random mediaset. Reading the content of the Party Shuffle twice returns the same list and not a new random list.  However, when it is used as a playlist and the top entry is being played, as soon as the song is finished the list is updated (played song popped out and a new random song enqueued at the end).  The same goes if a client removes media from the list: new random songs are enqueued to fill the list up to the correct size.  To "refresh" the shuffle, a client could therefore simply empty the playlist.
+
+In short, a Party Shuffle is a static collection automatically updated by playback or modification events, so as always to store <code>size</code> media.
+
+More customization properties could be handled (as does [http://amarok.kde.org/ amaroK]):
+* <code>remove played</code>: whether to pop played songs from the list.
+* <code>history size</code>: if <code>remove played</code> is activated, how many played songs should remain in history before they are popped.
+
+=== Advanced Collection Operator: Suggestion Shuffle ===
+
+''This is only a proposition, mainly to show how advanced playlists and operators can be.''
+
+A '''Suggestion Shuffle''' is a collection operator that uses online recommandation systems (e.g. [http://www.last.fm/ Last.Fm], [http://www.pandora.com/ Pandora]) to enqueue new songs according to the current content of the playlist.
+
+This type of playlist exists in the [http://amarok.kde.org/ amaroK] player.
