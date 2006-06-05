@@ -1,0 +1,8 @@
+ This is a small xmms2 dock written in python and pygtk. More features will come in future versions.
+
+Basic usage so far:
+
+ESC to quit
+ALT + Left Mouse to move Window
+
+Download [http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=14&lid=322]
