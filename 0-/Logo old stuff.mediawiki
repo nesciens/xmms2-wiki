@@ -91,3 +91,4 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 ** [http://jhuss.com/news.php?item.4.1 concept] big image and 32x32 concept of xmms2, and source in svg. contact jesus /at/ jhuss.com
 * [http://wiki.xmms2.xmms.se/index.php/User:Pete Pete's] proposals 
 * #1 - Abstract/SCFI look [http://img161.imageshack.us/img161/9914/xmms2logopete4jj.png Here]
+* [http://valessio.ul-jb.org/projetos/xmms2/xmms2.png XMMS2X] proposals valessio /at/ ul-jb.org
