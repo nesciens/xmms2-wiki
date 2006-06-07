@@ -83,7 +83,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 
 '''U'''
 '''V'''
-* [mailto:valessio@ul-jb.org ValessioBrito] - [http://valessio.ul-jb.org/projetos/xmms2/xmms2.png View XMMS2 X], [http://valessio.ul-jb.org/projetos/xmms2/xmms2.svg Svg Edit XMMS2 X]
+* [mailto:valessio@ul-jb.org ValessioBrito] - [http://valessio.ul-jb.org/projetos/xmms2/xmms2.png View XMMS2 X] and  [http://valessio.ul-jb.org/projetos/xmms2/xmms2_others.png others], [http://valessio.ul-jb.org/projetos/xmms2/ Svg directory]
 
 '''W'''
 '''X'''
