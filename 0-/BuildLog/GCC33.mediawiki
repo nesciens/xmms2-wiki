@@ -1,9 +1,12 @@
-Build log generated Fri Jun  9 13:37:37 2006
-Build took 25 seconds
-Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
+Build log generated Sat Jun 10 13:37:29 2006
+Build took 26 seconds
+Version: 06fc7bbe11be47a29ee4ad9271b98b5cab26c966
 
 ==Warnings==
- [[BuildLog/GCC33#h380|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33#h56|Warning]]: src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type
+ [[BuildLog/GCC33#h381|Warning]]: src/xmms/magic.c:429: warning: unused variable `data'
+ [[BuildLog/GCC33#h387|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
+ [[BuildLog/GCC33#h395|Warning]]: src/xmms/sqlite.c:57: warning: `upgrade_v21_to_v22' declared `static' but never defined
 ==Full log==
  scons: Reading SConscript files ...
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -29,6 +32,7 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  Checking for C header file FLAC/all.h... yes
  Checking for FLAC__seekable_stream_decoder_get_state() in C library FLAC... yes
  Checking for gnome-vfs-2.0  ... no
+ Checking for jack  ... yes
  Checking for C header file mad.h... yes
  Checking for mad_synth_init() in C library mad... yes
  Checking for libmms  ... no
@@ -47,7 +51,7 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  =====================================
   Configuration printout
  =====================================
- Enabled plugins: alsa, curl_http, diskwrite, equalizer, file, flac, icymetaint, id3v2, mad, modplug, null, nulstripper, oss, replaygain, vorbisfile, wave
+ Enabled plugins: alsa, curl_http, diskwrite, equalizer, file, flac, icymetaint, id3v2, jack, mad, modplug, null, nulstripper, oss, replaygain, vorbisfile, wave
  Default output: alsa
  scons: done reading SConscript files.
  scons: Building targets ...
@@ -59,6 +63,8 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_other.o src/clients/cli/cmd_other.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_playback.o src/clients/cli/cmd_playback.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_pls.o src/clients/cli/cmd_pls.c
+ src/clients/cli/cmd_pls.c: In function `cmd_addarg':
+ <span id="h56">src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type</span>
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_status.o src/clients/cli/cmd_status.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/common.o src/clients/cli/common.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/main.o src/clients/cli/main.c
@@ -112,203 +118,203 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  Generating 'src/clients/lib/python/xmmsclient.c' from 'src/clients/lib/python/xmmsclient.pyx'
  gcc-3.3 -g -Wall -O0 -Wno-unused-function -Wno-unused-label -fPIC -Isrc/include -I/usr/include/python2.3 -c -o src/clients/lib/python/xmmsclient.os src/clients/lib/python/xmmsclient.c
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_10XMMSResult_more_init':
- src/clients/lib/python/xmmsclient.c:966: warning: passing arg 2 of `xmmsc_result_notifier_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c:1010: warning: passing arg 2 of `xmmsc_result_notifier_set' from incompatible pointer type
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_set_need_out_fun':
- src/clients/lib/python/xmmsclient.c:2703: warning: passing arg 2 of `xmmsc_io_need_out_callback_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c:2819: warning: passing arg 2 of `xmmsc_io_need_out_callback_set' from incompatible pointer type
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_connect':
- src/clients/lib/python/xmmsclient.c:2823: warning: passing arg 2 of `xmmsc_disconnect_callback_set' from incompatible pointer type
+ src/clients/lib/python/xmmsclient.c:2939: warning: passing arg 2 of `xmmsc_disconnect_callback_set' from incompatible pointer type
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_quit':
- src/clients/lib/python/xmmsclient.c:2857: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:2867: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:2973: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:2983: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_plugin_list':
- src/clients/lib/python/xmmsclient.c:2923: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:2933: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3039: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3049: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_start':
- src/clients/lib/python/xmmsclient.c:2988: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:2998: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_stop':
- src/clients/lib/python/xmmsclient.c:3051: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3061: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_tickle':
+ src/clients/lib/python/xmmsclient.c:3104: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:3114: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3124: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_pause':
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_stop':
+ src/clients/lib/python/xmmsclient.c:3167: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:3177: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3187: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_current_id':
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_tickle':
+ src/clients/lib/python/xmmsclient.c:3230: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:3240: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3250: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_pause':
+ src/clients/lib/python/xmmsclient.c:3293: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3303: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_current_id':
+ src/clients/lib/python/xmmsclient.c:3356: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3366: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_ms':
- src/clients/lib/python/xmmsclient.c:3306: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3316: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3422: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3432: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_ms_rel':
- src/clients/lib/python/xmmsclient.c:3374: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3384: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3490: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3500: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_samples':
- src/clients/lib/python/xmmsclient.c:3442: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3452: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3558: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3568: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_seek_samples_rel':
- src/clients/lib/python/xmmsclient.c:3510: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3520: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3626: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3636: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_status':
- src/clients/lib/python/xmmsclient.c:3575: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3585: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3691: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3701: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_status':
- src/clients/lib/python/xmmsclient.c:3638: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3648: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3754: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3764: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_current_id':
- src/clients/lib/python/xmmsclient.c:3704: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3714: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3820: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3830: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_playtime':
- src/clients/lib/python/xmmsclient.c:3770: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3780: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3886: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3896: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_playback_playtime':
- src/clients/lib/python/xmmsclient.c:3833: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3843: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3949: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:3959: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_volume_set':
- src/clients/lib/python/xmmsclient.c:3902: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3912: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4018: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4028: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playback_volume_get':
- src/clients/lib/python/xmmsclient.c:3969: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:3979: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_volume_changed':
- src/clients/lib/python/xmmsclient.c:4032: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4042: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_shuffle':
+ src/clients/lib/python/xmmsclient.c:4085: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:4095: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4105: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playback_volume_changed':
+ src/clients/lib/python/xmmsclient.c:4148: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4158: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_shuffle':
+ src/clients/lib/python/xmmsclient.c:4211: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4221: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_insert':
- src/clients/lib/python/xmmsclient.c:4165: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4176: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4281: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4292: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_insert_id':
- src/clients/lib/python/xmmsclient.c:4246: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4256: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4362: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4372: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_add':
- src/clients/lib/python/xmmsclient.c:4317: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4328: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4433: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4444: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_add_id':
- src/clients/lib/python/xmmsclient.c:4393: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4403: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4509: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4519: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_remove':
- src/clients/lib/python/xmmsclient.c:4461: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4471: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4577: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4587: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_clear':
- src/clients/lib/python/xmmsclient.c:4526: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4536: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4642: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4652: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_list':
- src/clients/lib/python/xmmsclient.c:4589: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4599: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4705: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4715: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_sort':
- src/clients/lib/python/xmmsclient.c:4656: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4667: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4772: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4783: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_set_next_rel':
- src/clients/lib/python/xmmsclient.c:4732: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4742: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4848: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4858: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_set_next':
- src/clients/lib/python/xmmsclient.c:4800: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4810: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4916: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4926: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_move':
- src/clients/lib/python/xmmsclient.c:4871: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4881: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4987: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:4997: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_playlist_current_pos':
- src/clients/lib/python/xmmsclient.c:4938: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:4948: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5054: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5064: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playlist_current_pos':
- src/clients/lib/python/xmmsclient.c:5001: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5011: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5117: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5127: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_playlist_changed':
- src/clients/lib/python/xmmsclient.c:5067: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5077: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5183: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5193: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_configval_changed':
- src/clients/lib/python/xmmsclient.c:5133: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5143: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5249: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5259: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_set':
- src/clients/lib/python/xmmsclient.c:5207: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5219: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5323: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5335: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_get':
- src/clients/lib/python/xmmsclient.c:5294: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5305: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5410: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5421: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_list':
- src/clients/lib/python/xmmsclient.c:5367: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5377: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5483: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5493: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_configval_register':
- src/clients/lib/python/xmmsclient.c:5438: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5450: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5554: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5566: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_select':
- src/clients/lib/python/xmmsclient.c:5525: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5536: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5641: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5652: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_add_entry':
- src/clients/lib/python/xmmsclient.c:5633: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5644: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5749: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5760: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_save_current':
- src/clients/lib/python/xmmsclient.c:5710: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5721: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5826: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5837: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_load':
- src/clients/lib/python/xmmsclient.c:5787: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5798: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5903: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5914: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_get_info':
- src/clients/lib/python/xmmsclient.c:5863: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5873: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5979: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:5989: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_add_to_playlist':
- src/clients/lib/python/xmmsclient.c:5932: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:5943: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6048: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6059: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlists_list':
- src/clients/lib/python/xmmsclient.c:6005: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6015: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6121: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6131: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_list':
- src/clients/lib/python/xmmsclient.c:6071: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6081: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6187: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6197: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_import':
- src/clients/lib/python/xmmsclient.c:6144: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6156: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6260: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6272: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_rehash':
- src/clients/lib/python/xmmsclient.c:6231: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6241: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6347: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6357: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_get_id':
- src/clients/lib/python/xmmsclient.c:6299: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6309: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6415: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6425: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_export':
- src/clients/lib/python/xmmsclient.c:6372: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6384: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6488: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6500: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_playlist_remove':
- src/clients/lib/python/xmmsclient.c:6459: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6470: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6575: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6586: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_path_import':
- src/clients/lib/python/xmmsclient.c:6536: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6547: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6652: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6663: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_set':
- src/clients/lib/python/xmmsclient.c:6628: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6641: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6744: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6757: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_medialib_property_remove':
- src/clients/lib/python/xmmsclient.c:6804: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6816: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6920: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:6932: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_added':
- src/clients/lib/python/xmmsclient.c:6903: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6913: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7019: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7029: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_entry_changed':
- src/clients/lib/python/xmmsclient.c:6969: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:6979: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7085: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7095: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_medialib_playlist_loaded':
- src/clients/lib/python/xmmsclient.c:7035: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7045: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7151: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7161: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_visualisation_data':
- src/clients/lib/python/xmmsclient.c:7101: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7111: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_mediainfo_reader_unindexed':
- src/clients/lib/python/xmmsclient.c:7164: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7174: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_mediainfo_reader_status':
+ src/clients/lib/python/xmmsclient.c:7217: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c:7227: warning: use of cast expressions as lvalues is deprecated
- src/clients/lib/python/xmmsclient.c:7237: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_signal_mediainfo_reader_unindexed':
+ src/clients/lib/python/xmmsclient.c:7280: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7290: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c: In function `__pyx_f_10xmmsclient_4XMMS_broadcast_mediainfo_reader_status':
+ src/clients/lib/python/xmmsclient.c:7343: warning: use of cast expressions as lvalues is deprecated
+ src/clients/lib/python/xmmsclient.c:7353: warning: use of cast expressions as lvalues is deprecated
  src/clients/lib/python/xmmsclient.c: In function `__Pyx_GetStarArgs':
- src/clients/lib/python/xmmsclient.c:8820: warning: suggest explicit braces to avoid ambiguous `else'
- src/clients/lib/python/xmmsclient.c:8822: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c:8950: warning: suggest explicit braces to avoid ambiguous `else'
+ src/clients/lib/python/xmmsclient.c:8952: warning: suggest explicit braces to avoid ambiguous `else'
  src/clients/lib/python/xmmsclient.c: In function `__Pyx_EndUnpack':
- src/clients/lib/python/xmmsclient.c:8872: warning: suggest parentheses around assignment used as truth value
+ src/clients/lib/python/xmmsclient.c:9002: warning: suggest parentheses around assignment used as truth value
  src/clients/lib/python/xmmsclient.c: At top level:
- src/clients/lib/python/xmmsclient.c:1959: warning: `__pyx_doc_10xmmsclient_10XMMSResult___dealloc__' defined but not used
- src/clients/lib/python/xmmsclient.c:2058: warning: `__pyx_doc_10xmmsclient_4XMMS___new__' defined but not used
- src/clients/lib/python/xmmsclient.c:2255: warning: `__pyx_doc_10xmmsclient_4XMMS___dealloc__' defined but not used
+ src/clients/lib/python/xmmsclient.c:2075: warning: `__pyx_doc_10xmmsclient_10XMMSResult___dealloc__' defined but not used
+ src/clients/lib/python/xmmsclient.c:2174: warning: `__pyx_doc_10xmmsclient_4XMMS___new__' defined but not used
+ src/clients/lib/python/xmmsclient.c:2371: warning: `__pyx_doc_10xmmsclient_4XMMS___dealloc__' defined but not used
  gcc-3.3 -shared -o src/clients/lib/python/xmmsclient.so src/clients/lib/python/xmmsclient.os -Lsrc/clients/lib/xmmsclient -lxmmsclient
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_result.os src/clients/lib/ruby/rb_result.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/lib/ruby/1.8/i386-linux -c -o src/clients/lib/ruby/rb_xmmsclient.os src/clients/lib/ruby/rb_xmmsclient.c
@@ -355,6 +361,8 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3.os src/plugins/id3v2/id3.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3v2plugin.c
  gcc-3.3 -shared -o src/plugins/id3v2/libxmms_id3v2.so src/plugins/id3v2/id3v2plugin.os src/plugins/id3v2/id3.os -lSDL_ttf
+ gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/jack/jack.os src/plugins/jack/jack.c
+ gcc-3.3 -shared -o src/plugins/jack/libxmms_jack.so src/plugins/jack/jack.os -lSDL_ttf -ljack
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/id3v1.os src/plugins/mad/id3v1.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/mad.os src/plugins/mad/mad.c
  gcc-3.3 -g -Wall -O0 -fPIC -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/plugins/mad/xing.os src/plugins/mad/xing.c
@@ -380,12 +388,14 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ipc.o src/xmms/ipc.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/log.o src/xmms/log.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/magic.o src/xmms/magic.c
+ src/xmms/magic.c: In function `xmms_magic_match':
+ <span id="h381">src/xmms/magic.c:429: warning: unused variable `data'</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h380">src/xmms/output.c:63: warning: parameter has incomplete type</span>
+ <span id="h387">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
@@ -393,6 +403,7 @@ Version: 88d427444adce0261e3248ee9e687bfcbaaf4812
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
+ <span id="h395">src/xmms/sqlite.c:57: warning: `upgrade_v21_to_v22' declared `static' but never defined</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/statfs.o src/xmms/statfs.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
