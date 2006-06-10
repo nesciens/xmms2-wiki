@@ -1,0 +1,11 @@
+{{ComponentHeader}}
+
+=Summary=
+Enables XMMS2 to play files using protocols supported by gnomevfs.
+
+===See also:===
+* [[Component:Transport | Transport]]
+
+[[Category:Transport Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
