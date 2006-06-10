@@ -1,10 +1,12 @@
 {{ComponentHeader}}
 
 =Summary=
-Enables XMMS2 to read/write [http://en.wikipedia.org/wiki/PLS_%28file_format%29 PLS] playlists.
+Enables XMMS2 to read/write PLS playlists.
 
 ===See also:===
 * [[Component:Playlist | Playlist]]
+* [http://en.wikipedia.org/wiki/PLS_%28file_format%29 PLS]
+
 [[Category:Playlist Plugins]]
 [[Category:Components]]
 [[Category:XMMS2 Technical Details]]
