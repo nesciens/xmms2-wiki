@@ -1,0 +1,12 @@
+{{ComponentHeader}}
+
+=Summary=
+Enables XMMS2 to play files over the MMS protocol.
+
+===See also:===
+* [[Component:Transport | Transport]]
+* [http://en.wikipedia.org/wiki/Microsoft_Media_Services MMS]
+
+[[Category:Transport Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
