@@ -1,0 +1,11 @@
+{{ComponentHeader}}
+
+=Summary=
+Enables XMMS2 to read/write HTML playlists.
+
+===See also:===
+* [[Component:Playlist | Playlist]]
+
+[[Category:Playlist Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
