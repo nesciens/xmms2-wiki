@@ -8,9 +8,9 @@
 * [[Release:DrCox|DrCox]] - Released 06-02-21
 * [[Release:DrDolittle|DrDolittle]] - Released 06-03-27
 * DrEvil
-* DrFeelgood
+* DrFeelgood / DrFun http://www.ibiblio.org/Dave/
 * DrGonzo
-* DrHofmann
+* DrHouse
 ...
 * DrJekyll
 ...
