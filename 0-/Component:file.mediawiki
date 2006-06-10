@@ -5,7 +5,7 @@ Enables XMMS2 to play local files.
 
 ===See also:===
 * [[Component:Transport | Transport]]
-* [http://www.rfc-editor.org/rfc/rfc1738.txt]
+* [http://www.rfc-editor.org/rfc/rfc1738.txt file:// URI RFC]
 
 [[Category:Transport Plugins]]
 [[Category:Components]]
