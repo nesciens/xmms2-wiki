@@ -10,6 +10,7 @@ With just a few examples, we see that the concept of collections provides a soli
 
 For the client developer, collections will replace SQL queries and allow persistence of "views" of the Library, dynamic playlists, and other such features.  The user will benefit from the new features hence possible in the clients: Party Shuffle playlists, saved queries common to all clients, etc.
 
+
 = Rationale =
 
 The current API allows powerful queries in the medialib db, saved playlists, etc.  Why change something if it's not broken?
@@ -29,6 +30,7 @@ Having such a universal representation of queries makes it possible to add featu
 This generalization can be exploited to refactor the playlist API. Instead of the current model, where there is one "active playlist" and separate "saved playlists" in the medialib, a more natural approach would be to always play one of the saved playlists, which would itself be a collection.  The interface would thus gain in uniformity.
 
 In conclusion, collections are a new step towards abstraction of the access and usage of the Media Library, unification of previously separate concepts on the server, improvement of shared structures among clients, and creation of new varieties of playlists.
+
 
 = Terminology =
 
@@ -87,6 +89,7 @@ In conclusion, collections are a new step towards abstraction of the access and 
 : The conventional definition of a playlist is a list of songs. Therefore, in our vocabulary, it is a medialist and hence an ordered collection.  For instance, a playlist can correspond to an idlist.
 :
 : Note that not ''all'' collections can be seen as playlists ; mediasets cannot, because there would be no way to determine the play order.
+
 
 = The Concept of Collections =
 
@@ -242,3 +245,69 @@ More customization properties could be handled (as does [http://amarok.kde.org/ 
 A '''Suggestion Shuffle''' is a collection operator that uses online recommandation systems (e.g. [http://www.last.fm/ Last.Fm], [http://www.pandora.com/ Pandora]) to enqueue new songs according to the current content of the playlist.
 
 This type of playlist exists in the [http://amarok.kde.org/ amaroK] player.
+
+
+= Using Collections =
+
+Now that the concept of collections has been explained, let's present how to use and work with them.
+
+== Create Collections ==
+
+A collection is first created locally by a client, using API functions to create operators and connect them together to build the wanted graph structure that corresponds to the collection.
+
+Let's look at the following example (a simplified version of an earlier graph):
+
+[[Image:Collection-diagram-example-2.png|frame|center|Building the collection graph]]
+
+The build sequence to create this structure is the following:
+# Create a node (1) referencing the <span style="font-variant:small-caps">All Media</span> collection;
+# Create a '''<code>larger</code>''' node (2), give it node (1) as input, set its <code>field</code> property to "year" and <code>value</code> to "1999";
+# Create a '''<code>smaller</code>''' node (3), give it node (2) as input, set its <code>field</code> property to "year" and <code>value</code> to "2004";
+# Create a '''<code>match</code>''' node (4), give it node (1) as input, set its <code>field</code> property to "artist" and <code>value</code> to "Beck";
+# Create an '''<code>and</code>''' node (5), give it node (3) and (4) as input;
+# Create a node (6) referencing the <span style="font-variant:small-caps">Pop Playlist</span> collection;
+# Create an '''<code>or</code>''' node (7), give it node (5) and (6) as input;
+
+Note that the graph must be built from top to bottom, often starting from a reference to an existing collection (e.g. <span style="font-variant:small-caps">All Media</span>). Also note that no node is created for the <span style="font-variant:small-caps">Precious Coll</span> label (8); it only represents the name under which the collection should be saved on the server.
+
+Once the collection graph has been prepared by the client, it can either be used to query the Media Library or saved on the server in the Collection Space.
+
+== Collections on the Server ==
+
+Collections can be saved on the server.  They are identified by their namespace and their name (unique in each namespace).  Note that some restrictions may apply to the type of collection that can be saved in a given namespace (e.g. only <code>idlists</code> in the ''Playlists'' namespace).
+
+To browse the saved collections, one can ask the server for the list of names of all collections in a given namespace.  Another feature can be used to find the list of names of all collections containing a given media.  The structure of a collection can then be retrieved using its name.
+
+Collections can of course be removed from the server at any time. Once it is identified (by its name and namespace), the corresponding part of the collection graph is deleted.  If another collection references the removed collection, the reference will be replaced by a copy of the removed collection.
+
+To modify a saved collection, a client must first retrieve its structure. After editing it locally, it must save it again on the server under the same name.  The new collection graph will replace the previous one.
+
+== Browsing a Collection ==
+
+Obviously, the primary usage of collections is to select media.
+
+The first way to do this it to use the '''query media''' feature to retrieve the list of media (i.e. media ids) matching a collection.  In addition to the collection structure, it can optionally take:
+* a list of fields by which to ''order'' the list of media ids (by default, simply order by media id).  This is similar to <code>ORDER BY</code> in SQL.
+* a range to only retrieve part of the content of the collection, specified by the start position and the maximum number of media (all by default).  This is similar to <code>LIMIT</code> in SQL.
+
+Another function can then be used to retrieve all the properties of a media given its id.  Combined with ''query media'', it can be used to do lazy loading of media informations.
+
+The second way to retrieve data from a collection is the '''query infos''' feature, that retrieves the properties of media matching a collection.  That is, while ''query media'' returns a list of media ids, ''query infos'' returns a list of media properties (or ''dict'').  Again, in addition to the collection structure, it can optionally take:
+* a list of fields by which to ''order'' the list of media (by default, simply order by media id).
+* a range to only retrieve part of the content of the collection, specified by the start position and the maximum number of media (all by default).
+* the list of properties to retrieve (all by default).
+* a list of fields by which to ''group'' media infos (none by default).  This is similar to <code>GROUP BY</code> in SQL.
+
+The last parameter is especially useful to select specific informations from a collection.  For instance, by only selecting and grouping by the ''artist'' property, ''query infos'' will return the list of all artists contained in the collection.
+
+== Playing a Collection (Playlist) ==
+
+The other main usage of collections is to be used as playlists.
+
+Changing the active playlist can be done by '''loading''' another collection from the Playlists namespace.  The latter becomes the new active playlist, with playback position resumed at the position when it was last played (saved as the <code>position</code> property).
+
+Because playlists are collections (or, to be accurate, <code>idlists</code>), they can be modified identically to normal collections: a playlist can be retrieved, modified and saved back on the server.
+
+However, this is often suboptimal as most operations are performed on a limited number of entries, and retrieving the collection structure containing the whole list of ids is costly.  It also makes it harder to track atomic changes to the playlist.
+
+The alternative is to keep a '''dedicated API to modify playlists''', similar to the [http://xmms2.xmms.se/doxygen/DrDolittle/group__PlaylistControl.html current one].  The functions available can basically remain unchanged, though with the difference that the actions can be performed on ''any'' of the saved playlist, not just the active playlist.
