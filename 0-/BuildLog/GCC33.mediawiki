@@ -1,14 +1,12 @@
-Build log generated Sat Jun 10 13:37:29 2006
-Build took 26 seconds
-Version: 06fc7bbe11be47a29ee4ad9271b98b5cab26c966
+Build log generated Sun Jun 11 13:37:36 2006
+Build took 31 seconds
+Version: 79ee38e1f530ab731a402d8a1250dc15fbb2df09
 
 ==Warnings==
- [[BuildLog/GCC33#h56|Warning]]: src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type
- [[BuildLog/GCC33#h381|Warning]]: src/xmms/magic.c:429: warning: unused variable `data'
- [[BuildLog/GCC33#h387|Warning]]: src/xmms/output.c:63: warning: parameter has incomplete type
- [[BuildLog/GCC33#h395|Warning]]: src/xmms/sqlite.c:57: warning: `upgrade_v21_to_v22' declared `static' but never defined
+ [[BuildLog/GCC33#h57|Warning]]: src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type
 ==Full log==
  scons: Reading SConscript files ...
+ Checking for swig >= 1.3.25 ...  no
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
  Checking for Ruby 1.8 or greater...  1.8.2
@@ -64,7 +62,7 @@ Version: 06fc7bbe11be47a29ee4ad9271b98b5cab26c966
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_playback.o src/clients/cli/cmd_playback.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_pls.o src/clients/cli/cmd_pls.c
  src/clients/cli/cmd_pls.c: In function `cmd_addarg':
- <span id="h56">src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type</span>
+ <span id="h57">src/clients/cli/cmd_pls.c:186: warning: passing arg 4 of `xmmsc_playlist_add_args' from incompatible pointer type</span>
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/cmd_status.o src/clients/cli/cmd_status.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/common.o src/clients/cli/common.c
  gcc-3.3 -g -Wall -O0 -Isrc/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/clients/cli/main.o src/clients/cli/main.c
@@ -388,14 +386,11 @@ Version: 06fc7bbe11be47a29ee4ad9271b98b5cab26c966
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ipc.o src/xmms/ipc.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/log.o src/xmms/log.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/magic.o src/xmms/magic.c
- src/xmms/magic.c: In function `xmms_magic_match':
- <span id="h381">src/xmms/magic.c:429: warning: unused variable `data'</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/main.o src/xmms/main.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/mediainfo.o src/xmms/mediainfo.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/medialib.o src/xmms/medialib.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/object.o src/xmms/object.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/output.o src/xmms/output.c
- <span id="h387">src/xmms/output.c:63: warning: parameter has incomplete type</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/outputplugin.o src/xmms/outputplugin.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/playlist.o src/xmms/playlist.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/plugin.o src/xmms/plugin.c
@@ -403,7 +398,6 @@ Version: 06fc7bbe11be47a29ee4ad9271b98b5cab26c966
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/ringbuf_xform.o src/xmms/ringbuf_xform.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sample.o src/xmms/sample.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/sqlite.o src/xmms/sqlite.c
- <span id="h395">src/xmms/sqlite.c:57: warning: `upgrade_v21_to_v22' declared `static' but never defined</span>
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/statfs.o src/xmms/statfs.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/streamtype.o src/xmms/streamtype.c
  gcc-3.3 -g -Wall -O0 -pthread -pthread -DSTATFS_LINUX -Isrc/include -Isrc/includepriv -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -c -o src/xmms/unixsignal.o src/xmms/unixsignal.c
