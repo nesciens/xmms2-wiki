@@ -1,6 +1,6 @@
-Build log generated Sun Jun 11 13:38:53 2006
+Build log generated Mon Jun 12 13:38:53 2006
 Build took 18 seconds
-Version: 79ee38e1f530ab731a402d8a1250dc15fbb2df09
+Version: 6732ab998047e684a99e558c99edb62466511df8
 
 ==Errors==
  [[BuildLog/GCC295#h215|Error]] scons: *** [src/clients/lib/python/xmmsclient.os] Error 1
