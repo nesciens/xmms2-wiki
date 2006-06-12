@@ -6,4 +6,6 @@ Develops the [http://git.xmms.se/?p=nyello.git;a=summary nyello] client and subm
 
 Wrote a [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/ Manifesto for a Better Music Player] and believes he can implement it.
 
+Currently working on [[SoC:Collections|'''Collections''' for Google Summer of Code 2006]].
+
 [[Category: People]]
