@@ -348,10 +348,10 @@ Create the collection structure pictured above, by taking the intersection of al
 Save that <code>and</code> node (5) on the server under the name "Some
 BjÃ¶rk", in the ''Collections'' namespace.
 
-== Find all playlists containing songs from the album "Felt Moutain" by Goldfrapp. ==
+== Find all playlists containing songs from the album "Felt Mountain" by Goldfrapp. ==
 
 [[Image:Collection-diagram-usecase-5.png|frame|center|Use case 5]]
 
-Create the collection structure pictured above, that matches all media by Goldfrapp from album "Felt Moutain" (yes, typo).
+Create the collection structure pictured above, that matches all media by Goldfrapp from album "Felt Mountain".
 
 Then, ''query media'' on the server by giving it the leaf node (2); for each media id in the retrieved list, search all collections containing it in the ''Playlists'' namespace.
