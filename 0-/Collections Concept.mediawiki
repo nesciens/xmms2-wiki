@@ -311,3 +311,47 @@ Because playlists are collections (or, to be accurate, <code>idlists</code>), th
 However, this is often suboptimal as most operations are performed on a limited number of entries, and retrieving the collection structure containing the whole list of ids is costly.  It also makes it harder to track atomic changes to the playlist.
 
 The alternative is to keep a '''dedicated API to modify playlists''', similar to the [http://xmms2.xmms.se/doxygen/DrDolittle/group__PlaylistControl.html current one].  The functions available can basically remain unchanged, though with the difference that the actions can be performed on ''any'' of the saved playlist, not just the active playlist.
+
+
+= Sample Use Cases =
+
+== Find all songs by Ladytron except album "604" and song with id 719. ==
+
+[[Image:Collection-diagram-usecase-1.png|frame|center|Use case 1]]
+
+Create the collection structure pictured above, by using <code>match</code> operators to filter all songs by Ladytron and exclude the album called "604" (using the <code>not</code> operator) as well as the song with id 719 (stored in an idlist).
+
+Then, ''query media'' on the server by giving it the whole structure, i.e. a reference to the <code>and</code> operator (6).  The songs matching the constraint will be returned.
+
+== Find all albums by Pink Floyd. ==
+
+[[Image:Collection-diagram-usecase-2.png|frame|center|Use case 2]]
+
+Create the simple collection structure pictured above.
+
+Then ''query infos'' on the server and set "album" as the only property to select and group by.  The list of albums by Pink Floyd will be returned.
+
+== Create an "Interesting" Party Shuffle playlist of size 20 containing all songs by Archive and the content of collection "Rock 90's". ==
+
+[[Image:Collection-diagram-usecase-3.png|frame|center|Use case 3]]
+
+Create the collection structure pictured above, by taking the union of all media by Archive and a reference to the "Rock 90's" playlist, and feeding it to a <code>Party Shuffle</code> operator (with the <code>size</code> property set to 20).
+
+Save that node (4) on the server under the name "Interesting" (displayed as (5) on the graph), in the ''Playlists'' namespace.
+
+== Create a "Some BjÃ¶rk" collection containing all music by BjÃ¶rk in Flac format except the songs found in playlist "Foo". ==
+
+[[Image:Collection-diagram-usecase-4.png|frame|center|Use case 4]]
+
+Create the collection structure pictured above, by taking the intersection of all media by BjÃ¶rk in Flac format and the complement of playlist "Foo" (thus excluding its content).
+
+Save that <code>and</code> node (5) on the server under the name "Some
+BjÃ¶rk", in the ''Collections'' namespace.
+
+== Find all playlists containing songs from the album "Felt Moutain" by Goldfrapp. ==
+
+[[Image:Collection-diagram-usecase-5.png|frame|center|Use case 5]]
+
+Create the collection structure pictured above, that matches all media by Goldfrapp from album "Felt Moutain" (yes, typo).
+
+Then, ''query media'' on the server by giving it the leaf node (2); for each media id in the retrieved list, search all collections containing it in the ''Playlists'' namespace.
