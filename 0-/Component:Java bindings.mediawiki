@@ -1,9 +1,17 @@
+{{ComponentHeader}}
+
+= Summary =
+Java bindings for the client library.
+
+==Prerequisites==
+
 Since DrDolittle Xmms2 ships some bindings to the language Java. To get those bindings on your machine you need some prerequisites met and installed:
 
 * '''Installed JDK''' ([http://java.sun.com Java development kit] a jre is not enough!) (>=1.4.2): no matter if blackdown or sun, both are tested, Java5 works too. Don't know gcj but afaik this works too. java, javac and jar have to be in path.
 * '''Installed SWIG''' ([http://www.swig.org]) (>=1.3.25): swig has to be in path.
 * '''JAVA_HOME''' must be set, otherwise scons skips installation of the javabindings for now.
 
+==Usage==
 
 After you have them installed you are either a developer and want to use them to develop something nifty or you are a user and have no idea which client to choose now.
 
