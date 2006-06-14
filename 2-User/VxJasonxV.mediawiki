@@ -9,7 +9,7 @@ Actively using GXMMS2 and providing feedback.
 
 == Capability for Abus- Testing ==
 Open for testing under a Linux Environment ( Gentoo Linux 2006.0 )<br>
-Current `uname -a`: Linux picard 2.6.16-gentoo-r6 #1 Sat May 6 00:18:12 MST 2006 i686 Pentium III (Coppermine) GNU/Linux<br>
+Current `uname -a`: Linux picard 2.6.16-gentoo-r9 #1 Sat May 6 00:18:12 MST 2006 i686 Pentium III (Coppermine) GNU/Linux<br>
 Open for testing in a Windows XP (SP2) Environment<br>
 Limited testing with Mac OS X (Tiger - 10.4) is also possible
 
