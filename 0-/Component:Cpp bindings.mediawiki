@@ -1,0 +1,23 @@
+== Prerequirements ==
+
+* DrEvil or later.
+* Various [http://www.boost.org boost] libraries/headers
+** [http://www.boost.org/libs/bind/bind.html boost.bind] headers
+** [http://www.boost.org/libs/function/index.html boost.function] headers
+** [http://www.boost.org/libs/variant/index.html boost.variant] headers
+** [http://www.boost.org/libs/type_traits/index.html boost.type_traits] headers
+** [http://www.boost.org/libs/signals/index.html boost.signals] library
+* Standard conformant C++ compiler such as G++ 3.3 or later.
+: We use the preferred syntax of boost.function and boost.signal so any compiler that doesn't handle that won't work, they're listed [http://www.boost.org/doc/html/signals/tutorial.html#id2731333 here]
+
+== Building ==
+
+Just make sure the prerequirements are met and scons will build the bindings with the rest of the stuff.
+
+== Usage ==
+
+There are tutorials for the C++ bindings in [http://git.xmms.se/?p=xmms2-tutorial.git;a=tree;f=c%2B%2B xmms2-tutorial.git] tree.
+
+== Notes ==
+
+{{Bug|845}}
