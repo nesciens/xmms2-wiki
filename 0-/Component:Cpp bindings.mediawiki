@@ -1,4 +1,9 @@
-== Prerequirements ==
+{{ComponentHeader}}
+
+= Summary =
+C++ bindings for the client library.
+
+== Prerequisites ==
 
 * DrEvil or later.
 * Various [http://www.boost.org boost] libraries/headers
@@ -12,7 +17,7 @@
 
 == Building ==
 
-Just make sure the prerequirements are met and scons will build the bindings with the rest of the stuff.
+Just make sure the prerequisites are met and scons will build the bindings with the rest of the stuff.
 
 == Usage ==
 
