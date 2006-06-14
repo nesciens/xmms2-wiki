@@ -1,7 +1,7 @@
 {{ComponentHeader}}
 
 =Summary=
-Enables XMMS2 to play files over the Microsoft Media Services protocol.
+Enables XMMS2 to play files over the Microsoft Media Services (MMS) protocol.
 
 ===See also:===
 * [[Component:Transport | Transport]]
