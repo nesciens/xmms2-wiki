@@ -5,6 +5,7 @@ that can be used without much issue on a number of web browsers and with an ease
 
 ==Schedule==
 For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
+For Midterm Evaluation of 27 June - Implement move handler for playlist changes, look into and possibly start to implement a lazy loading widget for the playlist and various medialib areas, and start to implement views. ''N.B.'' Wiki needs to be updated for the evaluation!
 
 ==Playlist==
 Playlist is now updated atomically thanks to xmms2 async signals, and a javascript based playlist. This makes it possible to get a reasonably well performing playlist that doesn't require reloads. 
