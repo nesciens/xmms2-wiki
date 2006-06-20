@@ -1,4 +1,4 @@
-{{Client| name=Insanity| author=[[Alexander Botero-Lowry]] & [[Sham Chukoury]]| website=http://git.xmms.se/?p=insanity.git;a=summary| version=''N/A''| devlanguage=Python| ui=GTK2| screenshots=[http://exodus.xmms.se/~eleusis/screenies/insanity-2006-06-20.png insanity-2006-06-20.png]| description=Insanity is a simple but complete XMMS2 client. (Yes, sounds insane, doesn't it?)
+{{Client| name=Insanity| author=[[Alexander Botero-Lowry]] & [[Sham Chukoury]]| website=http://git.xmms.se/?p=insanity.git;a=summary| version=''N/A''| devlanguage=Python| ui=GTK2| screenshots=[http://exodus.xmms.se/~eleusis/screenies/insanity-2006-06-20.png insanity-2006-06-20.png] [http://exodus.xmms.se/~alex/insanity.png insanity.png]| description=Insanity is a simple but complete XMMS2 client. (Yes, sounds insane, doesn't it?)
 
 Features:
 * Simple playback controls
