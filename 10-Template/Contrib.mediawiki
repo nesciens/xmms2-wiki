@@ -1,7 +1,8 @@
-=={{{Keyborad short cuts}}}==
-Submitted by: ''{{{Kierun}}}''
+=={{{title}}}==
 
-Description: ''{{{Scripts used for controling Xmms2 via a keyboard}}}''
+Submitted by: ''{{{author}}}''
+
+Description: ''{{{description}}}''
 
 More info: {{{moreinfo}}}
 
