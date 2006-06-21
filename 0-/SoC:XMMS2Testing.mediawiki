@@ -2,6 +2,8 @@
 
 Aim of the project is to develop a testing framework using the xUnit (Unit Testing family of approaches) to make test cases against which XMMS2 code could be tested. It has to facilitate easy and effective maintenance of test cases, selection of test cases and suites to run, producing output in a format to enable interface to the external applications, for instance automated update of Wiki Pages for the status of test runs against XMMS2 Code.
 
+==Significance==
+
 =Schedule=
 =Deliverables=
 =Design=
