@@ -17,4 +17,5 @@ Apart from this, the project intends to provide recommendations for the developm
 ===Test Cases===
 ==Behavioral Tests==
 ==External Interface, Status Page Wiki Bots==
+===XML Result===
 =History=
