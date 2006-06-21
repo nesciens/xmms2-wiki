@@ -20,3 +20,4 @@ Apart from this, the project intends to provide recommendations for the developm
 ===XML Result===
 =History=
 =Todo=
+=External link=
