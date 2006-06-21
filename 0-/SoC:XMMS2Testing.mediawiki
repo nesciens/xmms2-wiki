@@ -4,6 +4,10 @@ Aim of the project is to develop a testing framework using the xUnit (Unit Testi
 
 ==Significance==
 
+It will assist developers to validate the code and functionality in an automated way. Any changed code will be tested by re-executing the test cases. Such avoids considerable regression and assists to validate the functionality. Modular approach and interactive run will make it easier to add/delete/edit test cases. 
+
+Apart from this, the project intends to provide recommendations for the development workflow to maintain test suites. This includes maintaining a proper versioning mechanism for maintaining test cases for various versions of code and validity results.
+
 =Schedule=
 =Deliverables=
 =Design=
