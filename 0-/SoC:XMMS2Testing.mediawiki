@@ -16,6 +16,9 @@ Apart from this, the project intends to provide recommendations for the developm
 
 22nd - 24th June -- Write deamon Tests
 
+
+'''Uptil 27th June -- For mid-term Evaluation, Working Framework which Tests Daemons Completely, Framework and methodology of Test Management approved by Mentor (Shaam add here)'''
+
 =Deliverables=
 Test framework including Test Suites (with tests for existing codebase)
 
