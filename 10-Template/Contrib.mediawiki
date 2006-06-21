@@ -1,9 +1,9 @@
 =={{{title}}}==
+Submitted by: ''{{{author}}}''
 
-Submitted by: {{{author}}}
-
-Description: {{{description}}}
+Description: ''{{{description}}}''
 
 More info: {{{moreinfo}}}
 
-Files: {{{files}}}
+Files:
+{{{files}}}
