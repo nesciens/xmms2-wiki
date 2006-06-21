@@ -9,7 +9,10 @@ It will assist developers to validate the code and functionality in an automated
 Apart from this, the project intends to provide recommendations for the development workflow to maintain test suites. This includes maintaining a proper versioning mechanism for maintaining test cases for various versions of code and validity results.
 
 =Schedule=
+
+21st June -- Test Runner working Properly
 22nd June -- GUI with Interactive Test Runner with Dummy Test Cases and Test Suites using defaults Asserts
+22nd - 24th June -- Write deamon Tests
 
 =Deliverables=
 =Design and Terminologies=
