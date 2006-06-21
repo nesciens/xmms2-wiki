@@ -11,6 +11,7 @@ Apart from this, the project intends to provide recommendations for the developm
 =Schedule=
 =Deliverables=
 =Design and Terminologies=
+[[Image:XMMSUnitDesign.jpg]]
 ==GUI==
 
 ==Test Runner==
@@ -19,6 +20,7 @@ Apart from this, the project intends to provide recommendations for the developm
 ==Behavioral Tests==
 ==External Interface, Status Page Wiki Bots==
 ===XML Result===
+
 =History=
 =Todo=
 =External link=
