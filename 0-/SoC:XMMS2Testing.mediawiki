@@ -11,7 +11,9 @@ Apart from this, the project intends to provide recommendations for the developm
 =Schedule=
 
 21st June -- Test Runner working Properly
+
 22nd June -- GUI with Interactive Test Runner with Dummy Test Cases and Test Suites using defaults Asserts
+
 22nd - 24th June -- Write deamon Tests
 
 =Deliverables=
