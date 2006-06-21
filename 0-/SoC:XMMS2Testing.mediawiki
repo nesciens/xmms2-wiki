@@ -4,5 +4,6 @@
 =Design=
 ==GUI==
 ==Test Runner==
+==Behavioral Tests==
 ==External Interface, Status Page Wiki Bots==
 =History=
