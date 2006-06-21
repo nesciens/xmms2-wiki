@@ -17,6 +17,10 @@ Apart from this, the project intends to provide recommendations for the developm
 22nd - 24th June -- Write deamon Tests
 
 =Deliverables=
+Test framework including Test Suites (with tests for existing codebase)
+
+Status Page with component Test Results
+
 =Design and Terminologies=
 [[Image:XMMSUnitDesign.jpg]]
 ==GUI==
