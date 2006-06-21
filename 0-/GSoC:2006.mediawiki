@@ -49,7 +49,7 @@ p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'.
 ** '''Student''': Mohsin Patel
 ** '''Mentor''': Anders Gustafsson
 
-* XMMS2 Test Framework
+* [[SoC:XMMS2Testing | XMMS2 Test Framework]]
 ** '''Student''': Abdul Haseeb
 ** '''Mentor''': Sham Chukoury
 
