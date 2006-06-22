@@ -7,10 +7,14 @@ that can be used without much issue on a number of web browsers and with an ease
 For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
 For Midterm Evaluation of 27 June - Implement move handler for playlist changes, look into and possibly start to implement a lazy loading widget for the playlist and various medialib areas, and start to implement views. ''N.B.'' Wiki needs to be updated for the evaluation!
 
-==Playlist==
+==Implementation specifics==
+
+===Playlist===
 Playlist is now updated atomically thanks to xmms2 async signals, and a javascript based playlist. This makes it possible to get a reasonably well performing playlist that doesn't require reloads. 
 
-==Searching==
+'''Status''': Implemented, works great, see Performance status for more details.
+
+===Searching===
 Searching of the media library is a goal for the summer. The idea would be to have output that looks something like Apple's Spotlight in the Media Library area:
 
   --Artists--
@@ -25,30 +29,46 @@ Searching of the media library is a goal for the summer. The idea would be to ha
 
 When an entry is clicked it will, in the case of albums and artists, list a general view for that selection, or in the case of songs, add that song to the playlist. 
 
-==Performance==
-An issue I always fear about raising with TurboX2 is two fold: scalability and performance. Javascript operations can be expensive, and so can http request operations. In consideration of this there is always a blancing act between what should be done server side and what should be done client side. What I think it comes down to is that the client is best at interface and general looks, with that in mind I think automatically generated templating is not a great idea. The reason the client is better for this is an issue of flexiblity. The browser/client knows what the browser/client can do, information about the actual structure of the page is avaliable to the browser in a way it's not on the server side. So sizing and such can be done a lot better on the client side. The server is better at manipulating a lot of data, so it could be silly to have the client doing much manipulation. The server should push out complete data to the client. So that's why my tendency has been to move rendering and drawing operations into javascript. Still I'm afraid of the performance issues that have recently been reported to me, but I can't seem to reproduce them. I will continue to try different browsers to see if I can get a spike in CPU usage.
+'''Status''': This is planned for after midterm evaluation.
+
+===Cosmetics===
+TurboX2 is lacking a nice graphical set that fits the interface, and some of the nice eye-candy features have been disabled at various points for faster development. I have recently attempted to re-enable things and add some icons and the likes. FireFox also can not deal with file:// urls for art, so there needs to be a way to fetch the art and put it into /static in the case that it's a file:// url. 
 
 
+'''Status''': I've added some icons for playback control and re-enabled the splitpane. Still need to work some on re-enabling usage of overlib, and fix the album art usage.
 
-==PropDict==
+===Performance===
+An issue I always fear about raising with TurboX2 is two fold: scalability and performance. Javascript operations can be expensive, and so can http request operations. In consideration of this there is always a blancing act between what should be done server side and what should be done client side. What I think it comes down to is that the client is best at interface and general looks, with that in mind I think automatically generated templating is not a great idea. The reason the client is better for this is an issue of flexiblity. The browser/client knows what the browser/client can do, information about the actual structure of the page is avaliable to the browser in a way it's not on the server side. So sizing and such can be done a lot better on the client side. The server is better at manipulating a lot of data, so it could be silly to have the client doing much manipulation. The server should push out complete data to the client. So that's why my tendency has been to move rendering and drawing operations into javascript. Still I'm afraid of the performance issues that have recently been reported to me, but I can't seem to reproduce them. I will continue to try different browsers to see if I can get a spike in CPU usage. 
+
+'''Status''': Performance, for me at least, has gotten a lot better with the new playlist which does atomic changes, there is still a lot of room for improvement with regards to large lists (both playlist and medialib), but this is much better than it was in the past.
+
+===PropDict===
 PropDict is more or less complete. I need to MochiKitify a lot of the code, because I'm going to pretend to myself that they do things more efficently then I do. (Though I looked and they iterate over Arrays to find indices just like I do). Otherwise PropDict is working nicely, with support for wildcard sources, has_key and get_value. Only major thing I might do is to throw an exception in the case of a get_value that doesn't return a result for consistency with how Python's PropDict works.
 
 '''Update''': So I decided to pull out those statistics I learned in High School supposidly and run a t-Test on the benchmark linked in resources. It seems that there is no statistically significant difference between the two data sets. Doesn't really matter which I use I guess.
 
 '''Further Updates''': PropDict is now integrated into the Status area and into the Medialib view. They both now also use the /mediainfo controller which means that they do resolving. As in, we put a temp text entry at an ID and then once we have mediainfo we swap out the temp text for real mediainfo data. The advantage of this is that it's half the work necessary to do lazy loading, it also means that you get an indication that things are working before they finish working, and part of the joy of AJAX is constant updates!
 
+'''Status''': Considered done turbox2_propdict.js is working great and being used through out TurboX2 along with the /mediainfo controller.
+
+===Views===
+The framework itself is in place and a basic view that is identical to the old hardcoded view has been put into place and made the default Medialib view. I would like to implement one or two more views during SoC. Specifically one that shows all albums with their art if available, and another that pages the artist list (or maybe even pages a song list).
+
+'''Status''': Initial implementation is in place and working, more Views and testing to come.
+
 ==Todo==
-:&#10063; Finish JavaScript implementation of PropDict and use it through out TurboX2 
+:&#10003; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
 :&#10063; Playlist Optimisation - general optimistation for large lists of data
-::&#10063; Do not update the playlist unless its contents have changed
+::&#10003; Do not update the playlist unless its contents have changed
 ::&#10063; Find or write a lazy loading widget for the playlist and any other large list
-::&#10063; Ressurect the /mediainfo controller used to do resolving of mediainfo by ID
+::&#10003; Ressurect the /mediainfo controller used to do resolving of mediainfo by ID
 :&#10063; General cleanup and refactoring - object orientation for the javascript and python is a plus
-::&#10063; Also look into making the Python backend async by somehow tying it into CherryPy's mainloop if possible
-:&#10063; Get a working implementation of Views with at least a View that mimics the current artist-album view
+::&#10003; Also look into making the Python backend async by somehow tying it into CherryPy's mainloop if possible
+:&#10003; Get a working implementation of Views with at least a View that mimics the current artist-album view
 :&#10063; Get things working with python's distutils so that TurboX2 can be redistriubted
 ::&#10063; FreeBSD port!
 
 ==Resources==
-[http://exodus.xmms.se/~alex/benchmark/test.html Benchmark of PropDict implementations] - The first five are PropDict using MochiKit's findValue() to find indicies of values in an array, the second is using my own method.
+* [http://exodus.xmms.se/~alex/benchmark/test.html Benchmark of PropDict implementations] - The first five are PropDict using MochiKit's findValue() to find indicies of values in an array, the second is using my own method.
+* [http://bugs.xmms2.xmms.se/ TurboX2's Mantis page] TurboX2's Mantis page to be used during the testing phase of the Summer of Code.
