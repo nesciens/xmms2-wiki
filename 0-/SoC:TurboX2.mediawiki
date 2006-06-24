@@ -12,7 +12,7 @@ For Midterm Evaluation of 27 June - Implement move handler for playlist changes,
 ===Playlist===
 Playlist is now updated atomically thanks to xmms2 async signals, and a javascript based playlist. This makes it possible to get a reasonably well performing playlist that doesn't require reloads. I have a lazy loading widget written, but still need to work on it a bit more and find the best way to integrate it into turbox2. One problem is that grabbing and generating an entire playlist even if it's just "loading id..." may be expensive, so it might be best to make the div scrollable with regards to the size of playlist_length and then fetch the ids and resolve them as the scroll happens. At the same time, all those loadJSONDoc() calls to get the playlist in parts may be too expensive as well, so some experimentation will be needed.
 
-'''Status''': Implemented atomic changes, works great, see Performance status for more details. Lazy loading widget implemented, but some research is needed to determine how to best integrate it. Example of the widget is available in the resources section.
+'''Status''': Implemented atomic changes, works great, see Performance status for more details. Lazy loading widget implemented, but some research is needed to determine how to best integrate it. Example of the widget is available in the resources section. I commited the widget to the tree today (23 Jun 2006).
 
 ===Searching===
 Searching of the media library is a goal for the summer. The idea would be to have output that looks something like Apple's Spotlight in the Media Library area:
