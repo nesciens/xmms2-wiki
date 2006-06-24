@@ -4,8 +4,8 @@ it up to release quality. The goal of this Summer of Code project more abstractl
 that can be used without much issue on a number of web browsers and with an ease of installation that a moderately competent user could install and use it. 
 
 ==Schedule==
-For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
-For Midterm Evaluation of 27 June - Implement move handler for playlist changes, look into and possibly start to implement a lazy loading widget for the playlist and various medialib areas, and start to implement views. ''N.B.'' Wiki needs to be updated for the evaluation!
+* For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
+* For Midterm Evaluation of 27 June - Implement move handler for playlist changes, look into and possibly start to implement a lazy loading widget for the playlist and various medialib areas, and start to implement views. ''N.B.'' Wiki needs to be updated for the evaluation!
 
 ==Implementation specifics==
 
