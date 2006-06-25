@@ -187,14 +187,20 @@ Client-Instance: 99BB1C4A4056F46D<br>
 DACP-ID: 99BB1C4A4056F46D<br> 
 Active-Remote: 4294936225<br> 
 
+----
+
 '''Traffic from ApEx to iTunes:'''<br>
 RTSP/1.0 200 OK<br> 
 CSeq: 6<br> 
 Connection: close<br> 
 Audio-Jack-Status: connected; type=analog<br> 
 
+----
+
 Please note that raw data is exchanged betweeen iTunes and ApEx on the data <br>
 channel (port 6000) while this control signalling is taking place. <br> 
+
+----
 
 References:<br> 
 [1] http://www.cocoadev.com/index.pl?RemoteAudioOutputProtocol <br>
