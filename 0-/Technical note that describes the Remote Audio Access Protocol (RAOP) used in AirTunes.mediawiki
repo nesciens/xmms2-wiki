@@ -166,6 +166,7 @@ Next, we show a typical exchange of RTSP sequence and timestamp numbers in a con
 
 ----
 
+
 The next exchange shows how the volume parameter is adjusted - for more details see [1]:
 
 
@@ -195,6 +196,7 @@ The next exchange shows how the volume parameter is adjusted - for more details 
 
 
 ----
+
 
 And finally the shutdown of the session:
 
