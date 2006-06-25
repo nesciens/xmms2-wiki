@@ -24,28 +24,30 @@ channel for sending the raw data. Upon startup, iTunes initiates a RTSP connecti
 Airport on port 5000. This exchange is shown below (Traffic from iTunes to ApEx is in Blue<br> 
 and the reverse direction is in Red):
 
-== Traffic from iTunes to ApEx ==
+'''Traffic from iTunes to ApEx''' 
+----
 
-OPTIONS * RTSP/1.0<br>
+'''OPTIONS * RTSP/1.0'''<br>
 CSeq: 1<br>
-User-Agent: iTunes/6.0.4 (Macintosh; N; PPC)<br>
-Client-Instance: 99BB1C4A4056F46D<br>
-DACP-ID: 99BB1C4A4056F46D<br>
-Active-Remote: 4294936225<br>
-Apple-Challenge: X/GmLMLuFvgWf8Y1bQuUug
+'''User-Agent:''' iTunes/6.0.4 (Macintosh; N; PPC)<br>
+'''Client-Instance:''' 99BB1C4A4056F46D<br>
+'''DACP-ID:''' 99BB1C4A4056F46D<br>
+'''Active-Remote:''' 4294936225<br>
+'''Apple-Challenge:''' X/GmLMLuFvgWf8Y1bQuUug
 
-== Traffic from ApEx to iTunes ==
+'''Traffic from ApEx to iTunes'''
 
-RTSP/1.0 200 OK<br>
-CSeq: 1<br>
-Public: ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER<br>
-Apple-Response: fUG5XtwIbJDWcpYX7p81z7bYfWD7UKa9VkIQk40szRYT0kP8VJ+30l7YRdvwR2hMxUtjoDDIjqFdDi<br>
-Su50SfxfEtnquj7nFyR8gqJKnXNnpgegBaaFatoCLHTaH7Nc5H4yH/MQ2qrHtJ/5i+R7ElCd29xaC31r/wfDYgxMy2Ymoe<br>
-aRnvudSUOURHsOO8mEbJYfNp1rC2+W7EGwYyN/QQ98/kREUPO1et2qz7THEUs0n22ql/2VA88EgpyDsQMNIuUdOXdjrH1M<br>
-oqz+yG0KmKJyP8WoehJPhfW1da4YJSW2qAahQZRgJ7x7M3KUGEhzut8pf6CP/U1FRJqj7KFMTwTg<br>
-Audio-Jack-Status: connected; type=analog<br>
+'''RTSP/1.0 200 OK'''<br>
+'''CSeq:''' 1<br>
+'''Public:''' ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER<br>
+'''Apple-Response:'''
+fUG5XtwIbJDWcpYX7p81z7bYfWD7UKa9VkIQk40szRYT0kP8VJ+30l7YRdvwR2hMxUtjoDDIjqFdDiSu50SfxfE
+tnquj7nFyR8gqJKnXNnpgegBaaFatoCLHTaH7Nc5H4yH/MQ2qrHtJ/5i+R7ElCd29xaC31r/wfDYgxMy2YmoeaR
+nvudSUOURHsOO8mEbJYfNp1rC2+W7EGwYyN/QQ98/kREUPO1et2qz7THEUs0n22ql/2VA88EgpyDsQMNIuUdOXd
+jrH1Moqz+yG0KmKJyP8WoehJPhfW1da4YJSW2qAahQZRgJ7x7M3KUGEhzut8pf6CP/U1FRJqj7KFMTwTg<br>
+'''Audio-Jack-Status:''' connected; type=analog<br>
 
-== ==
+----
 
 As can be seen the iTunes client provides its version number and a randomly generated 22-byte<br> 
 cryptographic â€œchallengeâ€œ to the ApEx in the Apple-Challenge parameter. The ApEx replies with a<br> 
@@ -60,27 +62,28 @@ key is encrypted using the public key by iTunes. The ApEx verifies that it is ta
 decrypting the AES key using its private key. Note that the public key part has been recovered using<br> 
 reverse-engineering and is publicly available [3]. This exchange is shown below:<br>
 
+----
 
-== Traffic from iTunes to ApEx ==
+Traffic from iTunes to ApEx
 
-ANNOUNCE rtsp://10.0.1.2/3233609434 RTSP/1.0<br>
-CSeq: 1<br>
-Content-Type: application/sdp<br>
-Content-Length: 563<br>
-User-Agent: iTunes/6.0.4 (Macintosh; N; PPC)<br>
-Client-Instance: 99BB1C4A4056F46D<br>
-DACP-ID: 99BB1C4A4056F46D<br>
-Active-Remote: 4294936225<br>
+'''ANNOUNCE rtsp:'''//10.0.1.2/3233609434 RTSP/1.0<br>
+'''CSeq:''' 1<br>
+'''Content-Type:''' application/sdp<br>
+'''Content-Length:''' 563<br>
+'''User-Agent:''' iTunes/6.0.4 (Macintosh; N; PPC)<br>
+'''Client-Instance:''' 99BB1C4A4056F46D<br>
+'''DACP-ID:''' 99BB1C4A4056F46D<br>
+'''Active-Remote:''' 4294936225<br>
 
-v=0<br>
-o=iTunes 3233609434 0 IN IP4 10.0.1.2<br>
-s=iTunes<br>
-c=IN IP4 10.0.1.1<br>
-t=0 0<br>
-m=audio 0 RTP/AVP 96<br>
-a=rtpmap:96 AppleLossless<br>
-a=fmtp:96 4096 0 16 40 10 14 2 255 0 0 44100<br>
-a=rsaaeskey:HSyPEnWds0b2Qoc1733RyWmInqHXn61V8UarTBW+cwPrSV4DqP8kChGxGnJ9QJAyQQvTcuVhLJ2MCGP2ddANQWeguvx<br>
+'''v=0'''<br>
+'''o=iTunes 3233609434 0 IN IP4 10.0.1.2'''<br>
+'''s=iTunes'''<br>
+'''c=IN IP4 10.0.1.1'''<br>
+'''t=0 0'''<br>
+'''m=audio 0 RTP/AVP 96'''<br>
+'''a=rtpmap:96 AppleLossless'''<br>
+'''a=fmtp:'''96 4096 0 16 40 10 14 2 255 0 0 44100<br>
+'''a=rsaaeskey:'''HSyPEnWds0b2Qoc1733RyWmInqHXn61V8UarTBW+cwPrSV4DqP8kChGxGnJ9QJAyQQvTcuVhLJ2MCGP2ddANQWeguvx<br>
 JfyIZuM9bwX4ZA3FgWWF6QOTyDVy7ppK587Mh1Y6+GYujTdMZ6ukbC3thXmC5PyipVIEOR3By9AJGpVTWR8LpG5dcuwkXbzlrmqr4IT<br>
 7bsffpAm/5wzqkOlcrNiI/QcYqC0jZ744mNAkQIQqijVR/IoOF6o4KpvwUIXIlhPJm87m4ghTLuXEqDhtdcmKza/uRmOl0KwcHkS/ON<br>
 4WgvgiuHzlMML8pVDBKeAY1R6x2sGxsGWTWOE3FsMFM/w<br>
@@ -89,9 +92,9 @@ a=aesiv:EBqQ4XNBST+PpC28SX1oXA<br>
 
 == Traffic from ApEx to iTunes ==
 
-RTSP/1.0 200 OK<br>
-CSeq: 1<br>
-Audio-Jack-Status: connected; type=analog<br>
+'''RTSP/1.0 200 OK'''<br>
+'''CSeq:''' 1<br>
+'''Audio-Jack-Status:''' connected; type=analog<br>
 
 
 ==  ==
@@ -101,13 +104,13 @@ Next, the ApEx tells iTunes which port to use for the data connection (server_po
 
 == Traffic from iTunes to ApEx ==
 
-SETUP rtsp://10.0.1.2/3233609434 RTSP/1.0
-CSeq: 2
-Transport: RTP/AVP/TCP;unicast;interleaved=0-1;mode=record;control_port=0;timing_port=0
-User-Agent: iTunes/6.0.4 (Macintosh; N; PPC)
-Client-Instance: 99BB1C4A4056F46D
-DACP-ID: 99BB1C4A4056F46D
-Active-Remote: 4294936225
+'''SETUP rtsp:'''//10.0.1.2/3233609434 RTSP/1.0
+'''CSeq:''' 2
+'''Transport:''' RTP/AVP/TCP;unicast;interleaved=0-1;mode=record;control_port=0;timing_port=0
+'''User-Agent:''' iTunes/6.0.4 (Macintosh; N; PPC)
+'''Client-Instance:''' 99BB1C4A4056F46D
+'''DACP-ID:''' 99BB1C4A4056F46D
+'''Active-Remote:''' 4294936225
 
 
 == Traffic from ApEx to iTunes ==
