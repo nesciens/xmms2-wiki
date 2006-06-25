@@ -136,6 +136,7 @@ Next, the ApEx tells iTunes which port to use for the data connection (server_po
 
 ----
 
+
 Next, we show a typical exchange of RTSP sequence and timestamp numbers in a control packet:
 
 
