@@ -8,11 +8,11 @@ exchanged observed between an iTunes client (v6.0.4) and ApEx (firmware v6.3). P
 note that my understanding of the authentication step differs from [2] and is based<br> 
 on packet analysis and [3].
 
-<b>ApEx Discovery:</b>
+<b>ApEx Discovery:</b><br> 
 Discovery protocol from the Bonjour protocol suite. This is a very simple exchange<br> 
 involving the respective MDNS TXT service records of ApEx and iTunes services.
 
-<b>RAOP:</b>
+<b>RAOP:</b><br> 
 RAOP uses two channels for streaming music: a control channel which uses RTSP and<br> 
 a data channel for sending the raw data. Upon startup, iTunes initiates a RTSP<br> 
 connection to the Airport on port 5000. This exchange is shown below (Traffic from<br> 
