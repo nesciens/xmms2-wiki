@@ -24,6 +24,7 @@ channel for sending the raw data. Upon startup, iTunes initiates a RTSP connecti
 Airport on port 5000. This exchange is shown below (Traffic from iTunes to ApEx is in Blue 
 and the reverse direction is in Red):
 
+
 ----
 '''Traffic from iTunes to ApEx''' 
 ----
@@ -35,6 +36,7 @@ CSeq: 1<br>
 '''DACP-ID:''' 99BB1C4A4056F46D<br>
 '''Active-Remote:''' 4294936225<br>
 '''Apple-Challenge:''' X/GmLMLuFvgWf8Y1bQuUug
+
 
 ----
 '''Traffic from ApEx to iTunes'''
@@ -65,6 +67,7 @@ key is encrypted using the public key by iTunes. The ApEx verifies that it is ta
 decrypting the AES key using its private key. Note that the public key part has been recovered using 
 reverse-engineering and is publicly available [3]. This exchange is shown below:
 
+
 ----
 '''Traffic from iTunes to ApEx'''
 ----
@@ -90,7 +93,8 @@ reverse-engineering and is publicly available [3]. This exchange is shown below:
 JfyIZuM9bwX4ZA3FgWWF6QOTyDVy7ppK587Mh1Y6+GYujTdMZ6ukbC3thXmC5PyipVIEOR3By9AJGpVTWR8LpG5dcuwkXbzlrmqr4IT<br>
 7bsffpAm/5wzqkOlcrNiI/QcYqC0jZ744mNAkQIQqijVR/IoOF6o4KpvwUIXIlhPJm87m4ghTLuXEqDhtdcmKza/uRmOl0KwcHkS/ON<br>
 4WgvgiuHzlMML8pVDBKeAY1R6x2sGxsGWTWOE3FsMFM/w<br>
-a=aesiv:EBqQ4XNBST+PpC28SX1oXA<br>
+'''a=aesiv:'''EBqQ4XNBST+PpC28SX1oXA<br>
+
 
 ----
 '''Traffic from ApEx to iTunes'''
@@ -100,10 +104,11 @@ a=aesiv:EBqQ4XNBST+PpC28SX1oXA<br>
 '''CSeq:''' 1<br>
 '''Audio-Jack-Status:''' connected; type=analog<br>
 
-
 ----
 
+
 Next, the ApEx tells iTunes which port to use for the data connection (server_port, typically 6000):<br>
+
 
 ----
 '''Traffic from iTunes to ApEx'''
@@ -117,6 +122,7 @@ Next, the ApEx tells iTunes which port to use for the data connection (server_po
 '''DACP-ID:''' 99BB1C4A4056F46D<br>
 '''Active-Remote:''' 4294936225<br>
 
+
 ----
 '''Traffic from ApEx to iTunes'''
 ----
@@ -127,9 +133,11 @@ Next, the ApEx tells iTunes which port to use for the data connection (server_po
 '''Transport:''' RTP/AVP/TCP;unicast;interleaved=0-1;mode=record;control_port=0;timing_port=0;server_port=6000<br>
 '''Audio-Jack-Status:''' connected; type=analog<br>
 
+
 ----
 
 Next, we show a typical exchange of RTSP sequence and timestamp numbers in a control packet:
+
 
 ----
 '''Traffic from iTunes to ApEx'''
@@ -145,6 +153,7 @@ Next, we show a typical exchange of RTSP sequence and timestamp numbers in a con
 '''DACP-ID:''' 99BB1C4A4056F46D<br>
 '''Active-Remote:''' 4294936225<br>
 
+
 ----
 '''Traffic from ApEx to iTunes'''
 ----
@@ -153,9 +162,11 @@ Next, we show a typical exchange of RTSP sequence and timestamp numbers in a con
 '''CSeq:''' 3<br>
 '''Audio-Jack-Status:''' connected; type=analog<br>
 
+
 ----
 
 The next exchange shows how the volume parameter is adjusted - for more details see [1]:
+
 
 ----
 '''Traffic from iTunes to ApEx'''
@@ -172,6 +183,7 @@ The next exchange shows how the volume parameter is adjusted - for more details 
 '''Active-Remote:''' 4294936225<br>
 '''volume:''' -15.000711<br>
 
+
 ----
 '''Traffic from ApEx to iTunes'''
 ----
@@ -180,9 +192,11 @@ The next exchange shows how the volume parameter is adjusted - for more details 
 '''CSeq:''' 4<br>
 '''Audio-Jack-Status:''' connected; type=analog<br>
 
+
 ----
 
 And finally the shutdown of the session:
+
 
 ----
 '''Traffic from iTunes to ApEx'''
@@ -196,6 +210,7 @@ And finally the shutdown of the session:
 '''DACP-ID:''' 99BB1C4A4056F46D<br>
 '''Active-Remote:''' 4294936225<br>
 
+
 ----
 '''Traffic from ApEx to iTunes'''
 ----
@@ -205,12 +220,14 @@ And finally the shutdown of the session:
 '''Connection:''' close<br>
 '''Audio-Jack-Status:''' connected; type=analog<br>
 
+
 ----
 
 Please note that raw data is exchanged betweeen iTunes and ApEx on the data channel (port 6000) 
 while this control signalling is taking place. 
 
 ----
+
 
 '''References:'''
 [1] http://www.cocoadev.com/index.pl?RemoteAudioOutputProtocol <br>
