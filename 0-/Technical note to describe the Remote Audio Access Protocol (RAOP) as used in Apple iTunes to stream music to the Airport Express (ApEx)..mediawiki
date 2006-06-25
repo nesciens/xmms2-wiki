@@ -1,10 +1,10 @@
-This technical note describes the Remote Audio Access Protocol (RAOP) as used in Apple iTunes to stream music to the Airport Express (ApEx). Although RAOP is not documented, it is quite simple to analyze. RAOP is based on the Real Time Streaming Protocol (RTSP) but with an extra challenge-response based authentication step. The description of RAOP here is partly based on previous reverse-engineering efforts [1, 2, 3]. I also independently analyzed RAOP by analyzing the network packets exchanged observed between an iTunes client (v6.0.4) and ApEx (firmware v6.3). Please note that my understanding of the authentication step differs from [2] and is based on packet analysis and [3].
+<p>This technical note describes the Remote Audio Access Protocol (RAOP) as used in Apple iTunes to stream music to the Airport Express (ApEx). Although RAOP is not documented, it is quite simple to analyze. RAOP is based on the Real Time Streaming Protocol (RTSP) but with an extra challenge-response based authentication step. The description of RAOP here is partly based on previous reverse-engineering efforts [1, 2, 3]. I also independently analyzed RAOP by analyzing the network packets exchanged observed between an iTunes client (v6.0.4) and ApEx (firmware v6.3). Please note that my understanding of the authentication step differs from [2] and is based on packet analysis and [3].</p>
 
-ApEx Discovery:
-ApEx and iTunes discover each other by using the Multicast DNS (MDNS)/Service Discovery protocol from the Bonjour protocol suite. This is a very simple exchange involving the respective MDNS TXT service records of ApEx and iTunes services.
+<b>ApEx Discovery:</b>
+<p>ApEx and iTunes discover each other by using the Multicast DNS (MDNS)/Service Discovery protocol from the Bonjour protocol suite. This is a very simple exchange involving the respective MDNS TXT service records of ApEx and iTunes services.</p>
 
-RAOP:
-RAOP uses two channels for streaming music: a control channel which uses RTSP and a data channel for sending the raw data. Upon startup, iTunes initiates a RTSP connection to the Airport on port 5000. This exchange is shown below (Traffic from iTunes to ApEx is in Blue and the reverse direction is in Red) :
+<b>RAOP:</b>
+<p>RAOP uses two channels for streaming music: a control channel which uses RTSP and a data channel for sending the raw data. Upon startup, iTunes initiates a RTSP connection to the Airport on port 5000. This exchange is shown below (Traffic from iTunes to ApEx is in Blue and the reverse direction is in Red) :</p>
 
 OPTIONS * RTSP/1.0
 CSeq: 1
@@ -17,12 +17,16 @@ Apple-Challenge: X/GmLMLuFvgWf8Y1bQuUug
 RTSP/1.0 200 OK
 CSeq: 1
 Public: ANNOUNCE, SETUP, RECORD, PAUSE, FLUSH, TEARDOWN, OPTIONS, GET_PARAMETER, SET_PARAMETER
-Apple-Response: fUG5XtwIbJDWcpYX7p81z7bYfWD7UKa9VkIQk40szRYT0kP8VJ+30l7YRdvwR2hMxUtjoDDIjqFdDiSu50SfxfEtnquj7nFyR8gqJKnXNnpgegBaaFatoCLHTaH7Nc5H4yH/MQ2qrHtJ/5i+R7ElCd29xaC31r/wfDYgxMy2YmoeaRnvudSUOURHsOO8mEbJYfNp1rC2+W7EGwYyN/QQ98/kREUPO1et2qz7THEUs0n22ql/2VA88EgpyDsQMNIuUdOXdjrH1Moqz+yG0KmKJyP8WoehJPhfW1da4YJSW2qAahQZRgJ7x7M3KUGEhzut8pf6CP/U1FRJqj7KFMTwTg
+Apple-Response: 
+<p>
+fUG5XtwIbJDWcpYX7p81z7bYfWD7UKa9VkIQk40szRYT0kP8VJ+30l7YRdvwR2hMxUtjoDDIjqFdDiSu50SfxfEtnquj7nFyR8gqJKnXNnpgegBaaFatoCLHTaH7Nc5H4yH/MQ2qrHtJ/5i+R7ElCd29xaC31r/wfDYgxMy2YmoeaRnvudSUOURHsOO8mEbJYfNp1rC2+W7EGwYyN/QQ98/kREUPO1et2qz7THEUs0n22ql/2VA88EgpyDsQMNIuUdOXdjrH1Moqz+yG0KmKJyP8WoehJPhfW1da4YJSW2qAahQZRgJ7x7M3KUGEhzut8pf6CP/U1FRJqj7KFMTwTg</p>
 Audio-Jack-Status: connected; type=analog
 
-As can be seen the iTunes client provides its version number and a randomly generated 22-byte cryptographic â€œchallengeâ€œ to the ApEx in the Apple-Challenge parameter. The ApEx replies with a response (Apple-Response) which is the challenge encrypted using the private key stored in the ApEx. iTunes verifies this value using its public key part of the assymmetric key-pair. Note that this step is performed by iTunes to verify if it is talking to a real ApEx. The connection is tore down after this exchange.
+<p>
+As can be seen the iTunes client provides its version number and a randomly generated 22-byte cryptographic â€œchallengeâ€œ to the ApEx in the Apple-Challenge parameter. The ApEx replies with a response (Apple-Response) which is the challenge encrypted using the private key stored in the ApEx. iTunes verifies this value using its public key part of the assymmetric key-pair. Note that this step is performed by iTunes to verify if it is talking to a real ApEx. The connection is tore down after this exchange.</p>
 
-iTunes then establishes another RTSP connection to ApEx on the same port (5000) wherein it provides a randomly generated AES key (rsaaeskey) with an Initialization Vector (aesiv) to the ApEx. The AES key is encrypted using the public key by iTunes. The ApEx verifies that it is talking to iTunes by decrypting the AES key using its private key. Note that the public key part has been recovered using reverse-engineering and is publicly available [3]. This exchange is shown below:
+<p>
+iTunes then establishes another RTSP connection to ApEx on the same port (5000) wherein it provides a randomly generated AES key (rsaaeskey) with an Initialization Vector (aesiv) to the ApEx. The AES key is encrypted using the public key by iTunes. The ApEx verifies that it is talking to iTunes by decrypting the AES key using its private key. Note that the public key part has been recovered using reverse-engineering and is publicly available [3]. This exchange is shown below:</p>
 
 ANNOUNCE rtsp://10.0.1.2/3233609434 RTSP/1.0
 CSeq: 1
@@ -41,7 +45,8 @@ t=0 0
 m=audio 0 RTP/AVP 96
 a=rtpmap:96 AppleLossless
 a=fmtp:96 4096 0 16 40 10 14 2 255 0 0 44100
-a=rsaaeskey:HSyPEnWds0b2Qoc1733RyWmInqHXn61V8UarTBW+cwPrSV4DqP8kChGxGnJ9QJAyQQvTcuVhLJ2MCGP2ddANQWeguvxJfyIZuM9bwX4ZA3FgWWF6QOTyDVy7ppK587Mh1Y6+GYujTdMZ6ukbC3thXmC5PyipVIEOR3By9AJGpVTWR8LpG5dcuwkXbzlrmqr4IT7bsffpAm/5wzqkOlcrNiI/QcYqC0jZ744mNAkQIQqijVR/IoOF6o4KpvwUIXIlhPJm87m4ghTLuXEqDhtdcmKza/uRmOl0KwcHkS/ON4WgvgiuHzlMML8pVDBKeAY1R6x2sGxsGWTWOE3FsMFM/w
+<p>
+a=rsaaeskey:HSyPEnWds0b2Qoc1733RyWmInqHXn61V8UarTBW+cwPrSV4DqP8kChGxGnJ9QJAyQQvTcuVhLJ2MCGP2ddANQWeguvxJfyIZuM9bwX4ZA3FgWWF6QOTyDVy7ppK587Mh1Y6+GYujTdMZ6ukbC3thXmC5PyipVIEOR3By9AJGpVTWR8LpG5dcuwkXbzlrmqr4IT7bsffpAm/5wzqkOlcrNiI/QcYqC0jZ744mNAkQIQqijVR/IoOF6o4KpvwUIXIlhPJm87m4ghTLuXEqDhtdcmKza/uRmOl0KwcHkS/ON4WgvgiuHzlMML8pVDBKeAY1R6x2sGxsGWTWOE3FsMFM/w</p>
 a=aesiv:EBqQ4XNBST+PpC28SX1oXA
 
 RTSP/1.0 200 OK
@@ -115,8 +120,8 @@ RTSP/1.0 200 OK
 CSeq: 6
 Connection: close
 Audio-Jack-Status: connected; type=analog
-
-Please note that raw data is exchanged betweeen iTunes and ApEx on the data channel (port 6000) while this control signalling is taking place. 
+<p>
+Please note that raw data is exchanged betweeen iTunes and ApEx on the data channel (port 6000) while this control signalling is taking place.<p> 
 
 References:
 [1] http://www.cocoadev.com/index.pl?RemoteAudioOutputProtocol 
