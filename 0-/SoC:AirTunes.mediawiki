@@ -44,6 +44,7 @@ music player itself (like iTunes). As a side-effect of this work, XMMS2 will
 also gain the ability to encode/decode ALAC codec. Once finished, I think
 XMMS2 will be the first media player under Linux to support both these features.
 
+
 ----
 
 == Proposed Timeline ==
