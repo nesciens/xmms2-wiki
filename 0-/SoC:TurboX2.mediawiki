@@ -56,6 +56,10 @@ The framework itself is in place and a basic view that is identical to the old h
 
 '''Status''': Initial implementation is in place and working, more Views and testing to come.
 
+===Cross Browser Compatability===
+Opera 9 support is in tree. It's not 100%, and probably won't ever be. Opera is missing some CSS3 declerations that firefox has like overflow-x, so the playlist will always like a little off in Opera, or at least until opera implements this. Opera also caches XMLHTTPRequests so I had to put a back in place to make the url of the status controller different each time to get around it. (Ever incrementing number as an argument). The LazyLoader I was able to get to work on Opera but only if I disable unresolve. I also had to put a `resolved` element class into place, but I was thinking that would be a good idea anyway. Basically the reason Opera can't unresolve is that Opera jumps to the position of an update in the DOM tree, which means that when an entry unresolves it jumps to it and then resolves it. but then the position in the DOM tree you were at before the jump becomes unresolved and you go into this crazy jumping loop. I've been wanting to make unresolving optional anyway, so this is no big deal. 
+
+'''Status''': Opera 9 and Firefox 1.5 are supported, others to come if I have access and the time. Opera 9 support is mostly ok, but has a few bugs.
 ==Todo==
 :&#10003; Finish JavaScript implementation of PropDict and use it through out TurboX2 
 :&#10063; Make TurboX2 at least work on Safari and hopefully on Opera and IE 6
