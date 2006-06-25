@@ -47,6 +47,13 @@ XMMS2 will be the first media player under Linux to support both these features.
 
 ----
 
+== Updates ==
+
+'''20 June 2006 ''': [[Technical note that describes the Remote Audio Access Protocol (RAOP) used in AirTunes]]
+
+
+----
+
 == Proposed Timeline ==
 
 May 24th - June 15th:
