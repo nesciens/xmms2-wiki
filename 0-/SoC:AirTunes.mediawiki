@@ -84,4 +84,4 @@ Implement iTunes share discovery using Bonjour.
 
 == Progress Till Date ==
 
-[[Technical note to describe the Remote Audio Access Protocol (RAOP) as used in Apple iTunes to stream music to the Airport Express (ApEx).]]
+[[Technical note that describes the Remote Audio Access Protocol (RAOP) used in AirTunes.]]
