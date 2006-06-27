@@ -6,6 +6,7 @@ that can be used without much issue on a number of web browsers and with an ease
 ==Schedule==
 * For Checkpoint of 7/8 June - Integrate MochiKit PropDict and ressurect and use /mediainfo controller
 * For Midterm Evaluation of 27 June - Implement move handler for playlist changes, look into and possibly start to implement a lazy loading widget for the playlist and various medialib areas, and start to implement views. ''N.B.'' Wiki needs to be updated for the evaluation!
+* * Views and LazyLoader implemented - Views is integrated; Will integrate Lazy Loader for playlist tonight (27 Jun 2006), also have a few victims for a test group, will work to find more. Opera 9 support is an added bonus.
 
 ==Implementation specifics==
 
