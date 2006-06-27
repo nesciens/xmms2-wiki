@@ -8,6 +8,8 @@ With the increasing popularity of Apple's iTunes, many media players are attempt
 
 '''2006/06/07''' -- Get a basic DAAP standalone client up and running. It should be able to, at minimum, stream a requested song.
 
+'''2006/06/23''' -- DAAP client updated to be more robust and can successfully communicate with iTunes. The code is available from my git repository at git://git.xmms.se/xmms2/xmms2-coledot.git. Next: convert this client to a transform plugin.
+
 == TODO ==
 
 #Evaluate the available options for DAAP implementation. This includes DAAP libraries (e.g. libopendaap) and existing implementations (e.g. Rhythmbox). Each option will be reviewed to determine which one would work best for XMMS2. However, the possibility of using libopendaap is slim, since it lacks good documentation and is not widely used.
