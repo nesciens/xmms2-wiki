@@ -167,5 +167,10 @@ Notes:
 
 * Collection struct
 ** Definition
-** Functions to create, modify, delete
+** Functions to create, modify, delete collection structures
 ** Support in IPC
+* Server work
+** Deserialisation of collection objects
+** Collection querying
+** Persistant storage
+** Playlists
