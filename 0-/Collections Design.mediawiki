@@ -1,0 +1,171 @@
+Now that the [[Collections_Concept | Collections Concept]] has been
+explained, we can define how collections will be implemented and use
+concretely, both in the server and as an API.
+
+
+= API Changes =
+
+== Collection API ==
+
+We first define new functions to work with collections.
+
+ // Creation/deletion
+ xmmsc_coll_t* xmmsc_coll_new (xmmsc_coll_type_t type);
+ void xmmsc_coll_free (xmmsc_coll_t* coll);
+ 
+ // Setting properties
+ void xmmsc_coll_set_type(xmmsc_coll_t* coll, xmmsc_coll_type_t type);
+ void xmmsc_coll_set_idlist(xmmsc_coll_t* coll, int ids[]);
+ void xmmsc_coll_add_operand(xmmsc_coll_t* coll, xmmsc_coll_t* op);
+ void xmmsc_coll_remove_operand(xmmsc_coll_t* coll, xmmsc_coll_t* op);
+ 
+ // Getting properties
+ xmmsc_coll_type_t xmmsc_coll_get_type(xmmsc_coll_t* coll);
+ void xmmsc_coll_get_idlist(xmmsc_coll_t* coll, int** ids);
+ void xmmsc_coll_operand_list_first(xmmsc_coll_t* coll);
+ void xmmsc_coll_operand_list_entry(xmmsc_coll_t* coll, xmmsc_coll_t** operands);
+ void xmmsc_coll_operand_list_next(xmmsc_coll_t* coll);
+  
+ // Attributes
+ void xmmsc_coll_attribute_set(xmmsc_coll_t* coll, const char* key, const char* value);
+ void xmmsc_coll_attribute_remove(xmmsc_coll_t* coll, const char* key);
+ int  xmmsc_coll_attribute_get(xmmsc_coll_t* coll, const char* key, char** value);
+ void xmmsc_coll_attribute_foreach(xmmsc_coll_t* coll, xmmsc_coll_attribute_foreach_func func, void* user_data);
+ 
+ // Default "All Media" collection
+ xmmsc_coll_t* xmmsc_coll_universe();
+ 
+ // Interact with server
+ xmmsc_result_t* xmmsc_coll_get(xmmsc_connection_t*, char* collname, char* namespace); // [xmmsc_coll_t]
+ xmmsc_result_t* xmmsc_coll_list(xmmsc_connection_t*, char* namespace);                // [list<string>]
+ xmmsc_result_t* xmmsc_coll_save(xmmsc_connection_t*, xmmsc_coll_t* coll,
+                                char* name, char* namespace);                         // [void]
+ int xmmsc_result_get_collection(xmmsc_result_t*, xmmsc_coll_t**);
+ 
+ // Query
+ xmmsc_result_t* xmmsc_coll_query_ids  (xmmsc_connection_t*, xmmsc_coll_t* coll, 
+                                       const char* order[], int limit_start, int limit_len); // [list<int>]
+ xmmsc_result_t* xmmsc_coll_query_infos(xmmsc_connection_t*, xmmsc_coll_t* coll,
+                                       const char* order[], int limit_start, int limit_len,
+                                       const char* fetch[], const char* group[]);            // [list<Dict>]
+ 
+ // Search (in collections)
+ xmmsc_result_t* xmmsc_coll_find(xmmsc_connection_t*, int mediaid, char* namespace);  // [list<xmmsc_coll_t>]
+
+Notes:
+* id lists are simply a 0-terminated array of integers.
+
+
+== Sample uses of the Collection API ==
+
+=== Using idlists ===
+
+'''Goal:''' initialize an idlist from the content collection "Foo".
+
+ xmmsc_result_t* res = xmmsc_coll_get (conn, "Foo");  // get collection "Foo"
+ xmmsc_result_wait (res)
+ 
+ xmmsc_coll_t* some_coll;
+ xmmsc_result_get_collection (res, some_coll);
+ 
+ int* ids;
+ xmmsc_coll_get_idlist (some_coll, &ids);
+ 
+ xmmsc_coll_t* idl_coll = xmmsc_coll_new (XMMS_COLL_TYPE_IDLIST);
+ xmmsc_coll_set_idlist (idl_coll, ids);
+ 
+ xmmsc_result_free (res);
+
+=== Using the AND operator and references ===
+
+'''Goal:''' create a union of collection "Foo" and a custom collection (all media by Sonic Youth), and filter the resulting collection by year (only media from 2006).
+
+ xmmsc_coll_t* coll, operand;
+ 
+ coll = xmmsc_coll_new (XMMS_COLL_TYPE_AND);
+ 
+ 
+ // reference to collection Foo
+ operand = xmmsc_coll_new (XMMS_COLL_TYPE_REFERENCE);
+ xmmsc_coll_attribute_set(operand, "reference", "Foo");
+ 
+ xmmsc_coll_add_operand (coll, operand);
+ 
+ 
+ // custom collection (all media by Sonic Youth)
+ operand = xmmsc_coll_new (XMMS_COLL_TYPE_MATCH);
+ 
+ xmmsc_coll_t* allmedia;
+ xmmsc_coll_universe (&allmedia);
+ xmmsc_coll_add_operand (operand, allmedia);
+ 
+ xmmsc_coll_attribute_set(operand, "artist", "Sonic Youth");
+ 
+ xmmsc_coll_add_operand (coll, operand);
+ 
+ 
+ // Filter some more on year
+ xmmsc_coll_t* last = xmmsc_coll_new (XMMS_COLL_TYPE_MATCH);
+ xmmsc_coll_attribute_set(last, "year", "2006");
+ xmmsc_coll_add_operand (last, coll);
+
+=== Querying a collection ===
+
+'''Goal:''' Get the first 20 media of the collection "Svensk musik" when ordered by artist/album.
+ 
+ xmmsc_coll_t* qcoll = xmmsc_coll_new (XMMS_COLL_TYPE_REFERENCE);
+ xmmsc_coll_attribute_set (qcoll, "name", "Svensk musik");
+ xmmsc_coll_attribute_set (qcoll, "namespace", XMMS_COLLECTION_NS_COLLECTIONS);
+ 
+ xmmsc_result_t* res;
+ char order[] = { "artist", "album", NULL };
+ res = xmmsc_coll_query_ids (conn, qcoll, order, 0, 20);
+ 
+ xmmsc_result_wait (res);
+ 
+ // ... browse results ...
+ 
+ xmmsc_result_free (res);
+ xmmsc_coll_free (qcoll);
+
+
+== Playlist API ==
+
+''TBD:''
+* Basically, add the collection name to all functions
+* no playlist_list
+* better sorting
+* keep set_next ?
+
+
+== Medialib API ==
+
+''TBD''
+
+
+= Server design =
+
+''TBD:''
+* flow, organization, commands
+* query generation
+* storage
+* redesign playlists
+
+
+= Sample use of collections in XMMS2 cli =
+
+* get (show struct)
+* list (list collections)
+* save (pattern/collection under the given name)
+* remove (a saved collection)
+* query (list collection content)
+* find (collections containing id X)
+
+
+
+= Implementation TODO =
+
+* Collection struct
+** Definition
+** Functions to create, modify, delete
+** Support in IPC
