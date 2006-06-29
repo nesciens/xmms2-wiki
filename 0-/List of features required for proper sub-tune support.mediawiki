@@ -1,44 +1,32 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+{{Navbar}}
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+This matter has moderate level of complexity due to differences in formats having sub-tunes. SID-tunes are rather simple, the file header defines number of sub-tunes, thus it is known without running any emulated code. Some special custom module playing routines (supported by UADE) are more problematic, they _may_ require undefined length of execution of the actual emulation to determine the number of sub-tunes. Thus I have come up with two slightly distinct ways to implement good support for sub-tunes, and I suggest following:
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
+== Similar in both methods ==
 
-SEO: UndoneHeaven
+* There should be a way to query number of available sub-tunes from decoder plugin. The decoder could return number of tunes IF KNOWN, or some special values if the number is known only after execution (not feasible to detect while adding files to playlist)
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+== Method #1 (more complex, possibly better) ==
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+* Core should support non-linear numbering of sub-tunes, e.g. it should be possible for a plugin to tell core "I have sub-tunes #1, #7 and #18 available, but no others." This is because the plugin may want to discard some subtunes depending on user's settings or other reasons.
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+* Based on ackquired information, the core should add to playlist/medialib/whatever the sub-tunes (IF number of subtunes is known)
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+* If number of subtunes is NOT known, just add the main file/tune. For this to work, there should be a sub-tune selector control in clients, see method #2 for that.
+
+== Method #2 (simpler) ==
+
+* Use a sub-tune selector (for CLI clients adding arbitrary subtunes should suffice).
+
+* A way for clients to query the number of subtunes.
+
+* A way for plugins to signal clients/core that information has changed (number of subtunes for example).
+
+
+== Other special requirements for special formats ==
+
+XMMS2 core and clients must support following for succesful working of special formats like SID.
+
+* Any information (song length, title, etc.) may be unknown or it may change during decoding. Core must support a way to signal such changes and update information.
+
+[[Category:Developer ideas]]
