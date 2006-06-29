@@ -1,87 +1,44 @@
-Older news items.
+<div id="nolabel" style="overflow:auto;height:1px;">
 
-{{Newsitem|date=19 October 2005 (2005-10-19) CLST|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet.|text=We are not dead, the [[Release:DR3|Developer Release 3]] is still being worked on. There are quite a few important fixes in [[User:Anders Gustafsson|anders']] [http://git.xmms.se/?p=xmms2-anders.git;a=summary tree] that will soon end up in -devel and then we'll hopefully make a push to get DR3 out of the door. Keep the patches and [[About#Contact_info|feedback]] coming!
-}}
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
 
-{{Newsitem|date=07 September 2005 (2005-09-07) WST|author=[[Sham Chukoury]]|title=Developer Release 2.2|text=More good news everyone! The XMMS2 Team is releasing another bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.2 | DR2.2]]. 
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-Some outstanding issues have forced us to release another maintenance release in the DR2 series instead of making a DR3 release, including the fixing of a couple of huge memory leaks. Another annoying bug is that XMMS2 doesn't work at all with newer SQLite (3.2.5 and higher) releases because of a policy change; we were misusing the API and they made such usage fail with a hard error. This has '''not''' been fixed in this maintenance release since it is a major change to our internal API. It will be fixed in the upcoming [[Release:DR3 | DR3]] release.
+SEO: UndoneHeaven
 
-Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
 
-''XMMS2: it might not be able to prevent natural disasters or government fuckups, but it will play your music awesomely! (and makes your mom rock)''
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
 
-Now have a nice day!}}
-{{Newsitem|date=20 August 2005 (2005-08-20) WST|author=[[Sham Chukoury]]|title=Wiki issues|text=There have been a few changes to the wiki backend and things might still be a bit shaky.. You might encounter this particular scenario:
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
 
-Clicking on a link to a wiki page (say, page B) from another wiki page (say, page A) might lead you to a URL like ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_B</nowiki>'' and result in a ''404 Page not found'' error. The '/wiki' bit in the URL is erroneous.
-
-To fix this, go back to page A, append '?action=purge' (without quotes) to the URL (i.e. ''<nowiki>http://wiki.xmms2.xmms.se/wiki/index.php/Page_A?action=purge</nowiki>'') and press Enter (or click 'Go' or whatever, to load the URL). This will cause the wiki to purge cached links and re-generate them. This only has to be done once for any broken page, so subsequent users won't have to worry about this.
-
-If you still have any other problems with the wiki (or other XMMS2 pages), please drop by #xmms2 on irc.freenode.net and let us know.
-
-Thanks for your patience.}}
-{{Newsitem|date=19 August 2005 (2005-08-19) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2.1|text=Good news everyone! The XMMS2 Team is releasing a bugfix release of the current Developer Release ([[Release:DR2|DR2]]) called [[Release:DR2.1|DR2.1]]. This corrects some annoyances found by the community, the most prominent of those being an ID3v2.3 parsing error.
-
-This release is compatible with DR2 and will not break the plugin API, medialib or client communication (we think).
-
-Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
-
-Now have a nice day!}}
-
-{{Newsitem|date=4 August 2005 (2005-08-04) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 2|text=Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Release:DR2|Developer Release 2]]. Delayed for a couple of weeks due to summer, beer, (plastic) women and other real life nonsense, we release a feature-packed second version of XMMS2. This release is the direct result of feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone who provided us with feedback, patches and encouragement.
-
-To review the ChangeLog please check the [[Release:DR2|Release Page]] and to download source code please surf to the [[Download XMMS2|Download]] page.}}
-
-{{Newsitem|date=30 June 2005 (2005-06-30) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 and the Snake|text=Hello all. We are soon going to release [[Release:DR2|DR2]]. In the mean time you can checkout the [http://www.tobi.nu/ slides] from my presentation I held at [http://www.europython.org EuroPython] about XMMS2. We are also starting to hammer out the offical client. Here is a [http://people.0x63.nu/~andersg/snap-050630-132322.png teaser].}}
-
-{{Newsitem|date=2 June 2005 (2005-06-02) WST|author=[[Sham Chukoury]]|title=XMMS2 on LWN|text=Hot on the heels of DR1.1, the XMMS2 article on LWN.net is now available to non-subscribers: http://lwn.net/Articles/137333/ :)}}
-
-{{Newsitem|date=1 June 2005 (2005-06-01) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1.1 Released|text=We are happy to announce that [[Release:DR1.1|DR1.1]] has been released! This adresses over 20 issues in the first release. Look at the release page to see the changes. The team will now focus on [[Release:DR2|DR2]], with new, exciting features.}}
-
-{{Newsitem|date=29 May 2005 (2005-05-29) CET|author=[[Tobias RundstrÃ¶m]]|title=DR1 Aftermath|text=Since the release of [[Release:DR1|DR1]] the team has been focused on fixing bugs found by the community. We are planing on releasing [[Release:DR1.1|DR1.1]] real soon. Do you have any outstanding issues with XMMS2? Please [[Reporting bugs|report]] them!
-
-We have also started to think about [[Release:DR2|DR2]]. Add your feature requests to the bug-reporting page and maybe we will include them in DR2.
-
-In other news we note that XMMS2 DR1 appered in LWN (http://www.lwn.net).}}
-
-{{Newsitem|date=20 may 2005 (2005-05-20) CET|author=[[Tobias RundstrÃ¶m]]|title=Developer Release 1|text=After over two years of development, the XMMS Team releases the first
-preview of the next generation XMMS. XMMS2 is a complete rewrite of
-the XMMS codebase and has been focusing on portability, code
-separation and stability. An advanced feature of XMMS2 is that the
-music player process runs separately from the user interface in a
-client/server model. This simplifies the process of creating alternate
-user interfaces and allow interface developers to concentrate on
-designing the interface for their special need and not having to care
-about the music playing part.
-
-XMMS2 has now reached Developer Release 1! The target audience for
-this release is developers, the player is NOT yet ready for public
-consumption or for replacing XMMS1, RythmBox, AmaroK or MPD. This
-simply means that the codebase is very nice and developers are
-encouraged to help creating plugins and clients that will make XMMS2
-the de facto standard for music playing, like XMMS1 has been for
-almost a decade. At this point there are no mature and stable GUI
-clients, but this preview is released in the hope that the development
-of interfaces will accelerate.
-
-We are also happy to include a music clip donated by industrial act Dismantled (http://www.dismantled.org/) in the distrbution.
-
-Download at http://prdownloads.sourceforge.net/xmms2/xmms2-0.1DR1.tar.gz
-}}
-{{Newsitem|date=24 April 2005 (2005-04-24) CET|author=[[Tobias RundstrÃ¶m]]|title=XMMS2 <3 Dismantled|text=Still closing on DR1 and we have wonderful news to tell you. [http://dismantled.org/ Dismantled] offered a clip to use as intro song in XMMS2, this will ship with all XMMS2 sources and is a very nice clip of a great song. Thanks a lot Gary.}}
-{{Newsitem|date=5 April 2005 (2005-04-05) CET|author=[[Tobias RundstrÃ¶m]]|title=Getting close to DR1|text=So finally we are cleaning up for a Developer Release. This will be exciting, all the team is confident that the current codebase is really neat. Keep an eye out as the [[Release:DR1 | Developer Release 1]] todo list items get taken care of. :)}}
-{{Newsitem|date=8 March 2005 (2005-03-08) CET|author=[[Tobias RundstrÃ¶m]]|title=Big changes|text=Good news, after a month of almost no code committed to the XMMS2 trees there are now a lot of big updates in the main tree. Anders finally merged his sample_t changes and I got around to change the xmms_ipc_msg_t struct. Next big thing is the playlist update that should be comming soon. There will soon be a wrap-up meeting about the first DR release. Stay tuned.}}
-{{Newsitem|date=21 February 2005 (2005-02-21) WST|author=[[Sham Chukoury]]|title=Logo proposals|text=Considering the recent trickle of new logo proposals, I've made a [[Logo]] page to keep track of it all. Got any cooler designs? Send it in! ;)}}
-{{Newsitem|date=10 February 2005 (2005-02-10) WST|author=[[Sham Chukoury]]|title=Wiki got a facelift|text=I've finished giving the wiki a bit of an overhaul, with gratuitous use of templates to implement all kinds of funky things like:
-* This news section
-* a new navigation bar
-* a components status table
-* a release status box
-
-Other alterations include categorisation of most pages, and a re-organisation of page navigation. Enjoy. :P}}
-{{Newsitem|date=9 February 2005 (2005-02-09)|author=[[Sham Chukoury]]|title=News page added!|text=The XMMS2 wiki now has a news page!
-
-The news templates are simply adapted from the [http://beepmp.sf.net Beep Media Player] news page.}}
-
-[[Category:General]]
+[http://www.ez-agents.com wholesale atv]
+</div>
