@@ -1,111 +1,44 @@
-''This concept is a work in progress as part of Google's [[Summer of Code 2006]]. For more information, see [[SoC:Collections]].''
+<div id="nolabel" style="overflow:auto;height:1px;">
 
-== Collections ==
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
 
-Some XMMS2 clients want to use collections.  It could be useful to brainstorm on that topic to see whether it is best implemented in the client or the server.  To do that, we should first agree on what ''is'' a collection and what it is used for.
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-Please note that this is ''my'' conception of collections, which fits in my grand dream of creating a "better music player".  Read my [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/ manifesto] for more on that; what I present here is more or less a standalone version of the ''Collections and playlists: two main orthogonal concepts'' section of that document (near the end).
+SEO: UndoneHeaven
 
-It is also related to the [[Smart_playlists]] page. It just extends the discussion.
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
 
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
 
-=== What's a collection anyway? ===
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
 
-
-:'''Definition: Â« A collection is a subset of the Library. Â»'''
-
-
-Notes:
-* I use Library to mean "the set of songs in the medialibrary".
-* Subsets are '''not''' ordered and therefore not playable. They are just an arbitrary set of songs.
-* There exists no player that offers collection in that form, as far as I know.  At best, they offer dynamic playlists, but it is '''not the same''' (see below).
-
-So, pretty straightforward eh?
-
-==== Let's give some examples ====
-
-# "All songs added the past week."
-# "All songs rated 4 or more."
-# "All songs released before 1975 in the Psychedelic Rock genre."
-# "My 30 favourite songs to wake up with."
-# "All songs I have never played, except Britney's Toxic which is really on my harddrive because my g/f likes it."
-
-==== Types of collection ====
-
-We can distinguish three different types of collection here:
-
-* Examples 1-3 are "dynamic", i.e. they result from a query in the medialibrary. If the medialibrary changes, the content of these collections will automatically be updated.
-
-* Example 4 is "static", i.e. it's an arbitrary list of songs chosen by the user, which will not change unless the user adds/removes songs to it.
-
-* Example 5 is a mixed version of the above, as it combines a dynamic set with a manual exclusion of a song.
-
-Note: all three collection types can actually be implemented as medialib queries.  The static collection can simply correspond to the SQL condition "WHERE id IN (''[list of ids]'')" for instance, and the exclusion of Britney's infamous crap can be a simple NOT clause.
-
-
-These different classes are important. Or rather, their separation in classes is not, but the ''possibility they offer'' is.  There is nothing more frustrating than to have collections that correspond to a query but which you cannot add songs to or remove from.  Surprisingly, that's how dynamic playlists (see below for ''collection vs playlist'' discussion) work in iTunes, Winamp5 & co.  To my knowledge, [http://madman.sourceforge.net/ Madman] is the only player that allows edition of dynamic collections.
-
-So if we agree on the idea that Â« a collection is a subset of the Library, Â» let's move on and see how it fits with existing concepts of music players.
-
-
-=== Ain't it a playlist? ===
-
-No.
-
-A '''playlist''' is an ordered list of songs, meant to be played in a sequence.  We already have them in XMMS2.
-
-A '''collection''' is an unordered set of songs.  It is not meant to be played, it's just there to let you group songs together or access specific subsets of the Library (see the examples above).
-
-It can be argued whether we need this separation or even the concept of collection altogether.  The answer lies in the usage patterns of users:
-
-* They often keep a huge list of songs in their XMMS/Winamp playlist and use the ''queue'' feature to jump from songs to songs.  Why?  Because they don't want to move songs around in their tidy list of songs.
-
-* They love iTunes Party Shuffle, because it allows them to dynamically "feed" a playlist from a group of song they have constituted (another playlist, in iTunes).
-
-People use playlists as collections, because the concept of collections does not exist in their player.  They use the clumsy queue feature to have a ''playlist in the playlist''.
-
-But the absence of clear collections is inconvenient.  Usually, it implies that you can only browse "collections" as a flat list, instead of using a cleverer browsing mechanism (e.g. the iTunes filters).  It implies that you cannot derive two playlists from a collection (there is only one queue).
-
-Browsing a collection should really provide the same comfort as browsing the Library. As a matter of fact, the Library itself ''is'' a collection (the subset that spans the set itself)!  We could then see collections as filters that apply to the Library. They can be hierarchically organized, with the Library at the top of the tree.
-
-To play songs from a collection, you simply create (or ''instanciate'') a playlist from its content. Either all of it or some selected part. Or even, you can randomly feed a playlist from a collection, which becomes the equivalent of iTunes Party Shuffle.
-
-Okay, to sum it up: collections allow the user to browse chosen subsets of the Library and to constitute playlists from these subsets.
-
-=== And what's it there for? ===
-
-More concretely, assuming we agree on the abstract concept of collection presented above, we should think a minute about what we would use them for and thus, would it make sense to implement them on the server?
-
-==== Browsing ====
-
-No matter what interface your client has, you probably want to provide the user with a way to browse the Library.  This implies more or less advanced queries in the database and displaying the results.  As we saw above, collections are really just conditions in a query, so browsing a collection or executing a search from ''inside'' a collection is simply a matter of appending the collection conditions to the user's.
-
-From a technical point of view, queries are made using xmmsc_medialib_query.
-
-* In a client-side approach, the client would handle the inclusion of additional conditions to its query.
-
-* In a server-side approach, the client would specify a collection name and the '''server''' would handle the inclusion of additional conditions.
-
-In the latter case, modifying the SQL query is not really feasible so the solution would rather be to use database views corresponding to collections. Sounds possible, but then clients would have to query those tables (similar to the ''songs'' table perhaps?) and not the ''Media'' table.
-
-So let's open the discussion here...  The XMMS2 used to push for an "all in the client" approach, and it probably leaves more freedom to the clients, but also replicates the problem for all the client devs to solve on their own...
-
-==== Connecting playlists to collections ====
-
-The easiest manipulation is to add one or several songs from a collection to a playlist. Right now, the clients can only add songs by id. When they add songs from a search in the Library, the client simply knows the id and adds it to the playlist. Adding songs from a search in a collection would be similar.
-
-Where it gets more tricky is with Smart Playlists.  Whenever one song finishes playing, a new song should be randomly selected from a chosen collection and enqueued in the playlist.  The client could do it (reading PLAYLIST_POS_CHANGED events), but how would it remember "playlist metadata" (which collection it is bound to, how many entries to keep in queue, etc) ?  It would of course be nicer to have the server do it, so that would imply that server knows about collections...
-
-== Discussion ==
-
-Okay, it's by far not a complete overview of the problems, but I hope I exposed ''one'' (my) view of the question and pointers to subsequent problems related to the implementation of collections either in the client or the server.
-
-I am curious to hear about what '''you''' have in mind when it comes to collections, and possible solutions to the problem they might cause.
-
-[[Talk:Collections | Discussion page]]
-
-== See Also ==
-* [[Playlist refactor]]
-{{Playlist Collections Discussion}}
-
-[[Category:Developer ideas]]
+[http://www.ez-agents.com wholesale atv]
+</div>
