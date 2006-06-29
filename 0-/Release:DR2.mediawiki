@@ -1,44 +1,153 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+{{Navbar}}
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+'''Developer Release 2''' is the second release of XMMS 2 code. What it means:
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
+* Make adjustments in the API according to needs of new plugins/clients. Hopefully these are very minor (or totally non-existent if we are lucky)
+* Fix bugs
+* Add tons with new bugs and new features that will make xmms2 crash in exciting new ways.
 
-SEO: UndoneHeaven
+== Release notes ==
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Release:DR2 | Developer Release 2]]. Delayed for a couple of weeks due to summer, beer, (plastic) women and other real life nonsense, we release a feature-packed second version of XMMS2. This release is the direct result of feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone who provided us with feedback, patches and encouragement.
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+We've come quite a long way since DR1 and DR1.1, and not just code-wise.. Our ''#xmms2'' channel on Freenode has grown considerably, with users and client developers frequently coming and going, or simply lurking around. Project-wise, there have been a number of small improvements here and there:
+* A new mini-homepage at http://xmms2.xmms.org/ (featuring a cool map, of all things!)
+* A new 'contribs' page at http://xmms2.xmms.org/contrib/
+* The [http://bugs.xmms2.xmms.se Bug tracker] becoming more and more integral to the process of working on XMMS2 code, especially with:
+* The use of specific [[ChangeLog Format | commit tags]] to categorise changes to the code tree.
+* Not related specifically to the XMMS2 team, but new [[ XMMS2 Clients]] have been popping up like mushrooms, as developers have dared to install XMMS2 and been inspired to create some funky clients.
+* An increased rate of contributions and bug fixes from other users and developers than just the XMMS2 team. (keep them coming!)
+* Also thanks to the freenode channel, we've been receiving feature requests from certain specialised users (read: DJs) about things they'd like to see in XMMS2. Stay tuned while we work on these..
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+This release breaks the client API, the plugin API, as well as your current medialib. Please understand that this is pre-release software and should only be downloaded and used by developers not end-users.
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+To review the ChangeLog please check the wiki http://wiki.xmms2.xmms.se/
+To download source code please surf to the [[Download XMMS2 | Download]] page.
+
+Oh, and happy birthday to Sham!
+
+== ChangeLog ==
+===New Features===
+* Alexander Botero-Lowry:
+** Added man pages. {{Bug|272}}
+** NetBSD support {{Bug|225}}
+* Alexander Rigbo:
+** Add xmmsc_medialib_playlists_list command. {{Bug|229}}
+** Added clientlib function to delete a playlist. {{Bug|221}}
+* Magnus Bjernstad:
+** translate numeric genres to names. {{Bug|237}}
+** Added medialib_path_import to PythonAPI {{Bug|240}}
+** Added medialib_get_id to PythonAPI {{Bug|240}}
+** added playlist_remove to PythonAPI {{Bug|240}}
+** Added playlists_list command. {{Bug|240}}
+** Add configval_register to python bindings {{Bug|232}}
+* Tilman Sauerbeck:
+** Updated to new xmmsclient API. Removed typed methods to retrieve result value, use Result#value instead. {{Bug|235}}
+* Tobias Rundstrom:
+** Added medialib_playlist_loaded method to Python. {{Bug|280}}
+** Added medialib_playlist_loaded signal. {{Bug|280}}
+** Added a command in the cli for instant loading of playlists. {{Bug|220}}
+** Added support for integers in medialib. {{Bug|254}}
+** Report bitrate in bps instead of kbps. {{Bug|246}}
+** Updated Python bindings to new list / dict API. {{Bug|235}}
+** Make lists and dicts able to carry ints as well as strings in the same resultset. {{Bug|235}}
+* Tuure Laurinolli:
+** Partial windows support for clientlib {{Bug|116}}
+* Vegard Nossum:
+** Added new URL parser that also supports IPv6 {{Bug|245}}
+===Bugs fixed===
+* Alexander Botero-Lowry:
+** Use the correct symbol in ossaudio-test. {{Bug|288}}
+** Added a flush command in the OSS driver to fix sampleformat changes. {{Bug|248}}
+** Make it build on OpenBSD. {{Bug|214}}
+* Anders Gustafsson:
+** Fix to UCS2 encoded text frames in id3v2.2/2.3 {{Bug|290}}
+** Don't steal another xmms2d's ipc unix-socket. {{Bug|283}}
+** Fix get_mediainfo in flac by actually using mode flag in init. {{Bug|258}}
+** Give startup/shutdown.d-scripts full environment. {{Bug|285}}
+** Call init in decoders before get_mediainfo, mode arg to init. {{Bug|128}}
+* Ma Xuan:
+** Make sure that ringbuffer data is correct after seeking. {{Bug|243}}
+* Michael Lindgren:
+** Better errorhandling in html export command. {{Bug|222}}
+* Sham Chukoury:
+** Allow config file to be specified as command line option {{Bug|256}}
+** Fix output.plugin config property not registered when plugin specified on cmd line {{Bug|253}}
+** Fix log init sequence, remove unused log regexp {{Bug|234}}
+* Tilman Sauerbeck:
+** Updated Wave plugin to new decoder plugin API. {{Bug|128}}
+* Tobias Rundstrom:
+** Add 64bytes ints on file operations. {{Bug|270}}
+** Remove EXTINFO parser from m3u plugin since it often gives us bad data. {{Bug|262}}
+** Fixed some strange things in ipc layer that could cause busy-loops on disconnect. {{Bug|261}}
+** Validate all strings inserted into DB to be UTF-8 {{Bug|265}}
+** FIxed a bug in medialib that could return wild integers if property was not found.
+** Fix position problems with sorting. {{Bug|264}}
+** Bugfix output plugin configvalue. {{Bug|253}}
+** Fixed a deadlock in the transport layer. {{Bug|233}}
+** Fixed a stupid bug with config value changed signal. Changed from list to a dict. {{Bug|242}}
+** g_direct_hash on string keys are *not* a good idea {{Bug|241}}
+** xmms2d now handle long strings. {{Bug|228}}
+** Fixed so that we signal before we quit if IPC failed. {{Bug|217}}
+** SO_REUSEADDR was moved to a better place. {{Bug|226}}
+** Better error handling in log functions. {{Bug|216}}
+** Passing the environ to scons {{Bug|215}}
+** Fix bug #189 by removing entries from the playlist that are not valid.
+* Vegard Nossum:
+** Fixed NULL strings to msg_put_string {{Bug|211}}
+===Clientlib Changes===
+* Tilman Sauerbeck:
+** Properly sort the list that's returned by xmms_config_listvalues().
+** Empty lists in results are now handled properly.
+* Tobias Rundstrom:
+** changed OUTPUT_STATUS_ to PLAYBACK_STATUS_
+** removed xmmsc_result_get_playlistchange since this now is a dict
+** added xmmsc_configval_register. Clients can now register configuration values.
+** added get_id function to medialib. Returns id number for a URL
+** add xmmsc_medialib_remove_entry that removes something from the medialib
+* Tuure Laurinolli:
+** added xmmsc_sqlite_prepare_string for correct sql escaping.
+** Added query generators that can create select statements for multiple criterions.
+===Other Changes===
+* Daniel Pearson:
+** PYTHON: Added syncronous proxy class for API
+** PYTHON: Added output_status enum to API
+** PYTHON: renamed hash to dict to be conformed with the rest of the API
+** PYTHON: Exposed get_type() call
+** PYTHON: Fixed problem with value() which didn't return hashtable.
+* Daniel Svensson:
+** CLI: Added sort command
+** PLAYLIST: Added sorting functionality
+** CLI: xmms2 mlib addpath now handles relative paths
+* Heikki Orsila:
+** PRIVATE: Various clientlib cleanups.
+* Michael Lindgren:
+** CURL: Fix some issues with broken streams and headers in HTTP stream plugin.
+* Sham Chukoury:
+** cli client: change mlib addall to mlib loadall, split cmd_mlib into smaller functions
+* Tilman Sauerbeck:
+** CLI:Fixed config file related memory leaks.
+** CLI:Fixed the 'quit-msg' in 'xmms2 status'
+* Tobias Rundstrom:
+** PLUGINMAJOR: Added versioning on plugins.
+** changed argument to xmms functions to a callable instead of a class
+** PYTHON: renamed python_loop() to loop() and made xmms argument to XMMSSync optional.
+** CURL: fixed bug #209, set SSL_VERIFYPEER/HOST to 0
+** PYTHON: added playlist_changed_actions_t as constants
+** PRIVATE: changed OUTPUT_STATUS to PLAYBACK_STATUS
+** RUBY: Removed playlist_changed
+** PYTHON: removed playlist_changed
+** PLAYLIST: changed playlist changed msg to a dict instead of a own type
+** MAD: Cleaned up ID3v2 code and removed a strange bug with TXXX fields.
+** CLI: add 'mlib queryadd' for wild querys that should be added to the playlist
+** PYTHON: remove glib dependency. If you are using setup_with_gmain() in your python application you need to rework it. Example will be presented in due time.
+** MEDIALIB: Fixed a quoting bug with xmmsc_medialib_add_to_playlist()
+** PYTHON: clean-up and made pythonapi fully unicode aware
+** MAD: Added support for ID3v2.4 tags.
+** MAD: add warning if plugin not found!
+* Tuure Laurinolli:
+** CLI: Added mulitple selections for searchadd also
+** CLI: Added multiple selections to xmms2 mlib select, closes bug #183
+** PYTHON: changed HASHLIST to DICTLIST. old symbols.
+
+[[Category:Releases]]
