@@ -1,44 +1,94 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+{{Navbar}}
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+There is currently no official XMMS2 logo, so you are welcome to have a go at making one. :)
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
+=== Logo guidelines (a.k.a: what do we want?) ===
+An XMMS2 logo should be futuristic, cool and stylish. Not plotted with detail but clean. It should not feel like XMMS with just a 2 slapped on there. XMMS2 is a completely new codebase and does not have much to do with the old XMMS.
 
-SEO: UndoneHeaven
+* Logo has to be vectorised.
+* Logo (or parts of) has to work as a 32x32 icon.
+* Logo has to work on homepage, tshirts, giveaways whatever. :)
+* Logo should have a low number of colours, like two or three. (or even only black) This is simply to make sure that the logo looks good with few colours (e.g. some icons). Feel free to submit logos in 'full-colour' versions with equivalent 'low-colour' versions.
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+=== Note about submissions ===
+To submit a logo, you may edit this wiki page to link to your proposal(s). However, it is '''important''' that you [[About#Contact_info | contact us]], or at least leave your contact details! This way, we'll be able to credit your work properly, or work more closely together to design a logo. Thanks. :)
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+== Proposals A-Z ==
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+'''A'''
+* #1 - Abstract/SCFI look [http://img161.imageshack.us/img161/9914/xmms2logopete4jj.png Here]
+* [mailto:andris@sgmail.hu AndrÃ¡s MÃ©szÃ¡ros] - [http://www.kfki.hu/~meszaros/temp/xmms2.jpg Futuristic, Stylish, Clear , Cool :-)]
+* [Anders] - [http://people.0x63.nu/~andersg/xmms2-logo-02.png 'X2' concept] and [http://people.0x63.nu/~andersg/xmms2swan.jpg 'black swan' concept]
+* [http://srad.multiply.com/ Adaum Raul]: [[Media:Xmms2-1.jpg | concept 1]], [[Media:Xmms2-2.jpg | concept 2]]
+* [[AJ Ashton (aj.ashton@gmail.com)|AJ Ashton, press to discuss]]: [http://www.deviantart.com/view/19084342/ concept 1],  [http://www.deviantart.com/view/19084389/ concept 2], [http://www.deviantart.com/view/19084428/ concept 3], [http://www.deviantart.com/view/19084464/ concept 4]
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+'''B'''
+
+'''C'''
+
+'''D'''
+* Daniel Geh's proposals &ndash; [http://www.crazy-bird.org/xmms2/logo.png logo.png], [http://www.crazy-bird.org/xmms2/logo1.png logo1.png], [http://www.crazy-bird.org/xmms2/logo2.png logo2.png], [http://www.crazy-bird.org/xmms2/logo3.png logo3.png]
+* [http://www.dlitz.net/temp/xmms2/xmms2-logo1-small.html Dwayne's 'XMMS Unlimited' concept]
+* [http://xoomer.virgilio.it/mental_insomnia/logos/xmms2.png d1s4st3r's proposal/concept]
+
+'''E'''
+
+'''F'''
+* [mailto:fred@creatigraph.com Fred] - [http://www.creatigraph.com/xmms.png Fred' 'Fun' just a test..], [http://www.creatigraph.com/xmms-2.png Fred' 'Fun' vertion-2..], [http://www.creatigraph.com/xmms-nb.png Fred' 'Fun' bw-test..], [http://www.creatigraph.com/xmms-test.png Fred' 'Fun' page-test..],
+
+'''G'''
+* [http://www.genmaster.co.nr ''genmaster'''s proposals]
+
+'''H'''
+'''I'''
+'''J'''
+* [http://wudika.de/~jan/xmms2/ Jan's quick and dirty proposal]
+* jochen from isign softart logo suggestion: [http://www.isign-softart.de/images/xmms2_256x254.png reel-to-reel]
+* [mailto:jarno@huittinen.com Jarno] , [http://www.huittinen.com/~jarno/xmms2/xmms2-vers1.jpg 1. proposal], [http://www.huittinen.com/~jarno/xmms2/xmms2-vers2.jpg 2. proposal]
+* [mailto:jiobel.c@gmail.com Jiobel][http://jiobel.jogger.pl MyPage] - [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos.png Logo01], [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_2.png Logo02], [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_3.png Logo03].
+* [mailto:jaral.info@gmail.com JarAl concept], just a small concept using 2 as a multiplier ( as in "2 x 3 = 6") -  [http://geocities.yahoo.com.br/fijaral/x2ms.png (x2ms.png - big-file)], [http://geocities.yahoo.com.br/fijaral/x2ms-2.png (x2ms-2.png - small-file)], [http://geocities.yahoo.com.br/fijaral/x2ms.inkscape.svg (InkScape SVG File)]
+* [mailto:jesus@jhuss.com Jhuss] - [http://wiki.xmms2.xmms.se/index.php/User:Jhuss jhuss's] proposals: [http://jhuss.com/news.php?item.4.1 concept] big image and 32x32 concept of xmms2, and source in svg.
+
+'''K'''
+* [mailto:kropemann@users.sf.net Kropemann's Retro Propaganda] comments and suggestions welcome - [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png], [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png], [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png], [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png], [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png], [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
+* [mailto:leggy@pobox.sk KaM concepts] - [http://www.kam.szm.sk/xmms2/logo_a.png logo_a.png], [http://www.kam.szm.sk/xmms2/logo_b.png logo_b.png]
+
+'''L'''
+'''M'''
+* [http://81.216.47.145/xmms2.png Martin Evald's proposal/concept]
+* [mailto:tragic.descent@gmail.com Matthew "Zashi" Hiles] simple but delicious ideas (6 + 1 ) - [http://vague.sytes.net/images/xmms2-logo.png], [http://phenix.rootshell.be/~trajik/xmms2-logo.png mirror of above]
+* [http://mem.neverendnight.com/headphones.png MEM's grey headphones]
+* MarMor's proposals - 3 color variant: [[Media:G12541-large.png | hi res version]], [[Media:G12541-small.png | low res version]], [[Media:G12625-small.png | simplified low res version]] - [[Media:G11436.png | wide variant]] - 2 wide "love" variants: [[Media:G9643.png | variant 1]], [[Media:G9643a.png | variant 2]] - 2 color variant: [[Media:G12447-large.png | hi res version]], [[Media:G12447-small.png | low res version]] - older variant, 2 colors: [[Media:G875-large.png | hi res version]], [[Media:G875-small.png | low res version]]
+
+
+'''N'''
+'''O'''
+'''P'''
+* [http://wiki.xmms2.xmms.se/index.php/User:Pete Pete's] proposals - [http://img85.imageshack.us/img85/3687/xmms2logopete5bx.png Abstract / SCFI Logo]
+
+'''Q'''
+* qster's suggestion: How about a [http://qster.com/images/XMMS2_Shark.png mascot]?
+
+'''R'''
+* [http://gnu-box.nl/ Roeland Kok] - [http://gnu-box.nl/rhkok/art/logo1.png logo1.png]
+
+'''S'''
+* [http://sgimpress.nazwa.pl/sk/xmms2.jpg Sebastian Koszuta's proposal] [mailto:gentoo.kenny@gmail.com (gentoo.kenny@gmail.com)]
+* [[Media:Xmm2logo00.png | shadowskill's proposal]]
+* Sebastien Kerguen's proposals: [http://rapidshare.de/files/14047220/sebastien_kerguen_xmms2_logo_01.zip.html ZIP file] that contains the SVG file and all PNG icons (all sizes) - [http://img148.imageshack.us/img148/7325/logoxmms20164x648io.png PNG example] - Concepts/ideas: [http://img520.imageshack.us/img520/1558/logos6wp.png Here] are some other ideas, not yet rendered in SVG (some can't be, others wouldn't be clear/readable enough as a 32x32 icon).
+
+
+'''T'''
+* [[:Image:Xmms2 logo.png | Tobias Lamers' proposal]] (god at heavensdoor.net)
+
+'''U'''
+'''V'''
+* [mailto:valessio@ul-jb.org ValessioBrito] - [http://valessio.ul-jb.org/projetos/xmms2/xmms2.png View XMMS2 X] and  [http://valessio.ul-jb.org/projetos/xmms2/xmms2_others.png others], [http://valessio.ul-jb.org/projetos/xmms2/ Svg directory]
+
+'''W'''
+'''X'''
+* Xaos - [http://xaos.vexillium.org/pub/other/xmms2/logo1.png Logo1] ([http://xaos.vexillium.org/pub/other/xmms2/logo1.svg Logo1.SVG here]), [http://xaos.vexillium.org/pub/other/xmms2/xmms2.png Logo2] ([http://xaos.vexillium.org/pub/other/xmms2/xmms2.svg Logo2 SVG here])
+
+'''Y'''
+'''Z'''
+* [mailto:dremelofdeath@gmail.com Zachary Murray's concept] attempt  [http://www.geocities.com/dremelofdeath2/xmms2logo.png Just an idea]
