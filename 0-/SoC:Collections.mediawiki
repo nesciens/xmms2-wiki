@@ -16,7 +16,7 @@ Finally, this new architecture should position XMMS2 as an innovative alternativ
 = Deliverables =
 
 :&#10063; The Specifications of the [[Collections_Concept|concept of Collections]] (informal description).
-:&#10063; The Design Document describing the technical implementation of the specifications (formal description).
+:&#10063; The [[Collections_Design|Design Document]] describing the technical implementation of the specifications (formal description).
 :&#10063; Implementation of collections as C data structures (used both server and client side).
 :&#10063; Implementation in the server of the concept and features described in the specifications; connection with the current medialibrary or a new storage system, to be discussed.
 :&#10063; New API functions in the clientlib to manage collections (with documentation).
@@ -29,6 +29,8 @@ Finally, this new architecture should position XMMS2 as an innovative alternativ
 
 
 = History =
+
+'''01:28, 30 June 2006 (CEST)''': First version of the [[Collections_Design]] page, which contains mainly the collections API and a development roadmap for now.
 
 '''02:15, 12 June 2006 (CEST)''': Completed the [[Collections_Concept]] page, by adding new sections on collection usage and sample use cases, as well as more details about idlists and collections as playlists.
 
