@@ -1,44 +1,36 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+'''''This idea has been implemented'''''
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+Alright I have started to work on this but I need some feedback on the functionality. I have three ideas that I am following right now basic in all of them are that there is going to be two new calls in the clientlib:
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
+ xmmsc_medialib_property_set_str(c, id, property, value);
+ xmmsc_medialib_property_set_int(c, id, property, value);
 
-SEO: UndoneHeaven
+The problem is the extraction here we some choises:
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+# the original idea was to expand the Media table in the medialib with a new column called source, this would indicate if a value came from the server (plugins etc) or the client. The advantage of this was that you where able to override a server set property without removing the orginal value. Then the client could: 
+##set a config value and tell you if you wanted data from the server or from the client or
+## have a flag to the medialib_get_info() call that would tell you what kind of data you had. 
+# The second approach is to just have a policy which is forced upon entering data and optional when recieving. Like all properties from the client is named with a dash first (i.e: "_title") and then when the client retrieved all entries it could choose which to use.
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+I think I like 2 most. the problem with it is that you are locked to just two origins. 1 could be expanded to support an infinite number of origins, but the problem is that you have to change the API or have a global configuration variable for what data you want.
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+What do you guys think?
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+I think that 2 is just an ugly hackish shortsigthed crappy way to implement 1. -- <i>anders</i>
+
+
+1.3: give the client all data, from all sources. Then it is up to the client to decide which to use..
+
+The api could have this function (but has sane defaults)
+ xmmsc_set_source_preference({"core/*", "plugin/*", "client/myclient", "client/*", "*/*", NULL});
+
+would make xmmsc_result_get_dict_entry_int32 behave like today, but using the specified preference. xmmsc_result_get_dict_entry_XXX_src could be used to get a specific source.
+
+The foreach-func should be extended to include the source.
+
+Btw, there are not many nodes, so we could proabaly just ditch the hashtable internally, and store them in a list of (key, source, property) instead.
+
+== See Also ==
+* [[Generic properties policy]]
+
+[[Category:Developer ideas]]
