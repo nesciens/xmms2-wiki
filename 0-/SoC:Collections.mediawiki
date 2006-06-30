@@ -42,3 +42,5 @@ Finally, this new architecture should position XMMS2 as an innovative alternativ
 Apart from the links to the deliverables (above), here are a few pointers to extra informations concerning collections:
 * [[Collections|Current official ''Collections'' page of this wiki]]
 * [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/|A Better Music Player Manifesto]
+
+[[Category:Summer of Code 2006]]
