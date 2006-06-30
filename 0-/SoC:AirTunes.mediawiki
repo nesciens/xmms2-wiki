@@ -85,3 +85,5 @@ Implement iTunes share discovery using Bonjour.
 [2] http://www.nanocrew.net/software/justeport/<br>
 [3] http://sourceforge.net/projects/raop-play/<br>
 [4] http://avahi.org/
+
+[[Category:Summer of Code 2006]]
