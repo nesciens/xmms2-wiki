@@ -39,3 +39,5 @@ Status Page with component Test Results
 =Todo=
 =External link=
 http://hasseeb.googlepages.com/
+
+[[Category:Summer of Code 2006]]
