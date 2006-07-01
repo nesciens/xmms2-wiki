@@ -15,20 +15,20 @@ We first define new functions to work with collections.
  
  // Setting properties
  void xmmsc_coll_set_type(xmmsc_coll_t* coll, xmmsc_coll_type_t type);
- void xmmsc_coll_set_idlist(xmmsc_coll_t* coll, int ids[]);
+ void xmmsc_coll_set_idlist(xmmsc_coll_t* coll, unsigned int ids[]);
  void xmmsc_coll_add_operand(xmmsc_coll_t* coll, xmmsc_coll_t* op);
  void xmmsc_coll_remove_operand(xmmsc_coll_t* coll, xmmsc_coll_t* op);
  
  // Getting properties
  xmmsc_coll_type_t xmmsc_coll_get_type(xmmsc_coll_t* coll);
- int* xmmsc_coll_get_idlist(xmmsc_coll_t* coll);
- int  xmmsc_coll_operand_list_first(xmmsc_coll_t* coll);
- int  xmmsc_coll_operand_list_entry(xmmsc_coll_t* coll, xmmsc_coll_t** operand);
- int  xmmsc_coll_operand_list_next(xmmsc_coll_t* coll);
-  
+ unsigned int* xmmsc_coll_get_idlist(xmmsc_coll_t* coll);
+ void xmmsc_coll_operand_list_first(xmmsc_coll_t* coll);
+ void xmmsc_coll_operand_list_entry(xmmsc_coll_t* coll, xmmsc_coll_t** operands);
+ void xmmsc_coll_operand_list_next(xmmsc_coll_t* coll);
+ 
  // Attributes
  void xmmsc_coll_attribute_set(xmmsc_coll_t* coll, const char* key, const char* value);
- void xmmsc_coll_attribute_remove(xmmsc_coll_t* coll, const char* key);
+ int  xmmsc_coll_attribute_remove(xmmsc_coll_t* coll, const char* key);
  int  xmmsc_coll_attribute_get(xmmsc_coll_t* coll, const char* key, char** value);
  void xmmsc_coll_attribute_foreach(xmmsc_coll_t* coll, xmmsc_coll_attribute_foreach_func func, void* user_data);
  
@@ -36,11 +36,16 @@ We first define new functions to work with collections.
  xmmsc_coll_t* xmmsc_coll_universe();
  
  // Interact with server
- xmmsc_result_t* xmmsc_coll_get(xmmsc_connection_t*, char* collname, char* namespace); // [xmmsc_coll_t]
- xmmsc_result_t* xmmsc_coll_list(xmmsc_connection_t*, char* namespace);                // [list<string>]
+ xmmsc_result_t* xmmsc_coll_get(xmmsc_connection_t*, char* collname, xmmsc_coll_namespace_t ns); // [xmmsc_coll_t]
+ xmmsc_result_t* xmmsc_coll_list(xmmsc_connection_t*, xmmsc_coll_namespace_t ns);                // [list<string>]
  xmmsc_result_t* xmmsc_coll_save(xmmsc_connection_t*, xmmsc_coll_t* coll,
-                                char* name, char* namespace);                         // [void]
+                                 char* name, xmmsc_coll_namespace_t ns);                         // [void]
+ xmmsc_result_t* xmmsc_coll_remove(xmmsc_connection_t*, char* name, xmmsc_coll_namespace_t ns);  // [void]
  int xmmsc_result_get_collection(xmmsc_result_t*, xmmsc_coll_t**);
+ int xmmsc_result_get_dict_entry_collection(xmmsc_result_t*, xmmsc_coll_t**);
+ 
+ // Search (in collections)
+ xmmsc_result_t* xmmsc_coll_find(xmmsc_connection_t*, int mediaid, xmmsc_coll_namespace_t ns);  // [list<xmmsc_coll_t>]
  
  // Query
  xmmsc_result_t* xmmsc_coll_query_ids  (xmmsc_connection_t*, xmmsc_coll_t* coll, 
@@ -48,12 +53,9 @@ We first define new functions to work with collections.
  xmmsc_result_t* xmmsc_coll_query_infos(xmmsc_connection_t*, xmmsc_coll_t* coll,
                                        const char* order[], int limit_start, int limit_len,
                                        const char* fetch[], const char* group[]);            // [list<Dict>]
- 
- // Search (in collections)
- xmmsc_result_t* xmmsc_coll_find(xmmsc_connection_t*, int mediaid, char* namespace);  // [list<xmmsc_coll_t>]
 
 Notes:
-* id lists are simply a 0-terminated array of integers.
+* id lists are simply a 0-terminated array of unsigned integers.
 
 == Sample uses of the Collection API ==
 
@@ -67,8 +69,7 @@ Notes:
  xmmsc_coll_t* some_coll;
  xmmsc_result_get_collection (res, some_coll);
  
- int* ids;
- xmmsc_coll_get_idlist (some_coll, &ids);
+ unsigned int* ids = xmmsc_coll_get_idlist (some_coll);
  
  xmmsc_coll_t* idl_coll = xmmsc_coll_new (XMMS_COLL_TYPE_IDLIST);
  xmmsc_coll_set_idlist (idl_coll, ids);
