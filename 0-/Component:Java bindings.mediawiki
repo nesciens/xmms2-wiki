@@ -65,3 +65,6 @@ Since I think that there are still some needs of calling things sync but with bl
  bleh.spinDown();
 
 But be careful when doing such things with mlibSelectSync() e.g. which could probably return a huge list and therefor take some time.
+
+
+For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.git;a=tree xmms2-tutorial] project which explains step by step almost all possible api uses.
