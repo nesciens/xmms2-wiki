@@ -17,10 +17,22 @@ After you have them installed you are either a developer and want to use them to
 
 If you are a '''user''' go to http://x4x.sourceforge.net and grab X4X, atm the only java-client. Follow the X4X [http://x4x.sourceforge.net/wiki/index.php/Installation installationintructions] and hope everything works. Else visit #x4x on [irc://irc.freenode.net].
 
-If you are a '''developer''' you can check the sourcecode swig and we generated in src/clients/lib/java. You have some choices of using the javabindings now, but before everything build doxygen docu, you will need it. javadoc is possible too. After that you have two main choices:
+If you are a '''developer''' you can check the sourcecode swig and we generated in src/clients/lib/java. You have some choices of using the javabindings now, but before everything build doxygen and javadoc docu, you will need it.
 
-# Use the C-API style code: Your mainclass to use is org.xmms2.xmms2bindings.Xmmsclient. For documentation on the various functions check the c pendants, everything works exactly the same. Besides that option you have to choose if you use org.xmms2.JMain as your mainloop (which is recommended) or build your own (which is annoying, so use JMain!). I only explain the JMain-way a bit here, for ideas on building an own loop check our loop. To use JMain you have to implement CallbacksListener or extend CallbacksAdapter (you can only use one, not two, not three, only one). Just instantiate a JMain with your CallbacksListener as argument and use org.xmms2.xmms2bindings.Xmmsclient to work with xmms2. But be warned: NEVER USE WAIT() THEN. When you use a Mainloop, no matter which, you enter the async mode, so use result_notifier() instead of wait() then.
-# Use the nice and nifty new things I wrote today afternoon (They are DrDolittle+WIP). Your classes are org.xmms2.Xmms2, org.xmms2.Xmms2Listener/-Adapter, org.xmms2.Xmms2Event and org.xmms2.Title. It works without all the org.xmms2.xmms2bindings.* things since they are not nice to read. Since you built the doc as mentionend above just check the nice examples that are in org.xmms2.Xmms2. In short words do the following things:
+Build the doxygen docs by simply running
+
+ doxygen
+
+in the main directory (or simply look at [http://xmms2.xmms.se/doxygen/current/]) and build javadoc by running
+
+ javadoc -d doc/html/javadoc src/clients/lib/java/src/org/xmms2/*java src/clients/lib/java/src/org/xmms2/xmms2bindings/*java
+
+That command will fail if you didn't generate the things in src/clients/lib/java/src/org/xmms2/xmms2bindings/ first using swig and scons
+
+After that you have two main choices:
+
+# ''(deprecated)'' Use the C-API style code: Your mainclass to use is org.xmms2.xmms2bindings.Xmmsclient. For documentation on the various functions check the c pendants, everything works exactly the same. Besides that option you have to choose if you use org.xmms2.JMain as your mainloop (which is recommended) or build your own (which is annoying, so use JMain!). I only explain the JMain-way a bit here, for ideas on building an own loop check our loop. To use JMain you have to implement CallbacksListener or extend CallbacksAdapter (you can only use one, not two, not three, only one). Just instantiate a JMain with your CallbacksListener as argument and use org.xmms2.xmms2bindings.Xmmsclient to work with xmms2. But be warned: NEVER USE WAIT() THEN. When you use a Mainloop, no matter which, you enter the async mode, so use result_notifier() instead of wait() then.
+# '''(recommended)''' Use the nice and nifty new things I wrote today afternoon (They are DrDolittle+WIP). Your classes are org.xmms2.Xmms2, org.xmms2.Xmms2Listener/-Adapter, org.xmms2.Xmms2Event and org.xmms2.Title. It works without all the org.xmms2.xmms2bindings.* things since they are not nice to read. Since you built the doc as mentionend above just check the nice examples that are in org.xmms2.Xmms2. In short words do the following things:
 
 ===Async way===
  
