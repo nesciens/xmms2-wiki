@@ -143,6 +143,47 @@ Notes:
 ''TBD''
 
 
+= IPC Support =
+
+To be transfered by IPC, collection structures have to be serialized
+to a simple sequence of primitives already supported by IPC (integers
+and strings).
+
+The following schema describes the serialized form of a collection:
+
+ +------------------------+
+ | uint type              |
+ +------------------------+
+ | uint n_attributes      |
+ +------------------------+
+ | string attrkey1        |
+ | string attrval1        |
+ | string attrkey2        |
+ | string attrval2        |
+ +------------------------+
+ | uint idlist_len        |
+ +------------------------+
+ | uint idlist[0]         |
+ | ...                    | < no terminal 0
+ +------------------------+
+ | uint n_operands        |
+ +------------------------+
+ | +--------------------+ | < inlined operands (collections)
+ | | int type   (OPER 1)| |
+ | +--------------------+ |
+ | | ...                | | < possibly more recursively
+ | |                    | |   encapsulated operands
+ | +--------------------+ |
+ | +--------------------+ |
+ | | int type   (OPER 2)| |
+ | +--------------------+ |
+ | | ...                | |
+ | |                    | |
+ | +--------------------+ |
+ |  ...                   |
+ +------------------------+
+
+
 = Server design =
 
 ''TBD:''
