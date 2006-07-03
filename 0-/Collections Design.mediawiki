@@ -165,12 +165,14 @@ Notes:
 
 = Implementation TODO =
 
-* Collection struct
-** Definition
-** Functions to create, modify, delete collection structures
-** Support in IPC
-* Server work
-** Deserialisation of collection objects
-** Collection querying
-** Persistant storage
-** Playlists
+:&#10063; Collection struct
+::&#10003; Definition
+::&#10003; Functions to create, modify, delete collection structures
+::&#10063; Support in IPC
+::&#10063; Implementation testing
+:&#10063; Server work
+::&#10063; Deserialisation of collection objects
+::&#10063; Collection querying
+::&#10063; Persistent storage
+::&#10063; Playlists
+::&#10063; Testing of the different modules
