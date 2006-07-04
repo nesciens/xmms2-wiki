@@ -1,70 +1,45 @@
-== What is a playlist ? ==
-A playlist is an ordered collection of media data and their metadata.
-A playlist should provide a way to:
-* add track;
-* remove track;
-* remove multiple tracks;
-* add multiple tracks;
-* move a collection item after/before a specified item;
-* move a collection item relatively to its position;
-* clear the whole list;
-* provide the current position in the list;
-* set the current position in the list;
-* provide the next collection item as specified by a scheme (none, repeat_all, repeat_one, shuffle, shuffle_repeat).
-* save itself;
-* add items from a playlist;
-* sort the item as specified by a metadata field;
-* reverse itself.
-
-== How to (How we want to) implement a playlist ? ==
-A playlist can be implemented as a tracklist (doubly linked list of items).
-It could also be a doubly linked ring of items (a list without beginning/end.
-An item is the association of a media track and it's metadata.
-Here's the BNF:
-
- <trackring>::<playlist><item><playlist>
- <tracklist>::<playlist><item><playlist>|()
- <item>::<media track><meta data>
- <media track>::[ogg]|[mp3]|[ice]|[wave]|...
- <meta data>::[filename][trackname][author][albumname]...
-
-The best would probably be to have playlist plugins to have multiple playlist models
-available for the user, so if we want we could make an external lib (a playlist manager lib)
-that could place the playlist in shared memory to be able to share that playlist with
-other players so that we have a standard playlist for all applications. weird ...
-Anyway these are just ideas, but I think the playlist should at least be redesign to have all
-the above requirements. (which are mostly what xmms present to the user).
-When someone ask for shuffle mode, we dont want the nicely sorted playlist to be shuffled and
-we want every song to be played only once. To achive this goal we can copy the playlist into a
-new one that we will shuffle than we'll keep on listing the original list but play through the
-shuffled one. To manage this, we'll need another level in the playlist, a playlist interface.
-The playlist interface should know if it is in shuffle or in normal mode and direct the call
-to the right object.
-
-Here's a little schemas:
-
-             +-------------------+
-             | PlaylistInterface |
-             +-------------------+
-             |                   |
- +------------------+     +------------------+
- | OriginalPlaylist |     | ShuffledPlaylist |
- +------------------+     +------------------+
-
-So please add your ideas and comments about the playlist before someone redesign the whole thing.
-
-== A comment on the original/shuffled playlists ==
-
-It's a great idea to have the playlist revert to the original ordering when shuffled mode is unselected.
-There might be an easier way to achieve this than keeping two incarnations of the same playlist, however.
-An alternative idea is to keep the order of the playlist structure, and add an additional pointer which,
-when set, redefines the order in which one would read the list.
-Conceptually, a list item could look similar to this:
-
- +----------------------------------------------------------------------------------------------------------+
- | item *next | string url | string artist | string album | string title | int length | item *shuffled_next |
- +----------------------------------------------------------------------------------------------------------+
+<div id="nolabel" style="overflow:auto;height:1px;">
 
 
-Idea: Why not use a stack for the already played songs and determine for an unplayed song on demand.
-After all we don't need to know the next song on advance, we only need to know the already played songs.
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
+
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
+
+SEO: UndoneHeaven
+
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
+
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+
+[http://www.ez-agents.com wholesale atv]
+</div>
