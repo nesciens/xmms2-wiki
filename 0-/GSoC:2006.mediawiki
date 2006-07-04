@@ -1,66 +1,45 @@
-XMMS2 has been accepted as a qualifying open source project in Google's Summer of Code 2006. To start off, please read Google's [http://code.google.com/soc/ resources], including the [http://code.google.com/soc/studentfaq.html student FAQ], which includes a timeline of the program.
+<div id="nolabel" style="overflow:auto;height:1px;">
 
-== Why work on XMMS2? ==
-The XMMS2 project has been around since 2003 and has a rather extensive and stable code base by now. But there are still a lot of ideas to be implemented! We believe that XMMS has been the most popular player around free software world for a reason. As a participant in the XMMS2 Team you will be greeted by a tight, funny and creative group. You will help build the next de-facto standard within opensource audio playback.
 
-== Student Requirements ==
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
 
-See [[Summer of Code 2006/Student_requirements]]
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-== Deadlines ==
+SEO: UndoneHeaven
 
-Current deadlines:
-* '''June 26th, 2006''' (2006-06-26): Mid-term evaluation period starts (mentors)
-* '''July 1st, 2006''' (2006-07-01): Mid-term evaluations due (mentors)
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
 
-== News ==
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
 
-{{Newsitem| date=26 May 2006 WST (2006-05-26)| author=[[Sham Chukoury]]| title=SoC blogs| text=Now that SoC2006 is really under way, students and mentors are chronicling their summer coding adventures on their blogs, and it's all being collected at [http://planet.xmms.se Planet XMMS2]! If you're an accepted XMMS2 SoC student and you have a blog, you might want to e-mail ''eleusis@xmms.org'' to be added to the planet.}}
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
 
-{{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Proposals trickling in| text=So, the floodgates have opened to student applications and XMMS2 has received a small handful of them so far. From what I've seen, it seems students aren't reading the [[#Student Requirements | Student Requirements]] section carefully: your proposal is exactly what it says it is - a '''proposal'''. Propose a task and detail it for us, don't simply say "I'd like to work on task X because I really really like you."
-
-First of all, the tasks described in [[#Proposed projects | Proposed projects]] aren't very detailed - it's up to each individual applicant to set out how they'd like to go about doing the task. Secondly, the tasks in the list are mostly ideas - each student is free to propose 'blue sky' ideas which we haven't thought of. That said, bear in mind that, as far as the XMMS2 project goes, we'd like to focus mainly on the core (xmms2 daemon) and project infrastructure, rather than third party clients. Work on existing third party clients may be ineligible as they are projects run more or less independently of the XMMS2 project itself.
-
-Don't panic! If you're having trouble figuring out a schedule for your proposal, or want clarifications on any proposed task, feel free to contact us. (Our mailing list is currently down, so talk to us on on IRC: #xmms2 on Freenode, or by contacting a mentor (e.g. ''eleusis@xmms.org'')
-
-Something else I noticed is that some students do little research on (or have poor knowledge of) XMMS2 before submitting their proposals. Please do take the time to do some research and read up on the project - you will find most of the useful information right here on this wiki. If you can't find something, or aren't clear about something in particular, like I said above, ''talk to us'' and we'll try to help you. :)
-
-Finally, try to consider the proposal as a formal document - give it some semblance of a structure and make sure you include all the relevant details (see [[#Student Requirements | Student Requirements]]). Working on your proposal doesn't just tell us what you want to do for XMMS2, but the process could also help you see more clearly what you're getting into.
-
-Good luck!
-
-p.s. Maybe there's some confusion with the terms 'proposal' and 'proposed task'. A 'proposed task' is an idea or a task that the XMMS2 team put forward (proposed) as something a student could work on, to contribute to the project. A student's 'proposal' may be derived from a 'proposed task', but is a document where the student lays out in detail what he/she is prepared to contribute and how he/she is proposing to do it over the Summer of Code period. This doesn't mean that a student proposal has to be perfect the first time around - mentors are willing to talk to individual students in order to refine the proposals prior to final ranking.}}
-
-== Accepted Projects ==
-
-* [[SoC:DAAP | Support for DAAP]]
-** '''Student''': Cole Thompson
-** '''Mentor''': Tobias RundstrÃ¶m
-
-* [[SoC:TurboX2 | TurboX2 Release Engineering and Development]]
-** '''Student''': Alexander Botero-Lowry
-** '''Mentor''': Tobias RundstrÃ¶m
-
-* [[SoC:Collections | Collections]]
-** '''Student''': SÃ©bastien Cevey
-** '''Mentor''': Anders Gustafsson
-
-* [[SoC:AirTunes | Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2]]
-** '''Student''': Mohsin Patel
-** '''Mentor''': Anders Gustafsson
-
-* [[SoC:XMMS2Testing | XMMS2 Test Framework]]
-** '''Student''': Abdul Haseeb
-** '''Mentor''': Sham Chukoury
-
-== Proposed projects ==
-
-See [[Summer of Code 2006/Proposed projects]]
-
-== Resources ==
-The following resources don't apply directly to XMMS2, but they have some helpful tips:
-* Drupal's [http://drupal.org/node/59037 HOWTO: Write a Summer of Code application]
-* Wine's [http://wiki.winehq.org/SummerOfCode SummerOfCode page] (the 'things to consider' regarding C and low-level programming do not apply to XMMS2)
-* Adium's [http://trac.adiumx.com/wiki/ProposalGuidelines Proposal Guidelines]
-
-[[Category:Summer of Code 2006]]
+[http://www.ez-agents.com wholesale atv]
+</div>
