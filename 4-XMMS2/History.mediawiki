@@ -1,131 +1,45 @@
-{{Navbar}}
+<div id="nolabel" style="overflow:auto;height:1px;">
 
-A brief historical timeline of the XMMS2 project.
 
-= 2002 =
-== (Late 2002) ==
-[[Tobias RundstrÃ¶m]] and Peter Alm talk about making a "kickass player" during a boring day at work. The idea is to build a C++ project as a library which could be embedded into different clients.
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
 
-= 2003 =
-== January ==
-;28th:
-Initial code repository created. (BK/Git history goes back to this date)
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-== April ==
-;18th:
-[[User:Anders Gustafsson | Anders]] makes his first changeset, adding a SID plugin.
+SEO: UndoneHeaven
 
-;26th:
-XMMS2 switches to using DBUS IPC - now split into a client and a server.
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
 
-== June ==
-;20th:
-Python client bindings added.
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
 
-== July ==
-;7th:
-[[Daniel Svensson]] makes his first contribution: "alsa output plugin, first miserable version... order a life insurance before testing."
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
 
-;21st:
-Anders adds an SDL visualisation client.
-
-;22nd:
-XMMS2 starts switching to using SCons for building. (Done by 24th)
-
-= 2004 =
-== February ==
-;20th:
-[[Tilman Sauerbeck]] contributes his first patch: "Make -o to xmms2d work again ..."
-
-;24th:
-Tilman adds ecore xmms2 client bindings.
-
-== April ==
-;19th:
-[[Michael Lindgren]] cleans up the Vorbis plugin.
-
-== July ==
-;21st:
-[[Chris Morgan]] contributes a JACK output plugin.
-
-== August ==
-;18th:
-Ruby client bindings added.
-
-== September ==
-;7th:
-[[Sham Chukoury]] contributes a documentation patch.
-
-;22nd:
-XMMS2 switches to socket IPC (UNIX & TCP). (TCP socket support isn't completed until late November)
-
-== October ==
-;20th:
-[[Kristian Benoit]] fixes shuffling.
-
-= 2005 =
-== January ==
-;14th:
-Christopher Rosell adds FreeBSD support for the CDAE plugin.
-
-== April ==
-;17th:
-[[Alexander Botero-Lowry]] fixes a strange buildflag in the xmmsclient SConscript.
-
-;24th:
-Dismantled agrees to offer a clip as an intro/demo song for XMMS2.
-
-;28th:
-[[Jens Taprogge]] fixes Debian package-building configuration and starts maintaining XMMS2 Debian packages.
-
-== May ==
-;20th:
-XMMS2 [[Release:DR1 | Developer Release 1]] is done.
-
-;21st:
-XMMS2 moves from BitKeeper to Git. (takes a few days)
-
-;26th:
-[http://lwn.net LWN] publishes an introductory article about XMMS2 in its 'Development' section.
-
-== June ==
-;1st:
-XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix release after DR1.
-
-== August ==
-;4th:
-[[Release:DR2 | Developer Release 2]] is done. Exactly one day later, we fix 2 critical bugs.
-
-;19th:
-[[Release:DR2.1 | Developer Release 2.1]] is done, fixing a few bugs found in DR2.
-
-== September ==
-;7th:
-[[Release:DR2.2 | Developer Release 2.2]] is done, fixing bugs found in DR2.1.
-
-== December ==
-;18th:
-[[Release:DrAlban | DrAlban]] is done, adding a number of features, bug fixes and some client API changes.
-
-;21st:
-[http://planet.xmms.se Planet XMMS2] goes live.
-
-= 2006 =
-== January ==
-;13th:
-[[Release:DrBombay | DrBombay]] is released, fixing some annoying bugs in DrAlban.
-
-== February ==
-;21st;
-[[Release:DrCox | DrCox]] is released, fixing even more annoying bugs in DrBombay, including a fairly serious SQLite issue. DrCox also introduces a new mixer API.
-
-== March ==
-;27th;
-[[Release:DrDolittle | DrDolittle]] is released, with yet more minor feature additions and bug fixes. A new [[Roadmap]] is also announced, to track future release targets.
- <sacarasc> DrDolittle, released 13:37 on the 27th March
-            (if you live in Mexico City or similar ;D)
-
-== Now ==
-We're all just chillin until we decide to get serious about the next release. Or something. :P
-
-[[Category:General]]
+[http://www.ez-agents.com wholesale atv]
+</div>
