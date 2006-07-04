@@ -1,45 +1,85 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+{{Navbar}}
 
+Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+== XMMS2 Technical Details ==
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
+For those who want to know more about how it works, and how to get clients to play nice.
 
-SEO: UndoneHeaven
+* [[Design of XMMS2]]
+* [[The Medialib]]
+* [http://xmms2.xmms.se/doxygen/current/ Doxygen documentation]
+* [http://xmms2.xmms.se/epydoc/index.html Python bindings documentation]
+* [[Writing XMMS2 Clients]] (''incomplete'')
+* [[XMMS2 IPC Protocol]]
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+== Code.. and bugs! ==
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the [[XMMS2 Coding Style]].
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+* [[XMMS2 Coding Style]]
+* [http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
+* [[Reporting bugs]]
+* [[Submitting code]]
+* [[Download_XMMS2|Source Code]]
+* [http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO] and related [[ChangeLog Format]]
+* [[ChangeLog Format]]
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+== Policies and guidelines ==
+
+Policies and guidelines about processes and services related to the project as well as guidelines for client developers.
+
+=== XMMS2 ===
+* [[XMMS2 Development Process]]
+* [[Release Checklist]]
+* [[Versioning]]
+* [[XMMS2:Wikipolicy | Wiki usage guidelines]]
+* [[XMMS2:Packagerpolicy | Downstream Maintainer Guidelines]]
+* [[Roadmap]]
+
+=== Clients ===
+* [[Generic properties policy]]
+
+== Proposals ==
+* [[Testing]]
+
+== Ideas ==
+
+Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links. *NOTE:* Don't just add a new thing here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
+
+=== Architecture ===
+* [[Transforms]]
+* [[Generated IPC]]
+* [[List of features required for proper sub-tune support]]
+* [[Container format support]]
+* [[Mobile platforms]]
+
+=== Playlist ===
+* [[Smart playlists]]
+* [[Collections]]
+* [[Playlist refactor]]
+* [[Hierarchical playlists]]
+
+=== Clients ===
+* [[MDNS]]
+* [[Album Covers]]
+* [[Bash tab completion for the CLI]]
+* [[Bemused Client]]
+* [[Client Ideas]]
+* [[Client capabilities and intercommunication]]
+
+=== Misc ===
+* [[Music Sharing]]
+* [[General Notify support]]
+* [[Support for radio output like icecast]]
+* [[Gapless Playback]]
+
+=== Older Ideas ===
+* [[XMMS2 as a DJ station]]
+* [[MIDI client]]
+* [[medialib querier]]
+* [[Support for clients to write to the medialib]]
+* [[Random songs support]]
+* [[Automatic Manual Page Generation]]
+
+[[Category: Developer info]]
