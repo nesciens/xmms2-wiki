@@ -1,60 +1,45 @@
-=== XMMS2 Wiki ===
+<div id="nolabel" style="overflow:auto;height:1px;">
 
-please note that this project will probably _not_ be accepted by google, there faq clearly states the work should be code and nothing else! See http://code.google.com/soc/studentfaq.html#27 [[User:Progster|Progster]]
 
-:Yes, you're right, SoC is about coding projects. Note that 1) the ''XMMS2 Wiki'' task didn't specify a documentation-only task, 2) the items on the [[Summer of Code 2006]] page are only '''proposed''' projects - they're not a matter of "this is what you need to do - take it or leave it". It's up to the individual applicant (student) to submit a fully specified proposal with a detailed description, deliverables and schedule. To further clarify this particular task, here's an excerpt from an e-mail I sent to an interested student:
+[http://www.action-meds.com cheap butalbital]
+[http://www.5stardrugs.com buy tramadol]
+[http://www.24-7pills.net tramadol online]
+[http://www.american-meds.net butalbital discount]
+[http://www.amazing-pills.com butalbital cheap] 
+buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
+tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
+is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
+tramadol com tramadol tablets tramadol no perscription remove tramadol.
+[http://20six.co.uk/cheaptramadol cheap tramadol]
+[http://20six.co.uk/ordertramadol order tramadol]
+[http://20six.co.uk/onlinetramadol1 online tramadol]
+[http://20six.co.uk/tramadolonline tramadol online]
+[http://20six.co.uk/tramadoldiscount tramadol discount]
+[http://20six.co.uk/purchasetramadol purchase tramadol]
+[http://20six.co.uk/ordersoma order soma]
+[http://20six.co.uk/onlinesoma1 online soma]
+[http://20six.co.uk/online-viagra online viagea]
+[http://20six.co.uk/orderviagra order viagra]
+[http://20six.co.uk/cheapviagraonline cheap viagra online]
+[http://20six.co.uk/purchaseviagra purchase viagra]
+[http://20six.co.uk/cheap-ultram cheap ultram]
 
-<pre>
-There are quite a few things on the to-do list for the XMMS2 wiki - we intend to make it the 
-main web site for anything XMMS2-related, since that's where most of the information is 
-currently located. However, I'm not entirely sure whether it will be sufficient work for a 
-Summer of Code project. First of all, you seem to be a styling guru, so I'm not sure how 
-proficient you are at dealing with backend stuff, like PHP coding, etc. (Also note that SoC 
-projects have particular emphasis on coding ;)
+[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
+[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-Here's a rough to-do list for the wiki and associated ideas:
-- Create a new distinctive style for the XMMS2 wiki. This should be in the form of a Mediawiki 
-skin and may include a new colour scheme, graphical elements, new layout for various elements 
-(side menu, page tabs - edit, history, etc, page content, footer, and so on) There are other 
-open source projects that have done so with Mediawiki, for example,
-http://www.hula-project.org/Hula_Project and http://www.mono-project.com/Main_Page
-- Choose a logo for the XMMS2 project. As you can see on
-http://wiki.xmms2.xmms.se/index.php/Logo we've had a number of logo ideas submitted, but
-1) quite a few of them are fairly low quality, 2) of the decent quality ones, we can't figure 
-out which one to pick, 3) we haven't yet established a process for the community to pick a logo 
-from the submitted ones. So, your mission, should you choose to apply for it, would be to either 
-design a new logo that outshines the current submissions and therefore ends the whole logo 
-debacle, or to improve the current logo page and propose a process for the community to choose a 
-logo. ;) To this end, on the to-do list for the wiki, I've been looking at installing a 
-Mediawiki extension that allows us to insert polls on wiki pages.
-- Managing the wiki at present is a fairly low maintenance job, however upgrading it when a new 
-Mediawiki version is released is a fairly involved process. I imagine this will grow even more 
-complex as we add more extensions, such as the poll extension mentioned above, as well as
-http://www.wickle.com/wiki/index.php/Graphviz_extension (We also have a custom CAPTCHA hack on 
-the account registration page, to help keep automated spammers at bay) I've been thinking about 
-creating a new Git repository for managing this task, much like we've done fairly successfully 
-with gitweb (http://git.xmms.se/?p=gitweb-xmms2.git;a=summary) I haven't started on this task 
-yet, so I'm imagining it will take a bit of work.. *However* I don't know whether this can be 
-worked into a SoC project - remember, you have to have enough to do for 3 months. ;)
-- Improve the organisation of XMMS2 project-related resources. This is pretty much a continuous 
-process, but it might be possible that a significant reorganisation of current resources will 
-make it easier to add new resources later, as well as improve navigability for users. For 
-example, we currently have:
-  - the wiki (wiki.xmms2.xmms.se)
-  - planet.xmms.se - aggregates blog feeds from multiple developers and related people
-  - test.xmms.se - displays results of current testing cycle, prior to release - may be replaced 
-by a wiki bot at some stage
-  - bugs.xmms2.xmms.se - the bug tracker
-  - git.xmms.se - the repository web interface
-As part of this, the main page could also benefit from a facelift, not just style-wise (as 
-described above), but in terms of content and links provided.
+SEO: UndoneHeaven
 
-As you can see, it's mostly a collection of small to medium-sized tasks, no single big task you 
-can really sink your teeth into for 3 months, as far as I can see.. If you do intend to apply 
-for the SoC, I suggest you be creative with your proposal. You need to be able to propose a 
-project that 1) is going to provide enough work to be done for about 3 months (try not to fall 
-short of this target, or overshoot it) and 2) involves a fair amount of coding, I imagine (for 
-example, the guidelines forbid documentation projects).
-See also: http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2006#Student_Requirements 
-</pre>
-[[User:Eleusis|Eleusis]] 20:36, 1 May 2006 (CEST)
+[http://www.replicahours.com rolex replica]
+[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
+[http://www.replicahours.com/index.php?cPath=29 replica swiss]
+[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
+buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
+
+[http://www.customsoftwarenow.com custom software development]
+Software Development, custom software development, offshore  software development, outsourcing software development
+
+[http://www.thepublish.com press release]
+press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+
+[http://www.ez-agents.com wholesale atv]
+</div>
