@@ -1,45 +1,147 @@
-<div id="nolabel" style="overflow:auto;height:1px;">
+{{Navbar}}
+
+Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
 
 
-[http://www.action-meds.com cheap butalbital]
-[http://www.5stardrugs.com buy tramadol]
-[http://www.24-7pills.net tramadol online]
-[http://www.american-meds.net butalbital discount]
-[http://www.amazing-pills.com butalbital cheap] 
-buy tramadol online. online tramadol from our pharmacy, taking tramadol buy information tramadol, side effects tramadol, purchase tramadol online. cod online tramadol, tramadol india, cheap tramadol online, tramadol online, pharmacy online store 
-tramadol 50 mg. low price tramadol, tramadol pain treatment - tramadol hcl 50? - 120 tramadol. tramadol sales, buying cod tramado l, tramadol for humans, cheap tramadol online, overdose tramadol. order tramadol pictured tramadol pill tramadol seizure. cod tramadol cod, tramadol pdr, order pharmacy tramadol. buy prescription tramadol drug tramadol - tramadol side. 
-is tramadol a, order tramadol online, tramadol hcl, tramadol drug test .tramadol uses order tramadol overnight paypal tramadol 
-tramadol com tramadol tablets tramadol no perscription remove tramadol.
-[http://20six.co.uk/cheaptramadol cheap tramadol]
-[http://20six.co.uk/ordertramadol order tramadol]
-[http://20six.co.uk/onlinetramadol1 online tramadol]
-[http://20six.co.uk/tramadolonline tramadol online]
-[http://20six.co.uk/tramadoldiscount tramadol discount]
-[http://20six.co.uk/purchasetramadol purchase tramadol]
-[http://20six.co.uk/ordersoma order soma]
-[http://20six.co.uk/onlinesoma1 online soma]
-[http://20six.co.uk/online-viagra online viagea]
-[http://20six.co.uk/orderviagra order viagra]
-[http://20six.co.uk/cheapviagraonline cheap viagra online]
-[http://20six.co.uk/purchaseviagra purchase viagra]
-[http://20six.co.uk/cheap-ultram cheap ultram]
+Select all genres:
+  sqlite> SELECT value 
+          FROM Media 
+          WHERE key="genre"
+          GROUP BY LOWER (value) ORDER BY value;
+  Alternative
+  Blues
+  Classic Rock
+  Easy Listening
+  Electronic
+  ...
 
-[http://spaces.msn.com/cheap-tramadol/ cheap tramadol]
-[http://spaces.msn.com/buy-viagra/ buy viagra]
 
-SEO: UndoneHeaven
+Select all artists (using the artists view):
+  sqlite> SELECT * 
+          FROM artists 
+  Alien Vs. The Cat
+  Apoptygma Berzerk
+  Astrix
+  ...
 
-[http://www.replicahours.com rolex replica]
-[http://www.replicahours.com/index.php?cPath=51_25 fake rolex daydate]
-[http://www.replicahours.com/index.php?cPath=29 replica swiss]
-[http://www.google.com/search?sourceid=navclient&gfns=1&ie=UTF-8&q=replicahours replicahours]
-buy replica cheap best price rolex discounf fake. watches fake watch online store using paypal fedex rolex replicahours. order rolex replica now. cheap wholesale fake rolex online free shipping. 80% discount rolex replica and replicas watches. woman how to adjust a chronometer watch authorized rolex dealer, rolex watches rolex dial rolex oyster perpetual date reloj panerai replica en usa rolex watches serial numbers rolex woman daytona daytona watch replica panerai watch rolex 50th anniversary rolex daytona paul newman replica rolex buy rolex watches. ladies rolex yachtmaster white dial faux. rolex daytona manual cellini rolex for sale pictures of rolex oyster perpetual datejust rolex rolex gmt-master ii buying rolex on line fake rolex daytona gold on silver how to tell fake tag rolex oyster perpetual new tell. Replica rolex? Swiss made replica rolex watch! Cost does fake much rolex rolex presidential rolex. Rolex dials rolex sea dweller. Rolex  tudor fake rolex turkey datejust oyster perpetual rolex man rolex submariner cosmograph daytona oyster professional rolex? Datejust rolex rolex replica rolex fake rolexes for sale. Rolex submariner for sale, rolex yachtmaster! Explorer ii rolex preowned rolex watch? Cheap rolex watch, rolex daytona 116520 forum rolex. 18k gold replica ex part rolex daytona review rolex submariner 50 anniversary rolex cellini replica rolex watch fake rolex omega?
 
-[http://www.customsoftwarenow.com custom software development]
-Software Development, custom software development, offshore  software development, outsourcing software development
+Select all albums by an artist:
 
-[http://www.thepublish.com press release]
-press release, articles, business directory, ezines, classifieds, job search,business free  b2b search advertising aerospace defense agriculture airlines automotive chemicals computers electronics semiconductors energy utilities 
+  sqlite> SELECT * 
+          FROM albums 
+          WHERE artist LIKE "S.P.O.C.K";
+  S.P.O.C.K|A Piece Of The Action (Disc 1 - The Singles)
+  S.P.O.C.K|A Piece Of The Action (Disc 2 - The rest)
 
-[http://www.ez-agents.com wholesale atv]
-</div>
+
+Select five random songs:
+  sqlite> SELECT * 
+          FROM songs 
+          ORDER BY RANDOM() LIMIT 5;
+  mesh              |fragmente          |08 - So Important (original ac |-1 |319
+  Kent (Sweden)     |Vapen & Ammunition |FF                             |8  |72
+  Air               |Moon Safari        |sexy boy [cassius remix]       |2  |165
+  Kultiration       |Om Gaia            |Babylon faller                 |-1 |60
+  Chemical Brothers |Digweed Kiss100    |Get You High (feat. K-Os)      |-1 |154
+
+
+Select five random songs from the 'Rock' genre:
+  sqlite> SELECT m1.id, m1.value, m2.value, m3.value 
+          FROM Media m1, Media m2, Media m3 
+          WHERE m1.key="genre" AND m1.value="Rock" 
+           AND m2.id=m1.id AND m2.key="title" 
+           AND m3.id=m1.id AND m3.key="artist" 
+          ORDER BY RANDOM() LIMIT 5;
+   5 | Rock | Fix you          | Coldplay
+  84 | Rock | Rosor & Palmblad | Kent
+  14 | Rock | Til Kingdom come | Coldplay
+  80 | Rock | JÃ¤rnspÃ¶ken       | Kent
+  10 | Rock | Low              | Coldplay
+
+(yeah, coldplay is not rock.. i'll update that tag asap ;)
+
+
+Select five random albums:
+  sqlite> SELECT * 
+          FROM albums 
+          ORDER BY RANDOM() LIMIT 5;
+  Allister Brimble      |Immortal
+  C-Mos                 |2 Million Ways (Axwell Remix)
+  Nathan G              |Promo Only UK Underground Beat
+  The chemical brothers |Believe
+  the knife             |pass this on CDM
+
+
+
+An example of what you might find in the property table for a medialib entry:
+  sqlite> SELECT * 
+          FROM Media 
+          WHERE id=252;
+  252| added       | 1119380208
+  252| album       | Med Solen I Ã–gonen
+  252| album_id    | 6688440a-58f8-4995-aec2-7444ef8c9100
+  252| artist      | Lars WinnerbÃ¤ck
+  252| artist_id   | 1723c867-d5c5-4a61-a40b-8c04fa7acf1b
+  252| bitrate     | 256
+  252| duration    | 298000
+  252| laststarted | 1119382203
+  252| lmod        | 1092834093
+  252| mime        | application/ogg
+  252| resolved    | 1
+  252| title       | Pollenchock & StjÃ¤rnfall
+  252| track_id    | 5faafcbc-a286-4168-91a1-d14fa98b3fc1
+  252| tracknr     | 6
+  252| url         | file:///music/Lars WinnerbÃ¤ck/Med Solen I Ã–gonen/06-Pollenchock & StjÃ¤rnfall.ogg
+
+(Note that this data differs from entry to entry)
+
+
+Select Top-5 most played songs from the Medialib:
+  sqlite> SELECT artist, song, playsum, id, times 
+          FROM topsongs 
+          LIMIT 5;
+  Kultiration | KÃ¤nn dig sjÃ¤lv | 876 | 55  | 14
+  Kultiration | Propaganda     | 868 | 56  | 10
+  mesh        | 01 - Trust You | 800 | 308 | 3
+  Kultiration | Sparkar & slag | 731 | 58  | 14
+  Kultiration | Ur Jord        | 606 | 54  | 12
+
+
+
+Select the five most recently played songs:
+  sqlite> SELECT l1.id, l1.starttime, l1.value, m1.value, m2.value 
+          FROM Log l1, Media m1, Media m2 
+          WHERE m1.id=l1.id AND m1.key="artist" 
+            AND m2.id=l1.id AND m2.key="title" 
+          ORDER BY starttime DESC LIMIT 5;
+  331 | 1120477694 | 100 | Gregory Isaacs | Unhappy Departure Dub
+  330 | 1120477205 |  34 | Gregory Isaacs | Cool Down The Pace(10 inch mix
+  329 | 1120476927 | 100 | Gregory Isaacs | Night Nurse Dub 2
+  328 | 1120476603 | 100 | Gregory Isaacs | Cool Down The Dub
+  327 | 1120476353 |  87 | Gregory Isaacs | Sad To Know (You're Leaving)
+
+
+
+Select the name and size (number of songs) of all the playlists:
+
+  sqlite> SELECT name, COUNT(entry) AS size
+          FROM Playlist
+          LEFT JOIN PlaylistEntries ON id=playlist_id
+          GROUP BY playlist_id;
+  name        size      
+  ----------  ----------
+  emptylist   0         
+  autosaved   3         
+  test        2         
+
+
+
+Related links:
+* http://www.sqlite.org/
+* http://www.sqlite.org/vdbe.html
+* http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
+
+This tool might be useful to optimize queries.
+* http://www.sqlite.org/cvstrac/wiki?p=IdxChk
+
+[[Category:XMMS2 Technical Details]]
