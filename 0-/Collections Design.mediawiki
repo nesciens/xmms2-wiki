@@ -25,6 +25,8 @@ We first define new functions to work with collections.
  void xmmsc_coll_operand_list_first(xmmsc_coll_t* coll);
  void xmmsc_coll_operand_list_entry(xmmsc_coll_t* coll, xmmsc_coll_t** operands);
  void xmmsc_coll_operand_list_next(xmmsc_coll_t* coll);
+ int  xmmsc_coll_operand_list_save (xmmsc_coll_t *coll);
+ int  xmmsc_coll_operand_list_restore (xmmsc_coll_t *coll);
  
  // Attributes
  void xmmsc_coll_attribute_set(xmmsc_coll_t* coll, const char* key, const char* value);
