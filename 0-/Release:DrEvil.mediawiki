@@ -30,8 +30,10 @@ No new platforms have been added to DrEvil
 
 === Notes to client authors ===
 
-* {{Bug|762}} -  Remove views from medialib.
-* {{Bug|781}} -  When a client edits mlib-entries the mlib_entry_changed_broadcast is now called
+* {{Bug|762}} -  Removed views from medialib.
+* {{Bug|850}} -  Removed the Log table from medialib.
+* {{Bug|781}} -  When a client edits mlib-entries the mlib_entry_changed_broadcast is now called.
+* {{Bug|741}} -  'plugin/*' is now the default source preference (instead of 'server').
 
 === Notes to plugin authors ===
 
