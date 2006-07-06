@@ -77,6 +77,7 @@ The API is totally new when it comes to decoding / transport and effect plugins.
 * {{Bug|144}} -  Update plugins
 * {{Bug|327}} -  Hide stderr when running configuration tools.
 * {{Bug|735}} -  Actually use xmms_plugin_type_t
+* {{Bug|114}} -  Include MMS transform plugin which uses libmms library.
 '''Georg Schild'''
 * {{Bug|720}} -  javabindings codecleanups
 * {{Bug|724}} -  Improve java bindings.
