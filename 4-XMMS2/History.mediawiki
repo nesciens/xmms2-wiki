@@ -116,14 +116,42 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 [[Release:DrBombay | DrBombay]] is released, fixing some annoying bugs in DrAlban.
 
 == February ==
-;21st;
+;21st:
 [[Release:DrCox | DrCox]] is released, fixing even more annoying bugs in DrBombay, including a fairly serious SQLite issue. DrCox also introduces a new mixer API.
 
 == March ==
-;27th;
+;27th:
 [[Release:DrDolittle | DrDolittle]] is released, with yet more minor feature additions and bug fixes. A new [[Roadmap]] is also announced, to track future release targets.
  <sacarasc> DrDolittle, released 13:37 on the 27th March
             (if you live in Mexico City or similar ;D)
+
+== April ==
+;27th:
+XMMS2 is accepted as a mentoring organisation in Google's Summer of Code program. Approximately 50 project proposals are submitted to XMMS2.
+
+== May ==
+;23rd:
+Five students are accepted to work on XMMS2 as part of Google's Summer of Code:
+
+* Support for DAAP
+** '''Student''': Cole Thompson
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* TurboX2 Release Engineering and Development
+** '''Student''': Alexander Botero-Lowry
+** '''Mentor''': Tobias RundstrÃ¶m
+
+* [[Collections]]
+** '''Student''': SÃ©bastien Cevey
+** '''Mentor''': Anders Gustafsson
+
+* Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2
+** '''Student''': Mohsin Patel
+** '''Mentor''': Anders Gustafsson
+
+* XMMS2 Test Framework
+** '''Student''': Abdul Haseeb
+** '''Mentor''': Sham Chukoury
 
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
