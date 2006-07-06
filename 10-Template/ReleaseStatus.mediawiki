@@ -3,10 +3,10 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrDolittle | 0.2 DrDolittle]]
+'''Developer''': [[Release:DrEvil | 0.2 DrEvil]]
 
 '''Notes''':
-* DrDolittle was released 2006-03-27,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
+* DrEvil was released 2006-07-06,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 * More up-to-date code can be found <br /> in the [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel.git] tree.
 
