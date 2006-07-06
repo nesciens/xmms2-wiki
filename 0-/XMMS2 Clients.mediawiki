@@ -70,6 +70,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being maintained by [[Banlu Kemiyatorn]].}}
 
+{{ClientSummary| name=Harald| description=A client aimed for deep slacking with a bluetooth enabled mobile device in your hand.}}
+
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
