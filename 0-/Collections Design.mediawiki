@@ -208,11 +208,11 @@ The following schema describes the serialized form of a collection:
 
 = Implementation TODO =
 
-:&#10063; Collection struct
+:&#10003; Collection struct
 ::&#10003; Definition
 ::&#10003; Functions to create, modify, delete collection structures
-::&#10063; Support in IPC
-::&#10063; Implementation testing
+::&#10003; Support in IPC
+::&#10003; Implementation testing
 :&#10063; Server work
 ::&#10063; Deserialisation of collection objects
 ::&#10063; Collection querying
