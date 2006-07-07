@@ -39,7 +39,7 @@ Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  
 
 ==== Dapper Drake ====
 Packages is built specificly for Dapper are available:
- deb http://exodus.xmms.se/debian drapper main
+ deb http://exodus.xmms.se/debian dapper main
 
 == Ports ==
 
