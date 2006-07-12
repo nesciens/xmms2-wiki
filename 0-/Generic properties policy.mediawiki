@@ -44,6 +44,13 @@ Clients should use client/generic/arturl, but may use client/generic/arturl_unve
 
 Potentially there are other things, like inlay, cd, etc if you think they should be added, discuss in [[Talk:Generic properties policy|Talk page]] or on the mailinglist.
 
+===Overriding Metadata set by Plugins===
+Sources: client/generic/override and client/generic/override/*
+
+Any metadata propery normally set by a plugin can be overridden. client/generic/override is intended for generic overrides, set by user input. 
+
+client/generic/override/*, where * is the name of an override client, is to be used for overriding metadata where there is no user input. This could be used for clients that do thinks like gather metadata from internet radio sites, or that gather metadata from MusicBrainz. 
+
 == See Also ==
 * [[Support for clients to write to the medialib]]
 
