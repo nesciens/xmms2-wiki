@@ -1,5 +1,3 @@
-{{Navbar}}
-
 '''Note''': you should read the [[Install instructions]] page as well.
 
 == Source ==
