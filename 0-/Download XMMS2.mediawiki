@@ -28,12 +28,6 @@ Should work fine for Tiger at least.
 
 <small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
 
-=== Fedora ===
-
-Binary packages for Fedora Core 5 is available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 http://www.linuxfans.org]
-
-including gxmms2 client
-
 === Ubuntu ===
 ==== Breezy Badger ====
 The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have yet to be tested thoroughly.
@@ -43,8 +37,12 @@ Add the following line to your ''/etc/apt/sources.list'' (same line as debian ab
 Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (Ogg Vorbis).
 
 ==== Dapper Drake ====
-Packages is built specificly for Dapper are available:
+Packages is built specifically for Dapper are available:
  deb http://exodus.xmms.se/debian dapper main
+
+=== Fedora ===
+
+Binary packages of XMMS2, including gxmms2, for Fedora Core 5 are available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 http://www.linuxfans.org]
 
 == Ports ==
 
