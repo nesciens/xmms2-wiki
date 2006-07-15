@@ -1,0 +1,25 @@
+== Release Notes ==
+
+
+=== Upgrading ===
+
+
+=== Noteworthy changes ===
+
+
+==== Feature additions ====
+
+
+==== Bug fixes ====
+
+
+=== New platforms ===
+
+
+=== Notes to client authors ===
+
+
+=== Notes to plugin authors ===
+
+
+=== Full ChangeLog ===
