@@ -1,25 +1,45 @@
 == Release Notes ==
 
+DrFeelgood is a fast bugfix release to [[Release:DrEvil|DrEvil]]. Nothing fancy, but upgrade if you want to get rid of annoying bugs.
 
 === Upgrading ===
 
+DrFeelgood is providing a medialib upgrade path from [[Release:DrDolittle DrDolittle]].
 
 === Noteworthy changes ===
 
+Nope.
 
 ==== Feature additions ====
 
+Nope.
 
 ==== Bug fixes ====
 
+Yeah, a lot :-)
+
+{{Bug|839}} - Provide a medialib upgrade path.
+{{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
+{{Bug|933}} - Don't access freed memory.
+{{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
+
+There is also numerous memory leak fixes.
 
 === New platforms ===
 
+Nope.
 
 === Notes to client authors ===
 
+None.
 
 === Notes to plugin authors ===
 
+None.
 
 === Full ChangeLog ===
+
+{{Bug|839}} - Provide a medialib upgrade path.
+{{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
+{{Bug|933}} - Don't access freed memory.
+{{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
