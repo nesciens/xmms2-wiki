@@ -18,10 +18,10 @@ Nope.
 
 Yeah, a lot :-)
 
-{{Bug|839}} - Provide a medialib upgrade path.
-{{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
-{{Bug|933}} - Don't access freed memory.
-{{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
+* {{Bug|839}} - Provide a medialib upgrade path.
+* {{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
+* {{Bug|933}} - Don't access freed memory.
+* {{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
 
 There is also numerous memory leak fixes.
 
@@ -39,7 +39,7 @@ None.
 
 === Full ChangeLog ===
 
-{{Bug|839}} - Provide a medialib upgrade path.
-{{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
-{{Bug|933}} - Don't access freed memory.
-{{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
+* {{Bug|839}} - Provide a medialib upgrade path.
+* {{Bug|945}} - Handle Xing headers that start with Info instead of Xing.
+* {{Bug|933}} - Don't access freed memory.
+* {{Bug|941}} - Some taggers (including iTunes) write erroneous ID3v2.4 tags that makes our reader bug. This is a workaround.
