@@ -45,6 +45,13 @@ Five students are accepted to work on XMMS2 as part of Google's Summer of Code:
 ** '''Student''': Abdul Haseeb
 ** '''Mentor''': Sham Chukoury
 
+== July ==	 
+;6th:	 
+[[Release:DrEvil | DrEvil]] is released, introducing a major change with the reworking of xmms2d's internals into [[Transforms]], as well as other bug fixes.
+
+;15th:
+[[Release:DrFeelgood | DrFeelgood]] is released, with the shortest release cycle yet! This release simply targets a few bugs found soon after the release of DrEvil.
+
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
 
