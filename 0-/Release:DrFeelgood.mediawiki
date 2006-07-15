@@ -1,6 +1,6 @@
 == Release Notes ==
 
-DrFeelgood is a fast bugfix release to [[Release:DrEvil|DrEvil]]. Nothing fancy, but upgrade if you want to get rid of annoying bugs.
+DrFeelgood is a fast bugfix release to [[Release:DrEvil|DrEvil]]. Nothing fancy, but upgrade if you want to get rid of annoying bugs. And yes, that will make you Feel Good(tm) inside, won't it?
 
 === Upgrading ===
 
