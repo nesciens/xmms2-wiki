@@ -3,7 +3,7 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrEvil | 0.2 DrFeelgood]]
+'''Developer''': [[Release:DrFeelgood | 0.2 DrFeelgood]]
 
 '''Notes''':
 * DrFeelgood was released 2006-07-15,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
