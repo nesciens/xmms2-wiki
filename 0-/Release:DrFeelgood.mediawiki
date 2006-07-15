@@ -4,7 +4,7 @@ DrFeelgood is a fast bugfix release to [[Release:DrEvil|DrEvil]]. Nothing fancy,
 
 === Upgrading ===
 
-DrFeelgood is providing a medialib upgrade path from [[Release:DrDolittle DrDolittle]].
+DrFeelgood is providing a medialib upgrade path from [[Release:DrDolittle|DrDolittle]].
 
 === Noteworthy changes ===
 
