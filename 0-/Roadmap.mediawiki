@@ -16,11 +16,10 @@
 ** (''bugfix'')
 
 * DrGonzo (september / november)
-** WMA (juhovh) / MMS (nano)
 ** [[Generated IPC]] (anders / tru)
 ** swig (anders)
-** [[Collections]] (anders / tru / theefer)
-** DAAP (juhovh, drax)
+** [[Collections]] (theefer)
+** DAAP (coledot)
 
 == See Also ==
 * [[Versioning]]
