@@ -1,0 +1,13 @@
+== Playlist Plguins as Clients ==
+With the conversion to xforms, playlist plugins are further seperated from xmms2's plugin architecture as a whole. As it stands they are currently not working, and it seems non-trivial to fix them. This is a good time to reconsider whether playlist file handling really should be a part of the daemon at all. This XMMS2 Enhancement Proposal is to remove playlist plugins from xmms2d and move them into a client tool that will handle playlists.
+
+== Library ==
+The client should be a library that parses playlist files and then adds the files to either a saved playlist or the active playlist. This library would hopefully have bindings for all of the languages  xmms2 has bindings for so that there would not be code replication with regards to playlist handling. 
+
+'''N.B. Whether to do it as a library is very much up in the air and other suggestions are welcome.'''
+
+== Parsers ==
+Support for pluggable parsers is required. It may even be a good idea to use the same api as the current playlist plugins so they can be roughly dropped in and used as is, requiring less code be developed as a whole.
+
+== Client ==
+A basic playlist client should be included, this client should be able to import playlists to a saved playlist or the active playlist, and also export to any format for which we have a playlist plugin.
