@@ -1,4 +1,4 @@
-== Playlist Plguins as Clients ==
+== Playlist Plugins as Clients ==
 With the conversion to xforms, playlist plugins are further seperated from xmms2's plugin architecture as a whole. As it stands they are currently not working, and it seems non-trivial to fix them. This is a good time to reconsider whether playlist file handling really should be a part of the daemon at all. This XMMS2 Enhancement Proposal is to remove playlist plugins from xmms2d and move them into a client tool that will handle playlists.
 
 == Library ==
