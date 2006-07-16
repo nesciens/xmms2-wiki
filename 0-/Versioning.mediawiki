@@ -9,7 +9,7 @@
 * [[Release:DrDolittle|DrDolittle]] - Released 06-03-27
 * [[Release:DrEvil|DrEvil]] - Released 06-07-06
 * DrFeelgood / DrFun http://www.ibiblio.org/Dave/
-* DrGÃ¶ran
+* DrGonzo
 * DrHouse
 ...
 * DrJekyll
