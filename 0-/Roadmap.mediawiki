@@ -13,10 +13,11 @@
 ** [[Client:Promoe]] ? (tru)
 
 * DrFeelgood (july / august)
-** WMA (juhovh) / MMS (nano)
-** [[Generated IPC]] (anders / tru)
+** (''bugfix'')
 
 * DrGonzo (september / november)
+** WMA (juhovh) / MMS (nano)
+** [[Generated IPC]] (anders / tru)
 ** swig (anders)
 ** [[Collections]] (anders / tru / theefer)
 ** DAAP (juhovh, drax)
