@@ -3,13 +3,13 @@
 == Roadmap for newly added features ==
 
 * DrDoolittle (end march)
-** [[mDNS]] (done)
-** Java bindings (done)
-** SQLite speedups (done)
+** [[mDNS]] (tru, done)
+** Java bindings (dangertools, done)
+** SQLite speedups (tru, done)
 
 * DrEvil (april / may)
-** [[Transforms]] plugins (anders)
-** libxmmsclient++ (theefer / Eclipser)
+** [[Transforms]] plugins (anders. done)
+** libxmmsclient++ (theefer / Eclipser, done)
 ** [[Client:Promoe]] ? (tru)
 
 * DrFeelgood (july / august)
