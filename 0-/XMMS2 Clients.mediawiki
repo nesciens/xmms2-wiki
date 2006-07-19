@@ -46,6 +46,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=Insanity| description=An insane XMMS2 client.}}
 
+{{ClientSummary| name=XMMS2Musica| description=A skinned player written with pygtk and cairo.}}
+
 == Qt ==
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
