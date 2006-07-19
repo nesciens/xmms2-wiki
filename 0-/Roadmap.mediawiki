@@ -19,7 +19,7 @@
 ** [[Generated IPC]] (anders / tru)
 ** swig (anders)
 ** [[Collections]] (theefer)
-** [[SoC:DAAP DAAP]] (coledot)
+** [[SoC:DAAP | DAAP]] (coledot)
 
 == See Also ==
 * [[Versioning]]
