@@ -95,33 +95,6 @@ An example of what you might find in the property table for a medialib entry:
 
 (Note that this data differs from entry to entry)
 
-
-Select Top-5 most played songs from the Medialib:
-  sqlite> SELECT artist, song, playsum, id, times 
-          FROM topsongs 
-          LIMIT 5;
-  Kultiration | KÃ¤nn dig sjÃ¤lv | 876 | 55  | 14
-  Kultiration | Propaganda     | 868 | 56  | 10
-  mesh        | 01 - Trust You | 800 | 308 | 3
-  Kultiration | Sparkar & slag | 731 | 58  | 14
-  Kultiration | Ur Jord        | 606 | 54  | 12
-
-
-
-Select the five most recently played songs:
-  sqlite> SELECT l1.id, l1.starttime, l1.value, m1.value, m2.value 
-          FROM Log l1, Media m1, Media m2 
-          WHERE m1.id=l1.id AND m1.key="artist" 
-            AND m2.id=l1.id AND m2.key="title" 
-          ORDER BY starttime DESC LIMIT 5;
-  331 | 1120477694 | 100 | Gregory Isaacs | Unhappy Departure Dub
-  330 | 1120477205 |  34 | Gregory Isaacs | Cool Down The Pace(10 inch mix
-  329 | 1120476927 | 100 | Gregory Isaacs | Night Nurse Dub 2
-  328 | 1120476603 | 100 | Gregory Isaacs | Cool Down The Dub
-  327 | 1120476353 |  87 | Gregory Isaacs | Sad To Know (You're Leaving)
-
-
-
 Select the name and size (number of songs) of all the playlists:
 
   sqlite> SELECT name, COUNT(entry) AS size
