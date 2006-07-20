@@ -64,12 +64,12 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 '''N'''
 '''O'''
 '''P'''
-* [http://wiki.xmms2.xmms.se/index.php/User:Pete Pete's] proposals - 
-First Proposal...
-[http://img85.imageshack.us/img85/3687/xmms2logopete5bx.png Abstract / SCFI Logo]
-Second Proposal...
-[http://img212.imageshack.us/img212/566/petexmms2abstract1tq1.png Second Abstract / SCFI Logo - Dark]
-[http://img54.imageshack.us/img54/782/petexmms2abstract2fa4.png Second Abstract / SCFI Logo - Light]
+* [http://wiki.xmms2.xmms.se/index.php/User:Pete Pete's] Proposals 
+*First Proposal...
+*[http://img85.imageshack.us/img85/3687/xmms2logopete5bx.png Abstract / SCFI Logo]
+*Second Proposal...
+*[http://img212.imageshack.us/img212/566/petexmms2abstract1tq1.png Second Abstract / SCFI Logo - Dark]
+*[http://img54.imageshack.us/img54/782/petexmms2abstract2fa4.png Second Abstract / SCFI Logo - Light]
 
 '''Q'''
 * qster's suggestion: How about a [http://qster.com/images/XMMS2_Shark.png mascot]?
