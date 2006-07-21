@@ -1,0 +1,16 @@
+===SeMMiX===
+by ''RaphaÃ«l BOIS''
+
+'''Homepage''': http://semmix.sourceforge.net/<br />
+'''Latest version''': 0.0.5 pre-alpha<br />
+'''Development language''': C<br />
+'''User Interface''': GTK2<br />
+'''Screenshots''': none<br />
+[[Talk:Client:SeMMiX | Discuss]]
+
+SeMMiX is a GTK2-based XMMS2 client written in C.
+It aims at providing a full control over xmms2 features and more, and try to be relatively light and fast with very large medialib (thousands of media).
+
+[[XMMS2 Clients | More xmms2 clients]]
+
+[[Category:Clients]]
