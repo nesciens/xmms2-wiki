@@ -48,6 +48,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=XMMS2Musica| description=A skinned player written with pygtk and cairo.}}
 
+{{ClientSummary| name=SeMMiX| description=semmix is a GTK2-based XMMS2 client written in C. It aims at providing a full control over xmms2 features and more, and try to be relatively light and fast with very large medialib (thousands of media)}}
+
 == Qt ==
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
