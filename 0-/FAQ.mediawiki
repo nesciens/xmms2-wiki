@@ -83,4 +83,7 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 === Help, I found a bug! ===
 * A: So, you found a problem that couldn't be solved here. Please read the page on [http://wiki.xmms2.xmms.se/index.php/Reporting_bugs reporting bugs] then submit a bug report. If you want you can also use IRC or the mailing list to be more interactive with the developers. In either case, you should be sure to check your e-mail and changes on your bug report page regularly and submit any extra information required.
 
+=== Snapshot tarball full of random files and things about 'paxheader' ===
+* A: The snapshot tarballs are generated using ''git-tar-tree'' and are ''pax'' format archives with pax extended attributes. If you see *.paxheader and *.data files instead of a normal source tree, you'll need to use a different version of ''tar'' or some other archive extraction utility, such as ''bsdtar'', ''star'', or ''GNU tar''.
+
 [[Category: Questions and answers]]
