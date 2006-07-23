@@ -3,4 +3,8 @@
 As of 03 July 2005, XMMS2 compiles and runs (with sound) on NetBSD.  Sound is brought to you thanks to the libossaudio which hopefully will be replaced with an updated sun plugin in the future.  There is only one caveat: To run XMMS2, one must either define an LD_LIBRARY_PATH of /usr/local/lib:/usr/pkg/lib or add -Wl,-R/usr/pkg/lib -Wl,-R/usr/local/lib to the LDFLAGS during compilation.
 Alternatively, one can install XMMS2 through [http://pkgsrc-wip.sourceforge.net/ pkgsrc-wip].
 
+These days, xmms2 is very broken on NetBSD. In the xmms_sqlite_open() method in sqlite.c, the sqlite_busy_timeout() is not honored and so a new medialib is potentially created on each call to the method (xmms2 calls it a lot). This is a major issue for xmms2 on netbsd. We have been unable to cause this problem with sqlite outside of xmms2, so it must be something specific to xmms2's implementation. statfs.c needs to have a netbsd ifdef setup which uses statvfs() instead of statfs(), statfs() was deprecated in NetBSD 3. It's almost identical to the code currently there though, not many changes.
+
+Finally, users wanting to use snapshots should know that if they run into a number of .data and .paxheader files when untarring the snapshot that they should install bsdtar from pkgsrc. NetBSD's pax implementation does not seem to handle the extended attributes packed in by git-tar-tree. 
+
 [[Category:Platforms]]
