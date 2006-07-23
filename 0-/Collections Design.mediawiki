@@ -101,8 +101,9 @@ Notes:
  xmmsc_coll_universe (&allmedia);
  xmmsc_coll_add_operand (operand, allmedia);
  
- xmmsc_coll_attribute_set(operand, "artist", "Sonic Youth");
- 
+ xmmsc_coll_attribute_set(operand, "field", "artist");
+ xmmsc_coll_attribute_set(operand, "value", "Sonic Youth");
+  
  xmmsc_coll_add_operand (coll, operand);
  
  
