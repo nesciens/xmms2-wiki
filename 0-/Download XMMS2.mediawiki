@@ -4,7 +4,9 @@
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
 * The GIT repository (with snapshots) is viewable at: http://git.xmms.se
 
-About the GIT repository: You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
+About the GIT repository:
+* You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
+* If you have problems using snapshot tarballs, check the [[FAQ]] (e.g. ''[[FAQ#Snapshot_tarball_full_of_random_files_and_things_about_.27paxheader.27 | Snapshot tarball full of random files and things about paxheader]]'') and your relevant [[:Category:Platforms | platform]] page.
 
 == Binary Packages ==
 
