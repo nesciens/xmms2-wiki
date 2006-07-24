@@ -1,5 +1,10 @@
 {{Navbar}}
 
+
+SQL QUERIES SOON TO BE DEPRECATED! See [[Collections]] instead.
+
+
+
 Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
 
 
