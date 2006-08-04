@@ -1,91 +1,91 @@
-16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
+ 16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
                 Because it should preferable be displayed by all clients, 
                 instead of non overridden, and if one only wants to change info 
                 in medialib without commiting it to files it actually has 
                 nothing to do with x2tagger..
-16:42 < DraX> the way i saw it was that client/override was only displayed by 
+ 16:42 < DraX> the way i saw it was that client/override was only displayed by 
               clients
-16:42 < DraX> and client/override/* would also be displayed by clients
-16:42 < DraX> but it could by for specific purposes
-16:42 < DraX> s/purposes/clients/
-16:42 < DraX> so that you can make a distinction in some cases
-16:43 < anders> Have you considered the alternative of telling x2tagger which 
+ 16:42 < DraX> and client/override/* would also be displayed by clients
+ 16:42 < DraX> but it could by for specific purposes
+ 16:42 < DraX> s/purposes/clients/
+ 16:42 < DraX> so that you can make a distinction in some cases
+ 16:43 < anders> Have you considered the alternative of telling x2tagger which 
                 source to pick up tags from instead? Being able to tell 
                 x2tagger to write tags from "client/promoe"
-16:44 < DraX> hmm
-16:44 < DraX> that's not too bad an idea
-16:44 < DraX> that's probably better actually
-16:45 < DraX> but it does add a little complexity in that you have to specify 
+ 16:44 < DraX> hmm
+ 16:44 < DraX> that's not too bad an idea
+ 16:44 < DraX> that's probably better actually
+ 16:45 < DraX> but it does add a little complexity in that you have to specify 
               which source to read from
-16:45 < DraX> extra configval i guess
-16:46 < DraX> how do you envison client/override then?
-16:46 < DraX> just as local overrides, or?
-16:47 < anders> client/override might not be needed at all.
-16:48 < DraX> well the reason i tohught it was a good idea
-16:48 < DraX> was to consolidate the overriding into one source preference
-16:48 < DraX> since we don't really want to put client/* as the first source 
+ 16:45 < DraX> extra configval i guess
+ 16:46 < DraX> how do you envison client/override then?
+ 16:46 < DraX> just as local overrides, or?
+ 16:47 < anders> client/override might not be needed at all.
+ 16:48 < DraX> well the reason i tohught it was a good idea
+ 16:48 < DraX> was to consolidate the overriding into one source preference
+ 16:48 < DraX> since we don't really want to put client/* as the first source 
               preference
-16:49 < anders> No, we have client/myself,client/*
-16:50 < DraX> still that seems like it could be problematic
-16:51 < DraX> for example your client supports ratings but does not have 
+ 16:49 < anders> No, we have client/myself,client/*
+ 16:50 < DraX> still that seems like it could be problematic
+ 16:51 < DraX> for example your client supports ratings but does not have 
               ratings set for a song
-16:51 < DraX> another client you use also supports ratings
-16:51 < DraX> but does them in a different way
-16:51 < DraX> so you're getitng weird rating scores in your client
-16:51 < anders> Then it should lookup by exact source anyway.
-16:52 < DraX> true i suppose
-16:52 < DraX> but we're all a bit lazy ;)
-16:53 < DraX> ok, well what if i have the L33TSpEaK client installed 
-16:54 < DraX> and it l33tspeakifies all my properties in its own source
-16:54 < DraX> and since the client i'm using at the moment doesn't have its own 
+ 16:51 < DraX> another client you use also supports ratings
+ 16:51 < DraX> but does them in a different way
+ 16:51 < DraX> so you're getitng weird rating scores in your client
+ 16:51 < anders> Then it should lookup by exact source anyway.
+ 16:52 < DraX> true i suppose
+ 16:52 < DraX> but we're all a bit lazy ;)
+ 16:53 < DraX> ok, well what if i have the L33TSpEaK client installed 
+ 16:54 < DraX> and it l33tspeakifies all my properties in its own source
+ 16:54 < DraX> and since the client i'm using at the moment doesn't have its own 
               overrides
-16:54 < DraX> everything is in l33tspeak in the first client
-16:54 < DraX> (don't ask me why this client would ever exist or why anyone 
+ 16:54 < DraX> everything is in l33tspeak in the first client
+ 16:54 < DraX> (don't ask me why this client would ever exist or why anyone 
               would ever install it please)
-16:54 < DraX> :D
-16:59 < anders> Still not convinced :) But you were thinking about something 
+ 16:54 < DraX> :D
+ 16:59 < anders> Still not convinced :) But you were thinking about something 
                 like: client/self:client/override:server:plugin/*:client/* 
                 then? That would be the same without override 
                 client/self:server:plugin/*:client/*
-17:00 < DraX> weren't you suggestion client/self:client/*:server:plugin/* ?
-17:00 < DraX> s/suggestion/suggesting/
-17:01 < anders> Yes :)  but to solve the "don't show l33tspeak" client/* would 
+ 17:00 < DraX> weren't you suggestion client/self:client/*:server:plugin/* ?
+ 17:00 < DraX> s/suggestion/suggesting/
+ 17:01 < anders> Yes :)  but to solve the "don't show l33tspeak" client/* would 
                 need to be last, and then it doesn't matter if it is with or 
                 without a client/override :)
-17:01 < DraX> see, my desire for client/override is basically that i think you 
+ 17:01 < DraX> see, my desire for client/override is basically that i think you 
               should be able to get overrides from any client if you want them, 
               but not if you don't (without necessairly knowing about the 
               semantics of sources)
-17:01 < DraX> the only example we have of an override client right now
-17:01 < DraX> is client/x2digitalgunfire
-17:02 < anders> whatis?
-17:02 < DraX> if you're listening to digitalgunfire radio stream
-17:02 < DraX> it reads extra metadata (album, artist, title, albumcover) from 
+ 17:01 < DraX> the only example we have of an override client right now
+ 17:01 < DraX> is client/x2digitalgunfire
+ 17:02 < anders> whatis?
+ 17:02 < DraX> if you're listening to digitalgunfire radio stream
+ 17:02 < DraX> it reads extra metadata (album, artist, title, albumcover) from 
               the popup player
-17:02 < DraX> on the digitalgunfire website
-17:02 < DraX> and writes that to the medialib
-17:02 < DraX> so you get complete metadata when listening to digitalgunfire 
+ 17:02 < DraX> on the digitalgunfire website
+ 17:02 < DraX> and writes that to the medialib
+ 17:02 < DraX> so you get complete metadata when listening to digitalgunfire 
               instead of just artist - title in the title property
-17:03 < anders> Cool.
-17:03 < DraX> yes, and it's easilly extendable to other radiostations
-17:03 < anders> But that will be correct with 
+ 17:03 < anders> Cool.
+ 17:03 < DraX> yes, and it's easilly extendable to other radiostations
+ 17:03 < anders> But that will be correct with 
                 client/self:client/*:server:plugin/* no?
-17:03 < DraX> all the digitalgunfire specific stuff is in a seperate class
-17:03 < DraX> yes
-17:03 < DraX> but l33tspeak client would fuck things up with 
+ 17:03 < DraX> all the digitalgunfire specific stuff is in a seperate class
+ 17:03 < DraX> yes
+ 17:03 < DraX> but l33tspeak client would fuck things up with 
               client/self:client/*:server:plugin/* 
-17:04 < anders> Well, if someone wants a l33tspeak client it would probably 
+ 17:04 < anders> Well, if someone wants a l33tspeak client it would probably 
                 want to display it in l33tspeakt too.. So then that is the 
                 right thing..
-17:05 < DraX> l33tspeak is a bad example
-17:05 < DraX> but i imagine other examples will arise
-17:05 < DraX> when we start to see clients doing overrides
-17:05 < anders> But what client would want to override something and _not_ 
+ 17:05 < DraX> l33tspeak is a bad example
+ 17:05 < DraX> but i imagine other examples will arise
+ 17:05 < DraX> when we start to see clients doing overrides
+ 17:05 < anders> But what client would want to override something and _not_ 
                 having it displayed?
-17:06 < DraX> the only example i can think of at the moment is joke clients, 
+ 17:06 < DraX> the only example i can think of at the moment is joke clients, 
               but i imagine there have to be others
-17:08 < DraX> but yeah
-17:09 < DraX> admittedly, i can't really think of any at the moment
-17:09 < DraX> anyone else? :)
-17:11 < anders> And I envision that clients will allow specifing custom source 
+ 17:08 < DraX> but yeah
+ 17:09 < DraX> admittedly, i can't really think of any at the moment
+ 17:09 < DraX> anyone else? :)
+ 17:11 < anders> And I envision that clients will allow specifing custom source 
                 preferences anyway.
