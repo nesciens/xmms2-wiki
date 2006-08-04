@@ -68,6 +68,7 @@ Here are some ideas about XMMS2, if you want to hack on them or comment them ple
 * [[Bemused Client]]
 * [[Client Ideas]]
 * [[Client capabilities and intercommunication]]
+* [[Client for writing tags to files]]
 
 === Misc ===
 * [[Music Sharing]]
