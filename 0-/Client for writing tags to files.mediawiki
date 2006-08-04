@@ -9,10 +9,10 @@ On the server will be a small daemon which sits and listens for configval_change
 === Pending CLI tool ===
 While clients can independently implement specifics of the tagging framework, a simple cli tool and python module will be written that will allow for some basic operations:
 
-â€¢ x2tagger set id propery value [Set the value on a property]
-â€¢ x2tagger remove id property [Remove any changes on a property]
-â€¢ x2tagger clear id [clear any changes on this id]
-â€¢ x2tagger mark id [mark this id for tagging]
-â€¢ x2tagger tag [tag all marked media]
+* x2tagger set id propery value [Set the value on a property]
+* x2tagger remove id property [Remove any changes on a property]
+* x2tagger clear id [clear any changes on this id]
+* x2tagger mark id [mark this id for tagging]
+* x2tagger tag [tag all marked media]
 
 A similar api will be offered by the python module.
