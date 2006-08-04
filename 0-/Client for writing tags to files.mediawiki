@@ -1,4 +1,5 @@
 == Client for writing tags to files ==
+''For a discussion of some issues surrounding this see [[Talk:Generic properties policy]]''
 
 === Introduction ===
 The ability to change metadata and then write those tags out to the files is a feature often missed by users of XMMS2. It is of particular interest if one uses different music players for whatever reason. This proposal offers a solution to the need for a tagging system.
