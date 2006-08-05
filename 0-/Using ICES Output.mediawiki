@@ -1,0 +1,61 @@
+This page describes how you use the streaming ices output in XMMS2.
+
+== Installing Icecast ==
+Go to http://www.icecast.org/ and download sources. ices output in XMMS2 only supports ogg/vorbis streaming so you need icecast2.
+
+== Configure Icecast ==
+Make sure to set the password and mount-point.
+
+== Compile ices output ==
+Make sure you have libshout-dev and libvorbisenc installed, then do scons CONFIG=1 and install with scons install.
+
+== Configure ices output ==
+The ices output plugin has a lot of different config directives. ''xmms2 config_list |grep ices'' will give you all the directives.
+
+ ices.streamname
+ ices.mount
+ ices.password
+ ices.streamurl
+ ices.host
+ ices.streamdescription
+ ices.streamgenre
+ ices.user
+ ices.encodingnombr
+ ices.public
+ ices.port
+
+=== streamname ===
+Sets the name of the stream.
+
+=== mount ===
+The mountpoint on the server.
+
+=== password ===
+The source password of the icecast server
+
+=== streamurl ===
+The url to the stream. Will be announced.
+
+=== host ===
+The icecast host to connect to.
+
+=== streamdescription ===
+The description of the stream, will be shown to the clients of icecast.
+
+=== streamgenre ===
+The genre of the stream, will be shown to the clients of icecast.
+
+=== user ===
+The source user
+
+=== encodingnombr ===
+The ices output will re-encode all output and the quality used will be set by this variable.
+
+=== public ===
+If set to ''1'' the icecast server will announce your stream in the shoutcast directory.
+
+=== port ===
+The port of the icecast server.
+
+== Playing ==
+Now just load up your playlist and do ''xmms2 play''
