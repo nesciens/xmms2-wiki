@@ -1,3 +1,4 @@
+__NOTOC__
 This page describes how you use the streaming ices output in XMMS2.
 
 == Installing Icecast ==
