@@ -1,95 +1,34 @@
-{{Navbar}}
+Before setting out to write an XMMS2 client, you should familiarise yourself with the  XMMS2 '[[Design of XMMS2#Middleware |middleware]]' (provided by ''libxmmsipc'' and used transparently by ''libxmmsclient''). It is strongly recommended that you check out the code from the [http://git.xmms.se/?p=xmms2-tutorial.git;a=summary xmms2-tutorial] Git repository to learn the basics of writing XMMS2 clients. The rest of this page documents various issues you might encounter while working on your client, as well as some conventions and recommendations you should follow.
 
-This page should eventually become a guide about things to consider when writing XMMS2 clients. Just a page for bringing ideas together, for now. You should drop by #xmms2 on Freenode if you need help writing a client (you should probably drop by there even if you don't need help).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [http://www.ietf.org/rfc/rfc2119.txt RFC 2119].
 
-= XMMS2 Client Guide =
+== Conventions ==
 
-This guide will help you understand how to build an XMMS2 client. It's not aimed at any language more like a reference of how different signals work.
-
-== Choosing a Language ==
-The XMMS2 client library comes with bindings to many languages. You should choose a language that suits you well. I recommend an interpreted language, since all computation is done in the server, and an interpreted language will let you develop faster.
-
-== Connecting to XMMS2d ==
-To be able to communicate with xmms2d you need to connect. The clientlib provides a data structure that symbolizes the connection called ''xmmsc_connection_t''. First, you have to initialize the connection with ''xmmsc_init()''. Like this:
-
- xmmsc_connection_t *connection;
- connection = xmmsc_init ("My_client_name");
-
-The clientname is what will be presented to the xmms2d. This can not be NULL, and no whitespaces allowed.
-
-Now we connect:
-
- if (!xmmsc_connect (connection, NULL)) {
-   fprintf (stderr, "Connection failed, error: %s", xmmsc_get_last_error (connection));
- }
-
-Fine! Now we are connected. The second argument to ''xmmsc_connect'' is the path on where the client should connect. By default this is set to ''unix:///tmp/xmms-ipc-<username>'' as is the server's default also. All clients should respect the XMMS_PATH envrioment as default path, but can fall back on NULL if that connection failed. 
-
-Since we are connected, we can now start sending commands to the server. But first we have to setup a way to get the responses. This guide will describe the asynchronous way of dealing with responses.
-
- <anders_> But a client for the desktop would probably want two connections.
- One for doing medialib-queries that potentially could be slow. And one for the rest.
-
-== Choosing a mainloop ==
-XMMS2 clients should be written asynchronous, if they are using a GUI. Therefore, the choice of mainloop is kind of important. If you are using a widget toolkit, there is a big chance that that toolkit provides you with a mainloop. For example, GTK has GMainLoop, and QT has its own, too. You'll need to setup a callback from the mainloop to the xmmsipc. XMMS2 clientlib provides wrappers for some mainloops, but even if we don't provide a loop, it will be fairly easy to do it yourself. 
-
-=== Integrate xmmsipc in your mainloop ===
-After you have connected to the server with ''xmmsc_connect()'' the ''xmmsc_connection_t'' struct will be filled with a ipctransport. To extract the socket from this call ''xmmsc_ipc_fd_get()''. Then you feed this to your selectloop. When something is inbound on this socket you have to call ''xmmsc_ipc_io_in_callback()'' and when it disconnects you should call ''xmmsc_ipc_disconnect()''. Here we add select to our example:
-
- xmmsc_connection_t *connection;
- connection = xmmsc_init ("My_client_name");
- 
- if (!xmmsc_connect (connection, NULL)) {
-   fprintf (stderr, "Connection failed, error: %s", xmmsc_get_last_error (connection));
- }
- 
- fd = xmmsc_ipc_fd_get (connection->ipc);
- FD_SET (fd, &fdset);
- while (TRUE) {
-   ret = select (fd + 1, &fdset, NULL, NULL);
-   if (ret > 0) {
-     xmmsc_ipc_io_in_callback (connection->ipc);
-   }
-   usleep(10); // so we don't overload the proc when theres no incoming data
- }
-
-The above code is a hack that has not been tested. Someone could probably provide a better example. This will dispatch all the notifiers we have.
-
-== Sending commands to XMMS2 ==
-There are three types of commands that could be sent to the server. There are '''methodcalls''', which just execute something in the server and return the result. There are '''broadcasts''' that are important and will notifiy you about the current state in the server and there are '''signals''' that will update you on status in the server, but are unimportant for the state. 
-
-=== Methodcalls ===
-There are two types of methodcalls, one type that will just execute something on the serverside and not give you any response except failure, and there are the ones that give you a result. Both types return a ''xmmsc_result_t''.
-
-=== Broadcasts ===
-
- void my_pls_changed (xmmsc_result_t *res)
- {
-   int signal;
-   xmmsc_result_dict_get_int (res, "type", &signal);
-   switch (signal) {
-      case XMMS_PLAYLIST_CHANGED_ADD: printf ("item added"); 
-   } 
- }
-
- int main (int argc, char **argv)
- {
-   xmmsc_result_t *res = xmmsc_broadcast_playlist_changed (connection);
-   xmmsc_result_notifier_set (res, my_pls_changed);
-   
-   start_some_main_loop
- }
-
-=== Signals ===
-
- xmmsc_result_t *res;
- res = xmmsc_playback_play (connection);
- xmmsc_result_unref (res);
-
-* Reference [[Design of XMMS2]] (section "XMMS2 Client Library" in particular. Or move that section to here?)
-* Clients should respect ''XMMS_PATH'' environment variable, if set.
-* Clients can store their config data in ''~/.xmms2/clients/''. Simple clients may get by with single conf files, like ''myclient.conf'', while more complex clients may use a subdirectory, such as ''advancedclient/''.
+=== Configuration ===
+* Clients should respect the ''XMMS_PATH'' environment variable, if set.
+* Clients may store their config data in ''~/.xmms2/clients/''. ('''NOTE:''' With the next release of XMMS2 - [[Release:DrGonzo|DrGonzo]] - this path will change to ''$[http://standards.freedesktop.org/basedir-spec/latest/ar01s03.html XDG_CONFIG_HOME]/xmms2/clients''. However, you won't need to hardcode this path - a new function (''xmmsc_userconfdir_get'') will be added to the client library to retrieve the path to the xmms2 configuration directory - that is, ''$XDG_CONFIG_HOME/xmms2''.) Simple clients may get by with single conf files, like ''myclient.conf'', while more complex clients may use a subdirectory, such as ''advancedclient/''.
 * Clients should not store daemon config keys and values in their own config - they should query the daemon instead. (some exceptions apply, for example, the IPC path to use)
-* Clients using broadcast/signal callbacks (result notifiers) need to make sure I/O events are dispatched, for the callbacks to work properly. This is done by integrating ''xmmsc_ipc_io_in_callback'' with the clients' event loops. (TODO: more info about ''xmmsc_ipc_setup_with_gmain'' & Qt equivalent)
+
+=== Running ===
+* The XMMS2 daemon can start clients as part of its own startup process, and also shut them down when exiting. To use this feature, place a symlink to your client (or a launcher script) in ''$XMMS2_CONFIG_DIR/startup.d/'' and a shutdown script in ''$XMMS2_CONFIG_DIR/shutdown.d/''. Note that these paths are the defaults and may be modified via the ''core.startuppath'' and ''core.shutdownpath'' configuration properties.
+* Clients must not stop playback and/or cause the daemon to shut down - by default - when they are closed or otherwise terminated by the user. Clients may provide a non-default option for the user to specify that playback should be stopped and/or that the daemon should be shut down on exit.
+* Any single client may open any number of connections to the daemon. However, it is recommended that, in most cases, only one connection is used for the whole session. Clients that remain running for extended periods (unlike the command line client) should not simply connect, perform a command, then disconnect every time an action is requested by the user. In ''some'' cases, it might be beneficial to have up to two connections to the daemon - one 'normal' connection and a second connection for handling 'slower' commands, such as querying the medialib.
+
+=== Display ===
+* Clients may display a stream's URL or filename if the stream doesn't have any metadata indicating its title. (e.g. missing ID3 tags in MP3 files)
+* Clients that show some representation of the playlist should connect to the ''playlist_changed'' broadcast in order to keep their copy of the playlist data consistent with the playlist on the daemon.
+
+=== Graphical clients ===
+* Some signal results may be sent at a very high rate, for example the ''playback_time'' signal, which delivers values representing milliseconds played. This might in turn cause clients to unnecessarily process every such result and update a number of widgets - which can cause unpleasant effects such as flickering. To prevent this, clients should update their widgets only when necessary (for example, if a half second difference is calculated between the last result value and the latest result value). Clients may also delay the restarting of the signal result (which effectively throttles the rate at which the results are sent).
+
+=== Cover art ===
+* With the next release of XMMS2, clients will be able to store and retrieve binary data from the daemon (using the so-called ''bindata'' API). A suitable client (such as [http://git.xmms.se/?p=xmms2covers.git;a=summary xmms2covers]) may store image data and set the appropriate [[Generic properties policy#Album_Art | album art]] related properties after querying suitable web services and matching songs with album covers (or via some equivalent mechanism). Other clients may then retrieve the stored image data for display.
+
+=== Threads ===
+* It is generally discouraged to use threads in XMMS2 clients - especially graphical clients, where race conditions could disrupt the proper functioning of a graphical toolkit's event loop (and the process of moving messages back and forth over xmmsipc). If you must absolutely use threads, you must make sure to implement proper locking and mutual exclusions to maintain the consistent state of your program.
+
+== See Also ==
+* [[Design of XMMS2]]
+* [[[[Generic properties policy]]
 
 [[Category:XMMS2 Technical Details]]
