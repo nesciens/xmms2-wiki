@@ -95,12 +95,12 @@ As explained above, the client library mainly provides an interface to clients a
 An XMMS2 client may communicate with the daemon in one of two modes:
 
 ;Synchronously (sync)
-:The client requests a command, waits for the result, then continues processing.
+:The client requests a command, waits for the result, then continues processing. This mode suits some interactive clients, such as shell-type clients.
 
 ;Asynchronously (async)
-:The client requests one or more commands, sets notifiers for the results of those commands, then enters a mainloop where it makes sure to push data to, or read data from, the daemon when the IPC file descriptor is ready. As data comes in (in the form of results or signals), the client library executes the result notifiers previously set - these notifiers may do actions such as updating graphical widgets, and so on.
+:The client requests one or more commands, sets notifiers for the results of those commands, then enters a mainloop where it makes sure to push data to, or read data from, the daemon when the IPC file descriptor is ready. As data comes in (in the form of results or signals), the client library executes the result notifiers previously set - these notifiers may do actions such as updating graphical widgets, and so on. This mode especially suits graphical clients, where the process can handle events from multiple sources at various times in an asynchronous manner.
 
-It is not a good idea to mix the two modes of communication in the same process.
+It is not a good idea to mix the two modes of communication on the same connection. If the two modes ''are'' mixed, results from commands may trigger their associated callbacks in an inappropriate or unpredictable sequence.
 
 ==== Commands ====
 A command is an action requested from the daemon by a client. It can be something like 'start playback', 'add url to playlist', etc. Every command returns a result.
