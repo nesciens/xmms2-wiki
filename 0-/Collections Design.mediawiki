@@ -201,11 +201,10 @@ The following schema describes the serialized form of a collection:
 * get (show struct)
 * list (list collections)
 * save (pattern/collection under the given name)
+* rename (a saved collection)
 * remove (a saved collection)
 * query (list collection content)
 * find (collections containing id X)
-
-
 
 = Implementation TODO =
 
