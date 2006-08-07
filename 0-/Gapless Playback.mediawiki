@@ -3,5 +3,10 @@ Gapless playback is really cool; here are a few pages related to it:
 * http://foodisworse.typepad.com/hackpod/2004/09/gapless_playbac.html
 * http://wiki.hydrogenaudio.org/index.php?title=Gapless
 
+== Gapless Status ==
 
-The gapless playback in faad is working in versions after patch in {{Bug|784}}, but it doesn't work in files encoded by iTunes because iTunes writes really crappy metadata and Apple doesn't seem to be willing to fix it.
+* '''FAAD''' : The gapless playback in faad is working in versions after patch in {{Bug|784}}, but it doesn't work in files encoded by iTunes because iTunes writes really crappy metadata and Apple doesn't seem to be willing to fix it.
+
+* '''vorbis''' : Gapless playback works in vorbis plugin.
+
+* '''mad''' : Gapless playback works for mp3s with Lame tags as of 8cebb6be841292b177cda163085bf7b6110f6ea4 More information at [[Gapless Support]]
