@@ -1,4 +1,6 @@
-XMMS2's MP3 decoder supports [http://gabriel.mp3-tech.org/mp3infotag.html LAME] encoded VBR Tags.
+In xmms2-tru.git there is preliminary support for [http://gabriel.mp3-tech.org/mp3infotag.html LAME] encoded VBR Tags.
+
+Before this code goes into to mainline I want some feedback. 
 
 This table tries to summaries our compliance with different LAME versions. Fill in this table with your tests.
 
