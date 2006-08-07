@@ -18,4 +18,11 @@ This table tries to summaries our compliance with different LAME versions. Fill 
 |CoreAudio
 |Yes
 |
+|-
+|Alex
+|FreeBSD
+|LAME 3.90
+|OSS
+|Yes
+|
 |}
