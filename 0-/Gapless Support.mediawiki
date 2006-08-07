@@ -15,5 +15,5 @@ This table tries to summaries our compliance with different LAME versions. Fill 
 |LAME 3.90
 |CoreAudio
 |Yes
-|Some broken LAME header found. I think.
+|
 |}
