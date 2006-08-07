@@ -134,12 +134,41 @@ Notes:
 
 == Playlist API ==
 
-''TBD:''
-* Basically, add the collection name to all functions
-* no playlist_list
-* better sorting
-* keep set_next ?
+Basically, all functions which altered the "active" playlist now take
+an extra ''playlist'' argument that specifies which playlist to
+modify.  If set to NULL, the active playlist ("_active") is assumed.
+Note that ambiguous functions now have a ''_entry'' suffix
+(e.g. xmmsc_playlist_remove_entry, xmmsc_playlist_list_entries, etc).
+Sorting now takes a list of properties (not supported yet).
 
+ xmmsc_playlist_shuffle (xmmsc_connection_t *c, const char *playlist)
+ xmmsc_playlist_sort (xmmsc_connection_t *c, const char *playlist, const char *properties[])
+ xmmsc_playlist_clear (xmmsc_connection_t *c, const char *playlist)
+ xmmsc_playlist_insert_id (xmmsc_connection_t *c, const char *playlist, int pos, unsigned int id)
+ xmmsc_playlist_insert_url (xmmsc_connection_t *c, const char *playlist, int pos, const char *url)
+ xmmsc_playlist_list_entries (xmmsc_connection_t *c, const char *playlist)
+ xmmsc_playlist_add_id (xmmsc_connection_t *c, const char *playlist, unsigned int id)
+ xmmsc_playlist_add_url (xmmsc_connection_t *c, const char *playlist, const char *url)
+ xmmsc_playlist_move_entry (xmmsc_connection_t *c, const char *playlist, unsigned int cur_pos, unsigned int new_pos)
+ xmmsc_playlist_remove_entry (xmmsc_connection_t *c, const char *playlist, unsigned int pos)
+ xmmsc_broadcast_playlist_changed (xmmsc_connection_t *c)
+ xmmsc_broadcast_playlist_current_pos (xmmsc_connection_t *c)
+
+Additional functions moved from the Medialib module:
+
+ xmmsc_broadcast_playlist_loaded (xmmsc_connection_t *c)
+ xmmsc_playlist_load (xmmsc_connection_t *conn, const char *playlist)
+ xmmsc_playlist_list (xmmsc_connection_t *conn, const char *playlist)
+ xmmsc_playlist_remove (xmmsc_connection_t *conn, const char *playlist)
+ xmmsc_playlist_export (xmmsc_connection_t *conn, const char *playlist, const char *mime)
+ xmmsc_playlist_import (xmmsc_connection_t *conn, const char *playlist, const char *url)
+ xmmsc_playlist_add_collection (xmmsc_connection_t *c, const char *playlist, xmmsc_coll_t *coll)
+ xmmsc_playlist_insert_collection (xmmsc_connection_t *c, const char *playlist, int pos, xmmsc_coll_t *coll)
+
+Added functions:
+
+ xmmsc_playlist_add_collection (xmmsc_connection_t *c, const char *playlist, xmmsc_coll_t *coll)
+ xmmsc_playlist_insert_collection (xmmsc_connection_t *c, const char *playlist, int pos, xmmsc_coll_t *coll)
 
 == Medialib API ==
 
