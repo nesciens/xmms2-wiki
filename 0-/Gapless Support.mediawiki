@@ -24,5 +24,5 @@ This table tries to summaries our compliance with different LAME versions. Fill 
 |LAME 3.90
 |OSS
 |Yes
-|lame -> lame, lame -> non-lame, non-lame -> lame, lame -> ogg, ogg -> lame, lame -> lame (various seekings back and forth)
+|lame -> lame, lame -> non-lame, non-lame -> lame, non-lame -> non-lame, lame -> ogg, ogg -> lame, lame -> lame (various seekings back and forth)
 |}
