@@ -2,7 +2,7 @@ In xmms2-tru.git there is preliminary support for [http://gabriel.mp3-tech.org/m
 
 Before this code goes into to mainline I want some feedback. 
 
-This table tries to summaries our compliance with different LAME versions. Fill in this table with your tests.
+This table tries to summarise our compliance with different LAME versions. Fill in this table with your tests.
 
 {| border="1" cellspacing="0" cellpadding="5" align="left"
 |Who
