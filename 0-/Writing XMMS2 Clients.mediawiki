@@ -29,6 +29,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 == See Also ==
 * [[Design of XMMS2]]
-* [[[[Generic properties policy]]
+* [[Generic properties policy]]
 
 [[Category:XMMS2 Technical Details]]
