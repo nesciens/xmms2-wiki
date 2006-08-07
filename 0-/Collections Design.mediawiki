@@ -34,6 +34,15 @@ We first define new functions to work with collections.
  int  xmmsc_coll_attribute_get(xmmsc_coll_t* coll, const char* key, char** value);
  void xmmsc_coll_attribute_foreach(xmmsc_coll_t* coll, xmmsc_coll_attribute_foreach_func func, void* user_data);
  
+ // Idlist modifiers
+ int xmmsc_coll_idlist_append (xmmsc_coll_t *coll, unsigned int id);
+ int xmmsc_coll_idlist_insert (xmmsc_coll_t *coll, unsigned int id, unsigned int index);
+ int xmmsc_coll_idlist_move (xmmsc_coll_t *coll, unsigned int index, unsigned int newindex);
+ int xmmsc_coll_idlist_remove (xmmsc_coll_t *coll, unsigned int index);
+ int xmmsc_coll_idlist_clear (xmmsc_coll_t *coll);
+ int xmmsc_coll_idlist_get_index (xmmsc_coll_t *coll, unsigned int index, uint32_t *val);
+ int xmmsc_coll_idlist_set_index (xmmsc_coll_t *coll, unsigned int index, uint32_t val);
+ 
  // Default "All Media" collection
  xmmsc_coll_t* xmmsc_coll_universe();
  
@@ -42,6 +51,8 @@ We first define new functions to work with collections.
  xmmsc_result_t* xmmsc_coll_list(xmmsc_connection_t*, xmmsc_coll_namespace_t ns);                // [list<string>]
  xmmsc_result_t* xmmsc_coll_save(xmmsc_connection_t*, xmmsc_coll_t* coll,
                                  char* name, xmmsc_coll_namespace_t ns);                         // [void]
+ xmmsc_result_t* xmmsc_coll_rename (xmmsc_connection_t *, char* from_name, char* to_name,         // [void]
+                                   xmmsc_coll_namespace_t ns);
  xmmsc_result_t* xmmsc_coll_remove(xmmsc_connection_t*, char* name, xmmsc_coll_namespace_t ns);  // [void]
  int xmmsc_result_get_collection(xmmsc_result_t*, xmmsc_coll_t**);
  int xmmsc_result_get_dict_entry_collection(xmmsc_result_t*, xmmsc_coll_t**);
@@ -55,6 +66,9 @@ We first define new functions to work with collections.
  xmmsc_result_t* xmmsc_coll_query_infos(xmmsc_connection_t*, xmmsc_coll_t* coll,
                                        const char* order[], int limit_start, int limit_len,
                                        const char* fetch[], const char* group[]);            // [list<Dict>]
+ 
+ // Broadcast
+ xmmsc_result_t *xmmsc_broadcast_collection_changed (xmmsc_connection_t *c);
 
 Notes:
 * id lists are simply a 0-terminated array of unsigned integers.
