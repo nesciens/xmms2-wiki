@@ -24,6 +24,7 @@ http://bugs.xmms.org/show_bug.cgi?id=2153
 http://bugs.xmms.org/show_bug.cgi?id=2075
 http://bugs.xmms.org/show_bug.cgi?id=2297
 
+:I'm quite confident that we don't have a problem with this any more -havardk
 
 == Important ==
 
