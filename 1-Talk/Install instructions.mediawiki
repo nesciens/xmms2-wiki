@@ -10,3 +10,20 @@ This is the case with any PREFIX not just /usr; It might use more resources for 
 Maybe there should be a full list of dependencies listed...
 
 [[User:Eleusis|Eleusis]] 21:43, 9 Feb 2005 (CET)
+
+
+
+
+==Problems with instalation and running==
+I spend about an hour trying to fix this problem. It is very simple. 
+
+If you get the following message from console while yoou try to run xmms2:
+[code]
+xmms2: error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory
+[/code]
+you should specify LD_LIBRARY_PATH variable to the xmms libraries.
+[code]
+#example for installed xmms on /usr/local/xmms
+export LD_LIBRARY_PATH=/usr/local/xmms/lib
+[/code]
+You may need to use 'set' instead of 'export'.
