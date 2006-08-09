@@ -14,6 +14,8 @@ probably this one aswell
 
 http://bugs.xmms.org/show_bug.cgi?id=2179
 
+:I think that most of the problems with the GL plugin relates to people that have shot themselves in the foot, often by using the wrong version of libGL.  On the other hand, I wouldn't be sad to see the GL plugin go.  It would be nice to pacage it separately if we do though. - havardk
+
 == time bug(s) ==
 this ought to be sorted out, which are mad plugins, which are caused by the "old" time bug that's bee around in the cvs since _after_ the release of 1.2.10 (you know the one you fixed the other day)
 
