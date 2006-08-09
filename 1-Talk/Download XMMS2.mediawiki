@@ -15,6 +15,6 @@ Path libraries of xmms2 is <instalation path>/lib
 --
 
 
-Isn't that in the [FAQ]?
+Isn't that in the [[FAQ]]?
 
 -- Tobias
