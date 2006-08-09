@@ -18,12 +18,13 @@ Maybe there should be a full list of dependencies listed...
 I spend about an hour trying to fix this problem. It is very simple. 
 
 If you get the following message from console while yoou try to run xmms2:
-<quote>
+
 xmms2: error while loading shared libraries: libxmmsclient.so.0: cannot open shared object file: No such file or directory
-</quote>
+
 you should specify LD_LIBRARY_PATH variable to the xmms libraries.
-<quote>
+
 #example for installed xmms on /usr/local/xmms
+
 export LD_LIBRARY_PATH=/usr/local/xmms/lib
-</quote>
+
 You may need to use 'set' instead of 'export'.
