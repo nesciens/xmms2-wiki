@@ -24,4 +24,7 @@ Adjust values as needed
 === iRate support ===
 http://irate.sourceforge.net - Write a client for communicating with iRate without using the iRate client and for rating and downloading music from iRate. The iRate client to iRate server protocol is not well documented so one will have to read the iRate client source. 
 
+=== Podcatcher ===
+Self-explanatory? (Yes, I am that lazy)
+
 [[Category:General]]
