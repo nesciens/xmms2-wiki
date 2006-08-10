@@ -2,6 +2,12 @@
 
 == Latest quotes ==
 
+=== 2006-08-10 - Rembember, remember the 10th of August ===
+ 18:13 <free-zombie> nano's patch works.
+ 18:13 <tilman> HOHOHO
+ 18:13 <tilman> nano's patch works!
+ 18:14 <tilman> mark the day in your calendar!
+
 === 2006-08-10 - waitress/programmer/astronaut/whatever ===
  [15:28:08][tilman]: TABS FOR INDENT SPACES FOR ALIGNMENT
  [15:28:12][tilman]: REPEAT AFTER ME
