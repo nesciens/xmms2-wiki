@@ -67,6 +67,8 @@ Having title data enabled while streaming through proxy removes headers and as s
 
 [http://bugs.xmms.org/show_bug.cgi?id=1293 1293] GET http request doesn't follow RFC 1945
 
+[http://bugs.xmms.org/show_bug.cgi?id=1538 1538] xmms /dev/ hangs :) and play location aswell
+
 === Knirch ===
 
 [http://bugs.xmms.org/show_bug.cgi?id=1709 1709] Check when snapshot.debian.net is back (need to verify against vanilla 1.2.10)
