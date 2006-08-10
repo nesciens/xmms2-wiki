@@ -81,9 +81,6 @@ Clients that require X11 or other graphical windowing systems.
 = Web clients =
 Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
 
-{{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
-
-
 {{ClientSummary| name=XMMS2-Scrobbler| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
 
 {{ClientSummary| name=XMMS2 Webterface| description=The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2.}}
@@ -102,6 +99,8 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 = Deprecated Clients =
 These clients have been discontinued, abandoned, or are otherwise not maintained anymore.
+
+{{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
 
 {{ClientSummary| name=xmms2-shell| description=xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client.}}
 
