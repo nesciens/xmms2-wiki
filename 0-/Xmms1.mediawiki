@@ -82,6 +82,11 @@ Having title data enabled while streaming through proxy removes headers and as s
 
 [http://bugs.xmms.org/show_bug.cgi?id=1709 1709] Check when snapshot.debian.net is back (need to verify against vanilla 1.2.10)
 
+=== Possible dupes ===
+
+Equalizer, not applied at start type of bugs:
+http://bugs.xmms.org/show_bug.cgi?id=965, http://bugs.xmms.org/show_bug.cgi?id=788, http://bugs.xmms.org/show_bug.cgi?id=1896
+
 = Mails =
 
 http://lists.xmms.org/pipermail/xmms-devel/2005-August/003135.html (whole thread) about ipv6 crud
