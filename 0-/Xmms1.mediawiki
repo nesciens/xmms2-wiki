@@ -68,6 +68,7 @@ Having title data enabled while streaming through proxy removes headers and as s
 [http://bugs.xmms.org/show_bug.cgi?id=1293 1293] GET http request doesn't follow RFC 1945
 
 [http://bugs.xmms.org/show_bug.cgi?id=1538 1538] xmms /dev/ hangs :) and play location aswell
+[http://bugs.xmms.org/show_bug.cgi?id=1720 1720] xmms hangs when adding a fifo (or dir with fifo)
 
 [http://bugs.xmms.org/show_bug.cgi?id=1600 1600] Equalizer jumps after pressing apply or ok in preferences under, ... *artistic pause*  vtwm :)
 
