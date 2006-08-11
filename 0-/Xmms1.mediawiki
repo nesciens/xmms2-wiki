@@ -72,6 +72,8 @@ Having title data enabled while streaming through proxy removes headers and as s
 
 [http://bugs.xmms.org/show_bug.cgi?id=1600 1600] Equalizer jumps after pressing apply or ok in preferences under, ... *artistic pause*  vtwm :)
 
+[http://bugs.xmms.org/show_bug.cgi?id=1641 1641] Rewinding freeze the visualizations (both alsa and oss on knirchs system)
+
 === Knirch ===
 
 [http://bugs.xmms.org/show_bug.cgi?id=1709 1709] Check when snapshot.debian.net is back (need to verify against vanilla 1.2.10)
