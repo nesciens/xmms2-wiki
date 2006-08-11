@@ -76,7 +76,7 @@ Having title data enabled while streaming through proxy removes headers and as s
 
 [http://bugs.xmms.org/show_bug.cgi?id=1600 1600] Equalizer jumps after pressing apply or ok in preferences under, ... *artistic pause*  vtwm :)
 
-[http://bugs.xmms.org/show_bug.cgi?id=1641 1641] Rewinding freeze the visualizations (both alsa and oss on knirchs system)
+[http://bugs.xmms.org/show_bug.cgi?id=1641 1641] Rewinding freeze the visualizations (both alsa and oss on knirchs system) http://bugs.xmms.org/show_bug.cgi?id=1541 related?
 
 === Knirch ===
 
