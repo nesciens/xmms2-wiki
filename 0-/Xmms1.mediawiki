@@ -39,6 +39,8 @@ Multiple tags in ogg files gets deleted, ie title=hello title=korv will be reduc
 
 [http://bugs.xmms.org/show_bug.cgi?id=1541 1541] '''PATCH''' Analyzer stops working
 
+[http://bugs.xmms.org/show_bug.cgi?id=1776 1776] INSTALLPREFIX undeclared in config.h.in/config.h
+
 == Interesting ==
 [http://bugs.xmms.org/show_bug.cgi?id=305 305] '''PATCH'''
 Reads playlist song title entries from .pls files
