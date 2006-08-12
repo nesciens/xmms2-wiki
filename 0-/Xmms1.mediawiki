@@ -82,9 +82,7 @@ Having title data enabled while streaming through proxy removes headers and as s
 
 [http://bugs.xmms.org/show_bug.cgi?id=1956 1956] '''PATCH''' song_change plugin doesn't update when a stream title changes
 
-=== Knirch ===
 
-[http://bugs.xmms.org/show_bug.cgi?id=1709 1709] Check when snapshot.debian.net is back (need to verify against vanilla 1.2.10)
 
 === Possible dupes ===
 
