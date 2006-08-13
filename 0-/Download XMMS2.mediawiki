@@ -24,7 +24,7 @@ Should work fine for Tiger at least.
  deb http://exodus.xmms.se/debian testing main
 
 ==== Sid / Unstable ====
- deb http://exodus.xmms.se/debian etch main
+ deb http://exodus.xmms.se/debian sid main
 
 <small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
 
