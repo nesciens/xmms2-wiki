@@ -1,0 +1,46 @@
+The playlist in Insanity is currently in a usable state, but needs quite a bit of refactoring in order to add some new features. This area of work can be broken down into two sections: the view (gtk.TreeView widget) and the data store (gtk.ListStore).
+
+== View ==
+
+In the new design of Insanity, the playlist view area serves a dual purpose:
+# By default, the playlist is displayed, allowing the user to interact with the playlist on XMMS2 or MPD.
+# When searching or browsing, the playlist view needs to display search results or information about particular songs in a selected category. The playlist view returns to its default state when browsing or searching has ended.
+
+There are a number of ways we can handle this:
+* Use a single ListStore coupled to the TreeView and modify it to reflect either the playlist or search results.
+** ''Advantages''
+**# Single ListStore and TreeView widget
+** ''Disadvantages''
+**# Need to add and remove columns in the treeview when switching views
+**# Clearing and loading multiple items in a liststore could be expensive
+* Use two ListStores: one for the playlist, one for search results
+** ''Advantages''
+**# It's not expensive to switch a treeview from one liststore to another. (we're assuming this anyway..)
+** ''Disadvantages''
+**# Still need to add and remove columns when switching views
+* Use two TreeViews with their own ListStores: only make one visible at any time
+** ''Advantages''
+**# Hiding and showing widgets is probably even less expensive than switching liststores in a treeview
+**# Each treeview can have its own set of columns - no need to add and remove columns when switching views
+** ''Disadvantages''
+**# Could produce a strange visual effect when switching
+
+=== Columns ===
+
+We have a number of columns visible by default: ''Title'', ''Artist'', ''Album'', ''Duration'', but we want to give the user the ability to see any other set of columns, for example, track number, bitrate, etc. (This issue is currently being tracked as {{Bug|996}}.) Additionally, Insanity needs to remember the order in which the columns are arranged, as well as their widths as set by the user.
+
+There are a number of ways the user could be allowed to modify the columns shown:
+# A context menu when right clicking on the treeview, or (even better) on a column header. The context menu could simply list all the columns available (e.g. all unique properties available in the medialib) with checkbox menu items.
+# A dialog box whose only purpose is to list the columns available, with checkboxes to select visibility. (much like the column setup dialog in Azureus). In this case, the dialog contains a treeview showing a list of column names with checkboxes in another column. The order of the rows determines the order of the columns displayed in the playlist
+# A general preferences dialog box where the user can modify other Insanity options, as well as set column visibility and order. (much like the dialog box idea above, but with everything in just one tab of the preferences dialog box)
+
+== Data Store ==
+
+There are a number of improvements that could be made to the liststore holding playlist item data:
+* Move item resolution code out to a more generic 'resolver' class that takes care of queueing and resolving items at the appropriate priority level. (The liststore would then simply tell the resolver which items to resolve) This includes visible item resolution (subset of whole list) and complete list resolution at idle priority (whole list). The benefit here is that multiple liststore instances could then use the same resolver - for example, both the playlist store and the search results store.
+* Offer a more playlist-like interface. For example, instead of Insanity telling Chalyx.Playlist to remove an item, it could simply tell the playlist store to remove an item. The playlist store would then do what is appropriate - tell Chalyx.Playlist to remove the item, then receive the ''playlist-changed'' signal and update itself. The benefits here are:
+** other pygtk clients could potentially reuse some of this code.
+** the store deals with anything to do with the playlist in the backend service - it encapsulates methods that modify the playlist and keeps its state consistent with the backend playlist using signals. Any widgets displaying data from the store only use the standard interface from ListStore and don't have to worry about other details.
+* With changeable columns (see ''Columns'' section above), the store cannot simply have a fixed set of columns (''id'', ''resolved'', ''title'', ''artist'', ''album'', ''duration'', ''metadata'') - it needs to respond to column setup changes from the user. To do this, we can:
+** simply add/remove fields to the store as columns change, then update them from the ''metadata'' column.
+** only have the following columns: ''id'', ''resolved'', ''metadata'', then use a cellrenderer function in the treeview to retrieve and display the right data. The problem with this approach is that, whenever we modify data in the liststore, we'll need to call the ''row-changed'' method to tell the treeview it needs to redraw the particular row. This could add some unwanted coupling in some cases..
