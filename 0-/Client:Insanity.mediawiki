@@ -5,3 +5,6 @@ Features:
 * Easy-to-use playlist and medialib views
 * Cover art support
 }}
+
+== Insanity related topics ==
+* [[Client:Insanity/Playlist refactoring | Playlist refactoring]]
