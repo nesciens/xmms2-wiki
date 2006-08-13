@@ -50,6 +50,7 @@ There are a number of improvements that could be made to the liststore holding p
 * With changeable columns (see ''Columns'' section above), the store cannot simply have a fixed set of columns (''id'', ''resolved'', ''title'', ''artist'', ''album'', ''duration'', ''metadata'') - it needs to respond to column setup changes from the user. To do this, we can:
 ** simply add/remove fields to the store as columns change, then update them from the ''metadata'' column.
 ** only have the following columns: ''id'', ''resolved'', ''metadata'', then use a cellrenderer function in the treeview to retrieve and display the right data. The problem with this approach is that, whenever we modify data in the liststore, we'll need to call the ''row-changed'' method to tell the treeview it needs to redraw the particular row. This could add some unwanted coupling in some cases..
+** another option is to use the schema for the cellrenderer function method, but instead of using a cellrenderer function have a custom MetadataCellRenderer which can display correctly a medialib property given to it. For example if it got a bindata property, it would be able to display the image in a pixbuf renderer, if it got a time field it would be able to display the time nicely formatted, and so forth.
 
 == Related Issues ==
 * {{Bug|996}} - ''configurable playlist columns''
