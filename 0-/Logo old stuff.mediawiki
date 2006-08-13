@@ -51,7 +51,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 
 '''K'''
 * [mailto:kropemann@users.sf.net Kropemann's Retro Propaganda] comments and suggestions welcome - [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png], [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png], [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png], [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png], [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png], [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
-* [mailto:leggy@pobox.sk KaM concepts] - [http://www.kam.szm.sk/xmms2/logo_a.png logo_a.png], [http://www.kam.szm.sk/xmms2/logo_b.png logo_b.png]
+* [mailto:leggy@host.sk KaM concepts] - [http://www.leggy.host.sk/logo_a.png logo_a.png], [http://www.leggy.host.sk/logo_b.png logo_b.png], [http://www.leggy.host.sk/logo_c.png logo_c.png(new)]
 
 '''L'''
 '''M'''
