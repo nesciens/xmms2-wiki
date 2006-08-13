@@ -21,7 +21,7 @@ Should work fine for Tiger at least.
  deb http://exodus.xmms.se/debian stable main
 
 ==== Etch / Testing ====
- deb http://exodus.xmms.se/debian testing main
+ deb http://exodus.xmms.se/debian etch main
 
 ==== Sid / Unstable ====
  deb http://exodus.xmms.se/debian sid main
