@@ -34,6 +34,12 @@ There are a number of ways the user could be allowed to modify the columns shown
 # A dialog box whose only purpose is to list the columns available, with checkboxes to select visibility. (much like the column setup dialog in Azureus). In this case, the dialog contains a treeview showing a list of column names with checkboxes in another column. The order of the rows determines the order of the columns displayed in the playlist
 # A general preferences dialog box where the user can modify other Insanity options, as well as set column visibility and order. (much like the dialog box idea above, but with everything in just one tab of the preferences dialog box)
 
+=== Tooltips ===
+
+It would be nice if a tooltip would appear when the user hovers the mouse cursor over a row for a little while. However, doing this is not trivial, as anything within a treeview widget doesn't have its own gdkwindow and cannot have tooltip data assigned to it. There are a number of hacks we should investigate, to compensate:
+* http://www.daa.com.au/pipermail/pygtk/2004-February/006954.html
+* http://www.daa.com.au/pipermail/pygtk/2006-May/012254.html
+
 == Data Store ==
 
 There are a number of improvements that could be made to the liststore holding playlist item data:
