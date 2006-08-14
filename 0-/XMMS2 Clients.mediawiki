@@ -15,6 +15,9 @@ Clients that can be used from a command line, console or terminal.
 
 {{ClientSummary| name=x2cp| description=x2cp is another ncurses client, basic playlist navigation, colors and bugs.}}
 
+
+{{ClientSummary| name=nxmms2| description=nxmms2 is ncurses client, basic playlist navigation,media library search, black and white without bugs but without error catching in too(works fine if xmms2d is running normal).}}
+
 = Graphical clients =
 Clients that require X11 or other graphical windowing systems.
 
