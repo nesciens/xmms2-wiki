@@ -278,5 +278,5 @@ The following schema describes the serialized form of a collection:
 ::&#10003; Deserialisation of collection objects
 ::&#10003; Collection querying
 ::&#10003; Playlists
-::&#10063; Persistent storage
+::&#10003; Persistent storage
 ::&#10063; Testing of the different modules
