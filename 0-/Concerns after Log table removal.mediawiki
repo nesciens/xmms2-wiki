@@ -1,0 +1,10 @@
+== Concerns after Log table removal ==
+XMMS2 used to have a Log table which stored a list of all media played with a number of statistics, including the date-time it was last played (in epoch time) and the percent of the song that was played back. The removal of this table left a number of people upset, though the concerns that brought about its removal were quite valid. The Log table was overly complex and cumbersome to deal with for simple data like the lastplayed time for a song, or the average percent completion of a song. 
+
+=== Options ===
+* Reinstate the Log table, but have some of the basic data accessible in the Media table by default instead of requiring a join
+* Offer the simple data of the Log table as properties of the Media table
+
+=== Reference Bugs === 
+[http://bugs.xmms2.xmms.se/view.php?id=1012 0001012: Re-introduce the Log table]
+[http://bugs.xmms2.xmms.se/view.php?id=937 0000937: XMMS2, without Log table, lacks a way to determine the average percent of a song that is played]
