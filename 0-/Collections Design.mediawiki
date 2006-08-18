@@ -156,7 +156,7 @@ Note that ambiguous functions now have a ''_entry'' suffix
 Sorting now takes a list of properties (not supported yet).
 
  xmmsc_playlist_shuffle (xmmsc_connection_t *c, const char *playlist)
- xmmsc_playlist_sort (xmmsc_connection_t *c, const char *playlist, const char *properties[])
+ xmmsc_playlist_sort (xmmsc_connection_t *c, const char *playlist, const char **properties)
  xmmsc_playlist_clear (xmmsc_connection_t *c, const char *playlist)
  xmmsc_playlist_insert_id (xmmsc_connection_t *c, const char *playlist, int pos, unsigned int id)
  xmmsc_playlist_insert_url (xmmsc_connection_t *c, const char *playlist, int pos, const char *url)
@@ -176,12 +176,10 @@ Additional functions moved from the Medialib module:
  xmmsc_playlist_remove (xmmsc_connection_t *conn, const char *playlist)
  xmmsc_playlist_export (xmmsc_connection_t *conn, const char *playlist, const char *mime)
  xmmsc_playlist_import (xmmsc_connection_t *conn, const char *playlist, const char *url)
- xmmsc_playlist_add_collection (xmmsc_connection_t *c, const char *playlist, xmmsc_coll_t *coll)
- xmmsc_playlist_insert_collection (xmmsc_connection_t *c, const char *playlist, int pos, xmmsc_coll_t *coll)
 
 Added functions:
 
- xmmsc_playlist_add_collection (xmmsc_connection_t *c, const char *playlist, xmmsc_coll_t *coll)
+ xmmsc_playlist_add_collection (xmmsc_connection_t *c, const char *playlist, xmmsc_coll_t *coll, const char **order)
  xmmsc_playlist_insert_collection (xmmsc_connection_t *c, const char *playlist, int pos, xmmsc_coll_t *coll)
 
 == Medialib API ==
