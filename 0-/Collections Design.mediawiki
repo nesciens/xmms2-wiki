@@ -164,6 +164,7 @@ Sorting now takes a list of properties (not supported yet).
  xmmsc_playlist_add_id (xmmsc_connection_t *c, const char *playlist, unsigned int id)
  xmmsc_playlist_add_url (xmmsc_connection_t *c, const char *playlist, const char *url)
  xmmsc_playlist_move_entry (xmmsc_connection_t *c, const char *playlist, unsigned int cur_pos, unsigned int new_pos)
+ xmmsc_playlist_current_pos (xmmsc_connection_t *c, const char *playlist)
  xmmsc_playlist_remove_entry (xmmsc_connection_t *c, const char *playlist, unsigned int pos)
  xmmsc_broadcast_playlist_changed (xmmsc_connection_t *c)
  xmmsc_broadcast_playlist_current_pos (xmmsc_connection_t *c)
