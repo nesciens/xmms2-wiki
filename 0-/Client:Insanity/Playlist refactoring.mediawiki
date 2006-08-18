@@ -55,3 +55,4 @@ There are a number of improvements that could be made to the liststore holding p
 == Related Issues ==
 * {{Bug|996}} - ''configurable playlist columns''
 * {{Bug|999}} - ''Offer a ListStore that mimics playlist function''
+* {{Bug|1030}} - ''Resolver class''
