@@ -173,7 +173,7 @@ Additional functions moved from the Medialib module:
 
  xmmsc_broadcast_playlist_loaded (xmmsc_connection_t *c)
  xmmsc_playlist_load (xmmsc_connection_t *conn, const char *playlist)
- xmmsc_playlist_list (xmmsc_connection_t *conn, const char *playlist)
+ xmmsc_playlist_list (xmmsc_connection_t *conn)
  xmmsc_playlist_remove (xmmsc_connection_t *conn, const char *playlist)
  xmmsc_playlist_export (xmmsc_connection_t *conn, const char *playlist, const char *mime)
  xmmsc_playlist_import (xmmsc_connection_t *conn, const char *playlist, const char *url)
