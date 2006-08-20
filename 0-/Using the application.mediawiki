@@ -106,13 +106,7 @@ Query the medialib database and add the result to your playlist:
 
   xmms2 mlib searchadd artist="Kultiration"
 
-Listen to a shoutcast stream (assuming curl plugin is installed and playlist is empty):
-
-  xmms2 mlib import_playlist bluemars http://207.200.96.225:8020/listen.pls
-  xmms2 mlib load_playlist bluemars
-  xmms2 play
-
-Or with the direct url:
+Listen to a shoutcast stream (assuming curl plugin is installed) using the direct url (ie NOT a playlist file, but the url inside the playlist file, the playlist importing code is currently disabled):
 
   xmms2 add http://207.200.96.225:8020
   xmms2 play
