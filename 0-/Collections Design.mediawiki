@@ -1,4 +1,4 @@
-Now that the [[Collections_Concept | Collections Concept]] has been
+Now that the [[Collections Concept]] has been
 explained, we can define how collections will be implemented and use
 concretely, both in the server and as an API.
 
@@ -279,3 +279,6 @@ The following schema describes the serialized form of a collection:
 ::&#10003; Playlists
 ::&#10003; Persistent storage
 ::&#10063; Testing of the different modules
+
+[[Category:Summer of Code 2006]]
+[[Category:Collections]]
