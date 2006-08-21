@@ -318,3 +318,5 @@ This is merely an introduction to the possibilities offered by
 collections in XMMS2.  You are welcome to explore more possibilities
 in your own client or come on IRC to bother theefer about bugs or
 broken ideas!
+
+[[Category:Collections]]
