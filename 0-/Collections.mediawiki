@@ -109,3 +109,4 @@ I am curious to hear about what '''you''' have in mind when it comes to collecti
 {{Playlist Collections Discussion}}
 
 [[Category:Developer ideas]]
+[[Category:Collections]]
