@@ -361,3 +361,6 @@ BjÃ¶rk", in the ''Collections'' namespace.
 Create the collection structure pictured above, that matches all media by Goldfrapp from album "Felt Mountain".
 
 Then, ''query media'' on the server by giving it the leaf node (2); for each media id in the retrieved list, search all collections containing it in the ''Playlists'' namespace.
+
+[[Category:Summer of Code 2006]]
+[[Category:Collections]]
