@@ -1,0 +1,1 @@
+This category includes pages discussing the concept of [[Collections]]: the initial idea, the design and implementation as part of Google's [[Summer of Code 2006]], and the use of collections with XMMS2.
