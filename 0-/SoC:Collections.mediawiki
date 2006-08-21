@@ -44,3 +44,4 @@ Apart from the links to the deliverables (above), here are a few pointers to ext
 * [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/|A Better Music Player Manifesto]
 
 [[Category:Summer of Code 2006]]
+[[Category:Collections]]
