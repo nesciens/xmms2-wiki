@@ -252,9 +252,33 @@ The following schema describes the serialized form of a collection:
 ''TBD:''
 * flow, organization, commands
 * query generation
-* storage
 * redesign playlists
 
+
+== Collection DAG serialization ==
+
+To save the state of the collection DAG between server restarts, we
+serialize it in the database in several tables.  The structure of the
+collection tables is presented below:
+
+ [CollectionLabels]            [CollectionOperators]         [CollectionAttributes]
+ +-------------------+         +-------------------+         +-------------------+
+ |* collid       INT +----+--->o* id           INT o<---+----+* collid       INT |
+ |  namespace    INT |    |    |  type         INT |    |    |* key      VARCHAR |
+ |  name     VARCHAR |    |    +-------------------+    |    |  value    VARCHAR |
+ +-------------------+    |                             |    +-------------------+
+                          |                             |
+                          |                             |
+                          |    [CollectionConnections]  |    [CollectionIdlists]
+                          |    +-------------------+    |    +-------------------+
+                          +----+* from_id      INT |    +----+* collid       INT |
+                               |* to_id        INT |         |* position     INT |
+                               +-------------------+         |  mid          INT |
+                                                             +-------------------+
+
+Serialization to database is only performed on server shutdown.  When
+it occurs, the tables are emptied and the structure saved from
+scratch.
 
 = Sample use of collections in XMMS2 cli =
 
