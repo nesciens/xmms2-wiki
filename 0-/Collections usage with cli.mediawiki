@@ -2,7 +2,7 @@
 
 This is a quick introduction to working with Collections using the CLI
 client.  If you don't know what a collection is, you might want to
-read the [[Collections_Concept]] page.
+read the [[Collections Concept]] page.
 
 In short, a '''collection is a subset of the medialibrary'''.  It
 therefore matches (or "contains") a set of media.  From there, it can
