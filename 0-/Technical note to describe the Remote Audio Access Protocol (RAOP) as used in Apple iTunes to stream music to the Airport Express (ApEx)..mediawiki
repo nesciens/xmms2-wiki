@@ -205,3 +205,5 @@ References:<br>
 [1] http://www.cocoadev.com/index.pl?RemoteAudioOutputProtocol <br>
 [2] http://www.cocoadev.com/index.pl?AirTunesEncryption <br>
 [3] http://www.nanocrew.net/software/justeport/<br>
+
+[[Category:Summer of Code 2006]]
