@@ -144,7 +144,8 @@ The input is the collection to filter.
 Filter operators are configured using their two properties:
 
 * The '''<code>field</code>''' property determines which property of the media should have its value extracted for comparison (<code>V<sub>m</sub></code>).
-* The '''<code>value</code>''' property determines the value to compare with (<code>V<sub>o</sub></code>)
+* The '''<code>value</code>''' property determines the value to compare with (<code>V<sub>o</sub></code>).
+* The optional '''<code>case-sensitive</code>''' property determines whether the comparison is case-sensitive. Set it to "true" to enable case-sensitivity ; by default, comparisons are case-insensitive.
 
 Description of the operators:
 
@@ -152,6 +153,7 @@ Description of the operators:
 * '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> contains <code>V<sub>o</sub></code>.
 * '''<code>larger</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is larger than <code>V<sub>o</sub></code>.
 * '''<code>smaller</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is smaller than <code>V<sub>o</sub></code>.
+* '''<code>has</code>''': The resulting collection only contains media for which the given property is set.
 
 === List Operators ===
 
