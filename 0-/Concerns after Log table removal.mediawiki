@@ -8,3 +8,4 @@ XMMS2 used to have a Log table which stored a list of all media played with a nu
 === Reference Bugs === 
 * [http://bugs.xmms2.xmms.se/view.php?id=1012 0001012: Re-introduce the Log table]
 * [http://bugs.xmms2.xmms.se/view.php?id=937 0000937: XMMS2, without Log table, lacks a way to determine the average percent of a song that is played]
+* [http://bugs.xmms2.xmms.se/view.php?id=1013 0001013: Add last_played property to media]
