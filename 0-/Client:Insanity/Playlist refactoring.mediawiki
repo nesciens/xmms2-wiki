@@ -53,6 +53,6 @@ There are a number of improvements that could be made to the liststore holding p
 ** another option is to use the schema for the cellrenderer function method, but instead of using a cellrenderer function have a custom MetadataCellRenderer which can display correctly a medialib property given to it. For example if it got a bindata property, it would be able to display the image in a pixbuf renderer, if it got a time field it would be able to display the time nicely formatted, and so forth.
 
 == Related Issues ==
-* {{Bug|996}} - ''configurable playlist columns''
-* {{Bug|999}} - ''Offer a ListStore that mimics playlist function''
-* {{Bug|1030}} - ''Resolver class''
+* <mantis>996</mantis>
+* <mantis>999</mantis>
+* <mantis>1030</mantis>
