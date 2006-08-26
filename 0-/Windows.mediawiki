@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Some infos about the [[Windows/Mingw|Mingw compilation]]
 
 Status:
@@ -40,5 +38,10 @@ Output from the client connected to a server running on Linux:
  Total playtime: 0:43:41
  
  C:\xmms2\test>
+
+== See Also ==
+* [[Windows/Mingw]]
+* <mantis>116</mantis>
+* <mantis>1060</mantis>
 
 [[Category:Platforms]]
