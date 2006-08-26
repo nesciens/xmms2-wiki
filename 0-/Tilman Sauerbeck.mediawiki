@@ -4,7 +4,7 @@ My xmms2-related work:
 * xmmsclient-ecore
 * Euphoria, a graphical xmms2 client based on the Enlightenment Foundation Libraries (EFL). Find it in the Enlightenment CVS repository.
 * Ruby bindings for xmmsclient
-* xmms2-scrobbler, an Audioscrobbler client currently in testing: http://code-monkey.de/pages/xmms2-scrobbler
+* [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]], an Audioscrobbler/last.fm client
 
 Misc. clients/scripts:
 * [http://exodus.xmms.se/~tilman/playlist-import.rb playlist-import.rb] imports playlists from an old medialib.db
