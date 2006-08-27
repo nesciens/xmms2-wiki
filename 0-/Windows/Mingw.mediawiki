@@ -513,12 +513,6 @@ def config(env):
 		env.pkgconfig("glib-2.0 >= 2.6.0", fail=True)
 </pre>
 
-'''src/plugins/file/file.c line 29''' :
-*add
-<pre>
-#include <stdio.h>
-</pre>
-
 '''src/xmms/xmms2-launcher.c line 40''' :
 *add at the start of the main function
 <pre>
