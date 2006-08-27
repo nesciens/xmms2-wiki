@@ -620,6 +620,7 @@ def config(env):
 *Type :
  export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
 *Go in the directory '''/home/<user>/xmms2-stable.git...''' and type
+ unset SHELL
  scons.sh
 
 ==Test xmms2==
