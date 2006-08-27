@@ -1,7 +1,5 @@
 Some infos about the [[Windows/Mingw|Mingw compilation]]
 
-Status:
-Clientlib is partially working. Not everything has been tested. 
 
 Binaries to run the xmms2 cli (you need glib.dll and friends to run):
 
