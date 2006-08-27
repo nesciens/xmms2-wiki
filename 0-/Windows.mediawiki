@@ -11,8 +11,9 @@ Status:
 
 The xmms2d server is compilable with some small nasty hacks. The current problem is that plugins needs symbols inside of xmms2d.exe which is not allowed on win32. This can be solved with a libxmms2.dll that the server and plugins call upon. This enables plugins to link correctly, however plugins are still not loaded. 
 
-
-You can get a precompiled DrBombay+WiP of the working parts [http://exodus.xmms.se/~nano/test.zip here].
+Binaries:
+[http://exodus.xmms.se/~nano/libxmmsclient-glib.dll libxmmsclient-glib.dll]
+[http://exodus.xmms.se/~nano/xmms2.exe xmms2.exe]
 
 
 Output from the client connected to a server running on Linux:
