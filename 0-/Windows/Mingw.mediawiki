@@ -19,53 +19,6 @@ You can try hacking with [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_
 *If you have downloaded the snapshot, you can apply [http://s2.ie2.u-psud.fr/~amuntean/win32_port_01_04_06_Nru_ion_bidon.diff this patch] to it, that makes all the changes listed above.
 
 ==Changes in the source code (long)==
-'''SConstruct line 29'''
-*replace
-<pre>
-if sys.platform == 'win32':
-	default_pyrex = 'pyrexc.py'
-	default_prefix = 'c:\\xmms2'
-	default_cxxflags = ['/Zi', '/TC']
-	default_cflags = ['/Zi', '/TC']
-	default_cpppath = ['z:\\xmms2\\winlibs\\include']
-else:
-	default_pyrex = 'pyrexc'
-	default_prefix = '/usr/local/'
-	default_cxxflags = ['-g', '-Wall', '-O0']
-	default_cflags = ['-g', '-Wall', '-O0']
-	if sys.platform == 'darwin':
-		default_cpppath = ['/sw/lib']
-	else:
-		default_cpppath = []
-</pre>
-:with :
-<pre>
-#if sys.platform == 'win32':
-#	default_pyrex = 'pyrexc.py'
-#	default_prefix = 'c:\\xmms2'
-#	default_cxxflags = ['/Zi', '/TC']
-#	default_cflags = ['/Zi', '/TC']
-#	default_cpppath = ['z:\\xmms2\\winlibs\\include']
-#else:
-default_pyrex = 'pyrexc'
-default_prefix = '/usr/local/'
-default_cxxflags = ['-g', '-Wall', '-O0']
-default_cflags = ['-g', '-Wall', '-O0']
-if sys.platform == 'darwin':
-	default_cpppath = ['/sw/lib']
-else:
-	default_cpppath = []
-</pre>
-
-'''src/include/xmmsc/xmmsc_sockets.h line 8''' :
-*replace
-<pre>
-#ifdef _MSC_VER
-</pre>
-:with :
-<pre>
-#ifdef __WIN32__
-</pre>
 
 '''src/clients/cli/common.h line 24''' :
 *replace
@@ -177,16 +130,6 @@ find_terminal_width() {
 #endif
 </pre>
 
-'''src/clients/lib/xmmsclient/Library line 23''' :
-*replace
-<pre>
-		env.Append(LINKFLAGS=["/DEF:src/clients/lib/xmmsclient/xmmsclient.def"])
-</pre>
-:with :
-<pre>
-#		env.Append(LINKFLAGS=["/DEF:src/clients/lib/xmmsclient/xmmsclient.def"])
-</pre>
-
 '''src/clients/lib/xmmsclient/xmmsclient.c line 21''' :
 *replace
 <pre>
@@ -240,16 +183,6 @@ find_terminal_width() {
 		env.Append(LIBS=["xmmssocket"])
 		env.Append(LIBS=["wsock32"])
 		env.Append(LIBS=["ws2_32"])
-</pre>
-
-'''src/include/xmmsc/xmmsc_ipc_transport.h line 34''' :
-*replace
-<pre>
-int xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
-</pre>
-:with :
-<pre>
-xmms_socket_t xmms_ipc_transport_fd_get (xmms_ipc_transport_t *ipct);
 </pre>
 
 '''src/clients/cli/Program line 18''' :
