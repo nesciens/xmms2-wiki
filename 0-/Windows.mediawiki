@@ -1,19 +1,19 @@
 Some infos about the [[Windows/Mingw|Mingw compilation]]
 
 Status:
+Clientlib is partially working. Not everything has been tested. 
 
-* xmmsclient working
-* xmmsclient-glib working
-* xmmsclient-python working
-* xmms2 cli working
-* xmms2d semi-working
+Binaries to run the xmms2 cli (you need glib.dll and friends to run):
 
-
-The xmms2d server is compilable with some small nasty hacks. The current problem is that plugins needs symbols inside of xmms2d.exe which is not allowed on win32. This can be solved with a libxmms2.dll that the server and plugins call upon. This enables plugins to link correctly, however plugins are still not loaded. 
-
-Binaries:
 [http://exodus.xmms.se/~nano/libxmmsclient-glib.dll libxmmsclient-glib.dll]
+
 [http://exodus.xmms.se/~nano/xmms2.exe xmms2.exe]
+
+
+Development files:
+
+[http://exodus.xmms.se/~nano/xmmsclient-libs-win32.rar xmmsclient-lib-win32.rar]
+
 
 
 Output from the client connected to a server running on Linux:
