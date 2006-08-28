@@ -2,6 +2,33 @@
 
 == Latest quotes ==
 
+=== 2006-08-28 - Brainhax ===
+ <juhovh> oh shit
+ <juhovh> http://www.mobihand.com/product.asp?id=5998
+ <juhovh> someone is selling my software for 10 dollars...
+ <juhovh> and it's GPL
+ <eleusis> so?
+ <juhovh> I don't see the source
+ <juhovh> and all references to me are edited away
+ <eleusis> smite them!
+ <juhovh> should apparently
+ <eleusis> you sure it's yours? :)
+ <sacarasc> you sure its yours?
+ <sacarasc> lol
+ <eleusis> sacarasc++
+ <sacarasc> GET OUT OF MY BRAIN!
+ ...
+ <eleusis> maybe they're not violating the gpl directly
+ <juhovh> I just wonder how to do that in Finland
+ <sacarasc> middle person passing it off as his own?
+ <eleusis> maybe some other noob decided to remove the licence & copyright info and stamp his own name on
+ <juhovh> oh well, have to send some emails first
+ <eleusis> GET OUT OF MY BRAIN
+ <sacarasc> GET OUT OF MY BRAIN!
+ <eleusis> dammit :D
+ <sacarasc> AAAAARGHH!
+ <juhovh> you two are so cute
+
 === 2006-08-10 - Rembember, remember the 10th of August ===
  18:13 <free-zombie> nano's patch works.
  18:13 <tilman> HOHOHO
