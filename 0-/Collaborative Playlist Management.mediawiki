@@ -13,7 +13,7 @@ This solution is very error prone, and has the potential to require a server res
 ==Potential Solution 2==
 Extend the playlist code to manage clients' playlist views.
 
-There will be a Master Playlist that contains a reference counted set of files that are contained in any client playlist view.  Each client Playlist View contains a set of indices into the Master Playlist.  It may sound like there is a separate playlist for each client, but that is not what is intended (i'm getting to it).  Here is an example using the scenario outlined above:
+There will be a Master Playlist that contains a reference counted set of playlist items that are contained in any client playlist view.  Each client Playlist View contains a set of indices into the Master Playlist.  It may sound like there is a separate playlist for each client, but that is not what is intended (i'm getting to it).  Here is an example using the scenario outlined above:
 =====Client 1 Playlist View (in sync)=====
 <code>
 1) Rock Song 1<br/>
