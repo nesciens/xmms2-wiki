@@ -1,7 +1,7 @@
 ==The Problem==
 XMMS2 currently supports multiple simultaneous clients.  Therefore, people will try to modify the playlist concurrently.
 
-Imagine a couple of dormmates creating a playlist for a party, or modifying the playlist during the party.  One person removes a range of files while the other removes a separate or overlapping range of files.  Currently, files are referred to by position within the playlist.  This means that one range of files would be removed, the playlist would be recalculated, and the second range of files would be removed.  The problem is that the second range of files is referred to by position, and they are not at their original positions any longer!  Similar scenarios can be constructed with different combinations of remove and move operations.
+Imagine a couple of dormmates creating a playlist for a party, or modifying the playlist during the party.  One person removes a range of playlist positions while the other removes a separate or overlapping range of playlist positions.  Currently, playlist positions are (surprise!) referred to by position within the playlist.  This means that one range of playlist positions would be removed, the playlist would be recalculated, and the second range of playlist positions would be removed.  The problem is that the second range of playlist positions, are not at their original positions any longer!  Similar scenarios can be constructed with different combinations of remove and move operations.
 
 It may not sound like this situation is likely to occur, and for most people it will never occur.  However, it really just depends on your patterns of use.  When it does occur it will make you curse, and if it occurs twice or more in the same week then you will probably switch players.
 
