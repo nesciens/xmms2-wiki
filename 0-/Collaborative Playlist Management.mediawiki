@@ -1,0 +1,62 @@
+==The Problem==
+XMMS2 currently supports multiple simultaneous clients.  Therefore, people will try to modify the playlist concurrently.
+
+Imagine a couple of dormmates creating a playlist for a party, or modifying the playlist during the party.  One person removes a range of files while the other removes a separate or overlapping range of files.  Currently, files are referred to by position within the playlist.  This means that one range of files would be removed, the playlist would be recalculated, and the second range of files would be removed.  The problem is that the second range of files is referred to by position, and they are not at their original positions any longer!  Similar scenarios can be constructed with different combinations of remove and move operations.
+
+It may not sound like this situation is likely to occur, and for most people it will never occur.  However, it really just depends on your patterns of use.  When it does occur it will make you curse, and if it occurs twice or more in the same week then you will probably switch players.
+
+==Potential Solution 1==
+Require clients to obtain a lock at the server, perform an operation, push the new playlist to the clients, and release the lock.
+
+This solution is very error prone, and has the potential to require a server restart if the client dies before releasing the lock.  It will also require a complete rewrite of sections of the server because clients currently request a "list" from the server instead of the server pushing a list to them.
+
+==Potential Solution 2==
+Extend the playlist code to manage clients' playlist views.
+
+There will be a Master Playlist that contains a reference counted set of files that are contained in any client playlist view.  Each client Playlist View contains a set of indices into the Master Playlist.  It may sound like there is a separate playlist for each client, but that is not what is intended (i'm getting to it).  Here is an example using the scenario outlined above:
+=====Client 1 Playlist View (in sync)=====
+<code>
+1) Rock Song 1<br/>
+2) Rock Song 2<br/>
+3) Rap Song &nbsp;1<br/>
+4) Rap Song &nbsp;3<br/>
+5) Jazz Song 1<br/>
+</code>
+=====Client 2 Playlist View (out of sync)=====
+<code>
+1) Rock Song 1<br/>
+2) Rock Song 2<br/>
+3) Rap Song &nbsp;1<br/>
+4) Rap Song &nbsp;2<br/>
+5) Jazz Song 1<br/>
+6) Jazz Song 2<br/>
+7) Rap Song &nbsp;3<br/>
+</code>
+=====Master Playlist=====
+<code>
+Rock Song 1 - refcount 2<br/>
+Rock Song 2 - refcount 2<br/>
+Rap Song &nbsp;1 - refcount 2<br/>
+Rap Song &nbsp;2 - refcount 1 - marked for removal<br/>
+Jazz Song 1 - refcount 2<br/>
+Jazz Song 2 - refcount 1 - marked for removal<br/>
+Rap Song &nbsp;3 - refcount 2<br/>
+</code>
+
+In this case, Client 1 has removed two songs from the playlist (Rap Song 2 and Jazz Song 2).  Client 2 was sent a playlist changed notification, but has not executed a "list" yet.  It is still possible for Client 2 to attempt to remove any of the files in her view.  If Client 2 attempts to remove a file that has already been removed (Rap Song 2 or Jazz Song 2), then the reference count will be decremented for the appropriate file(s) and removed from the Master Playlist if the reference count reaches zero.  If she attempts to remove a different file, then the reference count will be decremented, and the item will be marked for removal.  No matter what Client 2 does, the files that Client 1 removed will vanish from Client 2's Playlist View the next time she calls "list".  This happens because all items that are marked for removal and appear in Client 2's Playlist View will have their Master Playlist reference counts decremented and removed from her view.
+
+Each item in the Master Playlist must have a unique identifier that is separate from its medialib id because the same file can appear multiple times on the same playlist.  Clients and client Playlist Views must refer to each song item by this unique identifer.  This is necessary to prevent clients from stepping on each other's toes.
+
+===Context Sensitive Moves===
+This solution also allows for context sensitive moves.  Using the above example, imagine that Client 2 attempted to move "Rap Song 3" to just-after "Rap Song 2" before doing a "list".  "Rap Song 2" has been removed from the Master Playlist, and we ''could'' just insert "Rap Song 3" at the numerical position that it was moved to.  However, this is probably not what Client 2 was intending.  Most likely, Client 2 intended for rap songs to be grouped together.  Fortunately, we still have Client 2's Playlist View.  We can do a reverse search to find the first file that has not been marked for removal and insert "Rap Song 3" just after it.  In this case, we would insert "Rap Song 3" just after "Rap Song 1".  If all files have been marked for removal, then "Rap Song 3" would be inserted at the head of the list.
+
+===Implementation Details===
+I'm expecting the Master Playlist to be an unordered list (most likely a hash table).  Each item will carry a <code>playlist_view_pos</code> attribute.  Moves will not adjust the <code>playlist_view_pos</code> attribute because one client would be modifying the data pointed to by another client's Playlist View.  Instead, a move will append a new entry to the Master Playlist, the item's reference count will be decremented, and the item will be marked for deletion.
+
+There are a lot of little optimizations that can be performed to make an unordered list a viable option.
+
+===A Final Word===
+This really isn't that big of an issue, but since XMMS2 claims to have the capability for multiple simultaneous clients, it may become one.
+The goal of this solution is to keep all the clients' playlists in sync as unobtrusively as possible.  I can't think of a better solution, but I'm open to any ideas anyone else may have.
+
+[[User:Teh fng|Teh fng]] 08:10, 30 August 2006 (CEST)
