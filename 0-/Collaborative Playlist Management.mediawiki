@@ -10,6 +10,8 @@ Require clients to obtain a lock at the server, perform an operation, push the n
 
 This solution is very error prone, and has the potential to require a server restart if the client dies before releasing the lock.
 
+This is what most people would call transactions, taking the lock would be called "begin" and releasing it would be called "commit".
+
 ==Potential Solution 2==
 Extend the playlist code to manage clients' playlist views.
 
@@ -78,3 +80,13 @@ This solution was proposed by a friend of mine as an alternative to Solution 2.
 (02:02:01) friend: it seems to be the same effect?<br/>
 
 [[User:Teh fng|Teh fng]] 09:08, 30 August 2006 (CEST)
+
+==Solution 4==
+
+Ignore it. :)
+
+===Solution 5==
+
+A more rubust variant of 4: Fail when a client tried to change playlist without first having an updated version. 
+
+Just attach a version to the playlist. When a client list the playlist or get a playlist_changed broadcast it will also get a version number. When it tries to do some playlist manipulation it must also specify this version number, and if it doesn't match refuse the update.
