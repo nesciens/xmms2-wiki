@@ -90,4 +90,15 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 === Snapshot tarball full of random files and things about 'paxheader' ===
 * A: The snapshot tarballs are generated using ''git-tar-tree'' and are ''pax'' format archives with pax extended attributes. If you see *.paxheader and *.data files instead of a normal source tree, you'll need to use a different version of ''tar'' or some other archive extraction utility, such as ''bsdtar'', ''star'', or ''GNU tar''.
 
+=== I added some music and started playing, but I can't hear anything! ===
+
+* A: "Did you try turning it off and on?" This checklist might help:
+** 0. Are you deaf?
+*# Do you have speakers plugged into your sound output device?
+*# Are the speakers turned on?
+*# Can other programs output sound properly?
+*# Do you have an onboard sound chip (or cheap/old sound card) and some other program is currently using the device?
+*# Check your device mixer settings (using alsamixer/kmixer/aumix/something appropriate). Do you have volume set to 0, or have some channels muted?
+*# Check the volume setting on the output plugin using ''xmms2 volume_list''.
+
 [[Category: Questions and answers]]
