@@ -42,6 +42,7 @@ Policies and guidelines about processes and services related to the project as w
 
 == Proposals ==
 * [[Testing]]
+* [[Collaborative Playlist Management]]
 
 == Ideas ==
 
