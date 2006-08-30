@@ -60,3 +60,21 @@ This really isn't that big of an issue, but since XMMS2 claims to have the capab
 The goal of this solution is to keep all the clients' playlists in sync as unobtrusively as possible.  I can't think of a better solution, but I'm open to any ideas anyone else may have.
 
 [[User:Teh fng|Teh fng]] 08:10, 30 August 2006 (CEST)
+
+===Solution 3===
+This solution was proposed by a friend of mine as an alternative to Solution 2.
+
+(01:57:27) friend: i think I have a better algorithm for your playlist problem<br/>
+(01:58:09) friend: it avoids the ref counting, and complete duplication of client state<br/>
+(01:58:39) JLube A: what is it?<br/>
+(01:58:44) friend: so it's O(unacked changes), not O(num clients)<br/>
+(01:58:56) JLube A: ok<br/>
+(01:59:40) friend: basically you make move completely dependent on the item before...e.g moveAfter(InstanceID previous, InstanceID file)<br/>
+(01:59:50) friend: now here's the trick<br/>
+(02:00:05) friend: for each client you only maintain a list of unsynced deletes<br/>
+(02:00:37) friend: each unsynced delete has a 2-tuple...deletedIID, prevIID<br/>
+(02:00:54) JLube A: and you can walk the chain<br/>
+(02:01:01) friend: exactly :-)<br/>
+(02:02:01) friend: it seems to be the same effect?<br/>
+
+[[User:Teh fng|Teh fng]] 09:08, 30 August 2006 (CEST)
