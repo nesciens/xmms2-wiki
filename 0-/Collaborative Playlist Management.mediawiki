@@ -61,7 +61,7 @@ The goal of this solution is to keep all the clients' playlists in sync as unobt
 
 [[User:Teh fng|Teh fng]] 08:10, 30 August 2006 (CEST)
 
-===Solution 3===
+==Solution 3==
 This solution was proposed by a friend of mine as an alternative to Solution 2.
 
 (01:57:27) friend: i think I have a better algorithm for your playlist problem<br/>
