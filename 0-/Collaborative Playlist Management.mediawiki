@@ -91,5 +91,5 @@ A more rubust variant of 4: Fail when a client tried to change playlist without 
 
 Just attach a version to the playlist. When a client list the playlist or get a playlist_changed broadcast it will also get a version number. When it tries to do some playlist manipulation it must also specify this version number, and if it doesn't match refuse the update.
 
-=== See Also ===
+== See Also ==
 <mantis>1080</mantis>
