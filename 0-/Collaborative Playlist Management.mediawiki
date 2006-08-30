@@ -8,7 +8,7 @@ It may not sound like this situation is likely to occur, and for most people it 
 ==Potential Solution 1==
 Require clients to obtain a lock at the server, perform an operation, push the new playlist to the clients, and release the lock.
 
-This solution is very error prone, and has the potential to require a server restart if the client dies before releasing the lock.  It will also require a complete rewrite of sections of the server because clients currently request a "list" from the server instead of the server pushing a list to them.
+This solution is very error prone, and has the potential to require a server restart if the client dies before releasing the lock.
 
 ==Potential Solution 2==
 Extend the playlist code to manage clients' playlist views.
