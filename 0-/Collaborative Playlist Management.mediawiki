@@ -85,7 +85,7 @@ This solution was proposed by a friend of mine as an alternative to Solution 2.
 
 Ignore it. :)
 
-===Solution 5==
+==Solution 5==
 
 A more rubust variant of 4: Fail when a client tried to change playlist without first having an updated version. 
 
