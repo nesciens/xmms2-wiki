@@ -2,6 +2,24 @@
 
 == Latest quotes ==
 
+=== 2006-08-31 - Visual timer ftw ===
+ <braeuni> i love it
+ <braeuni> stefan@core:~$ sleep 1500 && eog lasagne.jpg
+ ...
+ <VxJasonxV> is it like a dirty picture or something?
+ <VxJasonxV> wait 15 seconds (leave the room) and it'll pop up on it's own and fuck with someone?
+ <braeuni> it's a pic of a lasagne?
+ <VxJasonxV> filenames can be decieving :P
+ <VxJasonxV> what's the point of the sleep then?
+ <eleusis> o_O
+ <VxJasonxV> (side question: is lasagne the same thing as lasagna?)
+ <VxJasonxV> I might me missing something :P
+ <braeuni> yes it's the same
+ <VxJasonxV> ok
+ <VxJasonxV> so then
+ <VxJasonxV> what's with the sleep?
+ <braeuni> it reminds me that i've to take it out of the oven ^^
+
 === 2006-08-28 - Brainhax ===
  <juhovh> oh shit
  <juhovh> http://www.mobihand.com/product.asp?id=5998
