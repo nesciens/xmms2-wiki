@@ -15,24 +15,27 @@ A collection is represented as a '''graph structure''' composed of
 group operators (union, intersection, complement), filters on
 properties (match, has, etc) and static list of media.  The topography
 of such a structure can be very complex, and is not necessarily easy
-to expose to the user.  An advanced pattern syntax will be devised to
+to expose to the user.  An advanced pattern syntax has been devised to
 provide as much freedom as possible in that regard.
 
-However, the current interface is restricted to a simpler version that
-only performs the intersection of a list of match filters on properties:
+Its grammar may scare the faintest hearts, and another page will be written
+to describe in details the syntax of the patterns. For now, you can simply
+stick to the following, simple use of the pattern syntax:
 
  PATTERN := FILTER PATTERN
- FILTER  := property=value | Ã¸
+ FILTER  := property:value | value | Ã¸
 
 where property is the name of any media property (artist, album,
-tracknr, etc).
+tracknr, etc). If the property is omitted, the value is searched in
+several common fields (artist, album, title). A value string can contain
+"*" and "?" wildcards.
 
 Here are examples of valid patterns:
 
- artist="Pink Floyd"
- artist=Air album="Talkie Walkie"
- album="Scorpio Rising" tracknr=5 year=2002
-
+ artist:"Pink Floyd"
+ artist:Air album:"Talkie Walkie"
+ album:"Scorpio Rising" tracknr:5 year:2002
+ Talisman (year<2000 OR l:*live*)
 
 We will now show how to use the collection commands of the CLI.  To
 get some help, you can simply type:
