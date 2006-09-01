@@ -54,7 +54,7 @@ Now we have a way to represent a collection structure, we may want to
 use it against the medialibrary.  First, let's save our collection on
 the server:
 
- $ xmms2 coll save AirFirstTracks artist=Air tracknr=1
+ $ xmms2 coll save AirFirstTracks artist:Air tracknr:1
 
 This creates a new collection named ''AirFirstTracks'' that matches
 all first tracks of albums by Air.  The syntax of the save command is
