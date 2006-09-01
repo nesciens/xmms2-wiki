@@ -2,6 +2,15 @@
 
 == Latest quotes ==
 
+=== 2006-09-02 - She said yes! ===
+ <tru> lisa just agreed that I could install ubuntu on her computer!
+ <theefer> tru: you geek
+ <theefer> "she said yes!"
+ <tru> ahaha.
+ <nano> how romantic
+ <nano> i hope my gf starts using ubuntu some day. 
+ <nano> ;)
+
 === 2006-08-31 - Visual timer ftw ===
  <braeuni> i love it
  <braeuni> stefan@core:~$ sleep 1500 && eog lasagne.jpg
