@@ -24,9 +24,8 @@ Should work fine for Tiger at least.
  deb http://exodus.xmms.se/debian etch main
 
 ==== Sid / Unstable ====
- deb http://exodus.xmms.se/debian sid main
 
-<small>Debian packages can be built using the source tree by using ''dpkg-buildpackage''. See the [[Install instructions | installation instructions]] and Debian packaging documentation for more information. '''Important''' note: the Debian package-building process for XMMS2 is set up so as to build '''everything''', and may require lots of dependencies - for most users, the pre-built packages should be sufficient.</small>
+There are now official XMMS2 Debian packages maintained by Florian Ragwitz, in Debian Unstable. Simply <code>apt-get update</code> and <code>apt-cache search xmms2</code>.
 
 === Ubuntu ===
 ==== Breezy Badger ====
