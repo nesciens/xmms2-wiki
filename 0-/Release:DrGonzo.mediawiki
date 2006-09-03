@@ -5,11 +5,18 @@
 
 === Noteworthy changes ===
 
-Nope.
-
 ==== Feature additions ====
 
-Nope.
+;<mantis>591</mantis>
+;;DAAP xform was added as a part of the Summer of Code program. This means that you can stream mediafiles from iTunes or mt-daapd
+;<mantis>656</mantis>
+;;We now place the config file in different places depending the OS, on free systems we follow fd.o specs and place it ~/.config/xmms2 and on MacOSX we place it in ~/Library/xmms2.
+;<mantis>352</mantis>
+;<mantis>354</mantis>
+;<mantis>942</mantis>
+;<mantis>373</mantis>
+;<mantis>854</mantis>
+;<mantis>814</mantis>
 
 ==== Bug fixes ====
 
@@ -25,7 +32,7 @@ None.
 
 None.
 
-=== Full ChangeLog ===
+=== Full ChangeLog (RC-1) from [[DrFeelgood]] ===
 
 '''Alexander Botero-Lowry'''
 ;<mantis>884</mantis>
