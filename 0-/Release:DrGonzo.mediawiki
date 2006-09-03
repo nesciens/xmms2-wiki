@@ -22,7 +22,7 @@
 ;<mantis>1084</mantis>
 ;<mantis>1087</mantis>
 '''Cole Thompson'''
-;<mantis>1064</mantis>
+;<mantis>591</mantis>
 '''Daniel Svensson'''
 ;<mantis>839</mantis>
 ;<mantis>656</mantis>
@@ -32,16 +32,9 @@
 ;<mantis>1004</mantis>
 ;<mantis>1037</mantis>
 ;<mantis>116</mantis>
-;<mantis>116</mantis>
-;<mantis>116</mantis>
-;<mantis>116</mantis>
-;<mantis>116</mantis>
-;<mantis>116</mantis>
-;<mantis>116</mantis>
 '''Dries Harnie'''
 ;<mantis>930</mantis>
 '''Georg Schild'''
-;<mantis>923</mantis>
 ;<mantis>923</mantis>
 ;<mantis>823</mantis>
 ;<mantis>949</mantis>
@@ -74,7 +67,6 @@
 ;<mantis>938</mantis>
 ;<mantis>922</mantis>
 ;<mantis>656</mantis>
-;<mantis>656</mantis>
 ;<mantis>968</mantis>
 ;<mantis>947</mantis>
 ;<mantis>1033</mantis>
@@ -85,18 +77,13 @@
 '''Tobias Rundstrom'''
 ;<mantis>950</mantis>
 ;<mantis>354</mantis>
-;<mantis>354</mantis>
-;<mantis>354</mantis>
 ;<mantis>929</mantis>
 ;<mantis>354</mantis>
 ;<mantis>941</mantis>
 ;<mantis>945</mantis>
 ;<mantis>942</mantis>
-;<mantis>942</mantis>
 ;<mantis>940</mantis>
 ;<mantis>963</mantis>
-;<mantis>953</mantis>
-;<mantis>953</mantis>
 ;<mantis>953</mantis>
 ;<mantis>964</mantis>
 ;<mantis>965</mantis>
