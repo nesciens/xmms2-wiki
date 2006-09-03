@@ -17,6 +17,8 @@ Binary packages for MacOSX is available at http://exodus.xmms.se/~tru/xmms2_maco
 Should work fine for Tiger at least.
 
 === Debian ===
+'''Note''': There are now two sets of Debian packages - the unofficial ones, maintained by [[Jens Taprogge]], and official Debian packages maintained by Florian Ragwitz. You should choose one set of packages to use - it is '''not recommended''' to have packages installed from both sets at the same time.
+
 ==== Sarge / Stable ====
  deb http://exodus.xmms.se/debian stable main
 
