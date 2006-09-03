@@ -1,3 +1,31 @@
+== Release Notes ==
+
+=== Upgrading ===
+
+=== Noteworthy changes ===
+
+Nope.
+
+==== Feature additions ====
+
+Nope.
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+Nope.
+
+=== Notes to client authors ===
+
+None.
+
+=== Notes to plugin authors ===
+
+None.
+
+=== Full ChangeLog ===
+
 '''Alexander Botero-Lowry'''
 ;<mantis>884</mantis>
 ;<mantis>977</mantis>
