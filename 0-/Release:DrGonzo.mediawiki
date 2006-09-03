@@ -38,7 +38,7 @@ None.
 
 None.
 
-=== Full ChangeLog (RC-1) from [[DrFeelgood]] ===
+=== Full ChangeLog (RC-1) from [[Release:DrFeelgood]] ===
 
 '''Alexander Botero-Lowry'''
 ;<mantis>884</mantis>
