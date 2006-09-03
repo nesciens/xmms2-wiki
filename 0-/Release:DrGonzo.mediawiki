@@ -8,15 +8,21 @@
 ==== Feature additions ====
 
 ;<mantis>591</mantis>
-;;DAAP xform was added as a part of the Summer of Code program. This means that you can stream mediafiles from iTunes or mt-daapd
+<blockquote>DAAP xform was added as a part of the Summer of Code program. This means that you can stream mediafiles from iTunes or mt-daapd</blockquote>
 ;<mantis>656</mantis>
-;;We now place the config file in different places depending the OS, on free systems we follow fd.o specs and place it ~/.config/xmms2 and on MacOSX we place it in ~/Library/xmms2.
+<blockquote>We now place the config file in different places depending the OS, on free systems we follow fd.o specs and place it ~/.config/xmms2 and on MacOSX we place it in ~/Library/xmms2.</blockquote>
 ;<mantis>352</mantis>
+<blockquote>ID3v1 now have a fallback charset so that you globally configure what the id3 entries is encoded as.</blockquote>
 ;<mantis>354</mantis>
+<blockquote>Clients can now browse serverside directory / files.</blockquote>
 ;<mantis>942</mantis>
+<blockquote>A framework for saving albumart on the server was added and art saved in MP4 and MP3 (id3v2) files are saved in this repo</blockquote>
 ;<mantis>373</mantis>
+<blockquote>We have done a lot of work trying to get LAME encoded MP3's gapless. This is not 100% working yet but the progress is pretty good. Please report how well it works for you.</blockquote>
 ;<mantis>854</mantis>
+<blockquote>The '''radd''' command in the client was moved to the serverside, which means it will be faster and can also act on remote directories.</blockquote>
 ;<mantis>814</mantis>
+<blockquote>The comment field in MP3/FLAC/OGG are now read.</blockquote>
 
 ==== Bug fixes ====
 
@@ -61,8 +67,6 @@ None.
 ;<mantis>591</mantis>
 '''Daniel Svensson'''
 ;<mantis>839</mantis>
-;<mantis>656</mantis>
-;<mantis>656</mantis>
 ;<mantis>656</mantis>
 ;<mantis>983</mantis>
 ;<mantis>1004</mantis>
