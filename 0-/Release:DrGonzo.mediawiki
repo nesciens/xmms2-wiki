@@ -102,5 +102,3 @@
 ;<mantis>1076</mantis>
 ;<mantis>1079</mantis>
 ;<mantis>854</mantis>
-;<mantis>854</mantis>
-;<mantis>854</mantis>
