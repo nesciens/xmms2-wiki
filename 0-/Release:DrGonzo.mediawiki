@@ -31,8 +31,7 @@
 Nope.
 
 === Notes to client authors ===
-
-None.
+Clients should no longer use .xmms2/ as the default xmms2 config path, but should rather use the xmmsc_confdir_get() method in their respective bindings. This changes at runtime based on what $XDG_CONFIG_HOME is set to, or fallsback on a default like .config/xmms2 or Library/xmms2
 
 === Notes to plugin authors ===
 
