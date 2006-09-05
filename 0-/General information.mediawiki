@@ -1,5 +1,3 @@
-{{Navbar}}
-
 {{ReleaseStatus}}
 
 General information, for users and developers alike.
