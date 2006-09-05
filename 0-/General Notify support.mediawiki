@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Support for dnotify, inotify (Linux) or kqueue (BSD). There are two things this can help with in the medialibrary.
 
 === Notification of changes to songs in medialib ===
