@@ -1,5 +1,3 @@
-{{Navbar}}
-
 == Roadmap for newly added features ==
 
 * DrDoolittle (end march)
