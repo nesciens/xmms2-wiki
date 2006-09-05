@@ -1,5 +1,3 @@
-{{Navbar}}
-
 The Output component is the one that "drives" XMMS2. It takes a playlist entry from the [[Component:Playlist | playlist]] and starts the [[Component:Transport | transport]] and the [[Component:Decoder | decoder]] for that entry. The output then reads from the decoders and outputs the decoded data (usually) to the soundcard.
 
 The real output is done via a selected output plugin.
