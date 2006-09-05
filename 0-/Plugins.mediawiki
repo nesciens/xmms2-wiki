@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Media stream formats supported by XMMS2.
 
 == Plugins included in the main tree ==
