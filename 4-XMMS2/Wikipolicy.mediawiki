@@ -6,3 +6,9 @@ BUT! To help keep the information in this wiki (at least some minimal degree) st
 * The above rule applies to all pages, it's better to ask questions on mailing list or irc. However, it is a good idea to add the ANSWER to those questions to the wiki.
 * Don't forget to categorize new pages by adding <nowiki>[[Category:The category]]</nowiki>. You can see existing categories at [[Special:Categories]].
 * If you're an XMMS2 client developer, know [[Talk:XMMS2_Clients#How_to_add_a_new_client | how to add information about your client]] to the wiki. Also remember to add the talkpage for your client to your [[Special:Watchlist|watchlist]].
+* Keep discussions on Talk pages.
+
+== Additional guidelines ==
+* Edits that only correct spelling errors or minor grammatical errors should be set as 'minor edits'.
+* Try to provide an informative edit summary for every edit if possible.
+* For questions about XMMS2, try to [[Contact Us|contact]] the team instead of putting up questions on the wiki.
