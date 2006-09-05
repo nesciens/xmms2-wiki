@@ -1,5 +1,3 @@
-{{Navbar}}
-
 As of 03 July 2005, XMMS2 compiles and runs (with sound) on NetBSD.  Sound is brought to you thanks to the libossaudio which hopefully will be replaced with an updated sun plugin in the future.  There is only one caveat: To run XMMS2, one must either define an LD_LIBRARY_PATH of /usr/local/lib:/usr/pkg/lib or add -Wl,-R/usr/pkg/lib -Wl,-R/usr/local/lib to the LDFLAGS during compilation.
 Alternatively, one can install XMMS2 through [http://pkgsrc-wip.sourceforge.net/ pkgsrc-wip].
 
