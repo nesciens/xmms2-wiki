@@ -1,4 +1,4 @@
-Here are some ideas (or XEPs - ''XMMS2 Enhancement Proposals'') about XMMS2, if you want to hack on them or comment them please follow the links. '''Note''': Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
+Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if you want to hack on them or comment them please follow the links. '''Note''': Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
 
 == Architecture ==
 * [[Transforms]]
