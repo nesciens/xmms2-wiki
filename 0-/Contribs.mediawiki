@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Scripts and other miscellaneous contributions to XMMS2. If you think you have something useful which could be put on this list, feel free to add the appropriate details here, or [[About#Contact_info | contact]] the XMMS2 team.
 
 {{Contrib | title=Init scripts | author=Martijn Ras | description=I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d xmms2d]
