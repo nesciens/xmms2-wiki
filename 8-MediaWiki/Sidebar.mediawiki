@@ -1,4 +1,4 @@
-* navigation
+* Main
 ** mainpage|mainpage
 ** about-url|About
 ** Features|Features
