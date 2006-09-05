@@ -5,9 +5,12 @@
 ** status-url|Project Status
 ** XMMS2 Clients|Clients
 
-* Other
+* Help
 ** readme-url|Readme
 ** faq-url|FAQ
+** Getting Started
+
+* Community
 ** general-url|GeneralInfo
 ** users-url|UsersInfo
 ** developers-url|DevsInfo
