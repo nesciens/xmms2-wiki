@@ -16,12 +16,14 @@
 ** http://planet.xmms.se|Planet XMMS2
 ** http://www.frappr.com/xmms2|XMMS2 on Frappr
 ** http://www.last.fm/group/xmms2|XMMS2 on Last.fm
+** irc://chat.freenode.net/xmms2|#xmms2 on Freenode
 
 * Development
 ** developers-url|DevsInfo
 ** http://git.xmms.se|Gitweb
 ** http://bugs.xmms2.xmms.se|Bug tracker
 ** http://test.xmms.se|Test coverage
+** http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel|Mailing list
 
 * Wiki
 ** Sitemap|Sitemap
