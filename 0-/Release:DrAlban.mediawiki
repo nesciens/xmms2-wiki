@@ -1,4 +1,3 @@
-{{Navbar}}
 = Release notes =
 XMMS2 Team releases a new Developer Release to the wild, named DrAlban. This
 page documents the changes between DR2.2 and DR-Alban.
