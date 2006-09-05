@@ -2,4 +2,6 @@ Since XMMS2 is designed to be as portable as possible, it should be able to run 
 
 <!-- This page should be moved out of the 'Developer ideas' category if it becomes substantial, perhaps into 'Technical details' -->
 
+{{Gee-whiz}}
+
 [[Category: Developer ideas]]
