@@ -1,5 +1,3 @@
-{{Navbar}}
-
 == Why? ==
 
 DJing is fun! XMMS2 hacking is fun!
