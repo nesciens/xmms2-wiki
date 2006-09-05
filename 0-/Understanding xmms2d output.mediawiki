@@ -1,5 +1,3 @@
-{{Navbar}}
-
 The XMMS2 daemon outputs a lot of information that can help you and developers get to the root of, and solution to a problem. By default, the daemon only shows minimal information, warnings, and errors. Appending the ''-v'' option to ''xmms2d'' or ''xmms2-launcher'' will change this behavior to output a lot more debugging information. When trying to debug a problem, you will almost invariably need to use the ''-v'' option. The following will assume you use the ''-v'' option.
 
 When the daemon is initialized you see:
