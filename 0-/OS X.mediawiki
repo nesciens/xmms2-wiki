@@ -1,5 +1,3 @@
-{{Navbar}}
-
 == Installation notes ==
  11:53 <eleusis> so how exactly do you build xmms2 on osx, the Right(tm) way? :P
  11:53 <tru_> you install glib2, mad, vorbis from fink.
