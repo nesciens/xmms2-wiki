@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Guidelines for XMMS2 wiki:
 
 * Most pages should have the [[Template:Navbar | navbar template]] at the top.
