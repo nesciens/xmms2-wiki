@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Info about the libao output plugin...
 
 This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/ao here].
