@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Some kind of tool to generate nice lists of music from the medialib.
 
 Lists that can be used to fill a portable mediaplayer.
