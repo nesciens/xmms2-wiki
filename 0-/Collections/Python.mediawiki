@@ -17,25 +17,20 @@ Get an id list from a collection and set it to the id list of a new collection.
 
 
 create a union of collection "Foo" and a custom collection (all media by Sonic Youth), and filter the resulting collection by year (only media from 2006).
-
  coll = xc.Collection(XMMS_COLL_TYPE_AND);
-
+ # Reference to collection 'Foo'
  operand = xc.Connection(XMMS_COLL_TYPE_REFERENCE);
  operand['reference'] = xc.Collection('Foo')
-
  coll.operand.append(operand)
-
- // custom collection (all media by Sonic Youth)
+ # All media by Sonic Youth
  operand = xc.Collection(XMMS_COLL_TYPE_MATCH);
-
  xmmsc_coll_t* allmedia;
  allmedia = xc.Collection(XMMS_COLL_TYPE_UNIVERSE)
  operand.operand.append(allmedia)
  operand['field'] = 'artist'
  operand['value'] = 'Sonic Youth'
  coll.operand.append(operand)
-
- // Filter some more on year
+ # Filter media on year 2006
  last = xc.Collection(XMMS_COLL_TYPE_MATCH);
  last['year'] = '2006'
  last.operand.append(coll)
