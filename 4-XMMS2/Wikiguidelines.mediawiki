@@ -1,7 +1,1 @@
-Guidelines for XMMS2 wiki:
-
-* Use [[Special:Categories | categories]] to help organise pages. On the XMMS2 wiki, category tags go at the bottom of every article.
-* Edits that only correct spelling errors or minor grammatical errors should be set as 'minor edits'.
-* Try to provide an informative edit summary for every edit if possible.
-* Keep discussions on Talk pages.
-* For questions about XMMS2, try to [[About#Contact_info | contact]] the team instead of putting up questions on the wiki.
+#REDIRECT [[XMMS2:Wikipolicy]]
