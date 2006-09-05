@@ -9,10 +9,11 @@ Clients that can be used from a command line, console or terminal.
 
 {{ClientSummary| name=XMMS2 CLI client| description=This is the simple client that currently comes with XMMS2 itself. (source code found in src/clients/cli/xmms2_client.c) It supports most, if not all, operations possible using the xmmsclient library.}}
 
+{{ClientSummary| name=ixmms2| description=ixmms2 is a perl script that allows you to control xmms2 through commands in irssi.}}
+
 {{ClientSummary| name=nyello| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]). It will offer advanced features such as powerful medialib query patterns, collections and clever random playback.}}
 
 {{ClientSummary| name=x2cp| description=x2cp is another ncurses client, basic playlist navigation, colors and bugs.}}
-
 
 {{ClientSummary| name=nxmms2| description=nxmms2 is ncurses client, basic playlist navigation,media library search, black and white without bugs but without error catching in too(works fine if xmms2d is running normal).}}
 
@@ -59,7 +60,7 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary | name=Promoe| description=Winamp classic clone a'la xmms1. Written in c++/qt4. The name is not final.}}
 
-== Others ==
+== More Toolkits ==
 
 {{ClientSummary| name=Chalyx| description=Chalyx (previously known as HaX) is a flexible and modular Python client for XMMS2.}}
 
