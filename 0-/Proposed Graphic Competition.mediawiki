@@ -24,3 +24,9 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 * Fixed background skins will be disqualified
 * Codestyle is valued, keep CSS / HTML to standards that works in all browsers and are easy to change.
 * Deadline 15th Dec 2006
+
+== Unresolved issues ==
+* Submission routine?
+* What if a user wants to do 1 and 2? and wins, do he gets like two DAP's then?
+* Tax regulations?
+* Material should be licensed GFDL and copyrighted to XMMS2 TEAM?
