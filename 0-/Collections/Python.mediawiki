@@ -4,12 +4,41 @@ There are a number of options, two of them are:
 
 ''All python examples use Sync API for simplciity''
 
-1) create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary)
+1) create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary).
 
- coll_foo = xc.coll_get('Foo')
+A few examples:
+
+Get an id list from a collection and set it to the id list of a new collection.
+
+ coll_foo = xc.Collection('Foo')
  ids = coll_foo.ids
  idl_coll = xc.Collection(XMMS_COLL_TYPE_IDLIST)
  idl_coll.ids = ids
+
+
+create a union of collection "Foo" and a custom collection (all media by Sonic Youth), and filter the resulting collection by year (only media from 2006).
+
+ coll = xc.Collection(XMMS_COLL_TYPE_AND);
+
+ operand = xc.Connection(XMMS_COLL_TYPE_REFERENCE);
+ operand['reference'] = xc.Collection('Foo')
+
+ coll.operand.append(operand)
+
+ // custom collection (all media by Sonic Youth)
+ operand = xc.Collection(XMMS_COLL_TYPE_MATCH);
+
+ xmmsc_coll_t* allmedia;
+ allmedia = xc.Collection(XMMS_COLL_TYPE_UNIVERSE)
+ operand.operand.append(allmedia)
+ operand['field'] = 'artist'
+ operand['value'] = 'Sonic Youth'
+ coll.operand.append(operand)
+
+ // Filter some more on year
+ last = xc.Collection(XMMS_COLL_TYPE_MATCH);
+ last['year'] = '2006'
+ last.operand.append(coll)
 
 2) create a collections class with the same get/set methods as in the c bindings.
 
