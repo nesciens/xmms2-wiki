@@ -1,5 +1,3 @@
-{{Navbar}}
-
 There is currently no official XMMS2 logo, so you are welcome to have a go at making one. :)
 
 === Logo guidelines (a.k.a: what do we want?) ===
