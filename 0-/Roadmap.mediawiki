@@ -15,11 +15,13 @@
 * DrFeelgood (july / august)
 ** (''bugfix'')
 
-* DrGonzo (september / november)
+* DrGonzo (september)
+** [[SoC:DAAP | DAAP]] (coledot, done)
+
+* DrHouse (november?)
 ** [[Generated IPC]] (anders / tru)
 ** swig (anders)
 ** [[Collections]] (theefer)
-** [[SoC:DAAP | DAAP]] (coledot)
 
 == See Also ==
 * [[Versioning]]
