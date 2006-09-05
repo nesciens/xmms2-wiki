@@ -1,5 +1,3 @@
-{{Navbar}}
-
 The curl FTP functionality is disabled, however, FTP transport should be available via the [[Component:GnomeVFS | Gnome VFS]] plugin.
 
 [[Category:Transport Plugins]]
