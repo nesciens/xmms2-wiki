@@ -1,5 +1,3 @@
-{{Navbar}}
-
 My xmms2-related work:
 * xmmsclient-ecore
 * Euphoria, a graphical xmms2 client based on the Enlightenment Foundation Libraries (EFL). Find it in the Enlightenment CVS repository.
