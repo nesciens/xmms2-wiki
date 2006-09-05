@@ -10,7 +10,7 @@
 ** readme-url|Readme
 ** faq-url|FAQ
 ** Getting Started|Getting Started
-** About#Contact_info|Contact Us
+** Contact-url|Contact Us
 
 * Community
 ** http://planet.xmms.se|Planet XMMS2
