@@ -8,7 +8,7 @@
 * Help
 ** readme-url|Readme
 ** faq-url|FAQ
-** Getting Started
+** Getting Started|Getting Started
 
 * Community
 ** general-url|GeneralInfo
