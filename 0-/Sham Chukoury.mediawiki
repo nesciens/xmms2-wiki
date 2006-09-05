@@ -1,6 +1,6 @@
 What I do on XMMS2:
 
-* Keep the wiki nice and up to date, with spiffy templates, categories and sometimes colours
+* Keep the wiki nice and up to date, with spiffy templates, categories and sometimes colours. And sometimes with a new wiki skin.
 * Fiddle with Doxygen & XML to try and produce nicer documentation about XMMS2
 * Be a spelling & grammar nazi, and proofread just about anything XMMS2-related
 * Play with Python bindings
