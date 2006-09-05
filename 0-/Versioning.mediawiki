@@ -1,5 +1,3 @@
-{{Navbar}}
-
 == DR Phase ==
 ''The not yet released ones are ofcourse up for discussion''
 
