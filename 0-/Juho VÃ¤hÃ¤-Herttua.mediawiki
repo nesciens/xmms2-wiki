@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Trying to be quite frequent bug reporter and patch sender, very much interested in the modular design of XMMS2. Maintainer of the AAC/MP4 plugin using faad2 library introduced in DR3. Also trying to clean up the [[Component:ices|ices plugin]] to be usable again, a project which progresses quite well.
 
 Author of never finished and not updated [http://xmms-oggcaster.sf.net/ XMMS OggCaster] plugin. (got little frustrated due to the inflexible XMMS1 design and forced use of GTK 1.x)
