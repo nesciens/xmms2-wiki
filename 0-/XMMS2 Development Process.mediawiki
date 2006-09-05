@@ -1,28 +1,8 @@
 This is an overview of the XMMS2 development process - it covers the process to go through when modifying code that ends up in the main code tree (''xmms2-devel''), as well as outlining other trees.
 
-== Code trees ==
-
-These are the trees found at http://git.xmms.se
-* [http://git.xmms.se/?p=xmms2-anders.git;a=summary xmms2-anders]
-** [[User:Anders_Gustafsson | Anders]]' tree - where lots of code ninja happens.
-* [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel]
-** The main development tree, where all approved changes end up.
-* [http://git.xmms.se/?p=xmms2-eleusis.git;a=summary xmms2-eleusis]
-** [[Sham Chukoury | Sham]]'s tree - where minor bug fixes and documentation fixes are occasionally committed.
-* [http://git.xmms.se/?p=xmms2-jlt.git;a=summary xmms2-jlt]
-** [[Jens Taprogge | Jens]]' tree - where changes relating to Debian packaging are made.
-* [http://git.xmms.se/?p=xmms2-nano.git;a=summary xmms2-nano]
-** [[Daniel Svensson | Daniel]]'s tree.
-* [http://git.xmms.se/?p=xmms2-stable.git;a=summary xmms2-stable]
-** The stable tree, where code from the ''xmms2-devel'' tree ends up prior to a release.
-* [http://git.xmms.se/?p=xmms2-tilman.git;a=summary xmms2-tilman]
-** [[Tilman Sauerbeck | Tilman]]'s tree - where some code ninja happens.
-* [http://git.xmms.se/?p=xmms2-tru.git;a=summary xmms2-tru]
-** [[Tobias RundstrÃ¶m | Tobias]]'s tree - where even more code ninja happens.
-
 == Change process ==
 
-* Get an idea for a feature/plugin, or find a bug somewhere. Optionally [[About#Contact info | discuss it]] with other people in the XMMS2 community.
+* Get an idea for a feature/plugin, or find a bug somewhere. Optionally [[About#Contact info | discuss it]] with other people in the XMMS2 community. Optionally start one or more wiki pages outlining the idea and link them to [[Developer Ideas]]
 # [[Reporting bugs | File a bug or feature report]]. You will need to register on the Mantis bug tracker if you don't already have an account.
 #* If you've already got code to submit (e.g. a new plugin), you'll still need to file a report - it's how we track changes to the codebase. Skip step 2.
 # If you're not lazy and you think you're up to it, work on the bug or feature or plugin and submit your file(s) via Mantis.
@@ -65,6 +45,26 @@ There is no firm release calendar or roadmap for XMMS2. The release cycle is typ
 # Identify bugs to fix and features to implement as reported on the issue tracker and add them as child issues of the release issue.
 # Once all (or most of) the children issues of the release issue have been resolved, prepare a release, as per [[Release Checklist]]
 #* Some issues may be re-categorised as low-priority issues, dropped from the current release cycle and moved forward to the next release cycle. This can happen especially if there have been a number of important updates to the codebase and no releases have been made for a fairly long time.
+
+== Code trees ==
+These are the trees found at http://git.xmms.se
+* [http://git.xmms.se/?p=xmms2-anders.git;a=summary xmms2-anders]
+** [[User:Anders_Gustafsson | Anders]]' tree - where lots of code ninja happens.
+* [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel]
+** The main development tree, where all approved changes end up.
+* [http://git.xmms.se/?p=xmms2-eleusis.git;a=summary xmms2-eleusis]
+** [[Sham Chukoury | Sham]]'s tree - where minor bug fixes and documentation fixes are occasionally committed.
+* [http://git.xmms.se/?p=xmms2-jlt.git;a=summary xmms2-jlt]
+** [[Jens Taprogge | Jens]]' tree - where changes relating to Debian packaging are made.
+* [http://git.xmms.se/?p=xmms2-nano.git;a=summary xmms2-nano]
+** [[Daniel Svensson | Daniel]]'s tree.
+* [http://git.xmms.se/?p=xmms2-stable.git;a=summary xmms2-stable]
+** The stable tree, where code from the ''xmms2-devel'' tree ends up prior to a release.
+* [http://git.xmms.se/?p=xmms2-tilman.git;a=summary xmms2-tilman]
+** [[Tilman Sauerbeck | Tilman]]'s tree - where some code ninja happens.
+* [http://git.xmms.se/?p=xmms2-tru.git;a=summary xmms2-tru]
+** [[Tobias RundstrÃ¶m | Tobias]]'s tree - where even more code ninja happens.
+
 
 == See Also ==
 * [[Submitting code]]
