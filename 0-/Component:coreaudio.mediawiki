@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Info about the coreaudio output plugin.
 (This plugin is for Mac OS X only??)
 
