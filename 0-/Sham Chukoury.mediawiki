@@ -1,5 +1,3 @@
-{{Navbar}}
-
 What I do on XMMS2:
 
 * Keep the wiki nice and up to date, with spiffy templates, categories and sometimes colours
