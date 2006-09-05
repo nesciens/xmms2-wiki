@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Has been know to work on OpenBSD. However, the sun output has not been updated with the sample_t yet so currently not working. [[Daniel Svensson]] has plans to update this within the next couple of weeks.
 
 [[Category:Platforms]]
