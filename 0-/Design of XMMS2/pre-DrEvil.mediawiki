@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Please note that XMMS2 is currently undergoing an overhaul of its internal structure - see [[Transforms]] for more information.
 
 = XMMS2 Server Design =
