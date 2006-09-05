@@ -16,10 +16,11 @@
 ** http://www.last.fm/group/xmms2|XMMS2 on Last.fm
 
 * Development
+** Developer Corner
+** developers-url|DevsInfo
+
 ** general-url|GeneralInfo
 ** users-url|UsersInfo
-** developers-url|DevsInfo
+
 ** Sitemap|Sitemap
 ** recentchanges-url|recentchanges
-** randompage-url|randompage
-** helppage|help
