@@ -1,5 +1,3 @@
-{{Navbar}}
-
 This matter has moderate level of complexity due to differences in formats having sub-tunes. SID-tunes are rather simple, the file header defines number of sub-tunes, thus it is known without running any emulated code. Some special custom module playing routines (supported by UADE) are more problematic, they _may_ require undefined length of execution of the actual emulation to determine the number of sub-tunes. Thus I have come up with two slightly distinct ways to implement good support for sub-tunes, and I suggest following:
 
 == Similar in both methods ==
