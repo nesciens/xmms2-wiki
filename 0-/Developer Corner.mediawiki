@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
 
 == XMMS2 Technical Details ==
