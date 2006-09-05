@@ -1,5 +1,3 @@
-{{Navbar}}
-
 == XMMS2 Features ==
 
 List of features currently offered by XMMS2:
