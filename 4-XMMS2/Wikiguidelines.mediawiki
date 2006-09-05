@@ -1,6 +1,5 @@
 Guidelines for XMMS2 wiki:
 
-* Most pages should have the [[Template:Navbar | navbar template]] at the top.
 * Use [[Special:Categories | categories]] to help organise pages. On the XMMS2 wiki, category tags go at the bottom of every article.
 * Edits that only correct spelling errors or minor grammatical errors should be set as 'minor edits'.
 * Try to provide an informative edit summary for every edit if possible.
