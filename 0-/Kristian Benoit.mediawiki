@@ -1,5 +1,3 @@
-{{Navbar}}
-
 kristian <dot> benoit <at> usherbrooke <dot> ca
 
 I'm studying computer science at the University of Sherbrooke,
