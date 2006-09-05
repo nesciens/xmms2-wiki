@@ -1,6 +1,4 @@
-{{Navbar}}
-
-This is a list of things that should probably be done or checked when doing a release.
+This is a list of things that should be done or checked when doing a release.
 
 * Version number set
 * Release snapshot ready (use release.py) & uploaded to sourceforge
