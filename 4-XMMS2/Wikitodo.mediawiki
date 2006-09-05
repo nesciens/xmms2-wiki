@@ -1,5 +1,3 @@
-{{Navbar}}
-
 This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms.se bug tracker] is the to-do list for XMMS2 - see [[Reporting bugs]] for details. If you're new to this wiki, see the [[XMMS2:Wikiguidelines | wiki guidelines]].
 
 * (continuously) improve navigation around the wiki.
