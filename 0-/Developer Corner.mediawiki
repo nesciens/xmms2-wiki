@@ -1,4 +1,4 @@
-Here we collect all information about developing on/against XMMS2. I also store my strange ideas here, if you don't have anything better todo you can always try to comment on them.
+Here we collect all information about developing on/against XMMS2.
 
 == XMMS2 Technical Details ==
 
@@ -38,50 +38,7 @@ Policies and guidelines about processes and services related to the project as w
 === Clients ===
 * [[Generic properties policy]]
 
-== Proposals ==
-* [[Testing]]
-* [[Collaborative Playlist Management]]
-
-== Ideas ==
-
-Here are some ideas about XMMS2, if you want to hack on them or comment them please follow the links. *NOTE:* Don't just add a new thing here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
-
-=== Architecture ===
-* [[Transforms]]
-* [[Generated IPC]]
-* [[List of features required for proper sub-tune support]]
-* [[Container format support]]
-* [[Mobile platforms]]
-
-=== Playlist ===
-* [[Smart playlists]]
-* [[Collections]]
-* [[Playlist refactor]]
-* [[Hierarchical playlists]]
-* [[Playlist Plugins as Client]]
-
-=== Clients ===
-* [[MDNS]]
-* [[Album Covers]]
-* [[Bash tab completion for the CLI]]
-* [[Bemused Client]]
-* [[Client Ideas]]
-* [[Client capabilities and intercommunication]]
-* [[Client for writing tags to files]]
-
-=== Misc ===
-* [[Music Sharing]]
-* [[General Notify support]]
-* [[Support for radio output like icecast]]
-* [[Gapless Playback]]
-* [[Concerns after Log table removal]]
-
-=== Older Ideas ===
-* [[XMMS2 as a DJ station]]
-* [[MIDI client]]
-* [[medialib querier]]
-* [[Support for clients to write to the medialib]]
-* [[Random songs support]]
-* [[Automatic Manual Page Generation]]
+== See Also ==
+* [[Developer Ideas]]
 
 [[Category: Developer info]]
