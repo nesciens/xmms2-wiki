@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Since XMMS2 is designed to be as portable as possible, it should be able to run on mobile platforms, such as [[PalmOS | Palm]], Pocket PC, and Sharp Zaurus PDAs. However, users would most likely only run an XMMS2 client on a PDA, remotely controlling the daemon running elsewhere on the network (a dedicated media box, for example). This means it should be sufficient (for most users) to simply have the client library running on mobile platforms. At present, there has been no testing or active development work done to ensure that the client library does indeed run on the Palm OS or other mobile platforms. (The Zaurus, running Linux, should be mostly fine) Any contributions in this area would be welcome.
 
 <!-- This page should be moved out of the 'Developer ideas' category if it becomes substantial, perhaps into 'Technical details' -->
