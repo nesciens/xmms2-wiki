@@ -1,5 +1,3 @@
-{{Navbar}}
-
 This is an overview of the XMMS2 development process - it covers the process to go through when modifying code that ends up in the main code tree (''xmms2-devel''), as well as outlining other trees.
 
 == Code trees ==
