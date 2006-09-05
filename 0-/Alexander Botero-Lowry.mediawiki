@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Generally I make sure xmms2 runs on FreeBSD. Though I also develop turbox2, and implemented xmms2covers the reference implementation of how to handle (album) art for XMMS2.
 
 I can be reached at alex at foxybanana.com
