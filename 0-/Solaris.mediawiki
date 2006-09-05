@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Info about XMMS2 on Solaris.
 
 The ipc/clientlib seems to work just fine, but scons compilation has problems and there's also some small issues (like getopt) that don't compile.
