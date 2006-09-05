@@ -14,5 +14,6 @@ There is currently a plugin for XMMS which allows you to play a single media-fil
 
 == See Also ==
 * [[Transforms]]
+* <mantis>985</mantis>
 
 [[Category:Developer ideas]]
