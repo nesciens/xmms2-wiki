@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Email: chrippa@evangelion.se
 
 [[Category: People]]
