@@ -14,4 +14,7 @@ And also design the system such that the modules will intergrate smoothly.
 
 {{Discuss|Music_Sharing|music sharing}}
 
+== See Also ==
+* [[SoC:DAAP|DAAP Summer of Code 2006 Project]]
+
 [[Category: Developer ideas]]
