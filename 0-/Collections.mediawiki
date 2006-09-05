@@ -107,6 +107,7 @@ I am curious to hear about what '''you''' have in mind when it comes to collecti
 == See Also ==
 * [[Playlist refactor]]
 {{Playlist Collections Discussion}}
+* [[Collections usage with cli]]
 
 [[Category:Developer ideas]]
 [[Category:Collections]]
