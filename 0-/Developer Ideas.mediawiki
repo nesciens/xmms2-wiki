@@ -1,23 +1,27 @@
-Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if you want to hack on them or comment them please follow the links. '''Note''': Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
+Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if you want to hack on them or comment them please follow the links.
+
+;Notes:
+* Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [[http://lists.xmms.org/mailman/listinfo/xmms2-devel mailinglist]] or on [[About#Contact_info|irc]] first.
+* Ideas that have already been implemented (or are well on their way to being implemented) are in '''bold'''.
 
 == Architecture ==
-* [[Transforms]]
+* '''[[Transforms]]'''
 * [[Generated IPC]]
 * [[List of features required for proper sub-tune support]]
 * [[Container format support]]
 * [[Mobile platforms]]
 
 == Playlist ==
+* '''[[Collections]]'''
 * [[Smart playlists]]
-* [[Collections]]
 * [[Playlist refactor]]
 * [[Hierarchical playlists]]
 * [[Playlist Plugins as Client]]
 * [[Collaborative Playlist Management]]
 
 == Clients ==
-* [[MDNS]]
-* [[Album Covers]]
+* '''[[Album Covers]]'''
+* '''[[MDNS]]'''
 * [[Bash tab completion for the CLI]]
 * [[Bemused Client]]
 * [[Client Ideas]]
@@ -28,16 +32,16 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Testing]]
 
 == Misc ==
-* [[Music Sharing]]
+* '''[[Music Sharing]]'''
+* '''[[Gapless Playback]]'''
 * [[General Notify support]]
 * [[Support for radio output like icecast]]
-* [[Gapless Playback]]
 * [[Concerns after Log table removal]]
 
 == Older Ideas ==
+* '''[[Support for clients to write to the medialib]]'''
 * [[XMMS2 as a DJ station]]
 * [[MIDI client]]
 * [[medialib querier]]
-* [[Support for clients to write to the medialib]]
 * [[Random songs support]]
 * [[Automatic Manual Page Generation]]
