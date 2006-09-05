@@ -21,5 +21,6 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 * Should incorporate the logotype in a '''seamless''' way.
 * '''May''' change colors in logo but not form.
 * Clean, "scandinavian" style.
+* Fixed background skins will be disqualified
 * Codestyle is valued, keep CSS / HTML to standards that works in all browsers and are easy to change.
 * Deadline 15th Dec 2006
