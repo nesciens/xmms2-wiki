@@ -38,6 +38,7 @@ For more information, please see the [http://www.sqlite.org/cvstrac/wiki?p=Perfo
 == See Also ==
 * [[Component:Medialib]]
 * [[Design of XMMS2]]
+* [[Collections]]
 
 == External Links ==
 * http://www.sqlite.org
