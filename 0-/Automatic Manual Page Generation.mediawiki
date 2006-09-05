@@ -72,3 +72,5 @@ This could be templated to:
 The automatic generation of Preambles is to assure consistent wording of introductions to lists across all of the manual pages.
 
 === Implementation ===
+
+[[Category:Developer ideas]]
