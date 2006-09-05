@@ -1,10 +1,13 @@
 * navigation
 ** mainpage|mainpage
 ** about-url|About
-** readme-url|Readme
-** faq-url|FAQ
 ** download-url|Download
 ** status-url|Project Status
+** XMMS2 Clients|Clients
+
+* Other
+** readme-url|Readme
+** faq-url|FAQ
 ** general-url|GeneralInfo
 ** users-url|UsersInfo
 ** developers-url|DevsInfo
