@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Works mainly with old XMMS and provides bits and pieces of knowledge what users have been asking for in a music player since the start of the x11amp project.
 
 [[Category: People]]
