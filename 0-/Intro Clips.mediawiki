@@ -1,6 +1,4 @@
-{{Navbar}}
-
-Early before DR1 [[TobiasRundstrÃ¶m|tru]] contacted [http://www.dismantled.org Dismantled] (since he is such a fanboy) and asked them for participation in the XMMS2 project. They agreed to supply a intro snipplet to XMMS2. Since then we try to change the Intro snipplet some times. Here are the backcatalogue of snipplet for your pleasure.
+Early before DR1 [[Tobias RundstrÃ¶m|tru]] contacted [http://www.dismantled.org Dismantled] (since he is such a fanboy) and asked them for participation in the XMMS2 project. They agreed to supply a intro snipplet to XMMS2. Since then we try to change the Intro snipplet some times. Here are the backcatalogue of snipplet for your pleasure.
 
 * DR1 to DrBombay - [http://www.dismantled.org Dismantled] with [http://exodus.xmms.se/intros/dismantled-the_swarm_clip.ogg The Swarm].
 * DrBombay to now - [http://www.mindinabox.com Mind.In.A.Box] with [http://exodus.xmms.se/intros/mind.in.a.box-lament_snipplet.ogg Lament for Lost Dreams].
