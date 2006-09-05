@@ -1,5 +1,3 @@
-{{Navbar}}
-
 You can submit code for inclusion into the main XMMS2 tree for various reasons:
 
 * bug fixes
