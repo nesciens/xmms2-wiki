@@ -1,3 +1,3 @@
-DR1 is supported; A port can be found at http://www.stampede.org/~drax/xmms2-port.tar.gz
+XMMS2, as well as a number of clients, are included in the FreeBSD Ports collection.
 
 [[Category:Platforms]]
