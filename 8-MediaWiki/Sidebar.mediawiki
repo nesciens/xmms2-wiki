@@ -1,6 +1,7 @@
 * navigation
 ** mainpage|mainpage
 ** about-url|About
+** Features|Features
 ** download-url|Download
 ** status-url|Project Status
 ** XMMS2 Clients|Clients
@@ -9,6 +10,7 @@
 ** readme-url|Readme
 ** faq-url|FAQ
 ** Getting Started|Getting Started
+** About#Contact_info|Contact Us
 
 * Community
 ** http://planet.xmms.se|Planet XMMS2
@@ -17,6 +19,8 @@
 
 * Development
 ** developers-url|DevsInfo
+** http://git.xmms.se|Gitweb
+** http://bugs.xmms2.xmms.se|Bug tracker
 
 * Wiki
 ** Sitemap|Sitemap
