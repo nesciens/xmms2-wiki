@@ -1,5 +1,3 @@
-{{Navbar}}
-
 From an MPD ([http://www.musicpd.org Music Player Daemon]) user's perspective, XMMS2 does not seem very different. That is true, to a certain extent - both MPD and XMMS2 are daemons that play music files and can be controlled remotely over a network. Read on for more details..
 
 == Similarities ==
