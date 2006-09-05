@@ -68,7 +68,7 @@ These are the trees found at http://git.xmms.se
 
 == See Also ==
 * [[Submitting code]]
-* [[IRC Quotes#2005-04-11 | Alternate XMMS2 development process]]
+* [[IRC Quotes/2005#2005-04-11 | Alternate XMMS2 development process]]
 * [[ChangeLog Format]]
 * [[Versioning]]
 * [[Release Checklist]]
