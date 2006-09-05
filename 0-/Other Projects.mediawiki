@@ -8,6 +8,7 @@ Open source projects:
 * [http://muine-player.org/wiki/Main_Page Muine]
 * [http://moc.daper.net/ Music on Console]
 * [http://www.musicpd.org/ Music Player Daemon]
+** [[XMMS2 vs MPD]]
 * [http://www.gnome.org/projects/rhythmbox/ RhythmBox]
 
 
