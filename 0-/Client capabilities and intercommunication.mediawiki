@@ -1,5 +1,3 @@
-{{Navbar}}
-
 This topic has been discussed intermittently - from different aspects - on IRC, with no real resolution. This page is here to aggregate the related points so we can make some progress on the topic. Feel free to add to this page..
 
 == Client communication ==
