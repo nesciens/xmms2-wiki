@@ -1,5 +1,3 @@
-{{Navbar}}
-
 If you think you found a bug in XMMS2, please report it to the bugtracker at http://bugs.xmms2.xmms.se/ (CHECK FOR SIMILAR BUGS FIRST!)
 
 The reason why the bugreporting tool requires you to register an account with a valid email adress is quite simple - we have little to no interest in bugreports from people we can't get hold of for additional information. Complaints about this will fall on deaf ears.
