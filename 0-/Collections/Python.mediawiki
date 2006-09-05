@@ -6,7 +6,7 @@ There are a number of options, two of them are:
 
 1) create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary)
 
- coll_foo = xc.coll_get(foo)
+ coll_foo = xc.coll_get('Foo')
  ids = coll_foo.ids
  idl_coll = xc.Collection(XMMS_COLL_TYPE_IDLIST)
  idl_coll.ids = ids
