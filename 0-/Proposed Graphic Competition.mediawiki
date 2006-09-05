@@ -1,0 +1,25 @@
+This page is *NOT* live and is only for internal discussion.
+
+
+== Why? ==
+
+We need a graphic profile and logo for XMMS2. We have gone far enough without one. I suggest we put the money from SoC in good use and get ourself something that we can use.
+
+I suggest that we start two competitions, one for Logo, when it's done we start the second competition, for wiki design. The prices will be Portable Music Player of choice (max value 4000 SEK), shipping included. And tshirt with logo type.
+
+== Logo Rules ==
+
+* Format '''must''' be SVG.
+* Submitted image must be usable on black and white background.
+* Clean, "scandinavian" style.
+* The '''2''' should be integrated without looking sticked on.
+* Deadline 1 Nov 2006
+
+== WIKI Design Rules ==
+
+* Format '''must''' be a working HTML page with CSS.
+* Should incorporate the logotype in a '''seamless''' way.
+* '''May''' change colors in logo but not form.
+* Clean, "scandinavian" style.
+* Codestyle is valued, keep CSS / HTML to standards that works in all browsers and are easy to change.
+* Deadline 15th Dec 2006
