@@ -1,5 +1,3 @@
-{{Navbar}}
-
 Some kind of xmms client that uses midi to send/get commands.
 
 Could be used to control xmms2 from midi-devices. Like (I think it's midi at least) the hercules dj station. Related to [[XMMS2 as a DJ station]]
