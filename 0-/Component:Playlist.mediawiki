@@ -1,5 +1,3 @@
-{{Navbar}}
-
 The playlist is simply an array of xmms_playlist_entry_t (ie integers) pointing to an id in the media database. The interface from [[Component:Output | output]] is ''xmms_playlist_current_entry'' to retrieve the song to play now and ''xmms_playlist_advance'' to go to the song supposed to be played next. The interface for clients is ''set_pos'' and ''set_pos_rel'', which sets the next entry to play (returned by ''xmms_playlist_current_entry''). These functions cause the playlist to jump to an absolute position, or relative to current position, respectively. Observe that they DON'T stop playing of current song, you need to give the [[Component:Output | output]] some extra love with ''xmms_output_tickle'' to make it play the song.
 
 == Design Rationale ==
