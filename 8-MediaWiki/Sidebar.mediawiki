@@ -11,9 +11,9 @@
 ** Getting Started|Getting Started
 
 * Community
-* http://planet.xmms.se|Planet XMMS2
-* http://www.frappr.com/xmms2|XMMS2 on Frappr
-* http://www.last.fm/group/xmms2|XMMS2 on Last.fm
+** http://planet.xmms.se|Planet XMMS2
+** http://www.frappr.com/xmms2|XMMS2 on Frappr
+** http://www.last.fm/group/xmms2|XMMS2 on Last.fm
 
 * Development
 ** general-url|GeneralInfo
