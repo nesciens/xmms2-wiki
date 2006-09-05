@@ -21,6 +21,7 @@
 ** developers-url|DevsInfo
 ** http://git.xmms.se|Gitweb
 ** http://bugs.xmms2.xmms.se|Bug tracker
+** http://test.xmms.se|Test coverage
 
 * Wiki
 ** Sitemap|Sitemap
