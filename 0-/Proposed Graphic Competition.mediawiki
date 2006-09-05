@@ -27,7 +27,7 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 
 == Unresolved issues ==
 * Submission routine?
-* What if a user wants to do 1 and 2? and wins, do he gets like two DAP's then?
+* What if a user wants to do 1 and 2? and wins, does he get like two DAP's then?
 * Tax regulations?
 * Material should be licensed GFDL and copyrighted to XMMS2 TEAM?
 * Jury - Everyone in AUTHORS get a vote? veto by core team?
