@@ -1,11 +1,7 @@
-{{Navbar}}
-
 Contributing with strange ideas, finding silly bugs and some [http://www.nittionio.nu/xmms2/ small hacks] here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden. 
 
 Long time project is to create [http://www.nittionio.nu/blog something] [http://www.nittionio.nu/meck/xmms2-dj.html like] [http://www.nativeinstruments.de/index.php?id=traktor3_us Traktor DJ Studio]. 
 
 Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, daniel@nittionio.nu.
-
-
 
 [[Category: People]]
