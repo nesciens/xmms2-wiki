@@ -1,12 +1,9 @@
 This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms.se bug tracker] is the to-do list for XMMS2 - see [[Reporting bugs]] for details. If you're new to this wiki, see the [[XMMS2:Wikiguidelines | wiki guidelines]].
 
 * (continuously) improve navigation around the wiki.
-* make and maintain a list of templates used.
 * [[Project Status]] is very poorly maintained. It probably needs to be replaced with something that is semi-automatically updated - possibly with integration with mantis.
 * Try and improve information about tools and dependencies needed to build, install and/or package XMMS2. Possibly provide distro-specific instructions about installing tools and dependencies.
 * Have a packaging guidelines page?
-* Maybe add a link to http://www.frappr.com/xmms2 somewhere
-* Pimp the wiki! MediaWiki doesn't have to look like this. The [http://mono-project.com/Main_Page Mono Project] is a perfect example.
 * [[Using the application]] could probably explain a bit more about how to use ''xmms2-launcher''
 * [[Support for clients to write to the medialib]] needs to be reviewed
 * [[Generic properties policy]] should really be expanded.
