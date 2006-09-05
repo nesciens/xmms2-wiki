@@ -10,7 +10,6 @@
 * DrEvil (april / may)
 ** [[Transforms]] plugins (anders. done)
 ** libxmmsclient++ (theefer / Eclipser, done)
-** [[Client:Promoe]] ? (tru)
 
 * DrFeelgood (july / august)
 ** (''bugfix'')
