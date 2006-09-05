@@ -1,5 +1,3 @@
-{{Navbar}}
-
   $ xmms2 mlib searchadd artist=the<tab> 
 
 Then some bash completion magic would do
