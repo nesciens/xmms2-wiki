@@ -48,6 +48,31 @@ Lets cut to the examples directly:
               c.Match(c.Universe(), {'field': 'artist', 'value': 'Sonic Youth'}),
               c.Match(c.Universe(), {'field': 'year', 'value': '2006'}))
 
+How to use and modify them!
+ 
+ print coll.operands
+ # [<Reference>, <Match>, <Match>]
+ del coll.operands[0]
+ 
+ coll.operands.append(c.Reference('Collections:Party music'))
+ 
+ print coll.operands
+ # [<Match>, <Match>, <Reference>]
+ 
+ # make it persistant on server!
+ xc.coll_save(coll, 'Collections', 'My collection')
+  
+ m = c.Match(c.Universe(), {'field': 'artist', 'value': 'Thievery Corporation'})
+
+ # get a list of ids matching collection
+ matchingids = xc.coll_query_id(m)
+ 
+ # I changed my mind..
+ m['value'] = 'Air'
+ 
+ songsbyair = xc.coll_query_info(m, ['title', 'duration', 'rating'])
+ for song in songsbyair:
+   print "%(album)s - %(title)s (%(duration)s)" % song
 
 
 Other ideas welcome!
