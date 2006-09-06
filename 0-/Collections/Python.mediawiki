@@ -4,7 +4,8 @@ There are a number of options, two of them are:
 
 ''All python examples use Sync API for simplciity''
 
-1) create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary).
+===Alternative 1===
+ create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary).
 
 A few examples:
 
@@ -34,7 +35,8 @@ create a union of collection "Foo" and a custom collection (all media by Sonic Y
  last['year'] = '2006'
  last.operand.append(coll)
 
-2) create a collections class with the same get/set methods as in the c bindings.
+===Alternative 2===
+Create a collections class with the same get/set methods as in the c bindings.
 
 Other ideas welcome!
 
