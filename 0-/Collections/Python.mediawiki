@@ -63,7 +63,7 @@ How to use and modify them!
  xc.coll_save(coll, 'Collections', 'My collection')
   
  m = c.Match(c.Universe(), {'field': 'artist', 'value': 'Thievery Corporation'})
-
+ 
  # get a list of ids matching collection
  matchingids = xc.coll_query_id(m)
  
