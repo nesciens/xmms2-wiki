@@ -38,3 +38,5 @@ create a union of collection "Foo" and a custom collection (all media by Sonic Y
 2) create a collections class with the same get/set methods as in the c bindings.
 
 Other ideas welcome!
+
+[[Category:Developer ideas]]
