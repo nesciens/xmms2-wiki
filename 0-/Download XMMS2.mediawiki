@@ -38,7 +38,7 @@ Add the following line to your ''/etc/apt/sources.list'' (same line as debian ab
 Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (Ogg Vorbis).
 
 ==== Dapper Drake ====
-Packages is built specifically for Dapper are available:
+Packages built specifically for Dapper are available:
  deb http://exodus.xmms.se/debian dapper main
 
 === Fedora ===
