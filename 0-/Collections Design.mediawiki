@@ -79,11 +79,11 @@ Notes:
 
 '''Goal:''' initialize an idlist from the content collection "Foo".
 
- xmmsc_result_t* res = xmmsc_coll_get (conn, "Foo");  // get collection "Foo"
+ xmmsc_result_t* res = xmmsc_coll_get (conn, "Foo", "Collections");  // get collection "Foo"
  xmmsc_result_wait (res)
  
  xmmsc_coll_t* some_coll;
- xmmsc_result_get_collection (res, some_coll);
+ xmmsc_result_get_collection (res, &some_coll);
  
  unsigned int* ids = xmmsc_coll_get_idlist (some_coll);
  
