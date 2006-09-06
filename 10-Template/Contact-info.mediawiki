@@ -2,6 +2,7 @@
 * tru at xmms dot org
 * andersg at xmms dot org
 * [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel xmms2-devel mailing list]
+* ''[http://lists.xmms.org/pipermail/xmms2-devel/ old mailing list archives]''
 
 ;IRC :
 * irc.freenode.net:6667 #xmms2
