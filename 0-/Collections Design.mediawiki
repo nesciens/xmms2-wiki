@@ -144,9 +144,8 @@ Notes:
  
  // ... browse results ...
  
- xmmsc_result_free (res);
- xmmsc_coll_free (qcoll);
-
+ xmmsc_result_unref (res);
+ xmmsc_coll_unref (qcoll);
 
 == Playlist API ==
 
