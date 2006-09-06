@@ -90,7 +90,7 @@ Notes:
  xmmsc_coll_t* idl_coll = xmmsc_coll_new (XMMS_COLL_TYPE_IDLIST);
  xmmsc_coll_set_idlist (idl_coll, ids);
  
- xmmsc_result_free (res);
+ xmmsc_result_unref (res);
 
 === Using the AND operator and references ===
 
