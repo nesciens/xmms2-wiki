@@ -20,7 +20,7 @@ create a union of collection "Foo" and a custom collection (all media by Sonic Y
  coll = xc.Collection(XMMS_COLL_TYPE_AND);
  # Reference to collection 'Foo'
  operand = xc.Connection(XMMS_COLL_TYPE_REFERENCE);
- operand['reference'] = xc.Collection('Foo')
+ operand['reference'] = ('Foo', 'Collections')
  coll.operand.append(operand)
  # All media by Sonic Youth
  operand = xc.Collection(XMMS_COLL_TYPE_MATCH);
