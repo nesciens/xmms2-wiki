@@ -1,4 +1,4 @@
-Here we collect all information about developing on/against XMMS2. For information about ideas and concepts proposed - or being worked on - see [[Developer Ideas]]
+Here we collect all information about developing on/against XMMS2. For information about ideas and concepts proposed (''XMMS2 Enhancement Proposals'') - or being worked on - see [[Developer Ideas]]
 
 == XMMS2 Technical Details ==
 
