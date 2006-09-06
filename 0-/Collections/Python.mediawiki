@@ -24,7 +24,6 @@ create a union of collection "Foo" and a custom collection (all media by Sonic Y
  coll.operand.append(operand)
  # All media by Sonic Youth
  operand = xc.Collection(XMMS_COLL_TYPE_MATCH);
- xmmsc_coll_t* allmedia;
  allmedia = xc.Collection(XMMS_COLL_TYPE_UNIVERSE)
  operand.operand.append(allmedia)
  operand['field'] = 'artist'
