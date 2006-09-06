@@ -38,6 +38,18 @@ create a union of collection "Foo" and a custom collection (all media by Sonic Y
 ===Alternative 2===
 Create a collections class with the same get/set methods as in the c bindings.
 
+
+===Alternative 3===
+Lets cut to the examples directly:
+
+ from xmmsclient import collections as c
+ 
+ coll = c.And(c.Reference('Collections:Foo'),
+              c.Match(c.Universe(), {'field': 'artist', 'value': 'Sonic Youth'}),
+              c.Match(c.Universe(), {'field': 'year', 'value': '2006'}))
+
+
+
 Other ideas welcome!
 
 [[Category:Developer ideas]]
