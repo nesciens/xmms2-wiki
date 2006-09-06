@@ -104,6 +104,7 @@ Notes:
  // reference to collection Foo
  operand = xmmsc_coll_new (XMMS_COLL_TYPE_REFERENCE);
  xmmsc_coll_attribute_set(operand, "reference", "Foo");
+ xmmsc_coll_attribute_set(operand, "namespace", XMMS_COLLECTION_NS_COLLECTIONS);
  
  xmmsc_coll_add_operand (coll, operand);
  
@@ -123,7 +124,8 @@ Notes:
  
  // Filter some more on year
  xmmsc_coll_t* last = xmmsc_coll_new (XMMS_COLL_TYPE_MATCH);
- xmmsc_coll_attribute_set(last, "year", "2006");
+ xmmsc_coll_attribute_set(last, "field", "year");
+ xmmsc_coll_attribute_set(last, "value", "2006");
  xmmsc_coll_add_operand (last, coll);
 
 === Querying a collection ===
