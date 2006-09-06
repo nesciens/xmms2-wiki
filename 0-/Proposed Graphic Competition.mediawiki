@@ -20,9 +20,9 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 * Format '''must''' be a working HTML page with CSS.
 * Should incorporate the logotype in a '''seamless''' way.
 * '''May''' change colors in logo but not form.
-* Clean, "scandinavian" style.
+* Clean, "Scandinavian" style.
 * Fixed background skins will be disqualified
-* Codestyle is valued, keep CSS / HTML to standards that works in all browsers and are easy to change.
+* Coding style is valued, keep CSS / HTML to standards that works in all browsers and are easy to change and continues to work when wiki is upgrade to a newer version of mediawiki.
 * Deadline 15th Dec 2006
 
 == Unresolved issues ==
