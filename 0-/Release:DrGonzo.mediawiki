@@ -1,7 +1,10 @@
 == Release Notes ==
 
+This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed DrGonzo and includes a heap of new exiting bugs (a.k.a. features). This is the first release of XMMS2 that will contain code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
 
 === Upgrading ===
+
+The path to the configuration files has changed. The new path is depending on your OS. This means that unless you copy your ~/.xmms2 to the new location xmms2d will be "restarted" without configuration or medialib.
 
 === Noteworthy changes ===
 
@@ -40,104 +43,115 @@ None.
 === Full ChangeLog (RC-1) from [[Release:DrFeelgood]] ===
 
 '''Alexander Botero-Lowry'''
+;<mantis>656</mantis>
+;<mantis>775</mantis>
 ;<mantis>884</mantis>
 ;<mantis>977</mantis>
-;<mantis>775</mantis>
-;<mantis>656</mantis>
 ;<mantis>1086</mantis>
 '''Anders Gustafsson'''
+;<mantis>801</mantis>
 ;<mantis>885</mantis>
+;<mantis>897</mantis>
+;<mantis>939</mantis>
+;<mantis>946</mantis>
+;<mantis>954</mantis>
 ;<mantis>979</mantis>
 ;<mantis>980</mantis>
-;<mantis>939</mantis>
 ;<mantis>1010</mantis>
-;<mantis>954</mantis>
-;<mantis>946</mantis>
-;<mantis>801</mantis>
-;<mantis>897</mantis>
+;<mantis>1017</mantis>
 ;<mantis>1022</mantis>
 ;<mantis>1023</mantis>
-;<mantis>1083</mantis>
-;<mantis>1017</mantis>
 ;<mantis>1066</mantis>
+;<mantis>1083</mantis>
 ;<mantis>1084</mantis>
 ;<mantis>1087</mantis>
+'''Bryan Taylor'''
+;<mantis>263</mantis>
 '''Cole Thompson'''
-;<mantis>591</mantis>
+;<mantis>1064</mantis>
 '''Daniel Svensson'''
-;<mantis>839</mantis>
+;<mantis>116</mantis>
 ;<mantis>656</mantis>
+;<mantis>839</mantis>
 ;<mantis>983</mantis>
 ;<mantis>1004</mantis>
 ;<mantis>1037</mantis>
-;<mantis>116</mantis>
 '''Dries Harnie'''
 ;<mantis>930</mantis>
 '''Georg Schild'''
-;<mantis>923</mantis>
 ;<mantis>823</mantis>
+;<mantis>923</mantis>
 ;<mantis>949</mantis>
-;<mantis>958</mantis>
 ;<mantis>953</mantis>
+;<mantis>958</mantis>
+;<mantis>1072</mantis>
 ;<mantis>1073</mantis>
 '''Jonne Lehtinen'''
-;<mantis>1008</mantis>
 ;<mantis>967</mantis>
+;<mantis>1008</mantis>
 '''Juho VÃ¤hÃ¤-Herttua'''
+;<mantis>352</mantis>
 ;<mantis>507</mantis>
 ;<mantis>970</mantis>
-;<mantis>352</mantis>
 '''Ma Xuan'''
 ;<mantis>363</mantis>
-;<mantis>974</mantis>
 ;<mantis>796</mantis>
+;<mantis>974</mantis>
 '''Sebastien Cevey'''
 ;<mantis>1023</mantis>
 '''Sham Chukoury'''
+;<mantis>656</mantis>
 ;<mantis>936</mantis>
 ;<mantis>976</mantis>
 ;<mantis>1015</mantis>
+;<mantis>1071</mantis>
+;<mantis>1072</mantis>
 '''Thomas Jollans'''
 ;<mantis>1009</mantis>
 '''Tilman Sauerbeck'''
-;<mantis>931</mantis>
-;<mantis>934</mantis>
-;<mantis>933</mantis>
-;<mantis>938</mantis>
-;<mantis>922</mantis>
 ;<mantis>656</mantis>
-;<mantis>968</mantis>
+;<mantis>922</mantis>
+;<mantis>931</mantis>
+;<mantis>933</mantis>
+;<mantis>934</mantis>
+;<mantis>938</mantis>
 ;<mantis>947</mantis>
-;<mantis>1033</mantis>
-;<mantis>1035</mantis>
-;<mantis>1034</mantis>
-;<mantis>1032</mantis>
+;<mantis>968</mantis>
 ;<mantis>1027</mantis>
-'''Tobias Rundstrom'''
+;<mantis>1032</mantis>
+;<mantis>1033</mantis>
+;<mantis>1034</mantis>
+;<mantis>1035</mantis>
+;<mantis>1093</mantis>
+'''Tobias'''
 ;<mantis>950</mantis>
+'''Tobias Rundstrom'''
+;<mantis>148</mantis>
 ;<mantis>354</mantis>
+;<mantis>373</mantis>
+;<mantis>790</mantis>
+;<mantis>814</mantis>
+;<mantis>854</mantis>
 ;<mantis>929</mantis>
-;<mantis>354</mantis>
-;<mantis>941</mantis>
-;<mantis>945</mantis>
-;<mantis>942</mantis>
 ;<mantis>940</mantis>
-;<mantis>963</mantis>
+;<mantis>941</mantis>
+;<mantis>942</mantis>
+;<mantis>945</mantis>
 ;<mantis>953</mantis>
+;<mantis>963</mantis>
 ;<mantis>964</mantis>
 ;<mantis>965</mantis>
 ;<mantis>975</mantis>
-;<mantis>790</mantis>
 ;<mantis>978</mantis>
-;<mantis>148</mantis>
-;<mantis>373</mantis>
+;<mantis>981</mantis>
+;<mantis>1013</mantis>
 ;<mantis>1024</mantis>
 ;<mantis>1043</mantis>
 ;<mantis>1048</mantis>
 ;<mantis>1050</mantis>
-;<mantis>1013</mantis>
-;<mantis>814</mantis>
 ;<mantis>1075</mantis>
 ;<mantis>1076</mantis>
+;<mantis>1078</mantis>
 ;<mantis>1079</mantis>
-;<mantis>854</mantis>
+;<mantis>1088</mantis>
+;<mantis>1091</mantis>
