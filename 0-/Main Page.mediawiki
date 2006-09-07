@@ -5,8 +5,8 @@ __NOEDITSECTION__
 '''XMMS2''' is a music player for people who are serious about their music. ''Seriously''.
 </div>
 
-<div class="split-half">
 = [[About]] XMMS2 =
+<div class="split-half">
 <div class="split-halfhalf">
 === XMMS2 will: ===
 * play your music.
