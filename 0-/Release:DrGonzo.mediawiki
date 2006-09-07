@@ -26,10 +26,16 @@ The path to the configuration files has changed. The new path is depending on yo
 <blockquote>The '''radd''' command in the client was moved to the serverside, which means it will be faster and can also act on remote directories.</blockquote>
 ;<mantis>814</mantis>
 <blockquote>The comment field in MP3/FLAC/OGG are now read.</blockquote>
-;<mantis>790</mantis>
-<blockquote>This changeset unbroke sorting command again.</blockquote>
 
 ==== Bug fixes ====
+;<mantis>790</mantis>
+<blockquote>This changeset unbroke sorting command again.</blockquote>
+;<mantis>885</mantis>
+<blockquote>Doing next many times should now not produce noise between the tracks.</blockquote>
+;<mantis>1023</mantis>
+<blockquote>The APE parser was bugfixed to not crash on certain platforms</blockquote>
+;<mantis>1027</mantis>
+<blockquote>Some files could be wrongly identified since the introduction of xforms. We hope that most of it was solved with this change</blockquote>
 
 === New platforms ===
 
