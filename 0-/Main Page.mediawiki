@@ -31,28 +31,12 @@ __NOEDITSECTION__
 </div>
 
 <div class="split-half">
-= Use it =
-* [[Getting Started]]
-* [[Screenshots]]
-* [[FAQ]]
-* [[XMMS2 Clients]]
+<!-- i've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
+'''XMMS2''' allows you to play '''mp3''', '''vorbis''', m4a, wma, mac, sid, mod, wav, '''flac''', speex from local files, over http, samba, '''daap''' and mms on your Linux, Mac OS X, *BSD or Solaris machine.
 
-= Get involved =
-<!-- placeholder for important announcements -->
-== Development ==
-* [[Developer Corner]]
-* [http://xmms2.xmms.se/doxygen Development docs]
-* [[Writing XMMS2 Clients]]
-* [[Help Wanted]]
-* [http://git.xmms.se See the code]
-* [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel Mailing list]
-
-== Community ==
-* [irc://chat.freenode.net/xmms2 #xmms2 on Freenode]
-* [http://www.frappr.com/xmms2 XMMS2 on Frappr]
-* [http://www.last.fm/group/xmms2 XMMS2 on Last.fm]
-
+So what are you waiting for? [[Getting Started|Get started]]!
 === News and events ===
+<!-- placeholder for important announcements -->
 {{ShortNews}}
 
 === [http://planet.xmms.se Planet XMMS2] ===
