@@ -1,3 +1,4 @@
+{{ReleaseStatus}}
 == Source ==
 '''Note''': you should read the [[Install instructions]] page as well.
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
