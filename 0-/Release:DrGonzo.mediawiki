@@ -88,6 +88,7 @@ Nope.
 ;<mantis>1004</mantis>
 ;<mantis>1037</mantis>
 '''Dries Harnie'''
+;<mantis>922</mantis>
 ;<mantis>930</mantis>
 '''Georg Schild'''
 ;<mantis>823</mantis>
@@ -121,7 +122,6 @@ Nope.
 ;<mantis>1009</mantis>
 '''Tilman Sauerbeck'''
 ;<mantis>656</mantis>
-;<mantis>922</mantis>
 ;<mantis>931</mantis>
 ;<mantis>933</mantis>
 ;<mantis>934</mantis>
