@@ -43,6 +43,7 @@ __NOEDITSECTION__
 * [[Developer Corner]]
 * [http://xmms2.xmms.se/doxygen Development docs]
 * [[Writing XMMS2 Clients]]
+* [[Help Wanted]]
 * [http://git.xmms.se See the code]
 * [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel Mailing list]
 
