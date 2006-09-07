@@ -1,6 +1,6 @@
-This FAQ exists as a complement to the [[Read me first!]] page. Less important questions (which may still be asked frequently) come here. 
-
-'' PLEASE DON'T ADD NEW QUESTIONS HERE, ASK THEM ON THE MAILLIST OR ON IRC! ''
+;Notes:
+* This FAQ exists as a complement to the [[Read me first!]] page.
+* ''PLEASE DON'T ADD NEW QUESTIONS HERE, ASK THEM ON THE MAILLIST OR ON IRC!''
 
 == General ==
 === When will XMMS2 be released As a non-Developer release: ===
@@ -21,7 +21,7 @@ This FAQ exists as a complement to the [[Read me first!]] page. Less important q
 * A2: SQLite3 is very tightly connected to the internals of XMMS2, this will not change since it can create a situation in which certain features and clients will only work with a certain backend. This also means that XMMS2 will never ship a version where the medialib is optional.
 
 == Usage ==
-'''Hint''': ''Also see the [[Users]] page''
+'''Hint''': ''Also see the [[Getting Started]] page''
 
 === How do I use XMMS2? ===
 * A: XMMS2 is based on the client-server model, where most of the logic resides inside the server (XMMS2D). With a client, you can send commands to the daemon and play music. For now we only have a commandline client. To install, read the INSTALL file. For usage of xmms2 CLI client see the included manpage and [[Using the application]].
