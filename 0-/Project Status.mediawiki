@@ -1,4 +1,4 @@
-''This page is not actively updated anymore. You can [[Help Wanted|help]] by implementing an automated test framework to keep this page up to date.''
+''This page is not actively updated anymore. You can [[Help Wanted#Testing|help]] by implementing an automated test framework to keep this page up to date.''
 
 {{ReleaseStatus}}
 
