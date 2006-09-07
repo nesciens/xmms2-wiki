@@ -1,16 +1,14 @@
-{{ReleaseStatus}}
+General information, for users and developers alike. ''See also: [[Getting Started]]''
 
-General information, for users and developers alike.
-
-; [[FAQ]] : Useful collection of Frequently Asked Questions.
-; [[Features]] : Comprehensive list of features offered by XMMS2.
-; [[Install instructions]] : Helpful info about how to build and install XMMS2.
-; [[XMMS2 Clients]] : Informative list of known XMMS2 clients. New client developers are encouraged to add descriptions of their clients.
-; [[Reporting bugs]] : Guidance for those who may have found bugs in XMMS2.
 ; [[Logo]] : Information about the XMMS2 logo.
 ; [[:Category:Releases | Releases]] : XMMS2 releases.
-; [[History]] : A brief historical timeline of the XMMS2 project.
 ; [[Intro Clips]] : Intro clips included with XMMS2 releases.
 ; [[Roadmap]] : Where XMMS2 is going.
+; [[Contribs]]: User contributions to XMMS2 which don't fit in the source tree.
+; [[Other Projects]]: Other music players.
+
+== HOWTO ==
+<!-- break this section into its own page (Howtos, Help) if it grows big -->
+; [[Using ICES Output]]: How to use the 'ices' output plugin.
 
 [[Category: General]]
