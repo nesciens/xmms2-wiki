@@ -31,5 +31,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 == See Also ==
 * [[Design of XMMS2]]
 * [[Generic properties policy]]
+* [http://xmms2.xmms.se/doxygen/current/ Doxygen documentation]
+* [http://xmms2.xmms.se/epydoc/index.html Python bindings documentation]
 
 [[Category:XMMS2 Technical Details]]
