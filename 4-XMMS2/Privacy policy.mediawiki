@@ -13,5 +13,8 @@ Some services associated with the XMMS2 Project may require some personal or oth
 * Authorised project members may further analyse information collected to build a picture of the audience XMMS2 web sites and services are attracting. This includes analysis of search queries, geographical location based on IP address, and so on.
 * Names, e-mail addresses and other personal information collected (apart from being used as unique identification to log in to some services) is used primarily to enable XMMS2 Project members to contact registered users when needed. Such information is neither normally disclosed to any third parties, nor is it used to market specific commercial products.
 
+== [[ET|XMMS2 ET Phone Home Agent]] ==
+While not relating specifically to the use of XMMS2 Project web sites, as an XMMS2 user, you might like to be aware of [[ET|xmms2-et]], a small XMMS2 client which sends anonymous data about your usage of XMMS2. This data is used primarily to give developers an idea about how (and how much) various components of XMMS2 are being used. The data collected is not released to any third parties (other than aggregate statistics via http://test.xmms.se). Read more about it on the [[ET]] page.
+
 == DISCLAIMER ==
 The XMMS2 Project does not claim to hold your information safe from any kind of harm. While we endeavour to keep your information secure, the XMMS2 Project may not be held responsible for the loss of security of your information - YOU SUBMIT INFORMATION AT YOUR OWN RISK.
