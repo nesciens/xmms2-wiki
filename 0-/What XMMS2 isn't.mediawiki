@@ -1,7 +1,7 @@
 XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[features]] that are constantly growing and improving. However, there are a lot of things that XMMS2 just isn't, and there are a lot of things that XMMS2 ''doesn't do''.
 
 == What XMMS2 will not do ==
-''XMMS2 will not:''
+''XMMS2 will '''not''':''
 * increase corporate profits.
 * clean your house.
 * walk your dog.
@@ -9,6 +9,7 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * destroy [[Wikipedia:Microsoft|Microsoft]].
 * play video.
 * [[Wikipedia:Stargate SG-1|transport]] you to another [[Wikipedia:Stargate Atlantis|galaxy]].
+* look good in [[screenshots]].
 * make the Internet free.
 * turn your desktop into an animated [[Wikipedia:Xgl|3D cube]].
 * give you a standard to commoditise upon.
