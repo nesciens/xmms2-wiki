@@ -34,6 +34,7 @@
 : See our [[Contact Us]] page.
 
 == See Also ==
+* [[About|About XMMS2]]
 * [[FAQ|Frequently Asked Questions]]
 
 [[Category: Questions and answers]]
