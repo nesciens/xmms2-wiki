@@ -10,13 +10,11 @@
 ** Getting Started|Getting Started
 ** readme-url|Readme
 ** faq-url|FAQ
-** General information|General information
+** General information|General info
 ** Contact Us|Contact Us
 
 * Community
 ** http://planet.xmms.se|Planet XMMS2
-** http://www.frappr.com/xmms2|XMMS2 on Frappr
-** http://www.last.fm/group/xmms2|XMMS2 on Last.fm
 ** irc://chat.freenode.net/xmms2|#xmms2 on Freenode
 
 * Development
