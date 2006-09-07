@@ -1,5 +1,45 @@
 Older news items.
 
+{{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Summer of Code news| text=I have added a [[Summer of Code 2006#News | News]] section on the [[Summer of Code 2006]] page. If you're a student interested in contributing to XMMS2 for SoC 2006, please check the page regularly for updates!
+
+p.s. Please note that our mailing list is currently down. If you need to contact us, do so on IRC: #xmms2 on Freenode, or e-mail ''eleusis@xmms.org''.}}
+
+{{Newsitem|date=27 April 2006 WST (2006-04-27)| author=[[Sham Chukoury]]| title=XMMS2's Summer of Code| text=G'day folks. With Google's [http://code.google.com/summerofcode.html Summer of Code] returning this year, the XMMS2 team submitted a proposal to be a 'mentoring organisation'. <strike>Unfortunately, our proposal didn't make it through, but the proposed ideas are still here! If you're interested in some summer codin' fun (or winter codin' fun, for those of us in the other hemisphere), check out XMMS2's very own [[Summer of Code 2006]] ideas. ;)</strike>
+
+Scratch that. Turns out we made it in after all! If you're a student, you might want to take a look at our [[Summer of Code 2006]] ideas page and consider sending in your application. ;)}}
+
+{{Newsitem|date=27 March 2006 CLST (2006-03-27)| author=[[Tobias RundstrÃ¶m]]| title=Cute and cuddly| text=Holy handgranates! It's release time again! Much earlier than expected and much cooler than the critics claim! XMMS2 Team announces [[Release:DrDoolittle | Dr. Doolittle]]. This release is forged by the wormholes of Stargate, Swedish schlager music, Chilean beaches and a lament for a loved one. DrDoolittle is a minor-feature-addition and bug-fix release instead of the expected major-break-the-world release. We decided that enough critical fixes and small features were available to make a release. You can watch the new [[Roadmap]] in order to see what's going on with future releases.
+
+Note that some of the API calls have been changed in this release (details in [[Release:DrDoolittle#Full_ChangeLog | full release notes]]) and clients need to be upgraded. The API breaking will (hopefully) stop when Dr. releases end.
+
+XMMS2 Team would like to thank everyone involved in this release, your efforts are appreciated as always.}}
+
+{{Newsitem|date=21 Febrary 2006 CLST (2006-02-21)| author=[[Tobias RundstrÃ¶m]]| title=So how's that coma going for ya there?| text=Good news everyone. New release from the XMMS2 Team. [[Release:DrCox | DrCox]] is a bugfix / regression release which focuses on stability and some smaller feature enhancements. All users are recommended to upgrade to DrCox. The XMMS2 community is still growing with new users and contributors, just like any opensource project your involvement is necessary to bring the project forward. Please join us on IRC or our Maillist to participate.
+
+Source is available for download from [http://sf.net/projects/xmms2 sourceforge].
+
+A heartwarm thanks goes out to all contributors, hang-arounds and fans.
+
+Next release is [[Release:DrDoolittle|DrDoolittle]] which (despite the name) probably going to include some big changes.}}
+
+
+{{Newsitem|date=13 January 2006 (2006-01-13)| author=[[User:Anders Gustafsson]]| title=The tiger took my family| text=Friday 13th is a good day for a release. [[Release:DrBombay|XMMS2 0.2 DrBombay]] has just been released! It is a bugfix release for [[Release:DrAlban|DrAlban]], and fixes a few annoyances. Source is available for download from [http://sf.net/projects/xmms2 sourceforge]. Debian packages will be available in a few days as usual.}}
+
+{{Newsitem|date=18 December 2005 (2005-12-18) CET| author=[[Tobias RundstrÃ¶m]]| title=Hello XMMS2, tell me how you're doing!| text=Good news everyone! [[Release:DrAlban|XMMS2 0.2 DrAlban]] was just released! Long overdue and not really following our release often, release early scheme. To make up for this we have tons of features. Please visit the release page to get more information. Source is available at [http://sf.net/projects/xmms2 sourceforce] as usual. Debian packages will be available in a few days as usual.
+}}
+
+{{Newsitem|date=08 December 2005 (2005-12-08) WST| author=[[Sham Chukoury]]| title=Configuration file format changes| text=The configuration file format for ''xmms2d'' (''xmms2.conf'') was changed recently. However ''xmms2d'' will not automatically preserve your configuration settings - instead, it will revert to default settings and subsequently overwrite the configuration file. If you want to preserve your settings, try this command:
+
+ sed -e "s/value/property/g" xmms2.conf>tmp;mv tmp xmms2.conf;
+
+and add a 'version' attribute to the root ''<xmms>'' tag:
+
+ <xmms version="0.02">
+}}
+
+{{Newsitem|date=05 December 2005 (2005-12-05) CET|author=[[Tobias RundstrÃ¶m]]|title=GFX artist needed!|text=XMMS2 project seeks a GFX / Web graphic artist. We need to lay down a graphic profile for everything XMMS2 related. Are you interested? Please [[About#Contact_info|contact]] us!
+}}
+
 {{Newsitem|date=19 October 2005 (2005-10-19) CLST|author=[[Tobias RundstrÃ¶m]]|title=Not dead yet.|text=We are not dead, the [[Release:DR3|Developer Release 3]] is still being worked on. There are quite a few important fixes in [[User:Anders Gustafsson|anders']] [http://git.xmms.se/?p=xmms2-anders.git;a=summary tree] that will soon end up in -devel and then we'll hopefully make a push to get DR3 out of the door. Keep the patches and [[About#Contact_info|feedback]] coming!
 }}
 
