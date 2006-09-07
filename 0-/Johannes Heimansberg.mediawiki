@@ -1,1 +1,3 @@
 I'm the author of gxmms2 and gkrellxmms2. My website is located at [http://wejp.k.vu/ wejp.k.vu] where you can find my xmms2 clients and lots of other stuff.
+
+[[Category:People]]
