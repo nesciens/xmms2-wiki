@@ -12,8 +12,8 @@ The path to the configuration files has changed. The new path is depending on yo
 
 ;<mantis>591</mantis>
 <blockquote>DAAP xform was added as a part of the Summer of Code program. This means that you can stream mediafiles from iTunes or mt-daapd</blockquote>
-;<mantis>656</mantis>
-<blockquote>We now place the config file in different places depending the OS, on free systems we follow fd.o specs and place it ~/.config/xmms2 and on MacOSX we place it in ~/Library/xmms2.</blockquote>
+;<mantis>363</mantis>
+<blockquote>We have finally imported the Monkeys audio plugin from Ma Xuan. Many thanks to bring more formats to XMMS2</blockquote>
 ;<mantis>352</mantis>
 <blockquote>ID3v1 now have a fallback charset so that you globally configure what the id3 entries is encoded as.</blockquote>
 ;<mantis>354</mantis>
@@ -26,6 +26,8 @@ The path to the configuration files has changed. The new path is depending on yo
 <blockquote>The '''radd''' command in the client was moved to the serverside, which means it will be faster and can also act on remote directories.</blockquote>
 ;<mantis>814</mantis>
 <blockquote>The comment field in MP3/FLAC/OGG are now read.</blockquote>
+;<mantis>790</mantis>
+<blockquote>This changeset unbroke sorting command again.</blockquote>
 
 ==== Bug fixes ====
 
