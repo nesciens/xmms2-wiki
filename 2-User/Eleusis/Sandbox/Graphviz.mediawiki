@@ -1,0 +1,5 @@
+http://www.wickle.com/wiki/index.php/Graphviz_extension
+
+<graphviz>
+digraph G {Hello->World!}
+</graphviz>
