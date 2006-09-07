@@ -1,0 +1,8 @@
+There are no screenshots of XMMS2. No, seriously, it's just a daemon that sits quietly in the background and plays your music!
+
+
+OK, OK, if you insist...
+
+[[Image:xmms2d-screenshot.png]]
+
+Satisfied?
