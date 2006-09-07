@@ -8,3 +8,6 @@
 
 == Software ==
 * In general, you use software produced by the XMMS2 Project and contributors AT YOUR OWN RISK on a "NO WARRANTY" basis. For details, see licence documents and other terms and conditions attached to specific programs and scripts.
+
+== Support ==
+* You may request support from (or provide support to) other members of the XMMS2 Community (XMMS2 Users, Contributors and Developers), however, there is NO GUARANTEE of such support. Members of the XMMS2 Community are not obligated (though they may be encouraged) to provide such support and may choose not to do so. Whenever support information is provided, the XMMS2 Project makes NO WARRANTY as to the accuracy or correctness of such information. As with the use of these online services, you are solely responsible for ensuring the validity and safety of any actions you carry out based on support information obtained from other community members.
