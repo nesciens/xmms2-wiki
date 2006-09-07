@@ -10,4 +10,4 @@ Notes about formatting:
 * Most recent posts should be at the top
 
 == Other Notes ==
-* Show only the latest 5 news items
+* Show only the latest 5-10 news items
