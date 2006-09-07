@@ -1,5 +1,5 @@
 == Current status ==
-; 2006-09-07 - First TEST release for DrGonzo is released. Please supply [http://test.xmms.se test data] for this release.
+; 2006-09-07 - First TEST release for DrGonzo is released. Please supply [http://test.xmms.se test data] for this release. Get them here http://test.xmms.se/source/
 
 == Release Notes ==
 
