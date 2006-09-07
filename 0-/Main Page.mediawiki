@@ -7,11 +7,14 @@ __NOEDITSECTION__
 
 <div class="split-half">
 = [[About]] XMMS2 =
+<div class="split-halfhalf">
 === XMMS2 will: ===
 * play your music.
-* keep [[The Medialib|track]] of your [[Collections|collection]].
+* manage your [[The Medialib|music library]]
+* use [[collections]] to organise your music as you like
 * allow you to control it using a variety of [[XMMS2 Clients|clients]].
-
+</div>
+<div class="split-halfhalf">
 === XMMS2 will not: ===
 * increase corporate profits.
 * clean your house.
@@ -19,7 +22,7 @@ __NOEDITSECTION__
 * bring about [[Wikipedia:World peace|world peace]].
 * destroy [[Wikipedia:Microsoft|Microsoft]].
 ''See more of [[what XMMS2 will not do]]''
-
+</div>
 == Features ==
 {{FeatureList}}
 </div>
