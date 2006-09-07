@@ -1,13 +1,57 @@
 __NOTOC__
 __NOEDITSECTION__
-= Welcome to the XMMS2 Wiki. =
+<div style="border: 1px solid #eee; background: #f9f9f9; padding: 0.5em">
+;X-platform Music Multiplexing System 2:
+'''XMMS2''' is a music player for people who are serious about their music. ''Seriously''.
+</div>
 
-XMMS2 is a redesign of the [http://www.xmms.org XMMS] music player. It features a client-server model, allowing multiple (even simultaneous!) user interfaces, both textual and graphical. All common audio formats are supported using plugins. On top of this, there is a flexible media library to organize your music. See the [[Features | features]] page for more details.
+<div class="split-half">
+= [[About]] XMMS2 =
+=== XMMS2 will: ===
+* play your music.
+* keep [[The Medialib|track]] of your [[Collections|collection]].
+* allow you to control it using a variety of [[XMMS2 Clients|clients]].
 
-You might also like to visit the [[sitemap]]. Enjoy your stay!
+=== XMMS2 will not: ===
+* increase corporate profits.
+* clean your house.
+* walk your dog.
+* bring about [[Wikipedia:World peace|world peace]].
+* destroy [[Wikipedia:Microsoft|Microsoft]].
+''See more of [[what XMMS2 will not do]]''
 
-{{ReleaseStatus}}
+== Features ==
+{{FeatureList}}
+</div>
 
-== XMMS2 News ==
+<div class="split-half">
+= Use it =
+* [[Getting Started]]
+* [[Screenshots]]
+* [[FAQ]]
+* [[XMMS2 Clients]]
 
-{{News}}
+= Get involved =
+<!-- placeholder for important announcements -->
+== Development ==
+* [[Developer Corner]]
+* [http://xmms2.xmms.se/doxygen Development docs]
+* [[Writing XMMS2 Clients]]
+* [http://git.xmms.se See the code]
+* [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel Mailing list]
+
+== Community ==
+* [irc://chat.freenode.net/xmms2 #xmms2 on Freenode]
+* [http://www.frappr.com/xmms2 XMMS2 on Frappr]
+* [http://www.last.fm/group/xmms2 XMMS2 on Last.fm]
+
+=== News and events ===
+{{ShortNews}}
+
+=== [http://planet.xmms.se Planet XMMS2] ===
+<feed items="5" showdesc="false" showtitle="false">http://planet.xmms.se/rss20.xml</feed>
+[http://planet.xmms.se/rss20.xml RSS Feed]
+</div>
+
+<div class="visualClear"></div>
+<!-- placeholder for more stuff after the 2 columns -->
