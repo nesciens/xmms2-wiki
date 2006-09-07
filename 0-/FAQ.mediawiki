@@ -3,11 +3,14 @@
 * ''PLEASE DON'T ADD NEW QUESTIONS HERE, ASK THEM ON THE MAILLIST OR ON IRC!''
 
 == General ==
-=== When will XMMS2 be released As a non-Developer release: ===
+=== When will XMMS2 be released As a non-Developer release? ===
 * A: We don't know. Probably "when it's done". RSN.
 
-=== What is the difference between MPD (Music Player Daemon) and XMMS2?: ===
+=== What is the difference between MPD (Music Player Daemon) and XMMS2? ===
 * A: See [[XMMS2 vs MPD]]
+
+=== Why doesn't XMMS2 use GStreamer? ===
+* A: See [[XMMS2 vs GStreamer]]
 
 === Why doesn't XMMS2 use Dbus? ===
 * A: This is really just an implementation detail, everyone should use the clientlib and not have to care about how it talks to the server. It could be using xmlrpc or corba or black magic or smoke signals or jungle bongo drums or morse-over-sigusr1, it is all abstracted away in the client library.
