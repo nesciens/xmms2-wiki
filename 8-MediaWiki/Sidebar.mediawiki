@@ -7,9 +7,9 @@
 ** XMMS2 Clients|Clients
 
 * Help
+** Getting Started|Getting Started
 ** readme-url|Readme
 ** faq-url|FAQ
-** Getting Started|Getting Started
 ** Contact Us|Contact Us
 
 * Community
