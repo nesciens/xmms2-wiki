@@ -108,7 +108,7 @@ Nope.
 ;<mantis>363</mantis>
 ;<mantis>796</mantis>
 ;<mantis>974</mantis>
-'''Sebastien Cevey'''
+'''SÃ©bastien Cevey'''
 ;<mantis>1023</mantis>
 '''Sham Chukoury'''
 ;<mantis>656</mantis>
@@ -134,7 +134,7 @@ Nope.
 ;<mantis>1034</mantis>
 ;<mantis>1035</mantis>
 ;<mantis>1093</mantis>
-'''Tobias Rundstrom'''
+'''Tobias RundstrÃ¶m'''
 ;<mantis>148</mantis>
 ;<mantis>354</mantis>
 ;<mantis>373</mantis>
