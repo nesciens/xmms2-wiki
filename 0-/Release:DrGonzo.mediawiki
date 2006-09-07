@@ -123,8 +123,6 @@ None.
 ;<mantis>1034</mantis>
 ;<mantis>1035</mantis>
 ;<mantis>1093</mantis>
-'''Tobias'''
-;<mantis>950</mantis>
 '''Tobias Rundstrom'''
 ;<mantis>148</mantis>
 ;<mantis>354</mantis>
@@ -137,6 +135,7 @@ None.
 ;<mantis>941</mantis>
 ;<mantis>942</mantis>
 ;<mantis>945</mantis>
+;<mantis>950</mantis>
 ;<mantis>953</mantis>
 ;<mantis>963</mantis>
 ;<mantis>964</mantis>
