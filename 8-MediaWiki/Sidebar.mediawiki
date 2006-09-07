@@ -19,6 +19,7 @@
 
 * Development
 ** developers-url|DevsInfo
+** Help Wanted|Help Wanted
 ** http://git.xmms.se|Gitweb
 ** http://bugs.xmms2.xmms.se|Bug tracker
 ** http://test.xmms.se|Test coverage
