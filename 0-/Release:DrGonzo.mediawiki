@@ -4,7 +4,7 @@ This is a live broadcast from the XMMS2 Team! We are releasing a new Developer R
 
 === Upgrading ===
 
-The path to the configuration files has changed. The new path is depending on your OS. This means that unless you copy your ~/.xmms2 to the new location xmms2d will be "restarted" without configuration or medialib.
+The path to the configuration files has changed. The new path is depending on your OS (on most systems it's now ~/.config/xmms2). This means that unless you copy your ~/.xmms2 to the new location xmms2d will be "restarted" without configuration or medialib.
 
 === Noteworthy changes ===
 
