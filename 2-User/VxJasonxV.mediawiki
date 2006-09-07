@@ -5,16 +5,20 @@
 == Contributions ==
 Contributed to the DrDolittle ET packet tests.<br>
 Contributed to the DrEvil ET packet tests.<br>
-Actively using gxmms2 (from git), TurboX2 (from git), X4X (from contributed ebuilds), and providing feedback.
+Actively using gxmms2, TurboX2, and insanity (from git), and providing feedback.
 
 == Capability for Abus- Testing ==
-Open for testing under a Linux Environment ( Gentoo Linux 2006.0 )<br>
-Current `uname -a`: Linux picard 2.6.16-gentoo-r9 #1 Sat May 6 00:18:12 MST 2006 i686 Pentium III (Coppermine) GNU/Linux<br>
+Open for testing under a Linux Environment ( Gentoo Linux 2006.1 )<br>
+Current `uname -a`: Linux picard 2.6.17-gentoo-r7 #1 Tue Jul 25 10:58:30 MST 2006 i686 Pentium III (Coppermine) GenuineIntel GNU/Linux<br>
 Open for testing in a Windows XP (SP2) Environment<br>
 Limited testing with Mac OS X (Tiger - 10.4) is also possible
 
 == Demands ==
 PHP Bindings ( ;D )
+
+== Toys ==
+[[User:VxJasonxV/Sandbox/Template:RSS]] (yay SimplePie)
+[[User:VxJasonxV/Sandbox/Template:RSSHeadlines]] (yay SimplePie x2)
 
 == Contact Info ==
 Reach me in IRC under the same username. ( irc.freenode.net / #xmms2 )<br>
