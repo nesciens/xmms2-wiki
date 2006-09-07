@@ -11,7 +11,7 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 
 * Format '''must''' be SVG.
 * Submitted image must be usable on black and white background.
-* Clean, "scandinavian" style.
+* Clean, "[[Wikipedia:Scandinavian Design|scandinavian]]" style.
 * The '''2''' should be integrated without looking sticked on.
 * Deadline 1 Nov 2006
 
@@ -20,7 +20,7 @@ I suggest that we start two competitions, one for Logo, when it's done we start 
 * Format '''must''' be a working HTML page with CSS.
 * Should incorporate the logotype in a '''seamless''' way.
 * '''May''' change colors in logo but not form.
-* Clean, "Scandinavian" style.
+* Clean, "[[Wikipedia:Scandinavian Design|scandinavian]]" style.
 * Fixed background skins will be disqualified
 * Coding style is valued, keep CSS / HTML to standards that works in all browsers and are easy to change and continues to work when wiki is upgrade to a newer version of mediawiki.
 * Deadline 15th Dec 2006
