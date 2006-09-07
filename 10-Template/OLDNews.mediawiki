@@ -1,7 +1,7 @@
 {{Newsitem| date=15 July 2006 CLST (2006-07-15)| author=[[Tobias RundstrÃ¶m]]| title=This must feel soooo good!| text=[[Release:DrFeelgood|DrFeelgood]] is a fast bugfix release to DrEvil. Nothing fancy, but upgrade if you want to get rid of annoying bugs.
 }}
 
-{{Newsitem| date=7 July 2006 WST (2006-07-07)| author=[[Sham Chukoury]]| title=You're the best evil son an evil dad could ever ask for| text=Winter in Chile, tropical heat in Europe; wherever you are this new release comes as a cool breeze. The XMMS2 Team is happy to announce the release of [[Release:DrEvil | DrEvil]]. This monster of a release will bring the much expected [[Transforms]] concept and might crash your computer a few times due to the extensive changes. Please be aware that this should be considered as less stable then [[DrDoolittle]], so please use this release to help us find bugs in Transforms and port your plugins to the new API. Also this release fixes a lot of the problems that were around with the older architecture, like gapless playback, FLACs getting played by the MAD plugin and so on.
+{{Newsitem| date=7 July 2006 WST (2006-07-07)| author=[[Sham Chukoury]]| title=You're the best evil son an evil dad could ever ask for| text=Winter in Chile, tropical heat in Europe; wherever you are this new release comes as a cool breeze. The XMMS2 Team is happy to announce the release of [[Release:DrEvil | DrEvil]]. This monster of a release will bring the much expected [[Transforms]] concept and might crash your computer a few times due to the extensive changes. Please be aware that this should be considered as less stable than [[Release:DrDoolittle|DrDolittle]], so please use this release to help us find bugs in Transforms and port your plugins to the new API. Also this release fixes a lot of the problems that were around with the older architecture, like gapless playback, FLACs getting played by the MAD plugin and so on.
 
 We are now aiming for the next release which will include some of the [[Summer of Code 2006 | Summer of Code]] students' contributions.}}
 {{Newsitem| date=25 May 2006 WST (2006-05-25)| author=[[Sham Chukoury]]| title=Summer of Code really begins| text=Hello World. The application and evaluation periods of SoC2006 are finally over and selected applicants can now start working on their awesome proposals. Here at XMMS2, we received about 50 proposals, which was quite surprising.. we were expecting something of the order of a dozen or so.. ;) In the end, it did come down to almost a dozen good-quality proposals fighting for our attention, but we could only accept five of them. So, for 2006, the XMMS2 SoC projects are (in no particular order):
@@ -30,5 +30,3 @@ The XMMS2 Team would like to thank all the students who applied and invite those
 
 ===News tools===
 * [[News Archive]]
-* [[Template_talk:News | News posting guidelines, etc]]
-* {{ed|News|news page}}
