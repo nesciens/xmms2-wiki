@@ -1,6 +1,6 @@
 == Release Notes ==
 
-This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed DrGonzo and includes a heap of new exiting bugs (a.k.a. features). This is the first release of XMMS2 that will contain code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
+This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed DrGonzo and includes a heap of new exciting bugs (a.k.a. features). This is the first release of XMMS2 that will contain code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
 
 === Upgrading ===
 
@@ -13,19 +13,19 @@ The path to the configuration files has changed. The new path is depending on yo
 ;<mantis>591</mantis>
 <blockquote>DAAP xform was added as a part of the Summer of Code program. This means that you can stream mediafiles from iTunes or mt-daapd</blockquote>
 ;<mantis>363</mantis>
-<blockquote>We have finally imported the Monkeys audio plugin from Ma Xuan. Many thanks to bring more formats to XMMS2</blockquote>
+<blockquote>We have finally imported the Monkeys audio plugin from Ma Xuan. Many thanks for bringing more formats to XMMS2!</blockquote>
 ;<mantis>352</mantis>
-<blockquote>ID3v1 now have a fallback charset so that you globally configure what the id3 entries is encoded as.</blockquote>
+<blockquote>The ID3v1 plugin now has a fallback charset so that you can globally configure what the ID3 entries are encoded as.</blockquote>
 ;<mantis>354</mantis>
-<blockquote>Clients can now browse serverside directory / files.</blockquote>
+<blockquote>Clients can now browse serverside directory/files.</blockquote>
 ;<mantis>942</mantis>
-<blockquote>A framework for saving albumart on the server was added and art saved in MP4 and MP3 (id3v2) files are saved in this repo</blockquote>
+<blockquote>A framework for saving album art on the server was added. Album art stored in MP4/MP3 (ID3v2) files is automatically extracted and stored on the server.</blockquote>
 ;<mantis>373</mantis>
-<blockquote>We have done a lot of work trying to get LAME encoded MP3's gapless. This is not 100% working yet but the progress is pretty good. Please report how well it works for you.</blockquote>
+<blockquote>We have done a lot of work trying to get LAME encoded MP3s gapless. This is not 100% working yet but the progress is pretty good. Please report how well it works for you.</blockquote>
 ;<mantis>854</mantis>
 <blockquote>The '''radd''' command in the client was moved to the serverside, which means it will be faster and can also act on remote directories.</blockquote>
 ;<mantis>814</mantis>
-<blockquote>The comment field in MP3/FLAC/OGG are now read.</blockquote>
+<blockquote>The comment field in MP3/FLAC/Vorbis files is now read.</blockquote>
 
 ==== Bug fixes ====
 ;<mantis>790</mantis>
@@ -33,7 +33,7 @@ The path to the configuration files has changed. The new path is depending on yo
 ;<mantis>885</mantis>
 <blockquote>Doing next many times should now not produce noise between the tracks.</blockquote>
 ;<mantis>1023</mantis>
-<blockquote>The APE parser was bugfixed to not crash on certain platforms</blockquote>
+<blockquote>The APE parser was bugfixed to not crash on certain platforms.</blockquote>
 ;<mantis>1027</mantis>
 <blockquote>Some files could be wrongly identified since the introduction of xforms. We hope that most of it was solved with this change</blockquote>
 
@@ -42,7 +42,7 @@ The path to the configuration files has changed. The new path is depending on yo
 Nope.
 
 === Notes to client authors ===
-* Clients should no longer use .xmms2/ as the default xmms2 config path, but should rather use the xmmsc_confdir_get() method in their respective bindings. This changes at runtime based on what $XDG_CONFIG_HOME is set to, or fallsback on a default like .config/xmms2 or Library/xmms2
+* Clients should no longer use .xmms2/ as the default xmms2 config path, but should rather use the xmmsc_confdir_get() method in their respective bindings. This changes at runtime based on what $XDG_CONFIG_HOME is set to, or falls back on a default like .config/xmms2 or Library/xmms2
 
 === Notes to xform authors ===
 
