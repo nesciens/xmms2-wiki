@@ -1,0 +1,14 @@
+Get started with XMMS2.
+
+# [[Download XMMS2]]: Choose the best package and installation method for your system.
+# [[Install instructions|Install XMMS2]]: How to build XMMS2 from source.
+# [[Using the application|Use XMMS2]]: How to start and use XMMS2 for the first time.
+# [[XMMS2 Clients]]: Get more clients.
+
+If things don't go smoothly, check these out:
+* [[FAQ|Frequently Asked Questions]]
+* [[Reporting bugs]]
+* [irc://chat.freenode.net/xmms2 #xmms2 on Freenode]
+
+[[Category:General]]
+[[Category:Users]]
