@@ -32,6 +32,8 @@ The path to the configuration files has changed. The new path is depending on yo
 <blockquote>This changeset unbroke sorting command again.</blockquote>
 ;<mantis>885</mantis>
 <blockquote>Doing next many times should now not produce noise between the tracks.</blockquote>
+;<mantis>947</mantis>
+<blockquote>The daemon now doesn't go into and endless loop if it tries to read files that only consist of NUL bytes.</blockquote>
 ;<mantis>1023</mantis>
 <blockquote>The APE parser was bugfixed to not crash on certain platforms.</blockquote>
 ;<mantis>1027</mantis>
