@@ -28,5 +28,6 @@ We are now aiming for the next release which will include some of the [[Summer o
 
 The XMMS2 Team would like to thank all the students who applied and invite those who did not get accepted into SoC2006 to still make a contribution to XMMS2, if they're up to it.}}
 
-===News tools===
+=== More News ===
 * [[News Archive]]
+* [[Template_talk:News | News posting guidelines, etc]]
