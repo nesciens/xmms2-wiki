@@ -32,6 +32,7 @@ The XMMS2 team is committed to producing a better music player, while diligently
 * [[About/People|People involved]]
 * [[XMMS2:History|Project History]]
 * [[README|The README]]
+* [http://www.coollectionz.co.nr Cool Collections]
 
 == Footnotes ==
 # Slight exaggeration, of course.
