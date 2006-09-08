@@ -4,25 +4,33 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 ''XMMS2 will '''not''':''
 * increase corporate profits.
 * clean your house.
+** ... unless you hook it up with your [[Wikipedia:Emacs|emacs]].
 * walk your dog.
 * bring about [[Wikipedia:Wolrd Peace|world peace]].
 * destroy [[Wikipedia:Microsoft|Microsoft]].
 * play video.
+** ... except for the audio tracks.
 * [[Wikipedia:Stargate SG-1|transport]] you to another [[Wikipedia:Stargate Atlantis|galaxy]].
 * look good in [[screenshots]].
 * make the Internet free.
 * turn your desktop into an animated [[Wikipedia:Xgl|3D cube]].
 * give you a standard to commoditise upon.
+** ... unless it becomes a standard to commoditise upon.
 * [[Wikipedia:Steve Irwin|wrestle crocodiles]]
+** ... crocodile wrestling is xmms1 only.
 * make you live forever.
+** ... unless you're mentioned in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=AUTHORS AUTHORS].
 * come out of a shiny box and install itself in your heart forever.
 * make you rich.
+** ... unless you're a [[Summer of Code 2006|SoC student]]. :)
 * get you laid.
 ** ... unless you use it to play sensual music while dating a girl.
 * make you famous.
 ** ... unless you're [[SÃ©bastien Cevey]].
 * break you out of [[Wikipedia:Prison Break|jail]].
+** ... except when compiled by [[Wikipedia:Frank Morris|Frank Morris]], or [[Wikipedia:John Anglin|John]] and [[Wikipedia:Clarence Anglin|Clarence Anglin]].
 * cure you of [[Wikipedia:AIDS|AIDS]], [[Wikipedia:Cancer|cancer]] or [[Wikipedia:Syphillis|syphillis]].
 * give you free music.
 ** ... except for a [[Intro Clips|small sample]].
 * give you superhuman strength.
+** ... unless you compile it with -fuse-kryptonite.
