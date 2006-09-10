@@ -6,5 +6,10 @@ This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms
 * Have a packaging guidelines page?
 * [[Using the application]] could probably explain a bit more about how to use ''xmms2-launcher''
 * update references to decoder/transport -> xform
+* Add a 'featured client' box to the home page
+* Merge [[README]] & [[About]] pages -> Use new About page as basis for README distributed with code tree.
+* Write a 'hacking howto' or similar -> improve [[Developer Corner]] so it tells interested contributors what they should know/do to contribute to XMMS2.
+* Enhance [[Roadmap]] for possible inclusion in sidebar menu
+* Move [[Sitemap]] & recent changes to toolbox
 
 (''add more todo items to this list')
