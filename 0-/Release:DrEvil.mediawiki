@@ -143,3 +143,5 @@ The API is totally new when it comes to decoding / transport and effect plugins.
 * {{Bug|739}} -  C89 fixes.
 * {{Bug|762}} -  Remove views from medialib.
 * {{Bug|781}} -  When a client edits mlib-entries the mlib_entry_changed_broadcast is now called
+
+[[Category:Releases]]
