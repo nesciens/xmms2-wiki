@@ -171,3 +171,5 @@ Nope.
 ;<mantis>1079</mantis>
 ;<mantis>1088</mantis>
 ;<mantis>1091</mantis>
+
+[[Category:Releases]]
