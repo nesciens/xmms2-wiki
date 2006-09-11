@@ -3,15 +3,39 @@ http://exodus.xmms.se/~theefer/xmms2-wiki-mindmap.jpg
 <graphviz>
 graph wikiMindmap {
   meta [shape=box, label="XMMS2 website"];
+
   Home [fontcolor="purple"];
   News;
   ShortBlurb [label="Short Blurb"];
   Home -- {News; ShortBlurb}
+
   Download [fontcolor="purple"];
   GetStarted [label="Getting Started"];
   GetStarted -- {Install; Use; Clients};
   Download -- GetStarted;
+
   Clients [fontcolor="purple"];
-  meta -- {Home; Download; Clients};
+
+  Community [label="Community\n('contact')", fontcolor="purple"];
+  ML [label="Mailing List(s)"]
+  {IRC; Planet} -- Community;
+  Community -- {ML; Frappr};
+
+  Development [fontcolor="purple"];
+  HackHowto [label="Hacking HowTo"];
+  TestCoverage [label="Test Coverage"];
+  ProjectStatus [label="Project Status"];
+  Development -- {HackHowto; Mantis};
+  {Doxygen; TestCoverage; ProjectStatus; Gitweb} -- Development;
+
+  History [label="History\n(incl. About)", fontcolor="purple"];
+  FAQ [label="FAQ\n(incl. README)", fontcolor="purple"];
+  Features [fontcolor="purple"];
+  Infos -- {History; Roadmap};
+  {FAQ; Features} -- Infos;
+
+  meta -- {Home; Download; Clients; Community};
+  Infos -- meta;
+  Development -- meta [label="second menubox"];
 }
 </graphviz>
