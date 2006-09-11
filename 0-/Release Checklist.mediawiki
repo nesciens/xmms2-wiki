@@ -1,17 +1,22 @@
-This is a list of things that should be done or checked when doing a release.
+This is a list of things that should be done or checked before, and when doing a release.
 
+== Pre-release ==
+* Create release page titled Release:<releasename>
+** Categorise under [[:Category:Releases]] (<nowiki>[[Category:Releases]]</nowiki>)
+
+== Release ==
 * Version number set
 * Release snapshot ready (use release.py) & uploaded to sourceforge
 * Update freshmeat page
 * Send announcement to mailinglist
 * Update debian packages
+** ''Possibly phase this out, now that we have official debian packages?''
 * wiki:
-** news post [[Template:News]]
+** news post [[Template:News]], [[Template:ShortNews]]
 ** release status box [[Template:ReleaseStatus]]
-* doxygen + epydoc + rdoc docs generated & published to genesis (/exodus?)
+* doxygen + epydoc + rdoc docs generated & published to exodus
 * README in sync with 'Read me first!' wiki page
 * INSTALL in sync with 'Installation instructions' wiki page
-* AUTHORS in sync with contributors list on 'About' page?
 * Update [[History]] page
 
 Other things which currently would not really be possible:
