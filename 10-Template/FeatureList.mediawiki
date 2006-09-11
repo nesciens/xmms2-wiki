@@ -2,7 +2,7 @@
 
 * Allows XMMS2 to have various multiple interfaces (as clients).
 ** Command line interfaces
-** GTK clients (matching GNOME & XFCE4 look and feel)
+** GTK clients (matching GNOME & Xfce4 look and feel)
 ** KDE clients (matching KDE look and feel)
 * Network transparency means you can run and control XMMS2 remotely, (e.g. run XMMS2 on your 'media box' and control it over network using a bluetooth-enabled PDA (TCP) - see [[Mobile platforms]])
 
