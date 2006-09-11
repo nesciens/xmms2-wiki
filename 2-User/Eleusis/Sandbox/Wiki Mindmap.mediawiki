@@ -1,0 +1,17 @@
+http://exodus.xmms.se/~theefer/xmms2-wiki-mindmap.jpg
+
+<graphviz>
+graph wikiMindmap {
+  meta [shape=box, label="XMMS2 website"];
+  Home [fontcolor="purple"];
+  News;
+  ShortBlurb [label="Short Blurb"];
+  Home -- {News; ShortBlurb}
+  Download [fontcolor="purple"];
+  GetStarted [label="Getting Started"];
+  GetStarted -- {Install; Use; Clients};
+  Download -- GetStarted;
+  Clients [fontcolor="purple"];
+  meta -- {Home; Download; Clients};
+}
+</graphviz>
