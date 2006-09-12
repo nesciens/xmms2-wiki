@@ -45,4 +45,4 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[medialib querier]]
 * [[Random songs support]]
 * [[Automatic Manual Page Generation]]
-* [[Medilib FUSE filesystem]]
+* [[Medialib FUSE filesystem]]
