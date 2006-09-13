@@ -67,7 +67,7 @@ Nope.
 ;<mantis>1102</mantis>
 '''Tilman Sauerbeck'''
 ;<mantis>1100</mantis>
-'''Tobias Rundstrom'''
+'''Tobias RundstrÃ¶m'''
 ;<mantis>775</mantis>
 ;<mantis>1098</mantis>
 ;<mantis>1101</mantis>
