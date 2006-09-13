@@ -1,4 +1,5 @@
 == Current status ==
+; 2006-09-13 - TEST2 is up on http://test.xmms.se/source/ , please try it and give us [http://test.xmms.se/ test data].
 ; 2006-09-07 - First TEST release for DrGonzo is released. Get it from http://test.xmms.se/source/ or [http://git.xmms.se/?p=xmms2-devel.git;a=summary git]. Please supply [http://test.xmms.se test data] for this release.
 
 == Release Notes ==
