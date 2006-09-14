@@ -2,6 +2,7 @@ http://exodus.xmms.se/~theefer/xmms2-wiki-mindmap.jpg
 
 <graphviz>
 graph wikiMindmap {
+  overlap=false;
   meta [shape=box, label="XMMS2 website"];
 
   Home [fontcolor="purple"];
