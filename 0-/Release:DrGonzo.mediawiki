@@ -1,4 +1,5 @@
 == Current status ==
+; 2006-09-15 - TEST3 is out.
 ; 2006-09-13 - TEST2 is up on http://test.xmms.se/source/ , please try it and give us [http://test.xmms.se/ test data].
 ; 2006-09-07 - First TEST release for DrGonzo is released. Get it from http://test.xmms.se/source/ or [http://git.xmms.se/?p=xmms2-devel.git;a=summary git]. Please supply [http://test.xmms.se test data] for this release.
 
@@ -57,6 +58,11 @@ Nope.
 
 * XForms that read URLs into octet-streams (former transport plugins) should implement the browse method (see file.c or smb.c for reference).
 * Decoder xforms that handle mediafiles with coverart support should extract coverart and add it with the bindata API. See id3.c and faad.c for reference.
+
+=== Full ChangeLog (TEST3) from TEST2 ===
+;<mantis>1108</mantis>
+;<mantis>1106</mantis>
+;<mantis>1109</mantis>
 
 === Full ChangeLog (TEST2) from TEST1 ===
 '''Anders Gustafsson'''
