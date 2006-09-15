@@ -60,8 +60,11 @@ Nope.
 * Decoder xforms that handle mediafiles with coverart support should extract coverart and add it with the bindata API. See id3.c and faad.c for reference.
 
 === Full ChangeLog (TEST3) from TEST2 ===
+'''Ma Xuan'''
 ;<mantis>1108</mantis>
+'''Jonne Lehtinen'''
 ;<mantis>1106</mantis>
+'''Tobias RundstrÃ¶m'''
 ;<mantis>1109</mantis>
 
 === Full ChangeLog (TEST2) from TEST1 ===
