@@ -87,21 +87,21 @@ Everything reworked to new plugin api.
 ::&#10003; file
 ::&#10003; flac
 ::&#10003; gnomevfs
-::&#10063; ices
-::&#10063; jack
+::&#10003; ices
+::&#10003; jack
 ::&#10003; mad
 ::&#10003; modplug
 ::&#10003; musepack (no apetags)
 ::&#10003; null
 ::&#10003; oss
-::&#10063; samba
+::&#10003; samba
 ::&#10003; sid
 ::&#10063; speex
 ::&#10063; sun
 ::&#10003; wave
 ::&#10003; wma (a new plugin)
 ::&#10003; vorbis
-:&#10063; effects.
+:&#10003; effects.
 ::&#10003; eq (replaced by more advanced equalizer plugin)
 ::&#10003; replaygain
 :&#10003; config stuff.
