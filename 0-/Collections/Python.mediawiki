@@ -97,7 +97,7 @@ and examples:
  alljovi = c.Or(jovibon, bonjovi)
  cool = c.And(alljovi)     # This time, set half the data later.
  cool.add_bases(c.Not(c.Contains(base, field="title", value="Life")))
-
+ 
  jovibon['value'] = 'Jovi, Bon'  # fix the typo
  cool.save(xmmsc, "SomeCoolCol") # XMMS2 is needed for saving to XMMS2.
 
