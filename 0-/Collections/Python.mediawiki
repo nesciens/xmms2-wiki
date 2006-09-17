@@ -74,6 +74,32 @@ How to use and modify them!
  for song in songsbyair:
    print "%(album)s - %(title)s (%(duration)s)" % song
 
+===Alternative 3.1===
+Let's start with a pseudo-class-def
+
+ class SomeOp (Collection):
+   def __init__(self, *based_on, **arguments)
+   def __getitem__(self, name)
+   def __setitem__(self, name, val)
+   def get_data(self)
+   def set_data(self, data)
+   def get_bases(self)            # these three might need better names
+   def set_bases(self, based_on)
+   def add_bases(self, *based_on)
+
+and examples:
+
+ base = c.Reference(name="SomeColl")  # **arguments for name, *based_on nothing
+ jovibon = c.Match(base, field="artist", value="Jovi, Bun") # *based_on = [base]
+ bonjovi = c.Match()       # we can add stuff later
+ bonjovi.set_bases([base]) # like... here or in the next line.
+ bonjovi.set_data({'field': 'artist', 'value': 'Bon Jovi'})
+ alljovi = c.Or(jovibon, bonjovi)
+ cool = c.And(alljovi)     # This time, set half the data later.
+ cool.add_bases(c.Not(c.Contains(base, field="title", value="Life")))
+
+ jovibon['value'] = 'Jovi, Bon'  # fix the typo
+ cool.save(xmmsc, "SomeCoolCol") # XMMS2 is needed for saving to XMMS2.
 
 Other ideas welcome!
 
