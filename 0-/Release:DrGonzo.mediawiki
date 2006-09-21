@@ -59,6 +59,21 @@ Nope.
 * XForms that read URLs into octet-streams (former transport plugins) should implement the browse method (see file.c or smb.c for reference).
 * Decoder xforms that handle mediafiles with coverart support should extract coverart and add it with the bindata API. See id3.c and faad.c for reference.
 
+=== Full ChangeLog (TEST4) from TEST3 ===
+'''Anders Gustafsson'''
+;<mantis>1123</mantis>
+;<mantis>1117</mantis>
+;<mantis>1115</mantis>
+;<mantis>1127</mantis>
+;<mantis>1122</mantis>
+
+'''Daniel Svensson'''
+;<mantis>1121</mantis>
+
+'''Tobias RundstrÃ¶m'''
+;<mantis>1124</mantis>
+;<mantis>1125</mantis>
+
 === Full ChangeLog (TEST3) from TEST2 ===
 '''Ma Xuan'''
 ;<mantis>1108</mantis>
