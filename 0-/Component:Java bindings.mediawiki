@@ -68,3 +68,14 @@ But be careful when doing such things with mlibSelectSync() e.g. which could pro
 
 
 For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.git;a=tree xmms2-tutorial] project which explains step by step almost all possible api uses.
+
+
+===Latest news/changes===
+
+'''20060923:'''
+The bindings for DrGonzo are ready so far, those for DrHouse (or whatever release Collections will use) will need quite some changes. Those will be splitted into two big parts:
+
+ Go with the refactored clientlib API which is already done
+ Implement java collections in some good way which is not done
+
+Neither of the needed patches are available right now, the first one is done though, I just need to clean it a bit. Also one can already use collections in the plain java api with those changes. The second patch(-set) to get nice java collections will need some days/weeks though. One more thought which fits into this news is to probably migrate the bindings to java5, although i don't know if it's of much use. If someone is absolutely against that (even though i don't think that someone reads that page) he should email me.
