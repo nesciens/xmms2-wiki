@@ -12,6 +12,12 @@ In order to be considered for inclusion, your code should meet the following req
 * comply with the [[XMMS2 Coding Style]]
 * be licensed under the [http://www.gnu.org/copyleft/lesser.html LGPL]. (or under a [http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses GPL-compatible] license?)
 * does not violate the [[Design of XMMS2]] (e.g. some really dodgy hack to allow XMMS2 to play video.. somehow)
+* compiles cleanly
+* submit your changes in one of the following ways:
+** An unified diff attached to a bug in the bugtracker, or sent to the mailinglist
+** A public git repository that can be pulled from
+* if your change is more than a trivial one line change please add yourself to AUTHORS aswell.
+
 
 === Suggestions ===
 
