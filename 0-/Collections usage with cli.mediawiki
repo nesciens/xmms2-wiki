@@ -232,8 +232,7 @@ Playlists have a ''type'', which can be one of the following:
 
 * '''list''': a normal static list.
 * '''queue''': a list where songs are popped once they are played.
-* '''pshuffle''': a Party Shuffle is a queue which is automatically
-  padded with new songs randomly fetched from a given collection.
+* '''pshuffle''': a Party Shuffle is a queue which is automatically padded with new songs randomly fetched from a given collection.
 
 To learn more about these types, read the section about
 [[Collections_Concept#List_Operators | List Operators]].
