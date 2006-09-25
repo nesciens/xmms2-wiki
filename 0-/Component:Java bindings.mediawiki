@@ -72,6 +72,9 @@ For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.
 
 ===Latest news/changes===
 
+'''20060925'''
+k folks, i'm going to change the bindings to java5 although i thought it's probably useless. Now after some work on the Collections-API i found out that it is really useful, especially the typesafety and enums. Still no patches available but things look good, maybe i'll finish something useful already this week.
+
 '''20060923:'''
 The bindings for DrGonzo are ready so far, those for DrHouse (or whatever release Collections will use) will need quite some changes. Those will be splitted into two big parts:
 
