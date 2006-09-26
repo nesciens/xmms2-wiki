@@ -1,13 +1,12 @@
+{{Newsitem| date=26 September 2006 CLST (2006-09-26)| author=[[Tobias RundstrÃ¶m]]| title=*Bzz* *bzz* Don't try to adjust your radio, we are in control *bzz* - DrGonzo is released |text=This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed [[Release:DrGonzo|DrGonzo]] and includes a heap of new exciting bugs (a.k.a. features). This is the first release of XMMS2 that contains code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the full release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
+}}
+
 {{Newsitem| date=8 September 2006 WST (2006-09-08)| author=[[Sham Chukoury]]| title=End of SoC 2006| text=Google's [[Summer of Code 2006]] ended a couple of weeks ago, and we're still wrapping up some of the successful XMMS2 projects. All in all, we achieved a success rate of about 80%. You can now look forward to [[SoC:DAAP|DAAP]] support in XMMS2, and a polished up [[Client:TurboX2|TurboX2]] client for the [[Release:DrGonzo|next release]]. Hot on the heels of these projects is the [[Collections]] project by [[SÃ©bastien Cevey]] which is still in its final stages of integration, and is planned for release with [[Release:DrHouse|DrHouse]].
 
 You'll also notice the new wiki layout, with a skin unofficially codenamed ''SeriousGrey'', an improved sidebar, courtesy of a new Mediawiki 1.7 feature, and a re-minted homepage inspired by [http://www.mono-project.com mono-project.com] and [http://hula-project.org hula-project.org]. Various pages have also been revised and polished up. Some new highlights are [[screenshots]] and a few reminders about [[what XMMS2 will not do]]. As usual, this is a wiki, so please help us keep it interesting!}}
 
 {{Newsitem| date=15 July 2006 CLST (2006-07-15)| author=[[Tobias RundstrÃ¶m]]| title=This must feel soooo good!| text=[[Release:DrFeelgood|DrFeelgood]] is a fast bugfix release to DrEvil. Nothing fancy, but upgrade if you want to get rid of annoying bugs.
 }}
-
-{{Newsitem| date=7 July 2006 WST (2006-07-07)| author=[[Sham Chukoury]]| title=You're the best evil son an evil dad could ever ask for| text=Winter in Chile, tropical heat in Europe; wherever you are this new release comes as a cool breeze. The XMMS2 Team is happy to announce the release of [[Release:DrEvil | DrEvil]]. This monster of a release will bring the much expected [[Transforms]] concept and might crash your computer a few times due to the extensive changes. Please be aware that this should be considered as less stable than [[Release:DrDoolittle|DrDolittle]], so please use this release to help us find bugs in Transforms and port your plugins to the new API. Also this release fixes a lot of the problems that were around with the older architecture, like gapless playback, FLACs getting played by the MAD plugin and so on.
-
-We are now aiming for the next release which will include some of the [[Summer of Code 2006 | Summer of Code]] students' contributions.}}
 
 ;More News
 * [[News]]
