@@ -44,7 +44,7 @@ Packages built specifically for Dapper are available:
 
 === Fedora ===
 
-Binary packages of XMMS2, including gxmms2, for Fedora Core 5 are available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 http://www.linuxfans.org]
+Binary packages of XMMS2, including gxmms2, for Fedora Core 5 are available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 http://www.linuxfans.org]. They do not include the source rpm, nor the .spec file.
 
 == Ports ==
 
