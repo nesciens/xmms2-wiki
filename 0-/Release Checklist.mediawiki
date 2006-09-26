@@ -5,6 +5,8 @@ This is a list of things that should be done or checked before, and when doing a
 ** Categorise under [[:Category:Releases]] (<nowiki>[[Category:Releases]]</nowiki>)
 
 == Release ==
+* README in sync with 'Read me first!' wiki page
+* INSTALL in sync with 'Installation instructions' wiki page
 * Version number set
 * Release snapshot ready (use release.py) & uploaded to sourceforge
 * Update freshmeat page
@@ -15,8 +17,6 @@ This is a list of things that should be done or checked before, and when doing a
 ** news post [[Template:News]], [[Template:ShortNews]]
 ** release status box [[Template:ReleaseStatus]]
 * doxygen + epydoc + rdoc docs generated & published to exodus
-* README in sync with 'Read me first!' wiki page
-* INSTALL in sync with 'Installation instructions' wiki page
 * Update [[History]] page
 
 Other things which currently would not really be possible:
