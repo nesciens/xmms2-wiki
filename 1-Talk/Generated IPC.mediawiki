@@ -1,1 +1,6 @@
 With the strict typing and XSLT goodness involved here, it might also provide a good segway into unit testing.
+
+
+
+Any format that is structured (which is required if we want to generate code from it) will help unit testing.
+[[User:Anders Gustafsson|Anders Gustafsson]]
