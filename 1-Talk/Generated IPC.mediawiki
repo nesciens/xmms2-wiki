@@ -1,0 +1,1 @@
+With the strict typing and XSLT goodness involved here, it might also provide a good segway into unit testing.
