@@ -1,3 +1,4 @@
-[http://dan.chokola.com/images/misc/xmms2.png Screenshot 1]
+[http://dan.chokola.com/images/misc/buttoxic2.png Screenshot 1]
 
-XMMS2 Version 0.1 DR1.1 and XMMS-curses and noXMMS are running together in the ssh terminal on my stereo PC. Hopefully XMMS2 will replace them someday.
+XMMS2 \o/
+I strive to improve the greatest music player of all time every chance I get. I've been busy, angry, and tired, but I always come back and I've contributed a lot more than I and most people expected of me. I hope to keep my name in the AUTHORS file long after XMMS2 becomes the new standard music player on everyone's desktop.
