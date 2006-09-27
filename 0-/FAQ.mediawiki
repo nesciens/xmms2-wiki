@@ -94,12 +94,13 @@
 === I added some music and started playing, but I can't hear anything! ===
 
 * A: "Did you try turning it off and on?" This checklist might help:
-** 0. Are you deaf?
+*# Are you deaf? In the future, try to remember this when using media players.
 *# Do you have speakers plugged into your sound output device?
 *# Are the speakers turned on?
 *# Can other programs output sound properly?
 *# Do you have an onboard sound chip (or cheap/old sound card) and some other program is currently using the device?
 *# Check your device mixer settings (using alsamixer/kmixer/aumix/something appropriate). Do you have volume set to 0, or have some channels muted?
 *# Check the volume setting on the output plugin using ''xmms2 volume_list''.
+*# Are you using an appropriate output plugin? (Diskwrite and Null will not output anything audible!)
 
 [[Category: Questions and answers]]
