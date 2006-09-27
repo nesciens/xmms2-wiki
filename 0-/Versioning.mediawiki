@@ -7,7 +7,7 @@
 * [[Release:DrDolittle|DrDolittle]] - Released 2006-03-27
 * [[Release:DrEvil|DrEvil]] - Released 2006-07-06
 * [[Release:DrFeelgood|DrFeelgood]] - Released 2006-07-15
-* DrGonzo
+* [[Release:DrGonzo|DrGonzo]] - Released 2006-09-26
 * DrHouse
 ...
 * DrJekyll
