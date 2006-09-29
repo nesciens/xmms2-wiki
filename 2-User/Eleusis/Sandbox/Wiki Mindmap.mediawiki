@@ -1,6 +1,6 @@
 http://exodus.xmms.se/~theefer/xmms2-wiki-mindmap.jpg
 
-<graphviz>
+<graphviz dotcmd="twopi">
 graph wikiMindmap {
   overlap=false;
   meta [shape=box, label="XMMS2 website"];
