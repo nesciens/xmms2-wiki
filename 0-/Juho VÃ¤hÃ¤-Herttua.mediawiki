@@ -1,4 +1,4 @@
-Trying to be quite frequent bug reporter and patch sender, very much interested in the modular design of XMMS2. Maintainer of the AAC/MP4 plugin using faad2 library introduced in DR3. Also trying to clean up the [[Component:ices|ices plugin]] to be usable again, a project which progresses quite well.
+Trying to be quite frequent bug reporter and patch sender, very much interested in the modular design of XMMS2. Author and maintainer of the AAC/MP4 plugin using faad2 library introduced in DR3, author and maintainer of the ASF/WMA plugin using ffmpeg library introduced in DrEvil, author and maintainer of the new equalizer plugin ported from EQU project and introduced also in DrEvil.
 
 Author of never finished and not updated [http://xmms-oggcaster.sf.net/ XMMS OggCaster] plugin. (got little frustrated due to the inflexible XMMS1 design and forced use of GTK 1.x)
 
