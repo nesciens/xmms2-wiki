@@ -1,5 +1,7 @@
 Scripts and other miscellaneous contributions to XMMS2. If you think you have something useful which could be put on this list, feel free to add the appropriate details here, or [[About#Contact_info | contact]] the XMMS2 team.
 
+[[Category:Users]]
+
 {{Contrib | title=Init scripts | author=Martijn Ras | description=I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d xmms2d]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo xmms2-initscript-gentoo]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo.conf xmms2-initscript-gentoo.conf]}}
@@ -11,7 +13,9 @@ Scripts and other miscellaneous contributions to XMMS2. If you think you have so
 * will pause if current state is playing.
 Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | moreinfo= | files=* [http://xmms2.xmms.se/contrib/files/play-pause.py play-pause.py]}}
 
-[[Category:Users]]
+{{Contrib | title=Gnome metacity multimedia keyboard shortcuts | author=Tobias Bengtsson | description=Gnome metacity multimedia keyboard shortcuts: 
+* Open gconf-editor and edit keys for /apps/metacity/keybinding_commands/ to xmms2 play (or the above script), next, prev etc. keys you may have on your keyboard. 
+* Edit /apps/metacity/global_keybindings/, for example run_command_1 = XF86AudioPlay, run_command_2=XF86AudioNext, run_command_3=XF86AudioPrev etc. | moreinfo=None | files=None }}
 
 {{Contrib| title=XChat2 info script| author=[[Sham Chukoury]]| description=XChat 2 python script that displays the title and artist of the currently playing song. Supports querying of xmms2 daemons running on different IPC paths.| moreinfo=http://eleusis.f2o.org/projects/xmms2/| files=* [http://eleusis.f2o.org/projects/xmms2/xmms2-indirect.tar.bz2 xmms2-indirect.tar.bz2]}}
 
