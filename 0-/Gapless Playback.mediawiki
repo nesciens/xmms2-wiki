@@ -10,3 +10,8 @@ Gapless playback is really cool; here are a few pages related to it:
 * '''vorbis''' : Gapless playback works in vorbis plugin.
 
 * '''mad''' : Gapless playback works for mp3s with Lame tags as of 8cebb6be841292b177cda163085bf7b6110f6ea4 More information at [[Gapless Support]]
+
+== Gapless Effect Plugins (not implemented) ==
+* '''Silence detection''' : should detect sound below a configurable threshold and cut it out of the stream.
+
+* '''Crossfader''' : not sure how this should be implemented. Perhaps it should be able to take a signed offset (in milliseconds) that determines how far in each track should be crossfaded or how much silence should be added between tracks. (e.g. -1000 means overlap 1 second of each track while 1000 means gap the tracks with 1 second of silence) However, ideally, many more aspects should be configurable, such as the crossfade envelope. And no simple crossfader would be useful enough for DJ purposes, so beat matching, etc. are best left for a different crossfader plugin.
