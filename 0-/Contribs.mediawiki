@@ -1,7 +1,5 @@
 Scripts and other miscellaneous contributions to XMMS2. If you think you have something useful which could be put on this list, feel free to add the appropriate details here, or [[About#Contact_info | contact]] the XMMS2 team.
 
-[[Category:Users]]
-
 {{Contrib | title=Init scripts | author=Martijn Ras | description=I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d xmms2d]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo xmms2-initscript-gentoo]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo.conf xmms2-initscript-gentoo.conf]}}
@@ -22,3 +20,5 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | mor
 {{Contrib| title=Bash tab completion for the xmms2 client| author=RÃ©mi Vanicat| description=A bash script for tab completion in the shell. Once you have source it into bash use TAB to complete what your are typing. Original ideas from [[Bash tab completion for the CLI]]| moreinfo=http://aspellfr.free.fr/xmms2/| files=* [http://aspellfr.free.fr/xmms2/xmms2_completion xmms2_completion]}}
 
 {{Contrib| title=Daemon updating Gajim status on XMMS2 events| author=Bart Kreska| description=Simple daemon written in Python that updates status message in Gajim each time XMMS2 changes its state (ie. jumps to another track). Status message may look like this: '''Now listening: Rolling Stones, It's Only Rock 'n Roll''' but the format is highly customizable.| moreinfo=For more information see man page| files=* [http://www.smlw.pl/~wytnijto/projects/xmms/ xmms2-gajim-status]}}
+
+[[Category:Users]]
