@@ -10,6 +10,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[List of features required for proper sub-tune support]]
 * [[Container format support]]
 * [[Mobile platforms]]
+* [[Configuration file]]
 
 == Playlist ==
 * '''[[Collections]]'''
