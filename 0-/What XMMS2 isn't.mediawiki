@@ -18,13 +18,13 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 ** ... unless it becomes a standard to commoditise upon.
 * [[Wikipedia:Steve Irwin|wrestle crocodiles]]
 ** ... crocodile wrestling is xmms1 only.
-* make you live forever.
+* make you [[Wikipedia:Immortality|live forever]].
 ** ... unless you're mentioned in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=AUTHORS AUTHORS].
 * come out of a shiny box and install itself in your heart forever.
 * make you rich.
 ** ... unless you're a [[Summer of Code 2006|SoC student]]. :)
 * get you laid.
-** ... unless you use it to play sensual music while dating a girl.
+** ... unless you use it to play [http://www.last.fm/tag/sensual sensual music] while dating a [http://uncyclopedia.org/wiki/Girl girl].
 * make you famous.
 ** ... unless you're [[SÃ©bastien Cevey]].
 * break you out of [[Wikipedia:Prison Break|jail]].
@@ -32,5 +32,5 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * cure you of [[Wikipedia:AIDS|AIDS]], [[Wikipedia:Cancer|cancer]] or [[Wikipedia:Syphillis|syphillis]].
 * give you free music.
 ** ... except for a [[Intro Clips|small sample]].
-* give you superhuman strength.
-** ... unless you compile it with -fuse-kryptonite.
+* give you [[Wikipedia:Superhuman_Strength|superhuman strength]].
+** ... unless you compile it with -fuse-[[Wikipedia:Kryptonite|kryptonite]].
