@@ -1,0 +1,15 @@
+''This page is here mostly as a placeholder, in case changes need to be made to the xmms2d configuration file format.''
+
+At present, <tt>xmms2.conf</tt> is a simple XML file, with the following elements:
+
+* <tt>&lt;xmms&gt;</tt> - the root element, with a ''version'' attribute. (Currently version 2)
+* <tt>&lt;section&gt;</tt> - contains the configuration data for a particular part of the daemon, for example, a plugin. Has a ''name'' attribute and can contain multiple <tt>property</tt> nodes.
+* <tt>&lt;property&gt;</tt> - a single configuration property, with a ''name'' attribute. The property value is the text between the property start and end tags.
+
+== Changes ==
+If there is a need to change the configuration file format later on, these should be considered:
+
+* <mantis>435</mantis> (In particular, puzzles' note: "A better idea might be to just move an old version config to a backup file and provide a separate tool to convert between versions.")
+* One way to implement the above is to have the daemon simply rename the current configuration file (to ''$FILENAME.bak'') and use a default configuration, which then gets written to the right place. If the version change is simply a change in the XML schema used, an XSLT stylesheet can be provided that can transform an old format config file into a new format config file. (The advantage to this is that we don't need to maintain code in the daemon that simply deals with legacy data) If the version change means that some other format is used to store the configuration data (YAML, ini-style... GConf??), then some other solution can be used.
+
+[[Category:Developer ideas]]
