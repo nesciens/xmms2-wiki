@@ -1,0 +1,48 @@
+==Rebase==
+First create an upstream branch in your tree:
+
+ git pull git://git.xmms.se/xmms2/xmms2-devel +:upstream
+
+The + means that git should not try to merge or be smart or something.
+
+
+Then you can list the changesets that are in your tree, but not upstream:
+
+ git-rev-list --pretty upstream..master
+
+Or you can do:
+
+ git cherry -v upstream master
+
+Which also lists the diffrence, but doesn't list cherrypicked changesets.
+
+
+Now create a new branch:
+
+ git branch forupstream upstream
+
+And make it the default branch:
+
+ git checkout -f forupstream
+
+If all the changes you saw in git cherry earlier were good for upstream just put 'em all on this branch:
+
+ for cset in $(git cherry upstream master); do 
+   git-cherry-pick -r $cset;
+ done
+
+There will be some warnings and stuff, but that is normal. It should say "Finished one cherry-pick." for each cset if everything applies cleanly.
+
+
+This is a good time to make sure your tree still compiles.
+
+
+And if you are satisfied and want to make that your master again, then checkout master:
+
+ git checkout -f master
+
+And go there:
+
+ git reset --hard forupstream 
+
+There, now you're ready to push your changes to your public tree without an ugly merge changeset.
