@@ -22,3 +22,7 @@ I usually have a randomized playlist, and have to questions:
 2. on the cli, I sometimes want to play a specific song, so I use the mlib to search for it, and check its id. Then I would think I could jump to that id (or to remove that id from the current playlist) but jump and remove work on the absolute position inside the playlist, so currently what I do is grep the list for /id and then jump to its position inside the playlist. Is there any easier way of doing it? or can/could mlib jump and play any arbitrary file in the database even if it's not in the current playlist?
 
 [anonymous]
+
+
+== Medialib searching ==
+search, by default, displays the entries ordered by the internal id.  When I add for example the tracks in an album, however, I want to sort them in tracknumber order.  Is there any way of doing this besides doing a full sql query, or sorting the playlist afterwards (perhaps scrambling it)?  [[User:JoshuaRodman|JoshuaRodman]] 17:17, 13 October 2006 (CEST)
