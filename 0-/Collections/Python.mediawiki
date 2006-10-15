@@ -135,7 +135,7 @@ This is supposed to take the good parts of 4 and merge into 3.
  coll = c.And(c.CollectionRef('Foo'),
               c.Match(c.Universe(), field='artist', value='Sonic Youth'}),
               c.Match(c.Universe(), field='year', value='2006'}))
-
+ 
  print coll.operands
  # [<CollectionRef>, <Match>, <Match>]
  del coll.operands[0]
