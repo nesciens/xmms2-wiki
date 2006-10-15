@@ -15,7 +15,7 @@ You will '''need''' the following things to build XMMS2.
 
 If you are building XMMS2 on a binary distro, be sure to install -dev or -headers versions of these packages (if available). XMMS2 uses these headers to link to shared libraries on your system and will not build.
 
-The following apt-get line will install the necessary packages, and plugin packages below, on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
+The following apt-get line will install the necessary packages, and plugin packages below, on a Debian system (at least sarge)  "aptitude install debmake debhelper scons python2.3 python2.3-dev libglib2.0-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
 
 These libraries are '''not needed''' for building xmms2d itself, but will add extra functionality you might need. You will probably want MAD at the very least as without it, you can't play MP3s.
 
