@@ -160,7 +160,7 @@ This is supposed to take the good parts of 4 and merge into 3.
  matchingids = xc.coll_query_id(m)
  
  # I changed my mind..
- m.operands['value'] = 'Air'
+ m.attributes['value'] = 'Air'
  
  songsbyair = xc.coll_query_info(m, ['title', 'duration', 'rating'])
  for song in songsbyair:
