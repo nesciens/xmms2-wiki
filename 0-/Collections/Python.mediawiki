@@ -127,6 +127,71 @@ This one is based somewhat on alternative 3, with a few mods that I think make i
  # Combine these two into the final collection
  coll = c.op.Or(intersect, masu)
 
+===Alternative 5===
+This is supposed to take the good parts of 4 and merge into 3.
+
+ from xmmsclient import collections as c
+ 
+ coll = c.And(c.Reference('Collections:Foo'),
+              c.Match(c.Universe(), field='artist', value='Sonic Youth'}),
+              c.Match(c.Universe(), field='year', value='2006'}))
+
+ print coll.operands
+ # [<Reference>, <Match>, <Match>]
+ del coll.operands[0]
+ 
+ coll.operands.append(c.Reference('Collections:Party music'))
+ 
+ print coll.operands
+ # [<Match>, <Match>, <Reference>]
+ 
+ # make it persistant on server!
+ xc.coll_save(coll, 'Collections', 'My collection')
+  
+ m = c.Match(c.Universe(), field='artist', value='Thievery Corporation'})
+ 
+ print m.attributes
+ # {'field': 'artist', 'value': 'Thievery Corporation'}
+ 
+ print m.operands
+ # [<Universe>]
+  
+ # get a list of ids matching collection
+ matchingids = xc.coll_query_id(m)
+ 
+ # I changed my mind..
+ m.operands['value'] = 'Air'
+ 
+ songsbyair = xc.coll_query_info(m, ['title', 'duration', 'rating'])
+ for song in songsbyair:
+   print "%(album)s - %(title)s (%(duration)s)" % song
+
+
+
+This should make clear separation between "operands" and "attributes". Instead of the c[attrib]=aval of alt3 and the c.append(operand) of alt4.
+
+I find the automatic chaining of alt4 scary as it removes the 1:1 mapping to nodes in the dag, and when you later list that collection it will not be the same as you created. It would be better to just make a (trivial) higher level function that does it: (which makes it clear what happens, and doesn't do any magic behind the scenes -- Explicit is better than implicit)
+
+ def make_chained_matches(coll, **matches):
+     for f,v in matches.iteritems:
+         coll = c.Match(coll, field=f, value=v);
+     return coll
+
+Also it is important that it is easy to change the attributes. A GUI would probably do something like:
+
+ def setup_match_gui(..):
+     ...
+     self.match_field = SomeInputWidget()
+     def on_field_change(val):
+         self.collection.attributes['field'] = val
+     self.match_field.on_change = on_field_change
+ 
+     self.match_value = SomeInputWidget()
+     def on_value_change(val):
+         self.collection.attributes['value'] = val
+     self.match_field.on_change = on_value_change
+
+
 Other ideas welcome!
 
 [[Category:Developer ideas]]
