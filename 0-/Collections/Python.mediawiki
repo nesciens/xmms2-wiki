@@ -109,22 +109,22 @@ This one is based somewhat on alternative 3, with a few mods that I think make i
  
  # Get a ref to Collections:Foo
  foo = c.Collection('Foo') 
-
+ 
  # Create a filter that extracts all Bon Jovi 2k6 tracks from the whole medialib.
  # Note that this filter filters on several elements, so several match items united
  # by an And operator will be created beneath the hood.
  fil = c.Filter(c.Collection()).match(artist='Bon Jovi', year='2006')
-
+ 
  # Intersect the two.
  intersect = c.op.And(foo, fil)
-
+ 
  # Append another anti-filter on a playlist
  intersect.append(c.op.Not(c.Playlist('Bar')))
-
+ 
  # All track by Machinae Supremacy between 2000 and 2004.
  # Each filter operand returns the filter, allowing for chaining.
  masu = c.Filter(c.Collection()).match(artist="Machinae Supremacy").lower(year=2004).higher(year=2000)
-
+ 
  # Combine these two into the final collection
  coll = c.op.Or(intersect, masu)
 
