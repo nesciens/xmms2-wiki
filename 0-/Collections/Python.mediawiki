@@ -111,8 +111,8 @@ This one is based somewhat on alternative 3, with a few mods that I think make i
  foo = c.Collection('Foo') 
  
  # Create a filter that extracts all Bon Jovi 2k6 tracks from the whole medialib.
- # Note that this filter filters on several elements, so several match items united
- # by an And operator will be created beneath the hood.
+ # Note that this filter filters on several elements, so several match items chained
+ # one behind the other will be created under the hood.
  fil = c.Filter(c.Collection()).match(artist='Bon Jovi', year='2006')
  
  # Intersect the two.
