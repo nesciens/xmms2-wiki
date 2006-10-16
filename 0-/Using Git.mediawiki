@@ -41,7 +41,7 @@ To keep in sync with the latest version:
  git pull git://git.xmms.se/xmms2/xmms2-devel.git
 
 ==Informal Rebase==
-This way you get rid of the ugly 'Merge' changesets.
+This way you get rid of the ugly 'Merge' changesets and duplicate changesets because of upstream has cherrypicked from your tree.
 
 First create an upstream branch in your tree:
 
@@ -77,8 +77,7 @@ If all the changes you saw in git cherry earlier were good for upstream just put
 
 There will be some warnings and stuff, but that is normal. It should say "Finished one cherry-pick." for each cset if everything applies cleanly.
 
-
-This is a good time to make sure your tree still compiles.
+This is a good time to make sure your tree still compiles :)
 
 
 And if you are satisfied and want to make that your master again, then checkout master:
