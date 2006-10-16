@@ -11,6 +11,8 @@ Supported options are :
 
 default_driver - this specifes the driver that libao should use by default.
 
+You can also change the used driver with "xmms2 config ao.driver (driver name)" where "default" uses the default driver specified in the libao config file.
+
 Acceptable values are
 * null
 * alsa - old alsa (dont use this.  i think you want the other one)
@@ -23,12 +25,6 @@ Acceptable values are
 * arts - KDE sound server (this is supported in devel builds of libao)
 
 The XMMS2 plugin does not currently support ''write to file'' plugins even though libao does.
-
-== TODO ==
-
-There are some comments in the code about what needs to be done.  This is somewhat of a summary of those comments.
-
-It needs some work to fully utilize the libao api.  For example, the ao_driver_info() call could be used to obtain some kind of configuration information. 
 
 ==See also:==
 * [[Component:Output | Output]]
