@@ -28,7 +28,7 @@ The plan is two competitions, one for Logo, when it's done we start the second c
 == Unresolved issues ==
 * Prizes?
 ** Some kind of audio player, maybe with some nice headphones.
-*** Sansa or iAudio X5 seems to be the current best bet. (it is a nice political statement if it can run rockbox)
+*** Sansa or iAudio X5 seems to be the current best bet. (it is a nice political statement if it can run [http://www.rockbox.org/twiki/bin/view/Main/IaudioPort| rockbox])
 ** Gift certificate
 *** amazon? (they got dvdvdvdvd and stuff - everyone should be able to find something there)
 *** thinkgeek (to geeky for graphics people?)
