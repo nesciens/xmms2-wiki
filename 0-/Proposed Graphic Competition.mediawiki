@@ -5,7 +5,7 @@ This page is *NOT* live and is only for internal discussion.
 
 We need a graphic profile and logo for XMMS2. We have gone far enough without one. I suggest we put the money from SoC in good use and get ourself something that we can use.
 
-I suggest that we start two competitions, one for Logo, when it's done we start the second competition, for wiki design. The prices will be Portable Music Player of choice (max value 4000 SEK), shipping included. And tshirt with logo type.
+The plan is two competitions, one for Logo, when it's done we start the second competition, for wiki design.
 
 == Logo Rules ==
 
