@@ -26,6 +26,13 @@ The plan is two competitions, one for Logo, when it's done we start the second c
 * Deadline 15th Dec 2006
 
 == Unresolved issues ==
+* Prizes?
+** Some kind of audio player, maybe with some nice headphones.
+*** Sansa or iAudio X5 seems to be the current best bet. (it is a nice political statement if it can run rockbox)
+** Gift certificate
+*** amazon? (they got dvdvdvdvd and stuff - everyone should be able to find something there)
+*** thinkgeek (to geeky for graphics people?)
+** "And you can win this shiny new mediaplayer" is way cooler and more real than "And you can win $XYZ amazon gift certificate".
 * Submission routine?
 ** We should work out exactly ''what'' the deliverables should be, then we can figure out ''how'' they're to be submitted. [[User:Eleusis|Eleusis]] 14:45, 11 September 2006 (CEST)
 * What if a user wants to do 1 and 2? and wins, does he get like two DAP's then?
