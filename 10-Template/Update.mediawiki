@@ -1,0 +1,25 @@
+{| class="messagebox" style="width: auto;"
+|-
+| [[Image:Current event marker.png| ]]
+| '''This article or section needs to be updated.''' <br> Parts of this article or section have been identified as no longer being up to date. 
+
+Please update the article to reflect recent events, and remove this template when finished.
+| [[Image:Nuvola apps important.png| ]]
+|}<includeonly>{{{category|[[Category:Wikipedia articles in need of updating]]}}}</includeonly><noinclude>
+
+== Usage ==
+This template can be used to mark articles or sections with old or out-of-date information.  
+
+This template will add articles to [[:Category:Wikipedia articles in need of updating]].
+
+==Alternatives==
+*If there is a dispute about the need for an update, an out-of-date article or section can be marked with [[Template:Out of date]].
+*[[Template:Update after]] is an alternative for individual statements that will be out-of-date at a specifiable future date. It is a more recent and preferred alternative to [[Wikipedia:As of]].  It also adds articles to [[:Category:Wikipedia articles in need of updating]].
+*See [[Wikipedia:Template messages]] for alternatives unrelated to out-of-date information.
+
+[[Category:Wikipedia maintenance templates|{{PAGENAME}}]]
+[[cs:Template:Aktualizovat]]
+[[ru:Ð¨Ð°Ð±Ð»Ð¾Ð½:ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ]]
+[[vi:TiÃªu báº£n:Lá»—i thá»i]]
+[[zh:Template:Update]]
+</noinclude>
