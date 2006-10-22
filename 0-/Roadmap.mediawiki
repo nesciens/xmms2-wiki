@@ -19,6 +19,8 @@
 ** [[Generated IPC]] (anders / tru)
 ** swig (anders)
 ** [[Collections]] (theefer)
+** [[SoC:AirTunes| AirPlay]]
+** [[Windows]] port?
 
 == See Also ==
 * [[Versioning]]
