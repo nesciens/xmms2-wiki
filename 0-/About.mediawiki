@@ -1,3 +1,4 @@
+{{Update}}
 ''Unfortunately, no one can be told what XMMS2 is. You have to see it for yourself.''
 
 You might have heard of [[Wikipedia:XMMS|XMMS]] ([http://www.xmms.org xmms.org]), the hugely popular [[Wikipedia:Winamp|Winamp]] clone for Linux and UNIX-like operating systems. ''XMMS2'' is a project started (in late [[XMMS2:History/Ancient#2002|2002]]) by one of XMMS's original authors - Peter Alm - to produce a "kick-ass music player" (much like the world's 34734973992<sup>[[#Footnotes|1]]</sup> other music player projects). In short, XMMS2 is the next generation XMMS.
