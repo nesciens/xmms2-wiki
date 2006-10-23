@@ -14,6 +14,6 @@ This format is consequently a mix between sample files and configuration and lay
 Modules files are rendered by an engine capable of reproducing the effects applied, so the quality of the output depends a lot on the engine.
 
 =Links=
-http://modplug-xmms.sourceforge.net
+* http://modplug-xmms.sourceforge.net
 
 [[Category:Components]]
