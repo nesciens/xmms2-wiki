@@ -2,9 +2,10 @@
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Advanced Audio Coding (AAC) to XMMS2. This component is required for playback of "m4a" or "aac" files. 
 
 =Description=
-
+Uses libfaad2 to decode.
 
 =Links=
+http://www.audiocoding.com/
