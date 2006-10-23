@@ -7,6 +7,6 @@ Adds support for playing Ogg contained Vorbis audio to XMMS2. This component is 
 Uses libvorbisfile to decode.
 
 =Links=
-http://www.vorbis.com/
+* http://www.vorbis.com/
 
 [[Category:Components]]
