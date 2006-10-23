@@ -1,10 +1,10 @@
-{{Update}}
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Musepack audio to XMMS2. This component is required for playback of "mpc" files.
 
 =Description=
-
+Uses libmpcdec to decode.
 
 =Links=
+http://www.musepack.net/
