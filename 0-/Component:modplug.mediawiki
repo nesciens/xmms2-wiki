@@ -15,3 +15,5 @@ Modules files are rendered by an engine capable of reproducing the effects appli
 
 =Links=
 http://modplug-xmms.sourceforge.net
+
+[[Category:Components]]
