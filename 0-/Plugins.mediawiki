@@ -7,7 +7,7 @@ Media stream formats supported by XMMS2.
 ** [[Component:modplug | Modplug Decoder]]
 * [[Wikipedia:Monkey's_Audio| Monkey's Audio]]
 ** [[Component:mac | Monkey's Audio Decoder]]
-* MPEG-1 Part 3 Layer 3 ([[Wikipedia:MP3 |MP3]])
+* [[Wikipedia:MP3 |MPEG-1 Part 3 Layer 3 (MP3)]]
 ** [[Component:mad | MAD Decoder]]
 * [[Wikipedia:MPEG-4 Part 3 | MPEG-4 Part 3]] ([[Wikipedia:Advanced Audio Coding |Advanced Audio Coding]] - AAC)
 ** [[Component:faad | FAAD Decoder]]
