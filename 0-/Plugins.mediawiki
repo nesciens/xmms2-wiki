@@ -1,26 +1,7 @@
 __NOTOC__
 == Plugins included in the main tree ==
 === Decoder Plugins ===
-* [[Wikipedia:FLAC | FLAC]]
-** [[Component:FLAC | FLAC Decoder]]
-* [[Wikipedia:MOD_(file_format) | MOD]]
-** [[Component:modplug | Modplug Decoder]]
-* [[Wikipedia:Monkey's_Audio| Monkey's Audio]]
-** [[Component:mac | Monkey's Audio Decoder]]
-* [[Wikipedia:MP3 |MPEG-1 Part 3 Layer 3 (MP3)]]
-** [[Component:mad | MAD Decoder]]
-* [[Wikipedia:MPEG-4 Part 3 | MPEG-4 Part 3]] ([[Wikipedia:Advanced Audio Coding |Advanced Audio Coding]] - AAC)
-** [[Component:faad | FAAD Decoder]]
-* [[Wikipedia:Musepack | Musepack]]
-** [[Component:musepack | Musepack Decoder]]
-* [[Wikipedia:Ogg | Ogg]] [[Wikipedia:Vorbis | Vorbis]]
-** [[Component:vorbis | Vorbisfile Decoder]]
-* [[Wikipedia:SID_(file_format) | SID]]
-** [[Component:sid | SID Decoder]]
-* [[Wikipedia:WAVE | WAVE]] audio files
-** [[Component:wave | Wave Decoder]]
-* [[Wikipedia:Windows_Media_Audio | Windows Media Audio]]
-** [[Component:wma | WMA Decoder]]
+
 === Transport ===
 * [[Wikipedia:Computer_file | File]]
 ** [[Component:file| File transport]]
