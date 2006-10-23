@@ -5,3 +5,5 @@ Adds support for playback of FLAC files. FLAC stands for Free Lossless Audio Cod
 
 =Links=
 http://flac.sourceforge.net/
+
+[[Category:Components]]
