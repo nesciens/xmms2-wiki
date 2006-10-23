@@ -8,3 +8,5 @@ Uses libfaad2 to decode.
 
 =Links=
 http://www.audiocoding.com/
+
+[[Category:Components]]
