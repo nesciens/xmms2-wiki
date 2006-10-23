@@ -3,6 +3,9 @@
 =Summary=
 Enables XMMS2 to play files on SMB/CIFS shares.
 
+=Links=
+http://us3.samba.org/samba/
+
 ===See also:===
 * [[Component:Transport | Transport]]
 
