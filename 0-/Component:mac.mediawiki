@@ -8,3 +8,5 @@ Uses libmac to decode.
 
 =Links=
 http://www.monkeysaudio.com/
+
+[[Category:Components]]
