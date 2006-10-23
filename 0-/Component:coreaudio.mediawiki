@@ -3,6 +3,9 @@
 = Summary =
 Output plugin for the CoreAudio architecture on Mac OS X.
 
+= Links =
+* http://www.apple.com/macosx/features/coreaudio/
+
 ===See also:===
 * [[Component:Output | Output]]
 
