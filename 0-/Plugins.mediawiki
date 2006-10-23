@@ -21,7 +21,17 @@ __NOTOC__
 ** [[Component:wave | Wave Decoder]]
 * [[Wikipedia:Windows_Media_Audio | Windows Media Audio]]
 ** [[Component:wma | WMA Decoder]]
-
+=== Transport ===
+* [[Wikipedia:Computer_file | File]]
+** [[Component:file| File transport]]
+* [[Wikipedia:Digital_Audio_Access_Protocol | DAAP]]
+** [[Component:daap| DAAP transport]]
+* [[Wikipedia:Last.fm | Last.fm]]
+** [[Component:lastfm | Last.fm transport]]
+* [[Wikipedia:Microsoft_Media_Services | Microsoft Media Services]]
+** [[Component:mms | MMS transport]]
+* [[Wikipedia:Http | HTTP]]
+** [[Component:curl | Curl HTTP transport]]
 == Third party plugins ==
 
 == Old/Deprecated/Disused plugins ==
