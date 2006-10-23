@@ -1,10 +1,10 @@
-{{Update}}
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Windows Media Audio to XMMS2. This component is required for playback of "wma" files.
 
 =Description=
-
+Uses ffmpeg to decode.
 
 =Links=
+http://ffmpeg.mplayerhq.hu/
