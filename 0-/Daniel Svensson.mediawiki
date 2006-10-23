@@ -1,7 +1,2 @@
-Contributing with strange ideas, finding silly bugs and some [http://www.nittionio.nu/xmms2/ small hacks] here and there while listening to odd music and watching Star Trek. Lives in Lund/Scania/Sweden. 
-
-Long time project is to create [http://www.nittionio.nu/blog something] [http://www.nittionio.nu/meck/xmms2-dj.html like] [http://www.nativeinstruments.de/index.php?id=traktor3_us Traktor DJ Studio]. 
-
-Can be contacted at the xmms2 irc channel under the nick 'nano' or by e-mail, daniel@nittionio.nu.
-
+Started using XMMS2 back in 2003 when contributing the [http://git.xmms.se/?p=xmms2-devel.git;a=blobdiff;h=fe5a00c05fa7db8faba739c3abbc00fb8f9b3002;hp=1258782b2a25f2445121beff161d29c2f55e350e;f=src/plugins/alsa/alsa.c  ALSA output plugin]. Some minor fixes here and there while listening to [http://www.last.fm/user/dsvensson/ odd music] and watching Star Trek/Gate/whatever. Seems to study something at the University of Lund/Scania/Sweden. Can be contacted at the xmms2 irc channel under the nick 'nano' or by gmail: dsvensson 
 [[Category: People]]
