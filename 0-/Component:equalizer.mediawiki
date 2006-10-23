@@ -29,7 +29,7 @@ Description of each configuration variable:
 * The equalizer.gain[00-31] can get decimal values between [-20, 20]. The values are ISO spaced (31, 62, 125, 250, 500, 1K, 2K, 4K, 8K, 16K for 10 bands) which means each band is one octave or 1/3 octaves in case of 31 bands. These values should be used for standard and more advanced equalizer and are only used if use_legacy is set to 0. Also notice that as mentioned before, changing the number of bands will zero all these values.
 
 =Links=
-http://equ.sourceforge.net/
+* http://equ.sourceforge.net/
 
 [[Category:Effect Plugins]]
 [[Category:Components]]
