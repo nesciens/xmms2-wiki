@@ -2,7 +2,7 @@
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Wave audio to XMMS2. This component is required for playback of "wav" files.
 
 =Description=
 
