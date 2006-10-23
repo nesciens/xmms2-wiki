@@ -1,1 +1,1 @@
-#REDIRECT [[Template:Media formats]]
+{{Media formats}}
