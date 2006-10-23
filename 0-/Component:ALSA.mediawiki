@@ -6,6 +6,9 @@ Adds support for "Advanced Linux Sound Architecture" (ALSA) to XMMS2.
 =Links=
 http://www.alsa-project.org/
 
-[[Category:Output]]
+=See also:=
+* [[Component:Output | Output]]
+
+[[Category:Output Plugins]]
 [[Category:Components]]
 [[Category:XMMS2 Technical Details]]
