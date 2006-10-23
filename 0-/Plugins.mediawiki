@@ -15,12 +15,10 @@ __NOTOC__
 ** [[Component:musepack | Musepack Decoder]]
 * [[Wikipedia:Ogg | Ogg]] [[Wikipedia:Vorbis | Vorbis]]
 ** [[Component:vorbis | Vorbisfile Decoder]]
-** http://www.xiph.org/ogg/vorbis/doc/vorbisfile/
 * [[Wikipedia:SID_(file_format) | SID]]
 ** [[Component:sid | SID Decoder]]
 * [[Wikipedia:WAVE | WAVE]] audio files
 ** [[Component:wave | Wave Decoder]]
-** MSDN Article: [http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnnetcomp/html/WaveInOut.asp Recording and Playing Sound with the Waveform Audio Interface]
 * [[Wikipedia:Windows_Media_Audio | Windows Media Audio]]
 ** [[Component:wma | WMA Decoder]]
 
