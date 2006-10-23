@@ -1,4 +1,7 @@
-This plugin allows for output on systems using the Sun Audio stuff, like Solaris and OpenBSD.
+{{ComponentHeader}}
+
+= Summary =
+Output plugin on systems using the Sun Audio architecture, like Solaris and OpenBSD.
 
 ===See also:===
 * [[Component:Output | Output]]
