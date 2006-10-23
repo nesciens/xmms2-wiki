@@ -21,4 +21,7 @@ The XMMS2 team is committed to producing a better music player, while diligently
 * [[XMMS2:History|Project History]]
 * [[README|The README]]
 
+== Footnotes ==	 
+# Slight exaggeration, of course.
+
 [[Category: General]]
