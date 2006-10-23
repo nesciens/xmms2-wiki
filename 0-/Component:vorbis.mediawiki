@@ -8,3 +8,5 @@ Uses libvorbisfile to decode.
 
 =Links=
 http://www.vorbis.com/
+
+[[Category:Components]]
