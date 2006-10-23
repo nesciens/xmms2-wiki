@@ -1,7 +1,10 @@
 {{ComponentHeader}}
 
-== Summary ==
+= Summary =
 This plugin allows for output via the [http://jackit.sf.net JACK Audio Connection Kit].
+
+= Links =
+* http://jackaudio.org/
 
 ===See also:===
 * [[Component:Output | Output]]
