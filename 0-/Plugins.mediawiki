@@ -1,4 +1,6 @@
+__NOTOC__
 == Plugins included in the main tree ==
+=== Decoder Plugins ===
 * [[Wikipedia:FLAC | FLAC]]
 ** [[Component:FLAC | FLAC Decoder]]
 * [[Wikipedia:MOD_(file_format) | MOD]]
