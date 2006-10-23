@@ -5,7 +5,7 @@ __NOEDITSECTION__
 '''XMMS2''' is a music player for people who are serious about their music. ''Seriously''.
 </div>
 
-= [[About]] XMMS2 =
+<hr/>
 <div class="split-half">
 <div class="split-halfhalf">
 === XMMS2 will: ===
@@ -32,9 +32,7 @@ __NOEDITSECTION__
 
 <div class="split-half">
 <!-- i've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
-'''XMMS2''' allows you to play '''mp3''', '''vorbis''', m4a, wma, mac, sid, mod, wav, '''flac''', speex from local files, over http, samba, '''daap''' and mms on your Linux, Mac OS X, *BSD or Solaris machine.
 
-So what are you waiting for? [[Getting Started|Get started]]!
 === News and events ===
 <!-- placeholder for important announcements -->
 {{ShortNews}}
