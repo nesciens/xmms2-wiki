@@ -15,8 +15,6 @@ __NOTOC__
 * [[Wikipedia:Http | HTTP]]
 ** [[Component:curl | Curl HTTP transport]]
 
-{{Transport_Plugins}}
-
 == Third party plugins ==
 
 == Old/Deprecated/Disused plugins ==
