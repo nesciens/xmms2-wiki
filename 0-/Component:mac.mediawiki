@@ -1,10 +1,10 @@
-{{Update}}
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Monkey's Audio to XMMS2. This component is required for playback of "mac" files.
 
 =Description=
 Uses libmac to decode.
 
 =Links=
+http://www.monkeysaudio.com/
