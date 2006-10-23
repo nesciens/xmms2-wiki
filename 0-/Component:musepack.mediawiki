@@ -8,3 +8,5 @@ Uses libmpcdec to decode.
 
 =Links=
 http://www.musepack.net/
+
+[[Category:Components]]
