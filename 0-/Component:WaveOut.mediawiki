@@ -1,0 +1,14 @@
+{{ComponentHeader}}
+
+=Summary=
+Adds support for Microsoft WaveOut sound architecture to XMMS2.
+
+=Links=
+* http://windowssdk.msdn.microsoft.com/en-us/library/ms713499(vs.80).aspx
+
+=See also:=
+* [[Component:Output | Output]]
+
+[[Category:Output Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
