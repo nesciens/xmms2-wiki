@@ -7,6 +7,6 @@ Adds support for playing Advanced Audio Coding (AAC) to XMMS2. This component is
 Uses libfaad2 to decode.
 
 =Links=
-http://www.audiocoding.com/
+* http://www.audiocoding.com/
 
 [[Category:Components]]
