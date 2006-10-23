@@ -8,3 +8,5 @@ Uses libmad to decode. This component also reads id3v1 tags at the end of mp3 fi
 
 =Links=
 http://www.underbit.com/products/mad/
+
+[[Category:Components]]
