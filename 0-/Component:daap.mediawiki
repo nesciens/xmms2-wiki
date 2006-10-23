@@ -7,3 +7,5 @@ Transport plugin to play files from DAAP shares.
 
 =Links=
 * http://en.wikipedia.org/wiki/Digital_Audio_Access_Protocol
+
+[[Category:Components]]
