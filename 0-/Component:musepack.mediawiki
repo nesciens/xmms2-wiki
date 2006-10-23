@@ -7,6 +7,6 @@ Adds support for playing Musepack audio to XMMS2. This component is required for
 Uses libmpcdec to decode.
 
 =Links=
-http://www.musepack.net/
+* http://www.musepack.net/
 
 [[Category:Components]]
