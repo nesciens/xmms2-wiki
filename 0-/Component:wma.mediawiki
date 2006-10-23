@@ -7,6 +7,6 @@ Adds support for playing Windows Media Audio to XMMS2. This component is require
 Uses ffmpeg to decode.
 
 =Links=
-http://ffmpeg.mplayerhq.hu/
+* http://ffmpeg.mplayerhq.hu/
 
 [[Category:Components]]
