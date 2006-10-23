@@ -1,0 +1,9 @@
+{{ComponentHeader}}
+
+=Summary=
+Transport plugin to play files from DAAP shares.
+
+=Description=
+
+=Links=
+* http://en.wikipedia.org/wiki/Digital_Audio_Access_Protocol
