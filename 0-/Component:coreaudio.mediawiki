@@ -1,5 +1,7 @@
-Info about the coreaudio output plugin.
-(This plugin is for Mac OS X only??)
+{{ComponentHeader}}
+
+= Summary =
+Output plugin for the CoreAudio architecture on Mac OS X.
 
 ===See also:===
 * [[Component:Output | Output]]
