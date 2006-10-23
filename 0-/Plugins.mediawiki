@@ -1,6 +1,7 @@
 __NOTOC__
 == Plugins included in the main tree ==
 === Decoder Plugins ===
+{{Media formats}}
 
 === Transport ===
 * [[Wikipedia:Computer_file | File]]
