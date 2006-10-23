@@ -1,5 +1,9 @@
-Info about the libao output plugin...
+{{ComponentHeader}}
 
+= Summary =
+Adds support for libao, a cross platform audio library, to XMMS2.
+
+= Description =
 This is plugin tries to make full use of the limited libao api to provide a portable option for playing sound. Libao is basically a wrapper over other sound systems.  It currently supports alsa, esd, oss and irix,sun,aix sound systems etc. For more info look [http://www.xiph.org/ao here].
 
 == Configuration ==
@@ -25,6 +29,9 @@ Acceptable values are
 * arts - KDE sound server (this is supported in devel builds of libao)
 
 The XMMS2 plugin does not currently support ''write to file'' plugins even though libao does.
+
+=Links=
+http://www.xiph.org/ao/
 
 ==See also:==
 * [[Component:Output | Output]]
