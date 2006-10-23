@@ -12,3 +12,5 @@ HVSC (High Voltage SID Collection) is a collection of almost every SID tune ever
 * http://sidplay2.sourceforge.net/
 * http://en.wikipedia.org/wiki/MOS_Technology_SID
 * http://www.hvsc.c64.org/
+
+[[Category:Components]]
