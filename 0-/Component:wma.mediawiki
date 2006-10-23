@@ -8,3 +8,5 @@ Uses ffmpeg to decode.
 
 =Links=
 http://ffmpeg.mplayerhq.hu/
+
+[[Category:Components]]
