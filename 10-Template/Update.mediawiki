@@ -4,11 +4,12 @@
 | '''This article or section needs to be updated.''' <br> Parts of this article or section have been identified as no longer being up to date. 
 
 Please update the article to reflect recent events, and remove this template when finished.
+[[Talk:{{PAGENAME}}|talk page]] contain details on what needs updating.
 | [[Image:Nuvola apps important.png| ]]
 |}<includeonly>{{{category|[[Category:Articles in need of updating]]}}}</includeonly><noinclude>
 
 == Usage ==
-This template can be used to mark articles or sections with old or out-of-date information.  
+This template can be used to mark articles or sections with old or out-of-date information. Add details on what needs update on the talkpage.
 
 This template will add articles to [[:Category:Articles in need of updating]].
 
