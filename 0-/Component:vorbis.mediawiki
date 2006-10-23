@@ -1,10 +1,10 @@
-{{Update}}
 {{ComponentHeader}}
 
 =Summary=
-
+Adds support for playing Ogg contained Vorbis audio to XMMS2. This component is required for playback of "ogg" files.
 
 =Description=
-
+Uses libvorbisfile to decode.
 
 =Links=
+http://www.vorbis.com/
