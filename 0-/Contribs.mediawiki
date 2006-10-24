@@ -1,8 +1,8 @@
 Scripts and other miscellaneous contributions to XMMS2. If you think you have something useful which could be put on this list, feel free to add the appropriate details here, or [[About#Contact_info | contact]] the XMMS2 team.
 
-{{Contrib | title=Init scripts | author=Martijn Ras | description=I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d xmms2d]
-* [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo xmms2-initscript-gentoo]
-* [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo.conf xmms2-initscript-gentoo.conf]}}
+{{Contrib | title=Init scripts | author=Martijn Ras | description=<strike>I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems.</strike> The files contributed don't work with more recent releases of XMMS2 - if you'd like to help resolve this, visit <mantis>249</mantis>. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d <strike>xmms2d</strike>]
+* [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo <strike>xmms2-initscript-gentoo</strike>]
+* [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo.conf <strike>xmms2-initscript-gentoo.conf</strike>]}}
 
 {{Contrib | title=BSD init scripts | author=Alexander Botero-Lowry | description=FreeBSD and NetBSD rc.d scripts | moreinfo=See README within the package | files=* [http://xmms2.xmms.se/contrib/files/xmms2-bsd.rc.d.tar.gz xmms2-bsd.rc.d.tar.gz]}}
 
