@@ -1,0 +1,1 @@
+{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=http://git.xmms.se| version=| devlanguage=C++| ui=Qt4| screenshots=[[Image:Esperanza.png]]| description=Coming soon, when Jason is less lazy.}}
