@@ -1,69 +1,59 @@
-{{Update}}
-
 __TOC__
 
-==Prepare the environment==
-*Download [http://www.python.org/ftp/python/2.4.2/python-2.4.2.msi Python 2.4.2] and install it in '''C:\Python24'''
-*Download [http://prdownloads.sourceforge.net/scons/scons-0.96.1.win32.exe Scons 0.96.1] and install it in '''C:\Python24'''
-*Download [http://prdownloads.sourceforge.net/mingw/MinGW-3.2.0-rc-3.exe MinGW-3.2.0-rc-3] and install it in '''C:\xmms2_mingw'''
-:'''Warning''' : other mingw installers or other gcc versions might not work.
-*Download [http://prdownloads.sourceforge.net/mingw/MSYS-1.0.10.exe Msys 1.0.10] and install it in '''C:\xmms2_mingw'''. When asked for the post install, answer '''y'''. After that, when asked if you have mingw installed, answer '''y''' and then put the directory '''c:/xmms2_mingw''' (yes, with unix-like slashes).
+==Prepare the Environment==
+Download and install these in order! Program versions used in this howto are in parenthesis.
 
-==Setting up the required libraries and the git snapshot==
-*Download [http://exodus.xmms.se/~nano/win32/xmms2_required_libraries.tar.gz xmms2_required_libraries.tar.gz] and put it in '''C:\xmms2_mingw\home\<user>''' 
-:Package contents : ''glib 2.8.6'' (include some dependencies) , ''sqlite 3.3.4'' and the ''scons.sh'' script (found in /bin)
-*Download the [http://git.xmms.se/snapshot.cgi/xmms2-devel.git-snapshot-HEAD.tar.bz2 git xmms2-devel snapshot], extract it on a unix-like system (I couldn't extract it correctly with any windows extractor) and put the resulted directory in '''C:\xmms2_mingw\home\<user>'''.
-*If you have downloaded the snapshot, you can apply [http://exodus.xmms.se/~nano/win32-3.diff this] and [http://exodus.xmms.se/~nano/win32-4.diff this] patch to it.
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3)
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MSYS] (1.0.11) - Do the post-install configuration to integrate MSYS with MinGW. IMPORTANT: Do yourself a *huge* favor and install this in the same directory as MinGW, leaving off the trailing /1.0 as well.
+*[http://www.python.org/download/ Python] (2.5)
+*[http://sourceforge.net/project/showfiles.php?group_id=30337&package_id=22359&release_id=408906 Scons] (0.96.92) - Note: at the time of this writing, [http://freehackers.org/~tnagy/bksys.html Waf] is being researched as a potential replacement for Scons
 
-==Compilation==
-*Double click on the MSYS icon that have been placed on the desktop, or launch msys.bat from the '''C:\xmms2_mingw''' directory
-*Extract the needed libraries like this :
- tar zxf xmms2_required_libraries.tar.gz -C /
-*Type :
- export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
-*Go in the directory '''/home/<user>/xmms2-stable.git...''' and type
- unset SHELL
- scons.sh
+==Set up Source and Dependencies==
+The order here is not so important. :)
 
-==Test xmms2==
-*Download [http://exodus.xmms.se/~nano/win32/xmms-runtime.tar.gz xmms-runtime.tar.gz], extract it and copy the files from the '''xmms2_runtime''' directory to '''C:\xmms2'''
-*Copy the following files to '''C:\xmms2''' :
-<pre>
- src/clients/lib/xmmsclient/libxmmsclient.dll
- src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll
- src/xmms/libxmms2d.dll
- src/clients/cli/xmms2.exe
- src/xmms/xmms2d.exe
-</pre>
-:and the file ''src/plugins/null/libxmms_null.dll'' to '''C:\xmms2\plugins'''
-Or run this script from '''/home/<user>/xmms2-stable.git...''' :
-<pre>
-#!/usr/bin/sh
-rm -f /c/xmms2/libxmmsclient.dll
-rm -f /c/xmms2/libxmmsclient-glib.dll
-rm -f /c/xmms2/libxmms2d.dll
-rm -f /c/xmms2/xmms2.exe
-rm -f /c/xmms2/xmms2d.exe
-rm -f /c/xmms2/plugins/libxmms_null.dll
+*Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-juhovh.git-snapshot-8f0c1928d916975e7a19da846475a217e43fd97b is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSYS to extract this properly.
 
-mkdir -p /c/xmms2/plugins
+*Download and unpack the [http://dan.chokola.com/files/xmms2/xmms2_win32_deps.zip required libraries] into your MinGW root directory.
+-OR-
+*Download and unpack them separately. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
+**[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (1.12.1)
+**[http://www.sqlite.org/download.html SQLiteDLL] (3.3.8)
+**[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
+**[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
+**[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.20)
+**Put a sqlite3.pc into /usr/lib/pkgconfig/ as follows:
+ prefix=C:/Doesnt/Matter
+ exec_prefix=${prefix}
+ libdir=${exec_prefix}/lib
+ includedir=${exec_prefix}/include
+ 
+ Name: SQLite
+ Description: SQL database engine
+ Version: @VERSION@
+ Libs: -L${libdir} -lsqlite3
+ Cflags: -I${includedir}
 
-cp ./src/clients/lib/xmmsclient/libxmmsclient.dll /c/xmms2
-cp ./src/clients/lib/xmmsclient-glib/libxmmsclient-glib.dll /c/xmms2
-cp ./src/xmms/libxmms2d.dll /c/xmms2
-cp ./src/clients/cli/xmms2.exe /c/xmms2
-cp ./src/xmms/xmms2d.exe /c/xmms2
-cp ./src/plugins/null/libxmms_null.dll /c/xmms2/plugins
-</pre>
+TODO: Optional libraries (for plugins).
 
-*Go in '''/c/xmms2''' (from msys) (equivalent to ''C:\xmms2'') and start the daemon :
- ./xmms2d.exe -p ./plugins -i tcp://127.0.0.1:5555 -v -o waveout
-:Hopefully, you will see that the waveout output is used
-*In another console, type :
-<pre>
-export XMMS_PATH=tcp://127.0.0.1:5555
-</pre>
-*Run xmms2 and see that it's working !!
-<pre>
-cd /c/xmms2 && ./xmms2.exe list
-</pre>
+==Preparing for Building==
+*Start MSYS
+*SCons relies heavily on pkg-config to find and build certain files properly, but MSYS doesn't configure PKG_CONFIG_PATH by default, so type:
+ export PKG_CONFIG_PATH=/usr/lib/pkgconfig
+*You'll want python and SCons in your PATH as well, so type:
+ export PATH=$PATH:/path/to/python:/path/to/python/Scripts
+*Alternatively you might want to add these to /etc/profile and run source /etc/profile
+
+TODO: Patches. Reeeaaaly need patches here.
+
+==Building with SCons==
+*cd into the XMMS2 source directory
+ cd ~/xmms2-juhovh.git-snapshot-8f0c1928d916975e7a19da846475a217e43fd97b
+*Start Scons
+ scons
+
+==Using XMMS2 on Windows==
+Unlike Unix-based machines, there are no Unix sockets on windows, so IPC must be done using TCP. To keep your daemon private from the network, make sure your IPC path uses a local loopback address (like 127.0.0.1). Also important to note is that there can be multiple daemons listening to the same socket, but only one will receive commands. Currently, it is up to the user to control this.
+Since Windows doesn't wait for child processes to run, xmms2-launcher is more or less useless in the Windows world (and in fact, it's only intended to compile on *nix-flavored machines). Simply run:
+ xmms2d
+and enjoy! You should be able to control it with the shipped CLI. Try:
+ xmms2 stats
