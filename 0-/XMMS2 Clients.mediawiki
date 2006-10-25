@@ -60,6 +60,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
 
+{{ClientSummary | name=Esperanza| description=A minimalistic playback and playlist client. It is designed to be small, displaying very few bits of information about a given song. While small in nature, it manages to eloquently feature cover art support, and support for Growl Notifications (both local and remote).}}
+
 {{ClientSummary | name=Promoe| description=Winamp classic clone a'la xmms1. Written in c++/qt4. The name is not final.}}
 
 == More Toolkits ==
