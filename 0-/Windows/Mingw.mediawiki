@@ -21,15 +21,15 @@ The order here is not so important. :)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.20)
-**Put a sqlite3.pc into /usr/lib/pkgconfig/ as follows:
- prefix=C:/Doesnt/Matter
+**Put a sqlite3.pc into /usr/lib/pkgconfig/ like this:
+ prefix=/usr
  exec_prefix=${prefix}
  libdir=${exec_prefix}/lib
  includedir=${exec_prefix}/include
  
  Name: SQLite
  Description: SQL database engine
- Version: @VERSION@
+ Version: 3.3.8
  Libs: -L${libdir} -lsqlite3
  Cflags: -I${includedir}
 
