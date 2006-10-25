@@ -17,11 +17,12 @@ The order here is not so important. :)
 -OR-
 *Download and unpack them separately. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (1.12.1)
-**[http://www.sqlite.org/download.html SQLiteDLL] (3.3.8)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.20)
-**Put a sqlite3.pc into /usr/lib/pkgconfig/ like this:
+**[http://www.sqlite.org/download.html SQLiteDLL and SQLite-Source] (3.3.8)
+***Place the sqlite3.h file from SQLite-Source into your /usr/include directory
+***Put a sqlite3.pc into /usr/lib/pkgconfig/ like this:
  prefix=/usr
  exec_prefix=${prefix}
  libdir=${exec_prefix}/lib
