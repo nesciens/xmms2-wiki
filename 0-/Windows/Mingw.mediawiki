@@ -3,8 +3,8 @@ __TOC__
 ==Prepare the Environment==
 Download and install these in order! Program versions used in this howto are in parenthesis.
 
-*[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3)
-*[http://sourceforge.net/project/showfiles.php?group_id=2435 MSYS] (1.0.11) - Do the post-install configuration to integrate MSYS with MinGW. IMPORTANT: Do yourself a *huge* favor and install this in the same directory as MinGW, leaving off the trailing /1.0 as well.
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3) - '''Important''': Install to a directory without spaces as they '''will''' cause pkg-config to fail.
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MSYS] (1.0.11) - Do the post-install configuration to integrate MSYS with MinGW. '''Important''': Do yourself a '''huge''' favor and install this in the same directory as MinGW, leaving off the trailing /1.0 as well.
 *[http://www.python.org/download/ Python] (2.5)
 *[http://sourceforge.net/project/showfiles.php?group_id=30337&package_id=22359&release_id=408906 Scons] (0.96.92) - Note: at the time of this writing, [http://freehackers.org/~tnagy/bksys.html Waf] is being researched as a potential replacement for Scons
 
