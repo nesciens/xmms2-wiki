@@ -11,6 +11,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Container format support]]
 * [[Mobile platforms]]
 * [[Configuration file]]
+* [[Medialib Plugins]]
 
 == Playlist ==
 * '''[[Collections]]'''
