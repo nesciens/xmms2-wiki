@@ -19,6 +19,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Hierarchical playlists]]
 * [[Playlist Plugins as Client]]
 * [[Collaborative Playlist Management]]
+* [[Queue Playlist]]
 
 == Clients ==
 * '''[[Album Covers]]'''
