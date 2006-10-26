@@ -12,3 +12,5 @@ Keep in mind that keeping the required API as lightweight as possible reduces th
 On the other hand, keeping the medialib as flexible as possible allows the full use of more powerful databases, such as PostgreSQL, which can greatly enhance access and storage of mediainfo on the average desktop.
 
 Right now, SQLite is a great compromise between the two; it's light and fast. It's led to very few complaints and some powerful clients. Therefore this is certainly no high-priority change but a nice project to keep in the back of our minds until XMMS2 starts to take over the world and more specific databases are needed. :)
+
+[[Category:Developer ideas]]
