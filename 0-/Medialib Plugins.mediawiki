@@ -1,0 +1,14 @@
+This has been a subject of long debate by the XMMS2 team. The problem is that all proposals for interchangeable medialib plugins means weakening the speed and/or the storage/retrieval abilities of the current SQLite medialib. There are custom, optimized SQL queries throughout the XMMS2 code that must be considered. People with ideas around this problem should add to this page freely.
+
+==Puzzles' Proposal==
+Xforms have made it easier to determine where metadata has come from, thus medialib backends can now selectively store information from sources they can handle. Let's define a plugin architecture for medialibs that is similar to xforms in its simplicity and stores only what it can handle. The medialib plugin API should only require a handful of functions such as open, close, get_info, set_info, etc. It should also allow a few other optional functions. However this leaves the storage and retrieval abilities severely weakened.
+
+To combat this problem, here are 2 possible solutions:
+# Try to find a more general set of queries that can be made into functions (optional functions, wherever possible; the API should be very light) and replace custom queries in the XMMS2 code with these. This shouldn't be terribly difficult as collections has already done some of the work.
+# Allow arbitrary medialib plugin methods to be called. For example, if your code knows that the current medialib is a SQLite one, it might call mlib->custom_methods->list_all_playlists(mlib);.
+
+Keep in mind that keeping the required API as lightweight as possible reduces the baseline complexity of the plugin, and, as a result, the underlying database. This means the daemon has a greater potential of being run on embedded hardware or other machines with limited resources.
+
+On the other hand, keeping the medialib as flexible as possible allows the full use of more powerful databases, such as PostgreSQL, which can greatly enhance access and storage of mediainfo on the average desktop.
+
+Right now, SQLite is a great compromise between the two; it's light and fast. It's led to very few complaints and some powerful clients. Therefore this is certainly no high-priority change but a nice project to keep in the back of our minds until XMMS2 starts to take over the world and more specific databases are needed. :)
