@@ -1,5 +1,17 @@
 == Latest quotes ==
 
+=== 2006-10-25 - Memory managed and performance ===
+ <danderson> I've also disabled garbage collection in the xmms2 build system, so the build is even faster
+ <danderson> (though it does use a bit more space during the build, obviously)
+ <danderson> (but the amount of extra ram is trivial, compared to the speed boost of not having to do garbage collection)
+ <juhovh> yeah, just like I once heard a discussion of two people doing a C programming course
+ <juhovh> it was something like "I never free any memory I have allocated" "me neither, I once did and it crashed the program"
+ <danderson> hahaha
+ <danderson> ouch
+ <juhovh> (the amount of extra ram is trivial compared to learning how to do memory management)
+ <danderson> it's slightly less drastic in this case :)
+
+
 === 2006-10-20 - Firefucks ===
  <eleusis> it's funny
  <eleusis> firefox -> firefucks
