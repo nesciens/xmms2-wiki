@@ -1,6 +1,6 @@
 == Latest quotes ==
 
-=== 2006-10-25 - Memory managed and performance ===
+=== 2006-10-25 - Memory management and performance ===
  <danderson> I've also disabled garbage collection in the xmms2 build system, so the build is even faster
  <danderson> (though it does use a bit more space during the build, obviously)
  <danderson> (but the amount of extra ram is trivial, compared to the speed boost of not having to do
