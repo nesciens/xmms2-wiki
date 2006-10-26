@@ -1,2 +1,4 @@
 We already have an _autosaved playlist that is used by virtually every client that works with playlists. But we could also implement a _queue playlist that would make client-side queue implementations work across clients. Right now queues must be implemented client-side, though they can be saved in a playlist on the server-side, but no other clients will know to look for that playlist. Thus, the queue playlist really only calls for a common playlist where a queue can be stored and read.
 Note: I really don't know what this means for collections, as this would have to be an ordered playlist, not just a collection.
+
+[[Category:Developer ideas]]
