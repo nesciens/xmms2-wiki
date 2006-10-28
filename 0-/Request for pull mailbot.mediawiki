@@ -1,24 +1,24 @@
 ''This page outlines ideas for a more well defined process for integrating code in the main repository''
 
-The main point of this change is to foster peer review. But as a side effect it should also make it easier to do automated sanity checks on code and changesets and hopefully make it _easier_ to get code integraded. Today the developer (DEV) need to tell/nag someone with write access to -devel, integrator (IGR), to get their changes accepted and proapagated to -devel. There is no well defined process of what the requirements are, and how easy it is depends on the IGR and his/her mood, how busy (s)he is and a lot of other things (like how annoying the DEV is).
+The main point of this change is to foster peer review. But as a side effect it should also make it easier to do automated sanity checks on code and changesets and hopefully make it _easier_ to get code integrated. Today the developer (DEV) needs to tell/nag someone with write access to -devel, the integrator (IGR), to get their changes accepted and propagated to -devel. There is no well-defined process of what the requirements are, and how easy it is depends on the IGR and his/her mood, how busy (s)he is and a lot of other things (like how annoying the DEV is).
 
 My idea is to have a little mailbot. 
 
-DEV has done some (at least (s)he thinks so) nice commits in his tree. To integrate the changes in -devel the following steps needs to be done:
-* push then to his public repository, git://git.xmms.se/xmms2/xmms2-randdev.git.
+DEV has done some (at least (s)he thinks so) nice commits in his tree. To integrate the changes in -devel the following steps need to be taken:
+* push the commits to his public repository, git://git.xmms.se/xmms2/xmms2-randdev.git.
 * send a mail to rfp@xmms.se stating the commit id for the top of tree he wishes to integrate into -devel
 * rfp@xmms.se is the mailbot, which now does some sanitychecking. Suggested tests:
 ** check that current -devel is included in the tree to integrate.
 ** check that all changeset comments have correct tagging (OTHER/BUG/FEATURE)
-* If any of the tests failed DEV will get a reply informing what failed.
-* If all tests passed a mail is sent to the mailinglist. The will include:
+* If any of the tests failed DEV will get a reply informing him of the tests that failed.
+* If all tests passed a mail is sent to the mailinglist. This will include:
 ** Each commit's changelog and diffstat.
 ** If small enough, the diff.
-** Any non fatal warnigs that the sanitychecker may have produced.
+** Any non fatal warnings that the sanitychecker may have produced.
 * Other DEVs/IGRs can review the code, and reply to the mail (to the mailinglist).
 ** If they think it is ok to integrate they include a RFP OK line in their mail.
 ** The change can also be vetoed by including RFP VETO in the mail.
-* When required number of OK's is recieved the changesets are automatically pulled into -devel.
+* When required number of OK's is received, the changesets are automatically pulled into -devel.
 
 The criteria could be something like (this is just an example!):
 * No vetos from core developers
