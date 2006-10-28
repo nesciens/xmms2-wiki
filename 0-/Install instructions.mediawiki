@@ -51,7 +51,7 @@ Some supported platforms may have variations on build requirements:
 * [[NetBSD]]
 
 == Configuring ==
-Run ''scons'' to first run the configuration. Tweak the options, running ''scons CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are the names of the directories where the module is contained. For example the Java bindings are located in src/clients/lib/java so the name of the module to be excluded is 'java'. The faad plugin is in src/plugins/faad so the name of the module to be excluded is 'faad'.
+Run ''scons'' to first run the configuration. Tweak the options, running ''scons --config=force CONFIG=1'' each time till satisfied. You can exclude certain optional modules by running ''scons EXCLUDE="module1 module2 module3"'' where module names are the names of the directories where the module is contained. For example the Java bindings are located in src/clients/lib/java so the name of the module to be excluded is 'java'. The faad plugin is in src/plugins/faad so the name of the module to be excluded is 'faad'.
 
 == Compiling ==
 Simply run ''scons'' to compile, or ''scons PREFIX=/some/custom/path'' if you plan on installing XMMS2 in ''/some/custom/path''.
