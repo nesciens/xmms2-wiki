@@ -33,6 +33,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 
 == Project ==
 * [[Testing]]
+* [[Request for pull mailbot]]
 
 == Misc ==
 * '''[[Music Sharing]]'''
