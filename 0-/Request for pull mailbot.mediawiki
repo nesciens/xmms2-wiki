@@ -24,3 +24,5 @@ The criteria could be something like (this is just an example!):
 * No vetos from core developers
 * Two OK from core developers, or...
 ** One OK from core developers and more than 2 OK from non core developers
+
+[[Category:Developer ideas]]
