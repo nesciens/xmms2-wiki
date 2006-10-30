@@ -7,9 +7,11 @@ My idea is to have a little mailbot.
 DEV has done some (at least (s)he thinks so) nice commits in his tree. To integrate the changes in -devel the following steps need to be taken:
 * push the commits to his public repository, git://git.xmms.se/xmms2/xmms2-randdev.git.
 * send a mail to rfp@xmms.se stating the commit id for the top of tree he wishes to integrate into -devel
+** Is this really necessary, isn't the idea that whatever is pushed is something you want to get included? [[User:TobiasRundstrÃ¶m|tru]]
 * rfp@xmms.se is the mailbot, which now does some sanitychecking. Suggested tests:
 ** check that current -devel is included in the tree to integrate.
 ** check that all changeset comments have correct tagging (OTHER/BUG/FEATURE)
+** merge / compilation test? [[User:TobiasRundstrÃ¶m|tru]]
 * If any of the tests failed DEV will get a reply informing him of the tests that failed.
 * If all tests passed a mail is sent to the mailinglist. This will include:
 ** Each commit's changelog and diffstat.
@@ -24,5 +26,8 @@ The criteria could be something like (this is just an example!):
 * No vetos from core developers
 * Two OK from core developers, or...
 ** One OK from core developers and more than 2 OK from non core developers
+
+Other ideas:
+* How about mailing patches more or less in the same way? Maybe pulled directly from mantis? [[User:TobiasRundstrÃ¶m|tru]]
 
 [[Category:Developer ideas]]
