@@ -1,0 +1,19 @@
+== Intro ==
+Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
+
+== Features ==
+
+* Sleek, uncomplicated UI ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mainui.png screen])
+* Albumart in the playlist ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mainui.png screen])
+* Medialib search window ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/medialib.png screen])
+* Strong focus on keyboard handling
+* Remote file chooser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/remote.png screen])
+* [http://www.growl.info Growl] support on MacOSX ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/growl.png screen])
+* Server browser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/server.png screen])
+* Customization support ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/pref.png screen])
+
+== News ==
+
+=== Esperanza 0.1 (2006-11-01) ===
+
+0.1 is released today.
