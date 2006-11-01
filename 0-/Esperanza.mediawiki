@@ -38,4 +38,4 @@ Download tarball run qmake (or qmake-qt4 depending on your system) and then make
 
 == Bugtracker ==
 
-Report bugs against Esperanza in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker].
+Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker].
