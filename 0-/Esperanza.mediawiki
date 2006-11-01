@@ -1,3 +1,5 @@
+__NOTOC__
+
 == Intro ==
 Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
@@ -16,4 +18,24 @@ Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodn
 
 === Esperanza 0.1 (2006-11-01) ===
 
-0.1 is released today.
+0.1 is released today. You can download the release here: http://exodus.xmms.se/~tru/esperanza/
+
+== Install and build ==
+
+=== Source ===
+
+Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest devel can be found in [http://git.xmms.se XMMS2 git tree].
+
+=== Dependencies ===
+
+* XMMS2
+** XMMS2 C++ bindings, which needs boost.
+* Qt 4.1 for 0.1 and 4.2 for git version.
+
+=== Build ===
+
+Download tarball run qmake (or qmake-qt4 depending on your system) and then make. That should produce the binary.
+
+== Bugtracker ==
+
+Report bugs against Esperanza in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker].
