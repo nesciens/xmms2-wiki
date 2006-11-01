@@ -1,1 +1,42 @@
-{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=http://git.xmms.se| version=| devlanguage=C++| ui=Qt4| screenshots=[[Image:Esperanza.png]]| description=Coming soon, when Jason is less lazy.}}
+__NOTOC__
+{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page), http://git.xmms.se/?p=esperanza.git;a=summary| version=| devlanguage=C++| ui=Qt4| screenshots=[[:Image:Esperanza.png]]| description=
+== Intro ==
+Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
+
+== Features ==
+
+* Sleek, uncomplicated UI ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mainui.png screen])
+* Albumart in the playlist ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/albumart.png screen])
+* Medialib search window ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mlib.png screen])
+* Strong focus on keyboard handling
+* Remote file chooser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/remote.png screen])
+* [http://www.growl.info Growl] support on MacOSX ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/growl.png screen])
+* Server browser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/server.png screen])
+* Customization support ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/pref.png screen])
+
+== News ==
+
+=== Esperanza 0.1 (2006-11-01) ===
+
+0.1 is released today. You can download the release here: http://exodus.xmms.se/~tru/esperanza/
+
+== Install and build ==
+
+=== Source ===
+
+Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest devel can be found in [http://git.xmms.se XMMS2 git tree].
+
+=== Dependencies ===
+
+* XMMS2
+** XMMS2 C++ bindings, which needs boost.
+* Qt 4.1 for 0.1 and 4.2 for git version.
+
+=== Build ===
+
+Download tarball run qmake (or qmake-qt4 depending on your system) and then make. That should produce the binary.
+
+== Bugtracker ==
+
+Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker].
+}}
