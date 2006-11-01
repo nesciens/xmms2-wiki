@@ -57,6 +57,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=gx2osd| description=gx2osd is a skinnable on-screen display client for xmms2 written in C++ and GTKmm}}
 
+{{ClientSummary| name=bluegroove| description=Bluegroove is a gnome client written in ruby which includes a medialib and system tray/notify support.}}
+
 == Qt ==
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
