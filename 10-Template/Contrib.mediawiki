@@ -1,9 +1,9 @@
-=={{{title}}}==
-Submitted by: ''{{{author}}}''
+==Play-Pause toggle client (C)==
+Submitted by: ''Dean Scarff''
 
-Description: ''{{{description}}}''
+Description: ''Pauses playback if xmms2 is currently playing, otherwise starts playback.''
 
-More info: {{{moreinfo}}}
+More info: An alternative to the python script by VinÃ­cius Dias dos Santos, for those who do not have/want python.
 
 Files:
-{{{files}}}
+* [http://scarff.id.au/file/xmms2-pp.c xmms2-pp.c]
