@@ -1,5 +1,5 @@
 __NOTOC__
-{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page), http://git.xmms.se/?p=esperanza.git;a=summary| version=| devlanguage=C++| ui=Qt4| screenshots=[[:Image:Esperanza.png]]| description=
+{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page), http://git.xmms.se/?p=esperanza.git;a=summary| version=0.1| devlanguage=C++| ui=Qt4| screenshots=[[:Image:Esperanza.png]]| description=
 == Intro ==
 Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
