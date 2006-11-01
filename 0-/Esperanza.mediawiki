@@ -1,5 +1,5 @@
 == Intro ==
-Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
+Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
 == Features ==
 
