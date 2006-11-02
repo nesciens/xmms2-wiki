@@ -43,8 +43,9 @@ TODO: Optional libraries (for plugins).
 *You'll want python and SCons in your PATH as well, so type:
  export PATH=$PATH:/path/to/python:/path/to/python/Scripts
 *Alternatively you might want to add these to /etc/profile and run source /etc/profile
+*Apply the patches found [http://dan.chokola.com/files/xmms2/xmms2-patches/ here] to your tree.
 
-TODO: Patches. Reeeaaaly need patches here.
+TODO: Patch cleanup. Make a combined patch.
 
 ==Building with SCons==
 *cd into the XMMS2 source directory
