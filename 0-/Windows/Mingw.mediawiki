@@ -45,7 +45,7 @@ TODO: Optional libraries (for plugins).
 *Alternatively you might want to add these to /etc/profile and run source /etc/profile
 *Apply the patches found [http://dan.chokola.com/files/xmms2/xmms2-patches/ here] to your tree.
 
-TODO: Patch cleanup. Make a combined patch.
+*Please help your local dev! TODO: Patch cleanup (git-diff/cg-mkpatch). Make a combined patch. More linux/BSD/OSX testing.
 
 ==Building with SCons==
 *cd into the XMMS2 source directory
