@@ -50,6 +50,8 @@ TODO: Optional libraries (for plugins).
 ==Building with SCons==
 *cd into the XMMS2 source directory
  cd ~/xmms2-juhovh.git-snapshot-8f0c1928d916975e7a19da846475a217e43fd97b
+*Make msys play well with scons.
+ unset SHELL
 *Start Scons
  scons
 
