@@ -1,42 +1,10 @@
 Some infos about the [[Windows/Mingw|Mingw compilation]]
 
+Here is a [http://exodus.xmms.se/~tru/screens/esperanza/esperanza_win32.png screenshot] of a real client running on Windows.
 
-Binaries to run the xmms2 cli (you need glib.dll and friends to run):
+Development files can be found [http://exodus.xmms.se/~nano/clientlib-win32.tar.gz here].
 
-[http://exodus.xmms.se/~nano/libxmmsclient-glib.dll libxmmsclient-glib.dll]
-
-[http://exodus.xmms.se/~nano/xmms2.exe xmms2.exe]
-
-
-Development files:
-
-[http://exodus.xmms.se/~nano/xmmsclient-libs-win32.rar xmmsclient-lib-win32.rar]
-
-
-
-Output from the client connected to a server running on Linux:
-
- C:\xmms2\test>set XMMS_PATH=tcp://192.168.10.1:6666
- 
- C:\xmms2\test>xmms2.exe list
- ->[0/2] Of Montreal - Disconnect the Dots (04:25)
-   [1/3] Of Montreal - Lysergic Bliss (04:04)
-   [2/4] Of Montreal - Will You Come and Fetch Me (01:59)
-   [3/5] Of Montreal - My British Tour Diary (02:19)
-   [4/6] Of Montreal - Rapture Rapes The Muses (03:03)
-   [5/7] Of Montreal - Eros' Entropic Tundra (03:13)
-   [6/8] Of Montreal - City Bird (02:20)
-   [7/9] Of Montreal - Erroneous Escape Into Eric Eckles (02:48)
-   [8/10] Of Montreal - Chrissie Kiss the Corpse (02:40)
-   [9/11] Of Montreal - Your Magic Is Working (03:43)
-   [10/12] Of Montreal - Climb the Ladder (03:26)
-   [11/13] Of Montreal - How Lester Lost His Wife (02:31)
-   [12/14] Of Montreal - Spike the Senses (03:11)
-   [13/15] Of Montreal - Vegan In Furs (03:53)
- 
- Total playtime: 0:43:41
- 
- C:\xmms2\test>
+xmms2 actually works pretty well on Windows now. The server works with very minor bugs and the clientlib seems to work without issues. There are still some patches that must be merged before it can be compiled out-of-the-box but we're getting there.
 
 == See Also ==
 * [[Windows/Mingw]]
