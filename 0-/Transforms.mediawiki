@@ -1,5 +1,5 @@
 ==Overview==
-A.K.A. "xforms", "transformations" or "decoder/transport API unification". Transforms are a unification of the transport, decoder, and effect plugin API's. Current plugins will cease to exist and be replaced by cleaner, simpler xforms. To reduce confusion, the merging of the transport and decoder plugins is at an API level only. Under the hood, plugins will still fulfill the role of 'transport' or 'decoder'.
+A.K.A. "xforms", "transformations" or "decoder/transport API unification". Transforms are a unification of the transport, decoder, and effect plugin API's. To reduce confusion, the merging of the transport and decoder plugins is at an API level only. Under the hood, plugins will still fulfill the role of 'transport' or 'decoder'.
 
 A transform is something that takes some kind of data and outputs another kind of data. For example:
 * mad - reads "audio/mpeg" and outputs "audio/pcm-data"
