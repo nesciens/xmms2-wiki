@@ -6,5 +6,9 @@ Features:
 * Cover art support
 }}
 
+== Support ==
+* Report bugs on the XMMS2 [http://bugs.xmms2.xmms.se bug tracker] ('Client - Insanity' project)
+* [irc://irc.freenode.net #xmms2 on Freenode]
+
 == Insanity related topics ==
 * [[Client:Insanity/Playlist refactoring | Playlist refactoring]]
