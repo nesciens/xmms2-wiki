@@ -1,6 +1,6 @@
 This is an idea that would boost the sharing of albumart between xmms2 users. The idea is to have a central server that stores art based on Musicbrainz Album ID. The client software can be executed in fetch or transmit mode.
 
-The initial implementation could easily be done in Python with [ftp://ftp.tummy.com/pub/tummy/Python/netstring/ netstrings] and send dicts back and forth.
+The initial implementation could easily be done in Python with [ftp://ftp.tummy.com/pub/tummy/Python/netstring/ netstrings] and send dicts back and forth. An option that would only require stdlib could use ThreadingSocketServer and a simple socket based client.
 
 === protocol ===
  ''helo command''
