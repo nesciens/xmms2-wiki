@@ -30,6 +30,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Client Ideas]]
 * [[Client capabilities and intercommunication]]
 * [[Client for writing tags to files]]
+* [[Distributed Art]]
 
 == Project ==
 * [[Testing]]
