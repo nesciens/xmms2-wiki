@@ -1,4 +1,4 @@
-This is an idea that would boost the sharing of albumart between xmms2 users. The idea is to have a central server that stores art based on Musicbrainz Album ID. The client software can be executed in fetch or transmit mode.
+This is an idea that would boost the sharing of album art between xmms2 users. The idea is to have a central server that stores art based on Musicbrainz Album ID. The client software can be executed in fetch or transmit mode.
 
 The initial implementation could easily be done in Python with [ftp://ftp.tummy.com/pub/tummy/Python/netstring/ netstrings] and send dicts back and forth. An option that would only require stdlib could use ThreadingSocketServer and a simple socket based client.
 
@@ -22,7 +22,7 @@ An untested proof of concept implementation of the server (not totally feature c
  server: {"cmd":"lookup", "status":"ok", "mbid":"xxx...", "data":"...", "mime":"image/jpeg"} # always tell the client what the mbid is
 
 
-the server could store the art is mbid.ext. if two clients transmit art for the same mbid it will do a rough calculation about which has higher resolution and store that one. maybe we should add support for multiple images in the future, but who cares :-)
+The server could store the art as mbid.ext. If two clients transmit art for the same mbid it will do a rough calculation about which has higher resolution and store that one. Maybe we should add support for multiple images in the future, but who cares :-)
 
 the transmit client could actually be the following pseudo code:
 
@@ -31,3 +31,5 @@ the transmit client could actually be the following pseudo code:
    transmit(mbid, data)
 
 easy as pie!
+
+[[Category:Developer ideas]]
