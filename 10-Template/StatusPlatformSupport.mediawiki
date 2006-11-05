@@ -1,1 +1,1 @@
-#REDIRECT [[PlatformSupportStatus]]
+#REDIRECT [[Template:PlatformSupportStatus]]
