@@ -1,0 +1,23 @@
+This is an idea that would boost the sharing of albumart between xmms2 users. The idea is to have a central server that stores art based on Musicbrainz Album ID. The client software can be executed in fetch or transmit mode.
+
+The initial implementation could easily be done in Python with [ftp://ftp.tummy.com/pub/tummy/Python/netstring/ netstrings] and send dicts back and forth.
+
+=== protocol ===
+ ''helo command''
+ client: {"cmd":"helo", "version":1}
+ server: {"cmd":"helo", "status":"ok"} # if not ok, the reason why failed
+
+ ''transmit command''
+ client: {"cmd":"transmit", "mbid":"xxx....", "data":"...", "mime":"image/jpeg"}
+ server: {"cmd":"transmit", "status":"ok"}
+ 
+ ''lookup command''
+ client: {"cmd":"lookup", "mbid":"xxx..."}
+ server: {"cmd":"lookup", "status":"ok", "data":"...", "mime":"image/jpeg"} # can be "notfound" as status also.
+
+ ''lookup without mbid''
+ client: {"cmd":"lookup", "artist":"Foobar", "album":"korv"} # all strings in unicode objects.
+ server: {"cmd":"lookup", "status":"ok", "mbid":"xxx...", "data":"...", "mime":"image/jpeg"} # always tell the client what the mbid is
+
+
+the server could store the art is mbid.ext. if two clients transmit art for the same mbid it will do a rough calculation about which has higher resolution and store that one. maybe we should add support for multiple images in the future, but who cares :-)
