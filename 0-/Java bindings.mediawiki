@@ -1,1 +1,1 @@
-#REDIRECT [[Components:Java bindings]]
+#REDIRECT [[Component:Java bindings]]
