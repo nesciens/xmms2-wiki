@@ -3,3 +3,8 @@ I've got a few questions about the current proposal:
 # I have doubts about the security of pushing python dicts across the net - pushing them across unix sockets or on a trusted network is fine, but the internet is a wild, wild place.
 # Multiple image support can be good, since the same album can be released in different countries with different cover art.
 :[[User:Eleusis|Eleusis]] 07:30, 5 November 2006 (CET)
+
+Responses:
+# We could host it as a named service on tor, so that would keep us safe from being located, etc. We might implement it as p2p later too.
+# Proof of concept...
+# Proof of concept...
