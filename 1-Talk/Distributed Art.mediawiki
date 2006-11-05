@@ -1,0 +1,5 @@
+I've got a few questions about the current proposal:
+# Wouldn't it be better to have a P2P model, instead of needing a central server? Some disadvantages of having a central server: someone has to host and maintain it, server becomes a big, juicy target for possible litigation (legal enforcement of copyright violation re: album art is unclear, AFAIK).
+# I have doubts about the security of pushing python dicts across the net - pushing them across unix sockets or on a trusted network is fine, but the internet is a wild, wild place.
+# Multiple image support can be good, since the same album can be released in different countries with different cover art.
+:[[User:Eleusis|Eleusis]] 07:30, 5 November 2006 (CET)
