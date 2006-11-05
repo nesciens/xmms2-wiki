@@ -6,7 +6,7 @@ The initial implementation could easily be done in Python with [ftp://ftp.tummy.
  ''helo command''
  client: {"cmd":"helo", "version":1}
  server: {"cmd":"helo", "status":"ok"} # if not ok, the reason why failed
-
+ 
  ''transmit command''
  client: {"cmd":"transmit", "mbid":"xxx....", "data":"...", "mime":"image/jpeg"}
  server: {"cmd":"transmit", "status":"ok"}
@@ -14,7 +14,7 @@ The initial implementation could easily be done in Python with [ftp://ftp.tummy.
  ''lookup command''
  client: {"cmd":"lookup", "mbid":"xxx..."}
  server: {"cmd":"lookup", "status":"ok", "data":"...", "mime":"image/jpeg"} # can be "notfound" as status also.
-
+ 
  ''lookup without mbid''
  client: {"cmd":"lookup", "artist":"Foobar", "album":"korv"} # all strings in unicode objects.
  server: {"cmd":"lookup", "status":"ok", "mbid":"xxx...", "data":"...", "mime":"image/jpeg"} # always tell the client what the mbid is
