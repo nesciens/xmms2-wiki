@@ -4,7 +4,7 @@
 ** Features|Features
 ** download-url|Download
 ** status-url|Project Status
-** XMMS2 Clients|Clients
+** Clients|Clients
 
 * Info
 ** Getting Started|Getting Started
