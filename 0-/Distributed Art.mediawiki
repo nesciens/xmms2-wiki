@@ -21,3 +21,11 @@ The initial implementation could easily be done in Python with [ftp://ftp.tummy.
 
 
 the server could store the art is mbid.ext. if two clients transmit art for the same mbid it will do a rough calculation about which has higher resolution and store that one. maybe we should add support for multiple images in the future, but who cares :-)
+
+the transmit client could actually be the following pseudo code:
+
+ for h in xs.medialib_select("select m1.value as mbid, m2.value as hash from Media m1 ...")
+   data = bindata_get(hash)
+   transmit(mbid, data)
+
+easy as pie!
