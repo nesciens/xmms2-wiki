@@ -10,3 +10,13 @@ Responses:
 # Proof of concept...
 
 # will drax and eleusis be in the contact information on the server when all the copyright holders want their warez back?
+
+----
+
+Why inverting a new protocol? Sounds like http is fine for this? http://distributed-coverart.com/art/deadbeef-1234-4321-1337-0101010101.jpg
+
+http://distributed-coverart.com/name/Bad+Religion/Against+The+Grain.jpg
+
+(that would also mean that it will be very easy to do things like redirect to amazon/whatever. And we wouldn't have to store their data. It could support a way for servers to register, and say "please forward these mbids to me". A pure redirect service wouldn't have the same legal issues, would it?)
+
+[[User:Anders Gustafsson|Anders Gustafsson]] 00:25, 7 November 2006 (CET)
