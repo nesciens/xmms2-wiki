@@ -1,0 +1,96 @@
+== Downstream Maintance ==
+
+''All examples are from the FreeBSD port''
+
+== Things to consider when compiling XMMS2 for a package ==
+There are a number of things a downstream maintainer should consider when creating an XMMS2 package for their operating system of choice. The first area to consider is probably SCons releated:
+
+SCons doesn't like the Make enviornment much, which means things like CFLAGS won't be honored unless you explicitly declare them to SCons, further in XMMS2 we uses different variable names for a number of the common Make enviornment variables. 
+To invoke SCons for building XMMS2 in the FreeBSD world we use this:
+
+        cd ${WRKSRC} && \
+                ${SETENV} JAVA_HOME=${JAVA_HOME} scons CC=${CC} 
+                LINKFLAGS="${LDFLAGS}"   CCFLAGS="${CFLAGS}" \
+                LIBPATH=${LOCALBASE}/lib CPPPATH=${LOCALBASE}/include \  
+                PKGCONFIGDIR=${PREFIX}/libdata/pkgconfig  \ 
+                EXCLUDE="${EXCLUDE}" PREFIX="${PREFIX}" ${SCONS_TARGET}
+
+Imediately you'll notice the use of LINKFLAGS for LDFLAGS and CCFLAGS for CFLAGS, you'll also notice that instead of passing -L/usr/local/lib as an LD or LINK flag, it is instead passed as a LIBPATH, same goes for CPPPATH instead of -I/usr/local/include in C or CCFLAGS. 
+
+There are two other important things to look at here, EXCLUDE= is the first. In the GNU Autoconf world, one might make use of --disable-FEATURE, but in the XMMS2 SCons build enviornment we have EXCLUDE. EXCLUDE's job is to disable certain features, determined by their directory name. On a single user-basis this might manifest as "Oh..I don't really want a FLAC plugin but I have libflac installed on my system, so let me add flac to my EXCLUDE variable." For a package maintainer this makes that same process more possible on a grand scale, in the FreeBSD world one might use WITH_ knobs, to enable or disable certain features. For example:
+
+        .if defined(WITH_MUSEPACK)
+        LIB_DEPENDS+=   mpcdec.3:${PORTSDIR}/audio/libmpcdec
+        PLIST_SUB+=     MUSEPACK=""
+        .else
+        EXCLUDE+=       musepack
+        PLIST_SUB+=     MUSEPACK="@comment "
+        .endif
+
+Ok, so this is how FreeBSD enables or disables the musepack plugin. The first part is obvious, set the dependency and make sure the plugin shows up in the packaging list, the port then allows SCons to automagically detect that libmpcdec is installed and enable support for it. But what if the user doesn't want musepack support in XMMS2 but has libmpcdec installed? All they have to do is not define WITH_MUSEPACK, and it will be added to the EXCLUDE list that is later passed to SCons, and make sure that it is commented out of the packaging list. 
+
+The other little SCons caveat is JAVA_HOME. Currently the Java bindings build process is a little broken, and so to deal with that JAVA_HOME must be passed to SCons so that it knows where to look, which is fine, but the Java build script can only read it as an enviornmental variable. This will most likely only be an issue for DrDolittle.
+
+== Things to consider when installing and packaging XMMS2 ==
+
+So let's consider the variables that one can pass to SCons that effect installation of XMMS2:
+* PREFIX - This is the base directory to install in; /usr/local on FreeBSD; /usr/pkg on NetBSD; /usr for most Linux distributions (I think). Defaults to /usr/local.
+* MANDIR - Where to install manual pages. Defaults to ${PREFIX}/man 
+* RUBYARCHDIR - The ruby architecture specific dir; This is determined by asking Ruby.
+* PKGCONFIGDIR - Where to install pkg-config files, defaults to /usr/local/lib/pkgconfig.
+
+Ok, so now let us consider the anatomy of a FreeBSD packaging list to get insight into what XMMS2 installs by default. First the binaries:
+* bin/xmms2 - This is the default command line client. It is also a reference implementation of how to write a simple xmms2 client in C.
+* bin/xmms2-et - This is the ET Phone Home client. This client transmits data about the plugins used for each track played (but no information about the track itself) as well as the XMMS2 version and OS being used. It is used for release engineering as a way to test if components have had sufficient testing before a release is pushed out. 
+* bin/xmms2-launcher - xmms2-launcher is used to envoke the xmms2d and fork it into the background as well as manage its log output.
+* %%FAM%%bin/xmms2-mlib-updater - This is an xmms2 client that requires gamin. It watches a directory for changes to files as well as the addition of new files and adds new files to the media library and rehashes files that have been changed. 
+* %%MDNS%%bin/xmms2-mdns-avahi - This client requires Avahi. It checks to see if the xmms2 daemon is running on a tcp socket and if it is registers it with an mDNSResponder so that other clients on the network can connect to xmms2d easily.
+* bin/xmms2d - This is the actual daemon that constitutes XMMS2; It does the actual playback of audio as well as handling of the Media library.
+
+Depending on the operating system for which you are making packages you can take different routes here. Some operating systems for example may wish to seperate the different binaries into distinct packages and allow each to be installed seperately. Some operating systems may choose to package all the binaries, hopefully taking into consideration the extra dependencies required by some of these packages and dealing with that effectively. For example FreeBSD packages all of these binaries but those that require extra dependencies (Avahi client and medialibrary updater) are made optional. Another option, which I have considered taking with the FreeBSD port is to make a distinction between the daemon, and the clients. This way users that only desired to control a remote xmms2 daemon would not need to compile sqlite (a dependency of xmms2d) to get the client library and a number of clients.
+
+The next part of the plist is a number of include files. I will only list the directory names rather than the list of all of the include files:
+
+* include/xmms2/xmms/ - These are include files related to the daemon including those needed to build new plugins
+* include/xmms2/xmmsc/ - These are include files related to the client library, but are not directly included by clients
+* include/xmms2/xmmsclient/ - These are include files directly included by clients that include the include files located in include/xmms2/xmmsc/
+
+FreeBSD porters do not tend to seperate development components from the main package, but in the case that the operating system for which you are porting does do this, include/xmms2/xmms would be necessary for development related to xmms2d, and include/xmms2/xmmsc/ and include/xmms2/xmmsclient/ would be necessary for development related to clients.
+
+Our next component of the plist to consider is libraries:
+
+* %%ECORE%%lib/libxmmsclient-ecore.so
+* lib/libxmmsclient-glib.so
+* lib/libxmmsclient.so
+
+XMMS2 also installs .a versions of all of these libraries. The first two libraries are mainly related to main loops. The first is to attack XMMS2 into an ecore mainloop. This is the mainloop used by Enlightenment, and so would most likely be used if developing or running an EFL XMMS2 client. libxmmsclient-glib on the other hand is the glib mainloop. This is used by many clients and so though XMMS2 can be built and some clients will work with out it, is enabled by default on FreeBSD. Now libxmmsclient is the real client library. This is necessary for all clients, and thus must be a dependency for any client installed. 
+
+Now we will move onto XMMS2 plugins (All of these plugins install to lib/xmms2 and follow this naming pattern: libxmms_${PLUGINNAME}.so), 
+
+These plugins require no dependencies: diskwrite, eq, file, html, m3u, null, pls, replaygain, wave
+
+These plguins are system specific: sun, oss, alsa 
+
+These plguins require dependencies: curl, faad, flac, gnomevfs, jack, mad, modplug, musepack, samba, sid, vorbisfile
+
+To function xmms2 requires at least one output plugin (sun, oss, alsa, jack, diskwrite, null), one transport plugin (curl, file, samba, gnomevfs) and one decoder plugin (mad, flac, faad, modplug, musepack, sid, vorbisfile, wave). We recommend that packagers install mad andvorbisfile by default. It is STRONGLY recommended that vorbisfile be installed by default because the sample clip installed with XMMS2 requires it (more on that later). Packagers should also pack whichever output plugins work for their system. Linux distributions might package alsa, oss and jack. FreeBSD packagers might package oss and jack, and NetBSD/OpenBSD packagers might package sun, oss (XMMS2 was originally ported to NetBSD and OpenBSD using libossaudio included by default with both OSes) and jack. Solaris packagers should be careful to remember that the sun output plugin may not work on Solaris as it was designed for the BSDs. It is also HIGHLY recommended/mandated that packagers install the file plugin by default. 
+
+XMMS2 installs five pkg-config files. These pkg-config files though often feature specific are installed whether the feature is enabled or not. They are: 
+
+* xmms2-client-cpp.pc - For the C++ bindings which are not included with DrDoolittle
+* xmms2-client-ecore.pc - For the ecore mainloop bindings
+* xmms2-client-glib.pc - For the glib mainloop bindings
+* xmms2-client.pc - For the xmms2 client library 
+* xmms2-plugin.pc - For the xmms2d plugin development
+
+XMMS2 installs 3 files in its data directory (defaults to ${PREFIX}/share/xmms2):
+
+* %%DATADIR%%/mind.in.a.box-lament_snipplet.ogg - Intro clip encoded in Ogg Vorbis, and thus why we recommend that packagers include the vorbisfile plugin
+* %%DATADIR%%/scripts/startup.d/xmms2-et-launcher.sh - Startup script for the ET Phone Home client
+* %%DATADIR%%/scripts/startup.d/xmms2-mdns-launcher.sh - Startup script for the various mDNS responders
+
+Any scripts installed under %%DATADIR%%/scripts/startup.d will be executed when xmms2d starts up, and any scripts installed under %%DATADIR/script/shutdown.d/ will be executed when xmms2d is stopped safely.
+
+== Actual Packaging ==
+
+When you actually get to packaging things up and are looking for descriptions, it is requested that you use the descriptions that are liked from the Component Status list on the [[Project Status]] page. Each of these pages has a text blurb about the component so that if your operating system tends to break components into seperate packages you have a text blurb available for each component.
