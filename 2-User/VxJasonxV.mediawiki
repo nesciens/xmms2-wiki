@@ -16,7 +16,7 @@ Limited testing with Mac OS X (Tiger - 10.4) is also possible
 == Demands ==
 PHP Bindings ( ;D )
 
-== Toys ==
+== Toys / Drafts ==
 [[User:VxJasonxV/Sandbox/Template:RSS]] (yay SimplePie)<br>
 [[User:VxJasonxV/Sandbox/Template:RSSHeadlines]] (yay SimplePie x2)
 
