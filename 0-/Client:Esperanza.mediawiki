@@ -1,21 +1,25 @@
 __NOTOC__
-{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page), http://git.xmms.se/?p=esperanza.git;a=summary| version=0.1.1| devlanguage=C++| ui=Qt4| screenshots=[[:Image:Esperanza.png]], also see [[#Features|below]]| description=
+{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page), http://git.xmms.se/?p=esperanza.git;a=summary| version=0.2.0| devlanguage=C++| ui=Qt4| screenshots=[[:Image:Esperanza.png]], also see [[#Features|below]]| description=
 == Intro ==
 Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
 == Features ==
 
-* Sleek, uncomplicated UI ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mainui.png screen])
-* Albumart in the playlist ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/albumart.png screen])
-* Medialib search window ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/mlib.png screen])
+* Sleek, uncomplicated UI ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/ui.png screen])
+* Albumart in the playlist ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/ui.png screen])
+* Medialib search window ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/mlib.png screen])
 * Strong focus on keyboard handling
 * Remote file chooser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/remote.png screen])
 * [http://www.growl.info Growl] support on MacOSX ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/growl.png screen])
-* Server browser ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/server.png screen])
-* Customization support ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/pref.png screen])
-* Windows support ([http://exodus.xmms.se/~tru/screens/esperanza/0.1/win32.png screen])
+* Server browser (with mDNS support) ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/server.png screen])
+* Customization support ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/pref.png screen])
+* Windows support ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screen])
 
 == News ==
+
+=== Esperanza 0.2.0 (2006-11-07 ===
+
+New version with a lot of [http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog news]. Download [http://exodus.xmms.se/~tru/esperanza/0.2/ here].
 
 === Esperanza 0.1.1 (2006-11-01) ===
 
