@@ -39,7 +39,8 @@ Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest de
 
 * XMMS2
 ** XMMS2 C++ bindings, which needs boost.
-* Qt 4.1 for 0.1 and 4.2 for git version.
+* Qt 4.2 or newer
+* dns_sd (bonjour) for mDNS support
 
 === Build ===
 
