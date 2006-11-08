@@ -14,7 +14,7 @@ Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodn
 * Server browser (with mDNS support) ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/server.png screen])
 * Customization support ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/pref.png screen])
 * Windows support ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screen])
-* Mini-mode ([http://exodus.xmms.se/~tru/screens/esperanaz/0.2/mini.png screen])
+* Mini-mode ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/mini.png screen])
 
 == News ==
 
