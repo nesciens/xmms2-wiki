@@ -8,6 +8,12 @@ BUT! To help keep the information in this wiki (at least some minimal degree) st
 * If you're an XMMS2 client developer, know [[Talk:XMMS2_Clients#How_to_add_a_new_client | how to add information about your client]] to the wiki. Also remember to add the talkpage for your client to your [[Special:Watchlist|watchlist]].
 * Keep discussions on Talk pages.
 
+== Namespaces ==
+* The 'XMMS2:' namespace is to be used for pages relating specifically to 'XMMS2' as the project or the wiki itself, rather than 'XMMS22' as the software (which is produced as part of the project).
+* A '''pseudo-namespace''' in the context of this wiki is a namespace that isn't really recognised (hasn't been registered) by the wiki software, but is still written as part of an article title as if it were a different namespace, for example: 'Client:Foo'.
+** The 'Client:' pseudo-namespace is to be used for pages with information about XMMS2 clients. These pages may have sub-pages, such as 'Client:Foo/Feature_X' to contain information relating specifically to those clients.
+** The 'Component:' pseudo-namespace is to be used for pages with information about components of the XMMS2 system, such as plugins.
+
 == Additional guidelines ==
 * Edits that only correct spelling errors or minor grammatical errors should be set as 'minor edits'.
 * Try to provide an informative edit summary for every edit if possible.
