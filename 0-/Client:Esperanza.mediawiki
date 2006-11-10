@@ -18,7 +18,11 @@ Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodn
 
 == News ==
 
-=== Esperanza 0.2.0 (2006-11-07 ===
+=== Esperanza 0.2.1 (2006-11-10) ===
+
+Esperanza 0.2.1 is released. Just bugfixes and small additions. See the [http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.] And download: [http://exodus.xmms.se/~tru/esperanza/0.2/ here]
+
+=== Esperanza 0.2.0 (2006-11-07= ===
 
 New version with a lot of [http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog news]. Download [http://exodus.xmms.se/~tru/esperanza/0.2/ here]. Observe that it now requires Qt4.2.x
 
