@@ -2,6 +2,7 @@
 by ''æ´ªä»»è«­ (Hong Jen Yee, as known as PCMan)''
 
 '''Homepage''': http://lxde.sourceforge.net/<br />
+'''Download page''': http://sourceforge.net/projects/lxde/<br />
 '''Latest version''': 0.1<br />
 '''Development language''': C<br />
 '''User Interface''': GTK+<br />
