@@ -1,0 +1,15 @@
+===LXMusic===
+by ''æ´ªä»»è«­ (Hong Jen Yee, as known as PCMan)''
+
+'''Homepage''': http://lxde.sourceforge.net/<br />
+'''Latest version''': 0.1<br />
+'''Development language''': C<br />
+'''User Interface''': GTK+<br />
+'''Screenshots''': http://pcman.sayya.org/lxmusic.png<br />
+[[Talk:Client:LXMusic | Discuss]]
+
+LXMusic is a very simple gtk+ client written in pure C. It has very few functionality, and can do nothing more than play the music. The UI is very clean and simple. This is currently aimed to be used as the default music player of [http://lxde.sourceforge.net/ LXDE (Lightweight X11 Desktop Environment) project]. LXDE is a new project aimed to provide a new desktop environment with faster speed and less resoruce usage.
+
+[[XMMS2 Clients | More xmms2 clients]]
+
+[[Category:Clients]]
