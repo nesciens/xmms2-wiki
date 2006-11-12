@@ -1,0 +1,17 @@
+This page is supposed to list what we want from a build system. It is here to avoid lusers asking "why are you not using build system X?", and also having people who really know things about build systems ask "why are you not using build system X?"
+
+'''Cross platform'''. Should work on linux, bsds, wintendo, OS X etc.
+
+'''Per component build file'''. Each component should have a separate build file, configuration should be local. It should be possible to just drop in a plugin directory, and it should be self contained with build file and everything.
+
+'''Correct dependencies'''. Obviously.
+
+'''Intuitive and clean build files'''. The per component build files should be easy to understand, and free from useless duplication.
+
+'''Out of tree buildable'''. Ideally the "per component build file" should make it easy to build things out of the tree, and the exact same files should work by just copying the component's directory into the main source tree.
+
+'''Easy to customize'''. Should be easy to add custom tests and build methods.
+
+'''Easy build configuration'''. It should be easy to configure which components to build/not build and what build flags to use. And to list what options are available.
+
+'''Per component install'''. Possible install only one component to make it easy for package build scripts to install each component in separate dirs.
