@@ -90,4 +90,4 @@ And go there:
 
 There, now you're ready to push your changes to your public tree without an ugly merge changeset.
 
- ssh+git://git.xmms.se/xmms2/xmms2-yourpublicrepository +:refs/heads/master
+ ssh+git://git.xmms.se/xmms2/xmms2-yourpublicrepository +master
