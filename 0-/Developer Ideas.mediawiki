@@ -35,6 +35,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 == Project ==
 * [[Testing]]
 * [[Request for pull mailbot]]
+* [[Build system requirements]]
 
 == Misc ==
 * '''[[Music Sharing]]'''
@@ -42,7 +43,6 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[General Notify support]]
 * [[Support for radio output like icecast]]
 * [[Concerns after Log table removal]]
-* [[Build system requirements]]
 
 == Older Ideas ==
 * '''[[Support for clients to write to the medialib]]'''
