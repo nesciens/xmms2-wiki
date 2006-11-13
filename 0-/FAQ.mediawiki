@@ -58,6 +58,9 @@
 === Why doesn't the CLI client have a play/pause toggle function? ===
 * A: There is a very simple client available on the [[contribs]] that just toggles play/pause.
 
+=== Seems like you are using a non-standard buildsystem, why not Make? ===
+* A: Make is a really good buildsystem, although to get all functionality needed for a bigger project you'll need automake, autoconf and libtool. We had a lot of problems getting these tools to do what we wanted, so we evaluated the alternatives. [http://www.scons.org/refer.php SCons] is a good alternative. If you do not want to install Python and SCons on your system, there will be [[Download_XMMS2#Binary_Packages | binaries]] available for the most common platforms. See also: [[Build system requirements]]
+
 == Troubleshooting ==
 === XMMS2 is not working. What should I do? ===
 * A: You should do it right, of course. Stop doing it wrong, and it'll start working. No, seriously, see if your problem can be solved below, if not, try the mailing list or IRC. If you run xmms2-launcher or xmms2d, try using the -v option for more output. Remember that the xmms2-launcher program puts all output from the xmms2 daemon into a log file: /tmp/xmms2.log. This output will be very helpful in diagnosing your problems.
