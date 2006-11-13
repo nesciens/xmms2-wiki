@@ -15,3 +15,5 @@ This page is supposed to list what we want from a build system. It is here to av
 '''Easy build configuration'''. It should be easy to configure which components to build/not build and what build flags to use. And to list what options are available.
 
 '''Per component install'''. Possible install only one component to make it easy for package build scripts to install each component in separate dirs.
+
+[[Category:Developer ideas]]
