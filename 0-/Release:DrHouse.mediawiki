@@ -1,1 +1,71 @@
-Next release!
+== Current status ==
+; 2006-11-14 - DrGonzo-WIP-TEST1 released. First pre-release of DrHouse
+
+== Release Notes ==
+
+=== Upgrading ===
+
+=== Noteworthy changes ===
+
+==== Feature additions ====
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+
+=== Notes to client authors ===
+
+=== Notes to xform authors ===
+
+
+=== Full ChangeLog (TEST1) from [[Release:DrGonzo]] ===
+'''Alexander Botero-Lowry'''
+;<mantis>1176</mantis>
+'''Anders Gustafsson'''
+;<mantis>1137</mantis>
+;<mantis>1147</mantis>
+;<mantis>1152</mantis>
+;<mantis>1154</mantis>
+;<mantis>1158</mantis>
+;<mantis>1163</mantis>
+;<mantis>1171</mantis>
+;<mantis>1222</mantis>
+;<mantis>1227</mantis>
+;<mantis>1234</mantis>
+;<mantis>1241</mantis>
+'''Cole Thompson'''
+;<mantis>1171</mantis>
+'''Daniel Chokola'''
+;<mantis>1189</mantis>
+'''Daniel Svensson'''
+;<mantis>1153</mantis>
+;<mantis>1159</mantis>
+;<mantis>1171</mantis>
+;<mantis>1174</mantis>
+;<mantis>1249</mantis>
+'''Florian Ragwitz'''
+;<mantis>1031</mantis>
+'''Juho VÃ¤hÃ¤-Herttua'''
+;<mantis>116</mantis>
+;<mantis>168</mantis>
+;<mantis>1105</mantis>
+;<mantis>1137</mantis>
+;<mantis>1165</mantis>
+;<mantis>1166</mantis>
+;<mantis>1167</mantis>
+;<mantis>1169</mantis>
+;<mantis>1177</mantis>
+'''Sham Chukoury'''
+;<mantis>1149</mantis>
+;<mantis>1160</mantis>
+'''Tobias Rundstrom'''
+;<mantis>512</mantis>
+;<mantis>867</mantis>
+;<mantis>1193</mantis>
+;<mantis>1220</mantis>
+'''Todd Bayley'''
+;<mantis>1233</mantis>
+
+
+[[Category:Releases]]
