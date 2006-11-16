@@ -1,0 +1,46 @@
+Starting on the 20th of November 2006, the XMMS2 team will conduct regular meetings on IRC to discuss various issues relating to the project. Unlike the main [irc://chat.freenode.net/xmms2 #xmms2] channel, where we mostly discuss various technical and offtopic issues at various times of the day, the meeting channel will focus more on project administrative issues and major technical issues, as well as long-lived issues that haven't progressed much (much less been resolved). The rationale is that this process will help the team focus more on getting things done on a timely basis, rather than leaving issues open indefinitely.
+
+== Meeting Protocol ==
+;Location: [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode
+;Time: 19:30 UTC, Mondays (current)
+;Length: Approx. 1 hour (estimated)
+;Organiser (chairperson): [[Dan Chokola]]
+
+=== Pre-meeting ===
+# Organiser creates agenda for next meeting.
+# Organiser announces next meeting on [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list], most preferably 4 days before the meeting, at the latest. Announcement includes proposed agenda.
+# Participants prepare a list of issues they want to address. If there are any major issues to talk about, that haven't been addressed by the proposed agenda, participants negotiate with organiser to include them. Even if the organiser cannot fit a certain issue into the agenda (e.g. due to time constraints), it may be brought up after the meeting. That is, agenda items are to be given priority.
+
+=== Meeting ===
+# Participants join channel and wait for organiser to announce the start of the meeting.
+# Organiser asks each participant to announce their [[#Status_announcements status]].
+# <code>for issue in issues: Organiser picks issue to discuss - participants discuss.</code>
+# Organiser may defer discussion of certain issues to a later date (e.g. next meeting) or to the mailing list if the discussion is taking too long, and there are other issues to address on the agenda.
+
+=== Wrapup ===
+# Participants may assign action items (things to do), and report on the progress of these items at the next meeting.
+# Organiser summarises meeting (possibly with meeting minutes) - such a summary can be useful for planning subsequent meetings (e.g. new agenda items).
+
+=== Post-meeting ===
+''haxhax''
+
+== Meeting channel rules and guidelines ==
+* The channel is muted (+m) - participants will be automatically voiced (+v) when joining the channel, but may be devoiced (-v) if they are disruptive.
+
+== Status announcements ==
+At the start of each meeting, participants should indicate their current status (wrt project issues) using the following keywords:
+;DONE: What he has done since last meeting
+;TODO: Items on his todo list
+;BLOCKED: Items he can't progress on, due to various factors (to be discussed)
+;DISCUSS: Item to be discussed during meeting
+
+When asked by the organiser, the participant should ideally paste these prepared lines into the channel. For example:
+
+ <FooMaster> joe: what's your status?
+ <joe> DONE: Implemented libkorv
+ <joe> DONE: Fixed BeOS port
+ <joe> TODO: Add more documentation
+ <joe> BLOCKED: Get new git repo for libkorv
+ <joe> DISCUSS: Whether to depend on bierlib or pilsnerlib
+
+[[Category:Policies and guidelines]]
