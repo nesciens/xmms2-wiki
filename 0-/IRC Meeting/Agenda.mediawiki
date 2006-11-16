@@ -11,8 +11,10 @@ Proposed agenda for next meeting
 * Other outstanding issues:
 ** Perl bindings
 ** Windows port
+** Waf implementation (danderson)
 * [[Generated IPC]]
-*[[Release:DrHouse]] finalization
+* [[Release:DrHouse]] finalization
+* DrI name
 
 = See also =
 * [[IRC Meeting/Agenda/Archived]]
