@@ -1,0 +1,29 @@
+= XMMS2Forge proposal =
+
+== Scope and purpose ==
+XMMS2Forge is a service to be provided for developers developing XMMS2 clients,
+XMMS2-related tools (for example, covert art managers, etc) or
+other XMMS2-related projects. XMMS2Forge is not for the hosting of general
+purpose projects.
+
+== Services ==
+XMMS2Forge will offer the following services:
+* A git repository, viewable and accessible via git.xmms.se
+* Limited user accounts and groups on xmms2.xmms.se (restricted to git-shell)
+* Project access on the XMMS2 bug tracker: bugs.xmms2.xmms.se
+* [Optional?] mailing list
+* [Optional?] Hosting of small web site about project
+
+== Responsibilities ==
+TODO
+
+== Tools ==
+TODO
+<anders>	Maybe we should start with just a simple script that adds git-only useraccount and sets up a tree correctly. And if that tree has a website/ directory it is automatically checked out into /var/www/xmms2forge/<projectname>   or something..
+<anders>	Oh, and adds a project to mantis and makes the user admin for that project too.
+
+== Notes ==
+* User account creation and git repo creation need to be separate: same user
+can belong to multiple projects (and have multiple repos).
+
+[[Category:Developer ideas]]
