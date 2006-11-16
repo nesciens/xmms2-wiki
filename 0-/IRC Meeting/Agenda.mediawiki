@@ -11,6 +11,7 @@ Proposed agenda for next meeting
 * Other outstanding issues:
 ** Perl bindings
 ** Windows port
+*[[Release:DrHouse]] finalization
 
 = See also =
 * [[IRC Meeting/Agenda/Archived]]
