@@ -8,6 +8,7 @@ Proposed agenda for next meeting
 * Possible XMMS2 & amarok collaboration (re: tru @ GSoC mentor summit)
 * Collaboration ideas (puzzles)
 * [[Collections]] in -devel
+* [[Generated IPC]]
 * Other outstanding issues:
 ** Perl bindings
 ** Windows port
