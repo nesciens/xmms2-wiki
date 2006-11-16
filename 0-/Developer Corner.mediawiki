@@ -37,6 +37,7 @@ Policies and guidelines about processes and services related to the project as w
 * [[XMMS2:Wikipolicy | Wiki usage guidelines]]
 * [[XMMS2:Packagerpolicy | Downstream Maintainer Guidelines]]
 * [[Roadmap]]
+* [[IRC Meeting]]
 
 === Clients ===
 * [[Generic properties policy]]
