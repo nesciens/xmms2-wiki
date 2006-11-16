@@ -1,3 +1,5 @@
+{{Newsitem| date=16 November 2006 WST (2006-11-16)| author=[[Sham Chukoury]]| title=It's meeting time!| text=Come join us on the 20th of November for our first [[IRC Meeting]]!}}
+
 {{Newsitem| date=26 September 2006 CLST (2006-09-26)| author=[[Tobias RundstrÃ¶m]]| title=*Bzz* *bzz* Don't try to adjust your radio, we are in control *bzz* - DrGonzo is released |text=This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed [[Release:DrGonzo|DrGonzo]] and includes a heap of new exciting bugs (a.k.a. features). This is the first release of XMMS2 that contains code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the full release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
 }}
 
