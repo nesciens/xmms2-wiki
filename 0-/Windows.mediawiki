@@ -1,6 +1,6 @@
 Some infos about the [[Windows/Mingw|Mingw compilation]]
 
-Here is a [http://exodus.xmms.se/~tru/screens/esperanza/esperanza_win32.png screenshot] of a real client running on Windows.
+Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot] of a real client running on Windows.
 
 Development files can be found [http://exodus.xmms.se/~nano/clientlib-win32.tar.gz here].
 
