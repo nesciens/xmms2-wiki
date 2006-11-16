@@ -11,6 +11,7 @@ Proposed agenda for next meeting
 * Other outstanding issues:
 ** Perl bindings
 ** Windows port
+* [[Generated IPC]]
 *[[Release:DrHouse]] finalization
 
 = See also =
