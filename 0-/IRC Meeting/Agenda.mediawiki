@@ -1,0 +1,18 @@
+Proposed agenda for next meeting
+
+= 2006-11-20 =
+
+* Graphics design contests
+* xmms2forge (http://xmms2.xmms.se/~eleusis/xmms2forge-proposal.txt)
+* [[Request for pull mailbot]]
+* Possible XMMS2 & amarok collaboration (re: tru @ GSoC mentor summit)
+* Collaboration ideas (puzzles)
+* [[Collections]] in -devel
+* Other outstanding issues:
+** Perl bindings
+** Windows port
+
+= See also =
+* [[IRC Meeting/Agenda/Archived]]
+
+[[Category:Policies and guidelines]]
