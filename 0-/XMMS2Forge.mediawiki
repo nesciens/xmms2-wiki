@@ -24,6 +24,6 @@ TODO
 
 == Notes ==
 * User account creation and git repo creation need to be separate: same user
-can belong to multiple projects (and have multiple repos).
+* can belong to multiple projects (and have multiple repos).
 
 [[Category:Developer ideas]]
