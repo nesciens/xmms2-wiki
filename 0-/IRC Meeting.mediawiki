@@ -13,7 +13,7 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 
 === Meeting ===
 # Participants join channel and wait for organiser to announce the start of the meeting.
-# Organiser asks each participant to announce their [[#Status_announcements status]].
+# Organiser asks each participant to announce their [[#Status_announcements | status]].
 # <code>for issue in issues: Organiser picks issue to discuss - participants discuss.</code>
 # Organiser may defer discussion of certain issues to a later date (e.g. next meeting) or to the mailing list if the discussion is taking too long, and there are other issues to address on the agenda.
 
