@@ -1,5 +1,57 @@
 == Latest quotes ==
 
+=== 2006-11-19 - XMMS2 is spyware ===
+ --> blackpenguin (n=nl@???) has joined #xmms2
+ <blackpenguin> hi. I'm shocked. xmms2 is spyware? who the fuck do you think you
+ are, that you can transmit data without asking first? I don't say anything
+ against data-collection - if you *ask* your users first.
+ <puzzles> blackpenguin: yeah, we're all terrible commercial spies
+ <puzzles> i mean it's not like we clearly show our source or anything
+ <puzzles> or document xmms2-et anywhere
+ <Eclipser> blackpenguin, so sue us
+ <puzzles> blackpenguin: and we definitely don't tell our users what kind of
+ data we send
+ <tilman> WHO THE FUCK DO YOU THINK WHO ARE
+ <tilman> ahahaha
+ <tilman> blackpenguin: i own your ass dude :P
+ <blackpenguin> you do. but that does not change the fact, that you should do
+ first, ask for agreement and transmit then. I cannot disable that "feature"
+ without sending a UDP-package first.
+ <Botje> blackpenguin: you downloaded a developer release. developer releases
+ have tools to ease debugging. xmms2-et is one of them.
+ <tilman> i NOW you played a EMM PEEE THREE last night
+ <tilman> omg
+ <tilman> omg omgomgg
+ * tilman so shocked
+ <tilman> :>
+ <tilman> blackpenguin: sure you can
+ <Eclipser> blackpenguin, kill the xmms2-et? :)
+ <tilman> just delete the stupid xmms2-et app before firing up xmms2d o_O
+ <puzzles> yeah, you really can disable it before you do anything
+ <puzzles> or just delete the symlink in your ~/.config/xmms2/startup.d
+ <theefer> blackpenguin: I think you made a typo, you meant to write â€œCould
+ you make xmms2-et optional or prompt the user before enabling it?â€.
+ <VxJasonxV> a new application uses the internet
+ <puzzles> and it won't be installed again on upgrade, either
+ <VxJasonxV> QUICK IT'S A SPAMMER
+ <VxJasonxV> KILL IT KILL IT
+ <Botje> just to be sure, you should nullroute the test server.
+ <Botje> and clean all ports it used with fire
+ <puzzles> really, this is all documented in the wiki anyway, so we _do_ tell
+ our users
+ <blackpenguin> puzzles: correct - the problem about this is, that this file
+ does not exist before I have started xmms2 - see where my problem is?
+ <Eclipser> uh
+ <VxJasonxV> xmms2 does not create the xmms2-et binary
+ <puzzles> ...
+ <VxJasonxV> xmms2-et is installed when everything else is
+ <VxJasonxV> you can delete it WELL before starting xmms2
+ <tilman> your problem is that like to go over  the top because of this one
+ <blackpenguin> I knew it before I came here what you would say about this.
+ well, I just wanted to let you know what I think about your behaviour. bye.
+ and have fun with your new contract partner google. bye.
+ <-- blackpenguin (n=nl@???) has left #xmms2
+
 === 2006-10-25 - Memory management and performance ===
  <danderson> I've also disabled garbage collection in the xmms2 build system, so the build is even faster
  <danderson> (though it does use a bit more space during the build, obviously)
