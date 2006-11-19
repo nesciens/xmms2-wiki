@@ -35,4 +35,4 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * give you [[Wikipedia:Superhuman_Strength|superhuman strength]].
 ** ... unless you compile it with -fuse-[[Wikipedia:Kryptonite|kryptonite]].
 * [[Wikipedia:Spy | spy]] on you.
-** ... except it sometimes tries to [[ET | call home]].
+** ... except when told to [[ET | call home]].
