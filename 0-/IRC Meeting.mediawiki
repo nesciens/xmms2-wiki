@@ -39,8 +39,7 @@ At the start of each meeting, participants should indicate their current status 
 When asked by the organiser, the participant should ideally paste these prepared lines into the channel. For example:
 
  <FooMaster> joe: what's your status?
- <joe> DONE: Implemented libkorv
- <joe> DONE: Fixed BeOS port
+ <joe> DONE: Implemented libkorv and fixed BeOS port
  <joe> TODO: Add more documentation
  <joe> BLOCKED: Get new git repo for libkorv
  <joe> DISCUSS: Whether to depend on bierlib or pilsnerlib
