@@ -1,6 +1,6 @@
 xmms2-et is a [http://git.xmms.se/?p=xmms2-stable.git;a=blob;f=src/clients/et/xmms2-et.c phone-home agent] ([[wikipedia:E.T. the Extra-Terrestrial |ET phone home]].. get it?), which provides the developers (and other interested parties) basic test coverage data. It sends an udp packet for each song played with information about which output- and xform plugin is used and what operating system xmms2 is running on. The information is sent anonymously and doesn't even contain the name of the song. This helps the developers to approximate how much testing different components in xmms2 get, which will help in making it a better music player. If you never have had xmms2 installed before this feature will be enabled automatically. If you already have xmms2 installed you can manually put the xmms2-et-launcher.sh script in .xmms2/startup.d (or simply remove that directory to get it fresh from the skel).
 
-If you for some reason don't want the phone home feature you can disable it by removing the link within ~/.config/xmms2/startup.d.
+If you for some reason don't want the phone home feature you can disable it by removing the link within ~/.config/xmms2/startup.d or by not compiling "et" (scons EXCLUDE="et").
 
 
 The result of xmms2-et can be seen at [http://test.xmms.se/ http://test.xmms.se/]
