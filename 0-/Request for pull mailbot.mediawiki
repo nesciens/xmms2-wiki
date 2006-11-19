@@ -13,6 +13,7 @@ DEV has done some (at least (s)he thinks so) nice commits in his tree. To integr
 ** check that all changeset comments have correct tagging (OTHER/BUG/FEATURE)
 ** merge / compilation test? [[User:TobiasRundstrÃ¶m|tru]]
 *** I've done some work on automating this with waf and parsing the results. [[User:Puzzles|puzzles]]
+*** See also [[BuildLog]]. [[User:Anders Gustafsson|Anders Gustafsson]]
 * If any of the tests failed DEV will get a reply informing him of the tests that failed.
 * If all tests passed a mail is sent to the mailinglist. This will include:
 ** Each commit's changelog and diffstat.
