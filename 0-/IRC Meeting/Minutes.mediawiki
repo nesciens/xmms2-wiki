@@ -33,6 +33,7 @@ Minutes of past meetings
 
 == Topics ==
 === Graphics Design Contest ===
+;Action: none
  <@puzzles> good, first point of our agenda is the graphics design contest
  <+theefer> When do we start it?
  <@puzzles> anders_: i believe this is you
@@ -42,6 +43,7 @@ Minutes of past meetings
  <@puzzles> no ACTION will be declared at this time, let's move on
 
 === Request for Pull Mailbot ===
+;Action: deferred
  <@puzzles> TOPIC: Request for Pull Mailbot
  <+tilman> OPINION: o_O wtf bbq
  <@puzzles> i've done a little work on this area by making a ruby wrapper around waf that parses the build configuration and status of each part of the build
@@ -64,6 +66,7 @@ Minutes of past meetings
  <@puzzles> i'm going to DEFER this topic as we have more important things to discuss
 
 === Collections ===
+;Action: merge after DrHouse
  <@puzzles> TOPIC: Collections in -devel
  <+anders_> puzzles: To be merged as soon as DrHouse is out.
  <@puzzles> theefer: anything to add?
@@ -91,6 +94,7 @@ Minutes of past meetings
  <+DraX> http://wiki.xmms2.xmms.se/index.php/Collections/Python
 
 === Generated IPC ===
+;Action: none
  <@puzzles> TOPIC: Generated IPC
  <@puzzles> anders_: you said you had some ideas you were tinkering with for this
  <+rafl> I think generated bindings will create some limitations (swig already tried to make the task of binding libraries work the same way for different languages, but it somehow failed). Will a binding developer stil have the freedom to manually code his bindings?
@@ -130,6 +134,7 @@ Minutes of past meetings
  <+anders_> And the design too.
 
 === Dr. House Finalization ===
+;Action: fix build of Java bindings on FreeBSD and Linux before release
  <@puzzles> TOPIC: DrHouse finalization
  <+dangertools> test1's javabindings don't build for eleusis and me due to DraX' last patch
  <@puzzles> anders_: you said we may have a TEST4 by the end of the week, is there anything else outstanding?
@@ -144,6 +149,7 @@ Minutes of past meetings
  <@puzzles> ok, let's save any more specific discussion for mantis
 
 === XMMS2Forge ===
+Action: research and implement
  <@puzzles> TOPIC: xmms2forge
  <@puzzles> i've made a ruby gitweb that's much easier to maintain than the one included in git
  <+rafl> I recently came across a software called CommitBit which might be handy to manage users/permissions/repositories for xmms2forge.
@@ -166,9 +172,11 @@ Minutes of past meetings
  <@puzzles> http://dan.chokola.com/images/misc/witty.png
 
 === XMMS2 & Amarok Collaboration ===
+;Action: deferred
  <@puzzles> i will DEFER xmms2 & amarok collaboration until the next meeting as tru is not here
 
 === Collaboration Ideas ===
+;Action: use the mailing list more
  <@puzzles> TOPIC: collaboration ideas
  <+theefer> meaning?
  <@puzzles> well, like this meeting
@@ -202,6 +210,7 @@ Minutes of past meetings
  <+anders_> Hey, there was actually patches mailed to the ml today :)
 
 === Other Outstanding Topics (Perl Bindings, Windows Port, and Waf Implementation) ===
+;Action: abstract waf plugins, work on waf integration for perl bindings, other bugfixes
  <@puzzles> ok, as this meeting has gone on for over an hour, i'm going to combine the last few topics into other outstanding topics
  <@puzzles> TOPIC: Other outstanding topics (DrI name/Perl bindings/Windows port/Waf implementation)
  <+rafl> Perl bindings are pending for someone to integrate them either into scons or waf. No need for discussion on that, I guess.
