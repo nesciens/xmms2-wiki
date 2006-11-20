@@ -26,7 +26,9 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 # Organiser summarises meeting (possibly with meeting minutes) - such a summary can be useful for planning subsequent meetings (e.g. new agenda items).
 
 === Post-meeting ===
-''haxhax''
+*coffee
+*donuts
+*code
 
 == Meeting channel rules and guidelines ==
 * The channel is muted (+m) - participants will be automatically voiced (+v) when joining the channel, but may be devoiced (-v) if they are disruptive.
