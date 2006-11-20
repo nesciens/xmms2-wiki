@@ -143,7 +143,7 @@ Minutes of past meetings
  <+tilman> 1253
  <@puzzles> ok, let's save any more specific discussion for mantis
 
-== XMMS2Forge ==
+=== XMMS2Forge ===
  <@puzzles> TOPIC: xmms2forge
  <@puzzles> i've made a ruby gitweb that's much easier to maintain than the one included in git
  <+rafl> I recently came across a software called CommitBit which might be handy to manage users/permissions/repositories for xmms2forge.
