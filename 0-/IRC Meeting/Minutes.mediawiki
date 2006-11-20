@@ -1,7 +1,38 @@
 Minutes of past meetings
 
 = 2006-11-20 =
-== Graphics Design Contest ==
+== Status ==
+ <+anders_> TODO: Look at getting xmms2 running on neuros OSD. BLOCKED: None. DISCUSS: Nothing. 
+ <+theefer> BLOCKED: Collections merged in -devel
+ <+theefer> TODO: Fix remaining FIXME's in collection code (details)
+ <+theefer> TODO: Code the C++ collection bindings
+ <+theefer> BLOCKED: C++ collection bindings, conceptual problem (need help from magic Ec++lipser)
+ <+tilman> TODO: nothing. BLOCKED: nothing. Discuss: nothing
+ <+nano-> same as tilman
+ <+rafl> DONE: Set up pkg-xmms2 for packaging xmms2 related stuff for Debian; only jlt and me currently; started to port speex plugin
+ <+rafl> TODO: Upload esperanza and xmms2-scrobbler to Debian Unstable; Include Perl bindings; finish speex plugin
+ <+rafl> BLOCKING: Debian NEW queue; waf migration
+ <+rafl> DISCUSS: Nothing
+ <+dangertools> DONE: bindings: java5, collections, cleanups
+ <+dangertools> TODO: review code
+ <+dangertools> BLOCKED: waiting for patch review
+ <+dangertools> DISCUSS: nothing
+ <@puzzles> DONE: userconfdir_get split, waf build automater and parser
+ <@puzzles> TODO: Windows port patch cleanup and commit, XMMS2Forge, and RFP Mailbot.
+ <@puzzles> BLOCKED: Win32 patch review and Waf status (for SCons patches).
+ <@puzzles> DISCUSS: Waf progress (DrI?), XMMS2Forge implementation, and RFP Mailbot Implementation.
+ <+DraX> DONE: Restarting of Insanity development with Eleusis
+ <+DraX> TODO: Test XMMS2 on FreeBSD 7 with libthr
+ <+DraX> BLOCKED: NetBSD threading issue that causes it to be unuseable
+ <+DraX> DISCUSS: Python Bindings for collections
+ <+danderson> TODO: add wscripts to build the bindings
+ <+danderson> TODO: Test the whole system in win32 and make necessary changes
+ <+danderson> DISCUSS: does waf look better than scons, are we going to move xmms2 to using it?
+ <+danderson> TODO: work on the main wscript's UI, add various useful commandline options to configure the build
+ <+danderson> TODO: make the waf bootstrap script put the waf module in ., not in ~
+
+== Topics ==
+=== Graphics Design Contest ===
  <@puzzles> good, first point of our agenda is the graphics design contest
  <+theefer> When do we start it?
  <@puzzles> anders_: i believe this is you
@@ -10,7 +41,7 @@ Minutes of past meetings
  <+anders_> No ETA.
  <@puzzles> no ACTION will be declared at this time, let's move on
 
-== Request for Pull Mailbot ==
+=== Request for Pull Mailbot ===
  <@puzzles> TOPIC: Request for Pull Mailbot
  <+tilman> OPINION: o_O wtf bbq
  <@puzzles> i've done a little work on this area by making a ruby wrapper around waf that parses the build configuration and status of each part of the build
@@ -32,7 +63,7 @@ Minutes of past meetings
  <+fvw> put a quotum on compile failures? :)
  <@puzzles> i'm going to DEFER this topic as we have more important things to discuss
 
-== Collections ==
+=== Collections ===
  <@puzzles> TOPIC: Collections in -devel
  <+anders_> puzzles: To be merged as soon as DrHouse is out.
  <@puzzles> theefer: anything to add?
@@ -59,7 +90,7 @@ Minutes of past meetings
  <+DraX> it's on the wiki
  <+DraX> http://wiki.xmms2.xmms.se/index.php/Collections/Python
 
-== Generated IPC ==
+=== Generated IPC ===
  <@puzzles> TOPIC: Generated IPC
  <@puzzles> anders_: you said you had some ideas you were tinkering with for this
  <+rafl> I think generated bindings will create some limitations (swig already tried to make the task of binding libraries work the same way for different languages, but it somehow failed). Will a binding developer stil have the freedom to manually code his bindings?
@@ -98,7 +129,7 @@ Minutes of past meetings
  <@puzzles> so basically the whole implementation is up in the air
  <+anders_> And the design too.
 
-== Dr. House Finalization ==
+=== Dr. House Finalization ===
  <@puzzles> TOPIC: DrHouse finalization
  <+dangertools> test1's javabindings don't build for eleusis and me due to DraX' last patch
  <@puzzles> anders_: you said we may have a TEST4 by the end of the week, is there anything else outstanding?
@@ -134,10 +165,10 @@ Minutes of past meetings
  <+DraX> I'm in the process of rewriting my GitStore class
  <@puzzles> http://dan.chokola.com/images/misc/witty.png
 
-== XMMS2 & Amarok Collaboration ==
+=== XMMS2 & Amarok Collaboration ===
  <@puzzles> i will DEFER xmms2 & amarok collaboration until the next meeting as tru is not here
 
-== Collaboration Ideas ==
+=== Collaboration Ideas ===
  <@puzzles> TOPIC: collaboration ideas
  <+theefer> meaning?
  <@puzzles> well, like this meeting
@@ -170,7 +201,7 @@ Minutes of past meetings
  <+anders_> I'll just start posting more to the ml..
  <+anders_> Hey, there was actually patches mailed to the ml today :)
 
-== Other Outstanding Topics (Perl Bindings, Windows Port, and Waf Implementation) ==
+=== Other Outstanding Topics (Perl Bindings, Windows Port, and Waf Implementation) ===
  <@puzzles> ok, as this meeting has gone on for over an hour, i'm going to combine the last few topics into other outstanding topics
  <@puzzles> TOPIC: Other outstanding topics (DrI name/Perl bindings/Windows port/Waf implementation)
  <+rafl> Perl bindings are pending for someone to integrate them either into scons or waf. No need for discussion on that, I guess.
