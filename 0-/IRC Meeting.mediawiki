@@ -4,6 +4,7 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 ;Location: [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode
 ;Time: 19:30 UTC, Mondays (current)
 ;Length: Approx. 1 hour (estimated)
+;Schedule: [http://www.google.com/calendar/embed?src=9lnuvubqkdssdmqtvvk60bl0nk%40group.calendar.google.com Google Calendar]
 ;Organiser (chairperson): [[Dan Chokola]]
 ;Agenda: [[IRC Meeting/Agenda]]
 
