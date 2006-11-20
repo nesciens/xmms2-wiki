@@ -1,3 +1,5 @@
+Minutes of past meetings
+
 = 2006-11-20 =
 == Graphics Design Contest ==
  <@puzzles> good, first point of our agenda is the graphics design contest
@@ -209,3 +211,6 @@
  <+danderson> puzzles: patches welcome ;)
  <@puzzles> all right, i'm going to need to get a little better with waf first, but i'll go for it :)
  <@puzzles> ok, this meeting has already gone on 90 minutes, i'm declaring it adjourned
+
+= See also =
+* [[IRC Meeting/Minutes/Archived]]
