@@ -233,8 +233,10 @@ Minutes of past meetings
 === XMMS2Forge ===
 Action: research and implement
  <@puzzles> TOPIC: xmms2forge
- <@puzzles> i've made a ruby gitweb that's much easier to maintain than the one included in git
- <+rafl> I recently came across a software called CommitBit which might be handy to manage users/permissions/repositories for xmms2forge.
+ <@puzzles> i've made a ruby gitweb that's much easier to maintain than the one
+ included in git
+ <+rafl> I recently came across a software called CommitBit which might be handy
+ to manage users/permissions/repositories for xmms2forge.
  <@puzzles> and that automated build system might have use here, too
  <+DraX> we might want to look at repo.or.cz
  <+DraX> he has support scripts and the likes for this exact sort of thing
@@ -246,10 +248,12 @@ Action: research and implement
  <+DraX> tilman: it's one perl file
  <+rafl> It's indeed a giant pile of crap.
  <+tilman> ah, i thought you were talking about maintaining the setup
- <@puzzles> tilman: what drax said, plus the configuraton is terrible, and linking to .git directories is a pain
+ <@puzzles> tilman: what drax said, plus the configuraton is terrible, and
+ linking to .git directories is a pain
  <+DraX> I also have the beginnings of a gitweb rewrite :P
  <@puzzles> http://home.chokola.com:8888/test/wit/
- <+theefer> puzzles: if you think you can reproduce the original gitweb..  (I think there were one or two other ones btw)
+ <+theefer> puzzles: if you think you can reproduce the original gitweb..  (I
+ think there were one or two other ones btw)
  <+DraX> I'm in the process of rewriting my GitStore class
  <@puzzles> http://dan.chokola.com/images/misc/witty.png
 
