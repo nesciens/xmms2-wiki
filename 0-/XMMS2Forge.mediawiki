@@ -27,5 +27,6 @@ TODO
 == Notes ==
 * User account creation and git repo creation need to be separate: same user
 * can belong to multiple projects (and have multiple repos).
+* rafl mentioned CommitBit - http://code.bestpractical.com/project/CommitBit
 
 [[Category:Developer ideas]]
