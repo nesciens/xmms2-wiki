@@ -109,12 +109,17 @@ Minutes of past meetings
  <+rafl> On the other hand lazy developers might just push their patches
  uncompiled as it gets compiled at some point anyway. That'll very likely not
  increase quality.
+ <+theefer> will they really? spank them!
  <@puzzles> this also parses the configuration options from waf, so the
  intersection of enabled plugins across build systems could be used to
  determine if the entire system has built properly
  <+fvw> put a quotum on compile failures? :)
  <@puzzles> i'm going to DEFER this topic as we have more important things to
  discuss
+ <+rafl> theefer: I don't know if it really will in the case of xmms2 where the
+ number of active developers is quite low. But there have been experiments
+ within Debian to compile anything on some build daemons without requiring the
+ developer to compile it himself. Those failed.
 
 === Collections ===
 ;Action: merge after DrHouse
