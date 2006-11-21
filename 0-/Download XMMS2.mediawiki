@@ -24,7 +24,7 @@ Should work fine for Tiger at least.
 There are now official XMMS2 Debian packages maintained by Florian Ragwitz, in Debian Unstable and Testing. Simply <code>apt-get update</code> and <code>apt-cache search xmms2</code>.
 
 ==== Unofficial Packages ====
-These packages are slightly outdated it's recommended to use the official packages where possible.
+These packages are slightly outdated - it's recommended to use the official packages where possible.
 ; Sarge / Stable
  deb http://exodus.xmms.se/debian stable main
 
@@ -45,8 +45,12 @@ Packages built specifically for Dapper are available:
 
 === Fedora ===
 
-Binary packages of XMMS2, including gxmms2, for Fedora Core 5 are available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 http://www.linuxfans.org]. 
-Binary packages for Fedora Core 6 are available at [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 http://www.linuxfans.org]. ''These packages are based on git tree, they do not include the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility, all the dependencies can be find at livna, freshrpms repos.''
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
+
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 XMMS2 - Fedora Core 5]
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 XMMS2 - Fedora Core 6]
+
+''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
 
 == Ports ==
 
