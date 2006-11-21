@@ -161,27 +161,38 @@ Minutes of past meetings
 ;Action: none
  <@puzzles> TOPIC: Generated IPC
  <@puzzles> anders_: you said you had some ideas you were tinkering with for this
- <+rafl> I think generated bindings will create some limitations (swig already tried to make the task of binding libraries work the same way for different languages, but it somehow failed). Will a binding developer stil have the freedom to manually code his bindings?
+ <+rafl> I think generated bindings will create some limitations (swig already
+ tried to make the task of binding libraries work the same way for different
+ languages, but it somehow failed). Will a binding developer stil have the
+ freedom to manually code his bindings?
  <+tilman> of course
  <+anders_> rafl: Yes.
  <+tilman> doing dumb 1:1 translations will only work for libxmmsclient
  <+rafl> Is there a working implementation of genipc yet?
  <+nano-> ~andersg/ on exodus.
- <@puzzles> in the same vein of rafl's question, will the genipc method of building bindings allow you to write code only for specific methods?
+ <@puzzles> in the same vein of rafl's question, will the genipc method of
+ building bindings allow you to write code only for specific methods?
  <+anders_> puzzles: Yes, I've been thinkering in lots of directions.
  <+anders_> genipc is mostly about automating the boring work.
- <+tilman> why did noone bother mailing xmms2-devel about the fact that anders_ will implement that stuff in python btw?
- <+tilman> it's pretty cool we had a discussion about xslt vs python, but noone really cared about it in the end
+ <+tilman> why did noone bother mailing xmms2-devel about the fact that anders_
+ will implement that stuff in python btw?
+ <+tilman> it's pretty cool we had a discussion about xslt vs python, but noone
+ really cared about it in the end
  <+dangertools> will it replace all current bindings or will still some stay as is
  <@puzzles> i second tilman :)
  <+theefer> tilman: to avoid a long argument with no issue, I guess.
  <+nano-> tilman: But you too felt the fear after some hours of xslt?
  <+anders_> To get some proof of concept..
  <+tilman> i had proof of concept too
- <+theefer> I always had the feeling that the decision would go the way of whoever who care to implement it eventually..
+ <+theefer> I always had the feeling that the decision would go the way of
+ whoever who care to implement it eventually..
  <+nano-> http://exodus.xmms.se/~nano/test.xsl.txt
- <+rafl> When converting some c data structure to a data structure of the language one is binding, will the conversion take place isolated (ignoring all other arguments to that function) or will one be able to access the other arguments while converting to some other structure for the target language?
- <@puzzles> similarly, will GenIPC allow for handling of more complex datatypes in their languages? (e.g. lists/arrays)
+ <+rafl> When converting some c data structure to a data structure of the
+ language one is binding, will the conversion take place isolated (ignoring all
+ other arguments to that function) or will one be able to access the other
+ arguments while converting to some other structure for the target language?
+ <@puzzles> similarly, will GenIPC allow for handling of more complex datatypes
+ in their languages? (e.g. lists/arrays)
  <+nano-> puzzles: Yeh, there is a bug for adding iterators to the dsts.
  <+dangertools> some eta maybe?
  <@puzzles> and do you have any ETA?
@@ -190,7 +201,8 @@ Minutes of past meetings
  <+anders_> Not really.
  <@puzzles> want anyone to help with implementation?
  <+DraX> anders_: can tilman work on it like he was before? (if he wants)
-* rafl is interested, but would need to be instructed as he didn't mess around with genipc yet.
+ * rafl is interested, but would need to be instructed as he didn't mess around
+ with genipc yet.
  <@puzzles> likewise
  <+anders_> I'm mostly tinkering around.
  <+anders_> To figure out how it should work.
