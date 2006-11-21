@@ -211,15 +211,21 @@ Minutes of past meetings
 
 === Dr. House Finalization ===
 ;Action: fix build of Java bindings on FreeBSD and Linux before release
+;Notes:
+* <mantis>1253</mantis>
  <@puzzles> TOPIC: DrHouse finalization
- <+dangertools> test1's javabindings don't build for eleusis and me due to DraX' last patch
- <@puzzles> anders_: you said we may have a TEST4 by the end of the week, is there anything else outstanding?
+ <+dangertools> test1's javabindings don't build for eleusis and me due to
+ DraX' last patch
+ <@puzzles> anders_: you said we may have a TEST4 by the end of the week, is
+ there anything else outstanding?
  <+anders_> There are some minor bugs. I forsee a TEST2 later this week.
  <+DraX> java bindings don't build for me without the patch :/
- <+dangertools> DraX: bad thing is that this doesn't happen on every dist so we cannot say #ifdef linux or something
+ <+dangertools> DraX: bad thing is that this doesn't happen on every dist so we
+ cannot say #ifdef linux or something
  <@puzzles> course of action?
  <+dangertools> DraX: we have to find some solution to this asap
- <@puzzles> ACTION: Fix build of Java bindings on FreeBSD and Linux before release
+ <@puzzles> ACTION: Fix build of Java bindings on FreeBSD and Linux before
+ release
  <+tilman> what bug # is this?
  <+tilman> 1253
  <@puzzles> ok, let's save any more specific discussion for mantis
