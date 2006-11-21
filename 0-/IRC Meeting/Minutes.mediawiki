@@ -268,30 +268,42 @@ Action: research and implement
  <@puzzles> well, like this meeting
  <@puzzles> we have a problem with timezones here
  <+DraX> yeah i missed half meeting because I was in class
- <@puzzles> developers come by irc and the mailinglist and mantis and we manage to get a lot done, but it's not often that all the developers involved in a decision are present at the same time to discuss them
+ <@puzzles> developers come by irc and the mailinglist and mantis and we manage
+ to get a lot done, but it's not often that all the developers involved in a
+ decision are present at the same time to discuss them
  <+dangertools> yeah, classes are bad
  <+dangertools> i came back from class 10min before the meeting
- <@puzzles> i had one idea i was thinking about today--we could extend skitidet to take down certain informal issues
- <+theefer> to me the real issue is all the team knowledge that never gets public enough for the users to hear about it.
- <@puzzles> like an informal mantis, we could say !issue win32 port needs a userconfdir_get function
- <@puzzles> then someone could stop into the channel and say !issues and get a list of (say 5) of the latest issues
+ <@puzzles> i had one idea i was thinking about today--we could extend skitidet
+ to take down certain informal issues
+ <+theefer> to me the real issue is all the team knowledge that never gets
+ public enough for the users to hear about it.
+ <@puzzles> like an informal mantis, we could say !issue win32 port needs a
+ userconfdir_get function
+ <@puzzles> then someone could stop into the channel and say !issues and get a
+ list of (say 5) of the latest issues
  <+anders_> Why not use mantis?
- <+theefer> (I'm precisely doing a course entitled Computer-Supported Collaborative Work :-))
- <@puzzles> anders_: mantis is very formal, you can't discuss implementation ideas or tinkerings on it
- <@puzzles> and the wiki is bad because you need to have a formal idea outlined and anyone interested needs to know the link to it :)
+ <+theefer> (I'm precisely doing a course entitled Computer-Supported
+ Collaborative Work :-))
+ <@puzzles> anders_: mantis is very formal, you can't discuss implementation
+ ideas or tinkerings on it
+ <@puzzles> and the wiki is bad because you need to have a formal idea outlined
+ and anyone interested needs to know the link to it :)
  <+anders_> Whatabout the mailing list?
- <@puzzles> the mailing list i don't think is used as much as it should be, as tilman pointed out, no one said anything about the genipc implementation
+ <@puzzles> the mailing list i don't think is used as much as it should be, as
+ tilman pointed out, no one said anything about the genipc implementation
  <+anders_> irc with memory is exactly what the mailinglist is :)
  <+dangertools> well, but it's not as nice to use as irc is
  <@puzzles> mailing list is like IRC that barely gets used
  <+fvw> a bulletin board/web forum?
  <@puzzles> it's being used to announce releases and huge updates
- <+dangertools> fvw: well, the web forum thing is a thought but you can use mantis in some similar way
+ <+dangertools> fvw: well, the web forum thing is a thought but you can use
+ mantis in some similar way
  <+rafl> I think it is.
  <+anders_> forum is the worst crap.
  <+fvw> I prefer mailinglists myself too, but if people want something different...
  <+rafl> a) see anders; b) We already have two web-based thingies for discussion.
- <+fvw> there are some reasonable forums out there. If you do something gmane.org-like you can even get forum and mailinglist in one.
+ <+fvw> there are some reasonable forums out there. If you do something
+ gmane.org-like you can even get forum and mailinglist in one.
  <+anders_> I'll just start posting more to the ml..
  <+anders_> Hey, there was actually patches mailed to the ml today :)
 
