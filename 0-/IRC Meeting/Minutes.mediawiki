@@ -309,46 +309,75 @@ Action: research and implement
 
 === Other Outstanding Topics (Perl Bindings, Windows Port, and Waf Implementation) ===
 ;Action: abstract waf plugins, work on waf integration for perl bindings, other bugfixes
- <@puzzles> ok, as this meeting has gone on for over an hour, i'm going to combine the last few topics into other outstanding topics
- <@puzzles> TOPIC: Other outstanding topics (DrI name/Perl bindings/Windows port/Waf implementation)
- <+rafl> Perl bindings are pending for someone to integrate them either into scons or waf. No need for discussion on that, I guess.
+ <@puzzles> ok, as this meeting has gone on for over an hour, i'm going to
+ combine the last few topics into other outstanding topics
+ <@puzzles> TOPIC: Other outstanding topics (DrI name/Perl bindings/Windows
+ port/Waf implementation)
+ <+rafl> Perl bindings are pending for someone to integrate them either into
+ scons or waf. No need for discussion on that, I guess.
  <@puzzles> rafl: you won't be working on integration yourself?
- <+rafl> puzzles: I asked for input on that several times. No one really replied. I did some work (configuring and building works, installation don't), but I'm somewhat stuck.
+ <+rafl> puzzles: I asked for input on that several times. No one really
+ replied. I did some work (configuring and building works, installation don't),
+ but I'm somewhat stuck.
  <+danderson> right now the waf stuff is on my branch. What about its future? :)
- <@puzzles> danderson: waf has worked great for me, only real problem i've noticed is plugins get installed to the wrong place
- <+danderson> rafl: as noted above, actually getting complete code coverage of xmms2 and its bindings is still a todo, but a worthy one.
+ <@puzzles> danderson: waf has worked great for me, only real problem i've
+ noticed is plugins get installed to the wrong place
+ <+danderson> rafl: as noted above, actually getting complete code coverage of
+ xmms2 and its bindings is still a todo, but a worthy one.
  <@puzzles> and i know i can't wait to move to waf, and i think tru feels the same
  <+nano-> Also, plugins code need to be abstracted.
- <@puzzles> danderson: i've also noticed there's no way to exclude plugins, or atleast it seems
- <+danderson> I have a pending change somewhere that adds a --with-plugins flag to the configure command, to specifically state which plugins you want
- <+anders_> Waf looks nice; and I bet it can be made look nicer. By making the per-plugin files higher levelel.
- <+danderson> puzzles: that's what I mean by that last todo. The wscript needs more ways to control the build.
- <+danderson> puzzles: waf can totally do this already. It's a matter of implementation.
- <+rafl> danderson: How about something to build python and/or ruby bindings for more than one version of that interpreter in one build? Can waf do that?
- <+danderson> anders_: agreed. They are verbose right now because I was still learning my waf-fu.
- <@puzzles> danderson: in the vein of anders' statement, can configuration options be checked once and only once (i.e. if two plugins check the same lib, will it be checked twice?)
+ <@puzzles> danderson: i've also noticed there's no way to exclude plugins, or
+ atleast it seems
+ <+danderson> I have a pending change somewhere that adds a --with-plugins flag
+ to the configure command, to specifically state which plugins you want
+ <+anders_> Waf looks nice; and I bet it can be made look nicer. By making the
+ per-plugin files higher levelel.
+ <+danderson> puzzles: that's what I mean by that last todo. The wscript needs
+ more ways to control the build.
+ <+danderson> puzzles: waf can totally do this already. It's a matter of
+ implementation.
+ <+rafl> danderson: How about something to build python and/or ruby bindings for
+ more than one version of that interpreter in one build? Can waf do that?
+ <+danderson> anders_: agreed. They are verbose right now because I was still
+ learning my waf-fu.
+ <@puzzles> danderson: in the vein of anders' statement, can configuration
+ options be checked once and only once (i.e. if two plugins check the same lib,
+ will it be checked twice?)
  <+danderson> that code should now be abstracted to a module in some way.
- <+nano-> danderson: It would be nice to have a group of flags that get pulled in for the clientlib and everything that links to it.
- <+danderson> puzzles: I believe that is already the case. If l2 tries to check for the same lib as l1, it'll get the cached result back.
+ <+nano-> danderson: It would be nice to have a group of flags that get pulled
+ in for the clientlib and everything that links to it.
+ <+danderson> puzzles: I believe that is already the case. If l2 tries to check
+ for the same lib as l1, it'll get the cached result back.
  <+DraX> danderson: I had some issues with setting WAF_HOME to .
  <+DraX> the firs ttime i run waf configure it doesn't work
- <@puzzles> this is the wrapper i made around waf to check build stuffs: http://dan.chokola.com/images/misc/buildtest.png
- <@puzzles> when you click build it does waf distclean, waf configure, waf build, waf install
+ <@puzzles> this is the wrapper i made around waf to check build stuffs:
+ http://dan.chokola.com/images/misc/buildtest.png
+ <@puzzles> when you click build it does waf distclean, waf configure, waf build,
+ waf install
  <+danderson> DraX: this is a tweak to the master bootstrapping script. You're right
  <+danderson> TODO: make the waf bootstrap script put the waf module in ., not in ~
- <@puzzles> nano-: what do we have left for the windows port? are we just waiting on waf?
- <+danderson> just as a note: I'm happy to integrate changes needed to make waf build xmms2 properly on win32, but I don't have a win32 box to actually make the changes.
- <@puzzles> i know i can handle that with a little training in waf, and nano-  will probably be willing to help
- <+nano-> puzzles: waf needs better handling of plugins unless we add stupid win32 stuff to each and every plugin.
- <+nano-> puzzles: it also needs to split xmms2d into main.c->xmms2d therest->libxmms2d.a/dll
+ <@puzzles> nano-: what do we have left for the windows port? are we just
+ waiting on waf?
+ <+danderson> just as a note: I'm happy to integrate changes needed to make waf
+ build xmms2 properly on win32, but I don't have a win32 box to actually make
+ the changes.
+ <@puzzles> i know i can handle that with a little training in waf, and nano- 
+ will probably be willing to help
+ <+nano-> puzzles: waf needs better handling of plugins unless we add stupid
+ win32 stuff to each and every plugin.
+ <+nano-> puzzles: it also needs to split xmms2d into main.c->xmms2d
+ therest->libxmms2d.a/dll
  <+nano-> and it would be very nice with unified flags to clientlib*
  <@puzzles> danderson: there's something you can act upon now
  <+nano-> oh, sorry, meant main.c+unixsocket.c->xmms2d therest->libxmms2d.a/dll
- <@puzzles> danderson: waf should build everythin in src/xmms except main.c as libxmms2d.a on linux and link it to main.c
+ <@puzzles> danderson: waf should build everythin in src/xmms except main.c as
+ libxmms2d.a on linux and link it to main.c
  <+nano-> except main.c and unixsignal.c
  <+danderson> puzzles: patches welcome ;)
- <@puzzles> all right, i'm going to need to get a little better with waf first, but i'll go for it :)
- <@puzzles> ok, this meeting has already gone on 90 minutes, i'm declaring it adjourned
+ <@puzzles> all right, i'm going to need to get a little better with waf first,
+ but i'll go for it :)
+ <@puzzles> ok, this meeting has already gone on 90 minutes, i'm declaring it
+ adjourned
 
 = See also =
 * [[IRC Meeting/Minutes/Archived]]
