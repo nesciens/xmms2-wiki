@@ -257,7 +257,7 @@ Action: research and implement
  <+DraX> I'm in the process of rewriting my GitStore class
  <@puzzles> http://dan.chokola.com/images/misc/witty.png
 
-=== XMMS2 & Amarok Collaboration ===
+=== XMMS2 & AmaroK Collaboration ===
 ;Action: deferred
  <@puzzles> i will DEFER xmms2 & amarok collaboration until the next meeting as tru is not here
 
