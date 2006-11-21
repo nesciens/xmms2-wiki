@@ -48,4 +48,10 @@ When asked by the organiser, the participant should ideally paste these prepared
  <joe> BLOCKED: Get new git repo for libkorv
  <joe> DISCUSS: Whether to depend on bierlib or pilsnerlib
 
+Please note that multiple items should be on the same line. For example:
+ <joe> DONE: Implemented libkorv
+ <joe> DONE: fixed BeOS port 
+should be written as:
+ <joe> DONE: Implemented libkorv and fixed BeOS port
+
 [[Category:Policies and guidelines]]
