@@ -123,25 +123,33 @@ Minutes of past meetings
 
 === Collections ===
 ;Action: merge after DrHouse
+;Notes
+* genipc: [[Generated IPC]], also see next section
+* Python bindings, re: [[Collections]]: [[Collections/Python]]
  <@puzzles> TOPIC: Collections in -devel
  <+anders_> puzzles: To be merged as soon as DrHouse is out.
  <@puzzles> theefer: anything to add?
- <@puzzles> what will happen to the language bindings once collections are pushed? will they become unusable until genipc or will developers need to update them until genipc is ready for merge?
+ <@puzzles> what will happen to the language bindings once collections are
+ pushed? will they become unusable until genipc or will developers need to
+ update them until genipc is ready for merge?
  <+dangertools> only pythong and ruby are left, right?
  <+dangertools> the other bindings should already be collections-ready imho
  <+nano-> No, C++ bindings are still not finished.
  <+theefer> puzzles: nothing to add.
  <+theefer> puzzles: bindings will die
- <+theefer> depends when genipc is ready, too. But bindings coder will need to code some stuff in any case (e.g. coll structure)
+ <+theefer> depends when genipc is ready, too. But bindings coder will need to
+ code some stuff in any case (e.g. coll structure)
  <+tilman> ruby bindings will be broken for a couple of weeks
  <@puzzles> is anyone acting on the python bindings?
  <+theefer> DraX was IIRC
- <+rafl> dangertools: There're the perl bindings. But they're not integrated with the build system anyway.
+ <+rafl> dangertools: There're the perl bindings. But they're not integrated
+ with the build system anyway.
  <@puzzles> ACTION: Merge after DrHouse
  <+rafl> I can remember danderson to work on python bindings+collections
  <+theefer> so there /is/ so tedious updating work to be done
  <+theefer> yes he did post ideas
- <@puzzles> DraX: we just discussed the python bindings for collections, do you have anything to add?
+ <@puzzles> DraX: we just discussed the python bindings for collections, do you
+ have anything to add?
  <+DraX> just that i tihnk we should go
  <+DraX> with anders last option
  <+DraX> and that it gives me nightmares, so help would be appreciated
