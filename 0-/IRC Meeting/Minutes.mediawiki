@@ -2,51 +2,95 @@ Minutes of past meetings
 
 = 2006-11-20 =
 == Status ==
- <+anders_> TODO: Look at getting xmms2 running on neuros OSD. BLOCKED: None. DISCUSS: Nothing. 
- <+theefer> BLOCKED: Collections merged in -devel
- <+theefer> TODO: Fix remaining FIXME's in collection code (details)
- <+theefer> TODO: Code the C++ collection bindings
- <+theefer> BLOCKED: C++ collection bindings, conceptual problem (need help from magic Ec++lipser)
- <+tilman> TODO: nothing. BLOCKED: nothing. Discuss: nothing
- <+nano-> same as tilman
- <+rafl> DONE: Set up pkg-xmms2 for packaging xmms2 related stuff for Debian; only jlt and me currently; started to port speex plugin
- <+rafl> TODO: Upload esperanza and xmms2-scrobbler to Debian Unstable; Include Perl bindings; finish speex plugin
- <+rafl> BLOCKING: Debian NEW queue; waf migration
- <+rafl> DISCUSS: Nothing
- <+dangertools> DONE: bindings: java5, collections, cleanups
- <+dangertools> TODO: review code
- <+dangertools> BLOCKED: waiting for patch review
- <+dangertools> DISCUSS: nothing
- <@puzzles> DONE: userconfdir_get split, waf build automater and parser
- <@puzzles> TODO: Windows port patch cleanup and commit, XMMS2Forge, and RFP Mailbot.
- <@puzzles> BLOCKED: Win32 patch review and Waf status (for SCons patches).
- <@puzzles> DISCUSS: Waf progress (DrI?), XMMS2Forge implementation, and RFP Mailbot Implementation.
- <+DraX> DONE: Restarting of Insanity development with Eleusis
- <+DraX> TODO: Test XMMS2 on FreeBSD 7 with libthr
- <+DraX> BLOCKED: NetBSD threading issue that causes it to be unuseable
- <+DraX> DISCUSS: Python Bindings for collections
- <+danderson> TODO: add wscripts to build the bindings
- <+danderson> TODO: Test the whole system in win32 and make necessary changes
- <+danderson> DISCUSS: does waf look better than scons, are we going to move xmms2 to using it?
- <+danderson> TODO: work on the main wscript's UI, add various useful commandline options to configure the build
- <+danderson> TODO: make the waf bootstrap script put the waf module in ., not in ~
+;[[User:Anders Gustafsson | anders]]
+* TODO: Look at getting xmms2 running on neuros OSD.
+
+;[[SÃ©bastien Cevey | theefer]]
+* TODO
+** Fix remaining FIXME's in [[Collections | collection]] code (details)
+** Code the C++ collection bindings
+* BLOCKED
+** Collections merged in -devel
+** C++ collection bindings, conceptual problem (need help from magic Ec++lipser)
+
+;[[Tilman Sauerbeck | tilman]]
+''Nothing to report''
+
+;[[Daniel Svensson | nano]]
+''Nothing to report''
+
+;[[Florian Ragwitz | rafl]]
+* DONE
+** Set up pkg-xmms2 for packaging xmms2 related stuff for Debian; only jlt and me currently
+** started to port speex plugin
+* TODO
+** Upload esperanza and xmms2-scrobbler to Debian Unstable
+** Include Perl bindings
+** finish speex plugin
+* BLOCKED
+** Debian NEW queue
+** [[waf]] migration
+
+;[[Georg Schild | dangertools]]
+* DONE: bindings: java5, collections, cleanups
+* TODO: review code
+* BLOCKED: waiting for patch review
+
+;[[Daniel Chokola | puzzles]]
+* DONE
+** userconfdir_get split
+** [[waf]] build automater and parser
+* TODO
+** Windows port patch cleanup and commit
+** [[XMMS2Forge]]
+** [[Request for pull mailbot | RFP Mailbot]]
+* BLOCKED
+** Win32 patch review
+** Waf status (for SCons patches)
+* DISCUSS
+** Waf progress (DrI?)
+** XMMS2Forge implementation
+** RFP Mailbot Implementation
+
+;[[Alexander Botero-Lowry | DraX]]
+* DONE: Restarting of Insanity development with Eleusis
+* TODO: Test XMMS2 on FreeBSD 7 with libthr
+* BLOCKED: NetBSD threading issue that causes it to be unuseable
+* DISCUSS: Python Bindings for collections
+
+;[[David Anderson | danderson]]
+* TODO
+** add wscripts to build the bindings
+** Test the whole system in win32 and make necessary changes
+** work on the main wscript's UI, add various useful commandline options to configure the build
+** make the waf bootstrap script put the waf module in ., not in ~
+* DISCUSS
+** does waf look better than scons, are we going to move xmms2 to using it?
 
 == Topics ==
 === Graphics Design Contest ===
 ;Action: none
  <@puzzles> good, first point of our agenda is the graphics design contest
  <+theefer> When do we start it?
+ <+theefer> (Christmas can be a tricky period, both ways)
  <@puzzles> anders_: i believe this is you
  <+anders_> We are waiting for $$$
  <+anders_> From google.
  <+anders_> No ETA.
+ <+anders_> So imho discussion can be slow (ie continue on wiki)
+ <+theefer> are we otherwise ready?  did we settle on a prize?
+ <+tilman> it's been like 2-3 months
+ <+anders_> tilman: It was my mistake too.
+ <+anders_> tilman: I got a check that I had to return because it couldn't be cleared.
+ <+tilman> aha
  <@puzzles> no ACTION will be declared at this time, let's move on
 
 === Request for Pull Mailbot ===
 ;Action: deferred
  <@puzzles> TOPIC: Request for Pull Mailbot
  <+tilman> OPINION: o_O wtf bbq
- <@puzzles> i've done a little work on this area by making a ruby wrapper around waf that parses the build configuration and status of each part of the build
+ <@puzzles> i've done a little work on this area by making a ruby wrapper around
+ waf that parses the build configuration and status of each part of the build
  <@puzzles> i've started with an AJAX frontend to the script, too
  <+rafl> Sounds like a valueable idea. puzzles++
  <+anders_> AJAX?
@@ -57,13 +101,20 @@ Minutes of past meetings
  <+fvw> sourceforge has a number of test machines open to the public don't they?
  <+nano-> sounds like a cool DoS for exodus ;)
  <+anders_> puzzles: This all sounds like a separate thing that the mailbot..
- <@puzzles> nano-: my plan for implementation was to distribute the build over a number of donatest systems
- <@puzzles> anders_: the web frontend might be, but automating the build should make it easy to test new patches
+ <@puzzles> nano-: my plan for implementation was to distribute the build over a
+ number of donatest systems
+ <@puzzles> anders_: the web frontend might be, but automating the build should
+ make it easy to test new patches
  <+anders_> Slightly what is available at http://wiki.xmms2.xmms.se/index.php/BuildLog.
- <+rafl> On the other hand lazy developers might just push their patches uncompiled as it gets compiled at some point anyway. That'll very likely not increase quality.
- <@puzzles> this also parses the configuration options from waf, so the intersection of enabled plugins across build systems could be used to determine if the entire system has built properly
+ <+rafl> On the other hand lazy developers might just push their patches
+ uncompiled as it gets compiled at some point anyway. That'll very likely not
+ increase quality.
+ <@puzzles> this also parses the configuration options from waf, so the
+ intersection of enabled plugins across build systems could be used to
+ determine if the entire system has built properly
  <+fvw> put a quotum on compile failures? :)
- <@puzzles> i'm going to DEFER this topic as we have more important things to discuss
+ <@puzzles> i'm going to DEFER this topic as we have more important things to
+ discuss
 
 === Collections ===
 ;Action: merge after DrHouse
