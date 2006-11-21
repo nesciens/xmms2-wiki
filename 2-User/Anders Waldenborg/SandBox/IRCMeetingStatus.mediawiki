@@ -1,0 +1,72 @@
+{| class="wikitable" border="1" valign="top"
+|+ Status
+|-
+| Who || DONE || TODO || BLOCKED || DISCUSS
+|-
+|[[User:Anders Gustafsson | anders]]
+|
+| Look at getting xmms2 running on neuros OSD.
+|
+|
+|-
+|[[SÃ©bastien Cevey | theefer]]
+|
+|
+* Fix remaining FIXME's in [[Collections | collection]] code (details)
+* Code the C++ collection bindings
+|
+* Collections merged in -devel
+* C++ collection bindings, conceptual problem (need help from magic Ec++lipser)
+|-
+|[[Tilman Sauerbeck | tilman]]
+|-
+|[[Daniel Svensson | nano]]
+|-
+|[[Florian Ragwitz | rafl]]
+|
+* Set up pkg-xmms2 for packaging xmms2 related stuff for Debian; only jlt and me currently
+* started to port speex plugin
+|
+* Upload esperanza and xmms2-scrobbler to Debian Unstable
+* Include Perl bindings
+* finish speex plugin
+|
+* Debian NEW queue
+* [[waf]] migration
+|-
+|[[Georg Schild | dangertools]]
+| bindings: java5, collections, cleanups
+| review code
+| waiting for patch review
+|-
+|[[Daniel Chokola | puzzles]]
+|
+* userconfdir_get split
+* [[waf]] build automater and parser
+|
+* Windows port patch cleanup and commit
+* [[XMMS2Forge]]
+* [[Request for pull mailbot | RFP Mailbot]]
+|
+* Win32 patch review
+* Waf status (for SCons patches)
+|
+* Waf progress (DrI?)
+* XMMS2Forge implementation
+* RFP Mailbot Implementation
+|-
+|[[Alexander Botero-Lowry | DraX]]
+|Restarting of Insanity development with Eleusis
+|Test XMMS2 on FreeBSD 7 with libthr
+|NetBSD threading issue that causes it to be unuseable
+|Python Bindings for collections
+|-
+|[[David Anderson | danderson]]
+|
+|
+* add wscripts to build the bindings
+* Test the whole system in win32 and make necessary changes
+* work on the main wscript's UI, add various useful commandline options to configure the build
+* make the waf bootstrap script put the waf module in ., not in ~
+| does waf look better than scons, are we going to move xmms2 to using it?
+|}
