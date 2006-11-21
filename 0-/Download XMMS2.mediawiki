@@ -45,10 +45,10 @@ Packages built specifically for Dapper are available:
 
 === Fedora ===
 
-Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in tarballs from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
 
-* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 XMMS2 - Fedora Core 5]
-* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 XMMS2 - Fedora Core 6]
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 xmms2-gxmms2-fc5.i386.rpm.tar.bz2]
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 xmms2-fc6.i386.rpm.tar.bz2]
 
 ''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
 
