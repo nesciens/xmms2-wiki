@@ -40,18 +40,18 @@ At the start of each meeting, participants should indicate their current status 
 ;BLOCKED: Items he can't progress on, due to various factors (to be discussed)
 ;DISCUSS: Item to be discussed during meeting
 
-When asked by the organiser, the participant should ideally paste these prepared lines into the channel. For example:
+When asked by the organiser, the participant should paste these prepared lines into the channel. The lines should be as short and informative as possible (that's why the need to be prepared in advance, so there is time to write it in the most compact and yet informative form). For example:
 
  <FooMaster> joe: what's your status?
- <joe> DONE: Implemented libkorv and fixed BeOS port
- <joe> TODO: Add more documentation
- <joe> BLOCKED: Get new git repo for libkorv
- <joe> DISCUSS: Whether to depend on bierlib or pilsnerlib
+ <joe> DONE: Implemented libkorv, fixed BeOS port
+ <joe> TODO: More documentation
+ <joe> BLOCKED: Need git repo for libkorv
+ <joe> DISCUSS: Depend on bierlib or pilsnerlib
 
 Please note that multiple items should be on the same line. For example:
  <joe> DONE: Implemented libkorv
  <joe> DONE: fixed BeOS port 
 should be written as:
- <joe> DONE: Implemented libkorv and fixed BeOS port
+ <joe> DONE: Implemented libkorv, fixed BeOS port
 
 [[Category:Policies and guidelines]]
