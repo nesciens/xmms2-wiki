@@ -1,5 +1,13 @@
 == Latest quotes ==
 
+=== 2006-11-21 - XMMS2 prayer ===
+ <ccr> let us pray ... oh great xmms1, who has ascended to the great 
+       beyond in Gentoo realm, give us our daily morons and whiners on 
+       #xmms, and let us not go astray on the great path of Sarcasm.
+ <ccr> and give us our patches to xmms2, your son, who will lead us to 
+       new light
+ <ccr> amen
+
 === 2006-11-19 - XMMS2 is spyware ===
  --> blackpenguin (n=nl@???) has joined #xmms2
  <blackpenguin> hi. I'm shocked. xmms2 is spyware? who the fuck do you think you
