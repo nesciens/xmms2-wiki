@@ -18,3 +18,4 @@ BUT! To help keep the information in this wiki (at least some minimal degree) st
 * Edits that only correct spelling errors or minor grammatical errors should be set as 'minor edits'.
 * Try to provide an informative edit summary for every edit if possible.
 * For questions about XMMS2, try to [[Contact Us|contact]] the team instead of putting up questions on the wiki.
+* If there are major changes you want to make to a page, or you just want to show how you want to change a page, make up a Sandbox page. Simply create a page like User:Foo/Sandbox/SomePage (where 'Foo' is your username) and edit away. If your changes are approved, then you can change the real page.
