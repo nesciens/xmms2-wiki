@@ -104,6 +104,8 @@ Clients that provide web interfaces, or provide web services based on data from 
 
 {{ClientSummary| name=xmms2Plugin| description=xmms2Plugin is a module for the [http://www.irssi.org irssi] irc client to be used to control playback and query information like playlist or the currently played song.}}
 
+{{ClientSummary| name=ixmms2| description=ixmms2 is a perl script that allows you to control xmms2 through commands in irssi.}}
+
 {{ClientSummary| name=lxmms2| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
 
 {{ClientSummary| name=xmms2joystick| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
