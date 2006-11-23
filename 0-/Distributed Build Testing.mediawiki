@@ -1,0 +1,65 @@
+= Overview =
+Distributed build testing is a way of building XMMS2 across user-donated machines and getting back the results. This has many possible uses. One such use is to build XMMS2 trees after every commit, or just after key commits, to ensure that there is no breakage after changesets are pushed. Another, similar, usage is for the [[Request_for_pull_mailbot|RFP Mailbot]] or a similar webpage that can test build a patch on multiple architectures and operating systems to ensure compatibility across platforms.
+
+= Implementation =
+== Components ==
+[[Image:buildtest-flow.png]]
+
+Let's go piece-by-piece, starting from the bottom, shall we?
+
+=== Git Tree ===
+Just a git tree of some sort, most likely this will be xmms2-devel, but there should be support for all of the trees on exodus.
+
+=== Git ===
+Some minimal interface to git tools. This will allow the system to identify if the patch to be tested will apply to the tree. Also, the tree could be updated if necessary, and trees across all test systems should be brought to the same HEAD.
+
+=== Waf ===
+An interface to waf. Right now, my interface is in pretty good shape. You can change options of each stage of the build (distclean, configure, build, and install). The idea on doing all of these stages is to be as thorough as possible, and also allow testing of build system patches.
+
+=== Build Test ===
+This gets the patch to be tested from the build distributor (or nothing at all) and applies it (or doesn't). This should use git to make sure the patch can be applied and the tree is updated as needed. Then, when the trees are synced and patch is applied, the build test stage will call waf and actually perform the build. Return statuses and output are recorded and passed back to the build distributor.
+
+=== Build Distributor ===
+Passes any patches for testing to donor machines and coordinates their build results. Since part of the design goal is ease of use and setup, the donor machines are not required to be any particular architecture, OS, or even have all the dependencies to test all components. The build coordinator will take results from all types of machines and operating systems, combine like results, and prepare them for presentation.
+
+==== Example ====
+Envision three machines and three possible plugins in their particular tree.
+
+;Machine 1:
+ Name: Korv
+ Architecture: i386
+ OS: Linux
+ Enabled plugins: oss
+ Disabled plugins: alsa, esound
+ Build status: success
+
+;Machine 2:
+ Name: Apan
+ Architecture: i386
+ OS: Linux
+ Enabled plugins: alsa, oss
+ Disabled plugins: esound
+ Build status: success
+
+;Machine 3:
+ Name: Tutar
+ Architecture: PPC
+ OS: FreeBSD
+ Enabled plugins: oss
+ Disabled plugins: alsa, esound
+ Build status: success
+
+;Results:
+ alsa: success on i386/Linux; untested on PPC/FreeBSD
+ oss: success on i386/Linux; success on PPC/FreeBSD
+ esound; untested on i386/Linux; untested on PPC/FreeBSD
+
+In reality, there would be a lot more to report, like the individual steps of the build, the XMMS2 core build, and maybe the hostnames. If identical architectures and operating systems have a plugin that builds on one machine and fails on another, that's another state that needs to be represented (warning or partial). There are clients and libraries, too. Pretty obviously, this is the most complicated and most important part of the system.
+
+=== Results Database ===
+A results database makes sense only in certain situations. In the [[Request for pull mailbot|RFP Mailbot]], the user would get her build results right back, so it has no place there. If this system was set up as an automatic test framework for xmms2-stable, for example, it would make sense since it would just build and store the results of every git commit, or release, or whatever. A developer could peek on the database to see what needs work, or the wiki could use this information to automatically update the Project Status page.
+
+=== Frontend ===
+This is just some way of showing a user how the steps of the build have progressed. This can be a mailbot, a webpage, the [[Project Status]] page, or whatever.
+
+[[Category:Developer ideas]]
