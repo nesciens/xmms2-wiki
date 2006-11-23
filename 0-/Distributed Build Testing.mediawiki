@@ -62,4 +62,9 @@ A results database makes sense only in certain situations. In the [[Request for 
 === Frontend ===
 This is just some way of showing a user how the steps of the build have progressed. This can be a mailbot, a webpage, the [[Project Status]] page, or whatever.
 
+= Scenario =
+We have a distributed build system with a results database set up on exodus. The system is set to build xmms2-stable after every release and record the results in the database. Then, the results database is hooked up to the wiki on both the [[Project Status]] page and a timeline page. The project status page is always kept up-to-date with the latest stable release of XMMS2 and the timeline page shows what plugins and support were added during which stable release cycle of XMMS2.
+
+Since the distributed build system also allows for building across platforms, you can click on a plugin and see what systems it has successfully built on. You click the OSS link and see that it has been built on FreeBSD, OpenBSD, and Linux on i386 and PPC architectures. You click on the coreaudio link and find it is untested. After installing the build test software on one of your spare Sparc boxes in about 10 minutes, you have the distributed build system add your machine as one of its test hosts, then rebuild xmms2-stable, and click on coreaudio again. Coreaudio is listed as working on your Sparc machine.
+
 [[Category:Developer ideas]]
