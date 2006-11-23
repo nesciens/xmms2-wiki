@@ -4,7 +4,7 @@
 Adds support for playing SID audio to XMMS2. This component is required for playback of "sid" files.
 
 =Description=
-Adds support for playing SID tunes to XMMS2. SID-files  are the most common format (sometimes called "PlaySID" format) used for Commodore 64 tunes. SID is actually the sound chip (MOS Technology 6581 Sound Interface Device) used in the C64 and its relatives. SID-files are basically C64 program code and data that controls the SID chip. In order to play these files, emulation of much of C64 hardware must be employed, which is, if done accurately, time consuming due to the dual digital+analog nature of SID-chip.
+Adds support for playing SID tunes to XMMS2 via libSIDPlay2 emulation framework. SID-files  are the most common format (sometimes called "PlaySID" format) used for Commodore 64 tunes. SID is actually the sound chip (MOS Technology 6581/8580 Sound Interface Device) used in the C64 and its relatives. SID-files are basically C64 program code and data that controls the SID chip. In order to play these files, emulation of much of C64 hardware must be employed, which is, if done accurately, time consuming due to the dual digital+analog nature of SID-chip.
 
 HVSC (High Voltage SID Collection) is a collection of almost every SID tune ever made and can be downloaded from <http://www.hvsc.c64.org/>
 
