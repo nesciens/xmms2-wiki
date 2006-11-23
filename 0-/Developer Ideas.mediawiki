@@ -37,6 +37,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Request for pull mailbot]]
 * [[Build system requirements]]
 * [[XMMS2Forge]]
+* [[Distributed Build Testing]]
 
 == Misc ==
 * '''[[Music Sharing]]'''
