@@ -11,6 +11,7 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 
 === Pre-meeting ===
 # Organiser creates agenda for next meeting and posts it to [[IRC Meeting/Agenda]].
+#* [[IRC Meeting/Agenda]] should really redirect to a page like ''IRC Meeting/YYYY-MM-DD/Agenda'' where ''YYYY-MM-DD'' is the meeting date.
 # Organiser announces next meeting on [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list], most preferably 4 days before the meeting, at the latest. Announcement includes proposed agenda.
 # Participants prepare a list of issues they want to address. If there are any major issues to talk about, that haven't been addressed by the proposed agenda, participants negotiate with organiser to include them. Even if the organiser cannot fit a certain issue into the agenda (e.g. due to time constraints), it may be brought up after the meeting. That is, agenda items are to be given priority.
 #* Alternatively, participants may edit the latest agenda on the [[IRC Meeting/Agenda | wiki]], but it's up to the organiser to take those modifications into account when starting the next meeting.
@@ -55,3 +56,4 @@ should be written as:
  <joe> DONE: Implemented libkorv, fixed BeOS port
 
 [[Category:Policies and guidelines]]
+[[Category:IRC Meeting]]
