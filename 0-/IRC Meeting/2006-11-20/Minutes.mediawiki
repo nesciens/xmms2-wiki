@@ -1,0 +1,377 @@
+== Status ==
+;[[User:Anders Gustafsson | anders]]
+* TODO: Look at getting xmms2 running on neuros OSD.
+
+;[[SÃ©bastien Cevey | theefer]]
+* TODO
+** Fix remaining FIXME's in [[Collections | collection]] code (details)
+** Code the C++ collection bindings
+* BLOCKED
+** Collections merged in -devel
+** C++ collection bindings, conceptual problem (need help from magic Ec++lipser)
+
+;[[Tilman Sauerbeck | tilman]]
+''Nothing to report''
+
+;[[Daniel Svensson | nano]]
+''Nothing to report''
+
+;[[Florian Ragwitz | rafl]]
+* DONE
+** Set up pkg-xmms2 for packaging xmms2 related stuff for Debian; only jlt and me currently
+** started to port speex plugin
+* TODO
+** Upload esperanza and xmms2-scrobbler to Debian Unstable
+** Include Perl bindings
+** finish speex plugin
+* BLOCKED
+** Debian NEW queue
+** [[waf]] migration
+
+;[[Georg Schild | dangertools]]
+* DONE: bindings: java5, collections, cleanups
+* TODO: review code
+* BLOCKED: waiting for patch review
+
+;[[Daniel Chokola | puzzles]]
+* DONE
+** userconfdir_get split
+** [[waf]] build automater and parser
+* TODO
+** Windows port patch cleanup and commit
+** [[XMMS2Forge]]
+** [[Request for pull mailbot | RFP Mailbot]]
+* BLOCKED
+** Win32 patch review
+** Waf status (for SCons patches)
+* DISCUSS
+** Waf progress (DrI?)
+** XMMS2Forge implementation
+** RFP Mailbot Implementation
+
+;[[Alexander Botero-Lowry | DraX]]
+* DONE: Restarting of Insanity development with Eleusis
+* TODO: Test XMMS2 on FreeBSD 7 with libthr
+* BLOCKED: NetBSD threading issue that causes it to be unuseable
+* DISCUSS: Python Bindings for collections
+
+;[[David Anderson | danderson]]
+* TODO
+** add wscripts to build the bindings
+** Test the whole system in win32 and make necessary changes
+** work on the main wscript's UI, add various useful commandline options to configure the build
+** make the waf bootstrap script put the waf module in ., not in ~
+* DISCUSS
+** does waf look better than scons, are we going to move xmms2 to using it?
+
+== Topics ==
+=== Graphics Design Contest ===
+;Action: none
+ <@puzzles> good, first point of our agenda is the graphics design contest
+ <+theefer> When do we start it?
+ <+theefer> (Christmas can be a tricky period, both ways)
+ <@puzzles> anders_: i believe this is you
+ <+anders_> We are waiting for $$$
+ <+anders_> From google.
+ <+anders_> No ETA.
+ <+anders_> So imho discussion can be slow (ie continue on wiki)
+ <+theefer> are we otherwise ready?  did we settle on a prize?
+ <+tilman> it's been like 2-3 months
+ <+anders_> tilman: It was my mistake too.
+ <+anders_> tilman: I got a check that I had to return because it couldn't be cleared.
+ <+tilman> aha
+ <@puzzles> no ACTION will be declared at this time, let's move on
+
+=== Request for Pull Mailbot ===
+;Action: deferred
+ <@puzzles> TOPIC: Request for Pull Mailbot
+ <+tilman> OPINION: o_O wtf bbq
+ <@puzzles> i've done a little work on this area by making a ruby wrapper around
+ waf that parses the build configuration and status of each part of the build
+ <@puzzles> i've started with an AJAX frontend to the script, too
+ <+rafl> Sounds like a valueable idea. puzzles++
+ <+anders_> AJAX?
+ <@puzzles> anders_: yes, it builds the tree live and gives results online
+ <+rafl> An automated testsuite would fit well into that..
+ <@puzzles> yes, and i had a grandiose scheme of test machines
+ <@puzzles> anders_: the AJAX frontend might have use in xmms2forge, as well
+ <+fvw> sourceforge has a number of test machines open to the public don't they?
+ <+nano-> sounds like a cool DoS for exodus ;)
+ <+anders_> puzzles: This all sounds like a separate thing that the mailbot..
+ <@puzzles> nano-: my plan for implementation was to distribute the build over a
+ number of donatest systems
+ <@puzzles> anders_: the web frontend might be, but automating the build should
+ make it easy to test new patches
+ <+anders_> Slightly what is available at http://wiki.xmms2.xmms.se/index.php/BuildLog.
+ <+rafl> On the other hand lazy developers might just push their patches
+ uncompiled as it gets compiled at some point anyway. That'll very likely not
+ increase quality.
+ <+theefer> will they really? spank them!
+ <@puzzles> this also parses the configuration options from waf, so the
+ intersection of enabled plugins across build systems could be used to
+ determine if the entire system has built properly
+ <+fvw> put a quotum on compile failures? :)
+ <@puzzles> i'm going to DEFER this topic as we have more important things to
+ discuss
+ <+rafl> theefer: I don't know if it really will in the case of xmms2 where the
+ number of active developers is quite low. But there have been experiments
+ within Debian to compile anything on some build daemons without requiring the
+ developer to compile it himself. Those failed.
+
+=== Collections ===
+;Action: merge after DrHouse
+;Notes
+* genipc: [[Generated IPC]], also see next section
+* Python bindings, re: [[Collections]]: [[Collections/Python]]
+ <@puzzles> TOPIC: Collections in -devel
+ <+anders_> puzzles: To be merged as soon as DrHouse is out.
+ <@puzzles> theefer: anything to add?
+ <@puzzles> what will happen to the language bindings once collections are
+ pushed? will they become unusable until genipc or will developers need to
+ update them until genipc is ready for merge?
+ <+dangertools> only pythong and ruby are left, right?
+ <+dangertools> the other bindings should already be collections-ready imho
+ <+nano-> No, C++ bindings are still not finished.
+ <+theefer> puzzles: nothing to add.
+ <+theefer> puzzles: bindings will die
+ <+theefer> depends when genipc is ready, too. But bindings coder will need to
+ code some stuff in any case (e.g. coll structure)
+ <+tilman> ruby bindings will be broken for a couple of weeks
+ <@puzzles> is anyone acting on the python bindings?
+ <+theefer> DraX was IIRC
+ <+rafl> dangertools: There're the perl bindings. But they're not integrated
+ with the build system anyway.
+ <@puzzles> ACTION: Merge after DrHouse
+ <+rafl> I can remember danderson to work on python bindings+collections
+ <+theefer> so there /is/ so tedious updating work to be done
+ <+theefer> yes he did post ideas
+ <@puzzles> DraX: we just discussed the python bindings for collections, do you
+ have anything to add?
+ <+DraX> just that i tihnk we should go
+ <+DraX> with anders last option
+ <+DraX> and that it gives me nightmares, so help would be appreciated
+ <+anders_> DraX: I'd gladly help, if time permits.
+ <+DraX> it's on the wiki
+ <+DraX> http://wiki.xmms2.xmms.se/index.php/Collections/Python
+
+=== Generated IPC ===
+;Action: none
+ <@puzzles> TOPIC: Generated IPC
+ <@puzzles> anders_: you said you had some ideas you were tinkering with for this
+ <+rafl> I think generated bindings will create some limitations (swig already
+ tried to make the task of binding libraries work the same way for different
+ languages, but it somehow failed). Will a binding developer stil have the
+ freedom to manually code his bindings?
+ <+tilman> of course
+ <+anders_> rafl: Yes.
+ <+tilman> doing dumb 1:1 translations will only work for libxmmsclient
+ <+rafl> Is there a working implementation of genipc yet?
+ <+nano-> ~andersg/ on exodus.
+ <@puzzles> in the same vein of rafl's question, will the genipc method of
+ building bindings allow you to write code only for specific methods?
+ <+anders_> puzzles: Yes, I've been thinkering in lots of directions.
+ <+anders_> genipc is mostly about automating the boring work.
+ <+tilman> why did noone bother mailing xmms2-devel about the fact that anders_
+ will implement that stuff in python btw?
+ <+tilman> it's pretty cool we had a discussion about xslt vs python, but noone
+ really cared about it in the end
+ <+dangertools> will it replace all current bindings or will still some stay as is
+ <@puzzles> i second tilman :)
+ <+theefer> tilman: to avoid a long argument with no issue, I guess.
+ <+nano-> tilman: But you too felt the fear after some hours of xslt?
+ <+anders_> To get some proof of concept..
+ <+tilman> i had proof of concept too
+ <+theefer> I always had the feeling that the decision would go the way of
+ whoever who care to implement it eventually..
+ <+nano-> http://exodus.xmms.se/~nano/test.xsl.txt
+ <+rafl> When converting some c data structure to a data structure of the
+ language one is binding, will the conversion take place isolated (ignoring all
+ other arguments to that function) or will one be able to access the other
+ arguments while converting to some other structure for the target language?
+ <@puzzles> similarly, will GenIPC allow for handling of more complex datatypes
+ in their languages? (e.g. lists/arrays)
+ <+nano-> puzzles: Yeh, there is a bug for adding iterators to the dsts.
+ <+dangertools> some eta maybe?
+ <@puzzles> and do you have any ETA?
+ <+anders_> No ETA. Don't know when I have time to work on it.
+ <@puzzles> anders_: any proof-of-concept?
+ <+anders_> Not really.
+ <@puzzles> want anyone to help with implementation?
+ <+DraX> anders_: can tilman work on it like he was before? (if he wants)
+ * rafl is interested, but would need to be instructed as he didn't mess around
+ with genipc yet.
+ <@puzzles> likewise
+ <+anders_> I'm mostly tinkering around.
+ <+anders_> To figure out how it should work.
+ <@puzzles> so basically the whole implementation is up in the air
+ <+anders_> And the design too.
+
+=== Dr. House Finalization ===
+;Action: fix build of Java bindings on FreeBSD and Linux before release
+;Notes:
+* <mantis>1253</mantis>
+ <@puzzles> TOPIC: DrHouse finalization
+ <+dangertools> test1's javabindings don't build for eleusis and me due to
+ DraX' last patch
+ <@puzzles> anders_: you said we may have a TEST4 by the end of the week, is
+ there anything else outstanding?
+ <+anders_> There are some minor bugs. I forsee a TEST2 later this week.
+ <+DraX> java bindings don't build for me without the patch :/
+ <+dangertools> DraX: bad thing is that this doesn't happen on every dist so we
+ cannot say #ifdef linux or something
+ <@puzzles> course of action?
+ <+dangertools> DraX: we have to find some solution to this asap
+ <@puzzles> ACTION: Fix build of Java bindings on FreeBSD and Linux before
+ release
+ <+tilman> what bug # is this?
+ <+tilman> 1253
+ <@puzzles> ok, let's save any more specific discussion for mantis
+
+=== XMMS2Forge ===
+Action: research and implement
+ <@puzzles> TOPIC: xmms2forge
+ <@puzzles> i've made a ruby gitweb that's much easier to maintain than the one
+ included in git
+ <+rafl> I recently came across a software called CommitBit which might be handy
+ to manage users/permissions/repositories for xmms2forge.
+ <@puzzles> and that automated build system might have use here, too
+ <+DraX> we might want to look at repo.or.cz
+ <+DraX> he has support scripts and the likes for this exact sort of thing
+ <+DraX> I also have an update hook for publishing a web page from a git repo
+ <+rafl> On the other hand it's limited to git.
+ <@puzzles> is there a way we can aggregate xmms2 projects from there?
+ <+tilman> what's hard to maintain about gitweb?
+ <+nano-> theefer: the current gitweb is a really nasty perl hack.
+ <+DraX> tilman: it's one perl file
+ <+rafl> It's indeed a giant pile of crap.
+ <+tilman> ah, i thought you were talking about maintaining the setup
+ <@puzzles> tilman: what drax said, plus the configuraton is terrible, and
+ linking to .git directories is a pain
+ <+DraX> I also have the beginnings of a gitweb rewrite :P
+ <@puzzles> http://home.chokola.com:8888/test/wit/
+ <+theefer> puzzles: if you think you can reproduce the original gitweb..  (I
+ think there were one or two other ones btw)
+ <+DraX> I'm in the process of rewriting my GitStore class
+ <@puzzles> http://dan.chokola.com/images/misc/witty.png
+
+=== XMMS2 & Amarok Collaboration ===
+;Action: deferred
+ <@puzzles> i will DEFER xmms2 & amarok collaboration until the next meeting as tru is not here
+
+=== Collaboration Ideas ===
+;Action: use the mailing list more
+ <@puzzles> TOPIC: collaboration ideas
+ <+theefer> meaning?
+ <@puzzles> well, like this meeting
+ <@puzzles> we have a problem with timezones here
+ <+DraX> yeah i missed half meeting because I was in class
+ <@puzzles> developers come by irc and the mailinglist and mantis and we manage
+ to get a lot done, but it's not often that all the developers involved in a
+ decision are present at the same time to discuss them
+ <+dangertools> yeah, classes are bad
+ <+dangertools> i came back from class 10min before the meeting
+ <@puzzles> i had one idea i was thinking about today--we could extend skitidet
+ to take down certain informal issues
+ <+theefer> to me the real issue is all the team knowledge that never gets
+ public enough for the users to hear about it.
+ <@puzzles> like an informal mantis, we could say !issue win32 port needs a
+ userconfdir_get function
+ <@puzzles> then someone could stop into the channel and say !issues and get a
+ list of (say 5) of the latest issues
+ <+anders_> Why not use mantis?
+ <+theefer> (I'm precisely doing a course entitled Computer-Supported
+ Collaborative Work :-))
+ <@puzzles> anders_: mantis is very formal, you can't discuss implementation
+ ideas or tinkerings on it
+ <@puzzles> and the wiki is bad because you need to have a formal idea outlined
+ and anyone interested needs to know the link to it :)
+ <+anders_> Whatabout the mailing list?
+ <@puzzles> the mailing list i don't think is used as much as it should be, as
+ tilman pointed out, no one said anything about the genipc implementation
+ <+anders_> irc with memory is exactly what the mailinglist is :)
+ <+dangertools> well, but it's not as nice to use as irc is
+ <@puzzles> mailing list is like IRC that barely gets used
+ <+fvw> a bulletin board/web forum?
+ <@puzzles> it's being used to announce releases and huge updates
+ <+dangertools> fvw: well, the web forum thing is a thought but you can use
+ mantis in some similar way
+ <+rafl> I think it is.
+ <+anders_> forum is the worst crap.
+ <+fvw> I prefer mailinglists myself too, but if people want something different...
+ <+rafl> a) see anders; b) We already have two web-based thingies for discussion.
+ <+fvw> there are some reasonable forums out there. If you do something
+ gmane.org-like you can even get forum and mailinglist in one.
+ <+anders_> I'll just start posting more to the ml..
+ <+anders_> Hey, there was actually patches mailed to the ml today :)
+
+=== Other Outstanding Topics (Perl Bindings, Windows Port, and Waf Implementation) ===
+;Action: abstract waf plugins, work on waf integration for perl bindings, other bugfixes
+ <@puzzles> ok, as this meeting has gone on for over an hour, i'm going to
+ combine the last few topics into other outstanding topics
+ <@puzzles> TOPIC: Other outstanding topics (DrI name/Perl bindings/Windows
+ port/Waf implementation)
+ <+rafl> Perl bindings are pending for someone to integrate them either into
+ scons or waf. No need for discussion on that, I guess.
+ <@puzzles> rafl: you won't be working on integration yourself?
+ <+rafl> puzzles: I asked for input on that several times. No one really
+ replied. I did some work (configuring and building works, installation don't),
+ but I'm somewhat stuck.
+ <+danderson> right now the waf stuff is on my branch. What about its future? :)
+ <@puzzles> danderson: waf has worked great for me, only real problem i've
+ noticed is plugins get installed to the wrong place
+ <+danderson> rafl: as noted above, actually getting complete code coverage of
+ xmms2 and its bindings is still a todo, but a worthy one.
+ <@puzzles> and i know i can't wait to move to waf, and i think tru feels the same
+ <+nano-> Also, plugins code need to be abstracted.
+ <@puzzles> danderson: i've also noticed there's no way to exclude plugins, or
+ atleast it seems
+ <+danderson> I have a pending change somewhere that adds a --with-plugins flag
+ to the configure command, to specifically state which plugins you want
+ <+anders_> Waf looks nice; and I bet it can be made look nicer. By making the
+ per-plugin files higher levelel.
+ <+danderson> puzzles: that's what I mean by that last todo. The wscript needs
+ more ways to control the build.
+ <+danderson> puzzles: waf can totally do this already. It's a matter of
+ implementation.
+ <+rafl> danderson: How about something to build python and/or ruby bindings for
+ more than one version of that interpreter in one build? Can waf do that?
+ <+danderson> anders_: agreed. They are verbose right now because I was still
+ learning my waf-fu.
+ <@puzzles> danderson: in the vein of anders' statement, can configuration
+ options be checked once and only once (i.e. if two plugins check the same lib,
+ will it be checked twice?)
+ <+danderson> that code should now be abstracted to a module in some way.
+ <+nano-> danderson: It would be nice to have a group of flags that get pulled
+ in for the clientlib and everything that links to it.
+ <+danderson> puzzles: I believe that is already the case. If l2 tries to check
+ for the same lib as l1, it'll get the cached result back.
+ <+DraX> danderson: I had some issues with setting WAF_HOME to .
+ <+DraX> the firs ttime i run waf configure it doesn't work
+ <@puzzles> this is the wrapper i made around waf to check build stuffs:
+ http://dan.chokola.com/images/misc/buildtest.png
+ <@puzzles> when you click build it does waf distclean, waf configure, waf build,
+ waf install
+ <+danderson> DraX: this is a tweak to the master bootstrapping script. You're right
+ <+danderson> TODO: make the waf bootstrap script put the waf module in ., not in ~
+ <@puzzles> nano-: what do we have left for the windows port? are we just
+ waiting on waf?
+ <+danderson> just as a note: I'm happy to integrate changes needed to make waf
+ build xmms2 properly on win32, but I don't have a win32 box to actually make
+ the changes.
+ <@puzzles> i know i can handle that with a little training in waf, and nano- 
+ will probably be willing to help
+ <+nano-> puzzles: waf needs better handling of plugins unless we add stupid
+ win32 stuff to each and every plugin.
+ <+nano-> puzzles: it also needs to split xmms2d into main.c->xmms2d
+ therest->libxmms2d.a/dll
+ <+nano-> and it would be very nice with unified flags to clientlib*
+ <@puzzles> danderson: there's something you can act upon now
+ <+nano-> oh, sorry, meant main.c+unixsocket.c->xmms2d therest->libxmms2d.a/dll
+ <@puzzles> danderson: waf should build everythin in src/xmms except main.c as
+ libxmms2d.a on linux and link it to main.c
+ <+nano-> except main.c and unixsignal.c
+ <+danderson> puzzles: patches welcome ;)
+ <@puzzles> all right, i'm going to need to get a little better with waf first,
+ but i'll go for it :)
+ <@puzzles> ok, this meeting has already gone on 90 minutes, i'm declaring it
+ adjourned
