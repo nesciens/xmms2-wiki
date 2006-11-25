@@ -1,0 +1,18 @@
+* [[Proposed Graphic Competition|Graphics design contest]]
+** Quick check up on $$$ from Google
+* [[XMMS2Forge]]
+** Check up on implementation ideas
+* [[Request for pull mailbot]]
+** Check up on implementation ideas
+* Possible XMMS2 and [http://amarok.kde.org/ AmaroK] collaboration (re: [[Tobias RundstrÃ¶m|tru]] @ GSoC mentor summit)
+** Deferred from last meeting
+* Waf implementation (danderson)
+** Perl bindings
+** [[Windows|Windows port]]
+* [[Generated IPC]]
+** Check up on implementation ideas
+* [[Talk:Versioning#Dr_I...|DrI name]]
+** <mantis>1230</mantis>
+** No discussion at last meeting
+
+[[Category:IRC Meeting]]
