@@ -1,0 +1,16 @@
+* [[Proposed Graphic Competition|Graphics design contest]]
+* [[XMMS2Forge]]
+* [[Request for pull mailbot]]
+* Possible XMMS2 and [http://amarok.kde.org/ Amarok] collaboration (re: [[Tobias RundstrÃ¶m|tru]] @ GSoC mentor summit)
+* Collaboration ideas ([[Daniel Chokola|puzzles]])
+* [[Collections]] in -devel
+* Other outstanding issues:
+** Perl bindings
+** [[Windows|Windows port]]
+** Waf implementation (danderson)
+* [[Generated IPC]]
+* [[Release:DrHouse]] finalization
+* [[Talk:Versioning#Dr_I...|DrI name]]
+** <mantis>1230</mantis>
+
+[[Category:IRC Meeting]]
