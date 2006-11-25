@@ -1,0 +1,4 @@
+Pages to do with [[IRC Meeting]]
+
+[[Category:General]]
+[[Category:Developer info]]
