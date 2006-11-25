@@ -23,7 +23,7 @@ XMMS2 is accepted as a mentoring organisation in Google's Summer of Code program
 
 == May ==
 ;23rd:
-Five students are accepted to work on XMMS2 as part of Google's Summer of Code:
+Five students are accepted to work on XMMS2 as part of Google's [[Summer of Code 2006]]:
 
 * [[SoC:DAAP | Support for DAAP]]
 ** '''Student''': Cole Thompson
