@@ -14,5 +14,6 @@
 * [[Talk:Versioning#Dr_I...|DrI name]]
 ** <mantis>1230</mantis>
 ** No discussion at last meeting
+* Testing: [[ET]], [[Distributed Build Testing]], and [[Testing|Unit Testing]] (time and attendance permitting)
 
 [[Category:IRC Meeting]]
