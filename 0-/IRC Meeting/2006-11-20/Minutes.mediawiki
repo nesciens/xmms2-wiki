@@ -376,7 +376,7 @@ Action: research and implement
  <@puzzles> ok, this meeting has already gone on 90 minutes, i'm declaring it
  adjourned
 
-=== Full Transcript ===
+== Full Transcript ==
 A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2006-11-20/transcript.txt here].
 
 [[Category:IRC Meeting]]
