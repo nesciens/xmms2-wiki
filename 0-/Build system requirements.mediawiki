@@ -6,13 +6,17 @@ This page is supposed to list what we want from a build system. It is here to av
 
 '''Correct dependencies'''. Obviously.
 
+'''Job paralellisation'''. Like make -j X
+
 '''Intuitive and clean build files'''. The per component build files should be easy to understand, and free from useless duplication.
 
 '''Out of tree buildable'''. Ideally the "per component build file" should make it easy to build things out of the tree, and the exact same files should work by just copying the component's directory into the main source tree.
 
-'''Easy to customize'''. Should be easy to add custom tests and build methods.
+'''Easy to customize'''. Should be easy to add custom configuration tests and build methods.
 
 '''Easy build configuration'''. It should be easy to configure which components to build/not build and what build flags to use. And to list what options are available.
+
+'''Early build configuration failure detection'''. If user sepecifies that (s)he wants component X and the configuration tests for that component fails it should fail loudly and not just skip that component.
 
 '''Per component install'''. Possible install only one component to make it easy for package build scripts to install each component in separate dirs.
 
