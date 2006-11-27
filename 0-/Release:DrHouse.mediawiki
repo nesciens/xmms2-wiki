@@ -19,7 +19,28 @@
 === Notes to xform authors ===
 
 
-=== Full ChangeLog (TEST1) from [[Release:DrGonzo]] ===
+=== Full ChangeLog ===
+
+==== From TEST1 to TEST2 ====
+'''Anders Gustafsson'''
+;<mantis>1250</mantis>
+;<mantis>1256</mantis>
+;<mantis>1260</mantis>
+;<mantis>1266</mantis>
+;<mantis>1268</mantis>
+;<mantis>1269</mantis>
+'''Rob Hoelz'''
+;<mantis>1255</mantis>
+'''Sham Chukoury'''
+;<mantis>1253</mantis>
+'''Tobias Rundstrom'''
+;<mantis>1252</mantis>
+;<mantis>1254</mantis>
+;<mantis>1270</mantis>
+;<mantis>1271</mantis>
+
+
+==== From [[Release:DrGonzo]] to TEST1 ====
 '''Alexander Botero-Lowry'''
 ;<mantis>1176</mantis>
 '''Anders Gustafsson'''
