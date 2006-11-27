@@ -1,4 +1,5 @@
 == Current status ==
+; 2006-11-27 - DrGonzo-WIP-TEST2 released. Second pre-release of DrHouse
 ; 2006-11-14 - DrGonzo-WIP-TEST1 released. First pre-release of DrHouse
 
 == Release Notes ==
