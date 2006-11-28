@@ -8,6 +8,7 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 ;Organiser (chairperson): [[Dan Chokola]]
 ;Agenda: [[IRC Meeting/Agenda]]
 ;Minutes: [[IRC Meeting/Minutes]]
+;Archive: [[IRC Meeting/Archive]]
 
 === Pre-meeting ===
 # Organiser creates agenda for next meeting and posts it to [[IRC Meeting/YYYY-MM-DD/Agenda]] and updates the [[IRC Meeting/Agenda]] redirect.
