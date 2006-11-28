@@ -1,0 +1,50 @@
+== Status ==
+{| class="wikitable" border="1" valign="top"
+|-
+| Who || DONE || TODO || BLOCKED || DISCUSS
+|-
+|[[User:Anders Gustafsson | anders]]
+| Built XMMS2 for Neuros OSD.
+|
+|
+|
+|-
+|[[Tobias Rundstr&ouml;m | tru]]
+| Various fixes for DrHouse-TEST1
+|
+* DrHouse TEST2
+* Waf integration
+* Esperanza 0.3
+|
+* DrHouse
+* xmmsclient++ with collections
+| Anything more for TEST2?
+|-
+|[[Georg Schild | dangertools]] || || ||
+|-
+|[[Daniel Chokola | puzzles]] || || ||
+|-
+|[[S&eacute;bastien Cevey | theefer]]
+|
+| Review nesciens' patch for <mantis>1265</mantis>
+|
+|
+|-
+|[[Tilman Sauerbeck | tilman]] || || ||
+|-
+|[[Daniel Svensson | nano]]
+|
+|
+* Last.FM browsing
+* Win32 build script updates
+|
+* bindata API
+* Waf
+|
+|-
+|[[Alexander Botero-Lowry | DraX]]
+| tested XMMS2 with libthr
+| make XMMS2 FreeBSD port bitch if sqlite3 isn't compiled with threading
+|
+|
+|-}
