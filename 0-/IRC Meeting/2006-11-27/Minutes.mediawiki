@@ -5,9 +5,9 @@
 |-
 |[[User:Anders Gustafsson | anders]]
 | Built XMMS2 for Neuros OSD.
+| NMS output plugin
 |
-|
-|
+| "stable" fork?
 |-
 |[[Tobias Rundstr&ouml;m | tru]]
 | Various fixes for DrHouse-TEST1
