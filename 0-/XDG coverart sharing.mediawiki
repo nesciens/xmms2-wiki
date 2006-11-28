@@ -20,24 +20,22 @@ The symbolic links MUST be relative, so that the full structure easily can be co
  def store_coverart(media):
  	artdata = retrieve_art(media);
  
- digest = md5.md5(artdata).hexdigest()
- artpath = os.path.join(basedir, "md5", digest)
- file(artpath, "w").write(art)
+ 	digest = md5.md5(artdata).hexdigest()
+ 	artpath = os.path.join(basedir, "md5", digest)
+ 	file(artpath, "w").write(art)
  
- relartpath = os.path.join("..","md5",digest)
- if media.has_key("musicbrainzid"):
- 	os.symlink(relartpath,  os.path.join(basedir, "mbid", media["musicbrainzid"]))
+ 	relartpath = os.path.join("..","md5",digest)
+ 	if media.has_key("musicbrainzid"):
+ 		os.symlink(relartpath,  os.path.join(basedir, "mbid", media["musicbrainzid"]))
  
- if media.has_key("asid"):
- 	os.symlink(relartpath,  os.path.join(basedir, "asid", media["asid"]))
+ 	if media.has_key("asid"):
+ 		os.symlink(relartpath,  os.path.join(basedir, "asid", media["asid"]))
  
- if media.has_key("artist") and media.has_key("album"):
- 	artist = media["artist"].lower().replace("/","")
- 	album = media["album"].lower().replace("/","")
- 	name = "%s - %s" % (artist, album)
- 	os.symlink(relartpath,  os.path.join(basedir, "name", name))
- 
- 
+ 	if media.has_key("artist") and media.has_key("album"):
+ 		artist = media["artist"].lower().replace("/","")
+ 		album = media["album"].lower().replace("/","")
+ 		name = "%s - %s" % (artist, album)
+ 		os.symlink(relartpath,  os.path.join(basedir, "name", name))
 
 ==To think about / TODO==
 
