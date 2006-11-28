@@ -47,4 +47,44 @@
 | make XMMS2 FreeBSD port bitch if sqlite3 isn't compiled with threading
 |
 |
-|-}
+|}
+
+== Topics ==
+=== Graphics Design Contest ===
+;Action: removed from agenda
+;Notes: No new check from Google.
+
+=== Generated IPC ===
+;Action: removed from agenda
+;Notes: Don't block any code on GenIPC, it's unclear when it will be implemented.
+
+=== Waf Implementation ===
+;Action: Implement:
+# plugin abstraction
+# install target tweaks
+# --with(out)-plugins
+# port remaining plugins
+
+=== Amarok and XMMS2 Collaboration ===
+;Acion: need D-Bus draft; removed from agenda
+;Notes: Nothing else is in the works, and this is not going to be implemented until Amarok goes QT4.
+
+=== DrI Name ===
+;Action: removed from agenda
+;Notes: Continue discussion on [[Talk:Versioning#Dr_I... | wiki]].
+
+=== XMMS2Forge ===
+;Action: removed from agenda
+;Notes: Look into preexisting software to minimize developers' time. No progress since last meeting.
+
+=== Request-for-Pull Mailbot ===
+;Action: removed from agenda
+;Notes: No progress since last meeting.
+=== Testing ===
+;Action: deferred
+;Notes: Eleusis was not present. Little progress was made since last meeting. Will continue discussions on IRC and mailing list and decide whether or not this will be on next week's agenda.
+
+== Full Transcript ==
+A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2006-11-27/transcript.txt here].
+
+[[Category:IRC Meeting]]
