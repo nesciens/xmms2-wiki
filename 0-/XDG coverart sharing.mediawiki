@@ -8,7 +8,7 @@ Cover art SHOULD be stored under $XDG_DATA_HOME/coverart/ (usually $HOME/.local/
 
 * mbid/ which contains symbolic links (pointing to files in the md5/ directory) named as the musicbrainz album id for the album. Such as mbid/8e061dc4-790e-4587-ba53-011e7852f88d -> ../md5/63ed303bfc9c34ce75e15648f0836828
 * asin/ for symbolic links named after the asin. Example: asin/B000003TA4 -> ../md5/63ed303bfc9c34ce75e15648f0836828
-* name/ for symbolic links named "$ARTIST - $ALBUM" with the artist and album names in lower case and "/" stripped away. Example: name/Nirvana - Nevermind -> ../md5/63ed303bfc9c34ce75e15648f0836828
+* name/ for symbolic links named "$ARTIST - $ALBUM" with the artist and album names in lower case and "/" stripped away. Example: name/nirvana - nevermind -> ../md5/63ed303bfc9c34ce75e15648f0836828
 
 None of these three directories are mandatory but players SHOULD put links in as many of them as it has information available to improve interoperability. Players MAY also create other subdirectories as they wish, however if the key isn't useful for other players the subdirectory name should start with the players name (such as xmms2-medialibid/).
 
