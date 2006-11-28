@@ -38,7 +38,7 @@
 * Last.FM browsing
 * Win32 build script updates
 |
-* bindata API
+* browsing API
 * Waf
 |
 |-
