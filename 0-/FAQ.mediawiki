@@ -27,7 +27,7 @@
 '''Hint''': ''Also see the [[Getting Started]] page''
 
 === How do I use XMMS2? ===
-: XMMS2 is based on the client-server model, where most of the logic resides inside the server (XMMS2D). With a client, you can send commands to the daemon and play music. For now we only have a commandline client. To install, read the INSTALL file. For usage of xmms2 CLI client see the included manpage and [[Using the application]].
+: XMMS2 is based on the client-server model, where most of the logic resides inside the server (xmms2d). With a client, you can send commands to the daemon and manipulate your media. For now we only ship a command-line client (an official GUI client might ship in the future). To install, read the INSTALL file. For usage of XMMS2 CLI client see the included manpage and [[Using the application]].
 
 === What other clients are in progress? ===
 : See [[XMMS2 Clients]].
