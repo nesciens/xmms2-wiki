@@ -48,6 +48,10 @@
 === Does XMMS2 do crossfading? ===
 : Not yet, this is a requested feature that might be added in the future.
 
+=== How do I change the output? ===
+: XMMS2 tries to use sane defaults for its output plugins. That means ALSA on most linux machines, falling back to OSS; OSS on BSD; Core Audio on OSX; Sun audio on Solaris; etc. If, for some reason you don't like the default (e.g. you use Jack), then you can change it while xmms2d is running using the CLI ''config'' command:
+ xmms2 config output.plugin <plugin>
+
 == Development ==
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
