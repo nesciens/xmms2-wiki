@@ -1,16 +1,16 @@
 ==Background==
-Several music players support showing "cover art" which they retrieve from the web. Most players cache these files locally to conserve bandwidth and  avoid overloading the servers providing "cover art". For users switching between players this means that they will have the "cover art" cached locally once for each player. This document describes a scheme for storing the art in a way that makes it easy for other players to access it.
+Several music players support the showing of "cover art" images which they retrieve from the web. Most of these players cache the images locally to conserve bandwidth and avoid overloading the servers providing "cover art". For users switching between players, this means that they will have the "cover art" cached locally once for each player. This document describes a scheme for storing the art in a way that makes it easy for multiple players to access the same cover art image cache.
 
-The two most common ways for album identification are [[wikipedia:Amazon_Standard_Identification_Number|Amazon Standard Identification Number]] (asin) and Musicbrainz Album Id (mbid). However, not all music will have these available, so that must also be taken into consideration. The cover art applies to a full album, not single tracks, so duplication should be avoided by just storing the cover art once for each track on the album.
+The two most common ways for album identification are [[wikipedia:Amazon_Standard_Identification_Number|Amazon Standard Identification Number]] (ASIN) and Musicbrainz Album Id (MBID). However, we also need to take into consideration the fact that not all music will have these identifiers available. The cover art applies to a full album, not single tracks, so duplication should be avoided by just storing the cover art once for each album (and subsequently applied for each track).
 
 ==Specification==
-Cover art SHOULD be stored under $XDG_DATA_HOME/coverart/ (usually $HOME/.local/share/coverart/). Under this directory there can be several subdirectories that correspond to the key that is used to lookup the "Cover art". The only mandatory subdirectory and the only directory that stores actual files is "md5", which stores the coverart using the md5sum of the contents as its name. All the other subdirectories just contains symbolic links to files in the "md5" directory. Three other standard subdirectories are defined in this document;
+Cover art SHOULD be stored under $XDG_DATA_HOME/coverart/ (usually $HOME/.local/share/coverart/). Under this directory there can be several subdirectories that correspond to the key that is used to lookup the "Cover art". The only mandatory subdirectory and the only directory that stores actual files is "md5", which stores the cover art using the md5sum of the contents as its name. All the other subdirectories just contain symbolic links to files in the "md5" directory. Three other standard subdirectories are defined in this document:
 
 * mbid/ which contains symbolic links (pointing to files in the md5/ directory) named as the musicbrainz album id for the album. Such as mbid/8e061dc4-790e-4587-ba53-011e7852f88d -> ../md5/63ed303bfc9c34ce75e15648f0836828
-* asin/ for symbolic links named after the asin. Example: asin/B000003TA4 -> ../md5/63ed303bfc9c34ce75e15648f0836828
+* asin/ for symbolic links named after the ASIN. Example: asin/B000003TA4 -> ../md5/63ed303bfc9c34ce75e15648f0836828
 * name/ for symbolic links named "$ARTIST - $ALBUM" with the artist and album names in lower case and "/" stripped away. Example: name/nirvana - nevermind -> ../md5/63ed303bfc9c34ce75e15648f0836828
 
-None of these three directories are mandatory but players SHOULD put links in as many of them as it has information available to improve interoperability. Players MAY also create other subdirectories as they wish, however if the key isn't useful for other players the subdirectory name should start with the players name (such as xmms2-medialibid/).
+None of these three directories are mandatory but players SHOULD put links in as many of them as they have information available to improve interoperability. That is, a player SHOULD strive to create links under mbid if it has musicbrainz album id available, even if it doesn't use that link by itself. (The same applies to the asin and name directories) Players MAY also create other subdirectories as they wish, however if the key isn't useful for other players, the subdirectory name should start with the player's name (such as xmms2-medialibid/).
 
 The symbolic links MUST be relative, so that the full structure easily can be copied and moved.
 
@@ -39,7 +39,11 @@ The symbolic links MUST be relative, so that the full structure easily can be co
 
 ==To think about / TODO==
 
-The directories might grow quite big.. We might want to hash them: md5/{00..FF}/0011223344556677
-
-Define ID3v2 frame! For players that want to (god forbid) put a reference to the coverart in the id3tag.
+* The directories might grow quite big.. We might want to hash them: md5/{00..FF}/0011223344556677
+* Define ID3v2 frame! For players that want to (god forbid) put a reference to the coverart in the id3tag.
 coverart://MD5SUM as url for coverart?
+
+== References ==
+* [http://standards.freedesktop.org/basedir-spec/0.6/ XDG Base Directory Specification]
+
+[[Category:Developer ideas]]
