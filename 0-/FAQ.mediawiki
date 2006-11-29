@@ -52,8 +52,8 @@
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
 
-=== Why cogito/git? What was wrong with cvs? ===
-: That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert.
+=== Why cogito/git? What was wrong with cvs/svn? ===
+: That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert. [http://git.or.cz/#about Do] [http://git.or.cz/course/cvs.html#know your] [http://git.or.cz/course/svn.html#know homework].
 
 === Why doesn't the CLI client have a play/pause toggle function? ===
 : There is a very simple client available on the [[contribs]] that just toggles play/pause.
