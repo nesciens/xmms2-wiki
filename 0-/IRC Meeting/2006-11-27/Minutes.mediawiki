@@ -3,11 +3,7 @@
 |-
 | Who || DONE || TODO || BLOCKED || DISCUSS
 |-
-|[[User:Anders Gustafsson | anders]]
-| Built XMMS2 for Neuros OSD.
-| NMS output plugin
-|
-| "stable" fork?
+{{MeetStatusRow| who=[[User:Anders Gustafsson | anders]]| done=Built XMMS2 for Neuros OSD.| todo=NMS output plugin|blocked =| discuss="stable" fork?}}
 |-
 |[[Tobias Rundstr&ouml;m | tru]]
 | Various fixes for DrHouse-TEST1
