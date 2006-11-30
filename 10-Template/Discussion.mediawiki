@@ -3,4 +3,4 @@
 | [[Image:Presa de decissions.png|50px]]
 | '''Discussion in progress.'''
 This page contains discussion about a certain issue or technical concept - feel free to edit and add comments. Once the issue has been resolved and/or the relevant details have been worked out, the comments and discussion will be moved to the [[Talk:{{PAGENAME}}|talk page]] and this page will be finalised.
-|}<includeonly>{{{category|[[Category:Discussion articles]]}}}</includeonly><noinclude>
+|}<includeonly>{{{category|[[Category:Discussion articles]]}}}</includeonly>
