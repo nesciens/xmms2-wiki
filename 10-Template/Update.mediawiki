@@ -3,8 +3,8 @@
 | [[Image:Current event marker.png| ]]
 | '''This article or section needs to be updated.''' <br> Parts of this article or section have been identified as no longer being up to date. 
 
-Please update the article to reflect recent events, and remove this template when finished.
-[[Talk:{{PAGENAME}}|talk page]] contain details on what needs updating.
+Please update the article to reflect recent events, and remove this template when finished. The
+[[Talk:{{PAGENAME}}|talk page]] contains details about what needs updating.
 | [[Image:Nuvola apps important.png| ]]
 |}<includeonly>{{{category|[[Category:Articles in need of updating]]}}}</includeonly><noinclude>
 
