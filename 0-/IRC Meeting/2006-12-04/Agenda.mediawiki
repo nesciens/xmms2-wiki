@@ -1,3 +1,3 @@
-* Waf implementation (danderson)
+* Waf implementation (danderson, tru)
 ** Perl bindings
 ** [[Windows|Windows port]]
