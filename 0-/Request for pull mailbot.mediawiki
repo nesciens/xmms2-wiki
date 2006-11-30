@@ -1,3 +1,6 @@
+{{Discussion}}
+
+
 ''This page outlines ideas for a more well defined process for integrating code in the main repository''
 
 The main point of this change is to foster peer review. But as a side effect it should also make it easier to do automated sanity checks on code and changesets and hopefully make it _easier_ to get code integrated. Today the developer (DEV) needs to tell/nag someone with write access to -devel, the integrator (IGR), to get their changes accepted and propagated to -devel. There is no well-defined process of what the requirements are, and how easy it is depends on the IGR and his/her mood, how busy (s)he is and a lot of other things (like how annoying the DEV is).
