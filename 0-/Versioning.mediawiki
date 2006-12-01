@@ -1,5 +1,5 @@
 == DR Phase ==
-''The not yet released ones are ofcourse up for discussion''
+''The not yet released ones are ofcourse up for [[Talk:Versioning|discussion]]''
 
 * [[Release:DrAlban|DrAlban]] - Released 2005-12-18
 * [[Release:DrBombay|DrBombay]] - Released 2006-01-13
