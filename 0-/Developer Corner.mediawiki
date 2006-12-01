@@ -20,7 +20,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 * [[Reporting bugs]]
 * [[Submitting code]]
 * [[Download_XMMS2|Source Code]]
-* [http://git.xmms.se/HOWTO-FOR-XMMS2-DEVELS.txt Small git HOWTO] and related [[ChangeLog Format]]
+* [[Using Git|Small git HOWTO]] and related [[ChangeLog Format]]
 * [[ChangeLog Format]]
 * We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms.se tested].
 * [[Help Wanted]]
