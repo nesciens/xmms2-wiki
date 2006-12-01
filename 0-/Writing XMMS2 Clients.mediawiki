@@ -36,7 +36,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 * Collections with names starting with underscore ("_autosaved", "_active"), should not be shown to the user.
 
 === Browsing ===
-* When processing the result from a browsing request the 'realpath' property should be used instead of path, if exists.
+* When processing the result from a browsing request the 'realpath' property should be used instead of path, if it exists.
 
 === Community ===
 * Once you get your client working, drop us an e-mail to let us know about your work, and add your client to the [[XMMS2 Clients]] page.
