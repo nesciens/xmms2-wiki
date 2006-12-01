@@ -9,7 +9,7 @@
 * [[Release:DrFeelgood|DrFeelgood]] - Released 2006-07-15
 * [[Release:DrGonzo|DrGonzo]] - Released 2006-09-26
 * DrHouse
-...
+* DrIlDottore (see http://en.wikipedia.org/wiki/Il_Dottore)
 * DrJekyll
 ...
 * DrLecter
