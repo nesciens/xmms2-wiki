@@ -1,24 +1,38 @@
-== Current status ==
-; 2006-11-27 - DrGonzo-WIP-TEST2 released. Second pre-release of DrHouse
-; 2006-11-14 - DrGonzo-WIP-TEST1 released. First pre-release of DrHouse
-
 == Release Notes ==
 
+XMMS2 Team has released XMMS2 0.2DrHouse. This release is minor features addition and we wanted to get it out before merging collections and waf migration. This (I know) has been stated before, but this time we might even do it.
+
 === Upgrading ===
+
+The db will be upgraded. It shouldn't kill the db this time. Note that we have changed the default TCP port to 9667 (XMMS written on a cellphone). See <mantis>1250</mantis> for discussion.
 
 === Noteworthy changes ===
 
 ==== Feature additions ====
 
+;<mantis>1105</mantis>
+;<mantis>519</mantis>
+;<mantis>1147</mantis>
+;<mantis>1153</mantis>
+
 ==== Bug fixes ====
+
+;<mantis>1169</mantis>
+;<mantis>1193</mantis>
+;<mantis>1227</mantis>
+;<mantis>1116</mantis>
 
 === New platforms ===
 
+Nope
 
 === Notes to client authors ===
 
+Nothing
+
 === Notes to xform authors ===
 
+;<mantis>1158</mantis>
 
 === Full ChangeLog ===
 
