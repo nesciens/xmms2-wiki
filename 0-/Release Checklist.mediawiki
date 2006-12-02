@@ -13,8 +13,6 @@ This is a list of things that should be done or checked before, and when doing a
 * Release snapshot ready (use release.py) & uploaded to sourceforge
 * Update freshmeat page
 * Send announcement to mailinglist
-* Update debian packages
-** ''Possibly phase this out, now that we have official debian packages?''
 * wiki:
 ** news post [[Template:News]], [[Template:ShortNews]]
 ** release status box [[Template:ReleaseStatus]]
