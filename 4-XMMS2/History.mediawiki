@@ -62,6 +62,10 @@ The wiki gets a serious overhaul.
 ;20th:
 The first ever XMMS2 [[IRC Meeting]] is held.
 
+== December ==
+;2nd:
+[[Release:DrHouse | DrHouse]] is conjured.
+
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
 
