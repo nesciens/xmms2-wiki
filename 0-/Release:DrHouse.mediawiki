@@ -1,6 +1,6 @@
 == Release Notes ==
 
-XMMS2 Team has released XMMS2 0.2DrHouse. This release is minor features addition and we wanted to get it out before merging collections and waf migration. This (I know) has been stated before, but this time we might even do it.
+XMMS2 Team has released XMMS2 0.2DrHouse. This release is minor features addition and we wanted to get it out before merging collections and [http://code.google.com/p/waf/ waf] [http://git.xmms.se/?p=xmms2-danderson.git;a=summary migration]. This (I know) has been stated before, but this time we might even do it.
 
 === Upgrading ===
 
