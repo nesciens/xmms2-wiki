@@ -1,3 +1,5 @@
 * Waf implementation (danderson, tru)
 ** Perl bindings
 ** [[Windows|Windows port]]
+
+[[Category:IRC Meeting]]
