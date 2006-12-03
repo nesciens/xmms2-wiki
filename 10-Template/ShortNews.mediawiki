@@ -1,4 +1,4 @@
-{{Newsitem| date=02 December 2006 CLST (2006-12-02)| author=[[Tobias RundstrÃ¶m]]| title=New release. [[Release:DrHouse|DrHouse]] is out.| text=We (the XMMS2 Team) has released DrHouse which is aimed for minor feature additions and bugfixes.
+{{Newsitem| date=02 December 2006 CLST (2006-12-02)| author=[[Tobias RundstrÃ¶m]]| title=New release. [[Release:DrHouse|DrHouse]] is out.| text=We (the XMMS2 Team) have released [[Release:DrHouse|DrHouse]] which includes some minor feature additions and bugfixes, prior to some major changes in the next release cycle. (See [[Release:DrHouse#Release_Notes|release notes]] for full details.)
 }}
 
 {{Newsitem| date=16 November 2006 WST (2006-11-16)| author=[[Sham Chukoury]]| title=It's meeting time!| text=Come join us on the 20th of November for our first [[IRC Meeting]]!}}
