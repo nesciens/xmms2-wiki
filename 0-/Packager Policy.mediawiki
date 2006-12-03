@@ -1,4 +1,4 @@
-== Downstream Maintance ==
+== Downstream Maintenance ==
 
 ''All examples are from the FreeBSD port''
 
@@ -94,3 +94,5 @@ Any scripts installed under %%DATADIR%%/scripts/startup.d will be executed when 
 == Actual Packaging ==
 
 When you actually get to packaging things up and are looking for descriptions, it is requested that you use the descriptions that are liked from the Component Status list on the [[Project Status]] page. Each of these pages has a text blurb about the component so that if your operating system tends to break components into seperate packages you have a text blurb available for each component.
+
+[[Category:Policies and guidelines]]
