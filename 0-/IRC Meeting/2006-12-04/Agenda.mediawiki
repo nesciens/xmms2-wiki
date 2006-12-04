@@ -2,5 +2,6 @@
 ** Perl bindings
 ** [[Windows|Windows port]]
 * DrI and DrJekyll release cycles
+** update [[Roadmap]]
 
 [[Category:IRC Meeting]]
