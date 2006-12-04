@@ -73,7 +73,7 @@ Problem:
     for node in task.m_inputs: add_node_sig(node)
   File "/home/andersg/.waf-1.0.1/wafadmin/Scan.py", line 97, in add_node_sig
     m.update(tree.m_tstamp_variants[variant][node])
- KeyError: <b:/home/andersg/dev/xmms2-devel/src/xmms/sample-gen.o>
+ KeyError: b:/home/andersg/dev/xmms2-devel/src/xmms/sample-gen.o
 
 solution:
 
