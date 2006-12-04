@@ -15,12 +15,22 @@
 * DrGonzo (september)
 ** [[SoC:DAAP | DAAP]] (coledot, done)
 
-* DrHouse (november?)
-** [[Generated IPC]] (anders / tru)
-** swig (anders)
+* DrHouse (december)
+** bugfixes
+** last.fm and vocoder
+
+* DrI
+** Bugfixes
+
+* DrJekyll (january / february)
 ** [[Collections]] (theefer)
+** Waf migration
 ** [[SoC:AirTunes| AirPlay]]
 ** [[Windows]] port?
+
+* Future
+** [[Generated IPC]] (anders / tru)
+** swig (anders)
 
 == See Also ==
 * [[Versioning]]
