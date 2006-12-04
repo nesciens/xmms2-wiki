@@ -1,5 +1,6 @@
 * Waf implementation (danderson, tru)
 ** Perl bindings
 ** [[Windows|Windows port]]
+* DrI and DrJekyll release cycles
 
 [[Category:IRC Meeting]]
