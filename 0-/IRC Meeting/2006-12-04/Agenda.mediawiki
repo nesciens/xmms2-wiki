@@ -1,6 +1,7 @@
-* Waf implementation (danderson, tru)
+* Waf implementation (danderson, tru) and merge
 ** Perl bindings
 ** [[Windows|Windows port]]
+* Collections merge
 * DrI and DrJekyll release cycles
 ** update [[Roadmap]]
 
