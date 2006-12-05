@@ -1,0 +1,367 @@
+= Overview =
+
+Collections (currently scheduled for DrJekyll) mark an important change in the way XMMS2 interacts with its Media Library.
+
+A collection is a subset of the Media Library, or in other words, a group of songs. It can be static or dynamic, ordered or not, but in the end it's just that: a set of media entries.
+
+For instance, a collection can be "all songs by Led Zeppelin before 1975" or "all songs added to the Media Library less than 10 days ago" (dynamic collections).  It can also be an arbitrary sequence of songs: "Smells Like Teen Spirit", "Hotel California" and "The Sounds of Silence" (static collection).  It can even be an automatic static list, e.g. "10 songs randomly fetched from the collection 'Any Music But Usher'".
+
+With just a few examples, we see that the concept of collections provides a solid basis for different concepts, previously separated in the API and the server: queries, views, playlists (static or "smart"), etc.  The goal of collections is indeed to unify them into one unique but powerful structure.
+
+For the client developer, collections will replace SQL queries and allow persistence of "views" of the Library, dynamic playlists, and other such features.  The user will benefit from the new features hence possible in the clients: Party Shuffle playlists, saved queries common to all clients, etc.
+
+
+= Rationale =
+
+The current API allows powerful queries in the medialib db, saved playlists, etc.  Why change something if it's not broken?
+
+The problem is that it ''will'' be broken as soon as we try to introduce new features, such as dynamic playlists, saved queries, etc.  While they could be hacked as hooks in a client, this solution is neither elegant, nor robust. Connect several such clients and they will start competing to change the playlist or won't be able to share saved views of the medialib.
+
+We can therefore conclude that these features must be implemented in the server, so that all clients can make a common use of them. However, since they require the selection of a subset of the library (e.g. "playlist containing only Beatles songs"), the only way to perform this currently is by using the corresponding SQL query. First, this implies that each client has created its own functions to generate the SQL query corresponding to the user's choice.  Second, parsing back the query into a usable structure (e.g. so that the user can edit its choice) is a major hassle.
+
+The solution to this problem is to unify the way queries are represented, in a higher level of abstraction.
+
+[[Image:Collections-raising-abstraction.png|frame|center|Raise of abstraction of the API with collections]]
+
+In the diagram above, we clearly see the raise of the position of the API in the query flow.  As a consequence, the client only deals with an abstract representation of queries and the transformation to the SQL form is done by the server. This introduces a looser coupling between what the client sees and implementation of the Media Library on the server. Therefore, all clients and the server share the same representation of queries, which can be exchanged, read and written freely. Moreover, it allows to transparently change the storage system used by the Media Library.
+
+Having such a universal representation of queries makes it possible to add features based on sets of songs on the server, such as saved views or Party Shuffle playlists.  In addition to that, by using operators to make collections orderable, we can represent not only sets but also ''lists'' of songs ; this allows us to generalize the concept of collections to handle the playlists.
+
+This generalization can be exploited to refactor the playlist API. Instead of the current model, where there is one "active playlist" and separate "saved playlists" in the medialib, a more natural approach would be to always play one of the saved playlists, which would itself be a collection.  The interface would thus gain in uniformity.
+
+In conclusion, collections are a new step towards abstraction of the access and usage of the Media Library, unification of previously separate concepts on the server, improvement of shared structures among clients, and creation of new varieties of playlists.
+
+
+= Terminology =
+
+; Media Library
+: The Media Library is the entity containing all the Media. The name of this as a set is "All Media". It can also be refered to as "universe".
+
+; Media
+: A playable entity, usually a piece of music. It is identified by a unique id and stores informations about the entry as properties: the URI of the file, plus some technical informations (bitrate, mime-type, duration, etc) and possibly song metadata (title, artist, genre, etc). In practice, files and streams are the most common types of media.
+
+; Property
+: A property is an information attached to a given entity. In practice, both Media and Collections can have properties. If a collection operator is said to have a property it can also be called an attribute, which is the name used in the API
+
+; DAG ([http://en.wikipedia.org/wiki/Directed_acyclic_graph Directed Acyclic Graph])
+: In mathematics, a Directed Acyclic Graph is a set of nodes (or vertices) connected by directed edges, without any directed cycle. An different (slightly more general) word is "tree". In the context of collections in XMMS2 it is the structure determining which media are part of a mediaset, and which are not.
+
+; Collection
+: A collection is a subset of the Media Library, i.e. a group of Media. It can be static or dynamic (e.g. if resulting for a query). It can be unordered (set) or ordered (list). It can also be called a mediaset, or, if ordered, a medialist.
+:
+: Operators are used on collections to form new collections (e.g. filter by artist, intersection set operation).  Consequently, a collection can be the result of a number of different operations/operators. These operators are  ordered in a DAG. The function of the DAG is to specify what collections are used as 'input' for the operator and where its 'output' goes.
+:
+: The largest possible collection is the Media Library itself, which contains all the Media.
+
+; Namespace
+: Collection can be assigned a name. These names are organized in namespaces.  In other words, the space where collections live is partitioned in several non-overlapping areas, and each collection belongs to one and only one of these namespaces.
+:
+: The two namespaces expected at this point are "Collections" and "Playlists".  More might be added later on.
+:
+: Note that, from a collection in a given namespace, it is possible to reference another collection in a different namespace.
+
+[[Image:Collection-namespaces.png|frame|center|Namespaces in the collection space]]
+
+; Mediaset
+: A media set is (surprise) a set of media, i.e. an unordered collection.
+
+; Medialist
+: A media list is (surprise-bis) a list of media, i.e. an ordered collection. Note that a medialist can also be used as a mediaset; then the order is just ignored.
+
+; Operator
+: Operators are nodes in the collection DAG. They are used to combine and restrict collections.  Therefore, the result (output) of an operator is always a collection.  The input varies: some operators take no input (e.g. the idlist operator), some take one collection as input (e.g. match, complement), some take two collections as input (e.g. union, intersection).
+:
+: There are different types of operators
+: 
+: Examples of operators are:
+* set operators: union, intersection, complement
+* filtering operators: match, contain, larger, smaller, has
+* list operators: idlist, idqueue, Party Shuffle
+
+: Each operator outputs a specific type of collection. The first two types of operators (set and filtering) produce mediasets; the last type (list) produces medialists.
+: 
+: '''Note:''' it was said above that collections have properties. It would be more accurate to say that ''operators'' have properties (which are called attributes in the API) Read ---below for a discussion on collections vs. operators.
+
+; idlist
+: An idlist is an operator that stores a list of media ids. It takes no input and outputs the medialist corresponding to its list of ids.
+
+; Playlist
+: The conventional definition of a playlist is a list of songs. Therefore, in our vocabulary, it is a medialist and hence an ordered collection.  For instance, a playlist can correspond to an idlist.
+:
+: Note that not ''all'' collections can be seen as playlists ; mediasets cannot, because there would be no way to determine the play order.
+
+= The Concept of Collections =
+
+Images speak better than words, so let's have a look at the representation of a collection (the 'collection structure', a DAG):
+
+[[Image:Collection-diagram-example-1.png|frame|center|Sample collection graph]]
+
+This diagram represents the definition of the <span style="font-variant:small-caps">UberSound</span> collection (bottom).
+
+Dashed blue round boxes are references to existing collections. Yellow boxes are operators and arrows connect their inputs and outputs.  The name of each operator appears in the top part of the box, while properties/attributes (if any) appear in the lower part.  The green squares represent the content (i.e. list of media ids) of the idlist operator [5].
+
+The <span style="font-variant:small-caps">All Media</span> collection is a special collection containing all the media ; it is equivalent to considering the whole Media Library.  The <span style="font-variant:small-caps">Boring Playlist</span> collection has been defined previously ; its definition is not shown here.
+
+The informal definition of <span style="font-variant:small-caps">UberSound</span> is: all media by Beck released between 1999 and 2004, including additional media specified in [5], except media found in the <span style="font-variant:small-caps">Boring Playlist</span> collection.
+
+It is important to understand that collections appear at every step of the graph: at the input of operator LARGER [2] ("all media"), at the output of operator [2] and input of operator [3] ("all media after 1999"), at the output of operator [3] ("all media between 1999 and 2004"), at the output of operator [4] ("all media by Beck, between 1999 and 2004"), etc.  However, only the collection at the output of operator [8] has a label (<span style="font-variant:small-caps">UberSound</span>), others are just intermediate (anonymous) collections.
+
+
+The usage of operators is quite self-explanatory in this example, but let's have an exhaustive overview of the different types of operators available.
+
+== Collection Operators ==
+
+We can split the collection operators in three types:
+* Set operators
+* Filter operators
+* List operators
+
+=== Set Operators ===
+
+Set operators allow grouping and combination of multiple collections.
+
+[[Image:Collection-operators-set.png|frame|center|Collection ''set'' operators]]
+
+The output of set operators is a mediaset.
+The input is a list of collections (two on the figure, but there can be more).
+
+Description of the operators:
+
+* '''<code>and</code>''': intersection operator. The resulting collection only contains media present in /both/ input collections.
+* '''<code>or</code>''': union operator. The resulting collection contains all media present in /either/ input collections.
+* '''<code>not</code>''': complement operator. The resulting collection contains all media /not/ present in the input collection.
+
+=== Filter Operators ===
+
+Filter operators impose restrictions on collections.
+
+[[Image:Collection-operators-filter.png|frame|center|Collection ''filter'' operators]]
+
+The output of filter operators is a mediaset.
+The input is the collection to filter.
+
+Filter operators are configured using their two properties:
+
+* The '''<code>field</code>''' property determines which property of the media should have its value extracted for comparison (<code>V<sub>m</sub></code>).
+* The '''<code>value</code>''' property determines the value to compare with (<code>V<sub>o</sub></code>).
+* The optional '''<code>case-sensitive</code>''' property determines whether the comparison is case-sensitive. Set it to "true" to enable case-sensitivity ; by default, comparisons are case-insensitive.
+
+Description of the operators:
+
+* '''<code>match</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> exactly matches <code>V<sub>o</sub></code>.
+* '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> contains <code>V<sub>o</sub></code>.
+* '''<code>larger</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is larger than <code>V<sub>o</sub></code>.
+* '''<code>smaller</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is smaller than <code>V<sub>o</sub></code>.
+* '''<code>has</code>''': The resulting collection only contains media for which the given property is set.
+
+=== List Operators ===
+
+List operators create static, ordered collections.  Unlike the other two (dynamic) types of operators, list operators actually /store/ their content, as a list of media ids.  This is represented on the figure as a green stack of squares.
+
+[[Image:Collection-operators-list.png|frame|center|Collection ''list'' operator]]
+
+The output of list operators is a medialist.
+
+Description of the operators:
+
+* '''<code>idlist</code>''': a static list of media ids.
+* '''<code>queue</code>''': a static list of media ids ; when used as a playlist, played songs are popped out of it.  The <code>history</code> property specifies how many played songs are kept before they are removed.
+* '''<code>party shuffle</code>''': a static list of media ids, populated by a random selection of songs from the input collection until the list size reaches the <code>upcoming</code> property. Played songs are popped similarly to the idqueue operator, using the <code>history</code> property. More property could be added to further customize this operator.
+
+Notes:
+* List operators are especially useful to include or exclude some given media from a collection (using the set operators), and to create playlists!
+* Special functions should be made available to create, edit and reorder the list of ids in a list operator.
+
+== Formal definition of a Collection ==
+
+At that point, things might have become slightly confusing: what exactly is a collection?
+
+A set of media? An operator? A DAG? A label? A query?
+
+Technically, all of the above.  To avoid confusion in discussions about Collections, let's try to define the relations between these different forms.
+
+A '''collection''' is ''equivalent to'' a '''query''' in the Media Library, which ''matches'' a '''set of media'''.  The '''query''' is ''extracted from'' the '''DAG''' of all incoming edges to the '''operator''' ''referenced'' by the '''collection'''.
+
+Thus, a collection:
+* ''matches'' a '''set of media''';
+* ''references'' (or ''labels'') an '''operator''';
+* ''corresponds to'' a '''DAG''' (above the operator);
+* ''is equivalent to'' a '''query''';
+
+It is therefore important to know what exactly we mean when we refer to a ''collection''.
+
+Sometimes, it can be made clearer by explicitely calling '''collection structure''' the DAG corresponding to the collection, and '''content of the collection''' the set of media matched by the collection (e.g. a client will create a ''collection structure'' and save it on the server, before querying it to list the ''content of the collection'').
+
+== <code>idlists</code> ==
+
+An '''<code>idlist</code>''' is an operator that stores a static list of media.
+
+It does not have any input; its output is the set of media it stores. When this output is used as the input for another operator (e.g. the <code>and</code> set operator), it is used as a set, that is in no particular order.  However, it is important to keep in mind that an <code>idlist</code> stores an '''ordered''' list of media.
+
+<Code>Idlists</Code> can therefore be used as playlists.  Only <code>idlist</code> operators can be saved in the ''Playlists'' namespace ; all collections in this namespace can be played as playlists and accessed using the standard collection and <code>idlist</code> modifiers.
+
+When an <code>idlist</code> operator is created, the list of media it contains must be specified.  It can be done either by providing a list of media ids, or by "feeding" the <code>idlist</code> with the content of a collection.  This is a key feature, as it allows to "instanciate" a collection as an <code>idlist</code> &mdash; a playlist &mdash; and therefore to ''play'' it!
+
+An <code>idlist</code> must be editable:
+* insertion of a new media at a given position ;
+* removal of a media at a given position ;
+* sorting of the list by one or several field ;
+* shuffling of the list ;
+* clearing of the list.
+
+These correspond to the functions provided by the current playlist API.  The next section explains how collections change the playlist management.
+
+== Playlists as Collections ==
+
+The playlist API needs a major refactoring.  Currently, there is one "active" playlist, which can be saved in the medialibrary under a given name.  The content of "saved" playlists can then be loaded into the "active" playlist. It is therefore similar to the way a player such as XMMS1 handles playlists (one active playlist, saved playlist files).
+
+The current API is very limited: saved playlists cannot be modified and the concept of an "active" playlist is confusing.
+
+The new playlist API is based on collections.  Hence, a playlist is simply a medialist saved in the ''Playlists'' namespace.  One of these medialists is referenced as the "current" playlist and songs are played sequentially from its content.  A <code>position</code> property in the collection indicated which song is played (or was last played, for non-current playlists).
+
+It is important to note that not all collections can be playlists: medialists can, but mediasets ''cannot''.  To be even more accurate, only '''<code>idlists</code>''' can be used as playlists.  The reason for this is hat otherwise, even with ''ordered'' sets of media, it would be impossible to reorder the playlist.  This would make playlists confusing in clients.
+
+Because the ''Playlists'' namespace only contains <code>idlist</code> collections, playlists always correspond to a static list of media (as opposed to a dynamic list obtained from a query); their content can therefore be modified, reordered, etc.
+
+However, this does not imply that all playlists have to be hand-picked.  List operators can automatically produce <code>idlists</code> from more complex sources, for instance the Party Shuffle operator.
+
+=== Advanced Collection Operator: Party Shuffle ===
+
+A '''Party Shuffle''' (inspired from the eponymous feature in iTunes) is a collection operator that takes a collection C as input and outputs a random medialist of media from C.  The size of the list of the list is determined by the <code>size</code> property of the operator.
+
+The resulting collection being a medialist, it can be used as a playlist.
+
+It is important to note that the output is '''not''' a random mediaset. Reading the content of the Party Shuffle twice returns the same list and not a new random list.  However, when it is used as a playlist and the top entry is being played, as soon as the song is finished the list is updated (played song popped out and a new random song enqueued at the end).  The same goes if a client removes media from the list: new random songs are enqueued to fill the list up to the correct size.  To "refresh" the shuffle, a client could therefore simply empty the playlist.
+
+In short, a Party Shuffle is a static collection automatically updated by playback or modification events, so as always to store <code>size</code> media.
+
+More customization properties could be handled (as does [http://amarok.kde.org/ amaroK]):
+* <code>remove played</code>: whether to pop played songs from the list.
+* <code>history size</code>: if <code>remove played</code> is activated, how many played songs should remain in history before they are popped.
+
+=== Advanced Collection Operator: Suggestion Shuffle ===
+
+''This is only a proposition, mainly to show how advanced playlists and operators can be.''
+
+A '''Suggestion Shuffle''' is a collection operator that uses online recommandation systems (e.g. [http://www.last.fm/ Last.Fm], [http://www.pandora.com/ Pandora]) to enqueue new songs according to the current content of the playlist.
+
+This type of playlist exists in the [http://amarok.kde.org/ amaroK] player.
+
+=== Advanced Collection Operator: Playlist Round-Robin ===
+
+''This is only a proposition, mainly to show how advanced playlists and operators can be.''
+
+A '''Playlist Round-Robin''' is a collection operator that takes a set of medialists as input and combines them using a round-robin policy (i.e. taking an equal amount of media from each of them).
+
+
+= Using Collections =
+
+Now that the concept of collections has been explained, let's present how to use and work with them.
+
+== Create Collections ==
+
+A collection is first created locally by a client, using API functions to create operators and connect them together to build the wanted graph structure that corresponds to the collection.
+
+Let's look at the following example (a simplified version of an earlier graph):
+
+[[Image:Collection-diagram-example-2.png|frame|center|Building the collection graph]]
+
+The build sequence to create this structure is the following:
+# Create a node (1) referencing the <span style="font-variant:small-caps">All Media</span> collection;
+# Create a '''<code>larger</code>''' node (2), give it node (1) as input, set its <code>field</code> property to "year" and <code>value</code> to "1999";
+# Create a '''<code>smaller</code>''' node (3), give it node (2) as input, set its <code>field</code> property to "year" and <code>value</code> to "2004";
+# Create a '''<code>match</code>''' node (4), give it node (1) as input, set its <code>field</code> property to "artist" and <code>value</code> to "Beck";
+# Create an '''<code>and</code>''' node (5), give it node (3) and (4) as input;
+# Create a node (6) referencing the <span style="font-variant:small-caps">Pop Playlist</span> collection;
+# Create an '''<code>or</code>''' node (7), give it node (5) and (6) as input;
+
+Note that the graph must be built from top to bottom, often starting from a reference to an existing collection (e.g. <span style="font-variant:small-caps">All Media</span>). Also note that no node is created for the <span style="font-variant:small-caps">Precious Coll</span> label (8); it only represents the name under which the collection should be saved on the server.
+
+Once the collection graph has been prepared by the client, it can either be used to query the Media Library or saved on the server in the Collection Space.
+
+== Collections on the Server ==
+
+Collections can be saved on the server.  They are identified by their namespace and their name (unique in each namespace).  Note that some restrictions may apply to the type of collection that can be saved in a given namespace (e.g. only <code>idlists</code> in the ''Playlists'' namespace).
+
+To browse the saved collections, one can ask the server for the list of names of all collections in a given namespace.  Another feature can be used to find the list of names of all collections containing a given media.  The structure of a collection can then be retrieved using its name.
+
+Collections can of course be removed from the server at any time. Once it is identified (by its name and namespace), the corresponding part of the collection graph is deleted.  If another collection references the removed collection, the reference will be replaced by a copy of the removed collection.
+
+To modify a saved collection, a client must first retrieve its structure. After editing it locally, it must save it again on the server under the same name.  The new collection graph will replace the previous one.
+
+== Browsing a Collection ==
+
+Obviously, the primary usage of collections is to select media.
+
+The first way to do this it to use the '''query media''' feature to retrieve the list of media (i.e. media ids) matching a collection.  In addition to the collection structure, it can optionally take:
+* a list of fields by which to ''order'' the list of media ids (by default, simply order by media id).  This is similar to <code>ORDER BY</code> in SQL.
+* a range to only retrieve part of the content of the collection, specified by the start position and the maximum number of media (all by default).  This is similar to <code>LIMIT</code> in SQL.
+
+Another function can then be used to retrieve all the properties of a media given its id.  Combined with ''query media'', it can be used to do lazy loading of media informations.
+
+The second way to retrieve data from a collection is the '''query infos''' feature, that retrieves the properties of media matching a collection.  That is, while ''query media'' returns a list of media ids, ''query infos'' returns a list of media properties (or ''dict'').  Again, in addition to the collection structure, it can optionally take:
+* a list of fields by which to ''order'' the list of media (by default, simply order by media id).
+* a range to only retrieve part of the content of the collection, specified by the start position and the maximum number of media (all by default).
+* the list of properties to retrieve (all by default).
+* a list of fields by which to ''group'' media infos (none by default).  This is similar to <code>GROUP BY</code> in SQL.
+
+The last parameter is especially useful to select specific informations from a collection.  For instance, by only selecting and grouping by the ''artist'' property, ''query infos'' will return the list of all artists contained in the collection.
+
+== Playing a Collection (Playlist) ==
+
+The other main usage of collections is to be used as playlists.
+
+Changing the active playlist can be done by '''loading''' another collection from the Playlists namespace.  The latter becomes the new active playlist, with playback position resumed at the position when it was last played (saved as the <code>position</code> property).
+
+Because playlists are collections (or, to be accurate, <code>idlists</code>), they can be modified identically to normal collections: a playlist can be retrieved, modified and saved back on the server.
+
+However, this is often suboptimal as most operations are performed on a limited number of entries, and retrieving the collection structure containing the whole list of ids is costly.  It also makes it harder to track atomic changes to the playlist.
+
+The alternative is to keep a '''dedicated API to modify playlists''', similar to the [http://xmms2.xmms.se/doxygen/DrDolittle/group__PlaylistControl.html current one].  The functions available can basically remain unchanged, though with the difference that the actions can be performed on ''any'' of the saved playlist, not just the active playlist.
+
+
+= Sample Use Cases =
+
+== Find all songs by Ladytron except album "604" and song with id 719. ==
+
+[[Image:Collection-diagram-usecase-1.png|frame|center|Use case 1]]
+
+Create the collection structure pictured above, by using <code>match</code> operators to filter all songs by Ladytron and exclude the album called "604" (using the <code>not</code> operator) as well as the song with id 719 (stored in an idlist).
+
+Then, ''query media'' on the server by giving it the whole structure, i.e. a reference to the <code>and</code> operator (6).  The songs matching the constraint will be returned.
+
+== Find all albums by Pink Floyd. ==
+
+[[Image:Collection-diagram-usecase-2.png|frame|center|Use case 2]]
+
+Create the simple collection structure pictured above.
+
+Then ''query infos'' on the server and set "album" as the only property to select and group by.  The list of albums by Pink Floyd will be returned.
+
+== Create an "Interesting" Party Shuffle playlist of size 20 containing all songs by Archive and the content of collection "Rock 90's". ==
+
+[[Image:Collection-diagram-usecase-3.png|frame|center|Use case 3]]
+
+Create the collection structure pictured above, by taking the union of all media by Archive and a reference to the "Rock 90's" playlist, and feeding it to a <code>Party Shuffle</code> operator (with the <code>size</code> property set to 20).
+
+Save that node (4) on the server under the name "Interesting" (displayed as (5) on the graph), in the ''Playlists'' namespace.
+
+== Create a "Some BjÃ¶rk" collection containing all music by BjÃ¶rk in Flac format except the songs found in playlist "Foo". ==
+
+[[Image:Collection-diagram-usecase-4.png|frame|center|Use case 4]]
+
+Create the collection structure pictured above, by taking the intersection of all media by BjÃ¶rk in Flac format and the complement of playlist "Foo" (thus excluding its content).
+
+Save that <code>and</code> node (5) on the server under the name "Some
+BjÃ¶rk", in the ''Collections'' namespace.
+
+== Find all playlists containing songs from the album "Felt Mountain" by Goldfrapp. ==
+
+[[Image:Collection-diagram-usecase-5.png|frame|center|Use case 5]]
+
+Create the collection structure pictured above, that matches all media by Goldfrapp from album "Felt Mountain".
+
+Then, ''query media'' on the server by giving it the leaf node (2); for each media id in the retrieved list, search all collections containing it in the ''Playlists'' namespace.
+
+[[Category:Summer of Code 2006]]
+[[Category:Collections]]
