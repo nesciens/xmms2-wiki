@@ -1,0 +1,73 @@
+== Status ==
+{| class="wikitable" border="1" valign="top"
+|-
+| Who || DONE || TODO || BLOCKED || DISCUSS
+|-
+| [[User:Anders Gustafsson | anders]]
+|
+* NMS output plugin
+* merged theefer + python in xmms2-alex
+|
+* DSP suport in NMS
+* Python collections API
+|
+|
+|-
+|[[Tobias Rundstr&ouml;m | tru]]
+|
+* lots of work on Waf
+* [[Client:Esperanza | Esperanza]] 0.2.2
+|
+* merge Waf
+* outstanding Waf features
+* [[Client:Esperanza | Esperanza]] 0.3.0
+| merge [[collections]]
+|
+* AirPlay
+* Esperanza in main tree
+|-
+|[[Georg Schild | dangertools]] || || ||
+|-
+|[[Daniel Chokola | puzzles]] || || ||
+|-
+|[[S&eacute;bastien Cevey | theefer]]
+|
+| help merge xmms2-theefer
+|
+|
+|-
+|[[Daniel Svensson | nano]] || || ||
+|-
+|[[Alexander Botero-Lowry | DraX]]
+| Waf builds on FreeBSD (except sidplay)
+|
+|
+|
+|}
+
+== Topics ==
+=== Waf Implementation and Merge ===
+;Action: merge to xmms2-devel
+;Notes:
+* outstanding issues with waf team
+* outstanding features like manpages
+
+=== Collections Merge ===
+;Action:
+* merge to xmms2-devel
+* inform via mailing list
+;Notes: already merged into xmms2-anders
+
+=== DrI and DrJekyll Release Cycles ===
+;Action: none
+;Notes:
+* DrI will contain DrHouse pre-collections
+* DrJekyll will contain collections
+* DrI will only be released if DrHouse has enough significant bugfixes
+* DrI and DrJekyll will be developed concurrently
+* The reason for this is the potentially long release cycle of DrJekyll.
+
+== Full Transcript ==
+A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2006-12-04/transcript.txt here].
+
+[[Category:IRC Meeting]]
