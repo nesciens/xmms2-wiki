@@ -1,0 +1,36 @@
+= Proposal for definitions of nomenclature, to avoid confusion =
+
+; Property
+: A field-key combination used to specify something. E.g. the title of a song.
+
+; Media
+: An atomic entity that is part of the media library, typically a song or stream.
+: Media can have properties, such as titles, durations, etc.
+
+; Mediaset
+: A mediaset is an abstract structure containing a number of media. I.e. it is a container for media.
+: A mediaset is the result/output of an operator
+
+; Operand
+: A mediaset used by an operator.
+
+; Attribute
+: An attribute is a field-key combination, modifying the behaviour of an operator.
+: An attribute can also be called a 'property' of an operator
+
+; Operator
+: An operator is the concrete representation of an operation. 
+: An operator always results in a mediaset.
+: An operator can have operands (if applicable).
+: An operator can have attributes.
+
+DAG
+: Operators can have operands. Operands are mediasets. Mediasets are results of operators. Because of this operators can be organized in a tree structure. This structure is also called a DAG ([http://en.wikipedia.org/wiki/Directed_acyclic_graph Directed Acyclic Graph]). In this DAG the operators are the nodes or vertices and the mediasets that are transferred between them are the edges.
+
+; Medialist
+: A medialist is an ordered mediaset.
+
+; Collection
+: Collection is identical mediaset.
+
+[[User:Nesciens|Nesciens]] 22:50, 5 December 2006 (CET)
