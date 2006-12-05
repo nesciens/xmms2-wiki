@@ -1,0 +1,2 @@
+<div class="messagebox merge metadata">[[Image:Merge-arrows.gif|left]] This {{#if:{{NAMESPACE}}|page|article}} or section needs to be merged with ''[[:{{NAMESPACE}}:{{{1}}}|{{{1}}}]]'' at, or prior to the next release. ([[{{{2|:{{NAMESPACE}} talk:{{PAGENAMEE}}}}}|Discuss]])</div>
+<includeonly>[[Category:Articles to be merged]]</includeonly>
