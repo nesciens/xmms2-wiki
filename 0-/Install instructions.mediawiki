@@ -1,5 +1,7 @@
 This page covers the process of installing XMMS2 from source code. You may also use [[Download XMMS2#Binary_Packages | binary packages]] if you want.
 
+'''''Important note''': XMMS2 recently switched to using the [[Waf]] build system. If you're using a snapshot or release made after [[Release:DrHouse|DrHouse]], please see the [[Waf#How_to_use_waf|instructions for using waf]] instead of the steps outlined here.''
+
 == Obtaining the source ==
 
 Check the [[Download XMMS2 | download]] page for information on how to obtain the XMMS2 source code.
