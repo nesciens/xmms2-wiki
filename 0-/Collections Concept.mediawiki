@@ -43,7 +43,7 @@ In conclusion, collections are a new step towards abstraction of the access and 
 ; Property
 : A property is an information attached to a given entity.  In practice, both Media and Collections can have properties.
 
-; DAG (Directed Acyclic Graph)
+; DAG ([http://en.wikipedia.org/wiki/Directed_acyclic_graph Directed Acyclic Graph])
 : In mathematics, a Directed Acyclic Graph is a set of nodes (or vertices) connected by directed edges, without any directed cycle.
 
 ; Collection
@@ -89,7 +89,6 @@ In conclusion, collections are a new step towards abstraction of the access and 
 : The conventional definition of a playlist is a list of songs. Therefore, in our vocabulary, it is a medialist and hence an ordered collection.  For instance, a playlist can correspond to an idlist.
 :
 : Note that not ''all'' collections can be seen as playlists ; mediasets cannot, because there would be no way to determine the play order.
-
 
 = The Concept of Collections =
 
