@@ -9,7 +9,7 @@ The waf homepage is [http://freehackers.org/~tnagy/bksys.html here]. One of the 
 However during this time (DrJekyll release cycle) waf is undergoing considerable changes. Tru is in constant contact with the waf team and submitting patches all the time. These patches may or may not have made it into the official waf, so please always use the waf executable included with XMMS2.
 
 === Prepare for WAF ===
-If you are running GIT you must be aware that waf doesn't play well with directories where you have old object and binary files. So before you try building anything you should do scons -c install... or even better, pull to a new directory and start fresh.
+If you are running git you must be aware that waf doesn't play well with directories where you have stale object or binary files. So before you try building anything you should do <code>git clean -d</code> or re-clone to a new directory.
 
 === Configure ===
 
