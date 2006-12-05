@@ -3,6 +3,11 @@ XMMS2 has migrated to waf since 2006-12-04. This means that you have to learn a 
 
 == How to use WAF ==
 
+=== Overview ===
+The waf homepage is [http://freehackers.org/~tnagy/bksys.html here]. One of the nice things about waf is that it can be compressed down to one file and distributed with its target program. This is the case with XMMS2. This eliminates the need to install waf and only the dependency on Python remains.
+
+However during this time (DrJekyll release cycle) waf is undergoing considerable changes. Tru is in constant contact with the waf team and submitting patches all the time. These patches may or may not have made it into the official waf, so please always use the waf executable included with XMMS2.
+
 === Prepare for WAF ===
 If you are running GIT you must be aware that waf doesn't play well with directories where you have old object and binary files. So before you try building anything you should do scons -c install... or even better, pull to a new directory and start fresh.
 
