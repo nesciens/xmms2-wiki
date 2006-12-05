@@ -12,7 +12,7 @@ You will '''need''' the following things to build XMMS2.
 
 * [http://www.python.org/ Python] (>=2.2.1)
 * [http://www.scons.org/ SCons]. (>= 0.96.90)
-* [http://www.gtk.org/ GLib] (>= 2.6.0)
+* [http://www.gtk.org/ GLib] (>= 2.8.0)
 * [http://www.sqlite.org SQLite] (>=3.2.4) (will work for versions < 3.2.4, but with poor performance and potential bugs)
 
 If you are building XMMS2 on a binary distro, be sure to install -dev or -headers versions of these packages (if available). XMMS2 uses these headers to link to shared libraries on your system and will not build.
