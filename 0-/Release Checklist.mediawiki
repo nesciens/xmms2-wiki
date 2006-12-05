@@ -6,7 +6,7 @@ This is a list of things that should be done or checked before, and when doing a
 * Make sure API-versions are increased if needed.
 * Make sure so-versions are increased if needed.
 * Sleep. Make sure you are not tired when doing release, to minimize risks of mistakes.
-* Check if there is work needed on articles in [[Category:Articles_to_be_merged_at_next_release]]
+* Check if there is work needed on articles in [[:Category:Articles_to_be_merged_at_next_release]]
 
 == Release ==
 * wiki:
