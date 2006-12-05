@@ -4,11 +4,11 @@
 == Overview ==
 The waf homepage is [http://code.google.com/p/waf/ here]. One of the nice things about waf is that it can be compressed down to one file and distributed with its target program. This is the case with XMMS2. This eliminates the need to install waf and only the dependency on Python remains.
 
-However during this time ([[Release:DrJekyll|DrJekyll]] release cycle) waf is undergoing considerable changes. Tru is in constant contact with the waf team and submitting patches all the time. These patches may or may not have made it into the official waf, so please always use the waf executable included with XMMS2.
+However waf is currently ([[Release:DrJekyll|DrJekyll]] release cycle) undergoing considerable changes. Tru is in constant contact with the waf team and submitting patches all the time. These patches may or may not have made it into the official waf, so please always use the waf executable included with XMMS2.
 
-== How to use WAF ==
+== How to use waf ==
 
-=== Prepare for WAF ===
+=== Prepare for waf ===
 If you are running git you must be aware that waf doesn't play well with directories where you have stale object or binary files. (i.e. stale files previously built by scons) So before you try building anything you should do <code>git clean -d</code> or re-clone to a new directory.
 
 === Configure ===
@@ -85,7 +85,7 @@ solution:
 Make sure that you don't have any .o .a .c (generated ones) left from your scons install!
 
 === I changed prefix but it didn't recompile! ===
-Problem: WAF does only generate xmms_defs.h on configuration and doesn't depend on it correctly
+Problem: Waf does only generate xmms_defs.h on configuration and doesn't depend on it correctly
 Solution:
 
  ./waf clean
