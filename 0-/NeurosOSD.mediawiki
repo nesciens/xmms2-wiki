@@ -18,6 +18,7 @@
 **bash BUILD-XMMS2
 *Wait
 *Now you have an XMMS2 directory in /mnt/tmpfs.
+*<insert step here to strip down the directory, most things are _not_ needed) 
 *Copy this XMMS2 directory to a memory card/usb-stick/usb-harddrive
 *telnet to the OSD
 *Kill the mainapp
