@@ -1,0 +1,32 @@
+'''Here is the quick guide:'''
+
+*Make sure you have sourced neuros-env
+** source /wherever/it/is/installed/neuros-bsp/neuros-env
+* Grab xmms2-DrHouse-neuros-OSD-buildenv.tar.gz
+* Untar it
+** tar xzf xmms2-DrHouse-neuros-OSD-buildenv.tar.gz
+*enter the directory
+**cd xmms2-build
+*grab some extra sources (do NOT untar)
+** XMMS2 itself: http://switch.dl.sourceforge.net/sourceforge/xmms2/xmms2-0.2DrHouse.tar.bz2
+** glib: ftp://ftp.gtk.org/pub/glib/2.12/glib-2.12.4.tar.bz2
+** libmad: ftp://ftp.mars.org/pub/mpeg/libmad-0.15.1b.tar.gz
+** sqlite: http://www.sqlite.org/sqlite-3.3.8.tar.gz
+*make a /mnt/tmpfs directory where stuff is installed
+**sudo mkdir /mnt/tmpfs; sudo chown $(whoami) /mnt/tmpfs
+*Run build script
+**bash BUILD-XMMS2
+*Wait
+*Now you have an XMMS2 directory in /mnt/tmpfs.
+*Copy this XMMS2 directory to a memory card/usb-stick/usb-harddrive
+*telnet to the OSD
+*Kill the mainapp
+*enter the XMMS2 directory
+*Run run-xmms2.sh in that directory
+**sh run-xmms2.sh
+*On your host computer connect to the osd with an xmms2 client, such as esperanza http://exodus.xmms.se/~tru/esperanza/0.2/esperanza-0.2.2-winxp.exe using tcp://192.168.1.100:9667/ as path.
+
+
+'''Some details about some of the tricks used'''
+
+The libs and xmms2 likes to be installed in a static place. But with all this memorycards support it might end up in a number of different places. The remedy is to install it in the memory filesystem /mnt/tmpfs. Or rather, to make it believe it is installed there, and then just make a symlink to the correct place. (this is really just poor man's [http://www.encap.org/ encap]
