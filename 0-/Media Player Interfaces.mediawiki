@@ -1,0 +1,33 @@
+This page is an attempt at bringing together information about various works in progress to produce a common media player control interface.
+
+== Overview ==
+In August 2005, Milosz Derezynski (deadchip) and Frederic Fondriest (ciberfred) were working on defining an interface for remotely controlling BMPx (as opposed to using the BMPx GUI) over DBUS:
+
+ <ciberfred> hey deadchip , one things i'm currently thinking, we could do
+ something with dbus to uniformize call functions, so each player could share
+ same 'dbus-commands'
+ <~deadchip> ah
+ <~deadchip> yeah
+ <~deadchip> that would be a very good idea
+ <ciberfred> it could be better to let user choose the daemon they wants :)
+ <ciberfred> like xmms2, bmpx, or lamip or well mpd or others
+ <~deadchip> yeah
+ <~deadchip> that is really good
+ <ciberfred> so binaries commands audio could send informations from user
+ to theses daemons without need to re-code somethings different but similare for
+ another audio player
+
+Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS] (Media Player Remote Interface Specification) was born - a fairly generic interface with commands that could be applied to control a wide range of media players. However, even though the phrase 'Media Player' is present in MPRIS, the specification was developed with the assumption that it would be applied to audio players.
+
+=== About MPRIS ===
+* Defines commands for controlling a media player (play, pause, stop, etc).
+* Defines signals that notify clients of certain events on the media player.
+* Does NOT define audio or video data streaming protocols.
+** That is, a client can't request audio or video stream data over MPRIS
+
+=== Chalyx ===
+Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made this table:
+
+== See Also ==
+* [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
+* [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
