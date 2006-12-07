@@ -33,8 +33,13 @@ From my point of view it should be an interface used by application that primari
 * irc client script that announces current track
 * "enqueue in mediaplayer" in contextmenu in filebrowser
 * some alarm clock app that starts music playback with a specific track 5 minutes before the real alarm goes on.
+* dock/panel-app for showing current song.
+* script that automatically stops music when your bluetooth phone goes out of range.
+* whatever, if the functionality is provided unexpected uses tend to pop up.
 
-With a common interface this kind of apps doesn't have to know about different media players, they just fire off some dbus messages to a standard place. Therefore the interface has to be as simple as possible.
+With a common interface this kind of apps doesn't have to know about different media players, they just fire off some dbus messages to a standard place. 
+
+To serve its purpose it must be very easy for the application to interface with the mediaplayer. Therefore the interface has to be as simple as possible, containing only the basic stuff, no capabilities negotiation should be needed.
 
 [[User:Anders Gustafsson|Anders Gustafsson]]
 
