@@ -303,7 +303,7 @@ Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX 
 |-
 ! MPRIS Capabilities
 | multi-tracklist, can-seek || multi-tracklist, can-seek ||
-|-}
+|}
 
 Most of the actions defined in the table were eventually defined in the [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms.se/?p=kjell.git;a=summary Kjell] and [[Client:Insanity|Insanity]]) is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
 
