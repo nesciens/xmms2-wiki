@@ -70,6 +70,11 @@ Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decide
 * Default player/interface name handling
 * Rants about DBUS/XML
 * UPnP?
+;Projects involved
+* [http://xmms2.xmms.se XMMS2]
+* [http://bmpx.beep-media-player.org BMPx]
+* [http://www.videolan.org/vlc VLC]
+* [http://amarok.kde.org AmaroK]
 
 == DBUS ==
 ;Advantages
