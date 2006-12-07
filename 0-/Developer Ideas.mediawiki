@@ -39,14 +39,16 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[XMMS2Forge]]
 * [[Distributed Build Testing]]
 
+== Standards/Cooperation ==
+* [[XDG coverart sharing]]
+* [[Media Player Interfaces]]
+
 == Misc ==
 * '''[[Music Sharing]]'''
 * '''[[Gapless Playback]]'''
 * [[General Notify support]]
 * [[Support for radio output like icecast]]
 * [[Concerns after Log table removal]]
-* [[XDG coverart sharing]]
-* [[Media Player Interfaces]]
 
 == Older Ideas ==
 * '''[[Support for clients to write to the medialib]]'''
