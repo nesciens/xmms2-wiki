@@ -22,6 +22,8 @@ This is a difficult project by its nature as it's bridging projects with differe
 * add objects that expose individual media player APIs
 * begs the question of why one should bother with DBus instead of native API
 
+[[Daniel Chokola]]
+
 
 ------
 First, we need to ask the question: "What is the purpose of this interface?"
