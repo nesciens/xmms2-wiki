@@ -330,7 +330,7 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 
 === [http://bmpx.beep-media-player.org BMPx] ===
 === [http://www.videolan.org/vlc VLC] ===
-=== [http://amarok.kde.org AmaroK] ===
+=== [http://amarok.kde.org Amarok] ===
 
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
