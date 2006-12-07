@@ -73,7 +73,7 @@ Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decide
 
 == DBUS ==
 ;Advantages
-* ?
+* Widespread
 ;Disadvantages
 * Doesn't work well over TCP? (e.g. compare with MPD's & XMMS2's support for tcp sockets)
 
