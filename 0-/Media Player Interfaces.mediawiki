@@ -28,7 +28,6 @@ Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPR
 === Chalyx ===
 Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made this table:
 
-''(table currently incomplete - see http://xmms2.xmms.se/~eleusis/misc/client-api-table.html)''
 <!-- TODO: link to API docs for each call: xmms2.xmms.se/epydoc, http://mpd.wikia.com/wiki/MusicPlayerDaemonCommands -->
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
 |+ Client API Comparison
@@ -55,7 +54,256 @@ Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX 
 !Start playback of playlist item #
 | playlist_set_next && <br /> playback_tickle && <br /> playback_start
 | playid?? || PlayTrack
-|}
+|-
+! Playlist Add
+| playlist_add, playlist_add_id || (add) ||
+|-
+! Playlist Add Multiple
+| || || AddUriList
+|-
+! Playlist Remove
+| playlist_remove || delete ||
+|-
+! Playlist Remove Multiple
+| || || TracklistRemoveItems
+|-
+! Playlist Remove all with ID
+| || deleteid (playlist ID) ||
+|-
+! Playlist Save
+| (medialib_playlist_export) || save (to playlist dir) || ExportTracklist?
+|-
+! Playlist Load
+| (medialib_playlist_import &amp;&amp; medialib_playlist_load) || load (from playlist dir) || (AddUriList)
+|-
+! Playlist Next
+| playlist_set_next_rel &amp;&amp; playback_tickle || next || PlayNext
+|-
+! Playlist Previous
+| playlist_set_next_rel &amp;&amp; playback_tickle || previous || PlayPrev
+|-
+! Playlist Set Next
+| playlist_set_next || ||
+|-
+! Playlist Set Next Relative
+| playlist_set_next_rel || ||
+|-
+! Playlist go to Next
+| playback_tickle || (implicit in next) || (implicit in PlayNext)
+|-
+! Playlist Clear
+| playlist_clear || clear ||
+|-
+! Playlist Insert
+| playlist_insert, playlist_insert_id || || (AddUriList)
+|-
+! Playlist List
+| playlist_list || playlistinfo/playlistid ||
+|-
+! Playlist Move
+| playlist_move || move/moveid ||
+|-
+! Playlist Shuffle (modifies playlist)
+| playlist_shuffle || shuffle ||
+|-
+! Playlist Shuffle (play in shuffle order)
+| || random || ShuffleSet/ShuffleGet
+|-
+! Playlist Sort
+| playlist_sort || ||
+|-
+! Playlist Diff
+| || plchanges ||
+|-
+! Playlist Delete
+| || rm ||
+|-
+! Playlist Swap
+| || swap/swapid ||
+|-
+! Playlist Repeat All
+| configval_set || repeat ||
+|-
+! Playlist Repeat One
+| configval_set || ||
+|-
+! Info Playtime
+| playback_playtime || status (returns additional data) ||
+|-
+! Info Playback Status
+| playback_status || status (returns additional data) || SendStatus?
+|-
+! Info Current ID
+| playback_current_id || currentsong? (returns metadata) ||
+|-
+! Info Playlist Position
+| playlist_current_pos || status (returns additional data) ||
+|-
+! Info Current Song
+| medialib_get_info(playback_current_id) || currentsong ||
+|-
+! Config Property Get
+| configval_get || ||
+|-
+! Config Property Set
+| configval_set || ||
+|-
+! Config Property List
+| configval_list || ||
+|-
+! Config Property Register
+| configval_register || ||
+|-
+! Library Add Entry
+| medialib_add_entry || ||
+|-
+! Library Add To Playlist
+| medialib_add_to_playlist || add ||
+|-
+! Library Get ID (of URL)
+| medialib_get_id || ||
+|-
+! Library Get Info (of ID)
+| medialib_get_info || ||
+|-
+! Library Import Metadata
+| medialib_path_import || (implicit in starting MPD) ||
+|-
+! Library Export Playlist
+| medialib_playlist_export || ||
+|-
+! Library Import Playlist
+| medialib_playlist_import || ||
+|-
+! Library Load Playlist
+| medialib_playlist_load || ||
+|-
+! Library Save Current Playlist
+| medialib_playlist_save_current || (save) ||
+|-
+! Library Remove Playlist
+| medialib_playlist_remove || (rm?) ||
+|-
+! Library List Playlists
+| medialib_playlists_list || lsinfo (returns info about dirs as well) ||
+|-
+! Library Rehash
+| medialib_rehash || (update??) ||
+|-
+! Library Query
+| medialib_select || ||
+|-
+! Library Find
+| medialib_select (depends on query) || find/search ||
+|-
+! Library List Key Values of Type
+| medialib_select (depends on query) || list ||
+|-
+! Library List All Files
+| || listall (is recursive) ||
+|-
+! Library List All Files with Info
+| || listallinfo (is recursive) ||
+|-
+! Library List Dir?
+| || lsinfo ||
+|-
+! Connect
+| connect || (socket connection sufficient?) ||
+|-
+! Connect with Password
+| connect || password ||
+|-
+! Ping
+| (hello???) || ping ||
+|-
+! Daemon quit
+| quit || kill ||
+|-
+! End Session
+| (disconnect???) || close ||
+|-
+! (following items set signal callbacks)
+| || ||
+|-
+! Signal Config Property Change
+| broadcast_configval_changed || ||
+|-
+! Signal Library Entry Change
+| broadcast_medialib_entry_changed || ||
+|-
+! Signal Playlist Loaded from Library
+| broadcast_medialib_playlist_loaded || ||
+|-
+! Signal Current Stream ID
+| broadcast_playback_current_id || ||
+|-
+! Signal Playback Status Change
+| broadcast_playback_status || ||
+|-
+! Signal Playlist Change
+| broadcast_playlist_changed || ||
+|-
+! Signal Playlist Position Change
+| broadcast_playlist_current_pos || ||
+|-
+! Signal Playtime
+| signal_playback_playtime || ||
+|-
+! Signal Visualisation
+| signal_visualisation_data || ||
+|-
+! IO Loop
+| loop || ||
+|-
+! IO Exit Loop
+| exit_loop || ||
+|-
+! IO In
+| ioin || ||
+|-
+! IO Out
+| ioout || ||
+|-
+! IO Get FD
+| get_fd || ||
+|-
+! Plugin List
+| plugin_list || ||
+|-
+! Output Disable
+| || disableoutput ||
+|-
+! Output Enable
+| || enableoutput ||
+|-
+! Mute (Output enable/disable toggle)
+| || ||
+|-
+! Output Info
+| || outputs ||
+|-
+! Output Crossfade
+| || crossfade ||
+|-
+! Output Set Volume
+| configval_set || setvol ||
+|-
+! Output Get Volume
+| configval_get || status (returns additional data) ||
+|-
+! Clear Error
+| || clearerror ||
+|-
+! Commandlist
+| || commands ||
+|-
+! Denied Commandlist
+| || notcommands ||
+|-
+! MPRIS Capabilities
+| multi-tracklist, can-seek || multi-tracklist, can-seek ||
+|-}
 
 Most of the actions defined in the table were eventually defined in the [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms.se/?p=kjell.git;a=summary Kjell] and [[Client:Insanity|Insanity]]) is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
 
