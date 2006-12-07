@@ -1,10 +1,10 @@
 = Proposal for definitions of nomenclature, to avoid confusion =
 
 ; Property
-: A field-key combination used to specify something. E.g. the title of a song.
+: A property is a field-key combination used to specify something. E.g. the title of a song.
 
 ; Media
-: An atomic entity that is part of the media library, typically a song or stream.
+: Media are the atomic entities that are part of the media library, typically a song or stream.
 : Media can have properties, such as titles, durations, etc.
 
 ; Mediaset
@@ -16,7 +16,7 @@
 
 ; Attribute
 : An attribute is a field-key combination, modifying the behaviour of an operator.
-: An attribute can also be called a 'property' of an operator
+: An attribute can be called a 'property' of an operator
 
 ; Operator
 : An operator is the concrete representation of an operation. 
@@ -25,7 +25,7 @@
 : An operator can have attributes.
 
 ; DAG
-: Operators can have operands. Operands are mediasets. Mediasets are results of operators. Hence: operators can be organized in a tree structure. This structure is also called a DAG ([http://en.wikipedia.org/wiki/Directed_acyclic_graph Directed Acyclic Graph]). In this DAG the operators are the nodes or vertices and the mediasets that are transferred between them are the edges.
+: Operators can have operands. Operands are mediasets. Mediasets are results of operators. Hence: Operators can use results from other operators. So: operators can be organized in a tree structure. This structure is also called a DAG ([http://en.wikipedia.org/wiki/Directed_acyclic_graph Directed Acyclic Graph]). In this DAG the operators are the nodes or vertices and the mediasets that are transferred between these nodes are the edges.
 
 ; Medialist
 : A medialist is an ordered mediaset.
@@ -33,4 +33,4 @@
 ; Collection
 : Collection is identical mediaset.
 
-[[User:Nesciens|Nesciens]] 22:56, 5 December 2006 (CET)
+[[User:Nesciens|Nesciens]] 17:00, 7 December 2006 (CET)
