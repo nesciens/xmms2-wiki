@@ -1,4 +1,4 @@
-This page is an attempt at bringing together information about various works in progress to produce a common media player control interface.
+This page is an attempt at bringing together information about various works in progress to produce a common media player control interface. Note that in the context of this page, ''interface'' refers to interface in the sense of an API, not an interface through which a user interacts with a program.
 
 == Overview ==
 In August 2005, Milosz Derezynski (deadchip) and Frederic Fondriest (ciberfred) were working on defining an interface for remotely controlling BMPx (as opposed to using the BMPx GUI) over DBUS:
@@ -28,6 +28,9 @@ Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPR
 === Chalyx ===
 Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made this table:
 
+<!-- TODO: Table incomplete -->
+<!-- http://xmms2.xmms.se/~eleusis/misc/client-api-table.html -->
+<!-- TODO: link to API docs for each call: xmms2.xmms.se/epydoc, http://mpd.wikia.com/wiki/MusicPlayerDaemonCommands -->
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
 |+ Client API Comparison
 ! Action !! XMMS2 !! MPD !! BMPx
@@ -57,8 +60,26 @@ Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX 
 
 Most of the actions defined in the table were eventually defined in the [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms.se/?p=kjell.git;a=summary Kjell] and [[Client:Insanity|Insanity]] is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
 
+=== VLC ===
+Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decided to implement a DBUS control interface for VLC. He discovered MPRIS and decided to adapt it to his needs. RafaÃ«l also decided to mail other media player projects to revive the spirit of MPRIS, and all hell broke loose across 10 different mailing lists.
+
+== Current ==
+;Discussion
+:Discussion is proceeding on the [http://developers.videolan.org/lists.html vlc-devel] mailing list. (see specific thread linked [[#See_Also|below]]) Milosz has proposed to set up an mpris-devel mailing list hosted by BMPx.
+;Issues
+* Default player/interface name handling
+* Rants about DBUS/XML
+* UPnP?
+
+== DBUS ==
+;Advantages
+* ?
+;Disadvantages
+* Doesn't work well over TCP? (e.g. compare with MPD's & XMMS2's support for tcp sockets)
+
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
+* [http://www.via.ecp.fr/via/ml/vlc-devel/2006-12/index.html#00129 Proposal for a common D-Bus interface for media players] thread
 
 [[Category:Developer ideas]]
