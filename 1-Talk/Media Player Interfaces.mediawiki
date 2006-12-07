@@ -21,3 +21,17 @@ This is a difficult project by its nature as it's bridging projects with differe
 * make a common media player object where all the media player APIs overlap
 * add objects that expose individual media player APIs
 * begs the question of why one should bother with DBus instead of native API
+
+
+------
+First, we need to ask the question: "What is the purpose of this interface?"
+
+From my point of view it should be an interface used by application that primarily isn't controlling the media player. Some examples:
+* voip application that wants to automatically stop playback when there is an incomming call
+* irc client script that announces current track
+* "enqueue in mediaplayer" in contextmenu in filebrowser
+* some alarm clock app that starts music playback with a specific track 5 minutes before the real alarm goes on.
+
+With a common interface this kind of apps doesn't have to know about different media players, they just fire off some dbus messages to a standard place. Therefore the interface has to be as simple as possible.
+
+[[User:Anders Gustafsson|Anders Gustafsson]]
