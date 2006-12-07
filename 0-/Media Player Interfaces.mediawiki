@@ -28,8 +28,7 @@ Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPR
 === Chalyx ===
 Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made this table:
 
-<!-- TODO: Table incomplete -->
-<!-- http://xmms2.xmms.se/~eleusis/misc/client-api-table.html -->
+''(table currently incomplete - see http://xmms2.xmms.se/~eleusis/misc/client-api-table.html)''
 <!-- TODO: link to API docs for each call: xmms2.xmms.se/epydoc, http://mpd.wikia.com/wiki/MusicPlayerDaemonCommands -->
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
 |+ Client API Comparison
