@@ -31,3 +31,5 @@ Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX 
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
+
+[[Category:Developer ideas]]
