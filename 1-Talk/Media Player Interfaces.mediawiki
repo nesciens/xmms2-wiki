@@ -1,0 +1,23 @@
+This is a difficult project by its nature as it's bridging projects with different philosophies and goals. It should be pretty obvious that there's going to be friction in creating some sort of DBus implementation. To alleviate the potential clashes between projects I originally suggested some sort of capabilities negotiation might be in order. However I, and others on the mailing lists, have come up with a set of ideas that I think we need to decide on first before proceeding to actually implement.
+
+;KISS:
+* just do basic playback functions (play, pause, stop, prev, next)
+* limited functionality, but easy on clients and developers
+
+;Limit the spec to similar media players:
+* medialib players Amarok, XMMS2, and BMPx
+* playlist players Amarok, XMMS2, BMPx, and VLC
+* destroys potential for other players to implement the spec
+
+;Capabilities negotiation:
+* should only have a handful of sets of functionalities:
+** playback
+** playlist
+** mediainfo
+** medialib
+* adds complication to the spec and clients have to deal with capabilities
+
+;Common intersection object and individual objects
+* make a common media player object where all the media player APIs overlap
+* add objects that expose individual media player APIs
+* begs the question of why one should bother with DBus instead of native API
