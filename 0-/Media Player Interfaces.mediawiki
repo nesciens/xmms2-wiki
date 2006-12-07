@@ -336,5 +336,6 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
 * [http://www.via.ecp.fr/via/ml/vlc-devel/2006-12/index.html#00129 Proposal for a common D-Bus interface for media players] thread
+* [[Talk:Media Player Interfaces]]
 
 [[Category:Developer ideas]]
