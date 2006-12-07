@@ -28,6 +28,37 @@ Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPR
 === Chalyx ===
 Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made this table:
 
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Client API Comparison
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+!Playback Start
+| playback_start || play || PlayCurrent
+|-
+!Playback Stop
+| playback_stop || stop || PlayStop
+|-
+!Playback Pause
+| playback_pause || pause || PlayPause
+|-
+!Playback Seek Milliseconds
+| playback_seek_ms
+|-
+!Playback Seek Seconds
+| || seek/seekid || Seek
+|-
+!Playback Seek Samples
+| playback_seek_samples
+|-
+!Start playback of playlist item #
+| playlist_set_next &&
+playback_tickle &&
+playback_start
+| playid?? || PlayTrack
+|}
+
+Most of the actions defined in the table were eventually defined in the [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms.se/?p=kjell.git;a=summary Kjell] and [[Client:Insanity|Insanity]] is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
+
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
