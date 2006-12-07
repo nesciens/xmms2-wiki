@@ -12,7 +12,7 @@
 : A mediaset is the result/output of an operator
 
 ; Operand
-: A mediaset used by an operator.
+: An operand is a mediaset used by an operator.
 
 ; Attribute
 : An attribute is a field-key combination, modifying the behaviour of an operator.
@@ -31,6 +31,6 @@
 : A medialist is an ordered mediaset.
 
 ; Collection
-: Collection is identical mediaset.
+: Collection is identical to mediaset.
 
-[[User:Nesciens|Nesciens]] 17:00, 7 December 2006 (CET)
+[[User:Nesciens|Nesciens]] 17:02, 7 December 2006 (CET)
