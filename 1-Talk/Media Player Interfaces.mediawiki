@@ -38,6 +38,8 @@ With a common interface this kind of apps doesn't have to know about different m
 
 [[User:Anders Gustafsson|Anders Gustafsson]]
 
+------
+
 Well, I think that a guaranteed basic set of capabilities should be something like:
 
 * play, pause, stop, next, prev
@@ -51,4 +53,4 @@ Some players, e.g. Audacious, have some library-like qualities, such as Tuples, 
 
 Also, DBus and my sanity do not get along, and I am sure it is the same way for others. A common library should be a must. I'd suggest MIT licencing for that.
 
---[[User:Nenolod|Nenolod]] 10:20, 7 December 2006 (CET)
+--[[User:Nenolod|William Pitcock]] 10:20, 7 December 2006 (CET)
