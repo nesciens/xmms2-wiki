@@ -51,9 +51,7 @@ Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX 
 | playback_seek_samples
 |-
 !Start playback of playlist item #
-| playlist_set_next &&
-playback_tickle &&
-playback_start
+| playlist_set_next && <br /> playback_tickle && <br /> playback_start
 | playid?? || PlayTrack
 |}
 
