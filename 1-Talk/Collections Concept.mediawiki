@@ -35,6 +35,7 @@
 
 [[User:Nesciens|Nesciens]] 17:02, 7 December 2006 (CET)
 
+
 * A property (resp. attribute) is a field-key combination '''attached to a media (resp. collection operator)'''  to specify [...]
 * ''An attribute can be called a 'property' of an operator''
 Confusing, better separate the terms cleanly.
@@ -50,5 +51,6 @@ Confusing, it does not intuitively imply that some operators produce medialists.
 * ''Collection is identical to mediaset.''
 ''identical'' is confusing I think. See [[Collections_Concept#Formal_definition_of_a_Collection]].
 
-
 Good work!
+
+[[User:Theefer|Theefer]] 18:15, 8 December 2006 (CET)
