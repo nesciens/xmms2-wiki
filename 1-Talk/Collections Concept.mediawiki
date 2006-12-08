@@ -34,3 +34,21 @@
 : Collection is identical to mediaset.
 
 [[User:Nesciens|Nesciens]] 17:02, 7 December 2006 (CET)
+
+* A property (resp. attribute) is a field-key combination '''attached to a media (resp. collection operator)'''  to specify [...]
+* ''An attribute can be called a 'property' of an operator''
+Confusing, better separate the terms cleanly.
+
+* ''An operand is a mediaset used '''as the input of''' an operator.''
+
+* ''An operator always results in a mediaset.''
+Confusing, it does not intuitively imply that some operators produce medialists.
+
+* ''So: operators can be organized in a '''tree''' structure.''
+'''graph''' structure (see examples)
+
+* ''Collection is identical to mediaset.''
+''identical'' is confusing I think. See [[Collections_Concept#Formal_definition_of_a_Collection]].
+
+
+Good work!
