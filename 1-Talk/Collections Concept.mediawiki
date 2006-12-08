@@ -54,3 +54,20 @@ Confusing, it does not intuitively imply that some operators produce medialists.
 Good work!
 
 [[User:Theefer|Theefer]] 18:15, 8 December 2006 (CET)
+
+
+* ''Confusing, better separate the terms cleanly.''
+In the API 'attribute' is used for operators, but 'property' for media. In [[Collections_Concept]] 'property' is used... I'd prefer to use the vocabulary of the API, but since [[Collections_Concept]] uses 'property', I wanted to reflect the relation between these two words. Maybe I should explicitely mention the API, but this page about the ''concept'', so I am not sure if that would be appropiate.
+
+* ''Confusing, it does not intuitively imply that some operators produce medialists.''
+In my perception a medialist is a kind of mediaset. Rephrased: "An operator always results in a mediaset '''(which can be a medialist)'''."
+
+* '' '''graph''' structure (see examples)''
+The word 'tree' was meant as a simplification; a tree is an acyclic graph, which can be directed (superset of a DAP), or undirected.
+
+* '' ''identical'' is confusing I think. See [[Collections_Concept#Formal_definition_of_a_Collection]].''
+The word 'collection' is confusing (because it is so generic), so I attempted to give it a stricter meaning. Either way, I think the use of this word should minimalized.
+
+Thanks for reading and commenting on my humble perception on collections!
+
+[[User:Nesciens|Nesciens]] 22:52, 8 December 2006 (CET)
