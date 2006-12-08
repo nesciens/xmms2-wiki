@@ -112,6 +112,7 @@ I am curious to hear about what '''you''' have in mind when it comes to collecti
 === Using collections, and others ===
 * [[Collections usage with cli]]
 * [[Collections/Python]]
+* [[Collections Concept]]
 
 [[Category:Developer ideas]]
 [[Category:Collections]]
