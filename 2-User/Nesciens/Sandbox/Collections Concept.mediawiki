@@ -1,3 +1,5 @@
+This is to be a rewrite to make the concept easier to grab, but it's not anywhere near completion.
+
 = Overview =
 
 Collections (currently scheduled for DrJekyll) mark an important change in the way XMMS2 interacts with its Media Library.
