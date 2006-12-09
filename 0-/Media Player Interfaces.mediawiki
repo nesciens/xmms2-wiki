@@ -103,64 +103,64 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 | || || TracklistRemoveItems
 |-
 ! Playlist Remove all with ID
-| || {{MPDCmd|deleteid}} (playlist ID) ||
+| || {{MPDCmd|deleteid}} ||
 |-
 ! Playlist Save (to URL)
-| {{EpydocXMMS|medialib_playlist_export}} || || ExportTracklist?
+| {{EpydocXMMS|medialib_playlist_save_current}} &amp;&amp; <br /> {{EpydocXMMS|medialib_playlist_export}} || || ExportTracklist?
 |-
 ! Playlist Load (from URL)
 | {{EpydocXMMS|medialib_playlist_import}} &amp;&amp; <br /> {{EpydocXMMS|medialib_playlist_load}} || || (AddUriList)
 |-
 ! Playlist Next
-| playlist_set_next_rel &amp;&amp; playback_tickle || next || PlayNext
+| {{EpydocXMMS|playlist_set_next_rel}} &amp;&amp; {{EpydocXMMS|playback_tickle}} || {{MPDCmd|next}} || PlayNext
 |-
 ! Playlist Previous
-| playlist_set_next_rel &amp;&amp; playback_tickle || previous || PlayPrev
+| {{EpydocXMMS|playlist_set_next_rel}} &amp;&amp; {{EpydocXMMS|playback_tickle}} || {{MPDCmd|previous}} || PlayPrev
 |-
 ! Playlist Set Next
-| playlist_set_next || ||
+| {{EpydocXMMS|playlist_set_next}} || ||
 |-
 ! Playlist Set Next Relative
-| playlist_set_next_rel || ||
+| {{EpydocXMMS|playlist_set_next_rel}} || ||
 |-
 ! Playlist go to Next
-| playback_tickle || (implicit in next) || (implicit in PlayNext)
+| {{EpydocXMMS|playback_tickle}} || (implicit in next) || (implicit in PlayNext)
 |-
 ! Playlist Clear
-| playlist_clear || clear ||
+| {{EpydocXMMS|playlist_clear}} || {{MPDCmd|clear}} ||
 |-
-! Playlist Insert
-| playlist_insert, playlist_insert_id || || (AddUriList)
+! Playlist Insert URL
+| {{EpydocXMMS|playlist_insert}} || || (AddUriList)
+|-
+! Playlist Insert From Library
+| {{EpydocXMMS|playlist_insert_id}} || ||
 |-
 ! Playlist List
-| playlist_list || playlistinfo/playlistid ||
+| {{EpydocXMMS|playlist_list}} || {{MPDCmd|playlistinfo}}/{{MPDCmd|playlistid}} ||
 |-
 ! Playlist Move
-| playlist_move || move/moveid ||
+| {{EpydocXMMS|playlist_move}} || {{MPDCmd|move}}/{{MPDCmd|moveid}} ||
 |-
 ! Playlist Shuffle (modifies playlist)
-| playlist_shuffle || shuffle ||
+| {{EpydocXMMS|playlist_shuffle}} || {{MPDCmd|shuffle}} ||
 |-
 ! Playlist Shuffle (play in shuffle order)
-| || random || ShuffleSet/ShuffleGet
+| || {{MPDCmd|random}} || ShuffleSet/ShuffleGet
 |-
 ! Playlist Sort
-| playlist_sort || ||
+| {{EpydocXMMS|playlist_sort}} || ||
 |-
 ! Playlist Diff
-| || plchanges ||
-|-
-! Playlist Delete
-| || rm ||
+| || {{MPDCmd|plchanges}} ||
 |-
 ! Playlist Swap
-| || swap/swapid ||
+| || {{MPDCmd|swap}}/{{MPDCmd|swapid}} ||
 |-
 ! Playlist Repeat All
-| configval_set || repeat ||
+| {{EpydocXMMS|configval_set}} || {{MPDCmd|repeat}} ||
 |-
 ! Playlist Repeat One
-| configval_set || ||
+| {{EpydocXMMS|configval_set}} || ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -232,7 +232,7 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 | medialib_playlist_save_current || (save) ||
 |-
 ! Library Remove Playlist
-| medialib_playlist_remove || (rm?) ||
+| medialib_playlist_remove || {{MPDCmd|rm}} ||
 |-
 ! Library List Playlists
 | medialib_playlists_list || lsinfo (returns info about dirs as well) ||
