@@ -81,6 +81,7 @@ Notes:
 ** Seek (milliseconds)
 ** Get Current Status (playing/paused/stopped)
 ** Get Current Playback Position (position in currently playing stream - milliseconds)
+** SIGNAL: Playback position (playtime - milliseconds)
 * Playlist
 ** Previous
 ** Next
@@ -89,10 +90,12 @@ Notes:
 ** Clear
 ** Get list
 ** Get Current Playlist Position (zero-indexed)
+** SIGNAL: Playlist Position
 * Info
 ** Identity/Version
 ** Get Current Song (returns unique identifier, which can be used to get associated metadata)
 ** Get Song Metadata
+** SIGNAL: Current Song (unique identifier, same as ''Get Current Song'')
 * Session
 ** Quit (player shutdown)
 * Output
