@@ -129,4 +129,6 @@ Also there is always some lag when updating which is only there in the other sol
 # emit pos_changed
 # playback stopped or continued depending on returned value (by caller of <code>xmms_playlist_advance</code>)
 
-[[User:Nesciens|Nesciens]] 16:40, 9 December 2006 (CET)
+= See also =
+
+[[User:Nesciens|Nesciens]] 17:27, 9 December 2006 (CET)
