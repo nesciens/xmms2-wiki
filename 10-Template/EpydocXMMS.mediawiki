@@ -1,0 +1,1 @@
+[http://xmms2.xmms.se/epydoc/public/xmmsclient.XMMS-class.html#{{{1}}} {{{1}}}]
