@@ -66,15 +66,21 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 
 == Common Interface ==
 '''''DRAFT'''''
+;MPRIS
+:Music Player Remote Interface Specification
+
+Notes:
+* MPRIS implementations MUST provide at least the ''Basic'' interface.
+* Seeking and the reporting of current stream position will be done in milliseconds - players which can't handle millisecond-level resolution should round up or down to the nearest position they can handle.
 
 === Basic ===
 * Playback
 ** Play/Start
 ** Stop
 ** Pause
-** Seek (milliseconds?)
+** Seek (milliseconds)
 ** Get Current Status (playing/paused/stopped)
-** Get Current Playback Position (position in currently playing stream - milliseconds?)
+** Get Current Playback Position (position in currently playing stream - milliseconds)
 * Playlist
 ** Previous
 ** Next
@@ -82,7 +88,7 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ** Remove
 ** Clear
 ** Get list
-** Get Current Playlist Position (zero-indexed?)
+** Get Current Playlist Position (zero-indexed)
 * Info
 ** Identity/Version
 ** Get Current Song (returns unique identifier, which can be used to get associated metadata)
