@@ -69,7 +69,7 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 
 === Basic ===
 * Playback
-** Play
+** Play/Start
 ** Stop
 ** Pause
 ** Seek (milliseconds?)
@@ -78,6 +78,8 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ** Next
 ** Add/Enqueue (URL)
 ** Remove
+** Clear
+** Get list
 * Info
 ** Identity/Version
 ** Get Current Playback Status
