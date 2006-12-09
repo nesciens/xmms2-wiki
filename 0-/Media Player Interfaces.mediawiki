@@ -96,6 +96,9 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Playlist Add Multiple
 | || || AddUriList
 |-
+! Playlist Add Recursive
+| {{EpydocXMMS|playlist_radd}} || ||
+|-
 ! Playlist Remove
 | {{EpydocXMMS|playlist_remove}} || {{MPDCmd|delete}} ||
 |-
@@ -352,6 +355,20 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 |-
 ! Output Get Volume
 | {{EpydocXMMS|playback_volume_get}} || {{MPDCmd|status}} ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Binary data storage
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Data Store
+| {{EpydocXMMS|bindata_store}} || ||
+|-
+! Data Remove
+| {{EpydocXMMS|bindata_remove}} || ||
+|-
+! Data Get
+| {{EpydocXMMS|bindata_retrieve}} || ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
