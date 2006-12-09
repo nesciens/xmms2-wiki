@@ -1,0 +1,130 @@
+= Current updating of playlists =
+
+From playlist.c: (In xmms2-theefer jumplists are supported, but these are left out for simplicity and pose no additional difficulty)
+
+ /**
+ * Go to next song in playlist according to current playlist mode.
+ * xmms_playlist_current_entry is to be used to retrieve the entry.
+ *
+ * @sa xmms_playlist_current_entry
+ *
+ * @returns FALSE if end of playlist is reached, TRUE otherwise.
+ */
+ gboolean
+ xmms_playlist_advance (xmms_playlist_t *playlist)
+ {
+     gint size, currpos;
+     gboolean ret = TRUE;
+     xmmsc_coll_t *plcoll;
+ 
+     g_return_val_if_fail (playlist, FALSE);
+ 
+     g_mutex_lock (playlist->mutex);
+ 
+     plcoll = xmms_playlist_get_coll (playlist, "_active", NULL);
+     if (plcoll == NULL) {
+         ret = FALSE;
+     } else if ((size = xmms_playlist_coll_get_size (plcoll)) == 0) {
+         ret = FALSE;
+     } else if (!playlist->repeat_one) {
+         currpos = xmms_playlist_coll_get_currpos (plcoll);
+         currpos++;
+         currpos %= size;
+         xmms_collection_set_int_attr (plcoll, "position", currpos);
+         ret = (currpos != 0) || playlist->repeat_all;
+         xmms_object_emit_f (XMMS_OBJECT (playlist),
+                             XMMS_IPC_SIGNAL_PLAYLIST_CURRENT_POS,
+                             XMMS_OBJECT_CMD_ARG_UINT32,
+                             currpos);
+     }
+     g_mutex_unlock (playlist->mutex);
+ 
+     return ret;
+ }
+ 
+ /**
+  * Initializes a new xmms_playlist_t.
+  */
+ xmms_playlist_t *
+ xmms_playlist_init (void)
+ {
+ ...
+     xmms_object_connect (XMMS_OBJECT (ret),
+                          XMMS_IPC_SIGNAL_PLAYLIST_CHANGED,
+                          on_playlist_updated_chg, ret);
+ 
+     xmms_object_connect (XMMS_OBJECT (ret),
+                          XMMS_IPC_SIGNAL_PLAYLIST_CURRENT_POS,
+                          on_playlist_updated_pos, ret);
+ ...
+ }
+
+This is what happens in sequence when <code>xmms_playlist_advance</code> is called:
+
+# set new position (0 is last song is played)
+# set return value (FALSE if playlist ends, TRUE if not.)
+# emit pos_changed
+# stop or continue playback depending on return value (by caller of <code>xmms_playlist_advance</code>)
+# update (connected to pos_changed)
+
+= Issues =
+
+== Stopping after playing of last song in list ==
+
+When the last song in the playlist is finished playing, playback is stopped, before any kind an update has occurred. The consequence of this is that playback is also stopped if a party shuffle could still provide a new song to be played. This thus disallows <code>upcoming=1</code> for partshuffle playlists.
+
+== Setting position to 0 after playing of last song ==
+
+When the last song in the playlist is finished playing, the position is set to 0, before an update has occurred. The updating function then has no clue if the last entry has finished playing and the history should be updated, or the user decided to jump to position 0 to play that media again.
+
+= Solutions =
+
+The solve above mentioned issues the following solutions are possible:
+
+== Solution 1 ==
+
+This solution is closest to the current implementation. Its disadvantage is that is does not use a signal to trigger updating, which means a certain knowledge of what function it should call is required. This solution is therefore less viable when (if) service clients are introduced.
+
+# set new position (which can be just outside the playlist)
+# if pos is outside playlist:
+## update
+# if pos still outside playlist:
+## set pos to 0
+# determine return value
+# emit pos_changed
+# playback stopped or continued depending on returned value (by caller of <code>xmms_playlist_advance</code>)
+# update (connected to pos_changed)
+
+== Solution 2 ==
+
+This solution uses a new signal to trigger updates. I doubt if this signal is available, as the daemon has to block until something updated the playlist. If it is implemented the way to service clients is open (except you need some mutexing mechanism. See [[Collaborative_Playlist_Management]])
+
+# if playlist not up to date:
+## block
+# set new position (which can be right outside the playlist)
+# if pos is outside playlist:
+## emit update_playlist
+## block
+# if pos still outside playlist:
+## set pos to 0
+# determine return value
+# emit pos_changed
+# emit update_playlist (if not already done?) (Only blocking when not yet ready if this function is called again; first item of this sequence.)
+# playback stopped or continued depending on returned value (by caller of <code>xmms_playlist_advance</code>)
+# update (connected to update_playlist)
+
+== Solution 3 ==
+
+This solution is the simplest; just update if this function is called, no signals or whatever. Its disadvantage is again is does not use a signal to trigger updating, which means a certain knowledge of what function it should call is required. This solution is therefore less viable when (if) service clients are introduced.
+
+Also there is always some lag when updating which is only there in the other solution when the list runs out of items to play.
+
+# set new position (which can be right outside the playlist)
+# update
+# if pos outside playlist:
+## set pos to 0
+# determine return value
+# emit pos_changed
+# playback stopped or continued depending on returned value (by caller of <code>xmms_playlist_advance</code>)
+
+[[User:Nesciens|Nesciens]] 16:40, 9 December 2006 (CET)
