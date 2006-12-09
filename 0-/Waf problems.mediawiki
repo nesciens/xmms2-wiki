@@ -84,6 +84,11 @@ solution:
 
 Make sure that you don't have any .o .a .c (generated ones) left from your scons install!
 
+Suggested ways of doing this:
+ git clean -d -x
+or
+ cg-clean -dx
+
 === I changed prefix but it didn't recompile! ===
 Problem: Waf does only generate xmms_defs.h on configuration and doesn't depend on it correctly
 Solution:
