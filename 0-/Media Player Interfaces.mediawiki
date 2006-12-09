@@ -333,19 +333,19 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Output Disable
-| || disableoutput ||
+| || {{MPDCmd|disableoutput}} ||
 |-
 ! Output Enable
-| || enableoutput ||
+| || {{MPDCmd|enableoutput}} ||
 |-
 ! Mute (Output enable/disable toggle)
 | || ||
 |-
 ! Output Info
-| || outputs ||
+| || {{MPDCmd|outputs}} ||
 |-
 ! Output Crossfade
-| || crossfade ||
+| || {{MPDCmd|crossfade}} ||
 |-
 ! Output Set Volume
 | {{EpydocXMMS|playback_volume_set}} || {{MPDCmd|setvol}} ||
