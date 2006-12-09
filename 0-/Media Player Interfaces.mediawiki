@@ -61,52 +61,55 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 !Playback Start
-| playback_start || play || PlayCurrent
+| {{EpydocXMMS|playback_start}} || {{MPDCmd|play}} || PlayCurrent
 |-
 !Playback Stop
-| playback_stop || stop || PlayStop
+| {{EpydocXMMS|playback_stop}} || {{MPDCmd|stop}} || PlayStop
 |-
 !Playback Pause
-| playback_pause || pause || PlayPause
+| {{EpydocXMMS|playback_pause}} || {{MPDCmd|pause}} || PlayPause
 |-
 !Playback Seek Milliseconds
-| playback_seek_ms || ||
+| {{EpydocXMMS|playback_seek_ms}} || ||
 |-
 !Playback Seek Seconds
-| || seek/seekid || Seek
+| || {{MPDCmd|seek}}/{{MPDCmd|seekid}} || Seek
 |-
 !Playback Seek Samples
-| playback_seek_samples
+| {{EpydocXMMS|playback_seek_samples}} || ||
 |-
 !Start playback of playlist item #
-| playlist_set_next && <br /> playback_tickle && <br /> playback_start
-| playid?? || PlayTrack
+| {{EpydocXMMS|playlist_set_next}} && <br /> {{EpydocXMMS|playback_tickle}} && <br /> {{EpydocXMMS|playback_start}}
+| {{MPDCmd|play}} || PlayTrack
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
 |+ Playlist control
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
-! Playlist Add
-| playlist_add, playlist_add_id || (add) ||
+! Playlist Add URL
+| {{EpydocXMMS|playlist_add}} || ||
+|-
+! Playlist Add From Library
+| {{EpydocXMMS|playlist_add_id}} || {{MPDCmd|add}}/{{MPDCmd|addid}} ||
 |-
 ! Playlist Add Multiple
 | || || AddUriList
 |-
 ! Playlist Remove
-| playlist_remove || delete ||
+| {{EpydocXMMS|playlist_remove}} || {{MPDCmd|delete}} ||
 |-
 ! Playlist Remove Multiple
 | || || TracklistRemoveItems
 |-
 ! Playlist Remove all with ID
-| || deleteid (playlist ID) ||
+| || {{MPDCmd|deleteid}} (playlist ID) ||
 |-
-! Playlist Save
-| (medialib_playlist_export) || save (to playlist dir) || ExportTracklist?
+! Playlist Save (to URL)
+| {{EpydocXMMS|medialib_playlist_export}} || || ExportTracklist?
 |-
-! Playlist Load
-| (medialib_playlist_import &amp;&amp; medialib_playlist_load) || load (from playlist dir) || (AddUriList)
+! Playlist Load (from URL)
+| {{EpydocXMMS|medialib_playlist_import}} &amp;&amp; <br /> {{EpydocXMMS|medialib_playlist_load}} || || (AddUriList)
 |-
 ! Playlist Next
 | playlist_set_next_rel &amp;&amp; playback_tickle || next || PlayNext
@@ -217,13 +220,13 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 | medialib_path_import || (implicit in starting MPD) ||
 |-
 ! Library Export Playlist
-| medialib_playlist_export || ||
+| medialib_playlist_export || {{MPDCmd|save}} ||
 |-
 ! Library Import Playlist
 | medialib_playlist_import || ||
 |-
 ! Library Load Playlist
-| medialib_playlist_load || ||
+| medialib_playlist_load || {{MPDCmd|load}} ||
 |-
 ! Library Save Current Playlist
 | medialib_playlist_save_current || (save) ||
