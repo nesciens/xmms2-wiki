@@ -64,10 +64,38 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 * [[Media Player Interfaces/API Comparison#Binary_data_storage|Binary data storage]]
 * [[Media Player Interfaces/API Comparison#Other|Other]]
 
+== Common Interface ==
+'''''DRAFT'''''
+
+=== Basic ===
+* Playback
+** Play
+** Stop
+** Pause
+** Seek (milliseconds?)
+* Playlist
+** Previous
+** Next
+** Add/Enqueue (URL)
+** Remove
+* Info
+** Identity/Version
+** Get Current Playback Status
+** Get Current Playback Position (position in currently playing stream)
+** Get Current Playlist Position
+** Get Current Song (returns unique identifier, which can be used to get associated metadata)
+** Get Song Metadata
+* Session
+** Quit (player shutdown)
+* Output
+** Get Volume
+** Set Volume
+
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
 * [http://thread.gmane.org/gmane.comp.video.videolan.vlc.devel/26649 Proposal for a common D-Bus interface for media players] thread
 * [[Talk:Media Player Interfaces]]
+* [[http://wiki.videolan.org/index.php/MediaControlAPI MediaControlAPI]]
 
 [[Category:Developer ideas]]
