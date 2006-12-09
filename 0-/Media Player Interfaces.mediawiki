@@ -55,6 +55,329 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 === [http://www.videolan.org/vlc VLC] ===
 === [http://amarok.kde.org Amarok] ===
 
+== API Comparison ==
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Playback control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+!Playback Start
+| playback_start || play || PlayCurrent
+|-
+!Playback Stop
+| playback_stop || stop || PlayStop
+|-
+!Playback Pause
+| playback_pause || pause || PlayPause
+|-
+!Playback Seek Milliseconds
+| playback_seek_ms || ||
+|-
+!Playback Seek Seconds
+| || seek/seekid || Seek
+|-
+!Playback Seek Samples
+| playback_seek_samples
+|-
+!Start playback of playlist item #
+| playlist_set_next && <br /> playback_tickle && <br /> playback_start
+| playid?? || PlayTrack
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Playlist control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Playlist Add
+| playlist_add, playlist_add_id || (add) ||
+|-
+! Playlist Add Multiple
+| || || AddUriList
+|-
+! Playlist Remove
+| playlist_remove || delete ||
+|-
+! Playlist Remove Multiple
+| || || TracklistRemoveItems
+|-
+! Playlist Remove all with ID
+| || deleteid (playlist ID) ||
+|-
+! Playlist Save
+| (medialib_playlist_export) || save (to playlist dir) || ExportTracklist?
+|-
+! Playlist Load
+| (medialib_playlist_import &amp;&amp; medialib_playlist_load) || load (from playlist dir) || (AddUriList)
+|-
+! Playlist Next
+| playlist_set_next_rel &amp;&amp; playback_tickle || next || PlayNext
+|-
+! Playlist Previous
+| playlist_set_next_rel &amp;&amp; playback_tickle || previous || PlayPrev
+|-
+! Playlist Set Next
+| playlist_set_next || ||
+|-
+! Playlist Set Next Relative
+| playlist_set_next_rel || ||
+|-
+! Playlist go to Next
+| playback_tickle || (implicit in next) || (implicit in PlayNext)
+|-
+! Playlist Clear
+| playlist_clear || clear ||
+|-
+! Playlist Insert
+| playlist_insert, playlist_insert_id || || (AddUriList)
+|-
+! Playlist List
+| playlist_list || playlistinfo/playlistid ||
+|-
+! Playlist Move
+| playlist_move || move/moveid ||
+|-
+! Playlist Shuffle (modifies playlist)
+| playlist_shuffle || shuffle ||
+|-
+! Playlist Shuffle (play in shuffle order)
+| || random || ShuffleSet/ShuffleGet
+|-
+! Playlist Sort
+| playlist_sort || ||
+|-
+! Playlist Diff
+| || plchanges ||
+|-
+! Playlist Delete
+| || rm ||
+|-
+! Playlist Swap
+| || swap/swapid ||
+|-
+! Playlist Repeat All
+| configval_set || repeat ||
+|-
+! Playlist Repeat One
+| configval_set || ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Current information
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Info Playtime
+| playback_playtime || status (returns additional data) ||
+|-
+! Info Playback Status
+| playback_status || status (returns additional data) || SendStatus?
+|-
+! Info Current ID
+| playback_current_id || currentsong? (returns metadata) ||
+|-
+! Info Playlist Position
+| playlist_current_pos || status (returns additional data) ||
+|-
+! Info Current Song
+| medialib_get_info(playback_current_id) || currentsong ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Configuration control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Config Property Get
+| configval_get || ||
+|-
+! Config Property Set
+| configval_set || ||
+|-
+! Config Property List
+| configval_list || ||
+|-
+! Config Property Register
+| configval_register || ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Library control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Library Add Entry
+| medialib_add_entry || ||
+|-
+! Library Add To Playlist
+| medialib_add_to_playlist || add ||
+|-
+! Library Get ID (of URL)
+| medialib_get_id || ||
+|-
+! Library Get Info (of ID)
+| medialib_get_info || ||
+|-
+! Library Import Metadata
+| medialib_path_import || (implicit in starting MPD) ||
+|-
+! Library Export Playlist
+| medialib_playlist_export || ||
+|-
+! Library Import Playlist
+| medialib_playlist_import || ||
+|-
+! Library Load Playlist
+| medialib_playlist_load || ||
+|-
+! Library Save Current Playlist
+| medialib_playlist_save_current || (save) ||
+|-
+! Library Remove Playlist
+| medialib_playlist_remove || (rm?) ||
+|-
+! Library List Playlists
+| medialib_playlists_list || lsinfo (returns info about dirs as well) ||
+|-
+! Library Rehash
+| medialib_rehash || (update??) ||
+|-
+! Library Query
+| medialib_select || ||
+|-
+! Library Find
+| medialib_select (depends on query) || find/search ||
+|-
+! Library List Key Values of Type
+| medialib_select (depends on query) || list ||
+|-
+! Library List All Files
+| || listall (is recursive) ||
+|-
+! Library List All Files with Info
+| || listallinfo (is recursive) ||
+|-
+! Library List Dir?
+| || lsinfo ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Session control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Connect
+| connect || (socket connection sufficient?) ||
+|-
+! Connect with Password
+| connect || password ||
+|-
+! Ping
+| (hello???) || ping ||
+|-
+! Daemon quit
+| quit || kill ||
+|-
+! End Session
+| (disconnect???) || close ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Signals
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Signal Config Property Change
+| broadcast_configval_changed || ||
+|-
+! Signal Library Entry Change
+| broadcast_medialib_entry_changed || ||
+|-
+! Signal Playlist Loaded from Library
+| broadcast_medialib_playlist_loaded || ||
+|-
+! Signal Current Stream ID
+| broadcast_playback_current_id || ||
+|-
+! Signal Playback Status Change
+| broadcast_playback_status || ||
+|-
+! Signal Playlist Change
+| broadcast_playlist_changed || ||
+|-
+! Signal Playlist Position Change
+| broadcast_playlist_current_pos || ||
+|-
+! Signal Playtime
+| signal_playback_playtime || ||
+|-
+! Signal Visualisation
+| signal_visualisation_data || ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ I/O Control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! IO Loop
+| loop || ||
+|-
+! IO Exit Loop
+| exit_loop || ||
+|-
+! IO In
+| ioin || ||
+|-
+! IO Out
+| ioout || ||
+|-
+! IO Get FD
+| get_fd || ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Output control
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Output Disable
+| || disableoutput ||
+|-
+! Output Enable
+| || enableoutput ||
+|-
+! Mute (Output enable/disable toggle)
+| || ||
+|-
+! Output Info
+| || outputs ||
+|-
+! Output Crossfade
+| || crossfade ||
+|-
+! Output Set Volume
+| configval_set || setvol ||
+|-
+! Output Get Volume
+| configval_get || status (returns additional data) ||
+|}
+
+{| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
+|+ Other
+! Action !! XMMS2 !! MPD !! BMPx
+|-
+! Plugin List
+| plugin_list || ||
+|-
+! Clear Error
+| || clearerror ||
+|-
+! Commandlist
+| || commands ||
+|-
+! Denied Commandlist
+| || notcommands ||
+|-
+! MPRIS Capabilities
+| multi-tracklist, can-seek || || multi-tracklist, can-seek
+|}
+
+== See Also ==
+* [[Media Player Interfaces]]
+
+
 == See Also ==
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
