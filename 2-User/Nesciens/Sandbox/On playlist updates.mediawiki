@@ -97,7 +97,7 @@ This solution is closest to the current implementation. Its disadvantage is that
 
 == Solution 2 ==
 
-This solution uses a new signal to trigger updates. I doubt if this signal is available, as the daemon has to block until something updated the playlist. If it is implemented the way to service clients is open (except you need some mutexing mechanism. See [[Collaborative_Playlist_Management]])
+This solution uses a new signal to trigger updates. I doubt if this signal is available, as the daemon has to block until something updated the playlist. If it is implemented the way to service clients is open (except you need some mutexing mechanism. See [[Collaborative_Playlist_Management]] esp. solution 1.)
 
 # if playlist not up to date:
 ## block
