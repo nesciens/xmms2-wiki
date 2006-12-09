@@ -168,19 +168,19 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Info Playtime
-| playback_playtime || status (returns additional data) ||
+| {{EpydocXMMS|playback_playtime}} || {{MPDCmd|status}} ||
 |-
 ! Info Playback Status
-| playback_status || status (returns additional data) || SendStatus?
+| {{EpydocXMMS|playback_status}} || {{MPDCmd|status}} || SendStatus?
 |-
 ! Info Current ID
-| playback_current_id || currentsong? (returns metadata) ||
+| {{EpydocXMMS|playback_current_id}} || {{MPDCmd|currentsong}} ||
 |-
 ! Info Playlist Position
-| playlist_current_pos || status (returns additional data) ||
+| {{EpydocXMMS|playlist_current_pos}} || {{MPDCmd|status}} ||
 |-
 ! Info Current Song
-| medialib_get_info(playback_current_id) || currentsong ||
+| {{EpydocXMMS|medialib_get_info}}({{EpydocXMMS|playback_current_id}}) || {{MPDCmd|currentsong}} ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -188,75 +188,72 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Config Property Get
-| configval_get || ||
+| {{EpydocXMMS|configval_get}} || ||
 |-
 ! Config Property Set
-| configval_set || ||
+| {{EpydocXMMS|configval_set}} || ||
 |-
 ! Config Property List
-| configval_list || ||
+| {{EpydocXMMS|configval_list}} || ||
 |-
 ! Config Property Register
-| configval_register || ||
+| {{EpydocXMMS|configval_register}} || ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
 |+ Library control
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
-! Library Add Entry
-| medialib_add_entry || ||
+! Library Add Entry (URL)
+| {{EpydocXMMS|medialib_add_entry}} || ||
 |-
-! Library Add To Playlist
-| medialib_add_to_playlist || add ||
+! Library Add To Playlist (query)
+| {{EpydocXMMS|medialib_add_to_playlist}} || ||
 |-
 ! Library Get ID (of URL)
-| medialib_get_id || ||
+| {{EpydocXMMS|medialib_get_id}} || ||
 |-
 ! Library Get Info (of ID)
-| medialib_get_info || ||
+| {{EpydocXMMS|medialib_get_info}} || ||
 |-
 ! Library Import Metadata
-| medialib_path_import || (implicit in starting MPD) ||
+| {{EpydocXMMS|medialib_path_import}} || (implicit in starting MPD) ||
 |-
 ! Library Export Playlist
-| medialib_playlist_export || {{MPDCmd|save}} ||
+| {{EpydocXMMS|medialib_playlist_export}} || {{MPDCmd|save}} ||
 |-
 ! Library Import Playlist
-| medialib_playlist_import || ||
+| {{EpydocXMMS|medialib_playlist_import}} || ||
 |-
 ! Library Load Playlist
-| medialib_playlist_load || {{MPDCmd|load}} ||
+| {{EpydocXMMS|medialib_playlist_load}} || {{MPDCmd|load}} ||
 |-
 ! Library Save Current Playlist
-| medialib_playlist_save_current || (save) ||
+| {{EpydocXMMS|medialib_playlist_save_current}} || {{MPDCmd|save}} ||
 |-
 ! Library Remove Playlist
-| medialib_playlist_remove || {{MPDCmd|rm}} ||
+| {{EpydocXMMS|medialib_playlist_remove}} || {{MPDCmd|rm}} ||
 |-
 ! Library List Playlists
-| medialib_playlists_list || lsinfo (returns info about dirs as well) ||
+| {{EpydocXMMS|medialib_playlists_list}} || {{MPDCmd|lsinfo}} (returns info about dirs as well) ||
 |-
 ! Library Rehash
-| medialib_rehash || (update??) ||
+| {{EpydocXMMS|medialib_rehash}} || {{MPDCmd|update}} ||
 |-
 ! Library Query
-| medialib_select || ||
+| {{EpydocXMMS|medialib_select}} || ||
 |-
 ! Library Find
-| medialib_select (depends on query) || find/search ||
+| {{EpydocXMMS|medialib_select}} || {{MPDCmd|find}}/{{MPDCmd|search}} ||
 |-
 ! Library List Key Values of Type
-| medialib_select (depends on query) || list ||
+| {{EpydocXMMS|medialib_select}} (depends on query) || {{MPDCmd|list}} ||
 |-
 ! Library List All Files
-| || listall (is recursive) ||
+| || {{MPDCmd|listall}} (recursive) ||
 |-
 ! Library List All Files with Info
-| || listallinfo (is recursive) ||
-|-
-! Library List Dir?
-| || lsinfo ||
+| || {{MPDCmd|listallinfo}} (recursive) ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -264,19 +261,19 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Connect
-| connect || (socket connection sufficient?) ||
+| {{EpydocXMMS|connect}} || (socket connection sufficient) ||
 |-
 ! Connect with Password
-| connect || password ||
+| {{EpydocXMMS|connect}} || {{MPDCmd|password}} ||
 |-
 ! Ping
-| (hello???) || ping ||
+| || {{MPDCmd|ping}} ||
 |-
 ! Daemon quit
-| quit || kill ||
+| {{EpydocXMMS|quit}} || {{MPDCmd|kill}} ||
 |-
 ! End Session
-| (disconnect???) || close ||
+| || {{MPDCmd|close}} ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -284,31 +281,31 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Signal Config Property Change
-| broadcast_configval_changed || ||
+| {{EpydocXMMS|broadcast_configval_changed}} || ||
 |-
 ! Signal Library Entry Change
-| broadcast_medialib_entry_changed || ||
+| {{EpydocXMMS|broadcast_medialib_entry_changed}} || ||
 |-
 ! Signal Playlist Loaded from Library
-| broadcast_medialib_playlist_loaded || ||
+| {{EpydocXMMS|broadcast_medialib_playlist_loaded}} || ||
 |-
 ! Signal Current Stream ID
-| broadcast_playback_current_id || ||
+| {{EpydocXMMS|broadcast_playback_current_id}} || ||
 |-
 ! Signal Playback Status Change
-| broadcast_playback_status || ||
+| {{EpydocXMMS|broadcast_playback_status}} || ||
 |-
 ! Signal Playlist Change
-| broadcast_playlist_changed || ||
+| {{EpydocXMMS|broadcast_playlist_changed}} || ||
 |-
 ! Signal Playlist Position Change
-| broadcast_playlist_current_pos || ||
+| {{EpydocXMMS|broadcast_playlist_current_pos}} || ||
 |-
 ! Signal Playtime
-| signal_playback_playtime || ||
+| {{EpydocXMMS|signal_playback_playtime}} || ||
 |-
 ! Signal Visualisation
-| signal_visualisation_data || ||
+| {{EpydocXMMS|signal_visualisation_data}} || ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -316,19 +313,19 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! IO Loop
-| loop || ||
+| {{EpydocXMMS|loop}} || ||
 |-
 ! IO Exit Loop
-| exit_loop || ||
+| {{EpydocXMMS|exit_loop}} || ||
 |-
 ! IO In
-| ioin || ||
+| {{EpydocXMMS|ioin}} || ||
 |-
 ! IO Out
-| ioout || ||
+| {{EpydocXMMS|ioout}} || ||
 |-
 ! IO Get FD
-| get_fd || ||
+| {{EpydocXMMS|get_fd}} || ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -351,10 +348,10 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 | || crossfade ||
 |-
 ! Output Set Volume
-| configval_set || setvol ||
+| {{EpydocXMMS|playback_volume_set}} || {{MPDCmd|setvol}} ||
 |-
 ! Output Get Volume
-| configval_get || status (returns additional data) ||
+| {{EpydocXMMS|playback_volume_get}} || {{MPDCmd|status}} ||
 |}
 
 {| border="1" cellpadding="5" cellspacing="0" align="center" class="wikitable" style="width: 100%;"
@@ -362,19 +359,16 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ! Action !! XMMS2 !! MPD !! BMPx
 |-
 ! Plugin List
-| plugin_list || ||
+| {{EpydocXMMS|plugin_list}} || ||
 |-
 ! Clear Error
-| || clearerror ||
+| || {{MPDCmd|clearerror}} ||
 |-
 ! Commandlist
-| || commands ||
+| || {{MPDCmd|commands}} ||
 |-
 ! Denied Commandlist
-| || notcommands ||
-|-
-! MPRIS Capabilities
-| multi-tracklist, can-seek || || multi-tracklist, can-seek
+| || {{MPDCmd|notcommands}} ||
 |}
 
 == See Also ==
