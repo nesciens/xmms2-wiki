@@ -97,7 +97,9 @@ This solution is closest to the current implementation. Its disadvantage is that
 
 == Solution 2 ==
 
-This solution uses a new signal to trigger updates. I doubt if this signal is available, as the daemon has to block until something updated the playlist. If it is implemented the way to service clients is open (except you need some mutexing mechanism. See [[Collaborative_Playlist_Management]] esp. solution 1.)
+This solution uses a new signal to trigger updates. I doubt if this signal is available, as the daemon has to block until something updated the playlist. 
+
+If it is implemented, however, the way to service clients is open. (Except you might need some mutexing mechanism (see [[Collaborative_Playlist_Management]] esp. solution 1) or the signal should be send to different clients in sequence (instread of parallell); first try client 1. If that fails client 2, and so forth. A client might fail for instance when it is requested to update a different type of playlist than it was made for.)
 
 # if playlist not up to date:
 ## block
