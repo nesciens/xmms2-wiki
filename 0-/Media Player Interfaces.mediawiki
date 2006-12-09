@@ -73,6 +73,8 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ** Stop
 ** Pause
 ** Seek (milliseconds?)
+** Status (playing/paused/stopped)
+** Position (milliseconds?)
 * Playlist
 ** Previous
 ** Next
@@ -80,11 +82,9 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 ** Remove
 ** Clear
 ** Get list
+** Position (zero-indexed?)
 * Info
 ** Identity/Version
-** Get Current Playback Status
-** Get Current Playback Position (position in currently playing stream)
-** Get Current Playlist Position
 ** Get Current Song (returns unique identifier, which can be used to get associated metadata)
 ** Get Song Metadata
 * Session
