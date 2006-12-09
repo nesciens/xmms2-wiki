@@ -36,10 +36,6 @@ Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decide
 == Current ==
 ;Discussion
 :Discussion is proceeding on the [http://developers.videolan.org/lists.html vlc-devel] mailing list. (see specific thread linked [[#See_Also|below]]) Milosz has proposed to set up an mpris-devel mailing list hosted by BMPx.
-;Issues
-* Default player/interface name handling
-* Rants about DBUS/XML
-* UPnP?
 
 == DBUS ==
 ;Advantages
