@@ -1,0 +1,7 @@
+= On potential solution 1 =
+
+It might be possible to implement a mechanism to release the lock when the connection to the client is lost. If this is implemented only the buggy client has to be killed. This, of course, is still very annoying when you do not have control over this client (e.g. when its running on a different machine).
+
+A timeout might also be possible.
+
+[[User:Nesciens|Nesciens]] 17:03, 9 December 2006 (CET)
