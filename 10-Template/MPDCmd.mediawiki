@@ -1,0 +1,1 @@
+[http://mpd.wikia.com/wiki/MusicPlayerDaemonCommands#{{{1}}} {{{1}}}]
