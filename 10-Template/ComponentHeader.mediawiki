@@ -1,6 +1,6 @@
 <div style="border: dotted 3px black; text-align: center; padding:0.5em; background-color:#fbb">
 '''This page describes a component of XMMS2.'''
 
-It's ''Summary'' section will be used as a basis for package descriptions, so please make sure that the text is [http://people.debian.org/~walters/descriptions.html suited] for that. The contents of this page will be gathered automatically be a script, it is important that the ''Summary'' section is kept.
+The ''Summary'' section will be used as a basis for package descriptions, so please make sure that the text is [http://people.debian.org/~walters/descriptions.html suited] for that. The contents of this page will be gathered automatically by a script. It is important that the ''Summary'' section is kept.
 </div>
 __NOTOC__
