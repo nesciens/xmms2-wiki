@@ -1,8 +1,8 @@
 In the process of porting the collections api to python it becomes apparent that a decision has to be made about how to represent the collections structure.
 
-There are a number of options, two of them are:
+There are a number of options, some of them are:
 
-''All python examples use Sync API for simplciity''
+''All python examples use Sync API for simplicity''
 
 ===Alternative 1===
 create a collections class which represents the various collections semantics as properties and attributes (with the occasional method if necessary).
