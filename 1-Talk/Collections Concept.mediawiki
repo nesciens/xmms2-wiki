@@ -66,7 +66,7 @@ In my perception a medialist is a kind of mediaset. Rephrased: "An operator alwa
 The word 'tree' was meant as a simplification; a tree is an acyclic graph, which can be directed (subset of DAG), or undirected.
 
 * '' ''identical'' is confusing I think. See [[Collections_Concept#Formal_definition_of_a_Collection]].''
-The word 'collection' is confusing (because it is so generic), so I attempted to give it a stricter meaning. Either way, I think the use of this word should minimalized.
+The word 'collection' is confusing (because it is so generic), so I attempted to give it a stricter meaning. Either way, I think the use of this word should minimized.
 
 Thanks for reading and commenting on my humble perception on collections!
 
