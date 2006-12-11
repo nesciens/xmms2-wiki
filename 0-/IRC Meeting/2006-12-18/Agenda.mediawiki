@@ -3,3 +3,5 @@
 *# Xmms2Forge
 *# ?????
 *# Profit!
+* [[SoC:AirTunes | AirPlay]]
+* [[Windows]] port
