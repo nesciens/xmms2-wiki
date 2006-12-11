@@ -34,6 +34,8 @@ In conclusion, collections are a new step towards abstraction of the access and 
 
 = Terminology =
 
+''See also: [[Talk:Collections Concept#Proposal for definitions of nomenclature, to avoid confusion|Proposal for definitions of nomenclature]]''
+
 ; Media Library
 : The Media Library is the entity containing all the Media.
 
