@@ -1,4 +1,4 @@
-''This concept is a work in progress as part of Google's [[Summer of Code 2006]]. For more information, see [[SoC:Collections]].''
+''This concept was implemented as part of Google's [[Summer of Code 2006]]. For more information, see [[SoC:Collections]].''
 
 == Collections ==
 
