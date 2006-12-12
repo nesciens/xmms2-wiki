@@ -1,7 +1,8 @@
 * Public Relations
-*# Graphics Design Contest
-*# Xmms2Forge
-*# ?????
-*# Profit!
+** Graphics Design Contest
+** Xmms2Forge
+** xmms2.org? getxmms2.org?
+** Esperanza + XMMS2 Bundle for Win32
+** New front page
 * [[SoC:AirTunes | AirPlay]]
 * [[Windows]] port
