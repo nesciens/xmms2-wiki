@@ -12,3 +12,6 @@ On top of that, XMMS2 supports a few revolutionary new concepts. [[Collections C
 
 == I Want It! ==
 Head on over to our [[User:Puzzles/Sandbox/Download | download]] page and download the package that's right for you! Then check out the [[Clients | clients]] page to check out some clients that various people have made.
+
+== News ==
+{{ShortNews}}
