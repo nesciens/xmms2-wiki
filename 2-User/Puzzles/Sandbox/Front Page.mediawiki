@@ -3,15 +3,15 @@ __NOEDITSECTION__
 = XMMS2 - The Cross-platform Music Multiplexing System =
 
 <div class="split-half">
-== What is it? ==
-XMMS2 is a next-generation music player designed with a rich set of features and the user in mind. It handles a vast array of [[Media formats | formats]] and [[Transports | transports]]. You can play music off of your portable music devices, submit content to [http://www.last.fm/ Last.FM], transparently use network shares, DAAP shares, and Last.FM streams. Coupled with album art and great, clean tagging support, XMMS2 is a powerful music player that aims to satisfy the needs of just about anyone.
-
-== I Want It! ==
+== Download Now! ==
 Head on over to our [[User:Puzzles/Sandbox/Download | download]] page and download the package that's right for you! Then check out the [[Clients | clients]] page to check out some clients that various people have made.
+
+== A Next-Gen Music Player for Everyone ==
+XMMS2 is designed with a rich set of features and the user in mind. It handles a vast array of [[Media formats | formats]] and [[Transports | transports]]. You can play music off of your portable music devices, submit content to [http://www.last.fm/ Last.FM], transparently use network shares, DAAP shares, and Last.FM streams. Coupled with album art and great, clean tagging support, XMMS2 is a powerful music player that aims to satisfy the needs of just about anyone.
 </div>
 
 <div class="split-half">
-== What makes XMMS2 different? ==
+== Improving Your Digital Music Experience ==
 XMMS2 runs in the background on your computer and just plays music. Clients such as [[Client:Esperanza | Esperanza]] talk to XMMS2 to control it. Unlike many other media players, you can have any number of clients connected at once, all doing their own things. And if you close them all, your music won't stop.
 
 On top of that, XMMS2 supports a few revolutionary new concepts. [[Collections Concept | Collections]] are a brand new way of thinking about and organizing your media. Collections allow you to group and use your media powerfully to, for example, make a playlist of "all my pop songs except Britney Spears." The [[Transforms | transform chain]] concept dynamically builds a chain of plugins to play your media no matter where it's being hosted or what format it's in. You can play an MP3 off of an HTTP stream or your friend's Windows share or your own hard drive just as easily.
