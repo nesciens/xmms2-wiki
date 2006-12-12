@@ -1,0 +1,7 @@
+Can we do sexy platform autodetection here?
+
+* Windows Esperanza + XMMS2 bundle!
+* Debian instructions/debs
+* Ubuntu instructions
+* Gentoo instructions/ebuilds
+* Source/Git instructions - link to build/install instructions
