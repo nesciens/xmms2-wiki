@@ -35,8 +35,6 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=Shellac| description=Shellac is a XMMS2 client written in Python with Pygtk with a customizable GUI.}}
 
-{{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
-
 {{ClientSummary| name=Azrael| description=A client written in C.}}
 
 {{ClientSummary| name=snett| description=snett is a strange-quark clone written in Ruby. It allows playback control and limited access to playlists stored in the medialib.}}
@@ -126,6 +124,8 @@ These clients have been discontinued, abandoned, or are otherwise not maintained
 {{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
 
 {{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
+
+{{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
 
 [[Category: General]]
 [[Category: Users]]
