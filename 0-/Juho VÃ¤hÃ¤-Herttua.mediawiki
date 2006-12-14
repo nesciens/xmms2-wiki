@@ -3,5 +3,6 @@ Trying to be quite frequent bug reporter and patch sender, very much interested 
 Author of never finished and not updated [http://xmms-oggcaster.sf.net/ XMMS OggCaster] plugin. (got little frustrated due to the inflexible XMMS1 design and forced use of GTK 1.x)
 
 E-Mail: juhovh at iki dot fi
+[http://juho.vaha-herttua.fi/ Homepage]
 
 [[Category: People]]
