@@ -120,6 +120,22 @@ Add all the unrated songs to your playlist, written with bash in mind:
 A MUCH better way to do the above is:
  xmms2 mlib queryadd 'select m1.id as id from Media m1 left join Media m2 on m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null'
 
+Select id, artist and title (from all songs, including those without title and/or artist):
+SELECT 
+  m.id,
+  artist.value AS vartist,
+  title.value AS vtitle 
+FROM Media AS m 
+LEFT JOIN Media AS arist ON(
+   artist.id = m.id AND
+   artist.key = "artist")
+LEFT JOIN Media AS title ON(
+   title.id = m.id AND
+   title.key = "title")
+WHERE m.key = "url";
+
+"WHERE m.key = "url";" is added because of you want to JOIN on only 1 record per id and key = url is the only key which always exists. If you only want to see the the items with a arist, you can leave LEFT before "LEFT JOIN Media AS arist".
+
 
 Related links:
 * http://www.sqlite.org/
