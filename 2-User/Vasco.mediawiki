@@ -1,0 +1,7 @@
+I'm Vasco Tenner, a 18 years old boy from the Netherlands. I'm working (after school) as webdeveloper. In my sparetime I'm a birdspotter. I'm also member, webmaster and sysadmin of the NJN (Netherlands Youthclub for Natur: http://www.njn.nl/). To contact me, mail me: vascotenner (at) gmail.com
+
+xmms2 related projects:
+Pernis (a php based playlisteditor for xmms2) http://engadin.homeip.net/pernis/index.php
+
+projects to build:
+phpbindings for xmms2
