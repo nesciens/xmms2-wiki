@@ -97,3 +97,19 @@ Solution:
  ./waf build
 
 I am working on a better fix for this.
+
+=== I get an undefined symbol and I used --conf-prefix ===
+--conf-prefix prepends the -L and -I to the *FLAGS enviornments, so that when waf tries to use built copies to link binaries, it ends up using the local copies instead.
+
+ /usr/bin/gcc default/src/clients/cli/cmd_config.o default/src/clients/cli/cmd_mlib.o 
+ default/src/clients/cli/cmd_other.o default/src/clients/cli/cmd_playback.o 
+ default/src/clients/cli/cmd_pls.o default/src/clients/cli/cmd_status.o 
+ default/src/clients/cli/cmd_coll.o default/src/clients/cli/common.o default/src/clients/cli/main.o 
+ -o default/src/clients/cli/xmms2 -L/usr/local/lib -Ldefault/src/clients/lib/xmmsclient-glib 
+ -Ldefault/src/clients/lib/xmmsclient -L/usr/local/lib -L/usr/local/lib 
+ -Ldefault/src/clients/lib/xmmsclient-glib -Ldefault/src/clients/lib/xmmsclient -L/usr/local/lib 
+ -Wl,-Bdynamic -lxmmsclient-glib -lxmmsclient -lglib-2.0 -liconv
+
+Notice how -L/usr/local/lib comes first here, so it ends up using the system copy of xmmsclient instead of the one it built and thus produces undefined symbols.
+
+The solution to this is to not use --conf-prefix but rather to define CCFLAGS/CFLAGS/CXXFLAGS/CPPFLAGS/LINKFLAGS accordingly.
