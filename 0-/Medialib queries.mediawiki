@@ -118,7 +118,14 @@ Add all the unrated songs to your playlist, written with bash in mind:
   '; } | cut -f3 -d\  | sort -n | uniq -u | xargs -n1 -IZ xmms2 mlib queryadd 'select 'Z' as id'
 
 A MUCH better way to do the above is:
- xmms2 mlib queryadd 'select m1.id as id from Media m1 left join Media m2 on m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null'
+ xmms2 mlib queryadd 'select m1.id as id from Media m1 left join Media m2 on
+    m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null'
+
+<Cheako>
+  From Debian(Unstable/Testing).
+  version = 0.2 DrHouse (git commit: HEAD)
+  ERROR: Error in query: no such column: rating
+</Cheako>
 
 Select id, artist and title (from all songs, including those without title and/or artist):
  SELECT 
@@ -136,6 +143,14 @@ Select id, artist and title (from all songs, including those without title and/o
 
 "WHERE m.key = "url";" is added because of you want to JOIN on only 1 record per id and key = url is the only key which always exists. If you only want to see the the items with a arist, you can leave LEFT before "LEFT JOIN Media AS arist".
 
+<Cheako>
+  ERROR: Error in query: no such column: artist.value
+</Cheako>
+
+ToDo:
+  Looking for a way to clean up the active playlist, something to put in cron that might run every 5 minuets and auto-remove any song with a rating of 0.
+  An insert/update so rating songs(ect) can be scripted.
+  A overview or map, listing table names, descriptions, and relations.
 
 Related links:
 * http://www.sqlite.org/
