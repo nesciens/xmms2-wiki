@@ -88,6 +88,14 @@ Listen to a shoutcast stream (assuming curl plugin is installed) using the direc
 Enabling an effect:
 
   xmms2 config effect.order.0 some-effect-name
-  xmms2 config effect.some-effect-name.enabled 1
+  xmms2 config some-effect-name.enabled 1
+
+Example of enabling replaygain:
+
+  xmms2 config effect.order.0 replaygain
+  xmms2 play
+  xmms2 stop
+  xmms2 config replaygain.enabled 1
+  xmms2 play
 
 [[Category: Users]]
