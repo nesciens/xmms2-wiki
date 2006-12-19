@@ -1,0 +1,4 @@
+What about a transport for encryption?
+Here at work I can't have mp3s on my hard drive, even if own them.
+But I have no root access, so I think I can't use a transparent encryption scheme.
+[[User:Rodolfo Borges|bart9h]] 15:02, 19 December 2006 (CET)
