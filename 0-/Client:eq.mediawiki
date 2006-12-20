@@ -1,0 +1,1 @@
+{{Client |name=eq| author=[[Daniel Svensson]]| website=http://exodus.xmms.se/~nano/eq.py| version=N/A| devlanguage=Python| ui=GTK| screenshots=http://exodus.xmms.se/~nano/eq.png| description=A simple equalizer client.}}
