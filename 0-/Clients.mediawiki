@@ -57,6 +57,8 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=LXMusic| description=LXMusic is a very simple gtk+ client written in pure C. It has very few functionality, and can do nothing more than play the music. The UI is very clean and simple. This is currently the default music player of [http://lxde.sourceforge.net/ LXDE project].}}
 
+{{ClientSummary| name=eq description=A simple gui for the equalizer as no client has good equalizer support yet}}
+
 == Qt ==
 
 {{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
