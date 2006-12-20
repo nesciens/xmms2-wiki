@@ -57,7 +57,7 @@ Clients that require X11 or other graphical windowing systems.
 
 {{ClientSummary| name=LXMusic| description=LXMusic is a very simple gtk+ client written in pure C. It has very few functionality, and can do nothing more than play the music. The UI is very clean and simple. This is currently the default music player of [http://lxde.sourceforge.net/ LXDE project].}}
 
-{{ClientSummary| name=eq description=A simple gui for the equalizer as no client has good equalizer support yet}}
+{{ClientSummary| name=eq| description=A simple gui for the equalizer as no client has good equalizer support yet}}
 
 == Qt ==
 
