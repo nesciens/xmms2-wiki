@@ -109,25 +109,15 @@ Select the name and size (number of songs) of all the playlists:
   test        2         
 
 
-Add all the unrated songs to your playlist, written with bash in mind:
+Add all the unrated songs to your playlist, written in a MUCH better way:
 
-  { xmms2 mlib query 'SELECT DISTINCT id FROM Media'; xmms2 mlib query '
-         SELECT DISTINCT id
-         FROM Media
-         WHERE key="rating";
-  '; } | cut -f3 -d\  | sort -n | uniq -u | xargs -n1 -IZ xmms2 mlib queryadd 'select 'Z' as id'
-
-A MUCH better way to do the above is:
- xmms2 mlib queryadd 'select m1.id as id from Media m1 left join Media m2 on
-    m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null'
-
-<Cheako>
-  From Debian(Unstable/Testing).
-  version = 0.2 DrHouse (git commit: HEAD)
-  ERROR: Error in query: no such column: rating
-</Cheako>
+ xmms2 mlib queryadd "select m1.id as id from Media m1 left join Media m2 on
+    m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null"
 
 Select id, artist and title (from all songs, including those without title and/or artist):
+
+Use this to "fully" search for id's that have a specific artist and a specific title.
+
  SELECT 
   m.id,
   artist.value AS vartist,
@@ -135,17 +125,13 @@ Select id, artist and title (from all songs, including those without title and/o
  FROM Media AS m 
  LEFT JOIN Media AS arist ON(
    artist.id = m.id AND
-   artist.key = "artist")
+   artist.key = "%%your-artist%%")
  LEFT JOIN Media AS title ON(
    title.id = m.id AND
-   title.key = "title")
+   title.key = "%%your-title%%")
  WHERE m.key = "url";
 
 "WHERE m.key = "url";" is added because of you want to JOIN on only 1 record per id and key = url is the only key which always exists. If you only want to see the the items with a arist, you can leave LEFT before "LEFT JOIN Media AS arist".
-
-<Cheako>
-  ERROR: Error in query: no such column: artist.value
-</Cheako>
 
 ToDo:
   Looking for a way to clean up the active playlist, something to put in cron that might run every 5 minuets and auto-remove any song with a rating of 0.
