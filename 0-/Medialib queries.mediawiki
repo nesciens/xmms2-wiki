@@ -114,6 +114,10 @@ Add all the unrated songs to your playlist, written in a MUCH better way:
  xmms2 mlib queryadd "select m1.id as id from Media m1 left join Media m2 on
     m1.id = m2.id and m2.key='rating' where m1.key = 'url' and m2.value is null"
 
+Sorry for the long line, but I put this in cron(SHELL=bash), should remove any poorely rated songs automagicaly.  For testing only run this every 10min, also notice there is no locking so many instances can ruin your whole day.
+
+ */10 * * * * xmms2 remove $(data=$(xmms2 mlib query "select id from Media where key='rating' and value = 1" | cut -f3 -d\ ); for ech in $(xmms2 list | head -n-2 | tr ']' '[' | cut -f2 -d'['); do echo "$data" | grep -q "^$(echo $ech | cut -f2 -d/)$" && { pos=$(echo $ech | cut -f1 -d/); echo $pos; }; done)
+
 Select id, artist and title (from all songs, including those without title and/or artist):
 
 Use this to "fully" search for id's that have a specific artist and a specific title.
