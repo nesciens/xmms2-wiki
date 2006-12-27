@@ -112,8 +112,7 @@ Notes:
  // custom collection (all media by Sonic Youth)
  operand = xmmsc_coll_new (XMMS_COLL_TYPE_MATCH);
  
- xmmsc_coll_t* allmedia;
- xmmsc_coll_universe (&allmedia);
+ xmmsc_coll_t* allmedia = xmmsc_coll_universe ();
  xmmsc_coll_add_operand (operand, allmedia);
  
  xmmsc_coll_attribute_set(operand, "field", "artist");
