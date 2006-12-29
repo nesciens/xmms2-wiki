@@ -1,0 +1,37 @@
+There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
+
+If you are a new XMMS2 client developer, you're welcome to add your client to the [[Clientlist | list] and drop by our [irc://chat.freenode.net/xmms2 IRC channel] to let us know what you're doing, so we may work closely together.
+<br/>
+'''See also''':
+* [[Clientlist | A matrix of all available clients]]
+* [[Contribs | Contributions to XMMS2, like shell scripts or keyboard bindings]]
+* [[Talk:XMMS2_Clients#How_to_add_a_new_client | How to add a new client]]
+* [[Writing XMMS2 Clients]]
+
+'''Note:''' While most other players give you an 'all-in-one' experience, when it comes to XMMS2 it can be worthwile to have several different clients running at once. Features like desktop integration, on-screen displays, etc. are mostly done in several clients written esp. for this task. Just have a look around!
+
+= Main Clients =
+
+== Graphical Clients ==
+
+== Web Clients ==
+
+== Console Clients ==
+
+= Desktop Integration =
+
+== Gnome ==
+
+== KDE ==
+
+== Others ==
+
+= Integration Into Other Applications =
+
+== X-Chat / IRSSI ==
+
+= Special Input Methods =
+
+== Remote Control ==
+
+== Mobile Phones ==
