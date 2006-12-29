@@ -4,13 +4,8 @@
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
-|- 
-| '''[[Client:Esperanza | Esperanza]]'''
-| Graphical / QT4 || C++ || in development || Lightweight, basic player
-
-|-
-| '''[[Client:eq | eq]]'''
-| Graphical / GTK || Python || in development || Simple equalizer frontend
+{{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
+{{ClientTableEntry|eq| Graphical / GTK | Python | in development | Simple equalizer frontend }}
 |}
 
 = Abandoned/Deprecated Clients =
