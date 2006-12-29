@@ -16,24 +16,38 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 
 == Web Clients ==
 
+* [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
+
 == Console Clients ==
 
-
+* [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
+* [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
 
 = Desktop Integration =
 
+== General ==
+
+* [[Client:gx2ods | gx2osd]] shows playing information as an On-Screen Display
+* [[Client:Camio | Camio]] is a small dock usable on every desktop
+* [[Client:snett | snett]] provides a small icon with popup-menu
+
 == Gnome ==
+
+* [[Client:XMMS2tray | XMMS2tray]] provides integration into the tray
+* [[Client:XMMSDeskbar | XMMSDeskbar]] works with the Gnome Deskbar
 
 == KDE ==
 
 == Others ==
 
+* [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
+
 = Integration Into Other Applications =
 
 == X-Chat / IRSSI ==
 
-* '''X-Chat''': [Client:EkoXMMS2 | EkoXMMS2] lets you control XMMS2 within the application
-* '''irssi''': Both [Client:ixmms2 | ixmms2] and [Client:xmms2Plugin | xmms2Plugin] provide information and control within irssi
+* '''X-Chat:''' [[Client:EkoXMMS2 | EkoXMMS2]] lets you control XMMS2 within the application
+* '''irssi:''' Both [[Client:ixmms2 | ixmms2]] and [Client:xmms2Plugin | xmms2Plugin] provide information and control within irssi
 
 == Audioscrobbler ==
 
@@ -43,4 +57,8 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 
 == Remote Control ==
 
+* [[Client:lxmms2 | lxmms2]] lets you control XMMS2 with LIRC
+
 == Mobile Phones ==
+
+* [[Client:Harald | Harald]] uses JavaME and Bluetooth to be your music player on the phone
