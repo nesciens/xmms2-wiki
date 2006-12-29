@@ -27,14 +27,14 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 
 == General ==
 
-* [[Client:gx2ods | gx2osd]] shows playing information as an On-Screen Display
+* [[Client:gx2osd | gx2osd]] shows playing information as an On-Screen Display
 * [[Client:Camio | Camio]] is a small dock usable on every desktop
 * [[Client:snett | snett]] provides a small icon with popup-menu
 
 == Gnome ==
 
 * [[Client:XMMS2tray | XMMS2tray]] provides integration into the tray
-* [[Client:XMMSDeskbar | XMMSDeskbar]] works with the Gnome Deskbar
+* [[Client:XmmsDeskbar | XmmsDeskbar]] works with the Gnome Deskbar
 
 == KDE ==
 
@@ -43,6 +43,10 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 * [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
 
 = Integration Into Other Applications =
+
+== GKrellM2 ==
+
+* [[Client:gkrellxmms2 | gkrellxmms2]] enhances GKrellM2 and has many features
 
 == X-Chat / IRSSI ==
 
