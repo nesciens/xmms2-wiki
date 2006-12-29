@@ -8,7 +8,7 @@
 {{ClientTableEntry|bluegroove| Graphical / GTK | Ruby | website unreachable | Typical player with queueing support }}
 {{ClientTableEntry|Camio| Simple Dock (GTK) | Python | in development | Small dock with basic commands }}
 {{ClientTableEntry|EkoXMMS2| Plugin for X-Chat | C | in development | Small player integrated into X-Chat }}
-{{ClientTableEntry|Euphoria| Grapical / EFL | Ruby | rewrite | player for Enlightenment (DR17) }}
+{{ClientTableEntry|Euphoria| Graphical / EFL | Ruby | rewrite | player for Enlightenment (DR17) }}
 {{ClientTableEntry|eq| Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
 {{ClientTableEntry|gkrellxmms2| Plugin for GKrellM2 | C | in development | feature-rich enhancement of GKrellM2 }}
