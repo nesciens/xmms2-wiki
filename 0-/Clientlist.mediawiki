@@ -1,0 +1,13 @@
+= Client Matrix =
+
+"All" clients should be found here.
+
+{| class="wikitable"
+! Name || Kind || Language || Status || Description
+|- 
+| [[Client:Esperanza]]
+| Graphical / QT4 || C++ || in development || Lightweight, basic player
+|-
+| [[Client:eq]]
+| Graphical / GTK || Python || in development || Simple equalizer frontend
+|}
