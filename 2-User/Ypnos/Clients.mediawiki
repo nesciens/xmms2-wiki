@@ -18,6 +18,8 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 
 == Console Clients ==
 
+
+
 = Desktop Integration =
 
 == Gnome ==
@@ -29,6 +31,13 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 = Integration Into Other Applications =
 
 == X-Chat / IRSSI ==
+
+* '''X-Chat''': [Client:EkoXMMS2 | EkoXMMS2] lets you control XMMS2 within the application
+* '''irssi''': Both [Client:ixmms2 | ixmms2] and [Client:xmms2Plugin | xmms2Plugin] provide information and control within irssi
+
+== Audioscrobbler ==
+
+* [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]] is an [http://www.audioscrobbler.com/ AudioScrobbler] client.
 
 = Special Input Methods =
 
