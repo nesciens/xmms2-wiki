@@ -1,136 +1,97 @@
 There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
 
-If you are a new XMMS2 client developer, you're welcome to add your client to the list.. and drop by our [irc://chat.freenode.net/xmms2 IRC channel] to let us know what you're doing, so we may work closely together.
+If you are a new XMMS2 client developer, you're welcome to add your client to [[Clientlist | this list]] and drop by our [irc://chat.freenode.net/xmms2 IRC channel] to let us know what you're doing, so we may work closely together.
 <br/>
 '''See also''':
-* [[Clientlist | A matrix of all available clients]]
-* [[Contribs]]
+* [[Clientlist | A matrix of '''all''' available clients]]
+* [[Contribs | Contributions to XMMS2]] (like shell scripts or keyboard bindings)
 * [[Talk:XMMS2_Clients#How_to_add_a_new_client | How to add a new client]]
 * [[Writing XMMS2 Clients]]
 
-= Console clients =
-Clients that can be used from a command line, console or terminal.
+'''Note:''' While most other players give you an 'all-in-one' experience, when it comes to XMMS2 it can be worthwile to have several different clients running at once. Features like desktop integration, on-screen displays, etc. are mostly done in several clients written esp. for this task. Just have a look around!
 
-{{ClientSummary| name=XMMS2 CLI client| description=This is the simple client that currently comes with XMMS2 itself. (source code found in src/clients/cli/xmms2_client.c) It supports most, if not all, operations possible using the xmmsclient library.}}
+= Main Clients =
 
-{{ClientSummary| name=nyello| description=nyello is a C++ command-line client that features a pseudo-shell interface (akin to [http://freshmeat.net/projects/xmms-shell/ xmms-shell]). It will offer advanced features such as powerful medialib query patterns, collections and clever random playback.}}
+== Graphical Clients ==
 
-{{ClientSummary| name=x2cp| description=x2cp is another ncurses client, basic playlist navigation, colors and bugs.}}
+Actually, there are dozens of clients available which try to fit best into this purpose. Here are some recommendations, also based on activity of development and therefor availability:
 
-{{ClientSummary| name=nxmms2| description=nxmms2 is ncurses client, basic playlist navigation,media library search, black and white without bugs but without error catching in too(works fine if xmms2d is running normal).}}
+=== Esperanza (QT4) ===
 
-= Graphical clients =
-Clients that require X11 or other graphical windowing systems.
+[[Client:Esperanza | Esperanza]] has a simple interface with a single playlist and let you search the media lib or add files from other sources easily. It also presents album art.
 
-== EFL (Enlightenment Foundation Libraries) ==
+=== gxmms2 (GTK) ===
 
-{{ClientSummary| name=Euphoria| description=Euphoria is a graphical XMMS2 client based on the [http://enlightenment.org Enlightenment Foundation Libraries] (EFL) currently in development.}}
+[[Client:gxmms2 | gxmms2]] presents itself with a small main window, but all basic functionality for playing, including a playlist editor.
 
-{{ClientSummary| name=Eloquence| description=A module for the Enlightenment DR17 desktop enviroment that shows the songname on the desktop and also give some options for simple commands (play, pause, next, prev, shuffle).}}
+=== X4X (Java) ===
 
-== GTK ==
+[[Client:X4X | X4X]] is a Java-based client which can even be run via Java Webstart. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer.
 
-{{ClientSummary| name=gkrellxmms2| description=gkrellxmms2 is a plugin for GKrellM2 to control the XMMS2 audio player. It has buttons for play/pause, next /previous track and stop. It also shows the current artist and track name and the current position in the track.}}
+=== Others ===
 
-{{ClientSummary| name=gxmms2| description=gxmms2 is a GTK2-based XMMS2 client, written in C. Its main window is small and simple. It includes a [http://wejp.homelinux.org/wejp/xmms2/pledit.png playlist editor] with a medialib search and an artist browser and a file information dialog.}}
+You can find lots other players in the [[Clientlist | Client matrix]]. Here are some (not all) other players, which are just good-fitting, or special in some ways:
 
-{{ClientSummary| name=juxtapose| description="Jukebox Using XMMS Two as Player of Songs.  Eh?" :D  PyGTK based XMMS2 client loosely based on the Muine interface.}}
+* [[Client:juxtapose | juxtapose]] is a very simple player which "just works"
+* [[Client:Shellac | Shellac]] has a very customizable GUI
+* [[Client:bluegroove | bluegroove]] provides queueing of songs
+* [[Client:Euphoria | Euphoria]] uses the Enlightenment Foundation Libraries
+* [[Client:eq | eq]] lets you play with the equalizer if your player doesn't handle it
 
-{{ClientSummary| name=Shellac| description=Shellac is a XMMS2 client written in Python with Pygtk with a customizable GUI.}}
 
-{{ClientSummary| name=Azrael| description=A client written in C.}}
+== Web Clients ==
 
-{{ClientSummary| name=snett| description=snett is a strange-quark clone written in Ruby. It allows playback control and limited access to playlists stored in the medialib.}}
+* [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
 
-{{ClientSummary| name=XmmsDeskbar| description=A xmms handler for deskbar.}}
+== Console Clients ==
 
-{{ClientSummary| name=Camio| description=A small xmms2 dock written in python and pygtk}}
+* [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
+* [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
 
-{{ClientSummary| name=Insanity| description=An insane XMMS2 client.}}
+= Desktop Integration =
 
-{{ClientSummary| name=XMMS2Musica| description=A skinned player written with pygtk and cairo.}}
+== General ==
 
-{{ClientSummary| name=SeMMiX| description=semmix is a GTK2-based XMMS2 client written in C. It aims at providing a full control over xmms2 features and more, and try to be relatively light and fast with very large medialib (thousands of media)}}
+* [[Client:gx2osd | gx2osd]] shows playing information as an On-Screen Display
+* [[Client:Camio | Camio]] is a small dock usable on every desktop
+* [[Client:snett | snett]] provides a small icon with popup-menu
 
-{{ClientSummary| name=XMMS2tray| description=XMMS2tray provides &#42;nix GTK+2 system tray integration for XMMS 2}}
+== Gnome ==
 
-{{ClientSummary| name=gx2osd| description=gx2osd is a skinnable on-screen display client for xmms2 written in C++ and GTKmm}}
+* [[Client:XMMS2tray | XMMS2tray]] provides integration into the tray
+* [[Client:XmmsDeskbar | XmmsDeskbar]] works with the Gnome Deskbar
 
-{{ClientSummary| name=bluegroove| description=Bluegroove is a gnome client written in ruby which includes a medialib and system tray/notify support.}}
+== KDE ==
 
-{{ClientSummary| name=LXMusic| description=LXMusic is a very simple gtk+ client written in pure C. It has very few functionality, and can do nothing more than play the music. The UI is very clean and simple. This is currently the default music player of [http://lxde.sourceforge.net/ LXDE project].}}
+== Others ==
 
-{{ClientSummary| name=eq| description=A simple gui for the equalizer as no client has good equalizer support yet}}
+* [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
 
-== Qt ==
+= Integration Into Other Applications =
 
-{{ClientSummary| name=SAXm2s| description=saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.}}
+== GKrellM2 ==
 
-{{ClientSummary | name=Esperanza| description=A minimalistic playback and playlist client. It is designed to be small, displaying very few bits of information about a given song. While small in nature, it manages to eloquently feature cover art support, and support for Growl Notifications (both local and remote).}}
+* [[Client:gkrellxmms2 | gkrellxmms2]] enhances GKrellM2 and has many features
 
-{{ClientSummary | name=Promoe| description=Winamp classic clone a'la xmms1. Written in c++/qt4. The name is not final.}}
+== X-Chat / IRSSI ==
 
-== More Toolkits ==
+* '''X-Chat:''' [[Client:EkoXMMS2 | EkoXMMS2]] lets you control XMMS2 within the application
+* '''irssi:''' Both [[Client:ixmms2 | ixmms2]] and [[Client:xmms2Plugin | xmms2Plugin]] provide information and control within irssi
 
-{{ClientSummary| name=Chalyx| description=Chalyx (previously known as HaX) is a flexible and modular Python client for XMMS2.}}
+== Audioscrobbler ==
 
-{{ClientSummary| name=xmms2-osd| description=This is a quickly hacked up client that displays the artist and title of a song every time a new song starts playing, is paused, or is stopped.}}
+* [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]] is an [http://www.audioscrobbler.com/ AudioScrobbler] client.
 
-{{ClientSummary| name=fvwm2xmms| description=fvwm2xmms is a basic display client written around fvwm2. It shows the currently playing song in an FvwmButtons box on the desktop.}}
+= Special Input Methods =
 
-{{ClientSummary| name=XMMS2-AMP| description=This will be a fully featured client that includes a highly configurable skinning engine, with the ability to do transparency. It will still keep the default XMMS skinning 'style'.}}
+== Remote Control ==
 
-{{ClientSummary| name=Wmxmms2| description=A dockapp for WindowMaker. Show's the song, status and how far algong the song is (play(d)-time).}}
+* [[Client:lxmms2 | lxmms2]] lets you control XMMS2 with LIRC
 
-{{ClientSummary| name=X4X| description=A client written in java using [http://crosswidgets.sourceforge.net Xwidgets] for the gui. X4X uses almost all functions of xmms2, can use [http://x4x.sourceforge.net/wiki/index.php/X4X_Plugins plugins] and you can test it now via java-webstart.}}
+== Mobile Phones ==
 
-{{ClientSummary| name=EkoXMMS2| description=EkoXMMS2 is a simple XMMS2 client plugin written for X-Chat.}}
+* [[Client:Harald | Harald]] uses JavaME and Bluetooth to be your music player on the phone
 
-{{ClientSummary| name=Shhh| description=A GNUstep client called [http://home.gna.org/garma/shhh/ Shhh] is being maintained by [[Banlu Kemiyatorn]].}}
-
-{{ClientSummary| name=Harald| description=A client aimed for deep slacking with a bluetooth enabled mobile device in your hand.}}
-
-= Web clients =
-Clients that provide web interfaces, or provide web services based on data from the XMMS2 daemon.
-
-{{ClientSummary| name=XMMS2-Scrobbler| description=XMMS2-Scrobbler is an [http://www.audioscrobbler.com/ AudioScrobbler] client.}}
-
-{{ClientSummary| name=XMMS2 Webterface| description=The XMMS2 Webterface is a Ruby class that works with an eRuby template to provide a highly customizable and flexible interface to XMMS2.}}
-
-{{ClientSummary| name="TurboX2"| description=XMMS2 web interface with all the bling bling that comes with the evil buzzword "Web 2.0".}}
-
-= Other Clients =
-
-{{ClientSummary| name=xmms2_blue| description=The xmms2_blue client interfaces xmms2d to a Bluetooth enabled phone. It is still fairly experimental, but basic functionality should work.}}
-
-{{ClientSummary| name=xmms2Plugin| description=xmms2Plugin is a module for the [http://www.irssi.org irssi] irc client to be used to control playback and query information like playlist or the currently played song.}}
-
-{{ClientSummary| name=ixmms2| description=ixmms2 is a perl script that allows you to control xmms2 through commands in irssi.}}
-
-{{ClientSummary| name=lxmms2| description=lxmms2 is a tiny XMMS2 client to control XMMS2 with a LIRC compatible remote control. Client written by Johannes Heimansberg.}}
-
-{{ClientSummary| name=xmms2joystick| description=xmms2joystick is a tiny XMMS2 client to control XMMS2 with a joystick.}}
-
-= Deprecated Clients =
-These clients have been discontinued, abandoned, or are otherwise not maintained anymore.
-
-{{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
-
-{{ClientSummary| name=xmms2-shell| description=xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client.}}
-
-{{ClientSummary| name=XMMS2Curse| description=XMMS2Curse is a python client using ncurses for its interface.}}
-
-{{ClientSummary| name=xmms2curses| description=x2c is a client written in C using curses (not specifically ncurses, all code is tested with NetBSD's curses and ncurses).}}
-
-{{ClientSummary| name=xmms2play| description=xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalist design. It does not include a playlist, instead intending for external applications such as [[Client:medialib-ui | medialib-ui]] to be used for that purpose.}}
-
-{{ClientSummary| name=perlamp| description=Perlamp should be a front-end that allows it to open Wxxamp modern skins. The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.}}
-
-{{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
-
-{{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
-
-{{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
 
 [[Category: General]]
 [[Category: Users]]
