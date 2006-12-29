@@ -1,13 +1,41 @@
 = Client Matrix =
 
-"All" clients should be found here.
+"All" clients, if not deprecated, should be found here.
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
 |- 
-| [[Client:Esperanza]]
+| '''[[Client:Esperanza | Esperanza]]'''
 | Graphical / QT4 || C++ || in development || Lightweight, basic player
+
 |-
-| [[Client:eq]]
+| '''[[Client:eq | eq]]'''
 | Graphical / GTK || Python || in development || Simple equalizer frontend
 |}
+
+= Abandoned/Deprecated Clients =
+
+The following clients aren't worked on anymore, and mostly won't work out of the box with a decent version of XMMS2. They could still be useful for developers though:
+
+
+{{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
+
+{{ClientSummary| name=xmms2-shell| description=xmms2-shell is an interactive shell client for XMMS2. It's like [http://freshmeat.net/projects/xmms-shell/ xmms-shell], but with commands matching the XMMS2 CLI client.}}
+
+{{ClientSummary| name=XMMS2Curse| description=XMMS2Curse is a python client using ncurses for its interface.}}
+
+{{ClientSummary| name=xmms2curses| description=x2c is a client written in C using curses (not specifically ncurses, all code is tested with NetBSD's curses and ncurses).}}
+
+{{ClientSummary| name=xmms2play| description=xmms2play is a simple GTK2 xmms2 client written in C. It is designed for those that desire a minimalist design. It does not include a playlist, instead intending for external applications such as [[Client:medialib-ui | medialib-ui]] to be used for that purpose.}}
+
+{{ClientSummary| name=perlamp| description=Perlamp should be a front-end that allows it to open Wxxamp modern skins. The current status is a proof-of-concept written in Perl with perlgtk that allows incomplete viewing of several modern skins with Maki support.}}
+
+{{ClientSummary| name=XMMS2 xml-rpc| description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client.}}
+
+{{ClientSummary| name=medialib-ui| description=This is a standalone medialib and playlist client. Aimed at functionality instead of pretty visuals. The idea is to have the client as a complement of a desktop-nice xmms client.}}
+
+{{ClientSummary| name=RXmms2| description=RXmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches.}}
+
+[[Category: General]]
+[[Category: Users]]
+[[Category: Clients]]
