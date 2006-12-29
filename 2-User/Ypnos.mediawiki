@@ -1,1 +1,4 @@
 Although my name is ypnos here, I'm also known as FoPref (abbr. for Ford Prefect). Most times I'm around on IRC, that's my nickname.
+
+
+See [http://fopref.meinungsverstaerker.de/xmms-rootvis XMMS Rootvis] for my XMMS Visualization plugin :)
