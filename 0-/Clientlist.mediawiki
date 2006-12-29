@@ -27,9 +27,9 @@
 {{ClientTableEntry|Harald| Mobile Phone / Bluetooth | JavaME/C | in development | Player running on Java capable mobile phone }}
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler }}
 {{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
-{{ClientTableEntry||  |  | in development |  }}
-{{ClientTableEntry||  |  | in development |  }}
-{{ClientTableEntry||  |  | in development |  }}
+{{ClientTableEntry|xmms2Plugin| Plugin for irssi | C++ | in development | Control and query xmms2 within irssi }}
+{{ClientTableEntry|ixmms2| Plugin for irssi | Perl | in development | Control and query xmms2 within irssi }}
+{{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 
 {{ClientTableEntry|eq| Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
@@ -42,6 +42,7 @@ Please move the following clients according to their actual state!
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
+{{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
 {{ClientTableEntry|Chalyx| Graphical / Metaclient | Python | website unreachable | Flexible modular player to build ontop }}
 {{ClientTableEntry|xmms2-osd| On-Screen Display / XOSD | Python | website unreachable | Simple(?) on-screen display }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
@@ -63,6 +64,8 @@ The following clients aren't worked on anymore, and mostly won't work out of the
 {{ClientTableEntry|nxmms2| console / ncurses | C | doesn't compile anymore | rudimentary player functionality }}
 {{ClientTableEntry|Promoe| Graphical / Skinnable, QT4 | C++ | abandoned | Clone of classic Winamp / XMMS }}
 |}
+
+Following clients have to be migrated to the table, if practical to do so.
 
 {{ClientSummary| name=XMMS2www| description=Previously on this page as 'Unnamed PHP client'. This project is reported as 'kind of dead at this time'.}}
 
