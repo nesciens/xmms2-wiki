@@ -1,2 +1,3 @@
-[[Client:{{{name}}} | {{{name}}}]]
-{{{description}}}
+|- 
+|style="background-color:black;"| '''[[Client:{{{name}}} | {{{name}}}]]'''
+| {{{kind}}} || {{{language}}} || {{{status}}} || {{{description}}}
