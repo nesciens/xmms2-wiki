@@ -1,10 +1,10 @@
 There are a number of client programs currently being developed for use with XMMS2. Some of them are very simple and perform only a handful of functions, while others are more fully featured.
 
-If you are a new XMMS2 client developer, you're welcome to add your client to the [[Clientlist | list] and drop by our [irc://chat.freenode.net/xmms2 IRC channel] to let us know what you're doing, so we may work closely together.
+If you are a new XMMS2 client developer, you're welcome to add your client to [[Clientlist | this list]] and drop by our [irc://chat.freenode.net/xmms2 IRC channel] to let us know what you're doing, so we may work closely together.
 <br/>
 '''See also''':
-* [[Clientlist | A matrix of all available clients]]
-* [[Contribs | Contributions to XMMS2, like shell scripts or keyboard bindings]]
+* [[Clientlist | A matrix of '''all''' available clients]]
+* [[Contribs | Contributions to XMMS2]] (like shell scripts or keyboard bindings)
 * [[Talk:XMMS2_Clients#How_to_add_a_new_client | How to add a new client]]
 * [[Writing XMMS2 Clients]]
 
@@ -13,6 +13,30 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 = Main Clients =
 
 == Graphical Clients ==
+
+Actually, there are dozens of clients available which try to fit best into this purpose. Here are some recommendations, also based on activity of development and therefor availability:
+
+=== Esperanza (QT4) ===
+
+[[Client:Esperanza | Esperanza]] has a simple interface with a single playlist and let you search the media lib or add files from other sources easily. It also presents album art.
+
+=== gxmms2 (GTK) ===
+
+[[Client:gxmms2 | gxmms2]] presents itself with a small main window, but all basic functionality for playing, including a playlist editor.
+
+=== X4X (Java) ===
+
+[[Client:X4X | X4X]] is a Java-based client which can even be run via Java Webstart. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer.
+
+=== Others ===
+
+You can find lots other players in the [[Clientlist | Client matrix]]. Here are some (not all) other players, which are just good-fitting, or special in some ways:
+
+* [[Client:juxtapose | juxtapose]] is a very simple player which "just works"
+* [[Client:Shellac | Shellac]] has a very customizable GUI
+* [[Client:bluegroove | bluegroove]] provides queueing of songs
+* [[Client:Euphoria | Euphoria]] uses the Enlightenment Foundation Libraries
+
 
 == Web Clients ==
 
@@ -51,7 +75,7 @@ If you are a new XMMS2 client developer, you're welcome to add your client to th
 == X-Chat / IRSSI ==
 
 * '''X-Chat:''' [[Client:EkoXMMS2 | EkoXMMS2]] lets you control XMMS2 within the application
-* '''irssi:''' Both [[Client:ixmms2 | ixmms2]] and [Client:xmms2Plugin | xmms2Plugin] provide information and control within irssi
+* '''irssi:''' Both [[Client:ixmms2 | ixmms2]] and [[Client:xmms2Plugin | xmms2Plugin]] provide information and control within irssi
 
 == Audioscrobbler ==
 
