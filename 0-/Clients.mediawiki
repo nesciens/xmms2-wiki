@@ -38,6 +38,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:Euphoria | Euphoria]] uses the Enlightenment Foundation Libraries
 * [[Client:eq | eq]] lets you play with the equalizer if your player doesn't handle it
 
+
 == Web Clients ==
 
 * [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
@@ -46,6 +47,8 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
 * [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
+
+
 
 = Desktop Integration =
 
@@ -66,6 +69,8 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
 
+
+
 = Integration Into Other Applications =
 
 == GKrellM2 ==
@@ -80,6 +85,8 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 == Audioscrobbler ==
 
 * [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]] is an [http://www.audioscrobbler.com/ AudioScrobbler] client.
+
+
 
 = Special Input Methods =
 
