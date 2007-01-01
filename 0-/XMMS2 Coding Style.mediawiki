@@ -37,6 +37,11 @@ NOT:
 == Naming ==
 * Use descriptive names for global variables and functions.
 * Local variables should be short and to the point.
+* Public functions should be named xmms(c)_module_action
+** Examples: xmms_frobnozzle_activate, xmms_frobnoozle_shutdown
+* Public getters/setters should be named xmms(c)_module_attribute_get(_type)
+** Examples: xmms_frobnozzle_speed_get, xmms_frobnozzle_config_set_str
+* (add thing about xmms_something_do and xmms_something_do_full, where first is just a shortcut for second with the arguments for the default usecase already filled in)
 
 == Functions ==
 * "Functions should be short and sweet, and do just one thing.  They should fit on one or two screenfuls of text (the ISO/ANSI screen size is 80x24, as we all know), and do one thing and do that well." [http://lxr.linux.no/source/Documentation/CodingStyle#L160] (Functional cohesion)
