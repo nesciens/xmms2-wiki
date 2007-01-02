@@ -151,7 +151,7 @@ Filter operators are configured using their two properties:
 Description of the operators:
 
 * '''<code>match</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> exactly matches <code>V<sub>o</sub></code>.
-* '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> contains <code>V<sub>o</sub></code>.
+* '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> matches <code>V<sub>o</sub></code> with possible wildcards (SQL syntax). The <code>%</code> wildcard can be used to represent ''any number'' of characters ; the <code>_</code> wildcard can be used to represent ''one'' single character.  For example, <code>F%b_r%</code> will match <code>Foobar</code> and <code>Free bar until 12</code>, but not <code>Cheap Finnish beer</code>.
 * '''<code>larger</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is larger than <code>V<sub>o</sub></code>.
 * '''<code>smaller</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is smaller than <code>V<sub>o</sub></code>.
 * '''<code>has</code>''': The resulting collection only contains media for which the given property is set.
