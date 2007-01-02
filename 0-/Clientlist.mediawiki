@@ -31,7 +31,7 @@
 {{ClientTableEntry|XMMS2Musica| Graphical / Skinable | Python | in development | Template-alike simple skinned player }}
 {{ClientTableEntry|XMMS2tray| Tray Icon / GTK | Python | in development | *nix GTK+2 system tray integration }}
 {{ClientTableEntry|XmmsDeskbar| Plugin for Gnome Deskbar | Python | in development | When typing in the input field of deskbar, albums, songs and artists are queried }}
-{{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler }}
+{{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|xmms2Plugin| Plugin for irssi | C++ | in development | Control and query xmms2 within irssi }}
 |}
 
