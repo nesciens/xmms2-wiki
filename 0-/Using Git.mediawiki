@@ -48,7 +48,7 @@ As soon as you start doing more that the causal trivial fix once a month you pro
 
  git checkout -b pycoll origin
 
-Hack away! Commit often! You can either create lots of throwaway commits and clean up afterwards. Or you can use "git commit --amend"
+Hack away! Commit often! Commit early! You can either create lots of throwaway commits and clean up afterwards, when your changes are ready for inclusion. Or you can use "git commit --amend" to merge more and more stuff into the the same commit.
 
 Then, while working on your pycoll stuff you hear about a bug. Just switch another branch and reset it to whatever version the reporter used.
 
