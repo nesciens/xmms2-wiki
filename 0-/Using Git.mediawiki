@@ -42,7 +42,7 @@ To keep in sync with the latest version:
 
 ==Rebase==
 
-By using "git rebase" instead of "git pull" you will avoid creating merge changesets. Instead your local changed will be forwardported to the new devel.
+By using "git rebase" instead of "git pull" you will avoid creating merge changesets. Instead your local changes will be forwardported to the new devel.
 
 If you based your changes on "E", and then some changes happened in devel like this:
 
@@ -51,7 +51,7 @@ If you based your changes on "E", and then some changes happened in devel like t
               D---E---F---G  -devel
 
 
-If you pull a merge changeset M will be created, like this: (this will happen each time you pull and work has happened on -devel, so there might be quite a number of mergechangesets after a while if your tree isn't intergrated)
+If you pull -devel a merge changeset M will be created, like this: (this will happen each time you pull and work has happened on -devel, so there might be quite a number of merge changesets after a while if your tree isn't integrated in -devel)
 
                     A---B---C---M  you
                    /           /
