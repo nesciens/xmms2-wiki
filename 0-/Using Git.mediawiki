@@ -60,6 +60,14 @@ lists things that are in branch2 but not in branch1. Including mergechangesets a
 
  git cherry -v branch1 branch2
 
+===Remotes===
+
+BTW, here is how you easily can setup remotes for everyones tree, so that you can "git fetch nano" and get a "nano" branch in your tree that is what nano's public tree is. But that is probably most interesting for integrators..
+
+ for U in alex anders coledot danderson eleusis jlt juhovh nano puzzles rafl theefer tilman tru; do
+  echo -e "URL: git://git.xmms.se/xmms2/xmms2-$U.git\nPull: +master:$U" >.git/remotes/$U
+ done
+
 ==Getting updates==
 
 To keep in sync with the latest version:
