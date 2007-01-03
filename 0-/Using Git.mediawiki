@@ -40,8 +40,24 @@ To keep in sync with the latest version:
 
  git pull git://git.xmms.se/xmms2/xmms2-devel.git
 
-==Informal Rebase==
+==Rebase==
+
 This way you get rid of the ugly 'Merge' changesets and duplicate changesets because of upstream has cherrypicked from your tree.
+
+Prerequisites:
+
+ cat .git/remotes/origin 
+ URL: git://git.xmms.se/xmms2/xmms2-devel.git
+ Pull: refs/heads/master:refs/heads/origin
+
+And then just
+
+ git fetch
+ git rebase origin
+
+==Informal Rebase==
+
+This is the more troublesome way to get rid of the ugly 'Merge' changesets and duplicate changesets because of upstream has cherrypicked from your tree.
 
 First create an upstream branch in your tree:
 
