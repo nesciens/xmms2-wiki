@@ -118,6 +118,27 @@ Sorry for the long line, but I put this in cron(SHELL=bash), should remove any p
 
  */10 * * * * xmms2 remove $(data=$(xmms2 mlib query "select id from Media where key='rating' and value = 1" | cut -f3 -d\ ); for ech in $(xmms2 list | head -n-2 | tr ']' '[' | cut -f2 -d'['); do echo "$data" | grep -q "^$(echo $ech | cut -f2 -d/)$" && { pos=$(echo $ech | cut -f1 -d/); echo $pos; }; done)
 
+This worked better then the above, but depends on awk.  Put this in a script called from bash, I guess you could turn it into a crontab.  As you can see it also can remove duplicated unrated songs and will not call remove if there is nothing todo.
+
+ data=$( {
+  xmms2 mlib query "select id from Media where key='rating' and value = 1"
+ # xmms2 mlib query "select m1.id as unrated from Media m1 left join
+ #	Media m2 on m1.id = m2.id and m2.key='rating' where
+ #	m1.key = 'url' and m2.value is null"
+  xmms2 list |
+    sed 's%^.*\[\([^/[:space:]]*\)/\([^][:space:]]*\)\].*$%list = \2 \1%'
+  } | awk '
+    /id = /	{ id[$3] = 1; }
+    /unrated = /	{ unrated[$3] = 1; }
+    /list = /	{
+	if ($3 in list && $3 in unrated) print $4;
+	list[$3] = list[$3] " " $4;
+    }
+    END		{ for (tmp in id) if (tmp in list) print list[tmp]; }
+  '
+ )
+ [ "$data" ] && xmms2 remove $data;
+
 Select id, artist and title (from all songs, including those without title and/or artist):
 
 Use this to "fully" search for id's that have a specific artist and a specific title.
