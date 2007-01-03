@@ -72,6 +72,9 @@ For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.
 
 ===Latest news/changes===
 
+'''20070103'''
+Right, latest news are quite old already, forgot to add them here. The second API will be removed from the main xmms2 tree, seems like I have to develop them somewhere else. Atm not waf problems have to be fixed, then some updates will hit -devel. Updates means collections-api, some slight but unmentionable changes and removing the the second api.
+
 '''20060925'''
 k folks, i'm going to change the bindings to java5 although i thought it's probably useless. Now after some work on the Collections-API i found out that it is really useful, especially the typesafety and enums. Still no patches available but things look good, maybe i'll finish something useful already this week.
 
