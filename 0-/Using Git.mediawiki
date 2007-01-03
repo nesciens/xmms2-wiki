@@ -34,6 +34,23 @@ When you've checked that everything is in order and you want to commit your work
 
 Make sure you follow the [[ChangeLog_Format|changelog format]]. The first line will be used as a summary of the changeset and should be kept short and informative. The following lines will be a more verbose description of what changes the changeset brings.
 
+==Branches==
+As soon as you start doing more that the causal trivial fix once a month you probably want to start using branches. It is a good idea to start a new branch for each major change. Lets say you want to implement collections in python. So we create a "pycoll" branch to work on.
+
+ git checkout -b pycoll origin
+
+Hack away! Commit often! You can either create lots of throwaway commits and clean up afterwards. Or you can use "git commit --amend"
+
+Then, while working on your pycoll stuff you hear about a bug. Just switch another branch and reset it to whatever version the reporter used.
+
+Now that you have lots of branches you probably want ways to list the changes..
+
+ git rev-list --pretty=oneline branch1..branch2
+
+lists things that are in branch2 but not in branch1. Including mergechangesets and stuff. If you only want to see the real changes use:
+
+ git cherry -v branch1 branch2
+
 ==Getting updates==
 
 To keep in sync with the latest version:
