@@ -6,3 +6,5 @@
 ** New front page
 * [[SoC:AirTunes | AirPlay]]
 * [[Windows]] port
+
+[[Category:IRC Meeting]]
