@@ -1,23 +1,13 @@
-==Other tutorials==
-You might want to check these aswell:
-[http://www.kernel.org/pub/software/scm/git/docs/tutorial.html A tutorial introduction to git]
-[http://www.kernel.org/pub/software/scm/git/docs/everyday.html Everyday GIT with 20 commands or so]
-[http://linux.yyz.us/git-howto.html Kernel hacker's guide to GIT]
-
-And maybe this aswell, which is pretty close to this document:
-[http://wiki.winehq.org/GitWine Wine's GIT howto]
-
 ==Grabbing the development tree==
 To clone a fresh copy of the development repository:
 
  git clone git://git.xmms.se/xmms2/xmms2-devel.git
 
-This will create a new directory called "xmms2-devel" with contains the full stable repository with all version history and stuff. It will have all files checked out and will also contain a ".git" subdirectory
-which contains all the version-information and crap.
+This will create a new directory called "xmms2-devel" with contains the full code repository. It will have all files checked out and will also contain a ".git" subdirectory which contains the git metadata related to the repository.
 
 ==Hacking==
 You started hacking away, and are satisfied with your changes and want to commit them!
-To show what files has been changed:
+To show what files have been changed:
 
  git status
 
@@ -25,17 +15,17 @@ To show the diff between the files in the repository and your modified files:
 
  git diff
 
-You can optionally add a filename after diff to show a specific diff.
+You can optionally add a filename after <tt>git diff</tt> to show the diff for a specific file.
 
 If you notice that you have made any changes to a file that should not be part of the commit you can just remove the file and do:
 
  git checkout path/to/the/file
 
-To add new files:
+To add new files to the repository:
 
  git add file.foo
 
-As a good engineer you should ofcourse make sure that the tree still compiles and works as supposed before continuing with commit.
+As a good engineer you should of course make sure that the code in the tree still compiles and works as it is supposed to, before continuing with the commit process.
 
 When you've checked that everything is in order and you want to commit your work to a changeset:
 
@@ -44,11 +34,11 @@ When you've checked that everything is in order and you want to commit your work
 Make sure you follow the [[ChangeLog_Format|changelog format]]. The first line will be used as a summary of the changeset and should be kept short and informative. The following lines will be a more verbose description of what changes the changeset brings.
 
 ==Branches==
-As soon as you start doing more that the causal trivial fix once a month you probably want to start using branches. It is a good idea to start a new branch for each major change. Lets say you want to implement collections in python. So we create a "pycoll" branch to work on.
+As soon as you start doing more than the causal trivial fix once a month you probably want to start using branches. It is a good idea to start a new branch for each major change. Let's say, for example, you want to implement [[Collections]] in python. So you create a "pycoll" branch to work on.
 
  git checkout -b pycoll origin
 
-Hack away! Commit often! Commit early! You can either create lots of throwaway commits and clean up afterwards, when your changes are ready for inclusion. Or you can use "git commit --amend" to merge more and more stuff into the the same commit.
+Hack away! Commit often! Commit early! You can either create lots of throwaway commits and clean up afterwards, when your changes are ready for inclusion, or you can use "git commit --amend" to merge more and more stuff into the the same commit.
 
 Then, while working on your pycoll stuff you hear about a bug. Just switch another branch and reset it to whatever version the reporter used.
 
@@ -56,13 +46,13 @@ Now that you have lots of branches you probably want ways to list the changes..
 
  git rev-list --pretty=oneline branch1..branch2
 
-lists things that are in branch2 but not in branch1. Including mergechangesets and stuff. If you only want to see the real changes use:
+lists things that are in branch2 but not in branch1. Including merge changesets and stuff. If you only want to see the real changes use:
 
  git cherry -v branch1 branch2
 
 ===Remotes===
 
-BTW, here is how you easily can setup remotes for everyones tree, so that you can "git fetch nano" and get a "nano" branch in your tree that is what nano's public tree is. But that is probably most interesting for integrators..
+BTW, here is how you easily can setup remotes for everyone's trees, so that you can "git fetch nano" and get a "nano" branch in your tree that is equivalent to nano's public tree. But that is probably a more interesting case for integrators..
 
  for U in alex anders coledot danderson eleusis jlt juhovh nano puzzles rafl theefer tilman tru; do
   echo -e "URL: git://git.xmms.se/xmms2/xmms2-$U.git\nPull: +master:$U" >.git/remotes/$U
@@ -163,3 +153,10 @@ And go there:
 There, now you're ready to push your changes to your public tree without an ugly merge changeset.
 
  ssh+git://git.xmms.se/xmms2/xmms2-yourpublicrepository +master
+
+==Other tutorials==
+You might want to check these aswell:
+* [http://www.kernel.org/pub/software/scm/git/docs/tutorial.html A tutorial introduction to git]
+* [http://www.kernel.org/pub/software/scm/git/docs/everyday.html Everyday GIT with 20 commands or so]
+* [http://linux.yyz.us/git-howto.html Kernel hacker's guide to GIT]
+* And maybe this as well, which is pretty close to this document: [http://wiki.winehq.org/GitWine Wine's GIT howto]
