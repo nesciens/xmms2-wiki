@@ -1,5 +1,7 @@
+* 2007-01-08: [[IRC_Meeting/2007-01-08/Agenda|Agenda]] [[IRC_Meeting/2007-01-08/Minutes|Minutes]]
+* 2006-12-18: [[IRC_Meeting/2006-12-18/Agenda|Agenda]] [[IRC_Meeting/2006-12-18/Minutes|Minutes]]
+* 2006-12-04: [[IRC_Meeting/2006-12-04/Agenda|Agenda]] [[IRC_Meeting/2006-12-04/Minutes|Minutes]]
 * 2006-11-27: [[IRC_Meeting/2006-11-27/Agenda|Agenda]] [[IRC_Meeting/2006-11-27/Minutes|Minutes]]
 * 2006-11-20: [[IRC_Meeting/2006-11-20/Agenda|Agenda]] [[IRC_Meeting/2006-11-20/Minutes|Minutes]]
-* 2006-12-04: [[IRC_Meeting/2006-12-04/Agenda|Agenda]] [[IRC_Meeting/2006-12-04/Minutes|Minutes]]
 
 [[Category:IRC Meeting]]
