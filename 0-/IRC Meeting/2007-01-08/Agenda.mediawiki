@@ -11,5 +11,5 @@
 * Clients development progress
 * [[Windows]] port progress
 * [[NeurosOSD]] progress
-* [[Collections]] client bindings: Python & Ruby
+* [[Collections]] client bindings: Python, Ruby, Perl, etc
 * IRC cloaks
