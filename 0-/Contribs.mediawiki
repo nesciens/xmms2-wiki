@@ -23,4 +23,6 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | mor
 
 {{Contrib| title=Daemon updating Gajim status on XMMS2 events| author=Bart Kreska| description=Simple daemon written in Python that updates status message in Gajim each time XMMS2 changes its state (ie. jumps to another track). Status message may look like this: '''Now listening: Rolling Stones, It's Only Rock 'n Roll''' but the format is highly customizable.| moreinfo=For more information see man page| files=* [http://www.smlw.pl/~wytnijto/projects/xmms/ xmms2-gajim-status]}}
 
+{{Contrib| title=Medialib cleaner| author=Sham Chukoury| description=Simple script to remove items marked as 'unavailable' in the medialib (which can include things like JPEG and text files).| moreinfo=| files=* [http://xmms2.xmms.se/contrib/files/xmms2-clean-mlib.py xmms2-clean-mlib.py]}}
+
 [[Category:Users]]
