@@ -1,0 +1,15 @@
+* [[Proposed Graphic Competition|Graphics design contest]]
+** GSoC money status
+* [[Testing]] (Florian)
+** TAP
+** Unit & Integration testing
+** bug fixing & testing policy
+** test coverage
+* [[Waf]] progress
+* [[Request for pull mailbot]] (progress?)
+* [[XMMS2Forge]] (progress?)
+* Clients development progress
+* [[Windows]] port progress
+* [[NeurosOSD]] progress
+* [[Collections]] client bindings: Python & Ruby
+* IRC cloaks
