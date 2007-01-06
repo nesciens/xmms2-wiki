@@ -1,5 +1,10 @@
 == Latest quotes ==
 
+=== New year, new copyright notices in all files ===
+ [23:52:10][nano-]: Haha, who will update the ~547 2003-2006 -> 2003-2007
+ [23:52:20][nano-]: copyright notices. 
+ [23:52:23][nano-]: puzzles did it last year. 
+ [23:52:35]::: puzzles [n=dan@xmms2/developer/puzzles] has left #xmms2 ["no way"]
 
 == Archived Quotes ==
 * [[IRC Quotes/2005]]
