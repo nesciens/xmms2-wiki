@@ -1,6 +1,7 @@
 == Latest quotes ==
 
-=== New year, new copyright notices in all files ===
+=== 2007-01-06 - New year, new copyright notices in all files ===
+
  [23:52:10][nano-]: Haha, who will update the ~547 2003-2006 -> 2003-2007
  [23:52:20][nano-]: copyright notices. 
  [23:52:23][nano-]: puzzles did it last year. 
