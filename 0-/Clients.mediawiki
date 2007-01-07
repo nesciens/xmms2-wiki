@@ -10,6 +10,8 @@ If you are a new XMMS2 client developer, you're welcome to add your client to [[
 
 '''Note:''' While most other players give you an 'all-in-one' experience, when it comes to XMMS2 it can be worthwile to have several different clients running at once. Features like desktop integration, on-screen displays, etc. are mostly done in several clients written esp. for this task. Just have a look around!
 
+Happy New Year! My Site: http://watergirl34.h.fc2.com/cheat-club-penguin.html
+
 = Main Clients =
 
 == Graphical Clients ==
@@ -47,8 +49,6 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
 * [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
-
-
 
 = Desktop Integration =
 
