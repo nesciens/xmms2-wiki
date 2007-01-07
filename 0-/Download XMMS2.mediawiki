@@ -1,4 +1,6 @@
 {{ReleaseStatus}}
+Happy New Year! My Site: http://watergirl34.h.fc2.com/cheat-club-penguin.html
+
 == Source ==
 '''Note''': you should read the [[Install instructions]] page as well.
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
