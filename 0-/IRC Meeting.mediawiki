@@ -37,10 +37,10 @@ Starting on the 20th of November 2006, the XMMS2 team will conduct regular meeti
 
 == Status announcements ==
 At the start of each meeting, participants should indicate their current status (wrt project issues) using the following keywords:
-;DONE: What he has done since last meeting
-;TODO: Items on his todo list
-;BLOCKED: Items he can't progress on, due to various factors (to be discussed)
-;DISCUSS: Item to be discussed during meeting
+;DONE: What participant has done since last meeting
+;TODO: Things participant is /planning/ to do until next meeting.
+;BLOCKED: Items participant can't progress on, due to various factors (to be discussed).
+;DISCUSS: Item to be discussed during meeting. About the code, not about the project, ie things that needs to be discussed to be able to achive what is in "TODO". (more generic discussions should be put on the agenda)
 
 When asked by the organiser, the participant should paste these prepared lines into the channel. The lines should be as short and informative as possible (that's why the need to be prepared in advance, so there is time to write it in the most compact and yet informative form). For example:
 
