@@ -25,6 +25,75 @@
 * http://git.xmms.se/merge| todo=Py coll docs| blocked=(neuros)osd mainloop crap| discuss=}}
 |}
 
+== Topics ==
+=== Waf progress ===
+;Action:None
+ <eleusis>	TOPIC: Waf progress
+ <eleusis>	dangertools: you mentioned that you were blocked on waf?
+ <dangertools>	yeah, rafl was/is working on javabindings+waf
+ <dangertools>	he had quite some problems and less time
+ <DraX>	objc+waf is going to be a nightmare
+ <dangertools>	afaik he's also in contact with the waf-guy
+ <puzzles>	ita is on vacation
+ <nano->	DraX: Why?
+ <DraX>	nano-: will basically have to reimplement the GNUStep makefiles and GNUStep.sh in python
+ <DraX>	nano-: and then will have to somehow make it work on OS X too
+ <eleusis>	DraX: are you going to do that by yourself?
+ <DraX>	eleusis: yeah i guess
+ <eleusis>	k
+ <DraX>	once i get back to school I can work on the OS X part too
+ <dangertools>	rafl thought the same about swig+waf
+ <dangertools>	~1.5 months ago ;)
+ <eleusis>	puzzles: do you know much about how the waf work has progressed so far? as in, what customisations we've made to get it to work with the xmms2 code tree, what's still missing, etc..
+ <puzzles>	eleusis: i can't say much, all i know is we've ironed out most of the major features we had with scons
+ <puzzles>	eleusis: and there are some residual issues with wafadmin and crap, though svn waf is smarter now
+ <eleusis>	righto
+ <eleusis>	who are the main people working on waf integration atm?
+ <puzzles>	eleusis: i think it went danderson -> tru -> rafl -> all other plugin developers
+
+=== Request for pull mailbot ===
+;Action:Anders to improve http://git.xmms.se/merge
+ <eleusis>	TOPIC: Request for pull mailbot
+ <eleusis>	has anyone done anything on this, since the last time it was discussed? :)
+ <puzzles>	my code got trashed on the Great Harddrive Crash of '06, does that count?
+ <nano->	After the creation of http://git.xmms.se/merge/, is it really worth it?
+ <nano->	That page gives a very clean view over what exists in the diffrent repositories.
+ <theefer>	nano-: how is that related?
+ <eleusis>	i mean.. how does git.xmms.se/merge fit into the workflow?
+ <nano->	theefer: It gives a very clear view of what changes exists in the repositories.
+ <puzzles>	i really don't understand how git.x.s/merge is any real help
+ <eleusis>	ok, there are 2 issues here
+ <eleusis>	1) how does the merge status page fit into the workflow
+ <eleusis>	2) how does it override the bot idea
+ <puzzles>	3) isn't the rfp mailbot intended to facilitate blessing patches?
+ <theefer>	I am not particularly in favour of a pull mailbot (except that they do it at Google, sort of ;-) ), but it's not exactly the same thing IMHO
+ <eleusis>	what does google do?
+ <theefer>	gxs/merge provides a clear overview of status ; the pull mergebot was supposed to encourage review, at least that's how I understood it
+ <eleusis>	yeah, that's how i see it too.. with the mailbot, people get to review patches before they are sent to mainline
+ <theefer>	eleusis: each commit needs to be peer-reviewed for approval (using a system semi-integrated with their perforce) before it's merged ; it's just a policy, not a tech requirement.
+ <nano->	1) people who merge changes to -devel check that page if there are anything interesting in the repos, if there are, they pull it. it takes just a second to see changes in all the repos.
+ <nano->	2) it doesn't override the idea, but the gain of a pull mailbot is smaller after the introduction of that page.
+ <theefer>	The mailbot idea the following problem: you had to bother tru or anders to merge stuff in -devel.
+ <eleusis>	yes, exactly
+ <eleusis>	with the merge status page, we can pull whatever we want, but we still have to get tru or anders to do the real work
+ <anders_>	git.x.s/merge is driven by the developers.
+ <anders_>	Wheras RPF mailbot is driven by developers.
+ <anders_>	oops.
+ <anders_>	git.x.s/merge is driven by the integrators.
+ <eleusis>	ok, so integrators periodically check merge status?
+ <anders_>	Yes.
+ <theefer>	but IMHO, the integrators still need to ask people if they should pull people's trees
+ <theefer>	I might have unstable stuff in mine for instance
+ <anders_>	But as a side effect it is easier for developers to see what they are providen.
+ <theefer>	whereas with the mailbot, people advertise when stuff is ready
+ <nano->	Has there been any work on the mailbot yet? I knew puzzles begun writing something in ruby? Is it from that the mailbot is supposed to build on?
+ <eleusis>	anders_: so what happens to the mailbot idea, then? :)
+ <anders_>	theefer: Yes. The plan is to have a "for-integration" branch in trees.
+ <anders_>	But what merge status shows is what the mailbot would include in its mail.
+ <eleusis>	is anyone planning to do some work on the mailbot in the near future?
+ <eleusis>	(or has done some work on it recently)
+ <anders_>	I will improve git.x.s/merge, which will share code with mailbot.
+
 == Full Transcript ==
 A full transcript of this meeting is available at http://xmms2.xmms.se/~eleusis/xmms2-meeting/xmms2-meeting-2007-01-08.log.
 
