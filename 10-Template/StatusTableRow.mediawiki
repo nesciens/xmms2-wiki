@@ -1,0 +1,6 @@
+|-
+| {{{who}}}
+| {{{done}}}
+| {{{todo}}}
+| {{{blocked}}}
+| {{{discuss}}}
