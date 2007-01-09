@@ -94,6 +94,62 @@
  <eleusis>	(or has done some work on it recently)
  <anders_>	I will improve git.x.s/merge, which will share code with mailbot.
 
+=== XMMS2Forge ===
+;Action:Sham to investigate further
+ <eleusis>	TOPIC: XMMS2Forge
+ <theefer>	anders_: you should create tools or at least bash functions to do the work on multiple trees
+ <anders_>	theefer: Yes.
+ <anders_>	eleusis: It would be nice if it just magically appeared :)
+ <DraX>	http://repo.or.cz
+ <DraX>	is what we should be telling people to use
+ <anders_>	I was just about to suggest repo.or.cz
+ <eleusis>	the main issue is admin overhead, i guess
+ <eleusis>	i.e. who's going to be responsible for running the show
+ <anders_>	eleusis: The plan longterm is to lower admin overhead.
+ <eleusis>	however, i don't think there's great demand for something like xmms2forge..
+ <eleusis>	anders_: yeah
+ <anders_>	eleusis: To avoid setting up git repos manually, and copying ssh keys and stuff.
+ <eleusis>	i think i'll investigate it a bit further next weekend
+ <anders_>	No, there is no great demand, but I would be nice to have it in place before there is.
+
+=== Clients development progress ===
+;Action:None
+ <eleusis>	TOPIC: clients development progress
+ <eleusis>	Eclipser: mind telling us about what you've been doing on your client(s)?
+ <Eclipser>	then there's the yet unnamed cover manager
+ <eleusis>	have you got the source for that somewhere?
+ <Eclipser>	cover manager? it's not really usable yet
+ <theefer>	My personal opinion is that most people want to manage that from their regular client, not a dedicated one.
+ <Eclipser>	maybe so
+ <eleusis>	yeah, but that depends on people coding their 'regular clients'..
+ <Eclipser>	if it's to be done properly, it's not really that trivial :)
+ <theefer>	And stuff should be shared as much as possible among clients, e.g. finding/retrieving the covers/proposing alternatives (did someone say service clients? ;p)
+ <eleusis>	theefer: you mean libraries, etc?
+ <Eclipser>	theefer, I'm interested
+ <DraX>	service clients!
+ <theefer>	no, service client :)  A "thing" that you ask to find covers for media X and that just does.
+ <nano->	theefer: we already have that, xmms2covers sets the cover and alternatives.
+ <theefer>	nano-: yes but it's not formally usable by other clients, is it?
+ <nano->	theefer: and a client creates a view for swithcing between the alternatives.
+ <DraX>	nano-: xmms2covers would be a service client
+ <theefer>	nano-: yes, but in my mind it's not a service client (*yet*) because there is no "API" to use it from other clients
+ <eleusis>	alright, looks like we've generated a bit of discussion with the cover art stuff.. can we get back to this later, and go through some of the remaining agenda items for now?
+ <anders_>	I'd like xmms2covers to be a standalone application. Communicationg on stdin/out no mediaplayer agnostic. Matching the xdg-coverart stuff.
+ <eleusis>	dangertools: progress on your client(s)?
+ <dangertools>	http://crosswidgets.sourceforge.net/index.php/content/view/48/47/ <-- latest screenies/changes in x4x
+ <eleusis>	theefer: progress on your client(s)?
+ <dangertools>	x4x is a qt client now as well btw
+ <theefer>	eleusis: working on a nyello rewrite, currently stuck on the command parser lib, but I have a pretty clear idea of how it will look like and coll integration.
+
+=== Windows port ===
+;Action:None
+ <eleusis>	TOPIC: Windows port
+ <eleusis>	nano-: want to tell us more about this?
+ <nano->	Yes, it's done. Now we can forget it. ;)
+ <Eclipser>	binary should be made available somewhere
+ <nano->	I belive all changes for xmmsclient and xmms2d are in -devel.git now. It should compile out of the box.
+ <nano->	But the waf transition went well, and now it builds out of the box. Thus it's much more accessible to future development.
+
 == Full Transcript ==
 A full transcript of this meeting is available at http://xmms2.xmms.se/~eleusis/xmms2-meeting/xmms2-meeting-2007-01-08.log.
 
