@@ -218,6 +218,11 @@
  tree and the custom coll parsing function
  <eleusis>	since rafl still isn't here, i guess we'll skip over the perl bindings..
 
+=== Graphics design contest ===
+;Action:None
+ <eleusis>	TOPIC: Graphics design contest
+ <anders_>	As for google $$$, they might actually be on their way. But don't hold your breath.
+
 === IRC Cloaks ===
 ;Action:Sham to request developer cloak for ''dangertools''
 
