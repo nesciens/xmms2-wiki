@@ -39,6 +39,6 @@ This problem really calls for some standards. I'm in agreement that config prope
 
 I don't agree, however, that clients should spawn other helper clients themselves. There's a huge amount of complexity involved with locating the appropriate executable in a portable way, guaranteeing that the executable even exists, and guaranteeing that several clients don't simultaneously try to start the same program. Helper clients should be daemons as frequently as possible, and act only on appropriate config value changes. This eliminates all said problems with spawning helper clients.
 
---[User:Puzzles|Puzzles]] 18:05, 09 Jan 2007 (EST)
+--[[User:Puzzles|Puzzles]] 18:05, 09 Jan 2007 (EST)
 
 [[Category:Developer ideas]]
