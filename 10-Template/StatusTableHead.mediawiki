@@ -1,2 +1,2 @@
 |-
-| Who || DONE || TODO || BLOCKED || DISCUSS
+! Who || DONE || TODO || BLOCKED || DISCUSS
