@@ -36,7 +36,8 @@
  <dangertools>	afaik he's also in contact with the waf-guy
  <puzzles>	ita is on vacation
  <nano->	DraX: Why?
- <DraX>	nano-: will basically have to reimplement the GNUStep makefiles and GNUStep.sh in python
+ <DraX>	nano-: will basically have to reimplement the GNUStep makefiles and
+ GNUStep.sh in python
  <DraX>	nano-: and then will have to somehow make it work on OS X too
  <eleusis>	DraX: are you going to do that by yourself?
  <DraX>	eleusis: yeah i guess
@@ -44,12 +45,17 @@
  <DraX>	once i get back to school I can work on the OS X part too
  <dangertools>	rafl thought the same about swig+waf
  <dangertools>	~1.5 months ago ;)
- <eleusis>	puzzles: do you know much about how the waf work has progressed so far? as in, what customisations we've made to get it to work with the xmms2 code tree, what's still missing, etc..
- <puzzles>	eleusis: i can't say much, all i know is we've ironed out most of the major features we had with scons
- <puzzles>	eleusis: and there are some residual issues with wafadmin and crap, though svn waf is smarter now
+ <eleusis>	puzzles: do you know much about how the waf work has progressed so
+ far? as in, what customisations we've made to get it to work with the xmms2
+ code tree, what's still missing, etc..
+ <puzzles>	eleusis: i can't say much, all i know is we've ironed out most of
+ the major features we had with scons
+ <puzzles>	eleusis: and there are some residual issues with wafadmin and crap,
+ though svn waf is smarter now
  <eleusis>	righto
  <eleusis>	who are the main people working on waf integration atm?
- <puzzles>	eleusis: i think it went danderson -> tru -> rafl -> all other plugin developers
+ <puzzles>	eleusis: i think it went danderson -> tru -> rafl -> all other
+ plugin developers
 
 === Request for pull mailbot ===
 ;Action:Anders to improve http://git.xmms.se/merge
@@ -57,36 +63,51 @@
  <eleusis>	has anyone done anything on this, since the last time it was discussed? :)
  <puzzles>	my code got trashed on the Great Harddrive Crash of '06, does that count?
  <nano->	After the creation of http://git.xmms.se/merge/, is it really worth it?
- <nano->	That page gives a very clean view over what exists in the diffrent repositories.
+ <nano->	That page gives a very clean view over what exists in the diffrent
+ repositories.
  <theefer>	nano-: how is that related?
  <eleusis>	i mean.. how does git.xmms.se/merge fit into the workflow?
- <nano->	theefer: It gives a very clear view of what changes exists in the repositories.
+ <nano->	theefer: It gives a very clear view of what changes exists in the
+ repositories.
  <puzzles>	i really don't understand how git.x.s/merge is any real help
  <eleusis>	ok, there are 2 issues here
  <eleusis>	1) how does the merge status page fit into the workflow
  <eleusis>	2) how does it override the bot idea
  <puzzles>	3) isn't the rfp mailbot intended to facilitate blessing patches?
- <theefer>	I am not particularly in favour of a pull mailbot (except that they do it at Google, sort of ;-) ), but it's not exactly the same thing IMHO
+ <theefer>	I am not particularly in favour of a pull mailbot (except that they
+ do it at Google, sort of ;-) ), but it's not exactly the same thing IMHO
  <eleusis>	what does google do?
- <theefer>	gxs/merge provides a clear overview of status ; the pull mergebot was supposed to encourage review, at least that's how I understood it
- <eleusis>	yeah, that's how i see it too.. with the mailbot, people get to review patches before they are sent to mainline
- <theefer>	eleusis: each commit needs to be peer-reviewed for approval (using a system semi-integrated with their perforce) before it's merged ; it's just a policy, not a tech requirement.
- <nano->	1) people who merge changes to -devel check that page if there are anything interesting in the repos, if there are, they pull it. it takes just a second to see changes in all the repos.
- <nano->	2) it doesn't override the idea, but the gain of a pull mailbot is smaller after the introduction of that page.
- <theefer>	The mailbot idea the following problem: you had to bother tru or anders to merge stuff in -devel.
+ <theefer>	gxs/merge provides a clear overview of status ; the pull mergebot
+ was supposed to encourage review, at least that's how I understood it
+ <eleusis>	yeah, that's how i see it too.. with the mailbot, people get to
+ review patches before they are sent to mainline
+ <theefer>	eleusis: each commit needs to be peer-reviewed for approval (using a
+ system semi-integrated with their perforce) before it's merged ; it's just a
+ policy, not a tech requirement.
+ <nano->	1) people who merge changes to -devel check that page if there are
+ anything interesting in the repos, if there are, they pull it. it takes just a
+ second to see changes in all the repos.
+ <nano->	2) it doesn't override the idea, but the gain of a pull mailbot is
+ smaller after the introduction of that page.
+ <theefer>	The mailbot idea the following problem: you had to bother tru or
+ anders to merge stuff in -devel.
  <eleusis>	yes, exactly
- <eleusis>	with the merge status page, we can pull whatever we want, but we still have to get tru or anders to do the real work
+ <eleusis>	with the merge status page, we can pull whatever we want, but we
+ still have to get tru or anders to do the real work
  <anders_>	git.x.s/merge is driven by the developers.
  <anders_>	Wheras RPF mailbot is driven by developers.
  <anders_>	oops.
  <anders_>	git.x.s/merge is driven by the integrators.
  <eleusis>	ok, so integrators periodically check merge status?
  <anders_>	Yes.
- <theefer>	but IMHO, the integrators still need to ask people if they should pull people's trees
+ <theefer>	but IMHO, the integrators still need to ask people if they should
+ pull people's trees
  <theefer>	I might have unstable stuff in mine for instance
- <anders_>	But as a side effect it is easier for developers to see what they are providen.
+ <anders_>	But as a side effect it is easier for developers to see what they
+ are providen.
  <theefer>	whereas with the mailbot, people advertise when stuff is ready
- <nano->	Has there been any work on the mailbot yet? I knew puzzles begun writing something in ruby? Is it from that the mailbot is supposed to build on?
+ <nano->	Has there been any work on the mailbot yet? I knew puzzles begun
+ writing something in ruby? Is it from that the mailbot is supposed to build on?
  <eleusis>	anders_: so what happens to the mailbot idea, then? :)
  <anders_>	theefer: Yes. The plan is to have a "for-integration" branch in trees.
  <anders_>	But what merge status shows is what the mailbot would include in its mail.
@@ -97,7 +118,8 @@
 === XMMS2Forge ===
 ;Action:Sham to investigate further
  <eleusis>	TOPIC: XMMS2Forge
- <theefer>	anders_: you should create tools or at least bash functions to do the work on multiple trees
+ <theefer>	anders_: you should create tools or at least bash functions to do
+ the work on multiple trees
  <anders_>	theefer: Yes.
  <anders_>	eleusis: It would be nice if it just magically appeared :)
  <DraX>	http://repo.or.cz
@@ -108,9 +130,11 @@
  <anders_>	eleusis: The plan longterm is to lower admin overhead.
  <eleusis>	however, i don't think there's great demand for something like xmms2forge..
  <eleusis>	anders_: yeah
- <anders_>	eleusis: To avoid setting up git repos manually, and copying ssh keys and stuff.
+ <anders_>	eleusis: To avoid setting up git repos manually, and copying ssh
+ keys and stuff.
  <eleusis>	i think i'll investigate it a bit further next weekend
- <anders_>	No, there is no great demand, but I would be nice to have it in place before there is.
+ <anders_>	No, there is no great demand, but I would be nice to have it in
+ place before there is.
 
 === Clients development progress ===
 ;Action:None
@@ -119,27 +143,38 @@
  <Eclipser>	then there's the yet unnamed cover manager
  <eleusis>	have you got the source for that somewhere?
  <Eclipser>	cover manager? it's not really usable yet
- <theefer>	My personal opinion is that most people want to manage that from their regular client, not a dedicated one.
+ <theefer>	My personal opinion is that most people want to manage that from
+ their regular client, not a dedicated one.
  <Eclipser>	maybe so
  <eleusis>	yeah, but that depends on people coding their 'regular clients'..
  <Eclipser>	if it's to be done properly, it's not really that trivial :)
- <theefer>	And stuff should be shared as much as possible among clients, e.g. finding/retrieving the covers/proposing alternatives (did someone say service clients? ;p)
+ <theefer>	And stuff should be shared as much as possible among clients, 
+ e.g. finding/retrieving the covers/proposing alternatives (did someone say
+ service clients? ;p)
  <eleusis>	theefer: you mean libraries, etc?
  <Eclipser>	theefer, I'm interested
  <DraX>	service clients!
- <theefer>	no, service client :)  A "thing" that you ask to find covers for media X and that just does.
+ <theefer>	no, service client :)  A "thing" that you ask to find covers for
+ media X and that just does.
  <nano->	theefer: we already have that, xmms2covers sets the cover and alternatives.
  <theefer>	nano-: yes but it's not formally usable by other clients, is it?
  <nano->	theefer: and a client creates a view for swithcing between the alternatives.
  <DraX>	nano-: xmms2covers would be a service client
- <theefer>	nano-: yes, but in my mind it's not a service client (*yet*) because there is no "API" to use it from other clients
- <eleusis>	alright, looks like we've generated a bit of discussion with the cover art stuff.. can we get back to this later, and go through some of the remaining agenda items for now?
- <anders_>	I'd like xmms2covers to be a standalone application. Communicationg on stdin/out no mediaplayer agnostic. Matching the xdg-coverart stuff.
+ <theefer>	nano-: yes, but in my mind it's not a service client (*yet*) because there
+ is no "API" to use it from other clients
+ <eleusis>	alright, looks like we've generated a bit of discussion with the
+ cover art stuff.. can we get back to this later, and go through some of the
+ remaining agenda items for now?
+ <anders_>	I'd like xmms2covers to be a standalone application. Communicationg
+ on stdin/out no mediaplayer agnostic. Matching the xdg-coverart stuff.
  <eleusis>	dangertools: progress on your client(s)?
- <dangertools>	http://crosswidgets.sourceforge.net/index.php/content/view/48/47/ <-- latest screenies/changes in x4x
+ <dangertools>	http://crosswidgets.sourceforge.net/index.php/content/view/48/47/ <-- latest
+ screenies/changes in x4x
  <eleusis>	theefer: progress on your client(s)?
  <dangertools>	x4x is a qt client now as well btw
- <theefer>	eleusis: working on a nyello rewrite, currently stuck on the command parser lib, but I have a pretty clear idea of how it will look like and coll integration.
+ <theefer>	eleusis: working on a nyello rewrite, currently stuck on the command
+ parser lib, but I have a pretty clear idea of how it will look like and coll
+ integration.
 
 === Windows port ===
 ;Action:None
@@ -147,8 +182,44 @@
  <eleusis>	nano-: want to tell us more about this?
  <nano->	Yes, it's done. Now we can forget it. ;)
  <Eclipser>	binary should be made available somewhere
- <nano->	I belive all changes for xmmsclient and xmms2d are in -devel.git now. It should compile out of the box.
- <nano->	But the waf transition went well, and now it builds out of the box. Thus it's much more accessible to future development.
+ <nano->	I belive all changes for xmmsclient and xmms2d are in -devel.git now.
+ It should compile out of the box.
+ <nano->	But the waf transition went well, and now it builds out of the box.
+ Thus it's much more accessible to future development.
+
+=== Neuros OSD ===
+;Action:None
+ <eleusis>	TOPIC: Neuros OSD
+ <anders_>	eleusis: My OSD now allows listing the playlist and shows currently
+ playing song on my tv. :)
+ <DraX>	anders_: what's the mainloop problem you're having?
+ <anders_>	eleusis: I'll need to decide if I should include DrHouse or
+ DrJekyll in their svn.
+ <anders_>	DraX: The nano-x mainloop used is crappy.
+
+=== Collections client bindings ===
+;Action:Provide better documentation for Collections-related client bindings
+ <eleusis>	TOPIC: Collections client bindings
+ <eleusis>	anders_, DraX: how is that progressing with python?
+ <anders_>	eleusis: done
+ <puzzles>	i'm going to be doing the ruby ones RSN, so if anyone has issues
+ with that, speak now
+ <nano->	C# are almost done, lags a bit behind C++.
+ <eleusis>	anders_: just need to get the doc page done on the wiki?
+ <anders_>	eleusis: Just needs documentation (inline+wiki).
+ <anders_>	eleusis: (I have some refactoing of pythonapi available for preview
+ in http://git.xmms.se/?p=xmms2-anders.git;a=shortlog;h=pythoncleanup)
+ <theefer>	maybe I should go through collection bindings just to make sure
+ everything looks sane ;)
+ <eleusis>	theefer: C++ collections? :P
+ <anders_>	theefer: They have in my refactored tree.
+ <theefer>	anders_: I will have a look
+ <theefer>	So, C++ collections are done, except for documenting the Coll class
+ tree and the custom coll parsing function
+ <eleusis>	since rafl still isn't here, i guess we'll skip over the perl bindings..
+
+=== IRC Cloaks ===
+;Action:Sham to request developer cloak for ''dangertools''
 
 == Full Transcript ==
 A full transcript of this meeting is available at http://xmms2.xmms.se/~eleusis/xmms2-meeting/xmms2-meeting-2007-01-08.log.
