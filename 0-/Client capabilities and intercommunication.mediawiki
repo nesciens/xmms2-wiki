@@ -35,5 +35,10 @@ I think it would be a good idea if clients that do background type functions (ra
 
 --[[User:Alesbl|Alesbl]] 01:46, 21 Jan 2006 (CET)
 
+This problem really calls for some standards. I'm in agreement that config properties seem to be the simplest way of doing things, but there needs to be a list of standard config properties and standard ways of communicating using those properties. We'll end up with client developers writing handfuls of clients for their big, pretty GUI client that don't interoperate with other developers' clients. A repository on the wiki for standardized helper client config values (and their authors!) is probably a good place.
+
+I don't agree, however, that clients should spawn other helper clients themselves. There's a huge amount of complexity involved with locating the appropriate executable in a portable way, guaranteeing that the executable even exists, and guaranteeing that several clients don't simultaneously try to start the same program. Helper clients should be daemons as frequently as possible, and act only on appropriate config value changes. This eliminates all said problems with spawning helper clients.
+
+--[User:Puzzles|Puzzles]] 18:05, 09 Jan 2007 (EST)
 
 [[Category:Developer ideas]]
