@@ -2,6 +2,27 @@
 {| class="wikitable" border="1" valign="top"
 {{StatusTableHead}}
 {{StatusTableRow| who=[[Tobias Rundstr&ouml;m | tru]]| done=Slacking| todo=Collection manager in esperanza| blocked=|discuss=}}
+{{StatusTableRow| who=[[Georg Schild | dangertools]]| done=| todo=| blocked=waf| discuss=}}
+{{StatusTableRow| who=[[Alexander Botero-Lowry | DraX]]| done=| todo=finish collections in objc bindings| blocked=confusion on a few points| discuss=better collections documentation}}
+{{StatusTableRow| who=[[Daniel Svensson | nano]]| done=<ul><li>win32 porting</li></ul>
+* asx| todo=xmms2 cli win32| blocked=lastfm ws2.0| discuss=<ul><li>airplay</li></ul>
+* jack
+* songlength
+* doxygen portal}}
+{{StatusTableRow| who=[[Dan Chokola | puzzles]]| done=| todo=| blocked=| discuss=}}
+{{StatusTableRow| who=[[S&eacute;bastien Cevey | theefer]]| done=C++ bindings (collections)| todo=<ul><li>collparser regression tests (for <mantis>1339</mantis> + others)</li></ul>
+* coll pattern syntax documentation
+* coll dev documentation
+* [[Client:nyello | nyello]]
+* improve pshuffle
+* C++ bindings implem of custom_coll_parser| blocked=| discuss=Collection doc}}
+{{StatusTableRow| who=[[Sham Chukoury | eleusis]]| done=gitweb update recently| todo=<ul><li>get up to date with collections</li></ul>
+* improve client list on wiki (sortable table columns)
+* merge gitweb with mainline| blocked=| discuss=}}
+{{StatusTableRow| who=[[Anders Gustafsson | anders]]| done=<ul><li>Py colls</li></ul>
+* py refactoring
+* Basic (neuros)OSD client
+* http://git.xmms.se/merge| todo=Py coll docs| blocked=(neuros)osd mainloop crap| discuss=}}
 |}
 
 == Full Transcript ==
