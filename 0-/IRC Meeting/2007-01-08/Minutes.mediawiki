@@ -1,2 +1,10 @@
+== Status ==
+{| class="wikitable" border="1" valign="top"
+{{StatusTableHead}}
+{{StatusTableRow| who=[[Tobias Rundstr&ouml;m | tru]]| done=Slacking| todo=Collection manager in esperanza| blocked=|discuss=}}
+|}
+
 == Full Transcript ==
 A full transcript of this meeting is available at http://xmms2.xmms.se/~eleusis/xmms2-meeting/xmms2-meeting-2007-01-08.log.
+
+[[Category:IRC Meeting]]
