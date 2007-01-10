@@ -48,6 +48,8 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
 * [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
 
+
+
 = Desktop Integration =
 
 == General ==
