@@ -7,9 +7,13 @@ It sends an udp packet for each song played with information about which output 
 By anonymously sending data about usage parameters, xmms2-et helps the developers to approximate how much testing different components in xmms2 get, which will help in making it a better music player.
 
 == Installation ==
+=== From Source ===
 If you have never had xmms2 installed before, this feature will be enabled automatically. If you already have xmms2 installed you can manually put the <tt>xmms2-et-launcher.sh</tt> script in <code>$XDG_CONFIG_HOME/xmms2/startup.d</code> (or simply remove that directory to get it fresh from the skel).
 
 If you, for some reason, don't want the phone home feature, you can disable it by removing the link within <code>$XDG_CONFIG_HOME/xmms2/startup.d</code> or by not compiling "et" (<tt>scons EXCLUDE="et"</tt> or <tt>[[waf]] --without-optionals=et</tt>).
+
+=== Debian ===
+If you installed xmms2 from Debian packages, xmms2-et will not be installed by default - it is available in a separate <tt>[http://packages.debian.org/unstable/sound/xmms2-et xmms2-et]</tt> package.
 
 == Test data ==
 The result of xmms2-et can be seen at [http://test.xmms.se/ http://test.xmms.se/]
