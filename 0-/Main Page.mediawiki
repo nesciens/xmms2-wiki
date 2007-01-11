@@ -5,12 +5,6 @@ __NOEDITSECTION__
 '''XMMS2''' is a music player for people who are serious about their music. ''Seriously''.
 </div>
 
-<div style="border: 1px solid #eee; background: #f9f9f9; padding: 0.5em">
-;An example of a [[IRC Quotes#2006-11-19_-_XMMS2_is_spyware | ''serious'']] user:
-<blockquote>&lt;blackpenguin&gt; hi. I'm shocked. xmms2 is [[ET | spyware]]? who the fuck do you think you are, that you can transmit data without asking first? I don't say anything against data-collection - if you *ask* your users first.</blockquote>
-</div>
-
-
 <hr/>
 <div class="split-half">
 <div class="split-halfhalf">
