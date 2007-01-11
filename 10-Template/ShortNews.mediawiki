@@ -1,3 +1,12 @@
+{{Newsitem| date=11 January 2007 WDST (2007-01-11)| author=[[Sham Chukoury]]| title=We interrupt your regular program for a short announcement| text=You might have met our most [[IRC Quotes/2006#2006-11-19_-_XMMS2_is_spyware | ''serious'' user]], but I bet you didn't know that the incident has made [[wikipedia:XMMS2#Spyware_Controversy | Wikipedia]]! OK, that's enough sarcasm, here it is in plain english: XMMS2 does not, and cannot, bundle any spyware components and here's why:
+# We make it abundantly clear exactly what [[ET | xmms2-et]] is, why it exists and what it does.
+# xmms2-et does get installed by default, but it makes no attempt to hide the fact.
+# The is no obscure EULA aimed at misleading you and tricking you into getting xmms2-et installed.
+# The XMMS2 system and associated utilities are all available under open source licences. If you don't feel safe, you can look at the [http://git.xmms.se code] yourself and make up your own mind.
+
+In short, we might be dropping aliens on your computer, but they're friendly and harmless, and you can ask them to leave at any time!
+}}
+
 {{Newsitem| date=02 December 2006 CLST (2006-12-02)| author=[[Tobias RundstrÃ¶m]]| title=New release. [[Release:DrHouse|DrHouse]] is out.| text=We (the XMMS2 Team) have released [[Release:DrHouse|DrHouse]] which includes some minor feature additions and bugfixes, prior to some major changes in the next release cycle. (See [[Release:DrHouse#Release_Notes|release notes]] for full details.)
 }}
 
