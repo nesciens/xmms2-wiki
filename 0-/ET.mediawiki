@@ -1,6 +1,15 @@
-xmms2-et is a [http://git.xmms.se/?p=xmms2-stable.git;a=blob;f=src/clients/et/xmms2-et.c phone-home agent] ([[wikipedia:E.T. the Extra-Terrestrial |ET phone home]].. get it?), which provides the developers (and other interested parties) basic test coverage data. It sends an udp packet for each song played with information about which output- and xform plugin is used and what operating system xmms2 is running on. The information is sent anonymously and doesn't even contain the name of the song. This helps the developers to approximate how much testing different components in xmms2 get, which will help in making it a better music player. If you never have had xmms2 installed before this feature will be enabled automatically. If you already have xmms2 installed you can manually put the xmms2-et-launcher.sh script in $XDG_CONFIG_HOME/xmms2/startup.d (or simply remove that directory to get it fresh from the skel).
+xmms2-et is a [http://git.xmms.se/?p=xmms2-stable.git;a=blob;f=src/clients/et/xmms2-et.c phone-home agent] (named after [[wikipedia:E.T. the Extra-Terrestrial |ET the extra terrestrial]]), which provides the developers (and other interested parties) basic test coverage data.
 
-If you for some reason don't want the phone home feature you can disable it by removing the link within $XDG_CONFIG_HOME/xmms2/startup.d or by not compiling "et" (scons EXCLUDE="et").
+== What xmms2-et does ==
+It sends an udp packet for each song played with information about which output and [[Transforms | xform]] plugin is used and what operating system xmms2 is running on. The information is sent anonymously and doesn't even contain the name of the song.
 
+== Why xmms2-et exists ==
+By anonymously sending data about usage parameters, xmms2-et helps the developers to approximate how much testing different components in xmms2 get, which will help in making it a better music player.
 
+== Installation ==
+If you have never had xmms2 installed before, this feature will be enabled automatically. If you already have xmms2 installed you can manually put the <tt>xmms2-et-launcher.sh</tt> script in <code>$XDG_CONFIG_HOME/xmms2/startup.d</code> (or simply remove that directory to get it fresh from the skel).
+
+If you, for some reason, don't want the phone home feature, you can disable it by removing the link within <code>$XDG_CONFIG_HOME/xmms2/startup.d</code> or by not compiling "et" (<tt>scons EXCLUDE="et"</tt> or <tt>[[waf]] --without-optionals=et</tt>).
+
+== Test data ==
 The result of xmms2-et can be seen at [http://test.xmms.se/ http://test.xmms.se/]
