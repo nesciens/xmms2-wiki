@@ -12,3 +12,4 @@
 * idea: [[libxmmsclient-easy]] (Florian)
 * idea: bridge thingo (Florian)
 * [[Collections]] client bindings: Python, Ruby, Perl, etc
+* Changes in xmms2-juhovh tree (demuxer-decoder, xform hotspots, ALAC)
