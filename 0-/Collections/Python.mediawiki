@@ -1,4 +1,4 @@
-'''SOMETHING PRETTY SIMILAR TO ALTERNATIVE 5 IS IMPLEMENTED - IT NEEDS TO BE DOCUMENTED HERE'''
+<div class="messagebox merge">'''SOMETHING PRETTY SIMILAR TO ALTERNATIVE 5 IS IMPLEMENTED - IT NEEDS TO BE DOCUMENTED HERE'''</div>
 
 In the process of porting the collections api to python it becomes apparent that a decision has to be made about how to represent the collections structure.
 
