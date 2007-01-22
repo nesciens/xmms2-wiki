@@ -98,6 +98,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:Harald | Harald]] uses JavaME and Bluetooth to be your music player on the phone
 
+* [[Client:Remuco | Remuco]] is a system to remotely control XMMS2 (and other music player) with mobile devices supporting Bluetooth and JavaME.
 
 [[Category: General]]
 [[Category: Users]]
