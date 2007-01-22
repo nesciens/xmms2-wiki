@@ -1,0 +1,16 @@
+* [[Proposed Graphic Competition|graphics design contest]]
+** GSoC money status
+* [[Testing]] ([[User:rafl|rafl]])
+** TAP
+** unit and integration testing
+** bug fixing & testing policy
+** test coverage
+* idea: [[libxmmsclient-easy]] ([[User:rafl|rafl]])
+* idea: XMMS2<->MPD bridge ([[User:rafl|rafl]])
+* Ruby [[Collections]] progress ([[User:Puzzles|Puzzles]])
+* remaining changes in xmms2-[[User:juhovh|juhovh]] tree
+** <[[User:juhovh|juhovh]]> TODO: merge privdata+hotspot changes with indata/outdata for each xform
+* outstanding [[Release:DrJekyll|DrJekyll]] issues (''see: <mantis>1278</mantis>'')
+** <mantis>956</mantis>
+** <mantis>957</mantis> ([[Tobias RundstrÃ¶m|tru]])
+** <mantis>1346</mantis> ([[Daniel Svensson|nano]])
