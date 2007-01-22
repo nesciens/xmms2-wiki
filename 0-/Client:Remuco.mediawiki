@@ -1,0 +1,19 @@
+{{
+Client
+|name=Remuco
+|author=Christian BÃ¼nnig
+|website=http://remuco.sourceforge.net/
+|version=[http://sourceforge.net/project/showfiles.php?group_id=166515]
+| devlanguage=JavaME, C
+| ui=MIDP 2.0
+| screenshots=[http://remuco.sourceforge.net/screenshots.html]
+| description=
+Remuco is a system to remotely control music player software with bluetooth enabled mobile devices.
+
+With Remuco you can control your favourite music player (playback, song rating, ...) and read music player state information (playback, playlist, ...) on your mobile device. You can use Remuco simultaneously with two or more mobile devices - that's a nice feature for a party when you want to set up a DJ crew ;). 
+
+You can use Remuco with all mobile devices with a Bluetooth adapter and Java Microediton (JavaME) support.
+
+
+Currently Remuco can be used with XMMS and XMMS2.
+}}
