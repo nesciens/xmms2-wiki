@@ -1,0 +1,19 @@
+
+Maybe we should make the rollcall+statements a bit more async.
+
+ org = Organizer('Sham Chukoury')
+ chat = org.spawn_pre_meeting_chattering_thread()
+ org.wait_until(meeting_starting_time)
+ chat.stop()
+
+ org.say('Meeting started!')
+ org.say('Everyone: Roll call with statements!") # <<---
+ statements = org.spawn_statement_collector_thread()
+ org.wait_a_bit()
+
+ issues += [st.discuss for st in statements]
+ for issue in issues:
+     org.say(issue.topic)
+     issue.discuss(timelimit=5minutes)
+     org.say(issue.resolution)
+ org.say('Meeting adjourned!')
