@@ -113,3 +113,14 @@ I am working on a better fix for this.
 Notice how -L/usr/local/lib comes first here, so it ends up using the system copy of xmmsclient instead of the one it built and thus produces undefined symbols.
 
 The solution to this is to not use --conf-prefix but rather to define CCFLAGS/CFLAGS/CXXFLAGS/CPPFLAGS/LINKFLAGS accordingly.
+
+=== Configuration problems with distcc ===
+If you set the CC and/or CXX environment variables to use distcc, you should explicitly set them with the appropriate compiler variables. For example:
+
+ CC="distcc"
+ CXX="distcc"
+
+might fail when Waf tries to build C++ code. To fix it, set:
+
+ CC="distcc gcc"
+ CXX="distcc g++"
