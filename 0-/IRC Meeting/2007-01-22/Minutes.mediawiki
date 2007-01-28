@@ -1,0 +1,90 @@
+== Status ==
+{| class="wikitable" border="1" valign="top"
+|-
+| Who || DONE || TODO || BLOCKED || DISCUSS
+|-
+|[[Tobias Rundstr&ouml;m | tru]]
+| <mantis>1325</mantis>
+| [[Client:Esperanza | Esperanza]] collections manager
+| xmmsclient++ refactor
+|
+|-
+|[[Jonne Lehtinen | Eclipser]]
+| xmmsclient++ refactor
+|
+|
+|
+|-
+| [[User:Anders Gustafsson | anders]]
+|
+| Python collections documentation
+|
+|
+|-
+|[[Georg Schild | dangertools]]
+|
+|
+|
+* waf
+* exams
+|
+|-
+|[[Juho V&auml;h&auml;-Herttua | juhovh]]
+|
+* mp4+faad separation
+* avformat+avcodec separation
+* ALAC support in mp4 parser
+* hotspots in xforms
+| merge privdata+hotspot changes with indata/outdata for each xform
+|
+|
+|-
+|[[Daniel Chokola | puzzles]]
+| Ruby playlist API update/refactor
+| Ruby collections API
+| laziness
+| Ruby collections API organization
+|-
+|[[Daniel Svensson | nano]]
+| updated documentation
+| doxygen portal
+|
+|
+|-
+|}
+
+== Topics ==
+=== GSoC ===
+;Action: deferred
+;Notes: still no money
+
+=== Waf ===
+;Action: deferred
+;Notes:
+* Java ''still'' not supported
+* some minor feature requests and tools missing
+* needs clear list of what's missing
+
+=== Clients Progress ===
+;Action: none
+;Notes:
+* Esperanza patched to use xmmsclient++ refactor
+* X4X stuck with Waf/Java integration
+
+=== XMMS2-Juhovh ===
+;Action: merge into DrJekyll after TODO is DONE
+;Notes:
+* gapless support \o/
+* data being passed between xforms needs a clean solution
+
+=== Collections Language Bindings ===
+;Action: none
+; Notes:
+* Ruby still needs collections support and is missing a few bindings
+* Java works, except with Waf
+* Python has a few bugs and needs documentation
+
+== Full Transcript ==
+A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2007-01-22/transcript.txt here].
+
+[[Category:IRC Meeting]]
