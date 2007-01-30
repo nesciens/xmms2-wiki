@@ -38,6 +38,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Build system requirements]]
 * [[XMMS2Forge]]
 * [[Distributed Build Testing]]
+* [[VMWare virtual appliance]]
 
 == Standards/Cooperation ==
 * [[XDG coverart sharing]]
