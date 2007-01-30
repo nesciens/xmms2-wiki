@@ -1,0 +1,14 @@
+ <anders> Here is a crazy idea for you guys. An xmms2 virtual appliance for
+          vmware player. vmware image with a linux dist with xmms2 and turbox
+          webinterface
+ <anders> All user need to do is enter the ip address to his music samba share.
+ <anders> The goal is that a user should be able to download a file from teh
+          intarweb and with a few clicks have an webbased jukebox on their network.
+ <anders> No matter if they are running linux or windows or intel/osx.
+ <anders> (maybe vmware player is not availabe for osx yet though)
+ <anders> vmware player is free.
+ <anders> And they have a huge list of appliances to download on their page
+          http://www.vmware.com/vmtn/appliances/
+
+== See Also ==
+* [[Wikipedia:Virtual appliance]]
