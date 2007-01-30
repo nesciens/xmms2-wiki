@@ -1,0 +1,25 @@
+== Release Notes ==
+This is mostly a place holder, and details needs to be filled in.
+
+=== Upgrading ===
+
+=== Noteworthy changes ===
+* waf
+* syntax for xmms2 mlib search(add) changed
+
+==== Feature additions ====
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+
+=== Notes to client authors ===
+* Playlist functions take an extra argument
+* sql query does not exist anymore
+* c++ api changes
+
+=== Notes to xform authors ===
+
+
+=== Full ChangeLog ===
