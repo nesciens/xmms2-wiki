@@ -13,4 +13,4 @@
 * outstanding [[Release:DrJekyll|DrJekyll]] issues (''see: <mantis>1278</mantis>'')
 ** <mantis>956</mantis>
 ** <mantis>957</mantis> ([[Tobias RundstrÃ¶m|tru]])
-** <mantis>1346</mantis> ([[Daniel Svensson|nano]])
+** <mantis>1346</mantis> ([[User:rafl|rafl]])
