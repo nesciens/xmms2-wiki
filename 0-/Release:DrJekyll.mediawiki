@@ -6,6 +6,7 @@ This is mostly a place holder, and details needs to be filled in.
 === Noteworthy changes ===
 * waf
 * syntax for xmms2 mlib search(add) changed
+* reading playlists files works again! (not writing!)
 
 ==== Feature additions ====
 
@@ -18,6 +19,7 @@ This is mostly a place holder, and details needs to be filled in.
 * Playlist functions take an extra argument
 * sql query does not exist anymore
 * c++ api changes
+* reading playlist files is possible again, but uses the collections api.
 
 === Notes to xform authors ===
 
