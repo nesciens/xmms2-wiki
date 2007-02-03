@@ -67,10 +67,11 @@ Rugek has a port repository with Xmms2 here: http://rugek.dirtyhack.net/crux-por
 xmms2 snapshots and gxmms2 are avaiable through AUR
 
 === Gentoo Linux ===
-''None of these are supported by XMMS2 team or Gentoo. You are pretty much on your own.''
-'''If you ask help on IRC when using some of these, start by saying that you are running gentoo and which ebuild you are using'''
 
-Note: There is some faad2 breakage in Gentoo. None of the following ebuilds depend on faad2, but they may still pick it up if already installed. (Which is horribly bad.)
+;Notes:
+* ''None of these are supported by XMMS2 team or Gentoo. You are pretty much on your own.''
+* '''If you ask for help on IRC when using some of the following ebuilds, start by saying that you are running gentoo and mentioning which ebuild you are using'''
+* There is some faad2 breakage in Gentoo. None of the following ebuilds depend on faad2, but they may still pick it up if already installed. (Which is horribly bad.)
 
 Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 
