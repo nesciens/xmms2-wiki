@@ -3,4 +3,4 @@ Check out http://x4x.sourceforge.net for latest info's and visit us in #x4x on [
 
 Ebuilds are available at [http://x4x.sourceforge.net/wiki/index.php/Ebuilds] (only for <0.3).
 
-'''Since 0.3 also basic support for MPD, the music player daemon [http://www.musicpd.org], is integrated.'''
+'''Since 0.3 also basic support for MPD, the music player daemon [http://www.musicpd.org], is integrated.'''}}
