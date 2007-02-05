@@ -16,5 +16,5 @@ With Remuco you can control your favourite music player (playback, song rating, 
 
 You can use Remuco with all mobile devices with a Bluetooth adapter and Java Microediton (JavaME) support.
 
-Currently Remuco can be used with XMMS, XMMS2 and Rhythmbox.
+Currently Remuco is able to control XMMS, XMMS2 and Rhythmbox.
 }}
