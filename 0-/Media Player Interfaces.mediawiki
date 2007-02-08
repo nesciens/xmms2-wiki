@@ -190,6 +190,142 @@ i.e. calling Quit with qdbus would be:
 ** Get Volume
 ** Set Volume
 
+== The ''Basic'' interface, ( BMPx/VLC version ) ==
+
+=== The Object Hierarchy ===
+
+* / : Media Player identification
+
+* /Player : Playback control
+
+* /TrackList : TrackList management
+
+=== The Methods ===
+
+* /
+
+Identity : Identify the "Media Player" as in "VLC 0.9.0", "bmpx 0.34.9", "Totem 2.16.2" ...
+
+   <method name="Identity">
+     <arg type="s" direction="out"/>
+   </method>
+
+* /TrackList
+
+GetMetadata : Gives all meta data available for element at given position in the "TrackList"
+
+  <method name="GetMetadata">
+    <arg type="i" direction="in" />
+    <arg type="a{sv}" direction="out" />
+  </method>
+
+GetCurrentTrack : Position of Current URI in the "TrackList"
+
+   <method name="GetCurrentTrack">
+     <arg type="i" direction="out" />
+   </method>
+
+GetLength : Number of elements in the "TrackList"
+
+   <method name="GetLength">
+     <arg type="i" direction="out" />
+   </method>
+
+AddTrack : Appends an URI in the "TrackList", play it immediately if the 2nd argument is TRUE
+
+   <method name="AddTrack">
+     <arg type="s" />
+     <arg type="b" />
+   </method>
+
+DelTrack : Removes an URI from the "TrackList", given its position
+
+   <method name="DelTrack">
+     <arg type="i" />
+   </method>
+
+* /Player
+
+Next : Goes to the next element (what if we're at the end?)
+
+   <method name="Next">
+   </method>
+
+Prev : Goes to the previous element (what if we're at the beginning?)
+
+   <method name="Prev">
+   </method>
+
+Pause : If playing : pause. If paused : unpause. If stopped : start playing
+
+   <method name="Pause">
+   </method>
+
+Stop : Stop playing.
+
+   <method name="Stop">
+   </method>
+
+Play : If playing : rewind to the beginning of current track, else : start playing.
+
+   <method name="Play">
+   </method>
+
+Quit : Makes the "Media Player" exit.
+ 
+   <method name="Quit">
+   </method>
+
+GetStatus : Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped.
+
+   <method name="GetStatus">
+   <arg type="i" direction="out"/>
+   </method>
+
+VolumeSet : Sets the volume (argument must be in [0;100])
+
+   <method name="VolumeSet">
+   <arg type="i"/>
+   </method>
+
+GetVolume : Returns the current volume (must be in [0;100])
+ 
+   <method name="VolumeGet">
+   <arg type="i" direction="out"/>
+   </method>
+
+PositionSet : Sets the playing position (argument must be in [0;100])
+
+   <method name="PositionSet">
+   <arg type="i"/>
+   </method>
+
+PositionGet : Returns the playing position (must be in [0;100])
+ 
+   <method name="PositionGet">
+   <arg type="i" direction="out"/>
+   </method>
+
+=== The signals ===
+
+TrackChange : Signal is emitted when the "Media Player" plays another "Track". Argument of the signal is the metadata attached to the new "Track"
+
+   <signal name="TrackChange">
+     <arg type="a{sv}"/>
+   </signal>
+
+StatusChange : Signal is emitted when the status of the "Media Player" change. The argument has the same meaning than the value returned by GetStatus.
+
+   <signal name="StatusChange">
+    <arg type="i"/>
+   </signal>
+
+CapabilityChange : [TODO] Signal is emitted when the "Media Player" changes capabilities, Flags are CAN_GO_NEXT CAN_GO_PREV CAN_PAUSE CAN_PLAY CAN_SEEK CAN_PROVIDE_METADATA PROVIDES_TIMING
+
+   <signal name="CapabilityChange">
+     <arg type=TODO />
+   </signal>
+
 = See Also =
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
