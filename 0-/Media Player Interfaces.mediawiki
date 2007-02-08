@@ -135,6 +135,25 @@ Notes:
 * MPRIS implementations MUST provide at least the ''Basic'' interface.
 * Seeking and the reporting of current stream position will be done in milliseconds - players which can't handle millisecond-level resolution should round up or down to the nearest position they can handle.
 
+== D-Bus ==
+
+=== The Service ===
+
+org.freedesktop.MediaPlayer
+
+All "Media Players" '''must''' request this name and do not let other "Media Players" 'steal' this name.
+Using libdbus, that would be:
+
+ DBusConnection *dbus_connection;
+ DBusError dbus_error;
+ dbus_bus_request_name( dbus_connection, "org.freedesktop.MediaPlayer", 0, &dbus_error );
+
+To be able to request the name, and so, be able to communicate via D-Bus, no "Media Player" must be running. The "Media Player" may call the Quit method, and wait till the name is unregistered, to ensure this is the case.
+
+: I think this is a bad idea, it's not the place for a interop Spec to force single instance behaviour without a good reason (i run amarok all the time and use vlc to play videos or streams...). Why not suggest that mediaplayers register with the well known service name ("org.freedesktop.MediaPlayer") with the options QueueService and suggest the media player should register an application specific service in addition?
+
+: if done that way we gain the feature to query the dbus daemon for all clients queued for that dbus name, so enumerating all current musicplayers that support the Spec is not problem. Contacting the players is not problem to because every client on dbus has a unique name anyway. DBus signal do AFAIK carry the dbus service name of the sending client, so there is no trouble knowing which player send a signal. [[User:textshell|textshell]]
+
 == The ''basic'' interface ==
 * Playback
 ** Play/Start
