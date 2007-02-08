@@ -161,7 +161,7 @@ All methods must be accessed through the interface org.freedesktop.MediaPlayer
 i.e. calling Quit with qdbus would be:
  $ qdbus org.freedesktop.MediaPlayer /Player org.freedesktop.MediaPlayer.Quit
 
-== The ''basic'' interface ==
+== The ''basic'' interface (XMMS2 wiki version ) ==
 * Playback
 ** Play/Start
 ** Stop
