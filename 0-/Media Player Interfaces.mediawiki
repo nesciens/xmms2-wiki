@@ -1,5 +1,6 @@
 This page is an attempt at bringing together information about various works in progress to produce a common media player control interface. Note that in the context of this page, ''interface'' refers to interface in the sense of an API, not an interface through which a user interacts with a program.
 
+= Background =
 == Overview ==
 In August 2005, Milosz Derezynski (deadchip) and Frederic Fondriest (ciberfred) were working on defining an interface for remotely controlling BMPx (as opposed to using the BMPx GUI) over DBUS:
 
@@ -35,7 +36,8 @@ Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decide
 
 == Current ==
 ;Discussion
-:Discussion is proceeding on the [http://developers.videolan.org/lists.html vlc-devel] mailing list. (see specific thread linked [[#See_Also|below]]) Milosz has proposed to set up an mpris-devel mailing list hosted by BMPx.
+:Discussion was proceeding on the [http://developers.videolan.org/lists.html vlc-devel] mailing list. (see specific thread linked [[#See_Also|below]]) Milosz has proposed to set up an mpris-devel mailing list hosted by BMPx.
+:A dedicated mpris at videolan.org mailing list is set up, it should be an as ''LOW'' traffic list as possible and used only to coordinate the work and where developpers disagree on a part of the spec. Otherwise, please use this wiki page.
 
 == DBUS ==
 ;Advantages
@@ -64,13 +66,13 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 * [[Media Player Interfaces/API Comparison#Binary_data_storage|Binary data storage]]
 * [[Media Player Interfaces/API Comparison#Other|Other]]
 
-== Common Interface ==
+= The spec =
 '''''DRAFT'''''
-
-== Definitions ==
 
 ;MPRIS
 :Media Player Remote Interfacing Specification
+
+== Definitions ==
 
 === "Media Player" ===
 
@@ -133,7 +135,7 @@ Notes:
 * MPRIS implementations MUST provide at least the ''Basic'' interface.
 * Seeking and the reporting of current stream position will be done in milliseconds - players which can't handle millisecond-level resolution should round up or down to the nearest position they can handle.
 
-== "The ''basic'' interface" ==
+== The ''basic'' interface ==
 * Playback
 ** Play/Start
 ** Stop
@@ -162,7 +164,7 @@ Notes:
 ** Get Volume
 ** Set Volume
 
-== See Also ==
+= See Also =
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
 * [http://thread.gmane.org/gmane.comp.video.videolan.vlc.devel/26649 Proposal for a common D-Bus interface for media players] thread
