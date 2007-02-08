@@ -66,8 +66,68 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 
 == Common Interface ==
 '''''DRAFT'''''
-;MPRIS
-:Music Player Remote Interface Specification
+
+= Definitions =
+
+== "MPRIS" ==
+:Media Player Remote Interfacing Specification
+
+== "Media Player" ==
+
+An application, either with GUI or GUI-less (or which allows for both modes of operation) which is capable of playing back audio/video streams. The means by which it does accomplish that (e.g. which audio backend to use, and which output method) is out of the scope of this document.
+
+The "Media Player" '''must''':
+* Be able to play back at least local storage file streams.
+* Be able to play back at least one stream at a time.
+
+== "Client" ==
+
+The Client is an unspecified application that will interact with the "Media Player" using D-Bus protocol.
+For example:
+
+* A softphone, that pauses, or step the volume down, when a call is being received.
+* An applet that nicely integrates in your desktop environment, to control your "Media Player".
+* An instant messaging client which informs your buddies of what you're listening to.
+* A monitor that stores in a database what you are listening to, for statistics purpose.
+* A video editing software that calls an external "Media Player" to preview your work.
+
+== "Tracklist" ==
+
+A list of media files which resides within the "Media Player", and whose implementation is opaque to the remote interface.
+
+The "Tracklist" '''must''':
+* Hold an ordered list of locations of the media files as URIs (e.g. file:// or <nowiki>http://</nowiki>). The implementation of this can be opaque, which means, it does not neccesarily need to store URIs, but upon remote request, it must be able to return an URI for a given media file.
+* Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering trough it's remote interface
+
+The "Tracklist" '''can''', but does not '''need''' to:
+* Hold "Metadata" about media files
+
+== "Metadata" ==
+
+"Metadata" is data that the files carry within themselves as a means of self-identification (commonly known as "tags"), or data that has been retrieved about the files trough other means, e.g. an internet service that provides additional data about particular media files.
+"Metadata" is an array of dict entries, like ("length", 253), ("name", "Bolero"), ("video-codec", "DIVX"). The dict entry is in the form (string, variant) eg: {sv}.
+
+Furthermore, "Metadata" can be split into two categories:
+
+1) Technical metadata:
+* "URI":"s"
+* "length":"i" (length in seconds)
+* "video-codec":"s" (video codec as a fourcc)
+* "audio-codec":"s" (audio codec as a fourcc)
+* "video-bitrate":"i" video bitrate
+* "audio-bitrate":"i" audio bitrate
+* "audio-samplerate":"i" (audio samplerate)
+
+2) Informational metadata
+* "name":"s"
+* "artist":"s"
+* "album":"s"
+* "unique-id":"s" : Musicbrainz Track Identifier as specified on http://musicbrainz.org/docs/specs/metadata_tags.html
+* "genre":"s"
+
+This list is informative, and can be extended up to your needs, for example: "age of the captain":"i"
+
+Only Required fields are: "URI" and "length"
 
 Notes:
 * MPRIS implementations MUST provide at least the ''Basic'' interface.
