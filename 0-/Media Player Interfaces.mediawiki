@@ -18,7 +18,7 @@ In August 2005, Milosz Derezynski (deadchip) and Frederic Fondriest (ciberfred) 
  <~deadchip> that is really good
  <ciberfred> so binaries commands audio could send informations from user
  to theses daemons without need to re-code somethings different but similare for
- another audio playerRemuco
+ another audio player
 
 Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS] (Media Player Remote Interface Specification) was born - a fairly generic interface with commands that could be applied to control a wide range of media players. However, even though the phrase 'Media Player' is present in MPRIS, the specification was developed with the assumption that it would be applied to audio players.
 
