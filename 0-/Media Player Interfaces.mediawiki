@@ -246,6 +246,18 @@ DelTrack : Removes an URI from the "TrackList", given its position
      <arg type="i" />
    </method>
 
+Loop : Toggle playlist loop.
+
+   <method name="Loop">
+     <arg type="b" />
+   </method>
+
+Shuffle : Toggle playlist shuffle.
+
+   <method name="Shuffle">
+     <arg type="b" />
+   </method>
+
 * /Player
 
 Next : Goes to the next element (what if we're at the end?)
@@ -273,6 +285,12 @@ Play : If playing : rewind to the beginning of current track, else : start playi
    <method name="Play">
    </method>
 
+Repeat : Toggle the current track repeat.
+
+   <method name="Repeat">
+     <arg type="b" />
+   </method>
+
 Quit : Makes the "Media Player" exit.
  
    <method name="Quit">
@@ -290,7 +308,7 @@ VolumeSet : Sets the volume (argument must be in [0;100])
    <arg type="i"/>
    </method>
 
-GetVolume : Returns the current volume (must be in [0;100])
+VolumeGet : Returns the current volume (must be in [0;100])
  
    <method name="VolumeGet">
    <arg type="i" direction="out"/>
