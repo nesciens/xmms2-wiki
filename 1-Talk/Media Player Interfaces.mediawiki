@@ -59,3 +59,20 @@ Some players, e.g. Audacious, have some library-like qualities, such as Tuples, 
 Also, DBus and my sanity do not get along, and I am sure it is the same way for others. A common library should be a must. I'd suggest MIT licencing for that.
 
 --[[User:Nenolod|William Pitcock]] 10:20, 7 December 2006 (CET)
+
+
+------
+
+The spec looks like a good start to me, although I've got a couple of nitpicks/questions:
+
+* The XMMS2 version has seeking in miliseconds, but the "length" metadata is only in seconds - I think that it would be worth making "length" be miliseconds too. The BMPx/VLC version has it as an int between 0 and 100, and if we wanted "fraction" rather than "position" seeking, using a float so you have arbitrary position would be a good idea. After all, an average song would have granularity of two or three seconds with 0-100, let along songthing longer like a video.
+
+* Similarly for audio volume, using a 0.0-1.0 float is probably better than a 0-100 integer. Not that you really need the accuracy, but I don't see any reason to artificially limit the granularity.
+
+* Much of the Tracklist-related API either doesn't make sense or doesn't have the same meaning for "library based" players that don't have a "main tracklist". Some library based players have a "queue" which kind of maps to the idea of "main playlist" but not all have them. However some of the API, particularly previous/next and shuffle/repeat, still does make sense for them. One other option would be for these players to expose multiple tracklist objects, but that would mean moving some of the API out somewhere else.
+
+* Also, there should probably be some signal that the tracklist has changed, so client will know that their information is out of date.
+
+* On the metadata, video-codec and audio-codec are listed as being listed "as fourcc". A reasonable number of players (particularly audio-only ones) won't know this without embedding a mimetype->fourcc mapping table, perhaps using mimetype would be better?
+
+[[User:Doctau|James Livingston]]
