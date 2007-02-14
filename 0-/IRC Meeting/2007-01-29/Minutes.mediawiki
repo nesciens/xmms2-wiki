@@ -1,0 +1,69 @@
+== Status ==
+{| class="wikitable" border="1" valign="top"
+|-
+| Who || DONE || TODO || BLOCKED || DISCUSS
+|-
+|[[User:Anders Gustafsson | anders]]
+| merged stuff, OSD mainloop
+| Python docs
+|
+| Pyrex
+|-
+|[[Daniel Chokola | puzzles]]
+|
+|
+|
+|
+|-
+|[[Georg Schild | dangertools]]
+|
+|
+|
+* waf
+* exams
+|
+|-
+|[[Florian Ragwitz | Rafl]]
+|
+|
+* MPD bridge
+* pir/pasm bindings
+* Java/Waf integration
+| exams
+|
+* testing
+* libxmmsclient-easy
+|-
+|}
+
+== Topics ==
+=== GSoC ===
+;Action: deferred
+;Notes: still no money
+
+=== Testing ===
+;Action: integrate with Waf
+;Notes: help wanted
+
+=== [[Libxmmsclient-easy]] ===
+;Action: deferred
+
+=== Tilman's Birthday ===
+;Action: Three cheers!
+;Notes; Tilman is old.
+
+=== XMMS2-[[Juho V&auml;h&auml;-Herttua|juhovh]] ===
+;Action: deferred
+;Notes: looks cool
+
+=== DrJekyll ===
+;Action: deferred
+;Notes: looks cool
+
+=== Windows Port ===
+;Action: deferred
+
+== Full Transcript ==
+A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2007-01-29/transcript.txt here].
+
+[[Category:IRC Meeting]]
