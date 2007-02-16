@@ -7,6 +7,7 @@
 :Mentors projects in these areas: anything that is not in ruby, java or c++ :)
 
 ==Alexander Botero-Lowry==
+:Might also be a mentor for FreeBSD
 :Mentors projects in these areas: 
 ::* Anything involving Python or Objective C (Work on bindings or client development mostly)
 ::* Service clients (and in general lower-level services like lyrics, album art, tagging, etc)
