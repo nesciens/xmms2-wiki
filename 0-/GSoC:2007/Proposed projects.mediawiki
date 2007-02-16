@@ -1,7 +1,7 @@
 Leftovers from [[Summer of Code 2006/Proposed projects]]:
 * Gen ipc
 * Visualisations (pcm over shm)
-* Support for more formats (shn, realaudio, others?)
+* Support for more formats (shn, realaudio, usf, matroska, others?)
 * Service clients implementation and a specific service client (tag client?)
 * Development on one of the more mature GUI clients (Esperanza, Insanity..)
 * Multiple Output plugins (with flamesuit on)
@@ -11,3 +11,4 @@ Leftovers from [[Summer of Code 2006/Proposed projects]]:
 * XMMS2-specific GUI toolkit widgets (gtk or qt)
 * Exchangeable backend: other SQL databases or ad-hoc storage.
 * Website reorganisation/redesign
+* MTP transport
