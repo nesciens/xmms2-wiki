@@ -4,8 +4,7 @@
 
 ==Anders Gustafsson==
 :Co-Admin
-:Mentors projects in these areas: ???
-
+:Mentors projects in these areas: anything that is not in ruby, java or c++ :)
 
 ==Alexander Botero-Lowry==
 :Mentors projects in these areas: 
