@@ -1,0 +1,4 @@
+Leftovers from [[Summer of Code 2006/Proposed projects]]:
+* Gen ipc
+* Visualisations
+* Support for more formats
