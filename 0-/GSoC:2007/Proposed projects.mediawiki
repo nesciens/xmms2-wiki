@@ -1,4 +1,5 @@
-Leftovers from [[Summer of Code 2006/Proposed projects]]:
+Also check leftovers from [[Summer of Code 2006/Proposed projects]]. And the long term wishlist in {{Bug|520}}.
+
 * Gen ipc
 * Visualisations (pcm over shm)
 * Support for more formats (shn, realaudio, usf, matroska, others?)
@@ -12,3 +13,4 @@ Leftovers from [[Summer of Code 2006/Proposed projects]]:
 * Exchangeable backend: other SQL databases or ad-hoc storage.
 * Website reorganisation/redesign
 * MTP transport
+* Bindings (lua, lisp, others?) Might conflict with gen ipc..
