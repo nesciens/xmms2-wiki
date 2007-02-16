@@ -1,7 +1,7 @@
 Leftovers from [[Summer of Code 2006/Proposed projects]]:
 * Gen ipc
 * Visualisations
-* Support for more formats
+* Support for more formats (shn, realaudio, others?)
 * Service clients implementation and a specific service client (tag client?)
 * Development on one of the more mature GUI clients (Esperanza, Insanity..)
 * Multiple Output plugins (with flamesuit on)
