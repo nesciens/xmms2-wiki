@@ -12,5 +12,5 @@ Also check leftovers from [[Summer of Code 2006/Proposed projects]]. And the lon
 * XMMS2-specific GUI toolkit widgets (gtk or qt)
 * Exchangeable backend: other SQL databases or ad-hoc storage.
 * Website reorganisation/redesign
-* MTP transport
+* MTP transport {{Bug|1330}}
 * Bindings (lua, lisp, others?) Might conflict with gen ipc..
