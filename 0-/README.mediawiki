@@ -12,17 +12,14 @@ XMMS2 is a music player.
 
 ==VERSION==
 
-This README file is for XMMS2 0.3-DrJekyll
+This README file is for the "Developer Release" series of XMMS2.
 
-The "Dr" does not mean "Doctor", it means "Developer Release".
-"Developer Release" means that the target audience for is not
-your grandma, but rather developers who wish to help improving
-XMMS2, by making clients, plugins, fixing bugs, adding features,
-writing documentation or any other thing that would make it
-closer to the perfect music player. Of course anyone is allowed
-to try it out, but don't expect everything to work flawlessy,
-and it is a good thing if you don't mind getting your hands
-dirty.
+"Developer Release" means that the release is not aimed at your grandma, but
+rather at developers who wish to help improve XMMS2, by developing clients and
+plugins, fixing bugs, adding features, writing documentation or anything else
+that would bring XMMS2 closer to being the perfect music player. Of course,
+anyone is allowed to try it out, but don't expect everything to work flawlessly
+just yet. This is a good thing if you don't mind getting your hands dirty.
 
 
 ==INSTALLING==
@@ -42,16 +39,18 @@ See the AUTHORS file. (for the people not in AUTHORS: like everyone but you - he
 
 ==HELPING==
 
-Please send patches to the mailinglist or bugtracker! A good starting point might be: http://wiki.xmms2.xmms.se/index.php/Developer_Corner
+Please send patches to the mailing list or bug tracker! A good starting point
+for further info might be: http://wiki.xmms2.xmms.se/index.php/Developer_Corner
 
 
 ==CONTACT==
 
-Feel free to post any questions/patches/whatever to the mailinglist: xmms2-devel@lists.xmms.se (http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel for subscription)
+Feel free to post any questions/patches/whatever to the mailing list:
+xmms2-devel@lists.xmms.se (http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel for subscription)
 
-The IRC channel is usually pretty active as well, chat away at: #xmms2 on freenode (irc.freenode.net)
+The IRC channel is usually fairly active as well, chat away at: #xmms2 on freenode (irc.freenode.net)
 
-Report bugs in the bugtracker at: http://bugs.xmms2.xmms.se/ (account registration required - 
+Report bugs to the bug tracker at: http://bugs.xmms2.xmms.se/ (account registration required - 
 Linus, you can just post the reports to the mailing list)
 
 == See Also ==
