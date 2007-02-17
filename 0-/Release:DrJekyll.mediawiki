@@ -25,3 +25,6 @@ This is mostly a place holder, and details needs to be filled in.
 
 
 === Full ChangeLog ===
+
+
+[[Category:Releases]]
