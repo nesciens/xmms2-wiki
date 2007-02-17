@@ -1,5 +1,5 @@
 ;Notes:
-* This FAQ exists as a complement to the [[Read me first!]] page.
+* This FAQ exists as a complement to the [[README]] page.
 * ''PLEASE DON'T ADD NEW QUESTIONS HERE, ASK THEM ON THE MAILLIST OR ON IRC!''
 
 == General ==
