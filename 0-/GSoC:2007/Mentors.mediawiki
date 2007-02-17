@@ -1,6 +1,10 @@
 ==Tobias RundstrÃ¶m==
 :GSoC Admin
-:Mentors projects in these areas: ???
+:Mentors projects in these areas
+:* Esperanza development
+:* Plugin development
+:* Database rework
+:* Documentation
 
 ==Anders Gustafsson==
 :Co-Admin
