@@ -223,6 +223,7 @@ The following schema describes the serialized form of a collection:
  | string attrval1        |
  | string attrkey2        |
  | string attrval2        |
+ | ...                    |
  +------------------------+
  | uint idlist_len        |
  +------------------------+
@@ -245,7 +246,6 @@ The following schema describes the serialized form of a collection:
  | +--------------------+ |
  |  ...                   |
  +------------------------+
-
 
 = Server design =
 
