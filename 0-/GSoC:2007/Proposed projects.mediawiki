@@ -7,17 +7,26 @@ Also check leftovers from [[Summer of Code 2006/Proposed projects]]. And the lon
 
 {{SoCItem| title=Support for more formats/stream types| description=New formats can be supported by writing decoder modules for the server using our [[Transforms]] plugin interface, coupled with existing decoding libraries. Possible formats include, for instance:
 * [http://zakalwe.virtuaalipalvelin.net/uade/ Amiga format] ([[List_of_features_required_for_proper_sub-tune_support|subtunes support]])
-* [http://craz.net/programs/itunes/alac.html ALAC (Apple Lossless Audio Codec)]
-* [http://www.last.fm Last.Fm]| lang=C| level=Medium to Advanced| mentor=''TBA''}}
+* [http://www.shorten.org Shorten]
+* MTP {{Bug|1330}}| lang=C| level=Medium to Advanced| mentor=''TBA''}}
 
-* Service clients implementation and a specific service client (tag client?)
-* Development on one of the more mature GUI clients (Esperanza, Insanity..)
-* Multiple Output plugins (with flamesuit on)
-* XMMS2Forge
-* Interoperatibility (mpd-bridge, mepris, gstreamer)
-* Test framework
-* XMMS2-specific GUI toolkit widgets (gtk or qt)
-* Exchangeable backend: other SQL databases or ad-hoc storage.
-* Website reorganisation/redesign
-* MTP transport {{Bug|1330}}
-* Bindings (lua, lisp, others?) Might conflict with gen ipc..
+{{SoCItem| title=Service clients implementation| description=A specialized type of client that is designed to accept commands from other clients to do specialized tasks like tag a file, or lookup certain types of metadata like data from MusicBrainz.org. This project would be to implement the mechanism for registering service clients and their commands, as well as implementing a service client to demonstrate the API.| lang=C, any language a client can be written in| level=Medium to Advanced| mentor=[[User:Alex Botero-Lowry | Alexander Botero-Lowry]]}}
+
+{{SoCItem| title=Further development on a pre-existing GUI client| description=XMMS2 has a few GUI clients that are maturing towards real usability but are not quite there yet. Rather then try and develop yet another client, this project would be to jump on the development of a pre-existing client and get it in a really useable state. Tasks might include integrating collections with the client, or finishing various unimplemented features. Two of the potential clients for this are Esperanza and Insanity| lang=C++ (Esperanza), Python (Insanity)| level=Easy to Medium| mentor=[[User:Tobias Rundstrom | Tobias Rundstrom]], [[user:Alex Botero-Lowry | Alexander Botero-Lowry]]}}
+
+{{SoCItem| title=Development of new bindings| description=XMMS2 provides a client library which is bound to a number of popular languages (C++, Python, Java, Ruby, Perl, Objective C). This project would be to develop bindings for another language. Possible candidates include Common Lisp, Lua, or Io.| lang=C and whatever language the bindings are for| level=Easy to Medium| mentor=''TBA''}}
+
+{{SoCItem| title=Support for Multiple Output plugins| description=Currently only one output plugin can playback sound at a time. This project would consider the implications of supporting multiple output plugins and find the best way to implement support for them.| lang=C| level=Hard to Flametory| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
+
+
+{{SoCItem| title=XMMS2Forge| description=Since XMMS2's client-server design and emphasis on implementing most features as clients, there are a large number of smaller projects developed around XMMS2. We currently provide development frameworks for some of these projects including git repositories, and occasionally bug trackers. XMMS2Forge is a project to implement an automated web system for setting up these sub projects and providing administrative abilities to the project leaders.| lang=Pick one| level=Easy to Medium| mentor=''TBA''}}
+
+{{SoCItem| title=Interoperability with other music playing programs and media frameworks| description=Implement some interoperability features.. blah blah I don't care about mepris, mpd-bridge, or gstreamer, die die die| lang=C for gstreamer, any for others| level=Easy to Flametory| mentor=''TBA''}}
+
+{{SoCItem| title=Testing framework| description=Currently XMMS2 does not have a complete testing framework. A number of attempts have been made in the past including some work on unit tests by Sham Chukory, and a failed SoC project last year to develop a testing system for XMMS2.| lang=tests probably in C| level=??| mentor=''TBA''}}
+
+{{SoCItem| title=XMMS2-specific GUI toolkit widgets (gtk or qt)| description=XMMS2 clients developed for gtk or qt often implement the same widgets for displaying playlists, media status, and the media library. This project would be to implement a set of widgets for developing an xmms2 client for one of the popular toolkits| lang=probably C or C++| level=Medium| mentor=[[User:Tobias Rundstrom | Tobias Rundstrom]], [[User:Alex Botero-Lowry | Alexander Botero-Lowry]]}}
+
+{{SoCItem| title=Media Library Database Backend| description=XMMS2 uses sqlite as the backend for its media library. Since XMMS2 basically maps a key-value pairing,   it has been aruged that using an sql database in this case is suboptimal. This project would be to take advantage of the abstraction provided by Collections, and look into implementing other backends for the XMMS2 media library. This project would include performance testing of the various potential databases.| lang=C| level=Hard| mentor=''TBA''}}
+
+{{SoCItem| title=Website reorganization/redesign| description=Our website sucks.| lang=python/php/html/js/css/magic| level=Easy| mentor=''TBA''}}
