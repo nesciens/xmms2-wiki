@@ -25,7 +25,7 @@
 #* SÃ©bastien Cevey, theefer/gmail
 # What criteria did you use to select these individuals as mentors? Please be as specific as possible.
 # What is your plan for dealing with disappearing students?
-#* No mercy
+#* No mercy: http://foucault.info/documents/disciplineAndPunish/foucault.disciplineAndPunish.torture.en.html
 # What is your plan for dealing with disappearing mentors?
 #* We don't expect this to happen
 # What steps will you take to encourage students to interact with your project's community before, during and after the program?
