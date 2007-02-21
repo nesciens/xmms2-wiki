@@ -1,3 +1,5 @@
+{{MergeNextRelease|Install instructions}}
+
 This page covers the process of installing XMMS2 from source code. You may also use [[Download XMMS2#Binary_Packages | binary packages]] if you want.
 
 == Obtaining the source ==
