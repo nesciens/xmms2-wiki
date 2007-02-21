@@ -21,7 +21,7 @@
 # Who will your mentors be? Please include Google Account Information.
 #* Tobias RundstrÃ¶m, xmmstru@gmail.com
 #* Anders Gustafsson, andersg@0x63.nu
-#* Alexander Botero-Lowry, ?
+#* Alexander Botero-Lowry, alex.boterolowry@gmail.com
 #* SÃ©bastien Cevey, theefer/gmail
 # What criteria did you use to select these individuals as mentors? Please be as specific as possible.
 # What is your plan for dealing with disappearing students?
