@@ -19,6 +19,7 @@ PHP Bindings ( ;D )
 == Toys / Drafts ==
 [[User:VxJasonxV/Sandbox/Template:RSS]] (yay SimplePie)<br>
 [[User:VxJasonxV/Sandbox/Template:RSSHeadlines]] (yay SimplePie x2)
+[[User:VxJasonxV/Sandbox/Install_instructions]] (Sandboxing Waf Install Instructions until DrI/DrJekyll's release)
 
 == Contact Info ==
 Reach me in IRC under the same username. ( irc.freenode.net / #xmms2 )<br>
