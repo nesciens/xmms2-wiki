@@ -1,0 +1,85 @@
+This page covers the process of installing XMMS2 from source code. You may also use [[Download XMMS2#Binary_Packages | binary packages]] if you want.
+
+== Obtaining the source ==
+
+Check the [[Download XMMS2 | download]] page for information on how to obtain the XMMS2 source code.
+
+== Dependencies ==
+
+You will '''need''' the following things to build XMMS2.
+
+* [http://www.python.org/ Python] (>= 2.3)
+* [http://www.gtk.org/ GLib] (>= 2.8.0)
+* [http://www.sqlite.org SQLite] (>= 3.2.4) (will work for versions < 3.2.4, but with poor performance and potential bugs)
+
+If you are building XMMS2 on a binary distro, be sure to install -dev or -headers versions of these packages (if available). XMMS2 uses these headers to link to shared libraries on your system and will not build.
+
+The following apt-get line will install the necessary packages, and plugin packages below, on a Debian system (at least sarge)  "aptitude install debmake debhelper python2.3 python2.3-dev libglib2.0-dev libsdl-ttf2.0-dev libflac-dev libspeex-dev libmodplug-dev libmad0-dev libvorbis-dev libasound2-dev libspeex-dev libsqlite3-dev"
+
+These libraries are '''not needed''' for building xmms2d itself, but will add extra functionality you might need. You will probably want MAD at the very least as without it, you can't play MP3s.
+
+*For transport plugins:
+** [http://curl.haxx.se Curl] (>= 7.11.2) - For listening to streams over HTTP.
+*For decoder plugins:
+** [http://www.underbit.com/products/mad/ MAD] (Ubuntu and debian users will want libmad0-dev) - For listening to MPEG files (MPEG 1 & 2 layers I, II and III - includes MP3)
+** [http://www.audiocoding.com/ FAAD] - For listening to AAC.
+** [http://www.xiph.org Vorbisfile] - For listening to Ogg Vorbis.
+** [http://sidplay2.sourceforge.net/ SIDplay2] - For listening to SIDs.
+** [http://www.geocities.com/SiliconValley/Lakes/5147/resid/ reSID] - For listening to SIDs.
+*For output plugins:
+** [http://www.alsa-project.org ALSA] - For ALSA output.
+** [http://jackit.sourceforge.net Jack] (try 0.100.0 if you have problems with other versions) - For Jack output.
+*For language bindings (required by some clients):
+** [http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/ Pyrex] (== 0.9.3, != 0.9.4, != 0.9.5, >= 0.9.5.1) - For python bindings. (Versions with != prefixes are broken and will cause Python bindings, and thusly, python clients, to fail spectacularily)
+** [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
+** For Java bindings:
+*** [http://java.sun.com/ Java SDK] (>= 1.4)
+*** [http://www.swig.org/ SWIG] (>= 1.3.25)
+*** JAVA_HOME has to be set to the jdk's home
+
+As with the packages above, be sure to grab -dev or -headers packages if building on a binary distro!
+
+For debian, one can use:
+"apt-get install python2.3-pyrex python2.3-dev ruby1.8 ruby1.8-dev"
+
+== Platform-specific notes ==
+Some supported platforms may have variations on build requirements:
+* [[FreeBSD]]
+* [[OS_X]]
+* [[Windows]]
+* [[NetBSD]]
+
+== Configuring ==
+From the xmms2 directory, run ''./waf configure'' to first run the configuration. Tweak the options, running ''./waf --nocache'' each time till satisfied. You may need to specify LIBPATH and CPPPATH so that Waf knows where to look for your include files and libraries.
+
+Extra features not including the xmms2 daemon itself are split into two categories; "Optionals" and "Plugins". 
+
+Optionals are comprised of xmms2d helpers such as language bindings (Ruby, Perl, Java) and the more fundamental utilities/clients ([[ET]], xmms2 cli, and the launcher script). You can exclude certain optionals module by running ''./waf configure --without-optionals="module1, module2, module3"'' where module names are the names of the directories located in ''src/clients''. For example, the [[ET]] client is located in ''src/clients/et'', so the name of the module to be excluded is et.<br>
+Note that language bindings are do not have a directory in src/clients, but are disabled as a part of optionals simply using the name of the language. (''./waf configure --without-optionals="perl, ruby, python, java"'').
+
+Plugins are for outputs and decoders. Outputs being sound servers (alsa, jack, ...), and decodersfor audio and even text formats (Audio: mp3 (mad), vorbis, sid; Text: m3u, pls, xspf). You can exclude certain plugins by running ''./waf configure --without-plugins="module1, module2, module3"'' where module names are the names of the directories located in ''src/plugins''. For example, the OSS output files are located in ''src/clients/oss'', so the name of the module to be excluded is oss.
+
+== Compiling ==
+Run ''./waf build'' to compile, or ''./waf build --prefix="/some/custom/path"'' if you plan on installing XMMS2 in ''/some/custom/path''.
+
+== Installing ==
+
+Run ''./waf install'' to install packages to their default path.
+
+To only change the path the manual pages are installed in provide the ''--with-mandir="/some/custom/mandir" option (it defaults to $PREFIX/man).
+
+The --destdir option provides a way to prepend a path to ''all'' install paths for package builders. Note that when this option is set, xmms2 still expects the files to be in the location without chosen --destdir prepended.
+
+== Cleaning up ==
+
+''./waf clean'' will clean the objects and binaries. (Simple, no?)
+
+== Uninstalling ==
+
+''./waf uninstall'' will uninstall any files installed by ''./waf install''. (Simple, no?)
+
+== See Also ==
+* [[Download XMMS2]]
+* [[Using the application]]
+
+[[Category: General]]
