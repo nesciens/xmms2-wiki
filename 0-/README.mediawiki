@@ -29,8 +29,7 @@ See INSTALL file. (for the impatient people: ./waf configure && ./waf && sudo ./
 
 ==COPYRIGHT==
 
-See COPYING for details. (for the ones who don't care about detalils: LGPL)
-
+See COPYING for details. (for the ones who don't care about details: LGPL)
 
 ==CREDITS==
 
