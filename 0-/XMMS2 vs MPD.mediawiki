@@ -72,6 +72,9 @@ XMMS2 uses threads to run the main components: [[Component:Transport | Transport
 XMMS2 uses plugins to read data, decode it, output sound data, read and write playlists.
 ; Playlists; Allow creation of playlists* on the fly; Allow attaching a playlist to an audio device or stream; Playlist plugins to get different types of playlists:
 (No idea what 'creation of playlist on the fly' means..) XMMS2 only has a single playlist. XMMS2 can load and save playlists in the following formats: [[Component:m3u | M3U]], [[Component:pls | PLS]], [[Component:html | HTML]]. More playlist formats can be supported via appropriate plugins. XMMS2 can also save playlists to the [[Component:Medialib | Medialib]] and reload them.
+
+By "creation of playlist on the fly", I'm fairly certain that the MPD2 roadmap means creation of playlists from dynamic data. For instance, all songs which haven't yet been played, or all songs with "fnord" in the cached lyrics. Matching on metadata and creation of a playlist, but dynamically, not run-once-and-store-the-output. Whether XMMS2 is planned to have this feature, I don't know - but I do know that many other library-based systems (AmaroK, rhythmbox, iTunes) have it, and that I find it useful. -- michael@slashhome.org
+
 ; Queue Playlist:
 Queue playlists are described as being "temporary playlists: when you have a playlist in the correct order you might want to play some songs in a special order. So you queue these songs, and the player will play them in that order, and then continue as before." This could be implemented client-side, with XMMS2. The XMMS2 playlist itself is just that - an ordered list of streams to be played, as far as the daemon is concerned. Clients may use the medialib and more sophisticated manipulation of playlist data for a different user experience.
 ; DB:
