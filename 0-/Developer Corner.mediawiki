@@ -39,6 +39,7 @@ Policies and guidelines about processes and services related to the project as w
 * [[XMMS2:Packagerpolicy | Downstream Maintainer Guidelines]]
 * [[Roadmap]]
 * [[IRC Meeting]]
+* [[WAF modifications]]
 
 === Clients ===
 * [[Generic properties policy]]
