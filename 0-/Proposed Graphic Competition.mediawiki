@@ -29,21 +29,31 @@ The plan is two competitions, one for Logo, when it's done we start the second c
 * Prizes?
 ** Some kind of audio player, maybe with some nice headphones.
 *** Sansa or iAudio X5 seems to be the current best bet. (it is a nice political statement if it can run [http://www.rockbox.org/twiki/bin/view/Main/TargetStatus rockbox])
+*** I agree, the iAudio is probably the best choice, cast 1 vote for me. --[[User:TobiasRundstrÃ¶m|tru]] 22:50, 1 March 2007 (CET)
 ** Gift certificate
 *** amazon? (they got dvdvdvdvd and stuff - everyone should be able to find something there)
 *** thinkgeek (to geeky for graphics people?)
 ** "And you can win this shiny new mediaplayer" is way cooler and more real than "And you can win $XYZ amazon gift certificate".
 * Submission routine?
 ** We should work out exactly ''what'' the deliverables should be, then we can figure out ''how'' they're to be submitted. [[User:Eleusis|Eleusis]] 14:45, 11 September 2006 (CEST)
+** Logo
+*** Big logo in SVG format
+*** Small logo that works in 16x16 and smaller in SVG format
+*** Logo in SVG format, black and white?
+** Wiki
+*** A mediawiki theme in usable format
+** Upload to a webserver or something like that? Email?
 * What if a user wants to do 1 and 2? and wins, does he get like two DAP's then?
 ** YES! --[[User:Knirch|Knirch]] 19:03, 5 September 2006 (CEST)
 *** Maybe it should be switchable for something else was the point. --[[User:TobiasRundstrÃ¶m|tru]] 05:42, 6 September 2006 (CEST)
 * Tax regulations?
+** Don't think we should care about this. --[[User:TobiasRundstrÃ¶m|tru]] 22:50, 1 March 2007 (CET)
 * Material should be licensed GFDL and copyrighted to XMMS2 TEAM?
 ** We should definitely be granted rights to do whatever we want with the winning design(s).. Furthermore, competitors should probably understand that they can't retain the right to use the winning logo for some other purpose, as it will become something like a ''trademark'' for XMMS2. [[User:Eleusis|Eleusis]] 14:45, 11 September 2006 (CEST)
 * Jury - Everyone in AUTHORS get a vote? veto by core team?
 ** Must be able to veto! heck, give away something AND have to settle for something a drunken freenoder spew out while being molested by lilo does not compute! --[[User:Knirch|Knirch]] 19:03, 5 September 2006 (CEST)
 *** Agreed, should the veto be me, anders, tilman, eleusis or something like that? --[[User:TobiasRundstrÃ¶m|tru]] 05:42, 6 September 2006 (CEST)
 ** For this to work, ''core team'' needs a clear definition before the start of the event. [[User:Eleusis|Eleusis]] 14:45, 11 September 2006 (CEST)
+** My suggestion is, everyone in AUTHORS get a vote and veto is hold by Anders and Tobias. --[[User:TobiasRundstrÃ¶m|tru]] 22:50, 1 March 2007 (CET)
 * shouldn't wiki design be in the format of a mediawiki skin? [[User:Anders Gustafsson|Anders Gustafsson]] 16:51, 6 September 2006 (CEST)
 ** Yes --[[User:TobiasRundstrÃ¶m|tru]] 17:47, 6 September 2006 (CEST)
