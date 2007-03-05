@@ -3,6 +3,11 @@
 = Summary =
 Java bindings for the client library.
 
+== Big Mark ==
+The javabindings were temporary removed from xmms2 due to problems with waf. They will come back as soon as we get up with waf/swig, get genIPC working with java or the buildsystem changes again ;). For now the javabindings are in [http://x4x.sourceforge.net x4x] in a cvs module.
+
+See [http://bugs.xmms2.xmms.se/view.php?id=1436]
+
 ==Prerequisites==
 
 Since DrDolittle Xmms2 ships some bindings to the language Java. To get those bindings on your machine you need some prerequisites met and installed:
@@ -71,6 +76,9 @@ For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.
 
 
 ===Latest news/changes===
+
+'''20070305'''
+The javabindings were temporary removed from xmms2 due to problems with waf. They will come back as soon as we get up with waf/swig, get genIPC working with java or the buildsystem changes again ;). For now the javabindings are in [http://x4x.sourceforge.net x4x] in a cvs module.
 
 '''20070103'''
 Right, latest news are quite old already, forgot to add them here. The second API will be removed from the main xmms2 tree, seems like I have to develop them somewhere else. Atm not waf problems have to be fixed, then some updates will hit -devel. Updates means collections-api, some slight but unmentionable changes and removing the the second api.
