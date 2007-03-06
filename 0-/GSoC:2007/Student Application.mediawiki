@@ -9,6 +9,8 @@ So you want to get on the XMMS2 love-boat? Just fill the following in and send i
 * '''Experience'''
 ** What programs/software have you worked on before?
 ** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
+** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Where you successful? If not, why?
+** What development model would you use (e.g. keywords: V-model, XP programming, agile programming, iterative; with the help of prototyping, formal specifications, tests, etc).
 ** '''Open Source'''
 *** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
 * '''Project'''
