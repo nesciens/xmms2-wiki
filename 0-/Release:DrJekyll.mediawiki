@@ -25,8 +25,8 @@ This is mostly a place holder, and details needs to be filled in.
 
 
 === Full ChangeLog ===
-;<mantis>1412</mantis>
-;;<git repo='xmms2-devel.git'>d52bb18dfe7d16b8c9ba56da5a1770de6629455a</git>)
+*<mantis>1412</mantis>
+**<git repo='xmms2-devel.git'>d52bb18dfe7d16b8c9ba56da5a1770de6629455a</git>)
 
 
 [[Category:Releases]]
