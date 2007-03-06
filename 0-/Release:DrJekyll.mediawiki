@@ -101,30 +101,33 @@ This is mostly a place holder, and details needs to be filled in.
 * <mantis>1370</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fbac3b118f8d42ef84c93eb73e801a68818da7ba fbac3b118f8d42ef84c93eb73e801a68818da7ba]
 '''Daniel Svensson'''
+* <mantis>1306</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=2a0fcee96aad9258b3a798c39b213c159d075189 2a0fcee96aad9258b3a798c39b213c159d075189]
+* <mantis>1282</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=75922b2073450d5167cb6f7765b3579c2fc1058c 75922b2073450d5167cb6f7765b3579c2fc1058c]
+* <mantis>1337</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0bd39a71494be8cfc624fc65575a7d7e8ee5013b 0bd39a71494be8cfc624fc65575a7d7e8ee5013b]
 * <mantis>1273</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1e315bc4078b58891c85412b75762c5ff8901731 1e315bc4078b58891c85412b75762c5ff8901731]
 * <mantis>1289</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3c23fd26fac7f71c167bd9488f5a9e337b96b13f 3c23fd26fac7f71c167bd9488f5a9e337b96b13f]
 * <mantis>1288</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e9eea8a969199b422efb753a5823f07607453e6a e9eea8a969199b422efb753a5823f07607453e6a]
-* <mantis>1178</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b0da158fdfa51ee337e9ab5534e65359c787b354 b0da158fdfa51ee337e9ab5534e65359c787b354]
-* <mantis>1282</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=75922b2073450d5167cb6f7765b3579c2fc1058c 75922b2073450d5167cb6f7765b3579c2fc1058c]
-'''Daniel Svensson'''
-* <mantis>1306</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=2a0fcee96aad9258b3a798c39b213c159d075189 2a0fcee96aad9258b3a798c39b213c159d075189]
 * <mantis>1332</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5299a5ca826506678c5cb9afda765def6165982b 5299a5ca826506678c5cb9afda765def6165982b]
-* <mantis>1337</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0bd39a71494be8cfc624fc65575a7d7e8ee5013b 0bd39a71494be8cfc624fc65575a7d7e8ee5013b]
 * <mantis>1376</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=291f7b84d578a1381c2bd522f56cb832db4d122e 291f7b84d578a1381c2bd522f56cb832db4d122e]
+* <mantis>1178</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b0da158fdfa51ee337e9ab5534e65359c787b354 b0da158fdfa51ee337e9ab5534e65359c787b354]
 '''David Anderson'''
 * <mantis>1179</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb 5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=bb4b4c7cbdc33831d3f6595ad5e4c0abe30aafa6 bb4b4c7cbdc33831d3f6595ad5e4c0abe30aafa6]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b985a5d0f99b487a3850a43eeaf355503a1a41b5 b985a5d0f99b487a3850a43eeaf355503a1a41b5]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d8e3e9fae9f1e5a92b7fbc9f835ffa256784ecc8 d8e3e9fae9f1e5a92b7fbc9f835ffa256784ecc8]
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fad5220b3e5353dcb7dc22129865b17586d3f633 fad5220b3e5353dcb7dc22129865b17586d3f633]
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9c503493a60d289025842ab12f631637940494b0 9c503493a60d289025842ab12f631637940494b0]
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c0fe3aece8e36cef4a907fb016024e1c30c11592 c0fe3aece8e36cef4a907fb016024e1c30c11592]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=26f71e02c10131ebe82a06b27318e0c70e739daa 26f71e02c10131ebe82a06b27318e0c70e739daa]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=440e680a08b2d19035d95dbffb24b561b540114b 440e680a08b2d19035d95dbffb24b561b540114b]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=675d4f7bb79405b1de7ce4f7e90507dc9440b032 675d4f7bb79405b1de7ce4f7e90507dc9440b032]
@@ -134,22 +137,12 @@ This is mostly a place holder, and details needs to be filled in.
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=8655dc5b582860c0a84a3b28ce564f384b47b016 8655dc5b582860c0a84a3b28ce564f384b47b016]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=73ffaa266fb182ab070b39c468acbf960d655ffc 73ffaa266fb182ab070b39c468acbf960d655ffc]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b7c2cf061d44b5013b0c512a6eba230d4606370d b7c2cf061d44b5013b0c512a6eba230d4606370d]
-'''David Anderson'''
-* <mantis>1179</mantis>
+** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=31502f5562353441315d36d8c35daf075f7944cb 31502f5562353441315d36d8c35daf075f7944cb]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7c40926f8b1e777a566d149cd89b6aa715b46f0e 7c40926f8b1e777a566d149cd89b6aa715b46f0e]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3e0f791896bce8ff6c6195eb869959d2e43771d1 3e0f791896bce8ff6c6195eb869959d2e43771d1]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c16face778f89bdebd6dc1119ebb9cc28490fbb8 c16face778f89bdebd6dc1119ebb9cc28490fbb8]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5ef6785f30aa05752e95e2792a3863c09c99c332 5ef6785f30aa05752e95e2792a3863c09c99c332]
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=232313f8bbec254180966cd64e2fb8c00afdb2b5 232313f8bbec254180966cd64e2fb8c00afdb2b5]
-'''David Anderson'''
-* <mantis>1179</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fad5220b3e5353dcb7dc22129865b17586d3f633 fad5220b3e5353dcb7dc22129865b17586d3f633]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9c503493a60d289025842ab12f631637940494b0 9c503493a60d289025842ab12f631637940494b0]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c0fe3aece8e36cef4a907fb016024e1c30c11592 c0fe3aece8e36cef4a907fb016024e1c30c11592]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=31502f5562353441315d36d8c35daf075f7944cb 31502f5562353441315d36d8c35daf075f7944cb]
-'''David Anderson'''
-* <mantis>1179</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb 5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb]
 '''Erik Massop'''
 * <mantis>1291</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1690b181d7e263d4a36e31ccd8938beaf78e627b 1690b181d7e263d4a36e31ccd8938beaf78e627b]
@@ -321,5 +314,6 @@ This is mostly a place holder, and details needs to be filled in.
 '''Todd Bayley'''
 * <mantis>1408</mantis>
 ** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=67772785603531ef2bf7befbbb695a0e7ac81cd1 67772785603531ef2bf7befbbb695a0e7ac81cd1]
+
 
 [[Category:Releases]]
