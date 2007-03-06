@@ -3,6 +3,7 @@ So you want to get on the XMMS2 love-boat? Just fill the following in and send i
 * Basics
 ** Just write a small introduction to yourself.
 ** Why do you want to participate in summer of code?
+** What are you studying, subject, level and school?
 * Project
 ** Did you select a project from our list? In that case what project did you select?
 ** If you figured out a own project please describe the project and the scope.
