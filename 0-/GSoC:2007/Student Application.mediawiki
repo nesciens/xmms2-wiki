@@ -1,0 +1,17 @@
+So you want to get on the XMMS2 love-boat? Just fill the following in and send it to soc@xmms.se! Note that you have to fill in the Google application first and then this. By filling this in you will have bigger chance of actually getting voted for.
+
+* Basics
+** Just write a small introduction to yourself.
+** Why do you want to participate in summer of code?
+* Project
+** Did you select a project from our list? In that case what project did you select?
+** If you figured out a own project please describe the project and the scope.
+** Why did you choose this project?
+* Open Source
+** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
+* Practically
+** What tools do you usually use to develop code?
+** What programming languages are you fluent in?
+** What spoken languages are you fluent in?
+** What timezone do you live?
+** Would you mind talking with your mentor on telephone / internet phone?
