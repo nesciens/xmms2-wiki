@@ -8,6 +8,8 @@ So you want to get on the XMMS2 love-boat? Just fill the following in and send i
 ** Did you select a project from our list? In that case what project did you select?
 ** If you figured out a own project please describe the project and the scope.
 ** Why did you choose this project?
+** What do you expect to gain from this project?
+** What would make you stay in the xmms2-community after the conclusion of SOC
 * Open Source
 ** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
 * Practically
