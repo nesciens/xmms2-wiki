@@ -1,5 +1,6 @@
 So you want to get on the XMMS2 love-boat? Just fill the following in and send it to soc@xmms.se! Note that you have to fill in the Google application first and then this. By filling this in you will have bigger chance of actually getting voted for.
 
+* '''Have you contacted the XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
 * '''Basics'''
 ** Just write a small introduction to yourself.
 ** State your preferred email address.
