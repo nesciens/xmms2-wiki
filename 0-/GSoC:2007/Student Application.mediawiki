@@ -17,7 +17,9 @@ So you want to get on the XMMS2 love-boat? Just fill the following in and send i
 ** What do you expect to gain from this project?
 ** What would make you stay in the xmms2-community after the conclusion of SOC
 * '''Practically'''
-** What tools do you usually use to develop code?
+** What tools do you usually use to develop code? / Are you familiar with any of the following tools?
+*** Git
+*** waf
 ** What programming languages are you fluent in?
 ** What spoken languages are you fluent in?
 ** What timezone do you live?
