@@ -27,293 +27,294 @@ This is mostly a place holder, and details needs to be filled in.
 === Full ChangeLog ===
 '''Alexander Botero-Lowry'''
 * <mantis>956</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c4fa3ca5710940eee97d60a239babe6d388371af c4fa3ca5710940eee97d60a239babe6d388371af]
+** <git repo='xmms2-devel.git'>c4fa3ca5710940eee97d60a239babe6d388371af</git>
 '''Anders Gustafsson'''
 * <mantis>1321</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7aa700c5c6db517525d296d27923136a81451bcf 7aa700c5c6db517525d296d27923136a81451bcf]
+** <git repo='xmms2-devel.git'>7aa700c5c6db517525d296d27923136a81451bcf</git>
 * <mantis>1343</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=788c0caf9ff81befc691d7254e9d76cc44102e9a 788c0caf9ff81befc691d7254e9d76cc44102e9a]
+** <git repo='xmms2-devel.git'>788c0caf9ff81befc691d7254e9d76cc44102e9a</git>
 * <mantis>278</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b8d4960c6b26e6fac4b037690e909806e408e44c b8d4960c6b26e6fac4b037690e909806e408e44c]
+** <git repo='xmms2-devel.git'>b8d4960c6b26e6fac4b037690e909806e408e44c</git>
 * <mantis>279</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=01b3f6193dbf51e717accdf93196a203d95356c4 01b3f6193dbf51e717accdf93196a203d95356c4]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5154437b7d82318fcc06954cbd2dc69076cabf8a 5154437b7d82318fcc06954cbd2dc69076cabf8a]
+** <git repo='xmms2-devel.git'>01b3f6193dbf51e717accdf93196a203d95356c4</git>
+** <git repo='xmms2-devel.git'>5154437b7d82318fcc06954cbd2dc69076cabf8a</git>
 * <mantis>1423</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=02d0b37ec6ccb771de0f3884e11195ef4003e41f 02d0b37ec6ccb771de0f3884e11195ef4003e41f]
+** <git repo='xmms2-devel.git'>02d0b37ec6ccb771de0f3884e11195ef4003e41f</git>
 * <mantis>1422</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ca813027b96a1617238de244e426ff3d09ba867a ca813027b96a1617238de244e426ff3d09ba867a]
+** <git repo='xmms2-devel.git'>ca813027b96a1617238de244e426ff3d09ba867a</git>
 * <mantis>320</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=a6bbad78e47a9c30f913f807adb02b3c41c31969 a6bbad78e47a9c30f913f807adb02b3c41c31969]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7b36043ae5ec46d1337779ff357a2eaaa008fc44 7b36043ae5ec46d1337779ff357a2eaaa008fc44]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=908af1aebe61ff6f14127d7dcddac8abba9f9137 908af1aebe61ff6f14127d7dcddac8abba9f9137]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c963a9715729915a3f95444b50a3be900fcd137f c963a9715729915a3f95444b50a3be900fcd137f]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=67f4a6d15f8091cdcebf9d67a9be89d770b6a81c 67f4a6d15f8091cdcebf9d67a9be89d770b6a81c]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=cf86483fcba6f68f10d762fe43cf09eb0550ddbd cf86483fcba6f68f10d762fe43cf09eb0550ddbd]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=574870b7b5b24a077b20b455fc1cc174a5740db5 574870b7b5b24a077b20b455fc1cc174a5740db5]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=6d59d076503293a2776d28354686808a619398f4 6d59d076503293a2776d28354686808a619398f4]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=755c34a30e47f635906bf68260428e321d9e4eae 755c34a30e47f635906bf68260428e321d9e4eae]
+** <git repo='xmms2-devel.git'>a6bbad78e47a9c30f913f807adb02b3c41c31969</git>
+** <git repo='xmms2-devel.git'>7b36043ae5ec46d1337779ff357a2eaaa008fc44</git>
+** <git repo='xmms2-devel.git'>908af1aebe61ff6f14127d7dcddac8abba9f9137</git>
+** <git repo='xmms2-devel.git'>c963a9715729915a3f95444b50a3be900fcd137f</git>
+** <git repo='xmms2-devel.git'>67f4a6d15f8091cdcebf9d67a9be89d770b6a81c</git>
+** <git repo='xmms2-devel.git'>cf86483fcba6f68f10d762fe43cf09eb0550ddbd</git>
+** <git repo='xmms2-devel.git'>574870b7b5b24a077b20b455fc1cc174a5740db5</git>
+** <git repo='xmms2-devel.git'>6d59d076503293a2776d28354686808a619398f4</git>
+** <git repo='xmms2-devel.git'>755c34a30e47f635906bf68260428e321d9e4eae</git>
 * <mantis>1378</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1998a18b307c2b4837e76341d05c8d51e8297dc6 1998a18b307c2b4837e76341d05c8d51e8297dc6]
+** <git repo='xmms2-devel.git'>1998a18b307c2b4837e76341d05c8d51e8297dc6</git>
 * <mantis>1316</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=af4a86e5b9a8c9860a3a75b1e88e42e744a09c8a af4a86e5b9a8c9860a3a75b1e88e42e744a09c8a]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e1051c5c8c4b92ef58a65f98450a57de5e3ba017 e1051c5c8c4b92ef58a65f98450a57de5e3ba017]
+** <git repo='xmms2-devel.git'>af4a86e5b9a8c9860a3a75b1e88e42e744a09c8a</git>
+** <git repo='xmms2-devel.git'>e1051c5c8c4b92ef58a65f98450a57de5e3ba017</git>
 * <mantis>1354</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=97ce6520d66d957aa26abad70880784b6818cfbf 97ce6520d66d957aa26abad70880784b6818cfbf]
+** <git repo='xmms2-devel.git'>97ce6520d66d957aa26abad70880784b6818cfbf</git>
 * <mantis>1280</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0a61681a08c78881f1b8d3d16bb160b5a42cceef 0a61681a08c78881f1b8d3d16bb160b5a42cceef]
+** <git repo='xmms2-devel.git'>0a61681a08c78881f1b8d3d16bb160b5a42cceef</git>
 * <mantis>1436</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=27067144caad301e3adc95dd1f51e1871e23f8f0 27067144caad301e3adc95dd1f51e1871e23f8f0]
+** <git repo='xmms2-devel.git'>27067144caad301e3adc95dd1f51e1871e23f8f0</git>
 * <mantis>1434</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e1bfa3a39439d6c1accdc4fdcda70984bac7e530 e1bfa3a39439d6c1accdc4fdcda70984bac7e530]
+** <git repo='xmms2-devel.git'>e1bfa3a39439d6c1accdc4fdcda70984bac7e530</git>
 * <mantis>1432</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4fc183601ea0e0a44e6a99fd70416e0aeab2d657 4fc183601ea0e0a44e6a99fd70416e0aeab2d657]
+** <git repo='xmms2-devel.git'>4fc183601ea0e0a44e6a99fd70416e0aeab2d657</git>
 * <mantis>1433</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=f1491b8ae7be7065ce258266d075676c219cb474 f1491b8ae7be7065ce258266d075676c219cb474]
+** <git repo='xmms2-devel.git'>f1491b8ae7be7065ce258266d075676c219cb474</git>
 * <mantis>1415</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=cc197db131a5df3152032a21d54a0ab9ab65c383 cc197db131a5df3152032a21d54a0ab9ab65c383]
+** <git repo='xmms2-devel.git'>cc197db131a5df3152032a21d54a0ab9ab65c383</git>
 * <mantis>1418</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=990e1bd7ea69465295e41e48a61456efe350424b 990e1bd7ea69465295e41e48a61456efe350424b]
+** <git repo='xmms2-devel.git'>990e1bd7ea69465295e41e48a61456efe350424b</git>
 * <mantis>1419</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9f80abcd7ed46fa39cff5eb017209bde68c27e96 9f80abcd7ed46fa39cff5eb017209bde68c27e96]
+** <git repo='xmms2-devel.git'>9f80abcd7ed46fa39cff5eb017209bde68c27e96</git>
 * <mantis>1380</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=da4fd6fabce5f2de1405b0f237025766a124da90 da4fd6fabce5f2de1405b0f237025766a124da90]
+** <git repo='xmms2-devel.git'>da4fd6fabce5f2de1405b0f237025766a124da90</git>
 * <mantis>1381</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9b6ae23d3ad0906ce288f8b3a702e83bf99e2352 9b6ae23d3ad0906ce288f8b3a702e83bf99e2352]
+** <git repo='xmms2-devel.git'>9b6ae23d3ad0906ce288f8b3a702e83bf99e2352</git>
 * <mantis>1416</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e22a4e769082a8cd703f01602649e36d7cc8ad2f e22a4e769082a8cd703f01602649e36d7cc8ad2f]
+** <git repo='xmms2-devel.git'>e22a4e769082a8cd703f01602649e36d7cc8ad2f</git>
 * <mantis>1417</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=59219c2dbcc3cfab578c0dc3b723f1f65b1a51b9 59219c2dbcc3cfab578c0dc3b723f1f65b1a51b9]
+** <git repo='xmms2-devel.git'>59219c2dbcc3cfab578c0dc3b723f1f65b1a51b9</git>
 '''Ben Slote'''
 * <mantis>1351</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9d0a73ef5cc374e5fbeec2242b2d2769d4803c49 9d0a73ef5cc374e5fbeec2242b2d2769d4803c49]
+** <git repo='xmms2-devel.git'>9d0a73ef5cc374e5fbeec2242b2d2769d4803c49</git>
 '''Bernard Pratz'''
 * <mantis>956</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=36d1e959f7342ef2231b029873a8ced6d213c303 36d1e959f7342ef2231b029873a8ced6d213c303]
+** <git repo='xmms2-devel.git'>36d1e959f7342ef2231b029873a8ced6d213c303</git>
 '''Daniel Chokola'''
 * <mantis>1403</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c0d89e05df1726c3e2d68db8c2ffe83f5f878813 c0d89e05df1726c3e2d68db8c2ffe83f5f878813]
+** <git repo='xmms2-devel.git'>c0d89e05df1726c3e2d68db8c2ffe83f5f878813</git>
 * <mantis>1371</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=429bfb70d8880a5784c9ff77e825c9dbc66e8d55 429bfb70d8880a5784c9ff77e825c9dbc66e8d55]
+** <git repo='xmms2-devel.git'>429bfb70d8880a5784c9ff77e825c9dbc66e8d55</git>
 * <mantis>1372</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=870c3d4696879a260e9d0313ee89dd321793797d 870c3d4696879a260e9d0313ee89dd321793797d]
+** <git repo='xmms2-devel.git'>870c3d4696879a260e9d0313ee89dd321793797d</git>
 * <mantis>1275</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=97521ad6fbbebc2d12b5f6593e3f120f1ede7361 97521ad6fbbebc2d12b5f6593e3f120f1ede7361]
+** <git repo='xmms2-devel.git'>97521ad6fbbebc2d12b5f6593e3f120f1ede7361</git>
 * <mantis>1370</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fbac3b118f8d42ef84c93eb73e801a68818da7ba fbac3b118f8d42ef84c93eb73e801a68818da7ba]
+** <git repo='xmms2-devel.git'>fbac3b118f8d42ef84c93eb73e801a68818da7ba</git>
 '''Daniel Svensson'''
 * <mantis>1306</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=2a0fcee96aad9258b3a798c39b213c159d075189 2a0fcee96aad9258b3a798c39b213c159d075189]
+** <git repo='xmms2-devel.git'>2a0fcee96aad9258b3a798c39b213c159d075189</git>
 * <mantis>1282</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=75922b2073450d5167cb6f7765b3579c2fc1058c 75922b2073450d5167cb6f7765b3579c2fc1058c]
+** <git repo='xmms2-devel.git'>75922b2073450d5167cb6f7765b3579c2fc1058c</git>
 * <mantis>1337</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0bd39a71494be8cfc624fc65575a7d7e8ee5013b 0bd39a71494be8cfc624fc65575a7d7e8ee5013b]
+** <git repo='xmms2-devel.git'>0bd39a71494be8cfc624fc65575a7d7e8ee5013b</git>
 * <mantis>1273</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1e315bc4078b58891c85412b75762c5ff8901731 1e315bc4078b58891c85412b75762c5ff8901731]
+** <git repo='xmms2-devel.git'>1e315bc4078b58891c85412b75762c5ff8901731</git>
 * <mantis>1289</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3c23fd26fac7f71c167bd9488f5a9e337b96b13f 3c23fd26fac7f71c167bd9488f5a9e337b96b13f]
+** <git repo='xmms2-devel.git'>3c23fd26fac7f71c167bd9488f5a9e337b96b13f</git>
 * <mantis>1288</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e9eea8a969199b422efb753a5823f07607453e6a e9eea8a969199b422efb753a5823f07607453e6a]
+** <git repo='xmms2-devel.git'>e9eea8a969199b422efb753a5823f07607453e6a</git>
 * <mantis>1332</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5299a5ca826506678c5cb9afda765def6165982b 5299a5ca826506678c5cb9afda765def6165982b]
+** <git repo='xmms2-devel.git'>5299a5ca826506678c5cb9afda765def6165982b</git>
 * <mantis>1376</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=291f7b84d578a1381c2bd522f56cb832db4d122e 291f7b84d578a1381c2bd522f56cb832db4d122e]
+** <git repo='xmms2-devel.git'>291f7b84d578a1381c2bd522f56cb832db4d122e</git>
 * <mantis>1178</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b0da158fdfa51ee337e9ab5534e65359c787b354 b0da158fdfa51ee337e9ab5534e65359c787b354]
+** <git repo='xmms2-devel.git'>b0da158fdfa51ee337e9ab5534e65359c787b354</git>
 '''David Anderson'''
 * <mantis>1179</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb 5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=bb4b4c7cbdc33831d3f6595ad5e4c0abe30aafa6 bb4b4c7cbdc33831d3f6595ad5e4c0abe30aafa6]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b985a5d0f99b487a3850a43eeaf355503a1a41b5 b985a5d0f99b487a3850a43eeaf355503a1a41b5]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d8e3e9fae9f1e5a92b7fbc9f835ffa256784ecc8 d8e3e9fae9f1e5a92b7fbc9f835ffa256784ecc8]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fad5220b3e5353dcb7dc22129865b17586d3f633 fad5220b3e5353dcb7dc22129865b17586d3f633]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9c503493a60d289025842ab12f631637940494b0 9c503493a60d289025842ab12f631637940494b0]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c0fe3aece8e36cef4a907fb016024e1c30c11592 c0fe3aece8e36cef4a907fb016024e1c30c11592]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=26f71e02c10131ebe82a06b27318e0c70e739daa 26f71e02c10131ebe82a06b27318e0c70e739daa]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=440e680a08b2d19035d95dbffb24b561b540114b 440e680a08b2d19035d95dbffb24b561b540114b]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=675d4f7bb79405b1de7ce4f7e90507dc9440b032 675d4f7bb79405b1de7ce4f7e90507dc9440b032]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=18146c2ac78601f5f4017fb61e0f4409d296b3ea 18146c2ac78601f5f4017fb61e0f4409d296b3ea]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=f07e0aeb6163653208abc722b3d6343935be830a f07e0aeb6163653208abc722b3d6343935be830a]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9c858c573f98b2afd7c6e745bce3ec39c988810c 9c858c573f98b2afd7c6e745bce3ec39c988810c]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=8655dc5b582860c0a84a3b28ce564f384b47b016 8655dc5b582860c0a84a3b28ce564f384b47b016]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=73ffaa266fb182ab070b39c468acbf960d655ffc 73ffaa266fb182ab070b39c468acbf960d655ffc]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b7c2cf061d44b5013b0c512a6eba230d4606370d b7c2cf061d44b5013b0c512a6eba230d4606370d]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=31502f5562353441315d36d8c35daf075f7944cb 31502f5562353441315d36d8c35daf075f7944cb]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7c40926f8b1e777a566d149cd89b6aa715b46f0e 7c40926f8b1e777a566d149cd89b6aa715b46f0e]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3e0f791896bce8ff6c6195eb869959d2e43771d1 3e0f791896bce8ff6c6195eb869959d2e43771d1]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c16face778f89bdebd6dc1119ebb9cc28490fbb8 c16face778f89bdebd6dc1119ebb9cc28490fbb8]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5ef6785f30aa05752e95e2792a3863c09c99c332 5ef6785f30aa05752e95e2792a3863c09c99c332]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=232313f8bbec254180966cd64e2fb8c00afdb2b5 232313f8bbec254180966cd64e2fb8c00afdb2b5]
+** <git repo='xmms2-devel.git'>5a1bd5e4d69aa83192c200d0aaf0e6ee871d2ebb</git>
+** <git repo='xmms2-devel.git'>bb4b4c7cbdc33831d3f6595ad5e4c0abe30aafa6</git>
+** <git repo='xmms2-devel.git'>b985a5d0f99b487a3850a43eeaf355503a1a41b5</git>
+** <git repo='xmms2-devel.git'>d8e3e9fae9f1e5a92b7fbc9f835ffa256784ecc8</git>
+** <git repo='xmms2-devel.git'>fad5220b3e5353dcb7dc22129865b17586d3f633</git>
+** <git repo='xmms2-devel.git'>9c503493a60d289025842ab12f631637940494b0</git>
+** <git repo='xmms2-devel.git'>c0fe3aece8e36cef4a907fb016024e1c30c11592</git>
+** <git repo='xmms2-devel.git'>26f71e02c10131ebe82a06b27318e0c70e739daa</git>
+** <git repo='xmms2-devel.git'>440e680a08b2d19035d95dbffb24b561b540114b</git>
+** <git repo='xmms2-devel.git'>675d4f7bb79405b1de7ce4f7e90507dc9440b032</git>
+** <git repo='xmms2-devel.git'>18146c2ac78601f5f4017fb61e0f4409d296b3ea</git>
+** <git repo='xmms2-devel.git'>f07e0aeb6163653208abc722b3d6343935be830a</git>
+** <git repo='xmms2-devel.git'>9c858c573f98b2afd7c6e745bce3ec39c988810c</git>
+** <git repo='xmms2-devel.git'>8655dc5b582860c0a84a3b28ce564f384b47b016</git>
+** <git repo='xmms2-devel.git'>73ffaa266fb182ab070b39c468acbf960d655ffc</git>
+** <git repo='xmms2-devel.git'>b7c2cf061d44b5013b0c512a6eba230d4606370d</git>
+** <git repo='xmms2-devel.git'>31502f5562353441315d36d8c35daf075f7944cb</git>
+** <git repo='xmms2-devel.git'>7c40926f8b1e777a566d149cd89b6aa715b46f0e</git>
+** <git repo='xmms2-devel.git'>3e0f791896bce8ff6c6195eb869959d2e43771d1</git>
+** <git repo='xmms2-devel.git'>c16face778f89bdebd6dc1119ebb9cc28490fbb8</git>
+** <git repo='xmms2-devel.git'>5ef6785f30aa05752e95e2792a3863c09c99c332</git>
+** <git repo='xmms2-devel.git'>232313f8bbec254180966cd64e2fb8c00afdb2b5</git>
 '''Erik Massop'''
 * <mantis>1291</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1690b181d7e263d4a36e31ccd8938beaf78e627b 1690b181d7e263d4a36e31ccd8938beaf78e627b]
+** <git repo='xmms2-devel.git'>1690b181d7e263d4a36e31ccd8938beaf78e627b</git>
 * <mantis>1313</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4cdea54500d6a3453255f5d11934c70e45285cb4 4cdea54500d6a3453255f5d11934c70e45285cb4]
+** <git repo='xmms2-devel.git'>4cdea54500d6a3453255f5d11934c70e45285cb4</git>
 * <mantis>1265</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=70cd2b4f966a5de027f76bbcb032fee929018360 70cd2b4f966a5de027f76bbcb032fee929018360]
+** <git repo='xmms2-devel.git'>70cd2b4f966a5de027f76bbcb032fee929018360</git>
 '''Florian Ragwitz'''
 * <mantis>1322</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=370a27fffb8ac9a7b352f65427679eabf4eb78de 370a27fffb8ac9a7b352f65427679eabf4eb78de]
+** <git repo='xmms2-devel.git'>370a27fffb8ac9a7b352f65427679eabf4eb78de</git>
 * <mantis>1349</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=520c59fe87c776add59e214f0a19e0f22294312a 520c59fe87c776add59e214f0a19e0f22294312a]
+** <git repo='xmms2-devel.git'>520c59fe87c776add59e214f0a19e0f22294312a</git>
 * <mantis>742</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e714a668227f066db1c28a8f500cbc790779194e e714a668227f066db1c28a8f500cbc790779194e]
+** <git repo='xmms2-devel.git'>e714a668227f066db1c28a8f500cbc790779194e</git>
 * <mantis>1327</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=80a375e57480ab826b4eb4c522a5219293da22a1 80a375e57480ab826b4eb4c522a5219293da22a1]
+** <git repo='xmms2-devel.git'>80a375e57480ab826b4eb4c522a5219293da22a1</git>
 * <mantis>1162</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9eba0179753eb6f2a6582a718a30ab7c42303df1 9eba0179753eb6f2a6582a718a30ab7c42303df1]
+** <git repo='xmms2-devel.git'>9eba0179753eb6f2a6582a718a30ab7c42303df1</git>
 * <mantis>1323</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1da7934cbc9178629ab5f137ae16e28bb7037500 1da7934cbc9178629ab5f137ae16e28bb7037500]
+** <git repo='xmms2-devel.git'>1da7934cbc9178629ab5f137ae16e28bb7037500</git>
 * <mantis>1340</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=db12b40917d1f7f111c429e6f9ca9e6a289f57f5 db12b40917d1f7f111c429e6f9ca9e6a289f57f5]
+** <git repo='xmms2-devel.git'>db12b40917d1f7f111c429e6f9ca9e6a289f57f5</git>
 * <mantis>666</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=09d80a1f35b060cf3ecf78bdc65bd9f4cc9e85e7 09d80a1f35b060cf3ecf78bdc65bd9f4cc9e85e7]
+** <git repo='xmms2-devel.git'>09d80a1f35b060cf3ecf78bdc65bd9f4cc9e85e7</git>
 * <mantis>1328</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7124babe27b241e549f4e0e8469c151fa0aff9a6 7124babe27b241e549f4e0e8469c151fa0aff9a6]
+** <git repo='xmms2-devel.git'>7124babe27b241e549f4e0e8469c151fa0aff9a6</git>
 * <mantis>1329</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=03254832f9930bede8fccff992ae4679d2603130 03254832f9930bede8fccff992ae4679d2603130]
+** <git repo='xmms2-devel.git'>03254832f9930bede8fccff992ae4679d2603130</git>
 * <mantis>1420</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0a29074b796f5c6500c9126a3be8b90a6b00a1ff 0a29074b796f5c6500c9126a3be8b90a6b00a1ff]
+** <git repo='xmms2-devel.git'>0a29074b796f5c6500c9126a3be8b90a6b00a1ff</git>
 * <mantis>1257</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=f6a71d326510b64924e91f680e7ac1f3b7fc36fe f6a71d326510b64924e91f680e7ac1f3b7fc36fe]
+** <git repo='xmms2-devel.git'>f6a71d326510b64924e91f680e7ac1f3b7fc36fe</git>
 * <mantis>1397</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4c0297459ae400bfe408a49a27bbab2325e01340 4c0297459ae400bfe408a49a27bbab2325e01340]
+** <git repo='xmms2-devel.git'>4c0297459ae400bfe408a49a27bbab2325e01340</git>
 * <mantis>1293</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ea85466617ad35f1bffbba72a3b6847007b5b373 ea85466617ad35f1bffbba72a3b6847007b5b373]
+** <git repo='xmms2-devel.git'>ea85466617ad35f1bffbba72a3b6847007b5b373</git>
 * <mantis>1031</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b7e54e8853a0ab759be4830a05a06aff8940e948 b7e54e8853a0ab759be4830a05a06aff8940e948]
+** <git repo='xmms2-devel.git'>b7e54e8853a0ab759be4830a05a06aff8940e948</git>
 * <mantis>1261</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b8491bf148590d8b8080a543851442d03e8d3dca b8491bf148590d8b8080a543851442d03e8d3dca]
+** <git repo='xmms2-devel.git'>b8491bf148590d8b8080a543851442d03e8d3dca</git>
 * <mantis>1390</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=8c6671f9574d157178a1ee0e1fa62d7bd29ffdfb 8c6671f9574d157178a1ee0e1fa62d7bd29ffdfb]
+** <git repo='xmms2-devel.git'>8c6671f9574d157178a1ee0e1fa62d7bd29ffdfb</git>
 * <mantis>1353</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ae08363afe591363f2f86e341d8fdc808cf3423e ae08363afe591363f2f86e341d8fdc808cf3423e]
+** <git repo='xmms2-devel.git'>ae08363afe591363f2f86e341d8fdc808cf3423e</git>
 * <mantis>1272</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=40e4ad9a158deba913c47c4ebef2b5c02191b288 40e4ad9a158deba913c47c4ebef2b5c02191b288]
+** <git repo='xmms2-devel.git'>40e4ad9a158deba913c47c4ebef2b5c02191b288</git>
 * <mantis>1331</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e1188a4d5b9808d82ffc4435e11401d78e2bd6c3 e1188a4d5b9808d82ffc4435e11401d78e2bd6c3]
+** <git repo='xmms2-devel.git'>e1188a4d5b9808d82ffc4435e11401d78e2bd6c3</git>
 * <mantis>1356</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=a125aa17b0074736ae4cd48e9f9dbd9411813240 a125aa17b0074736ae4cd48e9f9dbd9411813240]
+** <git repo='xmms2-devel.git'>a125aa17b0074736ae4cd48e9f9dbd9411813240</git>
 * <mantis>1333</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=cc20a7d2c8690998b56ec1d524def133e402c972 cc20a7d2c8690998b56ec1d524def133e402c972]
+** <git repo='xmms2-devel.git'>cc20a7d2c8690998b56ec1d524def133e402c972</git>
 * <mantis>1396</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=335b2daa3df5ee57841f56ae4c5856bb35d41c67 335b2daa3df5ee57841f56ae4c5856bb35d41c67]
+** <git repo='xmms2-devel.git'>335b2daa3df5ee57841f56ae4c5856bb35d41c67</git>
 * <mantis>1367</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=69ff4aa64e115f8cad77ed8f59a94a487f1a0a71 69ff4aa64e115f8cad77ed8f59a94a487f1a0a71]
+** <git repo='xmms2-devel.git'>69ff4aa64e115f8cad77ed8f59a94a487f1a0a71</git>
 * <mantis>1362</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=fabfc023fe01ac1931a53dae2e23bd00c97d3146 fabfc023fe01ac1931a53dae2e23bd00c97d3146]
+** <git repo='xmms2-devel.git'>fabfc023fe01ac1931a53dae2e23bd00c97d3146</git>
 * <mantis>1410</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3a959a317f139eca9798fc03f46e1a8ea49525a7 3a959a317f139eca9798fc03f46e1a8ea49525a7]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9a1faaa821f1f3dc4c975bb841b731f27fa049ee 9a1faaa821f1f3dc4c975bb841b731f27fa049ee]
+** <git repo='xmms2-devel.git'>3a959a317f139eca9798fc03f46e1a8ea49525a7</git>
+** <git repo='xmms2-devel.git'>9a1faaa821f1f3dc4c975bb841b731f27fa049ee</git>
 '''Jonne Lehtinen'''
 * <mantis>1317</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ed06755051c697fe2d2509ff77ce62eda47eb3bd ed06755051c697fe2d2509ff77ce62eda47eb3bd]
+** <git repo='xmms2-devel.git'>ed06755051c697fe2d2509ff77ce62eda47eb3bd</git>
 * <mantis>845</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ea5ff54a0614c043d31de35a225bbda27d23bbaa ea5ff54a0614c043d31de35a225bbda27d23bbaa]
+** <git repo='xmms2-devel.git'>ea5ff54a0614c043d31de35a225bbda27d23bbaa</git>
 * <mantis>1313</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0bfad7311f5a9ae31e4749fd4f3a319b66b0b48b 0bfad7311f5a9ae31e4749fd4f3a319b66b0b48b]
+** <git repo='xmms2-devel.git'>0bfad7311f5a9ae31e4749fd4f3a319b66b0b48b</git>
 * <mantis>1344</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5bc66646cc4a6d6c4d2a5332c0a62d8cc5bd8a14 5bc66646cc4a6d6c4d2a5332c0a62d8cc5bd8a14]
+** <git repo='xmms2-devel.git'>5bc66646cc4a6d6c4d2a5332c0a62d8cc5bd8a14</git>
 * <mantis>1126</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9c5e8d884e03322619886596090a7dcb36e38373 9c5e8d884e03322619886596090a7dcb36e38373]
+** <git repo='xmms2-devel.git'>9c5e8d884e03322619886596090a7dcb36e38373</git>
 * <mantis>1318</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0a3210a4d9e0e0e61035adc56686fa13f39156e4 0a3210a4d9e0e0e61035adc56686fa13f39156e4]
+** <git repo='xmms2-devel.git'>0a3210a4d9e0e0e61035adc56686fa13f39156e4</git>
 * <mantis>1364</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=938373d38c3cb72be211eda8ddeb7ccda3e4ca5d 938373d38c3cb72be211eda8ddeb7ccda3e4ca5d]
+** <git repo='xmms2-devel.git'>938373d38c3cb72be211eda8ddeb7ccda3e4ca5d</git>
 * <mantis>1388</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3759179eaceeeef93fba4d0cfb8436c0bde1f09d 3759179eaceeeef93fba4d0cfb8436c0bde1f09d]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=dbdde605b46466a6272c8d6be9686144dbda1bc5 dbdde605b46466a6272c8d6be9686144dbda1bc5]
+** <git repo='xmms2-devel.git'>3759179eaceeeef93fba4d0cfb8436c0bde1f09d</git>
+** <git repo='xmms2-devel.git'>dbdde605b46466a6272c8d6be9686144dbda1bc5</git>
 * <mantis>1401</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=6939ec6ad2abc234cc39a4eac494d1cd774df797 6939ec6ad2abc234cc39a4eac494d1cd774df797]
+** <git repo='xmms2-devel.git'>6939ec6ad2abc234cc39a4eac494d1cd774df797</git>
 * <mantis>1277</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=9dd4ca103ac43179a327218852895d9a70b8a66c 9dd4ca103ac43179a327218852895d9a70b8a66c]
+** <git repo='xmms2-devel.git'>9dd4ca103ac43179a327218852895d9a70b8a66c</git>
 * <mantis>1290</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=51795229daafb895be3b5bc9856b4b30d603f0a0 51795229daafb895be3b5bc9856b4b30d603f0a0]
+** <git repo='xmms2-devel.git'>51795229daafb895be3b5bc9856b4b30d603f0a0</git>
 * <mantis>1391</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=6f27c78028378fce85e464a124e38dcd8fc4c0e1 6f27c78028378fce85e464a124e38dcd8fc4c0e1]
+** <git repo='xmms2-devel.git'>6f27c78028378fce85e464a124e38dcd8fc4c0e1</git>
 '''Juho VÃ¤hÃ¤-Herttua'''
 * <mantis>1421</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=47a5a25f4e5bc05df02681dd4084d90009b6cf33 47a5a25f4e5bc05df02681dd4084d90009b6cf33]
+** <git repo='xmms2-devel.git'>47a5a25f4e5bc05df02681dd4084d90009b6cf33</git>
 * <mantis>1279</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=807cada51769a0c36fb9f0f39b65432ff55825b5 807cada51769a0c36fb9f0f39b65432ff55825b5]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3f722b3bbb3eb911de5d2cb2508f8c3766d2ec26 3f722b3bbb3eb911de5d2cb2508f8c3766d2ec26]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=894ae40986969013334c68a8b281d64f9b660e9a 894ae40986969013334c68a8b281d64f9b660e9a]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3f25dc748fbcc42da37e732f463e12fbd3493026 3f25dc748fbcc42da37e732f463e12fbd3493026]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d20fa0532780a50aedfb901a563d766ec77de6a0 d20fa0532780a50aedfb901a563d766ec77de6a0]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e55369bb37dd25283368fb9ebffdc83d20a5d81c e55369bb37dd25283368fb9ebffdc83d20a5d81c]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=553e757074374509cb4cd2fd29f950c49ab5b5cc 553e757074374509cb4cd2fd29f950c49ab5b5cc]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4978bf91b3e684a27a143a619acc375d1139d68d 4978bf91b3e684a27a143a619acc375d1139d68d]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d2ef5a915870208166ccd0c30d6fde9b6c5ff22e d2ef5a915870208166ccd0c30d6fde9b6c5ff22e]
+** <git repo='xmms2-devel.git'>807cada51769a0c36fb9f0f39b65432ff55825b5</git>
+** <git repo='xmms2-devel.git'>3f722b3bbb3eb911de5d2cb2508f8c3766d2ec26</git>
+** <git repo='xmms2-devel.git'>894ae40986969013334c68a8b281d64f9b660e9a</git>
+** <git repo='xmms2-devel.git'>3f25dc748fbcc42da37e732f463e12fbd3493026</git>
+** <git repo='xmms2-devel.git'>d20fa0532780a50aedfb901a563d766ec77de6a0</git>
+** <git repo='xmms2-devel.git'>e55369bb37dd25283368fb9ebffdc83d20a5d81c</git>
+** <git repo='xmms2-devel.git'>553e757074374509cb4cd2fd29f950c49ab5b5cc</git>
+** <git repo='xmms2-devel.git'>4978bf91b3e684a27a143a619acc375d1139d68d</git>
+** <git repo='xmms2-devel.git'>d2ef5a915870208166ccd0c30d6fde9b6c5ff22e</git>
 * <mantis>1287</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=98dab8e328299ddf63351061f2b73f6606378531 98dab8e328299ddf63351061f2b73f6606378531]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5206c949c988e9c0a1b7bc3459bd1bd52a3b7d02 5206c949c988e9c0a1b7bc3459bd1bd52a3b7d02]
+** <git repo='xmms2-devel.git'>98dab8e328299ddf63351061f2b73f6606378531</git>
+** <git repo='xmms2-devel.git'>5206c949c988e9c0a1b7bc3459bd1bd52a3b7d02</git>
 * <mantis>1281</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=e54e878fdbebab163d9e5bbf69d6ca0b91ad77d7 e54e878fdbebab163d9e5bbf69d6ca0b91ad77d7]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4ab3c8a10493e3322ac73a7aee4aabb9d10b9b8a 4ab3c8a10493e3322ac73a7aee4aabb9d10b9b8a]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=1da841971029d041f965e0e0fd42f89a90d8c5e4 1da841971029d041f965e0e0fd42f89a90d8c5e4]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7cbd659de1c744001ff289d9d5b11dc8bf46060e 7cbd659de1c744001ff289d9d5b11dc8bf46060e]
+** <git repo='xmms2-devel.git'>e54e878fdbebab163d9e5bbf69d6ca0b91ad77d7</git>
+** <git repo='xmms2-devel.git'>4ab3c8a10493e3322ac73a7aee4aabb9d10b9b8a</git>
+** <git repo='xmms2-devel.git'>1da841971029d041f965e0e0fd42f89a90d8c5e4</git>
+** <git repo='xmms2-devel.git'>7cbd659de1c744001ff289d9d5b11dc8bf46060e</git>
 * <mantis>1429</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=24e6b0e37d1e1bdced96ade14d47d0f8c93dc07c 24e6b0e37d1e1bdced96ade14d47d0f8c93dc07c]
+** <git repo='xmms2-devel.git'>24e6b0e37d1e1bdced96ade14d47d0f8c93dc07c</git>
 * <mantis>908</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=079ae2a307a5ddc422040566b9983e0f5ca8bc0f 079ae2a307a5ddc422040566b9983e0f5ca8bc0f]
+** <git repo='xmms2-devel.git'>079ae2a307a5ddc422040566b9983e0f5ca8bc0f</git>
 * <mantis>1357</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=528ba767f3c2b5df7e5503f197bc18910ddb86bc 528ba767f3c2b5df7e5503f197bc18910ddb86bc]
+** <git repo='xmms2-devel.git'>528ba767f3c2b5df7e5503f197bc18910ddb86bc</git>
 * <mantis>1377</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=882f05026f4c0d9b2603c1ff03a42096d2fa08a5 882f05026f4c0d9b2603c1ff03a42096d2fa08a5]
+** <git repo='xmms2-devel.git'>882f05026f4c0d9b2603c1ff03a42096d2fa08a5</git>
 * <mantis>1411</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=339f568b4a91b0e5e3e07735e8cbc32e4acb4f1c 339f568b4a91b0e5e3e07735e8cbc32e4acb4f1c]
+** <git repo='xmms2-devel.git'>339f568b4a91b0e5e3e07735e8cbc32e4acb4f1c</git>
 '''Karsten Krispin'''
 * <mantis></mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=8c4bc67cb0763557aa9dc5c168f185500ed904b4 8c4bc67cb0763557aa9dc5c168f185500ed904b4]
+** <git repo='xmms2-devel.git'>8c4bc67cb0763557aa9dc5c168f185500ed904b4</git>
 '''Sebastien Cevey'''
 * <mantis>1365</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=4f7bf65539be7e8a1795fe8e858a17e80109aac6 4f7bf65539be7e8a1795fe8e858a17e80109aac6]
+** <git repo='xmms2-devel.git'>4f7bf65539be7e8a1795fe8e858a17e80109aac6</git>
 * <mantis>1339</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=b0e0c329a3d0a196f3d992f79cab963970a60431 b0e0c329a3d0a196f3d992f79cab963970a60431]
+** <git repo='xmms2-devel.git'>b0e0c329a3d0a196f3d992f79cab963970a60431</git>
 * <mantis>1023</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ab95ff31b2340225f9c44b96444f553b51ca6eba ab95ff31b2340225f9c44b96444f553b51ca6eba]
+** <git repo='xmms2-devel.git'>ab95ff31b2340225f9c44b96444f553b51ca6eba</git>
 * <mantis>1265</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d974fd8d618d306d2b29c2340168b793d0915ec8 d974fd8d618d306d2b29c2340168b793d0915ec8]
+** <git repo='xmms2-devel.git'>d974fd8d618d306d2b29c2340168b793d0915ec8</git>
 * <mantis>783</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c3c36f55d47eddc7f824a211123ff147a4a7ee3f c3c36f55d47eddc7f824a211123ff147a4a7ee3f]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d20448c0efaa8b8c91728e22c83fe0c356c722a5 d20448c0efaa8b8c91728e22c83fe0c356c722a5]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=ff8069d136ad6b3517a77d7fadfdc196fb1cc9f2 ff8069d136ad6b3517a77d7fadfdc196fb1cc9f2]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7b77c1327c6d5555d65ec433f0f9a3c4a9a634a6 7b77c1327c6d5555d65ec433f0f9a3c4a9a634a6]
+** <git repo='xmms2-devel.git'>c3c36f55d47eddc7f824a211123ff147a4a7ee3f</git>
+** <git repo='xmms2-devel.git'>d20448c0efaa8b8c91728e22c83fe0c356c722a5</git>
+** <git repo='xmms2-devel.git'>ff8069d136ad6b3517a77d7fadfdc196fb1cc9f2</git>
+** <git repo='xmms2-devel.git'>7b77c1327c6d5555d65ec433f0f9a3c4a9a634a6</git>
 '''Tilman Sauerbeck'''
 * <mantis>1335</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=7e45685b45bc811c203bfa7d7dff48f516006141 7e45685b45bc811c203bfa7d7dff48f516006141]
+** <git repo='xmms2-devel.git'>7e45685b45bc811c203bfa7d7dff48f516006141</git>
 * <mantis>1334</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5536a5b1a705834cd25eafa52796d7d7959518e0 5536a5b1a705834cd25eafa52796d7d7959518e0]
+** <git repo='xmms2-devel.git'>5536a5b1a705834cd25eafa52796d7d7959518e0</git>
 * <mantis>1359</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=2a79755702f5ec53149e56953d16a5fbc333ba04 2a79755702f5ec53149e56953d16a5fbc333ba04]
+** <git repo='xmms2-devel.git'>2a79755702f5ec53149e56953d16a5fbc333ba04</git>
 * <mantis>1283</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=3abba70631d120fb6cf4bd2a99d363c3939b7624 3abba70631d120fb6cf4bd2a99d363c3939b7624]
+** <git repo='xmms2-devel.git'>3abba70631d120fb6cf4bd2a99d363c3939b7624</git>
 '''Tobias Rundstrom'''
 * <mantis>1304</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c47f6fe1d8ee092a943646d1bf8b2cd1da15da9d c47f6fe1d8ee092a943646d1bf8b2cd1da15da9d]
+** <git repo='xmms2-devel.git'>c47f6fe1d8ee092a943646d1bf8b2cd1da15da9d</git>
 * <mantis>1305</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=6a6826eb75e048f0f0c598735003b9658f9e375c 6a6826eb75e048f0f0c598735003b9658f9e375c]
+** <git repo='xmms2-devel.git'>6a6826eb75e048f0f0c598735003b9658f9e375c</git>
 * <mantis>1424</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=02662124237ba4270e4fd2cff28d9139620f835f 02662124237ba4270e4fd2cff28d9139620f835f]
+** <git repo='xmms2-devel.git'>02662124237ba4270e4fd2cff28d9139620f835f</git>
 * <mantis>1427</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=5ce3ea8280d01c0b45a212e8c839793ccc9b95fa 5ce3ea8280d01c0b45a212e8c839793ccc9b95fa]
+** <git repo='xmms2-devel.git'>5ce3ea8280d01c0b45a212e8c839793ccc9b95fa</git>
 * <mantis>1325</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0e1a4b7204fc9d13186360c1c1a544731e9cd347 0e1a4b7204fc9d13186360c1c1a544731e9cd347]
+** <git repo='xmms2-devel.git'>0e1a4b7204fc9d13186360c1c1a544731e9cd347</git>
 * <mantis>210</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=0b27a7255736980deececea456c6e4681e64c603 0b27a7255736980deececea456c6e4681e64c603]
+** <git repo='xmms2-devel.git'>0b27a7255736980deececea456c6e4681e64c603</git>
 * <mantis>1303</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=8ec3f0dfaf3754a06376f4acb78a53556b37e856 8ec3f0dfaf3754a06376f4acb78a53556b37e856]
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=28b28f5792b193ffb30eabbf55b34620fe618adc 28b28f5792b193ffb30eabbf55b34620fe618adc]
+** <git repo='xmms2-devel.git'>8ec3f0dfaf3754a06376f4acb78a53556b37e856</git>
+** <git repo='xmms2-devel.git'>28b28f5792b193ffb30eabbf55b34620fe618adc</git>
 * <mantis>1319</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c80515707ced9aa592192ac421fac3353a1e23a6 c80515707ced9aa592192ac421fac3353a1e23a6]
+** <git repo='xmms2-devel.git'>c80515707ced9aa592192ac421fac3353a1e23a6</git>
 * <mantis>1107</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=c9ca14a4a2fbad32a60d04a3434daee647f14930 c9ca14a4a2fbad32a60d04a3434daee647f14930]
+** <git repo='xmms2-devel.git'>c9ca14a4a2fbad32a60d04a3434daee647f14930</git>
 * <mantis>1412</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=d52bb18dfe7d16b8c9ba56da5a1770de6629455a d52bb18dfe7d16b8c9ba56da5a1770de6629455a]
+** <git repo='xmms2-devel.git'>d52bb18dfe7d16b8c9ba56da5a1770de6629455a</git>
 * <mantis>1394</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=6a36650cb0cffe5c724a54e0ddc15a01ad4d2359 6a36650cb0cffe5c724a54e0ddc15a01ad4d2359]
+** <git repo='xmms2-devel.git'>6a36650cb0cffe5c724a54e0ddc15a01ad4d2359</git>
 '''Todd Bayley'''
 * <mantis>1408</mantis>
-** [http://git.xmms.se//?p=xmms2-devel.git;a=commit;h=67772785603531ef2bf7befbbb695a0e7ac81cd1 67772785603531ef2bf7befbbb695a0e7ac81cd1]
+** <git repo='xmms2-devel.git'>67772785603531ef2bf7befbbb695a0e7ac81cd1</git>
+
 
 
 [[Category:Releases]]
