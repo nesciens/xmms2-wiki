@@ -22,12 +22,13 @@ So you want to get on the XMMS2 love-boat? Just fill the following in and send i
 ** What do you expect to gain from this project?
 ** What would make you stay in the xmms2-community after the conclusion of SOC?
 * '''Practically'''
-** What tools do you usually use to develop code? / Are you familiar with any of the following tools?
+** Are you familiar with any of the following tools?
 *** Git
 *** waf
+** Which tools do you normally use for development? Why do you use them?
 ** What programming languages are you fluent in?
 ** What spoken languages are you fluent in?
-** What timezone do you live in? (When are you usually awake?)
+** At what hours are you awake (please specify in UTC)
 ** Would you mind talking with your mentor on telephone / internet phone?
 * '''Detailed answer''' (optional, but well developed answers highly regarded).
 ** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
