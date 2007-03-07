@@ -17,7 +17,7 @@ The plan is two competitions, one for Logo, when it's done we start the second c
 * Submission format should be a compressed archive (zip, tar.bz2 and tar.gz accepted) containing:
 ** Main logo in SVG format
 ** Proof-of-concept 16x16 pixeled logo in PNG format
-** Filenames should indicate competitor (email) and date, i.e: tru_xmms_org_big_070403.svg, tru_xmms_org_small_070403.svg
+** Filenames should indicate competitor (email) and date, i.e: tru_xmms_org_big_070403.svg, tru_xmms_org_small_070403.png
 * Logo should be submitted via contest@xmms.se
 * The logo will be processed by competition team and added to http://xmms2contest.blogspot.com/ for everyone to see
 * The competitor will receive comments on his work and can adjust the logo and submit it again.
