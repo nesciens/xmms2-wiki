@@ -15,14 +15,15 @@ The plan is two competitions, one for Logo, when it's done we start the second c
 
 === Submission ===
 * Submission format should be a compressed archive (zip, tar.bz2 and tar.gz accepted) containing:
-** All logo files in SVG format
+** Main logo in SVG format
+** Proof-of-concept 16x16 pixeled logo in PNG format
 ** Filenames should indicate competitor (email) and date, i.e: tru_xmms_org_big_070403.svg, tru_xmms_org_small_070403.svg
 * Logo should be submitted via contest@xmms.se
 * The logo will be processed by competition team and added to http://xmms2contest.blogspot.com/ for everyone to see
 * The competitor will receive comments on his work and can adjust the logo and submit it again.
 ** You can resubmit your logo infinitive number of times during the submission period, but don't flood the competition, that will weaken your position.
 ** Think about the filename naming when resubmitting
-* Submissions are accepted until 1 April 2007 12:00 UTC
+* Submissions are accepted until (one month after we announce it)
 
 === Jury ===
 * Everyone that has contributed to XMMS2 has one (1) vote and Anders + Tobias has veto (very unlikely to be used).
