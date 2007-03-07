@@ -16,3 +16,7 @@
 ::* Anything involving Python or Objective C (Work on bindings or client development mostly)
 ::* Service clients (and in general lower-level services like lyrics, album art, tagging, etc)
 ::* Insanity development
+
+==Tilman Sauerbeck==
+:Mentors projects in these areas:
+::* Ruby stuff
