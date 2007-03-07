@@ -27,7 +27,7 @@ This is mostly a place holder, and details needs to be filled in.
 === Full ChangeLog ===
 '''Alexander Botero-Lowry'''
 * <mantis>956</mantis>
-** <git repo='xmms2-devel.git'>c4fa3ca5710940eee97d60a239babe6d388371af</git>
+** <git norepo=0 repo='xmms2-devel.git'>c4fa3ca5710940eee97d60a239babe6d388371af</git>
 '''Anders Gustafsson'''
 * <mantis>1321</mantis>
 ** <git repo='xmms2-devel.git'>7aa700c5c6db517525d296d27923136a81451bcf</git>
