@@ -40,7 +40,7 @@ This is mostly a place holder, and details needs to be filled in.
 ** <git norepo=1 repo='xmms2-devel.git'>5154437b7d82318fcc06954cbd2dc69076cabf8a</git>
 * <mantis>1423</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>02d0b37ec6ccb771de0f3884e11195ef4003e41f</git>
-* <mantis>1422</mantis>
+* <mantis>1422</man
 ** <git norepo=1 repo='xmms2-devel.git'>ca813027b96a1617238de244e426ff3d09ba867a</git>
 * <mantis>320</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>a6bbad78e47a9c30f913f807adb02b3c41c31969</git>
@@ -262,7 +262,7 @@ This is mostly a place holder, and details needs to be filled in.
 * <mantis>1411</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>339f568b4a91b0e5e3e07735e8cbc32e4acb4f1c</git>
 '''Karsten Krispin'''
-* <mantis></mantis>
+* <mantis>1379</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>8c4bc67cb0763557aa9dc5c168f185500ed904b4</git>
 '''Sebastien Cevey'''
 * <mantis>1365</mantis>
