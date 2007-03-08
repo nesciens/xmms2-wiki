@@ -7,6 +7,15 @@ We need a graphic profile and logo for XMMS2. We have gone far enough without on
 
 The plan is two competitions, one for Logo, when it's done we start the second competition, for wiki design.
 
+== "Press-release" ==
+Internet 2007-03-XX, XMMS2 Team.
+
+XMMS2 Team officially announces it's graphic competition today. The competition goal is for the popular media player to gain a new look and to increase awareness of the project. The competition will be split up in two parts the first one will be for a new logotype. The second one, which will be launched after the conclusion of the first, will aim for a new look at the wiki with reusable elements for client authors to use.
+
+First prize in both competitions is a Amazon.com gift certificate valid for $380. The prize money for this contest come from last years Google Summer of Code program. The competition will start as of today and last date of submission will be 2007-04-XX.
+
+To compete and get more information please visit http://xmms2contest.blogspot.com/
+
 == Logo Rules ==
 
 === Format ===
