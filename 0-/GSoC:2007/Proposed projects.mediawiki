@@ -33,4 +33,4 @@ Also check leftovers from [[Summer of Code 2006/Proposed projects]]. And the lon
 
 {{SoCItem| title=Website reorganization/redesign| description=Our website sucks.| lang=python/php/html/js/css/magic| level=Easy| mentor=Alexander Botero-Lowry}}
 
-{{SoCItem| title=Fullscreen client| description=XMMS2 Mediacenter edition! Client designed to run on a TV| lang=c/python/c++/ruby/perl| level=Easy to medium| mentor=Alexander Botero-Lowry}}
+{{SoCItem| title=Fullscreen client| description=XMMS2 Mediacenter edition! Client designed to run on a TV (also see: http://wiki.neurostechnology.com/index.php/Summer_of_Code#XMMS2_Frontend )| lang=c/python/c++/ruby/perl| level=Easy to medium| mentor=Alexander Botero-Lowry}}
