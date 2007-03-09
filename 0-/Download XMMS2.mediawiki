@@ -32,6 +32,9 @@ These packages are slightly outdated - it's recommended to use the official pack
  deb http://exodus.xmms.se/debian etch main
 
 === Ubuntu ===
+
+'''These packages are not updated, you probably don't want to use them'''
+
 ==== Breezy Badger ====
 The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have yet to be tested thoroughly.
 Add the following line to your ''/etc/apt/sources.list'' (same line as debian above):
