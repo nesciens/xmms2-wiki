@@ -5,10 +5,16 @@ This is mostly a place holder, and details needs to be filled in.
 
 === Noteworthy changes ===
 * waf
+* XForms can now pass information along in the chain, which allows for separation of demuxer and decoder
 * syntax for xmms2 mlib search(add) changed
 * reading playlists files works again! (not writing!)
 
 ==== Feature additions ====
+* Collections
+* Various new playlist plugins including: ASX, RSS, XSPF, CUE
+* Various new decoder plugins including: ALAC, DTS, CDDA
+* Neuros OSD output plugin
+* Perl Bindings
 
 ==== Bug fixes ====
 
