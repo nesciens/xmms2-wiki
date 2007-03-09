@@ -1,6 +1,7 @@
 This is a list of things that should be done or checked before, and when doing a release.
 
 == Pre-release ==
+* Prepare a bottle of wine. To be opened AFTER the release is done :)
 * Create release page titled Release:<releasename>
 ** Categorise under [[:Category:Releases]] (<nowiki>[[Category:Releases]]</nowiki>)
 * Make sure API-versions are increased if needed.
