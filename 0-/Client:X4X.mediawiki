@@ -1,7 +1,7 @@
 {{Client |name=X4X| author=[[dangertools|Georg Schild]]| website=http://x4x.sourceforge.net| version=[http://sourceforge.net/project/showfiles.php?group_id=152896 0.3_rc3]| devlanguage=[http://java.sun.com java]| ui=[http://crosswidgets.sourceforge.net XWidgets]| screenshots=[http://sourceforge.net/dbimage.php?id=109894 1 (SWT)] - [http://sourceforge.net/dbimage.php?id=109890 2 (Qt Jambi)] - [http://sourceforge.net/dbimage.php?id=109892 3 (Swing)] |description=X4X is an almost complete client written in java using [http://crosswidgets.sourceforge.net XWidgets] as UI. Atm we use almost all playback/playlist/medialib -functions from xmms2, since 0.2 a first set of [http://x4x.sourceforge.net/wiki/index.php/X4X_Plugins plugins] as well as random playback is also supported.
 X4X can integrate itself into kde (qt), gtk (swt), native (qt and swt) and not native (swing) environments using XWidgets.
 
-Check out http://x4x.sourceforge.net for latest info's and visit us in #x4x on [irc://irc.freenode.net].
+Check out http://x4x.sourceforge.net for latest info's and visit us in [irc://chat.freenode.net/x4x #x4x].
 
 Ebuilds are available at [http://x4x.sourceforge.net/wiki/index.php/Ebuilds] (only for <0.3).
 
