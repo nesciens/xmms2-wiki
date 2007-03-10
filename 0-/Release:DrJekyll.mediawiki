@@ -1,13 +1,19 @@
 == Release Notes ==
-This is mostly a place holder, and details needs to be filled in.
+Internet, 070310. XMMS2 Team announces first pre-testing of DrJekyll. Please download and test.
 
 === Upgrading ===
 
+Upgrading should be smooth when it comes to the Media Library. But since the API for the Media Library changed dramatically with the introductions of Collections so expect clients to be broken until they have updated their code to the new API.
+
 === Noteworthy changes ===
-* waf
-* XForms can now pass information along in the chain, which allows for separation of demuxer and decoder
-* syntax for xmms2 mlib search(add) changed
-* reading playlists files works again! (not writing!)
+
+DrJekyll includes lot of big changes. The first you will notice when installing it is that we have switched build-system from SCons to WAF. There are new procedures to install, don't worry they are easy.
+
+Secondly we monster-merged Collections which is our new concept for query and manipulate the Media Library. This affects some user visible things like xmms2 mlib functions but mostly it affects the developers.
+
+Playlist plugins (pls, m3u and so on) has been activated again. You can now do xmms2 addpls <playlist> to add it to your current playlist. Note that writing playlists can't be done, and it's not sure when (or even if) this feature will be re-added.
+
+XForms now have a API to pass data between each other (more than just the music data), this have made it possible to separate demuxer from decoder.
 
 ==== Feature additions ====
 * Collections
@@ -18,8 +24,11 @@ This is mostly a place holder, and details needs to be filled in.
 
 ==== Bug fixes ====
 
+So many that it probably doesn't matter.
+
 === New platforms ===
 
+No new platform support are included in this release.
 
 === Notes to client authors ===
 * Playlist functions take an extra argument
