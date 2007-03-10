@@ -3,7 +3,7 @@ Internet, 070310. XMMS2 Team announces first pre-testing of DrJekyll. Please dow
 
 === Upgrading ===
 
-Upgrading should be smooth when it comes to the Media Library. But since the API for the Media Library changed dramatically with the introductions of Collections expect clients to be broken until they have updated their code to the new API.
+Upgrading should be smooth when it comes to the Media Library. But since the API for the Media Library changed dramatically with the introductions of Collections, expect clients to be broken until they have updated their code to the new API.
 
 === Noteworthy changes ===
 
