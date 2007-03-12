@@ -8,7 +8,7 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 # Name the logotype '''your_email-logoname-date.svg''' and '''your_email-logoname-date.png'''
 # Submit the logo to '''contest@xmms.se''' as a '''ZIP or TAR.GZ''' file.
 ## The logos has to be submitted in '''SVG format and PNG'''.
-# We will put your logos on our [http://xmms2contest.blogspot.com/ blog] and let everyone comment on it.
+# We will put your logos on our [http://xmms2-contest.blogspot.com/ blog] and let everyone comment on it.
 # You can re-submit the logo after you got feedback from the blog. '''Re-submission is allowed as many times as you like.'''
 # After the '''13th of April 2007 00:00 UTC''' we will not accept more submissions.
 # Shortly after everyone who has contributed to XMMS2 can rank the logotypes, the one with most points will be selected.
