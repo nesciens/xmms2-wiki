@@ -28,7 +28,7 @@ To compete or get more information please visit http://xmms2-contest.blogspot.co
 ** Proof-of-concept 16x16 pixeled logo in PNG format
 ** Filenames should indicate competitor (email) and date, i.e: tru_xmms_org_big_070403.svg, tru_xmms_org_small_070403.png
 * Logo should be submitted via contest@xmms.se
-* The logo will be processed by competition team and added to http://xmms2contest.blogspot.com/ for everyone to see
+* The logo will be processed by competition team and added to http://xmms2-contest.blogspot.com/ for everyone to see
 * The competitor will receive comments on his work and can adjust the logo and submit it again.
 ** You can resubmit your logo infinitive number of times during the submission period, but don't flood the competition, that will weaken your position.
 ** Think about the filename naming when resubmitting
