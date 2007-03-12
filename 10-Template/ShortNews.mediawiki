@@ -1,4 +1,4 @@
-<feed items=5 showdate="d F Y H:i (T)" showtitle=false newsformat=true>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
+<feed items=5 showdate="d F Y H:i (T)" showtitle=false newsformat=true>http://xmms2-news.blogspot.com/feeds/posts/default?alt=rss</feed>
 
 
 [http://xmms2-news.blogspot.com/ More news]
