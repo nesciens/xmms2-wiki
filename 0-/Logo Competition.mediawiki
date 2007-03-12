@@ -15,6 +15,9 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 # Winner will receive his/her price!
 # Logotype will be printed / used and abused everywhere!
 
+== Prize ==
+First prize will be a gift-certificate on amazon.com valid for $380 that can be used to buy whatever you want!
+
 == Rules ==
 * Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be sent also
 * Logo must be submitted before 13th of April 2007 00:00 UTC.
