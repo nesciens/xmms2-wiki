@@ -1,0 +1,32 @@
+Welcome! This is the place for finding out everything about the XMMS2 Logo competition!
+
+This competition will select a Logotype to use in all XMMS2 related sites and programs. Follow the "How to contend" below.
+
+== How to contend? ==
+# Make a cool logotype in scalable format
+# Make the same cool logotype in 16x16 pixeled format
+# Name the logotype your_email-logoname-date.svg and your_email-logoname-date.png
+# Submit the logo to contest@xmms.se as a ZIP or TAR.GZ file.
+## The logos has to be submitted in SVG format and PNG.
+# We will put your logos on our blog http://xmms2contest.blogspot.com/ and let everyone comment on it.
+# You can re-submit the logo after you got feedback from the blog. Re-submission is allowed as many times as you like.
+# After the ''13th of April 2007 00:00 UTC'' we will not accept more submissions.
+# Shortly after everyone who has contributed to XMMS2 can rank the logotypes, the one with most points will be selected.
+# Winner will get his price!
+# Logotype will be printed / used and abused everywhere!
+
+== Rules ==
+* Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be sent also
+* Logo must be submitted before 13th of April 2007 00:00 UTC.
+* All submissions copyright will be handed over to XMMS2 Team and they can use it as they see fit
+* Potential taxes on the prize will be payed by the winner
+* Result of the contest can not be overruled or questioned
+* Tobias RundstrÃ¶m and Anders Gustafsson will have veto.
+
+== What are we looking for? ==
+* Something clean and simple
+* Works in both color and black / white
+* Not the same old speaker, cd, note thing that all other projects have
+* XMMS2 should be as ONE word, not XMMS + 2. The 2 is as important as the XMMS.
+* XMMS stands for X(Cross)-platform Music Multiplexer System
+* A cool tagline will get bonus points
