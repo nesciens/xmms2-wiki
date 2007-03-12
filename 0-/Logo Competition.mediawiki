@@ -22,6 +22,7 @@ First prize will be a gift-certificate on amazon.com valid for $400 that can be 
 == Rules ==
 * Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be sent also
 * Logo must be submitted before 13th of April 2007 00:00 UTC.
+* Artist can submit infinite number of logos
 * Copyright of the winning submission will be handed over to XMMS2 Team and they can use it as they see fit
 * Potential taxes on the prize will be payed by the winner
 * Result of the contest can not be overruled or questioned
