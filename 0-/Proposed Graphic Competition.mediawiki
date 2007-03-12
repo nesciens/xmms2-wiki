@@ -14,7 +14,7 @@ XMMS2 Team officially announced it's graphic competition today. The competition 
 
 First prize in both competitions is an Amazon.com gift certificate valid for $380. The prize money for this contest came from last year's Google Summer of Code program. The competition will start today and last submission date will be 2007-04-XX.
 
-To compete or get more information please visit http://xmms2contest.blogspot.com/
+To compete or get more information please visit http://xmms2-contest.blogspot.com/
 
 == Logo Rules ==
 
