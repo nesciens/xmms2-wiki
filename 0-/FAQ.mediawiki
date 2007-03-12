@@ -49,7 +49,7 @@
 
 === Why does XMMS2 require SQLite3 and why is the db backend not selectable? ===
 * A: XMMS2 uses SQLite3 for its "[[The Medialib |medialib]]". It will store (cache) metadata from your media files. This will make adding a file to your playlist a lot faster since ''xmms2d'' will not have to open the file and re-read the tags. It also allows you to query the medialib in order to make a selection of songs.
-* A2: SQLite3 is very tightly connected to the internals of XMMS2, this will not change since it can create a situation in which certain features and clients will only work with a certain backend. This also means that XMMS2 will never ship a version where the medialib is optional.
+* A2: Before the [[collections concept]], SQLite3 was very tightly connected to the internals of XMMS2. Clients wishing to get specific medialib information has to send a SQL query to the server, which passed it to the medialib and returned results. Now, with collections, medialib access has been abstracted behind an API, so all the SQL queries are in the server-side collections code. In theory, it's now possible to split out database-specific code into plugins, though it is a massive undertaking.
 
 == Usage ==
 '''Hint''': ''Also see the [[Getting Started]] page''
