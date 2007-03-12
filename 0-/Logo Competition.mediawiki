@@ -18,7 +18,7 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 == Rules ==
 * Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be sent also
 * Logo must be submitted before 13th of April 2007 00:00 UTC.
-* All submissions copyright will be handed over to XMMS2 Team and they can use it as they see fit
+* Copyright of the winning submission will be handed over to XMMS2 Team and they can use it as they see fit
 * Potential taxes on the prize will be payed by the winner
 * Result of the contest can not be overruled or questioned
 * Tobias RundstrÃ¶m and Anders Gustafsson will have veto.
