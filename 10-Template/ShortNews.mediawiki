@@ -1,4 +1,6 @@
 <feed items=5 showdate="d F Y H:m (T)" showtitle=false>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
 
 
-[http://xmms2-news.blogspot.com/ More news] [[Template:OLDNews|Older news (before blogspot)]]
+[http://xmms2-news.blogspot.com/ More news]
+
+[[Template:OLDNews|Older news (before blogspot)]]
