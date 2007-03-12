@@ -10,7 +10,7 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 ## The logos has to be submitted in '''SVG format and PNG'''.
 # We will put your logos on our blog [http://xmms2contest.blogspot.com/] and let everyone comment on it.
 # You can re-submit the logo after you got feedback from the blog. '''Re-submission is allowed as many times as you like.'''
-# After the ''13th of April 2007 00:00 UTC'' we will not accept more submissions.
+# After the '''13th of April 2007 00:00 UTC''' we will not accept more submissions.
 # Shortly after everyone who has contributed to XMMS2 can rank the logotypes, the one with most points will be selected.
 # Winner will get his price!
 # Logotype will be printed / used and abused everywhere!
