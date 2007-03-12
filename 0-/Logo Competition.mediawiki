@@ -3,13 +3,13 @@ Welcome! This is the place for finding out everything about the XMMS2 Logo compe
 This competition will select a Logotype to use in all XMMS2 related sites and programs. Follow the "How to contend" below.
 
 == How to contend? ==
-# Make a cool logotype in scalable format
-# Make the same cool logotype in 16x16 pixeled format
-# Name the logotype your_email-logoname-date.svg and your_email-logoname-date.png
-# Submit the logo to contest@xmms.se as a ZIP or TAR.GZ file.
-## The logos has to be submitted in SVG format and PNG.
-# We will put your logos on our blog http://xmms2contest.blogspot.com/ and let everyone comment on it.
-# You can re-submit the logo after you got feedback from the blog. Re-submission is allowed as many times as you like.
+# Make a cool logotype in '''scalable format'''
+# Make the same cool logotype in '''16x16 pixeled format'''
+# Name the logotype '''your_email-logoname-date.svg''' and '''your_email-logoname-date.png'''
+# Submit the logo to '''contest@xmms.se''' as a '''ZIP or TAR.GZ''' file.
+## The logos has to be submitted in '''SVG format and PNG'''.
+# We will put your logos on our blog [http://xmms2contest.blogspot.com/] and let everyone comment on it.
+# You can re-submit the logo after you got feedback from the blog. '''Re-submission is allowed as many times as you like.'''
 # After the ''13th of April 2007 00:00 UTC'' we will not accept more submissions.
 # Shortly after everyone who has contributed to XMMS2 can rank the logotypes, the one with most points will be selected.
 # Winner will get his price!
