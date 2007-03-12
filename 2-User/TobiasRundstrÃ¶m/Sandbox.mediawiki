@@ -1,1 +1,1 @@
-<feed>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
+<feed items=5 showdate=1 showtitle=0>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
