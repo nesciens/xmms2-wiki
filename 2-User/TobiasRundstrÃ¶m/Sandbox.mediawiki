@@ -1,1 +1,1 @@
-<feed items=5 showdate="d F Y H:m T" showtitle=0>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
+<feed items=5 showdate="d F Y H:m (T)" showtitle=0>http://xmms2-news.blogspot.com/feeds/posts/default</feed>
