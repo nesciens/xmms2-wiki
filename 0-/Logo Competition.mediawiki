@@ -32,6 +32,6 @@ First prize will be a gift-certificate on amazon.com valid for $400 that can be 
 * Something clean and simple
 * Works in both color and black / white
 * Not the same old speaker, cd, note thing that all other projects have
-* XMMS2 should be as ONE word, not XMMS + 2. The 2 is as important as the XMMS.
-* XMMS stands for X(Cross)-platform Music Multiplexer System
+* If the word "XMMS2" is included it should be as ONE word, not XMMS + 2. The 2 is as important as the XMMS.
+* XMMS2 stands for X(Cross)-platform Music Multiplexer System 2
 * A cool tagline will get bonus points
