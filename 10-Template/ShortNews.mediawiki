@@ -3,4 +3,6 @@
 
 [http://xmms2-news.blogspot.com/ More news]
 
+[http://xmms2-news.blogspot.com/feeds/posts/default Subscribe to atom feed]
+
 [[Template:OLDNews|Older news (before blogspot)]]
