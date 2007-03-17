@@ -8,11 +8,11 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 # Make the same cool logotype in '''16x16 pixeled format'''
 # Name the logotype '''your_email-logoname-date.svg''' and '''your_email-logoname-date.png''' (i.e: tru_xmms_org-coolstuff-070223.svg)
 # Submit the logo to '''contest@xmms.se''' as a '''ZIP or TAR.GZ''' file.
-## The logos has to be submitted in '''SVG format and PNG'''.
+## The logos have to be submitted in '''SVG format and PNG'''.
 # We will put your logos on our [http://xmms2-contest.blogspot.com/ blog] and let everyone comment on it.
 # You can re-submit the logo after you got feedback from the blog. '''Re-submission is allowed as many times as you like.'''
 # After the '''13th of April 2007 00:00 UTC''' we will not accept more submissions.
-# Shortly after everyone who has contributed to XMMS2 can rank the logotypes, the one with most points will be selected.
+# Shortly after the deadline, everyone who has contributed to XMMS2 can rank the logotypes, the logotype with most points will be selected.
 # Winner will receive his/her prize!
 # Logotype will be printed / used and abused everywhere!
 
@@ -20,12 +20,12 @@ This competition will select a Logotype to use in all XMMS2 related sites and pr
 First prize will be a '''gift-certificate on amazon.com valid for $400''' that can be used to buy whatever you want!
 
 == Rules ==
-* Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be sent also
+* Logo must be in scalable format (SVG) and a proof-of-concept 16x16 version of the logo must be also sent.
 * Logo must be submitted before 13th of April 2007 00:00 UTC.
-* Artist can submit infinite number of logos
-* Copyright of the winning submission will be handed over to XMMS2 Team and they can use it as they see fit
-* Potential taxes on the prize will be payed by the winner
-* Result of the contest can not be overruled or questioned
+* Artist can submit infinite number of logos.
+* Copyright of the winning submission will be handed over to XMMS2 Team and they can use it as they see fit.
+* Potential taxes on the prize will be payed by the winner.
+* Result of the contest can not be overruled or questioned.
 * Tobias RundstrÃ¶m and Anders Gustafsson will have veto.
 
 == What are we looking for? ==
