@@ -1,0 +1,9 @@
+{{Client
+|name=Sonus
+|author=Ben Slote, Armando Jagucki, Jared Hendry
+|website=http://code.google.com/p/sonus
+|version=0.01
+|devlanguage=Python
+|ui=QT4
+|screenshots=http://code.google.com/p/sonus/wiki/Screenshots
+|description=Sonus is designed to be a simple yet full-featured client, supporting the media library, playlists, collections and equalizer.}}
