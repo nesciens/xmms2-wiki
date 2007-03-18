@@ -28,6 +28,7 @@ All current clients should be found here.
 {{ClientTableEntry|SeMMiX| Graphical / GTK | C | partly rewrite | Full-featured, lightweight player }}
 {{ClientTableEntry|Shellac| Graphical / GTK | Python | in development | highly customizable player }}
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
+{{ClientTableEntry|Sonus| Graphical / QT | Python | in development | Simple, yet full-featured player }}
 {{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
 {{ClientTableEntry|X4X| Graphical / XWidgets | Java | in development | Almost complete player, works with Java Webstart }}
 {{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
