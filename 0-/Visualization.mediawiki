@@ -1,46 +1,61 @@
-Here are my thought on visualisation...
+Some thoughts on visualisation...
 
 
 It is trivial. All that has to be done is feeding some vis-data to the
 clients. :)
 
-"Vis-data" denotes raw pcm-data and perhaps fft-data aswell. "Feeding" means that the server should give the data to clients in an efficient way, easy to digest for the clients and abstracted nicely in the clientlib.
+"Vis-data" denotes raw pcm-data and perhaps fft-data aswell. Using wavelets for processing the pcm-data could also be considered. "Feeding" means that the server should give the data to clients in an efficient way, easy to digest for the clients and abstracted nicely in the clientlib.
 
 
-A client should be able to request raw pcm-data. It is maybe a good
-idea to do fft-calculation server-side aswell as that is pretty
-common. But then we get into lots of configuration possibilities, like
-number of bands/windowsize. If we want that configurable maybe the
-sampleformat and samplerate of the pcm-data should be configurable
-aswell. It will become really messy.
+A client should be able to request raw pcm-data to give full flexibility. There are two ways to do it:
 
-Maybe only raw pcm-data should be provided, and let client do whatever
-it needs, because there is no way we can forsee every format. If we
-always just give raw float data the vis clients life should be easy
-enough and the server will be less complex.
+* Give the client only the best data available (raw pcm, good sampleformat, high samplerate)
+: Pros:
+:# no mess with different configuration possibilities
+:# simple interface, clean implementation on the server side
+: Cons:
+:# clients have to implement FFT etc. themselves
+:# makes porting existing visualization plugins harder, too much code for "simple visualization" (like builtin a normal client window) 
+:# all the data has to be shared/transmitted, even if it is mostly unused (bad for UDP, see below)
+
+* Let the client decide its data format, give some configuration options
+: PCM: sampleformat (needed?), samplerate
+: FFT: windowsize, freq. range, number of bands (, logarithm?)
+: Wavelet? (perhaps too specific, was requested on #xmms2 some time ago)
+
+: Pros:
+:* data is processed the same (good) way regardless of the visualization client (which could do it a bad way)
+:* client developers don't have to bother how to get the data in the right way
+
+: Cons:
+:* configuration options could not be sufficient for clients, so they have to fallback to raw pcm or default fft data anyway
+:* server has to deal with more stuff
+
+
 
 Client communication should:
- * Allow multiple clients.
- * Have low overhead.
- * Be robust, a client should not be able to block other clients, 
-   or even worse the server.
- * Drop data instead of wait if the clients are lagging.
- * Have timing information, so clients know when the sound
-   from the data will be in the speakers.
+* Allow multiple clients.
+* Have low overhead.
+* Be robust, a client should not be able to block other clients, or even worse the server.
+* Drop data instead of wait if the clients are lagging.
+* Have timing information, so clients know when the sound from the data will be in the speakers.
 
 Multiple clients are not strictly needed, most people will probably
 just run one vis client. But multiple clients are really the main
 feature of XMMS2, so it just should be implemented.
 
+
 Low overhead sounds like an SHM mechanism, doesn't it? Just needs to
 make sure that server doesn't write to the same place that the client
-is reading from. So there needs to be some mechanism to mark which
-parts are used.
+is reading from.
 
 Designing this mechanism will probably be the hard part. Should the
-control-messages be passed over stardard xmmsipc or over shm? How will
+control-messages be passed over standard xmmsipc or over shm? How will
 the robustness be ensured?
 
-There are other things that might be nice, but not nessisary.:
- * Fallback to udp when on non local computer?
- * Fallback to standard xmmsipc?
+Possible solution: Using semaphores aside the shm; the semaphore could be freed by the server every time new data is available, so the client just can wait (sleep) using the semaphore mechanism. Control communication should not be needed during normal operation.
+
+
+There are other things that might be nice, but not necessary:
+* Fallback to udp when on remote machine: should be transparent to the vis client, as well
+* Fallback to standard xmmsipc?
