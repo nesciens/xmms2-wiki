@@ -1,12 +1,21 @@
 * '''Have you contacted an XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
+** ''Yes - Talked with Tobias RundstrÃ¶m''
 * '''Basics'''
 ** Just write a small introduction to yourself.
+*** ''Hi, my name is Taylor Killian, and I love open source. I have been programming since I was 10, after I got my first computer. I got into program so I could be a hacker, not knowing that I was building myself a bright future as a programmer. From there I went off an learned a bunch of languages. I kept on taking on on challenge after another until I was was at the level of those I once looked up to, but realized I have a long way to go. But I'm not all computer all the time, I also like to wrestle and play Guitar Hero. And I guess thats a pretty good size 'small' intro.''
 ** State your preferred email address.
+*** ''s7master@gmail.com''
 ** Why do you want to participate in summer of code?
+*** ''I want to participate in the summer of code because I know it is going to be a challenge. I know I am going to have to work hard and long, but at the end I will be able to say that I was a part of something truly great. I know that I will be a better programmer for it too.''
 ** What are you studying, subject, level and school?
+*** ''I am studying Computer Science and Engineering as a freshmen at [http://www.cscc.edu Columbus State Community College]''
 * '''Experience'''
 ** What programs/software have you worked on before?
+*** [http://projectxi.sf.net/ ProjectXI] - ''An open source game server''
+*** [http://pxiweb.ffxilock.com/ PxiWeb] - ''Front end for ProjectXI''
+*** [http://video.google.com/videoplay?docid=-7473028685931049643&q=sphere+parabola 3D Engine] - ''Unfinished/unreleased 3d engine''
 ** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
+*** ''Yes, but''
 ** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Were you successful? If not, why?
 ** What development model would you use (e.g. keywords: V-model, XP programming, agile programming, iterative; with the help of prototyping, formal specifications, tests, etc).
 ** '''Open Source'''
