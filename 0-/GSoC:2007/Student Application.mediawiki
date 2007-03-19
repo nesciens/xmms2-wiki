@@ -1,6 +1,6 @@
 {{Template:Discussion}}
 
-So you want to get on the XMMS2 love-boat? Just fill the following in and send it to soc@xmms.se! Note that you have to fill in the Google application first and then this. By filling this in you will have bigger chance of actually getting voted for.
+So you want to get on the XMMS2 love-boat? Try to answer as many of these questions you find relevant in the Google application form as possible. Answer on the first one is REQUIRED. Everything else is optional, but the more information you provide the better chance you have to get accepted. If it doesn't fit in the Google application form's 6000 char limit send it as an mail to gsoc@xmms.se and put a summary in the Google application form.
 
 * '''Have you contacted an XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
 * '''Basics'''
