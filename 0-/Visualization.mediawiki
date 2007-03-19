@@ -1,0 +1,46 @@
+Here are my thought on visualisation...
+
+
+It is trivial. All that has to be done is feeding some vis-data to the
+clients. :)
+
+"Vis-data" denotes raw pcm-data and perhaps fft-data aswell. "Feeding" means that the server should give the data to clients in an efficient way, easy to digest for the clients and abstracted nicely in the clientlib.
+
+
+A client should be able to request raw pcm-data. It is maybe a good
+idea to do fft-calculation server-side aswell as that is pretty
+common. But then we get into lots of configuration possibilities, like
+number of bands/windowsize. If we want that configurable maybe the
+sampleformat and samplerate of the pcm-data should be configurable
+aswell. It will become really messy.
+
+Maybe only raw pcm-data should be provided, and let client do whatever
+it needs, because there is no way we can forsee every format. If we
+always just give raw float data the vis clients life should be easy
+enough and the server will be less complex.
+
+Client communication should:
+ * Allow multiple clients.
+ * Have low overhead.
+ * Be robust, a client should not be able to block other clients, 
+   or even worse the server.
+ * Drop data instead of wait if the clients are lagging.
+ * Have timing information, so clients know when the sound
+   from the data will be in the speakers.
+
+Multiple clients are not strictly needed, most people will probably
+just run one vis client. But multiple clients are really the main
+feature of XMMS2, so it just should be implemented.
+
+Low overhead sounds like an SHM mechanism, doesn't it? Just needs to
+make sure that server doesn't write to the same place that the client
+is reading from. So there needs to be some mechanism to mark which
+parts are used.
+
+Designing this mechanism will probably be the hard part. Should the
+control-messages be passed over stardard xmmsipc or over shm? How will
+the robustness be ensured?
+
+There are other things that might be nice, but not nessisary.:
+ * Fallback to udp when on non local computer?
+ * Fallback to standard xmmsipc?
