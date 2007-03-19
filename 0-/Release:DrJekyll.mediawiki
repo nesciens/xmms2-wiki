@@ -36,6 +36,7 @@ No new platform support are included in this release.
 * sql query does not exist anymore
 * c++ api changes
 * reading playlist files is possible again, but uses the collections api.
+* java bindings were removed
 
 === Notes to xform authors ===
 
