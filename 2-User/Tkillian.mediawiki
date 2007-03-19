@@ -15,26 +15,41 @@
 *** [http://pxiweb.ffxilock.com/ PxiWeb] - ''Front end for ProjectXI''
 *** [http://video.google.com/videoplay?docid=-7473028685931049643&q=sphere+parabola 3D Engine] - ''Unfinished/unreleased 3d engine''
 ** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
-*** ''Yes, but''
+*** ''Yes, but only minimally. I believe now would be a good chance to develop that.''
 ** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Were you successful? If not, why?
+*** ''No''
 ** What development model would you use (e.g. keywords: V-model, XP programming, agile programming, iterative; with the help of prototyping, formal specifications, tests, etc).
+*** ''XP Programming''
 ** '''Open Source'''
 *** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
+**** ''Yes, [http://projectxi.sf.net/ ProjectXI] and [http://pxiweb.ffxilock.com/ PxiWeb] are both open source projects. The goal for the project is to emulate the world servers on the game Final Fantasy XI. At the moment I am the sole developer of [http://projectxi.sf.net/ ProjectXI]. I have successfully disassembled the game in order to decrypt the packets being sent to and from the game, designed a server to accept them, developed a client to modify the game, and researched the packets sent from the game. Currently I am making the world more realistic by adding dialog tables.''
 * '''Project'''
 ** Did you select a project from our list? If that is the case, what project did you select?
+*** ''Yes, I choose 'Support for more formats/stream types', specifically  I will be doing Real audio and RTSP''
 ** If you figured out a own project please describe the project and the scope.
+*** ''N/A''
 ** Why did you choose this project?
+*** ''I choose XMMS2 because I like and use the original. I really think that I can help the project by adding some codecs and I know XMMS2 can't be great if it doesn't have them.''
 ** What do you expect to gain from this project?
+*** ''I will be glad to know that I made something, something that people will actually use. I think I will learn to work good with a team of developers. I expect that I will learn new approaches towards programming from my mentor.''
 ** What would make you stay in the xmms2-community after the conclusion of SOC?
+*** ''As long as I have more work to do and a friendly community, I would be happy to stay''
 * '''Practically'''
 ** Are you familiar with any of the following tools?
-*** Git
-*** waf
+*** Git - ''Heard of it but never used it, have used SVN and CVS though''
+*** waf - ''Never heard of it''
 ** Which tools do you normally use for development? Why do you use them?
+*** ''kedit - writing code''
+*** ''SVN - version control''
+*** ''gcc - compiling''
 ** What programming languages are you fluent in?
+*** ''C, C++, PHP, Python''
 ** What spoken languages are you fluent in?
+*** ''English''
 ** At what hours are you awake (please specify in UTC)
+*** ''1300 - 0200''
 ** Would you mind talking with your mentor on telephone / internet phone?
+*** ''Wouldn't mind at all''
 * '''Detailed answer''' (optional, but well developed answers highly regarded).
 ** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
 *** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
