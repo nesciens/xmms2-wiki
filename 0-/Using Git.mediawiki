@@ -137,7 +137,7 @@ Now create a new branch:
 
 And make it the default branch:
 
- git checkout -f forupstream
+ git checkout forupstream
 
 If all the changes you saw in git cherry earlier were good for upstream just put 'em all on this branch:
 
@@ -152,7 +152,7 @@ This is a good time to make sure your tree still compiles :)
 
 And if you are satisfied and want to make that your master again, then checkout master:
 
- git checkout -f master
+ git checkout master
 
 And go there:
 
@@ -160,4 +160,4 @@ And go there:
 
 There, now you're ready to push your changes to your public tree without an ugly merge changeset.
 
- ssh+git://git.xmms.se/xmms2/xmms2-yourpublicrepository +master
+ git push -f git.xmms.se:/xmms2/xmms2-yourpublicrepository master
