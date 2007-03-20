@@ -1,6 +1,6 @@
 == Taylor Killian ==
 
-[[Image:tck.jpg|float|Taylor Killian]]
+[[Image:tck.jpg|thumb|Taylor Killian]]
 
 * '''Have you contacted an XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
 ** ''Yes - Talked with Tobias RundstrÃ¶m''
