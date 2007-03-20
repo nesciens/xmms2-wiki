@@ -80,6 +80,15 @@
 : XMMS2 tries to use sane defaults for its output plugins. That means ALSA on most linux machines, falling back to OSS; OSS on BSD; Core Audio on OSX; Sun audio on Solaris; etc. If, for some reason you don't like the default (e.g. you use Jack), then you can change it while xmms2d is running using the CLI ''config'' command:
  xmms2 config output.plugin <plugin>
 
+=== How do I use clients on remote machines? ===
+: XMMS2 can be configured to listen via local unix sockets, or TCP sockets (IPv6 is supported, too). You can change this with the CLI ''config'' command, too:
+ xmms2 config core.ipcsocket 'tcp://'
+Example with IPv6 and non-default port:
+ xmms2 config core.ipcsocket 'tcp6://:5555'
+Example with having both the default local unix socket and a TCP socket for remote clients:
+ xmms2 config core.ipcsocket 'unix:///tmp/xmms-ipc-'$USER';tcp://'
+The seperator between different sockets here is ';'.
+
 == Development ==
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
