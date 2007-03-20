@@ -1,6 +1,6 @@
 {{Template:Discussion}}
 
-So you want to get on the XMMS2 love-boat? Try to answer as many of these questions you find relevant on the Google application form as possible. An answer to the first question is REQUIRED. Everything else is optional, but the more information you provide, the better chance you have to get accepted. If your answer doesn't fit within the Google application form's 6000 char limit, send it as an email to soc@xmms.se and put a summary in the Google application form.
+So you want to get on the XMMS2 love-boat? Try to answer as many of these questions you find relevant on the Google application form as possible. An answer to the first question is REQUIRED. Everything else is optional, but the more information you provide, the better chance you have to get accepted. Send it as an email to soc@xmms.se and also submit it in your application on Google's web app. If it doesn't all fit because of the character limit, you can just put a summary.
 
 * '''Have you contacted an XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
 * '''Basics'''
@@ -19,6 +19,8 @@ So you want to get on the XMMS2 love-boat? Try to answer as many of these questi
 ** Did you select a project from our list? If that is the case, what project did you select?
 ** If you figured out a own project please describe the project and the scope.
 ** Why did you choose this project?
+** Include a timeline for your work on the project
+** Include as much technical detail about your implementation as you can
 ** What do you expect to gain from this project?
 ** What would make you stay in the xmms2-community after the conclusion of SOC?
 * '''Practically'''
