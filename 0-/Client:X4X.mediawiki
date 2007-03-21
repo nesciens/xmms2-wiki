@@ -1,8 +1,40 @@
+__NOTOC__
 {{Client |name=X4X| author=[[dangertools|Georg Schild]]| website=http://x4x.sourceforge.net| version=[http://sourceforge.net/project/showfiles.php?group_id=152896 0.3_rc3]| devlanguage=[http://java.sun.com java]| ui=[http://crosswidgets.sourceforge.net XWidgets]| screenshots=[http://sourceforge.net/dbimage.php?id=109894 1 (SWT)] - [http://sourceforge.net/dbimage.php?id=109890 2 (Qt Jambi)] - [http://sourceforge.net/dbimage.php?id=109892 3 (Swing)] |description=X4X is an almost complete client written in java using [http://crosswidgets.sourceforge.net XWidgets] as UI. Atm we use almost all playback/playlist/medialib -functions from xmms2, since 0.2 a first set of [http://x4x.sourceforge.net/wiki/index.php/X4X_Plugins plugins] as well as random playback is also supported.
 X4X can integrate itself into kde (qt), gtk (swt), native (qt and swt) and not native (swing) environments using XWidgets.
 
-Check out http://x4x.sourceforge.net for latest info's and visit us in [irc://chat.freenode.net/x4x #x4x].
 
-Ebuilds are available at [http://x4x.sourceforge.net/wiki/index.php/Ebuilds] (only for <0.3).
+==What makes X4X better then the rest==
 
-'''Since 0.3 also basic support for MPD, the music player daemon [http://www.musicpd.org], is integrated.'''}}
+* Fast and nice gui, all basic functionality in one window ([http://sourceforge.net/project/screenshots.php?group_id=152896 screenies])
+* Treebrowser for various sources (file://, smb://, daap://)
+* Playlistmanagement
+* Random playback
+* Equalizer
+* [http://x4x.sourceforge.net/wiki/index.php/Shortcuts Keybindings] for almost everything
+* Connection-browser (incl. optional mdns support)
+* Systemtray
+* -noX start option - doesn't open the mainwindow if a systemtray is present
+* Ability to change xmms2's settings
+* Due to XWidgets X4X has the ability to integrate into every environment (See screenshots)
+* Support plugins (UI, Output)
+* Runs on windows (and everywhere else where java6 and swig are available)
+* Also works with '''[http://www.musicpd.org mpd]''', the music player daemon
+
+==Dependencies==
+
+* JDK6 (get one from [http://java.sun.com])
+* Apache Ant >=1.6
+* Xmms2 DrJekyll or -devel right before DrJekyll (get it from [http://wiki.xmms2.xmms.se])
+* SWIG >=1.3.25 (from [http://www.swig.org])
+* XWidgets 0.1 (from [http://crosswidgets.sourceforge.net] or get the Swing-only binary package from our [http://sourceforge.net/project/showfiles.php?group_id=152896 downloadpage] - Note that this Version of XWidgets only contains the Swing code, nothing else
+* JmDNS 0.1 for '''optional''' mdns support
+
+==Support==
+
+Either via [irc://chat.freenode.net/x4x #x4x] or the [http://sourceforge.net/mail/?group_id=152896 mailinglist] x4x-general.
+
+
+
+Ebuilds are available at [http://x4x.sourceforge.net/wiki/index.php/Ebuilds]. You will also find ebuilds for XWidgets and Xmms2 there.
+
+}}
