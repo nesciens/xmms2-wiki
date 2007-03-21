@@ -1,0 +1,51 @@
+* '''Have you contacted an XMMS2 mentor and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
+** Tilman Sauerbeck, XMMS2 developer extraordinaire
+* '''Basics'''
+** Just write a small introduction to yourself.
+*** I'm Dan "Puzzles" Chokola. I'm already pretty active in the XMMS2 community and frequent #xmms2, the bugtracker, and the mailing list. XMMS2 is not my first open-source project, but it's my most involved project, with many related side-projects to keep me busy.
+** State your preferred email address.
+*** dan@chokola.com
+** Why do you want to participate in summer of code?
+*** I missed out last year when I took a break from the project and coding altogether. It seemed like a great success, but even more, it looks like a great way to motivate students into promoting the software and ideas they love in the open-source world.
+** What are you studying, subject, level and school?
+*** Electrical engineering and physics at Raritan Valley Community College. It's my third year there and I will be transferring to a four-year university upon completion of enough credits.
+* '''Experience'''
+** What programs/software have you worked on before?
+*** XMMS2 is the root for all the projects I've done in the past year or two. The least related software I've worked on is Wit, my take on a simple Gitweb that's easier to code, maintain, and even use, than the one supplied with Git. You can see an incomplete list of software I've worked on at [http://dan.chokola.com/software/].
+** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
+*** I've worked under a friend with my first open-source project, Milkbone. (Unfortunately, I have no link for further information.) Milkbone was a cross-platform graphical instant-messaging client written in Perl as an alternative to AIM and the then-immature Gaim. The XMMS2 core is the only other team environment I've worked on since then. Coding under a mentor this summer would be an interesting experience.
+** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Were you successful? If not, why?
+*** No, this is my first year applying.
+** What development model would you use (e.g. keywords: V-model, XP programming, agile programming, iterative; with the help of prototyping, formal specifications, tests, etc).
+*** Based on some preliminary talks with Tilman, it seems as though the development model will be a mixture of iterative/prototyping work with formal specifications governing the class hierarchy and flow of the code.
+** '''Open Source'''
+*** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
+**** XMMS2 - general contributor, Ruby bindings, client contributor
+* '''Project'''
+** Did you select a project from our list? If that is the case, what project did you select?
+*** Yes and no. I expanded the "Further development on a pre-existing GUI client" category to include Euphoria.
+** If you figured out a own project please describe the project and the scope.
+*** The project is to further development of Euphoria. For starters, this means rewriting most of the code to follow a suitable design pattern. As it stands, the GUI code is already somewhat factored out in Edje, and Euphoria has already shown GUI support for features demonstrated in today's clients. The second part involves implementing new features including collections browsing and creation/editing. Finally, depending on what other projects are accepted this Summer, support for service clients and visualizations (which worked pre-xforms) is planned.
+*** Euphoria's reach stretches over more than just XMMS2; the Enlightenment Foundation Libraries (EFL) and Ruby are also strongly involved. All three are open-source projects that implement exciting new ideas but struggle with popularity. It's my hope that this project will provide enough glitz and bling to win some PR for each of those projects.
+** Why did you choose this project?
+*** Anyone who has talked with me on #xmms2 or seen any of my clients knows that I'm a Ruby fanatic through-and-through. After seeing some screen captures ([http://files.code-monkey.de/multipass3.avi], [http://files.code-monkey.de/euphoria-meridian-ticker.ogg]) of Tilman's Euphoria client, I knew immediately that it had the strongest power to attract users and would be the easiest to add new features and maintain.
+** What do you expect to gain from this project?
+*** I'm no computer science student, so I expect this to be the closest experience to real-world coding I'll likely ever get. I'm looking forward to applying some new design pattern concepts I've learned as well as learning about EFL technology. Working under Tilman is going to be another adventure and I hope to learn a lot from him and hopefully earn some respect within the XMMS2 community after producing code under his direction.
+** What would make you stay in the xmms2-community after the conclusion of SOC?
+*** I'm already there and there's so much to do I think I'll always be busy with the XMMS2 community.
+* '''Practically'''
+** Are you familiar with any of the following tools?
+*** Git
+*** waf
+** Which tools do you normally use for development? Why do you use them?
+** What programming languages are you fluent in?
+** What spoken languages are you fluent in?
+** At what hours are you awake (please specify in UTC)
+** Would you mind talking with your mentor on telephone / internet phone?
+* '''Detailed answer''' (optional, but well developed answers highly regarded).
+** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
+*** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
+*** What motivates or inspires you to write programs/develop software?
+
+== See Also ==
+* [[Summer_of_Code_2006/Student_requirements]]
