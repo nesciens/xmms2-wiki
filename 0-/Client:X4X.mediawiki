@@ -24,7 +24,7 @@ X4X can integrate itself into kde (qt), gtk (swt), native (qt and swt) and not n
 
 * JDK6 (get one from [http://java.sun.com])
 * Apache Ant >=1.6
-* Xmms2 DrJekyll or -devel right before DrJekyll (get it from [http://wiki.xmms2.xmms.se])
+* Xmms2 DrJekyll or -devel right before DrJekyll
 * SWIG >=1.3.25 (from [http://www.swig.org])
 * XWidgets 0.1 (from [http://crosswidgets.sourceforge.net] or get the Swing-only binary package from our [http://sourceforge.net/project/showfiles.php?group_id=152896 downloadpage] - Note that this Version of XWidgets only contains the Swing code, nothing else
 * JmDNS 0.1 for '''optional''' mdns support
