@@ -16,7 +16,7 @@ The order here is not so important. :)
 *Download and unpack the [http://dan.chokola.com/files/xmms2/xmms2_win32_deps.zip required libraries] into your MinGW root directory.
 -OR-
 *Download and unpack them separately. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
-**[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (1.12.1)
+**[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (2.12.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.20)
