@@ -11,7 +11,7 @@
 *** Electrical engineering and physics at Raritan Valley Community College. It's my third year there and I will be transferring to a four-year university upon completion of enough credits.
 * '''Experience'''
 ** What programs/software have you worked on before?
-*** XMMS2 is the root for all the projects I've done in the past year or two. The least related software I've worked on is Wit, my take on a simple Gitweb that's easier to code, maintain, and even use, than the one supplied with Git. You can see an incomplete list of software I've worked on at [http://dan.chokola.com/software/].
+*** XMMS2 is the root for all the projects I've done in the past year or two. The least related software I've worked on is Wit, my take on a simple Gitweb that's easier to code, maintain, and even use, than the one supplied with Git. You can see an incomplete list of software I've worked on at [http://dan.chokola.com/software/ http://dan.chokola.com/software/].
 ** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
 *** I've worked under a friend with my first open-source project, Milkbone. (Unfortunately, I have no link for further information.) Milkbone was a cross-platform graphical instant-messaging client written in Perl as an alternative to AIM and the then-immature Gaim. The XMMS2 core is the only other team environment I've worked on since then. Coding under a mentor this summer would be an interesting experience.
 ** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Were you successful? If not, why?
@@ -36,16 +36,21 @@
 * '''Practically'''
 ** Are you familiar with any of the following tools?
 *** Git
+**** I have a tree on git.xmms.se, what do you think? ;)
 *** waf
+**** I've hacked wscripts before, but I'm no guru.
 ** Which tools do you normally use for development? Why do you use them?
+*** My development environment is very simple. I use JEdit as my preferred editor, frequently use irb (the interactive Ruby shell), and gdb or valgrind when appropriate. Other than that, I'm not too familiar with fancy IDEs or debugging environments.
 ** What programming languages are you fluent in?
+*** Ruby, of course, and I can do pretty well in C.
 ** What spoken languages are you fluent in?
+*** English
 ** At what hours are you awake (please specify in UTC)
+*** 1200-0200
 ** Would you mind talking with your mentor on telephone / internet phone?
+*** Not at all.
 * '''Detailed answer''' (optional, but well developed answers highly regarded).
 ** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
 *** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
 *** What motivates or inspires you to write programs/develop software?
-
-== See Also ==
-* [[Summer_of_Code_2006/Student_requirements]]
+**** Quality, above all. It's fascinating that people can volunteer their time and create software that's better than what's commercially available, and, moreover, it's free (in every sense of the word).
