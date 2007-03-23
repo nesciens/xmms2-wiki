@@ -11,7 +11,7 @@ X4X can integrate itself into kde (qt), gtk (swt), native (qt and swt) and not n
 * Random playback
 * Equalizer
 * [http://x4x.sourceforge.net/wiki/index.php/Shortcuts Keybindings] for almost everything
-* Connection-browser (incl. optional mdns support)
+* Connection-browser (incl. optional mdns support) '''or''' autostart xmms2d (if the user wants)
 * Systemtray
 * -noX start option - doesn't open the mainwindow if a systemtray is present
 * Ability to change xmms2's settings
