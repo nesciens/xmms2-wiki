@@ -61,3 +61,5 @@ Possible solution: Using semaphores aside the shm; the semaphore could be increa
 There are other things that might be nice, but not necessary:
 * Fallback to udp when on remote machine: should be transparent to the vis client, as well
 * Fallback to standard xmmsipc?
+
+Another interesting project concerning visualization would be to implement a plugin that integrates libvisual [http://localhost.nl/~synap/libvisual]. It is a framework designed to act as a middle layer between media players and actual visualization applications. Benefit would be that there are already several applications available that could be used with XMMS2.
