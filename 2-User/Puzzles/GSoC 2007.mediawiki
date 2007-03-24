@@ -38,7 +38,7 @@
 *** Git
 **** I have a tree on git.xmms.se, what do you think? ;)
 *** waf
-**** I've hacked wscripts before, but I'm no guru.
+**** I've hacked wscripts together before and provided patches, but I'm no guru.
 ** Which tools do you normally use for development? Why do you use them?
 *** My development environment is very simple. I use JEdit as my preferred editor, frequently use irb (the interactive Ruby shell), and gdb or valgrind when appropriate. Other than that, I'm not too familiar with fancy IDEs or debugging environments.
 ** What programming languages are you fluent in?
@@ -51,6 +51,8 @@
 *** Not at all.
 * '''Detailed answer''' (optional, but well developed answers highly regarded).
 ** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
+*** [http://dan.chokola.com/software/euphoria/essay http://dan.chokola.com/software/euphoria/essay]
 *** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
+**** Open source software is the only software made for its own sake. Commercial software is made to sell, which may be good and may be bad. Open source software is made because there is a need, not a market, for it. Open source also typically doesn't suffer from pressures of a corporate agenda or a timetable, which means the developer(s) choose the language, the implementation, and when and how things get done. Unfinished programs can get new maintainers instead of being scrapped, and, most importantly, anyone can contribute, often with more than just code.
 *** What motivates or inspires you to write programs/develop software?
 **** Quality, above all. It's fascinating that people can volunteer their time and create software that's better than what's commercially available, and, moreover, it's free (in every sense of the word).
