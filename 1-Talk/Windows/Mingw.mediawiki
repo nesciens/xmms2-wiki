@@ -1,0 +1,1 @@
+We switched to waf as the buildsystem and did major API changes. The dependency info is still accurate, but the buildsystem commands and patches are different.
