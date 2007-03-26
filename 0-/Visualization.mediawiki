@@ -60,6 +60,8 @@ Possible solution: Using semaphores aside the shm; the semaphore could be increa
 
 Note that if the server decides to skip a frame, this would not prevent the server from starting to write while the  client is reading. So possibly data is not consistent. Should vis-data consistency be guaranteed?
 
+: Consistency of vis data doesn't really matter (it can have a "interlaced" effect), although if the data format can be changed on the fly, it _does_ matter -- ypnos
+
 In pseudocode it could look like this:
 
 <code>  
@@ -75,8 +77,21 @@ In pseudocode it could look like this:
 
 </code>
 
+The better solution to this is to use two semaphores, which burry a deeper knowledge of the situation:
+One semaphore stands for "client is ready to read (ie, doesn't read anymore)", the other one for "server has new data" (ie finished writing new data); these semaphores can be used in circle, IE one party raises them, the other one lowers them. combined, they provide access control. -- ypnos
+
+    server:                            client:
+
+    s_semaphore = 0                    c_semaphore = 1
+    loop:                              loop:
+        no_wait_decrease(c_semaphore)      decrease(s_semaphore)
+        write_vis_data                     read_vis_data
+        increase(s_semaphore)              increase(c_semaphore)
+
 There are other things that might be nice, but not necessary:
 * Fallback to udp when on remote machine: should be transparent to the vis client, as well
 * Fallback to standard xmmsipc?
 
 Another interesting project concerning visualization would be to implement a plugin that integrates libvisual [http://localhost.nl/~synap/libvisual]. It is a framework designed to act as a middle layer between media players and actual visualization applications. Benefit would be that there are already several applications available that could be used with XMMS2.
+
+: I already talked to the libvisual guys, they are very helpful and writing a client for libvisual should be very easy! -- ypnos
