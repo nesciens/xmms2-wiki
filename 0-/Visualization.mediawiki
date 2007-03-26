@@ -58,6 +58,23 @@ the robustness be ensured?
 
 Possible solution: Using semaphores aside the shm; the semaphore could be increased by the server every time new data is available, so the client just can wait (sleep) using the semaphore mechanism. The server can then poll on the semaphore instead of trying to decrease it, so don't wait for the client at all but skip frames. Control communication should not be needed during normal operation. 
 
+Note that if the server decides to skip a frame, this would not prevent the server from starting to write while the  client is reading. So possibly data is not consistent. Should vis-data consistency be guaranteed?
+
+In pseudocode it could look like this:
+
+<code>  
+       server:                                       client:
+
+       semaphore = 0
+       loop:                                         loop:
+           write_vis_data                                wait_decrease(semaphore)
+           increase(semaphore)                           read_vis_data
+           while NOT skipFrame                           increase(semaphore)
+               wait a little bit
+           no_wait_decrease(semaphore)   
+
+</code>
+
 There are other things that might be nice, but not necessary:
 * Fallback to udp when on remote machine: should be transparent to the vis client, as well
 * Fallback to standard xmmsipc?
