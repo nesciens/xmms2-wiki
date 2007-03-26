@@ -82,14 +82,14 @@ For example, you can install it into /opt/xmms2 by running ''./waf configure --p
 
 To only change the path the manual pages are installed in provide the ''--with-mandir="/some/custom/mandir" option (it defaults to $PREFIX/man).
 
-The --destdir option provides a way to prepend a path to ''all'' install paths for package builders. Note that when this option is set, xmms2 still expects the files to be in the location without chosen --destdir prepended.
-
 == Compiling ==
 Run ''./waf build'' to compile. Watch the pretty colors fly by (assuming you're using a color capable terminal.  And if you're not, get with the 90s!).
 
 == Installing ==
 
 Run ''./waf install'' to install packages to their default path. And you're done!
+
+The --destdir option provides a way to prepend a path to ''all'' install paths for package builders. Note that when this option is set, xmms2 still expects the files to be in the location without chosen --destdir prepended.
 
 == Cleaning up ==
 
