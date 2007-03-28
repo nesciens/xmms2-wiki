@@ -61,6 +61,7 @@ Possible solution: Using semaphores aside the shm; the semaphore could be increa
 Note that if the server decides to skip a frame, this would not prevent the server from starting to write while the  client is reading. So possibly data is not consistent. Should vis-data consistency be guaranteed?
 
 : Consistency of vis data doesn't really matter (it can have a "interlaced" effect), although if the data format can be changed on the fly, it _does_ matter -- ypnos
+: Probably it is not necessary to change the format on the fly, if the client really wants another format then it could just request a new vis object. -- mat
 
 In pseudocode it could look like this:
 
@@ -87,6 +88,18 @@ One semaphore stands for "client is ready to read (ie, doesn't read anymore)", t
         no_wait_decrease(c_semaphore)      decrease(s_semaphore)
         write_vis_data                     read_vis_data
         increase(s_semaphore)              increase(c_semaphore)
+
+Yes this should work pretty well. Only it might be better to replace the no_wait_decrease on the server side with a wait_a_little_bit_decrease: Without a wait the server would start writing again, just after increasing the s_semaphore. Depending on the timing of the client, it is possible that it starts reading while the server is already writing the next frame and this way the client ends up getting inconsistent data all the time. This wait could be an option the client sends to the server, frame update frequency or so. 
+
+The c_semaphore could be used to detect if the client died, ie check if it has not been increased for a while. Maybe it is even possible to calculate the best frame update frequency with it, by looking at how many times per second c_semaphore gets increased.
+
+The overall communication process could be:
+
+# Client requests vis data, giving options like: format and type (pcm,fft,both), update frequency
+# Server creates SHM and sends back its ID
+# Server updating SHM, client reading; no need for further control messages here
+
+Step 3 is repeated until client cancels or disconnects. -- mat
 
 There are other things that might be nice, but not necessary:
 * Fallback to udp when on remote machine: should be transparent to the vis client, as well
