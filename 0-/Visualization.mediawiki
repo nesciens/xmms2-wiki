@@ -62,6 +62,7 @@ Note that if the server decides to skip a frame, this would not prevent the serv
 
 : Consistency of vis data doesn't really matter (it can have a "interlaced" effect), although if the data format can be changed on the fly, it _does_ matter -- ypnos
 : Probably it is not necessary to change the format on the fly, if the client really wants another format then it could just request a new vis object. -- mat
+: It's not necessary but a nice feature; Some of the data's format depends on user configuration, and clients could provide on-the-fly configuration, and this would run smoother without the re-opening overhead. -- ypnos
 
 In pseudocode it could look like this:
 
@@ -89,9 +90,10 @@ One semaphore stands for "client is ready to read (ie, doesn't read anymore)", t
         write_vis_data                     read_vis_data
         increase(s_semaphore)              increase(c_semaphore)
 
-Yes this should work pretty well. Only it might be better to replace the no_wait_decrease on the server side with a wait_a_little_bit_decrease: Without a wait the server would start writing again, just after increasing the s_semaphore. Depending on the timing of the client, it is possible that it starts reading while the server is already writing the next frame and this way the client ends up getting inconsistent data all the time. This wait could be an option the client sends to the server, frame update frequency or so. 
+Clarification about "no_wait_decrease": The server _has_ to wait for the client to increase the semaphore. But it shouldn't do it blockingly, but instead poll the semaphore's value and: if decrease possible, do it etc.; if not, skip this frame and try again on next update time.
 
 The c_semaphore could be used to detect if the client died, ie check if it has not been increased for a while. Maybe it is even possible to calculate the best frame update frequency with it, by looking at how many times per second c_semaphore gets increased.
+: Re-calculating update frequency is more interesting on UDP connections, because of bandwidth problems. You need talk-back (IPC) from the client for this to work, though. This talkback possibility could also be used with SHM to alter the framework. Your idea on crash-detection is nice, but we already have an open IPC connection. if the client crashes, this will close automatically, which can be recognized -- ypnos
 
 The overall communication process could be:
 
@@ -100,9 +102,11 @@ The overall communication process could be:
 # Server updating SHM, client reading; no need for further control messages here
 
 Step 3 is repeated until client cancels or disconnects. -- mat
+: I would let the client create the SHM, as with UDP, it's also the client who opens the listening port -- ypnos
+
 
 There are other things that might be nice, but not necessary:
-* Fallback to udp when on remote machine: should be transparent to the vis client, as well
+* Fallback to udp when on remote machine: should be transparent to the vis client, as well - some people tend to say this is a "must-have"!
 * Fallback to standard xmmsipc?
 
 Another interesting project concerning visualization would be to implement a plugin that integrates libvisual [http://localhost.nl/~synap/libvisual]. It is a framework designed to act as a middle layer between media players and actual visualization applications. Benefit would be that there are already several applications available that could be used with XMMS2.
