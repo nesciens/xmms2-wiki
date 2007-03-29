@@ -80,7 +80,7 @@ Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html
 
 There's another set of ebuilds available at: http://stuge.se/gentoo/
 
-Ebuilds for latest testing versions (incl. latest git) are available at http://x4x.sourceforge.net/wiki/index.php/Ebuilds and http://x4x.cvs.sourceforge.net/x4x-portage. Those ebuilds use waf, tons of USE-flags and no more env-variables or init-scripts. In this repo you can also find ebuilds for x4x and esperanza.
+Ebuilds for latest testing versions (incl. latest git) are available at http://x4x.sourceforge.net/wiki/index.php/Ebuilds and http://x4x.cvs.sourceforge.net/x4x/x4x-portage. Those ebuilds use waf, tons of USE-flags and no more env-variables or init-scripts. In this repo you can also find ebuilds for x4x and esperanza.
 
 These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. As of the 0.2 DrAlban ebuild,  a new local "phonehome" USE flag that has to be set in order to enable the [[ET|xmms2-et]] client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
 
