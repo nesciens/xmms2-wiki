@@ -49,7 +49,6 @@ Please move the following clients according to their actual state!
 {{ClientTableEntry|Wmxmms2| Dockapp (WindowMaker) | C | discontinued? | Display for the WindowMaker/Fluxbox dock }}
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
-{{ClientTableEntry|XMMS2Curse| console / ncurses | Python | Unknown | Client with ncurses UI }}
 {{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
 {{ClientTableEntry|XMMS2 Webterface| Browser / Template | Ruby | discontinued? | Template for eRuby, whatever that may be}}
 {{ClientTableEntry|XMMS2 xml-rpc| Web? | Ruby | Unknown | Client that acts as an xml-rpc server }}
@@ -72,6 +71,7 @@ The following clients aren't worked on anymore, and might not work out of the bo
 {{ClientTableEntry|xmms2-osd| On-Screen Display / XOSD | Python | not actively developed | Simple song info on-screen display }}
 {{ClientTableEntry|xmms2play| Graphical / GTK | C | abandoned | Minimalist GTK2 xmms2 client written in C.}}
 {{ClientTableEntry|xmms2-shell| console | Python | abandoned | Interactive shell client for XMMS2 }}
+{{ClientTableEntry|XMMS2Curse| console / ncurses | Python | abandoned | Client with ncurses UI }}
 {{ClientTableEntry|XMMS2www| Web | PHP | vaporware | Unknown }}
 |}
 
