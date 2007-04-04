@@ -59,8 +59,9 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 == Gnome ==
 
-* [[Client:XMMS2tray | XMMS2tray]] provides integration into the tray
-* [[Client:XmmsDeskbar | XmmsDeskbar]] works with the Gnome Deskbar
+* [[Client:XMMS2tray | XMMS2tray]] provides integration into the tray.
+* [[Client:XmmsDeskbar | XmmsDeskbar]] works with the Gnome Deskbar.
+* [[Client:GnomeDeskBar | GnomeDeskBar]] let you control a xmms2 client easily.
 
 == KDE ==
 
