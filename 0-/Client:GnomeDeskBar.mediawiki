@@ -1,0 +1,42 @@
+Actually, a console client isn't really fast to use.
+But there is a way to control your xmms2 server trough your desktop without having to load any software like a Graphical client.
+
+I believe this could apply to other console client.
+But I'll go on with [[Client:XMMS2 CLI client | XMMS2 CLI client]].
+
+Once you have a working client and a working server.
+
+The only thing you need to do is to add shortcuts on your deskbar.
+
+If xmms2 and xmms2d are in your /usr/bin directory, you should be able to add write only the name of the executable as it is in the PATH Linux 
+is searching for executable binaries.
+If xmms2 and xmms2d are not in /usr/bin or any folder of your path...You'll have to provide the absolute path of the executable in the shortcut.
+
+these are commands I use:
+xmms2 play // For starting playback
+xmms2 stop // For stopping playback
+xmms2 next // Next song
+xmms2 prev // Previous song
+xmms2 quit // For closing xmms2d
+xmms2d     // For starting the xmms2 daemon
+
+1. Left click on the deskbar
+Select the "add to the deskbar" option
+
+2. The interface may be different depending on your gnome version.
+http://img477.imageshack.us/img477/3497/captureajouterautableaujn0.png
+Now you click on "Custom Application Luncher"
+It should open a window like that.
+http://img409.imageshack.us/img409/9017/capturecrerunlanceurcc0.png
+Now then, you fill every information needed. It's up to you for the name that will be showed and the comment. Chosing a good icon is really important if you want to not have to remember what button does what. 
+There are nice icons for that in /usr/share/pixmaps/gnome-cd/themes/None/ 
+Then you should have something like that.
+http://img179.imageshack.us/img179/6221/capturepropritsdulanceuoy3.png
+As for my example, xmms wasn't into /usr/bin so I've been forced to use the complete path of the executable.
+Don't forget to add the arguments (play,stop,pause,prev,next...) after the name of the executable.
+
+Then when you have made all your buttons.
+You should have something like this. 
+http://img375.imageshack.us/img375/2943/buttoniq6.jpg
+
+So with that, i can control my music without having to use a graphical client. :)
