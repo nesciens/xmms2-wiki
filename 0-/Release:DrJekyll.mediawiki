@@ -43,7 +43,48 @@ No new platform support are included in this release.
 
 === Full ChangeLog ===
 
-==== From TEST1 ====
+==== Between TEST2 and TEST3 ====
+'''Alexander Botero-Lowry'''
+* <mantis>1458</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>92df444475f202b5a1299efd218da7ae2cfb1b3e</git>
+* <mantis>1459</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>c1cb2f5e4eb0c4564841f855a5bf11960375c6a3</git>
+'''Anders Gustafsson'''
+* <mantis>1465</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>bc177d920458acc1222be7a9810c24e65ed0abe5</git>
+* <mantis>1472</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3200a44cecd2939c3383a82e0c4e418254e4386c</git>
+'''Daniel Svensson'''
+* <mantis>188</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5f8fd79b5c2f4b644e5a72af087b1a568bd9e344</git>
+* <mantis>1457</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b162bb9800f2c092c0e529b70ddbb325e12ca38c</git>
+* <mantis>1460</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>496e43180fdbfa32cfc124144f9b74c566a582f2</git>
+'''Erik Massop'''
+* <mantis>1455</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>72dbbc23692f578795af0ed7ae573555a8d315e1</git>
+'''Jonne Lehtinen'''
+* <mantis>1456</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>fa5745a90f70b33924bc18cfb67cc0a66f16c029</git>
+'''Sebastien Cevey'''
+* <mantis>1413</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3870ee76e4fc549e8326940253c431d94f16f867</git>
+* <mantis>1488</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e1647a13a77251bb223e2b1d74284e8265fd4891</git>
+* <mantis>1495</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b0f331e1864e31a2a2c72eb120fb09bb8a83ca8f</git>
+* <mantis>1486</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>8f31f9939bde12c23d0af7a712fd697dfe2a3d0e</git>
+'''Tilman Sauerbeck'''
+* <mantis>1491</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>c1145dc09e265eb7b48413f610a4f79dd36c8885</git>
+'''Tobias Rundstrom'''
+* <mantis>1497</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1bd73852b1631a7f9a97b556397889997be4a1e2</git>
+
+
+==== Between TEST1 and TEST2 ====
 '''Alexander Botero-Lowry'''
 * <mantis>1399</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>144c30ec305b592ee220a98b739591e5e43f0c2e</git>
@@ -77,7 +118,7 @@ No new platform support are included in this release.
 ** <git norepo=1 repo='xmms2-devel.git'>00ad3a6f7b94d6a013d7636cf8de973dfeecb4c3</git>
 
 
-==== From DrHouse ====
+==== Between DrHouse and TEST1 ====
 '''Alexander Botero-Lowry'''
 * <mantis>956</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>c4fa3ca5710940eee97d60a239babe6d388371af</git>
