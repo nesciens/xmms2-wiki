@@ -38,8 +38,7 @@ These libraries are '''not needed''' for building xmms2d itself, but will add ex
 ** [http://ffmpeg.mplayerhq.hu/ FFmpeg] - for wma, avcodec and avformat support
 ** [http://jack.sf.net/ Jack] - for JACK support
 ** [http://fftw.org/ FFTW3] and [http://www.mega-nerd.com/SRC/ libsamplerate] - for vocoder support
-
-
+** [http://xmlsoft.org/ libxml2] - for XSPF and RSS (read: podcast)
 *For output plugins:
 ** [http://www.alsa-project.org ALSA] - For ALSA output.
 ** [http://jackit.sourceforge.net Jack] (try 0.100.0 if you have problems with other versions) - For Jack output.
