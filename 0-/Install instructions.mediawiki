@@ -91,5 +91,6 @@ easy as 123.
 == See Also ==
 * [[Download XMMS2]]
 * [[Using the application]]
+* [[Waf problems|List of common WAF problems]]
 
 [[Category: General]]
