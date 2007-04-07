@@ -77,7 +77,7 @@ In conclusion, collections are a new step towards abstraction of the access and 
 : 
 : Exemples of operators include:
 * set operators: union, intersection, complement
-* filtering operators: match, contain, larger, smaller
+* filtering operators: equals, match, larger, smaller
 * list operators: idlist, idqueue, Party Shuffle
 
 : Each operator outputs a specific type of collection. The first two types of operators (set and filtering) produce mediasets; the last type (list) produces medialists.
@@ -150,8 +150,8 @@ Filter operators are configured using their two properties:
 
 Description of the operators:
 
-* '''<code>match</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> exactly matches <code>V<sub>o</sub></code>.
-* '''<code>contain</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> matches <code>V<sub>o</sub></code> with possible wildcards (SQL syntax). The <code>%</code> wildcard can be used to represent ''any number'' of characters ; the <code>_</code> wildcard can be used to represent ''one'' single character.  For example, <code>F%b_r%</code> will match <code>Foobar</code> and <code>Free bar until 12</code>, but not <code>Cheap Finnish beer</code>.
+* '''<code>equals</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is exactly equal to <code>V<sub>o</sub></code>.
+* '''<code>match</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> matches <code>V<sub>o</sub></code> with possible wildcards (SQL syntax). The <code>%</code> wildcard can be used to represent ''any number'' of characters ; the <code>_</code> wildcard can be used to represent ''one'' single character.  For example, <code>F%b_r%</code> will match <code>Foobar</code> and <code>Free bar until 12</code>, but not <code>Cheap Finnish beer</code>.
 * '''<code>larger</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is larger than <code>V<sub>o</sub></code>.
 * '''<code>smaller</code>''': The resulting collection only contains media for which <code>V<sub>m</sub></code> is smaller than <code>V<sub>o</sub></code>.
 * '''<code>has</code>''': The resulting collection only contains media for which the given property is set.
@@ -272,7 +272,7 @@ The build sequence to create this structure is the following:
 # Create a node (1) referencing the <span style="font-variant:small-caps">All Media</span> collection;
 # Create a '''<code>larger</code>''' node (2), give it node (1) as input, set its <code>field</code> property to "year" and <code>value</code> to "1999";
 # Create a '''<code>smaller</code>''' node (3), give it node (2) as input, set its <code>field</code> property to "year" and <code>value</code> to "2004";
-# Create a '''<code>match</code>''' node (4), give it node (1) as input, set its <code>field</code> property to "artist" and <code>value</code> to "Beck";
+# Create an '''<code>equals</code>''' node (4), give it node (1) as input, set its <code>field</code> property to "artist" and <code>value</code> to "Beck";
 # Create an '''<code>and</code>''' node (5), give it node (3) and (4) as input;
 # Create a node (6) referencing the <span style="font-variant:small-caps">Pop Playlist</span> collection;
 # Create an '''<code>or</code>''' node (7), give it node (5) and (6) as input;
@@ -328,7 +328,7 @@ The alternative is to keep a '''dedicated API to modify playlists''', similar to
 
 [[Image:Collection-diagram-usecase-1.png|frame|center|Use case 1]]
 
-Create the collection structure pictured above, by using <code>match</code> operators to filter all songs by Ladytron and exclude the album called "604" (using the <code>not</code> operator) as well as the song with id 719 (stored in an idlist).
+Create the collection structure pictured above, by using <code>equals</code> operators to filter all songs by Ladytron and exclude the album called "604" (using the <code>not</code> operator) as well as the song with id 719 (stored in an idlist).
 
 Then, ''query media'' on the server by giving it the whole structure, i.e. a reference to the <code>and</code> operator (6).  The songs matching the constraint will be returned.
 
