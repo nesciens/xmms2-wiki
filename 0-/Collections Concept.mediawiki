@@ -340,11 +340,11 @@ Create the simple collection structure pictured above.
 
 Then ''query infos'' on the server and set "album" as the only property to select and group by.  The list of albums by Pink Floyd will be returned.
 
-== Create an "Interesting" Party Shuffle playlist of size 20 containing all songs by Archive and the content of collection "Rock 90's". ==
+== Create an "Interesting" Party Shuffle playlist of size 20 containing all songs by artists whose name start by "A" and the content of collection "Rock 90's". ==
 
 [[Image:Collection-diagram-usecase-3.png|frame|center|Use case 3]]
 
-Create the collection structure pictured above, by taking the union of all media by Archive and a reference to the "Rock 90's" playlist, and feeding it to a <code>Party Shuffle</code> operator (with the <code>size</code> property set to 20).
+Create the collection structure pictured above, by taking the union of all media by artists whose name start by "A" and a reference to the "Rock 90's" playlist, and feeding it to a <code>Party Shuffle</code> operator (with the <code>size</code> property set to 20).
 
 Save that node (4) on the server under the name "Interesting" (displayed as (5) on the graph), in the ''Playlists'' namespace.
 
