@@ -71,7 +71,7 @@ No new platform support are included in this release.
 * <mantis>1455</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>72dbbc23692f578795af0ed7ae573555a8d315e1</git>
 '''Georg Schild'''
-* <mantis></mantis>
+* <mantis>1498</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>a452a128b4369d00390fbdd57b212dd14592761b</git>
 '''Jonne Lehtinen'''
 * <mantis>1456</mantis>
