@@ -24,7 +24,7 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * make you rich.
 ** ... unless you're a [[Summer of Code 2006|SoC student]]. :)
 * get you laid.
-** ... unless you use it to play [http://www.last.fm/tag/sensual sensual music] while dating a [http://uncyclopedia.org/wiki/Girl girl].
+** ... unless you use it to play [http://www.last.fm/tag/sensual sensual music] while dating.
 * make you famous.
 ** ... unless you're [[SÃ©bastien Cevey]].
 * break you out of [[Wikipedia:Prison Break|jail]].
