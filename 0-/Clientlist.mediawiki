@@ -38,6 +38,7 @@ All current clients should be found here.
 {{ClientTableEntry|XmmsDeskbar| Gnome Deskbar Plugin | Python | in development | When typing in the input field of deskbar, albums, songs and artists are queried }}
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|xmms2Plugin| Plugin for irssi | C++ | in development | Control and query xmms2 within irssi }}
+{{ClientTableEntry|XMMS2 Webterface| Browser / Webclient | Ruby | in development | eRuby templated, skinnable, simple web 1.0 client}}
 |}
 
 = Unknown State =
@@ -51,7 +52,6 @@ Please move the following clients according to their actual state!
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
 {{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
-{{ClientTableEntry|XMMS2 Webterface| Browser / Template | Ruby | discontinued? | Template for eRuby, whatever that may be}}
 {{ClientTableEntry|XMMS2 xml-rpc| Web? | Ruby | Unknown | Client that acts as an xml-rpc server }}
 |}
 
