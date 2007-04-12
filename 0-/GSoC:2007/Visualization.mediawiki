@@ -1,5 +1,5 @@
 {{GSoCProject
-|student=Johannes Jordan
+|student=[[User:ypnos|Johannes Jordan]]
 |mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]
 |cmilestone=Student accepted \o/
 |nmilestone=''to be filled in by student''
