@@ -13,5 +13,7 @@
 |-
 |colspan="5"|{{{description}}}
 |-
-|colspan="5"|{{{links}}}
+|colspan="5"|
+[[{{PAGENAME}}/Details|Detailed description of project]]
+{{{links}}}
 |}
