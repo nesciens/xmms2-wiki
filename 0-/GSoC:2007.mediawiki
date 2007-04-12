@@ -1,9 +1,9 @@
 == Accepted Project 2007 ==
 
-* [[Visualization]] by Johannes Jordan
-* [[Generated IPC]] by Thomas Coppi
-* [[Test framework]] by Florian Ragwitz
-* [[Service Clients]] by Ning Shi
+* [[Summer of Code 2007/Visualization]] by Johannes Jordan
+* [[Summer of Code 2007/Generated IPC]] by Thomas Coppi
+* [[Summer of Code 2007/Test framework]] by Florian Ragwitz
+* [[Summer of Code 2007/Service Clients]] by Ning Shi
 
 == See also ==
 
