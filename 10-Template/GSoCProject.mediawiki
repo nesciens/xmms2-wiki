@@ -11,12 +11,10 @@
 |{{{nmilestone}}}
 |
 |-
-!colspan=5|
-
-{{{description}}}
+!colspan="5" align="left" |{{{description}}}
 
 |-
-!colspan=5|
+!colspan="5"|
 
 {{{links}}}
 
