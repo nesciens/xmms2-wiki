@@ -1,5 +1,5 @@
 {{GSoCProject
-|student=Thomas Coppi
+|student=[[User:tcoppi|Thomas Coppi]]
 |mentor=[[User:Anders Gustafsson|Anders Gustafsson]]
 |cmilestone=Student accepted \o/
 |nmilestone=''to be filled in by student''
