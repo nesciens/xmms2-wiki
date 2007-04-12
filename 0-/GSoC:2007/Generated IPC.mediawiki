@@ -1,0 +1,17 @@
+{{GSoCProject
+|student=Thomas Coppi
+|mentor=[[User:Anders Gustafsson|Anders Gustafsson]]
+|cmilestone=Student accepted \o/
+|nmilestone=''to be filled in by student''
+
+|description=
+''Short (one paragraph) description to be added here...''
+
+|links=
+[[Summer of Code 2007/Generated IPC/Details|Detailed description of project]]
+...
+[[Summer of Code 2007/Generated IPC/Logbook|Logbook/programmers diary]]
+... 
+''add links to other subpages here''
+
+}}
