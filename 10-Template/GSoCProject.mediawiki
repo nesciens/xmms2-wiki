@@ -1,0 +1,23 @@
+{|
+!align="right"|'''Student''':
+|{{{student}}}
+!align="right"|'''Current milestone''':
+|{{{cmilestone}}}
+|
+|-
+!align="right"|'''Mentor''':
+|{{{mentor}}}
+!align="right"|'''Next milestone''':
+|{{{nmilestone}}}
+|
+|-
+!colspan=5|
+
+{{{description}}}
+
+|-
+!colspan=5|
+
+{{{links}}}
+
+|}
