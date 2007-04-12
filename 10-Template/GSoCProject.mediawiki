@@ -1,21 +1,17 @@
 {|
-!align="right"|'''Student''':
+|align="right"|'''Student''':
 |{{{student}}}
-!align="right"|'''Current milestone''':
+|align="right"|'''Current milestone''':
 |{{{cmilestone}}}
 |
 |-
-!align="right"|'''Mentor''':
+|align="right"| '''Mentor''':
 |{{{mentor}}}
-!align="right"|'''Next milestone''':
+|align="right"| '''Next milestone''':
 |{{{nmilestone}}}
 |
 |-
-!colspan="5" align="left" |{{{description}}}
-
+|colspan="5"|{{{description}}}
 |-
-!colspan="5"|
-
-{{{links}}}
-
+|colspan="5"|{{{links}}}
 |}
