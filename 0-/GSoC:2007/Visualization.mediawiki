@@ -1,0 +1,17 @@
+{{GSoCProject
+|student=Johannes Jordan
+|mentor=[[User:TobiasRundstrÃ¶m|Tobias]]
+|cmilestone=Student accepted \o/
+|nmilestone=''to be filled in by student''
+
+|description=
+''Short (one paragraph) description to be added here...''
+
+|links=
+[[Summer of Code 2007/Visualization/Details|Detailed description of project]]
+...
+''add link to blog here''
+... 
+''add links to other subpages here''
+
+}}
