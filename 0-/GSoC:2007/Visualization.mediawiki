@@ -8,7 +8,6 @@
 ''Short (one paragraph) description to be added here...''
 
 |links=
-[[Summer of Code 2007/Visualization/Details|Detailed description of project]]
 ...
 ''add link to blog here''
 ... 
