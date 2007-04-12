@@ -1,6 +1,6 @@
 {{GSoCProject
 |student=Johannes Jordan
-|mentor=[[User:TobiasRundstrÃ¶m|Tobias]]
+|mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]
 |cmilestone=Student accepted \o/
 |nmilestone=''to be filled in by student''
 
