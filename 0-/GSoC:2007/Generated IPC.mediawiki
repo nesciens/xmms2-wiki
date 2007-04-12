@@ -10,7 +10,7 @@
 |links=
 [[Summer of Code 2007/Generated IPC/Details|Detailed description of project]]
 ...
-[[Summer of Code 2007/Generated IPC/Logbook|Logbook/programmers diary]]
+''add link to blog here''
 ... 
 ''add links to other subpages here''
 
