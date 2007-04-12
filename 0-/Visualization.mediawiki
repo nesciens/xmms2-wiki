@@ -1,6 +1,14 @@
 {{Template:Discussion}}
 
 
+== Note ==
+
+As Visualisation was accepted as Google Summer of Code Project, there is now a dedicated page about that one '''[[Summer_of_Code_2007/Visualization|here]]'''. I will merge and deprecate this page soon. Everybody is still invited to share his/her ideas on the topic with me :)
+
+
+== Old Discussion ==
+
+
 Some thoughts on visualisation...
 
 
