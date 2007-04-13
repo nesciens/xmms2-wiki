@@ -163,34 +163,7 @@ All methods must be accessed through the interface org.freedesktop.MediaPlayer
 i.e. calling Quit with qdbus would be:
  $ qdbus org.freedesktop.MediaPlayer /Player org.freedesktop.MediaPlayer.Quit
 
-== The ''basic'' interface (XMMS2 wiki version ) ==
-* Playback
-** Play/Start
-** Stop
-** Pause
-** Seek (milliseconds)
-** Get Current Status (playing/paused/stopped)
-** Get Current Playback Position (position in currently playing stream - milliseconds)
-** SIGNAL: Playback position (playtime - milliseconds)
-* Playlist
-** Previous
-** Next
-** Add/Enqueue (URL)
-** Remove
-** Clear
-** Get list
-** Get Current Playlist Position (zero-indexed)
-** SIGNAL: Playlist Position
-* Info
-** Identity/Version
-** Get Current Song (returns unique identifier, which can be used to get associated metadata)
-** Get Song Metadata
-** SIGNAL: Current Song (unique identifier, same as ''Get Current Song'')
-* Session
-** Quit (player shutdown)
-* Output
-** Get Volume
-** Set Volume
+
 
 == The ''Basic'' interface, ( BMPx/VLC version ) ==
 
