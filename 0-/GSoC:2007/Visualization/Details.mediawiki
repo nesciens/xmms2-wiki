@@ -1,0 +1,83 @@
+''Note: The following paragraphs describe the technical planning at the initial state of the project, copied from the SoC application itself. It is not guaranteed that this page will always reflect the actual state.''
+
+First I would like to give an overview over today's target applications:
+* the classical visualization approach, mostly fullscreen with lots effects
+* builtin visualization in typical controlling clients
+* gadget like visualization, included in panels, on the desktop, etc.
+
+In my opinion, the first one is indeed the less-used or important. Fullscreen
+visualization is mainly used at certain events, like parties, and is not part
+of the regular, daily usage pattern. The second type though was a real
+characteristic visual feature of Winamp, which heralded the era of software
+music players. Users are familiar to this and often tend to miss it on
+nowadays players. So it should be a goal to encourage client developers to
+include some fancy, still unintrusive visualization into their players,
+helping users to feel familiar with XMMS2 from the start on; Euphoria
+had this already.
+The third one is something like an ongoing trend we shouldn't miss. As
+sidebars like gkrellm are present for ages, today even major OSes like OS X
+or Windows Vista implement similiar functionality. Users like to have
+monitors on their desk (for example, in the gnome panels, etc.) and a
+visualization monitor can be a very appealing one. Up till now I only know
+one kind of these, though (my own creation, because typically it is
+rather tricky to have a media player's plugin be plugin of something else,
+too - but it's dead simple with XMMS2.
+
+The last two kinds of visualization applications have several different
+characteristics than fullscreen visualization. This one just wants the whole
+frequency band, perhaps with some cut-off, to fill the screen, or use an
+oscilloscope-alike view of the data. The other ones, though, have a for more
+minimal approach, for example only showing a volume bar per channel or
+a dozen of bands, with a rather large cut-off of high frequences.
+
+An interesting note on the first one is also that today's media setups often
+include some media server playing the music, where visualization has to be
+done over network, if at all, which at present no major media player seem to
+support, too.
+
+
+With this consideration background in mind, this is the proposed scheme for
+a typical vis client-server interaction:
+
+* The client tries to setup an alternative connection to the server than the  regular IPC messages which fits the purpose of delivering chunks of actual  visualization data more: shared memory, if possible, or UDP, if not.
+
+: In practice, the client can decide on the IPC connection - if it's  a socket file, it can be used as SHM key. If not, UDP is needed; the  client listens on a random, propagated UDP port for packets from the server.
+
+* The whole control flow stays in the reliable IPC channel; although, within  normal operation, no control messages should be needed, ie there should be  no IPC communication involved in the data delivery at all!
+
+* The client requests its needed data format from the server; some pro's and  con's of this can be found on the Wiki page[8]; the client can adjust  several parameter of the data, which should fit 99% of all clients, esp.  the ones from the first presented kind of application.  But particularly the other kinds should be able to decrease the amount of  transmitted data a lot, if applicable.
+
+: One part of the configuration is the frames per second, or sample rate,  respectively. The client therefore can basically delegate it's update  frequency to the server, who doesn't provide data more often than needed.  Using UDP, this should especially be adjusted according to the flow  (the client can count thrown-away packages as a shifting bitlist):  Tf too many UDP packets per second are sent, the network and target host  are basically flooded and this leads to laggy behaviour.
+
+* The server itself processes the data according to the request; therefore,  every client also gets its own dataset. This is reasonable, as multiple  visualization clients are rather unusual (but occur, if for example  some builtin visualization is supplemented with one of the first kind,  started additionally by the user; so support for this is a must-have)  and therefore the cost of having seperate datasets (and computations) is  rather low, compared to the unnecessary large dataset (and therefore UDP  packetsizes) which would have to be provided for an unified shared memory.
+
+* Visualization output basically has to happen at the end of the xforms  chain, just before the single output plugin. it is negoitable though, to  outsource the data processing (ie FFT, etc) to seperate effect xforms  between the normal chain and the vis output; perhaps that would be a more  powerful design.  Because the server wants to send with a fixed FPS count, it could be  reasonable to have a seperate thread for (part of) the visualization task,  but not a neccessity at all.
+
+* Basically, the client can rely on a simple "draw on incoming data"  technique. As the client tells the server the preferred samplerate  beforehand, timing controls can be given to the server, just waiting for  data to flow in and acting on it. Server and client stay "in sync", and  no data is redundantly processed or drawn.
+
+: Using SHM, this can be reduced to a simple accompaning semaphore, which is  elevated by the server after new data in the shm is present; the client can  blocking-wait on that event. Using UDP, this would be the incoming UDP  package the client waits for.
+
+: The server should not wait (and block) for the client to collect the data  at all (while this would be possible using threading). There is a rather  easy way to do this, even with SHM. The client has to decrease/elevate  another semaphore itself before/after reading the data, but the server  doesn't have to wait on it, but rather would poll on it at every frame to  be delivered (notice that this is no busy wait, the server just drops  frames). To further smooth the situation, two alternating memory spaces  could be used for every new frame. This could make clients possible, which  don't "fetch" the data at all, but work directly on it. While they do so,  the server can already fill the second frame; as they requested the rate  themselves, it should be uncommon that they lag two frames behind;  (Problem: output delay on the server, see below).
+
+: Using UDP, the main result of a lagging or slow client are UDP packages  which have to be thrown away by the client to avoid continuous lagging  (you wouldn't believe how many incoming UDP packages the OS buffers while  the socket is not read by the application!); for this, the server and  client need to shake out some time synchronization (see later).
+
+* SHM/UDP packets can hold information about how far the given dataset lies  in the future, ie how long any remaining buffer delay is. If this is any  significant amount (> 20ms), the client could usleep() for that time, for  example measuring actual time, then doing all the drawing on a shadow  buffer, sleep for the remaining time and then swap buffers. I think it's  not a good idea to hold back data on the server, if the output delay would  make waiting necessary, just because the earlier the data is available,  esp. if using the network, the better. If the delay between visualization  delivery and output really gets bigger than the window between two frames,  more sophisticated solutions are necessary:
+
+: Using SHM, a ringbuffer comes into mind (a generalization of the  alternating frames; the bigger the ringbuffer, the lesser frames have to be  dropped on high output delay), while using UDP, the client should collect  new packets only on demand (the control flow is unaffected of this!) and  therefore delegate the intermediate buffering to the operating system.
+
+* For the client, if delay information has to be evaluated, being in sync  with the server timewise is important. Using SHM, this is given by design.  Using UDP, this is not given at all, but also, using UDP, it is important  anyway to determine wether a package got too old, (regardless of an  included delay)! This makes it necessary to synchronize the ticks values  at the beginning of the communication, using simple intern pinging and  heuristics (using the time a packet needs to get from server to client and  back, which at the way back includes the ticks value of the server on send  and of the client on recieve, the real offset could be approximated).  It should be noted that differences under 10 or 20 ms shouldn't really be of  any importance to the viewer.
+
+* A typical package (or SHM block) should therefore contain:
+# the time in ticks when the data should be "heard"    (the time the data was obtained + the estimated delay for output)
+# a temporary format code, so the client can request format changes and    then identify the first time the new format is delivered
+# the visualization data itself in the configured format; A packet with a timestamp lesser than the actual time + reasonable offset  should therefore be discarded and results in a lost frame
+
+* This mechanism should be transparent to the client developer, ie there  should be no reason for him to know whether the communication is running  over SHM or UDP. The client developer should just configure the data format  and request the start (or stop) of delivery via libxmmsclient.
+
+: Then, he can loop over a (blocking, as it decreases the semaphore) "get new data" function, which returns the timestamp and a pointer to the data to be  directly read and processed. If double buffering is necessary with SHM,  it should be done transparently, too. In subsequent runs, the "get new  data" function elevates the client mutex, if no double buffering is done.
+
+: For some use-cases though, this mechanism has to be evaluated and perhaps  other methods are necessary.
+
+: (Note about semaphores: The server raises semaphore 1 ("new data  available") after every write, while the client blocky decreases it on  read. The client raises semaphore 2 ("waiting for new data") after every  read, while the server (skippy) decreases it on write. We need two  semaphores here, as they provide additional information, not only doing  access control.)
+
+This design, as shown, is really damn easy for the client developer. He doesn't have to care about FFT, or even about threading. Still, the full power is on his side, having access to raw PCM data if needed.
