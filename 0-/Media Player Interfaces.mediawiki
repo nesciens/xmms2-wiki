@@ -202,107 +202,124 @@ i.e. calling Quit with qdbus would be:
 
 * /TrackList : TrackList management
 
-=== The Methods ===
+== The Methods ==
 
-* /
+=== / ===
 
-Identity : Identify the "Media Player" as in "VLC 0.9.0", "bmpx 0.34.9", "Totem 2.16.2" ...
+==== Identity ====
+Identify the "Media Player" as in "VLC 0.9.0", "bmpx 0.34.9", "Totem 2.16.2" ...
 
    <method name="Identity">
      <arg type="s" direction="out"/>
    </method>
 
-* /TrackList
+=== /TrackList ===
 
-GetMetadata : Gives all meta data available for element at given position in the "TrackList"
+==== GetMetadata ====
+Gives all meta data available for element at given position in the "TrackList"
 
   <method name="GetMetadata">
     <arg type="i" direction="in" />
     <arg type="a{sv}" direction="out" />
   </method>
 
-GetCurrentTrack : Position of Current URI in the "TrackList"
+==== GetCurrentTrack ====
+Position of Current URI in the "TrackList"
 
    <method name="GetCurrentTrack">
      <arg type="i" direction="out" />
    </method>
 
-GetLength : Number of elements in the "TrackList"
+==== GetLength ====
+Number of elements in the "TrackList"
 
    <method name="GetLength">
      <arg type="i" direction="out" />
    </method>
 
-AddTrack : Appends an URI in the "TrackList", play it immediately if the 2nd argument is TRUE
+==== AddTrack ====
+Appends an URI in the "TrackList", play it immediately if the 2nd argument is TRUE
 
    <method name="AddTrack">
      <arg type="s" />
      <arg type="b" />
    </method>
 
-DelTrack : Removes an URI from the "TrackList", given its position
+==== DelTrack ====
+Removes an URI from the "TrackList", given its position
 
    <method name="DelTrack">
      <arg type="i" />
    </method>
 
-Loop : Toggle playlist loop.
+==== Loop ====
+Toggle playlist loop.
 
    <method name="Loop">
      <arg type="b" />
    </method>
 
-Shuffle : Toggle playlist shuffle.
+==== Shuffle ====
+Toggle playlist shuffle.
 
    <method name="Shuffle">
      <arg type="b" />
    </method>
 
-* /Player
+=== /Player ===
 
-Next : Goes to the next element (what if we're at the end? -- ''NOTE'' Nothing terrible needs to happen, the player should just ignore it. However UIs, and maybe not only UIs, can receive a hint as to whether there is a next track using the caps API
+==== Next ====
+Goes to the next element (What if we're at the end? -- '''NOTE''' ''Nothing terrible needs to happen, the player should just ignore it. However UIs, and maybe not only UIs, can receive a hint as to whether there is a next track using the Caps API''
 
    <method name="Next">
    </method>
 
-Prev : Goes to the previous element (what if we're at the beginning?)
+==== Prev ====
+Goes to the previous element (what if we're at the beginning? '''See above''')
 
    <method name="Prev">
    </method>
 
-Pause : If playing : pause. If paused : unpause. If stopped : start playing
+==== Pause ====
+If playing : pause. If paused : unpause
 
    <method name="Pause">
    </method>
 
-Stop : Stop playing.
+==== Stop ====
+Stop playing.
 
    <method name="Stop">
    </method>
 
-Play : If playing : rewind to the beginning of current track, else : start playing.
+==== Play ====
+If playing : rewind to the beginning of current track, else : start playing.
 
    <method name="Play">
    </method>
 
-Repeat : Toggle the current track repeat.
+==== Repeat ====
+Toggle the current track repeat.
 
    <method name="Repeat">
      <arg type="b" />
    </method>
 
-Quit : Makes the "Media Player" exit.
+==== Quit ====
+Makes the "Media Player" exit.
  
    <method name="Quit">
    </method>
 
-GetStatus : Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped.
+==== GetStatus ====
+Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped. ([TODO] Expand the status stuff)
 
    <method name="GetStatus">
    <arg type="i" direction="out"/>
    </method>
 
-Caps : Return the "media player"'s current capabilities, Flags are:
+==== Caps ====
+Return the "media player"'s current capabilities.
 
    <signal name="Caps">
      <arg type="i" />
@@ -344,25 +361,29 @@ Note that the caps are a bitfield, currently defined as:
      <arg type=TODO />
    </signal>
 
-VolumeSet : Sets the volume (argument must be in [0;100])
+==== VolumeSet ====
+Sets the volume (argument must be in [0;100])
 
    <method name="VolumeSet">
    <arg type="i"/>
    </method>
 
-VolumeGet : Returns the current volume (must be in [0;100])
+==== VolumeGet ====
+Returns the current volume (must be in [0;100])
  
    <method name="VolumeGet">
    <arg type="i" direction="out"/>
    </method>
 
-PositionSet : Sets the playing position (argument must be in [0;100])
+==== PositionSet ====
+Sets the playing position (argument must be in [0;<track_length>] in milliseconds)
 
    <method name="PositionSet">
    <arg type="i"/>
    </method>
 
-PositionGet : Returns the playing position (must be in [0;100])
+==== PositionGet ====
+Returns the playing position (will be [0;<track_length>] in milliseconds)
  
    <method name="PositionGet">
    <arg type="i" direction="out"/>
