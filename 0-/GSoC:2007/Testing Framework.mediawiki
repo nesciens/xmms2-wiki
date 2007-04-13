@@ -1,0 +1,23 @@
+{{GSoCProject
+|student=Florian Ragwitz
+|mentor=Alexander Botero-Lowry
+|cmilestone=Student accepted \o/
+|nmilestone=Setup development environment
+
+|description=
+
+XMMS2 has an extensive and diverse code base where the only kind of
+    testing done is ``it works for me'' testing. In the past attempts have
+    been made to create a testing framework but they have failed or lay
+    underdeveloped for a variety of reasons.
+
+    I believe that focusing on a language-agnostic model will make
+    developers more likely to implement tests since it won't require them to
+    write a test in a language that they are uncomfortable with or isn't
+    suited for that sort of test.
+
+|links=
+...
+Link to blog here
+
+}}
