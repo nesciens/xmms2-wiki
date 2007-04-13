@@ -9,8 +9,8 @@
 
 |links=
 ...
-''add link to blog here''
+[[{{PAGENAME}}/Schedule|Rough schedule]]
 ... 
-''add links to other subpages here''
+[[{{PAGENAME}}/Progress|Recent progress]]
 
 }}
