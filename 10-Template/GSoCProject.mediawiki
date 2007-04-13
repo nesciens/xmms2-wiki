@@ -11,7 +11,7 @@
 |{{{nmilestone}}}
 |
 |-
-|colspan="5"|{{{description}}}
+|style="padding:20pt;" colspan="5"|{{{description}}}
 |-
 |colspan="5"|
 [[{{PAGENAME}}/Details|Detailed description of project]]
