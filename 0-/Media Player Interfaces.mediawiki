@@ -291,17 +291,17 @@ Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped. ([TOD
    <arg type="i" direction="out"/>
    </method>
 
-==== CapsChange ====
+==== GetCaps ====
 Return the "media player"'s current capabilities.
 
-   <signal name="CapsChange">
-     <arg type="i" />
+   <method name="GetCaps">
+     <arg type="i" direction="out" />
    </signal>
 
 RELATED:
 
-   <method name="GetCaps">
-     <arg type="i" direction="out" />
+   <signal name="CapsChange">
+     <arg type="i" />
    </signal>
 
 
