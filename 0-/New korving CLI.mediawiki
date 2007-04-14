@@ -1,0 +1,17 @@
+This page is for discussion of a new potential CLI client for XMMS2.
+
+== requested features ==
+
+* scripting/alias support
+** alias dis="clear;mlib search artist:dismantled;play"
+* shell functionality
+* depending calls
+** mlib search artist:foobar; add (will search after foobar and add without arguments will use the last returned list)
+* pipe support
+** cat file.m3u | xmms2 add
+* better argument parsing
+** xmms2 add -p playlist <files>
+
+== Requirements ==
+* minimal dependency, glib and readline? (maybe libedit, seems more sane than readline)
+* have some compatibility with old cli but not to death either.
