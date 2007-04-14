@@ -242,7 +242,7 @@ Toggle playlist shuffle.
 === /Player ===
 
 ==== Next ====
-Goes to the next element (What if we're at the end? -- '''NOTE''' ''Nothing terrible needs to happen, the player should just ignore it. However UIs, and maybe not only UIs, can receive a hint as to whether there is a next track using the Caps API''
+Goes to the next element (What if we're at the end? -- '''NOTE''' ''Nothing terrible needs to happen, the player should just ignore it. However UIs, and maybe not only UIs, can receive a hint as to whether there is a next track using the Caps API'')
 
    <method name="Next">
    </method>
