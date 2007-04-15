@@ -1,0 +1,113 @@
+==Description==
+Service client idea empowers XMMS2 with unlimited expendibility. Different
+service clients can register themselves to the server so that when normal
+clients want to tag a music file for example, the service client will know what
+to do. Or normal clients want to look up some data from MusicBrainz.org,
+service client can perform the search and return the results to the normal
+clients. In this way, normal clients can share additional features provided by
+different service clients without having to implement them in every normal
+client over and over again.
+
+Here is the basic program flow I have in mind. When a normal client tries to
+invoke a service, an xmmsipc call will be invoked on the server, and the server
+will look up the corresponding function in the service function pool by a key.
+If an entry is found, function signatures will be checked. An error will be
+returned if any of these does not match. Then the server will call the function
+on that service client and return whatever it is to the normal client. Since we
+don't want the server to be blocked, the server will only make asynchronized
+calls to service clients. However, for normal clients, it is up to them to
+choose which kind of call they would like to make. Normal clients do not have
+to know which service client provide what, the server will handle that by
+looking up in the service table. All normal clients need to know are the keys
+of the services.
+
+So in this implementation, we provide normal clients a list of all the available
+services (method calls). For example, on server-side, each method call is
+hashed. So even if two method calls have exactly the same signature, they will
+be stored in distinct entries in method call table. On normal client-side, the
+user can open a method call list on the client (probably in preferences). The
+client will ask the server for all the registered method calls and their
+descriptions. Then the user can choose the one he/she like based on the
+description. What the client will remember is the hashed key, not the method
+name. So there will not be any conflicts. An example call will look like:
+xmmsc_call_that_service_client_thing(hashed_key, args...).
+
+The service client methodology is similar to server's plugin system. The
+difference are that the plugins do not have to reside on the same physical
+machine, clients also cannot communicate to plugins (except via config_val
+hacks) and functionality is restrained. And here raise several problems. If I
+have my server and client running on the same system, and I have over ten
+different service clients. I would have to run them every time I start the
+server, which will become a pain. And there is no way to make either the server
+or normal clients to start service clients automatically, because service
+clients can be anywhere (so xmms2d startup.d system does not help much in this
+case). I would have to look into this more.
+
+As I saw on this page [[Generated_IPC]]. Using
+XML to define all service calls is a good start. Say we have this service which
+takes a string and search it on MusicBrainz.org and return a parsed result, the
+XML definition would look somewhat like this:
+
+ <method name="musicbrainz_search">
+  <doc>Search for information on MusicBrainz.org</doc>
+  <arg><GString /><doc>search query</doc></arg>
+  <return><GString /><doc>parsed search result</doc></arg>
+ </method>
+
+However, since General IPC will not be available any time soon. A straight way
+to implement this without using XML is to send plain text just like what MPD
+does. Hopefully, this would make the transformation less painful after General
+IPC has been finished.
+
+==Use Cases==
+The following use cases describe how to register a service client and the
+procedures for calling a registered service. Before I start the use cases,
+there are several modifications that need to be taken place. In enumerator type
+xmms_ipc_signals_t, add an extra item called XMMS_IPC_SIGNAL_SERVICE. Do
+similar changes to enumerator xmms_ipc_cmds_t, the new items will be called
+XMMS_IPC_CMD_SERVICE_REQUEST and XMMS_IPC_CMD_SERVICE_RETURN. At last, we need
+to create a hash table to store the list of all the registered services on the
+server. As soon as these changes are in place, I can start describing the use
+cases.
+
+===Use Case 1===
+Here is what will happen when a new service client registers to the server.
+# service client establishes connection with server just like normal clients do.
+# service client sends the service names and descriptions to the server. For each service, the server will generate a hash from the name and description of it. All service clients will be registered as listeners for a dedicated service client signal.
+# server generates hash and insert (hash, service object) pair into the hash table.
+# server responses to the service client's registration request with a result_t object containing its hash key, so that the service client can bind it to a callback function.
+# service client waits for requests.
+
+Remarks on this:
+* For two distinct services, even if they share the same service name, their descriptions should be different. So using the service name combined with its corresponding description to generate a hash key would make the service globally uniquely identifiable. Once this hash is calculated, it is globally available. In other words, this would be the only way to identify that service both on the server and clients. All other approaches we proposed  earlier including DraX's global counter method do not solve this problem. Imagine starting the same service client twice. I will have two instances of it trying to register to the server. There is no way for the server to tell them apart.
+* I propose registering all services as signal XMMS_IPC_SIGNAL_SERVICE, and the server will further extract the hash ID to identify each service. Otherwise, using a different signal for each service will result in changing current signal implementation. Because current implementation depends on a finite enumerate structure to hold all available signal names.
+
+===Use Case 2===
+After registering to the server, service client is ready for requests. The following shows the procedures to use a service client.
+# client sends a message with cmd field set to XMMS_IPC_CMD_SERVICE_REQUEST.  Hash value of the service and the arguments intended to pass to the service are serialized and put into the data field.
+# server gets the message and sees that it is a service request. Then the server deserialize the hash key from data field and look it up in the hash table. If it is found, the message will be passed to the corresponding service client. Otherwise, an error message will be returned to the client.  For successful requests, a unique request ID (like a cookie) will be generated and associated with the client object. Then this pair will be stored in a table.
+# service client gets the message and start to deserialize the arguments in data field. After checking their validities, service client can go on to do its job. When the result is ready, service client generates a new message with the request ID and the result serialized in the data field and cmd set to XMMS_IPC_CMD_SERVICE_RETURN.
+# server sees the message and extract the client ID from the data field. Then fetch the corresponding client object from the table described in step 2. And pass this message to the right client with cmd field set to XMMS_IPC_CMD_SIGNAL and signalid set to XMMS_IPC_SIGNAL_SERVICE.
+# client gets the response. It finds out that the message is a service response, then it tries to extract the hash key from data field and lauches the corresponding handler in function process_msg. client then does whatever it like to the result.
+
+Remarks on this:
+
+* I think the client can call the service asynchroneously, not necessarily synchroneously.
+
+==Conclusion==
+In conclusion, the server does not need to care about the correctness of the arguments a client passes to a service client. This job will be left to the service client itself. All the server cares about is the hash key. And all
+services register themselves as signals. My arguments on this issue is that if we have to include function signatures when registering services, we probably have to recompile the server code everytime a new service client is introduced.  Obviously, this is not the way it should be implemented. By not having function signatures on the server, we will not introduce extra computation to the server.  In addition, it is intuitive for programmers to check the validity of the arguments passed to the functions. In other words, no matter the server checks
+function signatures or not, the service client will check them any way. So instead of doing the same work twice, we can leave this to the service client.  Otherwise, the server would have to deserialize the whole message, check them, and serialize the whole message again.
+
+For the other aspect, we need to provide some accessor functions to help client
+developers construct data structures and retrieve data, so that they do not
+get to touch the underlying data structures. (just like current implementation
+of media collection)
+
+In order to help client developers use services, we need to publish API
+documentations for all service clients. So they know what to do with the
+services. All services will be populated in a dict structure. And the
+structure has a few fixed fields like service name, description and argument
+descriptions, disregarding the service it is containing. Thus for all client
+developers, they can robustly assume that these fields exist and create whatever
+GUI interface they see fit to represent the service list.
