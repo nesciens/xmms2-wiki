@@ -17,3 +17,221 @@ This page is for discussion of a new potential CLI client for XMMS2.
 == Requirements ==
 * minimal dependency, glib and readline? (maybe libedit, seems more sane than readline)
 * have some compatibility with old cli but not to death either.
+
+
+== Usage ==
+
+Much of the commands are inspired both from the current cli and from
+[http://sirius.cine7.net/nyello nyello].  The client can either be used inline (xmms2 play) or as a
+shell, if started without arguments:
+
+ $ xmms2
+ xmms2> next
+ xmms2> play
+
+=== Command summary ===
+
+ help    [command]
+ quit
+ play
+ pause
+ stop    [options]
+ seek               <time|offset>
+ prev    [offset]
+ next    [offset]
+ jump    [options]  <pattern>
+ search             <pattern>
+ info               <pattern>
+ list    [options]  [pattern]
+ add     [options]  <pattern>
+ remove  [options]  <pattern>
+ move    [options]  <pattern>
+ status  [options]
+ 
+ playlist <subcommand>
+   list               <pattern>
+   load               <name>
+   create  [options]  <name>
+   rename  [options]  <newname>
+   remove  [options]
+   config  [options]
+   clear   [options]
+   shuffle [options]
+   sort    [options]  <fields>
+ 
+ collection <subcommand>
+   list    [options]  <pattern>
+   save    [options]  <pattern>
+   rename  [options]  <newname>
+   remove  [options]
+   attribute [options]
+   
+ server <subcommand>
+   browse             <paths>
+   import             <paths>
+   rehash             [pattern]
+   remove             [pattern]
+   property [options] [mid [key [value]]]
+   config             [key [value]]
+   volume  [options]  <value|offset>
+   stats
+   plugins
+   quit
+
+=== Detailed description of commands === 
+ 
+==== help [command] ====
+
+Without argument, prints the list of commands with description; with
+an argument, it prints the detailed usage of the command.  It is
+equivalent to running ''command -h'' or ''command --help''.
+
+==== quit ====
+
+If used in shell-mode, exits the client.  In inline mode, it does not
+do anything.
+
+==== play ====
+
+Starts playback.
+
+==== pause ====
+
+Pauses playback.
+
+==== stop [options] ====
+
+Stop playback, possibly after a delay specified by the options.
+
+ Options:
+ -t, --track   <n>    Number of tracks after which playback is stopped.
+ -s, --seconds <time> Number of seconds after which playback is stopped.
+
+''Note: maybe these options should not be here, but managed by a service client?''
+
+==== seek <time|offset> ====
+
+Seek in the current track, either using an absolute position or a
+relative offset (if prefixed by + or -). The argument is always a
+''time value''.  If the resulting position is before the beginning or
+after the end of the current track, the seeking continues in the
+adjacent tracks.
+
+==== prev [offset] / next [offset] ====
+
+Advance backward or forward in the playlist.  By default, the step is
+one track, unless an offset (single integer value) is specified.
+
+==== jump [options] <pattern> ====
+
+Jump to the first track after the current track matching the pattern.
+
+ Options:
+ -b, --backward   Jump to the first track matching the pattern backwards.
+
+==== search <pattern> ====
+
+Search and print all the media matched by the pattern.
+
+==== info <pattern> ====
+
+Display all the properties for each media matched by the pattern.
+
+==== list [options] [pattern] ====
+
+List the contents of the active playlist by default.  This command can
+also be used to display any other playlist or collection (see
+Options).
+
+If a pattern is given, contents are further filtered and only the
+matching media are displayed.  Note that the pattern syntax allows
+ordering by properties, useful for collections.  If omitted, in the
+case of playlists, the playlist order is used.
+
+ Options:
+ -p, --playlist <name>    Display a given playlist.
+ -c, --collection <name>  Display a given collection.
+
+==== add [options] <pattern> ====
+
+Add the matching media to a playlist or a collection.  Some options
+are only relevant when adding to playlists or collections.
+
+This command can also be used to add files using their URI.  By
+default, directories are added recursively.
+
+ Options:
+ -f, --file <path>
+ -N, --non-recursive      Do not add directories recursively.
+ 
+ -p, --playlist <name>    Add to a given playlist.
+ -n, --next               Add media after the current track.
+ -a, --at <pos|offset>    Add media at a given position in the playlist,
+                          or at a given offset from the current track.
+ 
+ -c, --collection <name>  Add to a given collection.
+ -s, --static             Add matching media as a static list of entries,
+                          rather than a dynamic filter.
+
+==== remove [options] <pattern> ====
+
+Remove the matching media from a playlist or a collection.  Some
+options are only relevant when adding to playlists or collections.
+
+ Options:
+ -p, --playlist <name>    Remove from a given playlist.
+ 
+ -c, --collection <name>  Remove from a given collection.
+ -s, --static             Remove matching media as a static list of entries,
+                          rather than a dynamic filter.
+
+==== move [options] <pattern> ====
+
+Move entries inside a playlist, by default the active playlist.
+
+ Options:
+ -p, --playlist <name>  Playlist to act on.
+ -n, --next             Move the matching tracks after the current track.
+ -a, --at <pos|offset>  Move the matching tracks by an offset or to a position.
+
+==== status [options] ====
+
+Display the current status of the server.
+
+ Options:
+ -r --refresh <time>  Delay between each refresh of the status; if 0,
+                      the status is only printed once (default).
+ -f --format <string> Format string used to display status.
+
+
+==== playlist, collection and server ====
+
+'''TDB'''
+
+
+=== Argument types ===
+
+==== time value ====
+
+A single value represents seconds, but the common hour notation can be
+used: MM:SS or even HH:MM:SS.
+
+ Examples:
+ 
+  42       => 42 seconds
+  1:11     => 1 minute and 11 seconds
+  3:25:00  => 3 hours and 25 minutes
+
+An extended version could be implemented, that woud recognize strings
+like 5min, 3.hours, etc.
+
+==== pattern value ====
+
+The pattern syntax would use the xmmsc_coll_parse function and extend
+it to support additional features, like orderby fields, playlist
+sequences, pattern references or current position sequences.  Many of
+these could be inspired from the syntax used in nyello, which is
+described
+[http://git.xmms.se/?p=nyello.git;a=blob;hb=HEAD;f=src/command.cc#l_113 in the code].
+
+'''Much more extensive description to come here.'''
