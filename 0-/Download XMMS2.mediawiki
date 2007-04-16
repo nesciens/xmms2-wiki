@@ -55,6 +55,15 @@ Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in
 
 ''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
 
+=== ALT Linux Sisyphus ===
+
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nyello | nyello]] are available from repository. To install:
+ apt-get install xmms2
+
+ apt-get install gxmms2
+
+ apt-get install nyello
+
 == Ports ==
 
 === FreeBSD ===
