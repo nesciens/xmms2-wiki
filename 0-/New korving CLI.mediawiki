@@ -53,7 +53,7 @@ current song, etc.
  status  [options]
  
  playlist <subcommand>
-   list               <pattern>
+   list               [pattern]
    load               <name>
    create  [options]  <name>
    rename  [options]  <newname>
@@ -64,7 +64,7 @@ current song, etc.
    sort    [options]  <fields>
  
  collection <subcommand>
-   list    [options]  <pattern>
+   list    [options]  [pattern]
    save    [options]  <pattern>
    rename  [options]  <newname>
    remove  [options]
@@ -203,12 +203,86 @@ Move entries inside a playlist, by default the active playlist.
 Display the current status of the server.
 
  Options:
- -r --refresh <time>  Delay between each refresh of the status; if 0,
-                      the status is only printed once (default).
- -f --format <string> Format string used to display status.
+ -r, --refresh <time>  Delay between each refresh of the status; if 0,
+                       the status is only printed once (default).
+ -f, --format <string> Format string used to display status.
 
 
-==== playlist, collection and server ====
+==== playlist list [pattern] ====
+
+List all the existing playlists.  If a pattern is provided, only
+playlists containing matching media will be listed.
+
+==== playlist load <name> ====
+
+Load the given playlist as the active playlist.
+
+==== playlist create [options] <name> ====
+
+Create a new playlist.  By default, the new playlist is empty, but a
+flag can be used to start with a copy from an existing playlist.
+
+ Options:
+ -c, --copy <name>  Copy an existing playlist to the new one.
+
+==== playlist rename [options] <newname> ====
+
+Rename a playlist.  By default, this command acts on the active
+playlist.
+
+ Options:
+ -p, --playlist <name>  Rename a different playlist.
+
+==== playlist remove [options] ====
+
+Remove a playlist.  By default, this command acts on the active
+playlist.  If the active playlist is removed, the next playlist in the
+list becomes active.
+
+''Note: Or maybe this is not the cleverest thing..''
+
+ Options:
+ -p, --playlist <name>  Remove a different playlist.
+
+==== playlist config [options] ====
+
+Configure a playlist by changing its type, attributes, etc.
+
+ Options:
+ -p, --playlist <name>  Configure a different playlist.
+ -t, --type <type>      Change the type of the playlist:
+                        list, queue, pshuffle
+ -i, --input <coll>     Set the input collection for the playlist, if needed.
+                        Useful for pshuffle. (Default: All Media)
+ -s, --history <n>      Size of the history of played tracks.
+ -u, --upcoming <n>     Number of upcoming tracks to keep.
+
+==== playlist clear [options] ====
+
+Clear all entries from a playlist.  By default, this command acts on
+the active playlist.
+
+ Options:
+ -p, --playlist <name>  Clear a different playlist.
+
+==== playlist shuffle [options] ====
+
+Shuffle a playlist.  By default, this command acts on the active
+playlist.
+
+ Options:
+ -p, --playlist <name>  Shuffle a different playlist.
+
+==== playlist sort [options] <fields> ====
+
+Sort the entries of a playlist by a list of properties, separated by
+spaces.  By default, this command acts on the active playlist.
+
+ Options:
+ -p, --playlist <name>  Sort a different playlist.
+
+
+==== collection and server ====
 
 '''TDB'''
 
