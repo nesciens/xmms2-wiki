@@ -29,6 +29,10 @@ shell, if started without arguments:
  xmms2> next
  xmms2> play
 
+The prompt should be configurable with a custom string that could
+contain variables such as the current playlist, playback status,
+current song, etc.
+
 === Command summary ===
 
  help    [command]
