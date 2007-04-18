@@ -6,7 +6,7 @@ Client
 |version=[http://sourceforge.net/project/showfiles.php?group_id=166515]
 | devlanguage=JavaME, C
 | ui=MIDP 2.0
-| screenshots=[http://remuco.sourceforge.net/screenshots.html]
+| screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
 | description=
 
 
