@@ -1,0 +1,11 @@
+{{{gx2ctl}}
+
+by {{{Robin Gareus}}}
+
+Homepage: tentatively {{{http://mir.dnsalias.com/oss/xmms2/gx2ctl}}}
+Latest version: {{{0.1.2}}}
+Development language: {{{C}}}
+User Interface: {{{glade-2}}}
+Screenshots: {{{http://mir.dnsalias.com/_media/oss/xmms2/gx2ss2.png}}}
+
+{{{gnome xmms2 control - small player -control, -info & current-playlist editor, with DND support.}}}
