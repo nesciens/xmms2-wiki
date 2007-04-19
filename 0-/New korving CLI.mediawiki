@@ -3,7 +3,7 @@ This page is for discussion of a new potential CLI client for XMMS2.
 == requested features ==
 
 * scripting/alias support
-** alias dis="clear;mlib search artist:dismantled;play"
+** alias dis="clear;mlib searchadd artist:dismantled;play"
 * shell functionality (including clever completion)
 * depending calls
 ** mlib search artist:foobar; add (will search after foobar and add without arguments will use the last returned list)
