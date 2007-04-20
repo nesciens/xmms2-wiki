@@ -1,0 +1,1 @@
+* A generic utility function to get the value of a result would be really helpful. It could be something like ''xmmsc_result_print(xmmsc_result_t *result)'', or ''_get_value'' or some such. Some/Most wrappers (eg. perl, ruby, C++) have a similar utility function.
