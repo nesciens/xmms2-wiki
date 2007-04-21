@@ -96,9 +96,6 @@ The seperator between different sockets here is ';'.
 === Why cogito/git? What was wrong with cvs/svn? ===
 : That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert. [http://git.or.cz/#about Do] [http://git.or.cz/course/cvs.html#know your] [http://git.or.cz/course/svn.html#know homework].
 
-=== Why doesn't the CLI client have a play/pause toggle function? ===
-: There is a very simple client available on the [[contribs]] that just toggles play/pause.
-
 === Seems like you are using a non-standard buildsystem, why not Make? ===
 : Make is a really good buildsystem, although to get all functionality needed for a bigger project you'll need automake, autoconf and libtool. We had a lot of problems getting these tools to do what we wanted, so we evaluated the alternatives. [http://www.scons.org/refer.php SCons] is a good alternative. If you do not want to install Python and SCons on your system, there will be [[Download_XMMS2#Binary_Packages | binaries]] available for the most common platforms. See also: [[Build system requirements]]
 
