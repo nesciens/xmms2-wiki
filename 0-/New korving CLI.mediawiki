@@ -313,3 +313,5 @@ described
 [http://git.xmms.se/?p=nyello.git;a=blob;hb=HEAD;f=src/command.cc#l_113 in the code].
 
 '''Much more extensive description to come here.'''
+
+[[Category:Developer ideas]]
