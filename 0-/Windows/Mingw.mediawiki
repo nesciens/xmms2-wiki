@@ -34,7 +34,7 @@ The order here is not so important. :)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.21) - 0.20 (as linked) works as well
 **[http://www.sqlite.org/download.html SQLiteDLL and SQLite-Source] (3.3.8)
-***Place the sqlite3.h file from SQLite-Source into your /usr/include directory
+***Place the sqlite3.h file from SQLite-Source into your /include directory
 ***Put a sqlite3.pc into /lib/pkgconfig/ similar to this:
  prefix=C:/MSys
  exec_prefix=${prefix}
