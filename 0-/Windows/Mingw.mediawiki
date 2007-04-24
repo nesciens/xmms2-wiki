@@ -70,6 +70,9 @@ Where X is your drive letter.
  waf
 *Install
  waf install
+*Copy [http://exodus.xmms.se/~juhovh/win32/libglib-2.0-0.dll patched GLib] to \temp\bin\
+**GLib contains a [http://bugzilla.gnome.org/show_bug.cgi?id=425156 known bug] in its GIOChannel code, which XMMS2 uses for inter-process communication (IPC). XMMS2 will build fine and even run with another GLib, but this binary fixes some critical bugs and should be used instead of another GLib version.
+**Please visit the [http://bugzilla.gnome.org/show_bug.cgi?id=425156 bug report] and tell Tor Lillqvist how much you love XMMS2 and would like him to merge the patches with GLib. :)
 *Enjoy
  cd /c/temp/bin/ && xmms2d -v
 This command probably won't actually work right away. You'll need to copy some of the DLLs in your MSys environment as well as some of the DLLs installed to \temp\lib\ into \temp\bin\. Once you do this, you should be up and running!
