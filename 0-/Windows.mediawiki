@@ -6,6 +6,10 @@ Development files can be found [http://exodus.xmms.se/~nano/clientlib-win32.tar.
 
 xmms2 actually works pretty well on Windows now. The server works with very minor bugs and the clientlib seems to work without issues. There are still some patches that must be merged before it can be compiled out-of-the-box but we're getting there.
 
+== Binary Packages ==
+* http://xmms2.xmms.se/~puzzles/win32/ 
+* http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
+
 == See Also ==
 * [[Windows/Mingw]]
 * <mantis>116</mantis>
