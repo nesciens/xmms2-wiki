@@ -1,6 +1,6 @@
+<span style="font-size: 150%; font-weight: bold;">X-platform Music Multiplexing System 2</span>
 __NOTOC__
 __NOEDITSECTION__
-<span style="font-size: 150%; font-weight: bold;">X-platform Music Multiplexing System 2</span>
 <div style="border: 1px solid #eee; background: #f9f9f9; padding: 0.5em">
 <span style="font-size: 115%; font-weight: bold;">Featured Event: [http://xmms2-contest.blogspot.com/ XMMS2 Logo Competition]</span><br/>
 {|
