@@ -1,33 +1,33 @@
 __NOTOC__
 __NOEDITSECTION__
+<h1>X-platform Music Multiplexing System 2</h1>
 <div style="border: 1px solid #eee; background: #f9f9f9; padding: 0.5em">
-;X-platform Music Multiplexing System 2:
-'''XMMS2''' is a music player for people who are serious about their music. ''Seriously''.
+<span style="font-size: 115%; font-weight: bold;">Featured Event: [http://xmms2-contest.blogspot.com/ XMMS2 Logo Competition]</span><br/>
+{|
+|-
+|[[Image:Xmms2-what.png]]
+|The XMMS2 team is currently running a contest to attract fresh and creative submissions from visual artists and designers all over the world, to give the project a more identifiable brand, and a bit of an identity boost. The competition entry deadline has now passed, and submitted logos are now undergoing a voting process. You can review the submissions and find out more at the [http://xmms2-contest.blogspot.com/ XMMS2 Graphic Contest] blog.
+|-
+|}
 </div>
 
 <hr/>
 <div class="split-half">
-<div class="split-halfhalf">
+
 === XMMS2 will: ===
 * play your music.
 * manage your [[The Medialib|music library]]
-* use [[collections]] to organise your music as you like
+* use [[collections]] to help you organise your music as you like
 * allow you to control it using a variety of [[XMMS2 Clients|clients]].
 * [[Project Status#XMMS2_Platform_Support_Status|run]] on Linux, *BSD, OS X, Solaris and maybe Windows.
-</div>
-<div class="split-halfhalf">
-=== XMMS2 will not: ===
-* increase corporate profits.
-* clean your house.
-* walk your dog.
-* bring about [[Wikipedia:World peace|world peace]].
-* destroy [[Wikipedia:Microsoft|Microsoft]].
-* play video.
-* transport you to another galaxy.
-''See more of [[what XMMS2 will not do]]''
-</div>
+
+<small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
 == Features ==
 {{FeatureList}}
+
+== Get Started! ==
+[[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
+
 </div>
 
 <div class="split-half">
