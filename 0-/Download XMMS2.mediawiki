@@ -24,7 +24,7 @@ Should work fine for Tiger at least.
 There are now official XMMS2 Debian packages maintained by Florian Ragwitz, in Debian Unstable and Testing. Simply <code>apt-get update</code> and <code>apt-cache search xmms2</code>.
 
 ==== Unofficial Packages ====
-These packages are slightly outdated - it's recommended to use the official packages where possible.
+These packages are outdated - it's recommended to use the official packages where possible.
 ; Sarge / Stable
  deb http://exodus.xmms.se/debian stable main
 
@@ -63,6 +63,12 @@ Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nye
  apt-get install gxmms2
 
  apt-get install nyello
+
+=== Windows ===
+Getting XMMS2 to build/run on Windows is still under development, though there are already some usable binary packages available. Standard disclaimer: Not all features of XMMS2 are currently available in these packages, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team.
+
+* http://xmms2.xmms.se/~puzzles/win32/
+* http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
 
 == Ports ==
 
