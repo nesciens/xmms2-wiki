@@ -1,30 +1,42 @@
-{{update}}
 __TOC__
 
 ==Prepare the Environment==
-Download and install these in order! Program versions used in this howto are in parenthesis.
+===Prerequisites===
+*Windows Vista, XP, or 2000 - Vista is not known to work, but should, and pre-2000 are known to have problems.
 
-*[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3) - '''Important''': Install to a directory without spaces as they '''will''' cause pkg-config to fail.
-*[http://sourceforge.net/project/showfiles.php?group_id=2435 MSYS] (1.0.11) - Do the post-install configuration to integrate MSYS with MinGW. '''Important''': Do yourself a '''huge''' favor and install this in the same directory as MinGW, leaving off the trailing /1.0 as well.
-*[http://www.python.org/download/ Python] (2.5) - Do yourself another favor and leave this in your root directory as SCons doesn't play well with spaces.
-*[http://sourceforge.net/project/showfiles.php?group_id=30337&package_id=22359&release_id=408906 Scons] (0.96.92) - Note: at the time of this writing, [http://freehackers.org/~tnagy/bksys.html Waf] is destined to be the replacement for Scons as XMMS2's build system.
+===Easy Route===
+Grab zipped-up MinGW and MSys from [http://exodus.xmms.se/~puzzles/win32/ http://exodus.xmms.se/~puzzles/win32/] and skip to [[#Building with Waf|Building with Waf]]. These packages contain everything you need to hop right into building, including an XMMS2 snapshot.
+It's suggested you unzip both of these to X:\MinGW and X:\MSys, where X is your drive letter. If you choose some other paths, update /etc/fstab in MSys to reflect the location of MinGW.
+
+TODO: List cool things included in these zips.
+
+===Hard Route===
+You've decided you want to live life dangerously and on the bleeding edge. Think over this long and hard, because the [[#Easy Route|Easy Route]] is probably all you need. New versions of MinGW or MSys probably won't make anything work out better for you, either.
+
+Install these in order! Program versions used in this howto are in parentheses.
+*[http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&displaylang=en Platform SDK]
+**For Windows 2000 support. This is a huge download and provides us with only one header we actually need, please use the [http://exodus.xmms.se/~puzzles/win32/ zip of my Mingw directory] (which already has this header) for this and save yourself some time.
+**The header, WSPiApi.h, should you choose to download it yourself, will fail to compile on a line that says _inline. Change this to __inline (add another underscore) and you're ready to go.
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3)
+**Copy the WSPiApi.h header file from your Platform SDK installation to /include/.
+**Change the _inline to __inline within the header.
+*[http://sourceforge.net/project/showfiles.php?group_id=2435 MSys] (1.0.11) - Do the post-install configuration to integrate MSys with MinGW.
+*[http://www.python.org/download/ Python] (2.5) - At the time of this writing, only 2.4 works with the Python bindings, but both 2.4 or 2.5 should play well with Waf.
 
 ==Set up Source and Dependencies==
 The order here is not so important. :)
 
-*Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-juhovh.git-snapshot-8f0c1928d916975e7a19da846475a217e43fd97b is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSYS to extract this properly.
+*Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-puzzles git commit 8b7ca4b48df23d463f88473f03439dbca827dbb8 (Playground branch) is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSys to extract this properly.
 
-*Download and unpack the [http://dan.chokola.com/files/xmms2/xmms2_win32_deps.zip required libraries] into your MinGW root directory.
--OR-
-*Download and unpack them separately. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
+*Download and unpack the required libraries. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (2.12.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
-**[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.20)
+**[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.21) - 0.20 (as linked) works as well
 **[http://www.sqlite.org/download.html SQLiteDLL and SQLite-Source] (3.3.8)
 ***Place the sqlite3.h file from SQLite-Source into your /usr/include directory
-***Put a sqlite3.pc into /usr/lib/pkgconfig/ like this:
- prefix=/usr
+***Put a sqlite3.pc into /lib/pkgconfig/ similar to this:
+ prefix=C:/MSys
  exec_prefix=${prefix}
  libdir=${exec_prefix}/lib
  includedir=${exec_prefix}/include
@@ -35,30 +47,29 @@ The order here is not so important. :)
  Libs: -L${libdir} -lsqlite3
  Cflags: -I${includedir}
 
-TODO: Optional libraries (for plugins).
+TODO: Optional libraries (for plugins). The [[#Easy Route|Easy Route]] contains tons of libraries for plugins.
 
 ==Preparing for Building==
 *Start MSYS
-*SCons relies heavily on pkg-config to find and build certain files properly, but MSYS doesn't configure PKG_CONFIG_PATH by default, so type:
- export PKG_CONFIG_PATH=/usr/lib/pkgconfig
-*You'll want python and SCons in your PATH as well, so type:
+*To tell pkg-config where to find its .pc files, type:
+ export PKG_CONFIG_PATH=/lib/pkgconfig
+*You'll want Python in your PATH as well, so type:
  export PATH=$PATH:/path/to/python:/path/to/python/Scripts
 *Alternatively you might want to add these to /etc/profile and run source /etc/profile
 *Apply the patches found [http://dan.chokola.com/files/xmms2/xmms2-patches/ here] to your tree.
 
 *Please help your local dev! TODO: Patch cleanup (git-diff/cg-mkpatch). Make a combined patch. More linux/BSD/OSX testing.
 
-==Building with SCons==
+==Building with Waf==
 *cd into the XMMS2 source directory
- cd ~/xmms2-juhovh.git-snapshot-8f0c1928d916975e7a19da846475a217e43fd97b
-*Make msys play well with scons.
- unset SHELL
-*Start Scons
- scons
-
-==Using XMMS2 on Windows==
-Unlike Unix-based machines, there are no Unix sockets on windows, so IPC must be done using TCP. To keep your daemon private from the network, make sure your IPC path uses a local loopback address (like 127.0.0.1). Also important to note is that there can be multiple daemons listening to the same socket, but only one will receive commands. Currently, it is up to the user to control this.
-Since Windows doesn't wait for child processes to run, xmms2-launcher is more or less useless in the Windows world (and in fact, it's only intended to compile on *nix-flavored machines). Simply run:
- xmms2d
-and enjoy! You should be able to control it with the shipped CLI. Try:
- xmms2 stats
+ cd /xmms2-puzzles
+*Configure
+ waf configure --conf-prefix=X:\\MSys
+Where X is your drive letter.
+*Build
+ waf
+*Install
+ waf install
+*Enjoy
+ cd /c/temp/bin/ && xmms2d -v
+This command probably won't actually work right away. You'll need to copy some of the DLLs in your MSys environment as well as some of the DLLs installed to \temp\lib\ into \temp\bin\. Once you do this, you should be up and running!
