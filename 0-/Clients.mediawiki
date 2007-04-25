@@ -42,6 +42,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 == Web Clients ==
 
 * [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
+* [[Client:XMMS2_Webterface | XMMS2 Webterface]] is a dead simple, configurable, themable web interface
 
 == Console Clients ==
 
