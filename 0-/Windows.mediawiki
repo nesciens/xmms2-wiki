@@ -1,10 +1,10 @@
-Some infos about the [[Windows/Mingw|Mingw compilation]]
+Want to roll your own XMMS2 for Windows? [[Windows/Mingw|Compile on Mingw]]!
 
 Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot] of a real client running on Windows.
 
-Development files can be found [http://exodus.xmms.se/~nano/clientlib-win32.tar.gz here].
+Development files can be found [http://exodus.xmms.se/~puzzles/win32/ here].
 
-xmms2 actually works pretty well on Windows now. The server works with very minor bugs and the clientlib seems to work without issues. There are still some patches that must be merged before it can be compiled out-of-the-box but we're getting there.
+XMMS2 actually works very well on Windows now. The only quirks are the need for a patched GLib and a few broken plugins. Most of the Windows work is contained in the Playground branch of xmms2-puzzles (which compiles smoothly out-of-the box), and is awaiting the merge into xmms2-devel.
 
 == Binary Packages ==
 * http://xmms2.xmms.se/~puzzles/win32/ 
@@ -13,6 +13,5 @@ xmms2 actually works pretty well on Windows now. The server works with very mino
 == See Also ==
 * [[Windows/Mingw]]
 * <mantis>116</mantis>
-* <mantis>1060</mantis>
 
 [[Category:Platforms]]
