@@ -1,0 +1,47 @@
+= 1997 =
+== April ==
+;21st
+WinAMP 0.20a is released, providing a GUI to Tomislav Uzelac's AMP MP3 decoder.
+
+== May ==
+WinAMP 0.92 is released, with the beginnings of winamp's classic user interface.
+
+== June ==
+;7th
+Winamp 1 is released.
+
+== November ==
+Peter and Mikael Alm develop and release X11Amp, with a GUI inspired by Winamp. Their motivation at the time is to develop the player 'because of the lack of good mp3 players for linux'. [http://www.slashnet.org/forums/xmms-19990613.html] Though originally a closed source release, X11Amp eventually switches to an open source licence.
+
+= 1998 =
+== September ==
+;18th
+Winamp 2 is released, and the player's popularity continues to grow.
+
+= 1999 =
+== March ==
+;24th
+Winamp 2.10 is released, with the infamous 'Llama' demo.mp3 sample.
+
+== June ==
+;10th
+4Front Technologies decides to sponsor development of X11Amp, and the project is renamed to XMMS.
+
+= 1999 - 2002 =
+XMMS grows in popularity, on Linux and other UNIX-like platforms, being bundled as the default audio player on Linux distributions such as RedHat.
+
+= 2002 =
+== March ==
+;11th
+GTK+ 2.0 is released, superceding GTK+ 1, on which XMMS is based. However, the XMMS team has no plans to switch to the new widget toolkit.
+
+== Late 2002 - 2003 ==
+* As the number of applications using (or switching to) GTK2 grows, users grow dissatisfied with the XMMS team's intertia, regarding GTK2 support. Milosz Derezynski forks XMMS to begin the Beep Media Player project, while Mohammed Sameer does the same and names his effort 'XMMS2'. Sameer's project is eventually abandoned, and he relinquishes the 'XMMS2' name.
+* Peter Alm and Tobias RundstrÃ¶m begin conceptualising XMMS2. See [[History/Ancient]].
+* Meanwhile, other open source music player projects start growing and gaining popularity, especially those inspired by iTunes on Mac OS X and Windows. These projects include Rhythmbox (which uses GTK2 and is targetted at GNOME users) and amaroK (using Qt and targetted at KDE users).
+
+= 2003 =
+== March ==
+(Approximate) Music Player Daemon (MPD) is developed and released by Warren 'shank' Dukes.
+
+The rest, as they say, is [[history]]!
