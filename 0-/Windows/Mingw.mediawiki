@@ -56,9 +56,6 @@ TODO: Optional libraries (for plugins). The [[#Easy Route|Easy Route]] contains 
 *You'll want Python in your PATH as well, so type:
  export PATH=$PATH:/path/to/python:/path/to/python/Scripts
 *Alternatively you might want to add these to /etc/profile and run source /etc/profile
-*Apply the patches found [http://dan.chokola.com/files/xmms2/xmms2-patches/ here] to your tree.
-
-*Please help your local dev! TODO: Patch cleanup (git-diff/cg-mkpatch). Make a combined patch. More linux/BSD/OSX testing.
 
 ==Building with Waf==
 *cd into the XMMS2 source directory
