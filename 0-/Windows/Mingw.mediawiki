@@ -55,7 +55,8 @@ TODO: Optional libraries (for plugins). The [[#Easy Route|Easy Route]] contains 
  export PKG_CONFIG_PATH=/lib/pkgconfig
 *You'll want Python in your PATH as well, so type:
  export PATH=$PATH:/path/to/python:/path/to/python/Scripts
-*Alternatively you might want to add these to /etc/profile and run source /etc/profile
+*Alternatively you might want to add these to /etc/profile and run
+ source /etc/profile
 
 ==Building with Waf==
 *cd into the XMMS2 source directory
