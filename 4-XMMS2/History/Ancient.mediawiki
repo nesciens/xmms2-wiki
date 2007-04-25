@@ -91,6 +91,10 @@ XMMS2 moves from BitKeeper to Git. (takes a few days)
 ;1st:
 XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix release after DR1.
 
+== July ==
+;19th
+[[Dan Chokola]]'s first accepted patch (fixing formatting bugs in the CLI client) makes it into the codebase.
+
 == August ==
 ;4th:
 [[Release:DR2 | Developer Release 2]] is done. Exactly one day later, we fix 2 critical bugs.
