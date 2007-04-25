@@ -2,69 +2,28 @@ A brief historical timeline of the XMMS2 project.
 
 For older history, see [[History/Ancient | Ancient History]]
 
-= 2006 =
-== January ==
-;13th:
-[[Release:DrBombay | DrBombay]] is released, fixing some annoying bugs in DrAlban.
-
-== February ==
-;21st:
-[[Release:DrCox | DrCox]] is released, fixing even more annoying bugs in DrBombay, including a fairly serious SQLite issue. DrCox also introduces a new mixer API.
+= 2007 =
+== January - February ==
+The team works on integrating [[Collections]] into the main line of development.
 
 == March ==
-;27th:
-[[Release:DrDolittle | DrDolittle]] is released, with yet more minor feature additions and bug fixes. A new [[Roadmap]] is also announced, to track future release targets.
- <sacarasc> DrDolittle, released 13:37 on the 27th March
-            (if you live in Mexico City or similar ;D)
+;12th
+* The [http://xmms2-contest.blogspot.com/ XMMS2 logo competition] begins.
+* The testing phase for the next release (DrJekyll) begins.
+
+;15th
+XMMS2 is once again accepted into Google's Summer of Code program, for 2007.
 
 == April ==
-;27th:
-XMMS2 is accepted as a mentoring organisation in Google's Summer of Code program. Approximately 50 project proposals are submitted to XMMS2.
+;9th
+Four students are picked to work on XMMS2 for Google's Summer of Code:
+* Visualization support over SHM / UDP - Johannes Jordan
+* Testing framework - Florian Ragwitz
+* Generated IPC - Thomas Coppi
+* Service clients - Ning Shi
 
-== May ==
-;23rd:
-Five students are accepted to work on XMMS2 as part of Google's [[Summer of Code 2006]]:
-
-* [[SoC:DAAP | Support for DAAP]]
-** '''Student''': Cole Thompson
-** '''Mentor''': Tobias RundstrÃ¶m
-
-* [[SoC:TurboX2 | TurboX2 Release Engineering and Development]]
-** '''Student''': Alexander Botero-Lowry
-** '''Mentor''': Tobias RundstrÃ¶m
-
-* [[Collections]]
-** '''Student''': SÃ©bastien Cevey
-** '''Mentor''': Anders Gustafsson
-
-* [[SoC:AirTunes | Support Apple Lossless Audio Codec (ALAC) and remote streaming to Airport Express in XMMS2]]
-** '''Student''': Mohsin Patel
-** '''Mentor''': Anders Gustafsson
-
-* [[SoC:XMMS2Testing | XMMS2 Test Framework]]
-** '''Student''': Abdul Haseeb
-** '''Mentor''': Sham Chukoury
-
-== July ==	 
-;6th:	 
-[[Release:DrEvil | DrEvil]] is released, introducing a major change with the reworking of xmms2d's internals into [[Transforms]], as well as other bug fixes.
-
-;15th:
-[[Release:DrFeelgood | DrFeelgood]] is released, with the shortest release cycle yet! This release simply targets a few bugs found soon after the release of DrEvil.
-
-== September ==
-The wiki gets a serious overhaul.
-
-;26th:
-[[Release:DrGonzo | DrGonzo]] is mysteriously released.
-
-== November ==
-;20th:
-The first ever XMMS2 [[IRC Meeting]] is held.
-
-== December ==
-;2nd:
-[[Release:DrHouse | DrHouse]] is conjured.
+;15th
+The submission deadline for the XMMS2 logo competition is reached, and voting begins on 160 of the submitted logos.
 
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
