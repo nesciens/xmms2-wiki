@@ -29,7 +29,7 @@ The order here is not so important. :)
 *Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-puzzles git commit 8b7ca4b48df23d463f88473f03439dbca827dbb8 (Playground branch) is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSys to extract this properly.
 
 *Download and unpack the required libraries. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
-**[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (2.12.1)
+**[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (2.12.11)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 gettext] (0.13.1)
 **[http://sourceforge.net/project/showfiles.php?group_id=25167 libiconv] (1.9.1)
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html pkg-config] (0.21) - 0.20 (as linked) works as well
