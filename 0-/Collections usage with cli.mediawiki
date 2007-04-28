@@ -46,6 +46,7 @@ get some help, you can simply type:
    rename         [oldname] [newname] - Rename a collection
    list   [namespace] - List all collections in a given namespace
    query  [collname] [order] - Display all the media in a collection
+   queryadd       [collname] [order] - Add all media in a collection to active playlist
    find   [mid] [namespace] - Find all collections that contain the given media
    get    [collname] - Display the structure of a collection
    remove         [collname] - Remove a saved collection
