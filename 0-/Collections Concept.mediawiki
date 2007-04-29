@@ -239,7 +239,7 @@ In short, a Party Shuffle is a static collection automatically updated by playba
 
 More customization properties could be handled (as does [http://amarok.kde.org/ amaroK]):
 * <code>remove played</code>: whether to pop played songs from the list.
-* <code>history size</code>: if <code>remove played</code> is activated, how many played songs should remain in history before they are popped.
+* <code>random property</code>: which property to select random media from. For instance, if set to "album", all tracks of a given album will be added to the playlist at once. By default, the random property would be "id", which represents a single random media.
 
 === Advanced Collection Operator: Suggestion Shuffle ===
 
