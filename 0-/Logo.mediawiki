@@ -1,1 +1,3 @@
-We have logotype. Here is the [[Media:logo.svg|SVG]]
+We have logotype. Here is the [[Media:logo.svg|SVG]], and the PNG export:
+
+[[Image:Arnaud.didry_gmail_com-bluenote-070403.png]]
