@@ -1,11 +1,21 @@
 __TOC__
 
-==Prepare the Environment==
-===Prerequisites===
-*Windows Vista, XP, or 2000 - Vista is not known to work, but should, and pre-2000 are known to have problems.
+==Prerequisites==
+*Windows Vista
+**Not known to work.
+**'''Should''' work.
+OR
+*Windows XP
+**Known to work.
+OR
+*Windows 2000
+**Known to work.
 
+Windows versions earlier than 2000 are known to have some trivial, but fatal, issues at runtime--patches welcome. It is also unknown whether or not such versions build XMMS2 cleanly.
+
+==Prepare the Environment==
 ===Easy Route===
-Grab zipped-up MinGW and MSys from [http://exodus.xmms.se/~puzzles/win32/ http://exodus.xmms.se/~puzzles/win32/] and skip to [[#Building with Waf|Building with Waf]]. These packages contain everything you need to hop right into building, including an XMMS2 snapshot.
+Grab zipped-up MinGW and MSys from [http://exodus.xmms.se/~puzzles/win32/ http://exodus.xmms.se/~puzzles/win32/] and skip to [[#Pre-XP Support|Pre-XP Support]]. These packages contain almost everything you need to hop right into building, including an XMMS2 snapshot.
 It's suggested you unzip both of these to X:\MinGW and X:\MSys, where X is your drive letter. If you choose some other paths, update /etc/fstab in MSys to reflect the location of MinGW.
 
 TODO: List cool things included in these zips.
@@ -13,17 +23,13 @@ TODO: List cool things included in these zips.
 ===Hard Route===
 You've decided you want to live life dangerously and on the bleeding edge. Think over this long and hard, because the [[#Easy Route|Easy Route]] is probably all you need. New versions of MinGW or MSys probably won't make anything work out better for you, either.
 
+====Set up the Build Environment====
 Install these in order! Program versions used in this howto are in parentheses.
-*[http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&displaylang=en Platform SDK]
-**For Windows 2000 support. This is a huge download and provides us with only one header we actually need, please use the [http://exodus.xmms.se/~puzzles/win32/ zip of my Mingw directory] (which already has this header) for this and save yourself some time.
-**The header, WSPiApi.h, should you choose to download it yourself, will fail to compile on a line that says _inline. Change this to __inline (add another underscore) and you're ready to go.
 *[http://sourceforge.net/project/showfiles.php?group_id=2435 MinGW] (5.0.3)
-**Copy the WSPiApi.h header file from your Platform SDK installation to /include/.
-**Change the _inline to __inline within the header.
 *[http://sourceforge.net/project/showfiles.php?group_id=2435 MSys] (1.0.11) - Do the post-install configuration to integrate MSys with MinGW.
 *[http://www.python.org/download/ Python] (2.5) - At the time of this writing, only 2.4 works with the Python bindings, but both 2.4 or 2.5 should play well with Waf.
 
-==Set up Source and Dependencies==
+====Set up Source and Dependencies====
 The order here is not so important. :)
 
 *Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-puzzles git commit 8b7ca4b48df23d463f88473f03439dbca827dbb8 (Playground branch) is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSys to extract this properly.
@@ -49,7 +55,7 @@ The order here is not so important. :)
 
 TODO: Optional libraries (for plugins). The [[#Easy Route|Easy Route]] contains tons of libraries for plugins.
 
-==Preparing for Building==
+====Preparing for Building====
 *Start MSYS
 *To tell pkg-config where to find its .pc files, type:
  export PKG_CONFIG_PATH=/lib/pkgconfig
@@ -58,12 +64,36 @@ TODO: Optional libraries (for plugins). The [[#Easy Route|Easy Route]] contains 
 *Alternatively you might want to add these to /etc/profile and run
  source /etc/profile
 
+==Pre-XP Support==
+Windows 2000 and earlier are missing some key functions for networking, which are needed for inter-process communication (IPC) in XMMS2. Microsoft has provided a compatibility solution by means of their Winsock SDK, which was subsequently merged into their Platform SDK. There is a header, WSPiApi.h, that dynamically provides these needed functions if they are not available on the host system. Unfortunately, the Platform SDK is also a hefty download, and you only need it for that one, wimpy header. What's more, since the header is Microsoft's code, it's copyrighted and non-GPL, so it can't be distributed by the XMMS2 team.
+The good news is if you have Windows XP or newer, the Platform SDK will allow you to support a wider range of Windows platforms. Though if you don't want to bother and you know you'll only be using XMMS2 on XP or newer machines, you don't need the Platform SDK. Decide whether or not you want support for Windows earlier than XP:
+
+===Yes, support 2000 and Earlier===
+Caveat: As of this writing, XMMS2 does not work on pre-2000 systems. The issues seem trivial to fix, but are fatal. If you still want to build, follow these steps:
+
+*Download the [http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&displaylang=en Platform SDK]
+*The header provided by the Platform SDK, WSPiApi.h, will fail to compile on a line that starts with '''_inline'''. Change this to '''__inline''' (add another underscore) and you're ready to go. (<sarcasm>While you're inside your editor, marvel at the beauty of Microsoft's code.</sarcasm>)
+*Copy the WSPiApi.h header file from your Platform SDK installation to /include in your MinGW installation.
+
+===No, I have XP or Newer===
+Caveat: As of this writing, Waf has a bug whereby it can't check multiple headers at once. Unfortunately, WSPiApi.h is such a header, and needs to include a couple other Windows headers provided by MinGW to be detected properly. So WSPiApi.h presence is assumed without proper checks, and will cause a system without the Platform SDK to fail during build. Follow these steps to disable the WSPiApi.h dependency:
+
+Edit the main wscript (the one in the root of your xmms2 directory):
+*Around line 267, change:
+         if (ver[0] >= 5 and ver[1] >= 0):
+             conf.env['CCDEFINES'] += ['WIN2K']
+         else:
+             Params.fatal("XMMS2 requires Windows 2000 or newer.")
+*To:
+         if not (ver[0] >= 5 and ver[1] >= 1):
+             Params.fatal("XMMS2 requires Windows XP or newer.")
+
 ==Building with Waf==
 *cd into the XMMS2 source directory
  cd /xmms2-puzzles
 *Configure
- waf configure --conf-prefix=X:\\MSys
-Where X is your drive letter.
+ waf configure --conf-prefix=X:/MSys
+(Where X is your drive letter.)
 *Build
  waf
 *Install
