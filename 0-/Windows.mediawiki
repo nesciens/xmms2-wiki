@@ -11,7 +11,7 @@ Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot
 
 Development files can be found [http://exodus.xmms.se/~puzzles/win32/ here].
 
-XMMS2 actually works very well on Windows now. The only quirks are the need for a patched GLib and a few broken plugins. Most of the Windows work is contained in the Playground branch of xmms2-puzzles (which compiles smoothly out-of-the box), and is awaiting the merge into xmms2-devel.
+XMMS2 actually works very well on Windows now. The only quirks are the need for a patched GLib, a few broken plugins, and no startup.d/shutdown.d. Most of the Windows work is contained in xmms2-puzzles (which compiles smoothly out-of-the box), and is awaiting the merge into xmms2-devel after the [[Release:DrJekyll|DrJekyll]] release.
 
 == See Also ==
 * [[Windows/Mingw]]
