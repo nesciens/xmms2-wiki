@@ -1,7 +1,7 @@
 == Prebuilt Binaries ==
 The easiest way to get right into using XMMS2 on Windows is to download precompiled binaries.
 
-* http://xmms2.xmms.se/~puzzles/win32/ 
+* http://xmms2.xmms.se/~puzzles/win32/ (With Ruby, Python, and C++ bindings, plus the [[Client:Esperanza|Esperanza]] client)
 * http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
 
 == Building from Source ==
