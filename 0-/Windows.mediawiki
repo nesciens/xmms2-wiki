@@ -1,3 +1,10 @@
+== Prebuilt Binaries ==
+The easiest way to get right into using XMMS2 on Windows is to download precompiled binaries.
+
+* http://xmms2.xmms.se/~puzzles/win32/ 
+* http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
+
+== Building from Source ==
 Want to roll your own XMMS2 for Windows? [[Windows/Mingw|Compile on Mingw]]!
 
 Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot] of a real client running on Windows.
@@ -5,10 +12,6 @@ Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot
 Development files can be found [http://exodus.xmms.se/~puzzles/win32/ here].
 
 XMMS2 actually works very well on Windows now. The only quirks are the need for a patched GLib and a few broken plugins. Most of the Windows work is contained in the Playground branch of xmms2-puzzles (which compiles smoothly out-of-the box), and is awaiting the merge into xmms2-devel.
-
-== Binary Packages ==
-* http://xmms2.xmms.se/~puzzles/win32/ 
-* http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
 
 == See Also ==
 * [[Windows/Mingw]]
