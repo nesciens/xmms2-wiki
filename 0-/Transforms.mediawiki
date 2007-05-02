@@ -75,8 +75,8 @@ Everything reworked to new plugin api.
 :&#10003; fix so metadata can be set after init.
 :&#10063; playlistplugins.
 ::&#10063; html
-::&#10063; pls
-::&#10063; m3u
+::&#10003; pls
+::&#10003; m3u
 :&#10063; convert plugins (see section below).
 ::&#10003; alsa
 ::&#10003; coreaudio
@@ -101,10 +101,10 @@ Everything reworked to new plugin api.
 ::&#10003; wave
 ::&#10003; wma (a new plugin)
 ::&#10003; vorbis
-:&#10003; effects.
+:&#10003; effects
 ::&#10003; eq (replaced by more advanced equalizer plugin)
 ::&#10003; replaygain
-:&#10003; config stuff.
+:&#10003; config stuff
 
 ===Plugin conversion guidelines===
 ====Use xform metadata api====
