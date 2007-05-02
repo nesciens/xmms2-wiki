@@ -10,6 +10,7 @@ OR
 OR
 *Windows 2000
 **Known to work.
+**Needs Microsoft Platform SDK (see [[#Pre-XP Support|Pre-XP Support]] below)
 
 Windows versions earlier than 2000 are known to have some trivial, but fatal, issues at runtime--patches welcome. It is also unknown whether or not such versions build XMMS2 cleanly.
 
