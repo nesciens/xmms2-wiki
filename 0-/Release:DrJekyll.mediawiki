@@ -185,7 +185,7 @@ No new platform support are included in this release.
 ** <git norepo=1 repo='xmms2-devel.git'>5154437b7d82318fcc06954cbd2dc69076cabf8a</git>
 * <mantis>1423</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>02d0b37ec6ccb771de0f3884e11195ef4003e41f</git>
-* <mantis>1422</man
+* <mantis>1422</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>ca813027b96a1617238de244e426ff3d09ba867a</git>
 * <mantis>320</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>a6bbad78e47a9c30f913f807adb02b3c41c31969</git>
