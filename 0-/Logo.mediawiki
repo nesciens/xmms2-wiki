@@ -1,3 +1,5 @@
-We have logotype. Here is the [[Media:logo.svg|SVG]], and the PNG export:
+We have logotype. NOTE the SVG file here is a bit broken, the artist is working on it. 
+
+Here is the [[Media:logo.svg|SVG]], and the PNG export:
 
 [[Image:Arnaud.didry_gmail_com-bluenote-070403.png]]
