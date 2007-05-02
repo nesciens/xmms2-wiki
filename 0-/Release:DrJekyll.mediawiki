@@ -53,15 +53,15 @@ No new platform support are included in this release.
 '''Daniel Chokola'''
 * <mantis>1529</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>bd1c2e9257ff3eb70e69c1187f7c5af881c82be2</git>
-'''Daniel Svensson'''
-* <mantis>1490</mantis>
-** <git norepo=1 repo='xmms2-devel.git'>059633bd97ade6f62e96f990fc325155369936d9</git>
 '''Erik Massop'''
 * <mantis>1542</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>197511ca76d7ecba3d496c383f26fdf7f03d84d5</git>
 '''Georg Schild'''
 * <mantis>1510</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>ed85e208b5c7677210e7e56780c8c27f6219d0b3</git>
+'''Rainer Wittmaack'''
+* <mantis>1490</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>059633bd97ade6f62e96f990fc325155369936d9</git>
 '''Sebastien Cevey'''
 * <mantis>1483</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>1c9501b776f68126365cdf32f20e9f4a31de5af9</git>
