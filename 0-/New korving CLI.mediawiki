@@ -54,7 +54,7 @@ current song, etc.
  
  playlist <subcommand>
    list               [pattern]
-   load               <name>
+   switch             <name>
    create  [options]  <name>
    rename  [options]  <newname>
    remove  [options]
@@ -213,9 +213,11 @@ Display the current status of the server.
 List all the existing playlists.  If a pattern is provided, only
 playlists containing matching media will be listed.
 
-==== playlist load <name> ====
+==== playlist switch <name> ====
 
-Load the given playlist as the active playlist.
+Switch to the given playlist by making it the active playlist.
+
+''Alternative name: change''
 
 ==== playlist create [options] <name> ====
 
