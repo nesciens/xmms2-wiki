@@ -8,22 +8,3 @@ First off, we need to use the arm-linux-* tools to test and build, so for the co
   CXX="arm-linux-g++" CC="arm-linux-gcc" AR="arm-linux-ar" CPP="arm-linux-cpp" RANLIB="arm-linux-ranlib"
 
 This works fine for all tools, since they find their way into the waf cache and waf uses them during the build process.
-
-But here strikes the first problem:
-The xmms2 wscript uses g++ to do all the tests, since there are both c++ and c pieces of code in xmms2 and the waf
-version that xmms2 uses can't hanlde per-test tool definitions. The waf folks say that recent waf trunk has this ability,
-so I suggest you update when you can, and fix your wscripts to use gcc as default test tool, and g++ for c++ tests only.
-
-Now, using g++ is fine in most cases, but in the case of the nms plugin g++ chokes on some structure initializations 
-in one of the headers we use. It seems they are not legal in c++ but they are legal in C.
-We can change that header but there may be more and it's also better in principle to test for C headers with gcc, not g++.
-
-Well, here's the first ugly hack. Since we need only C stuff for the OSD xmms2 build, O override the CXX compiler definition
-used during the test phase to use gcc instead of g++:
-
-  CXX="arm-linux-gcc" 
-
-I know this stinks, but there's no better way for now.
-
-This is enough to get me going and cross compile everything i need, for now. But I would really like to avoid all this trickery,
-which seems really possible with some fixing on xmms2 part.
