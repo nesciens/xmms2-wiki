@@ -25,26 +25,5 @@ used during the test phase to use gcc instead of g++:
 
 I know this stinks, but there's no better way for now.
 
-Now, The next problem. I need to specify several extra directories where to look for headers. I was suggested to do it with --conf-prefix
-option. But there's a bug i already inserted in the bug tracker (#1548) that prevents to have multiple --conf-prefix (only the last
-one is used, the others are ignored). So i just use this trick during configure phase to export the right -I CXXFLAGS, for example:
-
-  CXXFLAGS="-I$PRJROOT/../Neuros-Cooler/media/include/ -I$PRJROOT/../Neuros-Cooler/core/include/ "
-
-(notice it's CXXFLAGS due to the hack above to avoid the use of g++, but they're technically CFLAGS)
-
-Now, this is enough to have it pass the configure phase with mostly successful configuration.
-
-When I build however, i notice that the extra include dirs didn't get picked up waf as they were just heavy-handedly injected.
-So i need to inject them again during build phase. This time isn't that easy though. If i just export them as CFLAGS, waf don't
-pick them up. So i modify the wscript to have it pick up from env vars and add to internal CCFLAGS variable.
-
-  import os
-  if 'CFLAGS' in os.environ:
-    bld.env_of_name('default').append_unique('CCFLAGS',os.environ['CFLAGS'])
-
-This is added at the top of the "build" function in the wscript file. It sucks the CFLAGS variable from environment and injects
-it into the flags used during the build.
-
 This is enough to get me going and cross compile everything i need, for now. But I would really like to avoid all this trickery,
 which seems really possible with some fixing on xmms2 part.
