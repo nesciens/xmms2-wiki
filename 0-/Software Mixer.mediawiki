@@ -1,0 +1,36 @@
+==Sofware Mixer==
+What should the software mixer do and how should it be implemented?
+
+; implementation
+* xform
+** can be inserted as an effect
+** API is already there
+* special xform
+** like the ringbuffer, inserted by the server
+** probably good to support software volume fallback, but maybe not using current volume API
+* internal
+** can do more funky stuff than xforms
+** can silently replace hardware volume using current volume API
+; format support
+* signed/unsigned 8-, 16-, and 32-bit
+* float/double
+; input range
+* 0-100%
+** fits in well with hardware volume range
+** imits us to maximum and minimum range of the hardware
+* 0->100%
+** overlaps with hardware volume range
+** allows increasing volume of faint songs or normalization
+* -<100%->100%
+** overlaps with hardware volume range
+** allows phase inversion
+** allows increasing volume of faint songs or normalization
+; channel support
+* multiple channels should be supported separately
+; usage
+* always-on - user can just drop this in the chain and have software volume support all the time
+** controlled using xforms API, or
+** controlled using (new) softvol API
+* fallback - used only when there is no hardware volume support
+** controlled using xforms API, or
+** controlled using volume API
