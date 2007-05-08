@@ -302,7 +302,7 @@ used: MM:SS or even HH:MM:SS.
   1:11     => 1 minute and 11 seconds
   3:25:00  => 3 hours and 25 minutes
 
-An extended version could be implemented, that woud recognize strings
+An extended version could be implemented, that would recognize strings
 like 5min, 3.hours, etc.
 
 ==== pattern value ====
