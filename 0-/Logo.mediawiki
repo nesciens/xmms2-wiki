@@ -1,3 +1,3 @@
-Here is the [[Media:logo-final.svg|SVG]], and the PNG export:
+Here is the [[Media:logo-final.svg|SVG]] (Note: SVG rendering in Firefox is ugly.), and the PNG export:
 
 [[Image:logo-final-400.png]]
