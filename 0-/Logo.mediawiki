@@ -6,3 +6,18 @@ Here is the [[Media:logo-final.svg|SVG]] (Note: SVG rendering in Firefox is ugly
 
 
 == logo simplified ==
+
+=== black and white ===
+[[Media:logo-black.svg|SVG]]
+
+[[Image:logo-black-400.png]]
+
+=== black and white 2 ===
+[[Media:logo-black-2.svg|SVG]]
+
+[[Image:logo-black-2-400.png]]
+
+=== black and white 3 ===
+[[Media:logo-black-3.svg|SVG]]
+
+[[Image:logo-black-3-400.png]]
