@@ -2,7 +2,7 @@
 
 Here is the [[Media:logo-final.svg|SVG]] (Note: SVG rendering in Firefox is ugly.), and the PNG export:
 
-[[Image:logo-16-sharp.png]]
+[[Image:logo-16-sharp.gif]]
 
 [[Image:logo-final-400.png]]
 
