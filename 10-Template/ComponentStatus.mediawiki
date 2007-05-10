@@ -118,6 +118,8 @@ Current* list of components and sub-components (modules/plugins) of the XMMS2 da
 {|
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Python bindings | Python bindings]]
 |-
+| style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Mono bindings | Mono bindings]]
+|-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:Ruby bindings | Ruby bindings]]
 |-
 | style="border-bottom: 1px dotted #000; border-left: 1px dotted #000; background-color: #bfb" | [[Component:EFL bindings | EFL bindings]]
