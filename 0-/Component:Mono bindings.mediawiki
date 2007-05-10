@@ -1,0 +1,4 @@
+A first implementation of Xmms2 interface for Mono was started.
+You can check it out at http://code.google.com/p/xmmssharp/
+
+Work is done by Eli Yukelzon a.k.a Reflog
