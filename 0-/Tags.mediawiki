@@ -1,0 +1,107 @@
+Nearly every media format defines its own set of tags, which all have subtle differences. Tags from plugins are examined and plugged into our own set of media properties.
+
+{| border="1" cellspacing="0" cellpadding="5" align="center"
+! Medialib Property
+! ID3
+! Ogg Vorbis
+|- 
+| ARTIST
+| TP1, TPE1
+| Artist
+|- 
+| ALBUM
+| TAL
+| Album
+|-
+| TITLE
+| TT2, TIT2
+| Title
+|-
+| YEAR
+| TYE, TYER
+| Date
+|-
+| TRACKNR
+| TRK, TRCK
+| Tracknumber
+|-
+| GENRE
+| TCON
+| Genre
+|-
+| COMMENT
+| COMM
+| Comment
+|-
+| COMMENTLANG
+| 
+|
+|-
+| COMPILATION
+| 
+| MUSICBRAINZ_VA_ID is checked (?)
+|-
+| ALBUM_ID
+| 
+| Musicbrainz_AlbumId
+|-
+| ARTIST_ID
+| 
+| Musicbrainz_ArtistId
+|-
+| TRACK_ID
+|
+| Musicbrainz_ArtistId
+|-
+| PARTOFSET
+|
+| DiscNumber
+|-
+| PICTURE_FRONT
+| APIC is loaded into Medialib
+| 
+|-
+| PICTURE_FRONT_MIME
+| N/A
+| N/A
+|-
+| GROUPING
+| 
+| 
+|-
+| VERSION
+| TIT3
+| 
+|-
+| PERFORMER
+| TPE2
+|
+|-
+| CONDUCTOR
+| TPE3
+|
+|-
+| ARRANGER
+| TPE4
+|
+|-
+| ORIGINAL_ARTIST
+| TOPE
+|
+|-
+| ALBUM_ARTIST
+|
+|
+|-
+| PUBLISHER
+| TPUB
+|
+|-
+| COMPOSER
+| TCOM
+|
+|-
+| ASIN
+|
+|
+|}
