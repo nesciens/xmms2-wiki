@@ -64,7 +64,15 @@ Nearly every media format defines its own set of tags, which all have subtle dif
 | PICTURE_FRONT_MIME
 | N/A
 | N/A
-|-
+|}
+
+----
+Patches are available for these properties, but are not yet in HEAD.
+{| border="1" cellspacing="0" cellpadding="5" align="center"
+! Medialib Property
+! ID3
+! Ogg Vorbis
+|- 
 | GROUPING
 | 
 | 
@@ -104,4 +112,41 @@ Nearly every media format defines its own set of tags, which all have subtle dif
 | ASIN
 |
 |
+|-
+| OPUS
+|
+| Opus
+|-
+| ENCODEDBY
+|
+| Encodedby, Encoded-by
+|-
+| ENCODING
+| 
+| Encoding
+|-
+| SOURCEMEDIA
+|
+| SourceMedia
+|-
+| LABEL
+| 
+| Label
+|-
+| LABELNO
+|
+| LabelNo
+|-
+| EANUPN
+|
+| EAN/UPN
+|-
+| ISRC
+| 
+| ISRC
+|-
+| COPYRIGHT
+| 
+| Copyright
+|-
 |}
