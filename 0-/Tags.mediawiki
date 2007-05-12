@@ -38,15 +38,15 @@ Nearly every media format defines its own set of tags, which all have subtle dif
 |
 |-
 | COMPILATION
-| 
+| TXXX:MusicBrainz Album Artist Id
 | MUSICBRAINZ_VA_ID is checked (?)
 |-
 | ALBUM_ID
-| 
+| TXXX:MusicBrainz Album Id
 | Musicbrainz_AlbumId
 |-
 | ARTIST_ID
-| 
+| TXXX:MusicBrainz Artist Id
 | Musicbrainz_ArtistId
 |-
 | TRACK_ID
