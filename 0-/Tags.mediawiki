@@ -2,7 +2,6 @@ Nearly every media format defines its own set of tags, which all have subtle dif
 
 {| border="1" cellspacing="0" cellpadding="5" align="center"
 ! Medialib Property
-! Description
 ! ID3
 ! Ogg Vorbis
 |- 
