@@ -98,7 +98,7 @@ Patches are available for these properties, but are not yet in HEAD.
 |
 |-
 | ALBUM_ARTIST
-|
+| TXXX:QuodLibet::albumartist, TXXX:ALBUMARTISTSORT
 |
 |-
 | PUBLISHER
