@@ -43,6 +43,26 @@ No new platform support are included in this release.
 
 === Full ChangeLog ===
 
+==== Between TEST4 and TEST5 ====
+'''Alexander Botero-Lowry'''
+* <mantis>1545</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9ac7a6575efae7ba114d6577a4383cfc830f2fca</git>
+* <mantis>1541</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a6450d1c594b406341acaea46466a3e245475c00</git>
+'''Anders Gustafsson'''
+* <mantis>1550</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>6e80ee1467d22f3f7973ca64ca3e3833c8705395</git>
+* <mantis>1557</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>cf60df03bc5eeb7f857c4b3d98f349eb6cf5deef</git>
+* <mantis>1559</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2a9f7977cd20522526979e725b1954a698f1881f</git>
+* <mantis>1558</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2c3824e11c88c2c9577e3a1a669c128f4280ce25</git>
+* <mantis>1549</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>af2c6440f3efab25640ff1041e0f220cfaf7554e</git>
+* <mantis>1517</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7d35f1cbad18d50ab2c79633a3a71f9ef4ba1565</git>
+
 ==== Between TEST3 and TEST4 ====
 '''Alexander Botero-Lowry'''
 * <mantis>1392</mantis>
