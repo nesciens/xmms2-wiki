@@ -39,7 +39,7 @@ Nearly every media format defines its own set of tags, which all have subtle dif
 |-
 | COMPILATION
 | TXXX:MusicBrainz Album Artist Id
-| MUSICBRAINZ_VA_ID is checked (?)
+| MUSICBRAINZ_ALBUMARTISTID is checked for "Various Artists"
 |-
 | ALBUM_ID
 | TXXX:MusicBrainz Album Id
