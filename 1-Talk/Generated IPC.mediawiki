@@ -1,3 +1,9 @@
+Before anyone starts working on this, please look into using a standardized solution. What the developers describe here is coming up with an XMMS-specific interface description language (IDL), from which bindings will be generated. COM, CORBA, XPCOM and others have been doing this for years; users specify the interface in an IDL, and use tools that take care of all the low-level details (such as generating bindings). That is, everything the developers are talking about has already been done, and an enormous variety of open source solutions are already available. This field is normally referred to as "software componentry".
+
+Thus, don't reinvent the wheel, just choose an existing solution (such as XPCOM), and make it work well with XMMS2. The GIMP already has a suite of ad hoc Perl scripts that automate the writing of plug-ins. This solution does not work very well. Don't repeat the same mistakes The GIMP made -- use a well-tested, well-documented, well-understood open-source solution instead of reinventing the wheel. -- [[User:Dpol|Dpol]] 20:15, 13 May 2007 (CEST)
+
+----
+
 With the strict typing and XSLT goodness involved here, it might also provide a good segway into unit testing.
 
 
