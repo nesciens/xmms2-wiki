@@ -233,10 +233,10 @@ Toggle playlist loop.
      <arg type="b" />
    </method>
 
-==== Shuffle ====
-Toggle playlist shuffle.
+==== Random ====
+Toggle playlist shuffle / random. It may or may not play tracks only once.
 
-   <method name="Shuffle">
+   <method name="Random">
      <arg type="b" />
    </method>
 
