@@ -1,0 +1,105 @@
+Some notes that might help assist review and merging of Windows-related fixes in xmms2-puzzles.
+
+*ef6f1440b6665b24e03fb2860e49964cbda3d8a5 BUG(1473): add win32 to the list of platform names
+** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
+
+*beb86bde97ef4c8ea3cea182e0cc8f03c33261f0 BUG(1474): properly escape directories on win32
+** replaces backslashes with double-backslashes in pathnames in certain header files
+** necessary because #define "\some\path" sees "\s" and "\p" as escape sequences and fails
+
+*caa9af3e7a199fc9ca5a8500d09e508264034fc4 BUG(1475): remove unused pthread include
+** from main.c
+
+*76fd1a6fefb34a84420c5a090c6af405c514acd7 BUG(1480): install libxmms2core.dll on win32
+** on windows, xmms2core is a shared lib and needs to be present on the system
+** this is broken - when merging, combine with 444d6163b8457607e7b53110e1b3343cb94e09bc and erase any record of my stupid mistake
+
+*1b21fa94a357d900077b1ba0d60d06d117e3a5fb BUG(1479): split out os-dependent code for find_terminal_width in CLI
+** windows command-line is ''different'' :P
+
+*763311991f28a660cbe1def61b59536d22ebfc1f BUG(1479): find real terminal width on win32
+** 1b21fa94a357d900077b1ba0d60d06d117e3a5fb statically sets the terminal width to 80 columns, whereas it can actually be resized
+
+*1d3ecdd649f9e42496848c3915f5ae3c41aaae7d OTHER: disable launcher on win32
+** the launcher was not meant to be ported to windows and xAFFE's service monitor is probably a better solution
+
+*e8f66eb9d5088a2904bebb98cad953dee1f32a09 OTHER: disable ET on win32
+** auke has done some porting work (see <mantis>1505</mantis>) but it's still unrefined and hasn't received much feedback
+
+*444d6163b8457607e7b53110e1b3343cb94e09bc OTHER: correct stupid obvious bug
+** commit message says it all. feel free to combine with 76fd1a6fefb34a84420c5a090c6af405c514acd7
+
+*9705376c7b5c0db5d938d8802a1a00c509b6375f BUG(1487): set priority for waveout output
+** sets the waveout plugin priority so it gets used instead of null
+** priority set to 3, the same as OSS, for if/when we get a DirectSound output, which will be 4, the same as ALSA
+
+*342a3a5222edc5ad644aba7530fc0a68ed406d12 BUG(1478): allow mp4 plugin to build on MinGW
+** takes advantage of MinGW's stdint.h to prevent compilation errors
+
+*8ac322978cc9b28dcdb78ead453c620c99a9a707 OTHER: Initialize IO channels better and handle HUP as disconnect. (Windows)
+** takes care of some of the encoding and buffering issues that may exist across platforms
+** treats a HUP as a disconnect instead of an error
+
+*f6ba131d1427ae60b9c31870922cddc9d36fc254 BUG(1481): Make a separate format_url for win32 to convert paths into urls.
+** mimics current CLI behavior on local systems (automatic relative -> absolute path conversion)
+** converts backslashes to forward slashes as per normal URLs
+
+*184e3e07fc053fd4c3afb1527777c85204adebe5 OTHER: The 'sunos5' of Solaris was forgotten from platform_names.
+** this isn't win32-related, what's this doing in here?
+** juhovh probably caught this while looking at the fix for <mantis>1473</mantis>
+
+*1c11c7760da758739104ba7d9789de2c61037edd OTHER: Move all platform dependent stuff into "compat" subdirectory.
+** self-explanatory and minimally invasive as virtually no source was changed; should be a no-brainer to merge
+
+*0cabd8697af00dec3e9709696ad5408b96e0d144 BUG(1485): Separate the symlink_file function from main.c for portability.
+** makes a unix and dummy symlink_file function in separate files
+** dummy symlink_file just returns false; not a problem since scripts don't run on windows startup.d anyway
+
+*6ade3ac1767197e9b41c6f064eb5f02b52d29f85 BUG(1485): Separate checking for root user from main.c for portability.
+** similar to above, only for UID functions
+** windows has no root user, so it uses the dummy, which always returns false
+
+*507fb64149e80e1685beed2af619391b81d68ddb BUG(1190): Make plugin path relative on Windows.
+** plugins don't really fit into system32 very well as they're not system files and xmms2 doesn't know how to check $PATH anyway
+** ./Plugins is used as it avoids searching $PATH and lends itself well to packaging a binary xmms2 for windows
+
+*5295349110524f24a4ba08f8d2be03b738e71ac3 BUG(1496): check Windows version on configure and set _WIN32_WINNT appropriately
+** xmmsc_sockets.h set _WIN32_WINNT to masquerade as WinXP always; Win2K and Vista support were impossible
+** _WIN32_WINNT is defined according to the actual host and it's defined globally
+
+*c3106fc832a76dfda49ca06886d145d2676a3f27 OTHER: link DAAP plugin to winsock on win32
+** honestly I don't remember if/how this works o_O
+
+*629782026c65e92e1885167cc33160fbdbdcd916 BUG(1502): replace mkdir with portable g_mkdir_with_parents in diskwrite
+** two birds with one stone: uses a portable glib function and simplifies the code; no-brainer
+
+*1544b9616ddf146a6fec23fdfb8e0322e87b8433 BUG(1500): fix Ruby binding build on win32
+** this works by telling ruby.h that we're MSVC, since Ruby doesn't really understand MinGW
+*** this badly interacts with xmmsc_stdint.h, which has tazle's old MSVC code
+*** after consulting with tazle, I took out the code
+*** subsequently, I took out xmmsc_stdint.h altogether as it only served to include inttypes.h
+** should be merged with 85a648b3b7696bb684c9c4d19eb98b553991dfa9
+
+*afe98fa3667e1819c594c513a08320db476fae80 BUG(1503): link FLAC plugin to ws2_32 on win32
+** it seems odd, but IIRC, FLAC needed something like ntohl() or htons()
+
+*a5ffbecac3b90cebd2f541e2217d41c88a79cb21 BUG(1521): link cdio against winmm on win32
+** cdio uses winmm for cdrom access on windows (apparently :P)
+
+*c5c1f10f04f9d8ca352a1a613c3e3ef710711dd2 BUG(1522): link curl to ws2_32 on win32
+** ws2_32 == winsock; this is a no-brainer
+
+*9b46e6a4bd58d97d915d32ac6a325725e23b738a BUG(1501): enable building on Windows 2000
+** microsoft was nice enough to make previous versions of windows compatible with newer windows (XP) functions through use of a header
+*** header is copyrighted and non-GPL (of course) does #including this pose a GPL violation?
+*** header is reverse-compatible and optional for windows XP and above, but necessary for 2000 and prior--great for binaries
+** this ''really should'' print out a warning for XP users that their binary will not run on windows 2000 and below if the header is missing, however:
+*** WSPiApi.h, the header needed for this needs 2 other headers in order to work
+*** this is not a problem except that during waf configuration tests, the test programs all fail because there is no way to check multiple headers [http://code.google.com/p/waf/issues/detail?id=23&can=2]
+** globally defines WIN2K on Win2k systems, this might be better named as HAS_WSPIAPI once the above problem is resolved
+
+*287922477fd8b5c4dc12dd109b03285a96ae15cb BUG(1501): enable building DAAP plugin on Windows 2000
+** just adds #include <WSPiApi.h> if WIN2K is defined.
+
+*85a648b3b7696bb684c9c4d19eb98b553991dfa9 BUG(1544): remove xmmsc_stdint.h
+** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
