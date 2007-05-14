@@ -365,21 +365,24 @@ Returns the playing position (will be [0;<track_length>] in milliseconds)
 
 === The signals ===
 
-TrackChange : Signal is emitted when the "Media Player" plays another "Track". Argument of the signal is the metadata attached to the new "Track"
+==== TrackChange ==== 
+Signal is emitted when the "Media Player" plays another "Track". Argument of the signal is the metadata attached to the new "Track"
 
    <signal name="TrackChange">
      <arg type="a{sv}"/>
    </signal>
 
-StatusChange : Signal is emitted when the status of the "Media Player" change. The argument has the same meaning than the value returned by GetStatus.
+==== StatusChange ==== 
+Signal is emitted when the status of the "Media Player" change. The argument has the same meaning than the value returned by GetStatus.
 
    <signal name="StatusChange">
     <arg type="i"/>
    </signal>
 
-CapabilityChange : [TODO] Signal is emitted when the "Media Player" changes capabilities, Flags are CAN_GO_NEXT CAN_GO_PREV CAN_PAUSE CAN_PLAY CAN_SEEK CAN_PROVIDE_METADATA PROVIDES_TIMING. Maybe they'd better be method names, which the media player is able or not to execute. Returned data should be "a{sb}" or maybe "as" with an exhaustive list of capabilities, or a(ss) with the object name and a complete method name.
+==== CapsChange ==== 
+Signal is emitted when the "Media Player" changes capabilities, Flags are CAN_GO_NEXT CAN_GO_PREV CAN_PAUSE CAN_PLAY CAN_SEEK CAN_PROVIDE_METADATA PROVIDES_TIMING. 
 
-   <signal name="CapabilityChange">
+   <signal name="CapsChange">
      <arg type=TODO />
    </signal>
 
