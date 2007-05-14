@@ -38,7 +38,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** takes advantage of MinGW's stdint.h to prevent compilation errors
 
 *8ac322978cc9b28dcdb78ead453c620c99a9a707 OTHER: Initialize IO channels better and handle HUP as disconnect. (Windows)
-** takes care of some of the encoding and buffering issues that may exist across platforms
+** initializes GIOChannel encoding to binary and buffering to false just to be nice
 ** treats a HUP as a disconnect instead of an error
 ** Juho VÃ¤hÃ¤-Herttua
 
@@ -48,7 +48,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** Juho VÃ¤hÃ¤-Herttua
 
 *184e3e07fc053fd4c3afb1527777c85204adebe5 OTHER: The 'sunos5' of Solaris was forgotten from platform_names.
-** this isn't win32-related, what's this doing in here?
+** this isn't win32-related, what's this doing in here? (puzzles guessed right, see below)
 ** juhovh probably caught this while looking at the fix for <mantis>1473</mantis>
 ** Juho VÃ¤hÃ¤-Herttua
 
