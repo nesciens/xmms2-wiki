@@ -335,13 +335,6 @@ Note that the caps are a bitfield, currently defined as:
           CAN_PROVIDE_METADATA  = 1 << 6,
           PROVIDES_TIMING       = 1 << 7,
 
-
-[TODO] Maybe they'd better be method names, which the media player is able or not to execute. Returned data should be "a{sb}" or maybe "as" with an exhaustive list of capabilities. or "a(ss)" with the object name and a complete method name. (??)
-
-   <signal name="GetCapability">
-     <arg type=TODO />
-   </signal>
-
 ==== VolumeSet ====
 Sets the volume (argument must be in [0;100])
 
