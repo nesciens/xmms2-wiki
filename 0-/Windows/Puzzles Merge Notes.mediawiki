@@ -81,6 +81,8 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *629782026c65e92e1885167cc33160fbdbdcd916 BUG(1502): replace mkdir with portable g_mkdir_with_parents in diskwrite
 ** two birds with one stone: uses a portable glib function and simplifies the code
 ** <nano-> puzzles: 629782026c65e92e1885167cc33160fbdbdcd916 depends on a newer version of glib than the rest of xmms2d depends on.
+*** grep -r g_mkdir_with_parents src/
+*** debian stable even has has 2.6.12 whereas g_mkdir_with_parents is 2.8
 ** Auke Schrijnen
 
 *1544b9616ddf146a6fec23fdfb8e0322e87b8433 BUG(1500): fix Ruby binding build on win32
