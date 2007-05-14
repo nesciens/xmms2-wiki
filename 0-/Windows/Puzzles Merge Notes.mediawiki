@@ -1,4 +1,4 @@
-Some notes that might help assist review and merging of Windows-related fixes in xmms2-puzzles.
+Some notes that might help assist review and merging of Windows-related fixes in xmms2-puzzles. I'll try to keep these commit hashes constant until they're ready for merge.
 
 *ef6f1440b6665b24e03fb2860e49964cbda3d8a5 BUG(1473): add win32 to the list of platform names
 ** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
@@ -19,6 +19,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *763311991f28a660cbe1def61b59536d22ebfc1f BUG(1479): find real terminal width on win32
 ** 1b21fa94a357d900077b1ba0d60d06d117e3a5fb statically sets the terminal width to 80 columns, whereas it can actually be resized
+** Tim Schumacher
 
 *1d3ecdd649f9e42496848c3915f5ae3c41aaae7d OTHER: disable launcher on win32
 ** the launcher was not meant to be ported to windows and xAFFE's service monitor is probably a better solution
@@ -39,29 +40,36 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *8ac322978cc9b28dcdb78ead453c620c99a9a707 OTHER: Initialize IO channels better and handle HUP as disconnect. (Windows)
 ** takes care of some of the encoding and buffering issues that may exist across platforms
 ** treats a HUP as a disconnect instead of an error
+** Juho VÃ¤hÃ¤-Herttua
 
 *f6ba131d1427ae60b9c31870922cddc9d36fc254 BUG(1481): Make a separate format_url for win32 to convert paths into urls.
 ** mimics current CLI behavior on local systems (automatic relative -> absolute path conversion)
 ** converts backslashes to forward slashes as per normal URLs
+** Juho VÃ¤hÃ¤-Herttua
 
 *184e3e07fc053fd4c3afb1527777c85204adebe5 OTHER: The 'sunos5' of Solaris was forgotten from platform_names.
 ** this isn't win32-related, what's this doing in here?
 ** juhovh probably caught this while looking at the fix for <mantis>1473</mantis>
+** Juho VÃ¤hÃ¤-Herttua
 
 *1c11c7760da758739104ba7d9789de2c61037edd OTHER: Move all platform dependent stuff into "compat" subdirectory.
 ** self-explanatory and minimally invasive as virtually no source was changed; should be a no-brainer to merge
+** Juho VÃ¤hÃ¤-Herttua
 
 *0cabd8697af00dec3e9709696ad5408b96e0d144 BUG(1485): Separate the symlink_file function from main.c for portability.
 ** makes a unix and dummy symlink_file function in separate files
 ** dummy symlink_file just returns false; not a problem since scripts don't run on windows startup.d anyway
+** Juho VÃ¤hÃ¤-Herttua
 
 *6ade3ac1767197e9b41c6f064eb5f02b52d29f85 BUG(1485): Separate checking for root user from main.c for portability.
 ** similar to above, only for UID functions
 ** windows has no root user, so it uses the dummy, which always returns false
+** Juho VÃ¤hÃ¤-Herttua
 
 *507fb64149e80e1685beed2af619391b81d68ddb BUG(1190): Make plugin path relative on Windows.
 ** plugins don't really fit into system32 very well as they're not system files and xmms2 doesn't know how to check $PATH anyway
 ** ./Plugins is used as it avoids searching $PATH and lends itself well to packaging a binary xmms2 for windows
+** Juho VÃ¤hÃ¤-Herttua
 
 *5295349110524f24a4ba08f8d2be03b738e71ac3 BUG(1496): check Windows version on configure and set _WIN32_WINNT appropriately
 ** xmmsc_sockets.h set _WIN32_WINNT to masquerade as WinXP always; Win2K and Vista support were impossible
@@ -73,6 +81,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *629782026c65e92e1885167cc33160fbdbdcd916 BUG(1502): replace mkdir with portable g_mkdir_with_parents in diskwrite
 ** two birds with one stone: uses a portable glib function and simplifies the code
 ** <nano-> puzzles: 629782026c65e92e1885167cc33160fbdbdcd916 depends on a newer version of glib than the rest of xmms2d depends on.
+** Auke Schrijnen
 
 *1544b9616ddf146a6fec23fdfb8e0322e87b8433 BUG(1500): fix Ruby binding build on win32
 ** this works by telling ruby.h that we're MSVC, since Ruby doesn't really understand MinGW
