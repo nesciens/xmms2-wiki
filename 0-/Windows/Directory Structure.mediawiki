@@ -1,0 +1,38 @@
+= The Problem =
+All the POSIX OS flavors separate executables, libraries, configuration, documentation, etc. Windows doesn't do this and likes to throw all of this stuff together beneath a single directory.
+
+What this means for Windows clients is that they will all tend to install their own libraries and configuration separately. Libraries can be mismatched versions and can easily go out-of-date and configuration can be difficult to track down.
+
+= The Proposal =
+XMMS2 on Windows needs a directory hierarchy standard. There need to be set places for executables, libraries, headers, and configuration.
+
+* \
+** Program Files\
+*** XMMS2\
+**** xmms2d.exe
+**** xmms2.exe
+**** '''in-tree service clients(e.g. xmms2-mdns, medialib-updater)'''
+***** %CLIENT_NAME%\
+****** '''some executable stuff'''.exe
+****** '''some documentation'''.chm
+****** '''some eye candy'''.png
+****** '''some application-specific libraries'''.dll
+***** Lib\
+****** libxmmsclient'''-whatever'''.dll
+***** Plugins\
+****** libxmms_'''whatever'''.dll
+***** Include\
+****** xmms\
+******* '''xform-building stuff'''
+****** xmmsc\
+******* '''common headers'''
+****** xmmsclient\
+******* '''client library headers'''
+** %HOME% (usually \Documents and Settings\%USER%\)
+*** Application Data\
+**** xmms2\
+***** xmms2.conf
+***** clients\
+****** cli.conf
+****** %CLIENT_NAME%\
+******* '''some configuration stuff'''
