@@ -1,52 +1,16 @@
 {{ReleaseStatus}}
-== Source ==
-'''Note''': you should read the [[Install instructions]] page as well.
-* Look at our sourceforge page for releases: http://sf.net/projects/xmms2
-* The GIT repository (with snapshots) is viewable at: http://git.xmms.se
 
-About the GIT repository:
-* You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
-* If you have problems using snapshot tarballs, check the [[FAQ]] (e.g. ''[[FAQ#Snapshot_tarball_full_of_random_files_and_things_about_.27paxheader.27 | Snapshot tarball full of random files and things about paxheader]]'') and your relevant [[:Category:Platforms | platform]] page.
+== Linux ==
 
-== Binary Packages ==
+; Debian - Sid / Unstable + Etch / Testing + Woody / Stable
 
-=== MacOSX ===
+ apt-get install xmms2
 
-Binary packages for MacOSX is available at http://exodus.xmms.se/~tru/xmms2_macosx/
+The official XMMS2 Debian packages maintained by [[User:rafl|Florian Ragwitz]]. Several popular clients and plugins are available, as well:
 
-Should work fine for Tiger at least.
+ apt-cache search xmms2
 
-=== Debian ===
-'''Note''': There are now two sets of Debian packages - the unofficial ones, maintained by [[Jens Taprogge]], and official Debian packages maintained by Florian Ragwitz. You should choose one set of packages to use - it is '''not recommended''' to have packages installed from both sets at the same time.
-
-==== Official Packages ====
-; Sid / Unstable + Etch / Testing
-There are now official XMMS2 Debian packages maintained by Florian Ragwitz, in Debian Unstable and Testing. Simply <code>apt-get update</code> and <code>apt-cache search xmms2</code>.
-
-==== Unofficial Packages ====
-These packages are outdated - it's recommended to use the official packages where possible.
-; Sarge / Stable
- deb http://exodus.xmms.se/debian stable main
-
-; Etch / Testing
- deb http://exodus.xmms.se/debian etch main
-
-=== Ubuntu ===
-
-'''These packages are not updated, you probably don't want to use them'''
-
-==== Breezy Badger ====
-The Debian packages appear to work on ''Ubuntu 5.10 Breezy Badger'', but have yet to be tested thoroughly.
-Add the following line to your ''/etc/apt/sources.list'' (same line as debian above):
- deb http://exodus.xmms.se/debian stable main
-
-Open Synaptic, go to ''Edit->Reload Package Information'', then install xmms2.  You'll probably also want the decoder plugins ''xmms2-decoder-mad'' (for MP3) and ''xmms2-decoder-vorbis'' (Ogg Vorbis).
-
-==== Dapper Drake ====
-Packages built specifically for Dapper are available:
- deb http://exodus.xmms.se/debian dapper main
-
-=== Fedora ===
+; Fedora
 
 Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in tarballs from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
 
@@ -55,49 +19,29 @@ Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in
 
 ''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
 
-=== ALT Linux Sisyphus ===
+; ALT Linux Sisyphus
 
-Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nyello | nyello]] are available from repository. To install:
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nyello | nyello]] are available from repository. To install, respectively:
  apt-get install xmms2
-
  apt-get install gxmms2
-
  apt-get install nyello
 
-=== Windows ===
-Getting XMMS2 to build/run on Windows is still under development, though there are already some usable binary packages available. Standard disclaimer: Not all features of XMMS2 are currently available in these packages, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
-
-* http://xmms2.xmms.se/~puzzles/win32/
-* http://www.schrijnen.nl/auke/ (With [[Client:Esperanza|Esperanza]] built for win32)
-
-== Ports ==
-
-=== FreeBSD ===
-xmms2 is now included in the FreeBSD ports tree. It can be found in audio/xmms2.
-
-=== NetBSD ===
-A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsrc is available at http://pkgsrc-wip.sourceforge.net/.
-
-=== CRUX ===
+; CRUX
 Rugek has a port repository with Xmms2 here: http://rugek.dirtyhack.net/crux-ports/rugek.httpup
 
-=== Arch Linux ===
+; Arch Linux
 Xmms2 is available in the ''community'' repository; various clients could be [http://aur.archlinux.org/packages.php?K=xmms2 found] in AUR.
 
-=== Gentoo Linux ===
-
-;Notes:
+; Gentoo Linux
 * ''None of these are supported by XMMS2 team or Gentoo. You are pretty much on your own.''
 * '''If you ask for help on IRC when using some of the following ebuilds, start by saying that you are running gentoo and mentioning which ebuild you are using'''
 * There is some faad2 breakage in Gentoo. None of the following ebuilds depend on faad2, but they may still pick it up if already installed. (Which is horribly bad.)
 
-Some ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
-
-There's another set of ebuilds available at: http://stuge.se/gentoo/
-
 Ebuilds for latest testing versions (incl. latest git) are available at http://x4x.sourceforge.net/wiki/index.php/Ebuilds and http://x4x.cvs.sourceforge.net/x4x/x4x-portage. Those ebuilds use waf, tons of USE-flags and no more env-variables or init-scripts. In this repo you can also find ebuilds for x4x and esperanza.
 
 These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. As of the 0.2 DrAlban ebuild,  a new local "phonehome" USE flag that has to be set in order to enable the [[ET|xmms2-et]] client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
+
+Some alternate ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds]
 
 There are plans to add xmms2 to Gentoo in the near future. You can track the progress at http://bugs.gentoo.org/show_bug.cgi?id=93583.
 Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=98304 ebuild].
@@ -105,6 +49,40 @@ Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=98304 ebuild].
 If you want to track the current development tree you can use this [http://bugs.xmms2.xmms.se/file_download.php?file_id=394&type=bug ebuild].
 A valid [http://dev.gentoo.org/~ferdy/overlay/eclass/git.eclass git.eclass] file is necessary.
 
+== MacOSX ==
+
+Binary packages for MacOSX is available at http://exodus.xmms.se/~tru/xmms2_macosx/
+
+Should work fine for Tiger at least.
+
+== Windows ==
+Getting XMMS2 to build/run on Windows is mostly working, but not all features of XMMS2 are currently available on Windows, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
+
+* [http://xmms2.xmms.se/~puzzles/win32/XMMS2.7z Download]
+** With [[Client:Esperanza|Esperanza]] and [http://xmms2.xmms.se/~puzzles/win32/Esperanza.7z installer].
+** You will need the free [http://www.7-zip.org/ 7-zip] utility to extract .7z files.
+** See the [http://xmms2.xmms.se/~puzzles/win32/plugin_list.txt plugin list] for a full list of what's supported.
+** Ruby, Python, and C++ bindings.
+* http://www.schrijnen.nl/auke/
+** With [[Client:Esperanza|Esperanza]].
+** With [[ET]]
+
+== BSD ==
+
+; FreeBSD
+xmms2 is now included in the FreeBSD ports tree. It can be found in audio/xmms2.
+
+; NetBSD
+A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsrc is available at http://pkgsrc-wip.sourceforge.net/.
+
+== Source ==
+'''Note''': you should read the [[Install instructions]] page as well.
+* Look at our sourceforge page for releases: http://sf.net/projects/xmms2
+* The GIT repository (with snapshots) is viewable at: http://git.xmms.se
+
+About the GIT repository:
+* You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
+* If you have problems using snapshot tarballs, check the [[FAQ]] (e.g. ''[[FAQ#Snapshot_tarball_full_of_random_files_and_things_about_.27paxheader.27 | Snapshot tarball full of random files and things about paxheader]]'') and your relevant [[:Category:Platforms | platform]] page.
 
 [[Category:General]]
 [[Category:Users]]
