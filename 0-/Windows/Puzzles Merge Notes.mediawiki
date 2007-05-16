@@ -115,3 +115,6 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *85a648b3b7696bb684c9c4d19eb98b553991dfa9 BUG(1544): remove xmmsc_stdint.h
 ** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
+
+*1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
+** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
