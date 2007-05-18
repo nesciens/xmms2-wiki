@@ -6,3 +6,4 @@
 * If xmms2 daemon is executed by Esperanza, make Esperanza pop up a small-dialog when you quit, with the choice to also close xmms2 (xmms2 quit). Because it feels unintuitive to still hear music after you've closed the player.
 * Seeking bar should be clickable to jump somewhere in the song. The information (like remaining time) shown on the seeking bar may be toggled by right clicking on the information shown.
 * Being able to jump to a perticular time in a song by using a menu choice (for example: jump from 00:00(mm:ss) to 12:34), like in XMMS1.
+* Add a "stop after this title" option (alike "no playlist advance" in xmms)
