@@ -8,7 +8,7 @@ In this example setup we're going to use the following keys:
 * Control + Shift + B     -> Next track
 * Control + Shift + Left  -> Skip back 5 seconds
 * Control + Shift + Right -> Skip forward 5 seconds
-* Control + Shift + Up    -> Increase volume by 1/32
+* Control + Shift + Up    -> Increase volume by 1/32 (using alsa's ''amixer'' command)
 * Control + Shift + Down  -> Decrease volume by 1/32
 * Control + Shift + L     -> Launch esperanza
 * Control + Shift + G     -> Launch gxmms2
