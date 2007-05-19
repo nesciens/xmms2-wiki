@@ -2,16 +2,16 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *ef6f1440b6665b24e03fb2860e49964cbda3d8a5 BUG(1473): add win32 to the list of platform names
 ** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
-** No, XMMS_OS_* define should go. Only very few offenders left. <mantis>620</mantis>. [[User:Anders Gustafsson|Anders Gustafsson]]
+** No, XMMS_OS_* define should go. Only very few offenders left. <mantis>620</mantis>. [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *beb86bde97ef4c8ea3cea182e0cc8f03c33261f0 BUG(1474): properly escape directories on win32
 ** replaces backslashes with double-backslashes in pathnames in certain header files
 ** necessary because #define "\some\path" sees "\s" and "\p" as escape sequences and fails
-** Sounds like a bug in waf to me, which should be fixed in waf. [[User:Anders Gustafsson|Anders Gustafsson]]
+** Sounds like a bug in waf to me, which should be fixed in waf not in upper layers. [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *caa9af3e7a199fc9ca5a8500d09e508264034fc4 BUG(1475): remove unused pthread include
 ** from main.c
-** Obviously correct. [[User:Anders Gustafsson|Anders Gustafsson]]
+** in PostJ [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *76fd1a6fefb34a84420c5a090c6af405c514acd7 BUG(1480): install libxmms2core.dll on win32
 ** on windows, xmms2core is a shared lib and needs to be present on the system
@@ -36,6 +36,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *9705376c7b5c0db5d938d8802a1a00c509b6375f BUG(1487): set priority for waveout output
 ** sets the waveout plugin priority so it gets used instead of null
 ** priority set to 3, the same as OSS, for if/when we get a DirectSound output, which will be 4, the same as ALSA
+** in PostJ [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *342a3a5222edc5ad644aba7530fc0a68ed406d12 BUG(1478): allow mp4 plugin to build on MinGW
 ** takes advantage of MinGW's stdint.h to prevent compilation errors
@@ -58,16 +59,19 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *1c11c7760da758739104ba7d9789de2c61037edd OTHER: Move all platform dependent stuff into "compat" subdirectory.
 ** self-explanatory and minimally invasive as virtually no source was changed; should be a no-brainer to merge
 ** Juho VÃ¤hÃ¤-Herttua
+** in PostJ [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *0cabd8697af00dec3e9709696ad5408b96e0d144 BUG(1485): Separate the symlink_file function from main.c for portability.
 ** makes a unix and dummy symlink_file function in separate files
 ** dummy symlink_file just returns false; not a problem since scripts don't run on windows startup.d anyway
 ** Juho VÃ¤hÃ¤-Herttua
+** in PostJ [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *6ade3ac1767197e9b41c6f064eb5f02b52d29f85 BUG(1485): Separate checking for root user from main.c for portability.
 ** similar to above, only for UID functions
 ** windows has no root user, so it uses the dummy, which always returns false
 ** Juho VÃ¤hÃ¤-Herttua
+** in PostJ [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *507fb64149e80e1685beed2af619391b81d68ddb BUG(1190): Make plugin path relative on Windows.
 ** plugins don't really fit into system32 very well as they're not system files and xmms2 doesn't know how to check $PATH anyway
@@ -118,7 +122,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *85a648b3b7696bb684c9c4d19eb98b553991dfa9 BUG(1544): remove xmmsc_stdint.h
 ** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
-** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]]
+** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
 *1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
 ** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
