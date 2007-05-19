@@ -1,4 +1,4 @@
-=== Using hotkeys with xmms - an example ===
+=== Using hotkeys with XMMS2 - an example ===
 
 In this example setup we're going to use the following keys:
 * Control + Shift + Z     -> Previous track
