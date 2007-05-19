@@ -13,6 +13,8 @@ In this example setup we're going to use the following keys:
 * Control + Shift + L     -> Launch esperanza
 * Control + Shift + G     -> Launch gxmms2
 
+(The Z X C V B keys are the keys in winamp and xmms 1 for prev, play, pause, stop and next respectively).
+
 First, download and install [http://hocwp.free.fr/xbindkeys/xbindkeys.html#download XBindKeys]. Debian users can just do 'apt-get install xbindkeys'.
 
 XBindKeys reads key bindings from ~/.xbindkeysrc. If you've previously used XBindKeys, you already have an ~/.xbindkeysrc. If you don't have it, you'll have to create it (open your favourite text editor, type or paste then save as ~/.xbindkeysrc). The configuration options for our example are:
