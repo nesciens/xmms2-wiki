@@ -2,13 +2,16 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *ef6f1440b6665b24e03fb2860e49964cbda3d8a5 BUG(1473): add win32 to the list of platform names
 ** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
+** No, XMMS_OS_* define should go. Only very few offenders left. <mantis>620</mantis>. [[User:Anders Gustafsson|Anders Gustafsson]]
 
 *beb86bde97ef4c8ea3cea182e0cc8f03c33261f0 BUG(1474): properly escape directories on win32
 ** replaces backslashes with double-backslashes in pathnames in certain header files
 ** necessary because #define "\some\path" sees "\s" and "\p" as escape sequences and fails
+** Sounds like a bug in waf to me, which should be fixed in waf. [[User:Anders Gustafsson|Anders Gustafsson]]
 
 *caa9af3e7a199fc9ca5a8500d09e508264034fc4 BUG(1475): remove unused pthread include
 ** from main.c
+** Obviously correct. [[User:Anders Gustafsson|Anders Gustafsson]]
 
 *76fd1a6fefb34a84420c5a090c6af405c514acd7 BUG(1480): install libxmms2core.dll on win32
 ** on windows, xmms2core is a shared lib and needs to be present on the system
@@ -115,6 +118,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 
 *85a648b3b7696bb684c9c4d19eb98b553991dfa9 BUG(1544): remove xmmsc_stdint.h
 ** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
+** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]]
 
 *1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
 ** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
