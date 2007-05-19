@@ -4,6 +4,8 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
 ** No, XMMS_OS_* define should go. Only very few offenders left. <mantis>620</mantis>. [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 
+----
+
 *beb86bde97ef4c8ea3cea182e0cc8f03c33261f0 BUG(1474): properly escape directories on win32
 ** replaces backslashes with double-backslashes in pathnames in certain header files
 ** necessary because #define "\some\path" sees "\s" and "\p" as escape sequences and fails
@@ -12,6 +14,10 @@ Some notes that might help assist review and merging of Windows-related fixes in
  <puzzles> say conf.env["FOODIR"] = '/a/b/c'
  <puzzles> does it understand that FOODIR is a directory?
  <ita> no
+*** It has nothing to do with directories, just quoting stuff properly. You have the same problem when a directory happens to contain a ". What I'm trying to say that my impression is that the fix is something like http://exodus.xmms.se/~andersg/waf-proper-quoting-write_config_header.patch.txt [[User:Anders Gustafsson|Anders Gustafsson]] 23:13, 19 May 2007 (CEST)
+
+----
+
 
 *caa9af3e7a199fc9ca5a8500d09e508264034fc4 BUG(1475): remove unused pthread include
 ** from main.c
@@ -128,6 +134,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
 ** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 *** See <mantis>1544</mantis> and the IRC log in the description. The MSVC support code was not necessary then or now and was only related to python extensions. [[User:Puzzles|Puzzles]] Sat May 19 16:36:50 EDT 2007
+*** I'm talking about supporting MSVC compilation for everything. Any reason not to? [[User:Anders Gustafsson|Anders Gustafsson]] 23:13, 19 May 2007 (CEST)
 
 *1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
 ** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
