@@ -8,6 +8,10 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** replaces backslashes with double-backslashes in pathnames in certain header files
 ** necessary because #define "\some\path" sees "\s" and "\p" as escape sequences and fails
 ** Sounds like a bug in waf to me, which should be fixed in waf not in upper layers. [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
+*** Waf allows you to set defines. Correct me if I'm wrong, but I don't think in this case it has any concept of directories, so it is up to us to escape them. [[User:Puzzles|Puzzles]] Sat May 19 16:36:50 EDT 2007
+ <puzzles> say conf.env["FOODIR"] = '/a/b/c'
+ <puzzles> does it understand that FOODIR is a directory?
+ <ita> no
 
 *caa9af3e7a199fc9ca5a8500d09e508264034fc4 BUG(1475): remove unused pthread include
 ** from main.c
@@ -123,6 +127,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 *85a648b3b7696bb684c9c4d19eb98b553991dfa9 BUG(1544): remove xmmsc_stdint.h
 ** see 1544b9616ddf146a6fec23fdfb8e0322e87b8433; xmmsc_stdint.h has been replaced with inttypes.h everywhere it occurs
 ** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
+*** See <mantis>1544</mantis> and the IRC log in the description. The MSVC support code was not necessary then or now and was only related to python extensions. [[User:Puzzles|Puzzles]] Sat May 19 16:36:50 EDT 2007
 
 *1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
 ** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
