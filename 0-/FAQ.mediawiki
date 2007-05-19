@@ -89,6 +89,9 @@ Example with having both the default local unix socket and a TCP socket for remo
  xmms2 config core.ipcsocket 'unix:///tmp/xmms-ipc-'$USER';tcp://'
 The seperator between different sockets here is ';'.
 
+=== How do I bind hotkeys to xmms2 commands? ===
+: XMMS2 doesn't offer this natively, but you can try several hacks for this. One such example is [[Hotkeys Example|this Hotkey setup]] using [http://hocwp.free.fr/xbindkeys/xbindkeys.html xbindkeys].
+
 == Development ==
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
