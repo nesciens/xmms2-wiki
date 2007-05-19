@@ -1,0 +1,47 @@
+=== Using hotkeys with xmms - an example ===
+
+In this example setup we're going to use the following keys:
+* Control + Shift + Z     -> Previous track
+* Control + Shift + X     -> Play
+* Control + Shift + C     -> Pause
+* Control + Shift + V     -> Stop
+* Control + Shift + B     -> Next track
+* Control + Shift + Left  -> Skip back 5 seconds
+* Control + Shift + Right -> Skip forward 5 seconds
+* Control + Shift + Up    -> Increase volume by 1/32
+* Control + Shift + Down  -> Decrease volume by 1/32
+* Control + Shift + L     -> Launch esperanza
+* Control + Shift + G     -> Launch gxmms2
+
+First, download and install [http://hocwp.free.fr/xbindkeys/xbindkeys.html#download XBindKeys]. Debian users can just do 'apt-get install xbindkeys'.
+
+XBindKeys reads key bindings from ~/.xbindkeysrc. If you've previously used XBindKeys, you already have an ~/.xbindkeysrc. If you don't have it, you'll have to create it (open your favourite text editor, type or paste then save as ~/.xbindkeysrc). The configuration options for our example are:
+
+ # xmms 2 keybindings
+  
+ "xmms2 prev"
+    Control+Shift + z
+ "xmms2 play"
+    Control+Shift + x
+ "xmms2 pause"
+    Control+Shift + c
+ "xmms2 stop"
+    Control+Shift + v
+ "xmms2 next"
+    Control+Shift + b
+ "xmms2 seek +5"
+    Control+Shift + Right
+ "xmms2 seek -5"
+    Control+Shift + Left
+ "amixer sset Master 1+"
+    Control+Shift + Up
+ "amixer sset Master 1-"
+    Control+Shift + Down
+ "esperanza"
+    Control+Shift + l
+ "gxmms2"
+    Control+Shift + g
+
+Put these in .xbindkeysrc and run 'xbindkeys' at a console.
+
+To verify that it worked, press Control + Shift + X. If any is in the playlist, music should start playing, or start from the beggining of the track if it was already playing.
