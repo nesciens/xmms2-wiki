@@ -136,6 +136,7 @@ Some notes that might help assist review and merging of Windows-related fixes in
 ** Not sure 'bout this. Are we dropping support for m$ compilers? [[User:Anders Gustafsson|Anders Gustafsson]] 20:56, 19 May 2007 (CEST)
 *** See <mantis>1544</mantis> and the IRC log in the description. The MSVC support code was not necessary then or now and was only related to python extensions. [[User:Puzzles|Puzzles]] Sat May 19 16:36:50 EDT 2007
 *** I'm talking about supporting MSVC compilation for everything. Any reason not to? [[User:Anders Gustafsson|Anders Gustafsson]] 23:13, 19 May 2007 (CEST)
+*** Is this code actually useful for MSVC compilation? If it is, there is probably a better solution using the buildsystem, as checking _MSC_VER poses a problem for Ruby, at least [http://git.xmms.se/?p=xmms2-puzzles.git;a=commitdiff;h=1544b9616ddf146a6fec23fdfb8e0322e87b8433]. In my own opinion, I'm averse to supporting free software built on non-free compilers. And I doubt you'll find someone willing to port it for a while, either. [[User:Puzzles|Puzzles]] Sun May 20 10:06:05 EDT 2007
 
 *1ac89a563f35f4ee87f262691348dfa36e468d3c BUG(1575): link ices against winsock on win32
 ** super-simple one-liner fix here. if any of the above winsock/ws2_32 stuff gets merged, this should be, too.
