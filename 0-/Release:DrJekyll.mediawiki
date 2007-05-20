@@ -1,5 +1,5 @@
 == Release Notes ==
-Internet, 070310. XMMS2 Team announces first pre-testing of DrJekyll. Please download and test.
+Hello all music lovers. Another release of XMMS2 is now available. This has been one of the longest release periods in the history of XMMS2. A lot of big changes has been merged, including the long awaited Collections API. We have also switched to a new build-system. The XMMS2 Team would like to extend a big THANK YOU to all who have helped out with this release, a lot of bug testing and bug fixing by new faces has been seen. Hope to you all around for the next release!
 
 === Upgrading ===
 
@@ -40,10 +40,11 @@ No new platform support are included in this release.
 
 === Notes to xform authors ===
 
+None that we can think of.
 
 === Full ChangeLog ===
 
-==== Between TEST4 and TEST5 ====
+==== Between TEST4 and FINAL ====
 '''Alexander Botero-Lowry'''
 * <mantis>1545</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>9ac7a6575efae7ba114d6577a4383cfc830f2fca</git>
