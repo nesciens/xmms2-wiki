@@ -2,4 +2,4 @@
 
  Name:  Mihai DrÄƒghicioiu
  Email: mihai.draghicioiu@gmail.com
- IRC:   irc.freenode.net hackmiker
+ IRC:   hackmiker on irc.freenode.net
