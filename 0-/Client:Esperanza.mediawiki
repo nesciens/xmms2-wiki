@@ -19,6 +19,13 @@ Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodn
 
 == News ==
 
+=== Esperanza 0.3.0 (2007-04-20) ===
+Release is up.
+
+[http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.]
+
+[http://exodus.xmms.se/~tru/esperanza/0.3/ Download.]
+
 === Esperanza 0.3.0rc1 (2007-04-10) ===
 This is the first release candidate for the 0.3.0 that probably will happen together with DrJekyll. Please test this. But be aware that it only works with DrI+WIP+TEST4.
 
