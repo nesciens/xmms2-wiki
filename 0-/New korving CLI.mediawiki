@@ -13,6 +13,8 @@ This page is for discussion of a new potential CLI client for XMMS2.
 ** xmms2 add -p playlist <files>
 * short commands
 ** either as default completion ("ju" matches only "jump") or using chosen one- or two-letter shortcuts (e.g. 't' == "status")
+* wide use of transient collections / patterns
+** i.e. never require to save a collection before it can for instance be used as input for a Party Shuffle; allow the use of a pattern directly.
 
 == Requirements ==
 * minimal dependency, glib and readline? (maybe libedit, seems more sane than readline)
