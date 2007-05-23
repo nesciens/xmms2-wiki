@@ -1,0 +1,19 @@
+This page tries to collect the future of Esperanza. Please put new ideas in the "distant future" thing below and I will move it up.
+
+== Version 0.4 ==
+
+* First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
+* Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
+** Shortcut handling should be splitted out and use QShortcut instead
+** Less direct access to the dialogs / other widgets. Rewrite to use more signals
+** When above is done the source should be reorganized so that dialogs and other windows are plugins to the main widget. It should register things like shortcuts and basic handling and then compile as a QPLUGIN, makes it easier to add new dialogs and not cludder playerwidget.cpp
+* Last.FM controls
+** Implement Last.FM: love/ban/skip in the main widget. Also add browsing to the streambrowser. make it pretty
+* Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
+* Make the medialib browser prettier
+** Animations when the medialib is shown?
+
+== Version 0.5 ==
+
+
+== Distant Future / New Features ==
