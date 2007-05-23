@@ -3,6 +3,8 @@ __NOTOC__
 == Intro ==
 Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
+Please see the [[Client:Esperanza/Roadmap|Roadmap]] for new and upcoming features.
+
 == Features ==
 
 * Sleek, uncomplicated UI ([http://exodus.xmms.se/~tru/screens/esperanza/0.2/ui.png screen])
