@@ -25,3 +25,8 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * Being able to jump to a perticular time in a song by using a menu choice (for example: jump from 00:00(mm:ss) to 12:34), like in XMMS1.
 * Add a "stop after this title" option (alike "no playlist advance" in xmms)
 * Smoother drag&drop handling, esp. inside the playlist (it's very difficult here to get a song to the right place)
+
+==== Ideas from a "Not Dev-Team Member" ====
+* ''no entry in windowlist when tray icon is active''
+* ''tristate button or two different buttons for repeat-all and repeat-one setting of xmms2d''
+* ''preferences dialog for direct access to xmms2d settings (for advanced users)''
