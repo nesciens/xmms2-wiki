@@ -38,6 +38,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:juxtapose | juxtapose]] is a very simple player which "just works"
 * [[Client:Shellac | Shellac]] has a very customizable GUI
 * [[Client:Sonus | Sonus]] is a GUI client that works with xmms2-devel
+* [[Client:radiobar | radiobar]] is a GUI buttonbar client for radio use
 
 == Web Clients ==
 
