@@ -1,19 +1,26 @@
-This page tries to collect the future of Esperanza. Please put new ideas in the "distant future" thing below and I will move it up.
+This page tries to collect the future of Esperanza. Please put new ideas in the "distant future" thing below and I will move it up. The &#10003; denotes that the function is implemented. See the 0.4 branch in the git tree.
 
 == Version 0.4 ==
-
-* First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
-* Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
-** Shortcut handling should be splitted out and use QShortcut instead
-** Less direct access to the dialogs / other widgets. Rewrite to use more signals
-** When above is done the source should be reorganized so that dialogs and other windows are plugins to the main widget. It should register things like shortcuts and basic handling and then compile as a QPLUGIN, makes it easier to add new dialogs and not cludder playerwidget.cpp
-* Last.FM controls
-** Implement Last.FM: love/ban/skip in the main widget. Also add browsing to the streambrowser. make it pretty
-* Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
-* Make the medialib browser prettier
-** Animations when the medialib is shown?
+* &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
+* &#10063; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
+* &#10063; Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
+** &#10063; Shortcut handling should be splitted out and use QShortcut instead
+** &#10063; Less direct access to the dialogs / other widgets. Rewrite to use more signals
+** &#10063; When above is done the source should be reorganized so that dialogs and other windows are plugins to the main widget. It should register things like shortcuts and basic handling and then compile as a QPLUGIN, makes it easier to add new dialogs and not cludder playerwidget.cpp
+* &#10063; Last.FM controls
+** &#10063; Implement Last.FM: love/ban/skip in the main widget. Also add browsing to the streambrowser. make it pretty
+* &#10063; Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
+* &#10063; Make the medialib browser prettier
+** &#10063; Animations when the medialib is shown?
 
 == Version 0.5 ==
 
 
 == Distant Future / New Features ==
+* When Esperanza is minimized to a bar(mini-mode), it's automaticly renamed to ''Esperanza <2>''. It would be a good idea to change the name back to Esperanza  after it's minimized to the bar.
+* If the audio-file doesn't have an artist and title in it's meta-data, show the filename(with it's extension removed).
+* If you click shuffle, don't shuffle the whole list, but instead jump to random places in the list, so that files from the same album are still together.
+* If xmms2 daemon is executed by Esperanza, make Esperanza pop up a small-dialog when you quit, with the choice to also close xmms2 (xmms2 quit). Because it feels unintuitive to still hear music after you've closed the player.
+* Seeking bar should be clickable to jump somewhere in the song. The information (like remaining time) shown on the seeking bar may be toggled by right clicking on the information shown.
+* Being able to jump to a perticular time in a song by using a menu choice (for example: jump from 00:00(mm:ss) to 12:34), like in XMMS1.
+* Add a "stop after this title" option (alike "no playlist advance" in xmms)
