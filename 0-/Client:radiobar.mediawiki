@@ -1,4 +1,4 @@
-{{Client| name=radiobar| author=David Richards| website=rawdod (http://rawdod.com ?)| version=[http://media.kradradio.com/rb/radiobar.rb  1.0]| devlanguage=Ruby| ui=GTK| screenshots=N/A| description=radiobar is a simple toolbar/buttonbar client for use when using xmms2 for a radio show.
+{{Client| name=radiobar| author=David Richards| website=rawdod (http://rawdod.com ?)| version=[http://media.kradradio.com/rb/radiobar.rb  1.0]| devlanguage=Ruby| ui=GTK| screenshots=http://kradradio.com/Screenshot-radiobar.png | description=radiobar is a simple toolbar/buttonbar client for use when using xmms2 for a radio show.
 
 It is intended as a supplementary client to other things you would use for playlist management.
 
