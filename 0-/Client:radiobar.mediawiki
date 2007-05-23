@@ -17,8 +17,10 @@ There is a voiceover button that just reduces the volume by 60% or so, so you ca
 bring the volume back to normal.
 
 This is just the first version of this client, I have several ideas for improvements.
+Play button flashing when 30~ secs are left in track, show time left in track, show last, next, and current track names. Make voice toggle do smooth volume change, change the way single/cont operates (currently stops as soon as the client recieves a new current_playlist_id, is there a better way? )
 
 Download: http://media.kradradio.com/rb/radiobar.rb
+
 Git: git clone git://24.254.239.184/.git radiobar
 
 Contact me on irc, nick is oneman.}}
