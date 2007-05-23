@@ -1,9 +1,0 @@
-== Ideas for Esperanza from users ==
-* A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
-* When Esperanza is minimized to a bar(mini-mode), it's automaticly renamed to ''Esperanza <2>''. It would be a good idea to change the name back to Esperanza  after it's minimized to the bar.
-* If the audio-file doesn't have an artist and title in it's meta-data, show the filename(with it's extension removed).
-* If you click shuffle, don't shuffle the whole list, but instead jump to random places in the list, so that files from the same album are still together.
-* If xmms2 daemon is executed by Esperanza, make Esperanza pop up a small-dialog when you quit, with the choice to also close xmms2 (xmms2 quit). Because it feels unintuitive to still hear music after you've closed the player.
-* Seeking bar should be clickable to jump somewhere in the song. The information (like remaining time) shown on the seeking bar may be toggled by right clicking on the information shown.
-* Being able to jump to a perticular time in a song by using a menu choice (for example: jump from 00:00(mm:ss) to 12:34), like in XMMS1.
-* Add a "stop after this title" option (alike "no playlist advance" in xmms)
