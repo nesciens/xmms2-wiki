@@ -1,0 +1,24 @@
+{{Client| name=radiobar| author=David Richards| website=rawdod (http://rawdod.com ?)| version=[http://media.kradradio.com/rb/radiobar.rb  1.0]| devlanguage=Ruby| ui=GTK| screenshots=N/A| description=radiobar is a simple toolbar/buttonbar client for use when using xmms2 for a radio show.
+
+It is intended as a supplementary client to other things you would use for playlist management.
+
+It uses Ruby/GTK.
+
+It has a Play button that functions as a pause and resume button while playing, and a stop button.
+This is exactly how cd players intended for radio use operate and is familiar to dj's. 
+
+There is a stop, prev and next buttons that are self explanatory.
+
+There is a Cont/Single toggle switch. This toggles between Continues play (like normal) and single mode,
+where playing stops when the current track is done, and the next track is 'cued for play'. This is probably
+something that only makes sense to radio dj's that are used to babbling in between tracks about this or that.
+
+There is a voiceover button that just reduces the volume by 60% or so, so you can talk over the music, hit it again to 
+bring the volume back to normal.
+
+This is just the first version of this client, I have several ideas for improvements.
+
+Download: http://media.kradradio.com/rb/radiobar.rb
+Git: git clone git://24.254.239.184/.git radiobar
+
+Contact me on irc, nick is oneman.}}
