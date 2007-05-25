@@ -1,0 +1,8 @@
+Tilmus Sauvalds is a legend.
+
+== Life ==
+* He is reported to have coded the linux kernel in machine code in under an hour.
+* He once killed a man using only an e-mail after this man added an unnecessary #ifdef to the XMMS2 source.
+
+== Diet ==
+His diet consists mainly of babies, with the occasional barrel of whiskey to wash it down.
