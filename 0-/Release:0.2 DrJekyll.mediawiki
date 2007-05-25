@@ -1,1 +1,1 @@
-[REDIRECT: DrJekyll]
+#REDIRECT: [[Release:DrJekyll]]
