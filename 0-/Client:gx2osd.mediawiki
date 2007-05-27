@@ -2,7 +2,7 @@
 by ''Jonne Lehtinen''
 
 '''Homepage''': http://eclipser.no-ip.org/gx2osd.xhtml<br />
-'''Latest version''': 0.1<br />
+'''Latest version''': 0.2<br />
 '''Development language''': C++<br />
 '''User Interface''': GTK+2<br />
 '''Screenshots''': [http://eclipser.no-ip.org/gx2osd.png]<br />
