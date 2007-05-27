@@ -29,6 +29,12 @@ Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nye
 ; CRUX
 Rugek has a port repository with Xmms2 here: http://rugek.dirtyhack.net/crux-ports/rugek.httpup
 
+; Frugalware Linux
+
+xmms2 and gxmms2 packages are available in the frugalware-current repository. To install :
+ pacman-g2 -S xmms2
+ pacman-g2 -S gxmms2
+
 ; Arch Linux
 Xmms2 is available in the ''community'' repository; various clients could be [http://aur.archlinux.org/packages.php?K=xmms2 found] in AUR.
 
