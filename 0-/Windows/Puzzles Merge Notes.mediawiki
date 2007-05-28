@@ -1,4 +1,80 @@
-Some notes that might help assist review and merging of Windows-related fixes in xmms2-puzzles. I'll try to keep these commit hashes constant until they're ready for merge.
+= Post-[[Release:DrJekyll|DrJekyll]] =
+After [[User:Anders Gustafsson|Anders Gustafsson]] merged some Windows-related changes from his PostJ branch (after the [[Release:DrJekyll|DrJekyll]] release) I moved Windows-related work into win32 and win32-crap branches of xmms2-puzzles. I improved and cleaned some commits as well as resolved some merge conflicts. I'll document what's been done here for review purposes.
+
+The win32 branch contains win32 commits that are in good shape and (hopefully) ready for merge. The win32-crap branch contains win32 as its base, plus some commits that are important for building on Windows, but which are not yet optimal or in need of some discussion. The following are the contents of my win32 branch.
+
+* Daniel Chokola 	BUG(1609): copy scripts on win32
+** Copies startup.d/shutdown.d scripts to the user directory at runtime.
+** Works line on *nix, only copies instead of symlinks.
+** Still, it copies some of the default .sh scripts, which are useless on Windows.
+
+* Daniel Chokola 	OTHER: log error when a script fails to run
+** XMMS2 is very quiet when a script fails to execute. This just logs an error in the xmms2 log when an executable script fails to spawn.
+
+* Daniel Chokola 	OTHER: set HAVE_WINSOCK2 in C++, too
+** The old code in the playground branch checked for __WIN32__, so it worked in C or C++.
+** This is needed for xmmsclient++.
+
+* Daniel Chokola 	BUG(1575): link ices with winsock2 on win32
+** Pretty obvious.
+
+* Daniel Chokola 	BUG(1501): enable DAAP plugin on Windows 2000
+** Includes wspiapi.h compatibility header if it's available (which it must be on Win2k)
+
+* Daniel Chokola 	BUG(1522): link curl with winsock2 on win32
+** Pretty obvious.
+
+* Daniel Chokola 	BUG(1521): link cdda with winmm on win32
+** libcdio uses winmm for CD I/O on Windows.
+
+* Daniel Chokola 	BUG(1503): link FLAC plugin with winsock2 on win33
+** Funny commit message.
+** It seems strange that FLAC should link with winsock2, but it needed something like ntohl, IIRC.
+** Since winsock2 is just a DLL it's not a big deal. No extra space wasted.
+
+* Auke Schrijnen 	BUG(1502): replace mkdir with portable g_mkdir_with_parents in diskwrite
+** No-brainer. The GLib version issue was worked out in the playground branch stuff below.
+
+* Daniel Chokola 	OTHER: link DAAP plugin to winsock on win32
+** Pretty obvious.
+
+* Daniel Chokola 	BUG(1496,1501): support Windows 2000 and up (possibly older versions) and do explicit library and header checks
+** This is a much-improved version of two playground commits.
+*** The playground commit assumed that wspiapi.h was present on Win2k; this actually checks for its presence and requires it for < Windows XP.
+*** The playground commit set _WIN32_WINNT to pretend to be XP or newer; this sets the real version in use.
+*** This commit tells you when you are missing wspiapi.h, your build will be unusable on pre-XP Windows.
+
+* Daniel Chokola 	OTHER: fix warning from -fPIC on MinGW
+** All code from mingw's compiler is position-independent.
+** Perhaps this is not universal of Windows compilers and should be set for MinGW only?
+
+* Juho VÃ¤hÃ¤-Herttua 	BUG(1190): Make plugin path relative on Windows.
+** Pretty obvious.
+
+* Juho VÃ¤hÃ¤-Herttua 	BUG(1481): Make a separate format_url for win32 to convert paths into urls.
+** Handles Windows' backslashes and formats everything using forward slashes.
+
+* Juho VÃ¤hÃ¤-Herttua 	OTHER: Initialize IO channels better and handle HUP as disconnect. (Windows)
+** See the playground commit.
+
+* Daniel Chokola 	BUG(1478): allow mp4 plugin to build on MinGW
+** Read the diff.
+** [[Juho V&auml;h&auml;-Herttua]] should probably review this.
+
+* Daniel Chokola 	OTHER: disable launcher on win32
+** There's no hope of porting or reason to port this, so it's just disabled.
+
+* Tim Schumacher 	BUG(1479): find real terminal width on win32
+** Pretty obvious.
+
+* Daniel Chokola 	BUG(1479): split out os-dependent code for find_terminal_width in CLI
+** Pretty obvious.
+
+* Daniel Chokola 	BUG(1480): install libxmms2core.dll on win32
+** Pretty obvious.
+
+= Pre-[[Release:DrJekyll|DrJekyll]] =
+These are the contents of the xmms2-puzzles playground branch before the release of [[Release:DrJekyll|DrJekyll]]. Some of these commits have been merged into xmms2-devel and progress is good. However these commits are no longer very relevant and Windows-related commits are now in the win32 and win32-crap branches of xmms2-puzzles.
 
 *ef6f1440b6665b24e03fb2860e49964cbda3d8a5 BUG(1473): add win32 to the list of platform names
 ** allows us to have XMMS_OS_WIN32 defined \o/ definitely a good idea to merge
