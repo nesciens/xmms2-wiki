@@ -292,10 +292,10 @@ Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped. ([TOD
    <arg type="i" direction="out"/>
    </method>
 
-==== GetCurrentMetadata ====
+==== GetMetadata ====
 Gives all meta data available for the currently played element
 
-  <method name="GetCurrentMetadata">
+  <method name="GetMetadata">
     <arg type="a{sv}" direction="out" />
   </method>
 
