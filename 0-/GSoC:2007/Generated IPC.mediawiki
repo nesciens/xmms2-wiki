@@ -11,7 +11,7 @@ I will then need to test the C binding extensively for problems as the rest of t
 
 |links=
 ...
-''add link to blog here''
+[http://thisnukes4u.net/blog Project blog]
 ... 
 ''add links to other subpages here''
 
