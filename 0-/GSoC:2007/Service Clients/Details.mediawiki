@@ -59,7 +59,7 @@ However, General IPC will not be available any time soon.
 ==Use Cases==
 The following use cases describe how to register a service client and the
 procedures for calling a registered service. Before I start the use cases,
-there are several modifications that need to be taken place. In enumerator type
+there are several modifications that need to take place. In enumerator type
 xmms_ipc_signals_t, add an extra item called XMMS_IPC_SIGNAL_SERVICE. Do
 similar changes to enumerator xmms_ipc_cmds_t, the new items will be called
 XMMS_IPC_CMD_SERVICE_REQUEST and XMMS_IPC_CMD_SERVICE_RETURN. At last, we need
