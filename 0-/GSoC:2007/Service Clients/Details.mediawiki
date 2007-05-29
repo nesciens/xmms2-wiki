@@ -54,7 +54,7 @@ XML definition would look somewhat like this:
   <return><GString /><doc>parsed search result</doc></arg>
  </method>
 
-However, since General IPC will not be available any time soon.
+However, General IPC will not be available any time soon.
 
 ==Use Cases==
 The following use cases describe how to register a service client and the
