@@ -1,2 +1,2 @@
 Thomas Coppi, Summer of Code 2007 Student for XMMS2. Personal blog here [http://thisnukes4u.net]. Personal email:[mailto:tcoppi@gmail.com]
-Timezone: UTC -7(at university) or UTC -8(during summer)
+Timezone: UTC -7(at university) or UTC -8(during summer) Working on [http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2007/Generated_IPC]
