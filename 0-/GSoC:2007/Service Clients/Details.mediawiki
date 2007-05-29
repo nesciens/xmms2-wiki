@@ -18,8 +18,8 @@ don't want the server to be blocked, the server will only make asynchronized
 calls to service clients. However, for normal clients, it is up to them to
 choose which kind of call they would like to make. Normal clients do not have
 to know which service client provide what, the server will handle that by
-looking up in the service table. All normal clients need to know are the keys
-of the services.
+looking up in the service table. What all normal clients need to know are the
+keys of the services.
 
 So in this implementation, we provide normal clients a list of all the available
 services (method calls). For example, on server-side, each method call is
@@ -38,8 +38,8 @@ machine, clients also cannot communicate to plugins (except via config_val
 hacks) and functionality is restrained. And here raise several problems. If I
 have my server and client running on the same system, and I have over ten
 different service clients. I would have to run them every time I start the
-server, which will become a pain. And there is no way to make either the server
-or normal clients to start service clients automatically, because service
+server, which will become a pain. And there is no way to make neither the server
+nor normal clients to start service clients automatically, because service
 clients can be anywhere (so xmms2d startup.d system does not help much in this
 case). I would have to look into this more.
 
