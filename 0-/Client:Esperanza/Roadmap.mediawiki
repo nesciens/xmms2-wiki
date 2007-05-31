@@ -29,3 +29,4 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * tristate button or two different buttons for repeat-all and repeat-one setting of xmms2d
 * preferences dialog for direct access to xmms2d settings (for advanced users)
 * closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog.
+* Add QScript support for customization of playlist and other elements.
