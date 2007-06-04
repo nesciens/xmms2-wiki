@@ -88,5 +88,5 @@ Special xforms are built into XMMS2 and required for operation. They act as glue
 == Others ==
 These xforms don't fit in well in the other categories. Usually these are used to help other xforms and have little use on their own.
 
-* [[Component:nulstripper|nulstripper]]
-* [[Component:XML|XML]]
+* [[Component:nulstripper|nulstripper]] - Removes null bytes (not audio) at the beginning of streams. This helps the magic xform.
+* [[Component:XML|XML]] - Used as a helper for XML-based playlist xforms (like RSS and XSPF).
