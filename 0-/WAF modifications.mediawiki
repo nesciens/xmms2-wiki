@@ -1,4 +1,3 @@
 This page is supposed to be an overview of the changes we have made to waf.
 
-* Based on waf 1.1.0
-* <git repo="xmms2-devel.git">02d0b37ec6ccb771de0f3884e11195ef4003e41f</git>
+* Based on waf 1.1.1
