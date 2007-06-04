@@ -30,8 +30,8 @@ Transports get raw data as a stream from a source such as a hard disk or interne
 == Demuxers ==
 Demuxers (short for "demultiplexers") strip away container formats and pass on any relevant information from the container.
 
-* [[Component:avformat|avformat]]
-* [[Component:mp4|mp4]]
+* [[Component:avformat|avformat]] - FFmpeg xform, demuxes asf and amr streams.
+* [[Component:mp4|mp4]] - MPEG-4 xform, demuxes MPEG-4 container format (made popular by iTunes).
 
 == Metadata ==
 Metadata xforms strip out metadata like ID3 tags and vorbis comments from streams.
