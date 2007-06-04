@@ -59,9 +59,9 @@ Decoders turn the encoded audio data into raw audio data that can be used by eff
 == Effects ==
 Effects modify the raw audio data before it is sent to the output.
 
-* [[Component:equalizer|equalizer]]
-* [[Component:replaygain|replaygain]]
-* [[Component:vocoder|vocoder]]
+* [[Component:equalizer|equalizer]] - Equalizer xform, to tune different frequency bands to taste.
+* [[Component:replaygain|replaygain]] - ReplayGain xform, normalizes audio according to settings stored in the file.
+* [[Component:vocoder|vocoder]] - Vocoder xform, produces a cool [[Wikipedia:Vocoder|vocoder]] effect.
 
 == Outputs ==
 Outputs send the raw audio data out, usually to speakers, but also as internet radio streams or to the harddrive.
