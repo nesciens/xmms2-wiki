@@ -18,7 +18,7 @@ __NOEDITSECTION__
 * manage your [[The Medialib|music library]]
 * use [[collections]] to help you organise your music as you like
 * allow you to control it using a variety of [[XMMS2 Clients|clients]].
-* [[Project Status#XMMS2_Platform_Support_Status|run]] on Linux, *BSD, OS X, Solaris and maybe Windows.
+* [[Project Status#XMMS2_Platform_Support_Status|run]] on [[Download_XMMS2#Linux|Linux]], [[Download_XMMS2#BSD|*BSD]], [[Download_XMMS2#MacOSX|OS X]], Solaris, and [[Download_XMMS2#Windows|Windows]].
 
 <small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
 == Features ==
