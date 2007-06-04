@@ -42,19 +42,19 @@ Metadata xforms strip out metadata like ID3 tags and vorbis comments from stream
 * [[Component:ofa|ofa]]
 
 == Decoders ==
-Decoders turn the encoded audio data into raw audio data that can be used by effects and outputs.
+Decoders turn the encoded audio data into raw audio data that can be used by effects and outputs. Many of the decoders also extract metadata.
 
-* [[Component:avcodec|avcodec]]
-* [[Component:FAAD|FAAD]]
-* [[Component:FLAC|FLAC]]
-* [[Component:mac|mac]]
-* [[Component:mad|mad]]
-* [[Component:modplug|modplug]]
-* [[Component:musepack|musepack]]
-* [[Component:sid|sid]]
-* [[Component:speex|speex]]
-* [[Component:vorbis|vorbis]]
-* [[Component:wave|wave]]
+* [[Component:avcodec|avcodec]] - FFmpeg xform.
+* [[Component:FAAD|FAAD]] - Advanced Audio Coding (AAC) xform.
+* [[Component:FLAC|FLAC]] - Free Lossless Audio Codec xform.
+* [[Component:mac|mac]] - Monkey's Audio Codec xform.
+* [[Component:mad|mad]] - Libmad xform, decodes MP3.
+* [[Component:modplug|modplug]] - Modplug xform, decodes mod files.
+* [[Component:musepack|musepack]] - Musepack Living Audio Compression xform, decodes mpc files.
+* [[Component:sid|sid]] - Libsidplay2 xform, decodes SID files.
+* [[Component:speex|speex]] - Speex voice compression xform.
+* [[Component:vorbis|vorbis]] - Ogg Vorbis xform.
+* [[Component:wave|wave]] - Wave xform, decodes .wav files.
 
 == Effects ==
 Effects modify the raw audio data before it is sent to the output.
