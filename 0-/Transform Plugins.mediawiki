@@ -81,9 +81,9 @@ Outputs send the raw audio data out, usually to speakers, but also as internet r
 == Special ==
 Special xforms are built into XMMS2 and required for operation. They act as glue between certain xforms.
 
-* [[Component:converter|converter]]
-* [[Component:magic|magic]]
-* [[Component:ringbuf|ringbuf]]
+* [[Component:converter|converter]] - Converts between PCM formats, often needed by effects and certain outputs.
+* [[Component:magic|magic]] - Identifies mimetypes of streams based on certain "magic bytes."
+* [[Component:ringbuf|ringbuf]] - Ringbuffer xform which can be inserted where there is a mismatch in how frequently a stream is read.
 
 == Others ==
 These xforms don't fit in well in the other categories. Usually these are used to help other xforms and have little use on their own.
