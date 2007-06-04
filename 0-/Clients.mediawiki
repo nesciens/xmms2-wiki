@@ -24,6 +24,10 @@ Actually, there are dozens of clients available which try to fit best into this 
 
 [[Client:gxmms2 | gxmms2]] presents itself with a small main window, but all basic functionality for playing, including a playlist editor.
 
+=== Abraca (GTK) ===
+
+[[Client:Abraca | Abraca]] is designed with collections in mind.
+
 === X4X (Java) ===
 
 [[Client:X4X | X4X]] is a Java-based client. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer.
