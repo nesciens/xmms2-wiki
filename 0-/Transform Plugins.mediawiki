@@ -5,6 +5,8 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 
 = Plugins =
 == Playlists ==
+Playlist xforms parse and load playlist files.
+
 * [[Component:ASX|ASX]]
 * [[Component:cue|cue]]
 * [[Component:HTML|HTML]]
@@ -14,6 +16,8 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 * [[Component:XSPF|XSPF]]
 
 == Transports ==
+Transports get raw data as a stream from a source such as a hard disk or internet radio.
+
 * [[Component:CDDA|CDDA]]
 * [[Component:cURL|cURL]]
 * [[Component:DAAP|DAAP]]
@@ -24,15 +28,21 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 * [[Component:samba|samba]]
 
 == Demuxers ==
+Demuxers (short for "demultiplexers") strip away container formats and pass on any relevant information from the container.
+
 * [[Component:avformat|avformat]]
 
 == Metadata ==
+Metadata xforms strip out metadata like ID3 tags and vorbis comments from streams.
+
 * [[Component:icymetaint|icymetaint]]
 * [[Component:ID3v2|ID3v2]]
 * [[Component:lastfmeta|lastfmeta]]
 * [[Component:ofa|ofa]]
 
 == Decoders ==
+Decoders turn the encoded audio data into raw audio data that can be used by effects and outputs.
+
 * [[Component:avcodec|avcodec]]
 * [[Component:FAAD|FAAD]]
 * [[Component:FLAC|FLAC]]
@@ -47,11 +57,15 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 * [[Component:wave|wave]]
 
 == Effects ==
+Effects modify the raw audio data before it is sent to the output.
+
 * [[Component:equalizer|equalizer]]
 * [[Component:replaygain|replaygain]]
 * [[Component:vocoder|vocoder]]
 
 == Outputs ==
+Outputs send the raw audio data out, usually to speakers, but also as internet radio streams or to the harddrive.
+
 * [[Component:ALSA|ALSA]]
 * [[Component:ao|ao]]
 * [[Component:coreaudio|coreaudio]]
@@ -65,10 +79,14 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 * [[Component:waveout|waveout]]
 
 == Special ==
+Special xforms are built into XMMS2 and required for operation. They act as glue between certain xforms.
+
 * [[Component:converter|converter]]
 * [[Component:magic|magic]]
 * [[Component:ringbuf|ringbuf]]
 
 == Others ==
+These xforms don't fit in well in the other categories. Usually these are used to help other xforms and have little use on their own.
+
 * [[Component:nulstripper|nulstripper]]
 * [[Component:XML|XML]]
