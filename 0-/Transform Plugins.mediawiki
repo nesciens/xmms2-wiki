@@ -66,17 +66,17 @@ Effects modify the raw audio data before it is sent to the output.
 == Outputs ==
 Outputs send the raw audio data out, usually to speakers, but also as internet radio streams or to the harddrive.
 
-* [[Component:ALSA|ALSA]]
-* [[Component:ao|ao]]
-* [[Component:coreaudio|coreaudio]]
-* [[Component:diskwrite|diskwrite]]
-* [[Component:ices|ices]]
-* [[Component:jack|jack]]
-* [[Component:nms|nms]]
-* [[Component:null|null]]
-* [[Component:OSS|OSS]]
-* [[Component:sun|sun]]
-* [[Component:waveout|waveout]]
+* [[Component:ALSA|ALSA]] - Advanced Linux Sound Architecture output.
+* [[Component:ao|ao]] - Libao output.
+* [[Component:coreaudio|coreaudio]] - Coreaudio output, for Darwin/OSX.
+* [[Component:diskwrite|diskwrite]] - Diskwriter output, writes wave files to a location on the harddrive.
+* [[Component:ices|ices]] - Icecast source output, use this to create an icecast stream directly from XMMS2.
+* [[Component:Jack|JACK]] - Jack Audio Connection Kit output, low-latency audio output.
+* [[Component:nms|nms]] - Neuros OSD output.
+* [[Component:null|null]] - Null output, outputs nothing.
+* [[Component:OSS|OSS]] - Open Sound System output.
+* [[Component:sun|sun]] - Sun output, for OpenBSD.
+* [[Component:waveout|waveout]] - WaveOut output, for Windows.
 
 == Special ==
 Special xforms are built into XMMS2 and required for operation. They act as glue between certain xforms.
