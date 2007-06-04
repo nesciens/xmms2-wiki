@@ -12,6 +12,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
 * &#10063; Make the medialib browser prettier
 ** &#10063; Animations when the medialib is shown?
+* &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog. (done in [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=79ff3476f2db8f0be4163a5f02f5588323e36673 esperanza-ephraim.git])
 
 == Version 0.5 ==
 
@@ -28,5 +29,4 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * no entry in windowlist when tray icon is active
 * tristate button or two different buttons for repeat-all and repeat-one setting of xmms2d
 * preferences dialog for direct access to xmms2d settings (for advanced users)
-* &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog. (done in [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=79ff3476f2db8f0be4163a5f02f5588323e36673 esperanza-ephraim.git])
 * Add QScript support for customization of playlist and other elements.
