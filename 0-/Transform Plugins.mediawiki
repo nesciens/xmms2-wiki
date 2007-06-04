@@ -7,13 +7,13 @@ Transform plugins (xforms) can be categorized into the following types (and poss
 == Playlists ==
 Playlist xforms parse and load playlist files.
 
-* [[Component:ASX|ASX]]
-* [[Component:cue|cue]]
-* [[Component:HTML|HTML]]
-* [[Component:m3u|m3u]]
-* [[Component:pls|pls]]
-* [[Component:RSS|RSS]]
-* [[Component:XSPF|XSPF]]
+* [[Component:ASX|ASX]] - Advanced Stream Redirector xform, reads ASX playlists (made popular by Windows Media Player)
+* [[Component:cue|cue]] - Cuefile xform.
+* [[Component:HTML|HTML]] - HTML xform.
+* [[Component:m3u|m3u]] - M3U xform.
+* [[Component:pls|pls]] - PLS xform.
+* [[Component:RSS|RSS]] - RSS xform, loads RSS playlists, like podcasts.
+* [[Component:XSPF|XSPF]] - XML Shareable Playlist Format xform.
 
 == Transports ==
 Transports get raw data as a stream from a source such as a hard disk or internet radio.
