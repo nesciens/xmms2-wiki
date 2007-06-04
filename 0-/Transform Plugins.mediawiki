@@ -36,10 +36,10 @@ Demuxers (short for "demultiplexers") strip away container formats and pass on a
 == Metadata ==
 Metadata xforms strip out metadata like ID3 tags and vorbis comments from streams.
 
-* [[Component:icymetaint|icymetaint]]
-* [[Component:ID3v2|ID3v2]]
-* [[Component:lastfmeta|lastfmeta]]
-* [[Component:ofa|ofa]]
+* [[Component:icymetaint|icymetaint]] - ICY xform, extracts info from ICY headers in ShoutCast streams.
+* [[Component:ID3v2|ID3v2]] - ID3v2 xform, extracts ID3v2 tags.
+* [[Component:lastfmeta|lastfmeta]] - Last.fm xform, extracts info from Last.fm streams.
+* [[Component:ofa|ofa]] - Libofa xform, MusicDNS fingerprinting.
 
 == Decoders ==
 Decoders turn the encoded audio data into raw audio data that can be used by effects and outputs. Many of the decoders also extract metadata.
