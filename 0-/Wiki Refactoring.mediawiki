@@ -35,6 +35,8 @@ Let's try to keep the list short (max 7 items) but complete enough:
 * FAQ
 * About (description and feature list; link to history, roadmap)
 
+--[[User:Theefer|Theefer]] 16:24, 5 June 2007 (CEST)andersg suggests Download could be Getting Started. Why not, although it's less "standard" than Download, which users might look for at first.
+
 That's user-centric.  We can have a second developer-oriented menu underneath, but it should be visually different (less emphasis) to clearly show the separation:
 * Dev Corner  (a dev page containing a small section for each of:)
 ** Design page (summary of the design, links to pages of all components)
@@ -54,7 +56,6 @@ Note: The second level in Dev Corner does not appear in the menu!
 --[[User:Theefer|Theefer]] 15:54, 5 June 2007 (CEST)
 Do we need a Status page? It hasn't been used much and was usually outdated.
 Do we need a Screenshots page? Better make it very clear that the clients are where it's at.
-
 
 == The homepage ==
 
