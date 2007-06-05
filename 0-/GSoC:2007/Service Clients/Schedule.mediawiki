@@ -1,0 +1,35 @@
+The schedule is on weekly basis and this is just a rough plan.  It will be updated subsequently as the project goes.
+
+
+----
+'''''May 28''''': Project officially starts
+----
+
+
+'''''May 29 - Jun 4''''': Go through ipc.c and related files thoroughly to have a clear picture of what is really going on behind scene.
+
+'''''Jun 5 - Jun 11''''': Implement service registry and related functions.  So that a service client can register services with the server.
+
+'''''Jun 12 - Jun 18''''': Implement client-service table and related functions.  So that client can use a service.
+
+'''''Jun 19 - Jun 25''''': Solve service configuration issue and anything that's left over from previous weeks.
+
+'''''Jun 26 - Jul 8''''': Solve service client startup issue and anything that's left over from previous weeks.
+
+
+----
+'''''Jul 9''''': Mid-term evaluation starts.  If everything goes well, service client feature should more or less work by now.
+----
+
+
+'''''Jul 10 - Jul 16''''': Pick a service client and implement it if the schedule above is not pushed over.
+
+'''''Jul ?? - Aug ??''''': Pick another service client and implement it.  Maybe another one later.
+
+
+----
+'''''Aug ??''''': Final evaluation starts.
+----
+
+
+'''''Aug ?? - ''''': Keep on working on it.
