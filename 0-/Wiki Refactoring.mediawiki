@@ -57,6 +57,10 @@ Note: The second level in Dev Corner does not appear in the menu!
 Do we need a Status page? It hasn't been used much and was usually outdated.
 Do we need a Screenshots page? Better make it very clear that the clients are where it's at.
 
+--[[User:Zeegeek|ZeeGeek]] 16:31, 5 June 2007 (CEST)
+What about keep a short description of the project on the homepage as the About page and keep "Feature" in the menu instead of "About"? And roadmap could be put into developer section.
+I agree with theefer on Screenshot page, people like screenshots.
+
 == The homepage ==
 
 The homepage has too much information right now: a complex multi-level menu, a temporary announcement, a small boasting list of concepts, a detailed list of features, a Get Started block, news and Planet news.
