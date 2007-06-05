@@ -31,4 +31,3 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * preferences dialog for direct access to xmms2d settings (for advanced users)
 * Add QScript support for customization of playlist and other elements.
 * add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song, show <=> hide window
-* add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow.
