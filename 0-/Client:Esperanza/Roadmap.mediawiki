@@ -30,3 +30,4 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * tristate button or two different buttons for repeat-all and repeat-one setting of xmms2d
 * preferences dialog for direct access to xmms2d settings (for advanced users)
 * Add QScript support for customization of playlist and other elements.
+* add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song, show <=> hide window
