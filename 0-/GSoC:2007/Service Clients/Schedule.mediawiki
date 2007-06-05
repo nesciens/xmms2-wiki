@@ -33,3 +33,6 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 
 
 '''''Aug ?? - ''''': Keep on working on it.
+
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
