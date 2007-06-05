@@ -64,6 +64,9 @@ Do we need a Screenshots page? Better make it very clear that the clients are wh
 What about keep a short description of the project on the homepage as the About page and keep "Feature" in the menu instead of "About"? And roadmap could be put into developer section.
 I agree with theefer on Screenshot page, people like screenshots.
 
+--[[User:Theefer|Theefer]] 17:31, 5 June 2007 (CEST)
+I suppose we could rename the menu item to Features, yes. It should still contain pointers to the project history and general idea. Roadmap ''is'' in the dev section, I was just trying to think what users would want to know about XMMS2 (present, but also future). That's a detail.
+
 == The homepage ==
 
 The homepage has too much information right now: a complex multi-level menu, a temporary announcement, a small boasting list of concepts, a detailed list of features, a Get Started block, news and Planet news.
