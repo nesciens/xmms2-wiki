@@ -1,0 +1,61 @@
+'''This page is work in progress, discuss it and improve it!'''
+
+The wiki needs a redesign for several reasons:
+* It shows that it has been designed by programmer, looks very wiki-ish (AKA it's ugly).
+* The organisation is messy and not always consistent, making it hard to find information.
+* It does not properly represent the strength and the spirit of XMMS2, and how insanely cool our project is.
+* Corollary: it is not very attractive for new users.
+
+Reasons for that include:
+* The homepage is cluttered with too much information, making it hard to read.
+* There are too many entry points (categories, menus, links).
+* The information is not properly emphasized, as most of the pages are plain text with no variations, and little graphical effort.
+* It's unclear why one should choose XMMS2, what it's like, where it is and where it's going.
+
+So, many changes are required to improve the XMMS2 website:
+* Better organize the pages to remove redundancy and simplify the sitemap.
+* Have shorter, clearer menus (7 categories maximum, say usability experts).
+* Access all information in a limited number of click (2-3 max); but each page should have a clear purpose and be quickly readable.
+* Isolate and emphasize information visually in a more efficient way, using more graphics, isolating components better, etc.
+* Make it look sexy and representative of what XMMS2 is both feature-wise and UI-wise (clients).
+* Separate the developer content from the user content.
+
+The goal of this discussion is not to define precisely what the website will look like, since that will be part of the new design contest. The goal is to define conceptually ''what'' information should be presented ''where'', what pages there should be, etc.
+
+
+== The menu ==
+
+The menu is large, and you even have two versions of it (menu, toolbox). In particular, many menu items are more or less redundant: README, About, General Infos; Contact Us and the Community and Development categories. It also puts on the same level Clients (important) and the outdated Project Status page.
+
+Let's try to keep the list short (max 7 items) but complete enough:
+* Home
+* Clients (list of clients)
+* Download (release notes, dependencies and download link; link to Installation page and Clients page)
+* Community (page linking: mailing list, email contacts, IRC channel, planet and email contacts)
+* FAQ
+* About (description and feature list; link to history, roadmap)
+
+That's user-centric.  We can have a second developer-oriented menu underneath, but it should be visually different (less emphasis) to clearly show the separation:
+* Dev Corner  (a dev page containing a small section for each of:)
+** Design page (summary of the design, links to pages of all components)
+** Guidelines
+** Git (link to Help, gitweb and merge)
+** Mailing List (address, subscription, link to archives)
+** IRC (server, link to meetings)
+** Links to Roadmap, Bug Tracker, Documentation (repeated)
+* Roadmap  (link to roadmap page)
+* Bug Tracker  (link to mantis)
+* Documentation  (link to doxygen)
+* Git repository  (link to git.xmms.se)
+
+Note: The second level in Dev Corner does not appear in the menu!
+
+
+--[[User:Theefer|Theefer]] 15:54, 5 June 2007 (CEST)
+Do we need a Status page? It hasn't been used much and was usually outdated.
+Do we need a Screenshots page? Better make it very clear that the clients are where it's at.
+
+
+== The homepage ==
+
+''TBD''
