@@ -1,0 +1,1 @@
+What about keep a short description of the project on the homepage as the About page and keep "Feature" in the menu instead of "About"? And roadmap could be put into developer section. I agree with theefer on Screenshot page, people like screenshots.
