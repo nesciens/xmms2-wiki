@@ -23,6 +23,9 @@ So, many changes are required to improve the XMMS2 website:
 The goal of this discussion is not to define precisely what the website will look like, since that will be part of the new design contest. The goal is to define conceptually ''what'' information should be presented ''where'', what pages there should be, etc.
 
 
+--[[User:Theefer|Theefer]] 16:33, 5 June 2007 (CEST)andersg pointed out a good question: "Should it be the same site, or one users/marketing site and one dev site?". I think it should be semantically separated, but I am not sure whether we need another site, wiki, or a variation of the design?
+
+
 == The menu ==
 
 The menu is large, and you even have two versions of it (menu, toolbox). In particular, many menu items are more or less redundant: README, About, General Infos; Contact Us and the Community and Development categories. It also puts on the same level Clients (important) and the outdated Project Status page.
