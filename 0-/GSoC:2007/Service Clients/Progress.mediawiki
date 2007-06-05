@@ -1,3 +1,6 @@
 == History ==
 
 '''''17:33, 5 June 2007 (CEST)''''': Started working on registry and related functions.
+
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
