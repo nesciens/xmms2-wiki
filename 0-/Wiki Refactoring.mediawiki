@@ -78,7 +78,7 @@ What we want to display on the Homepage is:
 * How to learn more about XMMS2 (user, dev)
 * What's up with XMMS2, is it alive?
 
-It's interesting to check out homepage for [http://amarok.kde.org/ Amarok], [http://audacious-media-player.org/Main_Page Audacious], [http://www.songbirdnest.com/ Songbirg] and [http://bmpx.beep-media-player.org/site/BMPx_Homepage BMPx].
+It's interesting to check out homepage for [http://amarok.kde.org/ Amarok], [http://audacious-media-player.org/Main_Page Audacious], [http://www.songbirdnest.com/ Songbird] and [http://bmpx.beep-media-player.org/site/BMPx_Homepage BMPx].
 
 Apparently it's super trendy to put a large screenshot on the homepage to show all the features.  However this does not really apply to XMMS2, so let's stick to ''showing all the features''.  One way to do that would be to have a visual summary of the main features (mlib, multiplatform, client/server, formats, collections), as icons or with other graphical artifacts so it's both attractive and quickly understandable.  It could like to a more detailed list of features (as done on Amarok homepage). A large version of the logo would also help too emphasize XMMS2 trademark.
 
