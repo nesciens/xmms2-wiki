@@ -12,5 +12,7 @@ Service client idea empowers XMMS2 with unlimited expendibility.  Different serv
 [[{{PAGENAME}}/Schedule|Rough schedule]]
 ... 
 [[{{PAGENAME}}/Progress|Recent progress]]
+...
+[http://eblog.zeegeek.cn Blog]
 
 }}
