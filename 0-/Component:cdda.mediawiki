@@ -1,0 +1,14 @@
+{{ComponentHeader}}
+
+=Summary=
+{{Update}}
+
+=Links=
+* http://en.wikipedia.org/wiki/Microsoft_Media_Services
+
+===See also:===
+* [[Component:Transport | Transport]]
+
+[[Category:Transport Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
