@@ -4,7 +4,7 @@
 {{Update}}
 
 =Links=
-* http://en.wikipedia.org/wiki/Microsoft_Media_Services
+* add links here
 
 ===See also:===
 * [[Component:Transport | Transport]]
