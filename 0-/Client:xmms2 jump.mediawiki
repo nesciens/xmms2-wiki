@@ -5,6 +5,6 @@
 | version=0.01
 | devlanguage=C++
 | ui=GTK2
-| screenshots=[http://code.google.com/p/xmms2-jump/wiki/Screenshots]
+| screenshots= [http://xmms2-jump.googlecode.com/files/xmms2_jump-screenshot01.png GTK] [http://xmms2-jump.googlecode.com/files/xmms2_jump-screenshot02.png curses]
 | description=A tool to let you quickly search your currently active playlist
 }}
