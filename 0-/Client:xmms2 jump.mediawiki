@@ -1,0 +1,10 @@
+{{Client
+| name=xmms2_jump
+| author=David Reiss
+| website=http://code.google.com/p/xmms2-jump/
+| version=0.01
+| devlanguage=C++
+| ui=GTK2
+| screenshots=[http://code.google.com/p/xmms2-jump/wiki/Screenshots]
+| description=A tool to let you quickly search your currently active playlist
+}}
