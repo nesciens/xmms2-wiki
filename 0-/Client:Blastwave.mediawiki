@@ -3,11 +3,11 @@
 == Download ==
 You can download the code from the sourceforge.net SVN repository:
 
-$ svn co https://blastwave.svn.sourceforge.net/svnroot/blastwave/tags/blastwave-0-1 (Version 0.1)
+$ svn co https://blastwave.svn.sourceforge.net/svnroot/blastwave/tags/blastwave-0-1 blastwave (Version 0.1)
 
 or
 
-svn co https://blastwave.svn.sourceforge.net/svnroot/blastwave/trunk (Development version)
+$ svn co https://blastwave.svn.sourceforge.net/svnroot/blastwave/trunk blastwave (Development version)
 
 == Dependencies ==
 As for now, Blastwave uses XMMS2-DrJekyll, but it's being developed around latest xmms2 git code.
