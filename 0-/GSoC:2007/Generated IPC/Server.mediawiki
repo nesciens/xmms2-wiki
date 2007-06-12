@@ -2,7 +2,7 @@
 Should use all the same conventions as [[Generated IPC/Format | the Client-side prototype]].
 
 == Things to Add/Change ==
-=== Object Registration ===
+=== Object/Signal/Broadcast Registration ===
 Object initialization methods will call xmms_ipc_object_register(TYPE,OBJ) on the object structure, which contains function pointers to the various methods that the object wants to register. For example, xmms_playlist_t might be defined like:
 
  typedef struct _xmms_playlist_t {
