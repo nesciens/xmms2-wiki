@@ -2,8 +2,7 @@
 |student=[[User:tcoppi|Thomas Coppi]]
 |mentor=[[User:Anders Gustafsson|Anders Gustafsson]]
 |cmilestone=[[Summer of Code 2007/Generated IPC/Server]]
-|nmilestone=[[Generated IPC/Format|Determine format]]
-|pmilestone=[[Summer of Code 2007/Generated IPC/Milestones]]
+|nmilestone=[[Summer of Code 2007/Generated IPC/Milestones]]
 
 |description=
 The project will be split into two parts, generating the server code and the client code. The server side currently sets up the IPC file descriptor, reads/parses the raw IPC commands, and executes the commands in the server.
