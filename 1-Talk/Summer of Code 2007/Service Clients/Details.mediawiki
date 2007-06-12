@@ -1,0 +1,14 @@
+Here's how I envision service client initialization:
+# Service client connects.
+# Service client sends over interface names. (Named according to convention, we hope!)
+# If a service of the same name is already loaded, an error is returned, otherwise, success. On an error, the service quits now.
+# The client registers descriptions for its services.
+#* Another error is returned if this service got an error on the last step.
+# The client registers methods for its services. Something like xmmsc_service_register_method("service", "method_name", callback, RETURN_TYPE_INT, ARG_TYPE_INT, ARG_TYPE_STR).
+#* Another error is returned if the service got an error on the last step.
+#* Return an error if a method of the same name, return type, and arguments is defined.
+# The client tells the server it's ready to start receiving commands.
+# The server creates a hash of the name, description, and methods registered to each service.
+#* This step is controversial.
+#* This hash allows clients to easily verify that they are working against a known interface so things won't be buggy.
+-[[User:Puzzles|Puzzles]] Tue Jun 12 03:54:50 EDT 2007
