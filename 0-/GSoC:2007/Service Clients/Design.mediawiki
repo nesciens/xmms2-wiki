@@ -1,0 +1,26 @@
+==Server Data Structure==
+
+The service object keeps a registry of available services on the server.  The registry structure is as following:
+
+     Registry                   Entry                     Method
+ +---------------+      +--------------------+      +-----------------+
+ | key1 | entry1------->| name               |      | name            |
+ | key2 | entry2 |      | description        |      | description     |
+ | key3 | entry3 |      | major version      |      | major version   |
+ |  .   |   .    |      | minor version      |      | minor version   |
+ |  .   |   .    |      | service client     |      | clients         |
+ |  .   |   .    |      |--------------------|      | return type     |
+ +---------------+      | +----------------+ |      | number of args  |
+                        | | key1 | method1--------->| +-------------+ |
+                        | | key2 | method2 | |      | | key1 | arg1 | |
+                        | | key3 | method3 | |      | | key2 | arg2 | |
+                        | |  .   |    .    | |      | | key3 | arg3 | |
+                        | |  .   |    .    | |      | |   .  |  .   | |
+                        | |  .   |    .    | |      | |   .  |  .   | |
+                        | +----------------+ |      | |   .  |  .   | |
+                        +--------------------+      | +-------------+ |
+                                                    +-----------------+
+
+The key in Registry is calculated using each service's interface name (e.g. "se.xmms.sc.lastfm").  And the key corresponds to each method in Entry structure is calculated using method's name (e.g. "fetch").  The key appears in the last structure, Method, is the hash of each argument's name.  And the corresponding entry is the type of that argument.
+
+So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
