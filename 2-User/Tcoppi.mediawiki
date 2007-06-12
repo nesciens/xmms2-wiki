@@ -1,4 +1,4 @@
-Thomas Coppi, Summer of Code 2007 Student for XMMS2. 
+Thomas Coppi, Summer of Code 2007 Student for XMMS2,  working on [[Summer of Code 2007/Generated IPC | genipc]].
 
 Personal blog here [http://thisnukes4u.net/blog]. Personal email:[mailto:tcoppi@gmail.com]
-Timezone: UTC +7(during summer) America/LosAngeles Working on [http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2007/Generated_IPC]
+Timezone: UTC +7(during summer) America/LosAngeles
