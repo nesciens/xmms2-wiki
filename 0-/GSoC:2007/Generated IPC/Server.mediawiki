@@ -1,0 +1,6 @@
+== XML Format ==
+Should use all the same conventions as [[Generated IPC/Format | the Client-side prototype]].
+
+== Things to Trim ==
+
+== Things to Add/Change ==
