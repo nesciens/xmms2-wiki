@@ -1,3 +1,9 @@
-Past Milestones:
+== Past Milestones ==
 
 [[Generated IPC/Format | XML Format Prototypes]]
+
+== Future Milestones ==
+
+[[Summer of Code 2007/Generated IPC/Server | Server-side]]
+
+[[Summer of Code 2007/Generated IPC/Autogen | Autogeneration Script(s)]]
