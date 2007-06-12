@@ -1,8 +1,17 @@
 == XML Format ==
 Should use all the same conventions as [[Generated IPC/Format | the Client-side prototype]].
 
-== Things to Trim ==
-
 == Things to Add/Change ==
+=== Object Registration ===
+Object initialization methods will call xmms_ipc_object_register(TYPE,OBJ) on the object structure, which contains function pointers to the various methods that the object wants to register. For example, xmms_playlist_t might be defined like:
+
+ typedef struct _xmms_playlist_t {
+         void (*clear)(_xmms_playlist_t *);
+         char **(*list)(_xmms_playlist_t *);
+         void (*playlist_updated)(_xmms_playlist_t *);
+ } xmms_playlist_t;
+
+
+Then, xmms_ipc_object_register(XMMS_IPC_OBJECT_PLAYLIST,playlist) is called after the playlist_init function fills in the function pointers. xmms_ipc_object_register then knows what functions are used for different IPC signals like XMMS_IPC_CMD_CLEAR and XMMS_IPC_SIGNAL_PLAYLIST_CHANGED. Instead of the playlist init code having to manually register the functions individually, it becomes one call to xmms_ipc_object_register() See [http://exodus.xmms.se/~andersg/genipc/generated.c.txt] for a more complete struct example.
 
 == Examples ==
