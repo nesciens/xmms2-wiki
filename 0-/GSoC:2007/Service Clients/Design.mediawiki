@@ -24,3 +24,6 @@ The service object keeps a registry of available services on the server.  The re
 The key in Registry is calculated using each service's interface name (e.g. "se.xmms.sc.lastfm").  And the key corresponds to each method in Entry structure is calculated using method's name (e.g. "fetch").  The key appears in the last structure, Method, is the hash of each argument's name.  And the corresponding entry is the type of that argument.
 
 So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
+
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
