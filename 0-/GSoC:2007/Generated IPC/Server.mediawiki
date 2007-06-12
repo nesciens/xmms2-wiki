@@ -4,3 +4,5 @@ Should use all the same conventions as [[Generated IPC/Format | the Client-side 
 == Things to Trim ==
 
 == Things to Add/Change ==
+
+== Examples ==
