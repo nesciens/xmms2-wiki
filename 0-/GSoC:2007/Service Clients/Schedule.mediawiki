@@ -8,13 +8,15 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 
 '''''May 29 - Jun 4''''': Go through ipc.c and related files thoroughly to have a clear picture of what is really going on behind scene.
 
-'''''Jun 5 - Jun 11''''': Implement service registry and related functions.  So that a service client can register services with the server.
+'''''Jun 5 - Jun 16''''': Implement service registry and related functions.  So that a service client can register services with the server.
 
-'''''Jun 12 - Jun 18''''': Implement client-service table and related functions.  So that client can use a service.
+'''''Jun 17''''': Document things I've done so far.
 
-'''''Jun 19 - Jun 25''''': Solve service configuration issue and anything that's left over from previous weeks.
+'''''Jun 18 - Jun 27''''': Implement client-service table and related functions.  So that client can use a service.
 
-'''''Jun 26 - Jul 8''''': Solve service client startup issue and anything that's left over from previous weeks.
+'''''Jun 28 - Jul 7''''': Solve service configuration issue and anything that's left over from previous weeks.
+
+'''''Jul 8''''': Document things I've done so far.
 
 
 ----
@@ -22,7 +24,11 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 ----
 
 
-'''''Jul 10 - Jul 16''''': Pick a service client and implement it if the schedule above is not pushed over.
+'''''Jul 10 - Jul 16''''': Solve service client startup issue and anything that's left over from previous weeks.
+
+'''''Jul 17''''': Document things I've done so far.
+
+'''''Jul 18 - Jul 26''''': Pick a service client and implement it if the schedule above is not pushed over.
 
 '''''Jul ?? - Aug ??''''': Pick another service client and implement it.  Maybe another one later.
 
