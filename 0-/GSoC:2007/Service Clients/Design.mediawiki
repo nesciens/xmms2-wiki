@@ -6,24 +6,25 @@ The service object keeps a registry of available services on the server.  The re
  +---------------+      +--------------------+      +-----------------+
  | key1 | entry1------->| name               |      | name            |
  | key2 | entry2 |      | description        |      | description     |
- | key3 | entry3 |      | major version      |      | major version   |
- |  .   |   .    |      | minor version      |      | minor version   |
- |  .   |   .    |      | service client     |      | clients         |
- |  .   |   .    |      |--------------------|      | return type     |
- +---------------+      | +----------------+ |      | number of args  |
-                        | | key1 | method1--------->| +-------------+ |
-                        | | key2 | method2 | |      | | key1 | arg1 | |
-                        | | key3 | method3 | |      | | key2 | arg2 | |
-                        | |  .   |    .    | |      | | key3 | arg3 | |
+ | key3 | entry3 |      | major version      |      | clients         |
+ |  .   |   .    |      | minor version      |      | return type     |
+ |  .   |   .    |      | service client     |      | number of args  |
+ |  .   |   .    |      |--------------------|      | +-------------+ |
+ +---------------+      | +----------------+ |      | | key1 | arg1 | |
+                        | | key1 | method1--------->| | key2 | arg2 | |
+                        | | key2 | method2 | |      | | key3 | arg3 | |
+                        | | key3 | method3 | |      | |   .  |  .   | |
                         | |  .   |    .    | |      | |   .  |  .   | |
                         | |  .   |    .    | |      | |   .  |  .   | |
-                        | +----------------+ |      | |   .  |  .   | |
-                        +--------------------+      | +-------------+ |
-                                                    +-----------------+
+                        | |  .   |    .    | |      | +-------------+ |
+                        | +----------------+ |      +-----------------+
+                        +--------------------+
 
 The key in Registry is calculated using each service's interface name (e.g. "se.xmms.sc.lastfm").  And the key corresponds to each method in Entry structure is calculated using method's name (e.g. "fetch").  The key appears in the last structure, Method, is the hash of each argument's name.  And the corresponding entry is the type of that argument.
 
-The version numbers in Entry structure should be kept synced with the highest version numbers among all its methods.  On the other hand, the version numbers for every method can be different.  Normal updates that don't change the method signatures are reflected by minor version, otherwise major version should be changed.  So if a client which uses all methods a service provides can check the major version number when it asks for the service interface handle.  If it doesn't match the version number that client supports, it can raise an error early instead of finding out that something doesn't work anymore in the middle of an operation in a later stage.
+Normal updates that don't change the method signatures are reflected by minor version, otherwise major version should be changed.  For example, there is a service called "lastfm" which provides a method "fetch" with two string type arguments, and this is marked as major version 1.  If later on, the author decides that method "fetch" needs an additional int type argument, then the major version number should be changed to a number other than 1.  This scheme is used for clients to decide whether they can correctly use a method or not.
+
+"clients" field in Method structure is a list of cookies of all the clients which are currently using this method.  So when the method returns, IPC knows which client should get the result.
 
 So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
 
