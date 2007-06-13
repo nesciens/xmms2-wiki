@@ -2,7 +2,7 @@
 
 == Linux ==
 
-; Debian - Sid / Unstable + Etch / Testing + Woody / Stable
+; Debian - Lenny / Unstable + Etch / Testing + Woody / Stable
 
  apt-get install xmms2
 
