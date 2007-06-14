@@ -2,22 +2,22 @@
 
 The service object keeps a registry of available services on the server.  The registry structure is as following:
 
-     Registry                   Entry                     Method
- +---------------+      +--------------------+      +----------------+
- | key1 | entry1------->| name               |      | name           |
- | key2 | entry2 |      | description        |      | description    |
- | key3 | entry3 |      | major version      |      | clients        |
- |  .   |   .    |      | minor version      |      | return type    |
- |  .   |   .    |      | service client     |      | number of args |
- |  .   |   .    |      |--------------------|      | +------------+ |
- +---------------+      | +----------------+ |      | | arg 1 type | |
-                        | | key1 | method1--------->| | arg 2 type | |
-                        | | key2 | method2 | |      | | arg 3 type | |
-                        | | key3 | method3 | |      | |      .     | |
-                        | |  .   |    .    | |      | |      .     | |
-                        | |  .   |    .    | |      | |      .     | |
-                        | |  .   |    .    | |      | +------------+ |
-                        | +----------------+ |      +----------------+
+     Registry                   Entry         
+ +---------------+      +--------------------+
+ | key1 | entry1------->| name               |
+ | key2 | entry2 |      | description        |
+ | key3 | entry3 |      | major version      |
+ |  .   |   .    |      | minor version      |            Method      
+ |  .   |   .    |      | service client     |      +----------------+
+ |  .   |   .    |      |--------------------|      | name           |
+ +---------------+      | +----------------+ |      | description    |
+                        | | key1 | method1--------->| clients        |
+                        | | key2 | method2 | |      | return types   |
+                        | | key3 | method3 | |      | number of args |
+                        | |  .   |    .    | |      | arg types      |
+                        | |  .   |    .    | |      +----------------+
+                        | |  .   |    .    | |
+                        | +----------------+ |
                         +--------------------+
 
 The key in Registry is calculated using each service's interface name (e.g. "se.xmms.sc.lastfm").  And the key corresponds to each method in Entry structure is calculated using method's name (e.g. "fetch").
@@ -25,6 +25,35 @@ The key in Registry is calculated using each service's interface name (e.g. "se.
 Normal updates that don't change the method signatures are reflected by minor version, otherwise major version should be changed.  For example, there is a service called "lastfm" which provides a method "fetch" with two string type arguments, and this is marked as major version 1.  If later on, the author decides that method "fetch" needs an additional int type argument, then the major version number should be changed to a number other than 1.  This scheme is used for clients to decide whether they can correctly use a method or not.
 
 "clients" field in Method structure is a list of cookies of all the clients which are currently using this method.  So when the method returns, IPC knows which client should get the result.
+
+"return types" and "arg types" fields store the information about types of the variables being returned from and passed to the method, respectively.  And they should be in the following form.  Say you have a method which has the following signatures, call_me (char *, uint32_t, int32_t, xmmsc_coll_t), then the "arg types" field for this method would contain the following string, "suic", meaning that the first argument is of type string ('s'), the second argument is of type unsigned int ('u'), the third argument is of type int ('i'), and the last argument is of type collection ('c').  This is similar to the format string in standard C function printf(), but without '%' and with different shorthands.  The following table shows the conversion specifiers of all available types, note that they are all in lowercase.
+
+{| class="wikitable" style="text-align:center;margin: 1em auto 1em auto"
+|+Conversion Specifiers
+|-
+! Specifier !! Type
+|-
+! i
+| int_t
+|-
+! u
+| uint32_t
+|-
+! f
+| float
+|-
+! s
+| char *
+|-
+! l
+| char *[]
+|-
+! c
+| xmmsc_coll_t
+|-
+! b
+| unsigned char *
+|}
 
 So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
 
