@@ -1,1 +1,2 @@
-How to integrate the autogeneration scripts into waf, where the scripts should reside in the tree, etc.
+== Todo ==
+Decide how to integrate the autogeneration scripts into waf, where the scripts should reside in the tree, etc.
