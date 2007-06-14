@@ -1,4 +1,8 @@
 Hi,
-
-I just made an update and like to change the adress to http://reboli.nl/
+<br>
+I just made an update and like to change the adress to http://reboli.nl/ <br>
 The version is now 0.6.
+
+Any idea how I can change this?
+
+Thanks
