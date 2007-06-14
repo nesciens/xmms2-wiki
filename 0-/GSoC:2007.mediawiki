@@ -2,7 +2,7 @@
 
 * [[Summer of Code 2007/Visualization|Visualization]] by Johannes Jordan
 * [[Summer of Code 2007/Generated IPC|Generated IPC]] by Thomas Coppi
-* [[Summer of Code 2007/Test framework|Test framework]] by Florian Ragwitz
+* [[Summer of Code 2007/Test framework|Testing Framework]] by Florian Ragwitz
 * [[Summer of Code 2007/Service Clients|Service Clients]] by Ning Shi
 
 == See also ==
