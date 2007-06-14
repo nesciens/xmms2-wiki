@@ -139,6 +139,11 @@ Jump to the first track after the current track matching the pattern.
 
 Search and print all the media matched by the pattern.
 
+ Options:
+ -o, --order <prop1[,prop2...]>    List of properties to order by
+                                   (prefix by '-' for reverse ordering).
+ -l, --columns <prop1[,prop2...]>  List of properties to use as columns.
+
 ==== info <pattern> ====
 
 Display all the properties for each media matched by the pattern.
@@ -150,13 +155,16 @@ also be used to display any other playlist or collection (see
 Options).
 
 If a pattern is given, contents are further filtered and only the
-matching media are displayed.  Note that the pattern syntax allows
-ordering by properties, useful for collections.  If omitted, in the
-case of playlists, the playlist order is used.
+matching media are displayed.
 
  Options:
  -p, --playlist <name>    Display a given playlist.
  -c, --collection <name>  Display a given collection.
+ -o, --order <prop1[,prop2...]>  List of properties to order by (prefix
+                                 by '-' for reverse ordering), defaults
+                                 to playlist position.
+
+''Note: list might be confusing/redundant with search? Although search works on sets and lists on lists.''
 
 ==== add [options] <pattern> ====
 
@@ -289,7 +297,6 @@ spaces.  By default, this command acts on the active playlist.
 ==== collection and server ====
 
 '''TDB'''
-
 
 === Argument types ===
 
