@@ -46,7 +46,7 @@ current song, etc.
  prev    [offset]
  next    [offset]
  jump    [options]  <pattern>
- search             <pattern>
+ search  [options]  <pattern>
  info               <pattern>
  list    [options]  [pattern]
  add     [options]  <pattern>
@@ -135,7 +135,7 @@ Jump to the first track after the current track matching the pattern.
  Options:
  -b, --backward   Jump to the first track matching the pattern backwards.
 
-==== search <pattern> ====
+==== search [options] <pattern> ====
 
 Search and print all the media matched by the pattern.
 
