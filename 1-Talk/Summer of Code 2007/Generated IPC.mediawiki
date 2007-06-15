@@ -1,0 +1,187 @@
+----
+[[User:Anders Gustafsson|Anders Gustafsson]] 13:31, 15 June 2007 (CEST) says:
+
+There is a reason that I used "properties" in my example gen-ipc stuff
+instead of "signals" and "broadcasts". I've had this idea of trying to
+improve that for quite a while, and now I think the idea has matured
+enough to be written down fully in words.
+
+The split between signals and broadcasts in the current API is there
+for a reason, although it might not be clear what the design goal for
+this split was any longer. As soon as a client subscribes to a
+broadcast it will receive it every time it is emitted. For things like
+playtime and vis-data (which is disabled now, but wasn't when this was
+designed) this would spew lots of stuff on the client, no matter if it
+has time to process it or not. This is why a feedback loop was
+introduced with the concept of "signals". A signal has to explicitly
+be restarted by the client, meaning that a client will not restart the
+signal until its data has been processed.
+
+So some changes are propagated to the client using signals, and others
+using broadcasts. Messy.
+
+There actually is a worse split. To get the current playtime you call
+the _method_ playback_time_get(), but to get changes you subscribe to
+the signal (or was it broadcast? you'll have to check the
+documentation unless you have used the API for a while). So depending
+on how you want information about playtime you do two totally separate
+things. 
+
+This is why the idea of a higher abstraction level started to brew in
+my mind. Something that has found its way to tcoppi's xml-format in a
+way similar to this:
+
+<object name="playback">
+  <property name="time">
+    <readable />
+    <type><int /></type>
+  </prop>
+</object>
+
+
+The above definition should make it possible for a c-client (all
+examples is for some low-level c-API, higher level languages/APIs
+could do much nicer things) to do:
+
+ playback_time_get()
+
+which just gets the playback.time property at the time of the call.
+
+But we want something equivalent of the playtime-signal also. Lets
+export a function like this:
+
+ playback_time_get_on_change()
+
+it would not send an reply back until the time has changed. But
+sometimes every change is wanted, so how about adding this:
+
+ playback_time_get_on_every_change()
+
+which would continue to send replies every time the playback.time
+property changes.
+
+For the playback.time property that would flood the client pretty
+bad. So lets introduce an rate-limited version:
+
+ playback_time_get_on_every_change_ratelimited(min_delay)
+
+which would not reply faster than once in min_delay ms. If min_delay
+has passed when the property changes the reply is sent immediately to
+the client. If the last change that was sent to client was less then
+min_delay ms away it will not be sent to the client until min_delay ms
+has passed, during that time a new change will happen and the old
+change isn't ever sent to the client.
+
+It is common for a client to want to get the current value and all
+updates. It would have to do something like this:
+
+playlist_current_pos_get()
+playlist_current_pos_get_on_every_change()
+
+What if the property changes just after the the request for the
+current value has been requested, but before the on_every_change
+request has been handled? An atomic way to do this is needed:
+
+playlist_current_pos_get_now_and_on_every_change()
+
+or if rate-limited:
+
+playlist_current_pos_get_now_and_on_every_change_ratelimited()
+
+
+Needless to say that API should not be with functions for each
+variant. Here are a few alternatives:
+
+ /* ALTERNATIVE 1) */
+
+ /* Get current value */
+ playback_time_get(FLAG_NOW)
+
+ /* Get on next change */
+ playback_time_get(FLAG_CHANGE)
+
+ /* the atomic playtime_get() + playtime_get_on_every_change() */
+ playback_time_get(FLAG_NOW|FLAG_ALL_CHANGES)
+
+ /* no flags = FLAG_NOW */
+ playback_time_get(0)
+
+ /* rate-limited */
+ playback_time(RATE_LIMIT(1000)) /* with 16 bits for flags,
+                                    there is 16 bits left for
+                                    rate limit, meaning 65s max 
+                                    delay, should be enough */
+
+
+
+ /* ALTERNATIVE 2) */
+
+ /* Get current value */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_now(req);
+ req_send(req);
+
+ /* Get on next change */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_on_change(req);
+ req_send(req);
+
+ /* the atomic playtime_get() + playtime_get_on_every_change() */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_now(req);
+ req_on_every_change(req);
+ req_send(req);
+
+ /* rate-limited */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_ratelimited(req, 1000);
+ req_send(req);
+
+
+
+
+Alternative 2 may look a bit clumsy, but keep in mind that there is
+more things to be done:
+
+ /* with alt 1: */
+ r = playback_time_get(FLAG_NOW|FLAG_ALL_CHANGES);
+ req_set_callback(r, CB);
+ req_unref(r);
+
+ /* with alt 2: */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_now(req);
+ req_on_every_change(req);
+ req_set_callback(r, CB);
+ req_send(req);
+ req_unref(r);
+
+with alt1 it works like today, that playback_time_get puts the request
+on the ipc-send queue. If the mainloop runs in a separate thread it
+would be (theoretically) possible that the response comes back before
+the requesting thread has gotten around to set the callback, and the
+response will not be sent to the callback. alt2 doesn't suffer from
+that.
+
+
+What I really like with alt2 is that is is easy to extend. Something
+that could be nice is a serverside restriction on when the change is
+interesting:
+
+ /* does anyone smell the over-design? */
+
+ /* every time playback is paused */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_STATE);
+ req_on_every_change(req);
+ req_when_value(req, IS, PLAYBACK_STATE_PAUSE)
+
+ /* when playtime passed 1 minute */
+ req = property_get(OBJECT_PLAYBACK, PROPERTY_TIME);
+ req_on_change(req);
+ req_when_value(GE, 60 * 1000)
+
+
+Languages like python could have a much nicer API:
+
+ #get current value and updates max 1/s..
+ playback_time_get(now=True, ratelimit=1000, cb=my_callback)
