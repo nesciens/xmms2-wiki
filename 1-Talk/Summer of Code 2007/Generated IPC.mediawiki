@@ -31,12 +31,12 @@ This is why the idea of a higher abstraction level started to brew in
 my mind. Something that has found its way to tcoppi's xml-format in a
 way similar to this:
 
-<object name="playback">
+ <object name="playback">
   <property name="time">
     <readable />
     <type><int /></type>
   </prop>
-</object>
+ </object>
 
 
 The above definition should make it possible for a c-client (all
@@ -75,18 +75,18 @@ change isn't ever sent to the client.
 It is common for a client to want to get the current value and all
 updates. It would have to do something like this:
 
-playlist_current_pos_get()
-playlist_current_pos_get_on_every_change()
+ playlist_current_pos_get()
+ playlist_current_pos_get_on_every_change()
 
 What if the property changes just after the the request for the
 current value has been requested, but before the on_every_change
 request has been handled? An atomic way to do this is needed:
 
-playlist_current_pos_get_now_and_on_every_change()
+ playlist_current_pos_get_now_and_on_every_change()
 
 or if rate-limited:
 
-playlist_current_pos_get_now_and_on_every_change_ratelimited()
+ playlist_current_pos_get_now_and_on_every_change_ratelimited()
 
 
 Needless to say that API should not be with functions for each
