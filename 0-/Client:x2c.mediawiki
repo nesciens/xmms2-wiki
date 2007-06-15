@@ -1,1 +1,23 @@
-{{Client| name=x2c| author=[[Daniel Waber]]| website=http://forti.ath.cx:20480/pro/x2c| version=alpha| devlanguage=ruby| ui=Console| screenshots= [http://forti.ath.cx:20480/file/x2c/x2c-1.png] [http://forti.ath.cx:20480/file/x2c/x2c-2.png]| description= x2c is a console client, which uses the interactive ruby shell to send commands to the xmms deamon. The goal of x2c is to stay simple, yet have the power to do most things very easy.}}
+{{Client| name=x2c| author=[[Daniel Waber]]| website=http://forti.ath.cx:20480/pro/x2c| version=alpha| devlanguage=ruby| ui=Console| screenshots= [http://forti.ath.cx:20480/file/x2c/x2c-1.png] [http://forti.ath.cx:20480/file/x2c/x2c-2.png]| description= x2c is a samll, interactive ruby command line client for xmms2}}
+
+== About ==
+==== A samll, interactive ruby command line client for xmms2 ====
+
+the client itself is an irb shell executing commands on the client object, which has been extended to get a powerfull and easy interface to playback, playlists and collections. As it is all ruby, you can easily extend its functionality, create new aliases or functions, or create you own client ontop of it.
+
+== Features ==
+==== Features for non-rubyists, the basics ====
+* usable without knowing ruby
+* nice commandline interface with completion
+* module support for new features
+* short tutorial to get into the feeling of the client
+* help system, so you don't get lost ;)
+
+==== Features for rubyists, advnaced things ====
+* cool stack feature
+* highly configurable and extensable
+* esay to modify for your own needs
+* you can do cool things, as all is ruby (think of it: create a thread to wake you up starting a song, do fancy stuff with lists and collections, fold or inject them, use the cool stack feature ...
+
+== Getting x2c ==
+Download the latest snap form [http://forti.ath.cx:20480/pro/x2c my site] extract the tarball and execute x2c. There is no install script available right now, sorry. It will follow in time.
