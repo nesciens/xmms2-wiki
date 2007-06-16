@@ -1,4 +1,17 @@
 == Latest quotes ==
+=== 2007-06-16 ===
+12:54 < tilman> !waf
+12:54 < ~SkitIDet> tilman: "waf" -> (#1) vastly superior to any software known 
+                   to mankind, or (#2) ultimate suck and fail, but marginally 
+                   better than scons, or (#3) the most vastly superior build 
+                   system known to mankind, or (#4) sofa king we todd ed
+12:54 < tilman> #4? o_O
+12:54 < ~ccr> !puzzles
+12:54 < puzzles> so fucking retarded
+12:55 < puzzles> oh god damn your timing, ccr!
+12:55 < tilman> puzzles: ahahaha
+12:55 < ~ccr> \:D/
+12:55 < ~ccr> my tele-apathy wins again.
 
 === 2007-01-07 - Yan is russia, and he's not a boat ===
 
