@@ -1,4 +1,6 @@
-SQL QUERIES SOON TO BE DEPRECATED! See [[Collections]] instead.
+== Raw SQL Queries have been deprecated!! ==
+[[Collections]] have been merged into xmms2 as of the DrJekyll release. This page will disappear not too long after Linux Distributions release DrJekyll into their repositories.
+Please see [[Collections usage with cli]] instead.
 
 
 Here are some examples of some SQL queries that can be run on the XMMS2 medialib, shown here as performed directly on the database, via ''sqlite''.
