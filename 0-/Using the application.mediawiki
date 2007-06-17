@@ -74,11 +74,15 @@ Query the medialib database and add the result to your playlist:
 
   xmms2 mlib searchadd artist="Kultiration"
 
-Note that search is case insensitive and that you can use "%" as a wildcard:
+Note that search is case insensitive and that you can use "*" and "?" as wildcards (* being 0 or more wild characters, ? being 0 or 1 wild character):
 
-  xmms2 mlib search artist="red hot%"
+  xmms2 mlib search artist="red hot*"
 
 Will find all artists that begin with "red hot"
+
+  xmms2 mlib search artist="red?hot"
+
+Will match "redhot" and "red hot".
 
 Listen to a shoutcast stream (assuming curl plugin is installed) using the direct url (ie NOT a playlist file, but the url inside the playlist file, the playlist importing code is currently disabled):
 
