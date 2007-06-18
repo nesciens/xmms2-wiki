@@ -44,7 +44,7 @@ XBindKeys reads key bindings from ~/.xbindkeysrc. If you've previously used XBin
  "gxmms2"
     Control+Shift + g
 
-Put these in .xbindkeysrc and run 'xbindkeys' at a console.
+Put these in ~/.xbindkeysrc and run 'xbindkeys' at a console.
 
 To verify that it worked, press Control + Shift + X. If any is in the playlist, music should start playing, or start from the beggining of the track if it was already playing.
 
