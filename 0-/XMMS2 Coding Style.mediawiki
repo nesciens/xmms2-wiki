@@ -48,7 +48,8 @@ NOT:
 * For complex functions, break the code up into helper functions, or inline code if performance-critical. [http://lxr.linux.no/source/Documentation/CodingStyle#L170]
 * Try to keep the number of local variables in a function around 7 (plus or minus two or three). If more variables are needed, think about splitting the code into multiple functions. [http://lxr.linux.no/source/Documentation/CodingStyle#L178]
 
-
+== Centralised exiting of functions ==
+* Functions should generally have a single exit (return) point.
 
 == Trailing whitespace ==
 * Avoid trailing whitespace.
