@@ -2,8 +2,7 @@ __TOC__
 
 ==Prerequisites==
 *Windows Vista
-**Not known to work.
-**'''Should''' work.
+**Reported working.
 OR
 *Windows XP
 **Known to work.
