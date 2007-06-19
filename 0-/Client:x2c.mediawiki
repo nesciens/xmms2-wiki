@@ -6,18 +6,30 @@
 the client itself is an irb shell executing commands on the client object, which has been extended to get a powerfull and easy interface to playback, playlists and collections. As it is all ruby, you can easily extend its functionality, create new aliases or functions, or create you own client ontop of it.
 
 == Features ==
-==== Features for non-rubyists, the basics ====
+====Features for non-rubyists, the basics====
 * usable without knowing ruby
+* works an almost all terminal
 * nice commandline interface with completion
 * module support for new features
+* allready has cool module: vote, mlib, ...
 * short tutorial to get into the feeling of the client
 * help system, so you don't get lost ;)
 
-==== Features for rubyists, advnaced things ====
+====Features for rubyists, advnaced things====
+
 * cool stack feature
 * highly configurable and extensable
 * esay to modify for your own needs
-* you can do cool things, as all is ruby (think of it: create a thread to wake you up starting a song, do fancy stuff with lists and collections, fold or inject them, use the cool stack feature ...
-
-== Getting x2c ==
-Download the latest snap form [http://forti.ath.cx:20480/pro/x2c my site] extract the tarball and execute x2c. There is no install script available right now, sorry. It will follow in time.
+* you can do cool things, as all is ruby
+   # remove unwanted media
+   (url =~ 'file:///some/stage/music%').list.each{|id| medialib_entry_remove(id)}
+   # wake me up with cool fadein
+   sleep 60*60*8; (0...100).each{|i| volume i; sleep 0.1}
+   # the stack feature
+   stack.inject{|a,b| a|b}
+   # tag media
+   (url =~ 'anArtist/%').list.each do |s|
+     if s.url =~ /\/(\w| )*\/(\w*) - (\w*)/
+       s.info_set :artist => $2, :album => $1, :title => 3
+   end
+   # ...
