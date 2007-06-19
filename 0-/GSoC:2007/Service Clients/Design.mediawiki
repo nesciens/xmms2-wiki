@@ -124,5 +124,26 @@ Different from other server-side objects, service object has a central entry poi
 
 ===Client side===
 
+Much simpler than server-side functions, client-side functions basically fall into the category of registry management.
+ xmmsc_result_t *xmmsc_service_register (xmmsc_connection_t *conn,
+                                         xmmsc_service_t *service,
+                                         xmmsc_service_method_t *method,
+                                         void *user_data);
+ xmmsc_result_t *
+ xmmsc_service_register_full (xmmsc_connection_t *conn,
+                              xmmsc_service_t *service,
+                              xmmsc_service_method_t *method,
+                              void *user_data,
+                              xmmsc_user_data_free_func_t free_func);
+ xmmsc_result_t *xmmsc_service_unregister (xmmsc_connection_t *conn,
+                                           char *service,
+                                           char *method);
+ xmmsc_result_t *xmmsc_service_list_service_ids (xmmsc_connection_t *conn);
+ xmmsc_result_t *xmmsc_service_list_service (xmmsc_connection_t *conn,
+                                             char *service);
+ xmmsc_result_t *xmmsc_service_list_method_ids (xmmsc_connection_t *conn,
+                                                char *service);
+ xmmsc_result_t *xmmsc_service_list_method (xmmsc_connection_t *conn,
+                                            char *service, char *method);
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
