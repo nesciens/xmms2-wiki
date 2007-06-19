@@ -1,4 +1,6 @@
-==Server Data Structure==
+==Data Structures==
+
+===Server side===
 
 The service object keeps a registry of available services on the server.  The registry structure is as following:
 
@@ -68,6 +70,27 @@ The role '''"cookie"''' field plays is similar to that of "clients".  It helps I
 |}
 
 So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
+
+===Client side===
+
+ typedef struct xmmsc_service_St xmmsc_service_t;
+ struct xmmsc_service_St {
+ 	char *name;
+ 	char *description;
+ 	uint32_t major_version;
+ 	uint32_t minor_version;
+ };
+ typedef struct xmmsc_service_method_St xmmsc_service_method_t;
+ struct xmmsc_service_method_St {
+ 	char *name;
+ 	char *description;
+ 	char *ret_type;
+ 	char *arg_type;
+ 	xmmsc_result_notifier_t func;
+ };
+
+These two structures represent service and method, respectively.  They are used on service/method registration and modification.
+
 
 ==Functions==
 
