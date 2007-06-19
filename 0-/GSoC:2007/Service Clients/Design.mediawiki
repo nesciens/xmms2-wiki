@@ -71,5 +71,9 @@ So this two level hierarchical structure groups all the methods a service provid
 
 ==Functions==
 
+===Server side===
+
+===Client side===
+
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
