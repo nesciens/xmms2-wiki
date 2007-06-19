@@ -15,7 +15,7 @@ the client itself is an irb shell executing commands on the client object, which
 * short tutorial to get into the feeling of the client
 * help system, so you don't get lost ;)
 
-====Features for rubyists, advnaced things====
+====Features for rubyists, advanced things====
 
 * cool stack feature
 * highly configurable and extensable
