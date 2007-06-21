@@ -3,3 +3,4 @@ What will the new CLI do about that lame song format string that is all but igno
 --[[User:Puzzles|Puzz]] 15:34, 21 June 2007 (CEST)
 
 I will still be present as a flag and/or config value. As for conditionals, feel free to hack :-)
+--[[User:Theefer|Theefer]] 15:37, 21 June 2007 (CEST)
