@@ -1,3 +1,5 @@
 == Song Format ==
 What will the new CLI do about that lame song format string that is all but ignored now? Get rid of it completely (does anyone ever change it?) or implement something more powerful, with conditionals?
 --[[User:Puzzles|Puzz]] 15:34, 21 June 2007 (CEST)
+
+I will still be present as a flag and/or config value. As for conditionals, feel free to hack :-)
