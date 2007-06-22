@@ -54,7 +54,6 @@ Please move the following clients according to their actual state!
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
 {{ClientTableEntry|perlamp| ? | ? | Vaporware? | should be a front-end supporting Wxxamp modern skins }}
-{{ClientTableEntry|Wmxmms2| Dockapp (WindowMaker) | C | discontinued? | Display for the WindowMaker/Fluxbox dock }}
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
 {{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
