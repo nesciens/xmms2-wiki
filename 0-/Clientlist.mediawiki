@@ -45,6 +45,7 @@ All current clients should be found here.
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|xmms2Plugin| Plugin for irssi | C++ | in development | Control and query xmms2 within irssi }}
 {{ClientTableEntry|XMMS2 Webterface| Browser / Webclient | Ruby | in development | eRuby templated, skinnable, simple web 1.0 client}}
+{{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
 |}
 
 = Unknown State =
