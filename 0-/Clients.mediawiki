@@ -74,6 +74,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 == Others ==
 
+* [[Client:Wmxmms2 | Wmxmms2]] is a dock-app for WindowMaker (or others, like Fluxbox)
 * [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
 
 
