@@ -1,3 +1,5 @@
+The accepted projects can be found on the [[Summer of Code 2007]] page!
+
 Also check leftovers from [[Summer of Code 2006/Proposed projects]]. And the long term wishlist in {{Bug|520}}.
 
 
