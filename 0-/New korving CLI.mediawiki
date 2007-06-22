@@ -110,8 +110,8 @@ Pauses playback.
 Stop playback, possibly after a delay specified by the options.
 
  Options:
- -t, --track   <n>    Number of tracks after which playback is stopped.
- -s, --seconds <time> Number of seconds after which playback is stopped.
+ -n, --tracks <num>  Number of tracks after which to stop playback.
+ -t, --time   <time> Duration after which to stop playback.
 
 ''Note: maybe these options should not be here, but managed by a service client?''
 
