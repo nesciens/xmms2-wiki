@@ -22,3 +22,15 @@ Examples:
 and of course, literal ranging ( xmms2 list 10-20 = only the middle 10 items ).
 
 It may be worth it to stop using 0 in playlists... [[User:VxJasonxV|VxJasonxV]] 04:30, 23 June 2007 (CEST)
+
+
+Yes I agree. In fact I already planned to support this, and to start the playlist at position 1.
+
+One other pattern feature you might want to feel horny about is:
+
+* xmms2 list _5
+** list current item and its five successors
+* xmms2 list 3_10
+** list current item, as well as its three predecessors and ten successors
+
+--[[User:Theefer|Theefer]] 06:33, 23 June 2007 (CEST)
