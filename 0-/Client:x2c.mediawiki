@@ -65,9 +65,9 @@ Everything else should be straight forward, because of the help and tutorial fea
    # tag media
    (url =~ 'anArtist/%').list.each do |s|
      if s.url =~ /\/(\w| )*\/(\w*) - (\w*)/
-       s.artist = $2
+       s.artist= $2
        s.album = $1
-       s.title => 3
+       s.title = $3
      end
    end
    
