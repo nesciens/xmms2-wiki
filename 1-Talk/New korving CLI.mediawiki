@@ -5,6 +5,14 @@ What will the new CLI do about that lame song format string that is all but igno
 I will still be present as a flag and/or config value. As for conditionals, feel free to hack :-)
 --[[User:Theefer|Theefer]] 15:37, 21 June 2007 (CEST)
 
+The current code is completely wrong, so it really shouldn't remain. I don't think I feel up to the task of writing a conditional parser in C since there are prepubescent girls more adept at C than me, but I will certainly hack on one of the following:
+* Taking it out completely and leaving sane defaults (which is mostly what's done already).
+* Taking it out completely with sane defaults and a few configuration properties:
+** show title before artist
+** show album
+** show channel on streams
+* A dumbed-down set of conditionals
+
 == List Patterns ==
 
 "If a pattern is given, contents are further filtered and only the matching media are displayed."
