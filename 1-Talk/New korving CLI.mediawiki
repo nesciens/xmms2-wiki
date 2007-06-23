@@ -4,3 +4,21 @@ What will the new CLI do about that lame song format string that is all but igno
 
 I will still be present as a flag and/or config value. As for conditionals, feel free to hack :-)
 --[[User:Theefer|Theefer]] 15:37, 21 June 2007 (CEST)
+
+== List Patterns ==
+
+"If a pattern is given, contents are further filtered and only the matching media are displayed."
+
+I'd like to see line item matching.
+
+Examples:
+* xmms2 list
+** all items in playlist
+* xmms2 list 10-
+** all items starting from the 11th and onward to the end
+* xmms2 list -20
+** all items from the start until the 21st
+
+and of course, literal ranging ( xmms2 list 10-20 = only the middle 10 items ).
+
+It may be worth it to stop using 0 in playlists...
