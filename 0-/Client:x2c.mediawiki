@@ -11,7 +11,7 @@ the client itself is an irb shell executing commands on the client object, which
 * works an almost all terminal
 * nice command-line interface with completion
 * module support for new features
-* already has cool module: vote, mlib, ...
+* already has cool module: vote, mlib, autodaemon, ...
 * short tutorial to get into the feeling of the client
 * help system, so you don't get lost ;)
 
@@ -21,15 +21,58 @@ the client itself is an irb shell executing commands on the client object, which
 * highly configurable and extensible
 * easy to modify for your own needs
 * you can do cool things, as all is ruby
+
+== Getting started ==
+You can download x2c at [http://forti.ath.cx:20480/pro/x2c/x2c-0.1-rc1.tgz]. 
+
+Afterwords, simply extract the tar, move the folder where you like it
+and run ./x2c or create a symlink to x2c. You also can use the gemspec to install it:
+  gem build x2c.gemspec
+  sudo gem install x2c-0.1.gem
+
+Everything else should be straight forward, because of the help and tutorial features :)
+
+== Code snippets ==
+
+=== skip sid ===
+    # little script you can call in post_deamon to make sids only play for 3m
+    def start_sid_skip
+        skipsid = nil
+        @sidskip = broadcast_playback_current_id.notifier do |r|
+            if skipsid
+                skipsid.kill 
+                skipsid = nil
+            end
+            song = Song.new(r.value)
+            skipsid = Thread.new do
+                if song.chain =~ /sid/ && !song.info[:duration]
+                    sleep 180
+                    print "\r...  skipping sid"
+                    skip
+                end
+            end
+        end
+        puts "...  sidskip started"
+    end
+    def stop_sid_skip
+        puts "...  stopping sidskip"
+        @sidskip.disconnect
+    end
+
+=== the mlib ===
    # remove unwanted media
    (url =~ 'file:///some/stage/music%').list.each{|id| medialib_entry_remove(id)}
-   # wake me up with cool fade-in
-   sleep 60*60*8; (0...100).each{|i| volume i; sleep 0.1}
-   # the stack feature
-   stack.inject{|a,b| a|b}
    # tag media
    (url =~ 'anArtist/%').list.each do |s|
      if s.url =~ /\/(\w| )*\/(\w*) - (\w*)/
-       s.info_set :artist => $2, :album => $1, :title => 3
+       s.artist = $2
+       s.album = $1
+       s.title => 3
+     end
    end
-   # ...
+   
+
+=== Volume fades ===
+   # wake me up with cool fade-in
+   (0...100).each{|i| volume i; sleep 0.1}
+   (0...100).each{|i| volume 100-i; sleep 0.1}
