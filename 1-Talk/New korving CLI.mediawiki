@@ -21,4 +21,4 @@ Examples:
 
 and of course, literal ranging ( xmms2 list 10-20 = only the middle 10 items ).
 
-It may be worth it to stop using 0 in playlists...
+It may be worth it to stop using 0 in playlists... [[User:VxJasonxV|VxJasonxV]] 04:30, 23 June 2007 (CEST)
