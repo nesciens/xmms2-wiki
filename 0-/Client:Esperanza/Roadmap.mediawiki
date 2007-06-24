@@ -16,7 +16,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10003; no entry in windowlist when tray icon is active. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=f65b926cfd7730fc7917b6032d8aee2e49977405 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=0b563bcdd2fb8b70f5b0b0f3e33f3f7cc83fc9de Part2]))
 * &#10003; add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=2e9e95a993935f76b79cedeb6cbd058343b0850c Part1])
 * &#10003; add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=34a7fd0c5f99bf297bb5aeb2777a15c3806bd608 Part1])
-* &#10063; global shortcut for show <=> hide window
+* &#10003; global shortcut for show <=> hide window
 
 == Version 0.5 ==
 
