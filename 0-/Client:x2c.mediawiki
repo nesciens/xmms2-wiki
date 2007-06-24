@@ -25,7 +25,7 @@ the client itself is an irb shell executing commands on the client object, which
 == Getting started ==
 You can download x2c at [http://forti.ath.cx:20480/pro/x2c/x2c-0.1-rc1.tgz]. 
 
-Afterwards, simply extract the tar, move the folder where you like it
+Afterwards, simply extract the tar, move the x2c folder where you like it
 and run ./x2c or create a symlink to x2c. You also can use the gemspec to install it:
   gem build x2c.gemspec
   sudo gem install x2c-0.1.gem
