@@ -73,6 +73,5 @@ Everything else should be straightforward, because of the help and tutorial feat
    
 
 === Volume fades ===
-   # wake me up with cool fade-in
    (0...100).each{|i| volume i; sleep 0.1}
    (0...100).each{|i| volume 100-i; sleep 0.1}
