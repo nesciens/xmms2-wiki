@@ -3,6 +3,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 == [http://git.xmms.se/?p=esperanza.git;a=shortlog;h=0.4 Version 0.4] ==
 * &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
 * &#10063; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
+** &#10063; add a skip wizard button?
 * &#10063; Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
 ** &#10003; Shortcut handling should be splitted out and use QShortcut instead. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9a400e38b5eb6065fbda405d11da01814389bee6 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=b9076d772492eae65984e7c8897141c3ce6519bc Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9ae5a266e836b64e721c292eeaf03f12660e815e Part3]))
 ** &#10003; Less direct access to the dialogs / other widgets. Rewrite to use more signals
