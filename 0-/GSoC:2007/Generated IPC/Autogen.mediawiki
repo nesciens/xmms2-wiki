@@ -1,2 +1,4 @@
 == Todo ==
 Decide how to integrate the autogeneration scripts into waf, where the scripts should reside in the tree, etc.
+
+Read the code in my tree(tcoppi), specifically genipc.py, there are a couple TODO notes in there. I will update this page in the future with more specifics about what needs to be done.
