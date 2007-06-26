@@ -1,7 +1,7 @@
 {{GSoCProject
 |student=[[User:tcoppi|Thomas Coppi]]
 |mentor=[[User:Anders Gustafsson|Anders Gustafsson]]
-|cmilestone=[[Summer of Code 2007/Generated IPC/Server | Server-side Discussion]]
+|cmilestone=[[Summer of Code 2007/Generated IPC/Autogen | Autogeneration Script(s)]]
 |nmilestone=[[Summer of Code 2007/Generated IPC/Milestones | Milestones]]
 
 |description=
