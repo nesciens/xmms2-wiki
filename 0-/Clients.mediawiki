@@ -28,6 +28,10 @@ Actually, there are dozens of clients available which try to fit best into this 
 
 [[Client:Abraca | Abraca]] is designed with collections in mind.
 
+=== Blastwave (GTK) ===
+
+[[Client:Blastwave | Blastwave]] in its current state features basic XMMS2 control: playlist managing, playback queues (experimental), playback control, MediaLib queries as well as a usable GTK2 interface with tray icon support.
+
 === X4X (Java) ===
 
 [[Client:X4X | X4X]] is a Java-based client. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer.
