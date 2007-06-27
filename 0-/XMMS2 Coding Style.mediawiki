@@ -23,13 +23,15 @@ NOT:
 (see [[Emacs C style]] adapted from LDP)
 
 == Arguments ==
-Arguments to code constructs and functions should always have a space between the construct or function name and the open parenthesis:
+Arguments to code constructs and functions should always have a space between the construct or function name and the open parenthesis. The same goes for functions that take no arguments:
 
  call_foo (arg1, arg2);
+ call_bar ();
 
 NOT:
 
  call_foo(arg1, arg2);
+ call_bar();
 
 == Breaking long lines and strings ==
 * Lines should not be longer than 80 characters (columns) long. (Note that this assumes 4-character long tab widths for indents)
