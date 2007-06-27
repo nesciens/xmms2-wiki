@@ -325,4 +325,26 @@ described
 
 '''Much more extensive description to come here.'''
 
+== Media String Format ==
+
+The old cli takes some string like "${artist} - ${title}" which assumes that artist and title mediainfo are available. When they are not, the string looks wrong. This also doesn't scale well when additional mediainfo is available, such as the channel in a stream. A new format string specification needs to be drawn up to implement some sort of conditional constructs to allow scalable handling of media.
+
+;Basic conditional structure:
+ %?(<condition>)(<true case>)(<false case>)
+
+The conditional structure takes a simplified condition, which is simply checked to not be an empty string. If the contents of the condition block are not an empty string, the true case is evaluated, otherwise, the false case. Conditional structures should be nestable.
+
+;Mediainfo access:
+ %[<property>]
+
+The mediainfo access structure is simply replaced with a string representation of the property which it represents, or an empty string if the property does not exist.
+
+Thus, the statement:
+ %?(%[this_property_does_not_exist])(True)(False)
+would always print False. While the statement:
+ %?(this is some text, so this is not an empty string)(True)(False)
+would always print True.
+
+Parsing and executing this format is dead simple. The change to % characters is to help command-line interpretation so that the shell does not try to substitute ${}-values. Three special characters should be included as escape sequences, %%, %(, and %).
+
 [[Category:Developer ideas]]
