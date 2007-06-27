@@ -5,20 +5,20 @@ Consider this as an informational ''guide'' - it is here simply to provide a com
 == Indentation ==
 
 * Single tabs (\t) 
-* Tabs are ''usually'' equivalent to 8 characters in length. However, XMMS2 code should be written with a tab-width of 4 characters. (This affects the line length, as discussed in the next section) Note that tabs should not be substituded with 4 real spaces, in code. (some editors, [http://www.vim.org/htmldoc/usr_30.html#30.5 such as vim, may do this, depending on settings] )
-* "The whole idea behind indentation is to clearly define where a block of control starts and ends." [http://lxr.linux.no/source/Documentation/CodingStyle#L23] Always indent when needed - that is, after ''if'', ''do'', ''while'' statements, function declarations (''void foo (bar) {''), and so on.
+* Tabs are ''usually'' equivalent to 8 characters in length. However, XMMS2 code should be written with a tab-width of 4 characters. (This affects the line length, as discussed in the next section) Note that tabs should not be substituted with 4 real spaces (soft tabs); use an actual tab character. (some editors, [http://www.vim.org/htmldoc/usr_30.html#30.5 such as vim, may do this, depending on settings] )
+* "The whole idea behind indentation is to clearly define where a block of control starts and ends." [http://lxr.linux.no/source/Documentation/CodingStyle#L23] Always indent when needed - that is, after ''if'', ''do'', ''while'' statements, function declarations (''void foo (bar)''), and so on.
 * Tabs are only used for indentation of code blocks, everything should be tab-width agnostic (indented with spaces instead of tabs if needed). (see point below)
 * When defining an argument list over multiple lines, the lines should be indented with the same number of tabs as the first line, then supplemented with spaces such that the argument lines up under the opening brace of the argument list. For example:
 
- [tab][tab][tab]foo_function(arg1,
- [tab][tab][tab]             arg2,
- [tab][tab][tab]             arg3)
+ [tab][tab][tab]foo_function (arg1,
+ [tab][tab][tab]              arg2,
+ [tab][tab][tab]              arg3)
 
 NOT:
 
- [tab][tab][tab]foo_function(arg1,
- [tab][tab][tab][tab][tab]   arg2,
- [tab][tab][tab][tab][tab]   arg3)
+ [tab][tab][tab]foo_function (arg1,
+ [tab][tab][tab][tab][tab]    arg2,
+ [tab][tab][tab][tab][tab]    arg3)
 
 (see [[Emacs C style]] adapted from LDP)
 
