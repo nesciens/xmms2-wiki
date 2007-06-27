@@ -9,7 +9,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 ** &#10003; Less direct access to the dialogs / other widgets. Rewrite to use more signals
 ** &#10063; When above is done the source should be reorganized so that dialogs and other windows are plugins to the main widget. It should register things like shortcuts and basic handling and then compile as a QPLUGIN, makes it easier to add new dialogs and not cludder playerwidget.cpp
 *** &#10003; convert streamingdialog (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=889b98e0442a2777cdf14a031c8057fa9f198ee8 part1]))
-*** &#10063; convert the about dialog
+*** &#10003; convert the about dialog
 *** &#10063; update and convert the jumptofiledialog
 *** &#10063; make serverbrowser and firsttimewizard another type of dialog plugin that can be accessed in some other way. First we need to define that interface then write the small code needed.
 *** &#10063; convert growl, systemtray, globalshortcut to plugins that doesn't have to be tied into the ui code. same here, define the interface and then write the code
