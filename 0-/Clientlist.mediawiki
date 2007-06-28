@@ -37,6 +37,7 @@ All current clients should be found here.
 {{ClientTableEntry|Sonus| Graphical / QT4 | Python | in development | Simple, yet full-featured player }}
 {{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
 {{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
+{{ClientTableEntry|x2c| console | ruby | stable | little rubyistic console client with advanced features}}
 {{ClientTableEntry|X4X| Graphical / XWidgets | Java | in development | Almost complete player, works with Java Webstart }}
 {{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
 {{ClientTableEntry|XMMS2Musica| Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
