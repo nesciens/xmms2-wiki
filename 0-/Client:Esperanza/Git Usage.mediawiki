@@ -1,0 +1,69 @@
+This is a quick guide on how to work on Esperanza with Git.
+
+
+== Clone ==
+ git clone git+ssh://git.xmms.se/xmms2/esperanza.git
+
+this will create "esperanza" locally and you will have the default branch checked out.
+
+== branches ==
+
+Esperanza relies on branches, have one per version that is released. To inspect what branches that are present do
+
+ git branch -r
+
+that will list something like:
+
+ origin/0.3
+ origin/0.4
+ origin/HEAD
+
+the first part is the namespace, in this case origin. which denotes that these branches are on where you cloned them from.
+
+To switch branch use the checkout command:
+
+ git checkout origin/0.4
+
+When switching branches it can be good to see where you are by doing
+
+ git log
+
+Git log will show you what changes you have there.
+
+To start working with a specific branch it's recommended that you don't work in the remote branch. So let's create a local branch of the remote 0.4 branch.
+
+ git checkout origin/0.4 #switch to 0.4
+ git checkout -b 0.4
+
+== other remote branches ==
+
+if you want to add multiple remotes to your tree, for example the master tree, edit .git/config and add the following:
+ 
+ [remote "main"]
+ url = git.xmms.se:/xmms2/esperanza.git
+ fetch = +refs/heads/*:refs/remotes/main/*
+
+the string "main" here is optional, note that it's in two places, first what it should be called and then in what namespace it should end up.
+
+to update a remote branch use the command
+
+ git fetch main
+
+this will update the "main" remote branch and you can do
+
+ git branch -r
+
+to view them. in this case you should have the lines:
+ 
+ main/0.3
+ main/0.4
+
+in there.
+
+== merge remotes ==
+
+First off, git merge doesn't do what you think it will do :-) always use git pull when merging. if you want to merge the main/0.4 into your own 0.4 branch do the following
+
+ git checkout 0.4 #make sure we are in the local branch
+ git fetch main #update the remote branch
+ git pull main 0.4 #merge it!
