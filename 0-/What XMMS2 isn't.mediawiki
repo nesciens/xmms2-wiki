@@ -22,7 +22,7 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 ** ... unless you're mentioned in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=AUTHORS AUTHORS].
 * come out of a shiny box and install itself in your heart forever.
 * make you rich.
-** ... unless you're a [[Summer of Code 2006|SoC student]]. :)
+** ... unless you're a [[Summer of Code 2007|SoC student]]. :)
 * get you laid.
 ** ... unless you use it to play [http://www.last.fm/tag/sensual sensual music] while dating.
 * make you famous.
