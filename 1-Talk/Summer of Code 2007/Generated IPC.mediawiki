@@ -193,9 +193,9 @@ IPC MSG argument format:
 
 arg1:Object (main,playback,output,etc.)
 
-arg2:type (CMD or PROP)
+arg2:actual CMD or PROP
 
-arg3:actual CMD or PROP
+arg3:type (CMD or PROP)
 
 arg4...(CMD):arguments to the command
 
