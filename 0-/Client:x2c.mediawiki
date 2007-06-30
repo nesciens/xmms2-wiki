@@ -1,4 +1,4 @@
-{{Client| name=x2c| author=[[Daniel Waber]]| website=http://forti.ath.cx:20480/pro/x2c http://rubyforge.org/frs/?group_id=3900| version=alpha| devlanguage=ruby| ui=Console| screenshots= [http://forti.ath.cx:20480/file/x2c/x2c-1.png] [http://forti.ath.cx:20480/file/x2c/x2c-2.png]| description= x2c is a small, interactive ruby command line client for xmms2}}
+{{Client| name=x2c| author=[[Daniel Waber]]| website=http://forti.ath.cx:20480/pro/x2c http://rubyforge.org/frs/?group_id=3900 | version=0.1 | devlanguage=ruby | ui=Console | screenshots= [http://forti.ath.cx:20480/file/x2c/x2c-1.png] [http://forti.ath.cx:20480/file/x2c/x2c-2.png]| description= x2c is a small, interactive ruby command line client for xmms2}}
 
 == About ==
 ==== A small, interactive ruby command line client for xmms2 ====
