@@ -48,3 +48,4 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * Add a class that can query amazon web services for album art. It should be done on the albums that are in the playlist (and don't have a cover) and should be added to xmms2d with the binary_get/set calls.
 * Application Icon missing, make sure for any OS
 * Make sure that the Connection code can handle disconnect, reconnect, connect to multiple and similar operations. Ideally we should be able to switch server without quiting esperanza and not have to relaunch it when it disconnects.
+* make the playlist columns editable, add / remove items which can be shown in the context area of a playlistitem
