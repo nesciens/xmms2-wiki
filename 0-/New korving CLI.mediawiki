@@ -351,12 +351,12 @@ A good default string for XMMS2 would look like:
  %?(%{title})(%?(%{artist})(%{artist} - )()%{title})(%{url})%?(%{channel})( [%{channel}])()
 
 For a little added convenience and to introduce 100 new bugs, shorthand forms could be introduced:
- %?(<condition>)(%{<true case>})
+ %?(<condition>)(<true case>)
 by just knocking off the false condition, or even shorter:
  %?(<condition/true case>)
 by assuming the condition and true case are the same.
 
-Negations could be fun in this sense, too:
+Negations (using ^) could be fun in this sense, too:
  %?(%{^<property>})(<false case>)
 and could potentially eliminate the need for nesting.
 
