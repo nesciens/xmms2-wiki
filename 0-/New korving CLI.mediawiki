@@ -348,6 +348,6 @@ would always print True.
 Parsing and executing this format is dead simple. The change to % characters is to help command-line interpretation so that the shell does not try to substitute ${}-values. Three special characters should be included as escape sequences, %%, %(, and %).
 
 A good default string for XMMS2 would look like:
- %?(%{title})(%?(%{artist})(%{artist})() - %{title})(%{url})%?(%{channel})( [%{channel}])()
+ %?(%{title})(%?(%{artist})(%{artist} - )()%{title})(%{url})%?(%{channel})( [%{channel}])()
 
 [[Category:Developer ideas]]
