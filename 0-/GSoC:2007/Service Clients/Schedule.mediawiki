@@ -14,7 +14,7 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 
 '''''Jun 18 - Jun 27''''': Implement client-service table and related functions.  So that client can use a service.
 
-'''''Jun 28 - Jul 7''''': Solve service configuration issue and anything that's left over from previous weeks.
+'''''Jun 28 - Jul 7''''': Solve service client startup issue and anything that's left over from previous weeks.
 
 '''''Jul 8''''': Document things I've done so far.
 
@@ -24,7 +24,7 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 ----
 
 
-'''''Jul 10 - Jul 16''''': Solve service client startup issue and anything that's left over from previous weeks.
+'''''Jul 10 - Jul 16''''': Solve service configuration issue and anything that's left over from previous weeks.
 
 '''''Jul 17''''': Document things I've done so far.
 
