@@ -1,8 +1,8 @@
 {{GSoCProject
 |student=[[User:zeegeek|Ning Shi]]
 |mentor=[[S%C3%A9bastien_Cevey|SÃ©bastien Cevey]]
-|cmilestone=Enable clients to use services
-|nmilestone=Solve configuration issues
+|cmilestone=Solve configuration issues
+|nmilestone=Midterm evaluation
 
 |description=
 Service client idea empowers XMMS2 with unlimited expendibility.  Different service clients can register themselves to the server so that when normal clients want to tag a music file for example, the service client will know what to do.  Or normal clients want to look up some data from MusicBrainz.org, service client can perform the search and return the results to the normal clients.  In this way, normal clients can share additional features provided by different service clients without having to implement them in every normal client over and over again.
