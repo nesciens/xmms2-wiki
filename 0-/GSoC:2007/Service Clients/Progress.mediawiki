@@ -1,5 +1,7 @@
 ==History==
 
+'''''10:22, 1 July 2007 (CEST)''''': Client can now call service methods with arguments and get return values.
+
 '''''18:33, 18 June 2007 (CEST)''''': Service clients can now register and unregister services and methods.
 
 '''''17:33, 5 June 2007 (CEST)''''': Started working on registry and related functions.
