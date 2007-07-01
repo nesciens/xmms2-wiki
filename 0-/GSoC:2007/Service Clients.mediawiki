@@ -1,7 +1,7 @@
 {{GSoCProject
 |student=[[User:zeegeek|Ning Shi]]
 |mentor=[[S%C3%A9bastien_Cevey|SÃ©bastien Cevey]]
-|cmilestone=Solve configuration issues
+|cmilestone=Solve auto-startup issues
 |nmilestone=Midterm evaluation
 
 |description=
