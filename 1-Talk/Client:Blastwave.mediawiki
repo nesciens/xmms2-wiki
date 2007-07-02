@@ -2,3 +2,7 @@ The website seems to be broken (gives 403)
 
 
 I would note that in my opinion, building in tray-icon functionality into a bigger client is not a good idea. There should be a seperate client for the tray icon. Better improve existing solutions than building up your own, which is tied to a specific main controlling client..
+
+== Re: ==
+
+You can always disable the tray icon if You want to - just check "Preferences".  Bytheway: the link is fixed and should work now.
