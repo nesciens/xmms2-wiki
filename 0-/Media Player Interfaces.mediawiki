@@ -140,22 +140,21 @@ Notes:
 
 == D-Bus ==
 
-=== The Service ===
+=== DBus Stuff ===
 
-org.freedesktop.MediaPlayer
+Each player can request an own bus name as it likes, except that the prefix must be "org.mpris". For example:
 
-All "Media Players" '''must''' request this name and do not let other "Media Players" 'steal' this name.
-Using libdbus, that would be:
+* org.mpris.vlc
+* org.mpris.bmp
+* org.mpris.xmms2
 
- DBusConnection *dbus_connection;
- DBusError dbus_error;
- dbus_bus_request_name( dbus_connection, "org.freedesktop.MediaPlayer", 0, &dbus_error );
+The '''interface''' name of the player '''must''' always be "org.freedesktop.MediaPlayer" though.
 
-To be able to request the name, and so, be able to communicate via D-Bus, no "Media Player" must be running. The "Media Player" may call the Quit method, and wait till the name is unregistered, to ensure this is the case.
+(This deprecates the following comments:)
 
-: I think this is a bad idea, it's not the place for a interop Spec to force single instance behaviour without a good reason (i run amarok all the time and use vlc to play videos or streams...). Why not suggest that mediaplayers register with the well known service name ("org.freedesktop.MediaPlayer") with the options QueueService and suggest the media player should register an application specific service in addition?
+:: I think this is a bad idea, it's not the place for a interop Spec to force single instance behaviour without a good reason (i run amarok all the time and use vlc to play videos or streams...). Why not suggest that mediaplayers register with the well known service name ("org.freedesktop.MediaPlayer") with the options QueueService and suggest the media player should register an application specific service in addition?
 
-: if done that way we gain the feature to query the dbus daemon for all clients queued for that dbus name, so enumerating all current musicplayers that support the Spec is not problem. Contacting the players is not problem to because every client on dbus has a unique name anyway. DBus signal do AFAIK carry the dbus service name of the sending client, so there is no trouble knowing which player send a signal. [[User:textshell|textshell]]
+:: if done that way we gain the feature to query the dbus daemon for all clients queued for that dbus name, so enumerating all current musicplayers that support the Spec is not problem. Contacting the players is not problem to because every client on dbus has a unique name anyway. DBus signal do AFAIK carry the dbus service name of the sending client, so there is no trouble knowing which player send a signal. [[User:textshell|textshell]]
 
 === The interface ===
 
