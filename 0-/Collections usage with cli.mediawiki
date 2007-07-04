@@ -80,6 +80,8 @@ However, only idlists can be created in the ''Playlists'' namespace,
 so it is not possible to save one of our dynamic collection structures
 (based on filters) in that namespace.
 
+= More Complicated Collection Queries =
+
 = Rename a collection =
 
 In case you want to rename a collection saved on the server, you can
