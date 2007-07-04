@@ -96,6 +96,8 @@ It is possible to create far more complicated collections.  Note that the values
 ** All songs that have a rating less than or equal to 5, and similarily for >=, <, and >.
 * xmms mlib search in:test1
 ** All songs in the collection test1
+* xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
+** Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  WARNING: As of 4 Jul 2007, DOES NOT WORK, but there appears to be code for it.
 
 = Rename a collection =
 
