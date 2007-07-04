@@ -94,6 +94,8 @@ It is possible to create far more complicated collections.  Note that the values
 ** All songs that have any value at all in the "rating" property.
 * xmms2 mlib search 'rating<=5'
 ** All songs that have a rating less than or equal to 5, and similarily for >=, <, and >.
+* xmms mlib search '#18'
+** Song id number 18 only
 * xmms mlib search in:test1
 ** All songs in the collection test1
 * xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
