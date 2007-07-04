@@ -20,6 +20,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Split preferences dialog into preference manager / dialog.
 ** &#10003; Write the manager
 ** &#10003; Write the dialog
+** &#10063; make sure the settings are at the right tab
 * &#10063; Last.FM controls
 ** &#10063; Implement Last.FM: love/ban/skip in the main widget. Also add browsing to the streambrowser. make it pretty
 * &#10063; Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
