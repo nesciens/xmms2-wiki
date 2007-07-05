@@ -3,14 +3,14 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 == [http://git.xmms.se/?p=esperanza.git;a=shortlog;h=0.4 Version 0.4] ==
 * &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
 * &#10003; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
-** &#10003; add a skip wizard button? (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9c6a9b4852de0b790fe22ab38364500505f71ea7 part1]))
+** &#10003; add a skip wizard button
 ** &#10063; show a progress while trying to connect to xmms2d
 ** &#10063; show connect result not as a popup
 * &#10063; Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
-** &#10003; Shortcut handling should be splitted out and use QShortcut instead. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9a400e38b5eb6065fbda405d11da01814389bee6 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=b9076d772492eae65984e7c8897141c3ce6519bc Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9ae5a266e836b64e721c292eeaf03f12660e815e Part3]))
+** &#10003; Shortcut handling should be splitted out and use QShortcut instead.
 ** &#10003; Less direct access to the dialogs / other widgets. Rewrite to use more signals
 ** &#10063; When above is done the source should be reorganized so that dialogs and other windows are plugins to the main widget. It should register things like shortcuts and basic handling and then compile as a QPLUGIN, makes it easier to add new dialogs and not cludder playerwidget.cpp
-*** &#10003; convert streamingdialog (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=889b98e0442a2777cdf14a031c8057fa9f198ee8 part1]))
+*** &#10003; convert streamingdialog
 *** &#10003; convert the about dialog
 *** &#10063; update and convert the jumptofiledialog
 *** &#10063; make serverbrowser and firsttimewizard another type of dialog plugin that can be accessed in some other way. First we need to define that interface then write the small code needed.
@@ -26,11 +26,11 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
 * &#10063; Make the medialib browser prettier
 ** &#10063; Animations when the medialib is shown?
-* &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=79ff3476f2db8f0be4163a5f02f5588323e36673 Part1]))
-* &#10003; no entry in windowlist when tray icon is active. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=f65b926cfd7730fc7917b6032d8aee2e49977405 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=0b563bcdd2fb8b70f5b0b0f3e33f3f7cc83fc9de Part2]))
-* &#10003; add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow. (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=2e9e95a993935f76b79cedeb6cbd058343b0850c Part1]))
-* &#10003; add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=34a7fd0c5f99bf297bb5aeb2777a15c3806bd608 Part1]))
-* &#10003; global shortcut for show <=> hide window (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=e50196162c098ec3bec4630cc5d45b09efc082e6 Part1]))
+* &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog.
+* &#10003; no entry in windowlist when tray icon is active.
+** &#10063; no entry in windowlist for minimode too
+* &#10003; add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow.
+* &#10003; add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song, show <=> hide window
 
 == Version 0.5 ==
 
