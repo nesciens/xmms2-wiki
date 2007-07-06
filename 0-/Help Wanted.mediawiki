@@ -1,7 +1,7 @@
 The XMMS2 Project has come a long way since 2003, but there are still a lot of rough edges around. If you'd like to help make XMMS2 a more interesting project, then check out the following items..
 
-== Long term wishlist ==
-We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.xmms.se/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
-
 == Low hanging fruit ==
 Some easy tasks that can be well suited for familiarizing with the XMMS2 codebase can be found in our bugtracker. <mantis>1638</mantis>.
+
+== Long term wishlist ==
+We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.xmms.se/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
