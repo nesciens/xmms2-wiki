@@ -3,6 +3,9 @@ The XMMS2 Project has come a long way since 2003, but there are still a lot of r
 == Long term wishlist ==
 We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.xmms.se/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
 
+== Low hanging fruit ==
+Some easy tasks that can be well suited for familiarizing with the XMMS2 codebase can be found in our bugtracker. <mantis>1638</mantis>.
+
 == Leftover Summer of Code Proposals ==
 XMMS2 participated in Google's [[Summer of Code 2006]], with 4 (out of 5) projects successfully completed. However, we did have a number of other interesting proposals that weren't taken up by students (or that couldn't be accepted for various reasons). We'd still like to see some of these ideas worked on, so please have a look through them. (If you're interested in any of the projects, contact the mentor listed, though be advised that you should not necessarily expect any real mentoring on these projects. And no, we're not currently offering bounties on these either.)
 
