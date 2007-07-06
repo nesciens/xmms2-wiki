@@ -63,7 +63,7 @@ Missing files in 0.1 makes me release 0.1.1, same place as before.
 
 === Source ===
 
-Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest devel can be found in [http://git.xmms.se XMMS2 git tree].
+Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest devel can be found in [http://git.xmms.se XMMS2 git tree]. Take a look at the info about [[Client:Esperanza/Git_Usage|git usage]] if you're new to git.
 
 === Dependencies ===
 
