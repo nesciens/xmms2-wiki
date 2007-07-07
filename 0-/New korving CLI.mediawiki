@@ -137,9 +137,12 @@ Jump to the first track after the current track matching the pattern.
 
 ==== search [options] <pattern> ====
 
-Search and print all the media matched by the pattern.
+Search and print all the media matched by the pattern. Search can be restricted
+to a collection or a playlist by using the corresponding flag.
 
  Options:
+ -p, --playlist <name>             Search in the given playlist.
+ -c, --collection <name>           Search in the given collection.
  -o, --order <prop1[,prop2...]>    List of properties to order by
                                    (prefix by '-' for reverse ordering).
  -l, --columns <prop1[,prop2...]>  List of properties to use as columns.
@@ -151,20 +154,13 @@ Display all the properties for each media matched by the pattern.
 ==== list [options] [pattern] ====
 
 List the contents of the active playlist by default.  This command can
-also be used to display any other playlist or collection (see
-Options).
+also be used to display any other playlist (see Options).
 
 If a pattern is given, contents are further filtered and only the
 matching media are displayed.
 
  Options:
  -p, --playlist <name>    Display a given playlist.
- -c, --collection <name>  Display a given collection.
- -o, --order <prop1[,prop2...]>  List of properties to order by (prefix
-                                 by '-' for reverse ordering), defaults
-                                 to playlist position.
-
-''Note: list might be confusing/redundant with search? Although search works on sets and lists on lists.''
 
 ==== add [options] <pattern> ====
 
