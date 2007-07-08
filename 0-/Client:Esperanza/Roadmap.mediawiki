@@ -16,7 +16,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 *** &#10063; make serverbrowser and firsttimewizard another type of dialog plugin that can be accessed in some other way. First we need to define that interface then write the small code needed.
 *** &#10063; convert growl, systemtray, globalshortcut to plugins that doesn't have to be tied into the ui code. same here, define the interface and then write the code
 *** &#10063; playlist buttons doesn't work
-*** &#10003; shortcuts from dialogs work (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=cbf033e0dab2450681a1bcf27b24436a88ed6f21 part1]))
+*** &#10003; shortcuts from dialogs work (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=cbf033e0dab2450681a1bcf27b24436a88ed6f21 Part1]))
 * &#10063; Split preferences dialog into preference manager / dialog.
 ** &#10003; Write the manager
 ** &#10003; Write the dialog
@@ -28,7 +28,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 ** &#10063; Animations when the medialib is shown?
 * &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog.
 * &#10003; no entry in windowlist when tray icon is active.
-** &#10063; no entry in windowlist for minimode too
+** &#10003; no entry in windowlist for minimode too (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=37a55c7dfbef03ae9b5d0b8bbe5851772e94a79e Part1]))
 * &#10003; add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow.
 * &#10003; add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song, show <=> hide window
 
