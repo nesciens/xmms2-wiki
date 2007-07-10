@@ -84,22 +84,30 @@ so it is not possible to save one of our dynamic collection structures
 
 It is possible to create far more complicated collections.  Note that the values return by an "mlib search" call are the same values that will go into a collection using that query with a "coll save" call.
 
-* xmms2 mlib search "artist:Mr. Scruff" OR "artist:Mr. Crispy"
-** Finds all songs with either artist; similarily for AND and NOT.
-* xmms2 mlib search artist:'*a*' AND title:'*b*'
-** Finds all songs where the artist has "a" in the name, and the song title has "b"; this is case sensitive.
-* xmms2 mlib search artist~a AND title~b
-** Same thing, but case insensitive.
-* xmms2 mlib search +rating
-** All songs that have any value at all in the "rating" property.
-* xmms2 mlib search 'rating<=5'
-** All songs that have a rating less than or equal to 5, and similarily for >=, <, and >.
-* xmms mlib search '#18'
-** Song id number 18 only
-* xmms mlib search in:test1
-** All songs in the collection test1
-* xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
-** Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  WARNING: As of 4 Jul 2007, DOES NOT WORK, but there appears to be code for it.
+Finds all songs with either artist; similarily for AND and NOT.
+ $ xmms2 mlib search "artist:Mr. Scruff" OR "artist:Mr. Crispy"
+
+Finds all songs where the artist has "a" in the name, and the song title has "b"; this is case sensitive.
+ $ xmms2 mlib search artist:'*a*' AND title:'*b*'
+
+Same thing, but case insensitive.
+ $ xmms2 mlib search artist~a AND title~b
+
+All songs that have any value at all in the "rating" property.
+ $ xmms2 mlib search +rating
+
+All songs that have a rating less than or equal to 5, and similarily for >=, <, and >.
+ $ xmms2 mlib search 'rating<=5'
+
+Song id number 18 only
+ $ xmms mlib search '#18'
+
+All songs in the collection test1
+ $ xmms mlib search in:test1
+
+Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  WARNING: As of 4 Jul 2007, DOES NOT WORK, but there appears to be code for it.
+
+ $ xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
 
 = Rename a collection =
 
