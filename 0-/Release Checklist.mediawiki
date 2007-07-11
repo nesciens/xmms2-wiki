@@ -20,7 +20,7 @@ This is a list of things that should be done or checked before, and when doing a
 * Release snapshot ready (use release.py) & uploaded to sourceforge
 * Update freshmeat page
 * Send announcement to mailinglist
-* doxygen + epydoc + rdoc docs generated & published to exodus
+* doxygen + pydoc + rdoc docs generated & published to exodus
 * Update [[History]] page
 
 Other things which currently would not really be possible:
