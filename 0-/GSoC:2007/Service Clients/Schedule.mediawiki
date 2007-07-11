@@ -24,7 +24,7 @@ The schedule is on weekly basis and this is just a rough plan.  It will be updat
 ----
 
 
-'''''Jul 10 - Jul 16''''': Solve service configuration issue and anything that's left over from previous weeks.
+'''''Jul 10 - Jul 16''''': Write the special service client to manage all other service clients.
 
 '''''Jul 17''''': Document things I've done so far.
 
