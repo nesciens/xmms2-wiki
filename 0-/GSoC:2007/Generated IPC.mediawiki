@@ -13,6 +13,7 @@ I will then need to test the C binding extensively for problems as the rest of t
 ...
 [http://thisnukes4u.net/blog/archives/cat_2/index.html Project blog]
 ... 
+[[Summer of Code 2007/Generated IPC/Notes | Notes]]
 ''add links to other subpages here''
 
 }}
