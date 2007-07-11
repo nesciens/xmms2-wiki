@@ -1,0 +1,21 @@
+----
+[[User:Tcoppi|tcoppi]] 19:03, 29 June 2007 (CEST)
+Note:
+IPC MSG argument format:
+
+arg1:Object (main,playback,output,etc.)
+
+arg2:actual CMD or PROP
+
+arg3:type (CMD or PROP)
+
+arg4...(CMD):arguments to the command
+
+arg4(PROP):how often to send the property(now,on every change, etc.)
+
+arg5(PROP):same as arg4, just an additional constraint, so you can do now and on_every_change
+
+The code to handle this will be added to ipc.c and replace the current functions type_and_msg_to_arg(), xmms_ipc_cmd_handle_value(), process_msg(), etc. with generated equivalents that handle the new msg format. 
+
+Also, a structure will have to be added in to ipc.c so the generated xmms_object_cmds_register, xmms_object_props_register, etc. functions can have a place to put the handles of the callbacks that handle the ipc commands/properties. 
+The current way it is done, with an XMMS_OBJECT and XMMS_CMD_DEFINE, it must be known at compile time what function will be used and the arguments to it, which are supposed to be handled in the xml. This could be generated, but I think not using that would be cleaner, but it would also be fairly trivial to switch back and forth, since the code dealing with that will be mostly generated(just change a few lines of python).
