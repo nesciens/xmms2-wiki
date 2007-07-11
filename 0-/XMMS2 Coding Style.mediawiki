@@ -94,7 +94,7 @@ Vim users put this in your .vimrc:
   /* ... */
  }
 
-* Python code, on the other hand, is documented using [http://epydoc.sourceforge.net/ Epydoc] and is rather easy to [http://epydoc.sourceforge.net/epytext.html learn].
+* Python code, on the other hand, is documented using [http://docs.python.org/lib/module-pydoc.html Pydoc] and is rather easy to [http://epydoc.sourceforge.net/epytext.html learn].
 
 == Macros, Enums, Inline functions and RTL ==
 * Names of macros defining constants and labels in enums should be capitalized. [http://lxr.linux.no/source/Documentation/CodingStyle#L344]
