@@ -1,40 +1,18 @@
 This is a weekly schedule leading through the work to be done. It is subsequently updated to represent the actual state.
 
+''Jul 16 - Jul 22:'' Put Semaphores on the server side, define and implement concept of server side handling between vis. object and xform, implement some different pcm data formats, implement simple libvisual client
 
-''' ''... May 28:'' Hopefully lots of talks about the design, where to include the        server side of the code, etc.; staying in touch with developers and the        development process, setting up own git tree, etc.'''
+''Jul 23 - Jul 29:'' Port existing FFT code or FFT code from libvisual, lay out the possible formats and implement them
 
-''May 29:'' I submit my student research project and get drunk ;)
+''Jul 29 - Aug 05:'' Implement client listening on UDP, server sending packages        at the right interval, blocking client receival, automatic fallback        mechanism
 
-''May 30 - Jun 10:'' Implement additional IPC code to reach to the code on the        server side as client, write a simple testing client, create the SHM        and have the server write into it
+''Aug 06 - Aug 12:'' Deal with timing issues: implement described or further        techniques to get visualization in best sync with playing
 
-''Jun 11 - Jun 17:'' Implement the configurable update interval, and sending        test data at this frequency; Implement semaphores, synchronized client        collection of the data, alternating buffers/ringbuffer, first finish of        SHM w/o timing and no real vis data
-
-''Jun 18 - Jun 24:'' Port existing visualization code to actually send        interesting data
-
-''Jun 25 - Jul 01:'' Write libvisual client (already talked with them, it's        rather easy); start on transmitting PCM data, too
-
-''Jul 02 - Jul 08:'' Finish (if not yet) raw PCM data, do all the format        conversions, clients switching format on the fly
-
-
-----
-''On Jul 09 interims evaluation starts. According to this timeline, at this       point visualization should already work! But it still could be rough..''
-----
-
-
-''Jul 09 - Jul 15:'' Implement client listening on UDP, server sending packages        at the right interval, blocking client receival, automatic fallback        mechanism; first finish of UDP w/o timing and no real vis data
-
-''Jul 16 - Jul 29:'' Deal with timing issues: implement described or further        techniques to get visualization in best sync with playing        Included is one week off, for my exam and preparing for it
-
-''Jul 30 - Aug 05:'' Handle/test special circumstances, like a lagging client,        closing the connection, etc.
-
-''Aug 06 - Aug 12:'' Port XMMS Rootvis, heavily testing of formatting, low        interval settings, etc.
-
-''Aug 13 - Aug 19:'' One week without a specific task, so if anything goes deeply        wrong, there is still a time buffer
-
+''Aug 13 - Aug 19:'' Port XMMS Rootvis, heavily testing of formatting, low        interval settings, etc.
 
 ----
 ''Final evaluation starts..''
 ----
 
 
-''Aug 20 - September:'' As I have lots of time, besides evaluation, this is for the proposed optional deliveries, tuning Rootvis, etc. :-)
+''Aug 20 - September:'' As I have lots of time, finally get it all right! Because of the tighter timeline, there will be many rough edges and needed fixes. I guess there will also be better ways needed to expose the functionality on the client side.
