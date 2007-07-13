@@ -1,3 +1,10 @@
+== Friday July 13 ==
+
+Finally, a simple volume meter works (without correct timing). Some hours later, and the libvisual client would be it. Anyway, there is lots to do.
+
+I'm too tired for details now.
+
+
 == Thursday June 7 ==
 
 I digged through the server and client code and found the appropriate places to insert new bugs. Creating and sharing the SHM is on it's way. I'm still busy at school :/
