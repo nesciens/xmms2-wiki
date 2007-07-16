@@ -4,8 +4,8 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
 * &#10003; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
 ** &#10003; add a skip wizard button
-** &#10063; show a progress while trying to connect to xmms2d
-** &#10063; show connect result not as a popup
+** &#10003; show a progress while trying to connect to xmms2d (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=fbc63205e482dcf037ffef706eb5140f323e51c7 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9cafc74b70e0df58d87ab51a353946087447a6b2 Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=c47d5dadcd5120d5061a86293dc501508ceb98e1 Part3]))
+** &#10003; show connect result not as a popup (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=fbc63205e482dcf037ffef706eb5140f323e51c7 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9cafc74b70e0df58d87ab51a353946087447a6b2 Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=c47d5dadcd5120d5061a86293dc501508ceb98e1 Part3]))
 * &#10063; Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
 ** &#10003; Shortcut handling should be splitted out and use QShortcut instead.
 ** &#10003; Less direct access to the dialogs / other widgets. Rewrite to use more signals
