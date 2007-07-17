@@ -105,7 +105,7 @@ Song id number 18 only
 All songs in the collection test1
  $ xmms mlib search in:test1
 
-Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  WARNING: As of 4 Jul 2007, DOES NOT WORK, but there appears to be code for it.
+Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  NOTE: Grouping does not properly work in DrJekyll; it has been fixed in the current -devel version, to be released as DrK.
 
  $ xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
 
