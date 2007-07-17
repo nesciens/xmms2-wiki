@@ -52,5 +52,15 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * Application Icon missing, make sure for any OS
 * Make sure that the Connection code can handle disconnect, reconnect, connect to multiple and similar operations. Ideally we should be able to switch server without quiting esperanza and not have to relaunch it when it disconnects.
 * make the playlist columns editable, add / remove items which can be shown in the context area of a playlistitem
-* make an album playlist view like the current playlist, but instead of "artist - title" rows it shows "artist - album" (or "artist - album (songcount - totaltime)"). Multiple songs in a row result in one album line. Single songs could be showed as normal songs. The context area should show the songs in the selected album (songs that are missing could have another color like a disabled row) and some cover art.
+* Make an album playlist view. This looks like the current playlist but:
+** instead of "artist - title" rows it shows "artist - album" (or "artist - album (songcount - totaltime)")
+** multiple songs in a row result in one album line
+** single songs could be showed as normal songs
+** when an album row is selected, the context area shows some cover art and the songs in the album
+** missing songs are disabled rows
+** disabled rows have a menu option to add the songs (when available in medialib)
+** incomplete albums have a menu option to add the missing songs and set the right order (when available in medialib)
+** previous and next album buttons (also next random album)
+** most of the album info should be based on [http://musicbrainz.org/doc/XMLWebService MusicBrainz] data, but there must be some fuzzy logic for songs without MusicBrainz ids
+
 * one step further Playlist Stuff: make a pluginAPI for a playlist widget, so we can support simple Playlists as Title per row, normal like the current Playlist and advanced Playlists like the Albumplaylist. And make theses playlists chooseable via preference dialog.
