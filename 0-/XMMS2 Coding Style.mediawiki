@@ -65,7 +65,7 @@ NOT:
 == Trailing whitespace ==
 * Avoid trailing whitespace.
 
-Vim users put this in your .vimrc:
+Vim users put this in your .gvimrc:
  highlight WhitespaceEOL ctermbg=red guibg=red
  match WhitespaceEOL /\s\+$/
 
