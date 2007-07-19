@@ -1,0 +1,1 @@
+{{Client |name=wiixm| author=[[Florian Ragwitz]]| website=http://git.perldition.org/?p=wiixm.git;a=summary| version=0.01| devlanguage=C| ui=none| description=wiixm is an program that allows you to control xmms2 using a Nintendo wii remote. It's maintained by [[Florian Ragwitz]]. It can be found at http://git.perldition.org/?p=wiixm.git;a=summary}}
