@@ -43,6 +43,7 @@ All current clients should be found here.
 {{ClientTableEntry|XMMS2Musica| Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
 {{ClientTableEntry|XMMS2tray| Tray Icon / GTK | Python | in development | *nix GTK+2 system tray integration }}
 {{ClientTableEntry|XmmsDeskbar| Gnome Deskbar Plugin | Python | in development | When typing in the input field of deskbar, albums, songs and artists are queried }}
+{{ClientTableEntry|xmms2-osd| On-Screen Display / XOSD | Python | not actively developed | Simple song info on-screen display }}
 {{ClientTableEntry|xmms2_jump| Quick Search (GTK/curses) | C++ | in development | Let's you search your playlist in real time. }}
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|xmms2Plugin| Plugin for irssi | C++ | in development | Control and query xmms2 within irssi }}
