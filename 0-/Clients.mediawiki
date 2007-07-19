@@ -64,7 +64,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 == General ==
 
 * [[Client:gx2osd | gx2osd]] shows playing information as an On-Screen Display
-* [[Client:xmms2-osd | xmms2-osd]] Shows playing information as an On-Screen Display, intended to be used with beryl and the like
+* [[Client:xmms2-osd | xmms2-osd]] shows playing information as an On-Screen Display, intended to be used with beryl and the like.
 * [[Client:Camio | Camio]] is a small dock usable on every desktop
 * [[Client:snett | snett]] provides a small icon with popup-menu
 * [[Client:xmms2_jump | xmms2_jump]] lets you quickly search your current playlist
