@@ -1,4 +1,14 @@
 == Latest quotes ==
+=== 2007-07-19 - Penis Size Reprise ===
+ 21:23 < ~VxJasonxV> +xmms2 mlib search +artist |grep Count
+ 21:23 < ~VxJasonxV> +-------------[Count: 20967]-----
+ 21:23 < puzzles> i have 43 for both :)
+ 21:23 < ~VxJasonxV> +you have a small mlib O_o
+ 21:23 < puzzles> yeah, i don't need to make up for anything
+ 21:23 < ~VxJasonxV> +"|
+ 21:23 < ~VxJasonxV> +:|
+ 21:23 < ~VxJasonxV> +fuck you
+
 === 2007-06-16 ===
  12:54 < tilman> !waf
  12:54 < ~SkitIDet> tilman: "waf" -> (#1) vastly superior to any software known 
