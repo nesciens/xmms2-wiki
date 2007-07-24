@@ -27,7 +27,7 @@ All current clients should be found here.
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
-{{ClientTableEntry|nyello| console, interactive | C++ | in development | powerfull pseudo-shell interface }}
+{{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Remuco| Mobile Phone / Bluetooth | JavaME, C | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
