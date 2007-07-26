@@ -183,6 +183,8 @@ default, directories are added recursively.
  -s, --static             Add matching media as a static list of entries,
                           rather than a dynamic filter.
 
+''Note: --static might not be needed; add should probably add "all media matching the pattern" to the playlist or the collection, and another (collection) command should be used to "augment" or modify the dynamic pattern of a saved collection.''
+
 ==== remove [options] <pattern> ====
 
 Remove the matching media from a playlist or a collection.  Some
@@ -194,6 +196,8 @@ options are only relevant when adding to playlists or collections.
  -c, --collection <name>  Remove from a given collection.
  -s, --static             Remove matching media as a static list of entries,
                           rather than a dynamic filter.
+
+''Note: See remark about --static for the add command.''
 
 ==== move [options] <pattern> ====
 
