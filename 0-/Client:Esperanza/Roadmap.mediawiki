@@ -4,8 +4,8 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
 * &#10003; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
 ** &#10003; add a skip wizard button
-** &#10003; show a progress while trying to connect to xmms2d (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=fbc63205e482dcf037ffef706eb5140f323e51c7 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9cafc74b70e0df58d87ab51a353946087447a6b2 Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=c47d5dadcd5120d5061a86293dc501508ceb98e1 Part3]))
-** &#10003; show connect result not as a popup (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=fbc63205e482dcf037ffef706eb5140f323e51c7 Part1], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=9cafc74b70e0df58d87ab51a353946087447a6b2 Part2], [http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=c47d5dadcd5120d5061a86293dc501508ceb98e1 Part3]))
+** &#10003; show a progress while trying to connect to xmms2d
+** &#10003; show connect result not as a popup
 * &#10063; Rewrite playerwidget.cpp. This file is huge and does a lot of strange stuff. It should be split in smaller parts:
 ** &#10003; Shortcut handling should be splitted out and use QShortcut instead.
 ** &#10003; Less direct access to the dialogs / other widgets. Rewrite to use more signals
@@ -16,7 +16,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 *** &#10063; make serverbrowser and firsttimewizard another type of dialog plugin that can be accessed in some other way. First we need to define that interface then write the small code needed.
 *** &#10063; convert growl, systemtray, globalshortcut to plugins that doesn't have to be tied into the ui code. same here, define the interface and then write the code
 *** &#10063; playlist buttons doesn't work
-*** &#10003; shortcuts from dialogs work (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=cbf033e0dab2450681a1bcf27b24436a88ed6f21 Part1]))
+*** &#10003; shortcuts from dialogs work
 * &#10063; Split preferences dialog into preference manager / dialog.
 ** &#10003; Write the manager
 ** &#10003; Write the dialog
@@ -28,7 +28,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 ** &#10063; Animations when the medialib is shown?
 * &#10003; closing the Esperanza window should not make the app quit, but minimize it to tray. perhaps this can be an option in the preferences dialog.
 * &#10003; no entry in windowlist when tray icon is active.
-** &#10003; no entry in windowlist for minimode too (done in esperanza-ephraim.git ([http://git.xmms.se/?p=esperanza-ephraim.git;a=commit;h=37a55c7dfbef03ae9b5d0b8bbe5851772e94a79e Part1]))
+** &#10003; no entry in windowlist for minimode too
 * &#10003; add a setting, where you can choose between single- or double-click on the trayicon to show respectively hide the playerwindow.
 * &#10003; add GlobalShortcut functionality for e.g. play <=> pause, next song, previous song, show <=> hide window
 
