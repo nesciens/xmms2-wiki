@@ -1,1 +1,2 @@
 I've had ideas for a while of making an Emacs Client for a music playing daemon such as [http://musicpd.org/ mpd]. Now a client to XMMS2 seems like the thing to do. Get in touch with me if you want to help. -- [[User:BjÃ¶rn LindstrÃ¶m|BjÃ¶rn LindstrÃ¶m]]
+  You may want to look into EMMS. [http://www.gnu.org/software/emms/] --[[User:Andrewy|Andrewy]] 21:57, 27 July 2007 (CEST)
