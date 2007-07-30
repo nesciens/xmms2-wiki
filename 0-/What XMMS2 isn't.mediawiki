@@ -6,7 +6,7 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * clean your house.
 ** ... unless you hook it up with your [[Wikipedia:Emacs|emacs]].
 * walk your dog.
-* bring about [[Wikipedia:Wolrd Peace|world peace]].
+* bring about [[Wikipedia:World Peace|world peace]].
 * destroy [[Wikipedia:Microsoft|Microsoft]].
 * play video.
 ** ... except for the audio tracks.
