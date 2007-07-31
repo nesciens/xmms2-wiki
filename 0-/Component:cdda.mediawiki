@@ -32,7 +32,7 @@ Unfortunately it won't sort the entries properly at the moment.
 You can specify the device which the plugin should use by modifying the cdda.device config value.
 
 =Links=
-* add links here
+* http://www.gnu.org/software/libcdio/
 
 ===See also:===
 * [[Component:Transport | Transport]]
