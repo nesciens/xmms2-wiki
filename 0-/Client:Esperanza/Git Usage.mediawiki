@@ -37,13 +37,11 @@ To start working with a specific branch it's recommended that you don't work in 
 
 == other remote branches ==
 
-if you want to add multiple remotes to your tree, for example the master tree, edit .git/config and add the following:
- 
- [remote "main"]
- url = git.xmms.se:/xmms2/esperanza.git
- fetch = +refs/heads/*:refs/remotes/main/*
+if you want to add multiple remotes to your tree, for example the master tree, do the following:
 
-the string "main" here is optional, note that it's in two places, first what it should be called and then in what namespace it should end up.
+ git remote add main git.xmms.se:/xmms2/esperanza.git
+
+the string "main" can be choosen as you want it. But remember the next commands use the choosen string, so replace all "main" with your namespace name.
 
 to update a remote branch use the command
 
