@@ -20,3 +20,11 @@ I think one way to handle things is a bad idea here. Tags are already a strange 
 Once it's dead simple to tag your music with ''mood: chill'' it's dead simple to ''xmms2 mlib searchadd mood:chill''. Where does standardizing on this get us?
 
 -[[User:Puzzles|Puzz]] 18:51, 1 August 2007 (CEST)
+
+
+Yes, thats what I wanted to express with splitting tags, but you still have to define some standards for clients: otherwise one calls it speed, anohter bpm, one calls it rating, other vote, ... it already is done for rating, but for speed, mood, what ever else you need, we still have to find a standard.
+
+Further more, some songs can have more then one mood, so arrays have to be handed, or we have to use id lists inside a Mood Namespace. That's the problem, I know there are solution for it, but there are too many, and I think it will be confusing if every client uses its own.
+
+
+-wabu 19:05, 1 August 2007 (CEST)
