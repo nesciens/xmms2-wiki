@@ -21,7 +21,6 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Playlist Plugins as Client]]
 * [[Collaborative Playlist Management]]
 * [[Queue Playlist]]
-* [[Mediatags]] vs. Playlists
 
 == Clients ==
 * '''[[Album Covers]]'''
