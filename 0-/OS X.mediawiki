@@ -1,31 +1,7 @@
-== Installation notes ==
- 11:53 <eleusis> so how exactly do you build xmms2 on osx, the Right(tm) way? :P
- 11:53 <tru_> you install glib2, mad, vorbis from fink.
- 11:53 <eleusis> mhm
- 11:53 <tru_> you make a .pc file for your sqlite.
- 11:54 <tru_> you install pyrex, and scons the normal way (download and run setup.py install)
- 11:54 <eleusis> sqlite3 from fink?
- 11:54 <tru_> eleusis: no, tiger ships sqlite3. with nice patches that aren't included in the 
-             fink one... yet.
- 11:54 <eleusis> right
- 11:54 <eleusis> so tiger comes with sqlite3 headers and all?
- 11:55 <tru_> yes, but not the .pc file.
+== Installation notes == 
+Download and install [http://www.macports.org/ macports]
 
-Here is the .pc file I use. Drop it in /sw/lib/pkgconfig
- prefix=/usr
- exec_prefix=${prefix}
- libdir=${exec_prefix}/lib
- includedir=${prefix}/include
- Name: sqlite3 
- Description: SQLite
- Requires:
- Version: 3.2.1
- Libs: -L${libdir} -lsqlite3
- Cflags: -I${includedir}
-
-
-* if you compile with fink add the CPPPATH=/sw/include argument when compiling with scons
-* if  you compiled dependencies with darwinports, try the following command: scons CPPPATH=/opt/local/include LIBPATH=/opt/local/lib
+Install sqlite through macports with the command: "port install sqlite3". Now you should be good to compile xmms2 on your Mac OS X Tiger.
 
 == CoreAudio output ==
 XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hacked ESD.
