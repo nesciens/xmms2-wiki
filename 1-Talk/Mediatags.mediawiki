@@ -1,0 +1,22 @@
+It sounds like what you want depends on clients. And I'm not sure a tag ''field'' makes sense. Why not use as many fields as you need? Examples: mood: happy,chill; speed: 120bpm; rating: 5 stars. If you want to stick them all in a tag field, you're talking about losing the keys (what do those tags describe now?) and you'll need a delimiter at the simplest level, or array support (which is unimplemented) at the most complex option.
+
+==Splitting Tags==
+For my own personal use I have a client that reads the URL of an item and creates tags from it. Specifically, it can take a string like ''Artist Artisson feat. Artisson Twins - Title McTitle (Swedish Fish Remix)'' and throw tags in the medialib:
+;artist: Artist Artisson
+;featuring: Artisson Twins
+;title: Title McTitle
+;mix: Swedish Fish Remix
+
+This does a lot for me. I can do an exact search for artist now (because with most tagging schemes, artist looks like ''Artist Artisson feat. Artisson Twins'') instead of ''Artist Artisson%''. I can easily snatch remixes, originals, or both without a similar hack like ''Title McTitle%''
+
+I'm not even sure this has much to do with what you were describing, but it does afford you some power that crappy tagging schemes don't.
+
+==Tagging Media==
+No client other than the CLI supports this. And just supporting it isn't enough--it needs to be done nicely. GUI clients should offer you a way to rate tracks easily, such as clicking on some stars in the playlist. Tags should be similarly easy to add. My own thoughts were to put this into RXMMS2 in a way that looks similar to Alt-3 (File Info) from Winamp 2, but with some text input lines at the bottom for key and value.
+
+==Conclusion==
+I think one way to handle things is a bad idea here. Tags are already a strange and abstract thing. To try to apply some sort of standard to them is a bit backwards. Tags will only have meaning to the user, and each user will tag differently. For example, the way I use artist, featuring, title, and mix tags, is not the way Joe Rockmusicsson Jr. will use them and Joe might not need so many tags or may need more. The one thing we ''do'' need, however, is clients to support easy medialib tagging.
+
+Once it's dead simple to tag your music with ''mood: chill'' it's dead simple to ''xmms2 mlib searchadd mood:chill''. Where does standardizing on this get us?
+
+-[[User:Puzzles|Puzz]] 18:51, 1 August 2007 (CEST)
