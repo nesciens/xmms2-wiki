@@ -1,0 +1,40 @@
+= Media tags =
+
+Short into about what I mean with media tags: save more information as genre, artist, ... in a standardized way.
+
+== First Idea: Tag you Media ==
+
+With the create of dynamic playlists out of collections, it would be interesting to create something like tags: A File can have some tags, like 'chillout', 'noisy', 'fast', ... Inside the tag information can be placed, that does not fit anywhere else.
+
+As soon as you have tags, collections are a very powerful tool: You can easily express things like all fast metal, that is not noisy. Now you can have your dynamic playlist for very situation you need.
+
+== Second Idea: Split Tags ==
+
+It also would be possible to Split the tag field into multiple things, like mood, speed, and whatever you like.
+
+== Conclusion: We need one way to handle things ==
+
+Because I like the idea to be able to express more and it would not require to change code inside the daemon,  it would be nice to have a standard way to express these kinds of media tags, imho.
+
+
+= Playlists vs. Tags =
+
+I know that all this can be done with normal playlist, but, you also can do it the other way round. Handle playlists as tags: Just have a field called playlist (if we split the tags), where all playlists a song is in appear.
+
+So, its just about what you like more and in which way you can handle you media more easy. (hey, sed is turing complete, nevertheless xmms2 is written in c ;) )
+
+I don't say, throw away playlists, I just would like to be able express more things with a semantic that is more easy to use for me.
+
+
+= Think and Contribute =
+
+So, what do you like about it, what not. Have you any additional ideas, what would you change ...
+
+== Vote ==
+
+* general
+  I generally like the idea:            1
+  you suck, get away with that shit:    0
+* implementaion
+  have one tag field:                   0
+  split the tags:                       1
