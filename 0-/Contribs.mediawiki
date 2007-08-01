@@ -25,4 +25,12 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | mor
 
 {{Contrib| title=Medialib cleaner| author=Sham Chukoury| description=Simple script to remove items marked as 'unavailable' in the medialib (which can include things like JPEG and text files).| moreinfo=| files=* [http://xmms2.xmms.se/contrib/files/xmms2-clean-mlib.py xmms2-clean-mlib.py]}}
 
+{{Contrib| title=xmms2_random_album | author=ashtophet| description=Quick shell script to add a random album to a dedicated playlist. It will be obsolete when random album playback is available natively. NOTE: You have to edit source and change max_num_id (max id on mlib)!! If you use it, find annoyances, improvements, suggestions... please, contact me (mail is at source).| moreinfo=| files=* [http://ashtophet.freehostia.com/xmms2_random_album.sh xmms2_random_album.sh]}}
+
+{{Contrib| title=xmms2lyrics | author=ashtophet| description=Very simple shell script to fetch current xmms2 song lyrics (w3m) and show them (w3m) using google's(tm) "feeling lucky" feature. Based on  [http://ashtophet.freehostia.com//mpdlyrics-0.0.5.1 mpdlyrics].| moreinfo=| files=* [http://ashtophet.freehostia.com/xmms2lyrics.sh xmms2lyrics.sh]}}
+
+{{Contrib| title=xmms2wiki | author=ashtophet| description=Very simple shell script to fetch wikipedia article on current xmms2 playing song and show it using w3m. Based on [http://ashtophet.freehostia.com/mpdwiki-0.0.3.1 mpdwiki]. | moreinfo=| files=* [http://ashtophet.freehostia.com/xmms2wiki.sh xmms2wiki.sh]}}
+
+{{Contrib| title=Fvwm menu | author=ashtophet| description=Simple fvwm2 menu to control xmms2. Based on univac's fvwm config. | moreinfo=| files=* [http://ashtophet.freehostia.com/screenshots.html config]}}
+
 [[Category:Users]]
