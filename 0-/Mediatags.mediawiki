@@ -1,6 +1,9 @@
 = Media tags =
 
-Short into about what I mean with media tags: save more information as genre, artist, ... in a standardized way.
+Short into about what I mean with media tags: save more information as genre, artist, ... in a standardized way. 
+
+It can be handled by the client, so all we need to do is to discuss how to express things.
+(And if I am the only one who like the idea)
 
 == First Idea: Tag you Media ==
 
@@ -15,7 +18,6 @@ It also would be possible to Split the tag field into multiple things, like mood
 == Conclusion: We need one way to handle things ==
 
 Because I like the idea to be able to express more and it would not require to change code inside the daemon,  it would be nice to have a standard way to express these kinds of media tags, imho.
-
 
 = Playlists vs. Tags =
 
