@@ -1,54 +1,21 @@
-= Media tags =
+After a [[Talk:Mediatags|discussing]] about how to tag media with more information, we concluded the best way is to implement it transparent on the client side. As clients normally don't need that information, it is enough to have a local style for managing the media. If I client still wants to add a shortcut for certain fields or wants to show statistics about certain fields, here's an idea for a standard interface.
+{| class="wikitable" 
+! field
+! multi
+! description
+! examples
+|- 
+| mood   || yes || || chillout, aggressive
+|- 
+| style  || yes || addition to genre, you can have a Chinese sounding pop song) || chinese, medival
+|- 
+| speed || no  || speed in words || lame, slow, normal, fast, speeding
+|- 
+| bpm   || no  || speed in bpm || 120, 90
+|- 
+| tag   || yes || anyithing else || foo, bar
+|-
+|}
+Feel free to add/change things, as this table still is evolving.
 
-Short into about what I mean with media tags: save more information as genre, artist, ... in a standardized way. 
-
-It can be handled by the client, so all we need to do is to discuss how to express things.
-(And if I am the only one who like the idea)
-
-== First Idea: Tag you Media ==
-
-With the create of dynamic playlists out of collections, it would be interesting to create something like tags: A File can have some tags, like 'chillout', 'noisy', 'fast', ... Inside the tag information can be placed, that does not fit anywhere else.
-
-As soon as you have tags, collections are a very powerful tool: You can easily express things like all fast metal, that is not noisy. Now you can have your dynamic playlist for very situation you need.
-
-== Second Idea: Split Tags ==
-
-It also would be possible to Split the tag field into multiple things, like mood, speed, and whatever you like.
-
-== Conclusion: We need one way to handle things ==
-
-Because I like the idea to be able to express more and it would not require to change code inside the daemon,  it would be nice to have a standard way to express these kinds of media tags, imho.
-
-= Playlists vs. Media Info =
-
-I know that all this can be done with normal playlist, but, you also can do it the other way round. Handle playlists as tags: Just have a field called playlist (if we split the tags), where all playlists a song is in appear.
-
-So, its just about what you like more and in which way you can handle you media more easy. (hey, sed is turing complete, nevertheless xmms2 is written in c ;) )
-
-I don't say, throw away playlists, I just would like to be able express more things with a semantic that is more easy to use for me. 
-a
-
-== Third Idea: Collection Abstraction ==
-
-As I meditated about handling all with playlists, I suddenly realized what I missed about handling it with playlists: You can have you noizy, fast, chillout playlists(or idlists in a Tag Namespace eg. taglists) and even can put some together using the collections, but in the process of creation, something is lost: After you create your new collection, it will just be union of id lists and you have know way to get the information of the tag back. If you add a new song to the base taglist, the new Collection won't be updated.
-
-So, perhaps the best way to handle it, would be a new Namespace with idlists, and, what is even more improtant, a way to refer to Collections by name, not only by its data.
-
-Perhaps thats the best way to handle multiple tags, but it would have to be implemented inside xmms2d.
-
-= Think and Contribute =
-
-So, what do you like about it, what not. Have you any additional ideas, what would you change ...
-
-== Vote ==
-
-* generally
-  I like the idea of tags  :            2
-  you suck, get away with that shit:    0
-
-* implementaion
-  have one tag field in media info:     0
-  split the tags in media info:         1
- 
-  have a tag Namespace with taglists:   1
-  have multiple Namespaces:             0
+Some fields can have more as one value. unless xmms2d supports arrays as values, a semicolon separated list is used.
