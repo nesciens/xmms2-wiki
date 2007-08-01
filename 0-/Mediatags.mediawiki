@@ -1,6 +1,6 @@
 After a [[Talk:Mediatags|discussing]] about how to tag media with more information, we concluded the best way is to implement it transparent on the client side. As clients normally don't need that information, it is enough to have a local style for managing the media. Clients only have to support editing the mlib info of a track. 
 
-If I client still wants to add a shortcut for certain fields or wants to show statistics about certain fields, here's an idea for a standard interface.
+If a client still wants to add a shortcut for certain fields or wants to show statistics about certain fields, here's an idea for a standard interface.
 {| class="wikitable" 
 ! field
 ! multi
