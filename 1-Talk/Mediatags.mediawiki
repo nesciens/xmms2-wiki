@@ -32,3 +32,8 @@ Further more, some songs can have more then one mood, so arrays have to be hande
 The only reason to standardize is if these tags are intended to be machine-readable. BPM might make sense for some music-fingerprinting or something. (Maybe OFA will do this?) And mood would only need to be standardized if clients have some internal static collection that expects a mood key. As far as mood goes, isn't a delimiter enough without the added complexity of full-blown arrays? I can't think of any mood words that have a comma or semicolon in them, and that is easy to parse, even in C.
 
 -[[User:Puzzles|Puzz]] 21:05, 1 August 2007 (CEST)
+
+==Collections Abstraction==
+It seems like you would be doing things wrong from the start if you made a ''playlist'' of a certain mood rather than a collection. Tag your files to reflect the mood you want in your playlist (noisy, fast, chill) and then you can use them as regular collections. Simply search for mood:noisy AND mood:fast and you have your dynamic annoying party mix german techno playlist all set for your next festival.
+
+-[[User:Puzzles|Puzz]] 21:36, 1 August 2007 (CEST)
