@@ -1,5 +1,5 @@
 __NOTOC__
-{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page)| version=0.3.0rc1| devlanguage=C++| ui=Qt4| screenshots=See [[#Features|below]]| description=
+{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page)| version=0.4.0rc1| devlanguage=C++| ui=Qt4| screenshots=See [[#Features|below]]| description=
 == Intro ==
 Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
 
@@ -20,6 +20,11 @@ Please see the [[Client:Esperanza/Roadmap|Roadmap]] for new and upcoming feature
 * Last.fm browser
 
 == News ==
+
+=== Esperanza 0.4.0rc1 (2007-08-01) ===
+A new Release Candidate is up. Please test and report bugs.
+
+[http://exodus.xmms.se/~tru/esperanza/0.4/ Download.]
 
 === Esperanza 0.3.0 (2007-04-20) ===
 Release is up.
