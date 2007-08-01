@@ -25,8 +25,16 @@ I know that all this can be done with normal playlist, but, you also can do it t
 
 So, its just about what you like more and in which way you can handle you media more easy. (hey, sed is turing complete, nevertheless xmms2 is written in c ;) )
 
-I don't say, throw away playlists, I just would like to be able express more things with a semantic that is more easy to use for me.
+I don't say, throw away playlists, I just would like to be able express more things with a semantic that is more easy to use for me. 
+a
 
+== Third Idea: Collection Abstraction ==
+
+As I meditated about handling all with playlists, I suddenly realized what I missed about handling it with playlists: You can have you noizy, fast, chillout playlists(or idlists in a Tag Namespace eg. taglists) and even can put some together using the collections, but in the process of creation, something is lost: After you create your new collection, it will just be union of id lists and you have know way to get the information of the tag back. If you add a new song to the base taglist, the new Collection won't be updated.
+
+So, perhaps the best way to handle it, would be a new Namespace with idlists, and, what is even more improtant, a way to refer to Collections by name, not only by its data.
+
+Perhaps thats the best way to handle multiple tags, but it would have to be implemented inside xmms2d.
 
 = Think and Contribute =
 
@@ -34,9 +42,13 @@ So, what do you like about it, what not. Have you any additional ideas, what wou
 
 == Vote ==
 
-* general
-  I generally like the idea:            1
+* generally
+  I like the idea of tags  :            1
   you suck, get away with that shit:    0
+
 * implementaion
-  have one tag field:                   0
-  split the tags:                       1
+  have one tag field in media info:     0
+  split the tags in media info:         0
+ 
+  have a tag Namespace with taglists:   1
+  have multiple Namespaces:             0
