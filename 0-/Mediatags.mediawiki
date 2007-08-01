@@ -19,7 +19,7 @@ It also would be possible to Split the tag field into multiple things, like mood
 
 Because I like the idea to be able to express more and it would not require to change code inside the daemon,  it would be nice to have a standard way to express these kinds of media tags, imho.
 
-= Playlists vs. Tags =
+= Playlists vs. Media Info =
 
 I know that all this can be done with normal playlist, but, you also can do it the other way round. Handle playlists as tags: Just have a field called playlist (if we split the tags), where all playlists a song is in appear.
 
