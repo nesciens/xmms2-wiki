@@ -43,12 +43,12 @@ So, what do you like about it, what not. Have you any additional ideas, what wou
 == Vote ==
 
 * generally
-  I like the idea of tags  :            1
+  I like the idea of tags  :            2
   you suck, get away with that shit:    0
 
 * implementaion
   have one tag field in media info:     0
-  split the tags in media info:         0
+  split the tags in media info:         1
  
   have a tag Namespace with taglists:   1
   have multiple Namespaces:             0
