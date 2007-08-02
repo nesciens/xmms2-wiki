@@ -1,4 +1,12 @@
-After a [[Talk:Mediatags|discussing]] about how to tag media with more information, we concluded the best way is to implement it transparent on the client side. As clients normally don't need that information, it is enough to have a local style for managing the media. Clients only have to support editing the mlib info of a track. 
+= Media Tags =
+
+After a [[Talk:Mediatags|discussing]] about how to tag media with more information, we concluded the best way is to implement it transparent on the client side for now.
+
+For more details and different approaches, see test [[Talk:Mediatags|discussing]] page.
+
+== media info fields with arrays ==
+
+As clients normally don't need that information, it is enough to have a local style for managing the media. Clients only have to support editing the mlib info of a track. 
 
 If a client still wants to add a shortcut for certain fields or wants to show statistics about certain fields, here's an idea for a standard interface.
 {| class="wikitable" 
@@ -21,3 +29,9 @@ If a client still wants to add a shortcut for certain fields or wants to show st
 Feel free to add/change things, as this table still is evolving.
 
 Some fields can have more as one value. unless xmms2d supports arrays as values, a semicolon separated list is used.
+
+== collections with special names ==
+
+It also would be possible to have a collection with the name 'mood:aggressive' inside a tag namespace, so songs can be inside more lists and it is more easy to combine media inside special tags.
+
+One problem with this approach is, that you would have to be able to reference a collection by name, not by its contents. So that would involve a change inside the daemon.
