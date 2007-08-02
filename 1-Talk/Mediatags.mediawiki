@@ -95,3 +95,25 @@ The only reason to standardize is if these tags are intended to be machine-reada
 It seems like you would be doing things wrong from the start if you made a ''playlist'' of a certain mood rather than a collection. Tag your files to reflect the mood you want in your playlist (noisy, fast, chill) and then you can use them as regular collections. Simply search for mood:noisy AND mood:fast and you have your dynamic annoying party mix german techno playlist all set for your next festival.
 
 -[[User:Puzzles|Puzz]] 21:36, 1 August 2007 (CEST)
+
+== Nice idea, more thinking needed ==
+
+Extra-tagging is nice. Mood, style, whatever; users want it.
+
+It would certainly be good to '''define a set of "standard" tags''', such as rating, mood, etc. If only so that clients know the domain of values allowed for them (e.g. rating). However it sounds good to also allow the user to specify her own tag types, assuming her client lets her do so. So we should come up with a method that allows arbitrary tagging, and simply some tags would have "conventions" that the client devs would be invited to follow (or burn in Hell).
+
+
+In the case of '''collection-based tags''', I have already thought of adding a Tags namespace. It would not necessarily have to be restricted to idlists, since you might want to also allow saving "All music by Pink Floyd" under the 'quality' tag "the most awesome music in the universe and beyond". Or have an "emo" mood tag that contains all the music tagged as "sad", "dark" plus some stuff you add yourself. I think dynamic collections would make sense here, and they are one of the benefits on this approach. However one will have to make it usable interface-wise, naturally.
+
+I think one namespace per type of tag is not the best idea, because it disallows easily adding new types of tags. So a workaround would be something like naming collections according to the scheme "$type:$name", e.g. "mood:sexual" or "tempo:boring".
+
+In the case of '''property-based tags''', I agree that list properties sound nice â€” conceptually. However I don't believe it makes for a trivial interface. Instead of the current get/set scheme we have, you would need to have a add/get/remove scheme, and renaming would have to be done by removing the previous value and adding the new one; removing all would have to be done by iterating, or adding a new clear action. It's also harder to formalize querying as simply as with a single value: how do you ask for all media that have "mood=suicidal" and that mood only? It cannot be done using primitive match & complement filters, so you need to add complexity.
+
+And naturally, it is incompatible with the current medialib schema, so maybe the best thing to do it poke anders and see if he plans to support this feature in the hypothetical sqlite replacement. Also, it would probably require some rethinking on the collection level. I am not formally against it, but I am not blindly for it either unless the consequences of this addition can be properly explicited.
+
+
+I believe the most interesting/hard question is to '''choose between collection- and property-based tags'''. There are good arguments for both. In favour of collection-based tags: allows dynamic tagging according to filters or other tags, easier handling of lists of tag values. In favour of property-based tags: works out of the box ''now'', might yield better query/listing/matching performance with the current way of things (especially if you want to list values for a tag for a list of media), allows partial matching of tag values. These lists are absolutely not exhaustive.
+
+Maybe a combination of both makes sense. It should just be clear in the interface. But for instance it might be more natural to use a collection when building a set of stuff to play for a party, although an arbitrary tag could also be used for that. In the case of rating, it's pretty clear a property is the way to go. So I guess more thoughts should be given to this question, with clear arguments for both, and also clear definition of what the needs actually are in terms of tagging (conceptually, and in practice).
+
+03:37, 2 August 2007 (CEST) [[User:Theefer|Theefer]]
