@@ -383,7 +383,7 @@ Signal is emitted when the "Media Player" plays another "Track". Argument of the
    </signal>
 
 ==== StatusChange ==== 
-Signal is emitted when the status of the "Media Player" change. The argument has the same meaning than the value returned by GetStatus.
+Signal is emitted when the status of the "Media Player" change. The argument has the same meaning as the value returned by GetStatus.
 
    <signal name="StatusChange">
     <arg type="i"/>
