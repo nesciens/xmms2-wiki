@@ -5,9 +5,11 @@
 |nmilestone=[[Summer of Code 2007/Generated IPC/Milestones | Milestones]]
 
 |description=
-The project will be split into two parts, generating the server code and the client code. The server side currently sets up the IPC file descriptor, reads/parses the raw IPC commands, and executes the commands in the server.
+The project will be split into two parts, generating the server code and the client code.
 A high-level description of this functionality would be created and used to generate the code for this. The client side currently consists of an xmmsclient library that provides a high-level C interface to the XMMS IPC protocol, and is used as a 'glue layer' by the higher-level language bindings, such as perl and python. The work on this side would consist of defining a high-level description of the interface provided by xmmsc, generalizing it a bit, and then generating the C binding from this.
-I will then need to test the C binding extensively for problems as the rest of the bindings depend on its correctness. I can then generate the perl, python, etc. bindings. The language I will be using for generating the code is Python.
+The server-side consists of generating code that can serialize/deserialize commands and arguments from the client side and properly dispatch them to the correct code inside the server.
+
+I will then need to test the C binding extensively for problems as the rest of the bindings depend on its correctness. The language I will be using for generating the code is Python.
 
 |links=
 ...
