@@ -4,6 +4,8 @@ After a [[Talk:Mediatags|discussing]] about how to tag media with more informati
 
 For more details and different approaches, see test [[Talk:Mediatags|discussing]] page.
 
+See also [[Generic properties policy]].
+
 == media info fields with arrays ==
 
 As clients normally don't need that information, it is enough to have a local style for managing the media. Clients only have to support editing the mlib info of a track. 
