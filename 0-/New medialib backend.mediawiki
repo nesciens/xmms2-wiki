@@ -50,15 +50,15 @@ Each entry is just a set of triplets. There are just two triplet-types (in the f
 
 A property is just a string-pair. Strings could(/should) be stored in a stringtable. Meaning that strings just are an integer, hence a string-pair is just an integer-pair, also known as an interer of twice bit-width.
 
-Entry = [(HasProperty, (stringnum("url"), stringnum("file:///tmp/x.mp3"))),
-         (HasProperty, (stringnum("title"), stringnum("Korv"))),
-         (HasProperty, (stringnum("type"), stringnum("song"))]
+ Entry = [(HasProperty, (stringnum("url"), stringnum("file:///tmp/x.mp3"))),
+          (HasProperty, (stringnum("title"), stringnum("Korv"))),
+          (HasProperty, (stringnum("type"), stringnum("song"))]
 
-Entry = [(HasProperty, (stringnum("album"), "Korving songs EP"))),
-         (HasProperty, (stringnum("type"), stringnum("album"))),
-         (Contains, songentry1),
-         (Contains, songentry2),
-         (Contains, songentry3)]
+ Entry = [(HasProperty, (stringnum("album"), "Korving songs EP"))),
+          (HasProperty, (stringnum("type"), stringnum("album"))),
+          (Contains, songentry1),
+          (Contains, songentry2),
+          (Contains, songentry3)]
 
 
 S4 should know (be told at startup) about the structure (ontology) so xforms setting properties doesn't have to know about it, they just do prop_set("album", "...and Justice for all") and S4 will take care of the rest.
