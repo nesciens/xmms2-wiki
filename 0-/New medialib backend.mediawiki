@@ -45,7 +45,9 @@ It tries to address a few issues:
 # There is massive replication of strings. If you have 100 "Metallica" songs in your medialib the string Metallica is duplicated in 100 entries.
 # The structure that an album/artist/genre contains songs is implicit, attributes can only be set on songs, not on albums/artists.
 
-So there is basically just two triplets (in the form subject-verb-object). Entry-Has-Property, and Entry-Contains-Entry.
+#
+
+There is basically just two triplets (in the form subject-verb-object). Entry-Has-Property, and Entry-Contains-Entry.
 
 A property is just a string-pair. Strings could(/should) be stored in a stringtable. Meaning that strings just are an integer, hence a string-pair is just an integer-pair, also known as an interer of twice bit-width.
 
