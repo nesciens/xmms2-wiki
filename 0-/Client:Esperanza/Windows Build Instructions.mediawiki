@@ -27,8 +27,11 @@ This is a guide, which should help to setup a Windows Build Environment for Xmms
    into:
    PREFIX += "c:/Programme/Xmms2/DrJekyll"
 
-
-
+   change:
+   CONFIG += console
+   into:
+   # CONFIG += console
+   except you want to have a console!
 
 == build it ==
 So far so good. Wasn't that difficult isn't it? :)
