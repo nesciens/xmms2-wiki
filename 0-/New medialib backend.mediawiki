@@ -45,7 +45,6 @@ It tries to address a few issues:
 # There is massive replication of strings. If you have 100 "Metallica" songs in your medialib the string Metallica is duplicated in 100 entries.
 # The structure that an album/artist/genre contains songs is implicit, attributes can only be set on songs, not on albums/artists.
 
-#
 
 Each entry is just a set of triplets. There are just two triplet-types (in the form subject-verb-object). Entry-HasProperty-Property, and Entry-Contains-Entry.
 
