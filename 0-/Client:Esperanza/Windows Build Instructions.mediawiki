@@ -1,0 +1,74 @@
+This is a guide, which should help to setup a Windows Build Environment for Xmms2 Client Esperanza and to build it.
+
+== prerequisites ==
+* Download current Qt4 OpenSource Edition from trolltech ==> http://trolltech.com/developer/downloads/qt/windows/ (get yourself a qt-win-opensource-X.X.X-mingw.exe )
+
+* Download DrJekyll from Puzzles ==> http://xmms2.xmms.se/~puzzles/win32/XMMS2.7z
+
+* Download Msys from Puzzles ==> http://xmms2.xmms.se/~puzzles/win32/MSys.7z
+
+* Download the Esperanza Source ==> e.g. http://git.xmms.se/snapshot.cgi?tree=esperanza.git&commit=HEAD
+
+
+
+
+== setup of the build environment ==
+1. extract the DrJekyll stuff into a folder of your choice (e.g. c:\Programme\Xmms2\DrJekyll)
+
+2. extract from the MSys.7z under MSys\include the boost folder into include\xmms2\ of your DrJekyll installation (e.g. c:\Programme\Xmms2\DrJekyll\include\xmms2, so you get a boost folder in there)
+
+3. run the Setup of trolltech, during the setup let it download the mingw stuff!!
+
+4. extract esperanza source
+
+5. edit the config.pri in esperanza source folder e.g.:
+   change:
+   PREFIX += "SET THIS TO YOUR XMMS2 INSTALL DIR"'
+   into:
+   PREFIX += "c:/Programme/Xmms2/DrJekyll"
+
+
+
+
+== build it ==
+So far so good. Wasn't that difficult isn't it? :)
+The next steps will then build esperanza and hopefully create a esperanza.exe in the esperanza source folder.
+
+1. go to Qt4 installation directory. There in the "bin" Folder, you will find a qtvars.bat. Execute it. Now you have a cmd prompt, with Qt4 Build Environment set up.
+
+2. cd to the Esperanza Source Folder
+
+3. execute "qmake"
+
+4. execute "make"
+
+
+
+
+== use it ==
+Now that you have the esperanza.exe, you need to collect some dll's and put them all together in one folder.
+
+1. Locate the MinGW Folder (from Qt4 Installation) and copy following file from the "bin" folder into a empty folder (e.g. c:/Programme/Xmms2/Esperanza )
+   * mingwm10.dll
+
+2. Locate the Qt4 Folder and copy the following files from the "bin" folder into the same folder from 1.
+   * QtCore4.dll
+   * QtNetwork4.dll
+   * QtGui4.dll
+   * QtXml4.dll
+
+3. Locate the Xmms2 DrJekyll Folder and copy the following files into the same folder from 1.
+   * libboost_signals.dll
+   * libxmmsclient.dll
+   * libxmmsclient++.dll
+
+4. Finally copy the esperanza.exe into the same folder form 1.
+
+5. Now you can execute esperanza.exe, but make sure you have xmms2d.exe running!! :D
+
+
+
+
+
+
+Have fun with your own esperanza!!
