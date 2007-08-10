@@ -1,0 +1,51 @@
+This page tries to summarize all the requirements for the new medialib backend and possible implementation notes.
+
+== How is the medialib used? ==
+We have a couple of common operations in the medialib that the new backend should be optimized for:
+
+# Inserting new entries and properties, both bulk and single.
+# Getting all properties for one entry
+# Get a list of entries that contains property X and more complex queries like property X && property Y || property Z
+# Storage of [[Collections]]
+
+It should also be:
+
+* portable
+* light dependency
+* self-contained
+* scalable, we should aim for full speed at around 70.000 - 100.000 songs in the db.
+
+== Current Implementation (SQLite) ==
+
+=== How it's done ===
+
+The schema is very simple and straightforward, each property is a row. 
+
+# inserting new entries and properties is just about inserting a new row or multiple rows.
+# select key, value from Media where id = X. Select all key,value pair for a ID number.
+# when you want to get a list of entries that contains property X with ANDs and ORs it gets really complicated it means you need a lot of joins and subselects to do it in one question.
+# this is done in a separate table.
+
+=== Pro's with this implementation ===
+* Make use of a defined standard SQL
+* Self-contained code in sqlite library
+* Easy to understand the simple operations (insert and getting all properties for one entry)
+* Mature
+
+=== Con's with this implementation ===
+* SQLite have scalability problems with so many rows in the database, it easily get 10 rows per entry. so if you have 10000 songs you get around 100000 rows
+* Implementation for ''3 - Getting a list of entries with complex query'' is very slow and not easy to overview
+* Inserting entries in bulk seems to slow down SQLite
+
+== S4 implementation ==
+
+S4 is the working name for a new database backend that Anders has been thinking about. S4 stands for Short String Storage System (iirc). The idea is to optimize the system for short string storage which SQL isn't optimized for. The idea is to store each entry as a Object and each object has properties.
+
+#
+#
+#
+#
+
+=== Pro's with this implementation ===
+
+=== Con's with this implementation ===
