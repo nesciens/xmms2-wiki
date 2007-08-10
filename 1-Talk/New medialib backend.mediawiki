@@ -1,1 +1,3 @@
 The way S4 stores data certainly looks very nice for how our data works, but I'm curious as to how querying would work for this system, as well as how it would store collections. Can we get some details on how searches will be handled and collections stored?
+
+--[[User:Alesbl|Alesbl]] 17:35, 10 August 2007 (CEST)
