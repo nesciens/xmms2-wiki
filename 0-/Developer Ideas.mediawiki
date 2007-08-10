@@ -12,6 +12,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Mobile platforms]]
 * [[Configuration file]]
 * [[Medialib Plugins]]
+* [[New medialib backend]]
 
 == Playlist ==
 * '''[[Collections]]'''
