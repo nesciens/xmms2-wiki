@@ -79,7 +79,9 @@ Releases can be found at http://exodus.xmms.se/~tru/esperanza/ and the latest de
 
 === Build ===
 
-Download tarball run qmake (or qmake-qt4 depending on your system) and then make. That should produce the binary.
+Download tarball, extract it, run configure and then make. That should produce the binary.
+
+For windows see here: [[Client:Esperanza/Windows_Build_Instructions]]
 
 == Bugtracker ==
 
