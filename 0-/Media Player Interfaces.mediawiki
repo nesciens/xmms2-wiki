@@ -392,11 +392,7 @@ Signal is emitted when the "Media Player" changes capabilities, Flags are CAN_GO
      <arg type="i" />
    </signal>
 
-==== Disconnected ==== 
-Signal is emitted when the "Media Player" cleanly leaves the bus.
 
-   <signal name="Disconnected">
-   </signal>
 
 = See Also =
 * [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPRIS]
