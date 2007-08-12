@@ -18,5 +18,5 @@ Here is the [[Media:logo-final.svg|SVG]] (Note: SVG rendering in Firefox is ugly
 
 [[Image:logo-black-2-400.png]]
 
-=== With halo (for dark background ===
-[[Media:logo-dark-bg-with-halo.svg|SVG]]
+=== With halo (for dark background) ===
+[[Media:logo-dark-bg-with-halo.svg|SVG]] png [[Media:logo-1800-export.png|export]] (1800x1800px)
