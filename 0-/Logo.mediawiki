@@ -17,3 +17,6 @@ Here is the [[Media:logo-final.svg|SVG]] (Note: SVG rendering in Firefox is ugly
 [[Media:logo-black-2.svg|SVG]]
 
 [[Image:logo-black-2-400.png]]
+
+=== With halo (for dark background ===
+[[Media:logo-dark-bg-with-halo.svg|SVG]]
