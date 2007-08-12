@@ -336,9 +336,8 @@ Note that the caps are a bitfield, currently defined as:
           CAN_PAUSE             = 1 << 2,
           CAN_PLAY              = 1 << 3,
           CAN_SEEK              = 1 << 4,
-          CAN_RESTORE_CONTEXT   = 1 << 5,
-          CAN_PROVIDE_METADATA  = 1 << 6,
-          PROVIDES_TIMING       = 1 << 7,
+          CAN_PROVIDE_METADATA  = 1 << 5,
+          PROVIDES_TIMING       = 1 << 6,
 
 ==== VolumeSet ====
 Sets the volume (argument must be in [0;100])
