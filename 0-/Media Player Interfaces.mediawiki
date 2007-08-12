@@ -278,11 +278,10 @@ Toggle the current track repeat.
 
 ==== Quit ====
 Makes the "Media Player" exit.
+'''Subject to change -- don't implement yet if you aren't VLC or BMP'''
  
    <method name="Quit">
    </method>
-
-
 
 ==== GetStatus ====
 Return the status of "Media Player": 0 = Playing, 1 = Paused, 2 = Stopped. ([TODO] Expand the status stuff [Loop? Repeat?])
