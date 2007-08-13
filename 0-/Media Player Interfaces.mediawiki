@@ -112,10 +112,11 @@ The "Tracklist" '''can''', but does not '''need''' to:
 "Metadata" is data that the files carry within themselves as a means of self-identification (commonly known as "tags"), or data that has been retrieved about the files trough other means, e.g. an internet service that provides additional data about particular media files.
 "Metadata" is an array of dict entries, like ("length", 253), ("name", "Bolero"), ("video-codec", "DIVX"). The dict entry is in the form (string, variant) eg: {sv}.
 
+==== VLC Metadata ===
+
 '''NOTE''': This is what ''VLC'' currently sends; there has no standard been agreed upon yet -- mderezynski
 
 Furthermore, "Metadata" can be split into two categories:
-
 1) Technical metadata:
 * "URI":"s"
 * "length":"i" (length in seconds)
@@ -135,10 +136,14 @@ Furthermore, "Metadata" can be split into two categories:
 This list is informative, and can be extended up to your needs, for example: "age of the captain":"i"
 Only Required fields are: "URI" and "length"
 
+==== BMP Variant ====
+
 '''This is what BMP sends:'''
 I've copied and pasted our attribution definition code directly so it's clear to see which data type a particular attribute is.
 
 The first field is the 'name' and is totally informal; it never gets send over DBus; the 2nd name _is_ the key of the key <-> value pair of the metadata; follows a type identifier, and a rather meaningless flag for anything external:
+
+The only '''required''' field in BMP metadata is 'location'
 
       {
         "Location",
