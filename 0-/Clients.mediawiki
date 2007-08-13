@@ -92,7 +92,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 == X-Chat / IRSSI ==
 
-* '''X-Chat:''' [[Client:EkoXMMS2 | EkoXMMS2]] lets you control XMMS2 within the application (not compatible with Dr. Jeckyll or higher)
+* '''X-Chat:''' [[Client:EkoXMMS2 | EkoXMMS2]] lets you control XMMS2 within the application
 * '''irssi:''' Both [[Client:ixmms2 | ixmms2]] and [[Client:xmms2Plugin | xmms2Plugin]] provide information and control within irssi
 
 == Audioscrobbler ==
