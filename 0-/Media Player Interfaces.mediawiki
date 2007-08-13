@@ -112,7 +112,7 @@ The "Tracklist" '''can''', but does not '''need''' to:
 "Metadata" is data that the files carry within themselves as a means of self-identification (commonly known as "tags"), or data that has been retrieved about the files trough other means, e.g. an internet service that provides additional data about particular media files.
 "Metadata" is an array of dict entries, like ("length", 253), ("name", "Bolero"), ("video-codec", "DIVX"). The dict entry is in the form (string, variant) eg: {sv}.
 
-==== VLC Metadata ===
+==== VLC Metadata ====
 
 '''NOTE''': This is what ''VLC'' currently sends; there has no standard been agreed upon yet -- mderezynski
 
