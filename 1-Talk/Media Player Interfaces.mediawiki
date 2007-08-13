@@ -76,3 +76,21 @@ The spec looks like a good start to me, although I've got a couple of nitpicks/q
 * On the metadata, video-codec and audio-codec are listed as being listed "as fourcc". A reasonable number of players (particularly audio-only ones) won't know this without embedding a mimetype->fourcc mapping table, perhaps using mimetype would be better?
 
 [[User:Doctau|James Livingston]]
+
+== D-Bus nits ==
+
+Some of the D-Bus details that I'm worried about:
+
+* 1.  If I take D-Bus interfaces to be exactly like Java interfaces, then the current spec is weird in that it seems to suggest implementing one interface (org.freedesktop.MediaPlayer) across multiple objects (exported as /, /Player, /TrackList)... unless it *is* meant to be implemented in one object (which I don't think is the original intention).
+
+* 2.  org.freedesktop.MediaPlayer currently has 2 methods with the name GetMetadata.  This is problematic for languages which don't have method overloading (e.g. Python).  But see also point 1; if the methods are on different interfaces then there would be no problem, as far as I know.
+
+* 3.  From my limited D-Bus knowledge, the normal way for multiple applications to advertise a service ("I'm a music player!") is by trying to grab a well-known bus name; D-Bus has a queue to handle the case when multiple applications try to do that on one bus name.  I don't really understand the reason for the mechanism used in the spec, of having org.mpris.my_music_player instead of letting apps try to grab some well-known bus name (e.g. org.freedesktop.MusicPlayer or org.mpris.Something), perhaps in addition to com.my_music_player.Foo.
+
+* 4.  The /TrackList er.. stuff.. isn't very D-Bus-y, according to [http://log.ometer.com/2007-05.html].  I talked to Milosz and agreed that having each track as a D-Bus object is not a good idea either, but I forgot that D-Bus has fallback objects, which is how--for example--GConf exports all of its config items through D-Bus.  Combined with the issues that James Livingston mentioned, the TrackList API seems a lot of trouble for little gain.  I don't see my average blog poster app, IM status plugin, or in-panel music player controller needing to know about and manipulate playlists--the user will want to bring up the real player in most cases.  I'd suggest at least leaving it out of the basic spec.
+
+(By the way, the link in point 4 is really worth reading.)
+
+Sorry for the un-wiki-ish way of my writing; I haven't really used wikis for quite some time.
+
+--Johannes Sasongko, 08:32, 13 August 2007 (CEST)
