@@ -21,6 +21,11 @@ Please see the [[Client:Esperanza/Roadmap|Roadmap]] for new and upcoming feature
 
 == News ==
 
+=== Esperanza 0.4.0 (2007-08-13) ===
+Finally 0.4.0 is released. Thanks for all help finding bugs and testing.
+
+[http://exodus.xmms.se/~tru/esperanza/0.4/ Download.]
+
 === Esperanza 0.4.0rc1 (2007-08-01) ===
 A new Release Candidate is up. Please test and report bugs.
 
