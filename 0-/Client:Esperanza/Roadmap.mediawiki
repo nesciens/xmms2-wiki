@@ -6,6 +6,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Info dialog that can give Last.FM recommends / musicbrainz info and so on. Evolution of the last.fm dialog.
 * &#10063; Make the medialib browser prettier
 ** &#10063; Animations when the medialib is shown?
+* &#10063; Both wizard and serverdialog handles malformatted URL's pretty bad. When someone enter "host" without "tcp://host" it dies.
 
 
 == Distant Future / New Features ==
