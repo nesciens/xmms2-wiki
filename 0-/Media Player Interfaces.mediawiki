@@ -139,7 +139,7 @@ Only Required fields are: "URI" and "length"
 ==== BMP Variant ====
 
 '''This is what BMP sends:'''
-I've copied and pasted our attribution definition code directly so it's clear to see which data type a particular attribute is.
+I've copied and pasted our attribute definition code directly so it's clear to see which data type a particular attribute is.
 
 The first field is the 'name' and is totally informal; it never gets send over DBus; the 2nd name _is_ the key of the key <-> value pair of the metadata; follows a type identifier, and a rather meaningless flag for anything external:
 
