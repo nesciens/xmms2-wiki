@@ -7,7 +7,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Make the medialib browser prettier
 ** &#10063; Animations when the medialib is shown?
 * &#10063; Both wizard and serverdialog handles malformatted URL's pretty bad. When someone enter "host" without "tcp://host" it dies.
-
+* &#10063; On OSX the menus in the top are not activated
 
 == Distant Future / New Features ==
 * When Esperanza is minimized to a bar(mini-mode), it's automaticly renamed to ''Esperanza <2>''. It would be a good idea to change the name back to Esperanza  after it's minimized to the bar.
