@@ -10,15 +10,15 @@ The service object keeps a registry of available services on the server.  The re
  | key2 | entry2 |      | description        |
  | key3 | entry3 |      | major version      |
  |  .   |   .    |      | minor version      |
- |  .   |   .    |      | service client     |            Method
- |  .   |   .    |      |--------------------|      +----------------+
- +---------------+      | count              |      | name           |
-                        | +----------------+ |      | description    |
-                        | | key1 | method1--------->| clients        |
-                        | | key2 | method2 | |      | cookie         |
-                        | | key3 | method3 | |      | return types   |
-                        | |  .   |    .    | |      | number of args |
-                        | |  .   |    .    | |      | arg types      |
+ |  .   |   .    |      | methods            |
+ |  .   |   .    |      |--------------------|            Method
+ +---------------+      | service client fd  |      +----------------+
+                        | +----------------+ |      | name           |
+                        | | key1 | method1 | |      | description    |
+                        | | key2 | method2--------->| return types   |
+                        | | key3 | method3 | |      | arg types      |
+                        | |  .   |    .    | |      |----------------|
+                        | |  .   |    .    | |      | cookie         |
                         | |  .   |    .    | |      +----------------+
                         | +----------------+ |
                         +--------------------+
@@ -27,43 +27,11 @@ The '''key in Registry''' is calculated using each service's interface name (e.g
 
 Normal updates that don't change the method signatures are reflected by '''"minor version"''', otherwise '''"major version"''' should be changed.  For example, there is a service called "lastfm" which provides a method "fetch" with two string type arguments, and this is marked as major version 1.  If later on, the author decides that method "fetch" needs an additional int type argument, then the major version number should be changed to a number other than 1.  This scheme is used for clients to decide whether they can correctly use a method or not.
 
-'''"count"''' in Entry is a reference count of the number of methods currently registered for this service.
+'''"service client fd"''' is the IPC fd created for a service client when it initially connects to the server.  It is used to uniquely identify a service client. Along with '''"cookie"''' in Method structure, IPC can uniquely locate a method in a service client.
 
-'''"clients"''' field in Method structure is a list of cookies of all the clients which are currently using this method.  So when the method returns, IPC knows which call from which client should get the result.
+'''"cookie"''' field in Method structure is the message cookie which the service client uses to register the method, and subsequently subscribes the callback function to the the broadcast using the result returned.  It helps IPC to locate which service client to send messages to, and also makes sure that the correct service methods are being invoked on service client when the messages arrive.
 
-The role '''"cookie"''' field plays is similar to that of "clients".  It helps IPC to locate which service client to send messages to, and also makes sure that the correct service methods are being invoked on service client when the messages arrive.
-
-'''"return types"''' and '''"arg types"''' fields store the information about types of the variables being returned from and passed to the method, respectively.  And they should be in the following form.  Say you have a method which has the following signatures, call_me (char *, uint32_t, int32_t, xmmsc_coll_t), then the "arg types" field for this method would contain the following string, "suic", meaning that the first argument is of type string ('s'), the second argument is of type unsigned int ('u'), the third argument is of type int ('i'), and the last argument is of type collection ('c').  An empty return types and/or arg types field is also allowed.  This is similar to the format string in standard C function printf(), but without '%' and with different shorthands.  The following table shows the conversion specifiers of all available types, note that they are all in lowercase.
-
-{| class="wikitable" style="text-align:center;margin: 1em auto 1em auto"
-|+Conversion Specifiers
-|-
-! Specifier !! Type !! Description
-|-
-! i
-| int32_t
-| 32-bit integer
-|-
-! u
-| uint32_t
-| unsigned 32-bit integer
-|-
-! s
-| char *
-| character string
-|-
-! l
-| char *[]
-| character string list
-|-
-! c
-| xmmsc_coll_t
-| collection
-|-
-! b
-| unsigned char *
-| binary data
-|}
+'''"return types"''' and '''"arg types"''' fields store the information about types of the variables being returned from and passed to the method, respectively.  Each argument stores the name of the argument, the type and optionality information of the argument.  If an argument is optional, it is not necessary to provide this argument when a client is trying to call the method.
 
 So this two level hierarchical structure groups all the methods a service provides together.  Thus easier for locating and categorizing.
 
