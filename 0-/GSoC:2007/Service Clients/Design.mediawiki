@@ -37,24 +37,12 @@ So this two level hierarchical structure groups all the methods a service provid
 
 ===Client side===
 
- typedef struct xmmsc_service_St xmmsc_service_t;
- struct xmmsc_service_St {
- 	char *name;
- 	char *description;
- 	uint32_t major_version;
- 	uint32_t minor_version;
- };
  typedef struct xmmsc_service_method_St xmmsc_service_method_t;
- struct xmmsc_service_method_St {
- 	char *name;
- 	char *description;
- 	char *ret_type;
- 	char *arg_type;
- 	xmmsc_result_notifier_t func;
- };
+ typedef void (*xmmsc_service_notifier_t) (xmmsc_connection_t *conn, xmmsc_result_t *res, xmmsc_service_method_t *method, void *user_data);
 
-These two structures represent service and method, respectively.  They are used on service/method registration and modification.
+The reason that there is no xmmsc_service_t structure is because that it is not needed for any other operations than service registration.  The only thing that will be used in subsequent function calls after service registration is service ID.  On the other hand, xmmsc_service_method_t structure is quite necessary.  It is used in a lot of places like method registration, calling a method, returning from a method, etc.  Besides the normal information of a method, it also contains error messages if there is any during a service client related function call.  You '''do not''' need to free this structure manually, it will be freed automatically when it is no longer needed.
 
+All service method callbacks should be of type xmmsc_service_notifier_t.
 
 ==Functions==
 
