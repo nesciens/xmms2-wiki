@@ -59,3 +59,5 @@ You may have noticed that I do not have "argv" in the config file, because it is
 = scm API =
 
 se.xmms.scm.management
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
