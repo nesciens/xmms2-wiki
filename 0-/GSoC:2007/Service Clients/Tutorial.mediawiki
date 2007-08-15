@@ -1,3 +1,5 @@
 = Service Client =
 
 = Client =
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
