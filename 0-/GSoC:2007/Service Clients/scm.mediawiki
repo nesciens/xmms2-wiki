@@ -1,9 +1,11 @@
-==What It Does==
+= What It Does =
+
 Service Client Manager (scm in short) is a meta service client that manages all other local service clients.  It will be started automatically when the server starts.  And it scans service_clients sub-directory in XMMS2 config dir for service client description files.  Each file inside that directory is considered a description file for a single service client, with the name of the file as the name of the service client.  This file describes the path of the executable file, arguments passing to that file, if it needs to be launched automatically, service descriptions, versions and method descriptions of a service client.  So that clients can query for installed service clients' information even if they are not registered to the server at the moment.  Furthermore, clients can control a service client by issuing launch and shutdown requests to scm, or toggle the auto option of the service client.  When the server shuts down, scm checks if all local service clients have shut down.  If not, it will wait for 30 seconds and then kill those which are still running.  Otherwise, scm will terminate normally after several seconds.
 
 Remote service clients are not managed by scm.  Since they cannot be shut down or launched remotely, and it is impossible to check for the presence of the executable files, it is unnecessary for scm to manage them.
 
-==Config File Structure==
+= Config File Structure =
+
 Config file should be placed under service_clients sub-directory in XMMS2 config dir on installation of the service client if it resides on the same machine as the server does.  And the name of the config file should be the same as that of the service client.  Config file must contain the following information.
 
 * path to the executable file
@@ -54,5 +56,6 @@ Contents of file "shutdown"
 
 You may have noticed that I do not have "argv" in the config file, because it is optional and I do not need to pass the executable file any argument.  For describing method, method name should show up as the keyword, and method description is on the right hand side of the equal sign.
 
-==scm API==
+= scm API =
+
 se.xmms.scm.management
