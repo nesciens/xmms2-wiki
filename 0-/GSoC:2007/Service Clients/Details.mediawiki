@@ -64,3 +64,11 @@ function signatures or not, the service client will check them any way. So inste
 For the other aspect, we need to provide some accessor functions to help client developers construct data structures and retrieve data, so that they do not get to touch the underlying data structures. (just like current implementation of media collection)
 
 In order to help client developers use services, we need to publish API documentations for all service clients. So they know what to do with the services. All services will be populated in a dict structure. And the structure has a few fixed fields like service name, description and argument descriptions, disregarding the service it is containing. Thus for all client developers, they can robustly assume that these fields exist and create whatever GUI interface they see fit to represent the service list.
+
+==See Also==
+===Further information on Service Client===
+* [[Summer of Code 2007/Service Clients/Design|Internal Design of Service Client]]
+* [[Summer of Code 2007/Service Clients/scm|Service Client Manager]]
+
+===Usage===
+* [[Summer of Code 2007/Service Clients/Tutorial|Tutorials]]
