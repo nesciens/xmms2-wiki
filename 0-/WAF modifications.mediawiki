@@ -1,3 +1,4 @@
 This page is supposed to be an overview of the changes we have made to waf.
 
 * Based on waf 1.1.1
+** 23fe060a23b3717cf061131f39b3f2bf609a76c0 fixes plugin naming.
