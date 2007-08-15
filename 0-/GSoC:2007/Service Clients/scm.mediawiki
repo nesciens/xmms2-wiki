@@ -17,28 +17,28 @@ The following table shows the keywords and descriptions for each keyword support
 {| class="wikitable" style="text-align:center;margin: 1em auto 1em auto"
 |+Keyword Descriptions
 |-
-! Keyword !! Description
+! Keyword !! Description !! Type
 |-
 ! path
-| path to the executable file
+| path to the executable file || string
 |-
 ! argv
-| command-line arguments to pass to the executable file
+| command-line arguments to pass to the executable file || string
 |-
 ! auto
-| if the service client should be launched automatically
+| if the service client should be launched automatically || "yes" or "no"
 |-
 ! [service name]
-| service name should be surrounded by brackets
+| service name should be surrounded by brackets || string
 |-
 ! description
-| service descriptions
+| service descriptions || string
 |-
 ! major
-| major version of service
+| major version of service || unsigned integer
 |-
 ! minor
-| minor version of service
+| minor version of service || unsigned integer
 |-
 |}
 
