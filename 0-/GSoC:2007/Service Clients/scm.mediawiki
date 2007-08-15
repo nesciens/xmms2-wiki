@@ -55,3 +55,4 @@ Contents of file "shutdown"
 You may have noticed that I do not have "argv" in the config file, because it is optional and I do not need to pass the executable file any argument.  For describing method, method name should show up as the keyword, and method description is on the right hand side of the equal sign.
 
 ==scm API==
+se.xmms.scm.management
