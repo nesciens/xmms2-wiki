@@ -58,6 +58,282 @@ You may have noticed that I do not have "argv" in the config file, because it is
 
 = scm API =
 
-se.xmms.scm.management
+There are two services provided by scm, se.xmms.scm.management and se.xmms.scm.query, which deals with service client management and querying service client information, respectively.
+
+== Management ==
+se.xmms.scm.management provides the following methods.
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+Management Methods
+|-
+! Method Name !! Description
+|-
+! uninstall
+| Uninstall a service client
+|-
+! launch
+| Launch a service client
+|-
+! shutdown
+| Shutdown a service client
+|-
+! change_argv
+| Change the command-line argument to pass to a service client
+|-
+! toggle_autostart
+| If a service client should be launched automatically
+|-
+|}
+
+The following tables list argument and return types of each method described above.  Return types are separated by an empty line.
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+uninstall
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+| ||
+|-
+! ret
+| string || return value
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+launch
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+| ||
+|-
+! ret
+| string || return value
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+shutdown
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+| ||
+|-
+! ret
+| string || return value
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+change_argv
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+! argv
+| string || command-line arguments to pass to the service client
+|-
+| ||
+|-
+! ret
+| string || return value
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+toggle_autostart
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+! auto
+| uint32 || If the service client should be launched automatically
+|-
+| ||
+|-
+! ret
+| string || return value
+|-
+|}
+
+== Querying ==
+se.xmms.scm.query provides the following methods.
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+Querying Methods
+|-
+! Method Name !! Description
+|-
+! sc_ids
+| List the names of all installed service clients
+|-
+! sc
+| List details of an installed service client
+|-
+! service_ids
+| List the names of all services of a service client
+|-
+! service
+| List details of a service
+|-
+! method_ids
+| List the names of all methods of a service
+|-
+! method
+| List details of a method
+|-
+! lookup_client
+| Search for all service clients which provide the given service
+|-
+|}
+
+The following tables list argument and return types of each method described above.  Return types are separated by an empty line.
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+sc_ids
+|-
+! Name !! Type !! Description
+|-
+| ||
+|-
+! ids
+| string list || a list of all installed service clients' names
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+sc
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+| ||
+|-
+! argv
+| string || command-line arguments to pass to the service client
+|-
+! auto
+| uint32 || If the service client should be launched automatically
+|-
+! services
+| uint32 || number of services the service client provides
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+service_ids
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+| ||
+|-
+! ids
+| string list || a list of the names of all services the service client provides
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+service
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+! service_name
+| string || service name
+|-
+| ||
+|-
+! desc
+| string || service description
+|-
+! major
+| uint32 || service major version
+|-
+! minor
+| uint32 || service minor version
+|-
+! registered
+| uint32 || if the service is registered on the server
+|-
+! methods
+| uint32 || number of methods the service provides
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+method_ids
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+! service_name
+| string || service name
+|-
+| ||
+|-
+! ids
+| string list || a list of the names of all methods the service provides
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+method
+|-
+! Name !! Type !! Description
+|-
+! client_name
+| string || client name
+|-
+! service_name
+| string || service name
+|-
+! method_name
+| string || method name
+|-
+| ||
+|-
+! desc
+| string || method description
+|-
+! registered
+| uint32 || if the method is registered on the server
+|-
+|}
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+lookup_client
+|-
+! Name !! Type !! Description
+|-
+! service_name
+| string || service name
+|-
+| ||
+|-
+! ids
+| string list || a list of the names of all service clients which provide the service
+|-
+|}
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
