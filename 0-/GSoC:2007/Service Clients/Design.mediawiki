@@ -53,7 +53,7 @@ Functions below are separated into four groups.
 
 '''Public functions:'''
  xmms_service_t *xmms_service_init (void);
- gboolean xmms_service_handle (xmms_ipc_msg_t *msg, uint32_t cmdid,
+ gboolean xmms_service_handle (xmms_object_t *obj, xmms_ipc_msg_t *msg, uint32_t cmdid,
                                xmms_socket_t client, xmms_object_cmd_arg_t *arg);
 
 ''xmms_service_init()'' is the initialization function of service object.  All it does is to create the first level registry structure and initialize an empty registry.  Then simply registers XMMS_IPC_SIGNAL_SERVICE broadcast to IPC core.
@@ -61,42 +61,89 @@ Functions below are separated into four groups.
 Different from other server-side objects, service object has a central entry point, namely ''xmms_service_handle()''.  All service related calls will end up here in the first place.  The reason of having it is because that service related calls sometimes involve not only one action like subscribing to a signal or execute a command, but also some manipulations on the registry.  Besides, service calls may have more than 6 arguments, which exceeds current IPC limit.  So it has to take care of arguments parsing by itself.  Once the entry function is called, it will delegate the task to the corresponding worker functions.  And then decides whether or not it should subscribe the calling client to XMMS_IPC_SIGNAL_SERVICE broadcast.
 
 '''Registry creation/deletion:'''
- static xmms_service_entry_t *xmms_service_entry_new (gchar *name,
+ static xmms_service_entry_t *xmms_service_entry_new (xmms_service_t *obj,
+                                                      gchar *name,
                                                       gchar *description,
                                                       guint major, guint minor,
                                                       xmms_socket_t client);
- static xmms_service_method_t *xmms_service_method_new (gchar *name,
+ static xmms_service_method_t *xmms_service_method_new (xmms_service_t *obj,
+                                                        gchar *service,
+                                                        gchar *name,
                                                         gchar *description,
                                                         guint cookie,
-                                                        gchar *ret_type,
-                                                        guint num_args,
-                                                        gchar *args);
+                                                        GHashTable *rets,
+                                                        GHashTable *args);
  static void xmms_service_destroy (xmms_object_t *object);
  static void xmms_service_registry_destroy (gpointer value);
  static void xmms_service_method_destroy (gpointer value);
 
 '''Registry management:'''
- static gboolean xmms_service_register (xmms_ipc_msg_t *msg, xmms_socket_t client,
-                                        xmms_error_t *err);
- static gboolean xmms_service_method_register (xmms_ipc_msg_t *msg,
-                                               xmms_service_entry_t *entry,
+ static void xmms_service_register (xmms_service_t *service,
+                                    xmms_ipc_msg_t *msg, xmms_socket_t client,
+                                    xmms_error_t *err);
+ static gboolean xmms_service_method_register (xmms_service_t *xmms_service,
+                                               xmms_ipc_msg_t *msg,
+                                               xmms_socket_t client,
                                                xmms_error_t *err);
- static void xmms_service_unregister (xmms_ipc_msg_t *msg, xmms_socket_t client,
+ static void xmms_service_unregister (xmms_service_t *xmms_service,
+                                      xmms_ipc_msg_t *msg,
+                                      xmms_socket_t client,
                                       xmms_error_t *err);
- static gboolean xmms_service_method_unregister (xmms_ipc_msg_t *msg,
+ static gboolean xmms_service_method_unregister (xmms_service_t *xmms_service,
+                                                 xmms_ipc_msg_t *msg,
                                                  xmms_service_entry_t *entry,
                                                  xmms_error_t *err);
- static void xmms_service_list (xmms_ipc_msg_t *msg, xmms_object_cmd_arg_t *arg);
- static void xmms_service_list_method (xmms_ipc_msg_t *msg,
+ static void xmms_service_list (xmms_service_t *xmms_service,
+                                xmms_object_cmd_arg_t *arg);
+ static void xmms_service_info_list (xmms_service_t *xmms_service,
+                                     xmms_ipc_msg_t *msg,
+                                     xmms_object_cmd_arg_t *arg);
+ static void xmms_service_method_list (xmms_service_t *xmms_service,
+                                       xmms_ipc_msg_t *msg,
                                        xmms_object_cmd_arg_t *arg);
+ static void xmms_service_method_info_list (xmms_service_t *xmms_service,
+                                            xmms_ipc_msg_t *msg,
+                                            xmms_object_cmd_arg_t *arg);
+ static gboolean xmms_service_request (xmms_service_t *xmms_service,
+                                       xmms_ipc_msg_t *msg,
+                                       xmms_socket_t client,
+                                       xmms_error_t *err);
+ static void xmms_service_return (xmms_service_t *xmms_service,
+                                  xmms_ipc_msg_t *msg,
+                                  xmms_socket_t client,
+                                  xmms_error_t *err);
+ static void xmms_service_shutdown (xmms_service_t *xmms_service,
+                                    xmms_ipc_msg_t *msg, xmms_error_t *err);
 
 '''Helper functions:'''
- static xmms_service_entry_t *xmms_service_is_registered (gchar *name);
+ static xmms_service_entry_t *
+ xmms_service_is_registered (xmms_service_t *xmms_service, const gchar *name);
  static xmms_service_method_t *
- xmms_service_is_method_registered (xmms_service_entry_t *entry, gchar *name);
+ xmms_service_method_is_registered (xmms_service_entry_t *entry,
+                                    const gchar *name);
  static gboolean xmms_service_matchsc (gpointer key, gpointer value,
                                        gpointer data);
- static void xmms_service_foreach (gpointer key, gpointer value, gpointer data);
+ static void xmms_service_key_insert (gpointer key, gpointer value,
+                                      gpointer data);
+ static void xmms_service_arg_insert (gpointer key, gpointer value,
+                                      gpointer data);
+ static inline guint xmms_service_next_id (void);
+ static xmms_service_entry_t *xmms_service_get (xmms_service_t *xmms_service,
+                                                xmms_ipc_msg_t *msg, gchar **name,
+                                                xmms_error_t *err);
+ static xmms_service_method_t *
+ xmms_service_method_get (xmms_ipc_msg_t *msg, xmms_service_entry_t *entry,
+                          gchar **name, xmms_error_t *err);
+ static GHashTable *xmms_service_arg_types_parse (xmms_ipc_msg_t *msg,
+                                                  xmms_error_t *err);
+ static GHashTable *xmms_service_args_parse (xmms_ipc_msg_t *msg,
+                                             GHashTable *args, xmms_error_t *err);
+ static gboolean xmms_service_args_is_error (xmms_ipc_msg_t *msg);
+ static gboolean xmms_service_args_error_parse (xmms_ipc_msg_t *msg,
+                                                gchar **error, xmms_error_t *err);
+ static GHashTable *
+ xmms_service_changed_msg_new (gchar *service, gchar *method,
+                               xmms_service_changed_actions_t type);
 
 ===Client side===
 
