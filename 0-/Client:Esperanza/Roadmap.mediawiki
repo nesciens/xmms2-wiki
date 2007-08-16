@@ -20,7 +20,6 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * Smoother drag&drop handling, esp. inside the playlist (it's very difficult here to get a song to the right place)
 * tristate button or two different buttons for repeat-all and repeat-one setting of xmms2d
 * Add QScript support for customization of playlist and other elements.
-* let the user set the time the systray informations about songchange should appear, e.g. -1 No Popup, 0 => infinite, 1sec .... 5min (just change the existing setting (enable/disable)).
 * Add a class that can query amazon web services for album art. It should be done on the albums that are in the playlist (and don't have a cover) and should be added to xmms2d with the binary_get/set calls.
 * Application Icon missing, make sure for any OS
 * Make sure that the Connection code can handle disconnect, reconnect, connect to multiple and similar operations. Ideally we should be able to switch server without quiting esperanza and not have to relaunch it when it disconnects.
