@@ -1,5 +1,7 @@
 Scripts and other miscellaneous contributions to XMMS2. If you think you have something useful which could be put on this list, feel free to add the appropriate details here, or [[About#Contact_info | contact]] the XMMS2 team.
 
+{{Contrib | title=XPLAY | author=Thomas Keck | description=Search and play song with agrep | moreinfo=Read the source :-) (pure bash) | files=http://websvn.xapek.org/svn/storm/xplay}}
+
 {{Contrib | title=Init scripts | author=Martijn Ras | description=<strike>I wrote an initscript to start xmms2d at runtime and control it through the default chkconfig/service mechanism on *NIX systems.</strike> The files contributed don't work with more recent releases of XMMS2 - if you'd like to help resolve this, visit <mantis>249</mantis>. | moreinfo=[http://bugs.xmms2.xmms.se/view.php?id=249 Bug #249] | files=* [http://xmms2.xmms.se/contrib/files/xmms2d <strike>xmms2d</strike>]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo <strike>xmms2-initscript-gentoo</strike>]
 * [http://xmms2.xmms.se/contrib/files/xmms2-initscript-gentoo.conf <strike>xmms2-initscript-gentoo.conf</strike>]}}
