@@ -20,6 +20,7 @@ Please see the [[Client:Esperanza/Roadmap|Roadmap]] for new and upcoming feature
 * Last.fm browser
 
 == News ==
+[http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.] (will be updated with any version)
 
 === Esperanza 0.4.0 (2007-08-13) ===
 Finally 0.4.0 is released. Thanks for all help finding bugs and testing.
