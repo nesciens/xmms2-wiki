@@ -68,9 +68,6 @@ se.xmms.scm.management provides the following methods.
 |-
 ! Method Name !! Description
 |-
-! uninstall
-| Uninstall a service client
-|-
 ! launch
 | Launch a service client
 |-
@@ -86,21 +83,6 @@ se.xmms.scm.management provides the following methods.
 |}
 
 The following tables list argument and return types of each method described above.  Return types are separated by an empty line.
-
-{| class="wikitable" style="margin: 1em auto 1em auto"
-|+uninstall
-|-
-! Name !! Type !! Description
-|-
-! client_name
-| string || client name
-|-
-| ||
-|-
-! ret
-| string || return value
-|-
-|}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+launch
