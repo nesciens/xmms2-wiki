@@ -4,6 +4,8 @@ Service Client Manager (scm in short) is a meta service client that manages all 
 
 Remote service clients are not managed by scm.  Since they cannot be shut down or launched remotely, and it is impossible to check for the presence of the executable files, it is unnecessary for scm to manage them.
 
+Service client should place a config file with the filename the same as the its own name under service_clients sub-directory in XMMS2 config dir on installation.  And on uninstallation, the corresponding config file should be removed as well.  scm reads in all config files on startup every time.  Besides, scm can also monitor changes made to any config files during runtime.  By default, scm will use libinotify kernel feature if you are using a kernel later than 2.6.13.  Otherwise, periodic polling method is chosen.  Monitoring feature can be enabled/disabled by changing scm configuration.  This is discussed in the [[#Configuration|following section]].  If you have disabled monitoring feature, but do not want to restart scm in order to read in the changes, you can force scm to check for any changes by issuing a method call to the [[#Miscellaneous|"poll" method]].
+
 = Configuration =
 
 scm is configurable by setting two configvals in the server's config file manually or using [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient/group__ConfigControl.html configval API].  Both of the configvals are located in "clients" section and under "scm" client name.
