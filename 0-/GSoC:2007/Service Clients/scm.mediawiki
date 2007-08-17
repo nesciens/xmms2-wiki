@@ -58,7 +58,7 @@ You may have noticed that I do not have "argv" in the config file, because it is
 
 = scm API =
 
-There are two services provided by scm, se.xmms.scm.management and se.xmms.scm.query, which deals with service client management and querying service client information, respectively.
+There are several services provided by scm, se.xmms.scm.management, se.xmms.scm.query and se.xmms.scm.misc, which deals with service client management, querying service client information and scm-specific configurations, respectively.
 
 == Management ==
 se.xmms.scm.management provides the following methods.
@@ -317,5 +317,20 @@ The following tables list argument and return types of each method described abo
 | string list || a list of the names of all service clients which provide the service
 |-
 |}
+
+== Miscellaneous ==
+se.xmms.scm.misc provides the following method.
+
+{| class="wikitable" style="margin: 1em auto 1em auto"
+|+Miscellaneous Method
+|-
+! Method Name !! Description
+|-
+! poll
+| Force the manager to check for any changes in config dir
+|-
+|}
+
+The "poll" method does not need any arguments and it does not return any values, either.
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
