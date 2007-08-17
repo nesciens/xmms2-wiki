@@ -4,6 +4,14 @@ Service Client Manager (scm in short) is a meta service client that manages all 
 
 Remote service clients are not managed by scm.  Since they cannot be shut down or launched remotely, and it is impossible to check for the presence of the executable files, it is unnecessary for scm to manage them.
 
+= Configuration =
+
+scm is configurable by setting two configvals in the server's config file manually or using [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient/group__ConfigControl.html configval API].  Both of the configvals are located in "clients" section and under "scm" client name.
+
+One of them, '''"monitor"''', controls whether or not scm should monitor service client config dir using libinotify (if using kernel later than 2.6.13) or by periodic polling (the period is set to 10 seconds by default).  The value for this configval can either be "yes" or "no".  It is set to "no" by default.
+
+The other configval, '''"timeout"''', is the timeout value scm should wait before killing a service client after shutdown request is sent.  The value is in milliseconds (1/1000ths of a second).  It is set to 10 seconds by default.
+
 = Config File Structure =
 
 Config file should be placed under service_clients sub-directory in XMMS2 config dir on installation of the service client if it resides on the same machine as the server does.  And the name of the config file should be the same as that of the service client.  Config file must contain the following information.
@@ -331,6 +339,6 @@ se.xmms.scm.misc provides the following method.
 |-
 |}
 
-The "poll" method does not need any arguments and it does not return any values, either.
+The '''"poll"''' method does not need any arguments and it does not return any values, either.
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
