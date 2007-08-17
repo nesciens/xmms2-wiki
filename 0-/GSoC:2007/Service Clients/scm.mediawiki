@@ -1,4 +1,4 @@
-= What It Does =
+= Overview =
 
 Service Client Manager (scm in short) is a meta service client that manages all other local service clients.  It will be started automatically when the server starts.  And it scans service_clients sub-directory in XMMS2 config dir for service client description files.  Each file inside that directory is considered a description file for a single service client, with the name of the file as the name of the service client.  This file describes the path of the executable file, arguments passing to that file, if it needs to be launched automatically, service descriptions, versions and method descriptions of a service client.  So that clients can query for installed service clients' information even if they are not registered to the server at the moment.  Furthermore, clients can control a service client by issuing launch and shutdown requests to scm, or toggle the auto option of the service client.  When the server shuts down, scm checks if all local service clients have shut down.  If not, it will wait until time out and then kill those which are still running.  Otherwise, scm will terminate normally after several seconds.
 
