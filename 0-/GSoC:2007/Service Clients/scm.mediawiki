@@ -8,11 +8,13 @@ Service client should place a config file with the filename the same as the its 
 
 = Configuration =
 
-scm is configurable by setting two configvals in the server's config file manually or using [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient/group__ConfigControl.html configval API].  Both of the configvals are located in "clients" section and under "scm" client name.
+scm is configurable by setting three configvals in the server's config file manually or using [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient/group__ConfigControl.html configval API].  All of the configvals are located in "clients" section and under "scm" client name.
 
 One of them, '''"monitor"''', controls whether or not scm should monitor service client config dir using libinotify (if using kernel later than 2.6.13) or by periodic polling (the period is set to 10 seconds by default).  The value for this configval can either be "yes" or "no".  It is set to "no" by default.
 
-The other configval, '''"timeout"''', is the timeout value scm should wait before killing a service client after shutdown request is sent.  The value is in milliseconds (1/1000ths of a second).  It is set to 10 seconds by default.
+Another configval, '''"timeout"''', is the timeout value scm should wait before killing a service client after shutdown request is sent.  The value is in milliseconds (1/1000ths of a second).  It is set to 10 seconds by default.
+
+The last one, '''"period"''', sets the time interval between each polling if periodic polling is used.  Like the previous configval, the value is in milliseconds.  The default value is also 10 seconds.
 
 = Config File Structure =
 
