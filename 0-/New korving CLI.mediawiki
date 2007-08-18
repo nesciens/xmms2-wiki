@@ -97,9 +97,11 @@ equivalent to running ''command -h'' or ''command --help''.
 If used in shell-mode, exits the client.  In inline mode, it does not
 do anything.
 
-==== play ====
+==== play [pattern] ====
 
 Starts playback.
+
+If pattern is given, do the same that "xmms2 jump <pattern> && xmms2 play" would do (ie, don't play if pattern doesn't work).
 
 ==== pause ====
 
