@@ -1,18 +1,9 @@
-This is a weekly schedule leading through the work to be done. It is subsequently updated to represent the actual state.
+Following are all things to be done, although the project is "over" now (not for me):
 
-''Jul 16 - Jul 22:'' Put Semaphores on the server side, define and implement concept of server side handling between vis. object and xform, implement some different pcm data formats, implement simple libvisual client
+* Port FFT code from libvisual
 
-''Jul 23 - Jul 29:'' Port existing FFT code or FFT code from libvisual, lay out the possible formats and implement them
+* Port XMMS Rootvis :)
 
-''Jul 29 - Aug 05:'' Implement client listening on UDP, server sending packages        at the right interval, blocking client receival, automatic fallback        mechanism
+* Language bindings (C++, etc)
 
-''Aug 06 - Aug 12:'' Deal with timing issues: implement described or further        techniques to get visualization in best sync with playing
-
-''Aug 13 - Aug 19:'' Port XMMS Rootvis, heavily testing of formatting, low        interval settings, etc.
-
-----
-''Final evaluation starts..''
-----
-
-
-''Aug 20 - September:'' As I have lots of time, finally get it all right! Because of the tighter timeline, there will be many rough edges and needed fixes. I guess there will also be better ways needed to expose the functionality on the client side.
+* Provide more formats/properties (this is due to demand)
