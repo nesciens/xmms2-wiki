@@ -103,6 +103,9 @@ Starts playback.
 
 If pattern is given, do the same that "xmms2 jump <pattern> && xmms2 play" would do (ie, don't play if pattern doesn't work).
 
+: I'd rather do this kind of function using aliases, if possible (so you could also have addplay, etc).
+: --[[User:Theefer|Theefer]] 08:44, 20 August 2007 (CEST)
+
 ==== pause ====
 
 Pauses playback.
