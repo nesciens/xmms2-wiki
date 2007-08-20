@@ -1,3 +1,11 @@
+== Monday August 20 ==
+
+Another month, another update. The basic functionality now works, while most of the code is in good shape. UDP needs some serious fixing, but it's not too much work. Here is a screenshot of several libvisual clients running side-by-side:
+
+[http://fopref.meinungsverstaerker.de/div/visual.png libvisual screenshot]
+
+GSoC's time's over in some hours or so. I won't have reached all of my goals, which is sad. I'm highly motivated to get them done in the next two weeks, which is good. Anyway, visualization is coming! :)
+
 == Friday July 13 ==
 
 Finally, a simple volume meter works (without correct timing). Some hours later, and the libvisual client would be it. Anyway, there is lots to do.
