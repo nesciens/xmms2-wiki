@@ -44,6 +44,19 @@ A service only needs to be registered once at the beginning if you have multiple
 
 == Inside a Method ==
 
+Upon invocation of the method callback function, connection, result, method structure and user data is provided to the callback function as arguments.  We can extract arguments from the result if there are any.  All arguments passed from client are packed into a dictionary with the names for each argument provided on registration as keys.  So you always use xmmsc_result_get_dict_entry_{type}() functions to extract them, like this,
+
+ if (!xmmsc_result_get_dict_entry_string (result, "argument", &arg))
+     xmmsc_service_method_error_set (method, "failed to get argument");
+
+The function xmmsc_service_method_error_set() is used to set error message in the method structure so that it can be returned to the callee.  In this case, no return values will be sent.
+
+If all goes well, it is time to return data to the client.  For the method we registered in the previous section, we should do something like this,
+
+ xmmsc_service_method_ret_add_string (method, "return", "returned string");
+ res = xmmsc_service_return (connection, result, method);
+ xmmsc_result_unref (res);
+
 = Client =
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
