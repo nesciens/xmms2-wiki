@@ -1,5 +1,6 @@
 ----
 [[User:Tcoppi|tcoppi]] 19:03, 29 June 2007 (CEST)
+
 Note:
 IPC MSG argument format:
 
@@ -19,3 +20,6 @@ The code to handle this will be added to ipc.c and replace the current functions
 
 Also, a structure will have to be added in to ipc.c so the generated xmms_object_cmds_register, xmms_object_props_register, etc. functions can have a place to put the handles of the callbacks that handle the ipc commands/properties. 
 The current way it is done, with an XMMS_OBJECT and XMMS_CMD_DEFINE, it must be known at compile time what function will be used and the arguments to it, which are supposed to be handled in the xml. This could be generated, but I think not using that would be cleaner, but it would also be fairly trivial to switch back and forth, since the code dealing with that will be mostly generated(just change a few lines of python).
+
+[[User:Tcoppi|tcoppi]] 03:51, 20 August 2007 (CEST)
+The above is somewhat out of date, as I realized after implementing that some of the above fields(like arg3) are not necessary, but I won't change them for now.
