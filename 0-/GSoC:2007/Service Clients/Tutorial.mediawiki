@@ -59,4 +59,82 @@ If all goes well, it is time to return data to the client.  For the method we re
 
 = Client =
 
+Client can list all available services and methods, describe details of each of them and call methods.  Before calling a method, the client needs to know the detailed information of the method.  So it is necessary to describe the method and its argument and return types before making the request.
+
+== Listing ==
+
+The listing feature I am going to describe here is to list all available (registered in other words) services/methods, not those services and methods in [[Summer of Code 2007/Service Clients/scm|Service Client Manager]] which are installed but may not be registered.  To list all available services, you can do the following,
+
+ result = xmmsc_service_list (connection);
+ xmmsc_result_wait (result);
+ if (xmmsc_result_iserror (result))
+     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
+
+The result will contain a string list if no errors occur.  You can use your usual list handling functions to deal with it.
+
+Listing methods are similar to this.  So I am not going to describe in details.
+
+== Describing ==
+
+Listing the names of all available services or methods might not be enough.  Sometimes you need detailed information to provide to the user.  Then you will need to describe each service and method when needed.  To describe a service and extract the detail information, you can do
+
+ result = xmmsc_service_method_describe (connection, "service.name");
+ xmmsc_result_wait (result);
+ if (xmmsc_result_iserror (result))
+     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
+ else {
+     xmmsc_result_get_dict_entry_string (result, "description", &description);
+     xmmsc_result_get_dict_entry_uint (result, "major_version", &major_version);
+     xmmsc_result_get_dict_entry_uint (result, "minor_version", &minor_version);
+     xmmsc_result_get_dict_entry_uint (result, "count", &count);
+ }
+ xmmsc_result_unref (result);
+
+Describing a method is similar to this except that the result does not contain any information about the method's argument and return types.  It has to be fetched in a separate call.  The following shows how to describe a method and its types, then create a method structure from the results.
+
+ result = xmmsc_service_method_describe (connection, "service.name", "method_name");
+ xmmsc_result_wait (result);
+ if (xmmsc_result_iserror (result)) {
+     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
+     return 1;
+ }
+ xmmsc_result_get_service_method (result, &method);
+ xmmsc_result_unref (result);
+ 
+ result = xmmsc_service_method_describe_args (connection, "service.name", "method_name");
+ xmmsc_result_wait (result);
+ if (xmmsc_result_iserror (result)) {
+     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
+     return 1;
+ }
+ xmmsc_result_get_service_method_arg_types (result, method);
+ xmmsc_result_unref (result);
+
+If you are sure that the method does not contain any arguments and return values, then it is unnecessary to describe the types.
+
+== Requesting ==
+
+Once you have described the method and its types, you will have a method structure.  Then you can call the method and pass arguments to it if there is any.
+
+ xmmsc_service_method_arg_add_string (method, "argument", "hello world");
+ result = xmmsc_service_request (connection, "service.name", method);
+ xmmsc_result_notifier_set (result, callback, NULL);
+ xmmsc_result_unref (result);
+
+You have to setup a callback function to handle the return value, because it is a broadcast.
+
+ void callback (xmmsc_result_t *res, void *data)
+ {
+     char *arg;
+ 
+     if (xmmsc_result_iserror (res)) {
+         fprintf (stderr, "%s\n", xmmsc_result_get_error (res));
+         return;
+     }
+ 
+     if (!xmmsc_result_get_dict_entry_string (result, "return", &arg))
+         fprintf (stderr, "failed to get return value\n);
+     printf ("return value: %s\n", arg);
+ }
+
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
