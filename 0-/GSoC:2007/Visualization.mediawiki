@@ -1,8 +1,8 @@
 {{GSoCProject
 |student=[[User:ypnos|Johannes Jordan]]
 |mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]
-|cmilestone=Setup development environment
-|nmilestone=Shared Memory
+|cmilestone=libvisual client works
+|nmilestone=get UDP to work 100%
 
 |description=
 (Re-)Enabling visualization on XMMS2, by implementing the necessary data transport between server and client via SHM (shared memory) or, for networked clients, UDP (lightweight messaging protocol). The transport and synchronization is transparent to the client developer. On the other side, clients will be able to decide about the format of the data delivered (raw PCM, frequency meters, further details). Two clients will be developed, a libvisual one, and a port of XMMS Rootvis, and hopefully please the end-user :).
