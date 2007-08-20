@@ -1,7 +1,7 @@
 {{GSoCProject
 |student=[[User:zeegeek|Ning Shi]]
 |mentor=[[S%C3%A9bastien_Cevey|SÃ©bastien Cevey]]
-|cmilestone=Service client management
+|cmilestone=Final Evaluation
 |nmilestone=Service clients
 
 |description=
