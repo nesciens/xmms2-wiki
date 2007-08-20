@@ -1,3 +1,48 @@
+=='''Description of generated files'''==
+
+
+xmmsclient.h - header file that defines all the core methods and objects exposed by the ipc system. Serves the same basic purpose as the current xmmsclient.h
+
+xmms_*_cmds.h - These files define the structures that the server code can hook into to provide ipc commands and requests(requests may end up being implemented differently). This replaces the old XMMS_CMD_DEFINE stuff, although it could be implemented using it if the way the current system works isn't flexible enough.
+
+ipc_msg_deserialize.c - Server-side file that can deserialize an incoming command and its arguments and pass it along to the appropriate point in the server(through the xmms_*_cmds.h interface)
+
+ipc_msg_gen.c - Server-side file that implements a replacement of the old process_msg function in ipc.c  It is not a perfect replacement yet(it doesn't do much in the way of error-checking(neither does any other generated code) or locking things that need to be locked) but it does pass things along to the appropriate function in ipc_msg_deserialize.c
+
+ipc_req_deserialize.c - Client-side file that serves an analogous purpose to ipc_msg_deserialize.c, it deserializes an incomming command's return value.
+
+ipc_req_gen.c - Client-side file that serves an analogous purpose to ipc_msg_gen.c, it takes an incomming command and gives it to the proper function in ipc_req_deserialize.c(same comments to ipc_msg_gen.c above apply here)
+
+ipc_cmds.c - Server-side function that implements all the functions from xmms_*_cmds.h that register methods and objects exposed by ipc.
+
+
+
+== '''Description of genipc.py''' ==
+
+
+It seems big and intimidating, but its not so bad(though it could do with a LOT of improvements...)
+
+First, at the top of genipc.py, are all the variable definitions used. c_map is a dictionary mapping types used in ipc.xml to types used in C
+c_map_internal is another mapping that is used to map to types that can be used inside the server. msg_map maps to the names used in xmmsipc (for things like xmms_ipc_msg_get_uint32()). methodmap and propmap are sets of methods and properties of the various objects. They make it easy to iterate over all the methods or properties of an object w/o going over the xml tree every time.
+
+Next a few convenience functions are described, mostly to cut down on code duplication throughout(though there is still quite a bit of that I haven't found a good way to deal with yet).
+
+Where the code actually starts is all the way down at the bottom, with the standard python line if __name__ == "__main__". Here we start by loading in ipc.xml, try to create the genipc_out dir if it doesn't already exist, and open up all the files that we are going to write to. Then it starts outputting the various headers of each of the files before it goes parsing the xml. How it goes about this is fairly straightforward, though the code isn't very clear. I tried to stick comments throughout it in strategic places at point I found confusing after going back and rereading, so I won't repeat that here. The other remaining functions I tried to write such that the names described what they did, and outputting a few debug lines into the files that it writes to should help clear up what each are doing/writing to(I have to do it sometimes).
+
+
+== '''Description of ipc.xml''' ==
+
+
+I think the format is pretty self-explanatory, but I will explain some of here too.
+
+Enums - these can list things like return values for commands or requests, etc.
+
+Objects - These usually map 1-1 to objects on the server, like output-output or playlist-playlist.
+
+Method - These are requests that operate on its parent object, like "hello" for the main object.
+
+Properties - These are readable and/or writeable properties of objects that can be requested from a client. See [http://wiki.xmms2.xmms.se/index.php/Talk:Summer_of_Code_2007/Generated_IPC]
+
 ----
 [[User:Tcoppi|tcoppi]] 19:03, 29 June 2007 (CEST)
 
@@ -24,34 +69,3 @@ The current way it is done, with an XMMS_OBJECT and XMMS_CMD_DEFINE, it must be 
 [[User:Tcoppi|tcoppi]] 03:51, 20 August 2007 (CEST)
 
 The above is somewhat out of date, as I realized after implementing that some of the above fields(like arg3) are not necessary, but I won't change them for now.
-
-
-'''Description of generated files'''
-----
-
-xmmsclient.h - header file that defines all the core methods and objects exposed by the ipc system. Serves the same basic purpose as the current xmmsclient.h
-
-xmms_*_cmds.h - These files define the structures that the server code can hook into to provide ipc commands and requests(requests may end up being implemented differently). This replaces the old XMMS_CMD_DEFINE stuff, although it could be implemented using it if the way the current system works isn't flexible enough.
-
-ipc_msg_deserialize.c - Server-side file that can deserialize an incoming command and its arguments and pass it along to the appropriate point in the server(through the xmms_*_cmds.h interface)
-
-ipc_msg_gen.c - Server-side file that implements a replacement of the old process_msg function in ipc.c  It is not a perfect replacement yet(it doesn't do much in the way of error-checking(neither does any other generated code) or locking things that need to be locked) but it does pass things along to the appropriate function in ipc_msg_deserialize.c
-
-ipc_req_deserialize.c - Client-side file that serves an analogous purpose to ipc_msg_deserialize.c, it deserializes an incomming command's return value.
-
-ipc_req_gen.c - Client-side file that serves an analogous purpose to ipc_msg_gen.c, it takes an incomming command and gives it to the proper function in ipc_req_deserialize.c(same comments to ipc_msg_gen.c above apply here)
-
-ipc_cmds.c - Server-side function that implements all the functions from xmms_*_cmds.h that register methods and objects exposed by ipc.
-
-
-'''Description of genipc.py'''
-----
-
-It seems big and intimidating, but its not so bad(though it could do with a LOT of improvements...)
-
-First, at the top of genipc.py, are all the variable definitions used. c_map is a dictionary mapping types used in ipc.xml to types used in C
-c_map_internal is another mapping that is used to map to types that can be used inside the server. msg_map maps to the names used in xmmsipc (for things like xmms_ipc_msg_get_uint32()). methodmap and propmap are sets of methods and properties of the various objects. They make it easy to iterate over all the methods or properties of an object w/o going over the xml tree every time.
-
-Next a few convenience functions are described, mostly to cut down on code duplication throughout(though there is still quite a bit of that I haven't found a good way to deal with yet).
-
-Where the code actually starts is all the way down at the bottom, with the standard python line if __name__ == "__main__". Here we start by loading in ipc.xml, try to create the genipc_out dir if it doesn't already exist, and open up all the files that we are going to write to. Then it starts outputting the various headers of each of the files before it goes parsing the xml. How it goes about this is fairly straightforward, though the code isn't very clear. I tried to stick comments throughout it in strategic places at point I found confusing after going back and rereading, so I won't repeat that here. The other remaining functions I tried to write such that the names described what they did, and outputting a few debug lines into the files that it writes to should help clear up what each are doing/writing to(I have to do it sometimes).
