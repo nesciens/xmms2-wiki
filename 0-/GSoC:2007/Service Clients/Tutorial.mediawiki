@@ -57,6 +57,8 @@ If all goes well, it is time to return data to the client.  For the method we re
  res = xmmsc_service_return (connection, result, method);
  xmmsc_result_unref (res);
 
+It is valid to send return values back to the same client for as many times as you like without having the client making multiple requests.  Simply push the new values and call xmmsc_service_return() will suffice.
+
 = Client =
 
 Client can list all available services and methods, describe details of each of them and call methods.  Before calling a method, the client needs to know the detailed information of the method.  So it is necessary to describe the method and its argument and return types before making the request.
