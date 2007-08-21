@@ -179,8 +179,8 @@ Helper functions, which do not interacts with the server.  Most of the helper fu
  xmmsc_service_method_free (xmmsc_service_method_t *method);
  xmmsc_service_method_attribute_get (xmmsc_service_method_t *method, char **name, char **description);
  
- xmmsc_service_method_arg_type_add (xmmsc_service_method_t *method, const char *name, xmmsc_service_arg_type_t type);
- xmmsc_service_method_ret_type_add (xmmsc_service_method_t *method, const char *name, xmmsc_service_arg_type_t type);
+ xmmsc_service_method_arg_type_add (xmmsc_service_method_t *method, const char *name, xmmsc_service_arg_type_t type, int32_t optional);
+ xmmsc_service_method_ret_type_add (xmmsc_service_method_t *method, const char *name, xmmsc_service_arg_type_t type, int32_t optional);
  xmmsc_service_method_arg_add_uint32 (xmmsc_service_method_t *method, const char *name, uint32_t value);
  xmmsc_service_method_arg_add_int32 (xmmsc_service_method_t *method, const char *name, int32_t value);
  xmmsc_service_method_arg_add_string (xmmsc_service_method_t *method, const char *name, char *value);
