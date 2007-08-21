@@ -105,6 +105,8 @@ If pattern is given, do the same that "xmms2 jump <pattern> && xmms2 play" would
 
 : I'd rather do this kind of function using aliases, if possible (so you could also have addplay, etc).
 : --[[User:Theefer|Theefer]] 08:44, 20 August 2007 (CEST)
+:: Or alternatively, replace the jump command with the play command. But that makes it impossible to jump without playing, which could be annoying. Worth trying still.
+:: --[[User:Theefer|Theefer]] 04:24, 21 August 2007 (CEST)
 
 ==== pause ====
 
