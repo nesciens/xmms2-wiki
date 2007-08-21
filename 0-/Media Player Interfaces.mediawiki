@@ -110,33 +110,9 @@ The "Tracklist" '''can''', but does not '''need''' to:
 === "Metadata" ===
 
 "Metadata" is data that the files carry within themselves as a means of self-identification (commonly known as "tags"), or data that has been retrieved about the files trough other means, e.g. an internet service that provides additional data about particular media files.
-"Metadata" is an array of dict entries, like ("length", 253), ("name", "Bolero"), ("video-codec", "DIVX"). The dict entry is in the form (string, variant) eg: {sv}.
+"Metadata" is an array of dict entries in the form (string, variant) eg: {sv}.
 
-==== VLC Metadata ====
-
-'''NOTE''': This is what ''VLC'' currently sends; there has no standard been agreed upon yet -- mderezynski
-
-Furthermore, "Metadata" can be split into two categories:
-1) Technical metadata:
-* "URI":"s"
-* "length":"i" (length in seconds)
-* "video-codec":"s" (video codec as a fourcc)
-* "audio-codec":"s" (audio codec as a fourcc)
-* "video-bitrate":"i" video bitrate
-* "audio-bitrate":"i" audio bitrate
-* "audio-samplerate":"i" (audio samplerate)
-
-2) Informational metadata
-* "name":"s"
-* "artist":"s"
-* "album":"s"
-* "unique-id":"s" : Musicbrainz Track Identifier as specified on http://musicbrainz.org/docs/specs/metadata_tags.html
-* "genre":"s"
-
-This list is informative, and can be extended up to your needs, for example: "age of the captain":"i"
-Only Required fields are: "URI" and "length"
-
-==== BMP Variant ====
+''' TODO: agree on a formal list of common entries / required entries '''
 
 '''This is what BMP sends:'''
 I've copied and pasted our attribute definition code directly so it's clear to see which data type a particular attribute is.
