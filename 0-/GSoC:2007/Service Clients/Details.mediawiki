@@ -67,7 +67,7 @@ In order to help client developers use services, we need to publish API document
 
 ==See Also==
 ===Further information on Service Client===
-* [[Summer of Code 2007/Service Clients/Design|Internal Design of Service Client]]
+* [[Summer of Code 2007/Service Clients/Design|Internal Design of Service Client Feature]]
 * [[Summer of Code 2007/Service Clients/scm|Service Client Manager]]
 
 ===Usage===
