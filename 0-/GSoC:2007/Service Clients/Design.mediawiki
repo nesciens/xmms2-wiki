@@ -123,6 +123,12 @@ Different from other server-side objects, service object has a central entry poi
                                     const gchar *name);
  static gboolean xmms_service_matchsc (gpointer key, gpointer value,
                                        gpointer data);
+ static gboolean xmms_service_method_request_matchfd (gpointer key,
+                                                      gpointer value,
+                                                      gpointer data);
+ static gboolean xmms_service_method_request_matchmethod (gpointer key,
+                                                          gpointer value,
+                                                          gpointer data);
  static void xmms_service_key_insert (gpointer key, gpointer value,
                                       gpointer data);
  static void xmms_service_arg_insert (gpointer key, gpointer value,
