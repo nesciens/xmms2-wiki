@@ -137,4 +137,6 @@ You have to setup a callback function to handle the return value, because it is 
      printf ("return value: %s\n", arg);
  }
 
+After a successful request to the method, the client is subscribed to the broadcast.  The service client method can send return values to the client many times whenever it feels like to, unless the service client decides to stop sending, or the client disconnects to the server or simply ignore them.
+
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
