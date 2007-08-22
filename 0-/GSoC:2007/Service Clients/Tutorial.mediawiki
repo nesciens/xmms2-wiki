@@ -18,9 +18,6 @@ There are three major steps for registering a method, registering the service it
 
  char service[] = "service.name";
  result = xmmsc_service_register (connection, service, "service description", 1, 0);
- xmmsc_result_wait (result);
- if (xmmsc_result_iserror (result))
-     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
  xmmsc_result_unref (result);
 
 Then you have to create the method structure and push the types of the arguments and return values to it.  If you do not have any arguments or return values for the method, simply ignore the function calls to push types.
@@ -35,9 +32,6 @@ Then you have to create the method structure and push the types of the arguments
 Finally, it is time to register the method.  Notice that the callback function set earlier will be attached to the broadcast by calling xmmsc_result_notifier_set() automatically, you do not need to do this again.
 
  result = xmmsc_service_method_register (connection, service, method);
- xmmsc_result_wait (result);
- if (xmmsc_result_iserror (result))
-     fprintf (stderr, "%s\n", xmmsc_result_get_error (result));
  xmmsc_result_unref (result);
 
 So we are done, the method is registered to the server if no error occurs.  But do not hurry to free the method structure.  It will be needed later, and it will be freed automatically when it is no longer needed.
