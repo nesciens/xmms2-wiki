@@ -4,6 +4,8 @@ Service clients and clients are essentially clients, but they differ from each o
 
 For details of service client API, you should always consult XMMS2 Doxygen Documentation.  If you need some working code examples, [http://repo.or.cz/w/xmms2-tutorial.git service client tutorial] is a good place to start with.  [[Summer_of_Code_2007/Service_Clients/scm|Service Client Manager]] can also be consulted if you need a full featured service client example.
 
+'''Note:''' When registering a service method, you are actually subscribed to a special broadcast.  And this is the same when client requests a service method.  Thing passing between service clients and clients goes through this special broadcast channel, so you should '''never''' do xmmsc_result_wait() on the result returned by xmmsc_service_method_register() nor xmmsc_service_request(), which means that it should be in asynchronous mode.  It is bad to mix asynchronous and synchronous modes in a single instance, so keep it asynchronous if you are using service client feature.
+
 = Service Client =
 
 Since a service client differs from a normal client in the way that it interacts with other clients by providing services and corresponding methods, we need a way to let the server know what our service client provides and how others can use them.  This is done by [[#Registration|registering]] the services and methods to the server.
