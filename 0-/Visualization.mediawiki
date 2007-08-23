@@ -1,122 +1,50 @@
-{{Template:Discussion}}
-
-
 == Note ==
 
-As Visualisation was accepted as Google Summer of Code Project, there is now a dedicated page about that one '''[[Summer_of_Code_2007/Visualization|here]]'''. I will merge and deprecate this page soon. Everybody is still invited to share his/her ideas on the topic with me :)
+Visualization support was a Google Summer Of Code project of 2007 (see '''[[Summer_of_Code_2007/Visualization|here]]'''). The code produced is '''not''' yet part of the mainline distribution.
+
+This page only gives an overview of the current state and wants to tease what can be expected in this, or a slightly altered form for one of the future releases of XMMS2. Furthermore, interested developers are given the necessary information to try it out.
 
 
-== Old Discussion ==
+= Visualization for the user =
+
+== Overview ==
+
+XMMS2 handles visualization quite a little bit different than most other music players. There are no visualization "plugins", as to the nature of XMMS2's client-server concept, visualization can be done in a standalone application, just like editing the playlist or searching media.
+
+To utilize visualization, you can just install the client of your interest and run it besides XMMS2.
+
+== Availability ==
+
+There will be several solutions to have visualization of your music with XMMS2:
+
+* Using a standalone client called "xmms2-libvisual", all available such called "actor plugins" for [http://localhost.nl/~synap/libvisual-wiki/index.php/Main_Page libvisual] are supported. These are the same as for example supported by Amarok. In particular, [http://xmms-projectm.sourceforge.net/ projectM] is supported.
+* [http://fopref.meinungsverstaerker.de/xmms-rootvis/ XMMS-Rootvis] will be available for XMMS2, too.
+* Some already available clients to control XMMS2 will feature "inbuilt" visualization inside the main window
 
 
-Some thoughts on visualisation...
+Don't expect plugins for good ol' XMMS to work with XMMS2. But if you're interested in a particular one, you could ask us to port it over.
 
+== Visualization over network ==
 
-It is trivial. All that has to be done is feeding some vis-data to the
-clients. :)
+We adhere to the network transparent client-server concept of XMMS2, therefore, visualization is also available to clients connecting from other hosts! It stays in sync with the music regardless of considerable lag, for example on a wireless connection.
 
-"Vis-data" denotes raw pcm-data and perhaps fft-data aswell. Using wavelets for processing the pcm-data could also be considered. "Feeding" means that the server should give the data to clients in an efficient way, easy to digest for the clients and abstracted nicely in the clientlib.
+= Visualization for the developer =
 
+== Getting it to work ==
 
-A client should be able to request raw pcm-data to give full flexibility. There are two ways to do it:
+Today, you need to fetch the "xmms2-ypnos" tree of XMMS2 to build it with visualization support. You can do that using git or [http://git.xmms.se/snapshot.cgi/xmms2-ypnos.git-snapshot-HEAD.tar.bz2 download directly].
 
-* Give the client only the best data available (raw pcm, good sampleformat, high samplerate)
-: Pros:
-:# no mess with different configuration possibilities
-:# simple interface, clean implementation on the server side
-: Cons:
-:# clients have to implement FFT etc. themselves
-:# makes porting existing visualization plugins harder, too much code for "simple visualization" (like builtin a normal client window) 
-:# all the data has to be shared/transmitted, even if it is mostly unused (bad for UDP, see below)
+Build and install XMMS2 as usual, and if it worked, add "visualization" to the effects chain in your XMMS2 configuration. Example:
+        <section name="effect">
+                <section name="order">
+                        <property name="0">equalizer</property>
+                        <property name="1">visualization</property>
+                        <property name="2"></property>
+                </section>
+        </section>
 
-* Let the client decide its data format, give some configuration options
-: PCM: sampleformat (needed?), samplerate
-: FFT: windowsize, freq. range, number of bands (, logarithm?)
-: Wavelet? (perhaps too specific, was requested on #xmms2 some time ago)
+Run "vistest" or "xmms2-libvisual" to test if visualization works properly. You could also try "xmms2-ripper", which dumps the audio currently played as ogg/vorbis stream to stdout.
 
-: Pros:
-:* data is processed the same (good) way regardless of the visualization client (which could do it a bad way)
-:* client developers don't have to bother how to get the data in the right way
+== Writing your own client ==
 
-: Cons:
-:* configuration options could not be sufficient for clients, so they have to fallback to raw pcm or default fft data anyway
-:* server has to deal with more stuff
-
-
-
-Client communication should:
-* Allow multiple clients.
-* Have low overhead.
-* Be robust, a client should not be able to block other clients, or even worse the server.
-* Drop data instead of wait if the clients are lagging.
-* Have timing information, so clients know when the sound from the data will be in the speakers.
-
-Multiple clients are not strictly needed, most people will probably
-just run one vis client. But multiple clients are really the main
-feature of XMMS2, so it just should be implemented.
-
-
-Low overhead sounds like an SHM mechanism, doesn't it? Just needs to
-make sure that server doesn't write to the same place that the client
-is reading from.
-
-Designing this mechanism will probably be the hard part. Should the
-control-messages be passed over standard xmmsipc or over shm? How will
-the robustness be ensured?
-
-Possible solution: Using semaphores aside the shm; the semaphore could be increased by the server every time new data is available, so the client just can wait (sleep) using the semaphore mechanism. The server can then poll on the semaphore instead of trying to decrease it, so don't wait for the client at all but skip frames. Control communication should not be needed during normal operation. 
-
-Note that if the server decides to skip a frame, this would not prevent the server from starting to write while the  client is reading. So possibly data is not consistent. Should vis-data consistency be guaranteed?
-
-: Consistency of vis data doesn't really matter (it can have a "interlaced" effect), although if the data format can be changed on the fly, it _does_ matter -- ypnos
-: Probably it is not necessary to change the format on the fly, if the client really wants another format then it could just request a new vis object. -- mat
-: It's not necessary but a nice feature; Some of the data's format depends on user configuration, and clients could provide on-the-fly configuration, and this would run smoother without the re-opening overhead. -- ypnos
-
-In pseudocode it could look like this:
-
-<code>  
-       server:                                       client:
-
-       semaphore = 0
-       loop:                                         loop:
-           write_vis_data                                wait_decrease(semaphore)
-           increase(semaphore)                           read_vis_data
-           while NOT skipFrame                           increase(semaphore)
-               wait a little bit
-           no_wait_decrease(semaphore)   
-
-</code>
-
-The better solution to this is to use two semaphores, which burry a deeper knowledge of the situation:
-One semaphore stands for "client is ready to read (ie, doesn't read anymore)", the other one for "server has new data" (ie finished writing new data); these semaphores can be used in circle, IE one party raises them, the other one lowers them. combined, they provide access control. -- ypnos
-
-    server:                            client:
-
-    s_semaphore = 0                    c_semaphore = 1
-    loop:                              loop:
-        no_wait_decrease(c_semaphore)      decrease(s_semaphore)
-        write_vis_data                     read_vis_data
-        increase(s_semaphore)              increase(c_semaphore)
-
-Clarification about "no_wait_decrease": The server _has_ to wait for the client to increase the semaphore. But it shouldn't do it blockingly, but instead poll the semaphore's value and: if decrease possible, do it etc.; if not, skip this frame and try again on next update time.
-
-The c_semaphore could be used to detect if the client died, ie check if it has not been increased for a while. Maybe it is even possible to calculate the best frame update frequency with it, by looking at how many times per second c_semaphore gets increased.
-: Re-calculating update frequency is more interesting on UDP connections, because of bandwidth problems. You need talk-back (IPC) from the client for this to work, though. This talkback possibility could also be used with SHM to alter the framework. Your idea on crash-detection is nice, but we already have an open IPC connection. if the client crashes, this will close automatically, which can be recognized -- ypnos
-
-The overall communication process could be:
-
-# Client requests vis data, giving options like: format and type (pcm,fft,both), update frequency
-# Server creates SHM and sends back its ID
-# Server updating SHM, client reading; no need for further control messages here
-
-Step 3 is repeated until client cancels or disconnects. -- mat
-: I would let the client create the SHM, as with UDP, it's also the client who opens the listening port -- ypnos
-
-
-There are other things that might be nice, but not necessary:
-* Fallback to udp when on remote machine: should be transparent to the vis client, as well - some people tend to say this is a "must-have"!
-* Fallback to standard xmmsipc?
-
-Another interesting project concerning visualization would be to implement a plugin that integrates libvisual [http://localhost.nl/~synap/libvisual]. It is a framework designed to act as a middle layer between media players and actual visualization applications. Benefit would be that there are already several applications available that could be used with XMMS2.
-
-: I already talked to the libvisual guys, they are very helpful and writing a client for libvisual should be very easy! -- ypnos
+tbd ;)
