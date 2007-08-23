@@ -1,6 +1,6 @@
 = Overview =
 
-Service clients and clients are essentially clients, but they differ from each other in the sense that the former interact with all the other clients.  This page will show you what the essential steps are for creating a service client and how a client can use a service client's method.  Hopefully, this will give you a better understanding of what service clients are.
+''Service clients'' and ''clients'' are essentially clients, but they differ from each other in the sense that the former interact with all the other clients.  This page will show you what the essential steps are for creating a service client and how a client can use a service client's method.  Hopefully, this will give you a better understanding of what service clients are.
 
 For details of service client API, you should always consult XMMS2 Doxygen Documentation.  If you need some working code examples, [http://repo.or.cz/w/xmms2-tutorial.git service client tutorial] is a good place to start with.  [[Summer_of_Code_2007/Service_Clients/scm|Service Client Manager]] can also be consulted if you need a full featured service client example.
 
