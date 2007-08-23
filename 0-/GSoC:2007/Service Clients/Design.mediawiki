@@ -161,7 +161,6 @@ The following functions interacts with the server.  Worth noting that the differ
  xmmsc_service_describe (xmmsc_connection_t *conn, const char *service);
  xmmsc_service_method_list (xmmsc_connection_t *conn, const char *service);
  xmmsc_service_method_describe (xmmsc_connection_t *conn, const char *service, const char *method);
- xmmsc_service_method_describe_args (xmmsc_connection_t *conn, const char *service, const char *method);
  
  xmmsc_service_request (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method);
  xmmsc_service_return (xmmsc_connection_t *conn, xmmsc_result_t *res, xmmsc_service_method_t *method);
@@ -174,6 +173,8 @@ Broadcasts.
 
 Helper functions, which do not interacts with the server.  Most of the helper functions deal with arguments and return types.  After you have created xmmsc_service_method_t structure, you can tell what names and types of arguments or return types the method will use by pushing the types into the structure.  The two functions that perform this operation are xmmsc_service_method_arg_type_add() and xmmsc_service_method_ret_type_add().  All those xmmsc_service_method_arg/ret_add_#() functions are used by clients to add different types of values to the arguments or return arguments.
  xmmsc_service_method_new (const char *name, const char *description, xmmsc_service_notifier_t func, void *user_data);
+ void xmmsc_service_method_ref (xmmsc_service_method_t *method);
+ void xmmsc_service_method_unref (xmmsc_service_method_t *method);
  xmmsc_service_method_attribute_get (xmmsc_service_method_t *method, char **name, char **description);
  
  xmmsc_service_method_arg_type_add (xmmsc_service_method_t *method, const char *name, xmmsc_service_arg_type_t type, int32_t optional);
