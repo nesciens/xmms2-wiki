@@ -90,7 +90,7 @@ Listing the names of all available services or methods might not be enough.  Som
  }
  xmmsc_result_unref (result);
 
-Describing a method is similar to this except that the result is not a dictionary.  You have to get the resulting method structure by calling xmmsc_result_get_method().  The following shows how to describe a method, then create a method structure from the results.  Remember that if you need to use the method later, then you have to reference it before unreferencing the result.
+Describing a method is similar to this except that the result is not a dictionary.  You have to get the resulting method structure by calling xmmsc_result_get_service_method().  The following shows how to describe a method, then create a method structure from the results.  Remember that if you need to use the method later, then you have to reference it before unreferencing the result.
 
  result = xmmsc_service_method_describe (connection, "service.name", "method_name");
  xmmsc_result_wait (result);
