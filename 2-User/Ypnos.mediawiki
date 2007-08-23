@@ -1,5 +1,5 @@
 Although my name is ypnos here, I'm also known as FoPref (abbr. for Ford Prefect). Most times I'm around on IRC, that's my nickname.
 
-I'm working on Visualization this summer. You can find more information about it '''[[Summer_of_Code_2007/Visualization|here]]'''!
+I'm working on Visualization this summer. You can find more information about it '''[[Visualization|here]]'''!
 
 See [http://fopref.meinungsverstaerker.de/xmms-rootvis XMMS Rootvis] for my XMMS Visualization plugin :)
