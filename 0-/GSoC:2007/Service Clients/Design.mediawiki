@@ -131,8 +131,6 @@ Different from other server-side objects, service object has a central entry poi
                                                           gpointer data);
  static void xmms_service_key_insert (gpointer key, gpointer value,
                                       gpointer data);
- static void xmms_service_arg_insert (gpointer key, gpointer value,
-                                      gpointer data);
  static inline guint xmms_service_next_id (void);
  static xmms_service_entry_t *xmms_service_get (xmms_service_t *xmms_service,
                                                 xmms_ipc_msg_t *msg, gchar **name,
