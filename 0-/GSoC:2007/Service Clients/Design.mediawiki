@@ -203,8 +203,7 @@ Helper functions, which do not interacts with the server.  Most of the helper fu
  xmmsc_service_method_error_reset (xmmsc_service_method_t *method);
  xmmsc_service_method_error_isset (xmmsc_service_method_t *method);
 
-These few functions help developers extract service client related information from result_t.
+This function helps developers extract service client related information from result_t.
  xmmsc_result_get_service_method (xmmsc_result_t *res, xmmsc_service_method_t **method);
- xmmsc_result_get_service_method_arg_types (xmmsc_result_t *res, xmmsc_service_method_t *method);
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
