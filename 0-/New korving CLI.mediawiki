@@ -169,7 +169,7 @@ matching media are displayed.
  Options:
  -p, --playlist <name>    Display a given playlist.
 
-==== add [options] <pattern> ====
+==== add [options] <pattern | paths> ====
 
 Add the matching media to a playlist or a collection.  Some options
 are only relevant when adding to playlists or collections.
@@ -178,7 +178,7 @@ This command can also be used to add files using their URI.  By
 default, directories are added recursively.
 
  Options:
- -f, --file <path>
+ -f, --file               Treat the arguments as file paths, not a pattern.
  -N, --non-recursive      Do not add directories recursively.
  
  -p, --playlist <name>    Add to a given playlist.
