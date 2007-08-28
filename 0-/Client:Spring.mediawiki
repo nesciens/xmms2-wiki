@@ -1,0 +1,1 @@
+{{Client| name=Spring| author=Benjamin Schmitz| website=[http://wolpzone.de/spring/]| version=0.1| devlanguage=Python| ui=Graphical (Qt4)| screenshots=see homepage| description=Spring is a multi-featured client intended for general use. It allows you to browse your music in many different ways and features a main window with tabs which makes managing playlists easy.}}
