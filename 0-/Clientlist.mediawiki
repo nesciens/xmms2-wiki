@@ -36,6 +36,7 @@ All current clients should be found here.
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
 {{ClientTableEntry|Sonus| Graphical / QT4 | Python | in development | Simple, yet full-featured player }}
 {{ClientTableEntry|Sopran| Graphical / GTK | Ruby | in development | Simple player with plugin system }}
+{{ClientTableEntry|Spring| Graphical / Qt4 | Python | in development | multi-featured client with different media browsers }}
 {{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
 {{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
 {{ClientTableEntry|x2c| console | ruby | stable | little rubyistic console client with advanced features}}
