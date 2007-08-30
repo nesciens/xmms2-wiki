@@ -7,6 +7,10 @@ This page only gives an overview of the current state and wants to tease what ca
 
 = Visualization for the user =
 
+== Teaser ==
+
+There's a screencast showing several visualization clients [http://fopref.meinungsverstaerker.de/div/vis.ogg available here] (39 MiB). It is encoded with Ogg Theora+Vorbis. Focus on the gnome panel applet with the flames :)
+
 == Overview ==
 
 XMMS2 handles visualization quite a little bit different than most other music players. There are no visualization "plugins", as to the nature of XMMS2's client-server concept, visualization can be done in a standalone application, just like editing the playlist or searching media.
