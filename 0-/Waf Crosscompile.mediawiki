@@ -22,8 +22,6 @@ Put the following in a win32.sh:
  export LINK_CXX=i586-mingw32msvc-g++
  export WINRC=i586-mingw32msvc-windres
  
- rm -rf _build_
- 
  # Options may vary on what you want to compile, tweak at your discression
  ./waf configure --conf-prefix=/usr/i586-mingw32msvc,../mingw-root
    --without-optionals=xmmsclient++,dns_sd,perl,launcher,medialib-updater,xmmsclient++-glib,et,avahi 
