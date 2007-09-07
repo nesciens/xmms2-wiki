@@ -29,8 +29,12 @@ Put the following in a win32.sh:
    --without-optionals=xmmsclient++,dns_sd,perl,launcher,medialib-updater,xmmsclient++-glib,et,avahi 
    --with-target-platform=win32 --without-plugins=ao,alsa,oss,musepack,mac,avformat,daap,avcodec
 
-Now you're ready to rumble:
+Remember to make the shellscript executable:
 
+ chmod +x win32.sh
+
+Now you're ready to rumble:
+ ./win32.sh
  ./waf build -p -j2
 
 Badabing, you've crosscompiled XMMS2 for Windows!
