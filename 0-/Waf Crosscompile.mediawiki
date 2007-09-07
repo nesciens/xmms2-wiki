@@ -23,9 +23,10 @@ Put the following in a win32.sh:
  export WINRC=i586-mingw32msvc-windres
  
  # Options may vary on what you want to compile, tweak at your discression
- ./waf configure --conf-prefix=/usr/i586-mingw32msvc,../mingw-root
-   --without-optionals=xmmsclient++,dns_sd,perl,launcher,medialib-updater,xmmsclient++-glib,et,avahi 
-   --with-target-platform=win32 --without-plugins=ao,alsa,oss,musepack,mac,avformat,daap,avcodec
+ ./waf configure --conf-prefix=/usr/i586-mingw32msvc,../mingw-root \
+   --without-optionals=xmmsclient++,dns_sd,perl,launcher,medialib-updater,xmmsclient++-glib,et,avahi \
+   --with-target-platform=win32 \
+   --without-plugins=ao,alsa,oss,musepack,mac,avformat,daap,avcodec
 
 Remember to make the shellscript executable:
 
