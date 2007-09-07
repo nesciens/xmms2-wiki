@@ -72,6 +72,8 @@ Will configure your build. Interesting options:
 * --prefix <path> : tells waf to put the installation in path
 * --conf-prefix <path> : tells waf to append -I<path>/include and -L<path>/lib before trying to compile anything
 * --without-plugins <list> : disable all the plugins in list.
+* --without-xmms2d 1|0 : disable xmms2d
+* --without-optionals <list> : disable all the optionals in the list.
 * --nocache : rerun all configuration tests.
 * -p : show a useless but cool progress bar when building!
 
