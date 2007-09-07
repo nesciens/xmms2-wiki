@@ -65,6 +65,8 @@ Some supported platforms may have variations on build requirements:
 
 == Configure ==
 
+
+
  ./waf configure
 
 Will configure your build. Interesting options:
@@ -76,6 +78,9 @@ Will configure your build. Interesting options:
 * --without-optionals <list> : disable all the optionals in the list.
 * --nocache : rerun all configuration tests.
 * -p : show a useless but cool progress bar when building!
+
+
+''[[Waf_Crosscompile | Crosscompile for a different target platform]]''
 
 == Build ==
 
