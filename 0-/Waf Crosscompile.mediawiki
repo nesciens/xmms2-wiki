@@ -1,0 +1,36 @@
+== Windows ==
+
+Grab the following 7zip and extract it somewhere (lets call it $MINGW_ROOT)
+
+ http://exodus.xmms.se/~puzzles/win32/MSys.7z
+
+And then get mingw:
+
+ aptitude install mingw
+
+Put the following in a win32.sh:
+
+ export MINGW_ROOT=/path/to/mingw-you-extracted
+ export PKG_CONFIG_PREFIX=$MINGW_ROOT
+ export PKG_CONFIG_LIBDIR=$MINGW_ROOT/lib/pkgconfig
+ export AR=i586-mingw32msvc-ar
+ export RANLIB=i586-mingw32msvc-ranlib
+ export CC=i586-mingw32msvc-gcc
+ export CPP=i586-mingw32msvc-g++
+ export CXX=i586-mingw32msvc-g++
+ export LINK_CC=i586-mingw32msvc-gcc
+ export LINK_CXX=i586-mingw32msvc-g++
+ export WINRC=i586-mingw32msvc-windres
+ 
+ rm -rf _build_
+ 
+ # Options may vary on what you want to compile, tweak at your discression
+ ./waf configure --conf-prefix=/usr/i586-mingw32msvc,../mingw-root
+   --without-optionals=xmmsclient++,dns_sd,perl,launcher,medialib-updater,xmmsclient++-glib,et,avahi 
+   --with-target-platform=win32 --without-plugins=ao,alsa,oss,musepack,mac,avformat,daap,avcodec
+
+Now you're ready to rumble:
+
+ ./waf build -p -j2
+
+Badabing, you've crosscompiled XMMS2 for Windows!
