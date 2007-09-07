@@ -10,7 +10,7 @@ And then get mingw:
 
 Put the following in a win32.sh:
 
- export MINGW_ROOT=/path/to/mingw-you-extracted
+ export MINGW_ROOT=/path/to/Msys.7z-you-extracted
  export PKG_CONFIG_PREFIX=$MINGW_ROOT
  export PKG_CONFIG_LIBDIR=$MINGW_ROOT/lib/pkgconfig
  export AR=i586-mingw32msvc-ar
