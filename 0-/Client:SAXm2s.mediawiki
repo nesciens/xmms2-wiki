@@ -1,4 +1,4 @@
-{{Client |name=SAXm2s| author=[[John O'Meara]]| website=http://www.cs.drexel.edu/~jfo24/projs/saxm2s/| version=[http://linsam.homelinux.com/projs/saxm2s-0.5.52.tbz2 0.5.52]| devlanguage=Python| ui=Qt| screenshots=http://www.cs.drexel.edu/~jfo24/projs/saxm2s/screenshots.html| description=
+{{Client |name=SAXm2s| author=[[John O'Meara]]| website=http://www.cs.drexel.edu/~jfo24/projs/saxm2s/| version=[http://linsam.homelinux.com/projs/saxm2s-0.5.53.tar.bz2 0.5.53]| devlanguage=Python| ui=Qt| screenshots=http://www.cs.drexel.edu/~jfo24/projs/saxm2s/screenshots.html| description=
 saxm2s (simply access xmms2) is a simplistic qt graphical client written in python offering control of playback features, a list of the current playlist, and a simple file-add or url-add function.
 
 '''See also''': [https://launchpad.net/products/saxm2s SAXm2s on Launchpad]}}
