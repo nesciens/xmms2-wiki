@@ -3,9 +3,13 @@
 by Anton Frolenkov, Joseph E. Lynch
 
 Homepage: http://code.google.com/p/konfetka
+
 Latest version: version 0 alpha 1
+
 Development language: C++
+
 User Interface: Qt >= 4.3
+
 Screenshots: 
 *http://img209.imageshack.us/img209/8172/konfetka1zf2.png
 *http://img293.imageshack.us/img293/8288/konfetka2bj0.png
