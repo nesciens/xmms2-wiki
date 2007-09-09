@@ -25,6 +25,7 @@ All current clients should be found here.
 {{ClientTableEntry|Insanity| Graphical / GTK | Python | in development | Simple but complete player }}
 {{ClientTableEntry|ixmms2| Irssi Plugin | Perl | in development | Control and query xmms2 within irssi }}
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
+{{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | deep development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
