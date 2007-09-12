@@ -1,1 +1,11 @@
 On this page I will try to collect information about what is needed to get Qt4 running on the Nokia N800 Maemo linux platform.
+
+Qt/X11 should work more or less out-of-the-box in scratchbox. There are something that needs to be enhanced for Qt4 to act with Maemo:
+
+* Right mouse-click on Mameo is done by holding the pen to the area where you want to rmb, I think the timeout is something like 3-4 seconds.
+* Integration with Hildon
+** Move the Menus to the top
+** Keyboard / handwriting recognition.
+** We should be able to do pretty ok integration with Hildon since Qt4 is running the GMainLoop. When we create our QApplication we probably need to start creat the HildonProgram also.
+
+I have seen on the net that some patches against Qt4 might exist but these have not been posted to any website.
