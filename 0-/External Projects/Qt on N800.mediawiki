@@ -1,0 +1,1 @@
+On this page I will try to collect information about what is needed to get Qt4 running on the Nokia N800 Maemo linux platform.
