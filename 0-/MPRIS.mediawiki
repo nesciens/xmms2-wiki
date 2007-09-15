@@ -14,8 +14,7 @@ The "Tracklist" '''must''':
 * Hold an ordered list of locations of the media files as URIs (e.g. file://, <nowiki>http://</nowiki>, mms:// ...).
 * Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering trough it's remote interface
 
-The "Tracklist" '''can''', but does not '''need''' to:
-* Hold "Metadata" about media files
+The "Tracklist" holds "Metadata" about media:
 
 === "Metadata" ===
 
