@@ -99,6 +99,7 @@ For example:
 === "Tracklist" ===
 
 A list of media files which resides within the "Media Player", and whose implementation is opaque to the remote interface.
+TrackList is an optional D-Bus object
 
 The "Tracklist" '''must''':
 * Hold an ordered list of locations of the media files as URIs (e.g. file:// or <nowiki>http://</nowiki>). The implementation of this can be opaque, which means, it does not neccesarily need to store URIs, but upon remote request, it must be able to return an URI for a given media file.
