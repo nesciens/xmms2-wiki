@@ -38,17 +38,32 @@ It is represented as epoch, i.e. the number of seconds since Â« 00:00:00 1970-
 
 === Informational for external services ===
 
-==== "puid fingerprint" ====
-==== "mb track id" ====
-==== "mb artist id" ====
-==== "mb artist sort name" ====
-==== "mb album id" ====
-==== "mb release date" ====
-==== "mb album artist" ====
-==== "mb album artist id" ====
-==== "mb album artist sort name" ====
-
 ==== "asin" ====
+Amazon Standard Identification Number
+
+==== "puid fingerprint" ====
+MusicDNS audio fingerprint id
+http://wiki.musicbrainz.org/PUID
+
+The following are Musicbrainz (http://musicbrainz.org) fields
+
+==== "mb track id" ====
+The relative URI as defined in http://wiki.musicbrainz.org/TrackID
+
+==== "mb artist id" ====
+
+==== "mb artist sort name" ====
+http://wiki.musicbrainz.org/ArtistName
+
+==== "mb album id" ====
+
+==== "mb release date" ====
+
+==== "mb album artist" ====
+
+==== "mb album artist id" ====
+
+==== "mb album artist sort name" ====
 
 === Technical ===
 
