@@ -1,28 +1,62 @@
-=== "title" ===
-* The title
+Below is a proposed, minimal list of standard field names with a description of intended use. No single or group of field names is mandatory.
 
-        "artist"
-        "album"
-        "tracknumber"
-        ""
-        "time"
-        "genre"
-        "comment"
-        "rating"
-        "date"
-        "mtime"
+=== Informational ===
 
-        "bitrate"
-        "samplerate"
+==== "title" ====
+Name
 
-        "puid fingerprint"
-        "mb track id"
-        "mb artist id"
-        "mb artist sort name"
-        "mb album id" 
-        "mb release date"
-        "mb album artist"
-        "mb album artist id"
-        "mb album artist sort name"
+==== "artist" ====
+Name of artist or band performing the work
 
-        "asin"
+==== "album" ====
+Name of compilation the work is part of
+
+==== "tracknumber" ====
+The position if it's part of a larger set.
+This MAY be extended with a "/" character and a numeric string containing the total number of elements in the set. E.g. "69/1337".
+
+==== "time" ====
+The duration in seconds
+
+==== "mtime" ====
+The duration in milliseconds
+
+==== "genre" ====
+The genre.
+This MAY begin with a numerical value reflecting the genre in a previously known array of genres, such as ID3 genres.
+See http://www.linuxselfhelp.com/HOWTO/MP3-HOWTO-13.html#ss13.3
+
+==== "comment" ====
+A comment about the work
+
+==== "rating" ====
+A "taste" rate value, out of 5
+
+==== "date" ====
+When the performing was realized.
+It is represented as epoch, i.e. the number of seconds since Â« 00:00:00 1970-01-01 UTC Â»
+
+=== Informational for external services ===
+
+==== "puid fingerprint" ====
+==== "mb track id" ====
+==== "mb artist id" ====
+==== "mb artist sort name" ====
+==== "mb album id" ====
+==== "mb release date" ====
+==== "mb album artist" ====
+==== "mb album artist id" ====
+==== "mb album artist sort name" ====
+
+==== "asin" ====
+
+=== Technical ===
+
+==== "audio-bitrate" ====
+The number of bits per second for audio track
+
+==== "audio-samplerate" ====
+The number of samples per second for audio track
+
+==== "video-bitrate" ====
+The number of bits per second for video track
