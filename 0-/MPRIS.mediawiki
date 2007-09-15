@@ -5,32 +5,13 @@
 
 == Definitions ==
 
-=== "Media Player" ===
-
-An application, either with GUI or GUI-less (or which allows for both modes of operation) which is capable of playing back audio/video streams. The means by which it does accomplish that (e.g. which audio backend to use, and which output method) is out of the scope of this document.
-
-The "Media Player" '''must''':
-* Be able to play back at least local storage file streams.
-* Be able to play back at least one stream at a time.
-
-=== "Client" ===
-
-The Client is an unspecified application that will interact with the "Media Player" using D-Bus protocol.
-For example:
-
-* A softphone, that pauses, or step the volume down, when a call is being received.
-* An applet that nicely integrates in your desktop environment, to control your "Media Player".
-* An instant messaging client which informs your buddies of what you're listening to.
-* A monitor that stores in a database what you are listening to, for statistics purpose.
-* A video editing software that calls an external "Media Player" to preview your work.
-
 === "Tracklist" ===
 
 A list of media files which resides within the "Media Player", and whose implementation is opaque to the remote interface.
 TrackList is an optional D-Bus object
 
 The "Tracklist" '''must''':
-* Hold an ordered list of locations of the media files as URIs (e.g. file:// or <nowiki>http://</nowiki>). The implementation of this can be opaque, which means, it does not neccesarily need to store URIs, but upon remote request, it must be able to return an URI for a given media file.
+* Hold an ordered list of locations of the media files as URIs (e.g. file://, <nowiki>http://</nowiki>, mms:// ...).
 * Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering trough it's remote interface
 
 The "Tracklist" '''can''', but does not '''need''' to:
