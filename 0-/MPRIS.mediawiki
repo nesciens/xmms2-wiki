@@ -58,14 +58,6 @@ Each player can request an own bus name as it likes, except that the prefix must
 * org.mpris.bmp
 * org.mpris.xmms2
 
-The '''interface''' name of the player '''must''' always be "org.freedesktop.MediaPlayer" though.
-
-(This deprecates the following comments:)
-
-:: I think this is a bad idea, it's not the place for a interop Spec to force single instance behaviour without a good reason (i run amarok all the time and use vlc to play videos or streams...). Why not suggest that mediaplayers register with the well known service name ("org.freedesktop.MediaPlayer") with the options QueueService and suggest the media player should register an application specific service in addition?
-
-:: if done that way we gain the feature to query the dbus daemon for all clients queued for that dbus name, so enumerating all current musicplayers that support the Spec is not problem. Contacting the players is not problem to because every client on dbus has a unique name anyway. DBus signal do AFAIK carry the dbus service name of the sending client, so there is no trouble knowing which player send a signal. [[User:textshell|textshell]]
-
 === The interface ===
 
 All methods must be accessed through the interface org.freedesktop.MediaPlayer
