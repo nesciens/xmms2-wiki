@@ -114,12 +114,11 @@ The "Tracklist" '''can''', but does not '''need''' to:
 
 "Metadata" is an array of dict entries in the form (string, variant) eg: {sv}.
 
-==== Mandatory Field names: ====
+There is only one mandatory field : location
+The list of optional fields is on [[MPRIS_Metadata]]
 
 ===== "location" =====
 * Stores an url or a file path to the media
-
-The list of optional Fields on [[MPRIS_Metadata]]
 
 == D-Bus ==
 
