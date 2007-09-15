@@ -3,73 +3,82 @@ Below is a proposed, minimal list of standard field names with a description of 
 === Informational ===
 
 ==== "title" ====
-Name
+(string) Name
 
 ==== "artist" ====
-Name of artist or band performing the work
+(string) Name of artist or band performing the work
 
 ==== "album" ====
-Name of compilation the work is part of
+(string) Name of compilation the work is part of
 
 ==== "tracknumber" ====
 The position if it's part of a larger set.
 This MAY be extended with a "/" character and a numeric string containing the total number of elements in the set. E.g. "69/1337".
 
 ==== "time" ====
-The duration in seconds
+(uint32) The duration in seconds
 
 ==== "mtime" ====
-The duration in milliseconds
+(uint32) The duration in milliseconds
 
 ==== "genre" ====
-The genre.
+(string) The genre.
 This MAY begin with a numerical value reflecting the genre in a previously known array of genres, such as ID3 genres.
 See http://www.linuxselfhelp.com/HOWTO/MP3-HOWTO-13.html#ss13.3
 
 ==== "comment" ====
-A comment about the work
+(string) A comment about the work
 
 ==== "rating" ====
-A "taste" rate value, out of 5
+(uint32) A "taste" rate value, out of 5
 
 ==== "date" ====
-When the performing was realized.
+(uint32) When the performing was realized.
 It is represented as epoch, i.e. the number of seconds since Â« 00:00:00 1970-01-01 UTC Â»
+
+== "arturl" ===
+(string) An URI to an image associated with the work
 
 === Informational for external services ===
 
 ==== "asin" ====
-Amazon Standard Identification Number
+(string) Amazon Standard Identification Number
 
 ==== "puid fingerprint" ====
-MusicDNS audio fingerprint id
+(string) MusicDNS audio fingerprint id
 http://wiki.musicbrainz.org/PUID
 
 ==== "mb track id" ====
-The relative URI as defined in http://wiki.musicbrainz.org/TrackID
+(string) The relative URI as defined in http://wiki.musicbrainz.org/TrackID
 
 ==== "mb artist id" ====
+(string) 
 
 ==== "mb artist sort name" ====
-http://wiki.musicbrainz.org/ArtistName
+(string) http://wiki.musicbrainz.org/ArtistName
 
 ==== "mb album id" ====
+(string) 
 
 ==== "mb release date" ====
+(string) 
 
 ==== "mb album artist" ====
+(string) 
 
 ==== "mb album artist id" ====
+(string) 
 
 ==== "mb album artist sort name" ====
+(string) 
 
 === Technical ===
 
 ==== "audio-bitrate" ====
-The number of bits per second for audio track
+(uint32) The number of bits per second for audio track
 
 ==== "audio-samplerate" ====
-The number of samples per second for audio track
+(uint32) The number of samples per second for audio track
 
 ==== "video-bitrate" ====
-The number of bits per second for video track
+(uint32) The number of bits per second for video track
