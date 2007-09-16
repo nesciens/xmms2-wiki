@@ -112,8 +112,8 @@ Number of elements in the [[#"TrackList"|TrackList]]
 Appends an URI in the [[#"TrackList"|TrackList]], play it immediately if the 2nd argument is TRUE
 
 ===== Arguments: =====
-* The uri of the item to append to the tracklist as a string
-* A boolean, TRUE if the item should be played immediately, FALSE otherwise
+* string: The uri of the item to append to the tracklist
+* boolean, TRUE if the item should be played immediately, FALSE otherwise
 
 ===== Introspection data: =====
 
