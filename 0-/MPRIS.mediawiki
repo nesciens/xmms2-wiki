@@ -28,10 +28,12 @@ The "Tracklist" holds "Metadata" about media:
 
 === Naming conventions ===
 
-Each player can request an own bus name as it likes, except that the prefix '''must''' be "org.mpris" and that the suffix must not contain the '.' character. For example:
+Each player requests an unique name beginning with "org.mpris".
+For example:
 
-* org.mpris.vlc
+* org.mpris.audacious
 * org.mpris.bmp
+* org.mpris.vlc
 * org.mpris.xmms2
 
 === The Interface ===
