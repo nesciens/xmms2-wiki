@@ -59,14 +59,16 @@ i.e. calling Quit with qdbus on VLC would be:
 
 ==== Identity ====
 Identify the "media player" as in "VLC 0.9.0", "bmpx 0.34.9", "Audacious 1.4.0" ...
-
-===== Return value: ===== 
-* A string containing the media player identification. 
-
-===== Introspection data: =====
+Returns a string containing the media player identification. 
 
    <method name="Identity">
      <arg type="s" direction="out"/>
+   </method>
+
+==== Quit ====
+Makes the "Media Player" exit.
+ 
+   <method name="Quit">
    </method>
 
 === /TrackList ===
@@ -159,13 +161,6 @@ Toggle the current track repeat.
 
    <method name="Repeat">
      <arg type="b" />
-   </method>
-
-==== Quit ====
-Makes the "Media Player" exit.
-'''Subject to change -- don't implement yet if you aren't VLC or BMP'''
- 
-   <method name="Quit">
    </method>
 
 ==== GetStatus ====
