@@ -28,7 +28,7 @@ The list of optional fields is on [[MPRIS_Metadata]]
 
 === Naming conventions ===
 
-Each player can request an own bus name as it likes, except that the prefix must be "org.mpris" and that the suffix must not contain the '.' character. For example:
+Each player can request an own bus name as it likes, except that the prefix '''must''' be "org.mpris" and that the suffix must not contain the '.' character. For example:
 
 * org.mpris.vlc
 * org.mpris.bmp
