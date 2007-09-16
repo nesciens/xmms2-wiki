@@ -70,7 +70,6 @@ Makes the "Media Player" exit.
 
 ==== GetMetadata ====
 Gives all meta data available for element at given position in the "TrackList"
-Metadata structure details:
 Each dict entry is organized as follows
 * string: Metadata item name
 * variant: Metadata value.
