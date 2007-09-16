@@ -126,7 +126,7 @@ Appends an URI in the [[#"TrackList"|TrackList]], play it immediately if the 2nd
 Removes an URI from the [[#"TrackList"|TrackList]], given its position
 
 ===== Arguments: =====
-* The position in the tracklist of the item to remove, as an int.
+* int: Position in the tracklist of the item to remove.
 
 ===== Introspection data =====
 
