@@ -5,11 +5,11 @@
 
 == Definitions ==
 
-=== "Tracklist" ===
+=== "TrackList" ===
 
-The "Tracklist" '''must''':
+The "TrackList" '''must''':
 * Hold an ordered list of locations of the media files as URIs (e.g. file://, <nowiki>http://</nowiki>, mms:// ...).
-* Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering trough it's remote interface
+* Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering the [[#TrackListChange|"TrackListChange"]] signal.
 
 The "Tracklist" holds "Metadata" about media:
 
