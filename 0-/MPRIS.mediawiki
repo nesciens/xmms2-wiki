@@ -314,7 +314,7 @@ Signal is emitted when the "Media Player" changes capabilities, see [[#GetCaps|G
 
 ==== /TrackList signal ====
 
-===== TracklistChange =====
+===== TrackListChange =====
 Signal is emitted when the "TrackList" content has changed:
 * When one or more elements have been added
 * When one or more elements have been removed
