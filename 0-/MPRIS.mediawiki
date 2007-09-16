@@ -7,9 +7,6 @@
 
 === "Tracklist" ===
 
-A list of media files which resides within the "Media Player", and whose implementation is opaque to the remote interface.
-TrackList is an optional D-Bus object
-
 The "Tracklist" '''must''':
 * Hold an ordered list of locations of the media files as URIs (e.g. file://, <nowiki>http://</nowiki>, mms:// ...).
 * Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering trough it's remote interface
