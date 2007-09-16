@@ -28,7 +28,7 @@ The "Tracklist" holds "Metadata" about media:
 
 === Naming conventions ===
 
-Each player requests an unique name beginning with "org.mpris".
+Each player requests an unique name beginning with '''org.mpris'''.
 For example:
 
 * org.mpris.audacious
