@@ -12,7 +12,7 @@ Below is a proposed, minimal list of standard field names with a description of 
 (string) Name of compilation the work is part of
 
 ==== "tracknumber" ====
-The position if it's part of a larger set.
+(string) The position if it's part of a larger set, it may have to be converted to an integer.
 This MAY be extended with a "/" character and a numeric string containing the total number of elements in the set. E.g. "69/1337".
 
 ==== "time" ====
