@@ -137,6 +137,11 @@ Removes an URI from the [[#"TrackList"|TrackList]], given its position
 ==== SetLoop ====
 Toggle playlist loop.
 
+===== Arguments: =====
+* boolean: TRUE to loop, FALSE to stop looping
+
+===== Introspection data: =====
+
    <method name="SetLoop">
      <arg type="b" />
    </method>
