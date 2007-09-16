@@ -38,7 +38,7 @@ Each player can request an own bus name as it likes, except that the prefix must
 * org.mpris.bmp
 * org.mpris.xmms2
 
-=== The interface ===
+=== The Interface ===
 
 All methods must be accessed through the interface org.freedesktop.MediaPlayer
 
