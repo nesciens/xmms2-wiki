@@ -75,7 +75,7 @@ Gives all meta data available for element at given position in the "TrackList"
 * int: Position in the [[#"TrackList"|TrackList]] of the item of which the metadata is requested
 
 ===== Return value: =====
-* A dict containing the metadata, each dict entry stores the metadata item name as a string and its value as a variant
+* string - variant dict: Metadata, each dict entry stores the metadata-item name as a string and its value as a variant
 
 ===== Introspection data: =====
 
