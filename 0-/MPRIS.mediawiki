@@ -113,14 +113,14 @@ Removes an URI from the "TrackList", given its position
 ==== SetLoop ====
 Toggle playlist loop.
 
-   <method name="Loop">
+   <method name="SetLoop">
      <arg type="b" />
    </method>
 
 ==== SetRandom ====
 Toggle playlist shuffle / random. It may or may not play tracks only once.
 
-   <method name="Random">
+   <method name="SetRandom">
      <arg type="b" />
    </method>
 
