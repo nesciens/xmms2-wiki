@@ -126,7 +126,7 @@ Appends an URI in the [[#"TrackList"|TrackList]].
    </method>
 
 ==== DelTrack ====
-Removes an URI from the [[#"TrackList"|TrackList]], given its position
+Removes an URI from the [[#"TrackList"|TrackList]].
 
 ===== Arguments: =====
 * int: Position in the tracklist of the item to remove.
