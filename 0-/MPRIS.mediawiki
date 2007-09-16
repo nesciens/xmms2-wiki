@@ -296,7 +296,7 @@ Signal is emitted when the status of the "Media Player" change. The argument has
    </signal>
 
 ==== CapsChange ==== 
-Signal is emitted when the "Media Player" changes capabilities, Flags are CAN_GO_NEXT CAN_GO_PREV CAN_PAUSE CAN_PLAY CAN_SEEK CAN_PROVIDE_METADATA PROVIDES_TIMING. See [[#GetCaps|GetCaps method]]
+Signal is emitted when the "Media Player" changes capabilities, see [[#GetCaps|GetCaps method]].
 
    <signal name="CapsChange">
      <arg type="i" />
