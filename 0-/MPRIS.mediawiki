@@ -15,11 +15,11 @@ The "Tracklist" holds "Metadata" about media:
 
 === "Metadata" ===
 
-"Metadata" represents the informations associated with a media, such as its name, its performer, its length ...
-"Metadata" is an array of dict entries in the form (string, variant) eg: {sv}.
+* "Metadata" represents the informations associated with a media, such as its name, its performer, its length ...
+* "Metadata" is an array of dict entries in the form (string, variant) eg: {sv}.
 
-There is only one mandatory field : location
-The list of optional fields is on [[MPRIS_Metadata]]
+* There is only one mandatory field : location
+* The list of optional fields is on [[MPRIS_Metadata]]
 
 ===== "location" =====
 * Stores an url to the media (local files are represented as a file:// url)
