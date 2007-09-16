@@ -38,10 +38,7 @@ For example:
 
 === The Interface ===
 
-All methods must be accessed through the interface org.freedesktop.MediaPlayer
-
-i.e. calling Quit with qdbus on VLC would be:
- $ qdbus org.mpris.vlc /Player org.freedesktop.MediaPlayer.Quit
+All methods must be accessed through the interface '''org.freedesktop.MediaPlayer'''
 
 == The Object Hierarchy ==
 
