@@ -118,11 +118,15 @@ Appends an URI in the [[#"TrackList"|TrackList]].
 * string: The uri of the item to append.
 * boolean, TRUE if the item should be played immediately, FALSE otherwise
 
+===== Return value: =====
+* int: 0 means Success
+
 ===== Introspection data: =====
 
    <method name="AddTrack">
-     <arg type="s" />
-     <arg type="b" />
+     <arg type="s" direction="in" />
+     <arg type="b" direction="in" />
+     <arg type="i" direction="out" />
    </method>
 
 ==== DelTrack ====
