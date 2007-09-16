@@ -72,7 +72,7 @@ Makes the "Media Player" exit.
 Gives all meta data available for element at given position in the "TrackList"
 
 ===== Arguments: =====
-* An int containing the position in the [[#"TrackList"|TrackList]] of the item which metadata is requested
+* int: Position in the [[#"TrackList"|TrackList]] of the item of which the metadata is requested
 
 ===== Return value: =====
 * A dict containing the metadata, each dict entry stores the metadata item name as a string and its value as a variant
