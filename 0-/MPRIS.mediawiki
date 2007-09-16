@@ -45,7 +45,7 @@ All methods must be accessed through the interface org.freedesktop.MediaPlayer
 i.e. calling Quit with qdbus on VLC would be:
  $ qdbus org.mpris.vlc /Player org.freedesktop.MediaPlayer.Quit
 
-== The ''Basic'' interface, ( BMPx/VLC version ) ==
+== The interface ==
 
 === The Object Hierarchy ===
 
