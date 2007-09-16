@@ -152,6 +152,8 @@ Toggle playlist shuffle / random. It may or may not play tracks only once.
 ===== Arguments: =====
 * boolean: TRUE to play randomly / shuffle playlist, FALSE to play normally / reorder playlist
 
+===== Introspection data: =====
+
    <method name="SetRandom">
      <arg type="b" />
    </method>
