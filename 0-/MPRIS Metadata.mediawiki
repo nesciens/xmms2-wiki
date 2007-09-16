@@ -32,8 +32,11 @@ See http://www.linuxselfhelp.com/HOWTO/MP3-HOWTO-13.html#ss13.3
 ==== "rating" ====
 (uint32) A "taste" rate value, out of 5
 
+==== "year" ====
+(uint32) The year when the performing was realized, i.e. 2007.
+
 ==== "date" ====
-(uint32) When the performing was realized.
+(uint32) When the performing was realized, for precise needs.
 It is represented as epoch, i.e. the number of seconds since Â« 00:00:00 1970-01-01 UTC Â»
 
 === "arturl" ===
