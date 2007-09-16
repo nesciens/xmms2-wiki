@@ -134,7 +134,6 @@ Removes an URI from the [[#"TrackList"|TrackList]], given its position
      <arg type="i" />
    </method>
 
-
 ==== SetLoop ====
 Toggle playlist loop.
 
