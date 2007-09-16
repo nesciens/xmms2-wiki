@@ -112,7 +112,7 @@ Number of elements in the [[#"TrackList"|TrackList]]
    </method>
 
 ==== AddTrack ====
-Appends an URI in the [[#"TrackList"|TrackList]], play it immediately if the 2nd argument is TRUE
+Appends an URI in the [[#"TrackList"|TrackList]].
 
 ===== Arguments: =====
 * string: The uri of the item to append to the tracklist
