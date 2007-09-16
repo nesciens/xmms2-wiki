@@ -266,7 +266,7 @@ Signal is emitted when the "Media Player" plays another "Track". Argument of the
 Signal is emitted when the status of the "Media Player" change. The argument has the same meaning as the value returned by GetStatus.
 
    <signal name="StatusChange">
-    <arg type="i"/>
+    <arg type="(iiii)"/>
    </signal>
 
 ==== CapsChange ==== 
