@@ -2,7 +2,14 @@ This is an early description of the concept of changeable metadata profiles in x
 [[User:Nollidj|nollidj]] 13:07, 17 September 2007 (CEST)
 
 == Overview ==
-The medialib should not be limited to cataloging a static or hard-coded set of fields.  Users should be able to determine which metadata fields they care about in their media library, tell medialib this, and search their media library using these fields.  Conversely, users should not need to know a great deal about the different tagging formats that their media streamsare using and have a simple set of fields in their medialib that still give them a powerful search.
+The medialib should not be limited to cataloging a static or hard-coded set of fields.  Users should be able to determine which metadata fields they care about in their media library, tell medialib this, and search their media library using these fields.  Conversely, users should not need to know a great deal about the different tagging formats that their media streams are using and have a simple set of fields in their medialib that still give them a powerful search.
+
+There should be a flexible behavior built into xmms2 which provides a choice between a few, simple field names and a complex, powerful field hierarchy.
+
+=== Caveats ===
+
+I'm still adjusting to the codebase, concepts, and terminology used by xmms2 and its developers.  I am not totally sure, for example, if using the term ''metadata'' is confusing.  I use it here to refer to properties of media streams as provided by stream and container formats such as Ogg, FLAC, and id3v2.  This probably corresponds most strongly to the concept of xmms2 properties and ''not'' to the concept of [[mediatags]].
+
 == Elaboration ==
 
 An MP3 file tagged with id3v2 may have values in the TCOM (composer), TOPE (original artist/performer), TPE1 (lead performer), TPE2 (ensemble/accompaniment), TPE3 (conductor/specific performer), and TPE4 (remixer or whatever else you want) fields.  An Ogg Vorbis file may have its own Vorbis comments with keys "composer", "artist", "soloist", "ensemble", "conductor", and "performer".
