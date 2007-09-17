@@ -54,7 +54,11 @@ All methods must be accessed through the interface '''org.freedesktop.MediaPlaye
 
 ==== Identity ====
 Identify the "media player" as in "VLC 0.9.0", "bmpx 0.34.9", "Audacious 1.4.0" ...
-Returns a string containing the media player identification. 
+
+===== Return value: =====
+* string: Returns a string containing the media player identification. 
+
+===== Introspection data: =====
 
    <method name="Identity">
      <arg type="s" direction="out"/>
