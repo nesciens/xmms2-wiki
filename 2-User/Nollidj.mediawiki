@@ -1,0 +1,9 @@
+Stu Black, located in the USA.  Mostly self-taught background in programming and trying to get back into university for an actual master's degree in computer science.  Talk to me in Russian or Spanish if you want.
+
+I am interested in building good metadata support into xmms2 so that I will finally have a sufficiently flexible, powerful music system at my fingertips.  As far as I'm concerned, everyone can benefit from improved use of metadata.
+
+As such my primary interest is twofold:
+
+Develop medialib support for extensible, pluggable metadata profiles so that arbitrary fields exposed by xform plugins for a given music stream are mapped nicely to the medialib properties API.
+
+Develop a client or two that support using these nice profiles.
