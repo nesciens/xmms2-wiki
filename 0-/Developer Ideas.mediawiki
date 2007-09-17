@@ -13,6 +13,7 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Configuration file]]
 * [[Medialib Plugins]]
 * [[New medialib backend]]
+* [[Metadata profiles]]
 
 == Playlist ==
 * '''[[Collections]]'''
