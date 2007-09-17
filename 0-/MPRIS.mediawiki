@@ -72,7 +72,7 @@ Makes the "Media Player" exit.
    <method name="Quit">
    </method>
 
-=== /TrackList object ===
+=== /TrackList object methods ===
 
 ==== GetMetadata ====
 Gives all meta data available for element at given position in the [[#"TrackList"|TrackList]]
