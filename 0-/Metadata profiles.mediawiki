@@ -64,6 +64,33 @@ It might make sense to provide further separation in the properties API between 
 
 == Details of possible implementation ==
 
+xform plugins export metadata from media streams.  The xmms2 properties API exports metadata from the xform plugins.  It may suffice to have just one interface which is implemented by xform plugins and the medialib.  Metadata will be exported by this interface as a set of keys, each of which is mapped to one or more values.
+
+The mappings between xform plugins' metadata fields and the medialib's metadata fields will be provided independently of this interface.
+
+=== Metadata interface details ===
+
+The interface should provide the following information:
+
+* Whether a given key is exported by the implementor.  (In the case of the id3v2 xform plugin, this is true if the key is the name of an id3v2 field.  In the case of the Vorbis or FLAC plugin, this is true for anything that meets the field definition in [[http://xiph.org/vorbis/doc/v-comment.html the Ogg Vorbis comment specification]].)
+* The value(s) of a given key.  This would probably be a function from a key name to a set of values, returning an iterator or array.
+
+It may be necessary or useful also to provide:
+
+* Constraints on values that may be associated with a given key. (This is necessary to support writing tags.  id3 and id3v2 do not support one-to-many relationships between keys and values.  id3 allows only 30 bytes for the "artist" field.)
+* A localized name for the field (might be useful so that Vorbis/FLAC fields named "artist" are translated nicely).
+* A description of the field (quite useful for id3v2 fields; needs localization).
+* Codepage/character encoding/language of a field or of all fields.  (Could some media formats provide "lyrics" or "title" values that differ by language?  It may be necessary to do translation to a local character encoding if a media stream's metadata aren't in UTF-8.)
+
+=== Metadata mapping details ===
+
+Each medialib metadata field may be mapped to arbitrarily many xform metadata fields.  This mapping may be changed programatically.  It will probably be necessary for the medialib to rebuild itself when the mapping is changed, so it should be understood that modifying the mapping is a very expensive operation.
+
+When a mapping is in place, adding a song to the medialib should be pretty much the same as it is now, except the song is queried for those values which the medialib is currently "interested in" according to the current metadata mapping.
+
+It would make sense to encode mapping information in a file that uses the same format as the xmms2 [[configuration file]], which is currently a simple XML file.  Users could then create their own mappings by editing this file, overwriting it with files created by other users, using a stand-alone xmms2 metadata editing tool, or using a sophisticated xmms2 client.
+
+Support for getting and writing of metadata through the medialib should be workable by delegating certain xform metadata fields as "primary" or "preferred" fields for the medialib metadata interface.  This way, a profile could specify that "artist" in the medialib should correspond to "TP1", "TPE1", and "TCOM" in an id3v2 stream, but when writing to the "artist" medialib tag, write only to the "TP1" field.  (How is this problem handled now?)
 
 == Issues ==
 
