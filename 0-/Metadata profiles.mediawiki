@@ -16,11 +16,7 @@ An MP3 file tagged with id3v2 may have values in the TCOM (composer), TOPE (orig
 
 A power user who really cares about how their data are presented (or someone who is as neurotic about tagging their music as I am) will want to be able to search their music library according to these fields.  They may even go so far as to want their playlists or "currently playing" items to be labeled according to metadata pulled from these fields.  There are bugs like [http://bugs.xmms2.xmms.se/view.php?id=384 this one] indicating as much.
 
-A naive user may not particularly care how their music is tagged.  Under such circumstances, all of these fields should still be accessible but not foisted upon the user.  (Maybe the fields would still be searchable but displayed only as various values for the "artist" of the stream, so that a naive user could search for "Wagner", "Boston Pops", "Solti", or "Masur" without worrying about which metadata field to search in.)
-
-Right now, the public medialib tags in medialib.h define a set of metadata keys.  xform plugins such as those for FLAC and id3v2 provide a mapping from the metadata fields of their respective stream formats to this public metadata keyset.  There should be a programmable interface for this mapping so that a user can, through a client, declare that the medialib should consist of a given set of fields (for example, "composer", "performer", and "ensemble").  Additionally, each xform plugin that exports metadata fields needs to have a mapping for those of its fields which should be mapped to public fields.
-
-{|
+{| border="1" cellspacing="0" cellpadding="5" align="center"
 |+ Example metadata mapping -- power user
 ! Public field name !! FLAC field key(s) !! id3v2 frame name(s)
 |-
@@ -39,7 +35,9 @@ Right now, the public medialib tags in medialib.h define a set of metadata keys.
 |album || album || TIT1
 |}
 
-{|
+A naive user may not particularly care how their music is tagged.  Under such circumstances, all of these fields should still be accessible but not foisted upon the user.  (Maybe the fields would still be searchable but displayed only as various values for the "artist" of the stream, so that a naive user could search for "Wagner", "Boston Pops", "Solti", or "Masur" without worrying about which metadata field to search in.)
+
+{| border="1" cellspacing="0" cellpadding="5" align="center"
 |+ Example metadata mapping -- naive user
 ! Public field name !! FLAC field key(s) !! id3v2 frame name(s)
 |-
@@ -54,9 +52,7 @@ Right now, the public medialib tags in medialib.h define a set of metadata keys.
 |tracknumber || tracknumber || TRCK
 |}
 
-=== The interpretation of profiles ===
-
-To be filled in.
+Right now, the public medialib tags in medialib.h define a set of metadata keys.  xform plugins such as those for FLAC and id3v2 provide a mapping from the metadata fields of their respective stream formats to this public metadata keyset.  There should be a programmable interface for this mapping so that a user can, through a client, declare that the medialib should consist of a given set of fields (for example, "composer", "performer", and "ensemble").  Additionally, each xform plugin that exports metadata fields needs to have a mapping for those of its fields which should be mapped to public fields.  The existing set of public metadata fields is at [[tags]].
 
 == Issues ==
 
