@@ -314,36 +314,36 @@ Returns the playing position (will be [0;<track_length>] in milliseconds)
    <arg type="i" direction="out"/>
    </method>
 
-=== The signals ===
+== The signals ==
 
 Signals must be emitted from '''org.freedesktop.MediaPlayer''' interface.
 
-==== /Player signals ====
+=== /Player object signals ===
 
-===== TrackChange ===== 
+==== TrackChange ==== 
 Signal is emitted when the "Media Player" plays another "Track". Argument of the signal is the metadata attached to the new "Track"
 
    <signal name="TrackChange">
      <arg type="a{sv}"/>
    </signal>
 
-===== StatusChange =====
+==== StatusChange ====
 Signal is emitted when the status of the "Media Player" change. The argument has the same meaning as the value returned by GetStatus.
 
    <signal name="StatusChange">
     <arg type="(iiii)"/>
    </signal>
 
-===== CapsChange =====
+==== CapsChange ====
 Signal is emitted when the "Media Player" changes capabilities, see [[#GetCaps|GetCaps method]].
 
    <signal name="CapsChange">
      <arg type="i" />
    </signal>
 
-==== /TrackList signal ====
+=== /TrackList object signals ===
 
-===== TrackListChange =====
+==== TrackListChange ====
 Signal is emitted when the "TrackList" content has changed:
 * When one or more elements have been added
 * When one or more elements have been removed
