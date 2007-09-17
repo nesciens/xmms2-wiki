@@ -35,4 +35,6 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | mor
 
 {{Contrib| title=Fvwm menu | author=ashtophet| description=Simple fvwm2 menu to control xmms2. Based on univac's fvwm config. | moreinfo=| files=* [http://www.ashtophet.org/screenshots.html config]}}
 
+{{Contrib| title=WeeChat script | author=km | description=Print currently playing track (format is configurable) in xmms2 to a channel or private buffer in WeeChat IRC client. | moreinfo=| files=* [http://weechat.flashtux.org/scripts/xmms2.pl xmms2.pl]}}
+
 [[Category:Users]]
