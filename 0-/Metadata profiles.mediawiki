@@ -72,7 +72,7 @@ The mappings between xform plugins' metadata fields and the medialib's metadata 
 
 The interface should provide the following information:
 
-* Whether a given key is exported by the implementor.  (In the case of the id3v2 xform plugin, this is true if the key is the name of an id3v2 field.  In the case of the Vorbis or FLAC plugin, this is true for anything that meets the field definition in [[http://xiph.org/vorbis/doc/v-comment.html the Ogg Vorbis comment specification]].)
+* Whether a given key is exported by the implementor.  (In the case of the id3v2 xform plugin, this is true if the key is the name of an id3v2 field.  In the case of the Vorbis or FLAC plugin, this is true for anything that meets the field definition in [http://xiph.org/vorbis/doc/v-comment.html the Ogg Vorbis comment specification].)
 * The value(s) of a given key.  This would probably be a function from a key name to a set of values, returning an iterator or array.
 
 It may be necessary or useful also to provide:
