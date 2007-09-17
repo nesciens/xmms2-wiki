@@ -54,9 +54,20 @@ A naive user may not particularly care how their music is tagged.  Under such ci
 
 Right now, the public medialib tags in medialib.h define a set of metadata keys.  xform plugins such as those for FLAC and id3v2 provide a mapping from the metadata fields of their respective stream formats to this public metadata keyset.  There should be a programmable interface for this mapping so that a user can, through a client, declare that the medialib should consist of a given set of fields (for example, "composer", "performer", and "ensemble").  Additionally, each xform plugin that exports metadata fields needs to have a mapping for those of its fields which should be mapped to public fields.  The existing set of public metadata fields is at [[tags]].
 
+=== Types of metadata ===
+
+Metadata profiles are supposed to improve the interface for metadata which are about the semantic content of a media stream as it is interpreted by a user.  They are not intended to provide creative mappings for information about the data stream itself.
+
+That is to say, it makes sense to provide flexible mapping of fields like artist, album, title, and recording year, but fields like bitrate, number of channels, and sampling frequency are probably best left with static mappings in the xmms2 properties API.
+
+It might make sense to provide further separation in the properties API between those metadata which are about the stream (bitrate, number of channels, MIMEtype, etc.) and those which are about the content of the stream.
+
+== Details of possible implementation ==
+
+
 == Issues ==
 
-* Make sure this will play nicely with the current "default" public metadata profile.
+* Make sure this will play nicely with the current de facto "default" public metadata profile.
 * How to integrate this with properties as per [[generic properties policy]]?
 * How will this play with the ability to write metadata to song files?
 
