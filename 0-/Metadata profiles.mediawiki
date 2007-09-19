@@ -103,5 +103,5 @@ Support for getting and writing of metadata through the medialib should be worka
 Most of these ideas probably entail pushing too much logic into metadata profiles, violating the [http://en.wikipedia.org/wiki/KISS_principle KISS principle].
 
 * Defined types and parsing logic for different fields (so as to improve storage and searching of dates, lengths of time, other typed fields?)
-* Namespaces for public metadata profiles (to allow multiple profiles to be loaded at once, e.g., Dublin Core, some standard profile, and my personal profile)
+* Namespaces for public metadata profiles (to allow multiple profiles to be loaded at once, e.g., Dublin Core, [[MPRIS Metadata]], some standard profile, and my personal profile)
 * Allow interaction between profile and values of metadata fields (e.g., if "genre" field is "opera" or "theater", look for "act" and "scene" fields; otherwise, just set them to NULL)
