@@ -1,0 +1,7 @@
+This page contains new ideas of service clients. If you have one, just add it to [[#Brand New Ideas|Brand New Ideas]] section. Once it is being picked and worked on by someone, move it to [[#In Progress|In Progress]].
+
+== In Progress ==
+
+== Brand New Ideas ==
+
+Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
