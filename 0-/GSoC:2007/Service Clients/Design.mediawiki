@@ -151,10 +151,9 @@ Different from other server-side objects, service object has a central entry poi
 
 ===Client side===
 
-The following functions interacts with the server.  Worth noting that the difference between xmmsc_service_method_register() and xmmsc_service_method_register_full() is that you can provide a function to free user data.  Due to the reason that nested dictionaries are not supported by IPC, method describing functions are seperated into two.  xmmsc_service_method_describe() gives the details of a method other than its argument information.  And xmmsc_service_method_describe_args() gives the rest.  When using xmmsc_service_shutdown() to request a service client to shutdown, it is not guaranteed that the service client will do exactly as asked, since the service client may not listening to XMMS_IPC_SIGNAL_SERVICE_SHUTDOWN broadcast or event if it does it may decide to ignore it.  So for service clients installed on the same machine as the server does, it is recommended that you make this request through service client manager.  Details on the manager are discussed here.
+The following functions interacts with the server.  Due to the reason that nested dictionaries are not supported by IPC, method describing functions are seperated into two.  xmmsc_service_method_describe() gives the details of a method other than its argument information.  And xmmsc_service_method_describe_args() gives the rest.  When using xmmsc_service_shutdown() to request a service client to shutdown, it is not guaranteed that the service client will do exactly as asked, since the service client may not listening to XMMS_IPC_SIGNAL_SERVICE_SHUTDOWN broadcast or event if it does it may decide to ignore it.  So for service clients installed on the same machine as the server does, it is recommended that you make this request through service client manager.  Details on the manager are discussed here.
  xmmsc_service_register (xmmsc_connection_t *conn, const char *name, const char *description, uint32_t major, uint32_t minor);
  xmmsc_service_method_register (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method);
- xmmsc_service_method_register_full (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method, xmmsc_user_data_free_func_t free_func);
  xmmsc_service_unregister (xmmsc_connection_t *conn, const char *service, const char *method);
  
  xmmsc_service_list (xmmsc_connection_t *conn);
@@ -173,6 +172,7 @@ Broadcasts.
 
 Helper functions, which do not interacts with the server.  Most of the helper functions deal with arguments and return types.  After you have created xmmsc_service_method_t structure, you can tell what names and types of arguments or return types the method will use by pushing the types into the structure.  The two functions that perform this operation are xmmsc_service_method_arg_type_add() and xmmsc_service_method_ret_type_add().  All those xmmsc_service_method_arg/ret_add_#() functions are used by clients to add different types of values to the arguments or return arguments.
  xmmsc_service_method_new (const char *name, const char *description, xmmsc_service_notifier_t func, void *user_data);
+ xmmsc_service_method_new_full (const char *name, const char *description, xmmsc_service_notifier_t func, void *user_data, xmmsc_user_data_free_func_t free_func);
  void xmmsc_service_method_ref (xmmsc_service_method_t *method);
  void xmmsc_service_method_unref (xmmsc_service_method_t *method);
  xmmsc_service_method_attribute_get (xmmsc_service_method_t *method, char **name, char **description);
