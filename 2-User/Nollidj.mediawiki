@@ -6,3 +6,8 @@ As such my primary interest is twofold:
 
 * Develop medialib support for extensible, pluggable metadata profiles so that arbitrary fields exposed by xform plugins for a given music stream are mapped nicely to the medialib properties API.
 * Develop a client or two that support using these nice profiles.
+
+----
+
+I'm now taking a hiatus from all involvement with OSS projects to get away from computers while I am healing from RSI.  I hope I'll be back.
+[[User:Nollidj|nollidj]] 02:01, 25 September 2007 (CEST)
