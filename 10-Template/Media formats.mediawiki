@@ -38,7 +38,7 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 
 
 
-[[decoding]] support: (ability to decodes, and therefore play, raw encoded audio components from the following audio codecs)
+[[decoding]] support: (ability to decode, and therefore play, raw encoded audio components from the following audio codecs)
 
 
 * [[Wikipedia:FLAC | FLAC]]
