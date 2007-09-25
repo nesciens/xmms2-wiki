@@ -1,3 +1,46 @@
+XMMS2 can play a large selection of audio codecs contained in many different media container formats:
+
+[[demuxing]] support: (able to extract the raw encoded audio components from the following containers)
+{| border="1" cellspacing="2" cellpadding="5" align="center"
+! Container:
+| MPEG
+| MP4
+| AVI
+| OGG
+| MKV
+| Quicktime
+| FLAC
+| ASF
+| WAV
+|- 
+! Audio Extensions:
+| mp1 mp2 mp3
+| m4a m4p
+| 
+| ogg
+| mka
+| mov
+| flac
+| asf wma
+| wav
+|-
+! Mixed Extensions:
+| mpg mpeg
+| m4v mp4
+| avi
+| ogm
+| mkv
+| mov
+|
+| wmv
+|
+|}
+
+
+
+[[decoding]] support: (ability to decodes, and therefore play, raw encoded audio components from the following audio codecs)
+
+
 * [[Wikipedia:FLAC | FLAC]]
 ** [[Component:FLAC | FLAC Decoder]]
 * [[Wikipedia:MOD_(file_format) | MOD]]
