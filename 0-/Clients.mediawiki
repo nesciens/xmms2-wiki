@@ -58,6 +58,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:XMMS2 CLI client | XMMS2 CLI client]] is the standard console application coming with XMMS2
 * [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
 * [[Client:gntxmms2 | gntxmms2]] provides a windowed console interface using libgnt
+* [[Client:Cluck | Cluck]] is a TUI (windowed console) client with very light requirements: a recent xmms2d, pcre, curses, and optionally a few helper applications
 
 = Desktop Integration =
 
