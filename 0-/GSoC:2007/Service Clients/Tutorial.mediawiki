@@ -127,6 +127,6 @@ You have to setup a callback function to handle the return value, because it is 
      printf ("return value: %s\n", arg);
  }
 
-After a successful request to the method, the client is subscribed to the broadcast.  The service client method can send return values to the client many times whenever it feels like to, unless the service client decides to stop sending, or the client disconnects to the server or simply ignore them.
+After a successful request to the method, the client is subscribed to the broadcast.  The service client method can send return values to the client many times whenever it feels like to, unless the service client decides to stop sending, or the client disconnects to the server or simply ignore them.  For the following two reasons, it is highly recommended that error checking is always performed at the beginning of the callback function as in the example above.  One scenario is that the requested service method might return error messages to the caller.  The other one is that if the service method is unregistered unexpectedly on requesting, an error message will be sent to the caller indicating that.
 
 Go back to [[Summer of Code 2007/Service Clients|Service Client Summary]].
