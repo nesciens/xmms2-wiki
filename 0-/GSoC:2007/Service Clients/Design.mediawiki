@@ -75,6 +75,7 @@ Different from other server-side objects, service object has a central entry poi
                                                         GHashTable *args);
  static void xmms_service_destroy (xmms_object_t *object);
  static void xmms_service_registry_destroy (gpointer value);
+ static void xmms_service_request_client_destroy (gpointer value);
  static void xmms_service_method_destroy (gpointer value);
 
 '''Registry management:'''
