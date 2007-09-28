@@ -154,7 +154,7 @@ Different from other server-side objects, service object has a central entry poi
 The following functions interacts with the server.  Due to the reason that nested dictionaries are not supported by IPC, method describing functions are seperated into two.  xmmsc_service_method_describe() gives the details of a method other than its argument information.  And xmmsc_service_method_describe_args() gives the rest.  When using xmmsc_service_shutdown() to request a service client to shutdown, it is not guaranteed that the service client will do exactly as asked, since the service client may not listening to XMMS_IPC_SIGNAL_SERVICE_SHUTDOWN broadcast or event if it does it may decide to ignore it.  So for service clients installed on the same machine as the server does, it is recommended that you make this request through service client manager.  Details on the manager are discussed here.
  xmmsc_service_register (xmmsc_connection_t *conn, const char *name, const char *description, uint32_t major, uint32_t minor);
  xmmsc_service_method_register (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method);
- xmmsc_service_unregister (xmmsc_connection_t *conn, const char *service, const char *method);
+ xmmsc_service_unregister (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method);
  
  xmmsc_service_list (xmmsc_connection_t *conn);
  xmmsc_service_describe (xmmsc_connection_t *conn, const char *service);
