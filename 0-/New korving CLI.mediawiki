@@ -242,7 +242,7 @@ Create a new playlist.  By default, the new playlist is empty, but a
 flag can be used to start with a copy from an existing playlist.
 
  Options:
- -c, --copy <name>  Copy an existing playlist to the new one.
+ -p, --playlist <name>  Copy an existing playlist to the new one.
 
 ==== playlist rename [options] <newname> ====
 
