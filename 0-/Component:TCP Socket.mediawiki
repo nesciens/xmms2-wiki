@@ -1,9 +1,9 @@
 TCP sockets may be used by clients to talk to the daemon if the daemon is on a different machine with respect to the client. (Though this may be used locally as well, e.g. via 127.0.0.1) A typical path for this IPC mechanism could be "tcp://192.168.0.2:5555".
 
 Notes:
-* There is no default port for this IPC mechanism, at present.
+* <strike>There is no default port for this IPC mechanism, at present.</strike>
 * There are no authentication mechanisms in place at the moment, so any client can potentially connect to any exposed port. This could be resolved before a proper public release.
-* There can be only one IPC port. Support for multiple ports may be added later.
+* <strike>There can be only one IPC port. Support for multiple ports may be added later.</strike>
 
 ===See also===
 * [[Design of XMMS2]]
