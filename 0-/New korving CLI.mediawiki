@@ -254,14 +254,7 @@ playlist.
 
 ==== playlist remove [options] ====
 
-Remove a playlist.  By default, this command acts on the active
-playlist.  If the active playlist is removed, the next playlist in the
-list becomes active.
-
-''Note: Or maybe this is not the cleverest thing..''
-
- Options:
- -p, --playlist <name>  Remove a different playlist.
+Remove a playlist.  It is disallowed to remove the active playlist.
 
 ==== playlist config [options] ====
 
