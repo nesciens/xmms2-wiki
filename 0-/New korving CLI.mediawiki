@@ -59,11 +59,11 @@ current song, etc.
    switch             <name>
    create  [options]  <name>
    rename  [options]  <newname>
-   remove  [options]
+   remove             <name>
    config  [options]
-   clear   [options]
-   shuffle [options]
-   sort    [options]  <fields>
+   clear              [name]
+   shuffle            [name]
+   sort    [options]  [name]
  
  collection <subcommand>
    list    [options]  [pattern]
@@ -252,7 +252,7 @@ playlist.
  Options:
  -p, --playlist <name>  Rename a different playlist.
 
-==== playlist remove [options] ====
+==== playlist remove <name> ====
 
 Remove a playlist.  It is disallowed to remove the active playlist.
 
@@ -269,30 +269,25 @@ Configure a playlist by changing its type, attributes, etc.
  -s, --history <n>      Size of the history of played tracks.
  -u, --upcoming <n>     Number of upcoming tracks to keep.
 
-==== playlist clear [options] ====
+==== playlist clear [name] ====
 
 Clear all entries from a playlist.  By default, this command acts on
 the active playlist.
 
- Options:
- -p, --playlist <name>  Clear a different playlist.
-
-==== playlist shuffle [options] ====
+==== playlist shuffle [name] ====
 
 Shuffle a playlist.  By default, this command acts on the active
 playlist.
 
- Options:
- -p, --playlist <name>  Shuffle a different playlist.
-
-==== playlist sort [options] <fields> ====
+==== playlist sort [options] <name> ====
 
 Sort the entries of a playlist by a list of properties, separated by
-spaces.  By default, this command acts on the active playlist.
+spaces.  By default, this command acts on the active playlist and sorts
+by a default sequence of properties.
 
  Options:
- -p, --playlist <name>  Sort a different playlist.
-
+ -o, --order <prop1[,prop2...]>  List of properties to sort by
+                                 (prefix by '-' for reverse ordering).
 
 ==== collection and server ====
 
