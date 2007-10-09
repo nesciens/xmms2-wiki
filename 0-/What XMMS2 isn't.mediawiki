@@ -34,6 +34,5 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 ** ... except for a [[Intro Clips|small sample]].
 * give you [[Wikipedia:Superhuman_Strength|superhuman strength]].
 ** ... unless you compile it with -fuse-[[Wikipedia:Kryptonite|kryptonite]].
-* steal your money and spread to developers
 * [[Wikipedia:Spy | spy]] on you.
 ** ... except when told to [[ET | call home]].
