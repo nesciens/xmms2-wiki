@@ -1,4 +1,12 @@
 == Latest quotes ==
+=== 2007-10-13 - Advanced Puzzles ===
+18:07 < ~Eclipser> there's advanced version of puzzles?
+18:07 < ~tru> do we need that?
+18:11 < ~arachnist> the advanced version of puzzles would be able to screw up 
+          even those "even puzzles can't possibly screw up" bugs
+18:12 < ~raw> the adv. version of puzzles would change the copyright note in 
+          all files every second - without complaining!
+
 === 2007-07-19 - Penis Size Reprise ===
  21:23 < ~VxJasonxV> +xmms2 mlib search +artist |grep Count
  21:23 < ~VxJasonxV> +-------------[Count: 20967]-----
