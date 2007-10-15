@@ -17,7 +17,7 @@
  21:23 < ~VxJasonxV> +:|
  21:23 < ~VxJasonxV> +fuck you
 
-=== 2007-06-16 ===
+=== 2007-06-16 - SkitIDet defines waf and puzzles ===
  12:54 < tilman> !waf
  12:54 < ~SkitIDet> tilman: "waf" -> (#1) vastly superior to any software known 
                     to mankind, or (#2) ultimate suck and fail, but marginally 
