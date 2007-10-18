@@ -1,4 +1,8 @@
 This page is supposed to be an overview of the changes we have made to waf.
 
-* Based on waf 1.1.1
-** 23fe060a23b3717cf061131f39b3f2bf609a76c0 fixes plugin naming.
+* Based on waf 1.2
+** <git repo="xmms2-devel.git">654ac88928ad18ce23b26c217f144d9ee28112dc</git> (bug in python tool)
+** <git repo="xmms2-devel.git">e07debe632157ce2ef430400daf52fa8870870db</git>
+** <git repo="xmms2-devel.git">c9b0801760a3535beb60d2e30b07cb341ec65cf9</git>
+** <git repo="xmms2-devel.git">81e14d18212ae43b4cdc1253d4b5fa85f83d09c4</git>
+** <git repo="xmms2-devel.git">cf332299bc81575e2bf6badae63cf9f3f7e89f4f</git>
