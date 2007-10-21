@@ -2,7 +2,7 @@
 | name=xmms2_jump
 | author=David Reiss
 | website=http://code.google.com/p/xmms2-jump/
-| version=0.02
+| version=0.04
 | devlanguage=C++
 | ui=GTK2
 | screenshots= [http://xmms2-jump.googlecode.com/files/xmms2_jump-screenshot01.png GTK] [http://xmms2-jump.googlecode.com/files/xmms2_jump-screenshot02.png curses]
