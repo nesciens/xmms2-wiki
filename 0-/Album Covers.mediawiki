@@ -1,3 +1,5 @@
+{{Update}}
+
 Clients should use the client/generic/arturl source with the various album_*_* properties. These properties are all urls, but urls can be to a file:// of course so covers can be locally cached. Locally cached covers should go to ~/.xmms2/clients/generic/art/ the filenames should be the md5 checksum of the "$artist-$album" all in lowercase, followed by the size which should be one of small, large, or thumbnail. In the case that the album is a Compilation the artist should be set to "various artists." Information about the actual sizes can be found at [[Generic properties policy]].
 An example filename might be 33aa73b5ddbccffcb485c42c2b14fae7-thumbnail.jpg
 
