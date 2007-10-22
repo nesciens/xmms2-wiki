@@ -1,0 +1,5 @@
+Articles in reverse chronological order.
+
+* 2007-06-13 [http://lwn.net/Articles/237952/ Collections in the XMMS2 music player] (LWN.net)
+* 2007-03-19 [http://www.debian-administration.org/articles/509 An introduction to the XMMS2 package] (Debian-Administration.org)
+* 2005-05-25 [http://lwn.net/Articles/137333/ Introducing the XMMS2 Media Player] (LWN.net)
