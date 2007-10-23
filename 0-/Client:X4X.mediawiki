@@ -4,6 +4,8 @@ X4X can integrate itself into kde (qt), gtk (swt), native (qt and swt) and not n
 
 X4X finally works fine on Microsoft Windows. Get x4x-win32-full-*.zip from the downloadpage
 
+<font color="red">Development of X4X is stopped, use other nice clients instead</font>
+
 
 ==What makes X4X better then the rest==
 
