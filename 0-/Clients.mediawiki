@@ -34,7 +34,7 @@ Actually, there are dozens of clients available which try to fit best into this 
 
 === X4X (Java) ===
 
-[[Client:X4X | X4X]] is a Java-based client. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer.
+[[Client:X4X | X4X]] is a Java-based client. It is feature rich - almost feature complete -, and unlike most other players includes control of the equalizer. Development of X4X is stopped.
 
 === Others ===
 
