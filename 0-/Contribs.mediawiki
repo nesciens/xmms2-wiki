@@ -11,7 +11,8 @@ Scripts and other miscellaneous contributions to XMMS2. If you think you have so
 {{Contrib | title=Play-Pause toggle client | author=Vin&iacute;cius Dias dos Santos | description=Request for play/pause action whereas:
 * will play if current state is stopped or paused
 * will pause if current state is playing.
-Good for using in hotkeys(specially if you have a multimedia keyboard ;) ) | moreinfo= | files=* [http://xmms2.xmms.se/contrib/files/play-pause.py play-pause.py]}}
+Good for using in hotkeys(specially if you have a multimedia keyboard ;) )
+| moreinfo=CLI: $ xmms2 toggleplay | files=* [http://xmms2.xmms.se/contrib/files/play-pause.py play-pause.py]}}
 
 {{Contrib | title=Play-Pause toggle client (C) | author=Dean Scarff | description=Pauses playback if xmms2 is currently playing, otherwise starts playback | moreinfo=An alternative to the python script by VinÃ­cius Dias dos Santos, for those who do not have/want python | files=* [http://scarff.id.au/file/xmms2-pp.c xmms2-pp.c]}}
 
