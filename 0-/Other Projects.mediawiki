@@ -3,7 +3,6 @@ Open source projects:
 * [http://audacious-media-player.org/Main_Page Audacious]
 * [http://banshee-project.org/Main_Page Banshee]
 * [http://www.beep-media-player.org/site/BMPx_Homepage Beep Media Player]
-* [http://www.foobar2000.org/ Foobar 2000]
 * [http://fondriest.frederic.free.fr/realisations/lamip/ Linux Audio Multiple Interface Player]
 * [http://muine-player.org/wiki/Main_Page Muine]
 * [http://moc.daper.net/ Music on Console]
@@ -13,6 +12,7 @@ Open source projects:
 
 
 Closed source projects:
+* [http://www.foobar2000.org/ Foobar 2000]
 * [http://www.apple.com/itunes/ iTunes]
 * [http://www.winamp.com/ WinAmp]
 * [http://www.microsoft.com/windows/windowsmedia/mp10/default.aspx Windows Media Player]
