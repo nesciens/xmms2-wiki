@@ -109,6 +109,10 @@ Different from other server-side objects, service object has a central entry poi
                                        xmms_ipc_msg_t *msg,
                                        xmms_socket_t client,
                                        xmms_error_t *err);
+ static void xmms_service_return (xmms_service_t *xmms_service,
+                                  xmms_ipc_msg_t *msg,
+                                  xmms_socket_t client,
+                                  xmms_error_t *err);
  static void xmms_service_shutdown (xmms_service_t *xmms_service,
                                     xmms_ipc_msg_t *msg, xmms_error_t *err);
 
@@ -159,7 +163,7 @@ The following functions interacts with the server.  Due to the reason that neste
  xmmsc_service_method_describe (xmmsc_connection_t *conn, const char *service, const char *method);
  
  xmmsc_service_request (xmmsc_connection_t *conn, const char *service, xmmsc_service_method_t *method);
- xmmsc_service_return (xmmsc_connection_t *conn, xmmsc_result_t *res, xmmsc_service_method_t *method);
+ <strike>xmmsc_service_return (xmmsc_connection_t *conn, xmmsc_result_t *res, xmmsc_service_method_t *method);</strike>
  xmmsc_service_shutdown (xmmsc_connection_t *conn, const char *service);
 
 Broadcasts.
