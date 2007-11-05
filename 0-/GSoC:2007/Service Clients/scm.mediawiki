@@ -101,66 +101,66 @@ The following tables list argument and return types of each method described abo
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+launch
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 | ||
 |-
 ! ret
-| string || return value
+| uint32 || 1 for success || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+shutdown
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 | ||
 |-
 ! ret
-| string || return value
+| uint32 || 1 for success || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+change_argv
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 ! argv
-| string || command-line arguments to pass to the service client
+| string || command-line arguments to pass to the service client || yes
 |-
 | ||
 |-
 ! ret
-| string || return value
+| uint32 || 1 for success || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+toggle_autostart
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 ! auto
-| uint32 || If the service client should be launched automatically
+| uint32 || If the service client should be launched automatically || yes
 |-
 | ||
 |-
 ! ret
-| string || return value
+| uint32 || 1 for success || yes
 |-
 |}
 
