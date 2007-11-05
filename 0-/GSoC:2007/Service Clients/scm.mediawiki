@@ -200,135 +200,135 @@ The following tables list argument and return types of each method described abo
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+sc_ids
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
-| ||
+| || ||
 |-
 ! ids
-| string list || a list of all installed service clients' names
+| string list || a list of all installed service clients' names || no
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+sc
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
-| ||
+| || ||
 |-
 ! argv
-| string || command-line arguments to pass to the service client
+| string || command-line arguments to pass to the service client || yes
 |-
 ! auto
-| uint32 || If the service client should be launched automatically
+| uint32 || If the service client should be launched automatically || yes
 |-
 ! services
-| uint32 || number of services the service client provides
+| uint32 || number of services the service client provides || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+service_ids
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
-| ||
+| || ||
 |-
 ! ids
-| string list || a list of the names of all services the service client provides
+| string list || a list of the names of all services the service client provides || no
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+service
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 ! service_name
-| string || service name
+| string || service name || yes
 |-
-| ||
+| || ||
 |-
 ! desc
-| string || service description
+| string || service description || yes
 |-
 ! major
-| uint32 || service major version
+| uint32 || service major version || yes
 |-
 ! minor
-| uint32 || service minor version
+| uint32 || service minor version || yes
 |-
 ! registered
-| uint32 || if the service is registered on the server
+| uint32 || if the service is registered on the server || yes
 |-
 ! methods
-| uint32 || number of methods the service provides
+| uint32 || number of methods the service provides || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+method_ids
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 ! service_name
-| string || service name
+| string || service name || yes
 |-
-| ||
+| || ||
 |-
 ! ids
-| string list || a list of the names of all methods the service provides
+| string list || a list of the names of all methods the service provides || no
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+method
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! client_name
-| string || client name
+| string || client name || yes
 |-
 ! service_name
-| string || service name
+| string || service name || yes
 |-
 ! method_name
-| string || method name
+| string || method name || yes
 |-
-| ||
+| || ||
 |-
 ! desc
-| string || method description
+| string || method description || yes
 |-
 ! registered
-| uint32 || if the method is registered on the server
+| uint32 || if the method is registered on the server || yes
 |-
 |}
 
 {| class="wikitable" style="margin: 1em auto 1em auto"
 |+lookup_client
 |-
-! Name !! Type !! Description
+! Name !! Type !! Description !! Required
 |-
 ! service_name
-| string || service name
+| string || service name || yes
 |-
-| ||
+| || ||
 |-
 ! ids
-| string list || a list of the names of all service clients which provide the service
+| string list || a list of the names of all service clients which provide the service || no
 |-
 |}
 
