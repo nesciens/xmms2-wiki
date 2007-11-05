@@ -106,7 +106,7 @@ The following tables list argument and return types of each method described abo
 ! client_name
 | string || client name || yes
 |-
-| ||
+| || ||
 |-
 ! ret
 | uint32 || 1 for success || yes
@@ -121,7 +121,7 @@ The following tables list argument and return types of each method described abo
 ! client_name
 | string || client name || yes
 |-
-| ||
+| || ||
 |-
 ! ret
 | uint32 || 1 for success || yes
@@ -139,7 +139,7 @@ The following tables list argument and return types of each method described abo
 ! argv
 | string || command-line arguments to pass to the service client || yes
 |-
-| ||
+| || ||
 |-
 ! ret
 | uint32 || 1 for success || yes
@@ -157,7 +157,7 @@ The following tables list argument and return types of each method described abo
 ! auto
 | uint32 || If the service client should be launched automatically || yes
 |-
-| ||
+| || ||
 |-
 ! ret
 | uint32 || 1 for success || yes
