@@ -52,10 +52,12 @@ The function xmmsc_service_method_error_set() is used to set error message in th
 If all goes well, it is time to return data to the client.  For the method we registered in the previous section, we should do something like this,
 
  xmmsc_service_method_ret_add_string (method, "return", "returned string");
- res = xmmsc_service_return (connection, result, method);
- xmmsc_result_unref (res);
+ <strike>res = xmmsc_service_return (connection, result, method);
+ xmmsc_result_unref (res);</strike>
 
-It is valid to send return values back to the same client for as many times as you like without having the client making multiple requests.  Simply push the new values and call xmmsc_service_return() will suffice.
+<strike>It is valid to send return values back to the same client for as many times as you like without having the client making multiple requests.  Simply push the new values and call xmmsc_service_return() will suffice.</strike>
+
+'''xmmsc_service_return() is called automatically upon the returning of the service method (Don't worry, all the values you added are deep copied).  So the method is no longer available in the new API.  Consequently, you cannot send return values back to the same client for as many times as you like without having the client making multiple requests.'''
 
 = Client =
 
