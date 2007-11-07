@@ -3,12 +3,17 @@ Open source projects:
 * [http://audacious-media-player.org/Main_Page Audacious]
 * [http://banshee-project.org/Main_Page Banshee]
 * [http://www.beep-media-player.org/site/BMPx_Homepage Beep Media Player]
+* [http://www.exaile.org/ Exaile]
+* [http://squentin.free.fr/gmusicbrowser/gmusicbrowser.html gmusicbrowser]
 * [http://fondriest.frederic.free.fr/realisations/lamip/ Linux Audio Multiple Interface Player]
+* [http://www.mserv.org/ Mserv]
 * [http://muine-player.org/wiki/Main_Page Muine]
 * [http://moc.daper.net/ Music on Console]
 * [http://www.musicpd.org/ Music Player Daemon]
 ** [[XMMS2 vs MPD]]
-* [http://www.gnome.org/projects/rhythmbox/ RhythmBox]
+* [http://www.sacredchao.net/quodlibet Quod Libet]
+* [http://www.gnome.org/projects/rhythmbox/ Rhythmbox]
+* [http://www.songbirdnest.com/ Songbird]
 
 
 Closed source projects:
