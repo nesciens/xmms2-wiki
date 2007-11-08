@@ -1,3 +1,3 @@
 Ning Shi, AKA ZeeGeek.  I can be reached at zeegeek@gmail.com.  My homepage is http://www.zeegeek.cn.
 
-I'm currently working on [[Summer of Code 2007/Service Clients|Service Client]] feature for Google Summer of Code 2007.
+I'm currently working on [[Summer of Code 2007/Service Clients|Service Client]] feature, which was started as a project for Google Summer of Code 2007.
