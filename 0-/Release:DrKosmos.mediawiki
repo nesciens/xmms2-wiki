@@ -26,6 +26,9 @@ win32/mingw
 
 === Notes to xform authors ===
 
+* The methods xmms_xform_metadata_get_int/str now get value by reference and returns a boolean indicating if the datum did exist.
+* The xmms_config_property_callback_remove method now expects a userdata arg, so the same callback as added with xmms_config_property_callback_set is removed.
+
 === Full ChangeLog ===
 
 ==== Between DrJekyll and TEST1 ====
