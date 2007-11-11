@@ -1,0 +1,27 @@
+Save this text to a file anywhere in your home directory:
+
+ [submenu] (XMMS2)
+    [exec] (Play)      {xmms2 play}
+    [exec] (Pause)     {xmms2 pause}
+    [exec] (Stop)      {xmms2 stop}
+    [exec] (Next Song) {xmms2 next}
+    [exec] (Prev Song) {xmms2 prev}
+    [submenu] (Playlist Controls)
+       [exec] (FF +30) {xmms2 seek +30}
+       [exec] (RW -30) {xmms2 seek -30}
+       [exec] (Shuffle) {xmms2 shuffle}
+       [exec] (Sort Artist) {xmms2 sort artist}
+       [exec] (Clear) {xmms2 clear}
+       [exec] (Refresh Mlib) {xmms2 mlib rehash}
+    [end]
+    [submenu] (Playlists)
+       [exec] (Play All) {`xmms2 clear; xmms2 mlib loadall; xmms2 play`}
+       [exec] (Play Random) {`xmms2 clear; xmms2 mlib loadall; xmms2 shuffle; xmms2 next; xmms2 play; xmms2 sort album`}
+    [end]
+ [end]
+
+Then include this file into your main menu file as:
+ [include] (path/to/menu/file)
+
+ALSO! don't forget to run the following on the commandline to add your music files to the mlib
+ shell> xmms2 mlib addpath [path]
