@@ -7,13 +7,14 @@
 
 ==== Feature additions ====
 
-New asf plugin
-ices plugin rewritten
-jack plugin rewritten
-xmmsc_medialib_move_entry to update an entry path.
-coll_sync
-new normalize effect plugin
-new pulseaudio output plugin
+*New plugins added
+**ASF
+**Normalize
+**PulseAudio
+*Plugins rewritten
+**ices
+**jack
+*Command to syncronize collections to persistent storage added
 
 ==== Bug fixes ====
 
