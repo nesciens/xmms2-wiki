@@ -24,6 +24,11 @@ win32/mingw
 
 === Notes to client authors ===
 
+* xmmsc_medialib_select is no more
+* New method xmmsc_result_source_preference_get introduced.
+* New method xmmsc_medialib_move_entry introduced.
+* New method xmmsc_coll_sync introduced.
+
 === Notes to xform authors ===
 
 * The methods xmms_xform_metadata_get_int/str now get value by reference and returns a boolean indicating if the datum did exist.
