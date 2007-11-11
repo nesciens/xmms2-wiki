@@ -5,6 +5,8 @@
 
 === Noteworthy changes ===
 
+Waf build system updated to version 1.2.0
+
 ==== Feature additions ====
 
 *New plugins added
@@ -17,7 +19,6 @@
 *Command to syncronize collections to persistent storage added
 
 ==== Bug fixes ====
-
 
 === New platforms ===
 
