@@ -1,0 +1,23 @@
+== Release Notes ==
+
+=== Upgrading ===
+
+
+=== Noteworthy changes ===
+
+==== Feature additions ====
+
+==== Bug fixes ====
+
+
+=== New platforms ===
+
+win32/mingw
+
+=== Notes to client authors ===
+
+=== Notes to xform authors ===
+
+=== Full ChangeLog ===
+
+==== Between DrJekyll and TEST1 ====
