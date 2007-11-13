@@ -189,16 +189,15 @@ XMMS_PATH is now handled in the clientlib, passing NULL as path will use XMMS_PA
 ** <git norepo=1 repo='xmms2-devel.git'>5c1cab952887c35df5be1b89d7eddf218b1b62a2</git>
 * <mantis>1521</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>53b91c611c3b374d30c55e2d622365567d3e48a9</git>
-'''Daniel Kaminski'''
-* <mantis></mantis>
-** <git norepo=1 repo='xmms2-devel.git'>e2d77535e74e84dc649f7d99b9198a6739ef8346</git>
 '''Daniel KamiÅ„ski'''
+* <mantis>1687</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e2d77535e74e84dc649f7d99b9198a6739ef8346</git>
 * <mantis>1678</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>852597ab2f0fea62142c118fae7be62b9018aaf8</git>
 * <mantis>1679</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>7b3235f24fa1b831b2d3ee246c4e05d716e96df0</git>
 '''Daniel Svensson'''
-* <mantis></mantis>
+* <mantis>1724</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>a14606eada53ddc59a50c20b0f129cea624981ed</git>
 * <mantis>1726</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>c01189e3938c6648a7616a2e6ea52b465a847972</git>
