@@ -24,6 +24,7 @@ All current clients should be found here.
 {{ClientTableEntry|Harald| Mobile Phone / Bluetooth | JavaME/C | in development | Player running on Java capable mobile phone }}
 {{ClientTableEntry|Insanity| Graphical / GTK | Python | in development | Simple but complete player }}
 {{ClientTableEntry|ixmms2| Irssi Plugin | Perl | in development | Control and query xmms2 within irssi }}
+{{ClientTableEntry|JukX| Graphical / GTK | Python | in development | touchscreen orientated  concept }}
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
