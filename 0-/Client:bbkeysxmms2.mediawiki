@@ -1,0 +1,48 @@
+Here is a helpful list of entries for your bbkeysrc file.
+BTW... Page Up and Page Down would be nice keys to use... however I don't know how to get bbkeys to reference these keys.
+
+
+    # XMMS2 Controls
+    [Execute] (Control-Shift-Home)     {xmms2 play}
+    [Execute] (Control-Shift-Mod1-Home) {xmms2 clear}
+    [Execute] (Control-Shift-End)      {xmms2 pause}
+    [Execute] (Control-Shift-Mod1-End) {xmms2 stop}
+    [Execute] (Control-Shift-Insert)   {xterm -geometry 170X1 -e 'xmms2 status'}
+    [Execute] (Control-Shift-Delete)   {xmms2-eq}
+    # Random play Hack
+    [Execute] (Control-Shift-Mod1-Insert) {`xmms2 clear; xmms2 mlib loadall; xmms2 shuffle; xmms2 next; xmms2 play; xmms2 sort artist album tracknr`}
+    # Seek
+    [Execute] (Control-Shift-Left)       {xmms2 seek -10}
+    [Execute] (Control-Shift-Right)      {xmms2 seek +10}
+    [Execute] (Control-Shift-Mod1-Left)  {xmms2 seek -30}
+    [Execute] (Control-Shift-Mod1-Right) {xmms2 seek +30}
+    # Skip
+    [Execute] (Control-Shift-Down)      {xmms2 prev}
+    [Execute] (Control-Shift-Up)        {xmms2 next}
+    # There is probably a better way to do this
+    [Execute] (Control-Shift-Mod1-Down) {`for ((x=1; x<=10; x++)); do xmms2 prev; done;`}
+    [Execute] (Control-Shift-Mod1-Up)   {`for ((x=1; x<=10; x++)); do xmms2 next; done;`}  
+    # Quick playlist loads
+    # Clear current play list and load a quick play
+    [Execute] (Control-Shift-0) {`xmms2 clear; xmms2 mlib load_playlist quickplay0;`}
+    [Execute] (Control-Shift-1) {`xmms2 clear; xmms2 mlib load_playlist quickplay1;`}
+    [Execute] (Control-Shift-2) {`xmms2 clear; xmms2 mlib load_playlist quickplay2;`}
+    [Execute] (Control-Shift-3) {`xmms2 clear; xmms2 mlib load_playlist quickplay3;`}
+    [Execute] (Control-Shift-4) {`xmms2 clear; xmms2 mlib load_playlist quickplay4;`}
+    [Execute] (Control-Shift-5) {`xmms2 clear; xmms2 mlib load_playlist quickplay5;`}
+    [Execute] (Control-Shift-6) {`xmms2 clear; xmms2 mlib load_playlist quickplay6;`}
+    [Execute] (Control-Shift-7) {`xmms2 clear; xmms2 mlib load_playlist quickplay7;`}
+    [Execute] (Control-Shift-8) {`xmms2 clear; xmms2 mlib load_playlist quickplay8;`}
+    [Execute] (Control-Shift-9) {`xmms2 clear; xmms2 mlib load_playlist quickplay9;`}
+    # Add to current play list
+    [Execute] (Control-Shift-Mod1-0) {`xmms2 mlib load_playlist quickplay0;`}
+    [Execute] (Control-Shift-Mod1-1) {`xmms2 mlib load_playlist quickplay1;`}
+    [Execute] (Control-Shift-Mod1-2) {`xmms2 mlib load_playlist quickplay2;`}
+    [Execute] (Control-Shift-Mod1-3) {`xmms2 mlib load_playlist quickplay3;`}
+    [Execute] (Control-Shift-Mod1-4) {`xmms2 mlib load_playlist quickplay4;`}
+    [Execute] (Control-Shift-Mod1-5) {`xmms2 mlib load_playlist quickplay5;`}
+    [Execute] (Control-Shift-Mod1-6) {`xmms2 mlib load_playlist quickplay6;`}
+    [Execute] (Control-Shift-Mod1-7) {`xmms2 mlib load_playlist quickplay7;`}
+    [Execute] (Control-Shift-Mod1-8) {`xmms2 mlib load_playlist quickplay8;`}
+    [Execute] (Control-Shift-Mod1-9) {`xmms2 mlib load_playlist quickplay9;`}
+    # End XMMS2 Controls
