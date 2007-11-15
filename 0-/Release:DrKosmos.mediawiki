@@ -312,3 +312,5 @@ XMMS_PATH is now handled in the clientlib, passing NULL as path will use XMMS_PA
 '''Tobias RundstrÃ¶m'''
 * <mantis>1778</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>9fb1c0d8878abb5acb416d31808665486270c81f</git>
+
+[[Category:Releases]]
