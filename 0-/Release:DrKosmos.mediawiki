@@ -1,5 +1,10 @@
 == Release Notes ==
 
+
+11th of November 1997 was a great day. This was the day when the first public release of X11Amp (later renamed to XMMS) was made. Now ten years later we celebrate this with a release of XMMS2.
+
+XMMS2 0.4 DrKosmos contains the new official XMMS2 logo, a few new plugins such as a PulseAudio output plugin and lots of bugfixes. Hope you will have as much fun downloading, compiling and using it as we had making it.
+
 === Upgrading ===
 
 Upgrading should be smoooooooth.
