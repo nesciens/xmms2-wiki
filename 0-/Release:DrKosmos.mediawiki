@@ -6,6 +6,8 @@ Upgrading should be smoooooooth.
 
 If you build from source and used the --with-python-archdir option, you have to use the environment variable 'PYTHONDIR' instead. Python interpreter can also be specified using the PYTHON environment variable.
 
+Server now checks ipc protocol version. Old client library had a bug in this code, and crashes if server reports unsupported ipc protocol version.
+
 === Noteworthy changes ===
 
 Waf build system updated to version 1.2.0
