@@ -13,7 +13,7 @@
 * [[Release:DrJekyll|DrJekyll]] - Testing phase
 * [[Release:DrKosmos|DrKosmos]] - Release 2007-11-15 (10 years!)
 * DrLecter
-* DrMcCoy, DrMcKay
+* DrMcCoy, DrMcKay, Dr. Matt Destruction
 * DrNo
 ...
 * DrStrangelove
