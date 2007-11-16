@@ -5,7 +5,9 @@ __NOEDITSECTION__
 {|
 |-
 |[[Image:Logo-white-128.png]]
-|The XMMS2 Team has just prepared T-Shirts of their new logo. Head over to the shop and get your gear: http://www.zazzle.com/tobiasr/
+|XMMS2 0.4 DrKosmos was just released (on the 10 year anniversary of [http://www.xmms.org/ xmms]).
+
+Read the [[Release:DrKosmos |release notes]] for DrKosmos
 |-
 |}
 </div>
