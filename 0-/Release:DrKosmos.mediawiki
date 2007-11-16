@@ -9,9 +9,9 @@ XMMS2 0.4 DrKosmos contains the new official XMMS2 logo, a few new plugins such 
 
 Upgrading should be smoooooooth.
 
-If you build from source and used the --with-python-archdir option, you have to use the environment variable 'PYTHONDIR' instead. Python interpreter can also be specified using the PYTHON environment variable.
+If you build from source and used the --with-python-archdir option, you have to use the environment variable 'PYTHONDIR' instead. Python interpreter can also be specified using the PYTHON environment variable. There also seems to be a bug in waf that makes it sometimes try to link against a installed version of libxmmsclient instead of the version built, so if you have an old version installed, uninstall that first.
 
-Server now checks ipc protocol version. Old client library had a bug in this code, and crashes if server reports unsupported ipc protocol version.
+Server now checks IPC protocol version. Old client library had a bug in this code, and crashes if server reports unsupported IPC protocol version.
 
 === Noteworthy changes ===
 
