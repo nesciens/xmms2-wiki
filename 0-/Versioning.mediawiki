@@ -11,7 +11,7 @@
 * [[Release:DrHouse|DrHouse]] - Released 2006-12-02
 * DrILostMyFloppies
 * [[Release:DrJekyll|DrJekyll]] - Testing phase
-* [[Release:DrKormos|DrKosmos]] - Release 2007-11-15 (10 years!)
+* [[Release:DrKosmosâ€Ž|DrKosmos]] - Release 2007-11-15 (10 years!)
 * DrLecter
 * DrMcCoy, DrMcKay
 * DrNo
