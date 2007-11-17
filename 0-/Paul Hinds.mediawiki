@@ -1,0 +1,7 @@
+Paul Hinds, AKA teknopaul. Can be reached at teknopaul at users dot sourceforge dot net. 
+
+Homepages at http://antinstaller.sourceforge.net/ and http://crystal-xmms.sourceforge.net/ .
+
+Develops the Crystalxmms xmms client and the AntInstaller Java installation tool.
+
+[[Category: People]]
