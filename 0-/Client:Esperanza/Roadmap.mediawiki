@@ -12,6 +12,9 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Minimode ignores time remains settings
 
 == Distant Future / New Features ==
+* Allow Drag n' Drop reordering of playlist items
+* Have selectable columns to show/hide metadata in medialib 
+* Allow sorting of results by clicking on column heading in medialib
 * When Esperanza is minimized to a bar(mini-mode), it's automaticly renamed to ''Esperanza <2>''. It would be a good idea to change the name back to Esperanza  after it's minimized to the bar.
 * If the audio-file doesn't have an artist and title in it's meta-data, show the filename(with it's extension removed).
 * If you click shuffle, don't shuffle the whole list, but instead jump to random places in the list, so that files from the same album are still together.
