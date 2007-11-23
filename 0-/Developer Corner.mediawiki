@@ -7,7 +7,7 @@ For those who want to know more about how it works, and how to get clients to pl
 * [[Design of XMMS2]]
 * [[The Medialib]]
 * [http://doxygen.xmms2.xmms.se/ Doxygen documentation]
-* [http://xmms2.xmms.se/epydoc/index.html Python bindings documentation]
+* [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient-python/ Python bindings documentation]
 * [[Writing XMMS2 Clients]]
 * [[XMMS2 IPC Protocol]]
 
