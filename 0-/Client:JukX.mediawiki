@@ -2,7 +2,7 @@
 |name=JukX
 |author=Felix Obenhuber
 |website=http://jukx.sourceforge.net/
-|version=0.3a
+|version=0.4a
 |devlanguage=Python
 |ui=Gtk 2
 |screenshots=[http://sourceforge.net/project/screenshots.php?group_id=209142:1]
