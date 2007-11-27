@@ -40,6 +40,7 @@ This is a list of outstanding problems and annoyances which need to be resolved.
 
 * Interpolation: I would like to have two interpolation methods for PCM and FFT as well: Maximum and average (the usual). For example, the current "Peak" mode utilizes maximum (ie, gives the maximum value that occured within all processed samples). This has the advantage of the visual reception to not "miss" something, like every second beat..
 
+
 === Both sides ===
 
 * State & buffer: Currently, on both sides every chunk has to be processed instantly. There is no way to fill in the buffer consecutivley on the server side. It's also not possible to not-busy wait on an already received packet on the client side (see "Blocking sleep"). On both sides we need a simple state variable to handle the current chunk in a more flexible way. For example on the client side: "waiting for chunk" vs "waiting for already received chunk to be on time".
