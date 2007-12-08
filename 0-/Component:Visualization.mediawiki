@@ -17,6 +17,8 @@ This is a list of outstanding problems and annoyances which need to be resolved.
 
 * Bindings: Most bindings are still missing.
 
+* Start waits: vis_start uses xmmsc_result_wait, but this could create problems if the connection is async. This should not be done internally.
+
 * Formats: We need to add more format configurations, like a samplerate,...
 
 * UDP: The "resync" method, where timestamps are exchanged to calculate the current time difference between sender and receiver, is weak. It is needed to run frequently because different CPUs result in different system clock speeds.  But to date, it doesn't cope with UDP packets getting lost. Also, the calculation is corrupted if one of the processes is blocked during the resync process, i.e. X applications while the user moves them.
@@ -30,7 +32,6 @@ This is a list of outstanding problems and annoyances which need to be resolved.
 * Semaphores: There is no platform independent way to wait for a SYSV semaphore with a given time limit. semtimedop() is a GNU extension. To resolve this, we need to use the process timer to interrupt the semaphore operation with a signal. The process timer could already be in use, so we need to test for that and in some case back it up. Another possibility would be to use POSIX semaphores, but these aren't fully implemented in OSX either...
 
 * Timing: Currently, every vis packet which is "old" is thrown away, if a drawtime is given. There is no threshold, for example a packet is 10 ms late but could still pass. We should have it, and be it just 10 ms... ;) -- this is rather easy
-
 
 === Server side ===
 
