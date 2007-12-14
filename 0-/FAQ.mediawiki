@@ -92,6 +92,12 @@ The seperator between different sockets here is ';'.
 === How do I bind hotkeys to xmms2 commands? ===
 : XMMS2 doesn't offer this natively, but you can try several hacks for this. One such example is [[Hotkeys Example|this Hotkey setup]] using [http://hocwp.free.fr/xbindkeys/xbindkeys.html xbindkeys].
 
+=== In alsa, how do I change from "default" to another audio device? "hw:1,0" and similar commands do not work! ===
+: Find the name of your devices with "aplay -L", then set the alsa.device config option: 
+
+ $ xmms2 config alsa.device default:CARD=Headset
+ Config value alsa.device set to default:CARD=Headset
+
 == Development ==
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
