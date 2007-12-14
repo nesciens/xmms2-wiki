@@ -95,6 +95,33 @@ The seperator between different sockets here is ';'.
 === In alsa, how do I change from "default" to another audio device? "hw:1,0" and similar commands do not work! ===
 : Find the name of your devices with "aplay -L", then set the alsa.device config option: 
 
+ $ aplay -L
+  null
+      Discard all samples (playback) or generate zero samples (capture)
+  default:CARD=Headset
+      Logitech USB Headset, USB Audio
+      Default Audio Device
+  front:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      Front speakers
+  surround40:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      4.0 Surround output to Front and Rear speakers
+  surround41:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      4.1 Surround output to Front, Rear and Subwoofer speakers
+  surround50:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      5.0 Surround output to Front, Center and Rear speakers
+  surround51:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      5.1 Surround output to Front, Center, Rear and Subwoofer speakers
+  surround71:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      7.1 Surround output to Front, Center, Side, Rear and Woofer speakers
+  iec958:CARD=Headset,DEV=0
+      Logitech USB Headset, USB Audio
+      IEC958 (S/PDIF) Digital Audio Output
  $ xmms2 config alsa.device default:CARD=Headset
  Config value alsa.device set to default:CARD=Headset
 
