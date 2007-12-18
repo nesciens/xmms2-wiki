@@ -2,7 +2,7 @@ This is a quick guide on how to work on Esperanza with Git.
 
 
 == Clone ==
- git clone git+ssh://git.xmms.se/xmms2/esperanza.git
+ git clone git://git.xmms.se/xmms2/esperanza.git
 
 this will create "esperanza" locally and you will have the default branch checked out.
 
