@@ -1,0 +1,94 @@
+== Introduction ==
+Hello.  I'm Lucas.  These are notes as I come up with them.  I'll write a proper introduction when I get around to it.
+
+== The Code ==
+The first thing I was told when I asked for help writing a decoder plugin for XMMS2 was to read the friendly source.  Specifically, the source for an existing decoder plugin: vorbis.c.  I'm not going to reproduce the whole thing here since you can download it yourself, but let's take a look at what I learned from it.
+
+Skipping the license section.  It speaks for itself.
+
+<code>
+ /**
+   * @file vorbisfile decoder.
+   * @url http://www.xiph.org/ogg/vorbis/doc/vorbisfile/
+   */
+</code>
+
+The first time I wrote a plugin, one of the things I was told by the xmms2 dev team (coughanders_cough) was that my code was cluttered by a lot of unnecessary comments.  I still try to comment my code heavily, but he suggested I put a lot of it in a blog.  This line made that okay with me.  I figure I'll just leave a link to all the commentary I would have liked to put in the code so it doesn't "clutter it up".  I believe this particular comment from vorbis.c is in Doxygen format.  I'll look up what it means later.
+
+<code>
+ #include "xmms/xmms_xformplugin.h"
+ #include "xmms/xmms_sample.h"
+ #include "xmms/xmms_log.h"
+ #include "xmms/xmms_medialib.h"
+</code>
+
+These, I have gathered, are important.  I don't know a lot about them, but their names are fairly self-explanatory:  xmms_xformplugin.h is necessary when making an xform plugin, such as a decoder plugin.  xmms_sample.h has to do with sound samples and the data types and functions surrounding them in xmms2.  xmms_log.h is for producing log output -- very useful for debugging.  xmms_medialib.h is for interfacing with the Media Library.  There's a page on that.  [[The Medialib]].  Mostly for your plugin to be able to tell xmms2 about a song's metadata.
+
+Skipping other headers.  They're rather vorbis specific and not uncommon anyway.
+
+<code>
+ typedef struct xmms_vorbis_data_St {
+ 	OggVorbis_File vorbisfile;
+ 	ov_callbacks callbacks;
+ 	gint current;
+ } xmms_vorbis_data_t;
+</code>
+
+This thing right here is important.  You see, an xform plugin can't keep track of data through local variables and function calls alone like a normal program often does because it has to be implemented as a set of callback functions.  And those callback functions don't share a local namespace and can't send parameters to each other.  And using global variables is a big no-no.  So xmms2 devs came up with a way for a plugin to store persistent data away and ask for it back when the next callback function ran.  This typedef struct here is part of it.  You can call it anything you want because you register it with the plugin interface in your plugin setup function.  It's just important to have one if your plugin needs to remember anything between function calls (and I can't think of a reason why it wouldn't need to do so).  You typedef it like that so you don't have to go around typing struct xmms_vorbis_data_St whenever you want to refer to the data type.
+
+Skipping a #define.  I don't know what it does.
+
+<code>
+ typedef enum { STRING, INTEGER } ptype;
+ typedef struct {
+ 	const gchar *vname;
+ 	const gchar *xname;
+ 	ptype type;
+ } props;
+ 
+ /** These are the properties that we extract from the comments */
+ static const props properties[] = {
+ 	{ "title",                XMMS_MEDIALIB_ENTRY_PROPERTY_TITLE,     STRING  },
+ 	{ "artist",               XMMS_MEDIALIB_ENTRY_PROPERTY_ARTIST,    STRING  },
+ 	{ "album",                XMMS_MEDIALIB_ENTRY_PROPERTY_ALBUM,     STRING  },
+ 	{ "tracknumber",          XMMS_MEDIALIB_ENTRY_PROPERTY_TRACKNR,   INTEGER },
+ 	{ "date",                 XMMS_MEDIALIB_ENTRY_PROPERTY_YEAR,      STRING  },
+ 	{ "genre",                XMMS_MEDIALIB_ENTRY_PROPERTY_GENRE,     STRING  },
+ 	{ "comment",              XMMS_MEDIALIB_ENTRY_PROPERTY_COMMENT,   STRING  },
+ 	{ "discnumber",           XMMS_MEDIALIB_ENTRY_PROPERTY_PARTOFSET, INTEGER },
+ 	{ "musicbrainz_albumid",  XMMS_MEDIALIB_ENTRY_PROPERTY_ALBUM_ID,  STRING  },
+ 	{ "musicbrainz_artistid", XMMS_MEDIALIB_ENTRY_PROPERTY_ARTIST_ID, STRING  },
+ 	{ "musicbrainz_trackid",  XMMS_MEDIALIB_ENTRY_PROPERTY_TRACK_ID,  STRING  },
+ };
+</code>
+
+This is a useful way of crunching metadata.  I'm sure I'll have more to comment on this later.
+
+<code>
+ /*
+  * Function prototypes
+  */
+ 
+ static gboolean xmms_vorbis_plugin_setup (xmms_xform_plugin_t *xform_plugin);
+ static gint xmms_vorbis_read (xmms_xform_t *xform, xmms_sample_t *buf, gint len, xmms_error_t *err);
+ static gboolean xmms_vorbis_init (xmms_xform_t *decoder);
+ static void xmms_vorbis_destroy (xmms_xform_t *decoder);
+ static gint64 xmms_vorbis_seek (xmms_xform_t *xform, gint64 samples, xmms_xform_seek_mode_t whence, xmms_error_t *err);
+</code>
+
+Here we go.  Now we're getting into the important stuff.  These functions are what do all the work in an xform plugin.  The names of these functions aren't important.  You can call them anything you want because, again, you register them with the plugin interface during the setup function, and you register the setup function with a macro.  What's important is that they have the right return types and parameter types.  My first SPC plugin didn't compile a few times because I used the wrong parameter types for the seek function.  Didn't take me too long to figure it out, but it was annoying.  I'll figure out where you should check the xmms2 code or documentation for the right return types and parameters later.
+
+<code>
+ /*
+  * Plugin header
+  */
+ 
+ XMMS_XFORM_PLUGIN ("vorbis",
+                    "Vorbis Decoder", XMMS_VERSION,
+                    "Xiph's Ogg/Vorbis decoder",
+                    xmms_vorbis_plugin_setup);
+</code>
+
+This is where you first introduce your plugin to the plugin interface.  XMMS_XFORM_PLUGIN is a macro that will register your plugin's setup function and tell xmms2 what your plugin actually is.  I'm still fuzzy on the details of some of the parameters, but it looks like the third one really ought to be XMMS_VERSION and the fifth (last) one should be the name of your setup function.
+
+Next comes the setup function itself, where your plugin and xmms2 get all buddy buddy.  I'll have more here soon.  Everyone watch this space!
