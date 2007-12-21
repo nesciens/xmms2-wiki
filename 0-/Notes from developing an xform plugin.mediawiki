@@ -91,4 +91,32 @@ Here we go.  Now we're getting into the important stuff.  These functions are wh
 
 This is where you first introduce your plugin to the plugin interface.  XMMS_XFORM_PLUGIN is a macro that will register your plugin's setup function and tell xmms2 what your plugin actually is.  I'm still fuzzy on the details of some of the parameters, but it looks like the third one really ought to be XMMS_VERSION and the fifth (last) one should be the name of your setup function.
 
-Next comes the setup function itself, where your plugin and xmms2 get all buddy buddy.  I'll have more here soon.  Everyone watch this space!
+Next comes the setup function itself, where your plugin and xmms2 get all buddy buddy.
+
+<code>
+ static gboolean
+ xmms_vorbis_plugin_setup (xmms_xform_plugin_t *xform_plugin)
+ {
+ 	xmms_xform_methods_t methods;
+ 
+ 	XMMS_XFORM_METHODS_INIT (methods);
+ 	methods.init = xmms_vorbis_init;
+ 	methods.destroy = xmms_vorbis_destroy;
+ 	methods.read = xmms_vorbis_read;
+ 	methods.seek = xmms_vorbis_seek;
+ 
+ 	xmms_xform_plugin_methods_set (xform_plugin, &methods);
+</code>
+
+Here's the beginning of our plugin setup function.  All this "methods" stuff is how you introduce the functional parts of your plugin to xmms2.  Note that XMMS_XFORM_METHODS_INIT() initializes the xmms_xform_methods_t ''structure'' and that methods.init is set equal to the function in charge of initializing an instance of your plugin.  Also, just setting these members of the structure equal to your function calls is not enough.  You must then call xmms_xform_plugin_methods_set() to actually give that information to xmms2.
+
+<code>
+ 	xmms_xform_plugin_indata_add (xform_plugin,
+ 	                              XMMS_STREAM_TYPE_MIMETYPE,
+ 	                              "application/ogg",
+ 	                              NULL);
+</code>
+
+Here we tell xmms2 what kind of plugin we are and what kind(s) of data we can handle.  I'll show how more than one MIME type can be specified when I begin dealing with my very own GME plugin.
+
+I'll have more here soon.  Everyone watch this space!
