@@ -119,4 +119,120 @@ Here's the beginning of our plugin setup function.  All this "methods" stuff is 
 
 Here we tell xmms2 what kind of plugin we are and what kind(s) of data we can handle.  I'll show how more than one MIME type can be specified when I begin dealing with my very own GME plugin.
 
+<code>
+ xmms_magic_add ("ogg/vorbis header",
+ 	                "application/ogg",
+ 	                "0 string OggS", ">4 byte 0",
+ 	                ">>28 string \x01vorbis", NULL);
+</code>
+
+The term "magic" as used here describes a way of recognizing a file type by the first few bytes of that file.  This function teaches xmms2 how to recognize a data stream or file that your xform plugin can handle.  I'm still a bit fuzzy on the details of how this particular function works, but here's what I know.  The second parameter of this function must match one of the mime-type parameters of the last function.  After that comes the magic, and that roughly works like this:  "offset datatype value".  So the first one there would be offset = 0, data type of the magic = string, magic itself = "OggS".  I'll get more detailed if needed.  Until then, man magic should help you.
+
+== My GME plugin ==
+
+First, I made sure I had the right headers.
+
+<code>
+ #include "xmms/xmms_xformplugin.h"
+ #include "xmms/xmms_sample.h"
+ #include "xmms/xmms_log.h"
+ #include "xmms/xmms_medialib.h"
+ 
+ #include "gme/gme.h"
+</code>
+
+Basically that consisted of the four plugin headers and the gme header.  Since we decided to include the sources for the gme library with xmms2, I decided to put it in a subdirectory of the plugin.  Hence the gme/ part.  I could have called it lib/ or gmelib/ or something else, but I didn't.  If it needs fixing later, I'll fix it.  Next the persistent data structure and typedef.
+
+<code>
+ typedef struct xmms_gme_data_St {
+ 	GString *file_contents;	/* The raw data from the file. */
+ } xmms_gme_data_t;
+</code>
+
+Straightforward and simple.  I'm using a GString like the modplug plugin does to avoid having to write memory management and all that stuff.
+
+<code>
+ static gboolean xmms_gme_plugin_setup (xmms_xform_plugin_t *xform_plugin);
+ static gint xmms_gme_read (xmms_xform_t *xform, xmms_sample_t *buf, gint len, xmms_error_t *err);
+ static gboolean xmms_gme_init (xmms_xform_t *decoder);
+ static void xmms_gme_destroy (xmms_xform_t *decoder);
+ static gint64 xmms_gme_seek (xmms_xform_t *xform, gint64 samples, xmms_xform_seek_mode_t whence, xmms_error_t *err);
+</code>
+
+Here are my function prototypes.  I just copied and pasted from vorbis.c and then searched and replaced vorbis with gme.  Easy.
+
+<code>
+ XMMS_XFORM_PLUGIN ("gme",
+                    "Game Music decoder", XMMS_VERSION,
+                    "Game Music Emulator music decoder",
+                    xmms_gme_plugin_setup);
+</code>
+
+Here's the plugin header.  Last parameter matches my setup function's name.
+
+<code>
+ static gboolean
+ xmms_gme_plugin_setup (xmms_xform_plugin_t *xform_plugin)
+ {
+ 	xmms_xform_methods_t methods;
+ 
+ 	XMMS_XFORM_METHODS_INIT (methods);
+ 	methods.init = xmms_gme_init;
+ 	methods.destroy = xmms_gme_destroy;
+ 	methods.read = xmms_gme_read;
+ 	methods.seek = xmms_gme_seek;
+ 
+ 	xmms_xform_plugin_methods_set (xform_plugin, &methods);
+</code>
+
+The beginning of the setup function.  Again, I just copied and pasted this part then searched for vorbis and replaced with gme.
+
+<code>
+ 	/* todo: add other mime types */
+ 	xmms_xform_plugin_indata_add (xform_plugin,
+ 	                              XMMS_STREAM_TYPE_MIMETYPE,
+ 	                              "application/x-spc",
+ 	                              NULL);
+</code>
+
+I'll add more mime-types later.  I'd especially like to know if there's an actual mime type out there for SPC700 files.  How does one go about registering a mime type anyway?
+
+<code>
+ 	/* todo: add other magic */
+ 	xmms_magic_add ("SPC header",
+ 	                "application/x-spc",
+ 	                "0 string SNES", 
+ 	                NULL);
+</code>
+
+I'll add more magic later.  This one could even be more specific.  The beginning string of SPC files is longer than this, and I wonder if there are other files out there that start with "SNES"...
+
+<code>
+ 	/* todo: add other file extensions */
+ 	xmms_magic_extension_add ("application/x-spc", "*.spc");
+ 
+ 	return TRUE;
+ }
+</code>
+
+I'll add more file extensions later.  At some point I might want to add support for .rsn files, but that'd require a rar library, which is slightly hard to get open source.
+
+<code>
+</code>
+
+== Status of this page and my plugin ==
+
+So far I've got the following implemented and documented:
+* Headers
+* Function prototypes
+* Persistent data structure typedef
+* The plugin header
+* xmms_gme_plugin_setup()
+
+That leaves:
+* xmms_gme_init()
+* xmms_gme_destroy()
+* xmms_gme_read()
+* xmms_gme_seek()
+
 I'll have more here soon.  Everyone watch this space!
