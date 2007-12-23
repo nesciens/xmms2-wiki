@@ -159,10 +159,11 @@ Basically that consisted of the four plugin headers and the gme header.  Since w
 <code>
  typedef struct xmms_gme_data_St {
  	GString *file_contents;	/* The raw data from the file. */
+ 	Music_Emu *emu;			/* An emulation instance for the GME library */
  } xmms_gme_data_t;
 </code>
 
-Straightforward and simple.  I'm using a GString like the modplug plugin does to avoid having to write memory management and all that stuff.
+Straightforward and simple.  I'm using a GString like the modplug plugin does to avoid having to write memory management and all that stuff.  The other variable, emu, is used to keep track of a particular instance of emulation we are running, and to keep the library thread-safe.
 
 <code>
  static gboolean xmms_gme_plugin_setup (xmms_xform_plugin_t *xform_plugin);
@@ -286,6 +287,23 @@ This function call describes to xmms2 what kind of data your plugin outputs.  It
 
 This part is all about reading the data from file or wherever xmms2 got it.  I copied the basic form of it from modplug.c and modified basically only the error message and the name of the GString where we store the data.
 
+<code>
+ 	if (init_error = gme_open_data(data->file_contents->str, data->file_contents->len, &data->emu, 32000))
+ 	{
+ 		XMMS_DBG ("gme_open_data returned an error: %s", init_error);
+ 		return FALSE;
+ 	}
+</code>
+
+This is GME-specific stuff.  The if line loads the data into the library's Music_emu data structure for processing and grabs any error messages along the way.  If there was a message, we send that to debug output and return FALSE to say we failed initialization.
+
+<code>
+ 	return TRUE;
+ }
+</code>
+
+We're done with initialization.
+
 == Status of this page and my plugin ==
 
 So far I've got the following implemented and documented:
@@ -294,9 +312,9 @@ So far I've got the following implemented and documented:
 * Persistent data structure typedef
 * The plugin header
 * xmms_gme_plugin_setup()
+* xmms_gme_init()
 
 That leaves:
-* xmms_gme_init()
 * xmms_gme_destroy()
 * xmms_gme_read()
 * xmms_gme_seek()
