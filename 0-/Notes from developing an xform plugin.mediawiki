@@ -235,12 +235,12 @@ I'll add more file extensions later.  At some point I might want to add support 
  static gboolean
  xmms_gme_init (xmms_xform_t *xform)
  {
- 	xmms_spc_data_t *data;
+ 	xmms_gme_data_t *data;
  	gint filesize;
  
  	g_return_val_if_fail (xform, FALSE);
  
- 	data = g_new0 (xmms_spc_data_t, 1);
+ 	data = g_new0 (xmms_gme_data_t, 1);
  
  	xmms_xform_private_data_set (xform, data);
 </code>
@@ -304,6 +304,32 @@ This is GME-specific stuff.  The if line loads the data into the library's Music
 
 We're done with initialization.
 
+<code>
+ static void
+ xmms_gme_destroy (xmms_xform_t *xform)
+ {
+ 
+ 	xmms_gme_data_t *data;
+ 
+ 	g_return_if_fail (xform);
+ 
+ 	data = xmms_xform_private_data_get (xform);
+ 	g_return_if_fail (data);
+</code>
+
+Here's the start of our destroy function.  Look at those first four lines.  You'll get used to seeing this at the beginning of a function.  Or something like it.  It's how we get our persistent data back.  Unless your plugin is crazy or has some weird plugin intuition, you'll need this at the beginning of destroy, read, and seek.
+
+<code>
+ 	if (data->file_contents)
+ 		g_string_free (data->file_contents, TRUE);
+ 
+ 	gme_delete (data->emu);
+ 
+ }
+</code>
+
+Typical memory management and stuff.  We're just giving back what we borrowed.  That's all there is to our destroy function.
+
 == Status of this page and my plugin ==
 
 So far I've got the following implemented and documented:
@@ -313,9 +339,9 @@ So far I've got the following implemented and documented:
 * The plugin header
 * xmms_gme_plugin_setup()
 * xmms_gme_init()
+* xmms_gme_destroy()
 
 That leaves:
-* xmms_gme_destroy()
 * xmms_gme_read()
 * xmms_gme_seek()
 
