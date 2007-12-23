@@ -8,7 +8,7 @@ Uses Blargg's Game Music Emulator library to decode.
 
 =Status=
 In development:
-Approx 20% complete by file volume, but probably closer to 5% complete by effort.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
+Approx 50% complete by file volume, but probably closer to 30% complete by effort.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
 
 =Links=
 * http://slack.net/~ant/libs/audio.html
