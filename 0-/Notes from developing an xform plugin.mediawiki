@@ -128,7 +128,20 @@ Here we tell xmms2 what kind of plugin we are and what kind(s) of data we can ha
 
 The term "magic" as used here describes a way of recognizing a file type by the first few bytes of that file.  This function teaches xmms2 how to recognize a data stream or file that your xform plugin can handle.  I'm still a bit fuzzy on the details of how this particular function works, but here's what I know.  The second parameter of this function must match one of the mime-type parameters of the last function.  After that comes the magic, and that roughly works like this:  "offset datatype value".  So the first one there would be offset = 0, data type of the magic = string, magic itself = "OggS".  I'll get more detailed if needed.  Until then, man magic should help you.
 
+<code>
+ 	xmms_magic_extension_add ("application/ogg", "*.ogg");
+ 
+ 	return TRUE;
+ }
+</code>
+
+And wrapping up our setup function is this call.  It associates a mime type with a filename extension, to kind of give xmms2 a clue.  Really helps to have a clue.  Once we've done that, all that's left is to return TRUE.  If we got this far, then everything presumably went well and we're all set up.
+
+At this point I'd like to shift gears and take a look at how I implemented my own plugin based on the things I learned from the vorbis.c source.
+
 == My GME plugin ==
+
+This is a huge helping of my GME plugin.  As currently implemented, it only decodes .spc files, but that should change soon since the library itself will handle a plethora of emulated music files.  You'll see how simple it is in xmms2 to create a new xform plugin if you know a bit about an existing one such as vorbis.c.
 
 First, I made sure I had the right headers.
 
@@ -218,7 +231,60 @@ I'll add more magic later.  This one could even be more specific.  The beginning
 I'll add more file extensions later.  At some point I might want to add support for .rsn files, but that'd require a rar library, which is slightly hard to get open source.
 
 <code>
+ static gboolean
+ xmms_gme_init (xmms_xform_t *xform)
+ {
+ 	xmms_spc_data_t *data;
+ 	gint filesize;
+ 
+ 	g_return_val_if_fail (xform, FALSE);
+ 
+ 	data = g_new0 (xmms_spc_data_t, 1);
+ 
+ 	xmms_xform_private_data_set (xform, data);
 </code>
+
+Start off our init function.  We need to fail if we didn't get our xform properly.  Then we initialize our persistent data with g_new0.  This xform is how we keep our persistent data, so we need to associate the two, and xmms_xform_private_data_set is how we tell xmms2 that we are doing so.
+
+<code>
+ 	xmms_xform_outdata_type_add (xform,
+ 	                             XMMS_STREAM_TYPE_MIMETYPE,
+ 	                             "audio/pcm",								/* PCM samples */
+ 	                             XMMS_STREAM_TYPE_FMT_FORMAT,
+ 	                             XMMS_SAMPLE_FORMAT_S16,				/* 16-bit signed */
+ 	                             XMMS_STREAM_TYPE_FMT_CHANNELS,
+ 	                             2,											/* stereo */
+ 	                             XMMS_STREAM_TYPE_FMT_SAMPLERATE,
+ 	                             32000,										/* 32 kHz */
+ 	                             XMMS_STREAM_TYPE_END);
+</code>
+
+This function call describes to xmms2 what kind of data your plugin outputs.  It doesn't have to be audio/pcm.  It could be a type of data handled by some other plugin.  If that's the case, xmms2 will chain your plugin together with whatever other plugins are necessary to get a stream it can send to an output plugin.
+
+<code>
+ 	data->file_contents = g_string_new ("");
+ 
+ 	for (;;)
+ 	{
+ 		xmms_error_t error;
+ 		gchar buf[4096];
+ 		gint ret;
+ 
+ 		ret = xmms_xform_read (xform, buf, sizeof (buf), &error);
+ 		if (ret == -1)
+ 		{
+ 			XMMS_DBG ("Error reading emulated music data");
+ 			return FALSE;
+ 		}
+ 		if (ret == 0)
+ 		{
+ 			break;
+ 		}
+ 		g_string_append_len (data->file_contents, buf, ret);
+ 	}
+</code>
+
+This part is all about reading the data from file or wherever xmms2 got it.  I copied the basic form of it from modplug.c and modified basically only the error message and the name of the GString where we store the data.
 
 == Status of this page and my plugin ==
 
