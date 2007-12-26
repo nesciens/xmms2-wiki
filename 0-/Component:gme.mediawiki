@@ -7,8 +7,7 @@ Adds support for playing various emulated game music audio formats to XMMS2. Thi
 Uses Blargg's Game Music Emulator library to decode.
 
 =Status=
-In development:
-Approx 50% complete by file volume, but probably closer to 30% complete by effort.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
+SPC support working!  Properly detects the end of non-looping songs and moves to the next.  Reads most SPC metadata -- reports the genre as Super Nintendo.  Awaiting approval from xmms2 devs for inclusion.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
 
 =Links=
 * http://slack.net/~ant/libs/audio.html
