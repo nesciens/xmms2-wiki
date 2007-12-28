@@ -1,13 +1,16 @@
 {{ComponentHeader}}
 
 =Summary=
-Adds support for playing various emulated game music audio formats to XMMS2. This component is required for playback of "ay", "gbs", "gym", "hes", "kss", "nsf", "nsfe", "sap", "spc", "vgm", and "vgz" files.
+Adds support for playing various emulated game music audio formats to XMMS2. This component is required for playback of "ay", "gbs", "gym", "nsf", "nsfe", "sap", "spc", "vgm", and "vgz" files.
 
 =Description=
 Uses Blargg's Game Music Emulator library to decode.
 
 =Status=
-SPC support working!  Properly detects the end of non-looping songs and moves to the next.  Reads most SPC metadata -- reports the genre as Super Nintendo.  Awaiting approval from xmms2 devs for inclusion.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
+Support for SPC, NSF, and GBS files.  Properly detects the end of non-looping songs and moves to the next.  Reads most metadata -- reports the genre as the system type (Super Nintendo for SPC files, Nintendo for NSF files, etc).  Playing of subtunes (in NSF and GBS files) is possible but still awkward.  Awaiting approval from xmms2 devs for inclusion.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
+
+=Caveats=
+Note that Blargg's library also supports "hes" and "kss" files, but that these require more than one file to be loaded to play a single song -- this is non-trivial in xmms2 and support for these formats may never be implemented.
 
 =Links=
 * http://slack.net/~ant/libs/audio.html
