@@ -28,6 +28,8 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) )
 
 {{Contrib| title=Medialib cleaner| author=Sham Chukoury| description=Simple script to remove items marked as 'unavailable' in the medialib (which can include things like JPEG and text files).| moreinfo=| files=* [http://xmms2.xmms.se/contrib/files/xmms2-clean-mlib.py xmms2-clean-mlib.py]}}
 
+{{Contrib| title=Medialib updater| author=Sebastian Sareyko| description=A python script that removes unavailable media from the Media Library and that adds newly found stuff that has not yet been added.| moreinfo=| files=* [http://nooms.de/media/xmms2-mlib-update.py xmms2-mlib-update.py]}}
+
 {{Contrib| title=xmms2_random_album | author=ashtophet| description=(Updated:2007/11/11) Quick shell script to add a random album to a dedicated playlist. It will be obsolete when random album playback is available natively (using collection advanced features). If you use it, find annoyances, improvements, suggestions... please, contact me (mail is at source).| moreinfo=| files=* [http://www.ashtophet.org/xmms2_random_album.sh xmms2_random_album.sh] [http://img264.imageshack.us/img264/1149/xmms2randomalbum01fu9.png screenshot01] [http://img115.imageshack.us/img115/7356/xmms2randomalbum02km5.png screenshot02]}}
 
 {{Contrib| title=xmms2lyrics | author=ashtophet| description=Very simple shell script to fetch current xmms2 song lyrics (w3m) and show them (w3m) using google's(tm) "feeling lucky" feature. Based on  [http://www.ashtophet.org//mpdlyrics-0.0.6 mpdlyrics].| moreinfo=| files=* [http://www.ashtophet.org/xmms2lyrics.sh xmms2lyrics.sh]}}
