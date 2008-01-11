@@ -25,6 +25,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 === Graphical clients ===
 * Some signal results may be sent at a very high rate, for example the ''playback_time'' signal, which delivers values representing milliseconds played. This might in turn cause clients to unnecessarily process every such result and update a number of widgets - which can cause unpleasant effects such as flickering. To prevent this, clients should update their widgets only when necessary (for example, if a half second difference is calculated between the last result value and the latest result value). Clients may also delay the restarting of the signal result (which effectively throttles the rate at which the results are sent).
+* To enable drag & drop between clients some guidelines must be followed. The target entry for medialib ids is "application/x-xmms2mlibid", and "application/x-xmms2poslist" for playlist positions. Both should be of type int32_t array. 
 
 === Cover art ===
 * XMMS2 clients can store and retrieve binary data from the daemon (using the so-called ''bindata'' API). A suitable client (such as [http://git.xmms.se/?p=xmms2covers.git;a=summary xmms2covers]) may store image data and set the appropriate [[Generic properties policy#Album_Art | album art]] related properties after querying suitable web services and matching songs with album covers (or via some equivalent mechanism). Other clients may then retrieve the stored image data for display.
