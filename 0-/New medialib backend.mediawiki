@@ -63,6 +63,8 @@ A property is just a string-pair. Strings could(/should) be stored in a stringta
 
 S4 should know (be told at startup) about the structure (ontology) so xforms setting properties doesn't have to know about it, they just do prop_set("album", "...and Justice for all") and S4 will take care of the rest.
 
+A [http://git.0x63.nu/?p=s4.git;a=summary prototype implementation] was realized by Anders to showcase some ideas for data structure and algorithms.
+
 === Pro's with this implementation ===
 
 === Con's with this implementation ===
