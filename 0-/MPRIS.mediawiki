@@ -1,4 +1,4 @@
-'''''DRAFT'''''
+'''''Version 1.0'''''
 
 ;MPRIS
 :Media Player Remote Interfacing Specification
