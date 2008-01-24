@@ -87,7 +87,8 @@ Returns the version of the MPRIS spec being implemented. Return 1.0.
 Note that if CAN_HAS_TRACKLIST is false, the methods described below must be implemented as no-ops, except GetMetadata (which is valid only if given argument is 0), GetCurrentTrack (which always returns 0), GetLength (which will return 0 or 1), and AddTrack
 
 ==== GetMetadata ====
-Gives all meta data available for element at given position in the [[#"TrackList"|TrackList]]
+Gives all meta data available for element at given position in the [[#"TrackList"|TrackList]], counting from 0.
+
 Each dict entry is organized as follows
 * string: Metadata item name
 * variant: Metadata value.
