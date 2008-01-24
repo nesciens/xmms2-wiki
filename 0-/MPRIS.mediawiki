@@ -72,6 +72,16 @@ Makes the "Media Player" exit.
    <method name="Quit">
    </method>
 
+==== MprisVersion ====
+
+Returns the version of the MPRIS spec being implemented. Return 1.0.
+
+===== Introspection data: =====
+
+   <method name="MprisVersion">
+     <arg type="f" direction="out"/>
+   </method>
+
 === /TrackList object methods ===
 
 Note that if CAN_HAS_TRACKLIST is false, the methods described below must be implemented as no-ops, except GetMetadata (which is valid only if given argument is 0), GetCurrentTrack (which always returns 0), GetLength (which will return 0 or 1), and AddTrack
