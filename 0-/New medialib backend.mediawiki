@@ -37,6 +37,10 @@ The schema is very simple and straightforward, each property is a row.
 * Implementation for ''3 - Getting a list of entries with complex query'' is very slow and not easy to overview
 * Inserting entries in bulk seems to slow down SQLite
 
+=== Possible improvements ===
+
+SQLite is designed from the ground up to support data in a  [http://en.wikipedia.org/wiki/Relational_model relational model],  but at this point it's basically used as a very, very complex hashtable.  Vastly improved performance and simplicity can be achieved using an SQLite database simply by employing the relational paradigm - that is, one row corresponds to one song, and contains the necessary data in columns.  Although this reduces the performance on queries for non-standard tags, they're '''non-standard tags'''.  We shouldn't be sacrificing performance and scalability (and violate all kinds of good practice) to fully support them.  What good is ensuring that corner cases are as simple as normal cases, when the means of doing that is to make simple cases as complex as corner cases?  [[User:Srobertson|Srobertson]] 03:11, 6 February 2008 (CET)
+
 == S4 implementation ==
 
 S4 is the working name for a new database backend that Anders has been thinking about. S4 stands for Short String Storage System (iirc) (I think it could be "Storage System for/4 Short Strings" aswell). The idea is to optimize the system for short string storage which SQL isn't optimized for. The idea is to store each entry as a Object and each object has properties.
