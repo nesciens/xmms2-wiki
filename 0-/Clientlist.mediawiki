@@ -5,6 +5,7 @@ All current clients should be found here.
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
 {{ClientTableEntry|Abraca| Graphical / GTK | C | in development | Usable client with collection support }}
+{{ClientTableEntry|AlbumThing| Graphical / GTK | Python | in development | Simple, Album oriented client }}
 {{ClientTableEntry|Azrael| Graphical / GTK | C | development stalled | Basic player with nice additions }}
 {{ClientTableEntry|Blastwave| Graphical / GTK | C | in development | Experimental XMMS2 client }}
 {{ClientTableEntry|bluegroove| Graphical / GTK | Ruby | in development | Typical player with queueing support }}
