@@ -8,6 +8,8 @@ __NOEDITSECTION__
 |XMMS2 0.4 DrKosmos was just released (on the 10 year anniversary of [http://www.xmms.org/ xmms]).
 
 Read the [[Release:DrKosmos |release notes]] for DrKosmos
+
+Visit our [[Summer_of_Code_2008|Summer of Code 2008 page]].
 |-
 |}
 </div>
