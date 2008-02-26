@@ -9,3 +9,9 @@
 {{SoCItem| title=Collections 2.0| description=Description pending| lang=C| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is kind of prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the pulseaudio, alsa and oss output (bonus if coreaudio also supports it!)| lang=C| level=Medium to hard| mentor=N/A}}
+
+{{SoCItem| title=xmmsclient-easy| description=Development of a higher-level client library, that would include features many clients have in common. Currently planned modules include server state caching (playlist, metadata, playback status, etc), a new modular collection pattern parser, etc.| lang=C| level=Medium to Hard| mentor=N/A}}
+
+{{SoCItem| title=nycli| description=Finishing the development of the new official CLI, started by [theefer]. The base code is ready, but all commands and options must be added, along with configuration file support, advanced search pattern, etc.| lang=C| level=Medium| mentor=N/A}}
+
+{{SoCItem| title=New service clients| description=Development of multiple service clients, to be discussed. Random ideas: bookmark, lyrics, stop-after, alarm, party-shuffle, medialib-updater, metadata write-back, last.fm, etc. Note that this task assumes that Service Clients have been merged.| lang=To be discussed| level=Easy to Medium| mentor=N/A}}
