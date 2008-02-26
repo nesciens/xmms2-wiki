@@ -8,4 +8,4 @@
 
 {{SoCItem| title=Collections 2.0| description=Description pending| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is kind of prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the alsa and oss output (bonus if coreaudio also supports it!)| lang=C| level=Medium to hard| mentor=N/A}}
+{{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is kind of prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the pulseaudio, alsa and oss output (bonus if coreaudio also supports it!)| lang=C| level=Medium to hard| mentor=N/A}}
