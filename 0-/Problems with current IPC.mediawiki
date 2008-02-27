@@ -1,0 +1,8 @@
+These are notes on what could be changed in the current IPC model.
+
+* Strings are encoded with uint for length then the full length of the string and then a NULL. The last NULL is a total waste of space.
+* Most payload types are sent with a uint to identify the type first, except the below cases. This makes it hard to do generic getter methods.
+** error packets are encoded with the header and then directly the string, without the type.
+** dicts and propdicts are returned as a list with [key, value, key, value] layout, the same here, the type is set to dict or propdict and then the list comes as any other list but without the type field. it's a special case but it might be convenient to include the list type there also.
+* In the return packet we don't really need object and cmd in the header, cookie and length should be enough. but to do this we need a better way to handle error packets.
+* let's get rid of unsigned ints, just creates confusion.
