@@ -5,16 +5,23 @@ If you like a function some player has, just create a new Headline with the name
 '''Foobar2000''' 
 
 - manipulation of the layout, which shouldnt be confused with UI. Foobar allows sorting and displaying all content
-  in every thinkable area of the player by strings. (e.g. defininf a string $artist-$title) will display The Artist-The Track Title. its possibilities seem endless (using it in tag editing dialog or in renaming options)
-To get an impression how it works have a look at: http://carnager.dyndns.org/~carnager/titleformat_help.html
+  in every thinkable area of the player by strings. (e.g. defininf a string $artist-$title) will display The
+  Artist-The Track Title. its possibilities seem endless (using it in tag editing dialog or in renaming options)
+  To get an impression how it works have a look at: http://carnager.dyndns.org/~carnager/titleformat_help.html
 
-- replaygain scanning and removing of/from all media files in track and album mode (using tags for all media including mp3)
+- replaygain scanning and removing of/from all media files in track and album mode (using tags for all media
+  including mp3)
 
-- a flexible Tag Editor. Basically it should be allowed to add any tag. maybe just a list of empty fields that can be FREELY assigned to some NAME (e.g. ARTIST or ALBUM, but also MY_SELF_DEFINED_TAG). What makes foobar special here is its integration of the title formatting strings, which let you copy defined strings from other files or the feature of writing several lines of text (each line represents one track) and assign a tag name to it (e.g. TITLE.
+- a flexible Tag Editor. Basically it should be allowed to add any tag. maybe just a list of empty fields that can
+  be FREELY assigned to some NAME (e.g. ARTIST or ALBUM, but also MY_SELF_DEFINED_TAG). What makes foobar special
+  here is its integration of the title formatting strings, which let you copy defined strings from other files or
+  the feature of writing several lines of text (each line represents one track) and assign a tag name to it (e.g.
+  TITLE.
 
 - Freedb support for albums.
 
-- totally customisable UI, what you dont want, dont show, or show it elsewhere. (this includes menus and rightclick menus)
+- totally customisable UI, what you dont want, dont show, or show it elsewhere. (this includes menus and
+  rightclick menus)
 
 
 OTHER PLAYERS GO HERE
