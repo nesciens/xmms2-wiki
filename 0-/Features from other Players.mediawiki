@@ -6,7 +6,7 @@ If you like a function some player has, just create a new Headline with the name
 
 - manipulation of the layout, which shouldnt be confused with UI. Foobar allows sorting and displaying all content in every thinkable area of the player by strings. (e.g. defininf a string $artist-$title) will display The Artist-The Track Title. its possibilities seem endless (using it in tag editing dialog or in renaming options) To get an impression how it works have a look at: http://carnager.dyndns.org/~carnager/titleformat_help.html
 
-NOTE: of course such things can be done with present languages, but it should be overkill, because speed matters after all
+NOTE: of course such things can be done with present languages, but using a specified library has an advantage, because speed matters after all. i guess xmms supports most of the important things, its just about implemting it on the client side.
 
 
 - replaygain scanning and removing of/from all media files in track and album mode (using tags for all media including mp3)
