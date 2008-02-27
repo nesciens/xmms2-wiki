@@ -8,7 +8,9 @@ If you like a function some player has, just create a new Headline with the name
 
 NOTE: of course such things can be done with present languages, but it should be overkill, because speed matters after all
 
+
 - replaygain scanning and removing of/from all media files in track and album mode (using tags for all media including mp3)
+
 
 - a flexible Tag Editor. Basically it should be allowed to add any tag. maybe just a list of empty fields that can
 be FREELY assigned to some NAME (e.g. ARTIST or ALBUM, but also MY_SELF_DEFINED_TAG). What makes foobar special
@@ -16,7 +18,9 @@ here is its integration of the title formatting strings, which let you copy defi
 the feature of writing several lines of text (each line represents one track) and assign a tag name to it (e.g.
 TITLE.
 
+
 - Freedb support for albums.
+
 
 - totally customisable UI, what you dont want, dont show, or show it elsewhere. (this includes menus and
 rightclick menus)
