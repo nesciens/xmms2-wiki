@@ -6,3 +6,4 @@ These are notes on what could be changed in the current IPC model.
 ** dicts and propdicts are returned as a list with [key, value, key, value] layout, the same here, the type is set to dict or propdict and then the list comes as any other list but without the type field. it's a special case but it might be convenient to include the list type there also.
 * In the return packet we don't really need object and cmd in the header, cookie and length should be enough. but to do this we need a better way to handle error packets.
 * let's get rid of unsigned ints, just creates confusion.
+* A dict is serialized different from a normal list or a propdict. The dict actually is serialized as string (key),type,value instead of the normal list or propdict that are serialized as type, key, type, value.
