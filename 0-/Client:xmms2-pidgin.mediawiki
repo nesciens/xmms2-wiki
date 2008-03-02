@@ -1,0 +1,12 @@
+{{{xmms2-pidgin}}}
+
+by {{{Jitu Das}}}
+
+Homepage: {{{http://code.google.com/p/xmms2-pidgin/}}}
+Latest version: {{{0.3}}}
+Development language: {{{C}}}
+User Interface: {{{Pidgin Plugin}}}
+Screenshots: {{{screenshots}}}
+[[Talk:Client:{{{xmms2-pidgin}}} | Discuss]]
+
+{{{Pidgin plugin to display XMMS2 song info}}}
