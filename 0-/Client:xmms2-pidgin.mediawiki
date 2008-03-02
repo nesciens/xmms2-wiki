@@ -9,7 +9,7 @@ by ''Jitu Das''
 '''Screenshots''': <br />
 [[Talk:Client:xmms2-pidgin | Discuss]]
 
-{{{description}}}
+Pidgin plugin that displays info for current song playing in XMMS2
 
 [[Clients | More xmms2 clients]]
 
