@@ -6,7 +6,7 @@ by ''Jitu Das''
 '''Latest version''': 0.3<br />
 '''Development language''': C<br />
 '''User Interface''': Pidgin Plugin<br />
-'''Screenshots''': <br />
+'''Screenshots''': [http://img299.imageshack.us/img299/1088/xmms2pidginxe4.png]<br />
 [[Talk:Client:xmms2-pidgin | Discuss]]
 
 Pidgin plugin that displays info for current song playing in XMMS2
