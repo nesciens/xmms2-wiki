@@ -1,14 +1,19 @@
 == About Your Organization ==
 * What is your Organization's Name?
+XMMS2 - X(cross)platform Music Multiplexing System
 * What is your Organization's Homepage?
+http://xmms2.xmms.se/
 * Describe your organization.
 * Why is your organization applying to participate in GSoC 2008? What do you hope to gain by participating?
 * Did your organization participate in previous GSoC years? If so, please summarize your involvement and the successes and failures of your student projects. (optional)
 * If your organization has not previously participated in GSoC, have you applied in the past? If so, for what year(s)? (optional)
 * What license does your project use?
 * URL for your ideas page
+http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2008/Proposed_projects
 * What is the main development mailing list for your organization?
+xmms2-devel@lists.xmms.se
 * Where is the main IRC channel for your organization?
+[irc://chat.freenode.net/xmms2 #xmms2] on freenode.net
 * Does your organization have an application template you would like to see students use? If so, please provide it now. (optional)
 * Who will be your backup organization administrator? Please enter their Google Account address. We will email them to confirm, your organization will not become active until they respond. (optional)
 
