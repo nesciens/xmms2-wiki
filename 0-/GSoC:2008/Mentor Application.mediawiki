@@ -1,0 +1,23 @@
+== About Your Organization ==
+* What is your Organization's Name?
+* What is your Organization's Homepage?
+* Describe your organization.
+* Why is your organization applying to participate in GSoC 2008? What do you hope to gain by participating?
+* Did your organization participate in previous GSoC years? If so, please summarize your involvement and the successes and failures of your student projects. (optional)
+* If your organization has not previously participated in GSoC, have you applied in the past? If so, for what year(s)? (optional)
+* What license does your project use?
+* URL for your ideas page
+* What is the main development mailing list for your organization?
+* Where is the main IRC channel for your organization?
+* Does your organization have an application template you would like to see students use? If so, please provide it now. (optional)
+* Who will be your backup organization administrator? Please enter their Google Account address. We will email them to confirm, your organization will not become active until they respond. (optional)
+
+== About Your Mentors ==
+* What criteria did you use to select these individuals as mentors? Please be as specific as possible.
+* Who will your mentors be? Please enter their Google Account address separated by commas. If your organization is accepted we will email each mentor to invite them to take part. (optional)
+
+== About The Program ==
+* What is your plan for dealing with disappearing students?
+* What is your plan for dealing with disappearing mentors?
+* What steps will you take to encourage students to interact with your project's community before, during and after the program?
+* What will you do to ensure that your accepted students stick with the project after GSoC concludes?
