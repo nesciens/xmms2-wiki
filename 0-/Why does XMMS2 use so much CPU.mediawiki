@@ -1,0 +1,7 @@
+"xmms2d uses N% cpu, whereas $otherplayer just uses M%"
+
+insert info here about how to
+* look at chain (effects, converter).
+* compilation with -O2/-Os  (+ add reasoning why it isn't default)
+* make sure medialib indexer isn't running
+* compare with madplay / mpg123   (+ reasoning with int/float)
