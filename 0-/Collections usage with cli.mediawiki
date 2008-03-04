@@ -282,12 +282,12 @@ playlist module:
 
 We can also change the type to ''queue'' using the same command:
 
- $ xmms2 type_playlist Other queue
+ $ xmms2 playlist type Other queue
 
 For the ''pshuffle'' type, the source collection (input operand) of
 the shuffle must be specified:
 
- $ xmms2 type_playlist Other pshuffle AirFirstTracks
+ $ xmms2 playlist type Other pshuffle AirFirstTracks
  $ xmms2 list Other
  ->[0/102] Air - Playground Love (03:32)
    [1/116] Air - Venus (04:04)
