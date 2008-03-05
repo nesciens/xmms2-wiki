@@ -1,3 +1,9 @@
+{{SoCItem| title=Your idea
+|description=This is where you get the chance to implement that really cool music-player related idea that has been brewing in your mind. It may be some funny interface, a crazy effect, a revolutionary way to handle collections, or something different.
+|lang=Depends
+|level=Depends
+|mentor=Depends}}
+
 {{SoCItem| title=[[Generated IPC | Auto-generated API and bindings]]| description=Currently, the C client library and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files. There is already some proof of concept.| lang=Python / XML| level=Advanced| mentor=N/A}}
 
 {{SoCItem| title=Media Library Database Backend (S4)| description=XMMS2 uses sqlite as the backend for its media library. Since XMMS2 basically maps a key-value pairing,   it has been aruged that using an sql database in this case is suboptimal. This project would be to take advantage of the abstraction provided by Collections, and look into implementing other backends for the XMMS2 media library. This project would include performance testing of the various potential databases.| lang=C| level=Hard| mentor=N/A}}
