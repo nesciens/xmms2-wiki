@@ -31,5 +31,5 @@
 * What is your plan for dealing with disappearing mentors?
 ** Knowing the mentors very well, we don't expect this to happen. If anything unexpected were to happen anyway, we would always have one or two backup mentors for each project. Last year, some mentors were on holiday for a few weeks but other mentors were able to step in smoothly.
 * What steps will you take to encourage students to interact with your project's community before, during and after the program?
-** Hanging around on IRC will be a requirement, we will see non-IRCing as desertion. We will show our patented kindness and interest in the students work and persona. When we receive the SoC money for 2006 we probably will put a bit of that money into getting swag and bribe all students to stay with us this year.
+** Hanging around on IRC will be a requirement, we will see non-IRCing as desertion. We will show our patented kindness and interest in the students work and persona.
 * What will you do to ensure that your accepted students stick with the project after GSoC concludes?
