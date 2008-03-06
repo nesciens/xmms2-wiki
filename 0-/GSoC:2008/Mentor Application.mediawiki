@@ -27,10 +27,11 @@
 ** All mentors are persons that has been contributing the project for a long time, most have mentored Google Summer of Code projects previous years.
 * Who will your mentors be? Please enter their Google Account address separated by commas. If your organization is accepted we will email each mentor to invite them to take part. (optional)
 ** Tobias RundstrÃ¶m
-** Anders Waldenborg
+** Anders Waldenborg, andersg@0x63.nu
 ** Theefer
 ** <If you feel like doing some GSoC mentoring enter your name here>
 ** <If you feel like doing some GSoC mentoring enter your name here>
+** Commaseparated list of google account addresses: xmmstru@gmail.com,andersg@0x63.nu
 
 == About The Program ==
 * What is your plan for dealing with disappearing students?
