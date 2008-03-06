@@ -28,7 +28,7 @@
 * Who will your mentors be? Please enter their Google Account address separated by commas. If your organization is accepted we will email each mentor to invite them to take part. (optional)
 ** Tobias RundstrÃ¶m
 ** Anders Waldenborg, andersg@0x63.nu
-** Theefer, theefer@gmail.com
+** SÃ©bastien Cevey, theefer@gmail.com
 ** Daniel Svensson
 ** <If you feel like doing some GSoC mentoring enter your name here>
 ** Commaseparated list of google account addresses: xmmstru@gmail.com, andersg@0x63.nu, dsvensson@gmail.com
