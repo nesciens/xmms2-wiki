@@ -26,7 +26,7 @@
 * What criteria did you use to select these individuals as mentors? Please be as specific as possible.
 ** All mentors are persons that has been contributing the project for a long time, most have mentored Google Summer of Code projects previous years.
 * Who will your mentors be? Please enter their Google Account address separated by commas. If your organization is accepted we will email each mentor to invite them to take part. (optional)
-** Tobias I guess?
+** Tobias RundstrÃ¶m
 ** Anders Waldenborg
 ** Theefer
 ** <If you feel like doing some GSoC mentoring enter your name here>
