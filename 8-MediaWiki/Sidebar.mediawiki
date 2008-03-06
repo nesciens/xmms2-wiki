@@ -15,7 +15,7 @@
 
 * Community
 ** http://planet.xmms.se|Planet XMMS2
-** irc://chat.freenode.net/xmms2|#xmms2 on Freenode
+** irc://chat.freenode.net/xmms2|#xmms2@Freenode
 
 * Development
 ** developers-url|DevsInfo
