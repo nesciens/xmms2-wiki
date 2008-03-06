@@ -22,7 +22,7 @@
 ** Help Wanted|Help Wanted
 ** http://git.xmms.se|Gitweb
 ** http://bugs.xmms2.xmms.se|Bug tracker
-** http://buildbot.xmms2.xmms.se|Continuous Integration
+** http://buildbot.xmms2.xmms.se|Buildbot
 ** http://test.xmms.se|Test coverage
 ** http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel|Mailing list
 
