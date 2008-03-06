@@ -29,9 +29,9 @@
 ** Tobias RundstrÃ¶m
 ** Anders Waldenborg, andersg@0x63.nu
 ** Theefer
+** Daniel Svensson
 ** <If you feel like doing some GSoC mentoring enter your name here>
-** <If you feel like doing some GSoC mentoring enter your name here>
-** Commaseparated list of google account addresses: xmmstru@gmail.com,andersg@0x63.nu
+** Commaseparated list of google account addresses: xmmstru@gmail.com, andersg@0x63.nu, dsvensson@gmail.com
 
 == About The Program ==
 * What is your plan for dealing with disappearing students?
