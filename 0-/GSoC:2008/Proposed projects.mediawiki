@@ -14,7 +14,7 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=Effect chain clean-up and crossfade plugin| description=Description pending| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=Collections 2.0| description=Description pending| lang=C| level=Medium| mentor=N/A}}
+{{SoCItem| title=Collections 2.0| description=[[Collections_Concept | Collections]] have been merged and are now widely used as the query mechanism for our media library. However, the current implementation has its limitations and lacks some commands to allow full access to medialib information. In this project, the student would extend Collections features to support the following features (and possibly others): support for medialists in the DAG (add ordering and order-aware operators), new query functions (list all property keys for a media, list all values for a property, get N random media for a collection), aggregate functions for querying (e.g. count, average), new operators or namespace to match status-dependent media (e.g. current track, playlist context, etc), handle sources properly (select right value according to source preferences), use functions as select or matching fields (e.g. "match all media where lastplayed > NOW() - 1WEEK").| lang=C| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
 
