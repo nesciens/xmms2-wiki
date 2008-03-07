@@ -30,9 +30,9 @@
 ** Anders Waldenborg, andersg@0x63.nu
 ** SÃ©bastien Cevey, theefer@gmail.com
 ** Daniel Svensson, dsvensson@gmail.com
-** Alexander Botero-Lowry
+** Alexander Botero-Lowry, alex.boterolowry@gmail.com
 ** <If you feel like doing some GSoC mentoring enter your name here>
-** Commaseparated list of google account addresses: xmmstru@gmail.com, andersg@0x63.nu, theefer@gmail.com, dsvensson@gmail.com
+** Commaseparated list of google account addresses: xmmstru@gmail.com, andersg@0x63.nu, theefer@gmail.com, dsvensson@gmail.com, alex.boterolowry@gmail.com
 
 == About The Program ==
 * What is your plan for dealing with disappearing students?
