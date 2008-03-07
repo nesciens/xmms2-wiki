@@ -30,6 +30,7 @@
 ** Anders Waldenborg, andersg@0x63.nu
 ** SÃ©bastien Cevey, theefer@gmail.com
 ** Daniel Svensson
+** Alexander Botero-Lowry
 ** <If you feel like doing some GSoC mentoring enter your name here>
 ** Commaseparated list of google account addresses: xmmstru@gmail.com, andersg@0x63.nu, dsvensson@gmail.com
 
