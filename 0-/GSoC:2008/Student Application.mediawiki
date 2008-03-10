@@ -9,6 +9,8 @@ So you want to get on the XMMS2 love-boat? Try to answer as many of these questi
 ** State your preferred email address.
 ** Why do you want to participate in summer of code?
 ** What are you studying, subject, level and school?
+** Describe what you consider your three main shortcomings (relevant to GSoC) and how you cope with them.
+** Describe what you consider your three main strengths (relevant to GSoC) and how they show in previous projects of yours.
 * '''Experience'''
 ** What programs/software have you worked on before?
 ** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
@@ -35,6 +37,7 @@ So you want to get on the XMMS2 love-boat? Try to answer as many of these questi
 ** Would you mind talking with your mentor on telephone / internet phone?
 * '''Detailed answer''' (optional, but well developed answers highly regarded).
 ** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
+*** What is your particular interest in XMMS2? How do you consider the state of XMMS2, i.e. what do you see as its main strengths and shortcomings?
 *** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
 *** What motivates or inspires you to write programs/develop software?
 
