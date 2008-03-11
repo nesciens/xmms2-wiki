@@ -28,8 +28,8 @@
 * define queries by user, using ruleset editor and some alternative, simple UI
 * define queries based on directory on disk
 * combine queries
-* search for this artist (available on any song)
-* search for collections containing this song/artist (on any song in collection, playlist and player)
+* search for this artist (available on any song in collection, playlist and player)
+* search for collections containing this song/artist (on any song)
 
 == Collection/Playlist UI ==
 * when adding song to playlist, optionally start to play immediately
