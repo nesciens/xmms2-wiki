@@ -1,3 +1,5 @@
+[[Image:Mpris.png]]
+
 This page is an attempt at bringing together information about various works in progress to produce a common media player control interface. Note that in the context of this page, ''interface'' refers to interface in the sense of an API, not an interface through which a user interacts with a program.
 
 '''<span style="color: red; font-weight: bold"> Note about the mailing list mpris at videolan dot org:</span> It should be an as ''LOW'' traffic list as possible and used only to coordinate the work, and when developers disagree on a part of the spec. Otherwise, please use this wiki page.'''
