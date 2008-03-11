@@ -1,11 +1,21 @@
 = Server =
 
-= Scanning =
+== Scanning ==
 
 * I have ~100,000 songs (legally :-) ). Scan the lib at max. disk speed.
 * Optimize sqlite DB and usage. Don't store most common attributes like title, artist, album not as generic properties as one row each in a separate table, but as columns in the song (item) table. Compare filesystem with EA. Should dramatically improve speed. Keep this speed optimization in the sqlite store, not necessarily exposed in the API (but that may provide speed advantages, too, in the network protocol and API calls).
 
-= Other =
+== Usability ==
+
+* Startup and shutdown should happen with client
+** Ideally, server is - optionally! - in-process with client.
+** Why: While powerful, most users don't need nor understand the client/server separation. Also, the server may crash, and a restart feature may cause infinite restarts (as I experienced crashes on startup yesteday). In-process ensures that the server is running *exactly* when the client is running, lifetime matches, which is what users expect.
+** How: remove the main() of xmms2d, make a C function start_server() or similar, and make a lib like libxmms2core.so (libxmms2core.a already exists?), and let client load that.
+** User can choose to use another server in client setup, then the client simply does not load the lib and/or does not call the start_server().
+
+* Server needs to be configured entirely from client, via UI. Esp. output plugin.
+
+== Other ==
 
 * <s>pulse volume!</s> (solved after 0.4, yay!)
 
