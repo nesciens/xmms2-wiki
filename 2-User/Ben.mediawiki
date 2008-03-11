@@ -1,7 +1,7 @@
 = Ben Bucksch =
 
 == Contact ==
-* linux - bucksch.org
+* linux * bucksch.org
 * http://www.bucksch.org
 
 == Pages ==
