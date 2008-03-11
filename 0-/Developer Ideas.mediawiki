@@ -63,3 +63,4 @@ Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if 
 * [[Random songs support]]
 * [[Automatic Manual Page Generation]]
 * [[Medialib FUSE filesystem]]
+* [[User:Ben:Wishlish | Ben's personal wishlish]]
