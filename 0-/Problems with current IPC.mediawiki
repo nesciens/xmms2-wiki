@@ -7,3 +7,4 @@ These are notes on what could be changed in the current IPC model.
 * In the return packet we don't really need object and cmd in the header, cookie and length should be enough. but to do this we need a better way to handle error packets.
 * let's get rid of unsigned ints, just creates confusion.
 * A dict is serialized different from a normal list or a propdict. The dict actually is serialized as string (key),type,value instead of the normal list or propdict that are serialized as type, key, type, value.
+* Collection attributes appends a stringlist for the attributes, but the size of the  list is sizeof(list)/2 because the serialization expects key/value pairs as size, not the number of entries in the list. this is not how the dict is serialized.
