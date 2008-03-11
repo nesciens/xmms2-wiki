@@ -21,6 +21,8 @@
 
 = Client =
 
+(This is based on Esperanza.)
+
 == Collections ==
 
 * define queries by user
