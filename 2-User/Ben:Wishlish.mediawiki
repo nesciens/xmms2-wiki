@@ -10,8 +10,8 @@
 * Startup and shutdown should happen with client
 ** Ideally, server is - optionally! - in-process with client.
 ** Why: While powerful, most users don't need nor understand the client/server separation. Also, the server may crash, and a restart feature may cause infinite restarts (as I experienced crashes on startup yesteday). In-process ensures that the server is running *exactly* when the client is running, lifetime matches, which is what users expect.
+** User can choose to use another server in client setup or environment variables, then the client simply does not start the server and uses the current server discovery / config features.
 ** How: remove the main() of xmms2d, make a C function start_server() or similar, and make a lib like libxmms2core.so (libxmms2core.a already exists?), and let client load that.
-** User can choose to use another server in client setup, then the client simply does not load the lib and/or does not call the start_server().
 
 * Server needs to be configured entirely from client, via UI. Esp. output plugin.
 
