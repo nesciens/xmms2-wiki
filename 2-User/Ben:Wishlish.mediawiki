@@ -3,7 +3,7 @@
 == Scanning ==
 
 * I have ~100,000 songs (legally :-) ). Scan the lib at max. disk speed.
-* Optimize sqlite DB and usage. Don't store most common attributes like title, artist, album not as generic properties as one row each in a separate table, but as columns in the song (item) table. Compare filesystem with EA. Should dramatically improve speed. Keep this speed optimization in the sqlite store, not necessarily exposed in the API (but that may provide speed advantages, too, in the network protocol and API calls).
+* Optimize sqlite DB and usage. Store most common attributes like title/artist/album not as generic properties as one row each in a separate table, but as columns in the song (item) table. Compare filesystem with EA. Should dramatically improve speed. Keep this speed optimization in the sqlite store, not necessarily exposed in the API (but that may provide speed advantages, too, in the network protocol and API calls).
 
 == Usability ==
 
