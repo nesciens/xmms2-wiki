@@ -30,20 +30,20 @@
 * search for collections containing this song/artist (on any song)
 
 == Collection/Playlist UI ==
-** when adding song to playlist, optionally start to play immediately
-** faster add/remove to playlist - drag&drop (e.g. drag from lib to add, drag outside window to remove)
+* when adding song to playlist, optionally start to play immediately
+* faster add/remove to playlist - drag&drop (e.g. drag from lib to add, drag outside window to remove)
 
 == Edit/sanitize metadata  ==
 
-** merge artist spelling (ignore caps, spaces?) in client
-** fix spelling (rename artist of all songs of one artist), maybe by drag&drop over other, maybe as script/batch
-** fix "feat." in artist
-** alter metadata in store, write to ID3 in file
+* merge artist spelling (ignore caps, spaces?) in client
+* fix spelling (rename artist of all songs of one artist), maybe by drag&drop over other, maybe as script/batch
+* fix "feat." in artist
+* alter metadata in store, write to ID3 in file
 
 == Song metadata ==
 
-** see more infos on song (pathname, rating, collections contained in)
-** rating, incl. export / save & import of ratings in medialib to XML or TXT file
+* see more infos on song (pathname, rating, collections contained in)
+* rating, incl. export / save & import of ratings in medialib to XML or TXT file
 
 == UI structure ==
 
