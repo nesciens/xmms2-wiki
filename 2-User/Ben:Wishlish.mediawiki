@@ -25,7 +25,7 @@
 
 == Collections ==
 
-* define queries by user
+* define queries by user, using ruleset editor and some alternative, simple UI
 * define queries based on directory on disk
 * combine queries
 * search for this artist (available on any song)
