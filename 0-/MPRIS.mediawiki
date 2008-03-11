@@ -1,3 +1,5 @@
+[[Image:Mpris.png]]
+
 '''''Version 1.0'''''
 
 ;MPRIS
