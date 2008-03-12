@@ -11,7 +11,7 @@
 
 The "TrackList" '''must''':
 * Hold an ordered list of locations of the media files as URIs (e.g. file://, <nowiki>http://</nowiki>, mms:// ...).
-* Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering the [[#TrackListChange|"TrackListChange"]] signal.
+* Keep the list in an ordered fashion. The order can be changed at any time trough e.g. sorting algorithms, in which case the "Media Player" must send information about the reordering with the [[#TrackListChange|"TrackListChange"]] signal.
 
 The "Tracklist" holds "Metadata" about media:
 
