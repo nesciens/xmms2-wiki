@@ -1,10 +1,10 @@
 ==Konfetka==
 
-by Anton Frolenkov, Joseph E. Lynch
+by Anton Frolenkov, Joseph E. Lynch, Jitu Das
 
 Homepage: http://code.google.com/p/konfetka
 
-Latest version: version 0 alpha 1
+Latest version: version 1.5 a
 
 Development language: C++
 
