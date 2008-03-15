@@ -11,7 +11,6 @@ Development language: C++
 User Interface: Qt >= 4.3
 
 Screenshots: 
-*http://img209.imageshack.us/img209/8172/konfetka1zf2.png
-*http://img293.imageshack.us/img293/8288/konfetka2bj0.png
+http://code.google.com/p/konfetka/wiki/Screenshots
 
 The kid of XMMS1 and Amarok that spent too much time around Yakuake. Complete with messy and possibly buggy code. Will be bound to KDE4 sometime... later.
