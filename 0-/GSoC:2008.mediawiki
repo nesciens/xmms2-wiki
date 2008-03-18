@@ -1,5 +1,7 @@
 [[Summer_of_Code_2008/Proposed_projects|Proposed projects]]
 
+[[Summer_of_Code_2008/Student_Application|Student application form]]
+
 [[Summer_of_Code_2008/Mentors|Mentor information]]
 
 [[Summer_of_Code_2008/Mentor_Application|Our application]]
