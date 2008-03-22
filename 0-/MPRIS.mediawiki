@@ -76,12 +76,14 @@ Makes the "Media Player" exit.
 
 ==== MprisVersion ====
 
-Returns the version of the MPRIS spec being implemented. Return 1.0.
+Returns a struct that represent the version of the MPRIS spec being implemented irganized as follows:
+* uint16 major version (Existing API change) 
+* uint16 minor version (API addition)
 
 ===== Introspection data: =====
 
    <method name="MprisVersion">
-     <arg type="f" direction="out"/>
+     <arg type="(dd)" direction="out"/>
    </method>
 
 === /TrackList object methods ===
