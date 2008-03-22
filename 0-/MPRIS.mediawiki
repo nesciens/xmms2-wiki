@@ -76,7 +76,7 @@ Makes the "Media Player" exit.
 
 ==== MprisVersion ====
 
-Returns a struct that represent the version of the MPRIS spec being implemented irganized as follows:
+Returns a struct that represents the version of the MPRIS spec being implemented, organized as follows:
 * uint16 major version (Existing API change) 
 * uint16 minor version (API addition)
 
