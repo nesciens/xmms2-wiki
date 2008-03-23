@@ -1,0 +1,5 @@
+{{Client| name=XMMbaSh2| author=[[Joseph Kern]]| website=[http://wejp.k.vu/projects/xmms2/ http://wejp.k.vu/projects/xmms2/]| version=0.1| devlanguage=Bash| ui=console| screenshots=[]| description=XMMSbaSh2 is a command line "client" written in a single line of shell script. I was getting tired of typing 'xmms2' before every command (hint hint to the devs, xmms2 needs some kind of interactive mode like this). . . Client written by Joseph Kern.  Now the Code
+
+----
+
+<nowiki>while [ 1 ]; do read -e -p 'XMMbaSh2> ' cmd ; xmms2 $cmd; done</nowiki>}}
