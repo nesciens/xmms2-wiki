@@ -45,6 +45,7 @@ All current clients should be found here.
 {{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
 {{ClientTableEntry|x2c| console | ruby | stable | little rubyistic console client with advanced features}}
 {{ClientTableEntry|X4X| Graphical / XWidgets | Java | discontinued | Almost complete player, works with Java Webstart }}
+{{ClientTableEntry|XMMbaSh2 | console | bash | complete | A single line bash client, enables all features of current XMMS2 CLI client}}
 {{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
 {{ClientTableEntry|XMMS2Musica| Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
 {{ClientTableEntry|XMMS2tray| Tray Icon / GTK | Python | in development | *nix GTK+2 system tray integration }}
