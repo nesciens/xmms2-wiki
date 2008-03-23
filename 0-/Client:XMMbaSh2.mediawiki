@@ -1,4 +1,4 @@
-{{Client| name=XMMbaSh2| author=[[Joseph Kern]]| website=[http://wiki.xmms2.xmms.se/index.php/Client:XMMbaSh2 http://wiki.xmms2.xmms.se/index.php/Client:XMMbaSh2]| version=0.1| devlanguage=Bash| ui=console| screenshots=[]| description=XMMSbaSh2 is a command line "client" written in a single line of shell script. I was getting tired of typing 'xmms2' before every command (hint hint to the devs, xmms2 needs some kind of interactive mode like this). . . Client written by Joseph Kern. 
+{{Client| name=XMMbaSh2| author=[[Joseph Kern]]| website=[http://wiki.xmms2.xmms.se/index.php/Client:XMMbaSh2 http://wiki.xmms2.xmms.se/index.php/Client:XMMbaSh2]| version=0.1| devlanguage=Bash| ui=console| screenshots=[]| description=XMMSbaSh2 is a command line "client" written in a single line of shell script. I was getting tired of typing 'xmms2' before every command (hint to the devs, xmms2 needs some kind of interactive mode like this). . . Client written by Joseph Kern. 
 
 Now the Code
 
