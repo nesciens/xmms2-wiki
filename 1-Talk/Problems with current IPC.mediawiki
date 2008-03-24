@@ -1,0 +1,65 @@
+gssons wishlist:
+
+Just throwing some thoughts out there...not all of it is very thought through, but might just provoke someone to do the thinking for me :)
+
+The serialization pseudo-structure might need some explaining:
+ name : type - the normal way of defining an entry
+ {...} - a structure
+ {...}[n] - an array of 'n' structures
+ v : Type(t) - a value v of the type indicated by the value t.
+
+Introducing the convenience type TypedValue:
+ {
+   type_id : integer,
+   value   : Type(type_id)
+ }
+and String:
+ {
+   length  : integer,
+   value   : char[length] // utf-8 chars, naturally
+ }
+
+XMMS_OBJECT_CMD_ARG_PROPDICT:
+
+alt1: (probably the way with least redundancy?)
+ {
+   count : integer, // number of tuples
+   {
+     source : string,
+     dict   : Dict
+   } [count]
+ }
+
+alt2:
+ {
+   count: integer, // number of tuples
+   {
+     source      : string,
+     key         : string,
+     typed_value : TypedValue
+   } [count] 
+ }
+
+XMMS_OBJECT_CMD_ARG_DICT:
+ {
+   count : integer, // Number of tuples
+   {
+     key         : string,
+     typed_value : TypedValue // TypedValue is a <type, value> tuple
+   } [count]
+ }
+
+XMMS_OBJECT_CMD_ARG_LIST:
+
+Having variably typed list is usually a bad idea since, when different types are actually used, an implicit structure that is identified either by order (hard to extend) or type (only one element of each type). Also, saves some space :)
+
+ {
+   count : integer // number of entries
+   type_id  : integer // type of list entries
+   value[count] : Type(type_id) // 'count' entries of type 'type'.
+ }
+
+Misc:
+* XMMS_OBJECT_CMD_ARG_UINT32, XMMS_OBJECT_CMD_ARG_STRINGLIST dies.
+* Error packets carries a typed value, perhaps some error type, so that they can look like 'normal' packets, and be handled as such on lower layers.
+* Serialization of types goes symmetric, same data is sent in the same way to and from the server.
