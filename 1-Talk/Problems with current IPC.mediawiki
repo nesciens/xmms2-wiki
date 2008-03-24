@@ -51,7 +51,7 @@ XMMS_OBJECT_CMD_ARG_DICT:
 
 XMMS_OBJECT_CMD_ARG_LIST:
 
-Having variably typed list is usually a bad idea since, when different types are actually used, an implicit structure that is identified either by order (hard to extend) or type (only one element of each type). Also, saves some space :)
+Having a multiple typed list is usually a bad idea since, when different types are actually used, an implicit structure that is identified either by order (hard to extend) or type (only one element of each type). Also, saves some space :)
 
  {
    count : integer // number of entries
