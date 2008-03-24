@@ -26,7 +26,7 @@ alt1: (probably the way with least redundancy?)
    count : integer, // number of tuples
    {
      source : string,
-     dict   : Dict
+     dict   : Dict // See XMMS_OBJECT_CMD_ARG_DICT
    } [count]
  }
 
