@@ -1,0 +1,10 @@
+* Visualizations ([[User:Ypnos|FoPref]])
+** Let's merge this sucka!
+* SoC
+** Proposals - what kinds of projects do we have and are there any new ideas?
+** Applicants - has anyone applied yet? can we expect more successful assignments this year?
+** Mentors - who is available to mentor this year and who will best fit each project?
+** Priorities - what do we really need done?
+* [[Release:DrLecter|DrLecter]] game plan
+* Windows support ([[User:Puzzles|puzzles]])
+** merge holdups
