@@ -8,3 +8,4 @@
 * [[Release:DrLecter|DrLecter]] game plan
 * Windows support ([[User:Puzzles|puzzles]])
 ** merge holdups
+* Plugin priorities ([[User:rafl|rafl]])
