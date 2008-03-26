@@ -83,7 +83,7 @@ Returns a struct that represents the version of the MPRIS spec being implemented
 ===== Introspection data: =====
 
    <method name="MprisVersion">
-     <arg type="(dd)" direction="out"/>
+     <arg type="(qq)" direction="out"/>
    </method>
 
 === /TrackList object methods ===
