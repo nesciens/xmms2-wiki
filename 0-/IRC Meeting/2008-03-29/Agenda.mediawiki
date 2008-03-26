@@ -6,6 +6,7 @@
 ** Mentors - who is available to mentor this year and who will best fit each project?
 ** Priorities - what do we really need done?
 * [[Release:DrLecter|DrLecter]] game plan
+** Because of merging visualizations, effect enablement should be made easier before DrLecter IM(nesciens')HO
 * Windows support ([[User:Puzzles|puzzles]])
 ** merge holdups
 * Plugin priorities ([[User:rafl|rafl]])
