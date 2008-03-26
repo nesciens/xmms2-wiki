@@ -59,6 +59,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:nyello | nyello]] provides a powerfull pseudo-shell interface
 * [[Client:gntxmms2 | gntxmms2]] provides a windowed console interface using libgnt
 * [[Client:Cluck | Cluck]] is a TUI (windowed console) client with very light requirements: a recent xmms2d, pcre, curses, and optionally a few helper applications
+* [[Client:kuechenstation | kuechenstation]] is a text mode client with scrolling title, playlist and medialib query
 
 = Desktop Integration =
 
