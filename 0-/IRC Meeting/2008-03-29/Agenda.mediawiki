@@ -2,9 +2,15 @@
 ** Let's merge this sucka!
 * SoC
 ** Proposals - what kinds of projects do we have and are there any new ideas?
+*** S4 and collections 2.0 might be mutually exclusive, especially if S4 takes the current requirements of collections into account, while the collection concept gets extended for collections 2.0.
 ** Applicants - has anyone applied yet? can we expect more successful assignments this year?
+*** I (nesciens) will not apply, as I do not meet the eligibility-requirements (and hope to have not enough time)
 ** Mentors - who is available to mentor this year and who will best fit each project?
 ** Priorities - what do we really need done?
+** Comments
+*** Collquery.c has some fundamental bugs, that need to be fixed before collection 2.0 can even take place (unless the proposal includes mending for these)
+*** It might be nice to change the uniqueness requirement on medialib items from id-key-source to id-key-value-source, to allow for multiple artists, or tags (S4/collections 2.0?)
+*** I (nesciens) have been thinking of adding a goal-type like "application/xmms2-medialib-entries", which would allow for "media" that are more than just one song. For instance whole playlists, directories, or even references to collections ("coll:///Collections/Foo"-uris?), allowing to add cds/albums/playlists as one entity to the playlist. (collections 2.0/xform-refactoring?)
 * [[Release:DrLecter|DrLecter]] game plan
 ** Because of merging visualizations, effect enablement should be made easier before DrLecter IM(nesciens')HO
 * Windows support ([[User:Puzzles|puzzles]])
