@@ -1,0 +1,7 @@
+{{Client| name=kuechenstation| author=Eike von Seggern| website=http://kuechenstation.sourceforge.net/
+| version=[https://sourceforge.net/project/showfiles.php?group_id=222283&package_id=268573&release_id=587159 0.1-5] (developed with Dr.Kosmo)
+| devlanguage=Python
+| ui=Console
+| screenshots=[https://sourceforge.net/project/screenshots.php?group_id=222283]
+| description=kuechenstation is a text mode client for the xmms2 daemon. Unlike other text mode client's it's not command line based, but features all you would expect from a graphical client: scrolling title, playlist editor, medialib browser. svn snapshots are available from the [https://sourceforge.net/projects/kuechenstation/ sourceforge page].
+}}
