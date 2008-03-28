@@ -2,7 +2,7 @@
 
 So you want to get on the XMMS2 love-boat? Try to answer as many of these questions you find relevant on the Google application form as possible. An answer to the first question is REQUIRED. Everything else is optional, but the more information you provide, the better chance you have to get accepted. Send it as an email to soc@xmms.se and also submit it in your application on Google's web app. If it doesn't all fit because of the character limit, you can just put a summary.
 
-* '''Have you contacted an XMMS2 mentor (use IRC or soc@xmms.se)and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
+* '''Have you contacted an XMMS2 mentor (use IRC or soc@xmms.se) and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
 * '''Have you read and understood the [[Summer of Code 2008/Student requirements|rules and requirements]]?'''
 * '''You'''
 ** Just write a small introduction to yourself.
