@@ -7,6 +7,7 @@
 ** airplay
 ** the sqlite fixups by nesciens
 ** windows support
+** service clients (API needs common review!)
 * SoC
 ** Proposals - what kinds of projects do we have and are there any new ideas?
 *** S4 and collections 2.0 might be mutually exclusive, especially if S4 takes the current requirements of collections into account, while the collection concept gets extended for collections 2.0.
