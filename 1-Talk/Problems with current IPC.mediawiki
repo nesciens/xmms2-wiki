@@ -62,4 +62,4 @@ Having a multiple typed list is usually a bad idea since, when different types a
 Misc:
 * XMMS_OBJECT_CMD_ARG_UINT32, XMMS_OBJECT_CMD_ARG_STRINGLIST dies.
 * Error packets carries a typed value, perhaps some error type, so that they can look like 'normal' packets, and be handled as such on lower layers.
-* Serialization of types goes symmetric, same data is sent in the same way to and from the server.
+* Serialization of types goes symmetric, ie. same data is sent in the same way no matter if it goes to or from the server. One of the directions currently does not use the 'type-tags' or whatever the proper name might be :). It would be really neat to be able to create packet representations in the same way in all situations.
