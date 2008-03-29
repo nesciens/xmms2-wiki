@@ -1,1 +1,2 @@
-Edit me please.
+* Visualization - checkup
+* Plugin Priority/MPG123 - checkup
