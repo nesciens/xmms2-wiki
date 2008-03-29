@@ -2,9 +2,8 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 
 == Meeting Protocol ==
 ;Location: [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode
-;Time: 19:30 UTC, Mondays (current)
+;Time: 13:00 UTC, Saturdays (current)
 ;Length: Approx. 1 hour (estimated)
-;Schedule: [http://www.google.com/calendar/embed?src=9lnuvubqkdssdmqtvvk60bl0nk%40group.calendar.google.com Google Calendar]
 ;Organiser (chairperson): [[Sham Chukoury]]
 ;Agenda: [[IRC Meeting/Agenda]]
 ;Minutes: [[IRC Meeting/Minutes]]
