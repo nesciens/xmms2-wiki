@@ -1,0 +1,33 @@
+== Status ==
+This week's meeting was kept informal and there were no status announcements.
+
+== Topics ==
+=== Visualization ===
+;Action: needs work - checkup next week
+;Notes: [[User:Ypnos|FoPref]] is creating a list of blockers/nonblockers on the [[Component:Visualization|Visualization]] page. We want this merged with DrLecter since it's a feature release.
+
+=== Plugin Priority ===
+;Action: deferred
+;Notes: Reportedly being worked on by [[User:Rafl|rafl]], who was not present for the meeting.
+
+=== MPG123 Plugin ===
+;Action: blocked by plugin priority
+;Notes: [[User:Sobukus|sobukus]] was not present for the meeting, but the plugin is ready for merge after plugin priority.
+
+=== [[Windows]] Support ===
+;Action: merge
+;Notes: wspiapi.h is no blocker
+
+=== [[Summer of Code 2008|GSoC]] ===
+;Action: Prioritize [[Summer of Code 2008/Proposed projects#Collections 2.0|Collections 2.0]] over [[Summer of Code 2008/Proposed projects#New Media Library Database Backend (S4)|S4]]
+;Action: Talk to S4 applicants about Collections 2.0
+;Notes: We're treating S4 as an experimental research project that, if it works, primarily offers speed improvements over sqlite. S4 applicants shouldn't be turned down if their applications are strong, but Collections 2.0 has a higher priority. There are currently 5 applicants with 6 applications total. There are applications for each of the high-priority proposals (Generated IPC, Collections 2.0, nycli, S4, and the Effect-Chain cleanup, in rough priority order) except for Collections 2.0.
+
+=== [[Release:DrLecter|DrLecter]] ===
+;Action: Merge and release, ASAP
+;Notes: MPG123, visualizations, and Airplay should be merged, if possible.
+
+== Full Transcript ==
+A full transcript is available off-site [http://exodus.xmms.se/~puzzles/xmms2-meeting/2008-03-29/transcript.txt here].
+
+[[Category:IRC Meeting]]
