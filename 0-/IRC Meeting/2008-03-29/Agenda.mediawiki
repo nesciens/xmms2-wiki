@@ -6,6 +6,7 @@
 ** segment plugin
 ** airplay
 ** the sqlite fixups by nesciens
+** windows support
 * SoC
 ** Proposals - what kinds of projects do we have and are there any new ideas?
 *** S4 and collections 2.0 might be mutually exclusive, especially if S4 takes the current requirements of collections into account, while the collection concept gets extended for collections 2.0.
@@ -19,6 +20,3 @@
 *** I (nesciens) have been thinking of adding a goal-type like "application/xmms2-medialib-entries", which would allow for "media" that are more than just one song. For instance whole playlists, directories, or even references to collections ("coll:///Collections/Foo"-uris?), allowing to add cds/albums/playlists as one entity to the playlist. (collections 2.0/xform-refactoring?)
 * [[Release:DrLecter|DrLecter]] game plan
 ** Because of merging visualizations, effect enablement should be made easier before DrLecter IM(nesciens')HO
-* Windows support ([[User:Puzzles|puzzles]])
-** merge holdups
-* Plugin priorities ([[User:rafl|rafl]])
