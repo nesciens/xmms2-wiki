@@ -50,7 +50,7 @@ It tries to address a few issues:
 # The structure that an album/artist/genre contains songs is implicit, attributes can only be set on songs, not on albums/artists.
 
 
-Each entry is just a set of triplets. There are just two triplet-types (in the form subject-verb-object). Entry-HasProperty-Property, and Entry-Contains-Entry.
+Each entry is just a set of triplets. There are just two triplet-types (in the form subject-verb-object). Entry-HasProperty-Property, and Entry-Contains-Entry. This is called [http://en.wikipedia.org/wiki/Entity-Attribute-Value_model Entity-Attribute-Value model] as employed for example by [http://en.wikipedia.org/wiki/Resource_Description_Framework RDF].
 
 A property is just a string-pair. Strings could(/should) be stored in a stringtable. Meaning that strings just are an integer, hence a string-pair is just an integer-pair, also known as an interer of twice bit-width.
 
