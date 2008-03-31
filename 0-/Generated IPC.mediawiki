@@ -13,7 +13,7 @@ Lets say an xml-file is used as the basis for the interface. It could look like 
   <object name="playback">
    <method name="start" />
    <method name="stop" />
-   <method name="curr_time" />
+   <method name="curr_time" >
     <return><uint/></return>
    </method>
    <method name="jump">
