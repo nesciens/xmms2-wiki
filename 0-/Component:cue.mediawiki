@@ -1,0 +1,11 @@
+{{ComponentHeader}}
+
+=Summary=
+Enables XMMS2 to read cue sheets.
+
+===See also:===
+* http://wiki.hydrogenaudio.org/index.php?title=Cue_sheet
+
+[[Category:Playlist Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
