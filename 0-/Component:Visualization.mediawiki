@@ -2,53 +2,50 @@ This page deals with the inner workings of the [[Visualization]] component. It i
 
 == TODO ==
 
-This is a list of outstanding problems and annoyances which need to be resolved.
-
-=== Environment & Code ===
-
-* waf: To build the server including visualization, there need to be correct ordering of the linked in local library objects. Currently (?), waf doesn't do this right. A simple patch only works on a single architecture and is not applicable on others. See [http://code.google.com/p/waf/issues/detail?id=56]. Following patch seems to work around it without changing waf itself: [http://git.xmms.se/?p=xmms2-anders.git;a=commitdiff;h=df84b71298bfe3a66fbe43389ed3538902cc82ad]
-
-* waf 2: On the client side, there was a dedicated lib for visualization, too. But it didn't work as the contents wouldn't be exposed in the clientlib. It seems that this will be resolved by the waf developers, see [http://code.google.com/p/waf/issues/detail?id=44]. Then, we should switch back to the sublibrary instead of the actual subdirectory model.
-
-* code: Someone needs to get through all the methods and determine if they are correctly declared as static where applicable.
+This is a list of outstanding problems and annoyances which need to be resolved. It is divided by issues regarding as blocking the inclusion into the devel tree, and issues which could be fixed later, too.
 
 
-=== Client side ===
+=== Blocking ===
+
+== Client side ==
 
 * Bindings: Most bindings are still missing.
 
-* Start waits: vis_start uses xmmsc_result_wait, but this could create problems if the connection is async. This should not be done internally.
-
-* Formats: We need to add more format configurations, like a samplerate,...
-
 * UDP: The "resync" method, where timestamps are exchanged to calculate the current time difference between sender and receiver, is weak. It is needed to run frequently because different CPUs result in different system clock speeds.  But to date, it doesn't cope with UDP packets getting lost. Also, the calculation is corrupted if one of the processes is blocked during the resync process, i.e. X applications while the user moves them.
 
-* API: It was requested that there are specific data types created and used for the return values of several methods.
+* Semaphores: There is no platform independent way to wait for a SYSV semaphore with a given time limit. semtimedop() is a GNU extension. To resolve this, we need to use the process timer to interrupt the semaphore operation with a signal. The process timer could already be in use, so we need to test for that and in some case back it up. Another possibility would be to use POSIX semaphores, but these aren't fully implemented in OSX either... ''Workaround:'' Shared memory could be disabled on non-linux platforms in favor of UDP.
 
-* API: Perhaps the method of passing the format configs is not considered a clean design and should be thought of a little bit
-
-* Blocking sleep: Currently, the API provides a time limit for its busy wait on new vis packets. There are two occasions the process has to wait: First, until there is a new packet, next, until the packet is "on time". The timelimit is only applied to the first, but should be applied to the second as well. Easy with "State & buffer" (see below).
-
-* Semaphores: There is no platform independent way to wait for a SYSV semaphore with a given time limit. semtimedop() is a GNU extension. To resolve this, we need to use the process timer to interrupt the semaphore operation with a signal. The process timer could already be in use, so we need to test for that and in some case back it up. Another possibility would be to use POSIX semaphores, but these aren't fully implemented in OSX either...
-
-* Timing: Currently, every vis packet which is "old" is thrown away, if a drawtime is given. There is no threshold, for example a packet is 10 ms late but could still pass. We should have it, and be it just 10 ms... ;) -- this is rather easy
-
-=== Server side ===
-
-* Samplerate: There need to be an elegant sample rate / FPS implementation, which interpolates instead of throwing away. Furthermore, the xform has to accept "all" formats, not only 8bit 44khz. This is important, as it currently affects sound quality on files with different samplerates or bitrates!
-
-* Format: We need other types of formats, for example selecting the number of bands in the frequency domain. So a client showing only 8 bands should also receive only 8 interpolated ones, making UDP transfer effective.
-
-* Interpolation: I would like to have two interpolation methods for PCM and FFT as well: Maximum and average (the usual). For example, the current "Peak" mode utilizes maximum (ie, gives the maximum value that occured within all processed samples). This has the advantage of the visual reception to not "miss" something, like every second beat..
-
-
-=== Both sides ===
-
-* State & buffer: Currently, on both sides every chunk has to be processed instantly. There is no way to fill in the buffer consecutivley on the server side. It's also not possible to not-busy wait on an already received packet on the client side (see "Blocking sleep"). On both sides we need a simple state variable to handle the current chunk in a more flexible way. For example on the client side: "waiting for chunk" vs "waiting for already received chunk to be on time".
+==== Both Sides ====
 
 * SHM removal: The shared memory should only be removed at the point it is indeed not needed anymore. There seem to exist platforms which don't behave correctly (OSX) if a SYSV SHM is marked as to be destroyed. Processes attached to it are able to still use it, but it is not possible anymore to query it. Currently, the SHM is just marked as to be destroyed while creation, so it will be deleted by the OS even if both server and client crash. Querying it for the number of attached processes provides the information wether client/server is still there. As this query fails on OSX, we have to explicitely delete the SHM on disconnect etc.
 
 * UDP disconnect: As UDP is connectionless, the server shuts down the transfer if the client didn't answer a pingback/resync request soon enough. If some client is blocked for a longer period, it looses its connection errornously. One possible solution would be to silently try to reconnect before giving up the transfer.
+
+=== Non-Blocking ===
+
+==== Environment & Code ====
+
+* waf: On the client side, there was a dedicated static lib for visualization. But it didn't work as the contents wouldn't be exposed in the clientlib. It seems that this will be resolved by the waf developers, see [http://code.google.com/p/waf/issues/detail?id=44]. Then, we should switch back to the sublibrary instead of the actual subdirectory model.
+
+* code: Someone needs to get through all the methods and determine if they are correctly declared as static where applicable.
+
+==== Client side ====
+
+* Timing: Currently, every vis packet which is "old" is thrown away, if a drawtime is given. There is no threshold, for example a packet is 10 ms late but could still pass. We should have it, and be it just 10 ms... ;) -- this is rather easy
+
+==== Server side ====
+
+* Samplerate: There need to be an elegant sample rate / FPS implementation, which interpolates instead of throwing away. Furthermore, the xform has to accept "all" formats, not only 8bit 44khz. This is important, as it currently affects sound quality on files with different samplerates or bitrates!
+
+* Interpolation: I would like to have two interpolation methods for PCM and FFT as well: Maximum and average (the usual). For example, the current "Peak" mode utilizes maximum (ie, gives the maximum value that occured within all processed samples). This has the advantage of the visual reception to not "miss" something, like every second beat..
+
+==== Both sides ====
+
+* Format: We need other types of formats, for example selecting the number of bands in the frequency domain. So a client showing only 8 bands should also receive only 8 interpolated ones, making UDP transfer effective. Also we should provide not only raw FFT data, but also logarithmized FFT data with further smoothing applied.
+
+* State & buffer: Currently, on both sides every chunk has to be processed instantly. There is no way to fill in the buffer consecutivley on the server side. It's also not possible to not-busy wait on an already received packet on the client side (see "Blocking sleep"). On both sides we need a simple state variable to handle the current chunk in a more flexible way. For example on the client side: "waiting for chunk" vs "waiting for already received chunk to be on time". A state enum is already introduced on the server side and should be extended.
+
+* Blocking sleep: Currently, the API provides a time limit for its busy wait on new vis packets. There are two occasions the process has to wait: First, until there is a new packet, next, until the packet is "on time". The timelimit is only applied to the first, but should be applied to the second as well. Easy with "State & buffer" (see above).
 
 
 === The bigger picture ===
