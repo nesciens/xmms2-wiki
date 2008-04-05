@@ -14,7 +14,7 @@
 |
 | blockers in [[User:nesciens|nesciens]]' sqlite optimizations branch
 |-
-|[[Daniel Chokola | puzzles]]
+|[[User:puzzles|puzzles]]
 |
 | propdict#inspect
 |
@@ -27,44 +27,28 @@
 | vis client disconnect handling
 |-
 |[[User:rafl|rafl]]
-| <mantis>1937></mantis>
+| <mantis>1927</mantis>
 |
 | making it user-configurable
 |
 |}
 
 == Topics ==
-=== GSoC ===
-;Action: deferred
-;Notes: still no money
+=== Visualizations Checkup ===
+;Action:
+* make SHM *nix-only
+* use UDP ping only to suspend data transmission, not for disconnect
+;Notes: [[Component:Visualization]]
 
-=== Waf ===
-;Action: deferred
-;Notes:
-* Java ''still'' not supported
-* some minor feature requests and tools missing
-* needs clear list of what's missing
+=== Plugin Priority ===
+;Action: merge a simple version to enable mpg123 merge
+;Notes: After some further discussion in the main channel afterwards, it looks like configuration for indata type will be based on named types that default to <mimetype>:<urltype> or just <mimetype> if not specified.
 
-=== Clients Progress ===
-;Action: none
-;Notes:
-* Esperanza patched to use xmmsclient++ refactor
-* X4X stuck with Waf/Java integration
-
-=== XMMS2-Juhovh ===
-;Action: merge into DrJekyll after TODO is DONE
-;Notes:
-* gapless support \o/
-* data being passed between xforms needs a clean solution
-
-=== Collections Language Bindings ===
-;Action: none
-; Notes:
-* Ruby still needs collections support and is missing a few bindings
-* Java works, except with Waf
-* Python has a few bugs and needs documentation
+=== [[User:nesciens|Nesciens]]' Sqlite Optimizations ===
+;Action: merge at will
+;Notes: merge these or [[User:theefer|theefer]]'s sqloptims branch--they do the same
 
 == Full Transcript ==
-A full transcript is available off-site [http://dan.chokola.com/files/xmms2-meeting/2007-01-22/transcript.txt here].
+A full transcript is available off-site [http://exodus.xmms.se/~puzzles/xmms2-meeting/2008-04-05/transcript.txt here].
 
 [[Category:IRC Meeting]]
