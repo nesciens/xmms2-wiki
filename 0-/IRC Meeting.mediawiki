@@ -4,7 +4,7 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 ;Location: [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode
 ;Time: 13:00 UTC, Saturdays (current)
 ;Length: Approx. 1 hour (estimated)
-;Organiser (chairperson): [[Sham Chukoury]]
+;Organiser (chairperson): [[User:puzzles|Dan Chokola]]
 ;Agenda: [[IRC Meeting/Agenda]]
 ;Minutes: [[IRC Meeting/Minutes]]
 ;Archive: [[IRC Meeting/Archive]]
@@ -21,7 +21,7 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 # Organiser provides a topic that participants may discuss.
 # Organiser declares the issue resolved after consensus has been reached, too much time has been taken and the issue must be deferred, or the discussion should be moved to another medium, such as the mailing list.
 ;Object-Oriented Summary:
- organiser = Organiser.new('Sham Chukoury')
+ organiser = Organiser.new('Dan Chokola')
  organiser.puts('Meeting started!')
  participants.each do |p|
    organiser.puts("#{p}: your statements?")
