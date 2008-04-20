@@ -35,9 +35,9 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
  organiser.puts('Meeting adjourned!')
 
 === Wrapup ===
-# Participants may assign action items (things to do), and report on the progress of these items at the next meeting.
-# Organiser summarises meeting (possibly with [[IRC Meeting/Minutes |meeting minutes]]) - such a summary can be useful for planning subsequent meetings (e.g. new agenda items).
-#* Note that [[IRC Meeting/Minutes]] should be a redirect to the latest available meeting minutes, with a title like ''IRC Meeting/YYYY-MM-DD/Minutes'', just like the Agenda pages.
+# Any continuing discussion should be moved to the main channel.
+# Organizer summarizes meeting with [[IRC Meeting/Minutes |meeting minutes]] and announces the minutes in the meeting channel's topic and via a message on the main channel.
+#* Note that [[IRC Meeting/Minutes]] is just a redirect to the latest available meeting minutes, just like the [[IRC Meeting/Agenda]] page.
 
 === Post-meeting ===
 #coffee
