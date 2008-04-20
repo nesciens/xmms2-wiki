@@ -20,53 +20,34 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 # Organizer provides a topic that participants may discuss.
 # Organizer declares the issue resolved after consensus has been reached, too much time has been taken and the issue must be deferred, or the discussion should be moved to another medium, such as the mailing list.
 
-;Object-Oriented (Ruby) Summary:
- organiser = Organiser.new('Dan Chokola')
- organiser.puts('Meeting started!')
- participants.each do |p|
-   organiser.puts("#{p}: your statements?")
-   p.respond!
- end
- issues.each do |issue|
-   organiser.puts(issue.topic)
-   issue.discuss!
-   organiser.puts(issue.resolution)
- end
- organiser.puts('Meeting adjourned!')
-
-=== Wrapup ===
+=== Adjournment ===
 # Any continuing discussion should be moved to the main channel.
 # Organizer summarizes meeting with [[IRC Meeting/Minutes |meeting minutes]] and announces the minutes in the meeting channel's topic and via a message on the main channel.
 #* Note that [[IRC Meeting/Minutes]] is just a redirect to the latest available meeting minutes, just like the [[IRC Meeting/Agenda]] page.
 
-=== Post-meeting ===
-#coffee
-#donuts
-#code
+== Status announcements ==
+Participants should indicate their current status (with respect to project issues) by preparing statements using the following keywords:
+ '''DONE:''' the participant's accomplishments since the last meeting
+ '''TODO:''' the participant's planned achievements
+ '''BLOCKED:''' the participant's stalled issues
+ '''DISCUSS:''' any item a participant wishes to discuss during the meeting, usually pertaining to the TODO or BLOCKED status
+
+When asked by the organizer, the participant should paste these prepared lines into the channel. The lines should be as concise as possible (that's why they need to be prepared in advance). For example:
+
+ <Organizer> Peon: what's your status?
+ <Peon> DONE: Implemented libkorv, fixed BeOS port
+ <Peon> TODO: More documentation
+ <Peon> BLOCKED: Need git repo for libkorv
+ <Peon> DISCUSS: Depend on bierlib or pilsnerlib
+
+Please note that multiple items should be on the same line. The following is unacceptable:
+ <Peon> DONE: Implemented libkorv
+ <Peon> DONE: fixed BeOS port
 
 == Meeting channel rules and guidelines ==
-* The channel is muted (+m) - participants will be automatically voiced (+v) when joining the channel, but may be devoiced (-v) if they are disruptive.
-
-== Status announcements ==
-At the start of each meeting, participants should indicate their current status (wrt project issues) using the following keywords:
-;DONE: What participant has done since last meeting
-;TODO: Things participant is /planning/ to do until next meeting.
-;BLOCKED: Items participant can't progress on, due to various factors (to be discussed).
-;DISCUSS: Item to be discussed during meeting. About the code, not about the project, ie things that needs to be discussed to be able to achive what is in "TODO". (more generic discussions should be put on the agenda)
-
-When asked by the organiser, the participant should paste these prepared lines into the channel. The lines should be as short and informative as possible (that's why the need to be prepared in advance, so there is time to write it in the most compact and yet informative form). For example:
-
- <FooMaster> joe: what's your status?
- <joe> DONE: Implemented libkorv, fixed BeOS port
- <joe> TODO: More documentation
- <joe> BLOCKED: Need git repo for libkorv
- <joe> DISCUSS: Depend on bierlib or pilsnerlib
-
-Please note that multiple items should be on the same line. For example:
- <joe> DONE: Implemented libkorv
- <joe> DONE: fixed BeOS port 
-should be written as:
- <joe> DONE: Implemented libkorv, fixed BeOS port
+* All are welcome. You don't need to be a developer to participate, though much of the discussion is technical.
+* The channel is muted (+m) - participants will be automatically voiced (+v) when joining the channel, but may be devoiced (-v) or banned if they are disruptive.
+* Stay on topic! There are many tangential issues which crop up, but ultimately waste time. Keep in mind the participants are ''donating'' their time despite real life responsibilities and varying timezones.
 
 [[Category:Policies and guidelines]]
 [[Category:IRC Meeting]]
