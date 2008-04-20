@@ -1,18 +1,13 @@
 Since the 20th of November 2006, the XMMS2 team has conducted fairly regular meetings on IRC to discuss various issues relating to the project. Unlike the main [irc://chat.freenode.net/xmms2 #xmms2] channel, where we mostly discuss various technical and offtopic issues at various times of the day, the meeting channel focuses more on project administrative issues and major technical issues, as well as long-lived issues that haven't progressed much (much less been resolved). The rationale is that this process will help the team focus more on getting things done on a timely basis, rather than leaving issues open indefinitely.
 
-== Meeting Protocol ==
-;Location: [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode
-;Time: 13:00 UTC, Saturdays (current)
-;Length: Approx. 1 hour (estimated)
-;Organiser (chairperson): [[User:puzzles|Dan Chokola]]
-;Agenda: [[IRC Meeting/Agenda]]
-;Minutes: [[IRC Meeting/Minutes]]
-;Archive: [[IRC Meeting/Archive]]
+Meetings are currently held in [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode at 13:00 UTC, Sundays. Meetings are organized by [[User:puzzles|Dan Chokola]] and expected to last an estimated 60 minutes.
+[[IRC Meeting/Agenda|Current Agenda]], [[IRC Meeting/Minutes|Latest Minutes]] (also contains transcripts), [[IRC Meeting/Archive|Archived Agendas and Minutes]]
 
+== Meeting Protocol ==
 === Pre-meeting ===
 # Organizer creates a preliminary agenda for next meeting and posts it to [[IRC Meeting/YYYY-MM-DD/Agenda]] and updates the [[IRC Meeting/Agenda]] redirect. The organizer doesn't know everything that is going on in the XMMS2 world, so '''it is up to the participants to edit the agenda'''!
 # Organizer announces the next meeting on the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list], most preferably 4 days before the meeting, at the latest. A reminder email is sent 1-2 days before the meeting.
-# Participants prepare [[#Status announcements|status announcements]], a formalized list of issues they want to address. Meeting participants often have to come and go due to real life issues, so issues will be prioritized accordingly by the meeting organizer; issues on the [[IRC Meeting/Adenda|agenda]] page usually take priority.
+# Participants prepare [[#Status Announcements|status announcements]], a formalized list of issues they want to address. Meeting participants often have to come and go due to real life issues, so issues will be prioritized accordingly by the meeting organizer; issues on the [[IRC Meeting/Adenda|agenda]] page usually take priority.
 
 === Meeting ===
 # Participants join channel and wait for organizer to announce the start of the meeting. This is a good time to tell the organizer if you have to leave early or if a topic had late, breaking developments, or should take priority. This will help the organizer prioritize the meeting so that the most important points are hit while certain people are present.
@@ -25,7 +20,7 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 # Organizer summarizes meeting with [[IRC Meeting/Minutes |meeting minutes]] and announces the minutes in the meeting channel's topic and via a message on the main channel.
 #* Note that [[IRC Meeting/Minutes]] is just a redirect to the latest available meeting minutes, just like the [[IRC Meeting/Agenda]] page.
 
-== Status announcements ==
+== Status Announcements ==
 Participants should indicate their current status (with respect to project issues) by preparing statements using the following keywords:
  '''DONE:''' the participant's accomplishments since the last meeting
  '''TODO:''' the participant's planned achievements
@@ -44,7 +39,7 @@ Please note that multiple items should be on the same line. The following is una
  <Peon> DONE: Implemented libkorv
  <Peon> DONE: fixed BeOS port
 
-== Meeting channel rules and guidelines ==
+== Rules and Guidelines ==
 * All are welcome. You don't need to be a developer to participate, though much of the discussion is technical.
 * The channel is muted (+m) - participants will be automatically voiced (+v) when joining the channel, but may be devoiced (-v) or banned if they are disruptive.
 * Stay on topic! There are many tangential issues which crop up, but ultimately waste time. Keep in mind the participants are ''donating'' their time despite real life responsibilities and varying timezones.
