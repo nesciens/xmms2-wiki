@@ -10,10 +10,9 @@ Since the 20th of November 2006, the XMMS2 team has conducted fairly regular mee
 ;Archive: [[IRC Meeting/Archive]]
 
 === Pre-meeting ===
-# Organiser creates agenda for next meeting and posts it to [[IRC Meeting/YYYY-MM-DD/Agenda]] and updates the [[IRC Meeting/Agenda]] redirect.
-# Organiser announces next meeting on [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list], most preferably 4 days before the meeting, at the latest. Announcement includes proposed agenda.
-# Participants prepare a list of issues they want to address. If there are any major issues to talk about, that haven't been addressed by the proposed agenda, participants negotiate with organiser to include them. Even if the organiser cannot fit a certain issue into the agenda (e.g. due to time constraints), it may be brought up after the meeting. That is, agenda items are to be given priority.
-#* Alternatively, participants may edit the latest agenda on the [[IRC Meeting/Agenda | wiki]], but it's up to the organiser to take those modifications into account when starting the next meeting.
+# Organizer creates a preliminary agenda for next meeting and posts it to [[IRC Meeting/YYYY-MM-DD/Agenda]] and updates the [[IRC Meeting/Agenda]] redirect. The organizer doesn't know everything that is going on in the XMMS2 world, so it is up to the participants to edit the agenda!
+# Organizer announces the next meeting on the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list], most preferably 4 days before the meeting, at the latest. A reminder email is sent 1-2 days before the meeting.
+# Participants prepare [[#Status announcements|status announcements]], a formalized list of issues they want to address. Meeting participants often have to come and go due to real life issues, so issues will be prioritized accordingly by the meeting organizer; issues on the [[IRC Meeting/Adenda|agenda]] page usually take priority.
 
 === Meeting ===
 # Participants join channel and wait for organiser to announce the start of the meeting.
