@@ -1,6 +1,7 @@
 Since the 20th of November 2006, the XMMS2 team has conducted fairly regular meetings on IRC to discuss various issues relating to the project. Unlike the main [irc://chat.freenode.net/xmms2 #xmms2] channel, where we mostly discuss various technical and offtopic issues at various times of the day, the meeting channel focuses more on project administrative issues and major technical issues, as well as long-lived issues that haven't progressed much (much less been resolved). The rationale is that this process will help the team focus more on getting things done on a timely basis, rather than leaving issues open indefinitely.
 
 Meetings are currently held in [irc://chat.freenode.net/xmms2-meeting #xmms2-meeting] on Freenode at 13:00 UTC, Sundays. Meetings are organized by [[User:puzzles|Dan Chokola]] and expected to last an estimated 60 minutes.
+
 [[IRC Meeting/Agenda|Current Agenda]], [[IRC Meeting/Minutes|Latest Minutes]] (also contains transcripts), [[IRC Meeting/Archive|Archived Agendas and Minutes]]
 
 == Meeting Protocol ==
