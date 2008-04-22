@@ -1,8 +1,8 @@
 {{GSoCProject
 |student=''enter student name here''
-|mentor=''enter mentor name here''
-|cmilestone=''add link to latest accopmlished milestone here''
-|nmilestone=''add link to next milestone here''
+|mentor=[[User:Anders Gustafsson|Anders Waldenborg]]
+|cmilestone=[[Summer of Code 2008/GenIPC/Milestones#Student_accepted|Student accepted]]
+|nmilestone=[[Summer of Code 2008/GenIPC/Milestones#TBD|TBD]]
 |description=
 ''add description here''
 
