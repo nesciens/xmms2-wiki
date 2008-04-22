@@ -1,3 +1,13 @@
+Accepted projects:
+
+* [[Summer_of_Code_2008/Collections 2.0]]
+* [[Summer_of_Code_2008/Service Clients and Language Bindings]]
+* [[Summer_of_Code_2008/Cloud Stream]]
+* [[Summer_of_Code_2008/nycli]]
+* [[Summer_of_Code_2008/GenIPC]]
+* [[Summer_of_Code_2008/New medialib backend]]
+
+
 [[Summer_of_Code_2008/Proposed_projects|Proposed projects]]
 
 [[Summer_of_Code_2008/Student_Application|Student application form]]
