@@ -1,0 +1,13 @@
+{{GSoCProject
+|student=''enter student name here''
+|mentor=''enter mentor name here''
+|cmilestone=''add link to latest accopmlished milestone here''
+|nmilestone=''add link to next milestone here''
+|description=
+''add description here''
+
+|links=
+
+''add links to other subpages here''
+
+}}
