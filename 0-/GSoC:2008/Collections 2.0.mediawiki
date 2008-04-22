@@ -1,13 +1,13 @@
 {{GSoCProject
-|student=''enter student name here''
+|student=[[user:nesciens|Erik Massop]]
 |mentor=''enter mentor name here''
 |cmilestone=[[Summer of Code 2008/Collections 2.0/Milestones#Student_accepted|Student accepted]]
 |nmilestone=[[Summer of Code 2008/Collections 2.0/Milestones#TBD|TBD]]
 |description=
-''add description here''
+Collections are xmms2 medialib querying interface. The current implementation has its limitations and lacks some commands to allow full access to medialib information. This project aims to mend these limitations and to extend the collections-concepts, as well as improve the infrastructure around the central concept.
 
 |links=
 
-''add links to other subpages here''
+*[[Summer of Code 2008/Collections 2.0/Source-preference|Something on source-preference]]
 
 }}
