@@ -1,6 +1,6 @@
 {{GSoCProject
 |student=[[user:nesciens|Erik Massop]]
-|mentor=''enter mentor name here''
+|mentor=[[user:theefer|SÃ©bastien Cevey]]
 |cmilestone=[[Summer of Code 2008/Collections 2.0/Milestones#Student_accepted|Student accepted]]
 |nmilestone=[[Summer of Code 2008/Collections 2.0/Milestones#TBD|TBD]]
 |description=
