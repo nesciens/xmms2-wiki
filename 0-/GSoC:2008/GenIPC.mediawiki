@@ -1,5 +1,5 @@
 {{GSoCProject
-|student=''enter student name here''
+|student=[[User:darkk|Leonid Evdokimov]]
 |mentor=[[User:Anders Gustafsson|Anders Waldenborg]]
 |cmilestone=[[Summer of Code 2008/GenIPC/Milestones#Student_accepted|Student accepted]]
 |nmilestone=[[Summer of Code 2008/GenIPC/Milestones#TBD|TBD]]
