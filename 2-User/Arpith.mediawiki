@@ -1,0 +1,4 @@
+Arpith Siromoney (arpith on IRC). My email address is arpith.siro@gmail.com.
+
+Will be working on the Cloud Stream client this summer as part of the Google Summer of Code 08.
+[[Category: People]]
