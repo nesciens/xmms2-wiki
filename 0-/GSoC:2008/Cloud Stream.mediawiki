@@ -1,13 +1,8 @@
 {{GSoCProject
-|student=''enter student name here''
-|mentor=''enter mentor name here''
-|cmilestone=''add link to latest accopmlished milestone here''
-|nmilestone=''add link to next milestone here''
+|student=[[user:arpith|Arpith Siromoney]]
+|mentor=[[Alexander Botero-Lowry]]
+|cmilestone=[[Summer of Code 2008/Cloud_Stream/Milestones#Student_accepted|Student accepted]]
+|nmilestone=[[Summer of Code 2008/Cloud_Stream/Milestones#TBD|TBD]]
 |description=
-''add description here''
-
-|links=
-
-''add links to other subpages here''
-
+As my abstract says, this summer, I will be focusing on evolving the last.fm take on music playing/browsing to better integrate it with the local collections/meta data. Cloud Stream is meant to provide a dynamic interface that supplements the users track choices with statistical data from both history as well as other last.fm users' music history.
 }}
