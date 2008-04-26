@@ -1,6 +1,10 @@
 * Check-ups:
 ** [[Component:Visualization|Visualization]] ([[User:ypnos|FoPref]], [[User:Anders Gustafsson|anders]])
 ** <mantis>1927</mantis> - merged yet? ([[User:rafl|rafl]])
+** last.fm stops playing after one song if duration is set?
+** release critical bugs for DrL
+** code review needed for patches that might enter DrL
+** DrL release date
 * Collections 2.0 - Source preference:
 ** Should collections only use the preferred sources for querying. If so, what happens when multiple sources have the same priority?
 ** If the previous question is answered positively: should source-preference be connection specific, or globally in the server.
