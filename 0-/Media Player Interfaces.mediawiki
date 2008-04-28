@@ -81,5 +81,6 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 * [http://wiki.videolan.org/index.php/DBus-spec VLC DBUS Spec] based on MPRIS
 * [http://thread.gmane.org/gmane.comp.video.videolan.vlc.devel/26649 Proposal for a common D-Bus interface for media players] thread
 * [[Talk:Media Player Interfaces]]
+* [http://mpris.rubyforge.org/ Ruby MPRIS client Gem]
 
 [[Category:Developer ideas]]
