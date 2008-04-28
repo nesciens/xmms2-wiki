@@ -47,6 +47,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:Shellac | Shellac]] has a very customizable GUI
 * [[Client:Sonus | Sonus]] is a GUI client that works with xmms2-devel
 * [[Client:radiobar | radiobar]] is a GUI buttonbar client for radio use
+* [[Client:Promoe | Promoe]] is a Qt4 based Winamp/Xmms clone
 
 == Web Clients ==
 
