@@ -33,6 +33,7 @@ All current clients should be found here.
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
+{{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | in development | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Remuco| Mobile Phone / Bluetooth | JavaME, C | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
@@ -80,7 +81,6 @@ The following clients aren't worked on anymore, and might not work out of the bo
 {{ClientTableEntry|fvwm2xmms| Plugin for FVWM | C | website is gone | Basic display to be integrated into FVWM desktop }}
 {{ClientTableEntry|medialib-ui| Graphical / Qt | Python | abandoned | Standalone medialib and playlist client.}}
 {{ClientTableEntry|nxmms2| console / ncurses | C | doesn't compile anymore | rudimentary player functionality }}
-{{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | abandoned | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|RXmms2| Graphical / GTK+2 (Skinnable) | Ruby | deprecated (use Euphoria) | XMMS/Winamp/BMP clone }}
 {{ClientTableEntry|Shhh| Graphical / GNUStep | C | unavailable | Little Player for the GNUStep desktop }}
 {{ClientTableEntry|x2cp| console / ncurses | C++ | last version May 2006 | rudimentary player functionality }}
