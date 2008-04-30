@@ -1,20 +1,15 @@
 {{
 Client
 |name=Remuco
-|author=Christian BÃ¼nnig
+|author=Oben Sonne
 |website=http://remuco.sourceforge.net/
 |version=[http://sourceforge.net/project/showfiles.php?group_id=166515]
-| devlanguage=JavaME, C
-| ui=MIDP 2.0
-| screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
-| description=
+|devlanguage=JavaME, C, Python
+|ui=MIDP 2.0
+|screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
+|description=
 
+Remuco is a remote control system for Linux media players and mobile devices equipped with Bluetooth or WLAN. With Remuco you can remotely control your favorite media player - amongst others you can switch to the next, previous or any other media within the current playlist, browse your media library and activate other playlists, rate your media and adjust volume. On the mobile (the remote control) it displays information about the current media, including cover art.
 
-'''Remuco is a system to remotely control music player software with bluetooth enabled mobile devices.'''
-
-With Remuco you can control your favourite music player (playback, song rating, ...) and read music player state information (playback, playlist, ...) on your mobile device. You can use Remuco simultaneously with two or more mobile devices - that's a nice feature for a party when you want to set up a DJ crew ;). 
-
-You can use Remuco with all mobile devices with a Bluetooth adapter and Java Microediton (JavaME) support.
-
-Currently Remuco is able to control XMMS, XMMS2, Amarok and Rhythmbox.
+Currently Remuco has support for Amarok, Rhythmbox, Totem and XMMS2.
 }}
