@@ -10,7 +10,7 @@
 * [[Release:DrGonzo|DrGonzo]] - Released 2006-09-26
 * [[Release:DrHouse|DrHouse]] - Released 2006-12-02
 * DrILostMyFloppies
-* [[Release:DrJekyll|DrJekyll]] - Testing phase
+* [[Release:DrJekyll|DrJekyll]] - Released 2007-05-20
 * [[Release:DrKosmos|DrKosmos]] - Release 2007-11-15 (10 years!)
 * DrLecter, DrLivingstone (I presume)
 * DrMcCoy, DrMcKay, Dr. Matt Destruction, Dr Mabuse
