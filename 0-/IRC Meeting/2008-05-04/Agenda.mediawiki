@@ -1,3 +1,4 @@
 * Merge issues
 ** possibility of another reviewer
 ** release timing
+** Use GTree for dictionaries instead of GHashTable?
