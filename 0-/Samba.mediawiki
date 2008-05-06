@@ -1,0 +1,11 @@
+==How to use samba==
+*edit your smb.conf and add :
+   security = share
+   guest only = yes
+in the golbal section
+BE CAREFUL...THAT WILL ALLOW EVERYONE TO BROWSE YOUR SHARES...Mabe there is another way but as a simple user(i'm not a xmms2 developer) i don't know how to use username and passwords,i tried setting the environment variable but that didn't work
+
+*then in url is:
+ smb://YourMachine/Yourshare
+for instance with the command line client you can add it typing the following:
+ xmms2 radd smb://192.168.1.111/music
