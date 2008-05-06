@@ -10,6 +10,10 @@ There are different ways imagineable to specify the sources. A major issue is wh
 
 Setting source-preference globally has a couple of advantages. Firstly source-preference is consistent through all clients. Moreover users are sure to have an interface (if even the cli) to set their source-preference and do not have to modify their favourite client's source code. A third argument is that global source-preference might even improve the performance of collection querying (see below).
 
+=== Rationale against connection-based source-preference ===
+
+Source-preference on a per-connection basis may (will) confuse users, as the result of a collection query depends on the client in use. So the user might browse a saved collection using client A and find something different than if he/she browsed the same collection using client B. To make it even more frustrating the daemon has its own source-preference, so a song might appear in a partyshuffle playlist, that the user perceived as not being in the source-collection... These different perceptions of the contents of collections are in no way useful and are probably annoying.
+
 === Implementation ===
 
 Source-preference might be implemented in the medialib by adding a "rank"-column to the Sources-table. This would then store how important every source is. Additionaly a goodness-column would be needed in the Media-table (or in some MediaBackend-table), storing the difference in rank between the source of that particular row and the best source for that id-key-pair, hightlighting the best rows using goodness 0. When the indices are extended to include this column sqlite can reduce the number of rows to scan for a match and therefore collection queries might be faster than they are now.
