@@ -193,7 +193,45 @@ Also it is important that it is easy to change the attributes. A GUI would proba
          self.collection.attributes['value'] = val
      self.match_field.on_change = on_value_change
 
+===Alternative 6===
+'''this is at least implemented in the git version(works for me)'''
 
+ import xmmsclient
+ from xmmsclient import collections
+ import os
+ import sys
+  
+ xmms = xmmsclient.XMMS("Sasdlkfjselect")
+  
+ try:
+ 	xmms.connect(os.getenv("XMMS_PATH"))
+ except IOError, detail:
+ 	print "Connection failed:", detail
+ 	sys.exit(1)
+  
+  
+ artist = collections.Match( field="artist", value="Pink" )
+ album = collections.Has(artist, "album")
+ title = collections.Match(field="title", value="%pink%")
+   
+ result = xmms.coll_query_infos( artist, ("artist", "title" ))
+ result.wait()
+ print result.value()
+ 
+ print "---"
+ result = xmms.coll_query_infos( album, ("artist", "title" ))
+ result.wait()
+ print result.value()
+  
+ print "---"
+ result = xmms.coll_query_infos( title, ("artist", "title" ))
+ result.wait()
+ print result.value()
+  
+ print "---"
+ result = xmms.coll_query_infos( title | album, ("artist", "title" ))
+ result.wait()
+ print result.value()
 
 
 Other ideas welcome!
