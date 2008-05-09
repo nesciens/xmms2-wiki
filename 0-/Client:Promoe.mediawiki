@@ -1,4 +1,4 @@
-{{Client |name=Promoe| author=Thomas Frauendorfer, Tobias RundstrÃ¶m, Daniel Svensson| website=http://git.xmms.se| version=| devlanguage=C++| ui=Qt4| screenshots=http://exodus.xmms.se/~nano/promoe.png| description=
+{{Client |name=Promoe| author=Thomas Frauendorfer, Tobias RundstrÃ¶m, Daniel Svensson| website=http://git.xmms.se| version=| devlanguage=C++| ui=Qt4| screenshots=| description=
 == Intro ==
 Winamp classic clone.
 
