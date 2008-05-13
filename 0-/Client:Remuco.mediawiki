@@ -9,7 +9,7 @@ Client
 |screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
 |description=
 
-Remuco is a remote control system for Linux media players and mobile devices equipped with Bluetooth or WLAN. With Remuco you can remotely control your favorite media player - amongst others you can switch to the next, previous or any other media within the current playlist, browse your media library and activate other playlists, rate your media and adjust volume. On the mobile (the remote control) it displays information about the current media, including cover art.
+Remuco is a duplex remote control system for Linux media players and mobile devices equipped with Bluetooth or WLAN. With Remuco you can remotely control your favorite media player - amongst others you can switch to the next, previous or any other media within the current playlist, browse your media library and activate other playlists, rate your media and adjust volume. On the mobile (the remote control) it displays information about the current media, including cover art.
 
-Currently Remuco has support for Amarok, Rhythmbox, Totem and XMMS2.
+Currently Remuco has ''full'' support for Rhythmbox and '''XMMS2''' and ''basic'' support for Amarok, Banshee, MPD and Totem.
 }}
