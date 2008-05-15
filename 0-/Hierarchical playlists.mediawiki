@@ -31,3 +31,8 @@ In the end it is probably an issue of the user interface.
 From a commandline point of view (original xmms2 client) the hierarchical playlists seem to me to be easier to handle.
 
 --[[User:MITService|MITService]] 09:54, 1 Feb 2006 (CET)
+
+----
+Another reason that you may want it, is in situations involving Party Shuffle. Like perhaps I want to Party Shuffle on a bunch of music, but I always want two (or however many songs to follow each other). For example, I find that whenever I hear "So Long" by Guster, I want it to be followed by "Two Points For Honesty." Although, I guess this is more of having a list within a collection, but similar premise.
+
+[[User:Snoopdugiedog|Snoopdugiedog]] 19:28, 15 May 2008 (UTC)
