@@ -59,4 +59,4 @@ If set to ''1'' the icecast server will announce your stream in the shoutcast di
 The port of the icecast server.
 
 == Playing ==
-Now just load up your playlist and do ''xmms2 play''
+Now just set output.plugin to ices(using ''xmms2 config output.plugin = ices''),load up your playlist and do ''xmms2 play''
