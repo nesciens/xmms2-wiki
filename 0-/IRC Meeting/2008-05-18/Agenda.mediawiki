@@ -1,0 +1,6 @@
+* Merge issues
+** recap code review process outlined on this thread (anders)
+** release timing (anders)
+* DrLecter
+** release critical bugs (nano)
+** visualization (anders, FoPref)
