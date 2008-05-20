@@ -4,6 +4,7 @@ All current clients should be found here.
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
+{{ClientTableEntry|exmms2| Graphical/ EWL/EFL / C | in development | usable, but edit makefile, basic functionality }}
 {{ClientTableEntry|Abraca| Graphical / GTK | C | in development | Usable client with collection support }}
 {{ClientTableEntry|AlbumThing| Graphical / GTK | Python | in development | Simple, Album oriented client }}
 {{ClientTableEntry|Azrael| Graphical / GTK | C | development stalled | Basic player with nice additions }}
