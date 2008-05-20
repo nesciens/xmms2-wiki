@@ -37,6 +37,6 @@ but window decor will appear from your window manager when you run it.
 </p>
 <p> Exmms2 is an XMMS2 client using the EWL and EFL (enlightened widget library & enlightenment foundation libraries)
 
-In it's early stages now, exmms2 aims to be a fully featured xmms2 client. Currently at the bare minimum of functionality it can move back and forth in the playlist, play, stop, and display's the current track information. More development is planned now, and a playlist interface is going to be written next. After that I plan to add a seeker/slider for track position, will enable pausing functionality, a volume knob, then I will begin working on the interface for the equalizer. Patches are welcome. Lots of exciting features are planned.
+In its early stages now, exmms2 aims to be a fully featured xmms2 client. Currently at the bare minimum of functionality it can move back and forth in the playlist, play, stop, and displays the current track information. More development is planned now, and a playlist interface is going to be written next. After that I plan to add a seeker/slider for track position, will enable pausing functionality, a volume knob, then I will begin working on the interface for the equalizer. Patches are welcome. Lots of exciting features are planned.
 
 </p>
