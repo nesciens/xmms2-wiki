@@ -27,7 +27,9 @@ User Interface
 <br />
 <b>
 Screenshots
-</b> none yet 
+</b>
+http://exmms2.googlecode.com/files/exmms2-0.1.png shows no window decor
+but window decor will appear from your window manager when you run it.
 <br />
 
 
