@@ -1,0 +1,13 @@
+Hi,thanks for checking out exmms2:
+
+In it's early stages now, exmms2 aims to be a fully featured xmms2 client. Currently at the bare minimum of functionality it can move back and forth in the playlist, play, stop, and display's the current track information. More development is planned now, and a playlist interface is going to be written next. After that I plan to add a seeker/slider for track position, will enable pausing functionality, a volume knob, then I will begin working on the interface for the equalizer. Patches are welcome. Lots of exciting features are planned.
+
+If you'd like to try it out, then check out the source from code.google.com with:<br />
+svn checkout http://exmms2.googlecode.com/svn/trunk/ exmms2-read-only
+ 
+
+
+email tom@NOSPAM@dignan@gmail@NOSPAM@com if you have any questions.
+
+Please replace all occurences of @NOSPAM@ with periods
+i.e. ross@NOSPAM@perot becomes ross.perot
