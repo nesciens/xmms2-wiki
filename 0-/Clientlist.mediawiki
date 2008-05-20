@@ -4,7 +4,7 @@ All current clients should be found here.
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
-{{ClientTableEntry|exmms2| Graphical/ EWL/EFL | C | in development | usable, but edit makefile, basic functionality }}
+
 {{ClientTableEntry|Abraca| Graphical / GTK | C | in development | Usable client with collection support }}
 {{ClientTableEntry|AlbumThing| Graphical / GTK | Python | in development | Simple, Album oriented client }}
 {{ClientTableEntry|Azrael| Graphical / GTK | C | development stalled | Basic player with nice additions }}
@@ -19,6 +19,7 @@ All current clients should be found here.
 {{ClientTableEntry|Eloquence| Plugin for E17 | C | in development | themeable desktop module }}
 {{ClientTableEntry|Euphoria| Graphical / EFL | Ruby | rewrite | Slick themeable client }}
 {{ClientTableEntry|eq| Graphical / GTK | Python | in development | Simple equalizer frontend }}
+{{ClientTableEntry|exmms2| Graphical/ EWL/EFL | C | in development | usable, but edit makefile, basic functionality }}
 {{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
 {{ClientTableEntry|gkrellxmms2| GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
 {{ClientTableEntry|gx2ctl| Gnome x2 control | C | works for her | the Drag'n'Drop client for your girlfriend }}
