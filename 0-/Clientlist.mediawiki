@@ -37,7 +37,6 @@ All current clients should be found here.
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Remuco| Mobile Phone / Bluetooth | JavaME, C | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
-{{ClientTableEntry|Shellac| Graphical / GTK | Python | in development | highly customizable player }}
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
 {{ClientTableEntry|Sonus| Graphical / QT4 | Python | in development | Simple, yet full-featured player }}
 {{ClientTableEntry|Sopran| Graphical / GTK | Ruby | in development | Simple player with plugin system }}
@@ -67,6 +66,7 @@ Please move the following clients according to their actual state!
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|perlamp| ? | ? | Vaporware? | should be a front-end supporting Wxxamp modern skins }}
 {{ClientTableEntry|SeMMiX| Graphical / GTK | C | Last update over one year ago | Full-featured, lightweight player }}
+{{ClientTableEntry|Shellac| Graphical / GTK | Python | in development | highly customizable player }}
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
 {{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
