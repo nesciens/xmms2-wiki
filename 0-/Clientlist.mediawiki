@@ -28,7 +28,6 @@ All current clients should be found here.
 {{ClientTableEntry|Harald| Mobile Phone / Bluetooth | JavaME/C | in development | Player running on Java capable mobile phone }}
 {{ClientTableEntry|Insanity| Graphical / GTK | Python | in development | Simple but complete player }}
 {{ClientTableEntry|JukX| Graphical / GTK | Python | in development | touchscreen orientated  concept }}
-{{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
@@ -65,6 +64,7 @@ Please move the following clients according to their actual state!
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
 {{ClientTableEntry|ixmms2| Irssi Plugin | Perl | website unreachable | Control and query xmms2 within irssi }}
+{{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|perlamp| ? | ? | Vaporware? | should be a front-end supporting Wxxamp modern skins }}
 {{ClientTableEntry|SeMMiX| Graphical / GTK | C | Last update over one year ago | Full-featured, lightweight player }}
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
