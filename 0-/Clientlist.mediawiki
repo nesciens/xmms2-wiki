@@ -46,7 +46,6 @@ All current clients should be found here.
 {{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
 {{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
 {{ClientTableEntry|x2c| console | ruby | stable | little rubyistic console client with advanced features}}
-{{ClientTableEntry|X4X| Graphical / XWidgets | Java | discontinued | Almost complete player, works with Java Webstart }}
 {{ClientTableEntry|XMMbaSh2 | console | bash | in development | A single line bash client, enables all features of current XMMS2 CLI client}}
 {{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
 {{ClientTableEntry|XMMS2Musica| Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
@@ -86,6 +85,7 @@ The following clients aren't worked on anymore, and might not work out of the bo
 {{ClientTableEntry|RXmms2| Graphical / GTK+2 (Skinnable) | Ruby | deprecated (use Euphoria) | XMMS/Winamp/BMP clone }}
 {{ClientTableEntry|Shhh| Graphical / GNUStep | C | unavailable | Little Player for the GNUStep desktop }}
 {{ClientTableEntry|x2cp| console / ncurses | C++ | last version May 2006 | rudimentary player functionality }}
+{{ClientTableEntry|X4X| Graphical / XWidgets | Java | discontinued | Almost complete player, works with Java Webstart }}
 {{ClientTableEntry|xmms2curses| console / curses | C | abandoned? | curses client }}
 {{ClientTableEntry|xmms2play| Graphical / GTK | C | abandoned | Minimalist GTK2 xmms2 client written in C.}}
 {{ClientTableEntry|xmms2-shell| console | Python | abandoned | Interactive shell client for XMMS2 }}
