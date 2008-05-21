@@ -66,7 +66,7 @@ Please move the following clients according to their actual state!
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|perlamp| ? | ? | Vaporware? | should be a front-end supporting Wxxamp modern skins }}
 {{ClientTableEntry|SeMMiX| Graphical / GTK | C | Last update over one year ago | Full-featured, lightweight player }}
-{{ClientTableEntry|Shellac| Graphical / GTK | Python | in development | highly customizable player }}
+{{ClientTableEntry|Shellac| Graphical / GTK | Python | Last update over two years ago | highly customizable player }}
 {{ClientTableEntry|xmms2_blue| Mobile Phone / Bluetooth | C | probably abandoned | Player working with SonyEriccson mobile phone }}
 {{ClientTableEntry|XMMS2-AMP| Graphical / Skinnable | ? | vaporware | Resembles good ol' XMMS }}
 {{ClientTableEntry|xmms2joystick| Joystick | C | website unreachable | Control XMMS2 with a joystick device }}
