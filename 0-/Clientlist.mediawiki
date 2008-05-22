@@ -12,7 +12,7 @@ All current clients should be found here.
 {{ClientTableEntry|bluegroove| Graphical / GTK | Ruby | in development | Typical player with queueing support }}
 {{ClientTableEntry|Camio| Graphical / GTK | Python | in development | Small dock with basic commands }}
 {{ClientTableEntry|Chalyx| Library | Python | in development | Flexible modular library for XMMS2/MPD clients }}
-{{ClientTableEntry|Cocopapa| console | C | in development | Complex Collection Pattern Parser }}
+{{ClientTableEntry|Cocopapa| Console | C | in development | Complex Collection Pattern Parser }}
 {{ClientTableEntry|Crystalxmms| Graphical | Java | in development | Look based on crystal icons }}
 {{ClientTableEntry|Dabra| Graphical / libnotify | C | in development | Provides desktop notifications }}
 {{ClientTableEntry|EkoXMMS2| X-Chat Plugin | C | in development | Small player integrated into X-Chat }}
@@ -38,6 +38,7 @@ All current clients should be found here.
 {{ClientTableEntry|Remuco| Mobile Phone / Bluetooth | JavaME, C | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
+{{ClientTableEntry|sisy| Console | C | in development | Simple syntax collection pattern parser }}
 {{ClientTableEntry|Sonus| Graphical / QT4 | Python | in development | Simple, yet full-featured player }}
 {{ClientTableEntry|Sopran| Graphical / GTK | Ruby | in development | Simple player with plugin system }}
 {{ClientTableEntry|Spring| Graphical / Qt4 | Python | in development | multi-featured client with different media browsers }}
