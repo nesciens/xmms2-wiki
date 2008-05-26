@@ -33,6 +33,15 @@ NOT:
  call_foo(arg1, arg2);
  call_bar();
 
+== Variable declarations ==
+* Variables should only be declared in beginning of blocks.
+* Don't declare variables of different types on same line.
+ /* Don't: */
+ int i, *p;
+ /* Do: */
+ int i;
+ int *p;
+
 == Breaking long lines and strings ==
 * Lines should not be longer than 80 characters (columns) long. (Note that this assumes 4-character long tab widths for indents)
 * "Statements longer than 80 columns will be broken into sensible chunks. Descendants are always substantially shorter than the parent and are placed substantially to the right. The same applies to function headers with a long argument list. Long strings are as well broken into shorter strings." [http://lxr.linux.no/source/Documentation/CodingStyle#L57]
