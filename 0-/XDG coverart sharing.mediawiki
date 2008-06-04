@@ -43,6 +43,8 @@ The symbolic links MUST be relative, so that the full structure easily can be co
 * Define ID3v2 frame! For players that want to (god forbid) put a reference to the coverart in the id3tag.
 coverart://MD5SUM as url for coverart?
 
+I think it would be better to fetch and cache the coverart on the server, not in the homedir of the client's user. There could be several plugins to fetch coverart. A client software should simply request the coverart via the client API (maybe with a HTTP-like list of accepted mime-types) -- [[User:Jonas|Jonas]] 12:27, 4 June 2008 (UTC)
+
 == References ==
 * [http://standards.freedesktop.org/basedir-spec/0.6/ XDG Base Directory Specification]
 
