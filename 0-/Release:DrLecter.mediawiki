@@ -1,0 +1,24 @@
+== Release Notes ==
+
+
+=== Upgrading ===
+
+
+=== Noteworthy changes ===
+
+
+==== Feature additions ====
+
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+
+=== Notes to client authors ===
+
+=== Notes to xform authors ===
+
+=== Full ChangeLog ===
+
+==== Between DrKosmos and TEST1 ====
