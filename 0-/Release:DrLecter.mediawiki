@@ -22,3 +22,5 @@
 === Full ChangeLog ===
 
 ==== Between DrKosmos and TEST1 ====
+
+[[Category:Releases]]
