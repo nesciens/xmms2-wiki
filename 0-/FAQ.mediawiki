@@ -129,7 +129,7 @@ The seperator between different sockets here is ';'.
 === How do I contribute code to XMMS2? ===
 : Please see the [[Submitting code]] page.
 
-=== Why cogito/git? What was wrong with cvs/svn? ===
+=== Why git? What was wrong with cvs/svn? ===
 : That's like asking "Why icecream? What was wrong with meatloaf?" when you want a dessert. [http://git.or.cz/#about Do] [http://git.or.cz/course/cvs.html#know your] [http://git.or.cz/course/svn.html#know homework].
 
 === Seems like you are using a non-standard buildsystem, why not Make? ===
