@@ -86,7 +86,7 @@
 '''Daniel Svensson'''
 * <mantis>1814</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>9d812d5f1a568f2d948f874921c809d9d1981218</git>
-* <mantis></mantis>
+* <mantis>1807</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>be42c63b48b09451903d25b154338325259de417</git>
 * <mantis>1810</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>34750d1d9381802cc74fe2ed3891a8c8e18935f0</git>
