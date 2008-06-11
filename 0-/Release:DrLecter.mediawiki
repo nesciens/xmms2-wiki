@@ -26,6 +26,7 @@
 * (C-api) xmmsc_result_get_string takes a _const_ string.
 
 === Notes to xform authors ===
+* xforms now can specify a default priority using XMMS_STREAM_TYPE_PRIORITY
 
 === Full ChangeLog ===
 
