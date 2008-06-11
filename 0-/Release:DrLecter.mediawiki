@@ -8,7 +8,12 @@
 
 
 ==== Feature additions ====
-
+* New plugins:
+** airplay
+** gme
+** gvfs
+** karaoke
+* Speex plugin is enabled again
 
 ==== Bug fixes ====
 
