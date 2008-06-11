@@ -22,6 +22,9 @@
 
 === Notes to client authors ===
 
+* The current_pos method and broadcast now returns a dict.
+* (C-api) xmmsc_result_get_string takes a _const_ string.
+
 === Notes to xform authors ===
 
 === Full ChangeLog ===
