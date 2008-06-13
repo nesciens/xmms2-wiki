@@ -24,6 +24,7 @@
 
 * The current_pos method and broadcast now returns a dict.
 * (C-api) xmmsc_result_get_string takes a _const_ string.
+* The wildcards for the MATCH collection-operator are now * and ?
 
 === Notes to xform authors ===
 * xforms now can specify a default priority using XMMS_STREAM_TYPE_PRIORITY
