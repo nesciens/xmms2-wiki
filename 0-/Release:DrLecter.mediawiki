@@ -14,7 +14,10 @@
 ** gvfs
 ** karaoke
 * Speex plugin is enabled again
+* Segment xform added to handle playing parts of a file, used by cue files
 * Ruby bindings works with ruby 1.9
+* SID plugin now supports songlengths.txt
+* PulseAudio plugin now supports changing volume.
 
 ==== Bug fixes ====
 
