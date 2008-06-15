@@ -14,6 +14,7 @@
 ** gvfs
 ** karaoke
 * Speex plugin is enabled again
+* Ruby bindings works with ruby 1.9
 
 ==== Bug fixes ====
 
