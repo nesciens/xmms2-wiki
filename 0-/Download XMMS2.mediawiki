@@ -77,8 +77,9 @@ Getting XMMS2 to build/run on Windows is mostly working, but not all features of
 ** See the [http://xmms2.xmms.se/~puzzles/win32/plugin_list.txt plugin list] for a full list of what's supported.
 ** Ruby, Python, and C++ bindings.
 * http://www.schrijnen.nl/auke/
-** With [[Client:Esperanza|Esperanza]].
+** With [[Client:Esperanza|Esperanza]]
 ** With [[ET]]
+** And [[Component:DirectSound|DirectSound]]
 
 == BSD ==
 
