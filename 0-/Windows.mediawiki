@@ -2,7 +2,7 @@
 The easiest way to get right into using XMMS2 on Windows is to download precompiled binaries.
 
 * http://xmms2.xmms.se/~puzzles/win32/ (With Ruby, Python, and C++ bindings, plus the [[Client:Esperanza|Esperanza]] client)
-* http://www.schrijnen.nl/auke/ ([[Client:Esperanza|Esperanza]] with [[mDNS]] support built for win32)
+* http://www.schrijnen.nl/auke/ ([[Client:Esperanza|Esperanza]] with [[mDNS]] support built for win32 and xmms2d with [[Component:DirectSound|DirectSound]])
 
 == Building from Source ==
 Want to roll your own XMMS2 for Windows? [[Windows/Mingw|Compile on Mingw]]!
