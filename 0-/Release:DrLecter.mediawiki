@@ -22,7 +22,7 @@
 ==== Bug fixes ====
 
 === New platforms ===
-
+* Should now build on windows 2000
 
 === Notes to client authors ===
 
