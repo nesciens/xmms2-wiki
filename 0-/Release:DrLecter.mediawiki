@@ -1,5 +1,7 @@
 == Release Notes ==
+Good evening, Clarice.
 
+Finally a new XMMS2 release has arrived. This time it contains even finer meat, such as a whole bunch of new plugins and support for ruby 1.9. The XMMS2 Team would like to extend a big THANK YOU to all who have helped out with this release. Hope you will have as good time eating it as we had cooking it!
 
 === Upgrading ===
 
