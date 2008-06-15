@@ -5,9 +5,9 @@ __NOEDITSECTION__
 {|
 |-
 |[[Image:Logo-white-128.png]]
-|XMMS2 0.4 DrKosmos was just released (on the 10 year anniversary of [http://www.xmms.org/ xmms]).
+|XMMS2 0.5 DrLecter was just released.
 
-Read the [[Release:DrKosmos |release notes]] for DrKosmos
+Read the [[Release:DrLecter |release notes]] for DrLecter.
 
 Visit our [[Summer_of_Code_2008|Summer of Code 2008 page]].
 |-
