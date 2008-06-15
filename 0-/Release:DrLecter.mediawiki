@@ -3,6 +3,7 @@
 
 === Upgrading ===
 
+Upgrading should be smooth.
 
 === Noteworthy changes ===
 
