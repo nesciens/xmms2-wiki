@@ -42,12 +42,12 @@ The client developer provides a collection structure to the daemon. The daemon t
 The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {{{ type=value, arguments={field=artist}, label=artist}, collation=NOCASE }}
- fetch: {{ type=id_list,                arguments={},             label=ids      },
-         { type=cluster,                arguments={},             label=artist   },
-         { type=value_list,             arguments={field=album},  label=albums   },
-         { type=value_list,             arguments={field=title},  label=titles   },
-         { type=source_value_list_dict, arguments={field=size},   label=datasize }}
+ cluster-by: {{{ type=value, arguments={field=artist}}, label=artist, collation=NOCASE }}
+ fetch: {{{ type=id_list,                arguments={}},             label=ids      },
+         {{ type=cluster,                arguments={label=artist}}, label=artist   },
+         {{ type=value_list,             arguments={field=album}},  label=albums   },
+         {{ type=value_list,             arguments={field=title}},  label=titles   },
+         {{ type=source_value_list_dict, arguments={field=size}},   label=datasize }}
  
  result: {{ ids={113, 141},
             artist=Evanescence,
@@ -62,11 +62,11 @@ The client developer provides a collection structure to the daemon and a list of
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  cluster-by: {}
- fetch: {{ type=id_list,                arguments={},             label=ids      },
-         { type=value_list,             arguments={},             label=artists  },
-         { type=value_list,             arguments={field=album},  label=albums   },
-         { type=value_list,             arguments={field=title},  label=titles   },
-         { type=source_value_list_dict, arguments={field=size},   label=datasize }}
+ fetch: {{{ type=id_list,                arguments={}},             label=ids      },
+         {{ type=value_list,             arguments={}},             label=artists  },
+         {{ type=value_list,             arguments={field=album}},  label=albums   },
+         {{ type=value_list,             arguments={field=title}},  label=titles   },
+         {{ type=source_value_list_dict, arguments={field=size}},   label=datasize }}
  
  result: {{ ids={113, 141, 1092},
             artists={Evanescence, Evanescence, Within Temptation},
