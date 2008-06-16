@@ -11,11 +11,11 @@ The client developer provides a collection structure resulting in a medialist to
 Note that every cell of the query-result can contain an xmms2-datatype, so that for instance all metadata can be queried in a propdict:
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
- fetch: {{{ type=id,                arguments={}},             label=id       },
-         {{ type=value,             arguments={field=artist}}, label=artist   },
-         {{ type=value,             arguments={field=album}},  label=album    },
-         {{ type=value,             arguments={field=title}},  label=title    },
-         {{ type=source_value_dict, arguments={field=size}},   label=datasize }}
+ fetch: {{ spec={ type=id,                arguments={}             }, label=id       },
+         { spec={ type=value,             arguments={field=artist} }, label=artist   },
+         { spec={ type=value,             arguments={field=album}  }, label=album    },
+         { spec={ type=value,             arguments={field=title}  }, label=title    },
+         { spec={ type=source_value_dict, arguments={field=size}   }, label=datasize }}
  
  result: {{ id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
           { id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           datasize={plugin/id3v2=8286281, plugin/file=8314880} },
@@ -27,11 +27,11 @@ Note that every cell of the query-result can contain an xmms2-datatype, so that 
 The client developer provides a collection structure to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every id of the resulting collection.
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
- fetch: {{{ type=id,                arguments={}},             label=id       },
-         {{ type=value,             arguments={field=artist}}, label=artist   },
-         {{ type=value,             arguments={field=album}},  label=album    },
-         {{ type=value,             arguments={field=title}},  label=title    },
-         {{ type=source_value_dict, arguments={field=size}},   label=datasize }}
+ fetch: {{ spec={ type=id,                arguments={}             }, label=id       },
+         { spec={ type=value,             arguments={field=artist} }, label=artist   },
+         { spec={ type=value,             arguments={field=album}  }, label=album    },
+         { spec={ type=value,             arguments={field=title}  }, label=title    },
+         { spec={ type=source_value_dict, arguments={field=size}   }, label=datasize }}
  
  result: {{ id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           datasize={plugin/id3v2=8286281, plugin/file=8314880} },
           { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
@@ -42,12 +42,12 @@ The client developer provides a collection structure to the daemon. The daemon t
 The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {{{ type=value, arguments={field=artist}}, label=artist, collation=NOCASE }}
- fetch: {{{ type=id_list,                arguments={}},             label=ids      },
-         {{ type=cluster,                arguments={label=artist}}, label=artist   },
-         {{ type=value_list,             arguments={field=album}},  label=albums   },
-         {{ type=value_list,             arguments={field=title}},  label=titles   },
-         {{ type=source_value_list_dict, arguments={field=size}},   label=datasize }}
+ cluster-by: {{ spec={type=value, arguments={field=artist}}, label=artist, collation=NOCASE }}
+ fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
+         { spec={ type=cluster,                arguments={label=artist} }, label=artist   },
+         { spec={ type=value_list,             arguments={field=album}  }, label=albums   },
+         { spec={ type=value_list,             arguments={field=title}  }, label=titles   },
+         { spec={ type=source_value_list_dict, arguments={field=size}   }, label=datasize }}
  
  result: {{ ids={113, 141},
             artist=Evanescence,
@@ -62,11 +62,11 @@ The client developer provides a collection structure to the daemon and a list of
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  cluster-by: {}
- fetch: {{{ type=id_list,                arguments={}},             label=ids      },
-         {{ type=value_list,             arguments={}},             label=artists  },
-         {{ type=value_list,             arguments={field=album}},  label=albums   },
-         {{ type=value_list,             arguments={field=title}},  label=titles   },
-         {{ type=source_value_list_dict, arguments={field=size}},   label=datasize }}
+ fetch: {{ spec={ type=id_list,                arguments={}            }, label=ids      },
+         { spec={ type=value_list,             arguments={}            }, label=artists  },
+         { spec={ type=value_list,             arguments={field=album} }, label=albums   },
+         { spec={ type=value_list,             arguments={field=title} }, label=titles   },
+         { spec={ type=source_value_list_dict, arguments={field=size}  }, label=datasize }}
  
  result: {{ ids={113, 141, 1092},
             artists={Evanescence, Evanescence, Within Temptation},
