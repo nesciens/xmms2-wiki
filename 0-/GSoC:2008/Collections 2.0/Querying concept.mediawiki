@@ -62,11 +62,11 @@ The client developer provides a collection structure to the daemon and a list of
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  cluster-by: {}
- fetch: {{ spec={ type=id_list,                arguments={}            }, label=ids      },
-         { spec={ type=value_list,             arguments={}            }, label=artists  },
-         { spec={ type=value_list,             arguments={field=album} }, label=albums   },
-         { spec={ type=value_list,             arguments={field=title} }, label=titles   },
-         { spec={ type=source_value_list_dict, arguments={field=size}  }, label=datasize }}
+ fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
+         { spec={ type=value_list,             arguments={field=artist} }, label=artists  },
+         { spec={ type=value_list,             arguments={field=album}  }, label=albums   },
+         { spec={ type=value_list,             arguments={field=title}  }, label=titles   },
+         { spec={ type=source_value_list_dict, arguments={field=size}   }, label=datasize }}
  
  result: {{ ids={113, 141, 1092},
             artists={Evanescence, Evanescence, Within Temptation},
