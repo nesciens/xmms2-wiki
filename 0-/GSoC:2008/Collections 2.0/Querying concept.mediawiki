@@ -82,8 +82,8 @@ The client developer provides a collection structure to the daemon and an option
  group-by: {artist}
  fetch: {id, artist, album, title, size}
  
- result: {{ id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           size=8286281 },
-          { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          size=8947303 }}
+ result: {{ id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,  size=8286281 },
+          { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth, size=8947303 }}
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  group-by: {}
