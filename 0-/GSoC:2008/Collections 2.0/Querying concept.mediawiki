@@ -1,0 +1,29 @@
+== Querying Concept ==
+
+Querying of metadata would be done in four distinct ways:
+
+=== A. Per medialist entry ===
+
+The client developer provides a collection structure resulting in a medialist to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every entry of the medialist and the rows are in the same order as the medialist.
+
+Note that every cell of the query-result can contain an xmms2-datatype, so that for instance all metadata can be queried in a propdict:
+
+... example ...
+
+=== B. Per id ===
+
+The client developer provides a collection structure to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every id of the resulting collection.
+
+... example ...
+
+=== C. Per "cluster" ===
+
+The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
+
+... example ...
+
+=== D. The legacy way ===
+
+The client developer provides a collection structure to the daemon and an optional list of things ids in a group should have in common, for instance genre, artist or album (the groupby-argument). The daemon then queries the metadata from the sqlite-database, so that there are zero or more rows per group, showing all permutations of the "free" (not used for grouping) properties. If no groupby-list is supplied all requested properties are used for grouping.
+
+... example ...
