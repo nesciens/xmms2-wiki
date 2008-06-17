@@ -97,8 +97,6 @@ Enabling an effect:
 Example of enabling replaygain:
 
   xmms2 config effect.order.0 replaygain
-  xmms2 play
-  xmms2 stop
   xmms2 config replaygain.enabled 1
   xmms2 play
 
