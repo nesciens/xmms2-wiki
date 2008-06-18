@@ -2,17 +2,17 @@
 
 In the new API ordering is done using the order collections operator. Limiting is done using the limit collections operator.
 
-xmmsc_coll_query_mediaset_{id,info}s are provided only for convenience. They could also be achieved using xmmsc_coll_query_medialist_{id,info}s having applied order[type=id,order=ASC](mediaset(coll)) to the collection.
+xmmsc_coll_query_mediaset_{id,info}s are provided only for convenience. They could also be achieved using xmmsc_coll_query_medialist_{id,info}s having applied order[type=id,order=ASC](mediaset(coll)) to the original collection.
 
 === Getting ids ===
-* xmmsc_coll_query_medialist_ids (conn, coll) -- one id per entry
-* xmmsc_coll_query_mediaset_ids (conn, coll) -- every id once, ordered ascending by id
+* xmmsc_coll_query_medialist_ids (conn, coll) - one id per entry
+* xmmsc_coll_query_mediaset_ids (conn, coll) - every id once, ordered ascending by id
 
 === Getting metadata ===
-* xmmsc_coll_query_medialist_infos (conn, coll, fetch) -- one row per entry
-* xmmsc_coll_query_mediaset_infos (conn, coll, fetch) -- every id once, ordered ascending by id
-* xmmsc_coll_query_clustered_infos (conn, coll, fetch, clusterby) -- one row in recursive dicts
+* xmmsc_coll_query_medialist_infos (conn, coll, fetch) - one row per entry
+* xmmsc_coll_query_mediaset_infos (conn, coll, fetch) - every id once, ordered ascending by id
+* xmmsc_coll_query_clustered_infos (conn, coll, fetch, clusterby) - one row in recursive dicts
 
 === For compatibility ===
-* xmmsc_coll_query_ids (conn, coll, order, limit_start, limit_len) -- legacy-style query_ids
-* xmmsc_coll_query_infos (conn, coll, order, limit_start, limit_len, fetch, group) -- legacy style query_infos
+* xmmsc_coll_query_ids (conn, coll, order, limit_start, limit_len) - legacy-style query_ids
+* xmmsc_coll_query_infos (conn, coll, order, limit_start, limit_len, fetch, group) - legacy style query_infos
