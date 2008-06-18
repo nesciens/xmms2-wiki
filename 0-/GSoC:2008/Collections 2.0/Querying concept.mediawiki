@@ -1,10 +1,12 @@
 == Querying Concept ==
 
-Querying of metadata would be done in four distinct ways:
+Querying of metadata will be done in two distinct ways, A and B. For convenience options C and D will also be supported
 
 The collection-patterns are in [[client:sisy|sisy]]-notation.
 
-=== A. Per medialist entry ===
+=== Basic querying ===
+
+==== A. Per medialist entry ====
 
 The client developer provides a collection structure resulting in a medialist to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every entry of the medialist and the rows are in the same order as the medialist.
 
@@ -22,43 +24,25 @@ Note that every cell of the query-result can contain an xmms2-datatype, so that 
           { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          datasize={plugin/id3v2=8947303, plugin/file=8947840} },
           { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} }}
 
-=== B. Per id ===
+==== B. Per cluster ====
 
-The client developer provides a collection structure to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every id of the resulting collection.
-
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- fetch: {{ spec={ type=id,                arguments={}             }, label=id       },
-         { spec={ type=value,             arguments={field=artist} }, label=artist   },
-         { spec={ type=value,             arguments={field=album}  }, label=album    },
-         { spec={ type=value,             arguments={field=title}  }, label=title    },
-         { spec={ type=source_value_dict, arguments={field=size}   }, label=datasize }}
- 
- result: {{ id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           datasize={plugin/id3v2=8286281, plugin/file=8314880} },
-          { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
-          { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          datasize={plugin/id3v2=8947303, plugin/file=8947840} }}
-
-=== C. Per cluster ===
-
-The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
+The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster. If there are n items in the cluster-by argument, the data will be contained in n recursive dicts.
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {{ spec={type=value, arguments={field=artist}}, label=artist, collation=NOCASE }}
+ cluster-by: {{ spec={type=value, arguments={field=artist}}, collation=NOCASE }}
  fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
-         { spec={ type=cluster,                arguments={label=artist} }, label=artist   },
          { spec={ type=value_list,             arguments={field=album}  }, label=albums   },
          { spec={ type=value_list,             arguments={field=title}  }, label=titles   },
          { spec={ type=source_value_list_dict, arguments={field=size}   }, label=datasize }}
  
- result: {{ ids={113, 141},
-            artist=Evanescence,
-            albums={Anywhere But Home, Not For Your Ears},
-            titles={Thoughtless, Taking Over Me (Long)},
-            datasize={plugin/id3v2={5304040, 8286281}, plugin/file={5326558, 8947840}} },
-          { ids={1092},
-            artist=Within Temptation,
-            albums={Mother Earth},
-            titles={Mother Earth},
-            datasize={plugin/id3v2={8947303}, plugin/file={8947840}} }}
+ result: { Evanescence = { ids={113, 141},
+                           albums={Anywhere But Home, Not For Your Ears},
+                           titles={Thoughtless, Taking Over Me (Long)},
+                           datasize={plugin/id3v2={5304040, 8286281}, plugin/file={5326558, 8947840}} },
+           Within Temptation = { ids={1092},
+                                 albums={Mother Earth},
+                                 titles={Mother Earth},
+                                 datasize={plugin/id3v2={8947303}, plugin/file={8947840}} }}
 
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  cluster-by: {}
@@ -74,7 +58,46 @@ The client developer provides a collection structure to the daemon and a list of
             titles={Thoughtless, Taking Over Me (Long), Mother Earth},
             datasize={plugin/id3v2={5304040, 8286281, 8947303}, plugin/file={5326558, 8947840, 8947840}} }}
 
-=== D. The legacy way ===
+ coll: reference[reference=Gothic Metal,namespace=Playlists]
+ cluster-by: {{ spec={type=value, arguments={field=artist} }, collation=NOCASE },
+              { spec={type=value, arguments={field=album}  }, collation=NOCASE },
+              { spec={type=id,    arguments={}             }, collation=NOCASE }}
+ fetch: {{ spec={ type=value,      arguments={field=title} }, label=title    },
+         { spec={ type=value_list, arguments={field=size}  }, label=datasize }}
+ 
+ result: { Evanescence = {
+               Anywhere But Home = {
+                   113 = { title=Thoughtless, datasize={8286281, 8314880} }
+               },
+               Not For Your Ears = {
+                   141 = { title=Taking Over Me (Long), datasize={5304040, 5326558} }
+               }
+           },
+           Within Tempation = {
+               Mother Earth = {
+                   1092 = { title=Mother Earth, datasize={8947303, 8947840} }
+               }
+           }
+         }
+
+=== Functions for convenience ===
+
+==== C. Per id ====
+
+The client developer provides a collection structure to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every id of the resulting collection. The result is ordered ascending by id.
+
+ coll: reference[reference=Gothic Metal,namespace=Playlists]
+ fetch: {{ spec={ type=id,                arguments={}             }, label=id       },
+         { spec={ type=value,             arguments={field=artist} }, label=artist   },
+         { spec={ type=value,             arguments={field=album}  }, label=album    },
+         { spec={ type=value,             arguments={field=title}  }, label=title    },
+         { spec={ type=source_value_dict, arguments={field=size}   }, label=datasize }}
+ 
+ result: {{ id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           datasize={plugin/id3v2=8286281, plugin/file=8314880} },
+          { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
+          { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          datasize={plugin/id3v2=8947303, plugin/file=8947840} }}
+
+==== D. The legacy way ====
 
 The client developer provides a collection structure to the daemon and an optional list of things ids in a group should have in common, for instance genre, artist or album (the groupby-argument). The daemon then queries the metadata from the sqlite-database, so that there are zero or more rows per group, showing all permutations of the "free" (not used for grouping) properties. If no groupby-list is supplied all requested properties are used for grouping.
 
