@@ -7,10 +7,12 @@ xmmsc_coll_query_mediaset_{id,info}s are provided only for convenience. They cou
 === Getting ids ===
 * xmmsc_coll_query_medialist_ids (conn, coll) - one id per entry
 * xmmsc_coll_query_mediaset_ids (conn, coll) - every id once, ordered ascending by id
+* xmmsc_coll_query_medialist_ids_if_ordered (conn, coll1, coll2) - one id per entry of coll1, if coll1 is a medialist, otherwise of coll2
 
 === Getting metadata ===
 * xmmsc_coll_query_medialist_infos (conn, coll, fetch) - one row per entry
 * xmmsc_coll_query_mediaset_infos (conn, coll, fetch) - every id once, ordered ascending by id
+* xmmsc_coll_query_medialist_infos_if_ordered (conn, coll1, coll2, fetch) - one id per entry of coll1, if coll1 is a medialist, otherwise of coll2
 * xmmsc_coll_query_clustered_infos (conn, coll, fetch, clusterby) - one row in recursive dicts
 
 === For compatibility ===
