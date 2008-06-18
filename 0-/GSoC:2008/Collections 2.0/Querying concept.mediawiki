@@ -80,6 +80,41 @@ The client developer provides a collection structure to the daemon and a list of
            }
          }
 
+Or, in a different universe:
+
+ coll: reference[reference=Gothic Metal,namespace=Playlists]
+ cluster-by: [{ spec={type=value, arguments={field=artist} }, collation=NOCASE, label=artist},
+              { spec={type=value, arguments={field=album}  }, collation=NOCASE, label=album },
+              { spec={type=id,    arguments={}             }, collation=NOCASE, label=id }]
+ fetch: [{ spec={ type=value,      arguments={field=title} }, label=title    },
+         { spec={ type=value_list, arguments={field=size}  }, label=datasize }]
+ 
+ result: [
+ { artist = Evanescence,
+   cluster = [
+       { album = Anywhere But Home,
+         cluster = [
+             { id = 113,
+               cluster = { title=Thoughtless, datasize={8286281, 8314880} }
+             } ]
+       },
+       { album = Not For Your Ears,
+         cluster = [
+             { id = 141,
+               cluster = { title=Taking Over Me (Long), datasize={5304040, 5326558} }
+             } ]
+       } ]
+ },
+ { artist = Within Tempation,
+   cluster = [
+       { album = Mother Earth,
+         cluster = [
+             { id = 1092,
+               cluster = { title=Mother Earth, datasize={8947303, 8947840} }
+             } ]
+       } ]
+ } ]
+
 === Functions for convenience ===
 
 ==== C. Per id ====
