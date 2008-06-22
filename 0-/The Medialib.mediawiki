@@ -19,10 +19,8 @@ This also has a very nice side effect: all mediainfo of all songs seen will be s
 * Entire playlists, so they can be easily recalled. (In contrast with trying to find some m3u playlist saved in some obscure place..)
 
 == What can be done with the medialib ==
-See examples of queries: [[Medialib queries]].
 
-* Simple (or complex) SQL queries on the database. (e.g. all albums by a certain artist) The result of the queries are returned to the client for further processing/evaluation.
-* Adding songs to the playlist, from the medialib, using SQL queries as above.
+* Adding songs to the playlist, from the medialib, using [[Collections]]-queries.
 * Saving and reloading entire playlists.
 * For examples of what the Medialib may look like, please try existing media players that implement a similar feature - these are listed on the Wikipedia article [http://en.wikipedia.org/wiki/Comparison_of_media_players#Features Comparison of media players]. (Note the 'Media Database' column of the 'Features' table). Please note, however, that these only provide '''examples''' of media libraries, not replicas of XMMS2's Medialib functionality.
 
@@ -31,12 +29,7 @@ See examples of queries: [[Medialib queries]].
 (''mlib ER diagram goes here'')
 
 == Optimisation ==
-There are various ways query evaluation may be optimised, with the medialib. Certain indexes may be defined to speed up common queries - however the caveat is that common queries may not be known until suitable clients are written after the developer release! Client writers need to be aware that there are various ways of optimising the performance of their SQL queries:
-
-* Writing queries that take advantage of available indexes
-* Joining tables while being aware of sqlite's table joining algorithm (nested loops). Writing equivalent queries in different ways may result in performance variations. (For example ''"select * from t1, t2 ..."'' vs ''"select * from t2, t1 ..."'')
-
-For more information, please see the [http://www.sqlite.org/cvstrac/wiki?p=PerformanceTuning Performance Tuning] and [http://www.sqlite.org/cvstrac/wiki?p=PerformanceConsiderations Performance Considerations] pages on the [http://www.sqlite.org/cvstrac/wiki sqlite wiki].
+There are various ways query evaluation may be optimised, with the medialib. Certain indexes may be defined to speed up common queries - however the caveat is that common queries may not be known until suitable clients are written after the developer release!
 
 == See Also ==
 * [[Component:Medialib]]
