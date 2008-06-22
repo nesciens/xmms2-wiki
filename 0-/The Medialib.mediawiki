@@ -16,7 +16,6 @@ This also has a very nice side effect: all mediainfo of all songs seen will be s
 * Artist, Title, and Album.
 * Genre.
 * Arbitrary stream properties (bitrate, comments, duration, etc).
-* A log of which songs have been played. This can be used for various statistical purposes, for example, finding and playing one's favourite song/album.
 * Entire playlists, so they can be easily recalled. (In contrast with trying to find some m3u playlist saved in some obscure place..)
 
 == What can be done with the medialib ==
