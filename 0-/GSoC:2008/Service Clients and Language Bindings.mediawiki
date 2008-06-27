@@ -1,13 +1,12 @@
 {{GSoCProject
-|student=''enter student name here''
-|mentor=''enter mentor name here''
-|cmilestone=''add link to latest accopmlished milestone here''
-|nmilestone=''add link to next milestone here''
+|student=[[Daniel Chokola]]
+|mentor=[[Daniel Svensson]]
+|cmilestone=
+|nmilestone=
 |description=
-''add description here''
+Service clients allow XMMS2 to implement reusable services that can be easily used by client authors to add functionality to a client. Examples include fetching album art, writing tags back to files, and HAL support. Before service clients, all of these services would have to be reimplemented for every client that would want to use them.
 
 |links=
-
-''add links to other subpages here''
+[http://numbers.xmms.se/~puzzles/sc/]
 
 }}
