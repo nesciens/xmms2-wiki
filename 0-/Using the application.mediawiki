@@ -68,19 +68,19 @@ Play:
 
 Query the medialib database (e.g. your favourite band):
 
-  xmms2 mlib search artist="Kultiration"
+  xmms2 mlib search artist:"Kultiration"
 
 Query the medialib database and add the result to your playlist:
 
-  xmms2 mlib searchadd artist="Kultiration"
+  xmms2 mlib searchadd artist:"Kultiration"
 
 Note that search is case insensitive and that you can use "*" and "?" as wildcards (* being 0 or more wild characters, ? being 0 or 1 wild character):
 
-  xmms2 mlib search artist="red hot*"
+  xmms2 mlib search artist:"red hot*"
 
 Will find all artists that begin with "red hot"
 
-  xmms2 mlib search artist="red?hot"
+  xmms2 mlib search artist:"red?hot"
 
 Will match "redhot" and "red hot".
 
