@@ -3,10 +3,10 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrKosmos | 0.4 DrKosmos]]
+'''Developer''': [[Release:DrLecter | 0.5 DrLecter]]
 
 '''Notes''':
-* DrKosmos was released 2007-11-15,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
+* DrLecter was released 2008-06-15,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 * More up-to-date code can be found <br /> in the [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel.git] tree.
 </div>
