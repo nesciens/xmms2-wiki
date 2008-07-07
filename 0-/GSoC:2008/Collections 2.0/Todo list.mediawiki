@@ -13,7 +13,7 @@
 * Add prefix-matching
 
 
-* Implement in "index" in the idlist virtual table
+* Implement an "index" in the idlist virtual table
 
 
 * Readd DAG-checking
