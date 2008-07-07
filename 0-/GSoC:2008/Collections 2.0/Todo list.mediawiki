@@ -1,11 +1,14 @@
 == Collections 2.0 Todo list ==
 
-* Finish this todo list
+Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority stuff, in normal font normal-priority stuff.
 
 
-* React to value_t discussion
-* Create a Collections 2.0 operator documentation page
-* Work on the querying proposal
+* '''Finish this todo list'''
+
+
+* '''React to value_t discussion'''
+* '''Create a Collections 2.0 operator documentation page'''
+* '''Work on the querying proposal'''
 
 
 * Use strings in the medialib everywhere
@@ -16,37 +19,37 @@
 * Implement an "index" in the idlist virtual table
 
 
-* Readd DAG-checking
+* '''Readd DAG-checking'''
 
 
-* Implement an id-wise operator
+* '''Implement an id-wise operator'''
 * Implement the token-operator
-* Implement a similar-operator (extra)
+* ''Implement a similar-operator (extra)''
 
 
-* Revisit the "is this id in the collection"-function
+* ''Revisit the "is this id in the collection"-function''
 
 
-* Implement global source-preference
-* Implement per collection-node source preference
+* '''Implement global source-preference'''
+* ''Implement per collection-node source preference''
 
 
-* Add default-properties when saving a collection.
-* Allow filters to have no operands + default to universe on saving?
-* Make these properties configureable
+* '''Add default-properties when saving a collection.'''
+* ''Allow filters to have no operands + default to universe on saving?''
+* ''Make these properties configureable''
 
 
-* Change the uniqueness of the medialib table + change the xforms accordingly
+* ''Change the uniqueness of the medialib table + change the xforms accordingly''
 
 
 * Allow all the funky querying (needs value_t!)
-* Maybe use a dict for the collection-attributes?
+* ''Maybe use a dict for the collection-attributes?''
 
 
-* Add a specials namespace
+* ''Add a specials namespace''
 
-* Add proper database updating
-* Add some optimalisations to collquery.c
+* '''Add proper database updating''' (once all is stabilized)
+* Add some optimizations to collquery.c
 
 * Update collparser
 * Do the FIXMEs
