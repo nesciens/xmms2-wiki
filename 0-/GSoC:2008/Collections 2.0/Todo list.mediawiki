@@ -48,5 +48,6 @@
 * Add proper database updating
 * Add some optimalisations to collquery.c
 
+* Update collparser
 * Do the FIXMEs
 * Do the TODOs
