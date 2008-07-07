@@ -45,7 +45,8 @@
 
 * Add a specials namespace
 
-
+* Add proper database updating
 * Add some optimalisations to collquery.c
+
 * Do the FIXMEs
 * Do the TODOs
