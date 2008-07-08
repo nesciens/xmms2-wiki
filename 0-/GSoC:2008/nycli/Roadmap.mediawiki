@@ -8,3 +8,5 @@
 * Discuss with mentor what todo next
 ** Extend parser? Virtual paths?
 ** Aliases?
+* Auto-completion
+** Commands, playlist, spell-correction, etc
