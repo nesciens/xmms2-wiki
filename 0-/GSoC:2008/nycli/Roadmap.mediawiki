@@ -1,0 +1,10 @@
+* Better help system and status command [2008-7-8]
+* Configuration file support [2008-7-10]
+* Review code and FIXMES [2008-7-11]
+* '''''MILESTONE'''''
+
+
+* Collections operations
+* Discuss with mentor what todo next
+** Extend parser? Virtual paths?
+** Aliases?
