@@ -1,13 +1,19 @@
 {{GSoCProject
-|student=''enter student name here''
-|mentor=''enter mentor name here''
-|cmilestone=''add link to latest accopmlished milestone here''
-|nmilestone=''add link to next milestone here''
+|student=[[user:greafine|Igor Ribeiro de Assis]]
+|mentor=[[user:theefer|SÃ©bastien Cevey]]
+|cmilestone=[[Summer of Code 2008/nycli/Async-Sync mode|Async-sync mode]]
+|nmilestone=[[Summer of Code 2008/nycli/Configuration file support|Configuration file support]]
 |description=
-''add description here''
+
+Finish the development of the new official CLI. Nycli aims at
+providing a very powerful command-line interface, and new ideas
+are always welcome! The base code is ready, but not all commands
+are yet implemented, options must be added, along with
+configuration file support, advanced search pattern, etc.
 
 |links=
 
-''add links to other subpages here''
+*[[Summer of Code 2008/nycli/Roadmap|Roadmap]]
+*[[New_korving_CLI|New Korving CLI]]
 
 }}
