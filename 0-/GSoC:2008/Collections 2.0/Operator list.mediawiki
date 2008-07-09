@@ -19,49 +19,52 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Complement
 | type=XMMS_COLLECTION_TYPE_COMPLEMENT
-| result=
-| attributes=
-| operands=
+| result=All mediaids in medialibrary, except those in the result of the operand.
+| attributes=''none''
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Intersection
 | type=XMMS_COLLECTION_TYPE_INTERSECTION
-| result=
-| attributes=
-| operands=
+| result=The mediaids that appear in all the results of all the operands
+| attributes=''none''
+| operands=Two or more
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Union
 | type=XMMS_COLLECTION_TYPE_UNION
-| result=
-| attributes=
-| operands=
+| result=The mediaids that appear in any of the results of the operands
+| attributes=''none''
+| operands=Two or more
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Concatenation
 | type=XMMS_COLLECTION_TYPE_CONCATENATION
-| result=
-| attributes=
-| operands=
+| result=A medialist of the results of the operands behind each other
+| attributes=''none''
+| operands=Two or more medialists
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=In
 | type=XMMS_COLLECTION_TYPE_IN
-| result=
-| attributes=
-| operands=
+| result=The first operand, but only with the mediaids that are also in the second operand
+| attributes=''none''
+| operands=Exactly two
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Has
 | type=XMMS_COLLECTION_TYPE_HAS
-| result=
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source, where only properties are examined using the given source-preference.
 | attributes=
-| operands=
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon).
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]).
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
