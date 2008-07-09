@@ -4,10 +4,89 @@
 |cmilestone=[[Summer of Code 2008/GenIPC/Milestones#Student_accepted|Student accepted]]
 |nmilestone=[[Summer of Code 2008/GenIPC/Milestones#TBD|TBD]]
 |description=
-''add description here''
+client library code generator that should ease consistent API definition.
 
 |links=
 
-''add links to other subpages here''
+[[Talk:Summer_of_Code_2007/Generated_IPC|Ancient scroll]]
 
+[[Design_of_XMMS2#Client_library|Legacy library]]
+}}
+
+That's temporary place to unload mess from the brain to.
+
+== Q & A == <!-- to make a brain a bit happier -->
+=== Primitives that are NOT generated ===
+* Low-level IPC that knows nothing about XMMS2
+** connect(URL), that should register itself within mainloop too
+** buffered(?) write
+** reading bytes and sending them to upper layer, it's GenIPC work to split stream into packets
+** forcing disconnection
+* Serialization to basic types:
+** Â«int32Â» and Â«uint32Â» â€” should be sent in network-byte order
+** Â«stringÂ» â€” should be sent in UTF-8 encoding
+** Â«dataÂ» â€” some set of bytes that should fit in memory, sending DVD images over XMMS2 is not the best idea
+
+=== Will be legacy API generated? ===
+'''NO''', it makes things too low-level.
+
+=== Protocol changes ===
+Right now every message sent to server looks like:
+{| class="wikitable"
+! data || meaning
+|-
+| Type of Object ID || Reserved integer, almost like IANA's TCP ports.
+|-
+| Method ID || Another hardcoded integer
+|-
+| Object ID || Playlist name, collection name, medialib entry id
+|-
+| payload || some weird bytes
+|}
+
+Well, that's cool, but RESERVED NUMBERS?!
+
+Why am I against reserved numbers? That's easy, XML does not have numbers inside, any text description does not have any reserved numbers inside.
+
+Adding reserved numbers to text description makes things worse, they need maintaining, they should preserve compatibility. Reserved number should be generated and all we have are names of "class", "method" and/or "property". Reserved number should remain persistent in case of reordering entries in XML file.
+
+Destroying reserved numbers and replacing reserved numbers with reserved words makes service clients more natural.
+
+Should it be possible to register two instances of same "service client" in case of name collision?<br>
+No, only one client should do actual work, other clients should listen for an event about the work done, though spying function calls MAY be useful.
+
+=== Object properties ===
+Every value that is read-only from client point of view (e.g. only xmms2d or some service-client-d modifies it directly) may be watched using events.
+
+=== Limiting expressions for numeric properties ===
+ LOGICAL_EXP: 'NOT' LOGICAL_EXP
+            | LOGICAL_EXP "AND" LOGICAL_EXP
+            | LOGICAL_EXP "OR" LOGICAL_EXP
+            | '(' LOGICAL_EXP ')'
+            | 'TRUE'
+            | 'FALSE'
+            | MATH_EXP '<' MATH_EXP
+            | MATH_EXP '>' MATH_EXP
+            | MATH_EXP '<=' MATH_EXP
+            | MATH_EXP '>=' MATH_EXP
+ 
+ MATH_EXP: 'actual_value'
+         | 'actual_time'
+         | 'last_sent_value'
+         | 'last_sent_time'
+         | '(' MATH_EXP ')'
+         | NUMERIC
+         | MATH_EXP '+' MATH_EXP
+         | MATH_EXP '-' MATH_EXP
+         | MATH_EXP '*' MATH_EXP
+         | MATH_EXP '/' MATH_EXP
+ 
+ NUMERIC: /* some integer or floating number */
+
+I hope, nobody wants "sin" and "log".
+
+Maybe I should use BC as a library?
+
+== WIP mark ==
+{{Update
 }}
