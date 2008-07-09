@@ -55,6 +55,9 @@ Destroying reserved numbers and replacing reserved numbers with reserved words m
 Should it be possible to register two instances of same "service client" in case of name collision?<br>
 No, only one client should do actual work, other clients should listen for an event about the work done, though spying function calls MAY be useful.
 
+There are two major types of Xmms2 objects that are manipulated with API: Singleton/Monostate objects (like "stats" or "medialib") and "numerous" objects, e.g. playlists or collections that have some identifier attached.<br>
+It should be possible to apply any function to any numerous object, e.g. it should be possible to shuffle stored playlist (well, xmms2d may return "non implemented" error at first).
+
 === Object properties ===
 Every value that is read-only from client point of view (e.g. only xmms2d or some service-client-d modifies it directly) may be watched using events.
 
