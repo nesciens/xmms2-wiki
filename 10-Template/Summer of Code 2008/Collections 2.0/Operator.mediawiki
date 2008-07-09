@@ -3,20 +3,18 @@ __NOEDITSECTION__
 
 {|
 |-
-! style="text-align:left; padding-right: 20px;" | Type&nbsp;identifier
-| <code>
-{{{type}}}
-</code>
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Type&nbsp;identifier
+| style="vertical-align:top;" | <code>{{{type}}}</code>
 |-
-! style="text-align:left; padding-right: 20px;" | Result
-|
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Result
+| style="vertical-align:top;" |
 {{{result}}}
 |-
-! style="text-align:left; padding-right: 20px;" | Attributes
-|
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Attributes
+| style="vertical-align:top;" |
 {{{attributes}}}
 |-
-! style="text-align:left; padding-right: 20px;" | Operands
-|
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Operands
+| style="vertical-align:top;" |
 {{{operands}}}
 |}
