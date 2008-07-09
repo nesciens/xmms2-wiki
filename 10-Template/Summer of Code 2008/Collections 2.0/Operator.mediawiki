@@ -1,0 +1,17 @@
+__NOEDITSECTION__
+==={{{name}}}===
+
+{|
+|-
+! style="text-align:left; padding-right: 20px;" | Type identifier
+| <code>{{{type}}}</code>
+|-
+! style="text-align:left; padding-right: 20px;" | Result
+| {{{result}}}
+|-
+! style="text-align:left; padding-right: 20px;" | Attributes
+| {{{attributes}}}
+|-
+! style="text-align:left; padding-right: 20px;" | Operands
+| {{{operands}}}
+|}
