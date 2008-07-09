@@ -19,7 +19,7 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Complement
 | type=XMMS_COLLECTION_TYPE_COMPLEMENT
-| result=All mediaids in medialibrary, except those in the result of the operand.
+| result=All mediaids in medialibrary, except those in the operand.
 | attributes=''none''
 | operands=Exactly one
 }}
@@ -62,25 +62,34 @@
 | result=The operand, but only with the mediaids that have a property with a given name, as well as a given source, where only properties are examined using the given source-preference.
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
-* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon).
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]).
+* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon).  If this is not specified the source of the property is not taken into account.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Id
 | type=XMMS_COLLECTION_TYPE_ID
-| result=
+| result=The operand, but only with the mediaids for which id <code>[operation]</code> <code>[value]</code> (e.g. id = 100, id &lt;= 55) is true
 | attributes=
-| operands=
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code> and <code>!=</code>. The default is <code>=</code>
+* <code>value</code>: A number
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Full-order
 | type=XMMS_COLLECTION_TYPE_FULLORDER
-| result=
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for with the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
-| operands=
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code>, <code>!=</code> and <code>prefix</code>. The default is <code>=</code>.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
+* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -88,7 +97,7 @@
 | type=XMMS_COLLECTION_TYPE_MATCH
 | result=
 | attributes=
-| operands=
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -96,7 +105,7 @@
 | type=XMMS_COLLECTION_TYPE_TOKEN
 | result=
 | attributes=
-| operands=
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -104,7 +113,7 @@
 | type=XMMS_COLLECTION_TYPE_DATE
 | result=
 | attributes=
-| operands=
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -112,7 +121,7 @@
 | type=XMMS_COLLECTION_TYPE_IDLIST
 | result=
 | attributes=
-| operands=
+| operands=Zero or one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -120,7 +129,7 @@
 | type=XMMS_COLLECTION_TYPE_ORDER
 | result=
 | attributes=
-| operands=
+| operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -128,7 +137,7 @@
 | type=XMMS_COLLECTION_TYPE_LIMIT
 | result=
 | attributes=
-| operands=
+| operands=Exactly one (a medialist)
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -136,5 +145,5 @@
 | type=XMMS_COLLECTION_TYPE_MEDIASET
 | result=
 | attributes=
-| operands=
+| operands=Exactly one
 }}
