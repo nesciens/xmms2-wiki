@@ -1,5 +1,5 @@
 __NOEDITSECTION__
-==={{{name}}}===
+=={{{name}}}==
 
 {|
 |-
