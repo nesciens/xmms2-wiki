@@ -12,6 +12,9 @@ Collections are xmms2 medialib querying interface. The current implementation ha
 *[[Summer of Code 2008/Collections 2.0/Querying concept|A concept for querying metadata]]
 *[[Summer of Code 2008/Collections 2.0/Query API proposal|Query API proposal]]
 *[[Summer of Code 2008/Collections 2.0/Todo list|Todo list]]
+
+
 *[[Summer of Code 2008/Collections 2.0/Operator list|Operator list]]
+*[[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]
 
 }}
