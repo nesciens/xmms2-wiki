@@ -1,0 +1,137 @@
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Universe
+| type=XMMS_COLLECTION_TYPE_UNIVERSE
+| result=All mediaids in the medialibrary
+| attributes=''none''
+| operands=''none''
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Reference
+| type=XMMS_COLLECTION_TYPE_REFERENCE
+| result=All mediaids in the collection identified by the <code>namespace</code> and <code>reference</code> attributes
+| attributes=
+* <code>namespace</code>: The namespace of the referenced collection, e.g. <code>Playlists</code> or <code>Collections</code>
+* <code>reference</code>: The name of the referenced, e.g. <code>Muse</code>, <code>Never Played</code>, <code>That grand Opeth album</code> or just <code>Default</code>
+| operands=''none'' (except on the daemon-side, where the referenced collection can be attached as an operand to the reference-operator)
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Complement
+| type=XMMS_COLLECTION_TYPE_COMPLEMENT
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Intersection
+| type=XMMS_COLLECTION_TYPE_INTERSECTION
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Union
+| type=XMMS_COLLECTION_TYPE_UNION
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Concatenation
+| type=XMMS_COLLECTION_TYPE_CONCATENATION
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=In
+| type=XMMS_COLLECTION_TYPE_IN
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Has
+| type=XMMS_COLLECTION_TYPE_HAS
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Id
+| type=XMMS_COLLECTION_TYPE_ID
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Full-order
+| type=XMMS_COLLECTION_TYPE_FULLORDER
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Match
+| type=XMMS_COLLECTION_TYPE_MATCH
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Token
+| type=XMMS_COLLECTION_TYPE_TOKEN
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Date
+| type=XMMS_COLLECTION_TYPE_DATE
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Idlist
+| type=XMMS_COLLECTION_TYPE_IDLIST
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Order
+| type=XMMS_COLLECTION_TYPE_ORDER
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Limit
+| type=XMMS_COLLECTION_TYPE_LIMIT
+| result=
+| attributes=
+| operands=
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Mediaset
+| type=XMMS_COLLECTION_TYPE_MEDIASET
+| result=
+| attributes=
+| operands=
+}}
