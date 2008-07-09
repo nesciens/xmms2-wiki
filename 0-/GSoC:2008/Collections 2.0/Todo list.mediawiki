@@ -22,7 +22,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * '''Readd DAG-checking'''
 
 
-* '''Implement an id-wise operator'''
+* <del>'''Implement an id-wise operator'''</del>
 * Implement the token-operator
 * ''Implement a similar-operator (extra)''
 
