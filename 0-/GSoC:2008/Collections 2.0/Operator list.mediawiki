@@ -80,7 +80,7 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Full-order
 | type=XMMS_COLLECTION_TYPE_FULLORDER
-| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for with the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code>, <code>!=</code> and <code>prefix</code>. The default is <code>=</code>.
@@ -95,55 +95,74 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Match
 | type=XMMS_COLLECTION_TYPE_MATCH
-| result=
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value matching the pattern found in the <code>value</code> attribute, given a collation, where only properties are examined using the given source-preference. The pattern uses the glob-syntax, with the <code>*</code> and <code>?</code> wildcards.
 | attributes=
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
+* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Token
 | type=XMMS_COLLECTION_TYPE_TOKEN
-| result=
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value containing a token for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference. Every positive length substring, containing no whitespace, preceded by the beginning of the string or whitespace, and succeeded by the end of the string or whitespace, is considered a token.
 | attributes=
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code>, <code>!=</code> and <code>prefix</code>. The default is <code>=</code>.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
+* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
-| name=Date
+| name=Date (reserved)
 | type=XMMS_COLLECTION_TYPE_DATE
-| result=
-| attributes=
+| result=''undefined''
+| attributes=''undefined''
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Idlist
 | type=XMMS_COLLECTION_TYPE_IDLIST
-| result=
-| attributes=
+| result=A medialist containing the mediaids in the <code>idlist</code> array found within the operator.
+| attributes=''any''
 | operands=Zero or one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Order
 | type=XMMS_COLLECTION_TYPE_ORDER
-| result=
+| result=A medialist, with the mediaids in the operand sorted according to a value depending on the <code>type</code> attribute and the mediaid. If the operand also is an order operator, then the values generated by that will be used for secondary sorting.
 | attributes=
+* <code>order</code>: <code>ASC</code> or <code>DESC</code> for ascending and descending ordering.
+* <code>collation</code>: A collation to be used when the values are strings
+* <code>type</code>: What kind of value should be retrieved, typically <code>value</code>, <code>field</code>, <code>id</code> or <code>random</code>
+* ''Other attributes depending on the type-attribute''
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Limit
 | type=XMMS_COLLECTION_TYPE_LIMIT
-| result=
+| result=A medialist equal to the operand, but without the first <code>start</code> entries and containing <code>length<code> or fewer entries.
 | attributes=
+* <code>start</code>: an integer, defaulting to 0.
+* <code>length<code>: an integer, defaulting to UINT_MAX.
 | operands=Exactly one (a medialist)
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Mediaset
 | type=XMMS_COLLECTION_TYPE_MEDIASET
-| result=
+| result=A mediaset containing the mediaids in the operand. (Removing duplicates and order)
 | attributes=
 | operands=Exactly one
 }}
