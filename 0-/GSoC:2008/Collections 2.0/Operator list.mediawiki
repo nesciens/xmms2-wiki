@@ -47,7 +47,7 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Union
 | type=XMMS_COLLECTION_TYPE_UNION
-| result=The mediaids that appear in any of the results of the operands
+| result=The mediaids that appear in any of the operands
 | attributes=''none''
 | operands=Two or more
 }}
@@ -55,7 +55,7 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Concatenation
 | type=XMMS_COLLECTION_TYPE_CONCATENATION
-| result=A medialist of the results of the operands behind each other
+| result=A medialist of the operands behind each other
 | attributes=''none''
 | operands=Two or more medialists
 }}
