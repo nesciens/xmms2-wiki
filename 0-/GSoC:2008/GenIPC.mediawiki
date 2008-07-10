@@ -72,6 +72,7 @@ Every value that is read-only from client point of view (e.g. only xmms2d or som
             | MATH_EXP '>' MATH_EXP
             | MATH_EXP '<=' MATH_EXP
             | MATH_EXP '>=' MATH_EXP
+            | MATH_EXP '==' MATH_EXP
  
  MATH_EXP: 'actual_value'
          | 'actual_time'
