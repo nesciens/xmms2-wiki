@@ -1,9 +1,19 @@
+== General operators ==
+
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Universe
 | type=XMMS_COLLECTION_TYPE_UNIVERSE
 | result=All mediaids in the medialibrary
 | attributes=''none''
 | operands=''none''
+}}
+
+{{Summer of Code 2008/Collections 2.0/Operator
+| name=Idlist
+| type=XMMS_COLLECTION_TYPE_IDLIST
+| result=A medialist containing the mediaids in the <code>idlist</code> array found within the operator.
+| attributes=''any''
+| operands=Zero or one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -15,6 +25,8 @@
 * <code>reference</code>: The name of the referenced, e.g. <code>Muse</code>, <code>Never Played</code>, <code>That grand Opeth album</code> or just <code>Default</code>
 | operands=''none'' (except on the daemon-side, where the referenced collection can be attached as an operand to the reference-operator)
 }}
+
+== Combining operators ==
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Complement
@@ -55,6 +67,8 @@
 | attributes=''none''
 | operands=Exactly two
 }}
+
+== Filtering operators ==
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Has
@@ -129,13 +143,7 @@
 | operands=Exactly one
 }}
 
-{{Summer of Code 2008/Collections 2.0/Operator
-| name=Idlist
-| type=XMMS_COLLECTION_TYPE_IDLIST
-| result=A medialist containing the mediaids in the <code>idlist</code> array found within the operator.
-| attributes=''any''
-| operands=Zero or one
-}}
+== 'Medialist' operators ==
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Order
