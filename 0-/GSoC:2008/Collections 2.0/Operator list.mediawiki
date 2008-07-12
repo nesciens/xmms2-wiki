@@ -160,10 +160,10 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Limit
 | type=XMMS_COLLECTION_TYPE_LIMIT
-| result=A medialist equal to the operand, but without the first <code>start</code> entries and containing <code>length<code> or fewer entries.
+| result=A medialist equal to the operand, but without the first <code>start</code> entries and containing <code>length</code> or fewer entries.
 | attributes=
 * <code>start</code>: an integer, defaulting to 0.
-* <code>length<code>: an integer, defaulting to UINT_MAX.
+* <code>length</code>: an integer, defaulting to UINT_MAX.
 | operands=Exactly one (a medialist)
 }}
 
