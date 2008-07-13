@@ -104,7 +104,7 @@ Static methods:
 Object methods:
 * void ->destroy()
 * void ->shuffle()
-* void ->insert(string url, bool recursive = false, int pos = -1)<br>non-encoded URL should be given
+* void ->insert(binstring url, bool recursive = false, int pos = -1)<br>non-encoded URL should be given
 * void ->insert(int track_id, int pos = -1)<br>'''WTF''': that's just a helper, it creates idlist internally
 * void ->insert(collection idlist, int pos = -1)
 * void ->insert(collection coll, list<string> order, int pos = -1)
@@ -157,12 +157,12 @@ Static data members:
 === Medialib ===
 Static methods:
 * string entry_format(property_dict)
-* void add(string url, bool recursive = false)<br>non-encoded URL should be given
+* void add(binstring url, bool recursive = false)<br>non-encoded URL should be given
 * property_dict get_info(int id)
 * void rehash(int id = 0)
-* int get_id(string url)
+* int get_id(binstring url)
 * void erase(int id)
-* void rename(int id, string url)
+* void rename(int id, binstring url)
 * void property_set(int id, string key, int value)
 * void property_set(int id, string source, string key, int value)
 * void property_set(int id, string key, string value)
@@ -180,7 +180,7 @@ Types:
 * dict dentry { path: string, isdir: bool, realpath?: string, ... }
 
 Static methods:
-* list<dentry> browse(string url)
+* list<dentry> browse(binstring url)
 
 === Bindata ===
 Static methods:
