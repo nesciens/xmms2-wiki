@@ -58,9 +58,6 @@ No, only one client should do actual work, other clients should listen for an ev
 There are two major types of Xmms2 objects that are manipulated with API: Singleton/Monostate objects (like "stats" or "medialib") and "numerous" objects, e.g. playlists or collections that have some identifier attached.<br>
 It should be possible to apply any function to any numerous object, e.g. it should be possible to shuffle stored playlist (well, xmms2d may return "non implemented" error at first).
 
-=== Object properties ===
-Every value that is read-only from client point of view (e.g. only xmms2d or some service-client-d modifies it directly) may be watched using events.
-
 === Limiting expressions for numeric properties ===
  LOGICAL_EXP: 'NOT' LOGICAL_EXP
             | LOGICAL_EXP "AND" LOGICAL_EXP
@@ -90,6 +87,50 @@ Every value that is read-only from client point of view (e.g. only xmms2d or som
 I hope, nobody wants "sin" and "log".
 
 Maybe I should use BC as a library?
+
+== Object properties ==
+Property manipulation functions, every function returns new value:
+* numerical types:
+** type add(type X)
+** type sub(type X)
+** type set(type X)
+** type get()
+
+=== Playlists ===
+Static methods:
+* list<string> list()
+* <del>string current()</del><br>it becomes impossible to have two playback streams with different playlist
+* PlaylistObject create(string name)
+Object methods:
+* void ->remove()
+* void ->shuffle()
+* void ->insert(string url, bool recursive = false, int pos = -1)<br>non-encoded URL should be given
+* void ->insert(int track_id, int pos = -1)<br>'''WTF''': that's just a helper, it creates idlist internally
+* void ->insert(collection idlist, int pos = -1)
+* void ->insert(collection coll, list<string> order, int pos = -1)
+* void ->clear(int position)
+* void ->clear()
+* list<int> ->list()
+* void ->sort(list<string> order)
+* void ->move(int old_pos, int new_pos)
+* void ->load()
+Object's data members:
+* int ->position<br>
+
+=== Playback ===
+Types:
+* enumeration status { PLAY, STOP, PAUSE }
+
+Static methods:
+* list<string> list()
+* PlaybackObject create(string name)
+Object's data members:
+* enumeration status ->status<br>status.set(PLAY) while playing ~= tickle(), i.e. forcing decoding the song at <code>Playlist(this->playlist).position</code>
+* string ->playlist
+* int ->timestamp_ms
+* int ->timestamp_samples
+* int ->volume[string channel]
+* <del>int ->current_id</del><br>readonly<br>'''FIXME''': why does it exist?
 
 == WIP mark ==
 {{Update
