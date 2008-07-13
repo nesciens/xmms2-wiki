@@ -102,20 +102,24 @@ Static methods:
 * <del>string current()</del><br>it becomes impossible to have two playback streams with different playlist
 * PlaylistObject create(string name)
 Object methods:
-* void ->remove()
+* void ->destroy()
 * void ->shuffle()
 * void ->insert(string url, bool recursive = false, int pos = -1)<br>non-encoded URL should be given
 * void ->insert(int track_id, int pos = -1)<br>'''WTF''': that's just a helper, it creates idlist internally
 * void ->insert(collection idlist, int pos = -1)
 * void ->insert(collection coll, list<string> order, int pos = -1)
-* void ->clear(int position)
+* void ->erase(int position)
 * void ->clear()
 * list<int> ->list()
 * void ->sort(list<string> order)
 * void ->move(int old_pos, int new_pos)
 * void ->load()
 Object's data members:
-* int ->position<br>
+* int ->position
+
+ xmmsc_result_t *xmmsc_broadcast_playlist_changed (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_playlist_current_pos (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_playlist_loaded (xmmsc_connection_t *c);
 
 === Playback ===
 Types:
@@ -129,9 +133,59 @@ Object's data members:
 * string ->playlist
 * int ->timestamp_ms
 * int ->timestamp_samples
-* int ->volume[string channel]
+* int ->volume[string channel]<br>volume.keys is immutable
 * <del>int ->current_id</del><br>readonly<br>'''FIXME''': why does it exist?
 
-== WIP mark ==
-{{Update
-}}
+ xmmsc_result_t *xmmsc_broadcast_playback_volume_changed (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_playback_status (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_playback_current_id (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_signal_playback_playtime (xmmsc_connection_t *c);
+
+=== Config ===
+Static methods:
+* void register(string key, string default_value)
+
+Static data members:
+* list<string> keys<br>readonly
+* string value[string keys]
+
+ xmmsc_result_t *xmmsc_broadcast_configval_changed (xmmsc_connection_t *c);
+
+=== Stats ===
+{{Update}}
+
+=== Medialib ===
+Static methods:
+* string entry_format(property_dict)
+* void add(string url, bool recursive = false)<br>non-encoded URL should be given
+* property_dict get_info(int id)
+* void rehash(int id = 0)
+* int get_id(string url)
+* void erase(int id)
+* void rename(int id, string url)
+* void property_set(int id, string key, int value)
+* void property_set(int id, string source, string key, int value)
+* void property_set(int id, string key, string value)
+* void property_set(int id, string source, string key, string value)
+* void property_remove(int id, string key)
+* void property_remove(int id, string source, string key)
+
+ xmmsc_result_t *xmmsc_broadcast_medialib_entry_changed (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_medialib_entry_added (xmmsc_connection_t *c);
+
+<code>source</code> defaults to "client/${CLIENT_NAME}"
+
+=== XForm ===
+Types:
+* dict dentry { path: string, isdir: bool, realpath?: string, ... }
+
+Static methods:
+* list<dentry> browse(string url)
+
+=== Bindata ===
+Static methods:
+* string add(binstring buffer)
+* void remove(string hash)
+Static data members:
+* list<string> keys<br>readonly
+* binstring data[string keys]<br>readonly
