@@ -212,3 +212,6 @@ Static methods:
 Static data members:
 * list<string> keys<br>readonly
 * binstring data[string keys]<br>readonly
+
+=== Service client registration API ===
+{{Update}}
