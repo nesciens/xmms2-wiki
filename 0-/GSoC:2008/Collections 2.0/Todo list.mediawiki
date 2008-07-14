@@ -7,7 +7,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * '''React to value_t discussion'''
-* '''Create a Collections 2.0 operator documentation page'''
+* <del>'''Create a Collections 2.0 operator documentation page'''</del>
 * '''Work on the querying proposal'''
 
 
