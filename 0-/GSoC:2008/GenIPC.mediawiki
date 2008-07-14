@@ -90,17 +90,33 @@ Maybe I should use BC as a library?
 
 == Object properties ==
 Property manipulation functions, every function returns new value:
-* numerical types:
+* numerical:
 ** type add(type X)
 ** type sub(type X)
 ** type set(type X)
 ** type get()
+* list<T>:
+** int length<br>watchable, is numerical property
+* map<K, V>:
+** list<K> keys
+
+Changing sub-value (e.g. map<K, V>[k] = new_v) fires watch functions attached
+to container. For example, that makes possible to watch either all config key-value
+pairs or only equaliser-related ones.
+
+Evey watch function may have some LOGICAL_EXP's attached, every function may
+introduce time-related limits, function watching numerical types can also
+attach value-related limits.<br>
+'''FIXME''': review grammar to limit possible expressions. It's bad idea
+to recheck expression during every iteration, time-related expressions
+should be convertable to timers, value-related expressions can be checked
+on value modification.
 
 === Playlists ===
 Static methods:
 * list<string> list()
 * <del>string current()</del><br>it becomes impossible to have two playback streams with different playlist
-* PlaylistObject create(string name)
+* void create(string name)
 Object methods:
 * void ->destroy()
 * void ->shuffle()
@@ -110,44 +126,51 @@ Object methods:
 * void ->insert(collection coll, list<string> order, int pos = -1)
 * void ->erase(int position)
 * void ->clear()
-* list<int> ->list()
 * void ->sort(list<string> order)
 * void ->move(int old_pos, int new_pos)
 * void ->load()
 Object's data members:
 * int ->position
+* list<int> ->tracklist<br>readonly
 
  xmmsc_result_t *xmmsc_broadcast_playlist_changed (xmmsc_connection_t *c);
  xmmsc_result_t *xmmsc_broadcast_playlist_current_pos (xmmsc_connection_t *c);
+watching Playlist(name)->tracklist, Playlist(name)->position
+
  xmmsc_result_t *xmmsc_broadcast_playlist_loaded (xmmsc_connection_t *c);
+is moved to Playback(name)->playlist
 
 === Playback ===
 Types:
 * enumeration status { PLAY, STOP, PAUSE }
 
 Static methods:
-* list<string> list()
-* PlaybackObject create(string name)
+* void create(string name)
+
+Static data members:
+* list<string> ->list
+
 Object's data members:
 * enumeration status ->status<br>status.set(PLAY) while playing ~= tickle(), i.e. forcing decoding the song at <code>Playlist(this->playlist).position</code>
 * string ->playlist
 * int ->timestamp_ms
 * int ->timestamp_samples
-* int ->volume[string channel]<br>volume.keys is immutable
-* <del>int ->current_id</del><br>readonly<br>'''FIXME''': why does it exist?
+* map<string, int> ->volume<br>volume.keys is immutable
+* int ->current_id<br>readonly<br>it's used to show the track that is REALLY playing, e.g. current playlist and playlist position could be changed while the track is playing, but playing new track was not enforced, so it's stored here
 
  xmmsc_result_t *xmmsc_broadcast_playback_volume_changed (xmmsc_connection_t *c);
  xmmsc_result_t *xmmsc_broadcast_playback_status (xmmsc_connection_t *c);
- xmmsc_result_t *xmmsc_broadcast_playback_current_id (xmmsc_connection_t *c);
  xmmsc_result_t *xmmsc_signal_playback_playtime (xmmsc_connection_t *c);
+ xmmsc_result_t *xmmsc_broadcast_playback_current_id (xmmsc_connection_t *c);
+watching Playback(name)->volume[channel], Playback(name)->timestamp_ms,
+Playback(name)->status, Playback(name)->current_id
 
 === Config ===
 Static methods:
 * void register(string key, string default_value)
 
 Static data members:
-* list<string> keys<br>readonly
-* string value[string keys]
+* map<string, string> value
 
  xmmsc_result_t *xmmsc_broadcast_configval_changed (xmmsc_connection_t *c);
 
