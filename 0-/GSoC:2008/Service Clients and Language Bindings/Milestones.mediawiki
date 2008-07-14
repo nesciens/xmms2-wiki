@@ -7,19 +7,26 @@
 
 == Bang Out New API ==
 * Services are registered as a whole, not method-by-method.
-* Service methods will use the new xmmsc_value_t where applicable instead of using xmmsc_result_t. 
+* Service methods will use the new ''xmmsc_value_t'' where applicable instead of using ''xmmsc_result_t''. 
 * No need to provide remove/unset functionality as services will provide static functionality.
+* See [http://numbers.xmms.se/~puzzles/sc/rbsc.rb.txt] and [http://numbers.xmms.se/~puzzles/sc/doc/] for details.
 
-== Make a service_t Available on Client and Server ==
+== Make a ''service_t'' Available on Client and Server ==
 * Previously, a service was referenced by its name and methods were registered directly to the server.
 * Now, methods are added to a service all on the client-side, then sent to the server as one.
 * This has a more logical flow as well as providing some API benefits:
 ** Methods are registered exactly once at the time of service registration. They cannot be registered after a service is already registered, guaranteeing that clients can always use given service methods.
 ** Argument type-checking and similar error checking is done client-side rather than by straining the server. The server is only responsible for passing requests back and forth between service and normal client.
-** A service is referenced by its originating connection. Before, service methods each stored a connection_t, which meant a service could register methods from different connections--probably not a good idea.
+** A service is referenced by its originating connection. Before, service methods each stored an ''xmmsc_connection_t'', which meant a service could register methods from different connections--probably not a good idea.
 
 == Update SCM ==
 * Use the new SC API.
 
 == Merge ==
 * Appease the Merge Gods with sacrifices.
+
+== Bindings ==
+
+== Clients ==
+
+== T-Shirt ==
