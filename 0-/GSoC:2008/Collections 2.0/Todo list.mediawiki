@@ -11,7 +11,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * '''Work on the querying proposal'''
 
 
-* Use strings in the medialib everywhere
+* <del>Use strings in the medialib everywhere</del>
 * Implement NATCOLL
 * Add prefix-matching
 
@@ -48,7 +48,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 * ''Add a specials namespace''
 
-* '''Add proper database updating''' (once all is stabilized)
+* <del>'''Add proper database updating''' (once all is stabilized)</del> Done for now
 * Add some optimizations to collquery.c
 
 * Update collparser
