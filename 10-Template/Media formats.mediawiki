@@ -7,7 +7,6 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 | MP4
 | AVI
 | OGG
-| Quicktime
 | FLAC
 | ASF
 | WAV
@@ -17,7 +16,6 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 | m4a m4p
 | 
 | ogg
-| mov
 | flac
 | asf wma
 | wav
@@ -27,7 +25,6 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 | m4v mp4
 | avi
 | ogm
-| mov
 |
 | wmv
 |
