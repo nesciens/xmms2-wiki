@@ -215,3 +215,6 @@ Static data members:
 
 === Service client registration API ===
 {{Update}}
+
+=== Collections ===
+{{Update}}
