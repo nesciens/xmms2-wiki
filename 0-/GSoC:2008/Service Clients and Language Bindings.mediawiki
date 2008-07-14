@@ -1,8 +1,8 @@
 {{GSoCProject
 |student=[[Daniel Chokola]]
 |mentor=[[Daniel Svensson]]
-|cmilestone=
-|nmilestone=
+|cmilestone=[[Summer of Code 2008/Service Clients and Language Bindings/Milestones#Make a service_t Available on Client and Server|Make a service_t Available]]
+|nmilestone=[[Summer of Code 2008/Service Clients and Language Bindings/Milestones#Update SCM|Update SCM]]
 |description=
 Service clients allow XMMS2 to implement reusable services that can be easily used by client authors to add functionality to a client. Examples include fetching album art, writing tags back to files, and HAL support. Before service clients, all of these services would have to be reimplemented for every client that would want to use them.
 
