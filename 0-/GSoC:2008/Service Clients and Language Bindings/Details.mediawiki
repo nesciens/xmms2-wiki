@@ -1,0 +1,25 @@
+This is a slightly abridged overview and abstract from my original proposal [http://numbers.xmms.se/~puzzles/sc/SoC XMMS2 Service Clients Proposal.pdf]:
+
+== Overview ==
+Service clients are very simple, but very powerful clients which provide
+basic services for use in other clients. They are regular clients, which means they
+connect to and use XMMS2 in the same way as any other client, but they also
+publish methods with which to access their services in other clients. Regular
+clients, or even other service clients, since they are regular clients, too, can call
+these methods and benefit from the services provided.
+
+The idea fits in with the XMMS2 philosophy in that each service client does
+one thing and does it well, much like how the XMMS2 server handles playback and
+mediainfo well while clients focus on a specific user interface. Service clients
+prevent client authors from having to reimplement basic functions in their code by
+using a common implementation. The benefits go beyond this obvious time and
+energy savings and also include an increase in quality of services.
+
+== Abstract ==
+Last year's Summer of Code provided an implementation of the service
+client idea by student Ning Shi and his mentor [[User:Theefer|S&eacute;bastien Cevey]]. As of [[Release:DrLecter|DrLecter]],
+it's still unmerged with the main codebase, there are no language bindings written
+for it, and only some proof-of-concept clients. Service client code will be brought
+back up-to-date, some issues fixed, then merged into the main codebase. Then,
+Ruby bindings will be written. Finally, some service clients will be converted or
+written anew to ease implementation of common features in various clients.
