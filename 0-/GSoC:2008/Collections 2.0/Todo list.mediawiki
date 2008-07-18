@@ -19,7 +19,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * Implement an "index" in the idlist virtual table
 
 
-* '''Readd DAG-checking'''
+* <del>'''Readd DAG-checking'''</del>
 
 
 * <del>'''Implement an id-wise operator'''</del>
