@@ -16,6 +16,10 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * Add prefix-matching
 
 
+* Abolish case-sensitive attribute
+* sed "s|FULLORDER|COMPARE|g"
+
+
 * Implement an "index" in the idlist virtual table
 
 
