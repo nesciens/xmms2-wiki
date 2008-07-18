@@ -34,7 +34,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * ''Implement per collection-node source preference''
 
 
-* '''Add default-properties when saving a collection.'''
+* <del>'''Add default-properties when saving a collection.'''</del> (still double-checked when querying, not for pshuffle/queue, as those are to be abolished)
 * ''Allow filters to have no operands + default to universe on saving?''
 * ''Make these properties configureable''
 
