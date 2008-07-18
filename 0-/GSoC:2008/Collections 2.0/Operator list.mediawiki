@@ -154,7 +154,7 @@
 * <code>collation</code>: A collation to be used when the values are strings.
 * <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
 * <code>type</code>: What kind of value should be retrieved, typically <code>value</code>, <code>field</code>, <code>id</code> or <code>random</code>. The default-value is <code>value</code>.
-* ''Other attributes depending on the type-attribute''
+* <code>field</code>: If <code>type=value</code>, defines which property to order by.
 | operands=Exactly one
 }}
 
