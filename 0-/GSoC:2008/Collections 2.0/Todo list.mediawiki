@@ -35,6 +35,10 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * '''Implement global source-preference'''
+** <del>Change database</del>
+** <del>Use it for collection-queries</del>
+** Use it for medialib_info-variant
+** Have a config-value system to change the priorities
 * ''Implement per collection-node source preference''
 
 
