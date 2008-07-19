@@ -1,5 +1,5 @@
 == Latest quotes ==
-=== 2007-10-13 - fork()? ===
+=== 2008-07-19 - fork()? ===
   [08:56:53][juhovh]: hey!
   [08:56:59][juhovh]: I reproduced
   [08:57:08][puzzles]: with a girl?
