@@ -8,7 +8,8 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 * '''React to value_t discussion'''
 * <del>'''Create a Collections 2.0 operator documentation page'''</del>
-* '''Work on the querying proposal'''
+* <del>'''Work on the querying proposal'''</del>
+* '''Work more on the querying proposal'''
 
 
 * <del>Use strings in the medialib everywhere</del>
