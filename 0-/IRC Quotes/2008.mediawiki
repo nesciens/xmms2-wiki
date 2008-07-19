@@ -1,1 +1,12 @@
-tba
+== Latest quotes ==
+=== 2007-10-13 - fork()? ===
+  [08:56:53][juhovh]: hey!
+  [08:56:59][juhovh]: I reproduced
+  [08:57:08][puzzles]: with a girl?
+  ...
+  [08:57:12][juhovh]: no
+  [08:57:15][juhovh]: not yet
+  ...
+  [08:57:30][juhovh]: not mine
+  ...
+  [08:58:58][puzzles]: poor bastard child :(
