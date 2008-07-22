@@ -1,5 +1,5 @@
 * Better help system [2008-7-8]
-* Configuration file support [2008-7-17]
+* Configuration file support [2008-7-10]
 * Status command [2008-7-23]
 * Review code and FIXMES [2008-7-24]
 * '''''MILESTONE'''''
