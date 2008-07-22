@@ -1,6 +1,11 @@
 "xmms2d uses N% cpu, whereas $otherplayer just uses M%"
 
+This page should be fleshed out to a real guide on how to debug these things.
+
 insert info here about how to
+* output plugin issues?
+** Does it happen with "null" output plugin?
+** Only happens with alsa? Try setting bare hw as device ("xmms2 config alsa.device hw:0" or similar)
 * look at chain (effects, converter).
 * compilation with -O2/-Os  (+ add reasoning why it isn't default)
 * make sure medialib indexer isn't running
