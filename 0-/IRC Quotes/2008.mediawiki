@@ -1,4 +1,16 @@
 == Latest quotes ==
+=== 2008-07-25 - t-shirt ===
+ 10:06 < ~nano-> anders_: yes, i asked you for python, and puzzles for rdoc, you complained, puzzles gave me rdoc.
+ 10:06 < ~nano-> -ENOTIME
+ 10:06 < puzzles> \o/
+ 10:06 < puzzles> but there's a t-shirt in it for me
+ 10:06 < ~nano-> :)
+ 10:06 < ~nano-> puzzles++
+ 10:06 < ~nano-> anders_: You should be a little more like puzzles.
+ 10:07 < puzzles> don't become stupid, though
+ 10:07 < puzzles> keep your intelligence, get more blind obedience
+ 10:08 < anders_> "I generated rdoc, and all I got was this lousy t-shirt"
+
 === 2008-07-19 - fork()? ===
   [08:56:53][juhovh]: hey!
   [08:56:59][juhovh]: I reproduced
@@ -10,7 +22,6 @@
   [08:57:30][juhovh]: not mine
   ...
   [08:58:58][puzzles]: poor bastard child :(
-
 
 == Archived Quotes ==
 * [[IRC Quotes/2005]]
