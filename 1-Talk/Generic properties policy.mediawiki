@@ -1,4 +1,4 @@
- 16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
+16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
                 Because it should preferable be displayed by all clients, 
                 instead of non overridden, and if one only wants to change info 
                 in medialib without commiting it to files it actually has 
@@ -92,4 +92,4 @@
 
 == Scaling up ==
 
-Why shouldn't a client scale an image up? Or is it just a matter of writing the scaled up image to the medialib?
+Why shouldn't a client scale an image up? Or is it just a matter of not writing the scaled up image to the medialib?
