@@ -89,3 +89,7 @@
  17:09 < DraX> anyone else? :)
  17:11 < anders> And I envision that clients will allow specifing custom source 
                 preferences anyway.
+
+== Scaling up ==
+
+Why shouldn't a client scale an image up? Or is it just a matter of writing the scaled up image to the medialib?
