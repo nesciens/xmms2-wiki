@@ -298,9 +298,15 @@ List all the existing collections.
 
 Display a human-readable description of the collection.
 
-==== collection create <name> [pattern] ====
+==== collection create [options] <name> [pattern] ====
 
-Create a new collections. If a pattern is provided, it is used to define the collection. Otherwise, the new collection contains the whole media library.
+Create a new collection. If a pattern is provided, it is used to define the collection. Otherwise, the new collection contains the whole media library.
+
+ Options:
+ -f, --force              Force creation of the collection, overwrite an existing collection if needed.
+ -c, --collection <name>  Copy an existing collection to the new one.
+ -a, --all                Initialize the collection to contain the whole media library (default).
+ -e, --empty              Initialize an empty collection.
 
 ==== collection rename <oldname> <newname> ====
 
