@@ -289,9 +289,105 @@ by a default sequence of properties.
  -o, --order <prop1[,prop2...]>  List of properties to sort by
                                  (prefix by '-' for reverse ordering).
 
-==== collection and server ====
 
-'''TDB'''
+==== collection list ====
+
+List all the existing collections.
+
+==== collection show <name> ====
+
+Display a human-readable description of the collection.
+
+==== collection create <name> [pattern] ====
+
+Create a new collections. If a pattern is provided, it is used to define the collection. Otherwise, the new collection contains the whole media library.
+
+==== collection rename <oldname> <newname> ====
+
+Rename a collection.
+
+==== collection remove <name> ====
+
+Remove a collection.
+
+==== collection config <name> [attrname [attrvalue]] ====
+
+Get or set attributes for the given collection.
+
+If no attribute name or value is provided, list all the attributes.
+If only an attribute name is provided, display the value of the attribute.
+If both attribute name and value are provided, set the new value of the attribute.
+
+
+==== server import [options] <path...> ====
+
+Import new files into the media library.
+
+By default, directories are imported recursively.
+
+ Options:
+ -N, --non-recursive      Do not import directories recursively.
+
+==== server remove <pattern> ====
+
+Remove the matching media from the media library.
+
+Note that this operation cannot be undone and recorded properties might get lost!
+
+==== server rehash [pattern] ====
+
+Rehash (i.e. re-read the metadata) the media matched by the pattern, or the whole media library if no pattern is provided.
+
+==== server config [name [value]] ====
+
+Get or set server configuration values.
+
+If no name or value is provided, list all the configuration values.
+If only a name is provided, display the content of the corresponding configuration value.
+If both a name and a value are provided, set the new content of the configuration value.
+
+==== server property [options] <mid> [name [value]] ====
+
+Get or set properties for a given media.
+
+If no name or value is provided, list all the properties.
+If only a name is provided, display the value of the property.
+If both a name and a value are provided, set the new value of the property.
+
+By default, the value will be used to determine whether it should be saved as a string or an integer. Use the --int or --string flag to override this behaviour.
+
+ Options:
+ -i, --int      Force the value to be treated as an integer.
+ -s, --string   Force the value to be treated as a string.
+ -D, --delete   Delete the selected property.
+
+==== server plugins ====
+
+List the plugins loaded in the server.
+
+==== server volume [options] [value] ====
+
+Get or set the audio volume (in a range of 0-100).
+
+If a value is provided, set the new value of the volume. Otherwise, display the current volume.
+
+By default, the command applies to all audio channels. Use the --channel flag to override this behaviour.
+
+ Options:
+ -c, --channel <name>  Get or set the volume only for one channel.
+
+==== server stats ====
+
+Display statistics about the server: uptime, version, size of the medialib, percentage of unindexed media, etc.
+
+==== server sync ====
+
+Force the saving of collections to the disk (otherwise only performed on shutdown).
+
+==== server shutdown ====
+
+Shutdown the server.
+
 
 === Argument types ===
 
