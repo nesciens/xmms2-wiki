@@ -251,6 +251,7 @@ playlist.
 
  Options:
  -p, --playlist <name>  Rename a different playlist.
+ -f, --force            Force the rename of the collection, overwrite an existing collection if needed.
 
 ==== playlist remove <name> ====
 
@@ -308,9 +309,12 @@ Create a new collection. If a pattern is provided, it is used to define the coll
  -a, --all                Initialize the collection to contain the whole media library (default).
  -e, --empty              Initialize an empty collection.
 
-==== collection rename <oldname> <newname> ====
+==== collection rename [options] <oldname> <newname> ====
 
 Rename a collection.
+
+ Options:
+ -f, --force              Force the rename of the collection, overwrite an existing collection if needed.
 
 ==== collection remove <name> ====
 
