@@ -18,7 +18,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * Abolish case-sensitive attribute
-* sed "s|FULLORDER|COMPARE|g"
+* <del>sed "s|FULLORDER|COMPARE|g"</del>
 
 
 * Implement an "index" in the idlist virtual table
