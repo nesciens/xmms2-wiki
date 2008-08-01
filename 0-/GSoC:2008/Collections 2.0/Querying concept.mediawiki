@@ -6,6 +6,10 @@ The collection-patterns are in [[client:sisy|sisy]]-notation.
 
 === Basic querying ===
 
+For every id it is possible to query metadata field-value-source tuples. Any permutation of these three can be requested (eg. just value, just key, key+value etc.) Some constraints can be imposed on what metadata is retrieved (source-pref, field in ..., value in ..., source in ...). As for each id there can be no more then one row in the result these metadata need to be aggregated (the "aggregate" might return a complex datastructure, such as a list/dict though)
+
+Then there is clustering and several mediaid-rows need to be merged into one cluster row. For this there are also aggregates.
+
 ==== A. Per medialist entry ====
 
 The client developer provides a collection structure resulting in a medialist to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every entry of the medialist and the rows are in the same order as the medialist.
