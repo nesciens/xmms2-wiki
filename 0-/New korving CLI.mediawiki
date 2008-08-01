@@ -306,7 +306,6 @@ Create a new collection. If a pattern is provided, it is used to define the coll
  Options:
  -f, --force              Force creation of the collection, overwrite an existing collection if needed.
  -c, --collection <name>  Copy an existing collection to the new one.
- -a, --all                Initialize the collection to contain the whole media library (default).
  -e, --empty              Initialize an empty collection.
 
 ==== collection rename [options] <oldname> <newname> ====
