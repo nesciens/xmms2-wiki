@@ -40,8 +40,8 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 ** <del>Use it for collection-queries</del>
 ** Use it for medialib_info-variant
 ** <del>Have a config-value system to change the priorities</del>
-** Allow plugins to set default sourcerank values. (Create a function that registers the source if it is not in the mlib, then sets the plugin/[pluginname].sourcerank config if it is an empty string (signifying that the user wants the default or never set a value.))
-** Change the config names from "server.sourcerank", "plugin/[pluginname].sourcerank" and "client/[clientname].sourcerank" to something different.
+** Allow plugins to set default sourcerank values. (Create a function that registers the source if it is not in the mlib, then sets the [pluginname].sourcerank config if it is an empty string (signifying that the user wants the default or never set a value.))
+** <del>Change the config names from "server.sourcerank", "plugin/[pluginname].sourcerank" and "client/[clientname].sourcerank" to something different.</del>
 * ''Implement per collection-node source preference''
 
 
