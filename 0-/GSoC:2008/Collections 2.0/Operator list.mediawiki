@@ -92,8 +92,8 @@
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
-| name=Full-order
-| type=XMMS_COLLECTION_TYPE_FULLORDER
+| name=Compare
+| type=XMMS_COLLECTION_TYPE_COMPARE
 | result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
