@@ -15,6 +15,9 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * <del>Use strings in the medialib everywhere</del>
 * Implement NATCOLL
 * Add prefix-matching
+** <del>For BINARY collation</del>
+** <del>For NOCASE collation</del>
+** For other collations (how is prefix defined for INTCOLL, NATCOLL when ending in numerals?)
 
 
 * Abolish case-sensitive attribute
