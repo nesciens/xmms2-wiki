@@ -5,9 +5,13 @@
 * '''''MILESTONE'''''
 
 
-* Collections operations
+* Collections operations [2008-08-03]
+* Aliases [2008-08-07]
+
+* '''''MILESTONE'''''
+
+
 * Discuss with mentor what todo next
 ** Extend parser? Virtual paths?
-** Aliases?
-* Auto-completion
-** Commands, playlist, spell-correction, etc
+** Auto-completion
+*** Commands, playlist, spell-correction, etc
