@@ -6,6 +6,7 @@
 
 
 * Collections operations [2008-08-03]
+* Add/Remove improvements
 * Aliases [2008-08-07]
 
 * '''''MILESTONE'''''
