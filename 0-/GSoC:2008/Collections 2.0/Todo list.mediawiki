@@ -13,7 +13,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * <del>Use strings in the medialib everywhere</del>
-* Implement NATCOLL
+* <del>Implement NATCOLL</del>
 * Add prefix-matching
 ** <del>For BINARY collation</del>
 ** <del>For NOCASE collation</del>
