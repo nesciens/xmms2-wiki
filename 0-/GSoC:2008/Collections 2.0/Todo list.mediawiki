@@ -56,6 +56,20 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * Allow all the funky querying (needs value_t!)
+** <del>implement query_medialist</del>
+** <del>implement query_clustered</del>
+*** Allow distinct tuples
+*** Allow collations for clustering diction
+*** Allow ordering
+** Aggregates:
+*** <del>implode</del>
+*** <del>min, max, avg</del>
+*** tuple
+*** dict
+** Functions:
+*** <del>url-decode</del>
+*** source-name
+*** source-rank
 * ''Maybe use a dict for the collection-attributes?''
 
 
