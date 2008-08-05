@@ -56,6 +56,8 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * Allow all the funky querying (needs value_t!)
+** Abolish json-like string for requesting. Request using xmmsv_t instead.
+** Better error handling
 ** <del>implement query_medialist</del>
 ** <del>implement query_clustered</del>
 *** Allow distinct tuples
