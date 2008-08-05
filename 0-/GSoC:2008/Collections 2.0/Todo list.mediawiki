@@ -63,9 +63,13 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 *** Allow ordering
 ** Aggregates:
 *** <del>implode</del>
+**** only distinct values
 *** <del>min, max, avg</del>
+*** list
 *** tuple
+*** named-tuple?
 *** dict
+**** only distinct keys
 ** Functions:
 *** <del>url-decode</del>
 *** source-name
