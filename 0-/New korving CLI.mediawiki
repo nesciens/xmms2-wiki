@@ -92,10 +92,9 @@ Without argument, prints the list of commands with description; with
 an argument, it prints the detailed usage of the command.  It is
 equivalent to running ''command -h'' or ''command --help''.
 
-==== quit ====
+==== exit ====
 
-If used in shell-mode, exits the client.  In inline mode, it does not
-do anything.
+If used in shell-mode, exits the client.  In inline mode, it does not do anything.
 
 ==== play [pattern] ====
 
