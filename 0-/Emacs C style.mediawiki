@@ -18,3 +18,9 @@ This is not 100% correct! It doesn't do the correct indentation of multiline sta
  (setq auto-mode-alist 
        (cons '("/home/marco/dev/xmms2.*/.*\\.[ch]$" . xmms2-c-mode)  
  	    auto-mode-alist))
+
+== Correct Indentation and Alignment of Multi-Line Statements ==
+I've written a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this.
+
+It only touches multi-line statements, and preserves whatever
+indentation you were using at the beginning of the statement.
