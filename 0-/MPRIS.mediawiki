@@ -1,6 +1,6 @@
 [[Image:Mpris.png]]
 
-'''''Version 2.0'''''
+'''''Version 1.0'''''
 
 ;MPRIS
 :Media Player Remote Interfacing Specification
@@ -38,6 +38,10 @@ For example:
 * org.mpris.vlc
 * org.mpris.xmms2
 
+=== The Interface ===
+
+All methods must be accessed through the interface '''org.freedesktop.MediaPlayer'''
+
 == The Object Hierarchy ==
 
 * / : Media Player identification
@@ -45,15 +49,6 @@ For example:
 * /Player : Playback control
 
 * /TrackList : [[#"TrackList"|TrackList]] management
-
-=== The Interface ===
-
-Each object has an assigned interface:
-* / is accessed using the interface '''org.freedesktop.MediaPlayer.Root'''
-
-* /Player is accessed using the interface '''org.freedesktop.MediaPlayer.Player'''
-
-* /TrackList is accessed using the interface '''org.freedesktop.MediaPlayer.TrackList'''
 
 == The Methods ==
 
@@ -113,18 +108,6 @@ Each dict entry is organized as follows
   <method name="GetMetadata">
     <arg type="i" direction="in" />
     <arg type="a{sv}" direction="out" />
-  </method>
-
-==== Goto ====
-Immediately stops the current track and start playing the track at given position.
-
-===== Arguments: =====
-* int: Position in the [[#"TrackList"|TrackList]] of the item which should be played.
-
-===== Introspection data: =====
-
-  <method name="Goto">
-    <arg type="i" direction="in" />
   </method>
 
 ==== GetCurrentTrack ====
