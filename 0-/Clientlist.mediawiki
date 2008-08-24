@@ -22,6 +22,7 @@ All current clients should be found here.
 {{ClientTableEntry|exmms2| Graphical/ EWL/EFL | C | in development | usable, but edit makefile, basic functionality }}
 {{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
 {{ClientTableEntry|gkrellxmms2| GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
+{{ClientTableEntry|GNOME Do| GNOME Do plugin| C# | in development | Allows xmms2 to be accessed and controlled by GNOME Do }}
 {{ClientTableEntry|gx2ctl| Gnome x2 control | C | works for her | the Drag'n'Drop client for your girlfriend }}
 {{ClientTableEntry|gx2osd| On-Screen Display (GTK) | C++ | in development | Skinnable on-screen display }}
 {{ClientTableEntry|gxmms2| Graphical / GTK | C | in development | Lightweight, basic player with playlist editor }}
