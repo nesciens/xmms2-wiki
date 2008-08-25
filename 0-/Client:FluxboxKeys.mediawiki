@@ -1,0 +1,23 @@
+== Key Bindings ==
+
+Hi all,
+
+I have been using xmms2 for a couple of days, and as a Fluxbox user, I have set some keybindings for listening to music.
+This is what I added to my ~/.fluxbox/keys
+
+
+  Mod4 97 :ExecCommand xmms2 toggleplay
+  Mod4 99 :ExecCommand xmms2 prev
+  Mod4 105 :ExecCommand xmms2 next
+  Mod4 103 :ExecCommand xmms2 stop
+
+
+I use Win+PgUp , Win+PgDn , Win+Home , Win+End for controlling xmms2. Really simple.
+
+Also, I added the following to my ~/fluxbox/startup:
+
+  [...]
+  xmms2-launcher &
+  wmxmms2 &
+  [...]
+  exec /usr/bin/fluxbox -log "~/.fluxbox/log"
