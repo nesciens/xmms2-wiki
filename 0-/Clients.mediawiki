@@ -86,6 +86,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:LXMusic | LXMusic]] is a very simple player inside the LXDE environment
 * [[Client:bbxmms2menu | bbxmms2menu]] is a blackbox menu with the basic controls
 * [[Client:bbkeysxmms2 | bbkeysxmms2]] a list of suggested shortcut keys for bbkeys
+* [[Client:FluxboxKeys | Fluxbox keys]] a simple list of shortcut keys for ~/.fluxbox/keys, and a way to run xmms2 at startup
 
 = Integration Into Other Applications =
 
