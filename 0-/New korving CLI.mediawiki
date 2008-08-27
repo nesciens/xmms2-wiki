@@ -178,7 +178,7 @@ default, directories are added recursively.
 
  Options:
  -f, --file               Treat the arguments as file paths, not a pattern.
- -P, --pls                Treat the files as playlist files.
+ -P, --pls                Treat the files as playlist files (implies --file)
  -N, --non-recursive      Do not add directories recursively.
  
  -p, --playlist <name>    Add to a given playlist.
@@ -189,6 +189,8 @@ default, directories are added recursively.
  -c, --collection <name>  Add to a given collection.
  -s, --static             Add matching media as a static list of entries,
                           rather than a dynamic filter.
+
+''Note: there's a GUESS_PLS option in configuration file; if set it will add playlist files without -P option''
 
 ''Note: --static might not be needed; add should probably add "all media matching the pattern" to the playlist or the collection, and another (collection) command should be used to "augment" or modify the dynamic pattern of a saved collection.''
 
