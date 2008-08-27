@@ -363,6 +363,8 @@ If no name or value is provided, list all the properties.
 If only a name is provided, display the value of the property.
 If both a name and a value are provided, set the new value of the property.
 
+By default, set operations use client specific source. List and display operations use source-preference. Use the --source option to override this behaviour.
+
 By default, the value will be used to determine whether it should be saved as a string or an integer. Use the --int or --string flag to override this behaviour.
 
  Options:
