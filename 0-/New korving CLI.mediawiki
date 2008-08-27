@@ -178,7 +178,7 @@ default, directories are added recursively.
 
  Options:
  -f, --file               Treat the arguments as file paths, not a pattern.
- -P, --pls                Treat the files as playlist files (implies --file)
+ -P, --pls                Treat the files as playlist files (implies --file.)
  -N, --non-recursive      Do not add directories recursively.
  
  -p, --playlist <name>    Add to a given playlist.
