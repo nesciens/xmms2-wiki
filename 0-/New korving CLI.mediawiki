@@ -369,6 +369,7 @@ By default, the value will be used to determine whether it should be saved as a 
  -i, --int      Force the value to be treated as an integer.
  -s, --string   Force the value to be treated as a string.
  -D, --delete   Delete the selected property.
+ -S, --source   Select property source.
 
 ==== server plugins ====
 
