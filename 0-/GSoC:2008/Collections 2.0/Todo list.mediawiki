@@ -60,6 +60,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 ** Better error handling
 ** <del>implement query_medialist</del>
 ** <del>implement query_clustered</del>
+*** Change syntax to avoid ambiguity
 *** Allow distinct tuples
 *** Allow collations for clustering diction
 *** Allow ordering
