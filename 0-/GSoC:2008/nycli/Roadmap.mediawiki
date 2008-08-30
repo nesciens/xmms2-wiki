@@ -10,9 +10,9 @@
 * '''''MILESTONE'''''
 
 
+* Aliases [2008-08-18]
 * Add/Remove improvements
 * Globbing
-* Aliases
 * '''''MILESTONE'''''
 
 
