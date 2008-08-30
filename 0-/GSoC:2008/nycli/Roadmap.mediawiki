@@ -4,14 +4,17 @@
 * Review code and FIXMES [2008-7-24]
 * '''''MILESTONE'''''
 
+
 * Collections operations [2008-08-03]
 * Server operations
 * '''''MILESTONE'''''
+
 
 * Add/Remove improvements
 * Globbing
 * Aliases
 * '''''MILESTONE'''''
+
 
 * Discuss with mentor what todo next
 ** Extend parser? Virtual paths?
