@@ -89,8 +89,11 @@ current song, etc.
 ==== help [command] ====
 
 Without argument, prints the list of commands with description; with
-an argument, it prints the detailed usage of the command.  It is
-equivalent to running ''command -h'' or ''command --help''.
+an argument, it prints the detailed usage of the command. If command is an alias print alias definition.
+It is equivalent to running ''command -h'' or ''command --help''.
+
+ Options:
+  -a, --alias List aliases, or alias definition.
 
 ==== exit ====
 
