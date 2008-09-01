@@ -7,7 +7,7 @@
 * Network transparency means you can run and control XMMS2 remotely, (e.g. run XMMS2 on your 'media box' and control it over network using a bluetooth-enabled PDA (TCP) - see [[Mobile platforms]])
 
 ;[[Media formats | Wide format support]] :
-Play '''mp3''', '''vorbis''', '''aac''', alac, wma, mac, sid, mod, wav, '''flac''', mpc, speex files. 
+Play '''mp3''', '''vorbis''', '''aac''', alac, wma, mac, sid, mod, wav, '''flac''', mpc, speex, wavpack, tta and shn files. 
 
 ;Transports
 Play from local files, over http, samba, '''daap''' and mms.
