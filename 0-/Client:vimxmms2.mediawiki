@@ -1,0 +1,1 @@
+{{Client| name=vimxmms2| author=Xin Wang| website=http://www.vim.org/scripts/script.php?script_id=2363| version=0.3| devlanguage=Python| ui=Vim Plugin| screenshots=None| description=vimxmms2 is a plugin for Vim. It uses Vim's python interface and xmms2's python binding. See the website for details.}}
