@@ -104,7 +104,9 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]] is an [http://www.audioscrobbler.com/ AudioScrobbler] client.
 
+== Vim ==
 
+* [[Client:vimxmms2 | vimxmms2]] is a XMMS2 client for Vim.
 
 = Special Input Methods =
 
