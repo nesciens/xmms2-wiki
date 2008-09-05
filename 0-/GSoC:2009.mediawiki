@@ -1,0 +1,16 @@
+We DO want to participate in GSoC 2009.
+
+Lets collect our thought about earlier years here meanwhile so we know what to do better.
+
+
+How can we improve our application process?
+
+How can we improve our selection process?
+
+Some projects had qualification tasks, is that possible for us?
+
+Creating a document much like http://wiki.python.org/moin/SummerOfCode/Expectations would be a great start.
+
+How do we ensure communication?
+
+Required status updates?
