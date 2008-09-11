@@ -12,6 +12,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * &#10063; Minimode ignores time remains settings
 
 == Distant Future / New Features ==
+* '''Support for multimedia keyboards'''
 * Allow Drag n' Drop reordering of playlist items
 * Have selectable columns to show/hide metadata in medialib 
 * Allow sorting of results by clicking on column heading in medialib
