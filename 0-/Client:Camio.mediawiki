@@ -1,4 +1,4 @@
-{{Client| name=Camio| author=plb? | website=[http://www.boxwhore.org/modules/wfdownloads/singlefile.php?cid=14&lid=322]| version=''?''| devlanguage=Python| ui=GTK2| screenshots=[http://www.boxwhore.org/modules/wfdownloads/images/screenshots/tmp.jpg tmp.jpg]| description=This is a small xmms2 dock written in python and pygtk. More features will come in future versions.
+{{Client| name=Camio| author=plb? | website= | version=''?''| devlanguage=Python| ui=GTK2| screenshots= | description=This is a small xmms2 dock written in python and pygtk. More features will come in future versions.
 
 Basic usage so far:
 
