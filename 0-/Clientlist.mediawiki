@@ -10,7 +10,6 @@ All current clients should be found here.
 {{ClientTableEntry|Azrael| Graphical / GTK | C | development stalled | Basic player with nice additions }}
 {{ClientTableEntry|Blastwave| Graphical / GTK | C | in development | Experimental XMMS2 client }}
 {{ClientTableEntry|bluegroove| Graphical / GTK | Ruby | discontinued | Typical player with queueing support }}
-{{ClientTableEntry|Camio| Graphical / GTK | Python | in development | Small dock with basic commands }}
 {{ClientTableEntry|Chalyx| Library | Python | in development | Flexible modular library for XMMS2/MPD clients }}
 {{ClientTableEntry|Cocopapa| Console | C | in development | Complex Collection Pattern Parser }}
 {{ClientTableEntry|Crystalxmms| Graphical | Java | in development | Look based on crystal icons }}
@@ -66,6 +65,7 @@ Please move the following clients according to their actual state!
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
+{{ClientTableEntry|Camio| Graphical / GTK | Python | website unreachable | Small dock with basic commands }}
 {{ClientTableEntry|ixmms2| Irssi Plugin | Perl | website unreachable | Control and query xmms2 within irssi }}
 {{ClientTableEntry|juxtapose| Graphical / GTK | Python | development stalled(?) | very simple, basic player }}
 {{ClientTableEntry|perlamp| ? | ? | Vaporware? | should be a front-end supporting Wxxamp modern skins }}
