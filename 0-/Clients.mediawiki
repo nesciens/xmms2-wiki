@@ -36,7 +36,6 @@ Actually, there are dozens of clients available which try to fit best into this 
 
 You can find lots other players in the [[Clientlist | Client matrix]]. Here are some (not all) other players, which are just good-fitting, or special in some ways:
 
-* [[Client:bluegroove | bluegroove]] fits well into GNOME and provides queueing of songs
 * [[Client:eq | eq]] lets you play with the equalizer if your player doesn't handle it
 * [[Client:Euphoria | Euphoria]] uses the Enlightenment Foundation Libraries
 * [[Client:juxtapose | juxtapose]] is a very simple player which "just works"
