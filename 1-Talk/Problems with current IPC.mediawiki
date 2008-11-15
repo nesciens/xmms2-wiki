@@ -13,7 +13,7 @@ Introducing the convenience type TypedValue:
    type_id : integer,
    value   : Type(type_id)
  }
-and String:
+and string:
  {
    length  : integer,
    value   : char[length] // utf-8 chars, naturally
@@ -30,7 +30,7 @@ XMMS_OBJECT_CMD_ARG_DICT:
 
 XMMS_OBJECT_CMD_ARG_LIST:
 
-Having a multiple typed list is usually a bad idea since, when different types are actually used, an implicit structure that is identified either by order (hard to extend) or type (only one element of each type). Also, saves some space :)
+Having a multiple typed list is usually a bad idea since, when different types are actually used, an implicit structure that is identified either by order (hard to extend) or type (only one element of each type). If a multi-typed list is used, what is probably really desired is a dict or a combination of list and dict.
 
  {
    count : integer // number of entries
