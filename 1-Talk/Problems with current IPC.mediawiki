@@ -19,27 +19,6 @@ and String:
    value   : char[length] // utf-8 chars, naturally
  }
 
-XMMS_OBJECT_CMD_ARG_PROPDICT:
-
-alt1: (probably the way with least redundancy?)
- {
-   count : integer, // number of tuples
-   {
-     source : string,
-     dict   : Dict // See XMMS_OBJECT_CMD_ARG_DICT
-   } [count]
- }
-
-alt2:
- {
-   count: integer, // number of tuples
-   {
-     source      : string,
-     key         : string,
-     typed_value : TypedValue
-   } [count] 
- }
-
 XMMS_OBJECT_CMD_ARG_DICT:
  {
    count : integer, // Number of tuples
@@ -60,6 +39,6 @@ Having a multiple typed list is usually a bad idea since, when different types a
  }
 
 Misc:
-* XMMS_OBJECT_CMD_ARG_UINT32, XMMS_OBJECT_CMD_ARG_STRINGLIST dies.
+* XMMS_OBJECT_CMD_ARG_UINT32 dies.
 * Error packets carries a typed value, perhaps some error type, so that they can look like 'normal' packets, and be handled as such on lower layers.
 * Serialization of types goes symmetric, ie. same data is sent in the same way no matter if it goes to or from the server. One of the directions currently does not use the 'type-tags' or whatever the proper name might be :). It would be really neat to be able to create packet representations in the same way in all situations.
