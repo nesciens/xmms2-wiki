@@ -6,7 +6,7 @@ Winamp classic clone.
 
 === Source ===
 
-There has not yet been an official release, but the source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get the latest snapshot [http://git.xmms.se/snapshot.cgi/promoe.git-snapshot-HEAD.tar.bz2 here]
+There has not yet been an official release, but the source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get the latest snapshot [http://git.xmms.se/?p=promoe.git;a=summary here]
 
 === Dependencies ===
 
