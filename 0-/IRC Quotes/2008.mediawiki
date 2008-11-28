@@ -1,4 +1,9 @@
 == Latest quotes ==
+=== 2008-11-27 - Thanksgiving Day ===
+ 11:55 < ~tru_> todays worst errormessage is awarded python-sqlite3
+ 11:55 < ~tru_> OperationalError: near "?": syntax error
+ 11:55 < ~tru_> thank you dear fuck face.
+
 === 2008-07-25 - t-shirt ===
  10:06 < ~nano-> anders_: yes, i asked you for python, and puzzles for rdoc, you complained, puzzles gave me rdoc.
  10:06 < ~nano-> -ENOTIME
