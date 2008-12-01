@@ -1,0 +1,38 @@
+I think there should be a meeting soon, to clear up some issues.
+
+[[User:Nesciens|Nesciens]] 23:57, 1 December 2008 (UTC)
+
+Points for discussion:
+* Can we make anders' life easier?
+* Chaos with rvsplit-repositories
+** Is it possible to create a separate repository/branch for things like this?
+*** which appears separately on g.x.s/merge/
+*** which never gets rebased
+*** which eventually get merged/rebased with devel (with/without history-rewrite?)
+* merge procedure
+** For large stuff: rebase or merge?
+*** For example coll2 will be painful to rebase onto rvsplit, as a lot of xmmsc_coll has been changed to xmmsv_coll, which means conflict in every other commit. Merge might be less painful if such renaming is done in some pre-merge commit. Also functions need to be updated to rvsplit. Should this be in every patch where such a change is needed, or is one patch after the rebase ok?
+* DrM 
+** content (bug fixes, rvsplit, sc, nycli, coll2?)
+* time line
+** rvsplit
+** sc
+** nycli
+** coll2
+** DrM
+* coll2 remaining issues (more feedback (see ML))
+* There are lots of small bugs. How do we go about them? Can you just push them if you /think/ they're sane?
+* Buildbot
+** Who has fixing power? (Maybe someone other that anders can get is out of its cupboard, to get the config?)
+** Possible to provide binaries in the long run?
+* Who has the power to change the merge-page? is its source available, so that patches can be submitted?
+** Annoying typo: "UNKONWN AUTHOR"
+** Maybe some "this commit is not in devel but in n dev repositories"-section?
+* FOSDEM'09
+** Is there news?
+* SkitIDet
+** karma?
+* Planet
+** A number of feed links are broken
+** Is source available, so that patches can be submitted?
+** Who has editing power?
