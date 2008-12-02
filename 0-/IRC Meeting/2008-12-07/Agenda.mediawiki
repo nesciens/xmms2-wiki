@@ -13,6 +13,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 * Can we relieve anders of some burden?
 ** buildbot
 *** (buildbot is online, not fully configured /nano)
+*** (fantastic! /nesciens)
 ** karma
 ** merging
 ** reviewing
@@ -24,7 +25,8 @@ If you cannot be present, please make sure to edit this page to add your point o
 * merge procedure
 ** For large stuff: rebase or merge?
 *** For example coll2 will be painful to rebase onto rvsplit, as a lot of xmmsc_coll has been changed to xmmsv_coll, which means conflict in every other commit. Merge might be less painful if such renaming is done in some pre-merge commit. Also functions need to be updated to rvsplit. Should this be in every patch where such a change is needed, or is one patch after the rebase ok?
-**** (I belive that was why anders pushed that change as early as possible, separate from rv-split, it's in -devel.git and has been for a long time now /nano)
+**** (I believe that was why anders pushed that change as early as possible, separate from rv-split, it's in -devel.git and has been for a long time now /nano)
+**** (Let me rephrase: Is git merge okay, or is rebase obligatory? If rebase should be done, is it okay to have a section in the history where the code is broken (so that you don't have to hunt down name changes in all commits, and can make a separate namechange commit instead?)? /nesciens)
 * DrM 
 ** content (bug fixes, rvsplit, sc, nycli, coll2?)
 * time line
@@ -38,6 +40,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 * Buildbot
 ** Who has fixing power? (Maybe someone other that anders can get is out of its cupboard, to get the config?)
 *** (as said earlier, buildbot is online /nano)
+*** (as said earlier: great /nesciens)
 ** Possible to provide binaries in the long run?
 * g.x.s/merge
 ** Who can edit?
@@ -54,7 +57,9 @@ If you cannot be present, please make sure to edit this page to add your point o
 * Planet
 ** A number of feed links are broken
 *** (drop a mail with updated links to the ml and i'll fix/nano)
+*** (I dropped a mail / nesciens)
 ** Is source available, so that patches can be submitted?
 *** (source of planet? /nano)
+*** (I have no clue how planet works, so maybe the config? /nesciens)
 ** Who has editing power?
 *** (i have for example /nano)
