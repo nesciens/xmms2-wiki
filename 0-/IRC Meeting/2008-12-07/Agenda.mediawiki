@@ -1,9 +1,20 @@
 I think there should be a meeting soon, to clear up some issues.
 
-[[User:Nesciens|Nesciens]] 23:57, 1 December 2008 (UTC)
+The proposed datetime is Sunday 7 December 2008, 13.00 UTC ([http://www.timeanddate.com/worldclock/fixedtime.html?month=12&day=7&year=2008&hour=13&min=0&sec=0&p1=0&sort=0 click!])
 
-Points for discussion:
-* Can we make anders' life easier?
+
+I do not think the usual status updates are required, as there meeting schedule hasn't been very regular.
+
+If you cannot be present, please make sure to edit this page to add your point of view.
+
+[[User:Nesciens|Nesciens]] 00:15, 2 December 2008 (UTC)
+
+== Points for discussion: ==
+* Can we relieve anders of some burden?
+** buildbot
+** karma
+** merging
+** reviewing
 * Chaos with rvsplit-repositories
 ** Is it possible to create a separate repository/branch for things like this?
 *** which appears separately on g.x.s/merge/
@@ -25,8 +36,10 @@ Points for discussion:
 * Buildbot
 ** Who has fixing power? (Maybe someone other that anders can get is out of its cupboard, to get the config?)
 ** Possible to provide binaries in the long run?
-* Who has the power to change the merge-page? is its source available, so that patches can be submitted?
-** Annoying typo: "UNKONWN AUTHOR"
+* g.x.s/merge
+** Who can edit?
+** is source available, so that patches can be submitted?
+** Typo: "UNKONWN AUTHOR"
 ** Maybe some "this commit is not in devel but in n dev repositories"-section?
 * FOSDEM'09
 ** Is there news?
