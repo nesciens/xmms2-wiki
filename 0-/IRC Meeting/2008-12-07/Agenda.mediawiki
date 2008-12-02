@@ -29,6 +29,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 **** (Let me rephrase: Is git merge okay, or is rebase obligatory? If rebase should be done, is it okay to have a section in the history where the code is broken (so that you don't have to hunt down name changes in all commits, and can make a separate namechange commit instead?)? /nesciens)
 * DrM 
 ** content (bug fixes, rvsplit, sc, nycli, coll2?)
+*** abolish add/insert_encoded methods and move url encoding to the server? (See also bug #2073)
 * time line
 ** rvsplit
 ** sc
