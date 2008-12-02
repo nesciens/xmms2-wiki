@@ -12,6 +12,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 == Points for discussion: ==
 * Can we relieve anders of some burden?
 ** buildbot
+*** (buildbot is online, not fully configured /nano)
 ** karma
 ** merging
 ** reviewing
@@ -23,6 +24,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 * merge procedure
 ** For large stuff: rebase or merge?
 *** For example coll2 will be painful to rebase onto rvsplit, as a lot of xmmsc_coll has been changed to xmmsv_coll, which means conflict in every other commit. Merge might be less painful if such renaming is done in some pre-merge commit. Also functions need to be updated to rvsplit. Should this be in every patch where such a change is needed, or is one patch after the rebase ok?
+**** (I belive that was why anders pushed that change as early as possible, separate from rv-split, it's in -devel.git and has been for a long time now /nano)
 * DrM 
 ** content (bug fixes, rvsplit, sc, nycli, coll2?)
 * time line
@@ -35,18 +37,24 @@ If you cannot be present, please make sure to edit this page to add your point o
 * There are lots of small bugs. How do we go about them? Can you just push them if you /think/ they're sane?
 * Buildbot
 ** Who has fixing power? (Maybe someone other that anders can get is out of its cupboard, to get the config?)
+*** (as said earlier, buildbot is online /nano)
 ** Possible to provide binaries in the long run?
 * g.x.s/merge
 ** Who can edit?
 ** is source available, so that patches can be submitted?
+*** (should be made available at git.xmms.se)
 ** Typo: "UNKONWN AUTHOR"
 ** Maybe some "this commit is not in devel but in n dev repositories"-section?
 * FOSDEM'09
 ** Is there news?
+*** (we're going! without a devroom though/nano)
 * SkitIDet
 ** karma?
 ** mantis?
 * Planet
 ** A number of feed links are broken
+*** (drop a mail with updated links to the ml and i'll fix/nano)
 ** Is source available, so that patches can be submitted?
+*** (source of planet? /nano)
 ** Who has editing power?
+*** (i have for example /nano)
