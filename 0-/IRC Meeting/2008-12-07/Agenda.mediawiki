@@ -14,6 +14,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 ** buildbot
 *** (buildbot is online, not fully configured /nano)
 *** (fantastic! /nesciens)
+*** Just missing a few slaves I think. A box to run slaves on would be nice, they run on a fairly slow computer right now /AW
 ** karma
 ** merging
 ** reviewing
@@ -28,6 +29,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 **** (I believe that was why anders pushed that change as early as possible, separate from rv-split, it's in -devel.git and has been for a long time now /nano)
 **** (Let me rephrase: Is git merge okay, or is rebase obligatory? If rebase should be done, is it okay to have a section in the history where the code is broken (so that you don't have to hunt down name changes in all commits, and can make a separate namechange commit instead?)? /nesciens)
 **** (I just 'rebased' with the renaming (git format-patch; sed s/.../.../g; git am) /nesciens)
+*** For large stuff: Make it small. Anything can be split up and be merged piecemeal. /AW
 * DrM 
 ** content (bug fixes, rvsplit, sc, nycli, coll2?)
 *** abolish add/insert_encoded methods and move url encoding to the server? (See also bug #2073)
