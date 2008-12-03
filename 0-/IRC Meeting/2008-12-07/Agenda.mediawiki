@@ -37,6 +37,8 @@ If you cannot be present, please make sure to edit this page to add your point o
 ** coll2
 ** DrM
 * coll2 remaining issues (more feedback (see ML))
+** Do we want an EMPTY-operator?
+** Which do we want: {LIMIT[start,length]} or {LENGTH[length], OFFSET[offset]} or {LIMIT[start,length,end]} or a combination of those?
 * There are lots of small bugs. How do we go about them? Can you just push them if you /think/ they're sane?
 * Buildbot
 ** Who has fixing power? (Maybe someone other that anders can get is out of its cupboard, to get the config?)
