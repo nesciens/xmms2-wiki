@@ -269,7 +269,7 @@ Return the "media player"'s current capabilities.
 
    <method name="GetCaps">
      <arg type="i" direction="out" />
-   </signal>
+   </method>
 
 RELATED:
 
