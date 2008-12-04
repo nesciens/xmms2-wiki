@@ -30,7 +30,7 @@ See http://www.linuxselfhelp.com/HOWTO/MP3-HOWTO-13.html#ss13.3
 (string) A comment about the work
 
 ==== "rating" ====
-(uint32) A "taste" rate value, out of 5
+(uint32) A "taste" rate value, out of 5. ''0-5 or 1-5?''
 
 ==== "year" ====
 (uint32) The year when the performing was realized, i.e. 2007.
