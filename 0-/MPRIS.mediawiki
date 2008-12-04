@@ -273,7 +273,9 @@ Return the status of "Media Player" as a struct of 4 ints:
    </method>
 
 ==== GetMetadata ====
-Gives all meta data available for the currently played element
+Gives all meta data available for the currently played element.
+
+Guidelines for field names are at http://wiki.xmms2.xmms.se/wiki/MPRIS_Metadata . 
 
   <method name="GetMetadata">
     <arg type="a{sv}" direction="out" />
