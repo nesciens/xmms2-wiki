@@ -70,7 +70,7 @@ Identify the "media player" as in "VLC 0.9.0", "bmpx 0.34.9", "Audacious 1.4.0" 
 ==== Quit ====
 Makes the "Media Player" exit.
  
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Quit">
    </method>
@@ -81,7 +81,7 @@ Returns a struct that represents the version of the MPRIS spec being implemented
 * uint16 major version (Existing API change) 
 * uint16 minor version (API addition)
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="MprisVersion">
      <arg type="(qq)" direction="out"/>
@@ -98,13 +98,15 @@ Each dict entry is organized as follows
 * string: Metadata item name
 * variant: Metadata value.
 
-===== Arguments: =====
+'''Arguments:'''
+
 * int: Position in the [[#"TrackList"|TrackList]] of the item of which the metadata is requested
 
-===== Return value: =====
+'''Return value:'''
+
 * string - variant dict: Metadata.
 
-===== Introspection data: =====
+'''Introspection data:'''
 
   <method name="GetMetadata">
     <arg type="i" direction="in" />
@@ -114,10 +116,11 @@ Each dict entry is organized as follows
 ==== GetCurrentTrack ====
 Return the position of current URI in the [[#"TrackList"|TrackList]] The return value is zero-based, so the position of the first URI in the [[#"TrackList"|TrackList]] is 0. The behavior of this method is unspecified if there are zero elements in the [[#"TrackList"|TrackList]].
 
-===== Return value: =====
+'''Return value:'''
+
 * int: Position in the [[#"TrackList"|TrackList]] of the active element.
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="GetCurrentTrack">
      <arg type="i" direction="out" />
@@ -126,10 +129,11 @@ Return the position of current URI in the [[#"TrackList"|TrackList]] The return 
 ==== GetLength ====
 Number of elements in the [[#"TrackList"|TrackList]]
 
-===== Return value: =====
+'''Return value:'''
+
 * int: Number of elements in the [[#"TrackList"|TrackList]]
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="GetLength">
      <arg type="i" direction="out" />
@@ -138,14 +142,16 @@ Number of elements in the [[#"TrackList"|TrackList]]
 ==== AddTrack ====
 Appends an URI in the [[#"TrackList"|TrackList]].
 
-===== Arguments: =====
+'''Arguments:'''
+
 * string: The uri of the item to append.
 * boolean, TRUE if the item should be played immediately, FALSE otherwise
 
-===== Return value: =====
+'''Return value:'''
+
 * int: 0 means Success
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="AddTrack">
      <arg type="s" direction="in" />
@@ -156,10 +162,11 @@ Appends an URI in the [[#"TrackList"|TrackList]].
 ==== DelTrack ====
 Removes an URI from the [[#"TrackList"|TrackList]].
 
-===== Arguments: =====
+'''Arguments:'''
+
 * int: Position in the tracklist of the item to remove.
 
-===== Introspection data =====
+'''Introspection data:'''
 
    <method name="DelTrack">
      <arg type="i" />
@@ -168,10 +175,11 @@ Removes an URI from the [[#"TrackList"|TrackList]].
 ==== SetLoop ====
 Toggle playlist loop.
 
-===== Arguments: =====
+'''Arguments:'''
+
 * boolean: TRUE to loop, FALSE to stop looping
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="SetLoop">
      <arg type="b" />
@@ -180,10 +188,11 @@ Toggle playlist loop.
 ==== SetRandom ====
 Toggle playlist shuffle / random. It may or may not play tracks only once.
 
-===== Arguments: =====
+'''Arguments:'''
+
 * boolean: TRUE to play randomly / shuffle playlist, FALSE to play normally / reorder playlist
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="SetRandom">
      <arg type="b" />
@@ -194,7 +203,7 @@ Toggle playlist shuffle / random. It may or may not play tracks only once.
 ==== Next ====
 Goes to the next element (What if we're at the end? -- '''NOTE''' ''Nothing terrible needs to happen, the player should just ignore it. However UIs, and maybe not only UIs, can receive a hint as to whether there is a next track using the Caps API'')
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Next">
    </method>
@@ -202,14 +211,15 @@ Goes to the next element (What if we're at the end? -- '''NOTE''' ''Nothing terr
 ==== Prev ====
 Goes to the previous element (what if we're at the beginning? '''See above''')
 
-===== Introspection data: =====
+'''Introspection data:'''
+
    <method name="Prev">
    </method>
 
 ==== Pause ====
 If playing : pause. If paused : unpause
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Pause">
    </method>
@@ -217,7 +227,7 @@ If playing : pause. If paused : unpause
 ==== Stop ====
 Stop playing.
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Stop">
    </method>
@@ -225,7 +235,7 @@ Stop playing.
 ==== Play ====
 If playing : rewind to the beginning of current track, else : start playing.
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Play">
    </method>
@@ -233,10 +243,11 @@ If playing : rewind to the beginning of current track, else : start playing.
 ==== Repeat ====
 Toggle the current track repeat.
 
-===== Arguments: =====
+'''Arguments:'''
+
 * boolean: TRUE to repeat the current track, FALSE to stop repeating.
  
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="Repeat">
      <arg type="b" />
@@ -249,10 +260,11 @@ Return the status of "Media Player" as a struct of 4 ints:
 * Third integer: 0 = Go to the next element once the current has finished playing , 1 = Repeat the current element
 * Fourth integer: 0 = Stop playing once the last element has been played, 1 = Never give up playing
 
-===== Return value: =====
+'''Return value:'''
+
 * (iiii): Status
 
-===== Introspection data: =====
+'''Introspection data:'''
 
    <method name="GetStatus">
    <arg type="(iiii)" direction="out"/>
