@@ -11,8 +11,8 @@
 * [[Release:DrHouse|DrHouse]] - Released 2006-12-02
 * DrILostMyFloppies
 * [[Release:DrJekyll|DrJekyll]] - Released 2007-05-20
-* [[Release:DrKosmos|DrKosmos]] - Release 2007-11-15 (10 years!)
-* DrLecter, DrLivingstone (I presume)
+* [[Release:DrKosmos|DrKosmos]] - Released 2007-11-15 (10 years!)
+* [[Release:DrLecter|DrLecter]] <s>DrLivingstone (I presume)</s> - Released 2008-06-15
 * DrMcCoy, DrMcKay, Dr. Matt Destruction, Dr Mabuse
 * DrNo
 ...
