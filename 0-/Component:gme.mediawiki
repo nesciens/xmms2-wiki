@@ -7,7 +7,11 @@ Adds support for playing various emulated game music audio formats to XMMS2. Thi
 Uses Blargg's Game Music Emulator library to decode.
 
 =Status=
-Support for SPC, NSF, and GBS files.  Properly detects the end of non-looping songs and moves to the next.  Reads most metadata -- reports the genre as the system type (Super Nintendo for SPC files, Nintendo for NSF files, etc).  Playing of subtunes (in NSF and GBS files) is possible but still awkward.  Awaiting approval from xmms2 devs for inclusion.  See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
+Dr Lecter has support for SPC, NSF, and GBS files.  The plugin properly detects the end of non-looping songs and moves to the next.  Reads most metadata -- reports the genre as the system type (Super Nintendo for SPC files, Nintendo for NSF files, etc).  Playing of subtunes (in NSF and GBS files) is possible but still awkward.
+
+Next release will have support for all but the HES, KSS, and VGZ filetypes.  Default song length (in absence of duration data from a file), sample rate, and stereo depth (for certain file types) will be user-configurable (type "xmms2 config_list | grep gme" for a list of config variables).
+
+See [[Notes_from_developing_an_xform_plugin]] for a lot more details.
 
 =Caveats=
 Note that Blargg's library also supports "hes" and "kss" files, but that these require more than one file to be loaded to play a single song -- this is non-trivial in xmms2 and support for these formats may never be implemented.
