@@ -37,6 +37,7 @@ If you cannot be present, please make sure to edit this page to add your point o
 ** rvsplit
 ** sc
 ** nycli
+*** (I can work more on this now I'm on holiday. Upgrade to rv-split, sc, etc. /greafine)
 ** coll2
 ** DrM
 * coll2 remaining issues (more feedback (see ML))
