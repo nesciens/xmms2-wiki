@@ -37,12 +37,12 @@
 
 == Merging of big features ==
 * Anders:
-** should be divided in small bits. If necessary history can be rewritten (as I understand it).
+** code should be divided in small bits. If necessary history can be rewritten (as I (nesciens) understand it).
 ** waf-stuff can be merge is as a whole (because it is an external project)
 ** stuff should hit devel early (even if it means a little less review)
 ** no non-devel reference branch should be necessary
 ** Anders looks at g.x.s/merge daily on workdays. Small stuff is reviewed immediately.
-** Buildbot makes him a bit more sloppy.
+** Buildbot makes Anders a bit more sloppy.
 
 == Transcript ==
 Available off-site: [http://sirius.cine7.net/tmp/xmms2-meeting-2008-12-07]
