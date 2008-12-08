@@ -41,3 +41,6 @@
 ** no non-devel reference branch should be necessary
 ** Anders looks at g.x.s/merge daily on workdays. Small stuff is reviewed immediately.
 ** Buildbot makes him a bit more sloppy.
+
+== Transcript ==
+Available off-site: [http://sirius.cine7.net/tmp/xmms2-meeting-2008-12-07]
