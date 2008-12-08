@@ -21,8 +21,10 @@
 === Mantis-auto-rebasing-thing ===
 * request for thing to automatically import patches from mantis into a special git tree.
 * rebased every time devel changes (if fails: bugnote)
-* theefer looks at mantis api for auto-rebaser
+* theefer looks at mantis api for auto-rebaser (actually there is no sane way to access mantis remotely /theefer)
 * nano will help out with auto-rebaser
+
+Mh I didn't understand the "rebased every time devel changes" part that way, but in any case, a working prototype in Ruby for fetching a patch from Mantis and applying it on a new local Git branch is available in the [http://git.xmms.se/?p=xmms2tools.git;a=summary xmms2tools repository]. --[[User:Theefer|Theefer]] 01:29, 8 December 2008 (UTC)
 
 === Testing framework ===
 * after waf-upgrade nano will dig into cunit-testing
