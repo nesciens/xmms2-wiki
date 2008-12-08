@@ -6,10 +6,10 @@
 
 === Buildbot ===
 * is online
-** '''slaves esp 64-bit and win32 wanted'''
-*** nano believes he can provide one at work soon.
-*** mingw easy to setup if master.cfg available
-** continue off-meeting
+* '''slaves esp 64-bit and win32 wanted'''
+** nano believes he can provide one at work soon.
+** mingw easy to setup if master.cfg available
+* continue off-meeting
 
 === g.x.s/merge ===
 * code at git.0x63.nu
@@ -20,9 +20,11 @@
 
 === Mantis-auto-rebasing-thing ===
 * request for thing to automatically import patches from mantis into a special git tree.
-** rebased every time devel changes (if fails: bugnote)
-** theefer looks at mantis api for auto-rebaser
-** nano will help out with auto-rebaser
+* rebased every time devel changes (if fails: bugnote)
+* theefer looks at mantis api for auto-rebaser
+* nano will help out with auto-rebaser
+
+=== Testing framework ===
 * after waf-upgrade nano will dig into cunit-testing
 
 === Karma ===
