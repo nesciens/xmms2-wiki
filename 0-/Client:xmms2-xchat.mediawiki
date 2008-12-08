@@ -1,0 +1,1 @@
+{{Client| name=xmms2-xchat| author=MiXMAN| website=[http://mixman.res.lt/projects/xmms2-xchat/ xmms2-xchat]| version=[http://mixman.res.lt/projects/xmms2-xchat/xmms2-xchat.tar.gz 0.1]| devlanguage=C| ui=GTK| screenshots=N/A| description=xmms2-xchat is a current playing song announcer plugin for X-Chat and should work with many Operating Systems.}}
