@@ -1,0 +1,43 @@
+== DrM ==
+* Feature freeze on 2009-01-01
+* Whatever is then in devel makes it.
+
+== Tools ==
+
+=== Buildbot ===
+* is online
+** '''slaves esp 64-bit and win32 wanted'''
+*** nano believes he can provide one at work soon.
+*** mingw easy to setup if master.cfg available
+** continue off-meeting
+
+=== g.x.s/merge ===
+* code at git.0x63.nu
+* Anders has stuff for replacement and is already implementing it, will write down his plans.
+* theefer looks at for other review stuff
+* updater currently runs out of anders' cron, so patches need to go through him.
+* nano will help out with g.x.s/merge
+
+=== Mantis-auto-rebasing-thing ===
+* request for thing to automatically import patches from mantis into a special git tree.
+** rebased every time devel changes (if fails: bugnote)
+** theefer looks at mantis api for auto-rebaser
+** nano will help out with auto-rebaser
+* after waf-upgrade nano will dig into cunit-testing
+
+=== Karma ===
+* is online
+
+== FOSDEM'09 ==
+* attending nano: tru, tilman, rafl, nesciens.
+* possibly attending: theefer, eleusis, puzzles, drax, anders
+* tru does organizing.
+
+== Merging of big features ==
+* Anders:
+** should be divided in small bits. If necessary history can be rewritten (as I understand it).
+** waf-stuff can be merge is as a whole (because it is an external project)
+** stuff should hit devel early (even if it means a little less review)
+** no non-devel reference branch should be necessary
+** Anders looks at g.x.s/merge daily on workdays. Small stuff is reviewed immediately.
+** Buildbot makes him a bit more sloppy.
