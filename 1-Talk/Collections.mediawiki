@@ -35,3 +35,43 @@ Those commands are also added regulary to the mlib as entries which then could b
 pause for 180s... 
 
 xforms, xmms2 add tone://freq:duration => tone://0:180000 *thinks*
+
+== A possible implementation for Collections/Playlists. ==
+
+I think implementing collections and playlists like this would be easy:
+
+Two tables: One for songs, one for collections, and one cursor.
+
+SONGS
+
+URL | meta ... 
+
+COLLECTIONS
+
+Name | query_string
+
+How this system would work, is that to VIEW a collection, you look it up, grab the query string and feed it back into SQL, ala:
+
+SELECT into a-temp-table --rest--of--query--string.
+
+Then just view whats in a-temp-table using normal SQL commands.
+
+To play songs, just open a cursor on an SQL statement.
+
+CURSOR URL FROM SONG; (play everything)
+
+CURSOR URL FROM a-temp-table NATURAL JOIN songs ORDER BY Albumname,trackNum 
+
+(play a subset of songs, ordered by album name, then track number)
+
+These two tables, and this cursor are hardcoded, so the names are known to clients. Operations like next and previous just cause XMMS2 to do cursor next and cursor prev, and then start the song.
+
+Playlists are just tables in the form:
+
+| URL | NUMBER |
+
+And an INSERT INTO collections values ('my playlist', 'FROM my-play-list ORDER BY number').
+
+So all XMMS2 needs to do is maintain that system cursor, the current collecton, and an already-played list. If the collection or playlist is changed we do the database update, and reopen the collection, by skipping songs in the already-played-list we prevent replaying the entire playlist from the beginning when songs are added, removed or re-ordered. We reset the already played list whenever the user opens a collection.
+
+XMMS2 collections are just the portion SQL SELECT queries after the column list. If a client program wants to present something else to the client than that client must handle to translation to and from its 'collection defining language' to SQL.
