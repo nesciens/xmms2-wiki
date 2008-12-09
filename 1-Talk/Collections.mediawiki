@@ -75,3 +75,5 @@ And an INSERT INTO collections values ('my playlist', 'FROM my-play-list ORDER B
 So all XMMS2 needs to do is maintain that system cursor, the current collecton, and an already-played list. If the collection or playlist is changed we do the database update, and reopen the collection, by skipping songs in the already-played-list we prevent replaying the entire playlist from the beginning when songs are added, removed or re-ordered. We reset the already played list whenever the user opens a collection.
 
 XMMS2 collections are just the portion SQL SELECT queries after the column list. If a client program wants to present something else to the client than that client must handle to translation to and from its 'collection defining language' to SQL.
+
+-- WarrenWilkinson (how do I get the time date stamp?)
