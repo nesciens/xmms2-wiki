@@ -1,7 +1,6 @@
 Dxmms2 is a shell script that allows you to browse and search current playlist, all playlist and whole medialib. It is handy for integrating to keyboard-shortcut based enviroment.
 
-It uses dmenu [[http://www.suckless.org/programs/dmenu.html]] with multiline patch [[http://bbs.archlinux.org/viewtopic.php?id=54086
-]]. Gentoo ebuild patches can be found [[http://bugs.gentoo.org/show_bug.cgi?id=242886 | here]].
+It uses [http://www.suckless.org/programs/dmenu.html dmenu] with [http://bbs.archlinux.org/viewtopic.php?id=54086 multiline patch]. Gentoo ebuild patches can be found [http://bugs.gentoo.org/show_bug.cgi?id=242886 here].
 
 Usage:
 
