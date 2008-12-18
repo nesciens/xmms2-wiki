@@ -21,8 +21,8 @@ Play button flashing when 30~ secs are left in track, show time left in track, s
 
 Download: http://media.kradradio.com/rb/radiobar.rb
 
-Git: git clone git://24.254.239.184/.git radiobar
-
 Mailinglist post: http://lists.xmms.se/pipermail/xmms2-devel/2007/000447.html
 
 Contact me on irc, nick is oneman.}}
+
+Update: http://github.com/oneman/xmms2-radiobar/tree/master
