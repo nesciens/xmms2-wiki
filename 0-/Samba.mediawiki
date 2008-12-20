@@ -9,3 +9,5 @@ BE CAREFUL...THAT WILL ALLOW EVERYONE TO BROWSE YOUR SHARES...Mabe there is anot
  smb://YourMachine/Yourshare
 for instance with the command line client you can add it typing the following:
  xmms2 radd smb://192.168.1.111/music
+
+You could also use a password-protected share and use the url smb://YourUserName:YourPassword@YourMachine/Yourshare
