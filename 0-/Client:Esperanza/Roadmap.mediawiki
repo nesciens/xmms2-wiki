@@ -13,6 +13,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 
 == Distant Future / New Features ==
 * '''Support for multimedia keyboards'''
+* Support for disabling global keyboard shortcuts. These can interfere with other applications. Would be nice on a per-shortcut granularity.
 * Allow Drag n' Drop reordering of playlist items
 * Have selectable columns to show/hide metadata in medialib 
 * Allow sorting of results by clicking on column heading in medialib
