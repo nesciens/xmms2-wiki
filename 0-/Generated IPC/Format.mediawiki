@@ -1,7 +1,7 @@
 First version
 
-[http://thisnukes4u.net/files/soc/genipcxmlprototype.xml.txt XML Format Prototype]
+[http://thisnukes4u.net/files/soc/xmms2/genipcxmlprototype.xml.txt XML Format Prototype]
 ----
 Second version, more complete and incorporates many more ideas/changes
 
-[http://thisnukes4u.net/files/soc/genipcxmlprototype2.xml.txt XML Format Prototype-ng]
+[http://thisnukes4u.net/files/soc/xmms2/genipcxmlprototype2.xml.txt XML Format Prototype-ng]
