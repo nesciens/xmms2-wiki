@@ -1,0 +1,19 @@
+Can't compile :
+# make
+gcc `pkg-config pidgin xmms2-client xmms2-client-glib --cflags --libs` --shared -O2 -g -g -Wall -Waggregate-return -Wcast-align -Wdeclaration-after-statement -Wendif-labels -Werror-implicit-function-declaration -Wextra -Wno-sign-compare -Wno-unused-parameter -Winit-self -Wmissing-declarations -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wundef -Wp,-D_FORTIFY_SOURCE=2 xmms2-pidgin.c -o xmms2-pidgin.so
+xmms2-pidgin.c: In function â€˜update_song_idchange_cbâ€™:
+xmms2-pidgin.c:99: error: implicit declaration of function â€˜xmmsc_result_get_uintâ€™
+xmms2-pidgin.c:99: warning: nested extern declaration of â€˜xmmsc_result_get_uintâ€™
+xmms2-pidgin.c:113: error: implicit declaration of function â€˜xmmsc_result_get_dict_entry_stringâ€™
+xmms2-pidgin.c:113: warning: nested extern declaration of â€˜xmmsc_result_get_dict_entry_stringâ€™
+xmms2-pidgin.c: In function â€˜xmms2_status_cbâ€™:
+xmms2-pidgin.c:143: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c: In function â€˜toggle_display_status_cbâ€™:
+xmms2-pidgin.c:174: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c: In function â€˜status_changed_cbâ€™:
+xmms2-pidgin.c:195: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c: In function â€˜xmms2_connectâ€™:
+xmms2-pidgin.c:266: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c:267: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c:268: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
+xmms2-pidgin.c:269: warning: passing argument 2 of â€˜xmmsc_result_notifier_set_fullâ€™ from incompatible pointer type
