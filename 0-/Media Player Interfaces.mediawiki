@@ -82,5 +82,8 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 * [http://thread.gmane.org/gmane.comp.video.videolan.vlc.devel/26649 Proposal for a common D-Bus interface for media players] thread
 * [[Talk:Media Player Interfaces]]
 * [http://mpris.rubyforge.org/ Ruby MPRIS client Gem]
+* [http://mpd.wikia.com/wiki/Client:MpDris mpDris, a MPD-to-MPRIS gateway]
+* [http://incise.org/mpris-remote.html mpris-remote, a command line utility to interact with MPRIS-compatible players]
+* [http://incise.org/corn.html Corn, a music daemon that uses DBUS (and mostly MPRIS) as its sole interface]
 
 [[Category:Developer ideas]]
