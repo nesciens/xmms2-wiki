@@ -2,8 +2,7 @@
 
 Put this at the end of your .emacs to follow style guidelines.
 
-This is not 100% correct! It doesn't do the correct indentation of multiline statements!!
-
+For correct indentation of multiline statements, see below.
 
  (defun xmms2-c-mode ()
    "C mode with adjusted defaults for use with the xmms2."
@@ -13,7 +12,6 @@ This is not 100% correct! It doesn't do the correct indentation of multiline sta
    (setq tab-width 4)
    (setq indent-tabs-mode t)
    (setq c-basic-offset 4))
- 
  
  (setq auto-mode-alist 
        (cons '("/home/marco/dev/xmms2.*/.*\\.[ch]$" . xmms2-c-mode)  
