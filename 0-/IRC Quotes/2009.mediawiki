@@ -1,9 +1,9 @@
 == Latest Quotes ==
 === 2009-01-07 - Zharf Actually Provides Support ===
-06:33 -!- lvlefisto [n=corleone@189.152.130.228] has joined #xmms2
-06:33 < lvlefisto> hi, i can't play music when i am in a voice chat with skype
-06:33 < Zharf> your alsa setup sucks
-06:42 < lvlefisto> thanks!
-06:43 < lvlefisto> it seems it is fixed now
-06:43 -!- lvlefisto [n=corleone@189.152.130.228] has left #xmms2 ["Leaving."]
-06:45 < Zharf> O_O
+ 06:33 -!- lvlefisto [n=corleone@189.152.130.228] has joined #xmms2
+ 06:33 < lvlefisto> hi, i can't play music when i am in a voice chat with skype
+ 06:33 < Zharf> your alsa setup sucks
+ 06:42 < lvlefisto> thanks!
+ 06:43 < lvlefisto> it seems it is fixed now
+ 06:43 -!- lvlefisto [n=corleone@189.152.130.228] has left #xmms2 ["Leaving."]
+ 06:45 < Zharf> O_O
