@@ -20,7 +20,48 @@ This is not 100% correct! It doesn't do the correct indentation of multiline sta
  	    auto-mode-alist))
 
 == Correct Indentation and Alignment of Multi-Line Statements ==
-I've written a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this.
+
+Add the following to your .emacs file. Be sure to add the hook to the C-mode you use for coding on XMMS2, and to keep the c-set-offset function.
+
+ ; But special coding guidelines for different projects
+ (defun xmms2-c-mode ()
+   "C mode with adjusted defaults for use with the xmms2."
+   (interactive)
+   (c-mode)
+   (c-set-style "K&R")
+   (setq tab-width 4)
+   (setq indent-tabs-mode t)
+   (setq c-basic-offset 4)
+ 
+   ; Align closing paren with opening paren
+   (c-set-offset 'arglist-close 'c-lineup-arglist-intro-after-paren)
+ 
+   (add-hook 'c-special-indent-hook 'smart-tab-indent-hook))
+ 
+ (defun get-nonempty-context ()
+   (let ((curr-context (car (c-guess-basic-syntax))))
+     (if (or (eq (car curr-context) 'arglist-intro)
+             (eq (car curr-context) 'arglist-cont)
+             (eq (car curr-context) 'arglist-cont-nonempty)
+             (eq (car curr-context) 'arglist-close))
+         curr-context
+       nil)))
+ 
+ (defun smart-tab-indent-hook ()
+   "Fixes indentation to pad with spaces in arglists."
+   (let ((nonempty-ctx (get-nonempty-context)))
+     (if nonempty-ctx
+         (let ((tabbed-columns (+ (point-at-bol)
+                                  (/ (c-langelem-col nonempty-ctx t)
+                                     tab-width)))
+               (orig-column (current-column)))
+           (tabify (point-at-bol) tabbed-columns)
+           (untabify tabbed-columns (point-at-eol))
+           ; editing tabs screws the pointer position
+           (move-to-column orig-column)))))
+
+
+Or you can use a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this.
 
 It only touches multi-line statements, and preserves whatever
 indentation you were using at the beginning of the statement.
