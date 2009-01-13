@@ -39,9 +39,6 @@ See http://www.linuxselfhelp.com/HOWTO/MP3-HOWTO-13.html#ss13.3
 (uint32) When the performing was realized, for precise needs.
 It is represented as epoch, i.e. the number of seconds since Â« 00:00:00 1970-01-01 UTC Â»
 
-==== "mrl" ====
-(string) The URI of the song playing, or if a local file, the file path.  In other words, the URI of the song, with "file://" removed from the beginning if present.
-
 === "arturl" ===
 (string) An URI to an image associated with the work
 
