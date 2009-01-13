@@ -2,6 +2,9 @@ Below is a proposed, minimal list of standard field names with a description of 
 
 === Informational ===
 
+==== "location" ====
+(string) Url to the media (local files are represented as a file:// url) 
+
 ==== "title" ====
 (string) Name
 
