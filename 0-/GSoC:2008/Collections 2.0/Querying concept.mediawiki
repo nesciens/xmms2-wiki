@@ -34,6 +34,267 @@ Note that every cell of the query-result can contain an xmms2-datatype, so that 
 
 The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster. If there are n items in the cluster-by argument, the data will be contained in n recursive dicts.
 
+===== Jan 19 2009 version II (KISS) =====
+
+ Fuck clusters.
+
+ coll = <collection>
+ fetch = list (
+     ...
+     dict (
+         [ "type" = "random" | "metadata" | "id" ] // default: metadata
+
+         // some constraints
+         [ "field" = <string> | list ( <strings> ) ]
+         [ "value" = <string> | list ( <strings> ) ]
+         [ "source" = list ( <strings,ints> ) ]
+         [ "source-pref" = <string> ]
+ 
+         // what to acquire
+         "acquire" = list (
+              [ "id" ]     // if type == metadata || id
+              [ "field" ]  // if type == metadata
+              [ "value" ]  // if type == metadata || random
+              [ "source" ] // if type == metadata
+         )
+     )
+     ...
+ )
+ order = list ( // an entry for each acquired datum
+     ...
+     dict (
+         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ]
+         [ "order" = "ASC" | "DESC" ]
+     )
+     ...
+ )
+ limits = list ( // an integer for each acquired datum
+     ...
+     <integer>
+     ...
+ )
+
+====== Example ======
+ coll = reference[reference=All,namespace=Playlists]
+ fetch = list (
+     dict (
+         "field" = "artist"
+         "acquire" = list ("value")
+     )
+     dict (
+         "field" = "album"
+         "acquire" = list ("value")
+     )
+     dict (
+         "field" = list ("tracknr" "title")
+         "acquire" = list ("id" "field" "value")
+     )
+ )
+ order = NULL
+ limits = NULL
+
+ result = dict (
+     "Sonata Arctica" = dict (
+         "End Of This Chapter" = dict (
+             "1247" = dict (
+                 "tracknr" = list (
+                     "9"
+                 )
+                 "title" = list (
+                     "Victoria's Secret"
+                 )
+             )
+         )
+         "Silence" = dict (
+             "1284" = dict (
+                 "tracknr" = list (
+                     "13"
+                 )
+                 "title" = list (
+                     "The Power Of One"
+                 )
+             )
+         )
+     )
+     "The Used" = dict (
+         "The Used" = dict (
+              "991" = dict (
+                  "tracknr" = list (
+                      "3"
+                  )
+                  "title" = list (
+                      "Bulimic"
+                  )
+              )
+         )
+     )
+ )
+
+====== Example II - 2 random artists + associated albums + ids ======
+ coll = universe
+ fetch = list (
+     dict (
+         "field" = "artist"
+         "acquire" = list ("value")
+     )
+     dict (
+         "field" = "album"
+         "acquire" = list ("value" "id")
+     )
+ )
+ order = list (
+     dict ( "type" = "random")
+ )
+ limits = list (
+     2
+ )
+
+result = dict (
+    "Nirvana" = dict ( ""                          = list ("632" "633" "635")
+                       "In Utero"                  = list ("629")
+                       "MTV Unplugged in New York" = list ("630")
+                       "Nevermind"                 = list ("631")
+                       "Unplugged in New York"     = list ("634") )
+    "Sonata Arctica" = dict ( "Broken" = list (...)
+                              ...
+                              "Winterheart's Guild" = list (...) )
+)
+===== Jan 19 2009 version =====
+
+ coll = <collection>
+ cluster-by = dict (
+     ...
+     <label> = dict (
+ 
+         // some constraints
+         [ "field" = <string> | list ( <strings> ) ]
+         [ "value" = <string> | list ( <strings> ) ]
+         [ "source" = list ( <strings,ints> ) ]
+         [ "source-pref" = <string> ]
+ 
+         // how to determine distinctness
+         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ] // default: NATCOLL
+ 
+         // what to distinct on
+         [ "by" = <function-tree> ] // default: "value"
+     )
+     ...
+ )
+ fetch = dict (
+     ...
+     <label> = dict (
+         [ "type" = "aggregate" | "metadata" | "id" ] // default: metadata
+ 
+         // if type == metadata
+         [ "field" = <string> | list ( <strings> ) ]
+         [ "value" = <string> | list ( <strings> ) ]
+         [ "source" = list ( <strings,ints> ) ]
+         [ "source-pref" = <string> ]
+ 
+         // if type == aggregate
+         "label" = <label>
+ 
+         // specify representation
+         [ "repr" = <aggregate-function-tree> ] //default: "value" if type == metadata
+     )
+     ...
+ )
+ order = list (
+     ...
+     dict (
+         [ "type" = "aggregate" | "metadata" | "id" | "random" ] // default: metadata
+ 
+         // if type == metadata
+         [ "field" = <string> | list ( <strings> ) ]
+         [ "value" = <string> | list ( <strings> ) ]
+         [ "source" = list ( <strings,ints> ) ]
+         [ "source-pref" = <string> ]
+ 
+         // specify representation
+         [ "repr" = <aggregate-function-tree> ] //default: "value" if type == metadata
+ 
+         // how to order
+         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ] // default: NATCOLL
+         [ "order" = "ASC" | "DESC" ] // default: ASC
+     )
+     ...
+ )
+
+====== Example ======
+ coll = reference[reference=All,namespace=Playlists]
+ cluster-by = dict (
+     "artist" = dict (
+         "field" = "artist"
+     )
+ )
+ fetch = (
+     "artist" = dict (
+         "type" = "aggregate"
+         "repr" = dict (
+             "func" = "ucase"
+             "args" = list (
+                 "artist"
+             )
+         )
+     )
+     "metadata" = dict (
+          "type" = "metadata"
+          "field" = list (
+              "album"
+              "title"
+          )
+          "repr" = dict (
+              "func" = "dict"
+              "args" = list (
+                  "field"
+                  dict (
+                      "func" = "dict"
+                      "args" = list (
+                          "value"
+                          "id"
+                      )
+                  )
+              )
+          )
+     )
+ )
+ order = list (
+     dict (
+         "type" = "aggregate"
+         "repr" = "artist"
+         "order" = "DESC"
+     )
+ )
+
+ result = list (
+     dict (
+         "artist" = "SONATA ARCTICA"
+         "metadata" = dict (
+             "album" = dict (
+                 "End Of This Chapter" = 1247
+                 "Silence" = 1284
+             )
+             "title" = dict (
+                 "The Power Of One" = 1284
+                 "Victoria's Secret" = 1247
+             )
+         )
+     )
+     dict (
+         "artist" = "THE USED"
+         "metadata" = dict (
+             "album" = dict (
+                 "The Used" = 991
+             )
+             "title" = dict (
+                 "Bulimic" = 991
+             )
+         )
+     )
+ )
+
+===== Pre-Jan 19 2009 version =====
+
  coll: reference[reference=Gothic Metal,namespace=Playlists]
  cluster-by: {{ spec={type=value, arguments={field=artist}}, collation=NOCASE }}
  fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
