@@ -2,11 +2,12 @@
 
 Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority stuff, in normal font normal-priority stuff.
 
-
 * '''Finish this todo list'''
 
 
-* '''React to value_t discussion'''
+* Prefix does not work with non-ascii characters like Å‚ (in the NATCOLL-collation at least).
+
+
 * <del>'''Create a Collections 2.0 operator documentation page'''</del>
 * <del>'''Work on the querying proposal'''</del>
 * '''Work more on the querying proposal'''
@@ -20,7 +21,7 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 ** For other collations (how is prefix defined for INTCOLL, NATCOLL when ending in numerals?)
 
 
-* Abolish case-sensitive attribute
+* <del>Abolish case-sensitive attribute</del>
 * <del>sed "s|FULLORDER|COMPARE|g"</del>
 
 
@@ -31,11 +32,11 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 
 
 * <del>'''Implement an id-wise operator'''</del>
-* Implement the token-operator
+* <del>Implement the token-operator</del>
 * ''Implement a similar-operator (extra)''
 
 
-* ''Revisit the "is this id in the collection"-function''
+* <del>''Revisit the "is this id in the collection"-function''</del>
 
 
 * <del>'''Implement global source-preference'''</del>
@@ -85,6 +86,6 @@ Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority
 * <del>'''Add proper database updating''' (once all is stabilized)</del> Done for now
 * Add some optimizations to collquery.c
 
-* Update collparser
+* <del>Update collparser</del>
 * Do the FIXMEs
 * Do the TODOs
