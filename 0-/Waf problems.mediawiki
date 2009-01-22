@@ -1,57 +1,10 @@
-=== Version mismatch ===
-
-problem:
-
- 22:23 <Eclipser> Traceback (most recent call last):
- 22:23 <Eclipser>   File "./waf", line 189, in ?
- 22:23 <Eclipser>     if Params.REVISION != REVISION:
- 22:23 <Eclipser> AttributeError: 'module' object has no attribute 'REVISION'
-
-solution:
- 22:25 <tru> rm -rf ~/.waf*
-
 === Stale files ===
-Problem:
-
- [153/191] * cc_link_static : ../src/lib/xmmsutils/strlist.o ../src/lib/xmmsutils/utils_unix.o -> ../src/lib/xmmsutils/libxmmsutils.a
- Traceback (most recent call last):
-  File "/home/andersg/dev/xmms2-devel/waf", line 334, in ?
-    Main()
-  File "/home/andersg/.waf-1.0.1/wafadmin/Scripting.py", line 210, in Main
-    ret = bld.compile()
-  File "/home/andersg/.waf-1.0.1/wafadmin/Build.py", line 201, in compile
-    ret = executor.start()
-  File "/home/andersg/.waf-1.0.1/wafadmin/Runner.py", line 241, in start
-    if not proc.must_run():
-  File "/home/andersg/.waf-1.0.1/wafadmin/Task.py", line 196, in must_run
-    self.m_dep_sig = self.m_scanner.get_signature(self)
-  File "/home/andersg/.waf-1.0.1/wafadmin/Scan.py", line 28, in get_signature
-    ret = self._get_signature(task)
-  File "/home/andersg/.waf-1.0.1/wafadmin/Scan.py", line 74, in _get_signature
-    return self._get_signature_default_strong(task)
-  File "/home/andersg/.waf-1.0.1/wafadmin/Scan.py", line 100, in _get_signature_default_strong
-    for node in task.m_inputs: add_node_sig(node)
-  File "/home/andersg/.waf-1.0.1/wafadmin/Scan.py", line 97, in add_node_sig
-    m.update(tree.m_tstamp_variants[variant][node])
- KeyError: b:/home/andersg/dev/xmms2-devel/src/xmms/sample-gen.o
-
-solution:
-
-Make sure that you don't have any .o .a .c (generated ones) left from your scons install!
+If you've used SCons or older versions of waf it might cause build strangeness.
 
 Suggested ways of doing this:
  git clean -d -x
 or
  cg-clean -dx
-
-=== I changed prefix but it didn't recompile! ===
-Problem: Waf does only generate xmms_defs.h on configuration and doesn't depend on it correctly
-Solution:
-
- ./waf clean
- ./waf build
-
-I am working on a better fix for this.
 
 === I get an undefined symbol and I used --conf-prefix ===
 --conf-prefix prepends the -L and -I to the *FLAGS enviornments, so that when waf tries to use built copies to link binaries, it ends up using the local copies instead.
