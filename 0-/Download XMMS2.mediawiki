@@ -14,7 +14,7 @@ The official XMMS2 Debian packages maintained by [[User:rafl|Florian Ragwitz]]. 
 
  apt-get install xmms2
 
-If you want newer packages for Hardy Heron you can grab it from [[User:bdrung|Benjamin Drung]]'s PPA: https://launchpad.net/~bdrung/+archive
+If you want newer packages for Hardy Heron you can grab it from [[User:bdrung|Benjamin Drung]]'s PPA: https://launchpad.net/~bdrung/+archive/ppa
 
 ; Fedora
 
@@ -61,7 +61,6 @@ Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=98304 ebuild].
 
 If you want to track the current development tree you can use this [http://bugs.xmms2.xmms.se/file_download.php?file_id=394&type=bug ebuild].
 A valid [http://dev.gentoo.org/~ferdy/overlay/eclass/git.eclass git.eclass] file is necessary.
-
 
 == Windows ==
 Getting XMMS2 to build/run on Windows is mostly working, but not all features of XMMS2 are currently available on Windows, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
