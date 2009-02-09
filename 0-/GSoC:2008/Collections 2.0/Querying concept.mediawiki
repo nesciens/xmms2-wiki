@@ -9,6 +9,9 @@ The client developer provides a collection structure to the daemon, then metadat
 
 The developer also specifies a list of things the ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
 
+Informal signature:
+ query_clustered (coll, cluster, fetch, order, start, length)
+
 == Examples ==
 
 === Get a simple representation of the playlist ===
