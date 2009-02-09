@@ -1,61 +1,4 @@
 == Querying Concept ==
-
-Querying of metadata will be done in two distinct ways, A and B. For convenience options C and D will also be supported
-
-The collection-patterns are in [[client:sisy|sisy]]-notation.
-
-=== Basic querying ===
-
-For every id it is possible to query metadata field-value-source tuples. Any combination of these three can be requested (eg. just value, just key, key+value etc.) Some constraints can be imposed on what metadata is retrieved (source-pref, field in ..., value in ..., source in ...).
-
-=== Fetch/Cluster/Order Datatype ===
-This is an informal description of the datatype used in the fetch, cluster, and order arguments below.
-
- dict (
-     "type" = [ "id" | "count" | "random" | "cluster" | "metadata" ]
- )
-
-Notes: "type" = "cluster" is only allowed in order and fetch arguments.
-
-==== short-cuts ====
- "id" ==> dict ( "type" = "id" )
- "count" ==> dict ( "type" = "count" )
- "random" ==> dict ( "type" = "random" )
- "cluster" ==> dict ( "type" = "cluster", label = <key-in-fetch-dict>) // (only in fetch argument)
- "field" ==> dict ( "type" = "metadata", "get" = list ("field") )
- "source" ==> dict ( "type" = "metadata", "get" = list ("source") )
- <string x> ==> dict ( "type" = "metadata", "field" = <string x> )
- 
- The default type is "metadata"
- 
-==== Note ====
-Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
-<string x> ==> list ( <string x> )
-
-==== "type" = "cluster" ====
-===== Additional fields =====
- "label" = <cluster-label>,
- "get" = 
-===== Default values =====
- "get" = list ( "value" )
-
-==== "type" = "metadata" ====
-===== Additional fields =====
- "get" = list (
-     list of one or more of "field", "id", "value", "source". //FIXME: and "count". Where "count" must be last if it is present.
- ),
- "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
- "source-preference" = [ "All" | "Default" ]
-===== Default values =====
- "get" = list ("value")
- "aggregate" = "first"
- "source-preference" = "Default"
-===== Optional fields =====
- "id" = list (...)
- "field" = list (...)
- "value" = list (...)
- "source" = list (...)
-
 === A. Query_medialist ===
 The client developer provides a collection structure resulting in a medialist to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every entry of the medialist and the rows are in the same order as the medialist.
 
@@ -283,6 +226,54 @@ As this is gets you a value-key dict you can use this for entry_format.
          )
      )
  )
+
+=== Fetch/Cluster/Order Datatype ===
+This is an informal description of the datatype used in the fetch, cluster, and order arguments below.
+
+ dict (
+     "type" = [ "id" | "count" | "random" | "cluster" | "metadata" ]
+ )
+
+Notes: "type" = "cluster" is only allowed in order and fetch arguments.
+
+==== short-cuts ====
+ "id" ==> dict ( "type" = "id" )
+ "count" ==> dict ( "type" = "count" )
+ "random" ==> dict ( "type" = "random" )
+ "cluster" ==> dict ( "type" = "cluster", label = <key-in-fetch-dict>) // (only in fetch argument)
+ "field" ==> dict ( "type" = "metadata", "get" = list ("field") )
+ "source" ==> dict ( "type" = "metadata", "get" = list ("source") )
+ <string x> ==> dict ( "type" = "metadata", "field" = <string x> )
+ 
+ The default type is "metadata"
+ 
+==== Note ====
+Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
+<string x> ==> list ( <string x> )
+
+==== "type" = "cluster" ====
+===== Additional fields =====
+ "label" = <cluster-label>,
+ "get" = 
+===== Default values =====
+ "get" = list ( "value" )
+
+==== "type" = "metadata" ====
+===== Additional fields =====
+ "get" = list (
+     list of one or more of "field", "id", "value", "source". //FIXME: and "count". Where "count" must be last if it is present.
+ ),
+ "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
+ "source-preference" = [ "All" | "Default" ]
+===== Default values =====
+ "get" = list ("value")
+ "aggregate" = "first"
+ "source-preference" = "Default"
+===== Optional fields =====
+ "id" = list (...)
+ "field" = list (...)
+ "value" = list (...)
+ "source" = list (...)
 
 === Functions for convenience ===
 
