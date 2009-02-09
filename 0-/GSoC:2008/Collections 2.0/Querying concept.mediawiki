@@ -267,6 +267,7 @@ This is an informal description of the datatype used in the fetch, cluster, and 
  )
 
 Note: "type" = "cluster" is only allowed in order and fetch arguments.
+
 Default values:
  "type" = "metadata"
 
@@ -288,7 +289,8 @@ Additional fields:
  "label" = <cluster-label>,
  "get" = list (
      list of one or more of "field", "id", "value", "source".
- ),
+ )
+
 Default values:
  "get" = list ( "value" )
 
@@ -296,11 +298,14 @@ Default values:
 Additional fields:
  "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
 
+Default values:
+ "aggregate" = "first"
+
 === "type" = "metadata" ===
 Additional fields:
  "get" = list (
      list of one or more of "field", "id", "value", "source".
- ),
+ )
  "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
  "source-preference" = [ "All" | "Default" ]
 
