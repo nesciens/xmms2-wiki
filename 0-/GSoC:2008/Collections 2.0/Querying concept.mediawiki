@@ -276,8 +276,8 @@ Default values:
  "count" => dict ( "type" = "count" )
  "random" => dict ( "type" = "random" )
  "cluster" => dict ( "type" = "cluster", label = <key-in-fetch-dict>) // (only in fetch argument)
- "field" => dict ( "get" = list ("field") )
- "source" => dict ( "get" = list ("source") )
+ "fields" => dict ( "get" = list ("field"), "aggregate" = "list" )
+ "sources" => dict ( "get" = list ("source"), "aggregate" = "list")
  <string x> => dict ( "field" = <string x> )
  
 Note: Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
