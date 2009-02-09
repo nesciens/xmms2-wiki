@@ -1,4 +1,5 @@
 '''bold''' are the larger tasks.
+
 ''italic'' are the not-so-important tasks.
 
 * '''Documentation'''
@@ -30,6 +31,7 @@
 * Fix FIXMEs
 * Do TODOs
 * ''Add optimizations to collquery''
+* ''Serialize as a true DAG''
 
 == Pre February 10 2009 ==
 
