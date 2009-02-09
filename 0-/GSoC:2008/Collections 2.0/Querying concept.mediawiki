@@ -134,10 +134,13 @@ As this is gets you a value-key dict you can use this for entry_format.
 === Get all fields the songs have ===
 
  query_clustered (
-     coll,                      // coll argument: the collection
-     NULL,                      // cluster argument: all songs go into 1 cluster
-     dict ("fields" = "field"), // fetch argument: get the fields
-     NULL, 0, 0                 // order, start, length arguments: who cares?
+     coll,                    // coll argument: the collection
+     NULL,                    // cluster argument: all songs go into 1 cluster
+     dict (
+         "fields" = "field",
+         "aggregate" = "list"
+     ),                       // fetch argument: get the fields
+     NULL, 0, 0               // order, start, length arguments: who cares?
      )
 
  list (
@@ -226,7 +229,7 @@ As this is gets you a value-key dict you can use this for entry_format.
              "get" = list ("id", "field", "value")
          )
      ),
-     NULL, 0, 0                 // order, start, length arguments: who cares?
+     NULL, 0, 0                // order, start, length arguments: who cares?
  )
 
  list (
