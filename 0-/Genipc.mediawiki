@@ -9,7 +9,7 @@ This is tedious. It would be much nicer if we could just edit some central IPC d
 
 === Language bindings code ===
 
-Instead of generating C glue code that calls into libxmmsclient, GenIPC could also be used to generate '''native''' Perl/Python/Ruby code. Whether this is a good idea is debatable, and could we decided on a case-by-case basis (native code runs on any Ruby/Python implementation, though it's more work/duplicated effort in implementing the low level IPC protocol).
+Instead of generating C glue code that calls into libxmmsclient, GenIPC could also be used to generate '''native''' Perl/Python/Ruby code. Whether this is a good idea is debatable, and could be decided on a case-by-case basis (native code runs on any Ruby/Python implementation, though it's more work/duplicated effort in implementing the low level IPC protocol).
 
 === Show me the code ===
 
