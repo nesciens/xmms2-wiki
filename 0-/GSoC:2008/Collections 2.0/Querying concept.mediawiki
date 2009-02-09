@@ -6,383 +6,287 @@ The collection-patterns are in [[client:sisy|sisy]]-notation.
 
 === Basic querying ===
 
-For every id it is possible to query metadata field-value-source tuples. Any permutation of these three can be requested (eg. just value, just key, key+value etc.) Some constraints can be imposed on what metadata is retrieved (source-pref, field in ..., value in ..., source in ...). As for each id there can be no more then one row in the result these metadata need to be aggregated (the "aggregate" might return a complex datastructure, such as a list/dict though)
+For every id it is possible to query metadata field-value-source tuples. Any combination of these three can be requested (eg. just value, just key, key+value etc.) Some constraints can be imposed on what metadata is retrieved (source-pref, field in ..., value in ..., source in ...).
 
-Then there is clustering and several mediaid-rows need to be merged into one cluster row. For this there are also aggregates.
+=== Fetch/Cluster/Order Datatype ===
+This is an informal description of the datatype used in the fetch, cluster, and order arguments below.
 
-==== A. Per medialist entry ====
+ dict (
+     "type" = [ "id" | "count" | "random" | "cluster" | "metadata" ]
+ )
 
+Notes: "type" = "cluster" is only allowed in order and fetch arguments.
+
+==== short-cuts ====
+ "id" ==> dict ( "type" = "id" )
+ "count" ==> dict ( "type" = "count" )
+ "random" ==> dict ( "type" = "random" )
+ "cluster" ==> dict ( "type" = "cluster", label = <key-in-fetch-dict>) // (only in fetch argument)
+ "field" ==> dict ( "type" = "metadata", "get" = list ("field") )
+ "source" ==> dict ( "type" = "metadata", "get" = list ("source") )
+ <string x> ==> dict ( "type" = "metadata", "field" = <string x> )
+ 
+ The default type is "metadata"
+ 
+==== Note ====
+Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
+<string x> ==> list ( <string x> )
+
+==== "type" = "cluster" ====
+===== Additional fields =====
+ "label" = <cluster-label>,
+ "get" = 
+===== Default values =====
+ "get" = list ( "value" )
+
+==== "type" = "metadata" ====
+===== Additional fields =====
+ "get" = list (
+     list of one or more of "field", "id", "value", "source". //FIXME: and "count". Where "count" must be last if it is present.
+ ),
+ "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
+ "source-preference" = [ "All" | "Default" ]
+===== Default values =====
+ "get" = list ("value")
+ "aggregate" = "first"
+ "source-preference" = "Default"
+===== Optional fields =====
+ "id" = list (...)
+ "field" = list (...)
+ "value" = list (...)
+ "source" = list (...)
+
+=== A. Query_medialist ===
 The client developer provides a collection structure resulting in a medialist to the daemon. The daemon then queries the metadata from the sqlite-database, so that there is one row for every entry of the medialist and the rows are in the same order as the medialist.
 
-Note that every cell of the query-result can contain an xmms2-datatype, so that for instance all metadata can be queried in a propdict:
+Informal signature:
+ query_medialist (coll, fetch)
 
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- fetch: {{ spec={ type=id,                arguments={}             }, label=id       },
-         { spec={ type=value,             arguments={field=artist} }, label=artist   },
-         { spec={ type=value,             arguments={field=album}  }, label=album    },
-         { spec={ type=value,             arguments={field=title}  }, label=title    },
-         { spec={ type=source_value_dict, arguments={field=size}   }, label=datasize }}
- 
- result: {{ id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
-          { id=113,  artist=Evanescence,       album=Anywhere But Home, title=Thoughtless,           datasize={plugin/id3v2=8286281, plugin/file=8314880} },
-          { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          datasize={plugin/id3v2=8947303, plugin/file=8947840} },
-          { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} }}
+=== B. Query_clustered ===
+The client developer provides a collection structure to the daemon, then metadata is queried for groups of ids aka clusters.
 
+The developer also specifies a list of things the ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster.
 
+=== Examples ===
 
-==== B'. Per cluster - The fancy version ====
-
-The client developer provides a collection structure to the daemon and a list of things ids in a cluster should have in common, for instance genre, artist or album. The daemon then queries the metadata from the sqlite-database, so that there is one row per cluster. If no things to have in common are specified all ids in the collection will be in one cluster. If there are n items in the cluster-by argument, the data will be contained in n recursive dicts.
-
-===== Jan 19 2009 version II (KISS) =====
-
- Fuck clusters.
-
- coll = <collection>
- fetch = list (
-     ...
+==== Get a simple representation of the playlist ====
+As this is gets you a value-key dict you can use this for entry_format.
+===== Query in pseudo-code =====
+ query_medialist (
+     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
+     fetch = dict (
+         "artist" = "artist",
+         "album" = "album",
+         "tracknr" = "tracknr",
+         "title" = "title"
+         "duration" = "duration"
+     )
+===== Result =====
+ list (
      dict (
-         [ "type" = "random" | "metadata" | "id" ] // default: metadata
-
-         // some constraints
-         [ "field" = <string> | list ( <strings> ) ]
-         [ "value" = <string> | list ( <strings> ) ]
-         [ "source" = list ( <strings,ints> ) ]
-         [ "source-pref" = <string> ]
+         "artist" = "Something Corporate",
+         "album" = "Leaving through the window",
+         "tracknr" = "10",
+         "title" = "Good News",
+         "duration" = "232280"
+     ),
+     ...,
+     dict (
+         "artist" = "Something Corporate",
+         "album" = "Leaving through the window",
+         "tracknr" = "16",
+         "title" = "Globes and Maps",
+         "duration" = "287933"
+     )
+ )
  
-         // what to acquire
-         "acquire" = list (
-              [ "id" ]     // if type == metadata || id
-              [ "field" ]  // if type == metadata
-              [ "value" ]  // if type == metadata || random
-              [ "source" ] // if type == metadata
+==== Get a simple representation of the playlist II ====
+As this is gets you a value-key dict you can use this for entry_format.
+===== Query in pseudo-code =====
+ query_medialist (
+     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
+     fetch = dict (
+         "id" = "id"
+         "data" = dict ( "field" = list ( "artist", "album", "tracknr", "title", "duration" ) )
+     )
+ )
+===== Result =====
+ list (
+     dict (
+         "id" = 767
+         "data" ==> dict (
+             "artist" = "Something Corporate",
+             "album" = "Leaving through the window",
+             "tracknr" = "10",
+             "title" = "Good News",
+             "duration" = "232280"
+         )
+     ),
+     ...,
+     dict (
+         "id" = 766
+         "data" ==> dict (
+             "artist" = "Something Corporate",
+             "album" = "Leaving through the window",
+             "tracknr" = "16",
+             "title" = "Globes and Maps",
+             "duration" = "287933"
          )
      )
-     ...
  )
- order = list ( // an entry for each acquired datum
-     ...
-     dict (
-         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ]
-         [ "order" = "ASC" | "DESC" ]
-     )
-     ...
- )
- limits = list ( // an integer for each acquired datum
-     ...
-     <integer>
-     ...
- )
-
-====== Example ======
- coll = reference[reference=All,namespace=Playlists]
- fetch = list (
-     dict (
-         "field" = "artist"
-         "acquire" = list ("value")
-     )
-     dict (
-         "field" = "album"
-         "acquire" = list ("value")
-     )
-     dict (
-         "field" = list ("tracknr" "title")
-         "acquire" = list ("id" "field" "value")
+ 
+==== Get a full propdict for every entry in the playlist ====
+===== Query in pseudo-code =====
+ query_medialist (
+     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
+     fetch = dict (
+         "data" = dict ( "get" = list ( "key", "source", "value" ), "source-preference" = "All" )
      )
  )
- order = NULL
- limits = NULL
-
- result = dict (
-     "Sonata Arctica" = dict (
-         "End Of This Chapter" = dict (
-             "1247" = dict (
-                 "tracknr" = list (
-                     "9"
-                 )
-                 "title" = list (
-                     "Victoria's Secret"
-                 )
+===== Result =====
+ list (
+     dict (
+         "data" ==> dict (
+             "artist" = dict (
+                 "plugin/id3v2" = "Something Corporate"
+             ),
+             ...,
+             "size" = dict (
+                 "plugin/file" = "6126427"
+                 "plugin/id3v2" = "6125413"
+             ),
+             ...,
+             "url" = dict (
+                 "server" = "file:///home/erik/muziek/Something+Corporate+-+Leaving+Through+the+Window+-+Good+News.mp3"
              )
          )
-         "Silence" = dict (
-             "1284" = dict (
-                 "tracknr" = list (
-                     "13"
-                 )
-                 "title" = list (
-                     "The Power Of One"
-                 )
-             )
+     ),
+     ...
+ )
+
+==== Get a dict according to server-side source-preference ====
+===== Query in pseudo-code =====
+ query_medialist (
+     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
+     fetch = dict (
+         "data" = dict ( "get" = list ( "key", "value" ) )
+     )
+ )
+===== Result =====
+ list (
+     dict (
+         "data" ==> dict (
+             "artist" = "Something Corporate",
+             ...,
+             "size" = "6126427",
+             ...,
+             "url" = "file:///home/erik/muziek/Something+Corporate+-+Leaving+Through+the+Window+-+Good+News.mp3"
          )
-     )
-     "The Used" = dict (
-         "The Used" = dict (
-              "991" = dict (
-                  "tracknr" = list (
-                      "3"
-                  )
-                  "title" = list (
-                      "Bulimic"
-                  )
-              )
-         )
-     )
- )
-
-====== Example II - 2 random artists + associated albums + ids ======
- coll = universe
- fetch = list (
-     dict (
-         "field" = "artist"
-         "acquire" = list ("value")
-     )
-     dict (
-         "field" = "album"
-         "acquire" = list ("value" "id")
-     )
- )
- order = list (
-     dict ( "type" = "random")
- )
- limits = list (
-     2
- )
-
-result = dict (
-    "Nirvana" = dict ( ""                          = list ("632" "633" "635")
-                       "In Utero"                  = list ("629")
-                       "MTV Unplugged in New York" = list ("630")
-                       "Nevermind"                 = list ("631")
-                       "Unplugged in New York"     = list ("634") )
-    "Sonata Arctica" = dict ( "Broken" = list (...)
-                              ...
-                              "Winterheart's Guild" = list (...) )
-)
-===== Jan 19 2009 version =====
-
- coll = <collection>
- cluster-by = dict (
-     ...
-     <label> = dict (
- 
-         // some constraints
-         [ "field" = <string> | list ( <strings> ) ]
-         [ "value" = <string> | list ( <strings> ) ]
-         [ "source" = list ( <strings,ints> ) ]
-         [ "source-pref" = <string> ]
- 
-         // how to determine distinctness
-         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ] // default: NATCOLL
- 
-         // what to distinct on
-         [ "by" = <function-tree> ] // default: "value"
-     )
-     ...
- )
- fetch = dict (
-     ...
-     <label> = dict (
-         [ "type" = "aggregate" | "metadata" | "id" ] // default: metadata
- 
-         // if type == metadata
-         [ "field" = <string> | list ( <strings> ) ]
-         [ "value" = <string> | list ( <strings> ) ]
-         [ "source" = list ( <strings,ints> ) ]
-         [ "source-pref" = <string> ]
- 
-         // if type == aggregate
-         "label" = <label>
- 
-         // specify representation
-         [ "repr" = <aggregate-function-tree> ] //default: "value" if type == metadata
-     )
-     ...
- )
- order = list (
-     ...
-     dict (
-         [ "type" = "aggregate" | "metadata" | "id" | "random" ] // default: metadata
- 
-         // if type == metadata
-         [ "field" = <string> | list ( <strings> ) ]
-         [ "value" = <string> | list ( <strings> ) ]
-         [ "source" = list ( <strings,ints> ) ]
-         [ "source-pref" = <string> ]
- 
-         // specify representation
-         [ "repr" = <aggregate-function-tree> ] //default: "value" if type == metadata
- 
-         // how to order
-         [ "collation" = "BINARY" | "NOCASE" | "INTCOLL" | "NATCOLL" ] // default: NATCOLL
-         [ "order" = "ASC" | "DESC" ] // default: ASC
-     )
+     ),
      ...
  )
 
-====== Example ======
- coll = reference[reference=All,namespace=Playlists]
- cluster-by = dict (
-     "artist" = dict (
-         "field" = "artist"
+==== Get all fields the songs have ====
+===== Query in pseudo-code =====
+ query_clustered (
+     coll,                      // coll argument: the collection
+     NULL,                      // cluster argument: all songs go into 1 cluster
+     dict ("fields" = "field"), // fetch argument: get the fields
+     NULL, 0, 0                 // order, start, length arguments: who cares?
      )
+
+===== Result =====
+ list (
+     dict ("fields" = list ( "added", "album", "artist", ...) )
  )
- fetch = (
-     "artist" = dict (
-         "type" = "aggregate"
-         "repr" = dict (
-             "func" = "ucase"
-             "args" = list (
-                 "artist"
-             )
-         )
-     )
-     "metadata" = dict (
-          "type" = "metadata"
-          "field" = list (
-              "album"
-              "title"
-          )
-          "repr" = dict (
-              "func" = "dict"
-              "args" = list (
-                  "field"
-                  dict (
-                      "func" = "dict"
-                      "args" = list (
-                          "value"
-                          "id"
-                      )
-                  )
-              )
-          )
-     )
+
+
+==== Get the number of songs in the collection ====
+===== Query in pseudo-code =====
+ query_clustered (
+     coll,                      // coll argument: the collection
+     NULL,                      // cluster argument: all songs go into 1 cluster
+     dict ("count" = "count"),  // fetch argument: get the number of songs in this cluster
+     NULL, 0, 0                 // order, start, length arguments: who cares?
  )
- order = list (
+===== Result =====
+ list (
+     dict = ("count" = 10)
+ )
+
+==== Albums, their number of songs, and total duration ====
+===== Query in pseudo-code =====
+ query_clustered (
+     coll,
+     dict ("album" = "album"),
      dict (
-         "type" = "aggregate"
-         "repr" = "artist"
-         "order" = "DESC"
+         "album" = "cluster",
+         "number" = "count",
+         "duration" = dict ("field" = "duration", "aggregate" = "sum"),
+     )
+     NULL, 0, 0
+ )
+===== Result =====
+ list (
+     dict = (
+         "album" = "The Devil And God Are Raging Inside Me",
+         "number" = 12,
+         "duration" = 3541123
+     ),
+     ...,
+     dict (
+         "album" = "MTV Unplugged in New York",
+         "number" = 1,
+         "duration" = 175943
      )
  )
 
- result = list (
+==== For every album get the ids + for every song a dict with tracknumber and title ====
+===== Query in pseudo-code =====
+ query_clustered (
+     coll,                      // coll argument: the collection
+     dict ("album" ==> "album"), // cluster argument: 1 cluster for every album
      dict (
-         "artist" = "SONATA ARCTICA"
+         "album" ==> "cluster",
+         "ids" = "id",
          "metadata" = dict (
-             "album" = dict (
-                 "End Of This Chapter" = 1247
-                 "Silence" = 1284
-             )
-             "title" = dict (
-                 "The Power Of One" = 1284
-                 "Victoria's Secret" = 1247
+             "field" = list ("tracknr", "title"),
+             "get" = list ("id", "field", "value")
+         )
+     ),
+     NULL, 0, 0                 // order, start, length arguments: who cares?
+ )
+===== Result =====
+ list (
+     dict (
+         "album" = "The Devil And God Are Raging Inside Me",
+         "ids" = list (59, ..., 70),
+         "metadata" = dict (
+             "59" = dict (
+                 "tracknr" = "4",
+                 "title" = "Degausser"
+             ),
+             ...,
+             "70" = dict (
+                 "tracknr" = "6",
+                 "title" = "You won't know"
              )
          )
-     )
+     ),
+     ...,
      dict (
-         "artist" = "THE USED"
+         "album" = "MTV Unplugged in New York",
+         "ids" = 630,
          "metadata" = dict (
-             "album" = dict (
-                 "The Used" = 991
-             )
-             "title" = dict (
-                 "Bulimic" = 991
-             )
+             "tracknr" = "12",
+             "title" = "Lake of Fire"
          )
      )
  )
-
-===== Pre-Jan 19 2009 version =====
-
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {{ spec={type=value, arguments={field=artist}}, collation=NOCASE }}
- fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
-         { spec={ type=value_list,             arguments={field=album}  }, label=albums   },
-         { spec={ type=value_list,             arguments={field=title}  }, label=titles   },
-         { spec={ type=source_value_list_dict, arguments={field=size}   }, label=datasize }}
- 
- result: { Evanescence = { ids={113, 141},
-                           albums={Anywhere But Home, Not For Your Ears},
-                           titles={Thoughtless, Taking Over Me (Long)},
-                           datasize={plugin/id3v2={5304040, 8286281}, plugin/file={5326558, 8947840}} },
-           Within Temptation = { ids={1092},
-                                 albums={Mother Earth},
-                                 titles={Mother Earth},
-                                 datasize={plugin/id3v2={8947303}, plugin/file={8947840}} }}
-
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {}
- fetch: {{ spec={ type=id_list,                arguments={}             }, label=ids      },
-         { spec={ type=value_list,             arguments={field=artist} }, label=artists  },
-         { spec={ type=value_list,             arguments={field=album}  }, label=albums   },
-         { spec={ type=value_list,             arguments={field=title}  }, label=titles   },
-         { spec={ type=source_value_list_dict, arguments={field=size}   }, label=datasize }}
- 
- result: {{ ids={113, 141, 1092},
-            artists={Evanescence, Evanescence, Within Temptation},
-            albums={Anywhere But Home, Not For Your Ears, Mother Earth},
-            titles={Thoughtless, Taking Over Me (Long), Mother Earth},
-            datasize={plugin/id3v2={5304040, 8286281, 8947303}, plugin/file={5326558, 8947840, 8947840}} }}
-
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: {{ spec={type=value, arguments={field=artist} }, collation=NOCASE },
-              { spec={type=value, arguments={field=album}  }, collation=NOCASE },
-              { spec={type=id,    arguments={}             }, collation=NOCASE }}
- fetch: {{ spec={ type=value,      arguments={field=title} }, label=title    },
-         { spec={ type=value_list, arguments={field=size}  }, label=datasize }}
- 
- result: { Evanescence = {
-               Anywhere But Home = {
-                   113 = { title=Thoughtless, datasize={8286281, 8314880} }
-               },
-               Not For Your Ears = {
-                   141 = { title=Taking Over Me (Long), datasize={5304040, 5326558} }
-               }
-           },
-           Within Tempation = {
-               Mother Earth = {
-                   1092 = { title=Mother Earth, datasize={8947303, 8947840} }
-               }
-           }
-         }
-
-Or, in a different universe:
-
- coll: reference[reference=Gothic Metal,namespace=Playlists]
- cluster-by: [{ spec={type=value, arguments={field=artist} }, collation=NOCASE, label=artist},
-              { spec={type=value, arguments={field=album}  }, collation=NOCASE, label=album },
-              { spec={type=id,    arguments={}             }, collation=NOCASE, label=id }]
- fetch: [{ spec={ type=value,      arguments={field=title} }, label=title    },
-         { spec={ type=value_list, arguments={field=size}  }, label=datasize }]
- 
- result: [
- { artist = Evanescence,
-   cluster = [
-       { album = Anywhere But Home,
-         cluster = [
-             { id = 113,
-               cluster = { title=Thoughtless, datasize={8286281, 8314880} }
-             } ]
-       },
-       { album = Not For Your Ears,
-         cluster = [
-             { id = 141,
-               cluster = { title=Taking Over Me (Long), datasize={5304040, 5326558} }
-             } ]
-       } ]
- },
- { artist = Within Tempation,
-   cluster = [
-       { album = Mother Earth,
-         cluster = [
-             { id = 1092,
-               cluster = { title=Mother Earth, datasize={8947303, 8947840} }
-             } ]
-       } ]
- } ]
 
 === Functions for convenience ===
+
+These are yet to be updated
 
 ==== C. Per id ====
 
@@ -399,7 +303,9 @@ The client developer provides a collection structure to the daemon. The daemon t
           { id=141,  artist=Evanescence,       album=Not For Your Ears, title=Taking Over Me (Long), datasize={plugin/id3v2=5304040, plugin/file=5326558} },
           { id=1092, artist=Within Temptation, album=Mother Earth,      title=Mother Earth,          datasize={plugin/id3v2=8947303, plugin/file=8947840} }}
 
-==== D. The legacy way ====
+==== D. Get all keys ====
+
+==== E. The legacy way ====
 
 The client developer provides a collection structure to the daemon and an optional list of things ids in a group should have in common, for instance genre, artist or album (the groupby-argument). The daemon then queries the metadata from the sqlite-database, so that there are zero or more rows per group, showing all permutations of the "free" (not used for grouping) properties. If no groupby-list is supplied all requested properties are used for grouping.
 
