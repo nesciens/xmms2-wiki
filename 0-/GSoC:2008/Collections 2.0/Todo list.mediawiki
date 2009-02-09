@@ -1,4 +1,34 @@
-== Collections 2.0 Todo list ==
+* Documentation
+** Add documentation for most functions
+** Add documentation on the wiki
+* Querying:
+** Work on querying proposal
+** Implement querying proposal
+* Matching
+** Define pattern-matching for some of the collations
+* Prefix 
+** Make prefix-matching work for collations.
+** '''Fix prefix for non-ascii characters like Å‚'''
+* Attributes
+** Allow general xmmsv_ts as attributes.
+** Move idlist to the attributes.
+* IdlistVirtual
+** Implement an index
+* Checking
+** Check for cyclic behavior in jumplist
+** Check source-attribute
+** Check source-preference-attribute
+** '''Make default values configureable'''
+* Sourcerank
+** Add default sourcerank to more plugins
+* Medialib
+** Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables
+* Abolish INTERSECTION_ORDERED
+* Fix FIXMEs
+* Do TODOs
+* '''Add optimizations to collquery'''
+
+== Pre February 10 2009 ==
 
 Notation: In '''bold''' high-priority stuff, in ''italic'' optional/low-priority stuff, in normal font normal-priority stuff.
 
