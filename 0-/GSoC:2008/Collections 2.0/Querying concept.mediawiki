@@ -263,7 +263,7 @@ As this is gets you a value-key dict you can use this for entry_format.
 This is an informal description of the datatype used in the fetch, cluster, and order arguments below.
 
  dict (
-     "type" = [ "id" | "count" | "random" | "cluster" | "metadata" ]
+     "type" = < "id" | "count" | "random" | "cluster" | "metadata" >
  )
 
 Note: "type" = "cluster" is only allowed in order and fetch arguments.
@@ -282,7 +282,7 @@ Default values:
  <string x> => dict ( "field" = <string x> )
  
 Note: Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
-<string x> => list ( <string x> )
+<string> => list ( <string> )
 
 === "type" = "cluster" ===
 Additional fields:
@@ -296,7 +296,7 @@ Default values:
 
 === "type" = "id" ===
 Additional fields:
- "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
+ "aggregate" = < "first" | "sum" | "min" | "max" | "list" >
 
 Default values:
  "aggregate" = "first"
@@ -306,8 +306,8 @@ Additional fields:
  "get" = list (
      list of one or more of "field", "id", "value", "source".
  )
- "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
- "source-preference" = [ "All" | "Default" ]
+ "aggregate" = < "first" | "sum" | "min" | "max" | "list" >
+ "source-preference" = < "All" | "Default" >
 
 Default values:
  "get" = list ("value")
