@@ -282,7 +282,7 @@ Default values:
  <string x> => dict ( "field" = <string x> )
  
 Note: Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
-<string> => list ( <string> )
+ <string> => list ( <string> )
 
 === "type" = "cluster" ===
 Additional fields:
