@@ -1,3 +1,25 @@
-    [16:32:28][nano-]: theefer: My ideas about genipc can be summed up with:
-    move tools to waftools/* make the import thing sane, make it possible to
-    know what the script outputs, and i want to add support for .gir-generation.
+=== What's GenIPC? ===
+
+GenIPC stands for "generated IPC", so it refers to creating our IPC code from some kind of description.
+
+=== Which problem does it solve? ===
+
+When we extend the methods of some IPC object on the server side, we need to adjust our client libraries for that change. This means, we get to add another xmmsc_''object''_''method''() function in libxmmsclient. We also have to add wrappers for that function in the various bindings that we ship (Perl, Python, Ruby, Java, .NET, Haskell).
+This is annoying. It would be much nicer if we could just edit some central IPC description file, describe our new method there, and then hit the magic button that will first generate the C bits for libxmmsclient and then the wrapper bits for the bindings. We could possibly also use this to generate code on the server side.
+
+=== Language bindings code ===
+
+Instead of generating C glue code that calls into libxmmsclient, GenIPC could also be used to generate '''native''' Perl/Python/Ruby code. Whether this is a good idea is debatable, and could we decided on a case-by-case basis (native code runs on any Ruby/Python implementation, though it's more work/duplicated effort in implementing the low level IPC protocol).
+
+=== Show me the code ===
+
+There's a working implementation (partially based on Thomas Coppi's SoC 2007 work) in [[Tilman Sauerbeck | Tilman]]'s git tree:
+http://git.xmms.se/?p=xmms2-tilman.git;a=shortlog;h=refs/heads/genipc
+The IPC object/method description lives in src/ipc.xml. Then there's a Python script in src/genipc.py that will take that XML file, parse the input into an object model of that description and feed it to a code generator.
+
+At the moment, there's a code generator for libxmmsclient, native Ruby bindings (src/clients/lib/ruby2) and native Python bindings (src/clients/lib/python2). The libxmmsclient code generator tries to emit code that's API compatible to the manually-written stuff, but it's possible that the API will be different in a few (minor?) cases.
+
+To generate stuff, run:
+$ python src/genipc.py src/ipc.xml src/clients/lib/xmmsclient/code_generator.py > src/clients/lib/xmmsclient/generated.c
+
+[[Daniel Svensson]] said he wanted to integrate those scripts with waf.
