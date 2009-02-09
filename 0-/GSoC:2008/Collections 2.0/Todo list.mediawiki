@@ -1,7 +1,10 @@
-* Documentation
+'''bold''' are the larger tasks.
+''italic'' are the not-so-important tasks.
+
+* '''Documentation'''
 ** Add documentation for most functions
 ** Add documentation on the wiki
-* Querying:
+* '''Querying'''
 ** Work on querying proposal
 ** Implement querying proposal
 * Matching
@@ -10,7 +13,7 @@
 ** Make prefix-matching work for collations.
 ** ''Fix prefix for non-ascii characters like Å‚''
 * Attributes
-** Allow general xmmsv_ts as attributes.
+** '''Allow general xmmsv_ts as attributes'''
 ** Move idlist to the attributes.
 * IdlistVirtual
 ** Implement an index
@@ -22,7 +25,7 @@
 * Sourcerank
 ** Add default sourcerank to more plugins
 * Medialib
-** Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables
+** '''Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables'''
 * Abolish INTERSECTION_ORDERED
 * Fix FIXMEs
 * Do TODOs
