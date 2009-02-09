@@ -1,0 +1,4 @@
+[16:32:28][nano-]: theefer: My ideas about genipc can be summed up with: move 
+          tools to waftools/* make the import thing sane, make it possible to 
+          know what the script outputs, and i want to add support for 
+          .gir-generation.
