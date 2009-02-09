@@ -188,10 +188,10 @@ As this is gets you a value-key dict you can use this for entry_format.
 
  query_clustered (
      coll,                      // coll argument: the collection
-     dict ("album" => "album"), // cluster argument: 1 cluster for every album
+     dict ("album" = "album"), // cluster argument: 1 cluster for every album
      dict (
-         "album" => "cluster",
-         "ids" = "id",
+         "album" = "cluster",
+         "ids" = "ids",
          "metadata" = dict (
              "field" = list ("tracknr", "title"),
              "get" = list ("id", "field", "value")
@@ -234,42 +234,50 @@ This is an informal description of the datatype used in the fetch, cluster, and 
      "type" = [ "id" | "count" | "random" | "cluster" | "metadata" ]
  )
 
-Notes: "type" = "cluster" is only allowed in order and fetch arguments.
+Note: "type" = "cluster" is only allowed in order and fetch arguments.
+Default values:
+ "type" = "metadata"
 
 === short-cuts ===
  "id" => dict ( "type" = "id" )
+ "ids" => dict ( "type" = "id", "aggregate" = "list" )
  "count" => dict ( "type" = "count" )
  "random" => dict ( "type" = "random" )
  "cluster" => dict ( "type" = "cluster", label = <key-in-fetch-dict>) // (only in fetch argument)
- "field" => dict ( "type" = "metadata", "get" = list ("field") )
- "source" => dict ( "type" = "metadata", "get" = list ("source") )
- <string x> => dict ( "type" = "metadata", "field" = <string x> )
+ "field" => dict ( "get" = list ("field") )
+ "source" => dict ( "get" = list ("source") )
+ <string x> => dict ( "field" = <string x> )
  
- The default type is "metadata"
- 
-=== Note ===
-Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
+Note: Everywhere where a list is used below a string can also be used, which is converted to a list of one element:
 <string x> => list ( <string x> )
 
 === "type" = "cluster" ===
-==== Additional fields ====
+Additional fields:
  "label" = <cluster-label>,
- "get" = 
-==== Default values ====
+ "get" = list (
+     list of one or more of "field", "id", "value", "source".
+ ),
+Default values:
  "get" = list ( "value" )
 
+=== "type" = "id" ===
+Additional fields:
+ "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
+
 === "type" = "metadata" ===
-==== Additional fields ====
+Additional fields:
  "get" = list (
-     list of one or more of "field", "id", "value", "source". //FIXME: and "count". Where "count" must be last if it is present.
+     list of one or more of "field", "id", "value", "source".
  ),
  "aggregate" = [ "first" | "sum" | "min" | "max" | "list" ]
  "source-preference" = [ "All" | "Default" ]
-==== Default values ====
+
+Default values:
  "get" = list ("value")
  "aggregate" = "first"
  "source-preference" = "Default"
-==== Optional fields ====
+
+Optional fields:
  "id" = list (...)
  "field" = list (...)
  "value" = list (...)
