@@ -4,8 +4,8 @@ GenIPC stands for "generated IPC", so it refers to creating our IPC code from so
 
 === Which problem does it solve? ===
 
-When we extend the methods of some IPC object on the server side, we need to adjust our client libraries for that change. This means, we get to add another xmmsc_''object''_''method''() function in libxmmsclient. We also have to add wrappers for that function in the various bindings that we ship (Perl, Python, Ruby, Java, .NET, Haskell).
-This is annoying. It would be much nicer if we could just edit some central IPC description file, describe our new method there, and then hit the magic button that will first generate the C bits for libxmmsclient and then the wrapper bits for the bindings. We could possibly also use this to generate code on the server side.
+When we extend the methods of some IPC object on the server side, we need to adjust our client libraries for that change. This means, we need to add another xmmsc_''object''_''method''() function in libxmmsclient, with the code to serialize the arguments, and add a new command identifier. We also have to add wrappers for that function in the various bindings that we ship (Perl, Python, Ruby, C++, Java, .NET, Haskell).
+This is tedious. It would be much nicer if we could just edit some central IPC description file, describe our new method there, and then hit the magic button that will first generate the C bits for libxmmsclient and then the wrapper bits for the bindings. We could possibly also use this to generate code on the server side.
 
 === Language bindings code ===
 
