@@ -157,6 +157,35 @@ As this is gets you a value-key dict you can use this for entry_format.
      dict = ("count" = 10)
  )
 
+=== For each artist, what albums are in the collection ===
+ query_clustered (
+     coll,
+     dict ("artist", "artist"),
+     dict (
+         "artist" = "cluster",
+         "albums" = dict ("field" = "album", "aggregate" = "list")
+     ),
+     NULL, 0, 0
+ )
+
+ list (
+     dict (
+         "artist" = "The Clash",
+         "albums" = list (
+             "London Calling"
+         )
+     ),
+     ...,
+     dict (
+         "artist" = "Sonata Arctica",
+         "albums" = list (
+             "Broken",
+             "Ecliptica",
+             "For The Sake Of Revenge"
+         )
+     )
+ )
+
 === Albums, their number of songs, and total duration ===
 
  query_clustered (
