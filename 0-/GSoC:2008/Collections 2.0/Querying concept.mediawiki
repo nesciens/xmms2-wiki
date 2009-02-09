@@ -14,17 +14,17 @@ The developer also specifies a list of things the ids in a cluster should have i
 
 ==== Get a simple representation of the playlist ====
 As this is gets you a value-key dict you can use this for entry_format.
-===== Query in pseudo-code =====
+
  query_medialist (
-     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
-     fetch = dict (
+     reference ( reference = "_active", "namespace" = "Playlists" ), // coll: the active playlist
+     dict (                                                          // fetch-argument
          "artist" = "artist",
          "album" = "album",
          "tracknr" = "tracknr",
          "title" = "title"
          "duration" = "duration"
      )
-===== Result =====
+
  list (
      dict (
          "artist" = "Something Corporate",
@@ -45,19 +45,19 @@ As this is gets you a value-key dict you can use this for entry_format.
  
 ==== Get a simple representation of the playlist II ====
 As this is gets you a value-key dict you can use this for entry_format.
-===== Query in pseudo-code =====
+
  query_medialist (
-     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
-     fetch = dict (
+     reference ( reference = "_active", "namespace" = "Playlists" ), // coll: the active playlist
+     dict (
          "id" = "id"
          "data" = dict ( "field" = list ( "artist", "album", "tracknr", "title", "duration" ) )
      )
  )
-===== Result =====
+
  list (
      dict (
          "id" = 767
-         "data" ==> dict (
+         "data" = dict (
              "artist" = "Something Corporate",
              "album" = "Leaving through the window",
              "tracknr" = "10",
@@ -68,7 +68,7 @@ As this is gets you a value-key dict you can use this for entry_format.
      ...,
      dict (
          "id" = 766
-         "data" ==> dict (
+         "data" = dict (
              "artist" = "Something Corporate",
              "album" = "Leaving through the window",
              "tracknr" = "16",
@@ -79,14 +79,14 @@ As this is gets you a value-key dict you can use this for entry_format.
  )
  
 ==== Get a full propdict for every entry in the playlist ====
-===== Query in pseudo-code =====
+
  query_medialist (
-     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
-     fetch = dict (
+     reference ( reference = "_active", "namespace" = "Playlists" ), // coll: the active playlist
+     dict (
          "data" = dict ( "get" = list ( "key", "source", "value" ), "source-preference" = "All" )
      )
  )
-===== Result =====
+
  list (
      dict (
          "data" ==> dict (
@@ -108,14 +108,14 @@ As this is gets you a value-key dict you can use this for entry_format.
  )
 
 ==== Get a dict according to server-side source-preference ====
-===== Query in pseudo-code =====
+
  query_medialist (
-     reference(reference="_active", "namespace"="Playlists"), // coll: the active playlist
-     fetch = dict (
+     reference ( reference = "_active", "namespace" = "Playlists" ), // coll: the active playlist
+     dict (
          "data" = dict ( "get" = list ( "key", "value" ) )
      )
  )
-===== Result =====
+
  list (
      dict (
          "data" ==> dict (
@@ -130,7 +130,7 @@ As this is gets you a value-key dict you can use this for entry_format.
  )
 
 ==== Get all fields the songs have ====
-===== Query in pseudo-code =====
+
  query_clustered (
      coll,                      // coll argument: the collection
      NULL,                      // cluster argument: all songs go into 1 cluster
@@ -138,27 +138,25 @@ As this is gets you a value-key dict you can use this for entry_format.
      NULL, 0, 0                 // order, start, length arguments: who cares?
      )
 
-===== Result =====
  list (
      dict ("fields" = list ( "added", "album", "artist", ...) )
  )
 
-
 ==== Get the number of songs in the collection ====
-===== Query in pseudo-code =====
+
  query_clustered (
      coll,                      // coll argument: the collection
      NULL,                      // cluster argument: all songs go into 1 cluster
      dict ("count" = "count"),  // fetch argument: get the number of songs in this cluster
      NULL, 0, 0                 // order, start, length arguments: who cares?
  )
-===== Result =====
+
  list (
      dict = ("count" = 10)
  )
 
 ==== Albums, their number of songs, and total duration ====
-===== Query in pseudo-code =====
+
  query_clustered (
      coll,
      dict ("album" = "album"),
@@ -169,7 +167,7 @@ As this is gets you a value-key dict you can use this for entry_format.
      )
      NULL, 0, 0
  )
-===== Result =====
+
  list (
      dict = (
          "album" = "The Devil And God Are Raging Inside Me",
@@ -185,7 +183,7 @@ As this is gets you a value-key dict you can use this for entry_format.
  )
 
 ==== For every album get the ids + for every song a dict with tracknumber and title ====
-===== Query in pseudo-code =====
+
  query_clustered (
      coll,                      // coll argument: the collection
      dict ("album" ==> "album"), // cluster argument: 1 cluster for every album
@@ -199,7 +197,7 @@ As this is gets you a value-key dict you can use this for entry_format.
      ),
      NULL, 0, 0                 // order, start, length arguments: who cares?
  )
-===== Result =====
+
  list (
      dict (
          "album" = "The Devil And God Are Raging Inside Me",
@@ -277,7 +275,7 @@ Everywhere where a list is used below a string can also be used, which is conver
 
 === Functions for convenience ===
 
-These are yet to be updated
+These are yet to be updated.
 
 ==== C. Per id ====
 
