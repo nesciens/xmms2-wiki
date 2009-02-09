@@ -8,7 +8,7 @@
 ** Define pattern-matching for some of the collations
 * Prefix 
 ** Make prefix-matching work for collations.
-** '''Fix prefix for non-ascii characters like Å‚'''
+** ''Fix prefix for non-ascii characters like Å‚''
 * Attributes
 ** Allow general xmmsv_ts as attributes.
 ** Move idlist to the attributes.
@@ -18,7 +18,7 @@
 ** Check for cyclic behavior in jumplist
 ** Check source-attribute
 ** Check source-preference-attribute
-** '''Make default values configureable'''
+** ''Make default values configureable''
 * Sourcerank
 ** Add default sourcerank to more plugins
 * Medialib
@@ -26,7 +26,7 @@
 * Abolish INTERSECTION_ORDERED
 * Fix FIXMEs
 * Do TODOs
-* '''Add optimizations to collquery'''
+* ''Add optimizations to collquery''
 
 == Pre February 10 2009 ==
 
