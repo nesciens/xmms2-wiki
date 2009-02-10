@@ -28,6 +28,7 @@
 * Medialib
 ** '''Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables'''
 * Abolish INTERSECTION_ORDERED
+* '''Chop history in logical chunks'''
 * Fix FIXMEs
 * Do TODOs
 * ''Add optimizations to collquery''
