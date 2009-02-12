@@ -53,3 +53,20 @@ These are pretty similar too:
 [[User:Anders Gustafsson|Anders Waldenborg]] 21:33, 12 February 2009 (UTC)
 
 ----
+
+I would extend "The XMMS2 community should be a fun place to spend your free-time" to say that the whole XMMS2 community of both developers and users is based on the notion of fun and passion about development and music, which leads back to "XMMS2 users cares about music and are passionate about quality". This targets us as a project who deeply cares about power-users (I could say '''"satisfy the most demanding users", rather than "satisfy most of the users"'''). I don't see that necessarily as elitism, but perfectionism in a slightly niche market (possibly similar to that of Foobar2k?).
+
+Somewhat orthogonally, I'd also like to emphasize the focus on satisfying a whole variety of users, all with specific tastes in interfaces, usage patterns, etc. Again, it leads back to "XMMS2 should never be limited to a specific toolkit or programming language" and "X in XMMS2 is for cross platform", and I'd sum it up as '''respect of the freedom of choice''', or tolerance for the differences in people.
+
+Both these properties stimulate '''experimentation''', in terms of how to build the best music player. I'm not sure it should explicitly be included, but it is tied to the "fun" component of development too I believe.
+
+If I tried to condense things even more, that would give a few key points like:
+* play and organize music
+* fun/passion
+* freedom (of choice)
+* experimentation/innovation
+* quality/high expectations
+
+(not sure how to formulate the last nicely)
+
+[[User:Theefer|Theefer]] 23:07, 12 February 2009 (UTC)
