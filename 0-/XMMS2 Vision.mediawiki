@@ -1,0 +1,25 @@
+== XMMS2 Community Vision (DRAFT!) == 
+
+This document should outline the collective vision of the XMMS2 community. Currently this is a draft that has not been passed through the collective feedback from the community. Please contribute directly to this page or to the Discussion page so that this document can mirror our collective vision for this music player and community.
+
+
+===XMMS2 should be a kick-ass music player===
+Video will never be supported in XMMS2. We believe that music is handled and played fundamentally different from video and we should acknowledge that by leaving the video playing part out of XMMS2.
+
+===XMMS2 should facilitate playing and organizing of your music===
+And really nothing more. This is our core functionality.
+
+===XMMS2 should never be limited to a specific toolkit or programming language===
+While the core of XMMS2 will always remain in C the clients and service clients could and should be written in any choice of programming language or frameworks.
+
+===XMMS2 will be the choice for audiophiles===
+XMMS2 will never compromise the quality of the sound and support all relevant standards associated with HiFi.
+
+===XMMS2 users cares about music and are passionate about quality===
+This is our target audience, every design choice should have this in mind.
+
+===XMMS2 will always stay free (as speech and beer)===
+The community believes that free and open source software leads to innovation, we want to be a part of that innovation.
+
+===The XMMS2 community should be a fun place to spend your free-time===
+It should not feel like a second job, but be stimulating and fun!
