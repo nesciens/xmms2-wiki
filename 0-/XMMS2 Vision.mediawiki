@@ -1,3 +1,5 @@
+{{Discussion}}
+
 == XMMS2 Community Vision (DRAFT!) == 
 
 This document should outline the collective vision of the XMMS2 community. Currently this is a draft that has not been passed through the collective feedback from the community. Please contribute directly to this page or to the Discussion page so that this document can mirror our collective vision for this music player and community.
