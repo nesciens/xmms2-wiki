@@ -25,3 +25,9 @@ The community believes that free and open source software leads to innovation, w
 
 * '''The XMMS2 community should be a fun place to spend your free-time'''
 It should not feel like a second job, but be stimulating and fun!
+
+* '''X in XMMS2 is for cross platform'''
+Portability matters. 
+
+* '''Embeddedfriendliness'''
+XMMS2 should work on smaller devices (but not compete with rockbox on tiny devices). A headless xmms2 server actually IS sexy, especially if there are clients available for "all" platforms.
