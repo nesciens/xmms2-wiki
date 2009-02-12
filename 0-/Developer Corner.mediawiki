@@ -40,6 +40,7 @@ Policies and guidelines about processes and services related to the project as w
 * [[Roadmap]]
 * [[IRC Meeting]]
 * [[WAF modifications]]
+* [[XMMS2 Vision]]
 
 === Clients ===
 * [[Generic properties policy]]
