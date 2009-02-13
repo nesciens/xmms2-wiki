@@ -98,4 +98,11 @@ Also I think we should go s/music/audio/.
 [[User:Anders Gustafsson|Anders Gustafsson]] 06:07, 13 February 2009 (UTC)
 
 I'd really prefer if the document talked about XMMS2 being "free software" rather than "open source".
+
 [[User:Tilman|Tilman]] 20:55, 13 February 2009 (UTC)
+
+"Ultimate freedom player" reads a bit strange to me. I still think jukebox fits.
+
+I agree with tilman regarding free/open source. XMMS2 is free software, but "open source" does not necessarily mean free.
+
+[[User:AnthonyG|AnthonyG]] 21:20, 13 February 2009 (UTC)
