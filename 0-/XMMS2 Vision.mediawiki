@@ -96,3 +96,6 @@ Yes! Freedom is the keyword here.
 Also I think we should go s/music/audio/.
 
 [[User:Anders Gustafsson|Anders Gustafsson]] 06:07, 13 February 2009 (UTC)
+
+I'd really prefer if the document talked about XMMS2 being "free software" rather than "open source".
+[[User:Tilman|Tilman]] 20:55, 13 February 2009 (UTC)
