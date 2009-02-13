@@ -11,8 +11,10 @@
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Idlist
 | type=XMMS_COLLECTION_TYPE_IDLIST
-| result=A medialist containing the mediaids in the <code>idlist</code> array found within the operator.
-| attributes=''any''
+| result=A medialist containing the mediaids in the <code>idlist</code> found within the operator.
+| attributes=
+* <code>type</code>: The type of playlist. Typically <code>list</code>, <code>queue</code> or <code>pshuffle</code>. The default value is <code>list</code>.
+* ''any''
 | operands=Zero or one
 }}
 
@@ -41,7 +43,7 @@
 | type=XMMS_COLLECTION_TYPE_INTERSECTION
 | result=The mediaids that appear in all operands
 | attributes=''none''
-| operands=Two or more
+| operands=One or more
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -49,7 +51,7 @@
 | type=XMMS_COLLECTION_TYPE_UNION
 | result=The mediaids that appear in any of the operands
 | attributes=''none''
-| operands=Two or more
+| operands=One or more
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
@@ -57,12 +59,12 @@
 | type=XMMS_COLLECTION_TYPE_CONCATENATION
 | result=A medialist of the operands behind each other
 | attributes=''none''
-| operands=Two or more medialists
+| operands=One or more medialists
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
-| name=In
-| type=XMMS_COLLECTION_TYPE_IN
+| name=Intersection Ordered (soon too be abolished in favour of Intersection)
+| type=XMMS_COLLECTION_TYPE_INTERSECTION_ORDERED
 | result=The first operand, but only with the mediaids that are also in the second operand
 | attributes=''none''
 | operands=Exactly two
@@ -77,7 +79,7 @@
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon).  If this is not specified the source of the property is not taken into account.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used. (Currently only <code>default</code> and <code>all</code> are possible.)
 | operands=Exactly one
 }}
 
@@ -96,13 +98,12 @@
 | type=XMMS_COLLECTION_TYPE_COMPARE
 | result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
-* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code>, <code>!=</code> and <code>prefix</code>. The default is <code>=</code>.
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
-* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
-* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>
 * <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used. (Currently only <code>default</code> and <code>all</code> are possible.)
 | operands=Exactly one
 }}
 
@@ -113,25 +114,24 @@
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
-* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
-* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. Currently only <code>BINARY</code> and <code>NOCASE</code> are supported, as the semantics of some patterns for the other two collations is not clear. The default-value is <code>NOCASE</code>.
 * <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used. (Currently only <code>default</code> and <code>all</code> are possible.)
 | operands=Exactly one
 }}
 
 {{Summer of Code 2008/Collections 2.0/Operator
 | name=Token
 | type=XMMS_COLLECTION_TYPE_TOKEN
-| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value containing a token for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference. Every positive length substring, containing no whitespace, preceded by the beginning of the string or whitespace, and succeeded by the end of the string or whitespace, is considered a token.
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value consisting of no other tokens than those in the value-attribute, given a collation, where only properties are examined using the given source-preference.
+
+To tokenize a string it is split on whitespace, after which all non-alphanumeric characters are stripped from the separate parts.
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
-* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;=</code>, <code>&gt;=</code>, <code>!=</code> and <code>prefix</code>. The default is <code>=</code>.
-* <code>value</code>: A string.
-* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. If this is not specified the <code>case-sensitive</code> attribute is examined.
-* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
+* <code>value</code>: A string, which will be tokenized. If a token ends in <code>*</code> prefix-matching will be used for that token.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code>, <code>INTCOLL</code> or <code>NATCOLL</code>. Currently only <code>BINARY</code> and <code>NOCASE</code> are supported for prefix-matching, as the semantics of some patterns for the other two collations is not clear.
 * <code>source</code>: The source of the property, e.g. <code>server</code>, <code>plugin/vorbis</code>, <code>client/xmms2-cli</code> or <code>2</code> (only for the daemon). If this is not specified the source of the property is not taken into account.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code> (see [[Summer of Code 2008/Collections 2.0/Source-Preference Specificaton|Source-Preference Specification]]). If this is not specified the global source-preference will be used. (Currently only <code>default</code> and <code>all</code> are possible.)
 | operands=Exactly one
 }}
 
@@ -150,10 +150,9 @@
 | type=XMMS_COLLECTION_TYPE_ORDER
 | result=A medialist, with the mediaids in the operand sorted according to a value depending on the <code>type</code> attribute and the mediaid. If the operand also is an order operator, then the values generated by that will be used for secondary sorting.
 | attributes=
-* <code>order</code>: <code>ASC</code> or <code>DESC</code> for ascending and descending ordering. The default-value is <code>ASC</code>
-* <code>collation</code>: A collation to be used when the values are strings.
-* <code>case-sensitive</code>: Either <code>true</code> or <code>false</code>. If <code>true</code> then the <code>BINARY</code> collation will be used. If <code>false</code> the <code>NOCASE</code> collation. If this attribute is not specified the <code>NATCOLL</code> collation will be used. This all only if the <code>collation</code> attribute is not specified.
-* <code>type</code>: What kind of value should be retrieved, typically <code>value</code>, <code>field</code>, <code>id</code> or <code>random</code>. The default-value is <code>value</code>.
+* <code>order</code>: <code>ASC</code> or <code>DESC</code> for ascending and descending ordering. The default-value is <code>ASC</code>.
+* <code>collation</code>: A collation to be used when the values are strings. The default-value is <code>NATCOLL</code>.
+* <code>type</code>: What kind of value should be retrieved, typically <code>value</code>, <code>field</code>, <code>id</code> or <code>random</code>. The default value is <code>value</code>.
 * <code>field</code>: If <code>type=value</code>, defines which property to order by.
 | operands=Exactly one
 }}
@@ -172,6 +171,6 @@
 | name=Mediaset
 | type=XMMS_COLLECTION_TYPE_MEDIASET
 | result=A mediaset containing the mediaids in the operand. (Removing duplicates and order)
-| attributes=
+| attributes=''none''
 | operands=Exactly one
 }}
