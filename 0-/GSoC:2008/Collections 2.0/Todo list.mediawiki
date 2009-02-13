@@ -16,6 +16,7 @@
 ** ''Fix prefix for non-ascii characters like Å‚''
 * Attributes
 ** '''Allow general xmmsv_ts as attributes'''
+*** Several values for field, value (except for MATCH), source. To be interpreted as a union.
 ** Move idlist to the attributes.
 * IdlistVirtual
 ** Implement an index
