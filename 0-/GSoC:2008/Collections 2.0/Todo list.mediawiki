@@ -10,6 +10,7 @@
 ** Implement querying proposal
 * Matching
 ** Define pattern-matching for some of the collations
+** Disable for those collations in the meantime.
 * Prefix 
 ** Make prefix-matching work for collations.
 ** ''Fix prefix for non-ascii characters like Å‚''
@@ -19,6 +20,7 @@
 * IdlistVirtual
 ** Implement an index
 * Checking
+** Set default value for type-attribute of idlist to "list"
 ** Check for cyclic behavior in jumplist
 ** Check source-attribute
 ** Check source-preference-attribute
@@ -28,6 +30,7 @@
 * Medialib
 ** '''Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables'''
 * Abolish INTERSECTION_ORDERED
+* Change attributes to LIMIT (to not use UINT_MAX)
 * '''Chop history in logical chunks'''
 * Fix FIXMEs
 * Do TODOs
