@@ -4,6 +4,22 @@
 
 This document should outline the collective vision of the XMMS2 community. Currently this is a draft that has not been passed through the collective feedback from the community. Please contribute directly to this page or to the Discussion page so that this document can mirror our collective vision for this music player and community.
 
+=== Version 2 - Based on the feedback ===
+
+* '''XMMS2 should be a kick-ass audio player and organizer'''
+Video will never be supported in XMMS2. We believe that audio is organized and played fundamentally different from video and we should acknowledge that by leaving the video playing part out of XMMS2.
+
+* '''XMMS2 should be the ultimate freedom player'''
+XMMS2 aim is to not strange your usage patterns. Whatever your idea of playing, organizing and developing should be supported by our framework. Freedom also means that the source code should be open source licensed, we believe that open source leads to innovation and we want to be a part of that innovation. Freedom can also mean that you should be able to use XMMS2 on the platform / device of your choice.
+
+* '''XMMS2 stands for high fidelity and quality'''
+XMMS2 aims to be '''the''' player for audiophiles and people that are passionate about their music. XMMS2 will never compromise the quality of the sound and support all relevant standards associated with HiFi.
+
+* '''The XMMS2 community should be encourage innovation and experimentation'''
+Our community should be driven by innovation and experimentation. Developers and users should ask themself: "Can I get XMMS2 running on that?", "Can I organize my music this way?" etc. It should be fun and stimulating.
+
+
+=== Version 1 ===
 
 * '''XMMS2 should be a kick-ass music player'''
 Video will never be supported in XMMS2. We believe that music is handled and played fundamentally different from video and we should acknowledge that by leaving the video playing part out of XMMS2.
