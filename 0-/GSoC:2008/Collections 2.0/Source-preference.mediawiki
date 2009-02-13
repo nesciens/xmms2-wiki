@@ -8,7 +8,7 @@ There are different ways imagineable to specify the sources. A major issue is wh
 
 === Rationale for global source-preference ===
 
-Setting source-preference globally has a couple of advantages. Firstly source-preference is consistent through all clients. Moreover users are sure to have an interface (if even the cli) to set their source-preference and do not have to modify their favourite client's source code. A third argument is that global source-preference might even improve the performance of collection querying (see below).
+Setting source-preference globally has a couple of advantages. Firstly source-preference is consistent through all clients. Moreover users are sure to have an interface (if even the cli) to set their source-preference, while currently every seperate client needs to set source-preference on its own (and might not allow the user to tweak this).
 
 === Rationale against connection-based source-preference ===
 
@@ -16,8 +16,8 @@ Source-preference on a per-connection basis may (will) confuse users, as the res
 
 === Implementation ===
 
-Source-preference might be implemented in the medialib by adding a "rank"-column to the Sources-table. This would then store how important every source is. Additionaly a goodness-column would be needed in the Media-table (or in some MediaBackend-table), storing the difference in rank between the source of that particular row and the best source for that id-key-pair, hightlighting the best rows using goodness 0. When the indices are extended to include this column sqlite can reduce the number of rows to scan for a match and therefore collection queries might be faster than they are now.
+Source-preference might be implemented in the medialib by adding a "rank"-column to the Sources-table. This would then store how important every source is. Additionaly a goodness-column would be needed in the Media-table (or in some MediaBackend-table), storing the difference in rank between the source of that particular row and the best source for that id-key-pair, hightlighting the best rows, as there goodness equals 0.
 
-The ranks can be set using the configuration-properties. (Or should there, maybe, be a seperate command for this?)
+The ranks can be set using the configuration-properties.
 
-For programming convenience a large part of this can be implemented in SQL. This would require moving Media to MediaBackend, then creating a view Media that looks the same as the current table and a view MediaBestSource which only contains the rows with goodness = 0. For internal use views BestRankCached (goodness = 0) and BestRank (the real best rank) might also be convenient. After this triggers need to be created on the views to make sure MediaBackend is synchronized. For some specific use-cases (adding new media for example) it will be better performance-wise to write to MediaBackend directly, either calculating the proper goodness in the daemon, or syncing in sqlite just once per transaction.
+For programming convenience a large part of this can be implemented in SQL. This would require moving Media to MediaBackend, then creating a view Media that looks the same as the current table and a view MediaSourcePref which only contains the rows with goodness = 0. For internal use views BestRankCached (goodness = 0) and BestRank (the real best rank) might also be convenient. After this triggers need to be created on the views to make sure MediaBackend is synchronized. For some specific use-cases (adding new media for example) it will be better performance-wise to write to MediaBackend directly, either calculating the proper goodness in the daemon, or syncing in sqlite just once per transaction. (In fact using MediaBackend is also more efficient in some other case, because of SQLite weirdness.)
