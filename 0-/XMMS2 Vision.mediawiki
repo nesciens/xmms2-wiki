@@ -64,7 +64,7 @@ Portability matters.
 XMMS2 should work on smaller devices (but not compete with rockbox on tiny devices). A headless xmms2 server actually IS sexy, especially if there are clients available for "all" platforms.
 
 
-=== discussion ===
+=== Discussion ===
 
 Less is more. I suggest we try to combine these:
 
@@ -125,3 +125,6 @@ I agree with tilman regarding free/open source. XMMS2 is free software, but "ope
 I love the four freedoms, but in it I think we lost two things: The first is the emphasis on audio-quality, and the second is the significance of open-source/free software as a mechanism for innovation.
 
 [[User:Alesbl|Alesbl]] 23:41, 15 February 2009 (UTC)
+
+* http://eleusis.bur.st/blog/2009/02/17/xmms2-the-vision/
+[[User:Eleusis|Eleusis]] 16:28, 16 February 2009 (UTC)
