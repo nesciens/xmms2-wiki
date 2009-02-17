@@ -128,3 +128,41 @@ I love the four freedoms, but in it I think we lost two things: The first is the
 
 * http://eleusis.bur.st/blog/2009/02/17/xmms2-the-vision/
 [[User:Eleusis|Eleusis]] 16:28, 16 February 2009 (UTC)
+
+
+As much as I like the four freedoms for Free Software, I agree with eleusis and I don't think they make for a good XMMS2 vision.  They are too generic and "obvious", and they don't emphasize a clear orientation on our part; they loosely underline points we value, but they steal the attention from what really matters.
+
+I also agree that the name XMMS2 is used for several different things, mainly a music player "framework" and a music player ("client").  Yet it's probably hard to make the distinction without confusing people, so perhaps we should decide to make it clear that the vision is that of the "XMMS2 community" (who builds a music player using the framework).  The fact that we talk about different things might explain the various visions people have been pushing forward IMHO.
+
+The user/dev distinction is also worth noting (I tried to merge both in my previous comment).
+
+However I disagree with eleusis' opinion that education should be a main value; it might be a side-effect of valuing experimentation, new approaches and fun participation, but not a core goal per se. "Excellence" is also hard to define in my opinion.
+
+As danderson noted, "freedom player" sounds like "freedom fries", which is significantly lame.  I also think the Vision v3 lacks several important aspects of the vision that were in previous versions, so here is another take, playing on XMMS2 as a ''Free Demanding Music/Audio Player'':
+
+* '''Free''' - Open development and wide support of technical choices, so that XMMS2 isn't limited by user preferences (= freedom)
+** FOSS license and developement
+** No technical restrictions:
+*** formats
+*** devices
+*** platforms
+*** languages
+*** toolkits
+*** interfaces
+
+* '''Demanding (Quality)''' - High expectations in terms of audio and code from users and devs (could also be High-Quality, Awesome, Kick-ass, etc)
+** Sound, hi-fi standards
+** Code, API, abstractions
+
+* '''Music/Audio''' - Focus on one type of media and cover it well (let the grammar nazis choose between music and audio)
+** Only audio (not video, images or whatever)
+** Exploit music specificities
+
+* '''Player (Fun & Passion)''' - Discover new ways to play, think, experiment and enjoy music and music players; "best" project for music lovers and music player geeks, rather than trying to please "the masses"
+** Of users for music
+** Of developers for music players
+  
+
+Note that I left out the idea of organisation of the music, which I'm very fond of, but it probably belongs more to the vision of a specific player, rather than the XMMS2 community in general.
+
+[[User:Theefer|Theefer]] 01:31, 17 February 2009 (UTC)
