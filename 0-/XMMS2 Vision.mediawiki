@@ -4,6 +4,19 @@
 
 This document should outline the collective vision of the XMMS2 community. Currently this is a draft that has not been passed through the collective feedback from the community. Please contribute directly to this page or to the Discussion page so that this document can mirror our collective vision for this music player and community.
 
+=== Version 4 - Version 2 and Version 3 mixed ===
+
+* '''XMMS2 should be a kick-ass audio player and organizer''' - Video will never be supported in XMMS2. We believe that audio is organized and played fundamentally different from video and we should acknowledge that by leaving the video playing part out of XMMS2.
+
+* '''XMMS2 is free''' - XMMS2 is free in many ways:
+** '''The freedom to get the application and source''' - The source and the application will always be available for free, to both use and change.
+** '''The freedom to organize and play your audio as you like''' - XMMS2 should be flexible enough to handle many different ways to organize and play audio. XMMS2 should not lock you in to '''our''' way of thinking.
+** '''The freedom to extend XMMS2 your way''' - The client library and clients should be available for all different toolkits and gui frameworks, XMMS2 shouldn't tell you what to you use.
+** '''The freedom to run XMMS2 wherever your want''' - XMMS2 should be portable enough to be able to run on all different types of applications and Operating Systems. Again, you are free to choose.
+* '''XMMS2 stands for high fidelity and quality''' - XMMS2 aims to be '''the''' player for audiophiles and people that are passionate about their audio. XMMS2 will never compromise the quality of the sound and support all relevant standards associated with HiFi.
+* '''The XMMS2 community should be encourage innovation and experimentation''' - Our community should be driven by innovation and experimentation. Developers and users should ask themself: "Can I get XMMS2 running on that?", "Can I organize my music this way?" etc. It should be fun, stimulating and educational.
+
+
 === Version 3 - The Four Freedoms alternative ===
 One alternative that came forward in the last iteration was to just specify the four freedoms of XMMS2. This is a pretty clean version that is described below.
 
