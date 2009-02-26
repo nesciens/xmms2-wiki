@@ -179,3 +179,7 @@ As danderson noted, "freedom player" sounds like "freedom fries", which is signi
 Note that I left out the idea of organisation of the music, which I'm very fond of, but it probably belongs more to the vision of a specific player, rather than the XMMS2 community in general.
 
 [[User:Theefer|Theefer]] 01:31, 17 February 2009 (UTC)
+
+Version 4 is a bit verbose, but it contains all I'd expect from our Vision. Anybody else wants to add or suggest something?
+
+[[User:Theefer|Theefer]] 22:53, 26 February 2009 (UTC)
