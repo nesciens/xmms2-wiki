@@ -9,7 +9,7 @@ __NOEDITSECTION__
 
 Read the [[Release:DrLecter |release notes]] for DrLecter.
 
-Visit our [[Summer_of_Code_2008|Summer of Code 2008 page]].
+Visit our [[Summer_of_Code_2009|Summer of Code 2009 page]].
 |-
 |}
 </div>
