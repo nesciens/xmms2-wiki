@@ -1,0 +1,33 @@
+The following ideas are hints at possible projects that we would like to see in XMMS2. We also welcome new ideas warmly, so please feel free to suggest your own! If you are interested in working on GSoC 2009 with us, please drop by the IRC channel to ask any questions or details, we'd be glad to discuss the projects with you before you even start writing your proposal!
+
+{{SoCItem| title=Your idea
+|description=This is where you get the chance to implement that really cool music-player related idea that has been brewing in your mind. It may be some funny interface, a crazy effect, a revolutionary way to handle collections, or something different. Surprise us! We love new ideas!
+|lang=Depends
+|level=Depends
+|mentor=Depends}}
+
+{{SoCItem| title=New Media Library Database Backend (S4)| description=XMMS2 uses SQLite as the backend for its media library. Since XMMS2 basically maps a key-value pairing,   it has been argued that using an SQL database in this case is suboptimal, especially with regards to some SQLite limitations. In this project, the student have to take advantage of the abstraction provided by Collections, and look into implementing a new backend for the XMMS2 media library. This project would include performance testing to showcase the differences with the current backend in various contexts of use.| lang=C| level=Hard| mentor=N/A}}
+
+{{SoCItem| title=XMMS2-specific GUI toolkit widgets (GTK+ or Qt)| description=XMMS2 clients developed for GTK+ or Qt often implement the same widgets for displaying playlists, media status, and the media library. This project would be to implement a set of widgets for developing an xmms2 client with one of the popular toolkits. The study of existing music players and an interest in HCI would be required. Advanced examples include: a rich medialib display (scriptable, see [http://www.foobar2000.org/ foobar2000]), a graphical editor for [[Collections_Concept | Collections]], cover art manager, preferences panel for changing configvals, etc.| lang=probably C or C++| level=Medium to Hard| mentor=N/A}}
+
+{{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin.| lang=C| level=Medium| mentor=N/A}}
+
+{{SoCItem| title=High-level clientlib (xmmsclient-easy)| description=Development of a higher-level client library, that would include features many clients have in common. Current ideas for xmmsclient-easy modules include: server state caching (playlist, metadata, playback status, etc), a new modular collection pattern parser, etc.| lang=C| level=Medium to Hard| mentor=N/A}}
+
+{{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/JavaScript| level=Hard| mentor=N/A}}
+
+
+* web-based or experimental client (iphone, maemo, android, karaoke,  
+you name it)
+* spotify xform - is it really hard enough to take a whole summer?
+* bring back a log/history of played things - as a table or  
+collection, or should it be a service client?
+* Rockbox sync - DraX, what exactly could be done here, you  
+investigated that right?
+
+== maybes ==
+{{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
+
+{{SoCItem| title=MPD Brigde| description=A program that can act as a bridge between XMMS2D and MPD clients. There is a started bridge in Perl that can be used as a reference. Maybe rafl have more input on this?| lang=*| level=Easy| mentor=N/A}}
+
+{{SoCItem| title=Mergestatus| description=Someone needs to describe this.| lang=Python| level=?| mentor=N/A}}
