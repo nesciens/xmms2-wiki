@@ -16,14 +16,7 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/JavaScript| level=Hard| mentor=N/A}}
 
-
-* web-based or experimental client (iphone, maemo, android, karaoke,  
-you name it)
-* spotify xform - is it really hard enough to take a whole summer?
-* bring back a log/history of played things - as a table or  
-collection, or should it be a service client?
-* Rockbox sync - DraX, what exactly could be done here, you  
-investigated that right?
+{{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
 == maybes ==
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
@@ -31,3 +24,9 @@ investigated that right?
 {{SoCItem| title=MPD Brigde| description=A program that can act as a bridge between XMMS2D and MPD clients. There is a started bridge in Perl that can be used as a reference. Maybe rafl have more input on this?| lang=*| level=Easy| mentor=N/A}}
 
 {{SoCItem| title=Mergestatus| description=Someone needs to describe this.| lang=Python| level=?| mentor=N/A}}
+
+{{SoCItem| title=Spotify xform| description=Stream and browse spotify songs.| lang=C| level=Medium| mentor=N/A}}
+
+{{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
+
+{{SoCItem| title=Rockbox sync| description=Needs description.| lang=C| level=Medium| mentor=N/A}}
