@@ -1,3 +1,21 @@
+
+== Accepted projects ==
+
+None so far!
+
+== Portal ==
+
+[[Summer_of_Code_2009/Proposed_projects|Proposed projects]]
+
+[[Summer_of_Code_2009/Student_Application|Student application form]]
+
+[[Summer_of_Code_2009/Mentors|Mentor information]]
+
+[[Summer_of_Code_2009/Mentor_Application|Our application]]
+
+
+== data ==
+
 We DO want to participate in GSoC 2009.
 
 Lets collect our thought about earlier years here meanwhile so we know what to do better.
