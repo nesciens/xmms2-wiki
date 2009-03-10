@@ -27,7 +27,7 @@
 **http://wiki.xmms2.xmms.se/wiki/Summer_of_Code_2009/Student_Application
 *What is your plan for dealing with disappearing contributors?
 *What is your plan for dealing with disappearing members?
-** We always plan at least one backup mentor for each project, i.e. someone who has the time and expertise to step in if the original mentor had to disappear for a while, either as a planned absence or not. The community on the IRC channel can sometimes also help answer questions students might have even when no official members is available.
+** We always plan at least one backup mentor for each project, i.e. someone who has the time and expertise to step in if the original mentor had to disappear for a while, either as a planned absence or not. The community on the IRC channel can sometimes also help answer questions students might have even when no official members are available.
 *What steps will you take to encourage contributors to interact with your community before, during, and after the program?
 *What will you do to ensure that your accepted contributors stick with the project after the program concludes?
 *Please select your backup group administrator.
