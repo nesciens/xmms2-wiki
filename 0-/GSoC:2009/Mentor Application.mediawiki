@@ -5,18 +5,25 @@
 *Public Email:
 ** soc2009@xmms.se
 *Description:
+** XMMS2 is the spiritual successor to the very successful XMMS project. The creators of XMMS got together in 2002 and spun out the XMMS2 sister project, the idea was from the beginning to correct some of the early mistakes in XMMS design. The project grew and now is a very different type of application compared to XMMS. The team behind XMMS2 focuses on audio quality, freedom of choice and powerful organization possibilities. Community-wise the team is around 15-20 regular contributors and over 70 people have at some time contributed to XMMS2.
 *Why is your group applying to participate? What do you hope to gain by participating?
+** This will be the fourth year we apply to GSoC and we still have the same motivation, because it's great fun! It gives us PR that we couldn't achieve in other ways and it introduces new developers to our community. It is also very educational for both the student and the mentor.
 *What is the main public mailing list for your group?  
 ** xmms2-devel@lists.xmms.se
 *Where is the main IRC channel for your group?
 ** #xmms2 at freenode
 *What criteria do you use to select the members of your group? Please be as specific as possible.
 *Has your group participated previously? If so, please summarize your involvement and any past successes and failures.  
+** We participated in the GSoC for the past three years and we feel that we achieved very successful outcomes. We also learned a lot during the process. During the first year, we had two very successful projects, two semi-successful ones and one failure. Last year, all projects reached their goals, although the produced code wasn't always in a releasable state. We took a more aggressive approach to student selection the second time, by discussing in depth with all the potential candidates about their interest, motivation and experience, as well as their proposed development roadmap. We believe that by asking the students to already provide the broad lines of their project (with milestones) in their proposal, serious candidates are more easily identified. The main issue we had last year was that projects weren't ready to be merged in the mainline, because there wasn't enough time to polish integration. This was a disappointment for both the student and the community. This year, we would like to focus on improving the ongoing quality of the code to ensure that it reaches a mergeable state by the end of the GSoC.
 *If your group has not previously participated, have you applied in the past? If so, for what sort of participation?  
 *What license does your organization use?
+LGPL/GPL v2
 *What is the URL to the ideas list of your organization?
+**http://wiki.xmms2.xmms.se/wiki/Summer_of_Code_2009/Proposed_projects
 *What is the main development mailing list for your group?
+** xmms2-devel@lists.xmms.se
 *What is the application template you would like contributors to your organization to use.
+**http://wiki.xmms2.xmms.se/wiki/Summer_of_Code_2009/Student_Application
 *What is your plan for dealing with disappearing contributors?
 *What is your plan for dealing with disappearing members?
 *What steps will you take to encourage contributors to interact with your community before, during, and after the program?
