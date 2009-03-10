@@ -30,10 +30,12 @@
 *What is your plan for dealing with disappearing members?
 ** We always plan at least one backup mentor for each project, i.e. someone who has the time and expertise to step in if the original mentor had to disappear for a while, either as a planned absence or not. The community on the IRC channel can sometimes also help answer questions students might have even when no official members are available.
 *What steps will you take to encourage contributors to interact with your community before, during, and after the program?
-
+** Hanging around on IRC will be a requirement, we will see non-IRCing as desertion. We will show our patented kindness and interest in the students work and persona.
 *What will you do to ensure that your accepted contributors stick with the project after the program concludes?
-*Please select your backup group administrator.
+** We do not think it's possible to convince students to stick with the project unless they are interested in it in the first place. For this reason, we want to favor the participation of students who show a genuine interest in XMMS2, not just in a single GSoC task: (1) students who are already regular contributors and members of the community and who have a contribution to make in the context of GSoC, and (2) students who convince us of their unlimited passion for XMMS2 in their application form (among other things, we ask "why are you interested in XMMS2, what do you think you could bring to it, and what are the things you can think of to make XMMS2 an even better project?"). Obviously, a friendly community and lots of communication also help keeping good students during and after GSoC. 
 
+*Please select your backup group administrator.
+** Anders Waldenborg
 
 ----
 __NOTOC__
