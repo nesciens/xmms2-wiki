@@ -1,10 +1,15 @@
 *Group Name:
+** XMMS2
 *Home Page URL:
+** http://wiki.xmms2.xmms.se/
 *Public Email:
+** soc2009@xmms.se
 *Description:
 *Why is your group applying to participate? What do you hope to gain by participating?
 *What is the main public mailing list for your group?  
+** xmms2-devel@lists.xmms.se
 *Where is the main IRC channel for your group?
+** #xmms2 at freenode
 *What criteria do you use to select the members of your group? Please be as specific as possible.
 *Has your group participated previously? If so, please summarize your involvement and any past successes and failures.  
 *If your group has not previously participated, have you applied in the past? If so, for what sort of participation?  
