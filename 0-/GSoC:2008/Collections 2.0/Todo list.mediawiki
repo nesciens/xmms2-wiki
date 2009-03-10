@@ -2,6 +2,12 @@
 
 ''italic'' are the not-so-important tasks.
 
+* Attributes
+** '''Allow general xmmsv_ts as attributes'''
+*** Several values for field, value (except for MATCH), source. To be interpreted as a union.
+* '''Chop history in logical chunks'''
+
+
 * '''Documentation'''
 ** Add documentation for most functions
 ** Add documentation on the wiki
@@ -14,9 +20,6 @@
 * Prefix 
 ** Make prefix-matching work for collations.
 ** ''Fix prefix for non-ascii characters like Å‚''
-* Attributes
-** '''Allow general xmmsv_ts as attributes'''
-*** Several values for field, value (except for MATCH), source. To be interpreted as a union.
 ** Move idlist to the attributes.
 * IdlistVirtual
 ** Implement an index
@@ -32,7 +35,6 @@
 ** '''Change schema to use value ids, which then appear in MediaTokens, MediaValues and MediaBackend tables'''
 * Abolish INTERSECTION_ORDERED
 * Change attributes to LIMIT (to not use UINT_MAX)
-* '''Chop history in logical chunks'''
 * Fix FIXMEs
 * Do TODOs
 * ''Add optimizations to collquery''
