@@ -13,11 +13,12 @@
 *Where is the main IRC channel for your group?
 ** #xmms2 at freenode
 *What criteria do you use to select the members of your group? Please be as specific as possible.
+** We select members based on their involvement in the community (time, code contributed, social involvement) and their availability over the course of the GSoC program. We have a pool of past mentors whom we know we can rely on, but new mentors are also welcome if they have proved their ability to supervise a project.
 *Has your group participated previously? If so, please summarize your involvement and any past successes and failures.  
 ** We participated in the GSoC for the past three years and we feel that we achieved very successful outcomes. We also learned a lot during the process. During the first year, we had two very successful projects, two semi-successful ones and one failure. Last year, all projects reached their goals, although the produced code wasn't always in a releasable state. We took a more aggressive approach to student selection the second time, by discussing in depth with all the potential candidates about their interest, motivation and experience, as well as their proposed development roadmap. We believe that by asking the students to already provide the broad lines of their project (with milestones) in their proposal, serious candidates are more easily identified. The main issue we had last year was that projects weren't ready to be merged in the mainline, because there wasn't enough time to polish integration. This was a disappointment for both the student and the community. This year, we would like to focus on improving the ongoing quality of the code to ensure that it reaches a mergeable state by the end of the GSoC.
 *If your group has not previously participated, have you applied in the past? If so, for what sort of participation?  
 *What license does your organization use?
-LGPL/GPL v2
+**LGPL/GPL v2
 *What is the URL to the ideas list of your organization?
 **http://wiki.xmms2.xmms.se/wiki/Summer_of_Code_2009/Proposed_projects
 *What is the main development mailing list for your group?
@@ -26,6 +27,7 @@ LGPL/GPL v2
 **http://wiki.xmms2.xmms.se/wiki/Summer_of_Code_2009/Student_Application
 *What is your plan for dealing with disappearing contributors?
 *What is your plan for dealing with disappearing members?
+** We always plan at least one backup mentor for each project, i.e. someone who has the time and expertise to step in if the original mentor had to disappear for a while, either as a planned absence or not. The community on the IRC channel can sometimes also help answer questions students might have even when no official members is available.
 *What steps will you take to encourage contributors to interact with your community before, during, and after the program?
 *What will you do to ensure that your accepted contributors stick with the project after the program concludes?
 *Please select your backup group administrator.
