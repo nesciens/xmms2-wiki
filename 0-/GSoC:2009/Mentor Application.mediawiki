@@ -1,3 +1,28 @@
+*Group Name:
+*Home Page URL:
+*Public Email:
+*Description:
+*Why is your group applying to participate? What do you hope to gain by participating?
+*What is the main public mailing list for your group?  
+*Where is the main IRC channel for your group?
+*What criteria do you use to select the members of your group? Please be as specific as possible.
+*Has your group participated previously? If so, please summarize your involvement and any past successes and failures.  
+*If your group has not previously participated, have you applied in the past? If so, for what sort of participation?  
+*What license does your organization use?
+*What is the URL to the ideas list of your organization?
+*What is the main development mailing list for your group?
+*What is the application template you would like contributors to your organization to use.
+*What is your plan for dealing with disappearing contributors?
+*What is your plan for dealing with disappearing members?
+*What steps will you take to encourage contributors to interact with your community before, during, and after the program?
+*What will you do to ensure that your accepted contributors stick with the project after the program concludes?
+*Please select your backup group administrator.
+
+
+----
+__NOTOC__
+=LAST YEARS APPLICATIONS (for easy copy/paste)=
+
 == About Your Organization ==
 * What is your Organization's Name?
 ** XMMS2 - X(cross)platform Music Multiplexing System
