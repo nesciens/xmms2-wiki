@@ -18,14 +18,14 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
+{{SoCItem| title=MPD Brigde| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is one such attempt in Perl by rafl that can be used as a reference (missing some parts of the MPD protocol).| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
+
 == maybes ==
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
 
-{{SoCItem| title=MPD Brigde| description=A program that can act as a bridge between XMMS2D and MPD clients. There is a started bridge in Perl that can be used as a reference. Maybe rafl have more input on this?| lang=*| level=Easy| mentor=N/A}}
+{{SoCItem| title=Mergestatus| description=We currently have multiple loosely coupled tools: our [http://bugs.xmms2.xmms.se/ Mantis bug tracker], the [http://git.xmms.se/merge merge page], [http://git.xmms.se/ Gitweb], the [http://wiki.xmms2.xmms.se/ official wiki]. We envision a new tool that would replace the merge page by transforming it into a more powerful review tool for new code in Git tree (on our server or any other), patches in mantis, etc. It would be tied to the bug tracker and allow inline commenting, Ã  la [http://www.review-board.org/ Review Board] but adapted to and optimized for the heterogeneity of DVCS and loose patches.| lang=Python| level=Hard| mentor=N/A}}
 
-{{SoCItem| title=Mergestatus| description=Someone needs to describe this.| lang=Python| level=?| mentor=N/A}}
-
-{{SoCItem| title=Spotify xform| description=Stream and browse spotify songs.| lang=C| level=Medium| mentor=N/A}}
+{{SoCItem| title=Spotify xform| description=Stream and browse spotify songs (probably worth taking a look at [http://despotify.se/ Despotify]).| lang=C| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
 
