@@ -54,6 +54,7 @@ All current clients should be found here.
 {{ClientTableEntry|xmms2swi| Browser / Webclient | PHP | in development | Simple web interface, small and works well with ALL browsers! }}
 {{ClientTableEntry|xmms2-osd| On-Screen Display / XOSD | Python | rewrite, in development | Simple song info on-screen display }}
 {{ClientTableEntry|xmms2-pidgin| Pidgin Plugin | C | mostly stable | Pidgin plugin to display current song }}
+{{ClientTableEntry|xmms2-web| Browser / Webclient | Python | mostly stable | Web 1.0 interface suitable for text clients. }}
 {{ClientTableEntry|xmms2_jump| Quick Search (GTK/curses) | C++ | in development | Let's you search your playlist in real time. }}
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|XMMS2 Webterface| Browser / Webclient | Ruby | in development | eRuby templated, skinnable, simple web 1.0 client}}
