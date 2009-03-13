@@ -52,6 +52,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
 * [[Client:XMMS2_Webterface | XMMS2 Webterface]] is a dead simple, configurable, themable web interface
 * [[Client:xmms2swi | XMMS2SWI]] Simple web interface, small and works well with ALL browsers!
+* [[Client:xmms2-web | xmms2-web]] Simple web 1.0 interface usable with text browsers. It supports directory browsing and multiple playlists.
 
 == Console Clients ==
 
