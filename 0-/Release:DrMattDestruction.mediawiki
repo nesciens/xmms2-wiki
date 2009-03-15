@@ -37,6 +37,51 @@ Upgrading should be smooth.
 === Full ChangeLog ===
 
 ==== Between TEST1 and TEST2 ====
+'''Anders Waldenborg'''
+* <mantis>2179</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>675698300e1c2b1e71eab36780bfc54ddf30dacd</git>
+* <mantis>2127</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e89c5771b3255cc4f565c467d97f1b264f02b270</git>
+* <mantis>2086</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>4f08f9df75db94e03236d5c2e2d36cf954cd1f0e</git>
+* <mantis>2180</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>4bc16aa019d58a466a6e0ceb3e7c68de0e83d99e</git>
+* <mantis>2169</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7f83179b1c152c6c3800c7d4009e611dd8e57a0a</git>
+* <mantis>2186</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d83e1321a73151b7a808c90032e0c6992ce451ef</git>
+* <mantis>2185</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>c4e9fc9c653a23a81412edc907626b5c3fb47f9c</git>
+* <mantis>2176</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>59912379d07590cec023b15e0677d20a5691ef46</git>
+* <mantis>2188</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>18d59853a874f4a7eb480509606c611548ee86c8</git>
+'''Anthony Garcia'''
+* <mantis>2165</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b1d1a9ae870e598cc2c0128867caea44e9234cec</git>
+* <mantis>2166</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d731f3d4bac94f7c5cf7a17a191df21640394d26</git>
+* <mantis>2177</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>62d47c580abd0c64d673574d8e9e03a4493df2d0</git>
+* <mantis>2175</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0280d76365d803fba060438f6c681a425b416140</git>
+'''Daniel Svensson'''
+* <mantis>2173</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>94741c3b40e62ec43db5b0a21b597e210d80a9a7</git>
+* <mantis>2174</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e65ce7823c5bdef655eac8c7336e7a936992d17d</git>
+'''Thomas Frauendorfer'''
+* <mantis>1897</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>77484083d90e5c707d694421c1dd158b9481399a</git>
+** <git norepo=1 repo='xmms2-devel.git'>44e600dd24896122ab71a176165672815c09ff70</git>
+** <git norepo=1 repo='xmms2-devel.git'>e59843c6b96e5d5bf84b5c2bc42590d87267766a</git>
+** <git norepo=1 repo='xmms2-devel.git'>aeccca99f03cb12ab175a08be5cebd630ef4f717</git>
+'''Tilman Sauerbeck'''
+* <mantis>2114</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b354b2e4ff5b169f1de8719f9d674959bc7d6a5b</git>
+'''Åukasz Michalik'''
+* <mantis>1897</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5f1786fbc52033c2d01077483d987a67bcb5dc17</git>
 
 ==== Between DrLecter and TEST1 ====
 
