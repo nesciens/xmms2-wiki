@@ -84,5 +84,424 @@ Upgrading should be smooth.
 ** <git norepo=1 repo='xmms2-devel.git'>5f1786fbc52033c2d01077483d987a67bcb5dc17</git>
 
 ==== Between DrLecter and TEST1 ====
+'''Anders Waldenborg'''
+* <mantis>1962</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3c5621c945a9b05678aa3068fbf597190003b522</git>
+* <mantis>2090</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d4872c3cbd28006f7274144d736d750f3531ffda</git>
+* <mantis>1871</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b6aae78adf87c9716398bbddac3dff090b910a44</git>
+* <mantis>1897</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>48032e0490200e0af21643a1217a0e6f4eeef85b</git>
+** <git norepo=1 repo='xmms2-devel.git'>211bd43c0e5ab648cb8e63451deed1097bc6c9fb</git>
+** <git norepo=1 repo='xmms2-devel.git'>5cf0c75363c97409e8552b052c99151521f27366</git>
+** <git norepo=1 repo='xmms2-devel.git'>bcf03a07972140981fca78d3feccea44263761a8</git>
+** <git norepo=1 repo='xmms2-devel.git'>40db8f8e8d1343037b78640f3dcb7fc16d58fb32</git>
+** <git norepo=1 repo='xmms2-devel.git'>e646d3a74a9915b5b114da2cb9eea5e3f06ec4ac</git>
+** <git norepo=1 repo='xmms2-devel.git'>c6b01346c919b84c383996e71603f88429cd2265</git>
+** <git norepo=1 repo='xmms2-devel.git'>f94777ec2806a3b71f36aae212546dadc527b076</git>
+** <git norepo=1 repo='xmms2-devel.git'>ac8fbaa7f3548426fc6d9b09cbaaf065dd9ec039</git>
+** <git norepo=1 repo='xmms2-devel.git'>e2ab0e680b3c1ae7868a2bdf3ffd0353b23d9cb4</git>
+** <git norepo=1 repo='xmms2-devel.git'>f3b45f650864c15186aec9335f8ba0a04285e62b</git>
+** <git norepo=1 repo='xmms2-devel.git'>60c75ddd124bc78d6635b03c0fd97b89918b5e09</git>
+** <git norepo=1 repo='xmms2-devel.git'>4fa76be75688269a04901bf580b832c37d923480</git>
+** <git norepo=1 repo='xmms2-devel.git'>bfa63050b4d713df666dbdc0920372cbe391de22</git>
+** <git norepo=1 repo='xmms2-devel.git'>03a943564c95bb0392b12cf916e14d45bc169858</git>
+** <git norepo=1 repo='xmms2-devel.git'>950043d686b6a67924d8f885d2b90fb9fd2ea300</git>
+** <git norepo=1 repo='xmms2-devel.git'>1d4cb43e1715e72ba3707b396d05cf5d51b1adb6</git>
+** <git norepo=1 repo='xmms2-devel.git'>08149300d15b16c5a3ed9f25fe9d27095b794144</git>
+** <git norepo=1 repo='xmms2-devel.git'>bdf83462c163baacc1e34e586c12c39ce46e16fb</git>
+* <mantis>1986</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>4e02c990ff7cf53e9168e8cd52a136d1ff813f3b</git>
+* <mantis>2154</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a0648d593e4c88990373f3e97d7b6d09894fb57b</git>
+* <mantis>2056</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>545f74c4c419c048bb276cc58a31290871d9bc10</git>
+* <mantis>2028</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d09c0d8a971c0333a0c8387113f744f0b9899fe4</git>
+* <mantis>2026</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>89ce703290899b16420bd7376d9840ed9ce65a50</git>
+* <mantis>2138</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0a95c65a36254c66b0215acdef31d05c75244cee</git>
+* <mantis>2118</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>14b81e2eeab12d40990ea7dd4af72731fcc80d03</git>
+* <mantis>2155</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>388a03973a34c5aaafcbdeb740493a9acf9eda6b</git>
+* <mantis>2079</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b8a735ea0b38f34b4e780fe013cc04727fca5485</git>
+* <mantis>2144</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ed3303feb84ed39fd9cd2dca2ce7f3a95d5bcccc</git>
+* <mantis>2151</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3d5093b46763acca9e3b3309073f73a7ca8daf73</git>
+* <mantis>2110</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>efda07ff748189caedf9d3456fe7707fac438afc</git>
+* <mantis>2111</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>bad3588390c32b10d281ccb6fe08797115a4c7b9</git>
+* <mantis>2017</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>41700c8154383660fc5a94028675fa10aac7ee1f</git>
+* <mantis>2077</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d349512a237fb08d1a8a5227595a7b1acfaa4d09</git>
+* <mantis>2115</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b2fa136b026bcd8d0cb79596b12db783174e58da</git>
+* <mantis>2117</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b8ebe974561dba0a055fa0469df8297830aa1e84</git>
+* <mantis>1338</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>79091535db3a37774ef5695ed6ce347538f749de</git>
+** <git norepo=1 repo='xmms2-devel.git'>053e0c0d13438f95999c64349405245d77983cd7</git>
+** <git norepo=1 repo='xmms2-devel.git'>26d1116e1bf9d0bd8fc757ec84815e1f5641d467</git>
+** <git norepo=1 repo='xmms2-devel.git'>5336e503fc4b231ca77ed63a90a8d9c1dd57dcce</git>
+** <git norepo=1 repo='xmms2-devel.git'>330774e08145bcec8172574e0fdcf8603bf48a98</git>
+** <git norepo=1 repo='xmms2-devel.git'>165997dbac918476385d95a1712068dc18284147</git>
+** <git norepo=1 repo='xmms2-devel.git'>9983de3dac6e1e30df2d3ed8f3cb8aaa4cfeeb25</git>
+** <git norepo=1 repo='xmms2-devel.git'>8d272cb185d596c9460d9e15132a519553d8700e</git>
+** <git norepo=1 repo='xmms2-devel.git'>6c6bda357f7bd21e7618f03953ac3a99455c4db4</git>
+** <git norepo=1 repo='xmms2-devel.git'>dc1d811f367bb6508cfc61458e82c71b64a4939f</git>
+** <git norepo=1 repo='xmms2-devel.git'>d0acedd1b8d75c4adaf9347971c3901c4d08cce1</git>
+** <git norepo=1 repo='xmms2-devel.git'>cf249f6ab30c1388de0c2deb08e43a7d26edfc13</git>
+** <git norepo=1 repo='xmms2-devel.git'>4366b7b2219e7ae49bd7667d3265d51727113ccb</git>
+* <mantis>1987</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e6cb2540cc22b46725b0636c5a0b7f1e46f307bf</git>
+* <mantis>1597</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1c1526633e369f1932f95a75567d05039ba1c8f8</git>
+** <git norepo=1 repo='xmms2-devel.git'>c29e3bf78cffe0a4ff3de83d3b1bd5fe99becf33</git>
+* <mantis>2122</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>eeb726181f99ac18d7cae110264d19ae7fcc673f</git>
+* <mantis>1995</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5f761e6c97dc7c7df3cb19a0ecfba87e36854fbb</git>
+* <mantis>1996</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>dffde723fb65f19905eed56d01add5a946d3be96</git>
+* <mantis>2032</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e8b73cdd89c5cc9618d02618504bd8583c911c60</git>
+* <mantis>2081</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0c10886122dc2f62c554e5c4bc527485e62f3245</git>
+* <mantis>2048</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e1daf13dae2c8a940042c032ebf1ab8da042971c</git>
+* <mantis>2159</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>acc2cb8f3a8c8270c18bce860d713606c6dc1ce7</git>
+* <mantis>1835</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>49c44885b299d3422d80583e68edcfdbb4bf8714</git>
+** <git norepo=1 repo='xmms2-devel.git'>53d95161d6e565cf6cf797afb7499a311fb2dea9</git>
+* <mantis>2109</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>aa7cb69eb773d7bdd2138b7d4d7f8584cb3a0584</git>
+* <mantis>2108</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>21af108dd2a61a9f789c46e8ed3b7bbb178ce3b0</git>
+** <git norepo=1 repo='xmms2-devel.git'>a09a37dcd64b3f5a48d1a2ba0c6076bde53efe3f</git>
+* <mantis>2163</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ba610429a1f6c11c414ad977e651a15045d151e4</git>
+* <mantis>2103</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>32013952a0c9a0e4a323e9f1d3614c32c95f0125</git>
+* <mantis>2102</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b9ce827620b2f27da02ed7cd22122021dc641f5e</git>
+* <mantis>2161</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>75f5404d75c8de2756b2dbdebd42d86ce8abb873</git>
+* <mantis>2106</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>04e6e5e854290f73e8ac8fa9f7b06e5007d7c78a</git>
+* <mantis>2149</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>cf98ab16a449aeb15d4ffe7686b323e39db687fc</git>
+'''Andrew G Potter'''
+* <mantis>1972</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1e06e4a55244e1e3a1b5afb3e9034b1cac6b1931</git>
+'''Anthony Garcia'''
+* <mantis>1815</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>85bcb5ca953f1cbe4da313293e589614bbefd7bd</git>
+* <mantis>1979</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a0c8fd251da06e5e5b636b80dc439d2600f730c9</git>
+* <mantis>443</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>66df6a0c9488c517b01a76144560d3edd6b7be15</git>
+* <mantis>2080</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d89284b01fc721743bf3e28b553f0cf8f6e16e10</git>
+* <mantis>2145</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>18216ba64a81da52df5370d167bef06835305e55</git>
+* <mantis>2157</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>f5977a56ae8aeb518adb0f5c9e652da77d484962</git>
+* <mantis>2140</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3dc92f8cdd5996da0b047bade20b28c0bdcef2ae</git>
+** <git norepo=1 repo='xmms2-devel.git'>5ab3efe4f681a365a1feb9164d7fe98ba18453aa</git>
+* <mantis>1664</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e0113a3a2aeca82982f683117a4669684357345c</git>
+* <mantis>2158</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>617a41504b6532b2343c52b2ac976dbcccbadaef</git>
+* <mantis>2098</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0e2eaa9baa17154f75dd65d0660a54b70774ef0d</git>
+* <mantis>2039</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>612332b0a476b911f0d84675a2dc90b17f931e19</git>
+* <mantis>2038</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a84c4335586d0ed78e68d73d178806243012563e</git>
+'''Auke Schrijnen'''
+* <mantis>2003</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>8255bdd1cfdb2bd9bbc7700fce3d136159296f3d</git>
+* <mantis>2096</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b72ac45dcf542e452608215875a994e05844caa0</git>
+'''Daniel Chokola'''
+* <mantis>1998</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>37578b59f5d7376213da74b3bf6b7c7f430d0bc9</git>
+* <mantis>2089</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>356c9063aeb70f857e449c3cc11767a9ecdc2b35</git>
+* <mantis>1997</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>732a151ad495ac869566923b8db8145c41a40509</git>
+* <mantis>2049</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>f3c932dbab705a5e25b1348c6e5845214ace28ad</git>
+'''Daniel Svensson'''
+* <mantis>1781</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2689bd95b52534c1180cc8e24d782ebfb064b573</git>
+* <mantis>2101</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e1331ab5f00682a740a40d54e11f526123ba0774</git>
+* <mantis>1835</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>48d9048402911f0f6bcb6a3ee6092702d715e03e</git>
+'''Deng Xiyue'''
+* <mantis>2091</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>641bd188e9f3920bf8826c426add561fea91ab32</git>
+'''Erik Massop'''
+* <mantis>2045</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7611c4c3e60e12f24a78df0cd5b260b568b8713b</git>
+* <mantis>2055</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e49cdd0a35f362501513d441deadde7181873848</git>
+* <mantis>2126</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b7f2f167e048bd1f78f3b8d2de1621e2422d8c50</git>
+* <mantis>2083</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>11b17682d691d0da25ec704cca2e45e68d50a112</git>
+* <mantis>1967</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>893633fb66bd18e84c1ce8f125e236409b467e28</git>
+* <mantis>2147</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e49e2496cc110d28d4d75636bb4f3363059d4ee0</git>
+* <mantis>1924</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>df2079966d9e7111fa17f3a81e7056326138d53a</git>
+* <mantis>1934</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b1ff9a3f962c0b33c9522d4dafe482155418ebe5</git>
+* <mantis>2100</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>48267c3da324699a6b2869b25092a3d71aed69c2</git>
+* <mantis>2099</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ab8f074ebec9043b3b565b7d792cda596b42671f</git>
+* <mantis>2098</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>127756430aef13077b882958abf3790785266886</git>
+'''Florian Ragwitz'''
+* <mantis>1192</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1caf29e7af8dd124119f7bd193eeee54287ca3a3</git>
+'''Igor Assis'''
+* <mantis>2123</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>66b42baf8ebb700f0560b842d33cbe40b164c24d</git>
+** <git norepo=1 repo='xmms2-devel.git'>a8ee9c0d33127403196bdec36f91c626888b107f</git>
+** <git norepo=1 repo='xmms2-devel.git'>e3f81ae8ef450a3126b22b1ec0f11fd8628d8f13</git>
+* <mantis>2124</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0d395a52130fff7f84bc28816a36524145ad845f</git>
+* <mantis>2097</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>890c0dcb5edd6a2ff21c2bfc985c4b467960ce29</git>
+* <mantis>2156</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9f7425557c769bba7cad083fb45b398acc25404a</git>
+* <mantis>2141</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>015b5841ed37b02f378c3283603559fc5e49683d</git>
+* <mantis>2092</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>f1d61e68b04f936195f4319e5c1557cb09537235</git>
+* <mantis>1664</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3ddd6e419c5d75c2ca7c9e82bb66c1373651dbd7</git>
+** <git norepo=1 repo='xmms2-devel.git'>5f465270bbca914ea16e2b410053f749800a7ed4</git>
+** <git norepo=1 repo='xmms2-devel.git'>57d74a59075a19711f05530f799b05fec827fd12</git>
+** <git norepo=1 repo='xmms2-devel.git'>91637c8cfc7cb944cfe4db04b36240daea46270e</git>
+** <git norepo=1 repo='xmms2-devel.git'>7e7a2821a9f39174ab41677987089564c7c462ea</git>
+** <git norepo=1 repo='xmms2-devel.git'>36c0115c88548a84f936a1981e398cb379e2a1d4</git>
+** <git norepo=1 repo='xmms2-devel.git'>898bd5839bf5e8e1fdbf66c098485b0922d220e1</git>
+** <git norepo=1 repo='xmms2-devel.git'>697c863a2a3c61b60b7cf609fe0fed62a98a90e0</git>
+** <git norepo=1 repo='xmms2-devel.git'>54a145d4e4dd254ee60fa0e75b3e3327aacde8a2</git>
+** <git norepo=1 repo='xmms2-devel.git'>aaf9a935d4565202ca8bb1690edc52bc59c79d62</git>
+** <git norepo=1 repo='xmms2-devel.git'>1140f3a945c6268dd687d1fc10502cd8af9b20ad</git>
+** <git norepo=1 repo='xmms2-devel.git'>b9d6b179b1e1175f2beb8c1760d4c8b93e477a60</git>
+** <git norepo=1 repo='xmms2-devel.git'>356e88043bb25b72845d69daaea229a71c0f3423</git>
+** <git norepo=1 repo='xmms2-devel.git'>42d7d250719e8bf3c96a122e68d2c4ea994501b8</git>
+** <git norepo=1 repo='xmms2-devel.git'>da7a03f9a03b3c6a6546a5342805d6d28d372c7c</git>
+** <git norepo=1 repo='xmms2-devel.git'>e49527461c0d664eda4fbd0cc1c844e0ba90b5d6</git>
+** <git norepo=1 repo='xmms2-devel.git'>f28285089d4426c967ebbebee705e6946de526f3</git>
+** <git norepo=1 repo='xmms2-devel.git'>7e22c79a67dab6eabaadcc0b1ff337b46ed67f65</git>
+** <git norepo=1 repo='xmms2-devel.git'>ad784e9a81bdaef0cf3064c3491fe44fe8b14afa</git>
+** <git norepo=1 repo='xmms2-devel.git'>67b20f1e88f428c8efac72d182e739db424db149</git>
+** <git norepo=1 repo='xmms2-devel.git'>9ceebaab675c1946892cbbcee6bbb75390df7678</git>
+** <git norepo=1 repo='xmms2-devel.git'>9c977da87b160b6075bb4afa850ddbbd0e21bf63</git>
+** <git norepo=1 repo='xmms2-devel.git'>9aa49a68ff80ffd22436de669684bde762a1621f</git>
+** <git norepo=1 repo='xmms2-devel.git'>c26de5cc7232222e8b23d4f86bcc037cc3d4761f</git>
+** <git norepo=1 repo='xmms2-devel.git'>29f2628f408dd1936d682f8063bfaeabf997f4e8</git>
+** <git norepo=1 repo='xmms2-devel.git'>545bd0bdc996dabd62b497356d79cd35023e6e67</git>
+** <git norepo=1 repo='xmms2-devel.git'>4958bf9fd6592b9097587d8ad50f9110025d6987</git>
+** <git norepo=1 repo='xmms2-devel.git'>0920cd0d13f0e2a1ec2f63cdce98824c2ad3f25a</git>
+** <git norepo=1 repo='xmms2-devel.git'>fc62c8f9efe83e3226555fbef94ec8991f5c627a</git>
+** <git norepo=1 repo='xmms2-devel.git'>829911a2b4fc2baa668c633653c8128be8208312</git>
+** <git norepo=1 repo='xmms2-devel.git'>deaaba58eeab5e6b06f9c8aabf5a93f082fc7167</git>
+** <git norepo=1 repo='xmms2-devel.git'>18a17337fb0e34ada6be02df055b0432cf825566</git>
+** <git norepo=1 repo='xmms2-devel.git'>be79b7731efd075138d8d973a32c4c6ea893194e</git>
+** <git norepo=1 repo='xmms2-devel.git'>071cfe4be3b5d6f3d3d2572573d73804ad120d12</git>
+** <git norepo=1 repo='xmms2-devel.git'>a7ae1185e782aee90369529522fc7f86d47c9480</git>
+** <git norepo=1 repo='xmms2-devel.git'>8d3b2144f7434aae50f1bf7349213a6a4178b932</git>
+** <git norepo=1 repo='xmms2-devel.git'>3293e2c06febdb98ee5e02dd8cb210b2ccb7eb2f</git>
+** <git norepo=1 repo='xmms2-devel.git'>bc8e1b1155f17cbc5b4e8be999dbc026b01fb5c5</git>
+** <git norepo=1 repo='xmms2-devel.git'>cbefa26dfc2224862fa2ee9f25767088797828a6</git>
+** <git norepo=1 repo='xmms2-devel.git'>0ad9c9f897eed1f67b98c73de291e8b4d9fe8f87</git>
+** <git norepo=1 repo='xmms2-devel.git'>e5cf62b78354780e3fc9db7e40cef4483963124e</git>
+* <mantis>2133</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>210dee0ea2747e6fc323367ebb080af528ee9cf1</git>
+'''Johannes Jordan'''
+* <mantis>1338</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d2341c412af39ef003bdb3364d11aab0fcd18a50</git>
+'''Johannes Michael Jordan'''
+* <mantis>1338</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>84a8d3980c89e3b94f081d404cfb51a78ca12069</git>
+** <git norepo=1 repo='xmms2-devel.git'>58d838f0753ba64b315fcc83f63923cac512150e</git>
+** <git norepo=1 repo='xmms2-devel.git'>327965925f91dbdc0199b2953d388e69461fe9e2</git>
+** <git norepo=1 repo='xmms2-devel.git'>20efa082bfb8e8d16bf3adec771e40f836ca54e6</git>
+** <git norepo=1 repo='xmms2-devel.git'>d68f14dcb557f7608450bd5d399d8d75a1f12adb</git>
+** <git norepo=1 repo='xmms2-devel.git'>6cb3f9f3fc89eaa4f01462ea55d6b799885e3f92</git>
+'''Jonathan Horowitz'''
+* <mantis>1929</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>6f8f74d40cf69ef2aa440c57cc066dab24221a05</git>
+'''Jonne Lehtinen'''
+* <mantis>2022</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>054a12d54325820c8d31e482193007af0ed15be3</git>
+* <mantis>1897</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>6bb98eaf94fabecd971fe78b219fba77f8cad926</git>
+* <mantis>2031</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7b518d7213aae14471166a6dc7b1dca08213700f</git>
+* <mantis>1664</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5e22f248473deb15ab0b5b583339e0081c1e1320</git>
+* <mantis>2009</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>84ecbf4549b62c8e20efd5247a83f862d89bf60f</git>
+'''Juho VÃ¤hÃ¤-Herttua'''
+* <mantis>1990</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3becf7d2793ba4cabe6b1a58828c1613d6b49acb</git>
+* <mantis>2053</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>fccc583328ca58110a8b6e00ccb8c0bb1f6923ad</git>
+* <mantis>1994</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3ebc4b9e5584ff61150a377ec2e4bf41c3b6fbec</git>
+* <mantis>2041</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1105738c45902a62e1e6ce8b5405e4b2eecdbb7c</git>
+* <mantis>1977</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>47dc186883d55f16bdd94c307e4832bdd1fa178c</git>
+* <mantis>2128</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>17b7a1a563e4a1a127214bf5dd01f2a204243373</git>
+* <mantis>1948</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>edbdf7b011692ac05d9a818ba235f893f9295a72</git>
+* <mantis>1988</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>be6f8e111913433a0fee1ddfa3d234067695aadf</git>
+* <mantis>1989</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ad25b8f59a04e661fd6ede6d0968a4a010e8bbec</git>
+* <mantis>2027</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>93aab85319fcc168db2d35058e996826a5c6a034</git>
+* <mantis>1950</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>294cf3534798f257fa5639b97801a7b7ac8b7b9c</git>
+* <mantis>805</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9de22b77c6b4f9b6222136cc7c9d7f075babd713</git>
+* <mantis>1837</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>db80f0c63488b85861cc24af495059ac6c31c6d6</git>
+'''Lucas Adam M Paul'''
+* <mantis>2084</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>890d1f3f2112dbc3254c526f4a2132b9e4ec0e62</git>
+* <mantis>2085</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>8883975adbe52fd3da08f7f1e5ca1151df85ae87</git>
+'''RaphaÃ«l Bois'''
+* <mantis>2024</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>69076737c49a9be4cf8356b4902be7f37a218188</git>
+'''Sebastien Cevey'''
+* <mantis>2121</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a587102ee1d5d398a10764958a0d4ec4fad20fbc</git>
+* <mantis>2050</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9af89920a9dd9968d6b81748f8d6fb8e6af98655</git>
+* <mantis>1835</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1c998c30bc6c4f4ef17606f47c66f4200e6ee816</git>
+** <git norepo=1 repo='xmms2-devel.git'>eec93bcd944eea4d2c3f0c01cc3b861f1cf2049b</git>
+** <git norepo=1 repo='xmms2-devel.git'>6325dcff2e541e16f57c9b83a3646b7a9e31f6a0</git>
+* <mantis>1184</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a4e10b89d8b5a004c92f0267f1f45b1e7e00b3d3</git>
+* <mantis>2112</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>96ffabbe42a9d99759c7cf8f83164c258f18962e</git>
+* <mantis>1664</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>fefb9ba1a220c9f417c0fdf1698340c7fbb043b5</git>
+** <git norepo=1 repo='xmms2-devel.git'>e9557ccf29bf70afe89acced12a334b4d464fc54</git>
+** <git norepo=1 repo='xmms2-devel.git'>6da7108ba6c092a8149526aa64f3b8b5c6f53cae</git>
+** <git norepo=1 repo='xmms2-devel.git'>c96f26aa516bb43dc58bfecb54561010f8bac0ad</git>
+** <git norepo=1 repo='xmms2-devel.git'>08ba0006b5cbd276c715b6ad2cd9a0922826daa6</git>
+** <git norepo=1 repo='xmms2-devel.git'>df70c9372af7c7650ac66dd79a73e43dedc0ce56</git>
+** <git norepo=1 repo='xmms2-devel.git'>c78f2d24f01bcb8f31230a99ac224a590c5de62e</git>
+** <git norepo=1 repo='xmms2-devel.git'>62068a5ac1bad134a9f6a7e94147ee8a47bca845</git>
+** <git norepo=1 repo='xmms2-devel.git'>e270938824b45be4755738419173379cc8a0136a</git>
+** <git norepo=1 repo='xmms2-devel.git'>b77e088c3953bdf5ec4b85ce13f5690e0072b4ff</git>
+** <git norepo=1 repo='xmms2-devel.git'>1bb85e4deb9c70b67888360cc8bc82ffb4133717</git>
+** <git norepo=1 repo='xmms2-devel.git'>4d49baccc06a145e008cb82b58e4a8b7bfb35321</git>
+** <git norepo=1 repo='xmms2-devel.git'>0c97d4b949fbdd9ff1839e9bf4a49d7431d4ebcd</git>
+** <git norepo=1 repo='xmms2-devel.git'>93acb6ad32be0d9758b6f7157510e20f275c9291</git>
+** <git norepo=1 repo='xmms2-devel.git'>07853f4160fc8b975ff011e468d10f8a05d9ca08</git>
+** <git norepo=1 repo='xmms2-devel.git'>527ee3ee21bf3a619b556d3ec8b7f02e81b6469f</git>
+** <git norepo=1 repo='xmms2-devel.git'>3222aa4fd88d047bb0ff36ac249f4c011e25944b</git>
+** <git norepo=1 repo='xmms2-devel.git'>5e1b07b0185d05265902b49281d0be76fa55c835</git>
+** <git norepo=1 repo='xmms2-devel.git'>59c25fc1ee74f255be5733b4306a71c527669d5f</git>
+** <git norepo=1 repo='xmms2-devel.git'>e6d6d02e88713dab48417e6e419d915637c688e7</git>
+** <git norepo=1 repo='xmms2-devel.git'>1e0dc2c0c5c2269f05e8eb7d7d33a8a97be35baa</git>
+** <git norepo=1 repo='xmms2-devel.git'>05ef325eda918d11b0a625b00a9f62679682d4fb</git>
+** <git norepo=1 repo='xmms2-devel.git'>7e79b8335488b1506cd4337bac8c778fbe87e5ff</git>
+** <git norepo=1 repo='xmms2-devel.git'>ab5423f5731aec866df9292ad18fa10eccd44cc0</git>
+** <git norepo=1 repo='xmms2-devel.git'>7ccba6d98d26050a27f21f7c1e4a281dde9000d0</git>
+** <git norepo=1 repo='xmms2-devel.git'>bc87b1801ebad1bd76988d6b6b91cfb7f5f96347</git>
+** <git norepo=1 repo='xmms2-devel.git'>2a83bcdb14e80a2e9f32bc8f4c11e97c53561459</git>
+** <git norepo=1 repo='xmms2-devel.git'>84bb12d257174b68b8b6671a6b44c2a3b1eb12b3</git>
+** <git norepo=1 repo='xmms2-devel.git'>ee4da9d904ee0d6fdab36ba6a91be697ddf3a0db</git>
+** <git norepo=1 repo='xmms2-devel.git'>1f57e15889fdb7fb9b1aaa8a20ffb9fedd97c863</git>
+** <git norepo=1 repo='xmms2-devel.git'>2eee993141980d696f3607d9825d4bd591f53ef4</git>
+** <git norepo=1 repo='xmms2-devel.git'>4d8de11ea48fd9f66b9b64fc85a67232d7752b66</git>
+** <git norepo=1 repo='xmms2-devel.git'>9112108781d26aca4188d0a55c3cb4edc5b8a644</git>
+** <git norepo=1 repo='xmms2-devel.git'>ec5b8b663ebf4a6001572035a4f2ef5e61f2c8c6</git>
+** <git norepo=1 repo='xmms2-devel.git'>fda8610c5488b84aab8cb95f1b8a8f378a90af1f</git>
+** <git norepo=1 repo='xmms2-devel.git'>72748866f9accbf5633f53cc3d5d8e7816b618af</git>
+** <git norepo=1 repo='xmms2-devel.git'>d43b3596079ebcfdf7fb2b9a4a6e753a8b0b4dbf</git>
+** <git norepo=1 repo='xmms2-devel.git'>02d338ccd477113604e81b7248dd591e92abb0b2</git>
+** <git norepo=1 repo='xmms2-devel.git'>eca587315018ed7626b8ecc5559866955ed72104</git>
+'''Thomas Frauendorfer'''
+* <mantis>2046</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>229b6ed295b48090460d609c6e26c7a99fad99b6</git>
+* <mantis>2058</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>78318e572cc42fdac5016dbcad52a1f2f0be9782</git>
+* <mantis>2150</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ceff6b8abbd05b7bbba7e623e4a2c5ed423205f0</git>
+* <mantis>2105</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1cfabc6824e51db65bb1e5795fc2f73d23a46397</git>
+* <mantis>2104</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>cb3a24df9ea04870f49c4c190e61958d7cc8e25e</git>
+'''Thomas Orgis'''
+* <mantis>1844</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>4803b912d9f5c991b0464321d56e6179caf60e5e</git>
+'''Tilman Sauerbeck'''
+* <mantis>2070</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>16cd76919136be1796e2d01504b334139bd86d07</git>
+* <mantis>2014</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>37ac02e677577280ba673a60771103c7f6f12cdb</git>
+* <mantis>2057</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9e573c936ab5f10894f3716d52b852de72de5009</git>
+* <mantis>1835</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2579df9ea51e36150b9bac559c0e31ea309218e3</git>
+* <mantis>2059</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>3df602dea3674d4a24e1255ae74f7c3f9f990994</git>
+* <mantis>2015</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>c99b54f9995115012241a12f4b8707a02838bb65</git>
+* <mantis>2068</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7e31f17785de54dd106a8c887ac4d04eec0de6f5</git>
+* <mantis>2069</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>9d115bbff8a5b936808db785cd7b5affad594180</git>
+* <mantis>2089</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>fedb3e5330a515c5329d33712097ef6e9234acaa</git>
+* <mantis>2020</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>05b2dc8029fbd572f0ed9824a840ac7d54a8f11c</git>
+* <mantis>2063</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0d14b6a4ac839ef530f79bcac0d9b153a6ee5d8c</git>
+* <mantis>2060</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7d52fc5014f1f77a6ef97a2479c5abad401b4eab</git>
+* <mantis>2061</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>04460f04a08c90005a4622a5cd5554f7ffc04a79</git>
+* <mantis>2062</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>86a43c67205902bc7389cc778ef39fc440e051a2</git>
+* <mantis>2113</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5b95cf7b8f47930210daabe6c2585008de36937e</git>
+* <mantis>2076</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2edd2e6f943212b52ce59e967f364e3062da625c</git>
+* <mantis>2075</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>20ce0bd3d308011ce0bc4c0fee0a916b44115ad4</git>
+* <mantis>2067</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2a3c84990449c20382d654695ed03d68ceddcf58</git>
+'''Åukasz Michalik'''
+* <mantis>2018</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ec694665a4d70815e0aa7078ca65df1c9405f44a</git>
 
 [[Category:Releases]]
