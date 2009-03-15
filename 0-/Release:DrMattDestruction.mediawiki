@@ -31,6 +31,7 @@ Upgrading should be smooth.
 === New platforms ===
 
 === Notes to client authors ===
+There is soo much to say here with the xmmsv thing...
 
 === Notes to xform authors ===
 config callbacks have changed to xmmsv. But instead use first argument for getting name and value.
