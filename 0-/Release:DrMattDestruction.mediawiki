@@ -1,0 +1,26 @@
+== Release Notes ==
+Here we go again. 
+=== Upgrading ===
+
+Upgrading should be smooth.
+
+=== Noteworthy changes ===
+
+
+==== Feature additions ====
+
+==== Bug fixes ====
+
+=== New platforms ===
+
+=== Notes to client authors ===
+
+=== Notes to xform authors ===
+
+=== Full ChangeLog ===
+
+==== Between TEST1 and TEST2 ====
+
+==== Between DrLecter and TEST1 ====
+
+[[Category:Releases]]
