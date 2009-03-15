@@ -33,6 +33,7 @@ Upgrading should be smooth.
 === Notes to client authors ===
 
 === Notes to xform authors ===
+config callbacks have changed to xmmsv. But instead use first argument for getting name and value.
 
 === Full ChangeLog ===
 
