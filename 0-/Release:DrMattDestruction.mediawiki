@@ -1,13 +1,30 @@
 == Release Notes ==
-Here we go again. 
+After XMMS2 Team's tussles in Brussels; Here we go again!
+
+XMMS2 Team is proud to present a new release, as late as always. This time there has been huge changes "under the hook" with the new "xmmsv".
+
+The XMMS2 Team would like to extend a big THANK YOU to all who have helped out with this release.
+
 === Upgrading ===
 
 Upgrading should be smooth.
 
 === Noteworthy changes ===
 
+* vis
+* xmmsv
+* nycli
 
 ==== Feature additions ====
+
+* vis
+* xmmsv
+* tta
+* shn
+* wavpack
+* mpg123
+* nycli
+* flv
 
 ==== Bug fixes ====
 
