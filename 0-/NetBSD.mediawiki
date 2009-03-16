@@ -1,7 +1,10 @@
-As of 03 July 2005, XMMS2 compiles and runs (with sound) on NetBSD.  Sound is brought to you thanks to the libossaudio which hopefully will be replaced with an updated sun plugin in the future.  There is only one caveat: To run XMMS2, one must either define an LD_LIBRARY_PATH of /usr/local/lib:/usr/pkg/lib or add -Wl,-R/usr/pkg/lib -Wl,-R/usr/local/lib to the LDFLAGS during compilation.
-Alternatively, one can install XMMS2 through [http://pkgsrc-wip.sourceforge.net/ pkgsrc-wip].
+As of 04 March 2009, XMMS2 compiles and runs (with sound) on NetBSD 4 (and should also work with older NetBSD versions).  Sound is brought to you thanks to the native sun interface, libossaudio or libao (Other audio outputs might work as well, but they are untested).  There is only one caveat: To run XMMS2, one must either define an LD_LIBRARY_PATH of /usr/local/lib:/usr/pkg/lib or add -Wl,-R/usr/pkg/lib -Wl,-R/usr/local/lib to the LDFLAGS during compilation.
 
-These days, xmms2 is very broken on NetBSD. In the xmms_sqlite_open() method in sqlite.c, the sqlite_busy_timeout() is not honored and so a new medialib is potentially created on each call to the method (xmms2 calls it a lot). This is a major issue for xmms2 on netbsd. We have been unable to cause this problem with sqlite outside of xmms2, so it must be something specific to xmms2's implementation. statfs.c needs to have a netbsd ifdef setup which uses statvfs() instead of statfs(), statfs() was deprecated in NetBSD 3. It's almost identical to the code currently there though, not many changes.
+Xmms2 can be installed through [http://pkgsrc-wip.sourceforge.net/ pkgsrc-wip], but it is out of date and might not work as expected or at all.
+
+The following problem might still exist, but did not occur on a NetBSD 4 test installation: In the xmms_sqlite_open() method in sqlite.c, the sqlite_busy_timeout() is not honored and so a new medialib is potentially created on each call to the method (xmms2 calls it a lot). This is a major issue for xmms2 on netbsd. We have been unable to cause this problem with sqlite outside of xmms2, so it must be something specific to xmms2's implementation.
+
+On NetBSD 4, xmms2 segfaults in the exit() call (somewhere in the i18n/citrus part of NetBSD's libc). This might be a bug in xmms2, glib or NetBSD itself.
 
 Finally, users wanting to use snapshots should know that if they run into a number of .data and .paxheader files when untarring the snapshot that they should install bsdtar from pkgsrc. NetBSD's pax implementation does not seem to handle the extended attributes packed in by git-tar-tree. 
 
