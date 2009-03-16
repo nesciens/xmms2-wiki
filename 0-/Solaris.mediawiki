@@ -1,6 +1,5 @@
 Info about XMMS2 on Solaris.
 
-The ipc/clientlib seems to work just fine, but scons compilation has problems and there's also some small issues (like getopt) that don't compile.
-Sun audio output plugin status broken because it uses unsupported extensions only available on OpenBSD.
+Xmms2 compiles and runs on Solaris, given that the needed libraries are installed. Audio output works with libao. The sun audio output doesn't work at the moment, as it uses OpenBSD/NetBSD extensions that are not available on Solaris. 
 
 [[Category:Platforms]]
