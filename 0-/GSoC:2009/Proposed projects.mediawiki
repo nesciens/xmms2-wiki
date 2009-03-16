@@ -18,7 +18,7 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=MPD Brigde| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is one such attempt in Perl by rafl that can be used as a reference (missing some parts of the MPD protocol).| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
+{{SoCItem| title=MPD Brigde| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is [http://git.xmms.se/?p=mpd-bridge.git;a=summary one such attempt in Perl] by rafl and [http://www.freax.fr/photos/main.php?g2_itemId=847 another less advanced implementation in Python] by danderson, that can be used as reference (missing some parts of the MPD protocol).| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
 
 == maybes ==
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
