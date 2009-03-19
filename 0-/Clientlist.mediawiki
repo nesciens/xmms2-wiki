@@ -32,6 +32,7 @@ All current clients should be found here.
 {{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
+{{ClientTableEntry|Muxic| Graphical / Cocoa | Obj-C | in development | Minimal windowshade for Mac OS X }}
 {{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
 {{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | in development | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
