@@ -1,0 +1,9 @@
+{{Client
+| name=Muxic
+| author=[http://scarff.id.au/ Dean Scarff]
+| website=http://scarff.id.au/blog/tag/muxic/
+| version=git only, against 0.5-DrLecter
+| devlanguage=Obj-C
+| ui=Cocoa
+| screenshots=[http://scarff.id.au/blog/wp-content/uploads/2009/03/muxic-desktop-ss.png]
+| description=Minimal XMMS2 client for Mac OS X based on the Winamp classic windowshade, with Growl support.  Very minimal: only playback controls and current song title so far.  Its development tree can be browsed [http://scarff.id.au/gitweb?p=muxic.git;a=summary using gitweb].  Licensed under GPLv3.}}
