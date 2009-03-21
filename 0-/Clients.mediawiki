@@ -35,6 +35,9 @@ Actually, there are dozens of clients available which try to fit best into this 
 === LXMusic (GTK) ===
 [[Client:LXMusic | LXMusic]] is a minimalist xmms2 music player developed with GTK+ in pure C language. It features a very simple, clean, lightweight, and intuitive user interface. The UI looks quite similar to that provide by another famous music player under Windows named foobar 2000. Only the most basic functionality provided by xmms2 is supported, but it's already enough for many general users. LXMusic is currently under development, and will be part of the famous lightweight desktop environment - [http://lxde.org/ LXDE].
 
+=== Ario (GTK) ===
+[http://ario-player.sourceforge.net/ Ario] is a GTK2 client for MPD. The interface used to browse the library is inspired by Rhythmbox but Ario aims to be much lighter and faster. Since version 1.2. it has experimental support of XMMS2.
+
 === Others ===
 
 You can find lots other players in the [[Clientlist | Client matrix]]. Here are some (not all) other players, which are just good-fitting, or special in some ways:
