@@ -36,6 +36,7 @@ Unsigned integers have been deprecated in favor of plain integers in all server 
 * mpg123
 * nycli
 * flv
+* ape demuxer
 
 ==== Bug fixes ====
 
