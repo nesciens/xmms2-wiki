@@ -18,8 +18,6 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=MPD Bridge| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is [http://git.xmms.se/?p=mpd-bridge.git;a=summary one such attempt in Perl] by rafl and [http://www.freax.fr/photos/main.php?g2_itemId=847 another less advanced implementation in Python] by danderson, that can be used as reference (missing some parts of the MPD protocol).| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
-
 == maybes ==
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
 
@@ -34,3 +32,7 @@ an ondisk format called TagCache. This project would be to split the TagCache co
 mount point of a rockbox device and the name of a collection would merge that collection to the player. It should hopefully support updating the TagCache on the device, but that can also be done by having the device sync itself. It should also support removing all songs from an arbitrary collection from the device.| lang=C| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=emacs Client library| description=Emacs supports everything, and is a magical land where things are still amazing and special. XMMS2 also fits some of that description, so clearly one should be able to control and program clients for xmms2 from emacs! This project would be to implement the client library in ELisp as well as a small client, or better still EMMS integration.| lang=elisp| level=Easy to Medium| mentor=N/A}}
+
+== maybe nots ==
+
+{{SoCItem| title=MPD Bridge| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is [http://git.xmms.se/?p=mpd-bridge.git;a=summary one such attempt in Perl] by rafl and [http://www.freax.fr/photos/main.php?g2_itemId=847 another less advanced implementation in Python] by danderson, that can be used as reference (missing some parts of the MPD protocol). ''Not a proposed project anymore, blame danderson who's doing it on his spare time free of charge!''| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
