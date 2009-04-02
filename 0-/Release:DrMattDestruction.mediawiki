@@ -39,6 +39,10 @@ The visualization framework has been merged. (***MORE INFOS NEEDED)
 
 Unsigned integers have been deprecated in favor of plain integers in all server commands and return values. In this release, the helper functions using uint have been kept but flagged as deprecated, to help client authors migrate. Signed ints are used under the hood (beware of the overflow monster behind the curtain). This transition should help reduce signedness uncertainty in return values and potentially make it easier to automagically wrap xmmsv_t in bindings (as we only keep a single numeric type).
 
+* '''Iterators in the C++ bindings'''
+
+(*** DETAILS PLEASE)
+
 ==== Bug fixes ====
 
 === New platforms ===
