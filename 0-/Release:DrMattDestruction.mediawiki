@@ -11,32 +11,33 @@ Upgrading should be smooth.
 
 === Noteworthy changes ===
 
-* vis
-* xmmsv and result/value-split
+==== For users ====
+
+* '''nycli''' (AKA [[New_korving_CLI the new korving CLI]])
+
+The brand new official command-line client. Ultimately, it will replace the current 'xmms2' CLI, but for this release it's available alongside it as the new 'nyxmms2' command. Type 'nyxmms2 help' to get a description of commands or refer to the man page.
+
+(***More infos/help to come.)
+
+* '''New formats supported'''
+
+Support has been added for [http://en.wikipedia.org/wiki/TTA_(codec) True Audio (tta)], [http://en.wikipedia.org/wiki/Shorten Shorten (shn)], [http://en.wikipedia.org/wiki/WavPack WavPack], [http://en.wikipedia.org/wiki/Flash_Video Flash Video (flv)]. (***WHAT IS 'ape demuxer'?). A decoder based on 'mpg123' has also been added, and can be used instead of the default 'mad' decoder (***HOW?).
+
+==== For developers ====
+
+* '''xmmsv and result/value-split'''
 
 The clientlib has undergone a drastic refactoring & cleanup. A detailed explanation of rv-split is available [http://bytes.inso.cc/wp/2008/12/09/upgrade-to-rv-split-now/ on theefer's blog] (warning: possibly not up-to-date with latest function renames), but the bottom line is that the actual values returned by the server have been factored out of the xmmsc_result_t structure in which they resided until now. xmmsc_result_t is now only used to manage the results (sync wait, async callback setup, etc), whereas a new xmmsv_t structure has been introduced to wrap all typed values (int, string, collection, dict, list, etc).
 
 Note: removed propdicts, link to xmmsv API, legacy functions, etc.
 
-* nycli
+* '''vis'''
 
-AKA [[New_korving_CLI the new korving CLI]], the brand new official command-line client. Ultimately, it will replace the current 'xmms2' CLI, but for this release it's available alongside it as the new 'nyxmms2' command. Type 'nyxmms2 help' to get a description of commands. (More infos/help to come.)
+The visualization framework has been merged. (***MORE INFOS NEEDED)
 
-* uint values deprecated in the IPC
+* '''uint values deprecated in the IPC'''
 
 Unsigned integers have been deprecated in favor of plain integers in all server commands and return values. In this release, the helper functions using uint have been kept but flagged as deprecated, to help client authors migrate. Signed ints are used under the hood (beware of the overflow monster behind the curtain). This transition should help reduce signedness uncertainty in return values and potentially make it easier to automagically wrap xmmsv_t in bindings (as we only keep a single numeric type).
-
-==== Feature additions ====
-
-* vis
-* xmmsv
-* tta
-* shn
-* wavpack
-* mpg123
-* nycli
-* flv
-* ape demuxer
 
 ==== Bug fixes ====
 
