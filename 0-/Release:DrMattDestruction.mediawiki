@@ -15,9 +15,9 @@ Upgrading should be smooth.
 
 * '''nycli''' (AKA [[New_korving_CLI the new korving CLI]])
 
-The brand new official command-line client. Ultimately, it will replace the current 'xmms2' CLI, but for this release it's available alongside it as the new 'nyxmms2' command. Type 'nyxmms2 help' to get a description of commands or refer to the man page.
+The brand new official command-line client. Ultimately, it will replace the current ''xmms2'' CLI, but for this release it's available alongside it as the new ''nyxmms2'' command. Type 'nyxmms2 help' to get a description of commands or refer to the man page.
 
-(***More infos/help to come.)
+nycli can be run either in shell-mode (if started without arguments), or in inline-mode where it executes the command passed as argument directly (like the old ''xmms2''). Commands have been reorganized to avoid redundancy (e.g. the many ''add*'' commands), all commands support the collection syntax or playlist positions as argument, and each command now exposes a detailed help about itself (''xmms2 help <command>''). See the default configuration file for customization, including command aliases.
 
 * '''New formats supported'''
 
