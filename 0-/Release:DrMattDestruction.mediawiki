@@ -21,7 +21,7 @@ nycli can be run either in shell-mode (if started without arguments), or in inli
 
 * '''New formats supported'''
 
-Support has been added for [http://en.wikipedia.org/wiki/TTA_(codec) True Audio (tta)], [http://en.wikipedia.org/wiki/Shorten Shorten (shn)], [http://en.wikipedia.org/wiki/WavPack WavPack], [http://en.wikipedia.org/wiki/Flash_Video Flash Video (flv)]. [http://en.wikipedia.org/wiki/Monkey's_Audio Monkey's Audio (apefile)]. A decoder based on 'mpg123' has also been added, and can be used instead of the default 'mad' decoder by lowering the priority of mad (''xmms2 config mad.priority.audio/mpeg 10'').
+Support has been added for [http://en.wikipedia.org/wiki/TTA_(codec) True Audio (tta)], [http://en.wikipedia.org/wiki/Shorten Shorten (shn)], [http://en.wikipedia.org/wiki/WavPack WavPack], [http://en.wikipedia.org/wiki/Flash_Video Flash Video (flv)]. [http://en.wikipedia.org/wiki/Monkey's_Audio Monkey's Audio (apefile)]. A decoder based on ''mpg123'' has also been added, and can be used instead of the default ''mad'' decoder by lowering the priority of mad (''xmms2 config mad.priority.audio/mpeg 10'').
 
 ==== For developers ====
 
