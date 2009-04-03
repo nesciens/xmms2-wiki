@@ -44,7 +44,7 @@ Unsigned integers have been deprecated in favor of plain integers in all server 
 
 * '''Iterators in the C++ bindings'''
 
-(*** DETAILS PLEASE)
+Dict and List now support Standard Library style const iterators (no read-write iterators yet).  They implement forward and bidirectional iterator concepts respectively.  It immediately breaks clients that used old interface to iterate List (.isValid() and .first() member functions were removed).  Dict::each() still exists, should however be avoided in favour of new interface.
 
 ==== Bug fixes ====
 
