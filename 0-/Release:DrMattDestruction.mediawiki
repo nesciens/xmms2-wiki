@@ -11,6 +11,8 @@ Upgrading should be smooth.
 
 If you build from source and waf can't find function sin, you need to remove all existing .pyc files in the build tree. Waf can't do that for you, so you need to use something like 'find -name "*.pyc" -delete' (This only happens if you build in the same tree that you already used for an older release of xmms2, e.g. if you track xmms2-stable.git)
 
+The argument to waf configure "--without-xmms2d=1" has become "--without-xmms2d".
+
 === Noteworthy changes ===
 Waf build system updated to version 1.5.2
 
