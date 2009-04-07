@@ -18,7 +18,7 @@ Waf build system updated to version 1.5.2
 
 ==== For users ====
 
-* '''nycli''' (AKA [[New_korving_CLI the new korving CLI]])
+* '''nycli''' (AKA [[New korving CLI]])
 
 The brand new official command-line client. Ultimately, it will replace the current ''xmms2'' CLI, but for this release it's available alongside it as the new ''nyxmms2'' command. Type 'nyxmms2 help' to get a description of commands or refer to the man page.
 
