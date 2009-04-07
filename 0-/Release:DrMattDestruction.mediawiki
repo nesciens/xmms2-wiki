@@ -34,7 +34,9 @@ Support has been added for [http://en.wikipedia.org/wiki/TTA_(codec) True Audio 
 
 The clientlib has undergone a drastic refactoring & cleanup. A detailed explanation of rv-split is available [http://bytes.inso.cc/wp/2008/12/09/upgrade-to-rv-split-now/ on theefer's blog] (warning: possibly not up-to-date with latest function renames), but the bottom line is that the actual values returned by the server have been factored out of the xmmsc_result_t structure in which they resided until now. xmmsc_result_t is now only used to manage the results (sync wait, async callback setup, etc), whereas a new xmmsv_t structure has been introduced to wrap all typed values (int, string, collection, dict, list, etc).
 
-Note: removed propdicts, link to xmmsv API, legacy functions, etc.
+Also note that propdicts have been replaced by dict-of-dicts (of the form {$source => {$key => $value}} â€“ ''xmmsv_propdict_to_dict'' can be used to convert them to simple {$key => $value} dicts).
+
+Note: link to xmmsv API, legacy functions, etc.
 
 * '''vis'''
 
