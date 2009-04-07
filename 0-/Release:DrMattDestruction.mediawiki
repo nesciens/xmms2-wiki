@@ -52,6 +52,8 @@ Dict and List now support Standard Library style const iterators (no read-write 
 
 ==== Bug fixes ====
 
+Many bugs were fixed, and probably more introduced. See the full Changelog below for details.
+
 === New platforms ===
 
 === Notes to client authors ===
