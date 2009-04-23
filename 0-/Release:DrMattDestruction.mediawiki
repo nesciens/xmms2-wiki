@@ -36,11 +36,9 @@ The clientlib has undergone a drastic refactoring & cleanup. A detailed explanat
 
 Also note that propdicts have been replaced by dict-of-dicts (of the form {$source => {$key => $value}} â€“ ''xmmsv_propdict_to_dict'' can be used to convert them to simple {$key => $value} dicts).
 
-Note: link to xmmsv API, legacy functions, etc.
-
 * '''vis'''
 
-The visualization framework has been merged. (***MORE INFOS NEEDED)
+The visualization framework has been merged.
 
 * '''uint values deprecated in the IPC'''
 
