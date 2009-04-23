@@ -65,6 +65,19 @@ There is soo much to say here with the xmmsv thing...
 config callbacks have changed to xmmsv. But instead use first argument for getting name and value.
 
 === Full ChangeLog ===
+==== Between TEST2 and final ====
+'''Anders Waldenborg'''
+* <mantis>2192</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b0738704f6f180e17370710f1f5fa2bc7397f896</git>
+* <mantis>2195</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>6965fe403beedf9a94fbf4a1729b0f6ad62bdb41</git>
+'''Anthony Garcia'''
+* <mantis>2139</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>8db39182a592b5248837a86c01f8abbfbe1bd603</git>
+'''Thomas Frauendorfer'''
+* <mantis>2193</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>31decd5d57fff94396c37fc00bba90ef149f9ffd</git>
+** <git norepo=1 repo='xmms2-devel.git'>5d781a12774339af8909b508e538bed9c8bdee81</git>
 
 ==== Between TEST1 and TEST2 ====
 '''Anders Waldenborg'''
