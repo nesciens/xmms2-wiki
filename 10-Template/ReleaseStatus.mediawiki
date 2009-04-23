@@ -3,7 +3,7 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrMattdestruction | 0.6 DrMattDestruction]]
+'''Developer''': [[Release:DrMattDestruction | 0.6 DrMattDestruction]]
 
 '''Notes''':
 * DrMattDestruction was released 2009-04-23,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
