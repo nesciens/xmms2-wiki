@@ -1,4 +1,9 @@
 == Latest Quotes ==
+=== 2009-05-07 - Life Syllogism ===
+ 02:22 <Zharf> it's an emacs user conspiracy
+ 02:24 <DraX> emacs is life!
+ 02:24 <Zharf> well life sucks!
+
 === 2009-01-07 - Zharf Actually Provides Support ===
  06:33 -!- lvlefisto [n=corleone@189.152.130.228] has joined #xmms2
  06:33 < lvlefisto> hi, i can't play music when i am in a voice chat with skype
