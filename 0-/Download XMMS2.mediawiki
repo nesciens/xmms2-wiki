@@ -75,6 +75,19 @@ Getting XMMS2 to build/run on Windows is mostly working, but not all features of
 ** With [[ET]]
 ** And [[Component:DirectSound|DirectSound]]
 
+== Mac OS X ==
+
+; MacPorts
+xmms2 is included in [http://www.macports.org MacPorts], however the port does not allow to customize the installation via variants at the moment. To include optional features, required libraries need to be installed beforehand. To install:
+ port install xmms2
+
+
+To have more control over the feature-set, download the source and configure xmms2 manually:
+ ./waf configure --prefix=/opt/local --conf-prefix=/opt/local --nocache
+
+And then:
+ ./waf build && ./waf install
+
 == BSD ==
 
 ; FreeBSD
