@@ -1,9 +1,9 @@
 ===LXMusic===
-by ''æ´ªä»»è«­ (Hong Jen Yee, as known as PCMan)''
+by ''æ´ªä»»è«­ (Hong Jen Yee, as known as PCMan)'' and ''JÃ¼rgen HÃ¶tzel''
 
 '''Homepage''': http://lxde.org/<br />
 '''Download page''': http://sourceforge.net/projects/lxde/<br />
-'''Latest version''': 0.2 alpha<br />
+'''Latest version''': 0.3 <br />
 '''Development language''': C<br />
 '''User Interface''': GTK+ 2<br />
 '''Screenshots''': [http://lh3.ggpht.com/_yUP_k2summg/SUPggCHvRUI/AAAAAAAABvw/LOHkw8EsCGo/s800/lxmusic.png LXMusic screenshot]<br />
