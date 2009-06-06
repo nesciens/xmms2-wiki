@@ -14,8 +14,6 @@ The official XMMS2 Debian packages maintained by [[User:rafl|Florian Ragwitz]]. 
 
  apt-get install xmms2
 
-If you want newer packages for Hardy Heron you can grab it from [[User:bdrung|Benjamin Drung]]'s PPA: https://launchpad.net/~bdrung/+archive/ppa
-
 ; Fedora
 
 Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in tarballs from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
