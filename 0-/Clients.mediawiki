@@ -111,6 +111,10 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 
 * [[Client:vimxmms2 | vimxmms2]] is a XMMS2 client for Vim.
 
+== Emacs ==
+
+* [[Client:lagn | lagn]] is a XMMS2 client for Emacs.
+
 = Special Input Methods =
 
 == Remote Control ==
