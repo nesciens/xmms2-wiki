@@ -1,1 +1,1 @@
-{{Client| name=lagn| author=RÃ©mi Vanicat| website=http://github.com/vanicat/lagn/tree/master| version=0.1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=None| description=lagn is a XMMS2 client written in Emacs Lisp, that will eventually include mode for editing playlist and collection }}
+{{Client| name=lagn| author=RÃ©mi Vanicat| website=http://vanicat.github.com/lagn/| version=0.1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=None| description=lagn is a XMMS2 client written in Emacs Lisp, that will eventually include mode for editing playlist and collection }}
