@@ -3,7 +3,7 @@ Client
 |name=Remuco
 |author=Oben Sonne
 |website=http://remuco.sourceforge.net/
-|version=[http://sourceforge.net/project/showfiles.php?group_id=166515 0.8.2]
+|version=[http://remuco.sourceforge.net/index.php/Getting_Started 0.9.0]
 |devlanguage=JavaME, Python
 |ui=MIDP 2.0
 |screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
