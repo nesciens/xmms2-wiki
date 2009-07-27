@@ -2,7 +2,7 @@
 | name=Muxic
 | author=[http://scarff.id.au/ Dean Scarff]
 | website=http://scarff.id.au/blog/tag/muxic/
-| version=git only, against 0.5-DrLecter
+| version=Beta 2, against 0.6-DrMattDestruction
 | devlanguage=Obj-C
 | ui=Cocoa
 | screenshots=[http://scarff.id.au/blog/wp-content/uploads/2009/03/muxic-desktop-ss.png]
