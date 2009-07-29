@@ -41,6 +41,7 @@ Policies and guidelines about processes and services related to the project as w
 * [[IRC Meeting]]
 * [[WAF modifications]]
 * [[XMMS2 Vision]]
+* [[XMMS2 Mac OS X Notes]]
 
 === Clients ===
 * [[Generic properties policy]]
