@@ -1,0 +1,33 @@
+Note that this page refers to the XMMS2 XCode port that tries to make XMMS2 better compatible Mac OS X.
+
+== Goals ==
+To create tools for building XMMS2 with the Mac OS X tools. For better integration with Mac OS X and the iPhone. This should also make it easier for people that want to create Cocoa clients.
+
+
+== Building/Hacking ==
+# Install XCode
+# Install macports (make sure they are installed in /opt/local)
+# install git, glib2, libmad, libvorbis
+# Checkout the code
+## git clone git.xmms.se:/xmms2/macosx/build.git
+## cd build.git
+## git clone git.xmms.se:/xmms2/xmms2-tru.git#macbuild xmms2
+## git clone git.xmms.se:/xmms2/macosx/xmmsclient-objc.git
+# Open xmms2-macbuild.xcodeproj in XCode
+# Build
+
+This should build xmms2d, xmmsclient.framework, xmmsclient++.framework and xmmsclient-objc.framework
+
+== TODO List ==
+* Make XMMS2 build with XCode - *works*
+* Make it easier to bundle xmms2d with an .APP bundle
+** Embed the plugins in the core - *works*, depends on hacks in xmms2-tru#macbuild branch. Make this better.
+* Integrate with Mac OS X services
+** Pause music when computer goes to sleep - *not started*
+** Play/Pause/Next from the multimedia buttons - *not started*
+** Announce XMMS2 with mDNS  - *not started*
+* Create a framework of the client bindings - *works*
+* Create Objective-C bindings for xmmsclient
+** bind all functions - *started*
+** make a playlist model - *not started*
+** make a collection model - *not started*
