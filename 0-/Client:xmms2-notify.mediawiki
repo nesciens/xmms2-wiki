@@ -1,0 +1,16 @@
+__NOEDITSECTION__
+===xmms2-notify===
+by ''Evan McClain''
+
+'''Homepage''': http://github.com/aeroevan/xmms2-notify/tree/master/<br />
+'''Latest version''': 0.1.0<br />
+'''Development language''': C<br />
+'''User Interface''': libnotify notification<br />
+'''Screenshots''': [http://www.prism.gatech.edu/~gtg031s/files/xmms2-notify.png]<br />
+[[Talk:Client:xmms2-notify | Discuss]]
+
+libnotify client that displays info for current song playing in XMMS2
+
+[[Clients | More xmms2 clients]]
+
+[[Category:Clients]]
