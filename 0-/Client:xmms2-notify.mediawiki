@@ -9,7 +9,7 @@ by ''Evan McClain''
 '''Screenshots''': [http://www.prism.gatech.edu/~gtg031s/files/xmms2-notify.png]<br />
 [[Talk:Client:xmms2-notify | Discuss]]
 
-libnotify client that displays info for current song playing in XMMS2
+libnotify client that displays info for current song playing in XMMS2. Based off of [[Client:Dabra | Dabra]].
 
 [[Clients | More xmms2 clients]]
 
