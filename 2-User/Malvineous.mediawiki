@@ -1,0 +1,3 @@
+I have written the [[Client:xmms2-hotkey|xmms2-hotkey]] client.
+
+You can contact me via [mailto:malvineous@shikadi.net malvineous@shikadi.net].
