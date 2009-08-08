@@ -1,4 +1,12 @@
-=== Using hotkeys with XMMS2 - an example ===
+There are currently two methods to use hotkeys with XMMS2.  The '''xmms2-hotkey''' client is more advanced, but requires a few extra steps to configure.
+
+== Using xmms2-hotkey ==
+
+The [[Client:xmms2-hotkey|xmms2-hotkey]] client can control XMMS2 via hotkeys (which include mouse buttons.)  It can use X-Windows hotkeys, but is also capable of using evdev devices if X11 is unavailable (or to bind actions to buttons that X11 can't see, but evdev can.)
+
+Unlike XBindKeys, '''xmms2-hotkey''' can also use dual-hotkey combinations, to allow one hotkey to "activate" a whole host of other keys.
+
+== Using XBindKeys ==
 
 In this example setup we're going to use the following keys:
 * Control + Shift + Z     -> Previous track
