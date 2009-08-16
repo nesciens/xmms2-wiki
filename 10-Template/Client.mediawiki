@@ -1,16 +1,25 @@
-__NOEDITSECTION__
-==={{{name}}}===
-by ''{{{author}}}''
+<div style="border-right: 1em solid white; float: left; clear: left; margin-right: 1em;">
+<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9;">
+<div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
+<div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br /><!--
 
-'''Homepage''': {{{website}}}<br />
-'''Latest version''': {{{version}}}<br />
-'''Development language''': {{{devlanguage}}}<br />
-'''User Interface''': {{{ui}}}<br />
-'''Screenshots''': {{{screenshots}}}<br />
-[[Talk:Client:{{{name}}} | Discuss]]
+This won't work unless the ParserExtensions are installed on this wiki:
 
+{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}
+
+--></div>
+<table>
+<tr><th>Author</th><td class="note">{{{author|''Unknown''}}}</td></tr>
+<tr><th>Latest version</th><td class="note">{{{version|''Unknown''}}}</td></tr>
+<tr><th>Homepage</th><td class="note">{{{website|''Unknown''}}}</td></tr>
+<tr><th>Development language</th><td class="note">{{{devlanguage|''Unknown''}}}</td></tr>
+<tr><th>User interface</th><td class="note">{{{ui|''Unknown''}}}</td></tr>
+<tr><th>Screenshots</th><td class="note">{{{screenshots|''None''}}}</td></tr>
+<tr><th>More info</th><td class="note">[[Talk:{{PAGENAME}}|Discuss]]<br/>[[Clients|Other clients]]</td></tr>
+<tr><td colspan="2" style="text-align:center;">{{{footnotes|}}}</td></tr>
+</table>
+</div></div><noinclude> <!-- don't put any newlines here otherwise it puts paragraph markers after the infobox on inclusion pages -->
+</noinclude>
 {{{description}}}
-
-[[Clients | More xmms2 clients]]
 
 [[Category:Clients]]
