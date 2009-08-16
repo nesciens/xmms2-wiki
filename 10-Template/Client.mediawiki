@@ -23,3 +23,4 @@ This won't work unless the ParserExtensions are installed on this wiki:
 {{{description}}}
 
 [[Category:Clients]]
+<includeonly>[[Category:Clients written in {{{devlanguage|an unknown language}}}]]</includeonly>
