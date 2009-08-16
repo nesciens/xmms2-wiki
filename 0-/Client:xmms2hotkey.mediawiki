@@ -1,8 +1,8 @@
 {{Client
 |name=xmms2-hotkey
 |author=[[User:Malvineous|Adam Nielsen]]
-|website=http://www.shikadi.net/files/xmms2hotkey-0.1.tar.bz2
-|version=0.1
+|website=http://www.shikadi.net/files/xmms2hotkey-0.2.tar.bz2
+|version=0.2 (2009-08-16)
 |devlanguage=C++
 |ui=Console
 |screenshots=(No UI)
