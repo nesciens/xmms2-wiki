@@ -1,0 +1,4 @@
+While the recently by [[User:Malvineous|Malvineous]] applied Wikipedia infobox style looks nice, it has some issues:
+# Homepage URLs are not properly wrapped over multiple lines (see revision 8676 of [[Client:Remuco]]).
+# There is an image included, but this Wiki is not able to upload image (webserver is not allowed to write files).
+# The automatic categories look awkward if a client uses multiple languages (see [[Client:Remuco]]).
