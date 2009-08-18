@@ -2,8 +2,8 @@
 Client
 |name=Remuco
 |author=Oben Sonne
-|website=http://remuco.sourceforge.net/
-|version=[http://remuco.sourceforge.net/index.php/Getting_Started 0.9.0]
+|website=[http://remuco.sourceforge.net/ remuco.sf.net]
+|version=[http://remuco.sourceforge.net/index.php/Getting_Started 0.9.1]
 |devlanguage=JavaME, Python
 |ui=MIDP 2.0
 |screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
@@ -11,5 +11,5 @@ Client
 
 Remuco is a duplex remote control system for Linux media players and mobile devices equipped with Bluetooth or WiFi. With Remuco, you can remotely control your favorite media player. You can switch to the next, previous, or any other media within the current playlist, browse your media library and activate other playlists, rate your media, adjust volume, and more. On the mobile device (the remote control), it displays information about the current media, including cover art.
 
-Currently Remuco can be used with Amarok, Audacious, Banshee, MPD, Rhythmbox, Totem, TVtime, VLC and '''XMMS2'''.
+Currently Remuco can be used with Amarok, Audacious, Banshee, Exaile, MPD, Rhythmbox, Totem, TVtime, VLC and '''XMMS2'''.
 }}
