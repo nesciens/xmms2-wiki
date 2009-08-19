@@ -1,5 +1,5 @@
 <div style="border-right: 1em solid white; float: left; clear: left; margin-right: 1em;">
-<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9;">
+<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px">
 <div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
 <div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br /><!--
 
