@@ -8,3 +8,4 @@ While the recently by [[User:Malvineous|Malvineous]] applied Wikipedia infobox s
 ===== Image file name =====
 
 This template falls back to PAGENAME if the image parameter is not given. However PAGENAME usually is something like Client:XYZ and colons are apparently not allowed in image file names (in my case it has been replaced by a '-'). -- [[User:Mondai|obensonne]] 21:33, 20 August 2009 (UTC)
+:Thanks for pointing that out.  Hopefully the Client pages can be moved into a dedicated namespace to fix this!  I've also added extra tags to specify up to three development languages now that ParserExtensions are available, so hopefully that will fix your third point above.  (I was using [[Client:Remuco]] for testing, I hope you don't mind!)  I've also added a note about uploading an image if one doesn't exist yet, what do you think? -- [[User:Malvineous|Malvineous]] 23:01, 20 August 2009 (UTC)
