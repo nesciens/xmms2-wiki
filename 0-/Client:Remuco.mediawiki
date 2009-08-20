@@ -1,5 +1,6 @@
 {{
 Client
+|image=Client-Remuco.png
 |name=Remuco
 |author=Oben Sonne
 |website=[http://remuco.sourceforge.net/ remuco.sf.net]
