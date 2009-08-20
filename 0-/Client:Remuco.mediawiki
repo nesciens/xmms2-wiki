@@ -15,17 +15,3 @@ Remuco is a duplex remote control system for Linux media players and mobile devi
 
 Currently Remuco can be used with Amarok, Audacious, Banshee, Exaile, MPD, Rhythmbox, Totem, TVtime, VLC and '''XMMS2'''.
 }}
-
-{{PAGENAME}}
-
-{{BASEPAGENAME}}
-
-{{SUBPAGENAME}}
-
-{{SUBJECTSPACE}}
-
-{{ARTICLESPACE}}
-
-{{SUBJECTPAGENAME}}
-
-{{ARTICLEPAGENAME}}
