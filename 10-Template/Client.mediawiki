@@ -6,9 +6,9 @@
 <tr><th>Author</th><td class="note">{{{author|''Unknown''}}}</td></tr>
 <tr><th>Latest version</th><td class="note">{{{version|''Unknown''}}}</td></tr>
 <tr><th>Homepage</th><td class="note">{{{website|''Unknown''}}}</td></tr>
-<tr><th>Development language</th><td class="note">{{#if:{{{devlanguage|}}}|[[:Category:Clients written in {{{devlanguage}}}|{{devlanguage}}]]
-|''Unknown''}}{{#if:{{{devlanguage2|}}}| [[:Category:Clients written in {{{devlanguage2}}}|{{devlanguage2}}]]
-|}}{{#if:{{{devlanguage3|}}}| [[:Category:Clients written in {{{devlanguage3}}}|{{devlanguage3}}]]
+<tr><th>Development language</th><td class="note">{{#if:{{{devlanguage|}}}|[[:Category:Clients written in {{{devlanguage}}}|{{{devlanguage}}}]]
+|''Unknown''}}{{#if:{{{devlanguage2|}}}| [[:Category:Clients written in {{{devlanguage2}}}|{{{devlanguage2}}}]]
+|}}{{#if:{{{devlanguage3|}}}| [[:Category:Clients written in {{{devlanguage3}}}|{{{devlanguage3}}}]]
 |}}</td></tr>
 <tr><th>User interface</th><td class="note">{{{ui|''Unknown''}}}</td></tr>
 <tr><th>Screenshots</th><td class="note">{{{screenshots|''None''}}}</td></tr>
