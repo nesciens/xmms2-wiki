@@ -1,11 +1,12 @@
 {{
 Client
-|image=Client-Remuco.png
+|ximage=Client-Remuco.png
 |name=Remuco
 |author=Oben Sonne
 |website=[http://remuco.sourceforge.net/ remuco.sf.net]
 |version=[http://remuco.sourceforge.net/index.php/Getting_Started 0.9.1]
-|devlanguage=JavaME, Python
+|devlanguage=JavaME
+|devlanguage2=Python
 |ui=MIDP 2.0
 |screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
 |description=
@@ -14,3 +15,17 @@ Remuco is a duplex remote control system for Linux media players and mobile devi
 
 Currently Remuco can be used with Amarok, Audacious, Banshee, Exaile, MPD, Rhythmbox, Totem, TVtime, VLC and '''XMMS2'''.
 }}
+
+{{PAGENAME}}
+
+{{BASEPAGENAME}}
+
+{{SUBPAGENAME}}
+
+{{SUBJECTSPACE}}
+
+{{ARTICLESPACE}}
+
+{{SUBJECTPAGENAME}}
+
+{{ARTICLEPAGENAME}}
