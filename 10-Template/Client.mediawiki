@@ -1,18 +1,15 @@
 <div style="border-right: 1em solid white; float: left; clear: left; margin-right: 1em;">
 <div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px">
 <div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
-<div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br /><!--
-
-This won't work unless the ParserExtensions are installed on this wiki:
-
-{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}
-
---></div>
+<div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br />{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - please <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}</div>
 <table>
 <tr><th>Author</th><td class="note">{{{author|''Unknown''}}}</td></tr>
 <tr><th>Latest version</th><td class="note">{{{version|''Unknown''}}}</td></tr>
 <tr><th>Homepage</th><td class="note">{{{website|''Unknown''}}}</td></tr>
-<tr><th>Development language</th><td class="note">{{{devlanguage|''Unknown''}}}</td></tr>
+<tr><th>Development language</th><td class="note">{{#if:{{{devlanguage|}}}|[[:Category:Clients written in {{{devlanguage}}}|{{devlanguage}}]]
+|''Unknown''}}{{#if:{{{devlanguage2|}}}| [[:Category:Clients written in {{{devlanguage2}}}|{{devlanguage2}}]]
+|}}{{#if:{{{devlanguage3|}}}| [[:Category:Clients written in {{{devlanguage3}}}|{{devlanguage3}}]]
+|}}</td></tr>
 <tr><th>User interface</th><td class="note">{{{ui|''Unknown''}}}</td></tr>
 <tr><th>Screenshots</th><td class="note">{{{screenshots|''None''}}}</td></tr>
 <tr><th>More info</th><td class="note">[[Talk:{{PAGENAME}}|Discuss]]<br/>[[Clients|Other clients]]</td></tr>
@@ -22,5 +19,10 @@ This won't work unless the ParserExtensions are installed on this wiki:
 </noinclude>
 {{{description}}}
 
+<includeonly>
 [[Category:Clients]]
-<includeonly>[[Category:Clients written in {{{devlanguage|an unknown language}}}]]</includeonly>
+{{#if:{{{devlanguage|}}}|[[Category:Clients written in {{{devlanguage}}}]]
+|}}{{#if:{{{devlanguage2|}}}|[[Category:Clients written in {{{devlanguage2}}}]]
+|}}{{#if:{{{devlanguage3|}}}|[[Category:Clients written in {{{devlanguage3}}}]]
+|}}
+</includeonly>
