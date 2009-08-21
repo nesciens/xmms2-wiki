@@ -2,7 +2,7 @@
 <div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px">
 <div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
 <div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br />{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - please <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}</div>
-<table>
+<table style="width: 100%">
 <tr><th>Author</th><td class="note">{{{author|''Unknown''}}}</td></tr>
 <tr><th>Latest version</th><td class="note">{{{version|''Unknown''}}}</td></tr>
 <tr><th>Homepage</th><td class="note">{{{website|''Unknown''}}}</td></tr>
@@ -12,9 +12,9 @@
 |}}</td></tr>
 <tr><th>User interface</th><td class="note">{{{ui|''Unknown''}}}</td></tr>
 <tr><th>Screenshots</th><td class="note">{{{screenshots|''None''}}}</td></tr>
-<tr><th>More info</th><td class="note">[[Talk:{{PAGENAME}}|Discuss]]<br/>[[Clients|Other clients]]</td></tr>
 <tr><td colspan="2" style="text-align:center;">{{{footnotes|}}}</td></tr>
 </table>
+<div style="text-align:center;">[[Talk:{{PAGENAME}}|Discuss this client]]</div>
 </div></div><noinclude> <!-- don't put any newlines here otherwise it puts paragraph markers after the infobox on inclusion pages -->
 </noinclude>
 {{{description}}}
