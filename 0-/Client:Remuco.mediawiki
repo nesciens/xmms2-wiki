@@ -18,4 +18,4 @@ Currently Remuco can be used with Amarok, Audacious, Banshee, Exaile, MPD, Rhyth
 ==== So it's just another remote control? ====
 Of course not :) Support for XMMS2 is quite sophisticated. You can browse your collections and playlists, do search queries on your library or browse tracks in an artist/album fashion. While browsing you can update the active playlist by appending or replacing tracks or you can activate stored playlists.
 
-Personally my favorite feature is the possibility to [[Generic properties policy#Generic|tag and rate]] songs remotely while listening to them.
+Another notable feature is the possibility to [[Generic properties policy#Generic|rate and tag]] songs remotely while listening to them.
