@@ -37,7 +37,7 @@ All current clients should be found here.
 {{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
 {{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | in development | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
-{{ClientTableEntry|Remuco| Mobile Phone / Bluetooth | JavaME, C | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth and JavaME }}
+{{ClientTableEntry|Remuco| Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
 {{ClientTableEntry|sisy| Console | C | in development | Simple syntax collection pattern parser }}
