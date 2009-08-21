@@ -52,7 +52,7 @@ Any omitted parameters will show sensible defaults (usually "Unknown") so for th
 |}
 </noinclude>
 <includeonly>
-{{{description}}}
+{{{description|}}}
 
 [[Category:Clients]]
 {{#if:{{{devlanguage|}}}|[[Category:Clients written in {{{devlanguage}}}]]
