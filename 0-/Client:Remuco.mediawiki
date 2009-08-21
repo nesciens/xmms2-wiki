@@ -4,14 +4,18 @@ Client
 |name=Remuco
 |author=Oben Sonne
 |website=[http://remuco.sourceforge.net/ remuco.sf.net]
-|version=[http://remuco.sourceforge.net/index.php/Getting_Started 0.9.1]
+|version=0.9.1
 |devlanguage=JavaME
 |devlanguage2=Python
-|ui=MIDP 2.0
+|ui=MIDP
 |screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
-|description=
-
-Remuco is a duplex remote control system for Linux media players and mobile devices equipped with Bluetooth or WiFi. With Remuco, you can remotely control your favorite media player. You can switch to the next, previous, or any other media within the current playlist, browse your media library and activate other playlists, rate your media, adjust volume, and more. On the mobile device (the remote control), it displays information about the current media, including cover art.
+}}
+==== What is Remuco? ====
+Remuco is a duplex remote control system for Linux media players and '''mobile devices''' equipped with '''Bluetooth''' or '''WiFi'''. With Remuco, you can remotely control your favorite media player. You can switch to the next, previous, or any other media within the current playlist, browse your media library and activate other playlists, rate your media, adjust volume, and more. On the mobile device (the remote control), it displays information about the current media, including cover art.
 
 Currently Remuco can be used with Amarok, Audacious, Banshee, Exaile, MPD, Rhythmbox, Totem, TVtime, VLC and '''XMMS2'''.
-}}
+
+==== So it's just another remote control? ====
+Of course not :) Support for XMMS2 is quite sophisticated. You can browse your collections and playlists, do search queries on your library or browse tracks in an artist/album fashion. While browsing you can update the active playlist by appending or replacing tracks or you can activate stored playlists.
+
+Personally my favorite feature is the possibility to [[Generic properties policy#Generic|tag and rate]] songs remotely while listening to them.
