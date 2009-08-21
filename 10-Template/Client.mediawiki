@@ -1,25 +1,58 @@
-<div style="border-right: 1em solid white; float: left; clear: left; margin-right: 1em;">
-<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px">
+__NOTOC__ <!-- Pages long enough to need a TOC should be split into subpages -->
+<div style="border-right: 1em solid white; float: right; clear: left; margin-right: 1em;">
+<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px; margin-left: 2em;">
 <div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
 <div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br />{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - please <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}</div>
-<table style="width: 100%">
-<tr><th>Author</th><td class="note">{{{author|''Unknown''}}}</td></tr>
+<table style="width: 100%;">
+<tr><th>Author{{#if:{{{author2|}}}|s|}}</th><td class="note">{{{author|''Unknown''}}}{{#if:{{{author2|}}}|, {{{author2}}}
+|}}{{#if:{{{author3|}}}|, {{{author3}}}
+|}}{{#if:{{{author4|}}}|, {{{author4}}}
+|}}</td></tr>
 <tr><th>Latest version</th><td class="note">{{{version|''Unknown''}}}</td></tr>
 <tr><th>Homepage</th><td class="note">{{{website|''Unknown''}}}</td></tr>
-<tr><th>Development language</th><td class="note">{{#if:{{{devlanguage|}}}|[[:Category:Clients written in {{{devlanguage}}}|{{{devlanguage}}}]]
+<tr><th>Development language{{#if:{{{devlanguage2|}}}|s|}}</th><td class="note">{{#if:{{{devlanguage|}}}|[[:Category:Clients written in {{{devlanguage}}}|{{{devlanguage}}}]]
 |''Unknown''}}{{#if:{{{devlanguage2|}}}|, [[:Category:Clients written in {{{devlanguage2}}}|{{{devlanguage2}}}]]
 |}}{{#if:{{{devlanguage3|}}}|, [[:Category:Clients written in {{{devlanguage3}}}|{{{devlanguage3}}}]]
 |}}</td></tr>
-<tr><th>User interface</th><td class="note">{{{ui|''Unknown''}}}</td></tr>
+<tr><th>User interface</th><td class="note">{{#if:{{{ui|}}}|[[:Category:{{{ui}}} clients|{{{ui}}}]]
+|''Unknown''}}{{#if:{{{ui2|}}}|, [[:Category:{{{ui2}}} clients|{{{ui2}}}]]
+|}}{{#if:{{{ui3|}}}|, [[:Category:{{{ui3}}} clients|{{{ui3}}}]]
+|}}</td></tr>
 <tr><th>Screenshots</th><td class="note">{{{screenshots|''None''}}}</td></tr>
 <tr><td colspan="2" style="text-align:center;">{{{footnotes|}}}</td></tr>
 </table>
 <div style="text-align:center;">[[Talk:{{PAGENAME}}|Discuss this client]]</div>
-</div></div><noinclude> <!-- don't put any newlines here otherwise it puts paragraph markers after the infobox on inclusion pages -->
+</div></div><noinclude> <!-- don't put any newlines here (around the divs) otherwise it puts paragraph markers after the infobox on inclusion pages -->
+<em>This template is used to display an information box containing details about an XMMS2 client.  See [[Client:Remuco]] for example use.</em>
+
+Please note that the image should ideally be a screenshot of the client, or in the case of large clients, a cropped screenshot of a key part of the UI.  People will use this image to help decide whether to download the client or not, so make sure it's informative!
+
+Any omitted parameters will show sensible defaults (usually "Unknown") so for this reason leave out parameters you are unsure of.  Valid parameters and examples are:
+{|class="wikitable"
+!Code!!Notes
+|-
+|width=40%|<tt>image=myclient.png</tt>||Main screenshot.  This is normally the name of the page with .png on the end, and should only be specified if there is a problem with the default name.  See image guidelines above.
+|-
+|<tt>author=John Smith<br/>author2=<nowiki>[[User:WikiUsername|John&nbsp;Smith]]</nowiki><br/>author3=<nowiki>Third Author</nowiki><br/>author4=<nowiki>Fourth Author</nowiki></tt>||Name (and optional link to the wiki's userpage) of up to four people who wrote the client
+|-
+|<tt>version=1.0</tt>||Latest release version
+|-
+|<tt><nowiki>website=[http://www.example.com/xmms2/myclient example.com]</nowiki></tt>||Link to the client's homepage, abbreviated to just show the domain name (the full URL is too long to fit in the infobox)
+|-
+|<tt>devlanguage=C++<br/>devlanguage2=Java<br/>devlanguage3=BASIC*</tt>||Up to three languages used to code the client
+|-
+|<tt>ui=Console<br/>ui2=Qt4<br/>ui3=Web</tt>||User interfaces provided by the client.  Up to three can be specified.
+|-
+|<tt>footnotes=* I'm too old for BASIC</tt>||Related text to display at the bottom of the infobox
+|-
+|<tt>screenshots=<nowiki>http://link/to/image.png</nowiki></tt>||Deprecated.  Exact format TBD (will probably be replaced by locally uploaded images)
+|-
+|<tt>description=</tt>||Deprecated.  Place your client description directly after the infobox template.
+|}
 </noinclude>
+<includeonly>
 {{{description}}}
 
-<includeonly>
 [[Category:Clients]]
 {{#if:{{{devlanguage|}}}|[[Category:Clients written in {{{devlanguage}}}]]
 |}}{{#if:{{{devlanguage2|}}}|[[Category:Clients written in {{{devlanguage2}}}]]
