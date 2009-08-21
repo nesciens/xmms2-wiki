@@ -57,5 +57,8 @@ Any omitted parameters will show sensible defaults (usually "Unknown") so for th
 {{#if:{{{devlanguage|}}}|[[Category:Clients written in {{{devlanguage}}}]]
 |}}{{#if:{{{devlanguage2|}}}|[[Category:Clients written in {{{devlanguage2}}}]]
 |}}{{#if:{{{devlanguage3|}}}|[[Category:Clients written in {{{devlanguage3}}}]]
+|}}{{#if:{{{ui|}}}|[[Category:{{{ui}}} clients]]
+|}}{{#if:{{{ui2|}}}|[[Category:{{{ui2}}} clients]]
+|}}{{#if:{{{ui3|}}}|[[Category:{{{ui3}}} clients]]
 |}}
 </includeonly>
