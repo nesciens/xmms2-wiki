@@ -1,4 +1,13 @@
-{{Client |name=Promoe| author=Thomas Frauendorfer, Tobias RundstrÃ¶m, Daniel Svensson| website=http://git.xmms.se| version=| devlanguage=C++| ui=Qt4| screenshots=| description=
+{{Client
+|name=Promoe
+|author=Thomas Frauendorfer
+|author2=Tobias RundstrÃ¶m
+|author3=Daniel Svensson
+|website=[http://git.xmms.se git.xmms.se]
+|version=''No release yet''
+|devlanguage=C++
+|ui=Qt4
+}}
 == Intro ==
 Winamp classic clone.
 
@@ -16,5 +25,4 @@ There has not yet been an official release, but the source can be found at the [
 
 == Bugtracker ==
 
-Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker]. Please file bugs under project "Client - Promoe"
-}}
+Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker]. Please file bugs under project "Client - Promoe".
