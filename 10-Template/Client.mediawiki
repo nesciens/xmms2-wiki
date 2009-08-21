@@ -1,6 +1,6 @@
 __NOTOC__ <!-- Pages long enough to need a TOC should be split into subpages -->
-<div style="border-left: 1em solid white; float: right; clear: left; margin-left: 1em;">
-<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9; margin-bottom: 10px;">
+<div style="border-left: 1em solid white; border-bottom: 1em solid white; float: right; clear: left; margin-left: 1em;">
+<div class="infobox" style="width: 20em; text-align: left; font-size: 90%; float: none; margin: 0px; border: 1px solid #AAAAAA; background-color: #F9F9F9;">
 <div style="text-align:center; font-size: 120%;">'''{{{name|{{PAGENAME}}}}}'''</div>
 <div id="level-infobox-image" style="text-align:center;">[[Image:{{{image|{{PAGENAME}}.png}}}]]<br />{{#ifexist: Image:{{{image|{{PAGENAME}}.png}}}||''There is no image of this client - please <span class="plainlinks">[{{fullurl:Special:Upload|wpDestFile={{{image|{{PAGENAMEE}}.png}}}}} upload one]</span>!''}}</div>
 <table style="width: 100%;">
@@ -29,6 +29,7 @@ __NOTOC__ <!-- Pages long enough to need a TOC should be split into subpages -->
 Please note that the image should ideally be a screenshot of the client, or in the case of large clients, a cropped screenshot of a key part of the UI.  People will use this image to help decide whether to download the client or not, so make sure it's informative!
 
 Any omitted parameters will show sensible defaults (usually "Unknown") so for this reason leave out parameters you are unsure of.  Valid parameters and examples are:
+
 {|class="wikitable"
 !Code!!Notes
 |-
