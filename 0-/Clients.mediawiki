@@ -64,6 +64,7 @@ You can find lots other players in the [[Clientlist | Client matrix]]. Here are 
 * [[Client:ccx2 | ccx2]] is a simple and customizable console client.
 * [[Client:Cluck | Cluck]] is a TUI (windowed console) client with very light requirements: a recent xmms2d, pcre, curses, and optionally a few helper applications
 * [[Client:kuechenstation | kuechenstation]] is a text mode client with scrolling title, playlist and medialib query
+* [[Client:bnxc | bnxc]] is a minimalistic ncurses client with a focus on browsing through music
 
 = Desktop Integration =
 
