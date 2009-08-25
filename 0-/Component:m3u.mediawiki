@@ -1,7 +1,7 @@
 {{ComponentHeader}}
 
 =Summary=
-Enables XMMS2 to read/write m3u playlists.
+Enables XMMS2 to read m3u playlists.
 
 ===See also:===
 * [[Component:Playlist | Playlist]]
