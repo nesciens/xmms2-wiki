@@ -1,0 +1,9 @@
+{{Client
+|name=bnxc
+|author=John Greco
+|website=[http://www.cs.drexel.edu/~jlg95/bnxc/]
+|devlanguage=C
+|ui=Console
+|screenshots=[http://www.cs.drexel.edu/~jlg95/bnxc/]
+}}
+bnxc is a minimalistic ncurses based client for xmms2 that is mainly intended to browse music and append/add to the current playlist.  It creates and uses it's own plaintext database file with some simple scripting and is intended to be easily customizable.
