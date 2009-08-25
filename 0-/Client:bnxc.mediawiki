@@ -1,7 +1,7 @@
 {{Client
 |name=bnxc
 |author=John Greco
-|website=[http://www.cs.drexel.edu/~jlg95/bnxc/]
+|website=[http://www.cs.drexel.edu/~jlg95/bnxc/ http://www.cs.drexel.edu/~jlg95/bnxc/]
 |devlanguage=C
 |ui=Console
 |screenshots=[http://www.cs.drexel.edu/~jlg95/bnxc/]
