@@ -1,5 +1,6 @@
 {{Client
 |name=Promoe
+|image=Client-Promoe.png
 |author=Thomas Frauendorfer
 |author2=Tobias RundstrÃ¶m
 |author3=Daniel Svensson
