@@ -5,7 +5,7 @@
 |author2=Tobias RundstrÃ¶m
 |author3=Daniel Svensson
 |website=[http://git.xmms.se git.xmms.se]
-|version=''No release yet''
+|version=0.1.0
 |devlanguage=C++
 |ui=Qt4
 }}
@@ -16,7 +16,9 @@ Winamp classic clone.
 
 === Source ===
 
-There has not yet been an official release, but the source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get the latest snapshot [http://git.xmms.se/?p=promoe.git;a=summary here]
+There is an official release: [http://home.in.tum.de/~frauendo/promoe-0.1.0.tar.gz Promoe 0.1.0]
+
+The source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get the latest snapshot from the [http://git.xmms.se/?p=promoe.git;a=summary Promoe git tree].
 
 === Dependencies ===
 
