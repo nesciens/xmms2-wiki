@@ -3,12 +3,12 @@ Client
 |image=Client-Remuco.png
 |name=Remuco
 |author=Oben Sonne
-|website=[http://remuco.sourceforge.net/ remuco.sf.net]
+|website=[http://code.google.com/p/remuco remuco.googlecode.com]
 |version=0.9.1
 |devlanguage=JavaME
 |devlanguage2=Python
 |ui=MIDP
-|screenshots=[http://remuco.sourceforge.net/index.php/Screenshots]
+|screenshots=[http://code.google.com/p/remuco/wiki/Screenshots]
 }}
 ==== What is Remuco? ====
 Remuco is a duplex remote control system for Linux media players and '''mobile devices''' equipped with '''Bluetooth''' or '''WiFi'''. With Remuco, you can remotely control your favorite media player. You can switch to the next, previous, or any other media within the current playlist, browse your media library and activate other playlists, rate your media, adjust volume, and more. On the mobile device (the remote control), it displays information about the current media, including cover art.
