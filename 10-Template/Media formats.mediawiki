@@ -10,6 +10,7 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 | FLAC
 | ASF
 | WAV
+| FLV
 |- 
 ! Audio Extensions:
 | mp1 mp2 mp3
@@ -19,6 +20,7 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 | flac
 | asf wma
 | wav
+|
 |-
 ! Mixed Extensions:
 | mpg mpeg
@@ -28,6 +30,7 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 |
 | wmv
 |
+| flv
 |}
 
 
