@@ -7,10 +7,13 @@
 * Network transparency means you can run and control XMMS2 remotely, (e.g. run XMMS2 on your 'media box' and control it over network using a bluetooth-enabled PDA (TCP) - see [[Mobile platforms]])
 
 ;[[Media formats | Wide format support]] :
-Play '''mp3''', '''vorbis''', '''aac''', alac, wma, mac, sid, mod, wav, '''flac''', mpc, speex, wavpack, tta and shn files. 
+Play '''mp3''', '''mp4''', '''vorbis''', '''aac''', alac, wma, mac, sid, mod, wav, '''flac''', mpc, speex, wavpack, '''flv''', '''nsf''', spc, nsfe, gbs, gym, vgm, sap, ay, tta and shn files. 
 
 ;Transports
 Play from local files, over http, samba, '''daap''' and mms.
+
+;Playlists
+Add tracks from rss, xml, asx, xspf, html, '''m3u''', '''pls''', and '''cue''' files. 
 
 ;Flexible [[Transforms|transform chain]] concept :
 Allows for more flexible access to media. (e.g. play mp3 files from a Samba share without having to mount it on the local filesystem)
