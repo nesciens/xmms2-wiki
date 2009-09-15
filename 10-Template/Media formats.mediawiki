@@ -58,3 +58,8 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 ** [[Component:wave | Wave Decoder]]
 * [[Wikipedia:Windows_Media_Audio | Windows Media Audio]]
 ** [[Component:wma | WMA Decoder]]
+* [[Wikipedia:FLV | Flash Video]]
+** [[Component:mad | MAD Decoder]]
+** [[Component:mpg123 | MPEG Layer 1/2/3 Decoder]]
+** [[Component:avcodec | avcodec Decoders ]]
+** [[Component:faad | FAAD Decoder]]
