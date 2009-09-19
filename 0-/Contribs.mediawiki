@@ -44,4 +44,6 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) )
 
 {{Contrib| title=WeeChat script | author=Konstantin Merenkov | description=Print currently playing track (format is configurable) in xmms2 to a channel or private buffer in WeeChat IRC client. | moreinfo=| files=* [http://weechat.flashtux.org/scripts/xmms2.pl xmms2.pl]}}
 
+{{Contrib| title=xmms2find & xmms2-new_files | author=basic ormolu | description=Taken (back) from a script I found on mpd's wiki, xmms2find lets you search your playlist. xmms2-new_files shows you files you've added to the mlib in the past week so you can add them to your playlist. | moreinfo=| files=* [http://endymion.beevomit.org/xmms2find.py xmms2find.py] [http://endymion.beevomit.org/xmms2-new_files.py xmms2-new_files.py]}}
+
 [[Category:Users]]
