@@ -42,7 +42,7 @@ Some of the developers live around/in MalmÃ¶ and might be able to offer some b
 
 The I am of course interested table is below:
 
-{| class="wikitable" style="text-align: center; width:80%; margin: 1em auto 1em auto;"
+{| class="wikitable" style="margin: 1em auto 1em auto;"
 |+
 ! Name
 ! Dates that work
