@@ -1,0 +1,48 @@
+== XMMS2 Conference 2010 ==
+It's time to hold the first XMMS2con in history! Yay. This page collects some ideas and facts about this conference.
+
+== Where and when ==
+Where will be in MalmÃ¶ Sweden. Purple Scout have allowed us to use their offices to host the conference. We have big screen projector, nice beer fridges, lots of sofas and several different types of Rock Band, so it will fit us perfectly!
+
+Date is not 100% set in stone, so we would like some input for that. Here are my suggestions (all in 2010):
+
+* January 15-17
+* February 12-14
+* February 19-21
+* March 12-14
+
+Please indicate below which date you prefer. Date will be set by mid october so that everyone have good advance notice to make arrangements etc.
+
+== Program ==
+The program is very much what we make it into. Please give suggestions below on activities you would like to see. Here are my ideas:
+
+=== Techie stuff ===
+* Coding sprints. Let's merge a lot of code
+* Work on the official UI
+* Work on different mobile clients
+* Work flow discussions
+* Beginner to XMMS2 client development sessions?
+
+=== Social stuff ===
+* Beer tasting
+* Nice dinner at some nice Swedish restaurant
+* Rock band? (or similar stuff)
+* Movie night?
+* Tour of MalmÃ¶'s nightlife.
+
+== Practical stuff ==
+
+=== Getting to MalmÃ¶ ===
+MalmÃ¶ is very close to the continent. So you might be able to take a train from Netherlands, Germany and countries in north of Europe. Otherwise you can fly into Copenhagen (Kastrup CPH), this airport is way bigger and have a lot more flights than MalmÃ¶ (Sturup MMX).
+
+=== Sleeping ===
+Some of the developers live around/in MalmÃ¶ and might be able to offer some beds. Please indicate below. Otherwise we will try to fix beds with the help of Google Money.
+
+== Participants ==
+
+The I am of course interested table is below:
+
+{| class="wikitable"
+! Name || Dates that work || Need place to stay || Have X number of beds to lend || Comments
+Tobias RundstrÃ¶m| All | No | 0 | Hooray!
+|}
