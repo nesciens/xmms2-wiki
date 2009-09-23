@@ -73,4 +73,10 @@ The I am of course interested table is below:
 | No
 | 0
 | Staying at Hotel Svensson
+|-
+| Anders Waldenborg
+| Any
+| No
+| 0
+| 
 |}
