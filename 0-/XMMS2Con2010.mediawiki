@@ -80,11 +80,17 @@ The I am of course interested table is below:
 | Any
 | No
 | 0
+| 
 |-
 | Alex Botero-Lowry
 | All (Feb 12-14 preferred) 
 | Yes
 | 0
 | \o/ Date selected, so I can go to FOSDEM too. :)
+|-
+| Erik Massop
+| All but Jan 15-17
+| Yes
+| 0
 | 
 |}
