@@ -38,7 +38,7 @@ MalmÃ¶ is very close to the continent. So you might be able to take a train fr
 http://wikitravel.org/en/MalmÃ¶#Get_in
 
 === Sleeping ===
-Some of the developers live around/in MalmÃ¶ and might be able to offer some beds. Please indicate below. Otherwise we will try to fix beds with the help of Google Money.
+Some of the developers live around/in MalmÃ¶ and might be able to offer some beds. Please indicate below. Otherwise we will try to fix beds with the help of Google Money. We will cover Friday to Sunday if you are a official author of XMMS2 (i.e. your name is in the AUTHORS file).
 
 == Participants ==
 
