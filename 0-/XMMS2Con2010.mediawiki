@@ -55,4 +55,10 @@ The I am of course interested table is below:
 | No 
 | 0 
 | Hooray!
+|-
+| Daniel Svensson
+| All (march is preferred)
+| No
+| 1
+| When X2Con is end, power of code merge!
 |}
