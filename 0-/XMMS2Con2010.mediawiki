@@ -44,5 +44,5 @@ The I am of course interested table is below:
 
 {| class="wikitable"
 ! Name || Dates that work || Need place to stay || Have X number of beds to lend || Comments
-Tobias RundstrÃ¶m| All | No | 0 | Hooray!
+! Tobias RundstrÃ¶m| All | No | 0 | Hooray!
 |}
