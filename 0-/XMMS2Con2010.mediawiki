@@ -33,7 +33,7 @@ The program is very much what we make it into. Please give suggestions below on 
 == Practical stuff ==
 
 === Getting to MalmÃ¶ ===
-MalmÃ¶ is very close to the continent. So you might be able to take a train from Netherlands, Germany and countries in north of Europe. Otherwise you can fly into Copenhagen (Kastrup CPH), this airport is way bigger and have a lot more flights than MalmÃ¶ (Sturup MMX).
+MalmÃ¶ is very close to the continent. So you might be able to take a train from Netherlands, Germany and countries in north of Europe to MalmÃ¶ Central Station (MalmÃ¶ C). Otherwise you can fly into Copenhagen Airport (Kastrup CPH / EKCH), this airport is way bigger, have a lot more flights and actually is easier to reach from MalmÃ¶ than MalmÃ¶ Airport (Sturup MMX / ESMS).
 
 === Sleeping ===
 Some of the developers live around/in MalmÃ¶ and might be able to offer some beds. Please indicate below. Otherwise we will try to fix beds with the help of Google Money.
