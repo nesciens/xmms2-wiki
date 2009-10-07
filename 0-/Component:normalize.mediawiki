@@ -1,0 +1,15 @@
+{{ComponentHeader}}
+
+=Summary=
+Adds support for normalizer effect plugin into XMMS2.
+
+=Description=
+The normalizer plugin introduces the following configuration variables into XMMS2:
+
+* normalize.buckets
+* normalize.max_gain
+* normalize.smooth
+* normalize.target
+* normalize.use_anticlip
+
+Description of each configuration variable:
