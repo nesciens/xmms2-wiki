@@ -15,3 +15,7 @@ The normalizer plugin introduces the following configuration variables into XMMS
 Description of each configuration variable:
 
 TBA
+
+[[Category:Effect Plugins]]
+[[Category:Components]]
+[[Category:XMMS2 Technical Details]]
