@@ -13,3 +13,5 @@ The normalizer plugin introduces the following configuration variables into XMMS
 * normalize.use_anticlip
 
 Description of each configuration variable:
+
+TBA
