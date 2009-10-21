@@ -10,7 +10,7 @@ Generally obvious similarities... Both XMMS2 and MPD:
 
 When we started to work on XMMS2 we didn't know about MPD. If we had known, maybe XMMS2 might have been developed differently. But when looking at it retrospectively, we have adopted fairly different programming philosophies. While the user experience might generally be the same, the programming and internals are very different. If you are not interested in the internals, skip this section.
 
-* both MPD and XMMS have a sophisticated notification system where updates are sent to all clients that subscribe to those notifications.
+* both MPD and XMMS2 have a sophisticated notification system where updates are sent to all clients that subscribe to those notifications.
 * MPD clients are given the choice between communicating directly with the daemon using the plaintext [http://mpd.wikicities.com/wiki/Protocol_Reference MPD protocol], or using one of several [http://mpd.wikicities.com/wiki/Client_Libraries client libraries] available in various languages.
 ** XMMS2 has a single well-tested and very well implemented clientlib that supports all the features. This clientlib is also available wrapped in Python, Ruby, Java and C++.
 * MPD uses their own database format to store metadata.
