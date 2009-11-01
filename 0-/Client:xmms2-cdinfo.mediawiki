@@ -1,0 +1,16 @@
+{{
+Client
+|name=xmms2-freesb
+|author=Tomasz Sobczyk
+|website=[http://blog.asth.net/1?id=259]
+|version=0.1.1
+|devlanguage=C++
+}}
+=== What is xmms2-freedb? ===
+When xmms2-freedb is run, it waits till an entry to medialib is added, and when it's a cdda:// entry, it looks up the CD infromation in a remote CD-Audio database and update the fields.
+Currently the application is set to use freedb.freedb.org via CDDB protocol as there's no config yet.
+=== Requirements ===
+* libc
+* libstdc++
+* libdiscid
+* xmms2-client-cpp
