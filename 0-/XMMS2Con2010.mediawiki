@@ -40,55 +40,46 @@ The I am of course interested table is below:
 {| class="wikitable" style="margin: 1em auto 1em auto;"
 |+
 ! Name
-! Dates that work
 ! Need place to stay
 ! Have X number of beds to lend
 ! Comments
 |-
 | Tobias RundstrÃ¶m 
-| All 
 | No 
 | 0 
 | Hooray!
 |-
 | Daniel Svensson
-| All (march is preferred)
 | No
 | 1 (and ~2 floor spots)
 | When X2Con is end, power of code merge!
 |-
 | Tilman Sauerbeck
-| All
 | Yes
 | 0
 | \o/
 |-
 | Florian Ragwitz
-| All (January preferred)
 | No
 | 0
 | Staying at Hotel Svensson
 |-
 | Anders Waldenborg
-| Any
 | No
 | 0
 | 
 |-
 | Alex Botero-Lowry
-| All (Feb 12-14 preferred) 
 | Yes
 | 0
 | \o/ Date selected, so I can go to FOSDEM too. :)
 |-
 | Erik Massop
-| All but Jan 15-17
 | Yes
 | 0
 | 
 |-
 | SÃ©bastien Cevey
-| All (not sure I can make Jan 15-17)
 | No*
 | 0
 | *Can probably stay at a friend's, to be confirmed.
