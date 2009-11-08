@@ -214,22 +214,22 @@ Also it is important that it is easy to change the attributes. A GUI would proba
  album = collections.Has(artist, "album")
  title = collections.Match(field="title", value="%pink%")
    
- result = xmms.coll_query_infos( artist, ("artist", "title" ))
+ result = xmms.coll_query_infos( artist, ["artist", "title" ])
  result.wait()
  print result.value()
  
  print "---"
- result = xmms.coll_query_infos( album, ("artist", "title" ))
+ result = xmms.coll_query_infos( album, ["artist", "title" ])
  result.wait()
  print result.value()
   
  print "---"
- result = xmms.coll_query_infos( title, ("artist", "title" ))
+ result = xmms.coll_query_infos( title, ["artist", "title" ])
  result.wait()
  print result.value()
   
  print "---"
- result = xmms.coll_query_infos( title | album, ("artist", "title" ))
+ result = xmms.coll_query_infos( title | album, ["artist", "title" ])
  result.wait()
  print result.value()
 
