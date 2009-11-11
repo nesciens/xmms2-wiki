@@ -58,6 +58,7 @@ For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own 
 === [http://amarok.kde.org Amarok] ===
 === [http://audacious-media-player.org Audacious] ===
 === [http://dragonplayer.org/ Dragon player] ===
+=== [http://www.exaile.org/ Exaile] ===
 
 == [[Media Player Interfaces/API Comparison|API Comparison]] ==
 * [[Media Player Interfaces/API Comparison#Playback_control|Playback]]
