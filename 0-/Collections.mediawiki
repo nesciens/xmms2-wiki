@@ -68,7 +68,7 @@ But the absence of clear collections is inconvenient.  Usually, it implies that 
 
 Browsing a collection should really provide the same comfort as browsing the Library. As a matter of fact, the Library itself ''is'' a collection (the subset that spans the set itself)!  We could then see collections as filters that apply to the Library. They can be hierarchically organized, with the Library at the top of the tree.
 
-To play songs from a collection, you simply create (or ''instanciate'') a playlist from its content. Either all of it or some selected part. Or even, you can randomly feed a playlist from a collection, which becomes the equivalent of iTunes Party Shuffle.
+To play songs from a collection, you simply create (or ''instantiate'') a playlist from its content. Either all of it or some selected part. Or even, you can randomly feed a playlist from a collection, which becomes the equivalent of iTunes Party Shuffle.
 
 Okay, to sum it up: collections allow the user to browse chosen subsets of the Library and to constitute playlists from these subsets.
 
