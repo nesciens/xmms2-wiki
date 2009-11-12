@@ -2,4 +2,6 @@ Info about XMMS2 on Solaris.
 
 Xmms2 compiles and runs on Solaris, given that the needed libraries are installed. Audio output works with libao. The sun audio output doesn't work at the moment, as it uses OpenBSD/NetBSD extensions that are not available on Solaris. 
 
+Solaris also seems to support OSS4. To use OSS4 output you need to install SUNWaudh
+
 [[Category:Platforms]]
