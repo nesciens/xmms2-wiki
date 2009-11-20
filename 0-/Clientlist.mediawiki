@@ -22,6 +22,7 @@ All current clients should be found here.
 {{ClientTableEntry|eq| Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|exmms2| Graphical/ EWL/EFL | C | in development | usable, but edit makefile, basic functionality }}
 {{ClientTableEntry|Esperanza| Graphical / QT4 | C++ | in development | Lightweight, basic player }}
+{{ClientTableEntry|Flexmms2| Graphical / GTK | Python | in development | Main goal is to create a powerful and customizable mediabrowser (already usable) }}
 {{ClientTableEntry|gkrellxmms2| GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
 {{ClientTableEntry|GNOME Do| GNOME Do plugin| C# | in development | Allows xmms2 to be accessed and controlled by GNOME Do }}
 {{ClientTableEntry|gx2ctl| Gnome x2 control | C | works for her | the Drag'n'Drop client for your girlfriend }}
