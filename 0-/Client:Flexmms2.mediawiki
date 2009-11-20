@@ -1,7 +1,7 @@
 {{Client|
 name=Flexmms2|
 author=Max Hollmann|
-version=[http://nic-nac-project.org/~zank/xmms2/flexmms2/flexmms2_v0.1.0.tar.gz 0.1.0]|
+version=[http://git.xmms.se/?p=flexmms2.git;a=snapshot;h=v0.1.0;sf=tgz 0.1.0]|
 website=http://nic-nac-project.org/~zank/xmms2/flexmms2/|
 devlanguage=Python|
 ui=GTK2|
