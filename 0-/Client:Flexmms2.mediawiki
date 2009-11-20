@@ -1,0 +1,18 @@
+{{Client|
+name=Flexmms2|
+author=Max Hollmann|
+version=0.1|
+website=http://nic-nac-project.org/~zank/xmms2/flexmms2/|
+devlanguage=Python|
+ui=GTK2|
+screenshots=[http://nic-nac-project.org/~zank/xmms2/flexmms2/screen1.png]|
+description=
+Flexmms2 is a GTK2 Client written in Python using wxWidgets.
+
+It provides a media-browser where things like the shown columns and the property to filter the media by can be configured.
+Even more than one property can be used as filter, so that things like "Filter by 'performer' if it is set, by 'artist' otherwise" are possible. This is really useful to browse medialibraries with a lot of compilations, since these would be split up into every single artist of the songs they contain.
+
+The last-mentioned gave the first impulse to write this client.
+
+The project is currently in heavy development, but very basic features like playback control (play, pause, next, ...), a playlist with basic editing operations and the media-browser as mentioned are already usable.
+}}
