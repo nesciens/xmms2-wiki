@@ -1,0 +1,1 @@
+{{Client| name=xmms2-mpris-bridge | author=Thomas Frauendorfer| website=[http://github.com/caotic/xmms2-mpris-bridge http://github.com/caotic/xmms2-mpris-bridge]| version=not oficially released yet| devlanguage=Python| ui=MPRIS dbus interface| description=MPRIS interface for XMMS2. Implements MPRIS as far as it is supported by XMMS2.}}
