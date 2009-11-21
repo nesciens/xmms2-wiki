@@ -9,7 +9,7 @@ The last example shows that you can even output the same data type, as is the ca
 
 ==How They Work==
 Each transform plugin has a ''stream type'' to define what data it accepts. And an xform (as in the xform object in the API) defines another ''stream type'', which describes the type of data it outputs. This makes the instantiation of the chain of transforms look something along the lines:
- goaltype = output->supported_types; /* "audio/pcm-data" */
+ goaltypes = output->supported_types; /* "audio/pcm-data" */
  xform = xmms_xform_new (NULL);
  xmms_xform_set_output_type (xform,
                              "mime", "application/x-url",
