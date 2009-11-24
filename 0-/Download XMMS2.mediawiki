@@ -55,7 +55,7 @@ These ebuilds have more USE flags for the optional packages that xmms2 can depen
 Some alternate ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds] and [http://proaudio.tuxfamily.org proaudio overlay].
 
 There are plans to add xmms2 to Gentoo in the near future. You can track the progress at http://bugs.gentoo.org/show_bug.cgi?id=93583.
-Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=98304 ebuild].
+Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=189646 0.6 ebuild] or [http://bugs.gentoo.org/attachment.cgi?id=206479 git ebuild].
 
 If you want to track the current development tree you can use this [http://bugs.xmms2.xmms.se/file_download.php?file_id=394&type=bug ebuild].
 A valid [http://dev.gentoo.org/~ferdy/overlay/eclass/git.eclass git.eclass] file is necessary.
