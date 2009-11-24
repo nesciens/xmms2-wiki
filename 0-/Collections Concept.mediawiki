@@ -229,7 +229,7 @@ However, this does not imply that all playlists have to be hand-picked.  List op
 
 === Advanced Collection Operator: Party Shuffle ===
 
-A '''Party Shuffle''' (inspired from the eponymous feature in iTunes) is a collection operator that takes a collection C as input and outputs a random medialist of media from C.  The size of the list of the list is determined by the <code>size</code> property of the operator.
+A '''Party Shuffle''' (inspired from the eponymous feature in iTunes) is a collection operator that takes a collection as input and outputs a random medialist from the collection.  The size of the list is determined by the <code>size</code> property of the operator.
 
 The resulting collection being a medialist, it can be used as a playlist.
 
@@ -254,7 +254,6 @@ This type of playlist exists in the [http://amarok.kde.org/ amaroK] player.
 ''This is only a proposition, mainly to show how advanced playlists and operators can be.''
 
 A '''Playlist Round-Robin''' is a collection operator that takes a set of medialists as input and combines them using a round-robin policy (i.e. taking an equal amount of media from each of them).
-
 
 = Using Collections =
 
