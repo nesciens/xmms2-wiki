@@ -25,13 +25,13 @@ The symbolic links MUST be relative, so that the full structure easily can be co
  	file(artpath, "w").write(art)
  
  	relartpath = os.path.join("..","md5",digest)
- 	if media.has_key("musicbrainzid"):
+ 	if "musicbrainzid" in media:
  		os.symlink(relartpath,  os.path.join(basedir, "mbid", media["musicbrainzid"]))
  
- 	if media.has_key("asid"):
+ 	if "asid" in media:
  		os.symlink(relartpath,  os.path.join(basedir, "asid", media["asid"]))
  
- 	if media.has_key("artist") and media.has_key("album"):
+ 	if "artist" in media and "album" in media:
  		artist = media["artist"].lower().replace("/","")
  		album = media["album"].lower().replace("/","")
  		name = "%s - %s" % (artist, album)
