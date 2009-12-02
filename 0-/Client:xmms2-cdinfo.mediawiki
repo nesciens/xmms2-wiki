@@ -10,7 +10,6 @@ Client
 When xmms2-freedb is run, it waits till an entry to medialib is added, and when it's a cdda:// entry, it looks up the CD infromation in a remote CD-Audio database and update the fields.
 Currently the application is set to use freedb.freedb.org via CDDB protocol as there's no config yet.
 === Requirements ===
-* libc
-* libstdc++
+* glibc
 * libdiscid
 * xmms2-client-cpp
