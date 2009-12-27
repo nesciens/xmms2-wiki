@@ -221,7 +221,7 @@ The current API is very limited: saved playlists cannot be modified and the conc
 
 The new playlist API is based on collections.  Hence, a playlist is simply a medialist saved in the ''Playlists'' namespace.  One of these medialists is referenced as the "current" playlist and songs are played sequentially from its content.  A <code>position</code> property in the collection indicated which song is played (or was last played, for non-current playlists).
 
-It is important to note that not all collections can be playlists: medialists can, but mediasets ''cannot''.  To be even more accurate, only '''<code>idlists</code>''' can be used as playlists.  The reason for this is hat otherwise, even with ''ordered'' sets of media, it would be impossible to reorder the playlist.  This would make playlists confusing in clients.
+It is important to note that not all collections can be playlists: medialists can, but mediasets ''cannot''.  To be even more accurate, only '''<code>idlists</code>''' can be used as playlists.  The reason for this is that otherwise, even with ''ordered'' sets of media, it would be impossible to reorder the playlist.  This would make playlists confusing in clients.
 
 Because the ''Playlists'' namespace only contains <code>idlist</code> collections, playlists always correspond to a static list of media (as opposed to a dynamic list obtained from a query); their content can therefore be modified, reordered, etc.
 
