@@ -1,2 +1,2 @@
-{{Template:Client|author=Brian Miller|version=0.1 alpha|website=[http://inkleined.com/SeaSerpent]|devlanguage=Python|ui=Qt4|screenshots=http://inkleined.com/SeaSerpent/screenshots.php}}
+{{Template:Client|image=Client-SeaSerpent.png |200px|thumb|left|alt text |author=Brian Miller|version=0.1 alpha|website=http://inkleined.com/SeaSerpent|devlanguage=Python|ui=Qt4|screenshots=http://inkleined.com/SeaSerpent/screenshots.php}}
 Goal is to be a full-featured client.  Drag-and-drop, editing tags, display album art, and an equalizer are a few features.  More features are planned.
