@@ -41,6 +41,7 @@ All current clients should be found here.
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Remuco| Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
+{{ClientTableEntry|SeaSerpent| Graphical / QT4 | Python | in development | Although in alpha version, it's mostly stable with new features to be added. }}
 {{ClientTableEntry|SeMMiX| Graphical / GTK | C | Rewrite, in development | Client for media servers with xmms2 support. It allows to connect to several servers at the same time. }}
 {{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
 {{ClientTableEntry|sisy| Console | C | in development | Simple syntax collection pattern parser }}
