@@ -1,0 +1,1 @@
+{{Template:Client|author=Brian Miller|version=0.1 alpha|website=[http://inkleined.com/SeaSerpent]|devlanguage=Python|ui=Qt4|screenshots=http://inkleined.com/SeaSerpent/screenshots.php}}
