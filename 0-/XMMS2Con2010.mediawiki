@@ -9,6 +9,24 @@ Where will be in MalmÃ¶ Sweden. Purple Scout have allowed us to use their offi
 == Program ==
 The program is very much what we make it into. Please give suggestions below on activities you would like to see. Here are my ideas:
 
+== Proposed schedule ==
+Since we are no stiff guys I suggest some kind of un-conference type of schedule. But to keep it at least a bit coordinated I suggest that we have the following rough schedule:
+
+* Friday (for everyone that is arriving then)
+** 16:00-19:00 - Welcome at Purple Scout offices. Beer and hellos.
+** 19:00-20:30 - Food somewhere. I will book something when I know how many are joining.
+** 21:00-??:?? - Late night activities. What do you guys want to do?
+* Saturday
+** 10:00-13:00 - Un-conferance technical stuff, coding sprints.
+** 13:00-14:00 - Lunch. Either something ordered to the office or we go out somewhere.
+** 14:00-18:00 - Technical stuff again, coding sprints.
+** 19:00-20:30 - Dinner. Again, I will fix something.
+** 21:00-??:?? - Social hang-around at the office, there are rock band etc.
+* Sunday
+** 10:00-13:00 - Un-conferance technical stuff, coding sprints.
+** 13:00-14:00 - Lunch. Either something ordered to the office or we go out somewhere.
+** 14:00-18:00 - Nothing scheduled since most people will have to start thinking about departure.
+
 === Techie stuff ===
 * Coding sprints. Let's merge a lot of code
 * Work on the official UI
