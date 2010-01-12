@@ -107,4 +107,9 @@ The I am of course interested table is below:
 | No
 | 0
 | Staying at Hotel Svensson, too ;)
+|-
+| Auke Schrijnen
+| Yes
+| 0
+|
 |}
