@@ -20,7 +20,7 @@ NOT:
  [tab][tab][tab][tab][tab]    arg2,
  [tab][tab][tab][tab][tab]    arg3)
 
-(see [[Emacs C style]] adapted from LDP)
+(see [[Emacs C style]] adapted from LDP, or [http://www.vim.org/scripts/script.php?script_id=231 SmartTabs plugin for vim])
 
 == Arguments ==
 Arguments to code constructs and functions should always have a space between the construct or function name and the open parenthesis. The same goes for functions that take no arguments:
