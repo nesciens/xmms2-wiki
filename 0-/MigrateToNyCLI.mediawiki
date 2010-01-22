@@ -1,0 +1,71 @@
+=== Search the library ===
+
+Before:
+ xmms2 mlib search artist~glass
+
+After:
+ xmms2 search artist~glass
+
+=== Add a search match to the playlist ===
+
+Before:
+ xmms2 mlib searchadd artist~glass
+
+After:
+ xmms2 add artist~glass
+
+=== Move an item in the playlist ===
+
+This one is pretty damn bizarre.
+
+Before:
+ xmms2 move 1 2
+
+In NyCLI this yields:
+
+ muzak@muzak:~$ xmms2 list
+ ->[1/30375] Philip Glass - Metamorphosis One (05:40)
+   [2/30376] Philip Glass - Metamorphosis Two (07:21)
+   [3/30377] Philip Glass - Metamorphosis Three (05:32)
+   [4/30378] Philip Glass - Metamorphosis Four (07:01)
+   [5/30379] Philip Glass - Metamorphosis Five (05:10)
+   [6/30380] Philip Glass - Mad Rush (13:47)
+   [7/30381] Philip Glass - Wichita Sutra Vortex (06:51)
+ 
+ Total playtime: 0:51:22
+ muzak@muzak:~$ xmms2 move 1 4
+ muzak@muzak:~$ xmms2 list
+   [1/30376] Philip Glass - Metamorphosis Two (07:21)
+   [2/30377] Philip Glass - Metamorphosis Three (05:32)
+   [3/30379] Philip Glass - Metamorphosis Five (05:10)
+   [4/30380] Philip Glass - Mad Rush (13:47)
+   [5/30381] Philip Glass - Wichita Sutra Vortex (06:51)
+ ->[6/30375] Philip Glass - Metamorphosis One (05:40)
+   [7/30378] Philip Glass - Metamorphosis Four (07:01)
+
+After:
+ xmms2 move -a 4 1
+
+This yields:
+
+ muzak@muzak:~$ xmms2 list
+ ->[1/30375] Philip Glass - Metamorphosis One (05:40)
+   [2/30376] Philip Glass - Metamorphosis Two (07:21)
+   [3/30377] Philip Glass - Metamorphosis Three (05:32)
+   [4/30378] Philip Glass - Metamorphosis Four (07:01)
+   [5/30379] Philip Glass - Metamorphosis Five (05:10)
+   [6/30380] Philip Glass - Mad Rush (13:47)
+   [7/30381] Philip Glass - Wichita Sutra Vortex (06:51)
+ 
+  Total playtime: 0:51:22
+ muzak@muzak:~$ xmms2 move -a 4 1
+ muzak@muzak:~$ xmms2 list
+   [1/30376] Philip Glass - Metamorphosis Two (07:21)
+   [2/30377] Philip Glass - Metamorphosis Three (05:32)
+ ->[3/30375] Philip Glass - Metamorphosis One (05:40)
+   [4/30378] Philip Glass - Metamorphosis Four (07:01)
+   [5/30379] Philip Glass - Metamorphosis Five (05:10)
+   [6/30380] Philip Glass - Mad Rush (13:47)
+   [7/30381] Philip Glass - Wichita Sutra Vortex (06:51)
+ 
+ Total playtime: 0:51:22
