@@ -16,12 +16,10 @@ After:
 
 === Move an item in the playlist ===
 
-This one is pretty damn bizarre.
-
 Before:
  xmms2 move 1 2
 
-In NyCLI this yields:
+Trying out old-style move in in NyCLI yields this very confusing result:
 
  muzak@muzak:~$ xmms2 list
  ->[1/30375] Philip Glass - Metamorphosis One (05:40)
