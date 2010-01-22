@@ -69,3 +69,11 @@ This yields:
    [7/30381] Philip Glass - Wichita Sutra Vortex (06:51)
  
  Total playtime: 0:51:22
+
+=== Shutdown xmms2d ===
+
+Before:
+ xmms2 quit
+
+After:
+ xmms2 server shutdown
