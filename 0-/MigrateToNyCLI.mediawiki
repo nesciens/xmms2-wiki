@@ -17,7 +17,7 @@ After:
 === Move an item in the playlist ===
 
 Before:
- xmms2 move 1 2
+ xmms2 move 1 4
 
 Trying out old-style move in in NyCLI yields this very confusing result:
 
