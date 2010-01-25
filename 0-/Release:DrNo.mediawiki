@@ -47,6 +47,9 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Notes to xform authors ===
 
+=== Notes to packagers ===
+* the gme plugin now depends on libgme (http://code.google.com/p/game-music-emu/)
+
 === Full ChangeLog ===
 ==== Between DrMattDestruction and TEST1 ====
 '''Anders Waldenborg'''
