@@ -39,7 +39,7 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 ** xmmsc_configval_get -> xmmsc_config_get_value
 ** xmmsc_configval_list -> xmmsc_config_list_values
 ** xmmsc_broadcast_configval_changed -> xmmsc_broadcast_config_value_changed
-* More convinience methods in xmmsv, like: 
+* More convenience methods in xmmsv, like: 
 ** xmmsv_list_set_{string, int, coll}
 ** xmmsv_list_insert_{string, int, coll}
 ** xmmsv_list_append_{string, int, coll}
