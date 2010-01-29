@@ -1,10 +1,9 @@
 ==Other tutorials==
 You might want to check these aswell, they are probably more useful that this document:
-* [http://www.kernel.org/pub/software/scm/git/docs/tutorial.html A tutorial introduction to git]
+* [http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html A tutorial introduction to git]
 * [http://www.kernel.org/pub/software/scm/git/docs/everyday.html Everyday GIT with 20 commands or so]
 * [http://linux.yyz.us/git-howto.html Kernel hacker's guide to GIT]
 * And maybe this as well, which is pretty close to this document: [http://wiki.winehq.org/GitWine Wine's GIT howto]
-
 
 ==Grabbing the development tree==
 To clone a fresh copy of the development repository:
