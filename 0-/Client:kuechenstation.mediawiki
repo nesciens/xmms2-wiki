@@ -2,7 +2,7 @@
 |name=kuechenstation
 |author=Eike von Seggern
 |website=[http://kuechenstation.sourceforge.net/ kuechenstation.sf.net]
-|version=[https://sourceforge.net/project/showfiles.php?group_id=222283&package_id=268573&release_id=613508 0.2-2] (developed with Dr.Kosmo and Dr.Lecter)
+|version=[http://sourceforge.net/projects/kuechenstation/files/kuechenstation/0.3-3/ 0.3-3] (developed with DrMattDestruction)
 |devlanguage=Python
 |ui=Console
 |screenshots=[http://sourceforge.net/project/screenshots.php?group_id=222283]
