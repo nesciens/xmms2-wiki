@@ -1,5 +1,6 @@
 {{Client
 |name=kuechenstation
+|image=Client-kuechenstation.png
 |author=Eike von Seggern
 |website=[http://kuechenstation.sourceforge.net/ kuechenstation.sf.net]
 |version=[http://sourceforge.net/projects/kuechenstation/files/kuechenstation/0.3-3/ 0.3-3] (developed with DrMattDestruction)
