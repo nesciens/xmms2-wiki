@@ -92,10 +92,10 @@ The I am of course interested table is below:
 | 0
 | \o/ Date selected, so I can go to FOSDEM too. :)
 |-
-| Erik Massop
-| Yes
-| 0
-| 
+| <del>Erik Massop</del>
+| <del>Yes</del>
+| <del>0</del>
+| Sorry, gf will be in NL
 |-
 | SÃ©bastien Cevey
 | No
