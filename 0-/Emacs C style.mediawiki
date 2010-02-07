@@ -1,8 +1,6 @@
-== .emacs configuration for xmms2 source editing ==
+== .emacs configuration for XMMS2 source editing ==
 
-Put this at the end of your .emacs to follow style guidelines.
-
-For correct indentation of multiline statements, see below.
+Put this at the end of your <tt>.emacs</tt> to follow style guidelines. (For correct indentation of multi-line statements, see below.)
 
  (defun xmms2-c-mode ()
    "C mode with adjusted defaults for use with the xmms2."
@@ -19,7 +17,7 @@ For correct indentation of multiline statements, see below.
 
 == Correct Indentation and Alignment of Multi-Line Statements ==
 
-Add the following to your .emacs file. Be sure to add the hook to the C-mode you use for coding on XMMS2, and to keep the c-set-offset function.
+Add the following to your <tt>.emacs</tt> file to use tabs for indentation and spaces for alignment. Be sure to add the hook to the C-mode you use for coding on XMMS2, and to keep the <tt>c-set-offset</tt> function.
 
  ; But special coding guidelines for different projects
  (defun xmms2-c-mode ()
@@ -58,8 +56,6 @@ Add the following to your .emacs file. Be sure to add the hook to the C-mode you
            ; editing tabs screws the pointer position
            (move-to-column orig-column)))))
 
+For a more language-agnostic and general way to do this, see http://www.emacswiki.org/emacs/SmartTabs.
 
-Or you can use a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this.
-
-It only touches multi-line statements, and preserves whatever
-indentation you were using at the beginning of the statement.
+Or you can use a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this. It only touches multi-line statements, and preserves whatever indentation you were using at the beginning of the statement.
