@@ -58,4 +58,4 @@ Add the following to your <tt>.emacs</tt> file to use tabs for indentation and s
 
 For a more language-agnostic and general way to do this, see http://www.emacswiki.org/emacs/SmartTabs.
 
-Or you can use a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary haskell script] to do this. It only touches multi-line statements, and preserves whatever indentation you were using at the beginning of the statement.
+Or you can use a [http://code.l3ib.org/?p=.users/syscrash/indent.git;a=summary Haskell script] to do this. It only touches multi-line statements, and preserves whatever indentation you were using at the beginning of the statement.
