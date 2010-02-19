@@ -55,6 +55,39 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 * c++ bindings doesn't need boost signal any more
 
 === Full ChangeLog ===
+
+==== Between TEST3 and final ====
+
+
+==== Between TEST2 and TEST3 ====
+'''Anders Waldenborg'''
+* <mantis>2314</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>bc1afc30766aa4fcc630cfe1156d8b4b6002e22d</git>
+'''Sebastien Cevey'''
+* <mantis>2327</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>604fef0f368cd94eee49f30f2bb694b132bfc5df</git>
+'''Thomas Frauendorfer'''
+* <mantis>2328</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>dfeeb2c09529f423b11517cc304b92549c7b1847</git>
+
+==== Between TEST1 and TEST2 ====
+'''Adam Nielsen'''
+* <mantis>2320</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>27d6f199a487178dacab8a995e885bb5058aadc0</git>
+'''Romain Boissat'''
+* <mantis>2318</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>5bcfb362daa094234e06f0b5d0054e8a1152e0c8</git>
+'''Thomas Frauendorfer'''
+* <mantis>2316</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>7af7d3cb3256e728424cd2f81eea5cdb166985bd</git>
+* <mantis>2317</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>1eaf214e95c267256d451454cb3a16cfe92073fc</git>
+'''Tilman Sauerbeck'''
+* <mantis>2314</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>61ec2b1cfd22dfb6b195330f28b84126d09d2e9d</git>
+* <mantis>2315</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e9275d401bb0a744ca03cbe9762f2000304f94bf</git>
+
 ==== Between DrMattDestruction and TEST1 ====
 '''Anders Waldenborg'''
 * <mantis>2261</mantis>
