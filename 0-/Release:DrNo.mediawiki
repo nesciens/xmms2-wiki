@@ -1,5 +1,7 @@
 == Release Notes ==
 
+Add some fun DrNo references here and do the normal thanks we do.
+
 === Upgrading ===
 
 Upgrading should be smooth.
@@ -19,7 +21,7 @@ many nycli improvements
 
 ==== For users ====
 
-gamcli is deprecated, and will be replaced with nycli, in next release gamcli will be removed and the command "xmms2" will execute nycli, to get the behaviour with this release set the runnycli option in your config
+gamcli is deprecated, and will be replaced with nycli, in next release gamcli will be removed and the command "xmms2" will execute nycli, to get the behaviour with this release set the runnycli option in your config. The nycli "quit" alias now shuts down server, not nycli client (but if you already have a nycli config file you still have old behaviour).
 
 ==== Bug fixes ====
 
@@ -49,6 +51,8 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Notes to packagers ===
 * the gme plugin now depends on libgme (http://code.google.com/p/game-music-emu/)
+* monkeyaudio/ape is disabled on 64 bit platform and old library because of a bug in the library.
+* c++ bindings doesn't need boost signal any more
 
 === Full ChangeLog ===
 ==== Between DrMattDestruction and TEST1 ====
