@@ -1,23 +1,17 @@
 == Release Notes ==
 
-Add some fun DrNo references here and do the normal thanks we do.
+A long overdue release, it's been delayed because we couldn't find any good DrNo references to put in the release notes, so in the end (after watching the movie a couple of times) we just release it raw and without funny references. As usual there was a lot of people involved in in getting this release out, they have our gratitude! Now we don't have time writing this anymore, XMMS2Con is on and the beer is waiting.
 
 === Upgrading ===
 
 Upgrading should be smooth.
 
 === Noteworthy changes ===
-Waf build system updated to version 1.5.10
-
-Doesn't crash on OS X 10.6 (Snow Leopard)
-
-Source preferences in collections serverside.
-
-sc68 plugin
-
-many nycli improvements
-
-
+* Waf build system updated to version 1.5.10
+* Doesn't crash on OS X 10.6 (Snow Leopard)
+* Source preferences in collections serverside.
+* sc68 plugin
+* many nycli improvements
 
 ==== For users ====
 
