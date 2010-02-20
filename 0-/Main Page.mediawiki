@@ -5,9 +5,9 @@ __NOEDITSECTION__
 {|
 |-
 |[[Image:Logo-white-128.png]]
-|XMMS2 0.6 DrMattDestruction was just released.
+|XMMS2 0.7 DrNo was just released.
 
-Read the [[Release:DrMattDestruction |release notes]] for DrMattDestruction.
+Read the [[Release:DrNo |release notes]] for DrNo.
 
 Visit our [[Summer_of_Code_2009|Summer of Code 2009 page]].
 |-
