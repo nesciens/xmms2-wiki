@@ -3,10 +3,10 @@
 
 '''Stable''': <font style="color: green">''None''</font>
 
-'''Developer''': [[Release:DrMattDestruction | 0.6 DrMattDestruction]]
+'''Developer''': [[Release:DrNo | 0.7 DrNo]]
 
 '''Notes''':
-* DrMattDestruction was released 2009-04-23,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
+* DrNo was released 2009-02-19,<br /> [[Download XMMS2 | check it out]] and [[Reporting bugs | report bugs]]!
 * XMMS2 is still under development.<br />You may [[Developer Corner|hack and help]] if you wish. :)
 * More up-to-date code can be found <br /> in the [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel.git] tree.
 </div>
