@@ -15,6 +15,7 @@
 * [[Release:DrLecter|DrLecter]] <s>DrLivingstone (I presume)</s> - Released 2008-06-15
 * [[Release:DrMattDestruction|DrMattDestruction]] - Released 2009-04-23
 * [[Release:DrNo|DrNo]] - Released 2010-02-19
+* DrOnline
 ...
 * DrStrangelove
 ...
