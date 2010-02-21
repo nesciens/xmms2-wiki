@@ -13,8 +13,8 @@
 * [[Release:DrJekyll|DrJekyll]] - Released 2007-05-20
 * [[Release:DrKosmos|DrKosmos]] - Released 2007-11-15 (10 years!)
 * [[Release:DrLecter|DrLecter]] <s>DrLivingstone (I presume)</s> - Released 2008-06-15
-* DrMcCoy, DrMcKay, Dr. Matt Destruction, Dr Mabuse
-* DrNo, DrNick
+* [[Release:DrMattDestruction|DrMattDestruction]] - Released 2009-04-23
+* [[Release:DrNo|DrNo]] - Released 2010-02-19
 ...
 * DrStrangelove
 ...
