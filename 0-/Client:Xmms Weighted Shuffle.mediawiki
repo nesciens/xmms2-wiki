@@ -1,0 +1,2 @@
+{{Client| name=Xmms Weighted Shuffle| author=[[RÃ©mi Vanicat]]| website=http://github.com/vanicat/XmmsWeightedShuffle | version=Unknown| devlanguage=Ruby| ui=None| screenshots=N/A| description=This is a Weighted Shuffle playlist client for xmms. It implement a party shuffle playlist as an xmms2 client, with different probability for different collection.
+}}
