@@ -69,7 +69,7 @@ All current clients should be found here.
 {{ClientTableEntry|xmms2_jump| Quick Search (GTK/curses) | C++ | in development | Let's you search your playlist in real time. }}
 {{ClientTableEntry|XMMS2-Scrobbler| AudioScrobbler | Ruby | in development | Submits playing data to AudioScrobbler/Last.FM }}
 {{ClientTableEntry|XMMS2 Webterface| Browser / Webclient | Ruby | in development | eRuby templated, skinnable, simple web 1.0 client}}
-{{ClientTableEntry|Xmms Weighted Shuffle| non interactive/playlist | Ruby | in development | Manage a playlist as a party shuffle with complex rules  }}
+{{ClientTableEntry|Xmms Weighted Shuffle| Non Interactive/Playlist | Ruby | in development | Manage a playlist as a party shuffle with complex rules  }}
 |}
 
 = Unknown State =
