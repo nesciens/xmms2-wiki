@@ -33,6 +33,7 @@ All current clients should be found here.
 {{ClientTableEntry|JukX| Graphical / GTK | Python | in development | touchscreen orientated  concept }}
 {{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
+{{ClientTableEntry|lagn| Emacs Mode | emacs-lisp | in development | Control XMMS2 within emacs }}
 {{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|Muxic| Graphical / Cocoa | Obj-C | in development | Minimal windowshade for Mac OS X }}
