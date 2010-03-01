@@ -1,0 +1,72 @@
+=Introduction=
+
+S4 is a database for string-string or string-integer pairs. The first string is called the key, while the second string or integer is called the value. These pairs are called entries in S4. An example of such entries would be ("age", 23) and ("name", "Ernie").
+
+S4 does more than just save entries, it also maintains relationships between them. These are like parent-child relationships. E.g. an entry A could have the entry B as its child. We then say A has the property B. An entry may have many children (properties) and many parents.
+
+The way we use S4 in XMMS2 is we create an entry of the form ("song_id", id) for every song in the database. Then we attach properties such as ("album", "Some Album") and ("title", "Funky title") to it.
+
+=API=
+
+We divide the API into two parts, the part dealing with the database and the part dealing with entries. For more info on the API run doxygen in the S4 repository.
+
+==The Database Part==
+
+This part of the API lets you open and close S4 databases. Important functions being s4_open and s4_close. It also has some functions to deal with syncing, verification and recovery of the database.
+
+==The Entry Part==
+
+This is the more interesting part of the API, this is how data is inserted, removed and found in the database.
+                                                                                                                                 
+First we have the functions s4_entry_get_s and s4_entry_get_i. They create an s4_entry_t and returns a pointer. Note though that these functions inserts nothing into the database, they merely makes handles we can use to access the database. When you're done with an entry you call s4_entry_free to free any memory it uses.
+
+If you want to actually add or remove something from the database we have s4_entry_add and s4_entry_del. You don't add individual entries, rather you add relationships. E.g. we could do:
+
+<code>
+s4_entry_t *a = s4_entry_get_i ("song_id", 1);
+
+s4_entry_t *b = s4_entry_get_s ("title", "Awesome Song");
+
+s4_entry_add (a, b);
+</code>
+
+This means we add a relationship where ("song_id", 1) has the property ("title", "Awesome Song").
+
+Now that you have inserted all the information you wanted to you want to search the database. There are four ways to search S4:
+
+* You can find all children (properties) with a given key to an entry. Use s4_entry_get_property for this.
+* You can find all children (properties) to an entry or all parents (all entries containing this property) to an entry. s4_entry_contains and s4_entry_contained are used for this (these functions should probably be renamed).
+* You can find all integer entries with values smaller or greater than the entry you give. Use s4_entry_greater and s4_entry_smaller for this.
+* You can find all entries in a set where the value matches a pattern. Use s4_entry_match for this.
+
+All of the search functions will return a s4_set_t. This is a set with entries. There are functions to take the union, intersection and complement of sets.
+
+That pretty much covers S4 as seen by the outside world, now it's time to dive in and see what actually happens under the hood.
+
+=Internals=
+
+Internally S4 consists of three parts. We have the memory allocator that is responsible for finding free memory and if necessary resize the file. Then we have the string store. It converts string into integers and vice versa. The last part is the intpair-store. It stores relationships between int-pairs (entries).
+
+==Memory Allocator==
+
+The memory allocator maintains a list of free chunks. Chunks comes in sizes that's a power of 2. They start at 16 bytes and go up to 64kb. We have a separate list for every chunk size. When we free a chunk we simply add it to the list. When we allocate a chunk we check the list, if we find a free one we remove it from the list and return it. If the list is empty we have to create new chunks. The way this is done is to make the file larger. If the chunk is smaller than the page size we take a full page and chop it into chunks of the wanted size and push everyone but one onto the free list. If the chunk is larger than the page size we allocate just one chunk.
+
+The file containing the database is mmaped into the applications memory space. This means that whenever we resize the database we have to unmap and mmap again. The result of this is that after every be_alloc all pointers into the database may be invalid. This means we have to be very careful and recalculate all pointers after calls to be_alloc or calls to functions calling be_alloc and so on.
+
+==String Store==
+
+The string store is responsible for mapping strings to integers. Note that strings are case insensitive, so "Abc" and "abc" would map to the same integer. The way the mapping is done is via a patricia trie. The integer associated with a string is the offset info the database of the end node for the string in the patricia trie. This makes it easy to also map integer to string.
+
+==Intpair Store==
+
+First, what is an intpair? As you might have guessed it's a pair of integers. An intpair is an entry where the strings have been replaced by the integer associated with them (see the String Store). This allows us to store strings once, and reference them by integers instead. The name intpair store is perhaps a little misleading as it doesn't store intpairs, but rather relationships between intpairs. When we did
+
+<code>
+s4_entry_t *a = s4_entry_get_i ("song_id", 1);
+
+s4_entry_t *b = s4_entry_get_s ("title", "Awesome Song");
+
+s4_entry_add (a, b);
+</code>
+
+earlier we added the pair (a', b'), where a' and b' are the intpairs for the entries a and b, to the intpair store. We use a B+ tree to save these pairs of pairs (from now on called relationships). B+ trees store their keys in order, that means if we have the relationships (a, b) and (c, d) it would first compare the intpairs a and c, and if they were equal b and d. So relationships where the first intpair is equal is next to each other. This we can use to quickly lookup all relationships where the first intpair is equal (since they're grouped together). We can also quickly lookup all relationships where the first intpair is equal and the key of the second intpair is equal (since we compare the key before the value). We can also lookup all relationships where the key of the first intpair is equal while the value is smaller or greater than some value (this is used for _greater and _smaller). And of course we can lookup relationships where both the first and second intpair is equal.
