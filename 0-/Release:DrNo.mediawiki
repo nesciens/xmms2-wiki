@@ -46,7 +46,7 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 === Notes to packagers ===
 * the gme plugin now depends on libgme (http://code.google.com/p/game-music-emu/)
 * monkeyaudio/ape is disabled on 64 bit platform and old library because of a bug in the library.
-* c++ bindings doesn't need boost signal any more
+* c++ bindings now only need boost headers, not the boost signals runtime library
 
 === Full ChangeLog ===
 
