@@ -70,3 +70,6 @@ s4_entry_add (a, b);
 </code>
 
 earlier we added the pair (a', b'), where a' and b' are the intpairs for the entries a and b, to the intpair store. We use a B+ tree to save these pairs of pairs (from now on called relationships). B+ trees store their keys in order, that means if we have the relationships (a, b) and (c, d) it would first compare the intpairs a and c, and if they were equal b and d. So relationships where the first intpair is equal is next to each other. This we can use to quickly lookup all relationships where the first intpair is equal (since they're grouped together). We can also quickly lookup all relationships where the first intpair is equal and the key of the second intpair is equal (since we compare the key before the value). We can also lookup all relationships where the key of the first intpair is equal while the value is smaller or greater than some value (this is used for _greater and _smaller). And of course we can lookup relationships where both the first and second intpair is equal.
+
+=Shortcomings / things to think about=
+* Strings are looked up based on a lower case version of the string. This means "Asdf" and "asdf" maps to the same integer. This means only one of them can be in the database at any time, and if there's two artists with the same name only different case only one will have the right case.
