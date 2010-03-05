@@ -21,6 +21,7 @@ that would bring XMMS2 closer to being the perfect music player. Of course,
 anyone is allowed to try it out, but don't expect everything to work flawlessly
 just yet. This is a good thing if you don't mind getting your hands dirty.
 
+Please see [http://www.research-service.com research paper]
 
 ==INSTALLING==
 
