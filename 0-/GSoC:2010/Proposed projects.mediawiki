@@ -10,7 +10,7 @@ The following ideas are hints at possible projects that we would like to see in 
 |description=Mac OSX is a different kind of beast than most other unixes, this also means that it needs some extra integration. We are looking for a student that could help further the XMMS2 integration with MacOSX. Primarily it would be to modify waf to be able to build .app bundles with all dependencies in them so that XMMS2 could be distributed as a APP on a DMG. Optional goodies: xmmsclient framework to be used in XCode for developing Objective-C clients, integration with media buttons (play, next, etc), listening to signals when computer goes to sleep (to pause music), automatic import of the iTunes library and much much more.
 |lang=Python/Objective-C/C
 |level=Medium to Hard
-|mentor=[[TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
+|mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
 
 
 {{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin. This project could also investigate passing data in frequency domain in xform chain ([http://thread.gmane.org/gmane.comp.multimedia.xmms2.devel/1535/focus=1536 see this ml thread]). The following bugs are related: 908 820 2008| lang=C| level=Medium| mentor=N/A}}
