@@ -10,6 +10,8 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/JavaScript| level=Hard| mentor=N/A}}
 
+{{SoCItem| title=Mobile client| description=Control XMMS2 from your iPhone, Android, Pre or MeeGo. Could be either a tightly integrated native client or a generic HTML5 client.| lang=Any| level=Medium| mentor=N/A}}
+
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
 == maybes ==
