@@ -9,7 +9,7 @@ __NOEDITSECTION__
 
 Read the [[Release:DrNo |release notes]] for DrNo.
 
-Visit our [[Summer_of_Code_2009|Summer of Code 2009 page]].
+Visit our [[Summer_of_Code_2010|Summer of Code 2010 page]].
 |-
 |}
 </div>
