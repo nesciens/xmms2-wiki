@@ -10,4 +10,4 @@ None so far!
 
 [[Summer_of_Code_2010/Mentors|Mentor information]]
 
-[[Summer_of_Code_2010/Mentor_Application|Our application]] ''DEADLINE 12th of March''
+[[Summer_of_Code_2010/Mentor_Application|Our application]] - '''DEADLINE 12th of March'''
