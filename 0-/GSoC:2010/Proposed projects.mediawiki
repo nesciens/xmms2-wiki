@@ -12,12 +12,11 @@ The following ideas are hints at possible projects that we would like to see in 
 |level=Medium to Hard
 |mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
 
-
 {{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin. This project could also investigate passing data in frequency domain in xform chain ([http://thread.gmane.org/gmane.comp.multimedia.xmms2.devel/1535/focus=1536 see this ml thread]). The following bugs are related: 908 820 2008| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/JavaScript| level=Hard| mentor=N/A}}
+{{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
 
-{{SoCItem| title=Mobile client| description=Control XMMS2 from your iPhone, Android, Pre or MeeGo. Could be either a tightly integrated native client or a generic HTML5 client.| lang=Any| level=Medium| mentor=N/A}}
+{{SoCItem| title=Mobile client| description=Control XMMS2 from your iPhone, Android, Pre or MeeGo. Could be either a tightly integrated native client or a generic HTML5 client.| lang=Any| level=Medium| mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]] for iPhone and/or MeeGo stuff.}}
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
