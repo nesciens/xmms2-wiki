@@ -21,6 +21,8 @@ The following ideas are hints at possible projects that we would like to see in 
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
 
+{{SoCItem| title=Social Networking| description=Social Networks are the new hype - can you think of innovative ways to bring a social side to XMMS2, either as a new layer or using existing services (Last.Fm, Songkick, Musicbrainz, Twitter, Flickr, Facebook, Freebase, etc). Share music, talk about music, recommend new artists, share tags and ratings, possibilities are endless!| lang=Any| level=Medium| mentor=N/A}}
+
 == maybes ==
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
 
