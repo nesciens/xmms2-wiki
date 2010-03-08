@@ -1,0 +1,13 @@
+== Accepted projects ==
+
+None so far!
+
+== Portal ==
+
+[[Summer_of_Code_2010/Proposed_projects|Proposed projects]]
+
+[[Summer_of_Code_2010/Student_Application|Student application form]]
+
+[[Summer_of_Code_2010/Mentors|Mentor information]]
+
+[[Summer_of_Code_2010/Mentor_Application|Our application]]
