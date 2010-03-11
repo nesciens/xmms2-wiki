@@ -37,7 +37,7 @@ So far the XMMS2 project is lacking an official client. Last year we tried to do
 
 {{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=Rockbox sync| description=[[http://www.rockbox.org Rockbox]] is the super cool F/OSS firmware for your music player. It stores its metadata in
+{{SoCItem| title=Rockbox sync| description=[http://www.rockbox.org Rockbox] is the super cool F/OSS firmware for your music player. It stores its metadata in
 an ondisk format called TagCache. This project would be to split the TagCache code from Rockbox out into a library, and then write a service client that given the
 mount point of a rockbox device and the name of a collection would merge that collection to the player. It should hopefully support updating the TagCache on the device, but that can also be done by having the device sync itself. It should also support removing all songs from an arbitrary collection from the device.| lang=C| level=Medium| mentor=N/A}}
 
