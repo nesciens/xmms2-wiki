@@ -6,6 +6,7 @@ The following ideas are hints at possible projects that we would like to see in 
 |level=Depends
 |mentor=Depends}}
 
+
 == The official client == 
 So far the XMMS2 project is lacking an official client. Last year we tried to do a SoC for getting the ideas and the ball rolling, it was not entirely successful, we believe that the biggest reason for this was because this task is soooo big. This year we take a different approach, we will split the official client into different parts. We suggest that the parts below are written standalone but all with the Qt toolkit. Experimenting with QML is probably the way to go for much of the components.
 
@@ -13,11 +14,13 @@ So far the XMMS2 project is lacking an official client. Last year we tried to do
 
 {{SoCItem| title=GUI: Infrastructure| description=Create a awesome infrastructure for the new official client.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
 
+
 == Other clients == 
 
 {{SoCItem| title=Mobile client| description=Control XMMS2 from your iPhone, Android, Pre or MeeGo. Could be either a tightly integrated native client or a generic HTML5 client.| lang=Any| level=Medium| mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]] for iPhone and/or MeeGo stuff.}}
 
 {{SoCItem| title=Your cool experimental client| description=Go crazy, experimental clients for iPhone, Android, maemo or maybe a fullscreen karaoke client.| lang=Any| level=Medium| mentor=N/A}}
+
 
 == Interoperability with third-parties ==
 
@@ -29,17 +32,20 @@ mount point of a rockbox device and the name of a collection would merge that co
 
 {{SoCItem| title=Spotify xform| description=Stream and browse spotify songs (probably worth taking a look at [http://despotify.se/ Despotify]).| lang=C| level=Medium| mentor=N/A}}
 
+
 == Audio Playback Features ==
 
 {{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin. This project could also investigate passing data in frequency domain in xform chain ([http://thread.gmane.org/gmane.comp.multimedia.xmms2.devel/1535/focus=1536 see this ml thread]). The following bugs are related: 908 820 2008. I think one of the great outcomes of this project would be that except cross-fade there should be a easier way to configure, enable and chain effects.| lang=C| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=Multiple channel support| description=New formats like AC3 and DTS supports multiple channels. XMMS2 is technically prepared for this but without any decent support in the output plugins. The task will be to get full multiple channel support in XMMS2 for the PulseAudio, alsa and oss output (bonus if CoreAudio also supports it!)| lang=C| level=Medium to Hard| mentor=N/A}}
 
+
 == Extending Features ==
 
 {{SoCItem| title=Social Networking| description=Social Networks are the new hype - can you think of innovative ways to bring a social side to XMMS2, either as a new layer or using existing services (Last.Fm, Songkick, Musicbrainz, Twitter, Flickr, Facebook, Freebase, etc). Share music, talk about music, recommend new artists, share tags and ratings, possibilities are endless!| lang=Any| level=Medium| mentor=N/A}}
 
 {{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
+
 
 == Platform support ==
 
@@ -48,6 +54,7 @@ mount point of a rockbox device and the name of a collection would merge that co
 |lang=Python/Objective-C/C
 |level=Medium to Hard
 |mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
+
 
 == Bindings ==
 
