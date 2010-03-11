@@ -6,15 +6,23 @@ The following ideas are hints at possible projects that we would like to see in 
 |level=Depends
 |mentor=Depends}}
 
+== The official client == 
+So far the XMMS2 project is lacking an official client. Last year we tried to do a SoC for getting the ideas and the ball rolling, it was not entirely successful, we believe that the biggest reason for this was because this task is soooo big. This year we take a different approach, we will split the official client into different parts. We suggest that the parts below are written standalone but all with the Qt toolkit. Experimenting with QML is probably the way to go for much of the components.
+
+{{SoCItem| title=GUI: Collections browser| description=A awesome collections browser is needed for the official client. How should it look like? What would be the killer feature? iTunes like interface? We need bold imaginative ideas and mock-ups.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
+
+{{SoCItem| title=GUI: Infrastructure| description=Create a awesome infrastructure for the new official client.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
+
+== Other items ==
+
 {{SoCItem| title=Mac OSX integration and distribution
 |description=Mac OSX is a different kind of beast than most other unixes, this also means that it needs some extra integration. We are looking for a student that could help further the XMMS2 integration with MacOSX. Primarily it would be to modify waf to be able to build .app bundles with all dependencies in them so that XMMS2 could be distributed as a APP on a DMG. Optional goodies: xmmsclient framework to be used in XCode for developing Objective-C clients, integration with media buttons (play, next, etc), listening to signals when computer goes to sleep (to pause music), automatic import of the iTunes library and much much more.
 |lang=Python/Objective-C/C
 |level=Medium to Hard
 |mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
 
-{{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin. This project could also investigate passing data in frequency domain in xform chain ([http://thread.gmane.org/gmane.comp.multimedia.xmms2.devel/1535/focus=1536 see this ml thread]). The following bugs are related: 908 820 2008| lang=C| level=Medium| mentor=N/A}}
+{{SoCItem| title=Effect chain clean-up and crossfade plugin| description=One of the most requested features is a cross-fade plugin. Right now cross-fade is not possible since effects (and all xform elements) are re-created for each song. Also the interface for enable and manage effect xforms is very clumsy. This SoC task is divided in three tasks. 1) create persistent xforms 2) revisit the effect configuration and 3) create a crossfade plugin. This project could also investigate passing data in frequency domain in xform chain ([http://thread.gmane.org/gmane.comp.multimedia.xmms2.devel/1535/focus=1536 see this ml thread]). The following bugs are related: 908 820 2008. I think one of the great outcomes of this project would be that except cross-fade there should be a easier way to configure, enable and chain effects.| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=The official awesome client| description=This is the legendary official client, it's finally time to get it rolling. So far there are only rough ideas, so we want this student to work with the community and get this going, it's probably more about prototypes than actual coding.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
 
 {{SoCItem| title=Mobile client| description=Control XMMS2 from your iPhone, Android, Pre or MeeGo. Could be either a tightly integrated native client or a generic HTML5 client.| lang=Any| level=Medium| mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]] for iPhone and/or MeeGo stuff.}}
 
