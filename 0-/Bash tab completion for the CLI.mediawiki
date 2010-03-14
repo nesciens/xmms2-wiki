@@ -57,7 +57,7 @@ _xmms2()
 
    cur=${COMP_WORDS[COMP_CWORD]}
    cmds='add addid addpls clear config_list config current \
-         help info jump list mlib move next pause play \
+         help info jump list mlib move next pause play playlist \
          plugin_list prev quit radd remove seek shuffle sort \
          stats status stop volume_list volume'
          
@@ -117,6 +117,14 @@ _xmms2()
                    rehash remove_playlist \
                    save_playlist \
                    search searchadd' \
+                  -- $cur ))
+         ;;
+	
+      playlist) # playlist cmd
+	 COMPREPLY=( $( compgen -W \
+		  'active create \
+		   list load \
+		   type remove' \
                   -- $cur ))
          ;;
       
@@ -251,6 +259,23 @@ _xmms2()
 #                    "SELECT pos FROM PlaylistEntries" \
 #                    | sed -ne 's|^pos = \('$cur'.*\).*$|\1|p' ))
          ;;
+
+      playlist) # complete playlist name
+         case ${COMP_WORDS[2]} in
+	    load|remove|type)
+	    	local old_ifs
+		old_ifs=$IFS
+		IFS='
+';
+      		COMPREPLY=( $( xmms2 playlist list \
+			      | sed -e 's,^  ,,' -e 's,\([ \\<>%$#*();?!&|]\),\\\1,g' | sed -ne 's|^\('$cur'.*\).*$|\1|p' ))
+		IFS=old_ifs
+		;;
+	     *)
+		;;
+	esac
+	;;
+
       *)
          ;;
       esac
@@ -274,6 +299,15 @@ _xmms2()
             ;;
          esac
          ;;
+      playlist)
+        case ${COMP_WORDS[2]} in
+	  type)
+            COMPREPLY=( $( compgen -W 'list queue pshuffle' -- $cur ))
+	    ;;	
+	  *)
+	    ;;
+      	esac
+	;;
       *)
          ;;
       esac
