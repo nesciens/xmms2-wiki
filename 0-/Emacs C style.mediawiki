@@ -12,7 +12,7 @@ Put this at the end of your <tt>.emacs</tt> to follow style guidelines. (For cor
    (setq c-basic-offset 4))
  
  (setq auto-mode-alist 
-       (cons '("/home/marco/dev/xmms2.*/.*\\.[ch]$" . xmms2-c-mode)  
+       (cons '("^.*/xmms2.*/.*\\.[ch]$" . xmms2-c-mode)  
  	    auto-mode-alist))
 
 == Correct Indentation and Alignment of Multi-Line Statements ==
