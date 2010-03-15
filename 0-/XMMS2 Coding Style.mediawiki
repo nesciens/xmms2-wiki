@@ -81,10 +81,10 @@ Vim users put this in your .gvimrc:
 == Commenting and Documentation ==
 * Comments should explain '''what''' the code is doing, not '''how'''. The ''how'' should be more or less obvious from the way the code is written.
 * Generally try to avoid putting comments in a function body - put comments at the head of the function instead (explaining what the function does)
-* C code should use C-style comments only:
+* C code should use C89-style comments only:
 
-  /* this is a C comment */
-  // This is a C++ comment, not a C comment
+  /* this is a C89 comment */
+  // This is a C99/C++ comment, not a C89 comment
 
 * Code is generally documented using [http://www.doxygen.org Doxygen]. Please [http://www.stack.nl/~dimitri/doxygen/manual.html learn] how to use this tool, if you want to contribute code to XMMS2.
 * Doxygen comments should be in the following form. Imperative tense should be used (i.e. "Activate frobnozzle gadget" NOT "Activates frobnozzle gadget"). The first sentence should be short and just give an extremely brief description. Detailed description should be in the following sentences. The comment text should start on the next line AFTER "/**". There should be an empty line between the description and params/return value. The "*" on the continued lines should be lined up with the FIRST asterisk in "/**"
