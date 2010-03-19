@@ -1,4 +1,4 @@
-The following ideas are hints at possible projects that we would like to see in XMMS2. We also welcome new ideas warmly, so please feel free to suggest your own! If you are interested in working on GSoC 2009 with us, please drop by the IRC channel to ask any questions or details, we'd be glad to discuss the projects with you before you even start writing your proposal!
+The following ideas are hints at possible projects that we would like to see in XMMS2. We also welcome new ideas warmly, so please feel free to suggest your own! If you are interested in working on GSoC 2010 with us, please drop by the IRC channel to ask any questions or details, we'd be glad to discuss the projects with you before you even start writing your proposal!
 
 {{SoCItem| title=Your idea here
 |description=This is where you get the chance to implement that really cool music-player related idea that has been brewing in your mind. It may be some funny interface, a crazy effect, a revolutionary way to handle collections, or something different. Surprise us! We love new ideas!
