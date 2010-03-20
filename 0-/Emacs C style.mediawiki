@@ -1,4 +1,39 @@
-== .emacs configuration for XMMS2 source editing ==
+== Cleaner and Correct Version of the Emacs Style Below ==
+
+Remember to get [http://www.emacswiki.org/emacs/SmartTabs smart tabs], the implementation below may be broken on your emacs (it was on mine).
+When you have smarttabs installed c-basic-offset becomes an alias for tab-width, but we'll set it just in case.
+
+There is no reason to treat or call the xmms2 style a mode (and the below aren't modes anyway).
+Instead create a file named <tt>xmms2-style.el</tt> and insert the following:
+
+<pre>
+(c-add-style "xmms2"
+             '("K&R"
+               (c-basic-offset . 4)
+               (c-offsets-alist
+                (case-label . +)
+                (arglist-close . c-lineup-arglist-intro-after-paren))))
+
+(defun maybe-xmms2-style ()
+  "Set the style used in xmms2, requires smart tabs."
+  (if (string-match "xmms2" buffer-file-name)
+      (progn
+        (setq indent-tabs-mode t)
+        (setq tab-width 4)
+        (c-set-style "xmms2"))))
+
+(add-hook 'c-mode-common-hook 'maybe-xmms2-style)
+
+(provide 'xmms2-style)
+</pre>
+
+and
+
+<pre>(require 'xmms2-style)</pre>
+
+in your <tt>.emacs</tt>.
+
+== Configuration for XMMS2 Source Editing ==
 
 Put this at the end of your <tt>.emacs</tt> to follow style guidelines. (For correct indentation of multi-line statements, see below.)
 
