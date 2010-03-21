@@ -1,0 +1,59 @@
+XMMS2 plugins are implemented as [[Transforms]] (xforms.)  They convert data from one format to another, such as from Ogg Vorbis to raw PCM.  A transform may also convert from PCM to PCM, and this is how effect plugins are implemented.
+
+This page gives a high level overview of the structure of an XMMS2 xform plugin.  The best way to start a plugin is to copy an existing plugin, and for input plugins the modplug plugin is a good start (as it is one of the simpler input plugins.)  The sections below help explain what some of the functions do and when they are called.
+
+== Functions ==
+
+These functions are called by XMMS2 to make your plugin do something.  They can be named whatever you like, but by convention they follow the naming scheme used in the headings below.  XX is replaced by your plugin name, for example <tt>xmms_modplug_plugin_setup()</tt> or <tt>xmms_vorbis_plugin_setup()</tt>.
+
+=== xmms_''XX''_plugin_setup ===
+
+This function is called when the plugin is first loaded.  It is used for:
+
+* Setting the other callback functions that do the real work (getting audio data, seeking, etc.)
+* Letting XMMS2 know which data/file formats the plugin can handle
+* Creating configuration options
+
+Plus any other one-off initialisation work that only needs to happen once, when XMMS2 is first loaded (such as loading external libraries.)
+
+Note that there is no corresponding function that is called when the plugin is unloaded.
+
+=== xmms_''XX''_init ===
+
+This function is called to initialise an instance of the xform.  This means playback is about to start.
+
+Try to keep processing to a minimum in this function, as any time spent in here is time the user is waiting for playback to start.  At the time of writing, the CDDA plugin scans all the tracks on the CD in this function which means every time the next song is played, the entire CD must be rescanned.  This makes moving between songs extremely slow.
+
+Any dynamic structures created in this function should be destroyed in the corresponding <tt>xmms_''XX''_destroy</tt> function.
+
+=== xmms_''XX''_destroy ===
+
+This function is called when playback has ceased and the xform instance should be destroyed.  
+
+This function should free any dynamic structures created by the <tt>xmms_''XX''_init</tt> function.
+
+=== xmms_''XX''_seek ===
+
+The next xform in the chain needs to seek.  This is probably the result of the user performing a seek operation.  You will probably need to seek around in the previous xform plugin (the one providing you with data) however be aware that this may fail, especially in the case of the song being streamed in real time.
+
+=== xmms_''XX''_read ===
+
+This is where the plugin does its work.  The next xform in the chain wants to read some data.  The plugin should read data from the previous xform, convert it as appropriate, then pass it on to the next xform.
+
+== Configuration ==
+
+Configuration options must be registered with the XMMS2 core before they can be used.  This is usually done in [[#xmms_XX_plugin_setup|xmms_''XX''_plugin_setup()]].  Once they are registered they will appear in any clients and can be altered by the user.
+
+There are two methods of accessing configuration options.  Either the values can be looked up as they are needed, or a callback function can be set which is called whenever the user changes the value.
+
+Looking up options as they are required is useful for options that cannot change while a song is being played, such as the sampling rate.  These can be looked up when playback is about to start, and any changes by the user will be picked up when the next song is played and the value is retrieved again.
+
+Callback options are useful for settings that can change in the middle of playback, such as decoding quality.  The callback function will be called as soon as the user changes the configuration option, so the effect can be heard immediately.
+
+Options can always be looked up as required, but care must be taken with callback options as the callback could be called at any time, even if playback has stopped (at which time some of your internal variables may no longer be valid.)  If the callback function is only useful while playback is in progress, the callbacks can be set in the [[#xmms_XX_init|xmms_''XX''_init()]] function and removed again in the [[#xmms_XX_destroy|xmms_''XX''_destroy()]] function.  (See the modplug plugin for an example of this.)
+
+== See also ==
+
+* [[Notes from developing an xform plugin]]
+
+[[Category:XMMS2 Technical Details]]
