@@ -5,27 +5,27 @@ Here we collect all information about developing on/against XMMS2. For informati
 For those who want to know more about how it works, and how to get clients to play nice.
 
 * [[Design of XMMS2]]
-* [[The Medialib]]
+** [[The Medialib]]
 * [http://doxygen.xmms2.xmms.se/ Doxygen documentation]
-* [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient-python/ Python bindings documentation]
+** [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient-python/ Python bindings documentation]
 * [[Writing XMMS2 Clients]]
-* [[XMMS2 IPC Protocol]]
+** [[XMMS2 IPC Protocol]]
 
 == Code.. and bugs! ==
 
 For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the [[XMMS2 Coding Style]].
 
-* [[XMMS2 Coding Style]]
-* [http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
 * [[Reporting bugs]]
+** [http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
 * [[Submitting code]]
-* [[Download_XMMS2|Source Code]]
-* [[Using Git|Small git HOWTO]] and related [[ChangeLog Format]]
-* [[ChangeLog Format]]
-* We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms.se tested].
+** [[Download_XMMS2|Source Code]]
+** [[XMMS2 Coding Style]]
+** [[Writing XMMS2 Plugins]]
+** [[Using Git]]
+*** [http://git.xmms.se/merge/ git trees merge status]
+** [[ChangeLog Format]]
 * [[Help Wanted]]
-* [[Using Git]]
-* [http://git.xmms.se/merge/ git trees merge status]
+** We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms.se tested].
 
 == Policies and guidelines ==
 
