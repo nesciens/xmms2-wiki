@@ -34,9 +34,9 @@ You can configure Promoe to use Winamp Classic skins by following this process:
 ** (If using a file browser, you may need to adjust the settings so that hidden files are shown.
 
 * Create a new folder called 'promoe' and an additional folder within ../promoe/ called 'skins'. 
-** Any new skins can be extracted into their own respective folders in your new /home/**user**/.config/xmms2/clients/promoe/skins/ directory.
+** Any new skins can now be extracted into their own respective folders within /home/**user**/.config/xmms2/clients/promoe/skins/
 
-* Skins can now be toggled within the 'Theme settings' menu feature in Promoe.
+* Skins can be toggled within the 'Theme settings' menu feature in Promoe.
 
 == Bugtracker ==
 
