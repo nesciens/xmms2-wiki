@@ -37,8 +37,6 @@ To install new skins:
 * Create a new folder called 'promoe' and an additional folder within ../promoe/ called 'skins'. 
 ** Any new skins can now be extracted into their own respective folders within /home/**user**/.config/xmms2/clients/promoe/skins/
 
-* Skins can be toggled within the 'Theme settings' menu feature in Promoe.
-
 == Bugtracker ==
 
 Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker]. Please file bugs under project "Client - Promoe".
