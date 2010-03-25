@@ -28,7 +28,7 @@ The source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get
 
 === Configuration ===
 
-Promoe can be configured to use Winamp Classic skins.  Skins are toggled within the 'Theme settings' menu feature.
+Promoe can be configured to use Winamp Classic skins.  Skins are toggled within the 'Theme settings' menu feature.<br />
 To install new skins:
 
 * Go to the directory /home/**user**/.config/xmms2/clients/  
