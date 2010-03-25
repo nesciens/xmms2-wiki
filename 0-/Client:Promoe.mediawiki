@@ -30,10 +30,10 @@ The source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get
 
 You can configure Promoe to use Winamp Classic skins by following this process:
 
-  * Create a folder within the directory /home/**user**/.config/xmms2/clients/ 
+*** Create a folder within the directory /home/**user**/.config/xmms2/clients/ 
      (if using a file browser, you may need to adjust the settings so that hidden files are shown.
 
- ** Create a new folder called 'promoe' and an additional folder within ../promoe/ called 'skins'. 
+*** Create a new folder called 'promoe' and an additional folder within ../promoe/ called 'skins'. 
      Any new skins can be extracted into their own respective folders in your new 
      /home/**user**/.config/xmms2/clients/promoe/skins/ directory.
 
