@@ -12,7 +12,8 @@ Instead create a file named <tt>xmms2-style.el</tt> and insert the following:
                (c-basic-offset . 4)
                (c-offsets-alist
                 (case-label . +)
-                (arglist-close . c-lineup-arglist-intro-after-paren))))
+                (arglist-close . c-lineup-arglist-intro-after-paren)
+                (inextern-lang . 0))))
 
 (defun maybe-xmms2-style ()
   "Set the style used in xmms2, requires smart tabs."
