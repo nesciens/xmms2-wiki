@@ -15,11 +15,11 @@ xmms2d can be started by typing 'xmms2d' after installing the application. (To d
 == Configuring the daemon ==
 Changing output plugin:
 
- xmms2 config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
+ nyxmms2 server config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
 
 Making xmms2d listen for requests via TCP:
 
- xmms2 config core.ipcsocket tcp://192.168.2.20:<port> 
+ nyxmms2 server config core.ipcsocket tcp://192.168.2.20:<port> 
 
 and then restart xmms2d. (replace ''192.168.2.20'' with your IP address as appropriate) xmms2d will then listen on that port for requests from remote clients.
 
@@ -56,7 +56,7 @@ for (t)csh users:
 
 Add all files in a directory to the medialib (recursively adds files in subdirectories as well):
 
-  xmms2 mlib addpath /path/to/music
+  nyxmms2 server import /path/to/music
 
 Add files to the playlist:
 
@@ -68,19 +68,19 @@ Play:
 
 Query the medialib database (e.g. your favourite band):
 
-  xmms2 mlib search artist:"Kultiration"
+  nyxmms2 search artist:"Kultiration"
 
 Query the medialib database and add the result to your playlist:
 
-  xmms2 mlib searchadd artist:"Kultiration"
+  nyxmms2 add -t artist:"Kultiration"
 
 Note that search is case insensitive and that you can use "*" and "?" as wildcards (* being 0 or more wild characters, ? being 0 or 1 wild character):
 
-  xmms2 mlib search artist:"red hot*"
+  nyxmms2 search artist:"red hot*"
 
 Will find all artists that begin with "red hot"
 
-  xmms2 mlib search artist:"red?hot"
+  nyxmms2 search artist:"red?hot"
 
 Will match "redhot" and "red hot".
 
@@ -91,13 +91,13 @@ Listen to a shoutcast stream (assuming curl plugin is installed) using the direc
 
 Enabling an effect:
 
-  xmms2 config effect.order.0 some-effect-name
-  xmms2 config some-effect-name.enabled 1
+  nyxmms2 server config effect.order.0 some-effect-name
+  nyxmms2 server config some-effect-name.enabled 1
 
 Example of enabling replaygain:
 
-  xmms2 config effect.order.0 replaygain
-  xmms2 config replaygain.enabled 1
+  nyxmms2 server config effect.order.0 replaygain
+  nyxmms2 server config replaygain.enabled 1
   nyxmms2 play
 
 [[Category: Users]]
