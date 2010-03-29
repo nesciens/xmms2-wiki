@@ -10,10 +10,11 @@ The following ideas are hints at possible projects that we would like to see in 
 == The official client == 
 So far the XMMS2 project is lacking an official client. Last year we tried to do a SoC for getting the ideas and the ball rolling, it was not entirely successful, we believe that the biggest reason for this was because this task is soooo big. This year we take a different approach, we will split the official client into different parts. We suggest that the parts below are written standalone but all with the Qt toolkit. Experimenting with QML is probably the way to go for much of the components.
 
+You might want to check the [http://greafine.wordpress.com/2010/03/28/gsoc-2010 post-mortem blog post] from last year's student, as well as the [http://bytes.inso.cc/wp/tag/client/ Star Wars-themed conceptual series of posts] on theefer's blog.
+
 {{SoCItem| title=GUI: Collections browser| description=A awesome collections browser is needed for the official client. How should it look like? What would be the killer feature? iTunes like interface? We need bold imaginative ideas and mock-ups.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
 
 {{SoCItem| title=GUI: Infrastructure| description=Create a awesome infrastructure for the new official client.| lang=C++/Qt/QML| level=Hard| mentor=N/A}}
-
 
 == Other clients == 
 
