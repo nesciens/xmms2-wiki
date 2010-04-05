@@ -1,0 +1,5 @@
+'''Homepage''': [http://serenareem.net/ serenareem.net]
+
+I like doing HTML/CSS things and JS/XSLT sometimes (though I do not like JS personally).
+
+Currently writing Qt4 and Ruby based XMMS2 client ([http://github.com/tenno-seremel/XSG XSG]). I'm not sure it will be a good one however maybe I'll add more info on ruby binding of XMMS2 while doing so.
