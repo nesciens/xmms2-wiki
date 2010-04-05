@@ -5,7 +5,8 @@
 | website=[http://code.jollybox.de/wiki/Software/Xmms2tray http://code.jollybox.de/wiki/Software/Xmms2tray]
 | version=0.5.1
 | devlanguage=Python
-| ui=GTK+2, tray icon
+| ui=GTK+2
+| ui2=tray icon
 | screenshots=[http://code.jollybox.de/pub/xmms2tray/screenshots/]
 }}
 
