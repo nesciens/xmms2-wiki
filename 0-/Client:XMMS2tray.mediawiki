@@ -1,1 +1,22 @@
-{{Client| name=XMMS2tray| author=[mailto:thomas@jollans.com Thomas Jollans]| website=[http://code.jollybox.de/wiki/Software/Xmms2tray http://code.jollybox.de/wiki/Software/Xmms2tray]| version=0.5| devlanguage=Python| ui=GTK+2, tray icon| screenshots=[http://code.jollybox.de/pub/xmms2tray/screenshots/notification.png] [http://code.jollybox.de/pub/xmms2tray/screenshots/tray.png] [http://code.jollybox.de/pub/xmms2tray/screenshots/menu.png]| description=&#42;nix GTK+2 system tray integration for XMMS 2}}
+{{Client
+| name=XMMS2tray
+| image=Client-XMMS2tray.png
+| author=[mailto:thomas@jollans.com Thomas Jollans]
+| website=[http://code.jollybox.de/wiki/Software/Xmms2tray http://code.jollybox.de/wiki/Software/Xmms2tray]
+| version=0.5.1
+| devlanguage=Python
+| ui=GTK+2, tray icon
+| screenshots=[http://code.jollybox.de/pub/xmms2tray/screenshots/]
+}}
+
+What it says on the tin: a tray icon, for xmms2. Nothing more, nothing less (roughly).
+
+Grab the source: [http://code.jollybox.de/pub/xmms2tray/xmms2tray-0.5.1.tar.gz version 0.5.1] / [http://code.jollybox.de/hg/xmms2tray mercurial]
+
+Dependencies:
+* Python 2
+* PyGTK
+
+Optional Libraries:
+* notify-python for notifications bubbles.
+* Python Imaging Library PIL if you have cover art and you want to see it in bubbles.
