@@ -1,1 +1,41 @@
+= Example clients =
+
 For an example on how to write a client in ruby you can have a look at the [http://git.code-monkey.de/?p=euphoria.git;a=summary euphoria client]. If you're new to ruby then you might want to have a look at [http://poignantguide.net/ruby/ Why's Poignant Guide to Ruby] or [http://www.whytheluckystiff.net/ruby/pickaxe/ Programming Ruby - The Pragmatic Programmer's Guide] before you get your hands dirty.
+
+= Basics =
+
+== Connecting ==
+
+<pre>
+require 'xmmsclient'
+xmms = nil
+begin
+    xmms = Xmms::Client.new('client_name').connect(ENV['XMMS_PATH'])
+rescue Xmms::Client::ClientError
+    $stderr.puts 'Failed to connect to XMMS2 daemon.'
+end
+</pre>
+
+= Specifics =
+
+* xmms is an object of Xmms::Client class (use xmms = Xmms::Client.new('client-name').connect(ENV['XMMS_PATH'])).
+* res is a return value.
+
+== Broadcasts ==
+
+Broadcast is a message that XMMS2 will send to client when something changed. Playback status, new items in playlists, etc.
+
+Sample usage:
+
+<pre>
+xmms.broadcast_quit.notifier do |res|
+    # This will not execute immediately.
+    # Only when you application receive broadcast_quit broadcast.
+    puts 'Server was shutdown.'
+    false
+end
+</pre>
+
+Keep in mind that you need to return ''true'' or ''false'' inside a notifier block. ''true'' means you want to receive events of this type in the future. While ''false'' means you will not receive events of this type anymore. Ruby will use last calculated value as a result if you don't explicitly specify it which may result in weird error messages.
+
+[[Component:Ruby_bindings/Broadcasts | More info]].
