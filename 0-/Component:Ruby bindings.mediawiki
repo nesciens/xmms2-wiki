@@ -1,4 +1,4 @@
-= Example clients =
+= Examples =
 
 For an example on how to write a client in ruby you can have a look at the [http://git.code-monkey.de/?p=euphoria.git;a=summary euphoria client]. If you're new to ruby then you might want to have a look at [http://poignantguide.net/ruby/ Why's Poignant Guide to Ruby] or [http://www.whytheluckystiff.net/ruby/pickaxe/ Programming Ruby - The Pragmatic Programmer's Guide] before you get your hands dirty.
 
