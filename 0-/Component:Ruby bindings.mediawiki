@@ -38,4 +38,4 @@ end
 
 Keep in mind that you need to return ''true'' or ''false'' inside a notifier block. ''true'' means you want to receive events of this type in the future. While ''false'' means you will not receive events of this type anymore. Ruby will use last calculated value as a result if you don't explicitly specify it which may result in weird error messages.
 
-[[Component:Ruby_bindings/Broadcasts | More info]].
+For information about specific broadcasts read [[Component:Ruby_bindings/Broadcasts | Ruby_bindings/Broadcasts]].
