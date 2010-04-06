@@ -1,0 +1,86 @@
+= Broadcasts =
+
+== broadcast_coll_changed ==
+
+== broadcast_config_value_changed ==
+
+Some configuration variable changed.
+
+* '''res''' is a hash of key-value pairs. Key is a configuration variable name, while value isâ€¦ well, it's value. Sample code:
+
+<pre>
+xmms.broadcast_config_value_changed.notifier do |res|
+    res.each_pair do |key, value|
+        puts "#{key} = #{value}"
+    end
+end
+</pre>
+
+'''Note''': in v.0.6 and v.0.7 key is a symbol. It is a bug. Use key.to_s to get key's name.
+
+== broadcast_mediainfo_reader_status ==
+
+== broadcast_medialib_entry_added ==
+
+== broadcast_medialib_entry_changed ==
+
+== broadcast_playback_current_id ==
+
+XMMS2 began playing another song.
+
+* '''res''' â€” another song's id.
+
+== broadcast_playback_status ==
+
+Playback status was changed.
+
+* '''res''' â€” new status:
+** '''Xmms::Client::PLAY''' â€” playing;
+** '''Xmms::Client::STOP''' â€” stopped;
+** '''Xmms::Client::PAUSE''' â€” paused.
+
+== broadcast_playback_volume_changed ==
+
+Volume changed.
+
+* '''<nowiki>res[:left]</nowiki>''' â€” left channel's volume.
+* '''<nowiki>res[:right]</nowiki>''' â€” right channel's volume.
+
+== broadcast_playlist_changed ==
+
+Playlist changed.
+
+* '''<nowiki>res[:name]</nowiki>''' â€” name of a changed playlist.
+* '''<nowiki>res[:type]</nowiki>''' â€” type of change:
+** '''Xmms::Playlist::ADD''' â€” song was added (?)to the end(?) of a playlist. 
+*** <nowiki>res[:id]</nowiki> â€” id of a new song;
+*** <nowiki>res[:position]</nowiki> â€” new song's position.
+** '''Xmms::Playlist::INSERT''' â€” song was inserted to a playlist at some position.
+*** <nowiki>res[:id]</nowiki> â€” id of a new song;
+*** <nowiki>res[:position]</nowiki> â€” new song's position.
+** '''Xmms::Playlist::SHUFFLE''' â€” playlist was shuffled.
+** '''Xmms::Playlist::REMOVE''' â€” song was removed from a playlist.
+*** <nowiki>res[:position]</nowiki> â€” position of a song.
+** '''Xmms::Playlist::CLEAR''' â€” playlist was cleared.
+** '''Xmms::Playlist::MOVE''' â€” song was moved from one position in a playlist to another.
+*** <nowiki>res[:position]</nowiki> â€” old position of a song;
+*** <nowiki>res[:newposition]</nowiki> â€” new position of a song.
+** '''Xmms::Playlist::SORT''' â€” playlist was sorted.
+** '''Xmms::Playlist::UPDATE''' â€” â‡
+
+== broadcast_playlist_current_pos ==
+
+Current position in playlist changed.
+
+* '''<nowiki>res[:name]</nowiki>''' â€” name of a playlist.
+* '''<nowiki>res[:position]</nowiki>''' â€” new active song's position.
+
+== broadcast_playlist_loaded ==
+
+Some playlist was loaded.
+
+* '''res''' â€” name of a loaded playlist (string).
+
+== broadcast_quit ==
+
+Server was shutdown.
