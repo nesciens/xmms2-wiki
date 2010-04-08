@@ -1,0 +1,15 @@
+= Other queries =
+
+== coll_get(name, [ns]) ==
+
+* '''ns''' - namespace. There is a predefined namespace Xmms::Collection::NS_PLAYLISTS for playlists.
+
+== playback_volume_get ==
+
+* '''<nowiki>res[:left]</nowiki>''' - left channel;
+* '''<nowiki>res[:right]</nowiki>''' - right channel.
+
+== playback_volume_set(channel, volume) ==
+
+* '''channel''' is a symbol. Either '':left'' or '':right'';
+* '''volume''' is an integer from 0 to 100.
