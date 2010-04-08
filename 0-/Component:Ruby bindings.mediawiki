@@ -22,7 +22,7 @@ end
 
 = Specifics =
 
-* xmms is an object of Xmms::Client class (use xmms = Xmms::Client.new('client-name').connect(ENV['XMMS_PATH'])).
+* xmms is an object of Xmms::Client class (see Connecting section above).
 * res is a return value.
 
 == Broadcasts ==
