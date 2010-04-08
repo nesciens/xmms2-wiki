@@ -2,7 +2,7 @@
 
 == coll_get(name, [ns]) ==
 
-* '''ns''' - namespace. There is a predefined namespace Xmms::Collection::NS_PLAYLISTS for playlists.
+* '''ns''' - namespace. There is a predefined namespace ''Xmms::Collection::NS_PLAYLISTS'' for playlists.
 
 == playback_volume_get ==
 
