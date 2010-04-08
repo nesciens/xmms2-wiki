@@ -4,6 +4,8 @@
 
 * '''ns''' - namespace. There is a predefined namespace ''Xmms::Collection::NS_PLAYLISTS'' for playlists.
 
+(There should be some info about predefined namespace constants in Xmms::Collection description instead).
+
 == playback_volume_get ==
 
 * '''<nowiki>res[:left]</nowiki>''' - left channel;
