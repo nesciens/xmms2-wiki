@@ -28,58 +28,58 @@ end
 
 XMMS2 began playing another song.
 
-* '''res''' â€” another song's id.
+* '''res''' - another song's id.
 
 == broadcast_playback_status ==
 
 Playback status was changed.
 
-* '''res''' â€” new status:
-** '''Xmms::Client::PLAY''' â€” playing;
-** '''Xmms::Client::STOP''' â€” stopped;
-** '''Xmms::Client::PAUSE''' â€” paused.
+* '''res''' - new status:
+** '''Xmms::Client::PLAY''' - playing;
+** '''Xmms::Client::STOP''' - stopped;
+** '''Xmms::Client::PAUSE''' - paused.
 
 == broadcast_playback_volume_changed ==
 
 Volume changed.
 
-* '''<nowiki>res[:left]</nowiki>''' â€” left channel's volume.
-* '''<nowiki>res[:right]</nowiki>''' â€” right channel's volume.
+* '''<nowiki>res[:left]</nowiki>''' - left channel's volume.
+* '''<nowiki>res[:right]</nowiki>''' - right channel's volume.
 
 == broadcast_playlist_changed ==
 
 Playlist changed.
 
-* '''<nowiki>res[:name]</nowiki>''' â€” name of a changed playlist.
-* '''<nowiki>res[:type]</nowiki>''' â€” type of change:
-** '''Xmms::Playlist::ADD''' â€” song was added (?)to the end(?) of a playlist. 
-*** <nowiki>res[:id]</nowiki> â€” id of a new song;
-*** <nowiki>res[:position]</nowiki> â€” new song's position.
-** '''Xmms::Playlist::INSERT''' â€” song was inserted to a playlist at some position.
-*** <nowiki>res[:id]</nowiki> â€” id of a new song;
-*** <nowiki>res[:position]</nowiki> â€” new song's position.
-** '''Xmms::Playlist::SHUFFLE''' â€” playlist was shuffled.
-** '''Xmms::Playlist::REMOVE''' â€” song was removed from a playlist.
-*** <nowiki>res[:position]</nowiki> â€” position of a song.
-** '''Xmms::Playlist::CLEAR''' â€” playlist was cleared.
-** '''Xmms::Playlist::MOVE''' â€” song was moved from one position in a playlist to another.
-*** <nowiki>res[:position]</nowiki> â€” old position of a song;
-*** <nowiki>res[:newposition]</nowiki> â€” new position of a song.
-** '''Xmms::Playlist::SORT''' â€” playlist was sorted.
-** '''Xmms::Playlist::UPDATE''' â€” ??
+* '''<nowiki>res[:name]</nowiki>''' - name of a changed playlist.
+* '''<nowiki>res[:type]</nowiki>''' - type of change:
+** '''Xmms::Playlist::ADD''' - song was added (?)to the end(?) of a playlist. 
+*** <nowiki>res[:id]</nowiki> - id of a new song;
+*** <nowiki>res[:position]</nowiki> - new song's position.
+** '''Xmms::Playlist::INSERT''' - song was inserted to a playlist at some position.
+*** <nowiki>res[:id]</nowiki> - id of a new song;
+*** <nowiki>res[:position]</nowiki> - new song's position.
+** '''Xmms::Playlist::SHUFFLE''' - playlist was shuffled.
+** '''Xmms::Playlist::REMOVE''' - song was removed from a playlist.
+*** <nowiki>res[:position]</nowiki> - position of a song.
+** '''Xmms::Playlist::CLEAR''' - playlist was cleared.
+** '''Xmms::Playlist::MOVE''' - song was moved from one position in a playlist to another.
+*** <nowiki>res[:position]</nowiki> - old position of a song;
+*** <nowiki>res[:newposition]</nowiki> - new position of a song.
+** '''Xmms::Playlist::SORT''' - playlist was sorted.
+** '''Xmms::Playlist::UPDATE''' - ??
 
 == broadcast_playlist_current_pos ==
 
 Current position in playlist changed.
 
-* '''<nowiki>res[:name]</nowiki>''' â€” name of a playlist.
-* '''<nowiki>res[:position]</nowiki>''' â€” new active song's position.
+* '''<nowiki>res[:name]</nowiki>''' - name of a playlist.
+* '''<nowiki>res[:position]</nowiki>''' - new active song's position.
 
 == broadcast_playlist_loaded ==
 
 Some playlist was loaded.
 
-* '''res''' â€” name of a loaded playlist (string).
+* '''res''' - name of a loaded playlist (string).
 
 == broadcast_quit ==
 
