@@ -6,7 +6,7 @@
 
 Some configuration variable changed.
 
-* '''res''' is a hash of key-value pairs. Key is a configuration variable name, while value isâ€¦ well, it's value. Sample code:
+* '''res''' is a hash of key-value pairs. Key is a configuration variable name, while value is... well, it's value. Sample code:
 
 <pre>
 xmms.broadcast_config_value_changed.notifier do |res|
@@ -66,7 +66,7 @@ Playlist changed.
 *** <nowiki>res[:position]</nowiki> â€” old position of a song;
 *** <nowiki>res[:newposition]</nowiki> â€” new position of a song.
 ** '''Xmms::Playlist::SORT''' â€” playlist was sorted.
-** '''Xmms::Playlist::UPDATE''' â€” â‡
+** '''Xmms::Playlist::UPDATE''' â€” ??
 
 == broadcast_playlist_current_pos ==
 
