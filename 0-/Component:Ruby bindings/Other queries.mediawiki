@@ -4,7 +4,7 @@
 
 * '''ns''' - namespace. There is a predefined namespace ''Xmms::Collection::NS_PLAYLISTS'' for playlists.
 
-(There should be some info about predefined namespace constants in Xmms::Collection description instead).
+(There should be some info about predefined namespace constants in Xmms::Collection description instead. Playlist-Collection relationship should be mentioned as well.)
 
 == playback_volume_get ==
 
