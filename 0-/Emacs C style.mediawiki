@@ -17,11 +17,11 @@ Instead create a file named <tt>xmms2-style.el</tt> and insert the following:
 
 (defun maybe-xmms2-style ()
   "Set the style used in xmms2, requires smart tabs."
-  (if (string-match "xmms2" buffer-file-name)
-      (progn
+  (when (string-match "xmms2" buffer-file-name)
+        (setq show-trailing-whitespace t)
         (setq indent-tabs-mode t)
         (setq tab-width 4)
-        (c-set-style "xmms2"))))
+        (c-set-style "xmms2")))
 
 (add-hook 'c-mode-common-hook 'maybe-xmms2-style)
 
