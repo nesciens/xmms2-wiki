@@ -1,3 +1,4 @@
+{{update}}
 __NOTOC__
 
 This page tries to list all properties that different clients write into the medialib and that can be useful for other clients too.
