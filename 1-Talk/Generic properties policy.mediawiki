@@ -96,3 +96,5 @@ Why shouldn't a client scale an image up? Or is it just a matter of not writing 
 
 == Should be updated ==
 The section on cover art is out of date. These days actual image data can be stored using the bindata API. Such cover art is referred to using a hash and not an url. Property "picture_front" is in use for this. Maybe other properties too?
+
+Should also be synchronized with (updated version of) [[Album_Covers]].
