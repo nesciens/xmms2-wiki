@@ -1,4 +1,4 @@
-16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
+ 16:41 < anders> client/override/x2tagger btw.. Shouldn't it be client/override? 
                 Because it should preferable be displayed by all clients, 
                 instead of non overridden, and if one only wants to change info 
                 in medialib without commiting it to files it actually has 
@@ -93,3 +93,6 @@
 == Scaling up ==
 
 Why shouldn't a client scale an image up? Or is it just a matter of not writing the scaled up image to the medialib?
+
+== Should be updated ==
+The section on cover art is out of date. These days actual image data can be stored using the bindata API. Such cover art is referred to using a hash and not an url. Property "picture_front" is in use for this. Maybe other properties too?
