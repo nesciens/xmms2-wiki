@@ -21,6 +21,8 @@ For each vote "vote_count" is increased by one and "vote_score" is increased by 
 This is similar to the "rating" property, but this allows many votes and calculates an average, whereas "rating" is just a single value that is set to the latest voting.
 
 ===Album Art===
+Also see [[Album_Covers]].
+
 Sources: "client/generic/arturl" and "client/generic/arturl_unverified"
 
 * album_front_large - front of album - at least 320x320
