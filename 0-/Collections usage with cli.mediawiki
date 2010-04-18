@@ -40,31 +40,30 @@ Here are examples of valid patterns:
 We will now show how to use the collection commands of the CLI.  To
 get some help, you can simply type:
 
- $ xmms2 coll
- Available collection commands:
-   save   [collname] [pattern] - Save a pattern as a collection
-   rename         [oldname] [newname] - Rename a collection
-   list   [namespace] - List all collections in a given namespace
-   query  [collname] [order] - Display all the media in a collection
-   queryadd       [collname] [order] - Add all media in a collection to active playlist
-   find   [mid] [namespace] - Find all collections that contain the given media
-   get    [collname] - Display the structure of a collection
-   remove         [collname] - Remove a saved collection
-   attr   [collname] [attr] [val] - Get/set an attribute for a saved collection
+ % xmms2 help collection                           
+ usage: nyxmms2 collection <subcommand> [args]
+ 
+ Available 'collection' subcommands:
+    list
+    show
+    create
+    rename
+    remove
+    config
 
 = Save a collection =
 
 Now we have a way to represent a collection structure, we may want to
-use it against the medialibrary.  First, let's save our collection on
+use it against the media library.  First, let's create our collection on
 the server:
 
- $ xmms2 coll save AirFirstTracks artist:Air tracknr:1
+ % xmms2 collection create AirFirstTracks artist:Air tracknr:1
 
 This creates a new collection named ''AirFirstTracks'' that matches
-all first tracks of albums by Air.  The syntax of the save command is
+all first tracks of albums by Air.  The syntax of the create command is
 the following:
 
- $ xmms2 coll save <collname> <pattern>
+ % xmms2 collection create <collname> <pattern>
 
 
 Collections on the server are partitioned in namespaces, and they can
@@ -73,7 +72,7 @@ is selected, but collections in other namespaces can be referred to as
 collname using the ''namespace/'' prefix:
 
  AirFirstTracks          # equivalent to Collections/AirFirstTracks
- Collections/"Foo Coll"
+ Collections/"Foo collection"
  Playlists/GreatPlaylist
 
 However, only idlists can be created in the ''Playlists'' namespace,
@@ -82,79 +81,71 @@ so it is not possible to save one of our dynamic collection structures
 
 = More Complicated Collection Queries =
 
-It is possible to create far more complicated collections.  Note that the values return by an "mlib search" call are the same values that will go into a collection using that query with a "coll save" call.
+It is possible to create far more complicated collections.  Note that the values return by a "search" call are the same values that will go into a collection using that query with a "collection create" call.  Also, all searches are case insensitive.
 
 Finds all songs with either artist; similarily for AND and NOT.
- $ xmms2 mlib search "artist:Mr. Scruff" OR "artist:Mr. Crispy"
+ % xmms2 search "artist:Mr. Scruff" OR "artist:Mr. Crispy"
 
-Finds all songs where the artist has "a" in the name, and the song title has "b"; this is case sensitive.
- $ xmms2 mlib search artist:'*a*' AND title:'*b*'
-
-Same thing, but case insensitive.
- $ xmms2 mlib search artist~a AND title~b
+Finds all songs where the artist has "a" in the name, and the song title has "b".
+ % xmms2 search artist:'*a*' AND title:'*b*'
 
 All songs that have any value at all in the "rating" property.
- $ xmms2 mlib search +rating
+ % xmms2 search +rating
 
 All songs that have a rating less than or equal to 5, and similarily for >=, <, and >.
- $ xmms2 mlib search 'rating<=5'
+ % xmms2 search 'rating<=5'
 
-Song id number 18 only
- $ xmms mlib search '#18'
+Song id number 18 only.
+ % xmms2 search '#18'
+which is equivalent to
+ % xmms2 search 'id:18'
 
 All songs in the collection test1
- $ xmms mlib search in:test1
+ % xmms2 search in:test1
 
-Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  NOTE: Grouping does not properly work in DrJekyll; it has been fixed in the current -devel version, to be released as DrK.
+Example of grouping; all artist-has-a and title-has-b songs, plus all songs where the artist is PPK.  NOTE: Grouping does not properly in release vesions before DrKosmos.
 
- $ xmms2 mlib search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
+ % xmms2 search '(' artist:'*a*' AND title:'*b*' ')' OR artist:PPK
 
 = Rename a collection =
 
 In case you want to rename a collection saved on the server, you can
 simply use the ''rename'' command:
 
- $ xmms2 coll rename Foo Bar
- $ xmms2 coll rename Playlists/GreatPlaylist Playlists/AwesomePlaylist
+ % xmms2 collection rename Foo Bar
+ % xmms2 collection rename Playlists/GreatPlaylist Playlists/AwesomePlaylist
 
 The syntax of that command is straightforward:
 
- $ xmms2 coll rename <collname> <newname>
+ % xmms2 collection rename <collname> <newname>
+
+Note that this syntax is different from the ''playlist'' command.  
 
 Again, the namespace can be specified as a prefix.  It must however be
 noted that you cannot move a collection from one namespace to another,
 and the following command is invalid:
 
- $ xmms2 coll rename AirFirstTracks Playlists/AirPlaylist  # invalid!
+ % xmms2 collection rename AirFirstTracks Playlists/AirPlaylist  # invalid!
 
 = List saved collections =
 
 After you have saved a couple of collections on the server, you may
 want to list them all.  This can be done using the ''list'' command:
 
- $ xmms2 coll list
- * Playlists Namespace:
- Hot Party!
- _active
- OtherPlaylist
- * Collections Namespace:
- AirFirstTracks
- Test Collection
-
-For each namespace, we get the list of collections it contains. Note
-that the _active playlist is simply a reference to the currently
-active playlist.
+ % xmms2 collection list
+   AirFirstTracks
+   Test Collection
 
 It is also possible to only list the collections in one namespace by
 passing it as argument:
 
- $ xmms2 coll list Collections
+ % xmms2 collection list Collections
  AirFirstTracks
  Test Collection
 
 The syntax of the ''list'' command is the following:
 
- $ xmms2 coll list [namespace]
+ % xmms2 collection list [namespace]
 
 where namespace is optional (by default, list collections for all
 namespaces).
@@ -165,7 +156,7 @@ The list only gives us the name of the saved collections, but you may
 want to check what the corresponding collection structure looks like.
 This can be done using the ''get'' command:
 
- $ xmms2 coll get AirFirstTracks
+ % xmms2 collection get AirFirstTracks
  Intersection:
    Match ('artist', 'Air') for:
      Reference: 'All Media'
@@ -175,12 +166,12 @@ This can be done using the ''get'' command:
 Again, we can refer to collections in other namespaces using the usual
 prefix:
 
- $ xmms2 coll get Playlists/Other
+ % xmms2 collection get Playlists/Other
  Idlist: (14461, 14462, 7226)
 
 The syntax of the ''get'' command is the following:
 
- $ xmms2 coll get <collname>
+ % xmms2 collection get <collname>
 
 = List the contents of a collection =
 
@@ -188,7 +179,7 @@ Now we have played with collections, it might be interesting to
 actually display what media they match, i.e. their ''contents''.
 For that, we use the ''query'' command:
 
- $ xmms2 coll query AirFirstTracks
+ % xmms2 collection query AirFirstTracks
  -[Result]--------------------------------------------------------------------------
  Id   | Artist            | Album                      | Title
  00102| Air               | The Virgin Suicides        | Playground Love
@@ -202,7 +193,7 @@ For that, we use the ''query'' command:
 By default, media are ordered by id.  You can change that by selecting
 an ordering property:
 
- $ xmms2 coll query AirFirstTracks album
+ % xmms2 collection query AirFirstTracks album
  -[Result]--------------------------------------------------------------------------
  Id   | Artist            | Album                      | Title
  00181| Air               | 10'000 Hz Legend           | Electronic Performers
@@ -215,7 +206,7 @@ an ordering property:
 
 The syntax of the ''query'' command is the following:
 
- $ xmms2 coll query <collname> [order]
+ % xmms2 collection query <collname> [order]
 
 where ''order'' is an optional comma-separated list of properties to order
 by.
@@ -224,7 +215,7 @@ by.
 
 To add the contents of a collection to the active playlist use:
 
- $ xmms2 coll queryadd <collname> [order]
+ % xmms2 collection queryadd <collname> [order]
 
 The syntax of the ''queryadd'' command is identical that of the ''query'' command.
 
@@ -232,7 +223,7 @@ The syntax of the ''queryadd'' command is identical that of the ''query'' comman
 
 If you have had enough of a collection, you can just remove it:
 
- $ xmms2 remove AirFirstTracks
+ % xmms2 remove AirFirstTracks
 
 Note that if you any other collection had a reference to a collection
 you remove, the reference will be replaced by the actual structure of
@@ -240,7 +231,7 @@ the removed collection, thus keeping other collections intact.
 
 The syntax of the remove command is the following:
 
- $ xmms2 coll remove <collname>
+ % xmms2 collection remove <collname>
 
 = Find collections matching a given media =
 
@@ -248,7 +239,7 @@ It is also possible to perform the inverse of query, that is to find
 all collections that match a given media.  This is done using the
 ''find'' command:
 
- $ xmms2 coll find 181
+ % xmms2 collection find 181
  * Playlists Namespace:
  * Collections Namespace:
  AirFirstTracks
@@ -256,12 +247,12 @@ all collections that match a given media.  This is done using the
 If we want to restrict the search to one namespace, we simply append
 it as an argument:
 
- $ xmms2 coll find 181 Collections
+ % xmms2 collection find 181 Collections
  AirFirstTracks
 
 The syntax of the ''find'' command is the following:
 
- $ xmms2 coll find <mid> [namespace]
+ % xmms2 collection find <mid> [namespace]
 
 = Changing the type of a playlist =
 
@@ -277,18 +268,18 @@ To learn more about these types, read the section about
 To get and set the type of a playlist, use the ''type'' command of the
 playlist module:
 
- $ xmms2 playlist type Other
+ % xmms2 playlist type Other
  list
 
 We can also change the type to ''queue'' using the same command:
 
- $ xmms2 playlist type Other queue
+ % xmms2 playlist type Other queue
 
 For the ''pshuffle'' type, the source collection (input operand) of
 the shuffle must be specified:
 
- $ xmms2 playlist type Other pshuffle AirFirstTracks
- $ xmms2 list Other
+ % xmms2 playlist type Other pshuffle AirFirstTracks
+ % xmms2 list Other
  ->[0/102] Air - Playground Love (03:32)
    [1/116] Air - Venus (04:04)
    [2/116] Air - Venus (04:04)
@@ -308,7 +299,7 @@ at collection attributes.
 
 The syntax of the ''type'' command is the following:
 
- $ xmms2 playlist type <plname> <type> [options]
+ % xmms2 playlist type <plname> <type> [options]
 
 = Setting attributes =
 
@@ -324,26 +315,26 @@ We can use the attr command of the CLI to get and set attributes of
 saved collections.  First, let's list all the attributes of a
 collection:
 
- $ xmms2 coll attr Playlists/Other
+ % xmms2 collection attr Playlists/Other
  [position] -1
  [size] 10
 
 You can also limit the output to a single attribute by specifying it
 as an extra argument:
 
- $ xmms2 coll attr Playlists/Other size
+ % xmms2 collection attr Playlists/Other size
  [size] 10
 
 The position and size attributes are internal attributes for
 collections used as playlists, and you shouldn't change them directly.
 However, let's set the ''upcoming'' attribute to 3:
 
- $ xmms2 coll attr Playlists/Other upcoming 3
+ % xmms2 collection attr Playlists/Other upcoming 3
 
 We can see the effect if we reinitialize the playlist:
 
- $ xmms2 clear Other
- $ xmms2 list Other
+ % xmms2 clear Other
+ % xmms2 list Other
  ->[0/192] Air - Modular mix (05:59)
    [1/102] Air - Playground Love (03:32)
    [2/142] Air - La Femme D'Argent (07:11)
