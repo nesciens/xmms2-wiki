@@ -1,6 +1,6 @@
 {{
 Client
-|name=xmms2-freesb
+|name=xmms2-freedb
 |author=Tomasz Sobczyk
 |website=[http://xmms2freedb.asth.net/]
 |version=0.1.1
