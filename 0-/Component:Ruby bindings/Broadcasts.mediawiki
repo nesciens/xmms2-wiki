@@ -10,6 +10,7 @@ Collection changed.
 ** '''Xmms::Collection::ADD''' - new collection was added.
 ** '''Xmms::Collection::UPDATE''' - collection was changed.
 ** '''Xmms::Collection::RENAME''' - collection was renamed.
+*** <nowiki>res[:newname]</nowiki> - new name of a collection.
 ** '''Xmms::Collection::REMOVE''' - collection was removed.
 
 == broadcast_config_value_changed ==
