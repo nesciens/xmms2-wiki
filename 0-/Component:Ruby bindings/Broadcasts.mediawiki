@@ -4,8 +4,6 @@
 
 Collection changed.
 
-* '''res''' is a hash of key-value pairs.
-
 * '''<nowiki>res[:name]</nowiki>''' - name of a changed collection.
 * '''<nowiki>res[:namespace]</nowiki>''' - it's namespace.
 * '''<nowiki>res[:type]</nowiki>''' -  type of change:
