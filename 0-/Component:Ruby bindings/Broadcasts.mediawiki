@@ -2,6 +2,18 @@
 
 == broadcast_coll_changed ==
 
+Collection changed.
+
+* '''res''' is a hash of key-value pairs.
+
+* '''<nowiki>res[:name]</nowiki>''' - name of a changed collection.
+* '''<nowiki>res[:namespace]</nowiki>''' - it's namespace.
+* '''<nowiki>res[:type]</nowiki>''' -  type of change:
+** '''Xmms::Collection::ADD''' - new collection was added.
+** '''Xmms::Collection::UPDATE''' - collection was changed.
+** '''Xmms::Collection::RENAME''' - collection was renamed.
+** '''Xmms::Collection::REMOVE''' - collection was removed.
+
 == broadcast_config_value_changed ==
 
 Some configuration variable changed.
