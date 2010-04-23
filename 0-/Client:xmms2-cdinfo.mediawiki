@@ -2,7 +2,7 @@
 Client
 |name=xmms2-freedb
 |author=Tomasz Sobczyk
-|website=[http://xmms2freedb.asth.net/]
+|website=[http://asth.net/(+xmms2freedb)]
 |version=0.1.1
 |devlanguage=C++
 }}
