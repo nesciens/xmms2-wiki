@@ -89,7 +89,4 @@ earlier we added the pair (a', b'), where a' and b' are the intpairs for the ent
 
 =Sources=
 
-In addition to the parent and child of a relationship S4 also keeps track of who added the relationship. We call this the source of the relationship. This is added as a fifth field to the B+ tree's key. When you search for something the src fields in the entries will be set to show what sources added the relationships. 
-
-=Shortcomings / things to think about=
-* Strings are looked up based on a lower case version of the string. This means "Asdf" and "asdf" maps to the same integer. This means only one of them can be in the database at any time, and if there's two artists with the same name only different case only one will have the right case.
+In addition to the parent and child of a relationship S4 also keeps track of who added the relationship. We call this the source of the relationship. This is added as a fifth field to the B+ tree's key. When you search for something the src fields in the entries will be set to show what sources added the relationships.
