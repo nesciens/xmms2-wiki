@@ -57,7 +57,19 @@ The file containing the database is mmaped into the applications memory space. T
 
 ==String Store==
 
-The string store is responsible for mapping strings to integers. Note that strings are case insensitive, so "Abc" and "abc" would map to the same integer. The way the mapping is done is via a patricia trie. The integer associated with a string is the offset info the database of the end node for the string in the patricia trie. This makes it easy to also map integer to string.
+The string store is responsible for mapping strings to integers. The way the mapping is done is via a patricia trie. The patricia trie uses a case neutral string as the key. The leaf points to a node in a doubly linked list where the case sensitive version of the strings are stored. That way we can quickly lookup all strings matching a case neutral string. The integer associated with a string is the offset info the database of the end node for the string in the patricia trie. This makes it easy to also map integer to string.
+
+A simple example, a trie where the keys "Asdf", "asdf", and "ASDF" has been inserted:
+
+<code>
+ [Inner nodes]
+       | (leads to)
+       v
+ [leaf: key = "asdf", keycount = 3]
+                |   (points at)
+                v
+ [...] <-> [str: "Asdf"] <-> [str: "asdf"] <-> [str: "ASDF"] <-> [...]
+</code>
 
 ==Intpair Store==
 
