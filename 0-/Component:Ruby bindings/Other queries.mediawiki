@@ -8,8 +8,8 @@
 
 == current_pos ==
 
-* '''<nowiki>res[:name]</nowiki>''' - playlist name a current song belongs to.
-* '''<nowiki>res[:position]</nowiki>''' - position of a current song in the said playlist;
+* '''<nowiki>res[:name]</nowiki>''' - playlist name a current song belongs to;
+* '''<nowiki>res[:position]</nowiki>''' - position of a current song in the said playlist.
 
 == playback_volume_get ==
 
