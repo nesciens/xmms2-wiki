@@ -6,6 +6,11 @@
 
 (There should be some info about predefined namespace constants in Xmms::Collection description instead. Playlist-Collection relationship should be mentioned as well.)
 
+== current_pos ==
+
+* '''<nowiki>res[:name]</nowiki>''' - playlist name a current song belongs to.
+* '''<nowiki>res[:position]</nowiki>''' - position of a current song in the said playlist;
+
 == playback_volume_get ==
 
 * '''<nowiki>res[:left]</nowiki>''' - left channel;
