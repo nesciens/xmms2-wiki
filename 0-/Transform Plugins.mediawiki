@@ -23,7 +23,6 @@ Transports get raw data as a stream from a source such as a hard disk or interne
 * [[Component:DAAP|DAAP]] - Digital Audio Access Protocol xform, reads from DAAP shares (made popular by iTunes)
 * [[Component:file|file]] - File xform, reads files from the local filesystem.
 * [[Component:gnomevfs|gnomevfs]] - GnomeVFS xform, uses Gnome's virtual filesystem to access many types of media.
-* [[Component:lastfm|lastfm]] - Last.fm xform, reads Last.fm streams.
 * [[Component:MMS|MMS]] - Libmms xform, reads from MMS (Microsoft Media Services) streams.
 * [[Component:samba|samba]] - Samba xform, reads from SMB shares.
 
