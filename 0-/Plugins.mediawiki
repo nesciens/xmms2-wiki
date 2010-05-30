@@ -8,8 +8,6 @@ __NOTOC__
 ** [[Component:file| File transport]]
 * [[Wikipedia:Digital_Audio_Access_Protocol | DAAP]]
 ** [[Component:daap| DAAP transport]]
-* [[Wikipedia:Last.fm | Last.fm]]
-** [[Component:lastfm | Last.fm transport]]
 * [[Wikipedia:Microsoft_Media_Services | Microsoft Media Services]]
 ** [[Component:MMS | MMS transport]]
 * [[Wikipedia:Http | HTTP]]
