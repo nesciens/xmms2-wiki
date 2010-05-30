@@ -38,7 +38,6 @@ Metadata xforms strip out metadata like ID3 tags and vorbis comments from stream
 
 * [[Component:icymetaint|icymetaint]] - ICY xform, extracts info from ICY headers in ShoutCast streams.
 * [[Component:ID3v2|ID3v2]] - ID3v2 xform, extracts ID3v2 tags.
-* [[Component:lastfmeta|lastfmeta]] - Last.fm xform, extracts info from Last.fm streams.
 * [[Component:ofa|ofa]] - Libofa xform, MusicDNS fingerprinting.
 
 == Decoders ==
