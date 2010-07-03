@@ -10,4 +10,8 @@ If things don't go smoothly, check these out:
 * [[Reporting bugs]]
 * [irc://chat.freenode.net/xmms2 #xmms2 on Freenode]
 
-[[http://www.superiorpapers.com/ | research papers]]
+== See Also ==
+* [[General information]]
+
+[[Category:General]]
+[[Category:Users]]
