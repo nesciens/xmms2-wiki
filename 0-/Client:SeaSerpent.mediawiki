@@ -1,2 +1,6 @@
 {{Template:Client|image=Client-SeaSerpent.png |200px|thumb|left|alt text |author=Brian Miller|version=1.0|website=http://inkleined.com/SeaSerpent|devlanguage=Python|ui=Qt4|screenshots=http://inkleined.com/thegallery/main.php?g2_itemId=15}}
-Goal is to be a full-featured client.  Drag-and-drop, editing tags, display album art, queue, random play, shuffle playlist, search and find, save playlists and eq settings, and much more.  Please see http://inkleined.com/SeaSerpent for more info and features.  UPDATE 2010-3-30: Fixed website download link, create a sourceforge page (http://sourceforge.net/projects/seaserpent/), and re-uploaded correct zipped file to all places.
+Goal is to be a full-featured client.  Drag-and-drop, editing tags, display album art, queue, random play, shuffle playlist, search and find, save playlists and eq settings, and much more.  Please see http://inkleined.com/SeaSerpent for more info and features.  
+
+UPDATE 2010-3-30: Fixed website download link, create a sourceforge page (http://sourceforge.net/projects/seaserpent/), and re-uploaded correct zipped file to all places.
+
+UPDATE 2010-7-18: Released version 1.1.  New: much more powerful metadata editor, two color options: (1) deep purple SeaSerpent color or (2) your OS color scheme (mostly).  There are new screenshots and new documentation indicating how to use the metadata editor.
