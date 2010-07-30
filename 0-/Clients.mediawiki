@@ -49,6 +49,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:Sonus | Sonus]] is a GUI client that works with xmms2-devel
 * [[Client:radiobar | radiobar]] is a GUI buttonbar client for radio use
 * [[Client:Promoe | Promoe]] is a Qt4 based Winamp/Xmms clone
+* [[Client:Etude | Etude]] is a GTK client with a collection editor
 
 == Web Clients ==
 
