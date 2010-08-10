@@ -1,0 +1,249 @@
+[[Summer_of_Code_2008/Collections_2.0|Collections 2.0]], or coll2 for short, is an evolution of the [[Collections_Concept|collections concept]] already implemented in XMMS2. Coll2 distinguishes between medialists (an ordered list of entries that may have duplicates) and mediasets (an unordered set of entries that does not have duplicates). It also adds operators to order a mediaset (turning it into a medialist), turn a medialist into a mediaset (thus removing duplicates and ordering) and limiting a medialist. All this gives the user more power when querying the media-library. In addition to this Coll2 adds a new query system, allowing more advanced queries with less code for the client programmer.
+
+This page describes coll2 as implemented in the xmms2-cippo git repository
+
+==Operators==
+A collection is built up of collection operators. Coll2 adds some new operators and removes some old ones. The operators removed are all the filter operators (_HAS, _MATCH, _EQUALS, _SMALLER, _GREATER). They are replaced by a single operator _FILTER. In addition _QUEUE and _PARTYSHUFFLE have been removed.
+
+===API breakage===
+Client code dealing with xmmsv_coll_t directly will most probably break, as the collection operator types have changed. Clients written in anything other than ruby or C will also break, because the bindings for those languages have not been ported yet. Clients using coll-parser to create their collections, and otherwise leaving them alone will be fine.
+
+===Operator list===
+
+{{Collections 2.0_Operator
+| name=Universe
+| type=XMMS_COLLECTION_TYPE_UNIVERSE
+| result=All mediaids in the medialibrary
+| attributes=''none''
+| operands=''none''
+}}
+
+{{Collections 2.0_Operator
+| name=Idlist
+| type=XMMS_COLLECTION_TYPE_IDLIST
+| result=A medialist containing the mediaids in the <code>idlist</code> found within the operator.
+| attributes=
+* <code>type</code>: The type of playlist. Typically <code>list</code>, <code>queue</code> or <code>pshuffle</code>. The default value is <code>list</code>.
+* ''any''
+| operands=Zero or one
+}}
+
+{{Collections 2.0_Operator
+| name=Reference
+| type=XMMS_COLLECTION_TYPE_REFERENCE
+| result=All mediaids in the collection identified by the <code>namespace</code> and <code>reference</code> attributes
+| attributes=
+* <code>namespace</code>: The namespace of the referenced collection, e.g. <code>Playlists</code> or <code>Collections</code>
+* <code>reference</code>: The name of the referenced, e.g. <code>Muse</code>, <code>Never Played</code>, <code>That grand Opeth album</code> or just <code>Default</code>
+| operands=''none'' (except on the daemon-side, where the referenced collection can be attached as an operand to the reference-operator)
+}}
+
+{{Collections 2.0_Operator
+| name=Complement
+| type=XMMS_COLLECTION_TYPE_COMPLEMENT
+| result=All mediaids in medialibrary, except those in the operand.
+| attributes=''none''
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Intersection
+| type=XMMS_COLLECTION_TYPE_INTERSECTION
+| result=The mediaids that appear in all operands. It keeps the ordering of the first operand.
+| attributes=''none''
+| operands=One or more
+}}
+
+{{Collections 2.0_Operator
+| name=Union
+| type=XMMS_COLLECTION_TYPE_UNION
+| result=The mediaids that appear in any of the operands. If all operands are ordered it concatenates the media-lists.
+| attributes=''none''
+| operands=One or more
+}}
+
+{{Collections 2.0_Operator
+| name=Filter
+| type=XMMS_COLLECTION_TYPE_FILTER
+| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
+| attributes=
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>.
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code> or <code>NATCOLL</code>. The default-value is <code>NOCASE</code> except for "<" and ">" where it is <code>NATCOLL</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code>.
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Order
+| type=XMMS_COLLECTION_TYPE_ORDER
+| result=A medialist, with the mediaids in the operand sorted according to a value depending on the <code>type</code> attribute and the mediaid. If the operand also is an order operator, then the values generated by that will be used for secondary sorting.
+| attributes=
+* <code>order</code>: <code>ASC</code> or <code>DESC</code> for ascending and descending ordering. The default-value is <code>ASC</code>.
+* <code>collation</code>: A collation to be used when the values are strings. The default-value is <code>NATCOLL</code>. '''Not implemented yet'''
+* <code>type</code>: Defines what to order by. Possible values <code>value</code>, <code>id</code> or <code>random</code>. The default value is <code>value</code>.
+* <code>field</code>: If <code>type=value</code>, defines which property to order by.
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Limit
+| type=XMMS_COLLECTION_TYPE_LIMIT
+| result=A medialist equal to the operand, but without the first <code>start</code> entries and containing <code>length</code> or fewer entries.
+| attributes=
+* <code>start</code>: an integer, defaulting to 0.
+* <code>length</code>: an integer, defaulting to UINT_MAX.
+| operands=Exactly one (a medialist)
+}}
+
+{{Collections 2.0_Operator
+| name=Mediaset
+| type=XMMS_COLLECTION_TYPE_MEDIASET
+| result=A mediaset containing the mediaids in the operand. (Removing duplicates and order)
+| attributes=''none''
+| operands=Exactly one
+}}
+
+==Querying==
+Coll2 adds a new query mechanism, xmmsc_coll_query, in addition to the old xmmsc_coll_query_ids and xmmsc_coll_query_infos. It is more powerful, the two other query calls are actually implemented using it. It takes two arguments, a collection and a fetch specification. The collection is the same as before, but the fetch specification is new.
+
+===Fetch Specification===
+The fetch specification tells XMMS2 what to fetch and how to store it. It is built up of recursive dicts of different types. The "_type" attribute defines what type the dict has.
+
+{{Collections 2.0_Fetchdict
+| name=Metadata
+| type=metadata
+| desc=Fetches data from the current cluster and returns the fetched data
+| attributes=
+* <code>get</code>: A list with "id", "key", "value" or "source". If there are more than one item in the list it will use the first n-1 items as keys in recursive dicts, and the last will be aggregated using the aggregation function in the leaf.
+* <code>aggregate</code>: A string specifying the aggregation function. Can be one of "first", "list", "avg", "sum", "min", "max" and "random". Defaults to "first".
+* <code>keys</code>: A list of keys to get. If this is not set it will get all attributes.
+* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
+}}
+
+{{Collections 2.0_Fetchdict
+| name=Cluster list
+| type=cluster-list
+| desc=Clusters the current set into subsets by a list of given attributes and returns a list with one entry per cluster.
+| attributes=
+* <code>cluster-by</code> A list of strings or a string specifying what attributes to group by.
+* <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
+}}
+
+{{Collections 2.0_Fetchdict
+| name=Cluster dict
+| type=cluster-dict
+| desc=Clusters the current set into subsets by a list of given attributes and returns a dict with where the attribute to group by is used as the key and "data" is put as the value. If there are more than one attribute to group by it will create recursive dicts.
+| attributes=
+* <code>cluster-by</code> A list of strings or a string specifying what attributes to group by.
+* <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
+}}
+
+{{Collections 2.0_Fetchdict
+| name=Organize
+| type=organize
+| desc=Organizes data in a dict. 
+| attributes=
+''key''=''data'': Sets ''key'' in the return dict equal to the data we get when using the ''data'' as the fetchspec for the current set.
+}}
+
+{{Collections 2.0_Fetchdict
+| name=Count
+| type=count
+| desc=Returns the number of number of entries in the current set
+| attributes=''none''
+}}
+
+===Examples===
+This will hopefully clarify the above mentioned fetch specification. Below '{ key = value }'Â is used to mean a dict with key set to value and '( a, b )' is used to mean a list with the values a and b.
+
+====Get all keys in the media-library====
+{|
+|-
+| Call 
+| <code>xmmsc_coll_query (universe, {"_type" = "metadata", "get" = ("key"), "aggregate" = "list"}</code>
+|-
+| Result
+| <code>("artist", "album", "title", ...)</code>
+|}
+
+====Get a full id-key-source-value dict====
+{|
+|-
+| Call 
+| <code>xmmsc_coll_query (universe, {"_type" = "metadata", "get" = ("id", "key", "source", "value")}</code>
+|-
+| Result
+| <pre>
+{
+1234 = {
+  status = {
+    server = 1
+    },
+  title = {
+    plugin/id3v2 = "Some title"
+    },
+  lmod = {
+    plugin/gvfs = 1252686313
+    },
+  ...
+},
+2345 = {
+  status = {
+    server = 1
+    },
+  title = {
+    plugin/id3v2 = "Some other title"
+    },
+  lmod = {
+    plugin/gvfs = 1252672341
+    },
+  ...
+}, ...
+}</pre>
+|}
+
+====Cluster by album and get some info====
+{|
+|-
+| Call 
+| <pre>xmmsc_coll_query (universe,
+{
+  "_type" = "cluster-dict",
+  "cluster-by" = "album",
+  "data" = {
+    "_type" = "organize"
+    "tracks" = { "_type" = "count" }
+    "duration" = { "_type" = "metadata", "keys" = ("duration"), "get" = ("value"), "aggregate" = "sum"Â }
+    "titles" = { "_type" = "metadata", "keys" = ("title"), "get" = ("value"), "aggregate" = "list"Â }
+  }
+})</pre>
+|-
+| Result
+| <pre>
+{
+  "OK Computer" = {
+    "duration" = 3207806, 
+    "tracks" = 12,
+    "titles" = ("Exit Music (For a Film)", "Karma Police", "Let Down", "No Surprises", "Fitter Happier",
+                "Airbag", "Electioneering", "Climbing Up the Walls", "Subterranean Homesick Alien",
+                "Paranoid Android", "The Tourist", "Lucky")
+  },
+  "The Illusion of Safety" = {
+    "duration" = 2308120,
+    "tracks" = 13,
+    "titles" = ("So Strange I Remember You", "Where Idols Once Stood", "A Subtle Dagger", "Deadbolt",
+                "Kill Me Quickly", "The Red Death", "Betrayal Is a Symptom", "To Awake and Avenge the Dead",
+                "A Living Dance Upon Dead Minds", "Trust", "The Beltsville Crucible", "In Years to Come",
+                "See You in the Shallows")
+  },
+  ...
+}
+
+</pre>
+|}
+
+==Try it out yourself==
+The code is now pretty stable, and you can try out coll2 together with S4 by using the s4coll2 branch from the xmms2-cippo git repository. There is also a simple Proof-of-Concept client for coll2 called query for everyone to play around with.
