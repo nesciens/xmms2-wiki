@@ -1,0 +1,16 @@
+__NOEDITSECTION__
+===={{{name}}}====
+
+{|
+|-
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Type value
+| style="vertical-align:top;" | <code>{{{type}}}</code>
+|-
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Description
+| style="vertical-align:top;" |
+{{{result}}}
+|-
+! style="text-align:left; padding-right: 20px; vertical-align:top;" | Attributes
+| style="vertical-align:top;" |
+{{{attributes}}}
+|}
