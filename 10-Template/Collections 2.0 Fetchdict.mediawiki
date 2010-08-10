@@ -8,7 +8,7 @@ __NOEDITSECTION__
 |-
 ! style="text-align:left; padding-right: 20px; vertical-align:top;" | Description
 | style="vertical-align:top;" |
-{{{result}}}
+{{{desc}}}
 |-
 ! style="text-align:left; padding-right: 20px; vertical-align:top;" | Attributes
 | style="vertical-align:top;" |
