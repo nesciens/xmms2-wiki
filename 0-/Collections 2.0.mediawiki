@@ -246,4 +246,4 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 |}
 
 ==Try it out yourself==
-The code is now pretty stable, and you can try out coll2 together with S4 by using the s4coll2 branch from the xmms2-cippo git repository. There is also a simple Proof-of-Concept client for coll2 called query for everyone to play around with.
+The code is now pretty stable, and you can try out coll2 together with S4 by using the s4coll2 branch from the xmms2-cippo git repository. There is also a simple Proof-of-Concept client for coll2 called query for everyone to play around with. Note that this will convert your old database to S4 and move it to {old-path}.obsolete.
