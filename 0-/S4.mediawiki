@@ -1,0 +1,158 @@
+S4 is an attempt to create a new database backend for XMMS2. It lives in the s4 git repository, and you can find a version of XMMS2 with S4 and [[Collections 2.0]] in the xmms2-cippo repository (the s4coll2 branch).
+
+==Design==
+The XMMS2 media library does not map very well to a relational database. Every song can have a variable number of attributes, and they can be specific to just one song. That means the database can not be normalized the way you normally do with a relational database. The way it is handled with SQlite for XMMS2 is that a table called Media with the format {id, key, value, source} is created, and every attribute a song has is stored in there. This will obviously lead to a lot of duplication as every song by the artist Foobar will have {id, "artist", "Foobar", "plugin/id3v2"} set. S4 was designed to remove some of this redundancy and make a database optimized for XMMS2.
+
+The basic structure in the S4 database is the entry. An entry maps to a song in XMMS2. An entry can have a variable number of attributes, but only a single key (that would be the song id in XMMS2).The structure looks something like this:
+<pre>
+key: "song_id", 1  -- The key is actually a key and a value
+attributes:
+  "title", "Two-Headed Boy", "plugin/id3v2"            -- Every attribute has a key, a value and a source
+  "artist", "Neurtal Milk Hotel", "plugin/id3v2"       -- There can also be attributes with the same key
+  "artist", "Neutral Milk Hotel", "client/xmms2-nycli" -- but different value and/or source.
+</pre>
+But how does this remove redundancy? There is still one artist attribute per song, but behind the scene S4 stores equal strings only once. There is still some redundancy in that the three pointers to the key, value and source are duplicated, but the data they point to are shared.
+
+To speed up queries, S4 also provides indexes. By default there is only an index on the entry key, so in the above example searching for "song_id" and a value would be fast, while searching for "artist", or any other attribute would mean that all entries would have to be searched. The user may create indexes on any attribute, for example "artist", "title" or "album". XMMS2 creates indexes on "url" and "status" by default, because they are searched for a lot and need to be fast. Using an index is an O(log (n)) operation, where n is the number of entries in the index, while searching without an index is an O(n log (m)) operation, where n is the number of entries and m the maximum number of attributes an entry has (this is actually only true if there is one attribute with the key that is being searched for, if there are several attributes with the same key it will be slower).
+
+==API==
+The main API for S4 consists of just six calls
+<pre>
+s4_t* s4_open  (const char *filename, const char **indexes, int flags);
+int   s4_close (s4_t *s4);
+void  s4_sync  (s4_t *s4);
+int   s4_add   (s4_t *s4,
+                const char *key_a, const s4_val_t *val_a,
+                const char *key_b, const s4_val_t *val_b,
+                const char *source);
+int   s4_del   (s4_t *s4,
+                const char *key_a, const s4_val_t *val_a,
+                const char *key_b, const s4_val_t *val_b,
+                const char *source);
+
+s4_resultset_t *s4_query (s4_t *s4, s4_fetchspec_t *fs, s4_condition_t *cond);
+</pre>
+There is also support functions to create conditions, fetch specification, source preferences and other structures needed for the querying. For more information on the different functions look at the doxygen documentation.
+
+===Querying===
+Perhaps the most interesting function is <code>s4_query</code>. It takes an S4 handle, a fetch specification and a condition and returns the data as the fetch specification requested for the entries matching the condition. The fetch specification is basically a list of (key, source-preference) pairs. It fetches the key using the attribute (or attributes) with the highest priority source according to the source-preference. If the key is NULL it will fetch everything.
+
+==Internal Design==
+Internally S4 consists of three parts: memory database, log writer and file reader/writer. On startup S4 reads in the data from the file and loads it into the memory database. The requested indexes are created (no indexes are saved on disk, only data) and it is ready to work. Whenever the user adds or deletes something from the database the copy in memory is modified to reflect this and a log entry is written to disk. The log can be used later to redo everything since the last time we wrote everything to disk. The log is implemented as a circular file, whenever we run out of space the database is written to disk before work can be resumed.
+
+===Memory database===
+This can be thought of as the working copy of the database. It also adds indexes to speed up searching. The basic structures are the entry defined as
+<pre>
+typedef struct {
+        const char *key;     /* The key */
+        const s4_val_t *val; /* and value of the entry (unique) */
+        int size, alloc;     /* The used and allocated size of the attribute list */
+        GStaticMutex lock;    
+
+        entry_data_t *data;  /* The attribute list, resized with realloc whenever size > alloc */
+} entry_t;
+
+/* One of those per attribute in the attribute list */
+typedef struct {
+        const char *key;
+        const s4_val_t *val;
+        const char *src;
+} entry_data_t;
+</pre>
+
+===Log===
+The log is responsible for redoing any changes done after the last time the database was written to disk. Normally there will be nothing to redo when opening a database, but if the database was closed abruptly (for example if the program using the database crashed) there might be some changes not yet in the on-disk database. The log does not protect fully against power loss, because it just uses fflush (forcing the data to the kernel) but not sync (forcing the data on disk). This is because sync takes much longer than fflush. The FS will normally write data to the disk every 30. second (this depends on your system settings) and you will not loose more data than what was changed in those 30 seconds.
+
+As have already been mentioned the log file is a circular file. The log size is defined in log.c as LOG_SIZE and is currently set to 2 MB. The log file will write log-entries until it hits then end, then it will write a special wrap-around log-entry and start writing at the beginning again. The log will never overwrite log-entries that contains data that has not been written to the on-disk database yet. A log-entry is defined as
+<pre>
+struct log_header {
+        log_type_t type;  /* The type, can be add, delete or wrap-around */
+        log_number_t num; /* The log number, this contains the offset into the log file
+                           * and the round number (how many times the log file has been wrapped around)*/
+        int32_t ka_len;   /* The length of the key_a string */
+        int32_t va_len;   /* The length of the value_a string, or -1 if it is an integer */
+        int32_t kb_len;   /* The length of the key_b string */
+        int32_t vb_len;   /* The length of the value_b string, or -1 if it is an integer */
+        int32_t s_len;    /* The length of the source string */
+};
+</pre>
+If it is an add or delete log-entry it is followed by the key_a, value_a, key_b, value_b and source.
+
+===On-disk database===
+The on-disk database has a very simple format. This is to make code reading and writing it simple and thus less likely of having bugs. The database-file starts with this header
+<pre>
+#define S4_MAGIC ("s4db")
+#define S4_MAGIC_LEN (4)
+#define S4_VERSION 1
+
+typedef struct {
+        char magic[S4_MAGIC_LEN];
+        int32_t version;
+        unsigned char uuid[16];
+        log_number_t last_checkpoint;
+} s4_header_t;
+</pre>
+The file starts with a magic string so we can check if it actually is an S4 database, followed by a version number to find out what format it is using. Then comes an UUID (this is randomly created when the database is created, and can be used to identify a database without using the filename). Last is the number of the last log-entry written when this file was written to disk. This can be used to determine if the log contains new data added after this file was written.
+
+After the header a list of strings follow. They have the following format:
+<pre>
+/* This structure is just to explain, it does not really exists.
+ * Instead the id is written first, then the len and last the string 
+ */
+struct {
+        int32_t id;     /* The id of the string (used later) */
+        int32_t len;    /* The length of the string in bytes */
+        char data[len]; /* The actual string. len bytes */
+}
+</pre>
+To indicate that there are no more strings 0xffffffff (-1) is written instead of an id.
+
+After the strings the actual data comes. The data consists of quintuples of int32_ts defined like this
+<pre>
+typedef struct {
+        int32_t key_a, val_a;
+        int32_t key_b, val_b;
+        int32_t src;
+} s4_intpair_t;
+</pre>
+where the key_a and val_a is the key and value of the entry, while key_b, val_b and src is from the attribute. key_a, key_b and src are strings, and contains one of the string-ids defined earlier. val_a and val_b might be string or integers. If they are strings they too contain string-ids, but if they are integers they contain the integer value, and the corresponding key is negated. So if val_a was the integer with the value 10 and key_a equaled "song_id", key_a would become -string_id("song_id") and val_a 10.
+
+Here is a short example. Take the database
+<pre>
+key = "song_id"
+value = 1
+attributes:
+  "title"  = "Song A"   (source "plugin/id3v2")
+  "artist" = "Artist A" (source "plugin/id3v2")
+
+key = "song_id"
+value = 2
+attributes:
+  "title"  = "Song B"   (source "plugin/id3v2")
+  "artist" = "Artist A" (source "plugin/id3v2")
+</pre>
+which could result in the following file
+<pre>
+(Header)
+magic:           "midb"
+version:         1
+uuid:            a083753e-cfb5-49a7-b0de-2ca8fe2ee016
+last_checkpoint: 200
+
+(Strings)
+1, 7, "song_id"
+2, 5, "title"
+3, 6, "artist"
+4, 6, "Song A"
+5, 8, "Artist A"
+6, 6, "Song B"
+7, 12, "plugin/id3v2"
+
+-1
+
+(Pairs)
+(-1, 1, 2, 4, 7)
+(-1, 1, 3, 5, 7)
+(-1, 2, 2, 6, 7)
+(-1, 2, 3, 5, 7)
+</pre>
