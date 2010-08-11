@@ -81,41 +81,39 @@ If it is an add or delete log-entry it is followed by the key_a, value_a, key_b,
 ===On-disk database===
 The on-disk database has a very simple format. This is to make code reading and writing it simple and thus less likely of having bugs. The database-file starts with this header
 <pre>
-#define S4_MAGIC ("s4db")
-#define S4_MAGIC_LEN (4)
-#define S4_VERSION 1
-
-typedef struct {
-        char magic[S4_MAGIC_LEN];
-        int32_t version;
-        unsigned char uuid[16];
-        log_number_t last_checkpoint;
-} s4_header_t;
+Offset Bytes  Description
+0       4     Magic number
+4       4     Version number
+8      16     UUID
+24      4     Last logpoint   
 </pre>
-The file starts with a magic string so we can check if it actually is an S4 database, followed by a version number to find out what format it is using. Then comes an UUID (this is randomly created when the database is created, and can be used to identify a database without using the filename). Last is the number of the last log-entry written when this file was written to disk. This can be used to determine if the log contains new data added after this file was written.
+The file starts with a magic string ("s4db") so we can check if it actually is an S4 database, followed by a version number to find out what format it is using. Then comes an UUID (this is randomly created when the database is created, and can be used to identify a database without using the filename). Last is the number of the last log-entry written when this file was written to disk. This can be used to determine if the log contains new data added after this file was written.
 
 After the header a list of strings follow. They have the following format:
 <pre>
-/* This structure is just to explain, it does not really exists.
- * Instead the id is written first, then the len and last the string 
- */
-struct {
-        int32_t id;     /* The id of the string (used later) */
-        int32_t len;    /* The length of the string in bytes */
-        char data[len]; /* The actual string. len bytes */
-}
+(Offsets relative to the end of the last string
+ or the header if this is the first string)
+
+Offset Bytes  Description
+0       4     String ID
+4       4     String length
+8       x     The actual string
 </pre>
 To indicate that there are no more strings 0xffffffff (-1) is written instead of an id.
 
 After the strings the actual data comes. The data consists of quintuples of int32_ts defined like this
 <pre>
-typedef struct {
-        int32_t key_a, val_a;
-        int32_t key_b, val_b;
-        int32_t src;
-} s4_intpair_t;
+(Offsets relative to the previous data entry,
+ or the end of the strings if this is the first data)
+
+Offset Bytes  Description
+ 0     4      String ID of entry key
+ 4     4      String ID or integer value of entry value
+ 8     4      String ID of attribute key
+16     4      String ID or integer value of attribute value
+20     4      String ID of attribute source
 </pre>
-where the key_a and val_a is the key and value of the entry, while key_b, val_b and src is from the attribute. key_a, key_b and src are strings, and contains one of the string-ids defined earlier. val_a and val_b might be string or integers. If they are strings they too contain string-ids, but if they are integers they contain the integer value, and the corresponding key is negated. So if val_a was the integer with the value 10 and key_a equaled "song_id", key_a would become -string_id("song_id") and val_a 10.
+If the entry value is an integer, the entry key string ID is negated. If the attribute value is an integer value, the attribute key string ID is negated.
 
 Here is a short example. Take the database
 <pre>
