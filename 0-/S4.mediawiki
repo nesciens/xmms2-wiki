@@ -247,5 +247,14 @@ s4> $first_track = @res[0, 1];         # Puts the value in row 0, column 1 in fi
 s4> $first_track;
 list [tracknr 10 plugin/id3v2]
 
+s4> $ids = .query song_id, album album="Wrong Album Title"[_, 0];
+s4> .add $ids, album "Right Album Title" "client"; # Adds (album, "Right Album Title", "client") to all the songs found in the above query
+
+s4> .set;                          # Prints the value of all configuration variables
+default_source = s4
+s4> .set default_source "server";  # Sets the configuration variable "default_source" to "server"
+s4> .set;
+default_source = server
+
 s4> .exit;
 </pre>
