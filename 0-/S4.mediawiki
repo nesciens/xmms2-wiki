@@ -156,3 +156,98 @@ last_checkpoint: 200
 (-1, 2, 2, 6, 7)
 (-1, 2, 3, 5, 7)
 </pre>
+
+==CLI Tool==
+There is a simple command-line tool for S4, named "s4", that can be used to examine an S4 database without using XMMS2. It supports querying, adding and deleting properties. There are five kinds of statements in the tool: statements with no return value, statements that return a condition, statements that return a fetch specification, statements that returns a result and statements that returns a list. If you write ".help;" in the tool you get the following list of statements
+<pre>
+All statements must end with a semicolon
+
+Statements with no value:
+.add <list>, <list>   - For every (key, val) from the first list it adds
+                        the attributes (key, val, src) from the second list
+.del <list>, <list>   - For every (key, val) from the first list it deletes
+                        the attributes (key, val, src) from the second list
+.exit                 - Exit the program
+.help                 - Prints this help
+.set key value        - Sets the option key to val
+.set key              - Shows the value of the key
+.set                  - Shows the value of all keys
+.vars                 - Prints all bound variables
+
+?var = <cond>         - Assigns cond to the condition variable var
+%var = <fetch>        - Assigns fetch to the fetch variable var
+@var = <result>       - Assigns var to something returning result
+$var = <list>         - Assigns the list to the list variable var
+
+Conditions (<cond>):
+?var                  - Returns the condition bound to var
+key = value           - Matches all entries where key equals value
+key ~ value           - Matches all entries where key matches value
+key < value           - Matches all entries where key is smaller than value
+key > value           - Matches all entries where key is greater than value
+= value               - Matches all entries where one or more keys equals value
+~ value               - Matches all entries where one or more keys matches value
+< value               - Matches all entries where one or more keys is smaller than value
+> value               - Matches all entries where one or more keys is greater than value
++key                  - Matches all entries that has key
++                     - Matches everything
+!cond                 - Matches everything cond does not match
+cond1 & cond2         - Matches if both cond1 and cond2 matches
+cond1 | cond2         - Matches if cond1 or cond2 matches
+
+Fetch specification (<fetch>):
+%var                  - Returns the fetch spec bound to var
+[key1, .., keyn]      - Fetches keys 1 through n from matching entries
+key                   - Fetches key from matching entries
+_                     - Fetches everything from matching entries
+
+Results (<result>):
+.query <fetch> <cond> - Queries the database, returns a result
+
+@var                  - Returns the result bound to var
+
+Lists (<list>):
+$var                  - Returns the list bound to the variable var
+<result>[row, col]    - Returns the list at (row,col). If either row
+                        or col is _, it will take all rows or cols
+[key val src, ...]    - Creates a list
+[key val, ...]        - Creates a list where source is set to default_source
+</pre>
+So an example session might be something like this (everything after the # are comments and not in the actual session)
+<pre>
+s4> ?cond = album="temple of the dog"; # Creates a condition and assigns it to the condition variable cond.
+s4> %fetch = [title, tracknr];         # Creates a fetch specification and assigns it to the variable fetch.
+s4> @res = .query %fetch ?cond;        # Queries the database with the condition and fetchspec above and saves the result in res
+s4> $titles = @res[_, 0];              # Creates a list of all the titles (column 0)
+s4> $tracknrs = @res[_, 1];            # Creates a list of all the tracknrs (column 1)
+s4> $titles;                           # Prints the value in titles
+list [title "Your Saviour" plugin/id3v2, title "Wooden Jesus" plugin/id3v2, title "Times of Trouble" plugin/id3v2,
+title "Say Hello 2 Heaven" plugin/id3v2, title "Reach Down" plugin/id3v2, title "Pushin Forward Back" plugin/id3v2,
+title "Hunger Strike" plugin/id3v2, title "Four Walled World" plugin/id3v2, title "Call Me a Dog" plugin/id3v2,
+title "All Night Thing" plugin/id3v2]
+
+s4> $tracknrs;                         # Prints the value in tracknrs
+list [tracknr 8 plugin/id3v2, tracknr 7 plugin/id3v2, tracknr 6 plugin/id3v2, tracknr 1 plugin/id3v2, tracknr 2 plugin/id3v2,
+tracknr 4 plugin/id3v2, tracknr 3 plugin/id3v2, tracknr 9 plugin/id3v2, tracknr 5 plugin/id3v2, tracknr 10 plugin/id3v2]
+
+s4> $everything = @res[_, _];          # Puts everything in the list everything
+s4> $everything;                       # Prints the value in everything
+list [tracknr 8 plugin/id3v2, title "Your Saviour" plugin/id3v2, tracknr 7 plugin/id3v2, title "Wooden Jesus" plugin/id3v2,
+tracknr 6 plugin/id3v2, title "Times of Trouble" plugin/id3v2, tracknr 1 plugin/id3v2, title "Say Hello 2 Heaven" plugin/id3v2,
+tracknr 2 plugin/id3v2, title "Reach Down" plugin/id3v2, tracknr 4 plugin/id3v2, title "Pushin Forward Back" plugin/id3v2,
+tracknr 3 plugin/id3v2, title "Hunger Strike" plugin/id3v2, tracknr 9 plugin/id3v2, title "Four Walled World" plugin/id3v2,
+tracknr 5 plugin/id3v2, title "Call Me a Dog" plugin/id3v2, tracknr 10 plugin/id3v2, title "All Night Thing" plugin/id3v2]
+
+s4> $first_title = @res[0, 0];         # Puts the value in row 0, column 0 in first_title
+s4> $first_title;
+list [title "All Night Thing" plugin/id3v2]
+
+s4> @res[0, 0];                        # It doesn't have to go through a variable
+list [title "All Night Thing" plugin/id3v2]
+
+s4> $first_track = @res[0, 1];         # Puts the value in row 0, column 1 in first_track
+s4> $first_track;
+list [tracknr 10 plugin/id3v2]
+
+s4> .exit;
+</pre>
