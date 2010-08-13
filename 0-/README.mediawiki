@@ -34,8 +34,7 @@ See COPYING for details. (for the ones who don't care about details: LGPL)
 
 ==CREDITS==
 
-See the AUTHORS file. (for the people not in AUTHORS: like everyone but you - help and you will be included as well)
-
+See the AUTHORS file. [http://www.merchantos.com/ pos software] (for the people not in AUTHORS: like everyone but you - help and you will be included as well)
 
 ==HELPING==
 
