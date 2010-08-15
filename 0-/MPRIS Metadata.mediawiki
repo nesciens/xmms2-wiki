@@ -1,13 +1,16 @@
 == MPRIS v2.0 metadata guidelines ==
 
-These guidelines include a subset of the xesam ontology, namely xesam:Audio and xesam:Video.
+These guidelines include a subset of the xesam ontology, namely xesam:Audio and a few fields from the xesam convenience ontology.
 
 === Fields ===
 
 ==== MPRIS-specific ====
 
 ===== mpris:trackid =====
+(string) The mpris:trackid attribute must always be present. It uniquely identifies the track within the scope of the MPRIS tracklist.
+
 ===== mpris:length =====
+(int64) Length of the track, in microseconds
 
 ==== xesam:Video ====
 
@@ -85,7 +88,13 @@ These guidelines include a subset of the xesam ontology, namely xesam:Audio and 
 ===== xesam:trackPeakGain =====
 ===== xesam:version =====
 
-==== Video ====
+==== Xesam convenience ontology ====
+
+===== xesam:musicBrainzAlbumArtistID =====
+===== xesam:musicBrainzAlbumID =====
+===== xesam:musicBrainzArtistID =====
+===== xesam:musicBrainzFingerprint =====
+===== xesam:musicBrainzTrackID =====
 
 == MPRIS v1.0 Metadata guidelines ==
 
