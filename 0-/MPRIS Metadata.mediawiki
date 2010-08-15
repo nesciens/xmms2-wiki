@@ -1,4 +1,11 @@
+== MPRIS v2.0 metadata guidelines ==
+
+In progress...
+
+== MPRIS v1.0 Metadata guidelines ==
+
 Below is a proposed, minimal list of standard field names with a description of intended use. No single or group of field names is mandatory.
+These recommendations are intended for implementations of the MPRIS v1.0
 
 === Informational ===
 
