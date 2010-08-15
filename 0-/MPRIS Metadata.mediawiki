@@ -19,7 +19,7 @@ String: A unique identity for this track within the context of an MPRIS object (
 ===== mpris:artUrl =====
 URI: The location of an image representing the track or album.
 
-==== Xesam properties ====
+==== Common Xesam properties ====
 
 Common audio properties from the Xesam specification:
 
