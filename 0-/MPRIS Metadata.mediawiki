@@ -1,6 +1,91 @@
 == MPRIS v2.0 metadata guidelines ==
 
-In progress...
+These guidelines include a subset of the xesam ontology, namely xesam:Audio and xesam:Video.
+
+=== Fields ===
+
+==== MPRIS-specific ====
+
+===== mpris:trackid =====
+===== mpris:length =====
+
+==== xesam:Video ====
+
+===== xesam:album =====
+===== xesam:albumArtist =====
+===== xesam:albumGain =====
+===== xesam:albumPeakGain =====
+===== xesam:albumTrackCount =====
+===== xesam:artist =====
+===== xesam:asText =====
+===== xesam:audioBPM =====
+===== xesam:audioBitrate =====
+===== xesam:audioChannels =====
+===== xesam:audioCodec =====
+===== xesam:audioCodecType =====
+===== xesam:audioSampleBitDepth =====
+===== xesam:audioSampleCount =====
+===== xesam:audioSampleDataType =====
+===== xesam:audioSampleRate =====
+===== xesam:author =====
+===== xesam:charset =====
+===== xesam:comment =====
+===== xesam:composer =====
+===== xesam:compressionLevel =====
+===== xesam:contains =====
+===== xesam:contentComment =====
+===== xesam:contentCreated =====
+===== xesam:contentKeyword =====
+===== xesam:contentModified =====
+===== xesam:contributor =====
+===== xesam:copyright =====
+===== xesam:creator =====
+===== xesam:depends =====
+===== xesam:derivedFrom =====
+===== xesam:description =====
+===== xesam:discNumber =====
+===== xesam:disclaimer =====
+===== xesam:fingerprint =====
+===== xesam:formatSubtype =====
+===== xesam:generator =====
+===== xesam:generatorOptions =====
+===== xesam:genre =====
+===== xesam:id =====
+===== xesam:isContentEncrypted =====
+===== xesam:isEncrypted =====
+===== xesam:keyword =====
+===== xesam:language =====
+===== xesam:legal =====
+===== xesam:license =====
+===== xesam:licenseType =====
+===== xesam:links =====
+===== xesam:lyricist =====
+===== xesam:maintainer =====
+===== xesam:md5Hash =====
+===== xesam:mediaBitrate =====
+===== xesam:mediaCodec =====
+===== xesam:mediaCodecType =====
+===== xesam:mediaDuration =====
+===== xesam:mimeType =====
+===== xesam:performer =====
+===== xesam:related =====
+===== xesam:sampleBitDepth =====
+===== xesam:sampleConfiguration =====
+===== xesam:sampleDataType =====
+===== xesam:setCount =====
+===== xesam:setRate =====
+===== xesam:sha1Hash =====
+===== xesam:size =====
+===== xesam:subject =====
+===== xesam:summary =====
+===== xesam:targetQuality =====
+===== xesam:title =====
+===== xesam:trackGain =====
+===== xesam:trackNumber =====
+===== xesam:trackPeakGain =====
+===== xesam:version =====
+
+==== Video ====
 
 == MPRIS v1.0 Metadata guidelines ==
 
