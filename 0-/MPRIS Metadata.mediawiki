@@ -1,100 +1,88 @@
 == MPRIS v2.0 metadata guidelines ==
 
-These guidelines include a subset of the xesam ontology, namely xesam:Audio and a few fields from the xesam convenience ontology.
+It is recommended that xesam metadata fields (prefixed by "xesam:") are used wherever possible.  This allows for natural extension of the specification in a standard way.
+
+There are also a few MPRIS-specific fields that are intended for interaction with other methods in the specification.  These are prefixed with "mpris:".
+
+Any metadata fields that are not part of a xesam ontology or defined in this document should be prefixed with a different tag, such as "totem:" or "kde:".
 
 === Fields ===
 
 ==== MPRIS-specific ====
 
 ===== mpris:trackid =====
-(string) The mpris:trackid attribute must always be present. It uniquely identifies the track within the scope of the MPRIS tracklist.
+String: A unique identity for this track within the context of an MPRIS object (eg: tracklist).
 
 ===== mpris:length =====
-(int64) Length of the track, in microseconds
+64-bit integer: The duration of the track in microseconds.
 
-==== xesam:Video ====
+===== mpris:artUrl =====
+URI: The location of an image representing the track or album.
+
+==== Xesam properties ====
+
+Common audio properties from the Xesam specification:
 
 ===== xesam:album =====
+String: The album name.
+
 ===== xesam:albumArtist =====
-===== xesam:albumGain =====
-===== xesam:albumPeakGain =====
-===== xesam:albumTrackCount =====
+List of strings: The album artist(s).
+
 ===== xesam:artist =====
+List of strings: The track artist(s).
+
 ===== xesam:asText =====
+String: The track lyrics.
+
 ===== xesam:audioBPM =====
-===== xesam:audioBitrate =====
-===== xesam:audioChannels =====
-===== xesam:audioCodec =====
-===== xesam:audioCodecType =====
-===== xesam:audioSampleBitDepth =====
-===== xesam:audioSampleCount =====
-===== xesam:audioSampleDataType =====
-===== xesam:audioSampleRate =====
-===== xesam:author =====
-===== xesam:charset =====
+Integer: The speed of the music, in beats per minute.
+
+===== xesam:autoRating =====
+Float: An automatically-generated rating, based on things such as how often it has been played.
+
+[FIXME: what scale?  0.0 to 1.0?]
+
 ===== xesam:comment =====
+List of strings: A (list of) freeform comment(s).
+
 ===== xesam:composer =====
-===== xesam:compressionLevel =====
-===== xesam:contains =====
-===== xesam:contentComment =====
+List of strings: The composer(s) of the track.
+
 ===== xesam:contentCreated =====
-===== xesam:contentKeyword =====
-===== xesam:contentModified =====
-===== xesam:contributor =====
-===== xesam:copyright =====
-===== xesam:creator =====
-===== xesam:depends =====
-===== xesam:derivedFrom =====
-===== xesam:description =====
+Date/Time: When the track was created.  Usually only the year component will be useful.
+
 ===== xesam:discNumber =====
-===== xesam:disclaimer =====
-===== xesam:fingerprint =====
-===== xesam:formatSubtype =====
-===== xesam:generator =====
-===== xesam:generatorOptions =====
+Integer: The disc number on the album that this track is from.
+
+===== xesam:firstUsed =====
+Date/Time: When the track was first played.
+
 ===== xesam:genre =====
-===== xesam:id =====
-===== xesam:isContentEncrypted =====
-===== xesam:isEncrypted =====
-===== xesam:keyword =====
-===== xesam:language =====
-===== xesam:legal =====
-===== xesam:license =====
-===== xesam:licenseType =====
-===== xesam:links =====
+List of strings: The genre(s) of the track.
+
+===== xesam:lastUsed =====
+Date/Time: When the track was last played.
+
 ===== xesam:lyricist =====
-===== xesam:maintainer =====
-===== xesam:md5Hash =====
-===== xesam:mediaBitrate =====
-===== xesam:mediaCodec =====
-===== xesam:mediaCodecType =====
-===== xesam:mediaDuration =====
-===== xesam:mimeType =====
-===== xesam:performer =====
-===== xesam:related =====
-===== xesam:sampleBitDepth =====
-===== xesam:sampleConfiguration =====
-===== xesam:sampleDataType =====
-===== xesam:setCount =====
-===== xesam:setRate =====
-===== xesam:sha1Hash =====
-===== xesam:size =====
-===== xesam:subject =====
-===== xesam:summary =====
-===== xesam:targetQuality =====
+List of strings: The lyricist(s) of the track.
+
 ===== xesam:title =====
-===== xesam:trackGain =====
+String: The track title.
+
 ===== xesam:trackNumber =====
-===== xesam:trackPeakGain =====
-===== xesam:version =====
+String: The track number on the album disc.
 
-==== Xesam convenience ontology ====
+===== xesam:url =====
+URI: The URL of the file.  Local files use the file:// schema.
 
-===== xesam:musicBrainzAlbumArtistID =====
-===== xesam:musicBrainzAlbumID =====
-===== xesam:musicBrainzArtistID =====
-===== xesam:musicBrainzFingerprint =====
-===== xesam:musicBrainzTrackID =====
+===== xesam:useCount =====
+Integer: The number of times the track has been played.
+
+===== xesam:userRating =====
+Float: A user-specified rating.
+
+[FIXME: what scale?  0.0 to 1.0?]
 
 == MPRIS v1.0 Metadata guidelines ==
 
