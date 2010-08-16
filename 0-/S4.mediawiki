@@ -176,27 +176,42 @@ Statements with no value:
 %var = <fetch>        - Assigns fetch to the fetch variable var
 @var = <result>       - Assigns var to something returning result
 $var = <list>         - Assigns the list to the list variable var
+#var = <pref>         - Assigns the pref to the souce preference variable var
 
 Conditions (<cond>):
 ?var                  - Returns the condition bound to var
-key = value           - Matches all entries where key equals value
-key ~ value           - Matches all entries where key matches value
-key < value           - Matches all entries where key is smaller than value
-key > value           - Matches all entries where key is greater than value
-= value               - Matches all entries where one or more keys equals value
-~ value               - Matches all entries where one or more keys matches value
-< value               - Matches all entries where one or more keys is smaller than value
-> value               - Matches all entries where one or more keys is greater than value
-+key                  - Matches all entries that has key
-+                     - Matches everything
 !cond                 - Matches everything cond does not match
 cond1 & cond2         - Matches if both cond1 and cond2 matches
 cond1 | cond2         - Matches if cond1 or cond2 matches
 
+Filter conditions
+key = value           - Matches all entries where key equals value
+key ~ value           - Matches all entries where key matches value
+key < value           - Matches all entries where key is smaller than value
+key > value           - Matches all entries where key is greater than value
+key ^ token           - Matches all entries where key has a token equal to token
+key != value          - Matches all entries where key does not equal value
+key <= value          - Matches all entries where key is smaller or equal to value
+key >= value          - Matches all entries where key is greater or equal to value
+= value               - Matches all entries where one or more keys equals value
+~ value               - Matches all entries where one or more keys matches value
+< value               - Matches all entries where one or more keys is smaller than value
+> value               - Matches all entries where one or more keys is greater than value
+^ token               - Matches all entries where one or more keys has token
+!= value              - Matches all entries where one or more keys does not equal value
+<= value              - Matches all entries where one or more keys is smaller or equal to value
+>= value              - Matches all entries where one or more keys is greater or equal to value
++key                  - Matches all entries that has key
++                     - Matches everything
+<pref> may be added after all filter conditions to use a source preference to only match
+against the highest priority source in the source preference
+
 Fetch specification (<fetch>):
 %var                  - Returns the fetch spec bound to var
-[key1, .., keyn]      - Fetches keys 1 through n from matching entries
+(key1, ..., keyn)     - Fetches keys 1 through n from matching entries
+(key1 <pref>,...)     - Fetches key1 using the source preference given
 key                   - Fetches key from matching entries
+key <pref>            - Fetches key using the source preference given
 _                     - Fetches everything from matching entries
 
 Results (<result>):
@@ -206,55 +221,187 @@ Results (<result>):
 
 Lists (<list>):
 $var                  - Returns the list bound to the variable var
-<result>[row, col]    - Returns the list at (row,col). If either row
-                        or col is _, it will take all rows or cols
+<result>{<rng>,<rng>} - Creates a list of the columns given by {row,col}.
+<result>{<rng>, key}  - Creates a list of the column where the column key
+                        equals key and the rows are in the range
 [key val src, ...]    - Creates a list
 [key val, ...]        - Creates a list where source is set to default_source
+
+Ranges (<rng>):
+start - stop          - Creates a range from start to stop (inclusive)
+      - stop          - Creates a range from 0 to stop
+start -               - Creates a range from start with no stop
+      -               - Creates a range from 0 with no stop
+
+Source preferences (<pref>):
+#var                  - Returns the source preference bound to var
+:src1:src2:...:srcn   - Creates a new source preference where src1 has the highest priority,
+                        src2 seconds highest and so on
+
+Shorthand:
+.q = .query
+.a = .add
+.d = .del
+.v = .vars
+.h = .help
+.? = .help
+.s = .set
+.e = .exit
 </pre>
 So an example session might be something like this (everything after the # are comments and not in the actual session)
 <pre>
 s4> ?cond = album="temple of the dog"; # Creates a condition and assigns it to the condition variable cond.
-s4> %fetch = [title, tracknr];         # Creates a fetch specification and assigns it to the variable fetch.
+s4> %fetch = (title, tracknr);         # Creates a fetch specification and assigns it to the variable fetch.
 s4> @res = .query %fetch ?cond;        # Queries the database with the condition and fetchspec above and saves the result in res
-s4> $titles = @res[_, 0];              # Creates a list of all the titles (column 0)
-s4> $tracknrs = @res[_, 1];            # Creates a list of all the tracknrs (column 1)
+s4> $titles = @res{-, 0};              # Creates a list of all the titles (column 0)
+s4> $tracknrs = @res{-, 1};            # Creates a list of all the tracknrs (column 1)
+s4> $tracknrs = @res{-, tracknr};      # The same as the line above, except using column-key indexing
 s4> $titles;                           # Prints the value in titles
-list [title "Your Saviour" plugin/id3v2, title "Wooden Jesus" plugin/id3v2, title "Times of Trouble" plugin/id3v2,
-title "Say Hello 2 Heaven" plugin/id3v2, title "Reach Down" plugin/id3v2, title "Pushin Forward Back" plugin/id3v2,
-title "Hunger Strike" plugin/id3v2, title "Four Walled World" plugin/id3v2, title "Call Me a Dog" plugin/id3v2,
-title "All Night Thing" plugin/id3v2]
+[title=All Night Thing (plugin/id3v2),
+title=Call Me a Dog (plugin/id3v2),
+title=Four Walled World (plugin/id3v2),
+title=Hunger Strike (plugin/id3v2),
+title=Pushin Forward Back (plugin/id3v2),
+title=Reach Down (plugin/id3v2),
+title=Say Hello 2 Heaven (plugin/id3v2),
+title=Times of Trouble (plugin/id3v2),
+title=Wooden Jesus (plugin/id3v2),
+title=Your Saviour (plugin/id3v2)]
 
 s4> $tracknrs;                         # Prints the value in tracknrs
-list [tracknr 8 plugin/id3v2, tracknr 7 plugin/id3v2, tracknr 6 plugin/id3v2, tracknr 1 plugin/id3v2, tracknr 2 plugin/id3v2,
-tracknr 4 plugin/id3v2, tracknr 3 plugin/id3v2, tracknr 9 plugin/id3v2, tracknr 5 plugin/id3v2, tracknr 10 plugin/id3v2]
+[tracknr=10 (plugin/id3v2),
+tracknr=5 (plugin/id3v2),
+tracknr=9 (plugin/id3v2),
+tracknr=3 (plugin/id3v2),
+tracknr=4 (plugin/id3v2),
+tracknr=2 (plugin/id3v2),
+tracknr=1 (plugin/id3v2),
+tracknr=6 (plugin/id3v2),
+tracknr=7 (plugin/id3v2),
+tracknr=8 (plugin/id3v2)]
 
-s4> $everything = @res[_, _];          # Puts everything in the list everything
+s4> $everything = @res{-, -};          # Puts everything in the list everything
 s4> $everything;                       # Prints the value in everything
-list [tracknr 8 plugin/id3v2, title "Your Saviour" plugin/id3v2, tracknr 7 plugin/id3v2, title "Wooden Jesus" plugin/id3v2,
-tracknr 6 plugin/id3v2, title "Times of Trouble" plugin/id3v2, tracknr 1 plugin/id3v2, title "Say Hello 2 Heaven" plugin/id3v2,
-tracknr 2 plugin/id3v2, title "Reach Down" plugin/id3v2, tracknr 4 plugin/id3v2, title "Pushin Forward Back" plugin/id3v2,
-tracknr 3 plugin/id3v2, title "Hunger Strike" plugin/id3v2, tracknr 9 plugin/id3v2, title "Four Walled World" plugin/id3v2,
-tracknr 5 plugin/id3v2, title "Call Me a Dog" plugin/id3v2, tracknr 10 plugin/id3v2, title "All Night Thing" plugin/id3v2]
+[title=All Night Thing (plugin/id3v2),
+tracknr=10 (plugin/id3v2),
+title=Call Me a Dog (plugin/id3v2),
+tracknr=5 (plugin/id3v2),
+title=Four Walled World (plugin/id3v2),
+tracknr=9 (plugin/id3v2),
+title=Hunger Strike (plugin/id3v2),
+tracknr=3 (plugin/id3v2),
+title=Pushin Forward Back (plugin/id3v2),
+tracknr=4 (plugin/id3v2),
+title=Reach Down (plugin/id3v2),
+tracknr=2 (plugin/id3v2),
+title=Say Hello 2 Heaven (plugin/id3v2),
+tracknr=1 (plugin/id3v2),
+title=Times of Trouble (plugin/id3v2),
+tracknr=6 (plugin/id3v2),
+title=Wooden Jesus (plugin/id3v2),
+tracknr=7 (plugin/id3v2),
+title=Your Saviour (plugin/id3v2),
+tracknr=8 (plugin/id3v2)]
 
-s4> $first_title = @res[0, 0];         # Puts the value in row 0, column 0 in first_title
+s4> $first_title = @res{0, title};     # Puts the value in row 0, title column in first_title
 s4> $first_title;
-list [title "All Night Thing" plugin/id3v2]
+[title "All Night Thing" plugin/id3v2]
 
-s4> @res[0, 0];                        # It doesn't have to go through a variable
-list [title "All Night Thing" plugin/id3v2]
+s4> @res{0, title};                    # It doesn't have to go through a variable
+[title "All Night Thing" plugin/id3v2]
 
-s4> $first_track = @res[0, 1];         # Puts the value in row 0, column 1 in first_track
+s4> $first_track = @res{0, tracknr};   # Puts the value in row 0, tracknr column in first_track
 s4> $first_track;
-list [tracknr 10 plugin/id3v2]
+[tracknr 10 plugin/id3v2]
 
-s4> $ids = .query song_id, album album="Wrong Album Title"[_, 0];
+s4> $ids = .query song_id album="Wrong Album Title"{-, 0};
 s4> .add $ids, album "Right Album Title" "client"; # Adds (album, "Right Album Title", "client") to all the songs found in the above query
 
-s4> .set;                          # Prints the value of all configuration variables
+s4> .set;                              # Prints the value of all configuration variables
 default_source = s4
+
+print_mode = verbose
+Possible values:
+- verbose
+- pretty
+- compact
+
 s4> .set default_source "server";  # Sets the configuration variable "default_source" to "server"
-s4> .set;
+s4> .set default_source;
 default_source = server
 
-s4> .exit;
+# The default print mode is verbose. It prints a full "key=value (source)" for every column value
+s4> @res;
+ row  |  col  | data
+    0 |     0 | title=All Night Thing (plugin/id3v2)
+      |     1 | tracknr=10 (plugin/id3v2)
+    1 |     0 | title=Call Me a Dog (plugin/id3v2)
+      |     1 | tracknr=5 (plugin/id3v2)
+    2 |     0 | title=Four Walled World (plugin/id3v2)
+      |     1 | tracknr=9 (plugin/id3v2)
+    3 |     0 | title=Hunger Strike (plugin/id3v2)
+      |     1 | tracknr=3 (plugin/id3v2)
+    4 |     0 | title=Pushin Forward Back (plugin/id3v2)
+      |     1 | tracknr=4 (plugin/id3v2)
+    5 |     0 | title=Reach Down (plugin/id3v2)
+      |     1 | tracknr=2 (plugin/id3v2)
+    6 |     0 | title=Say Hello 2 Heaven (plugin/id3v2)
+      |     1 | tracknr=1 (plugin/id3v2)
+    7 |     0 | title=Times of Trouble (plugin/id3v2)
+      |     1 | tracknr=6 (plugin/id3v2)
+    8 |     0 | title=Wooden Jesus (plugin/id3v2)
+      |     1 | tracknr=7 (plugin/id3v2)
+    9 |     0 | title=Your Saviour (plugin/id3v2)
+      |     1 | tracknr=8 (plugin/id3v2)
+
+# The 'pretty' print mode is a little less verbose, and puts everything in a nice table.
+# It prints "value (source)" for every column value.
+s4> .set print_mode pretty;
+s4> @res;
+| row  | title                                                | tracknr                                              |
+|------|------------------------------------------------------|------------------------------------------------------|
+|    0 | All Night Thing (plugin/id3v2)                       | 10 (plugin/id3v2)                                    |
+|    1 | Call Me a Dog (plugin/id3v2)                         | 5 (plugin/id3v2)                                     |
+|    2 | Four Walled World (plugin/id3v2)                     | 9 (plugin/id3v2)                                     |
+|    3 | Hunger Strike (plugin/id3v2)                         | 3 (plugin/id3v2)                                     |
+|    4 | Pushin Forward Back (plugin/id3v2)                   | 4 (plugin/id3v2)                                     |
+|    5 | Reach Down (plugin/id3v2)                            | 2 (plugin/id3v2)                                     |
+|    6 | Say Hello 2 Heaven (plugin/id3v2)                    | 1 (plugin/id3v2)                                     |
+|    7 | Times of Trouble (plugin/id3v2)                      | 6 (plugin/id3v2)                                     |
+|    8 | Wooden Jesus (plugin/id3v2)                          | 7 (plugin/id3v2)                                     |
+|    9 | Your Saviour (plugin/id3v2)                          | 8 (plugin/id3v2)                                     |
+
+# Since 'pretty' does not print the key it can be confusing if you have columns with
+# different keys (which you get when you use the '_' as the fetch key).
+s4> .query _ artist~burning*;
+| row  | _                                                                                                            |
+|------|--------------------------------------------------------------------------------------------------------------|
+|    0 | 2 (plugin/mad)                                                                                               |
+|      | -1 (server)                                                                                                  |
+|      | 254223 (plugin/mad)                                                                                          |
+|      | 13 (plugin/id3v2)                                                                                            |
+|      | 230253 (plugin/mad)                                                                                          |
+|      | Tastykake (plugin/id3v2)                                                                                     |
+|      | 1 (plugin/mad)                                                                                               |
+... and so on ...
+# As you can see the value without the key does not make much sense. If you plan on using the
+# '_' fetch key the 'verbose' print mode is more helpful.
+
+# 'compact' is like pretty, except it does not print the source.
+s4> .set print_mode compact;
+s4> @res;
+| row  | title                                                | tracknr                                              |
+|------|------------------------------------------------------|------------------------------------------------------|
+|    0 | All Night Thing                                      | 10                                                   |
+|    1 | Call Me a Dog                                        | 5                                                    |
+|    2 | Four Walled World                                    | 9                                                    |
+|    3 | Hunger Strike                                        | 3                                                    |
+|    4 | Pushin Forward Back                                  | 4                                                    |
+|    5 | Reach Down                                           | 2                                                    |
+|    6 | Say Hello 2 Heaven                                   | 1                                                    |
+|    7 | Times of Trouble                                     | 6                                                    |
+|    8 | Wooden Jesus                                         | 7                                                    |
+|    9 | Your Saviour                                         | 8                                                    |
+
+s4> .exit;       # ^D (Control-D) can also be used to exit
 </pre>
