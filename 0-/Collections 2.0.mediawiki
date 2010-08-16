@@ -246,4 +246,4 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 |}
 
 ==Try it out yourself==
-The code is now pretty stable, and you can try out coll2 together with S4 by using the s4coll2 branch from the xmms2-cippo git repository. There is also a simple Proof-of-Concept client for coll2 called query for everyone to play around with. Note that this will convert your old database to S4 and move it to {old-path}.obsolete.
+The code is now pretty stable, and you can try out coll2 together with S4 by using the master branch from the xmms2-cippo git repository. When you run the new xmms2d for the first time it will try to convert your current XMMS2 media library with the tool 'sqlite2s4'. It will rename your old library to 'medialib.db.obsolete' (assuming your media-library was named 'medialib.db') and create a new S4 database called 'medialib.s4'. To revert back to the way it was simple move 'medialib.db.obsolete' back to 'medialib.db' and change the line <code><property name="path">{path}/medialib.s4</property></code> into <code><property name="path">{path}/medialib.db</property></code>.
