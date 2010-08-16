@@ -405,3 +405,6 @@ s4> @res;
 
 s4> .exit;       # ^D (Control-D) can also be used to exit
 </pre>
+
+==Caveat==
+S4 does not do any locking of the database yet. That means that two programs can write to a database at the same time. This might lead to loss of data. Running one program that writes to the database and another just reading the database should in theory be fine as long as you exit the reading program before the writing one, but no guarantees are made. To be sure not to lose any data, run only one program at a time. Hopefully this will be fixed soon.
