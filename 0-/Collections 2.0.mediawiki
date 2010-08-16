@@ -67,12 +67,12 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 | type=XMMS_COLLECTION_TYPE_FILTER
 | result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
-* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>.
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>. Note that (key != value) is not equal to NOT (key = value), because the first will only match against entries that have key set with a different value than value, while the second will match both entries where key is set with a different value and key is not set.
 * <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code> or <code>NATCOLL</code>. The default-value is <code>NOCASE</code> except for "<" and ">" where it is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client:plugin:plugin/pls</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client*:plugin*</code>. It should be string where the different sources are separated by a colon (':'). '*' can be used in the string to match any string (including an empty string) and '?' to match any single character.
 | operands=Exactly one
 }}
 
