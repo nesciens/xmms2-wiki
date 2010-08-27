@@ -86,7 +86,7 @@ Integer: The disc number on the album that this track is from.
 String: The track title.
 
 ===== xesam:trackNumber =====
-String: The track number on the album disc.
+Integer: The track number on the album disc.
 
 ===== xesam:url =====
 [[#URI|URI]]: The URL of the file.  Local files use the file:// schema.
