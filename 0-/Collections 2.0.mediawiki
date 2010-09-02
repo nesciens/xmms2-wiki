@@ -93,8 +93,8 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 | type=XMMS_COLLECTION_TYPE_LIMIT
 | result=A medialist equal to the operand, but without the first <code>start</code> entries and containing <code>length</code> or fewer entries.
 | attributes=
-* <code>start</code>: an integer, defaulting to 0.
-* <code>length</code>: an integer, defaulting to UINT_MAX.
+* <code>start</code>: an integer. If not set it will start at 0.
+* <code>length</code>: an integer. If not set it will take all entries after start.
 | operands=Exactly one (a medialist)
 }}
 
