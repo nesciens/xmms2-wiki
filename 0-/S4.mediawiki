@@ -176,7 +176,7 @@ Statements with no value:
 %var = <fetch>        - Assigns fetch to the fetch variable var
 @var = <result>       - Assigns var to something returning result
 $var = <list>         - Assigns the list to the list variable var
-#var = <pref>         - Assigns the pref to the souce preference variable var
+#var = <pref>         - Assigns the pref to the source preference variable var
 
 Conditions (<cond>):
 ?var                  - Returns the condition bound to var
