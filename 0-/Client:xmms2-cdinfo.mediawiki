@@ -7,8 +7,7 @@ Client
 |devlanguage=C++
 }}
 === What is xmms2-freedb? ===
-When xmms2-freedb is run, it waits till an entry to medialib is added, and when it's a cdda:// entry, it looks up the CD information in a remote CD-Audio database and update the fields.
-Currently the application is set to use freedb.freedb.org via CDDB protocol as there's no config yet.
+xmms2-freedb is an XMMS2 client meant for updating your medialib entries with data from a CD database when you play a CD.
 
 === Requirements ===
 * glibc
