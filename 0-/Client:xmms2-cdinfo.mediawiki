@@ -5,6 +5,7 @@ Client
 |website=[http://asth.net/(+blog)/(+neK:9-11:8)]
 |version=0.2
 |devlanguage=C++
+|ui=Console
 }}
 === What is xmms2-freedb? ===
 xmms2-freedb is an XMMS2 client meant for updating your medialib entries with data from a CD database when you play a CD.
