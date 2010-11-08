@@ -2,8 +2,8 @@
 Client
 |name=xmms2-freedb
 |author=Tomasz Sobczyk
-|website=[http://asth.net/(+xmms2freedb)]
-|version=0.1.1
+|website=[http://asth.net/(+blog)/(+neK:9-11:8)]
+|version=0.2
 |devlanguage=C++
 }}
 === What is xmms2-freedb? ===
