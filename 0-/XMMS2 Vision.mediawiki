@@ -186,4 +186,4 @@ Version 4 is a bit verbose, but it contains all I'd expect from our Vision. Anyb
 
 An innovative tool for audiophiles and their music.
 
-[[User:regalia]] 01:20, 30 November 2010
+[[User:regalia|regalia]] 01:20, 30 November 2010
