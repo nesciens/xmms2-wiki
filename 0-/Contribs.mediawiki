@@ -36,7 +36,7 @@ Good for using in hotkeys(specially if you have a multimedia keyboard ;) )
 
 {{Contrib| title=xmms2lyrics | author=ashtophet| description=Very simple shell script to fetch current xmms2 song lyrics (w3m) and show them (w3m) using google's(tm) "feeling lucky" feature. Based on  mpdlyrics.| moreinfo=| files=* [http://www.ashtophet.org/scripts/xmms2lyrics-1.3.sh xmms2lyrics.sh]}}
 
-{{Contrib| title=xmms2wiki | author=ashtophet| description=Very simple shell script to fetch wikipedia article on current xmms2 playing song and show it using w3m. Based on mpdwiki. | moreinfo=| files=* [http://www.ashtophet.org/xmms2wiki-1.2.sh xmms2wiki.sh]}}
+{{Contrib| title=xmms2wiki | author=ashtophet| description=Very simple shell script to fetch wikipedia article on current xmms2 playing song and show it using w3m. Based on mpdwiki. | moreinfo=| files=* [http://www.ashtophet.org/scripts/xmms2wiki-1.2.sh xmms2wiki.sh]}}
 
 {{Contrib| title=Fvwm menu | author=ashtophet| description=Simple fvwm2 menu to control xmms2. Based on univac's fvwm config. | moreinfo=| files=* [http://www.ashtophet.org/screenshots.html config]}}
 
