@@ -84,8 +84,10 @@ Will find all artists that begin with "red hot"
 
 Will match "redhot" and "red hot".
 
-Listen to a shoutcast stream (assuming curl plugin is installed) using the direct url (ie NOT a playlist file, but the url inside the playlist file, the playlist importing code is currently disabled):
+Listen to a shoutcast stream (assuming curl plugin is installed) using the direct url (ie NOT a playlist file, but the url inside the playlist file, the playlist importing code is currently disabled). If you don't require a proxy, skip the "config" lines:
 
+  nyxmms2 server config curl.proxyaddress your.proxy.address.com:1080
+  nyxmms2 server config curl.useproxy 1
   nyxmms2 add http://207.200.96.225:8020
   nyxmms2 play
 
