@@ -39,6 +39,7 @@ All current clients should be found here.
 {{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|Muxic| Graphical / Cocoa | Obj-C | in development | Minimal windowshade for Mac OS X }}
 {{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
+{{ClientTableEntry|nymp| console / curses | Python | in development | A graphical cli client providing a tree view on your collection.  }}
 {{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | in development | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Remuco| Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
