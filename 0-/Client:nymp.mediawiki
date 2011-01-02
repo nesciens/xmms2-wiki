@@ -2,7 +2,7 @@
 Client
 |image=nymp.png
 |name=nymp
-|author=Thammi
+|author=[http://chaossource.net/ Thammi]
 |website=[https://github.com/thammi/nymp nymp@github]
 |version=0.0.1
 |devlanguage=Python
