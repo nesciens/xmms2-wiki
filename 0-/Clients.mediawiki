@@ -66,6 +66,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:Cluck | Cluck]] is a TUI (windowed console) client with very light requirements: a recent xmms2d, pcre, curses, and optionally a few helper applications
 * [[Client:kuechenstation | kuechenstation]] is a text mode client with scrolling title, playlist and medialib query
 * [[Client:bnxc | bnxc]] is a minimalistic ncurses client with a focus on browsing through music
+* [[Client:nymp | nymp]] is a graphical cli client providing a tree view on your collection.
 
 = Desktop Integration =
 
