@@ -110,7 +110,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 Coll2 adds a new query mechanism, xmmsc_coll_query, in addition to the old xmmsc_coll_query_ids and xmmsc_coll_query_infos. It is more powerful, the two other query calls are actually implemented using it. It takes two arguments, a collection and a fetch specification. The collection is the same as before, but the fetch specification is new.
 
 ===Fetch Specification===
-The fetch specification tells XMMS2 what to fetch and how to store it. It is built up of recursive dicts of different types. The "_type" attribute defines what type the dict has.
+The fetch specification tells XMMS2 what to fetch and how to store it. It is built up of recursive dicts of different types. The "type" attribute defines what type the dict has.
 
 {{Collections 2.0_Fetchdict
 | name=Metadata
@@ -146,7 +146,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | type=organize
 | desc=Organizes data in a dict. 
 | attributes=
-''key''=''data'': Sets ''key'' in the return dict equal to the data we get when using the ''data'' as the fetchspec for the current set.
+* <code>data</code> A dict with key-value pairs. The keys of the dicts will be used as keys in the returned dictionary and the values are fetch-specification used to fetch the value associated with the key.
 }}
 
 {{Collections 2.0_Fetchdict
@@ -163,7 +163,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 {|
 |-
 | Call 
-| <code>xmmsc_coll_query (universe, {"_type" = "metadata", "get" = ("key"), "aggregate" = "list"}</code>
+| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("key"), "aggregate" = "list"}</code>
 |-
 | Result
 | <code>("artist", "album", "title", ...)</code>
@@ -173,7 +173,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 {|
 |-
 | Call 
-| <code>xmmsc_coll_query (universe, {"_type" = "metadata", "get" = ("id", "key", "source", "value")}</code>
+| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("id", "key", "source", "value")}</code>
 |-
 | Result
 | <pre>
@@ -211,13 +211,15 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 | Call 
 | <pre>xmmsc_coll_query (universe,
 {
-  "_type" = "cluster-dict",
+  "type" = "cluster-dict",
   "cluster-by" = "album",
   "data" = {
-    "_type" = "organize"
-    "tracks" = { "_type" = "count" }
-    "duration" = { "_type" = "metadata", "keys" = ("duration"), "get" = ("value"), "aggregate" = "sum"Â }
-    "titles" = { "_type" = "metadata", "keys" = ("title"), "get" = ("value"), "aggregate" = "list"Â }
+    "type" = "organize"
+    "data" = {
+      "tracks" = { "type" = "count" }
+      "duration" = { "type" = "metadata", "keys" = ("duration"), "get" = ("value"), "aggregate" = "sum"Â }
+      "titles" = { "type" = "metadata", "keys" = ("title"), "get" = ("value"), "aggregate" = "list"Â }
+    }
   }
 })</pre>
 |-
