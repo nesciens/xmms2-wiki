@@ -1,6 +1,6 @@
 {{
 Client
-|image=
+|image=nymp.png
 |name=nymp
 |author=Thammi
 |website=[https://github.com/thammi/nymp nymp@github]
