@@ -7,6 +7,6 @@ Client
 |version=0.0.1
 |devlanguage=Python
 |ui=console / curses
-|screenshots=not available, yes
+|screenshots=see above
 }}
 nymp is a graphical command line client for xmms2. It is library focused and provides a tree view on your collection.
