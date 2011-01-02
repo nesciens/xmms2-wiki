@@ -1,0 +1,12 @@
+{{
+Client
+|image=
+|name=nymp
+|author=Thammi
+|website=[https://github.com/thammi/nymp nymp@github]
+|version=0.0.1
+|devlanguage=Python
+|ui=console / curses
+|screenshots=not available, yes
+}}
+nymp is a graphical command line client for xmms2. It is library focused and provides a tree view on your collection.
