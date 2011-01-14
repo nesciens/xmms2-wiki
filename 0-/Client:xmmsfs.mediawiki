@@ -1,0 +1,10 @@
+{{
+Client
+|image=
+|name=xmmsfs
+|author=[2ck.posterous.com 2ck]
+|website=[http://twock.host-ed.net/scripts/xmmsfs.rb.html]
+|devlanguage=Ruby
+|ui=FUSE
+}}
+Euuuhhhh...
