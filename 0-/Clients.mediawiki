@@ -93,7 +93,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:bbkeysxmms2 | bbkeysxmms2]] a list of suggested shortcut keys for bbkeys
 * [[Client:FluxboxKeys | Fluxbox keys]] a simple list of shortcut keys for ~/.fluxbox/keys, and a way to run xmms2 at startup
 * [[Client:dxmms2 | dxmms2]] shell script that allows you to browse playlist and medialib using dmenu menubar
-
+* [[Client:xmmsfs | xmmsfs]] creates a file hierarchy based on media properties in a fuse file system (still in development)
 = Integration Into Other Applications =
 
 == GKrellM2 ==
