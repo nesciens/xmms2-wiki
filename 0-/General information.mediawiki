@@ -10,6 +10,7 @@ General information, for users and developers alike. ''See also: [[Getting Start
 == HOWTO ==
 <!-- break this section into its own page (Howtos, Help) if it grows big -->
 ; [[Using ICES Output]]: How to use the 'ices' output plugin.
+; [[MIDI playback]]: How to configure XMMS2 to play MIDI files.
 
 == Community ==
 * [http://www.frappr.com/xmms2 XMMS2 on Frappr]
