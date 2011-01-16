@@ -1,0 +1,62 @@
+<div style="border: dotted 3px black; text-align: center; padding:0.5em; background-color:#fbb">
+'''Please note: The MIDI plugin has been accepted into XMMS2 but is not yet available in a release.'''
+</div>
+
+This page describes how to set up the MIDI components of XMMS2 so that MIDI files can be included in playlists.
+
+== Synth selection ==
+
+XMMS2 can use different synthesiser engines to convert MIDI data into PCM audio.  There are currently two plugins that can handle this:
+
+* fluidsynth: Use the FluidSynth library for wavetable playback
+* adplug: Use the AdPlug library for FM synthesised playback (not yet released)
+
+Most people will want to use a wavetable synth such as FluidSynth.  To see which engines are available, inspect the XMMS2 configuration options for plugins supporting the "audio/rawmidi" format:
+
+ $ xmms2 config_list | grep rawmidi
+ adplug.priority.audio/rawmidi = 40
+ fluidsynth.priority.audio/rawmidi = 50
+
+If you have more than one choice available, the one with the largest numerical value will be used - fluidsynth in the above example.  Values can be easily changed:
+
+ $ xmms2 config adplug.priority.audio/rawmidi 70
+ Config value adplug.priority.audio/rawmidi set to 70
+
+=== FluidSynth configuration ===
+
+While the AdPlug synth requires no further configuration, FluidSynth requires a SoundFont to load instrument sounds from.
+
+The current SoundFonts can be listed as follows:
+
+ $ xmms2 config_list | grep soundfont
+ fluidsynth.soundfont.0 = /home/media/sf2/fluid-r3-gm.sf2
+ fluidsynth.soundfont.1 = /home/media/sf2/8realgs21.sf2
+ fluidsynth.soundfont.2 =
+
+Here two SoundFont files are loaded.  Later files override instruments in earlier ones.  There will always be an empty value at the end which is used to add a new SoundFont to the list.  Setting a SoundFont is easy enough:
+
+ $ xmms2 config fluidsynth.soundfont.0 /path/to/soundfont.sf2
+
+== Troubleshooting ==
+
+If there are any problems playing MIDI files, the best method to track down the problem is to run the XMMS2 daemon in debug mode and read the messages shown when trying to play a MIDI file.  This can be done from the command line with "<code>xmms2d -v</code>".
+
+If MIDI files will not play (and are just skipped over in the playlist) ensure the SoundFont is set correctly.  Also confirm from the debug messages that a synth engine such as FluidSynth is actually available - if no engines are available MIDI files can be added to playlists but will be skipped when the time comes to play them.
+
+== Developer info ==
+
+If you are a developer looking to extend or interface with XMMS2's MIDI components, the following information may be useful.
+
+MIDI support in XMMS2 is implemented by the following independent plugins:
+
+* mid0: Reads format-0 .mid files (single track) and outputs a raw MIDI stream (type "audio/rawmidi")
+* mid1: Reads format-1 .mid and .rmi files (multiple tracks) and outputs a multitrack MIDI stream (type "audio/miditracks")
+* midsquash: Takes multitrack data (of type "audio/miditracks") and converts it into a raw MIDI stream (of type "audio/rawmidi")
+* fluidsynth: Takes audio/rawmidi and produces PCM audio data
+
+By using this structure, adding a new MIDI file format can be achieved by writing a new plugin that outputs either audio/rawmidi, or if the input file has multiple tracks, audio/miditracks.
+
+To add support for a new synthesiser engine, a plugin can be written which takes audio/rawmidi and produces audio/pcm.  The synth plugin does not need to be aware of any MIDI file formats, as the existing plugins read MIDI files and supply the data in audio/rawmidi format.  A synth plugin also does not need to support the audio/miditracks format, as the midsquash plugin will automatically step in and combine all the tracks into a single audio/rawmidi stream.
+
+[[Category:Howto]]
+[[Category:XMMS2 Technical Details]]
