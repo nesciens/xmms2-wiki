@@ -1,8 +1,8 @@
-SÃ©bastien Cevey, AKA theefer. Can be reached at seb@cine7.net. Homepage at http://sirius.cine7.net/.
+SÃ©bastien Cevey, AKA theefer. Can be reached at seb@cine7.net. Homepage at http://bytes.inso.cc/.
 
 Develops the [http://git.xmms.se/?p=nyello.git;a=summary nyello] client and submits a few patches for the XMMS2 core when he really needs a feature or a bug fixed.
 
-Wrote a [http://sirius.cine7.net/index.php/action/Article/category/computers/id/article-computers--better-music-player-manifesto/ Manifesto for a Better Music Player] and believes he can implement it.
+Wrote a [http://bytes.inso.cc/wp/2005/07/11/better-music-player-manifesto/ Manifesto for a Better Music Player] and believes he can implement it.
 
 Worked on [[SoC:Collections|'''Collections''' for Google Summer of Code 2006]], and is therefore responsible for any inconvenience or happiness collections might cause.
 
