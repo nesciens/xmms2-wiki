@@ -1,6 +1,7 @@
 {{
 Client
 |name=xmmsfs
+|version=1.0
 |author=[http://2ck.posterous.com 2ck]
 |website=[http://code.google.com/p/xmmsfs]
 |devlanguage=Ruby
