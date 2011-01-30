@@ -2,8 +2,24 @@
 Client
 |name=xmmsfs
 |author=[http://2ck.posterous.com 2ck]
-|website=[http://twock.host-ed.net/scripts/xmmsfs.rb.html]
+|website=[http://code.google.com/p/xmmsfs]
 |devlanguage=Ruby
 |ui=FUSE
 }}
-Euuuhhhh...
+''Copied from project wiki''
+=Using xmmsfs=
+
+To start, mount xmmsfs on an empty directory:
+
+ % ./xmmsfs mlib
+
+If you list the contents of `mlib` now, you will see all of the ids in your media library. With xmmsfs, the contents of each directory are dictated by its path name. For instance, the contents of a directory `album/Brothers/` will be all of the songs in the album, "Brothers". A path ending with the name of a property will list all of the media with that property as well as possible values for that property, taken from your library.
+
+Wildcard characters are also supported; however, in a terminal they must be escaped with a backslash or quoted. Adding operators like "OR", and "NOT" to a given field name modifies the contents accordingly:
+
+ % ls -l "date/2010/OR date/1990/date"
+ total 0
+ dr-xr-xr-x 1 twock twock 4096 Jan 24 17:57 1990
+ dr-xr-xr-x 1 twock twock 4096 Jan 24 17:57 2010
+
+By default, queries will use simple string matching. To do numerical comparisons, prefix one of <, >, <=, or >= to the value you want to compare against.
