@@ -193,9 +193,7 @@ a list of ordering properties:
 
 To add the contents of a collection to the active playlist use:
 
- % xmms2 collection queryadd <collname> [order]
-
-The syntax of the ''queryadd'' command is identical that of the ''query'' command.
+ % xmms2 add in:'<collname>'
 
 = Remove a collection =
 
