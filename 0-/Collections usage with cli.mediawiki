@@ -139,13 +139,13 @@ want to list them all.  This can be done using the ''list'' command:
 To list saved playlists:
  % xmms2 playlist list
 
-= Get the structure of a saved collection =
+= View the structure of a saved collection =
 
 The list only gives us the name of the saved collections, but you may
 want to check what the corresponding collection structure looks like.
-This can be done using the ''get'' command:
+This can be done using the ''show'' command:
 
- % xmms2 collection get AirFirstTracks
+ % xmms2 collection show AirFirstTracks
  Intersection:
    Match ('artist', 'Air') for:
      Reference: 'All Media'
@@ -155,12 +155,8 @@ This can be done using the ''get'' command:
 Again, we can refer to collections in other namespaces using the usual
 prefix:
 
- % xmms2 collection get Playlists/Other
+ % xmms2 collection show Playlists/Other
  Idlist: (14461, 14462, 7226)
-
-The syntax of the ''get'' command is the following:
-
- % xmms2 collection get <collname>
 
 = List the contents of a collection =
 
