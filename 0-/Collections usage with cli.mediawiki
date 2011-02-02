@@ -162,9 +162,9 @@ prefix:
 
 Now we have played with collections, it might be interesting to
 actually display what media they match, i.e. their ''contents''.
-For that, we use the ''query'' command:
+For that, we use the ''search'' command:
 
- % xmms2 collection query AirFirstTracks
+ % xmms2 search in:'AirFirstTracks'
  -[Result]--------------------------------------------------------------------------
  Id   | Artist            | Album                      | Title
  00102| Air               | The Virgin Suicides        | Playground Love
@@ -176,9 +176,9 @@ For that, we use the ''query'' command:
  ----------------------------------------------------------------[Count:     6]-----
 
 By default, media are ordered by id.  You can change that by selecting
-an ordering property:
+a list of ordering properties:
 
- % xmms2 collection query AirFirstTracks album
+ % xmms2 search -o album,title in:'AirFirstTracks'
  -[Result]--------------------------------------------------------------------------
  Id   | Artist            | Album                      | Title
  00181| Air               | 10'000 Hz Legend           | Electronic Performers
@@ -188,13 +188,6 @@ an ordering property:
  00116| Air               | Talkie Walkie              | Venus
  00102| Air               | The Virgin Suicides        | Playground Love
  ----------------------------------------------------------------[Count:     6]-----
-
-The syntax of the ''query'' command is the following:
-
- % xmms2 collection query <collname> [order]
-
-where ''order'' is an optional comma-separated list of properties to order
-by.
 
 = Add a collection to the active playlist =
 
