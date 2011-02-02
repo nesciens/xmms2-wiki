@@ -136,19 +136,8 @@ want to list them all.  This can be done using the ''list'' command:
    AirFirstTracks
    Test Collection
 
-It is also possible to only list the collections in one namespace by
-passing it as argument:
-
- % xmms2 collection list Collections
- AirFirstTracks
- Test Collection
-
-The syntax of the ''list'' command is the following:
-
- % xmms2 collection list [namespace]
-
-where namespace is optional (by default, list collections for all
-namespaces).
+To list saved playlists:
+ % xmms2 playlist list
 
 = Get the structure of a saved collection =
 
