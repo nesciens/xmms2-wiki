@@ -265,41 +265,31 @@ Playlists have a ''type'', which can be one of the following:
 To learn more about these types, read the section about
 [[Collections_Concept#List_Operators | List Operators]].
 
-To get and set the type of a playlist, use the ''type'' command of the
-playlist module:
+To get the type of a playlist, use the ''config'' subcommand of the
+playlist command:
 
- % xmms2 playlist type Other
- list
+ % xmms2 playlist config Playlist
+ name: Playlist
+ type: list
 
-We can also change the type to ''queue'' using the same command:
+We can change the type to ''queue'' using the same command:
 
- % xmms2 playlist type Other queue
+ % xmms2 playlist config --type queue Playlist
 
 For the ''pshuffle'' type, the source collection (input operand) of
 the shuffle must be specified:
 
- % xmms2 playlist type Other pshuffle AirFirstTracks
- % xmms2 list Other
- ->[0/102] Air - Playground Love (03:32)
-   [1/116] Air - Venus (04:04)
-   [2/116] Air - Venus (04:04)
-   [3/192] Air - Modular mix (05:59)
-   [4/181] Air - Electronic Performers (05:35)
-   [5/142] Air - La Femme D'Argent (07:11)
-   [6/102] Air - Playground Love (03:32)
-   [7/116] Air - Venus (04:04)
-   [8/192] Air - Modular mix (05:59)
-   [9/181] Air - Electronic Performers (05:35)
- 
- Total playtime: 0:47:00
+ % xmms2 playlist config --type pshuffle --input AirFirstTracks Playlist
+ % xmms2 playlist config
+ name: Playlist
+ type: pshuffle
+ history: (null)
+ upcoming: (null)
+ input: Collections/AirFirstTracks
 
 The playlist has been filled with 10 random media from the
-AirFirstTracks collection!  To change that number, let's have a look
-at collection attributes.
-
-The syntax of the ''type'' command is the following:
-
- % xmms2 playlist type <plname> <type> [options]
+AirFirstTracks collection. To change that number repeat the config command with the ''--upcoming'' option followed by the number of tracks.
+You can also use the ''collection config'' command, but it's hardly worth the trouble.
 
 = Setting attributes =
 
