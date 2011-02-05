@@ -117,27 +117,31 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | type=metadata
 | desc=Fetches data from the current cluster and returns the fetched data
 | attributes=
-* <code>get</code>: A list with "id", "key", "value" or "source". If there are more than one item in the list it will use the first n-1 items as keys in recursive dicts, and the last will be aggregated using the aggregation function in the leaf.
-* <code>aggregate</code>: A string specifying the aggregation function. Can be one of "first", "list", "avg", "sum", "min", "max" and "random". Defaults to "first".
-* <code>keys</code>: A list of keys to get. If this is not set it will get all attributes.
+* <code>get</code>: A list with "id", "field", "value" or "source". If there are more than one item in the list it will use the first n-1 items as keys in recursive dicts, and the last will be aggregated using the aggregation function in the leaf.
+* <code>aggregate</code>: A string specifying the aggregation function. Can be one of "first", "list", "set", "avg", "sum", "min", "max" and "random". Defaults to "first".
+* <code>fields</code>: A list of fields to get. If this is not set it will get all properties.
 * <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
 }}
 
 {{Collections 2.0_Fetchdict
 | name=Cluster list
 | type=cluster-list
-| desc=Clusters the current set into subsets by a list of given attributes and returns a list with one entry per cluster.
+| desc=Clusters the current collection into subcollections and returns a list with one entry per subcollection. Each entry is created using the fetch-spec dict in attribute data. In the case that cluster-by is "position", every entry in the collection will get its own subset. If it is "id", every song will get its own subset. In the case of "value", all songs having a specific property in common will form a subset.
 | attributes=
-* <code>cluster-by</code> A list of strings or a string specifying what attributes to group by.
+* <code>cluster-by</code>: One of the strings "id", "position", or "value". Defaults to "value".
+* <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
+* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
 {{Collections 2.0_Fetchdict
 | name=Cluster dict
 | type=cluster-dict
-| desc=Clusters the current set into subsets by a list of given attributes and returns a dict with where the attribute to group by is used as the key and "data" is put as the value. If there are more than one attribute to group by it will create recursive dicts.
+| desc=Clusters the current collection into subcollections and returns a dict where the datum to cluster by is used as the key and the value is according to the fetch-spec in attribute data.
 | attributes=
-* <code>cluster-by</code> A list of strings or a string specifying what attributes to group by.
+* <code>cluster-by</code> One of the strings "id", "position", or "value". Defaults to "value".
+* <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
+* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
@@ -163,7 +167,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 {|
 |-
 | Call 
-| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("key"), "aggregate" = "list"}</code>
+| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("field"), "aggregate" = "set"}</code>
 |-
 | Result
 | <code>("artist", "album", "title", ...)</code>
@@ -173,7 +177,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 {|
 |-
 | Call 
-| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("id", "key", "source", "value")}</code>
+| <code>xmmsc_coll_query (universe, {"type" = "metadata", "get" = ("id", "field", "source", "value")}</code>
 |-
 | Result
 | <pre>
@@ -212,13 +216,13 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 | <pre>xmmsc_coll_query (universe,
 {
   "type" = "cluster-dict",
-  "cluster-by" = "album",
+  "cluster-field" = "album",
   "data" = {
     "type" = "organize"
     "data" = {
       "tracks" = { "type" = "count" }
-      "duration" = { "type" = "metadata", "keys" = ("duration"), "get" = ("value"), "aggregate" = "sum"Â }
-      "titles" = { "type" = "metadata", "keys" = ("title"), "get" = ("value"), "aggregate" = "list"Â }
+      "duration" = { "type" = "metadata", "fields" = ("duration"), "get" = ("value"), "aggregate" = "sum"Â }
+      "titles" = { "type" = "metadata", "fields" = ("title"), "get" = ("value"), "aggregate" = "list"Â }
     }
   }
 })</pre>
