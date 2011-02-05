@@ -67,7 +67,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 | type=XMMS_COLLECTION_TYPE_FILTER
 | result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
 | attributes=
-* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>. Note that (key != value) is not equal to NOT (key = value), because the first will only match against entries that have key set with a different value than value, while the second will match both entries where key is set with a different value and key is not set.
+* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>. Note that (field != value) is not equal to NOT (field = value), because the first will only match against entries that have field set with a different value than value, while the second will match both entries where field is set with a different value and field is not set.
 * <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
@@ -163,7 +163,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 ===Examples===
 This will hopefully clarify the above mentioned fetch specification. Below '{ key = value }'Â is used to mean a dict with key set to value and '( a, b )' is used to mean a list with the values a and b.
 
-====Get all keys in the media-library====
+====Get all fields in the media-library====
 {|
 |-
 | Call 
@@ -173,7 +173,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 | <code>("artist", "album", "title", ...)</code>
 |}
 
-====Get a full id-key-source-value dict====
+====Get a full id-field-source-value dict====
 {|
 |-
 | Call 
