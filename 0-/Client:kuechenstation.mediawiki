@@ -3,7 +3,7 @@
 |image=Client-kuechenstation.png
 |author=Eike von Seggern
 |website=[http://kuechenstation.sourceforge.net/ kuechenstation.sf.net]
-|version=[http://sourceforge.net/projects/kuechenstation/files/kuechenstation/0.3-3/ 0.3-3] (developed with DrMattDestruction)
+|version=[http://sourceforge.net/projects/kuechenstation/files/kuechenstation/0.4/ 0.4]
 |devlanguage=Python
 |ui=Console
 |screenshots=[http://sourceforge.net/project/screenshots.php?group_id=222283]
