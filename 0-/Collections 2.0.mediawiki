@@ -238,7 +238,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 {{Collections 2.0_Fetchdict
 | name=Cluster dict
 | type=cluster-dict
-| desc=Clusters the current collection into subcollections and returns a dict where the datum to cluster by is used as the key and the value is according to the fetch-spec in attribute <code>data</code>. If the datum to cluster by does not exist, then the string </code>(No value)</code> will be used.
+| desc=Clusters the current collection into subcollections and returns a dict where the datum to cluster by is used as the key and the value is according to the fetch-spec in attribute <code>data</code>. If the datum to cluster by does not exist, then the string <code>(No value)</code> will be used.
 | attributes=
 * <code>cluster-by</code> One of the strings "id", "position", or "value". Defaults to "value".
 * <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
