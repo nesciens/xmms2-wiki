@@ -63,16 +63,117 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 }}
 
 {{Collections 2.0_Operator
-| name=Filter
-| type=XMMS_COLLECTION_TYPE_FILTER
-| result=The operand, but only with the mediaids that have a property with a given name, as well as a given source and a value for which the expression value <code>[operation]</code> <code>[value]</code> is true, given a collation, where only properties are examined using the given source-preference.
+| name=Has
+| type=XMMS_COLLECTION_TYPE_HAS
+| result=The operand, but only with the mediaids that have a property with a given field name and source. Only source-preferred  properties are examined.
 | attributes=
-* <code>operation</code>: One of <code>&lt;</code>, <code>&lt;=</code>, <code>=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, <code>token</code>, <code>match</code> and <code>has</code>. The default is <code>=</code>. Note that (field != value) is not equal to NOT (field = value), because the first will only match against entries that have field set with a different value than value, while the second will match both entries where field is set with a different value and field is not set.
+* <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client*:plugin*</code>. It should be string where the different sources are separated by a colon (':'). '*' can be used in the string to match any string (including an empty string) and '?' to match any single character.
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Match
+| type=XMMS_COLLECTION_TYPE_MATCH
+| result=The operand, but only with the mediaids that have a property with a given field name and appropriate value according to glob-matching. Only source-preferred properties are examined.
+| attributes=
 * <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code> and <code>BINARY</code>. The default-value is <code>NOCASE</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Token
+| type=XMMS_COLLECTION_TYPE_TOKEN
+| result=The operand, but only with the mediaids that have a property with a given field name and appropriate value according to token-matching. Only source-preferred properties are examined.
+| attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
-* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute, e.g. <code>NOCASE</code>, <code>BINARY</code> or <code>NATCOLL</code>. The default-value is <code>NOCASE</code> except for "<" and ">" where it is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client*:plugin*</code>. It should be string where the different sources are separated by a colon (':'). '*' can be used in the string to match any string (including an empty string) and '?' to match any single character.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code> and <code>BINARY</code>. The default-value is <code>NOCASE</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Equals
+| type=XMMS_COLLECTION_TYPE_EQUALS
+| result=The operand, but only with the mediaids that have a property with a given field name and value. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code> and <code>NATCOLL</code>. The default-value is <code>NOCASE</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+
+{{Collections 2.0_Operator
+| name=Not-Equal
+| type=XMMS_COLLECTION_TYPE_NOTEQUAL
+| result=The operand, but only with the mediaids that have a property with a given field name and a value different from the one specified. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code> and <code>NATCOLL</code>. The default-value is <code>NOCASE</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Smaller
+| type=XMMS_COLLECTION_TYPE_SMALLER
+| result=The operand, but only with the mediaids that have a property with a given field name and a value smaller than the one specified. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Smaller-Equal
+| type=XMMS_COLLECTION_TYPE_SMALLEREQ
+| result=The operand, but only with the mediaids that have a property with a given field name and a value smaller than or equal to the one specified. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+{{Collections 2.0_Operator
+| name=Greater
+| type=XMMS_COLLECTION_TYPE_GREATER
+| result=The operand, but only with the mediaids that have a property with a given field name and a value greater than the one specified. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+| operands=Exactly one
+}}
+
+
+{{Collections 2.0_Operator
+| name=Greater-Equal
+| type=XMMS_COLLECTION_TYPE_GREATEREQ
+| result=The operand, but only with the mediaids that have a property with a given field name and a value greater than or equal to the one specified. Only source-preferred properties are examined.
+| attributes=
+* <code>type</code>: <code>value</code> to filter on values, <code>id</code> to filter on ids. Defaults to <code>value</code>.
+* <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
+* <code>value</code>: A string.
+* <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
 | operands=Exactly one
 }}
 
