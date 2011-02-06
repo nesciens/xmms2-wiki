@@ -1,6 +1,6 @@
 [[Summer_of_Code_2008/Collections_2.0|Collections 2.0]], or coll2 for short, is an evolution of the [[Collections_Concept|collections concept]] already implemented in XMMS2. Coll2 distinguishes between medialists (an ordered list of entries that may have duplicates) and mediasets (an unordered set of entries that does not have duplicates). It also adds operators to order a mediaset (turning it into a medialist), turn a medialist into a mediaset (thus removing duplicates and ordering) and limiting a medialist. All this gives the user more power when querying the media-library. In addition to this Coll2 adds a new query system, allowing more advanced queries with less code for the client programmer.
 
-This page describes coll2 as implemented in the [[http://git.xmms.se/cgit.cgi/xmms2/xmms2-cippo/ | xmms2-cippo] git repository
+This page describes coll2 as implemented in the [http://git.xmms.se/cgit.cgi/xmms2/xmms2-cippo/ xmms2-cippo] git repository
 
 ==Operators==
 A collection is built up of collection operators. Coll2 adds some new operators and removes some old ones. The operators removed are all the filter operators (_HAS, _MATCH, _EQUALS, _SMALLER, _GREATER). They are replaced by a single operator _FILTER. In addition _QUEUE and _PARTYSHUFFLE have been removed.
