@@ -352,5 +352,167 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
 </pre>
 |}
 
+=== <code>xmmsc_coll_query</code> pseudo-code ===
+
+ xmmsc_coll_query (coll, spec) {
+     if (spec["type"] == "metadata") {
+         Fetch all data for all songs in coll.
+         /* This might look something like this:
+            | ID  | field  | value         | source        |
+            +-----+--------+---------------+---------------+
+            |   1 | url    | file:///ho... | server        |
+            |   1 | artist | Beethoven     | plugin/id3v2  |
+            |   1 | artist | BadId3v1Thing | plugin/mad    |
+            |   2 | album  | 1             | plugin/id3v2  |
+            |   2 | artist | Beatles       | plugin/id3v2  |
+            |   3 | album  | White Album   | plugin/id3v2  |
+            |   3 | artist | Beatles       | plugin/id3v2  |
+            |   4 | album  | White Album   | plugin/id3v2  |
+            |   4 | artist | Beatles       | plugin/id3v2  |
+         */
+ 
+         Remove all rows with field not in spec["fiels"].
+         /* For instance if spec["fields"] == ("artist"):
+            | ID  | field  | value         | source        |
+            +-----+--------+---------------+---------------+
+            |   1 | artist | Beethoven     | plugin/id3v2  |
+            |   1 | artist | BadId3v1Thing | plugin/mad    |
+            |   2 | artist | Beatles       | plugin/id3v2  |
+            |   3 | artist | Beatles       | plugin/id3v2  |
+            |   4 | artist | Beatles       | plugin/id3v2  |
+         */
+ 
+         Prune rows according to source-preference.
+         /* With spec["source-preference"] = "server:plugin/id3v2:*" we might get
+            | ID  | key    | value         | source        |
+            +-----+--------+---------------+---------------+
+            |   1 | artist | Beethoven     | plugin/id3v2  |
+            |   2 | artist | Beatles       | plugin/id3v2  |
+            |   3 | artist | Beatles       | plugin/id3v2  |
+            |   4 | artist | Beatles       | plugin/id3v2  |
+         */
+ 
+         Remove the columns that are not in spec["get"] and reorder columns
+         according to spec["get"].
+         /* With spec["get"] = ("field", "value", "id") we would obtain:
+            | key    | value         | ID  |
+            +--------+---------------+-----+
+            | artist | Beethoven     |   1 |
+            | artist | Beatles       |   2 |
+            | artist | Beatles       |   3 |
+            | artist | Beatles       |   4 |
+         */
+ 
+         Combine rows that are the same in the first spec["get"].length - 1
+         columns specified in spec["get"]. For combining use the aggregation
+         from spec["aggregate"].
+         /* For instance if spec["aggregate"] == "list":
+            | key    | value         | (ID)    |
+            +--------+---------------+---------+
+            | artist | Beethoven     | (1)     |
+            | artist | Beatles       | (2,3,4) |
+         */
+ 
+         Return this table as a dict.
+         /* In this example:
+            { artist = { Beethoven = (1), Beatles = (2,3,4), ... } }
+         */
+     } else if (spec["type"] = "cluster-list" || spec["type"] = "cluster-dict") {
+         Depending on the values of spec["cluster-type"], spec["cluster-field"]
+         and spec["source-preference"]  gather some data for every element of the
+         collection coll.
+         /* For instance, with spec["cluster-type"] == "value" and
+            spec["cluster-field"] == "album", we might get the following:
+            | ID  | album       |
+            +-----+-------------+
+            |   1 | (null)      |
+            |   2 | 1           |
+            |   3 | White Album |
+            |   4 | White Album |
+         */
+ 
+         Merge the rows with the identical collected data.
+         /* E.g.:
+            | (ID)  | album       |
+            +-------+-------------+
+            | (1)   | (null)      |
+            | (2)   | 1           |
+            | (3,4) | White Album |
+         */
+ 
+         For every row execute a xmmsc_coll_query with the (ID)-column as the
+         collection parameter and spec["data"] as the spec parameter.
+         /*
+            - XXX = xmmsc_coll_query ( idlist(1), spec["data"] );
+            - YYY = xmmsc_coll_query ( idlist(2), spec["data"] );
+            - ZZZ = xmmsc_coll_query ( idlist(3,4), spec["data"] );
+            | (ID)  | album       | result |
+            +-------+-------------+--------+
+            | (1)   | (null)      | XXX    |
+            | (2)   | 1           | YYY    |
+            | (3,4) | White Album | ZZZ    |
+         */
+ 
+         if (spec["type"] = "cluster-dict") {
+             Remove (ID)-column.
+             /*
+                | album       | result |
+                +-------------+--------+
+                | (null)      | XXX    |
+                | 1           | YYY    |
+                | White Album | ZZZ    |
+             */
+ 
+             Return this table as a dict.
+             /*
+                {"(No value)" = XXX, "1" = YYY, "White Album" = ZZZ}
+             */
+         } else {
+             If necessary for every row execute queries for sorting.
+             /* For instance if spec["order-by"] == ({"fields" = ("artist")},
+                                                     {"fields" = (album)}),
+                we might obtain:
+                | (ID)  | album       | result | artist    | album       |
+                +-------+-------------+--------+-----------+-------------+
+                | (1)   | (null)      | XXX    | Beethoven | (null)      |
+                | (2)   | 1           | YYY    | Beatles   | 1           |
+                | (3,4) | White Album | ZZZ    | Beatles   | White Album |
+             */
+ 
+             Sort according to the directions spec["order-by"].
+             /* In our case we use the default direction ASC (ascending):
+                | (ID)  | album       | result | artist    | album       |
+                +-------+-------------+--------+-----------+-------------+
+                | (3,4) | White Album | ZZZ    | Beatles   | White Album |
+                | (2)   | 1           | YYY    | Beatles   | 1           |
+                | (1)   | (null)      | XXX    | Beethoven | (null)      |
+             */
+ 
+             Remove all columns but result.
+             /*
+                | result |
+                +--------+
+                | ZZZ    |
+                | YYY    |
+                | XXX    |
+             */
+ 
+             Return this table as a list.
+             /*
+                (ZZZ, YYY, XXX)
+             */
+         }
+     } else if (spec["type"] == "organize") {
+         for each spec["data"] as key => innerspec {
+             result[key] = xmmsc_coll_query (coll, innerspec);
+         }
+         return result
+     } else if (spec.type = count) {
+         Return number of elements of collection coll.
+     } else {
+         CRY :'(.
+     }
+ }
+
 ==Try it out yourself==
 The code is now pretty stable, and you can try out coll2 together with S4 by using the master branch from the xmms2-cippo git repository. When you run the new xmms2d for the first time it will try to convert your current XMMS2 media library with the tool 'sqlite2s4'. It will rename your old library to 'medialib.db.obsolete' (assuming your media-library was named 'medialib.db') and create a new S4 database called 'medialib.s4'. To revert back to the way it was simple move 'medialib.db.obsolete' back to 'medialib.db' and change the line <code><property name="path">{path}/medialib.s4</property></code> into <code><property name="path">{path}/medialib.db</property></code>.
