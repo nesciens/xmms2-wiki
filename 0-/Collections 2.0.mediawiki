@@ -3,7 +3,7 @@
 This page describes coll2 as implemented in the [http://git.xmms.se/cgit.cgi/xmms2/xmms2-cippo/ xmms2-cippo] git repository
 
 ==Operators==
-A collection is built up of collection operators. Coll2 adds some new operators and removes some old ones. The operators removed are all the filter operators (_HAS, _MATCH, _EQUALS, _SMALLER, _GREATER). They are replaced by a single operator _FILTER. In addition _QUEUE and _PARTYSHUFFLE have been removed.
+A collection is built up of collection operators. Coll2 adds some new operators and removes some old ones. The operators removed are _QUEUE and _PARTYSHUFFLE.
 
 ===API breakage===
 Client code dealing with xmmsv_coll_t directly will most probably break, as the collection operator types have changed. Clients written in anything other than ruby or C will also break, because the bindings for those languages have not been ported yet. Clients using coll-parser to create their collections, and otherwise leaving them alone will be fine.
