@@ -68,7 +68,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 | result=The operand, but only with the mediaids that have a property with a given field name and source. Only source-preferred  properties are examined.
 | attributes=
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
-* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>server:plugin/id3v2:client*:plugin*</code>. It should be string where the different sources are separated by a colon (':'). '*' can be used in the string to match any string (including an empty string) and '?' to match any single character.
+* <code>source-preference</code>: The source-preference that needs to be applied, e.g. <code>("server", "plugin/id3v2", "client*", "plugin*")</code>. It is a list of strings. Character '*' can be used in a string to match any string (including an empty string) and '?' to match any single character. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -81,7 +81,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code> and <code>BINARY</code>. The default-value is <code>NOCASE</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -93,7 +93,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: The name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code> and <code>BINARY</code>. The default-value is <code>NOCASE</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -106,7 +106,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code> and <code>NATCOLL</code>. The default-value is <code>NOCASE</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -120,7 +120,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code> and <code>NATCOLL</code>. The default-value is <code>NOCASE</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -133,7 +133,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -146,7 +146,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -159,7 +159,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -173,7 +173,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>field</code>: If <code>type</code> is <code>value</code>, then the name of the property, e.g. <code>artist</code>, <code>album</code> or <code>title</code>. If this is not specified the name of the property is not taken into account.
 * <code>value</code>: A string.
 * <code>collation</code>: A collation to be used when comparing the value from the medialib and the <code>value</code> attribute. The possible values are <code>NOCASE</code>, <code>BINARY</code>, <code>NATCOLL</code>. The default-value is <code>NATCOLL</code>.
-* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]].
+* <code>source-preference</code>: The source-preference that needs to be applied. See at [[#Has | Has]]. If not set the server default will be used.
 | operands=Exactly one
 }}
 
@@ -221,7 +221,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 * <code>get</code>: A list with "id", "field", "value" or "source". If there are more than one item in the list it will use the first n-1 items as keys in recursive dicts, and the last will be aggregated using the aggregation function in the leaf.
 * <code>aggregate</code>: A string specifying the aggregation function. Can be one of "first", "list", "set", "avg", "sum", "min", "max" and "random". Defaults to "first".
 * <code>fields</code>: A list of fields to get. If this is not set it will get all properties.
-* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
+* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
 }}
 
 {{Collections 2.0_Fetchdict
@@ -231,7 +231,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | attributes=
 * <code>cluster-by</code>: One of the strings "id", "position", or "value". Defaults to "value".
 * <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
-* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
+* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
@@ -242,7 +242,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | attributes=
 * <code>cluster-by</code> One of the strings "id", "position", or "value". Defaults to "value".
 * <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
-* <code>source-preference</code>: The source preference to use when fetching the info. If not set it uses the server default.
+* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
@@ -383,7 +383,7 @@ This will hopefully clarify the above mentioned fetch specification. Below '{ ke
          */
  
          Prune rows according to source-preference.
-         /* With spec["source-preference"] = "server:plugin/id3v2:*" we might get
+         /* With spec["source-preference"] = ("server", "plugin/id3v2". "*") we might get
             | ID  | key    | value         | source        |
             +-----+--------+---------------+---------------+
             |   1 | artist | Beethoven     | plugin/id3v2  |
