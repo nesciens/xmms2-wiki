@@ -218,9 +218,9 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | type=metadata
 | desc=Fetches data from the current cluster and returns the fetched data
 | attributes=
-* <code>get</code>: A list with "id", "field", "value" or "source". If there are more than one item in the list it will use the first n-1 items as keys in recursive dicts, and the last will be aggregated using the aggregation function in the leaf.
+* <code>get</code>: A non-empty list of "id", "field", "value" or "source". If there are more than one item in the list it will use the data corresponding to the first n-1 items as keys in recursive dicts. The data corresponding to the last item will be aggregated using the aggregation function and stored at the deepest level. All entries of the list must be distinct. If <code>get</code> is <code>("value", "id")</code>, <code>fields</code> is <code>("artist")</code> and <code>aggregate</code> is <code>list</code> then something like this can be returned: <code>{ "The White Stripes" = (1, 2, 9), "Muse" = (3, 8, 10) }</code>.
 * <code>aggregate</code>: A string specifying the aggregation function. Can be one of "first", "list", "set", "avg", "sum", "min", "max" and "random". Defaults to "first".
-* <code>fields</code>: A list of fields to get. If this is not set it will get all properties.
+* <code>fields</code>: A list of fields to get. All entries of the list must be distinct. If this is not set it will get all properties.
 * <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
 }}
 
