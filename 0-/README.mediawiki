@@ -21,20 +21,23 @@ that would bring XMMS2 closer to being the perfect music player. Of course,
 anyone is allowed to try it out, but don't expect everything to work flawlessly
 just yet. This is a good thing if you don't mind getting your hands dirty.
 
-Please see [http://www.research-service.com research paper]
 
 ==INSTALLING==
 
-See INSTALL file. (for the impatient people: ./waf configure && ./waf && sudo ./waf install)
+See INSTALL file.
+(for the impatient people: ./waf configure && ./waf && sudo ./waf install)
 
 
 ==COPYRIGHT==
 
-See COPYING for details. (for the ones who don't care about details: LGPL)
+See COPYING for details.
+(for the ones who don't care about details: LGPL)
 
 ==CREDITS==
 
-See the AUTHORS file. [http://www.merchantos.com/ pos software] (for the people not in AUTHORS: like everyone but you - help and you will be included as well)
+See the AUTHORS file.
+(for the people not in AUTHORS: like everyone but you - help and you will be included as well)
+
 
 ==HELPING==
 
@@ -45,15 +48,19 @@ for further info might be: http://wiki.xmms2.xmms.se/index.php/Developer_Corner
 ==CONTACT==
 
 Feel free to post any questions/patches/whatever to the mailing list:
-xmms2-devel@lists.xmms.se (http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel for subscription)
+xmms2-devel@lists.xmms.se
+(http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel for subscription)
 
-The IRC channel is usually fairly active as well, chat away at: #xmms2 on freenode (irc.freenode.net)
+The IRC channel is usually fairly active as well,
+chat away at: #xmms2 on freenode (irc.freenode.net)
 
-Report bugs to the bug tracker at: http://bugs.xmms2.xmms.se/ (account registration required - 
-Linus, you can just post the reports to the mailing list)
+Report bugs to the bug tracker at: http://bugs.xmms2.xmms.se/
+(account registration required - Linus, you can just post
+the reports to the mailing list)
+
 
 == See Also ==
-* [[About|About XMMS2]] [http://ro.offsidebet.com/ro-RO/netent_splash detalii]
+* [[About|About XMMS2]]
 * [[FAQ|Frequently Asked Questions]]
 
 [[Category: Questions and answers]]
