@@ -1,7 +1,7 @@
 __NOTOC__
 
 ;Note:
-''This page is kept in sync with the [http://git.xmms.se/?p=xmms2-stable.git;a=blob;f=README README] file distributed with the XMMS2 source code (as per [[Release Checklist]]).''
+''This page is kept in sync with the [http://git.xmms.se/cgit.cgi/xmms2/xmms2-stable/tree/README README] file distributed with the XMMS2 source code (as per [[Release Checklist]]).''
 
 ==XMMS2==
 
