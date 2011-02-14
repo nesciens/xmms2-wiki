@@ -8,7 +8,7 @@ The basic structure in the S4 database is the entry. An entry maps to a song in 
 key: "song_id", 1  -- The key is actually a key and a value
 attributes:
   "title", "Two-Headed Boy", "plugin/id3v2"            -- Every attribute has a key, a value and a source
-  "artist", "Neurtal Milk Hotel", "plugin/id3v2"       -- There can also be attributes with the same key
+  "artist", "Neutral Milk Hotel", "plugin/id3v2"       -- There can also be attributes with the same key
   "artist", "Neutral Milk Hotel", "client/xmms2-nycli" -- but different value and/or source.
 </pre>
 But how does this remove redundancy? There is still one artist attribute per song, but behind the scene S4 stores equal strings only once. There is still some redundancy in that the three pointers to the key, value and source are duplicated, but the data they point to are shared.
