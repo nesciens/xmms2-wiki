@@ -26,6 +26,7 @@ For those who want to hack on XMMS2 itself, or report bugs and such things. Befo
 ** [[ChangeLog Format]]
 * [[Help Wanted]]
 ** We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms.se tested].
+* [[Google Summer of Code]] pages.
 
 == Policies and guidelines ==
 
