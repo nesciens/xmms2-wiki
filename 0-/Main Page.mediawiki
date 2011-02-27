@@ -5,11 +5,9 @@ __NOEDITSECTION__
 {|
 |-
 |[[Image:Logo-white-128.png]]
-|XMMS2 0.7 DrNo was just released.
+|The current Release is '''XMMS2 0.7 DrNo'''
 
 Read the [[Release:DrNo |release notes]] for DrNo.
-
-Visit our [[Summer_of_Code_2010|Summer of Code 2010 page]].
 |-
 |}
 </div>
