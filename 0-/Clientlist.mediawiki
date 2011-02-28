@@ -8,20 +8,28 @@ All current clients should be found here, but not every entry in this list is up
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Abraca       | Graphical / GTK | C | in development | Usable client with collection support }}
 {{ClientTableEntry|Etude        | Graphical / GTK | Python | in development | Client with graphical collection editor }}
+{{ClientTableEntry|Remuco       | Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|Konfetka     | Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
 {{ClientTableEntry|nymp         | console / curses | Python | in development | A graphical cli client providing a tree view on your collection.  }}
+{{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
 {{ClientTableEntry|j. xmms(2)viewer | console / curses | C++ | development stalled (2010-12) | simple playlist viewer (no editing) }}
+{{ClientTableEntry|XMMS2tray    | Tray Icon / GTK | Python | development stalled (2010-11) | *nix GTK+2 system tray integration }}
+{{ClientTableEntry|SeaSerpent   | Graphical / QT4 | Python | development stalled (2010-09) | In version 1.0; stable - should not crash.  Always in development since always looking for new features ;-) }}
+{{ClientTableEntry|sisy         | Console | C | development stalled (2010-08) | Simple syntax collection pattern parser }}
 {{ClientTableEntry|LXMusic      | Graphical / GTK | C | development stalled (2010-04) | Very simple player, integrated into LXDE }}
+{{ClientTableEntry|SeMMiX       | Graphical / GTK | C | Rewrite, development stalled (2010-04) | Client for media servers with xmms2 support. It allows to connect to several servers at the same time. }}
+{{ClientTableEntry|xmms2swi     | Browser / Webclient | PHP | development stalled (2010-04) | Simple web interface, small and works well with ALL browsers! }}
 {{ClientTableEntry|Flexmms2     | Graphical / GTK | Python | development stalled (2010-03) | Main goal is to create a powerful and customizable mediabrowser (already usable) }}
 {{ClientTableEntry|ccx2         | Console / ncurses | Python | development stalled (2010-03) | Customizable console client with good support for playlists and searching }}
+{{ClientTableEntry|Spring       | Graphical / Qt4 | Python | development stalled (2010-03) | multi-featured client with different media browsers }}
 {{ClientTableEntry|Promoe       | Graphical / QT4 (Skinnable) | C++ | development stalled (2010-03) | Clone of classic Winamp / XMMS }}
+{{ClientTableEntry|Sonus        | Graphical / QT4 | Python | development stalled (2010-02) | Simple, yet full-featured player }}
 {{ClientTableEntry|Euphoria     | Graphical / EFL | Ruby | rewrite | Slick themeable client }}
 {{ClientTableEntry|eq           | Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|gkrellxmms2  | GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
 {{ClientTableEntry|gxmms2       | Graphical / GTK | C | in development | Lightweight, basic player with playlist editor }}
 {{ClientTableEntry|Harald       | Mobile Phone / Bluetooth | JavaME/C | in development | Player running on Java capable mobile phone }}
-
 |}
 
 = Stalled =
@@ -29,20 +37,27 @@ All current clients should be found here, but not every entry in this list is up
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Muxic        | Graphical / Cocoa | Obj-C | development stalled (2009-11) | Minimal windowshade for Mac OS X }}
+{{ClientTableEntry|xmms2-hotkey | Hotkeys (X11/console) | C++ | stable (since 2009-08) | Control XMMS2 via X11 and/or console keys/mouse, supports multi-key combinations }}
 {{ClientTableEntry|Azrael       | Graphical / GTK | C | development stalled (2009-07) | Basic player with nice additions }}
 {{ClientTableEntry|lagn         | Emacs Mode | emacs-lisp | development stalled (2009-07) | Control XMMS2 within emacs }}
 {{ClientTableEntry|gx2ctl       | Gnome x2 control | C | development stalled (2009-01) - "works for her" | the Drag'n'Drop client for your girlfriend }}
 {{ClientTableEntry|JukX         | Graphical / GTK | Python | development stalled (2009-01) | touchscreen orientated  concept }}
+{{ClientTableEntry|SAXm2s       | Graphical / QT | Python | development stalled (2008-10) | Simplicistic player }}
+{{ClientTableEntry|vimxmms2     | Vim Plugin | Python | development stalled (2008-09) | A XMMS2 client for Vim }}
 {{ClientTableEntry|GNOME Do     | GNOME Do plugin| C# | development stalled (2008-07) | Allows xmms2 to be accessed and controlled by GNOME Do }}
 {{ClientTableEntry|Crystalxmms  | Graphical | Java | development stalled (2008-02) | Look based on crystal icons }}
 {{ClientTableEntry|Insanity     | Graphical / GTK | Python | development stalled (2007-11) | Simple but complete player }}
 {{ClientTableEntry|Chalyx       | Library | Python | development stalled (2007-10) | Flexible modular library for XMMS2/MPD clients }}
+{{ClientTableEntry|XmmsDeskbar  | Gnome Deskbar Plugin | Python | development stalled (2007-10) | When typing in the input field of deskbar, albums, songs and artists are queried }}
 {{ClientTableEntry|Esperanza    | Graphical / QT4 | C++ | development stalled (2007-08) | Lightweight, basic player }}
 {{ClientTableEntry|Blastwave    | Graphical / GTK | C | development stalled (2007-06)| Experimental XMMS2 client }}
+{{ClientTableEntry|Sopran       | Graphical / GTK | Ruby | development stalled (2007-06) | Simple player with plugin system }}
 {{ClientTableEntry|gx2osd       | On-Screen Display (GTK) | C++ | development stalled (2007-05) | Skinnable on-screen display }}
 {{ClientTableEntry|radiobar     | Graphical / GTK | Ruby | development stalled (2007-05) | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Cocopapa     | Console | C | development stalled (2007-04) | Complex Collection Pattern Parser }}
 {{ClientTableEntry|Eloquence    | Plugin for E17 | C | development stalled (2006-12) | themeable desktop module }}
+{{ClientTableEntry|snett        | Graphical / GTK | Ruby | development stalled (2006-10) | Desktop icon providing simple operations }}
+{{ClientTableEntry|TurboX2      | Browser / Webclient | Python, JS | development stalled (2006-ish) | Lets you control XMMS2 via your Webbrowser }}
 
 |}
 
@@ -51,27 +66,10 @@ All current clients should be found here, but not every entry in this list is up
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|lxmms2       | IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
-{{ClientTableEntry|Remuco| Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
-{{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
-{{ClientTableEntry|SeaSerpent| Graphical / QT4 | Python | in development | In version 1.0; stable - should not crash.  Always in development since always looking for new features ;-) }}
-{{ClientTableEntry|SeMMiX| Graphical / GTK | C | Rewrite, in development | Client for media servers with xmms2 support. It allows to connect to several servers at the same time. }}
-{{ClientTableEntry|snett| Graphical / GTK | Ruby | in development | Desktop icon providing simple operations }}
-{{ClientTableEntry|sisy| Console | C | in development | Simple syntax collection pattern parser }}
-{{ClientTableEntry|Sonus| Graphical / QT4 | Python | in development | Simple, yet full-featured player }}
-{{ClientTableEntry|Sopran| Graphical / GTK | Ruby | in development | Simple player with plugin system }}
-{{ClientTableEntry|Spring| Graphical / Qt4 | Python | in development | multi-featured client with different media browsers }}
-{{ClientTableEntry|TurboX2| Browser / Webclient | Python, JS | in development | Lets you control XMMS2 via your Webbrowser }}
-{{ClientTableEntry|vimxmms2| Vim Plugin | Python | in development | A XMMS2 client for Vim }}
-{{ClientTableEntry|Wmxmms2| Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
-{{ClientTableEntry|x2c| console | ruby | stable | little rubyistic console client with advanced features}}
-{{ClientTableEntry|XMMbaSh2 | console | bash | in development | A single line bash client, enables all features of current XMMS2 CLI client}}
-{{ClientTableEntry|XMMS2 CLI client| console | C | in development | feature-rich, basic client that comes with XMMS2 }}
-{{ClientTableEntry|XMMS2Musica| Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
-{{ClientTableEntry|XMMS2tray| Tray Icon / GTK | Python | in development | *nix GTK+2 system tray integration }}
-{{ClientTableEntry|XmmsDeskbar| Gnome Deskbar Plugin | Python | in development | When typing in the input field of deskbar, albums, songs and artists are queried }}
-{{ClientTableEntry|xmms2swi| Browser / Webclient | PHP | in development | Simple web interface, small and works well with ALL browsers! }}
-{{ClientTableEntry|xmms2-freedb| Console | C++ | in development | CD database client, updates cdda:// medialib entries}}
-{{ClientTableEntry|xmms2-hotkey| Hotkeys (X11/console) | C++ | stable | Control XMMS2 via X11 and/or console keys/mouse, supports multi-key combinations }}
+{{ClientTableEntry|Wmxmms2      | Dockapp | C | stable | Client dockapp for WindowMaker or any other dockapp-capable windowmanager }}
+{{ClientTableEntry|x2c          | console | ruby | stable (since 2007-06) | little rubyistic console client with advanced features}}
+{{ClientTableEntry|XMMS2Musica  | Graphical / Cairo (skinnable) | Python | in development | Template-alike simple skinned player }}
+{{ClientTableEntry|xmms2-freedb | Console | C++ | in development | CD database client, updates cdda:// medialib entries}}
 {{ClientTableEntry|xmms2-mpris-bridge| console / dbus | Python | in development | Provides a MPRIS interface for XMMS2 }}
 {{ClientTableEntry|xmms2-notify| Graphical / libnotify | C | in development | Provides desktop notifications }}
 {{ClientTableEntry|xmms2-osd| On-Screen Display / XOSD | Python | rewrite, in development | Simple song info on-screen display }}
@@ -126,6 +124,7 @@ The following clients aren't worked on anymore, and might not work out of the bo
 {{ClientTableEntry|XMMS2Curse| console / ncurses | Python | abandoned | Client with ncurses UI }}
 {{ClientTableEntry|XMMS2www| Web | PHP | vaporware | Unknown }}
 {{ClientTableEntry|XMMS2 xml-rpc| Web? | Ruby | haunted | Client that acts as an xml-rpc server }}
+{{ClientTableEntry|XMMbaSh2     | console | bash | in development | A single line bash client, enables all features of current XMMS2 CLI client}}
 |}
 
 [[Category: General]]
