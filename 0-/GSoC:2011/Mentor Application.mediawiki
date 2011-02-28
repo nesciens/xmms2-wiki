@@ -1,0 +1,57 @@
+* Organization Name:
+** XMMS2
+
+* Description:
+** XMMS2 is the spiritual successor to the very successful XMMS project. The creators of XMMS got together in 2002 and spun out the XMMS2 sister project, the idea was from the beginning to correct some of the early mistakes in XMMS design. The project grew and is now conceptually very different from XMMS. The team behind XMMS2 focuses on audio quality, freedom of choice and powerful organization features. Community-wise the team is around 10-20 regular contributors and over 95 people have at some time contributed to XMMS2.
+
+* Home page:
+** http://xmms2.org/wiki/Main_Page
+
+* Main Organization License:
+** LGPL
+
+* Why is your organization applying to participate in GSoC 2011? What do you hope to gain by participating? (should be long)
+** A lot of code, and most importantly, interesting concepts, that XMMS2 is built upon comes directly from Summer of Code students. Over the years we've gained a lot of new friends and fellow hackers that have kept the project going year after year. We're very passionated about doing the right thing even if it involves going that extra mile, we do this by sharing our experience in software engineering with each other and promoting the art of expressing oneself in beautiful code. Over the years many of our developers, quite a few who started out as GSoC students, have started their working careers with their involvement in XMMS2 as one of their main references. We hope to both teach, and learn, from the students we collaborate with during this years Google Summer of Code, but most of all, we want to be a part of the Summer of Code because it's fun!
+
+* If accepted, would this be your first year participating in GSoC?
+** 6:th year!
+
+* Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation.
+** TODO
+
+* If your organization participated in past GSoCs, please let us know the ratio of students passing to students allocated, e.g. 2006: 3/6 for 3 out of 6 students passed in 2006.
+** TODO
+
+* What is the URL for your ideas page?
+** http://xmms2.org/wiki/Summer_of_Code_2011/Proposed_projects
+
+* What is the main development mailing list for your organization?
+** xmms2-devel@lists.xmms.se
+
+* What is the main IRC channel for your organization?
+** #xmms2 at freenode
+
+* Does your organization have an application template you would like to see students use?
+** We promote the students to come up with their own unique proposal, but inspiration can be found at: http://xmms2.org/wiki/Summer_of_Code_2011/Student_Application
+
+* What criteria did you use to select the individuals who will act as mentors for your organization? Please be as specific as possible
+** TODO
+
+* What is your plan for dealing with disappearing students?
+** As we have done for the last three years, we are still working on our remote, solar-powered deadly nanobot-driven amphibian anaconda as a friendly encouragement for students to not drop their project. This means an extensive chat with all the serious candidates, to try to determine how available, reliable and honest they are. We will also ask a detailed project/work history (FOSS or not), to check whether the student has already proven to be capable of completing a project. During the GSoC, the mandatory IRC presence and status reports will help us keep track of people's work and involvement. We will try to communicate the expectations and requirements as clearly as possible, and the students will know that they will be failed if these are not met. This is two ways - just as we have to prepare for disappearing students - if students do not live up to the expectations, we need to make them "disappear" :) Someone very wise once said: If your student hasn't checked in code by the mid-term evaluation or if your student can't make themselves available to discuss the review, fail them. If you're not 85% certain that the student will continue with the project, fail them! Work with your students to set up expectations; if your student doesn't follow these expectations, but you're happy, Google doesn't care. But if you're not happy, then reiterate your expectations to the student and make sure they understand them. If they still don't live up to their expectations, ask them to leave. (Leslie Hawthorn)
+
+* What is your plan for dealing with disappearing mentors?
+** All mentors are well familiar with the whole code base in addition to their specific areas of expertise. We communicate together on a daily basis, so a handover to any of the mentors is always trivial. Thankfully we haven't to my knowledge had any completely disappearing mentors. Last year we had a disappearing GSoC Admin, but this person was not a mentor and the role as an Admin was handed over without cause for panic. The community on the IRC channel can sometimes also help answer questions students might have even when no official members are available.
+
+* What steps will you take to encourage students to interact with your project's community before, during and after the program?
+** Hanging around on IRC will be a requirement, we will see non-IRCing as desertion. We will show our patented kindness and interest in the students work and persona. We will encurage students during the selection process to start digging into the code so that they can provide a good proposal. This almost always involves discussing their ideas with developers on either IRC or on the mailing list.We do not think it's possible to convince students to stick with the project unless they are interested in it in the first place. For this reason, we want to favor the participation of students who show a genuine interest in XMMS2, not just in a single GSoC task: (1) students who are already regular contributors and members of the community and who have a contribution to make in the context of GSoC, and (2) students who convince us of their unlimited passion for XMMS2 in their application form (among other things, we ask "why are you interested in XMMS2, what do you think you could bring to it, and what are the things you can think of to make XMMS2 an even better project?"). Obviously, a friendly community and lots of communication also help keeping good students during and after GSoC. 
+
+* If you are a small or new organization applying to GSoC, please list a larger, established GSoC organization or a Googler that can vouch for you here.
+** This will, with your permission, be our 6th year of Google Summer of Code, we hope you trust us :)
+
+* If you are a large organization who is vouching for a small organization applying to GSoC for their first time this year, please list their name and why you think they'd be good candidates for GSoC here:
+** Not applicable
+
+* Anything else you'd like to tell us?
+
+* Backup Admin (Link ID):
