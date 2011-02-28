@@ -26,7 +26,8 @@ All current clients should be found here, but not every entry in this list is up
 {{ClientTableEntry|gx2ctl       | Gnome x2 control | C | development stalled (2009-01) - "works for her" | the Drag'n'Drop client for your girlfriend }}
 {{ClientTableEntry|JukX         | Graphical / GTK | Python | development stalled (2009-01) | touchscreen orientated  concept }}
 {{ClientTableEntry|GNOME Do     | GNOME Do plugin| C# | development stalled (2008-07) | Allows xmms2 to be accessed and controlled by GNOME Do }}
-{{ClientTableEntry|Crystalxmms  | Graphical | Java | development stalled (2008-02) | Look based on crystal icons }}{{ClientTableEntry|Insanity     | Graphical / GTK | Python | development stalled (2007-11) | Simple but complete player }}
+{{ClientTableEntry|Crystalxmms  | Graphical | Java | development stalled (2008-02) | Look based on crystal icons }}
+{{ClientTableEntry|Insanity     | Graphical / GTK | Python | development stalled (2007-11) | Simple but complete player }}
 {{ClientTableEntry|Chalyx       | Library | Python | development stalled (2007-10) | Flexible modular library for XMMS2/MPD clients }}
 {{ClientTableEntry|Esperanza    | Graphical / QT4 | C++ | development stalled (2007-08) | Lightweight, basic player }}
 {{ClientTableEntry|Blastwave    | Graphical / GTK | C | development stalled (2007-06)| Experimental XMMS2 client }}
