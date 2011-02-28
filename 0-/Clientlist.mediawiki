@@ -1,30 +1,45 @@
 = Client Matrix =
 
-All current clients should be found here.
+All current clients should be found here, but not every entry in this list is up to date or accurate.
+
+= Actively Maintained =
 
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Abraca       | Graphical / GTK | C | in development | Usable client with collection support }}
-{{ClientTableEntry|Azrael       | Graphical / GTK | C | development stalled (2009-07) | Basic player with nice additions }}
-{{ClientTableEntry|Blastwave    | Graphical / GTK | C | development stalled (2007-06)| Experimental XMMS2 client }}
-{{ClientTableEntry|ccx2         | Console / ncurses | Python | in development | Customizable console client with good support for playlists and searching }}
-{{ClientTableEntry|Chalyx       | Library | Python | development stalled (2007-10) | Flexible modular library for XMMS2/MPD clients }}
-{{ClientTableEntry|Cocopapa     | Console | C | development stalled (2007-04) | Complex Collection Pattern Parser }}
-{{ClientTableEntry|Crystalxmms  | Graphical | Java | development stalled (2008-02) | Look based on crystal icons }}
-{{ClientTableEntry|Eloquence    | Plugin for E17 | C | development stalled (2006-12) | themeable desktop module }}
 {{ClientTableEntry|Etude        | Graphical / GTK | Python | in development | Client with graphical collection editor }}
+{{ClientTableEntry|Flexmms2     | Graphical / GTK | Python | development stalled (2010-03) | Main goal is to create a powerful and customizable mediabrowser (already usable) }}
+{{ClientTableEntry|ccx2         | Console / ncurses | Python | development stalled (2010-03) | Customizable console client with good support for playlists and searching }}
 {{ClientTableEntry|Euphoria     | Graphical / EFL | Ruby | rewrite | Slick themeable client }}
 {{ClientTableEntry|eq           | Graphical / GTK | Python | in development | Simple equalizer frontend }}
-{{ClientTableEntry|Esperanza    | Graphical / QT4 | C++ | development stalled (2007-08) | Lightweight, basic player }}
-{{ClientTableEntry|Flexmms2     | Graphical / GTK | Python | development stalled (2010-03) | Main goal is to create a powerful and customizable mediabrowser (already usable) }}
 {{ClientTableEntry|gkrellxmms2  | GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
-{{ClientTableEntry|GNOME Do     | GNOME Do plugin| C# | development stalled (2008-07) | Allows xmms2 to be accessed and controlled by GNOME Do }}
-{{ClientTableEntry|gx2ctl       | Gnome x2 control | C | development stalled (2009-01) - "works for her" | the Drag'n'Drop client for your girlfriend }}
-{{ClientTableEntry|gx2osd       | On-Screen Display (GTK) | C++ | development stalled (2007-05) | Skinnable on-screen display }}
 {{ClientTableEntry|gxmms2       | Graphical / GTK | C | in development | Lightweight, basic player with playlist editor }}
 {{ClientTableEntry|Harald       | Mobile Phone / Bluetooth | JavaME/C | in development | Player running on Java capable mobile phone }}
-{{ClientTableEntry|Insanity     | Graphical / GTK | Python | development stalled (2007-11) | Simple but complete player }}
+
+|}
+
+= Stalled =
+
+{| class="wikitable"
+!                  Name         || Kind || Language || Status || Description
+{{ClientTableEntry|Azrael       | Graphical / GTK | C | development stalled (2009-07) | Basic player with nice additions }}
+{{ClientTableEntry|gx2ctl       | Gnome x2 control | C | development stalled (2009-01) - "works for her" | the Drag'n'Drop client for your girlfriend }}
 {{ClientTableEntry|JukX         | Graphical / GTK | Python | development stalled (2009-01) | touchscreen orientated  concept }}
+{{ClientTableEntry|GNOME Do     | GNOME Do plugin| C# | development stalled (2008-07) | Allows xmms2 to be accessed and controlled by GNOME Do }}
+{{ClientTableEntry|Crystalxmms  | Graphical | Java | development stalled (2008-02) | Look based on crystal icons }}{{ClientTableEntry|Insanity     | Graphical / GTK | Python | development stalled (2007-11) | Simple but complete player }}
+{{ClientTableEntry|Chalyx       | Library | Python | development stalled (2007-10) | Flexible modular library for XMMS2/MPD clients }}
+{{ClientTableEntry|Esperanza    | Graphical / QT4 | C++ | development stalled (2007-08) | Lightweight, basic player }}
+{{ClientTableEntry|Blastwave    | Graphical / GTK | C | development stalled (2007-06)| Experimental XMMS2 client }}
+{{ClientTableEntry|gx2osd       | On-Screen Display (GTK) | C++ | development stalled (2007-05) | Skinnable on-screen display }}
+{{ClientTableEntry|Cocopapa     | Console | C | development stalled (2007-04) | Complex Collection Pattern Parser }}
+{{ClientTableEntry|Eloquence    | Plugin for E17 | C | development stalled (2006-12) | themeable desktop module }}
+
+|}
+
+= To be sorted =
+
+{| class="wikitable"
+!                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|j. xmms(2)viewer| console / curses | C++ | in development | simple playlist viewer (no editing) }}
 {{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
 {{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
