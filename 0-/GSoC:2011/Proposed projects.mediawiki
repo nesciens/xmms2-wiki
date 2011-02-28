@@ -30,7 +30,6 @@ mount point of a rockbox device and the name of a collection would merge that co
 
 {{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
 
-
 == Platform support ==
 
 {{SoCItem| title=Mac OSX integration and distribution
