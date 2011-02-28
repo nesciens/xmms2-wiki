@@ -1,5 +1,8 @@
 These Pages need some updates:
 
+* This Page!
+** There is still much outdated stuff to be found on this here Wiki!
+
 * [[FAQ]]
 ** When will XMMS2 be released As a non-Developer release?
 *** isn't that already the case?
