@@ -17,7 +17,6 @@ __NOEDITSECTION__
 ;are currently using XMMS2..
 * and found a problem, maybe you'd like to check if the [[FAQ]] covers it, or else [[Reporting bugs | report it]].
 ;want to contribute something to the project..
-* maybe you'd like to make a nice [[Logo | logo]].
 * check out the [[Developer Corner]] for information about [[Developer Corner#XMMS2_Technical_Details | technical details]], [[Developer Corner#Code.._and_bugs.21 | guidelines]] for working with XMMS2 code and various [[Developer Ideas|development ideas]].
 * if you're developing a client, maybe you'd like to add it to the [[XMMS2 Clients | clients]] page. You can also discover and add bits of wisdom to [[Writing XMMS2 Clients]].
 * if you want to develop a plugin, you should familiarise yourself with the [[Design of XMMS2]].
