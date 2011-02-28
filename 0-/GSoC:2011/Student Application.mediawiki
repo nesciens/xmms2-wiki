@@ -1,0 +1,43 @@
+{{Template:Discussion}}
+
+So you want to get on the XMMS2 love-boat? Try to answer as many of these questions you find relevant on the Google application form as possible. An answer to the first question is REQUIRED. Everything else is optional, but the more information you provide, the better chance you have to get accepted. Send it as an email to soc2011@xmms.se and also submit it in your application on Google's web app. If it doesn't all fit because of the character limit, you can just put a summary.
+
+* '''Have you contacted an XMMS2 mentor (use IRC or soc2011@xmms.se) and discussed the project already? Note that we won't read the application until you answer YES on this question.'''
+* '''Have you read and understood the [[Summer of Code 2008/Student requirements|rules and requirements]]?'''
+* '''You'''
+** Just write a small introduction to yourself.
+** State your preferred email address.
+** State your IRC nickname.
+** What are you studying, subject, level and school?
+** What programs/software have you worked on before?
+** Have you developed software in a team environment before? (As opposed to hacking on something on your own)
+** Are you already involved with any open source development? If yes, please describe the project and the scope of your involvement.
+** Have you participated to the Google Summer of Code before? As a mentor or a student? In what project? Were you successful? If not, why?
+** Describe what you consider your three main shortcomings (relevant to GSoC) and how you cope with them.
+** Describe what you consider your three main strengths (relevant to GSoC) and how they show in previous projects of yours.
+* '''Your project'''
+** Please describe the project and the scope.
+** Why did you choose this project?
+** Include a timeline for your work on the project
+** Include as much technical detail about your implementation as you can
+** What do you expect to gain from this project?
+** What would make you stay in the xmms2-community after the conclusion of SOC?
+* '''Practically'''
+** Are you familiar with any of the following tools?
+*** git
+*** waf
+** Which tools do you normally use for development? Why do you use them?
+** What development model would you use (e.g. keywords: V-model, XP programming, agile programming, iterative; with the help of prototyping, formal specifications, tests, etc).
+** What programming languages are you fluent in?
+** What spoken languages are you fluent in?
+** At what hours are you awake (please specify in UTC)
+** Would you mind talking with your mentor on telephone / internet phone?
+** Will you be available full summer, or do you still have lectures/exams/whatever when GSoC starts? Are you planning on some vacation (when you won't be coding on GSoC project) during the summer?
+* '''Detailed answer''' (optional, but well developed answers highly regarded).
+** Write a small essay (750-1000 words or more) explaining why you want to participate in an XMMS2 GSoC project. You can use the above questions as guides, but feel free to throw in more information if you feel it is relevant.
+*** What is your particular interest in XMMS2? How do you consider the state of XMMS2, i.e. what do you see as its main strengths and shortcomings?
+*** What is your perception of 'Open Source'? Briefly explain what you think of the whole 'Open Source' concept, how you discovered Open Source, what you expect to gain/experience by participating in an Open Source project. (Either separate answer, or as part of above mini-essay)
+*** What motivates or inspires you to write programs/develop software?
+
+== See Also ==
+* [[Summer_of_Code_2006/Student_requirements]]
