@@ -38,7 +38,7 @@ mount point of a rockbox device and the name of a collection would merge that co
 |description=Mac OSX is a different kind of beast than most other unixes, this also means that it needs some extra integration. We are looking for a student that could help further the XMMS2 integration with MacOSX. Primarily it would be to modify waf to be able to build .app bundles with all dependencies in them so that XMMS2 could be distributed as a APP on a DMG. Optional goodies: xmmsclient framework to be used in XCode for developing Objective-C clients, integration with media buttons (play, next, etc), listening to signals when computer goes to sleep (to pause music), automatic import of the iTunes library and much much more.
 |lang=Python/Objective-C/C
 |level=Medium to Hard
-|mentor=[[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]]}}
+|mentor=N/A}}
 
 
 == Bindings ==
