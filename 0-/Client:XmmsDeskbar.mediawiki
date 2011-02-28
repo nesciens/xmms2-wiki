@@ -1,3 +1,11 @@
-{{Client |name=XmmsDeskbar| author=[[Daniel Svensson]]| website=http://git.xmms.se/?p=xmmsdeskbar.git;a=summary| version=N/A| devlanguage=Python| ui=N/A| screenshots=http://exodus.xmms.se/~nano/deskbar.png| description=A xmms handler for deskbar. When typing in the input field of deskbar, albums, songs and artists are queried and results shown. When selecting a result, the result gets added to the playlist and the first of the added entries is played (or if already playing, played next). 
+{{Client |
+  name=XmmsDeskbar|
+  author=[[Daniel Svensson]]|
+  website=[http://git.xmms.se/cgit.cgi/xmms2/xmmsdeskbar/ git.xmms.se]|
+  version=N/A|
+  devlanguage=Python|
+  ui=N/A|
+  screenshots=[http://exodus.xmms.se/~nano/deskbar.png deskbar.png]|
+  description=A xmms handler for deskbar. When typing in the input field of deskbar, albums, songs and artists are queried and results shown. When selecting a result, the result gets added to the playlist and the first of the added entries is played (or if already playing, played next). 
 
 A screencast can be seen at http://exodus.xmms.se/~nano/xmmsdeskbar.ogg}}
