@@ -4,5 +4,5 @@ There has been one try to apply for the Google Summer of Code:
 * [[Summer of Code 2007]] - 4 projects accepted
 * [[Summer of Code 2008]] - 6 projects accepted
 * [[Summer of Code 2009]] - not accepted.
-* [[Summer of Code 2010]] - not accepted.
+* [[Summer of Code 2010]] - 4 projects accepted
 * The deadline for applications to the Google Summer of Code 2011 is March 11th.
