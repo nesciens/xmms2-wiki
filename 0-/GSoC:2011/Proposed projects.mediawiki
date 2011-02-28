@@ -30,6 +30,8 @@ mount point of a rockbox device and the name of a collection would merge that co
 
 {{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
 
+{{SoCItem| title=Adaptive playlists| description=[http://imms.luminal.org/ IMMS] has brought smart song scheduling to several music players, including XMMS2's predecessor XMMS. It would be great to have this again. It need not be through IMMS. It requires thought on how to do this in a clean manner. (See [[Collections]], [[Collections_2.0 | Collections 2.0]], [[Smart_playlists | Smart Playlists]], Service Clients, ...) | lang=Any| level=Medium| mentor=N/A}}
+
 == Platform support ==
 
 {{SoCItem| title=Mac OSX integration and distribution
