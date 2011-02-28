@@ -1,5 +1,7 @@
 The XMMS2 Project has come a long way since 2003, but there are still a lot of rough edges around. If you'd like to help make XMMS2 a more interesting project, then check out the following items. We always welcome more manpower that can help our late project later.
 
+= Programming and similar =
+
 == Low hanging fruit ==
 Some easy tasks that can be well suited for familiarizing with the XMMS2 codebase (and patch nazis) can be found in our bugtracker. <mantis>1638</mantis>.
 
@@ -9,3 +11,13 @@ We have a whole bunch of feature requests (and possibly bugs) filed away on our 
 == Clients without maintainers ==
 
 The [[Clientlist]] is full of clients in every programming language and with every gui toolkit you can imagine. Why not adopt an abandoned, but maybe promising client? Most of them are open source and most developers would be happy to see someone continue what they started.
+
+= Documentation =
+
+== Wiki Documentation ==
+
+While XMMS2 steadily moves forward, the Wiki is not always treated with the same respect. Pages may be forgotten for years and proudly announce XMMS2 0.4DrKosmos to be the newest, shiniest release you could get. Those obviously outdated pages should be corrected, or collected on the [[Outdated Wiki Pages]] page.
+
+== Testing and Bugreports ==
+
+You have found a bug in XMMS2 or maybe a client? Great! Report it on the [http://bugs.xmms2.xmms.se/ Bug Tracker] or on the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel Mailing List]. Alternatively, see if you can [http://bugs.xmms2.xmms.se/search.php?project_id=0&status_id=10&sticky_issues=off&sortby=last_updated&dir=DESC&hide_status_id=-2 find a bug to reproduce and further describe] on the bug tracker.
