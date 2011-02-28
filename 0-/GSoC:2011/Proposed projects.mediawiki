@@ -15,8 +15,6 @@ The following ideas are hints at possible projects that we would like to see in 
 an ondisk format called TagCache. This project would be to split the TagCache code from Rockbox out into a library, and then write a service client that given the
 mount point of a rockbox device and the name of a collection would merge that collection to the player. It should hopefully support updating the TagCache on the device, but that can also be done by having the device sync itself. It should also support removing all songs from an arbitrary collection from the device.| lang=C| level=Medium| mentor=N/A}}
 
-{{SoCItem| title=MPD Bridge| description=An XMMS2 client that can act as an MPD server, thus allowing to control an XMMS2 server with MPD clients. There is [http://git.xmms.se/?p=mpd-bridge.git;a=summary one such attempt in Perl] by rafl and [http://www.freax.fr/photos/main.php?g2_itemId=847 another less advanced implementation in Python] by danderson, that can be used as reference (missing some parts of the MPD protocol). ''Not a proposed project anymore, blame danderson who's doing it on his spare time free of charge!''| lang=Any (Python would be a good choice)| level=Easy| mentor=N/A}}
-
 {{SoCItem| title=Spotify xform| description=Stream and browse spotify songs (probably worth taking a look at [http://despotify.se/ Despotify]).| lang=C| level=Medium| mentor=N/A}}
 
 
