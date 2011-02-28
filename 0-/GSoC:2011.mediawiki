@@ -1,0 +1,13 @@
+== Accepted projects ==
+
+* TBA
+
+== Portal ==
+
+[[Summer_of_Code_2011/Proposed_projects|Proposed projects]]
+
+[[Summer_of_Code_2011/Student_Application|Student application form]]
+
+[[Summer_of_Code_2011/Mentors|Mentor information]]
+
+[[Summer_of_Code_2011/Mentor_Application|Our application]] - '''DEADLINE 12th of March'''
