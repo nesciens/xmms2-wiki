@@ -1,7 +1,8 @@
 
-== Accepted projects ==
+== Accepted Projects ==
 
-None so far!
+* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2009/xmms2/t124025007379 The official awesome client]
+* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2009/xmms2/t124025007852 Implementation of a new medialib backend]
 
 == Portal ==
 
