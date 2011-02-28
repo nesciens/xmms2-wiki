@@ -5,3 +5,7 @@ Some easy tasks that can be well suited for familiarizing with the XMMS2 codebas
 
 == Long term wishlist ==
 We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.xmms.se/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
+
+== Clients without maintainers ==
+
+The [[Clientlist]] is full of clients in every programming language and with every gui toolkit you can imagine. Why not adopt an abandoned, but maybe promising client? Most of them are open source and most developers would be happy to see someone continue what they started.
