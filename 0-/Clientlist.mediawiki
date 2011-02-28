@@ -8,8 +8,14 @@ All current clients should be found here, but not every entry in this list is up
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Abraca       | Graphical / GTK | C | in development | Usable client with collection support }}
 {{ClientTableEntry|Etude        | Graphical / GTK | Python | in development | Client with graphical collection editor }}
+{{ClientTableEntry|Konfetka     | Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
+{{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
+{{ClientTableEntry|nymp         | console / curses | Python | in development | A graphical cli client providing a tree view on your collection.  }}
+{{ClientTableEntry|j. xmms(2)viewer | console / curses | C++ | development stalled (2010-12) | simple playlist viewer (no editing) }}
+{{ClientTableEntry|LXMusic      | Graphical / GTK | C | development stalled (2010-04) | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|Flexmms2     | Graphical / GTK | Python | development stalled (2010-03) | Main goal is to create a powerful and customizable mediabrowser (already usable) }}
 {{ClientTableEntry|ccx2         | Console / ncurses | Python | development stalled (2010-03) | Customizable console client with good support for playlists and searching }}
+{{ClientTableEntry|Promoe       | Graphical / QT4 (Skinnable) | C++ | development stalled (2010-03) | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|Euphoria     | Graphical / EFL | Ruby | rewrite | Slick themeable client }}
 {{ClientTableEntry|eq           | Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|gkrellxmms2  | GKrellM2 Plugin | C | in development | feature-rich enhancement of GKrellM2 }}
@@ -22,7 +28,9 @@ All current clients should be found here, but not every entry in this list is up
 
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
+{{ClientTableEntry|Muxic        | Graphical / Cocoa | Obj-C | development stalled (2009-11) | Minimal windowshade for Mac OS X }}
 {{ClientTableEntry|Azrael       | Graphical / GTK | C | development stalled (2009-07) | Basic player with nice additions }}
+{{ClientTableEntry|lagn         | Emacs Mode | emacs-lisp | development stalled (2009-07) | Control XMMS2 within emacs }}
 {{ClientTableEntry|gx2ctl       | Gnome x2 control | C | development stalled (2009-01) - "works for her" | the Drag'n'Drop client for your girlfriend }}
 {{ClientTableEntry|JukX         | Graphical / GTK | Python | development stalled (2009-01) | touchscreen orientated  concept }}
 {{ClientTableEntry|GNOME Do     | GNOME Do plugin| C# | development stalled (2008-07) | Allows xmms2 to be accessed and controlled by GNOME Do }}
@@ -32,6 +40,7 @@ All current clients should be found here, but not every entry in this list is up
 {{ClientTableEntry|Esperanza    | Graphical / QT4 | C++ | development stalled (2007-08) | Lightweight, basic player }}
 {{ClientTableEntry|Blastwave    | Graphical / GTK | C | development stalled (2007-06)| Experimental XMMS2 client }}
 {{ClientTableEntry|gx2osd       | On-Screen Display (GTK) | C++ | development stalled (2007-05) | Skinnable on-screen display }}
+{{ClientTableEntry|radiobar     | Graphical / GTK | Ruby | development stalled (2007-05) | Simple toolbar for radio dj usage. }}
 {{ClientTableEntry|Cocopapa     | Console | C | development stalled (2007-04) | Complex Collection Pattern Parser }}
 {{ClientTableEntry|Eloquence    | Plugin for E17 | C | development stalled (2006-12) | themeable desktop module }}
 
@@ -41,17 +50,7 @@ All current clients should be found here, but not every entry in this list is up
 
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
-{{ClientTableEntry|j. xmms(2)viewer| console / curses | C++ | in development | simple playlist viewer (no editing) }}
-{{ClientTableEntry|Konfetka| Graphical / Qt4 | C++ | in development | The kid of XMMS1 and Amarok that spent too much time around Yakuake. }}
-{{ClientTableEntry|kuechenstation| console / curses | Python | in development | text mode client with scrolling title, playlist and medialib query }}
-{{ClientTableEntry|lagn| Emacs Mode | emacs-lisp | in development | Control XMMS2 within emacs }}
-{{ClientTableEntry|lxmms2| IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
-{{ClientTableEntry|LXMusic| Graphical / GTK | C | in development | Very simple player, integrated into LXDE }}
-{{ClientTableEntry|Muxic| Graphical / Cocoa | Obj-C | in development | Minimal windowshade for Mac OS X }}
-{{ClientTableEntry|nyello| console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
-{{ClientTableEntry|nymp| console / curses | Python | in development | A graphical cli client providing a tree view on your collection.  }}
-{{ClientTableEntry|Promoe| Graphical / QT4 (Skinnable) | C++ | in development | Clone of classic Winamp / XMMS }}
-{{ClientTableEntry|radiobar| Graphical / GTK | Ruby | in development | Simple toolbar for radio dj usage. }}
+{{ClientTableEntry|lxmms2       | IR remote control (LIRC) | C | in development | Control XMMS2 with your remote control }}
 {{ClientTableEntry|Remuco| Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|SAXm2s| Graphical / QT | Python | in development | Simplicistic player }}
 {{ClientTableEntry|SeaSerpent| Graphical / QT4 | Python | in development | In version 1.0; stable - should not crash.  Always in development since always looking for new features ;-) }}
@@ -112,6 +111,7 @@ The following clients aren't worked on anymore, and might not work out of the bo
 
 {| class="wikitable"
 ! Name || Kind || Language || Status || Description
+{{ClientTableEntry|nyello       | console, interactive | C++ | discontinued | powerful pseudo-shell interface, now being merged with the [[New_korving_CLI | new korving CLI]] }}
 {{ClientTableEntry|bluegroove| Graphical / GTK | Ruby | discontinued | Typical player with queueing support }}
 {{ClientTableEntry|fvwm2xmms| Plugin for FVWM | C | website is gone | Basic display to be integrated into FVWM desktop }}
 {{ClientTableEntry|medialib-ui| Graphical / Qt | Python | abandoned | Standalone medialib and playlist client.}}
