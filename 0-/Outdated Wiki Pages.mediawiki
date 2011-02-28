@@ -26,3 +26,12 @@ These Pages need some updates:
 ** Bash tab completion for the xmms2 client
 *** the page linked to ("bash tab completion for the CLI") seems much more comprehensive. but is it still up to date?
 ** the rest still needs looking at.
+
+* [[Submitting code]]
+** Suggestions speaks of SConscript files. how does this section translate to the waf build system?
+
+* [[Project_Status]]
+** This page appears to be out of date, too. Maybe it would be best to actually write a script that generates the page instead of doing it by hand?
+
+* [[Google Summer of Code]]
+** What happened to the projects? Which one have been done, which one have produced results? There seems to be a complete lack of information for all of these.
