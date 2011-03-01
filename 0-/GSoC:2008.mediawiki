@@ -15,3 +15,5 @@ Accepted projects:
 [[Summer_of_Code_2008/Mentors|Mentor information]]
 
 [[Summer_of_Code_2008/Mentor_Application|Our application]]
+
+[[Category:GSoC]]
