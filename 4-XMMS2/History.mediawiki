@@ -9,14 +9,14 @@ The team works on integrating [[Collections]] into the main line of development.
 == March ==
 ;12th
 * The [http://xmms2-contest.blogspot.com/ XMMS2 logo competition] begins.
-* The testing phase for the next release (DrJekyll) begins.
+* The testing phase for the next release ([[Release:DrJekyll|DrJekyll]]) begins.
 
 ;15th
 XMMS2 is once again accepted into Google's Summer of Code program, for 2007.
 
 == April ==
 ;9th
-Four students are picked to work on XMMS2 for Google's Summer of Code:
+Four students are picked to work on XMMS2 for [[Summer of Code 2007|Google's Summer of Code]]:
 * Visualization support over SHM / UDP - Johannes Jordan
 * Testing framework - Florian Ragwitz
 * Generated IPC - Thomas Coppi
@@ -27,27 +27,35 @@ The submission deadline for the XMMS2 logo competition is reached, and voting be
 
 == November ==
 
-DrKosmos is released.
+[[Release:DrKosmos|DrKosmos]] is released.
 
 = 2008 =
+== April ==
+
+Six projects are accepted for [[Summer of Code 2008|Google's Summer of Code 2008]]
+
 == June ==
 
-DrLecter is released.
+[[Release:DrLecter|DrLecter]] is released.
 
 = 2009 =
 == March ==
 
-DrMattDestruction is released.
+[[Release:DrMattDestruction|DrMattDestruction]] is released.
+
+== April ==
+
+Two projects are accepted for [[Summer of Code 2009|Google's Summer of Code 2009]]
 
 = 2010 =
 == January ==
 
-DrNo is released.
+[[Release:DrNo|DrNo]] is released.
 
 == February ==
-= [[Generated IPC]] is merged into development.
+[[Generated IPC]] is merged into development.
 
 == Now ==
-Currently, [[Generated IPC]], [[Collections 2.0]] and the [[S4|S4 Database Backend]] are in development. Other than that we're all just chillin until we decide to get serious about the next release. Or something. :P
+Currently, [[Generated IPC]], [[Collections 2.0]] and the [[S4|S4 Database Backend]] are in development and several project ideas are thrown together for an application to the [[Summer of Code 2010|Google's Summer of Code 2010]]. Other than that we're all just chillin until we decide to get serious about the next release. Or something. :P
 
 [[Category:General]]
