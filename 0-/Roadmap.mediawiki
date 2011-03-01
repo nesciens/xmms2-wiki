@@ -5,28 +5,46 @@
 ** Java bindings (dangertools, done)
 ** SQLite speedups (tru, done)
 
-* DrEvil (april / may)
+* DrEvil (april / may 2006)
 ** [[Transforms]] plugins (anders. done)
 ** libxmmsclient++ (theefer / Eclipser, done)
 
-* DrFeelgood (july / august)
+* DrFeelgood (july / august 2006)
 ** (''bugfix'')
 
-* DrGonzo (september)
+* DrGonzo (september 2006)
 ** [[SoC:DAAP | DAAP]] (coledot, done)
 
-* DrHouse (december)
+* DrHouse (december 2006)
 ** bugfixes
 ** last.fm and vocoder
 
 * DrI
 ** Bugfixes
 
-* DrJekyll (january / february)
+* DrJekyll (january / february 2007)
 ** [[Collections]] (theefer)
 ** Waf migration
 ** [[SoC:AirTunes| AirPlay]]
 ** [[Windows]] port?
+
+* DrKosmos (November 2007)
+** ASF, Normalize, PulseAudio
+** ices and jack rewritten
+** command to synchronize collections to persistent storage
+** win32/mingw added to platforms
+
+* DrLecter (June 2008)
+** airplay, gme, gvfs, karaoke, segment playback (for cue files etc.)
+** builds on windows 2000
+
+* DrMattDestruction (March 2009)
+** new cli client (nycli)
+** new formats: true audio, shorten, wavpack, flash video, monkey's audio
+
+* DrNo (January 2010)
+** sc68 plugin
+** many nycli improvements, old cli client deprecated)
 
 * Future
 ** [[Generated IPC]] (anders / tru)
