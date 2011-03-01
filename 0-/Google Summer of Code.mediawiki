@@ -1,4 +1,4 @@
-There has been one try to apply for the Google Summer of Code:
+There has been several tries to apply for the Google Summer of Code:
 
 * [[Summer of Code 2006]] - 5 projects accepted
 * [[Summer of Code 2007]] - 4 projects accepted
