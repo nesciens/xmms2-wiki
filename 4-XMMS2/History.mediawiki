@@ -44,7 +44,10 @@ DrMattDestruction is released.
 
 DrNo is released.
 
+== February ==
+= [[Generated IPC]] is merged into development.
+
 == Now ==
-We're all just chillin until we decide to get serious about the next release. Or something. :P
+Currently, [[Generated IPC]], [[Collections 2.0]] and the [[S4|S4 Database Backend]] are in development. Other than that we're all just chillin until we decide to get serious about the next release. Or something. :P
 
 [[Category:General]]
