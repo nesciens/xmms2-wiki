@@ -56,6 +56,6 @@ Two projects are accepted for [[Summer of Code 2009|Google's Summer of Code 2009
 [[Generated IPC]] is merged into development.
 
 == Now ==
-Currently, [[Generated IPC]], [[Collections 2.0]] and the [[S4|S4 Database Backend]] are in development and several project ideas are thrown together for an application to the [[Summer of Code 2010|Google's Summer of Code 2010]]. Other than that we're all just chillin until we decide to get serious about the next release. Or something. :P
+Currently, [[Generated IPC]], [[Collections 2.0]] and the [[S4|S4 Database Backend]] are in development and several project ideas are thrown together for an application to the [[Summer of Code 2011|Google's Summer of Code 2011]]. Other than that we're all just chillin until we decide to get serious about the next release. Or something. :P
 
 [[Category:General]]
