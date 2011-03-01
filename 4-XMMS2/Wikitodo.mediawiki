@@ -47,7 +47,7 @@ These are a few more specific things relating to certain pages.
 * [[Project_Status]]
 ** This page appears to be out of date, too. Maybe it would be best to actually write a script that generates the page instead of doing it by hand?
 
-* [[Google Summer of Code]]
+* [[Category:GSoC]]
 ** What happened to the projects? Which one have been done, which one have produced results? There seems to be a complete lack of information for all of these.
 
 (''add more todo items to this list')
