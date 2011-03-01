@@ -4,7 +4,7 @@ For older history, see [[History/Ancient | Ancient History]]
 
 = 2007 =
 == January - February ==
-The team works on integrating [[Collections]] into the main line of development.
+The team works on integrating [[Collections]] into the main line of development. Later, DrJekyll is released.
 
 == March ==
 ;12th
@@ -24,6 +24,25 @@ Four students are picked to work on XMMS2 for Google's Summer of Code:
 
 ;15th
 The submission deadline for the XMMS2 logo competition is reached, and voting begins on 160 of the submitted logos.
+
+== November ==
+
+DrKosmos is released.
+
+= 2008 =
+== June ==
+
+DrLecter is released.
+
+= 2009 =
+== March ==
+
+DrMattDestruction is released.
+
+= 2010 =
+== January ==
+
+DrNo is released.
 
 == Now ==
 We're all just chillin until we decide to get serious about the next release. Or something. :P
