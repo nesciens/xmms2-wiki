@@ -16,6 +16,7 @@
 * [[Release:DrMattDestruction|DrMattDestruction]] - Released 2009-04-23
 * [[Release:DrNo|DrNo]] - Released 2010-02-19
 * DrOnline
+* DrParnassus
 ...
 * DrStrangelove
 ...
