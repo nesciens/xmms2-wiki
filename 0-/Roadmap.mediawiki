@@ -46,9 +46,13 @@
 ** sc68 plugin
 ** many nycli improvements, old cli client deprecated)
 
-* Future
+* Things already underway for DrOnline or DrParnassus (future releases)
 ** [[Generated IPC]] (anders / tru)
-** swig (anders)
+** [[Collections 2.0]]
+** [[S4|S4 database backend]]
+
+* Future
+** world peace, robot uprising, sun burns out, etc.
 
 == See Also ==
 * [[Versioning]]
