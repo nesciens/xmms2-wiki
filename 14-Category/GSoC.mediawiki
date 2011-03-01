@@ -1,0 +1,8 @@
+There has been several applications for the Google Summer of Code:
+
+* [[GSoC:2006]] - 5 projects accepted
+* [[GSoC:2007]] - 4 projects accepted
+* [[GSoC:2008]] - 6 projects accepted
+* [[GSoC:2009]] - 2 projects accepted
+* [[GSoC:2010]] - 4 projects accepted
+* [[GSoC:2011]] - Google Summer of Code 2011 is March 11th.
