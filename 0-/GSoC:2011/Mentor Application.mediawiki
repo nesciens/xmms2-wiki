@@ -36,7 +36,7 @@
 ** #xmms2 at freenode
 
 * Does your organization have an application template you would like to see students use?
-** We promote the students to come up with their own unique proposal, but inspiration can be found at: http://xmms2.org/wiki/Summer_of_Code_2011/Student_Application
+** We encourage the students to come up with their own unique proposal, but inspiration can be found at: http://xmms2.org/wiki/Summer_of_Code_2011/Student_Application
 
 * What criteria did you use to select the individuals who will act as mentors for your organization? Please be as specific as possible
 ** We select members based on their involvement in the community (time, code contributed, social involvement) and their availability over the course of the GSoC program. We have a pool of past mentors whom we know we can rely on, but new mentors are also welcome if they have proved their ability to supervise a project.
