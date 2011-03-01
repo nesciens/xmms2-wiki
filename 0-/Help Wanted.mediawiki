@@ -16,7 +16,7 @@ The [[Clientlist]] is full of clients in every programming language and with eve
 
 == Wiki Documentation ==
 
-While XMMS2 steadily moves forward, the Wiki is not always treated with the same respect. Pages may be forgotten for years and proudly announce XMMS2 0.4DrKosmos to be the newest, shiniest release you could get. Those obviously outdated pages should be corrected, or collected on the [[Outdated Wiki Pages]] page.
+While XMMS2 steadily moves forward, the Wiki is not always treated with the same respect. Pages may be forgotten for years and proudly announce XMMS2 0.4DrKosmos to be the newest, shiniest release you could get. Those obviously outdated pages should be corrected, or collected on the [[XMMS2:Wikitodo]] page.
 
 == Testing and Bugreports ==
 
