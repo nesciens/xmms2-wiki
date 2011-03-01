@@ -12,3 +12,5 @@
 [[Summer_of_Code_2007/Mentors|Mentor information]]
 
 [[Summer_of_Code_2007/Mentor_Application|Our application]]
+
+[[Category:GSoC]]
