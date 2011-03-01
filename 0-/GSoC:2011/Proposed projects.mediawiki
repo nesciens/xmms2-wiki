@@ -26,10 +26,6 @@ mount point of a rockbox device and the name of a collection would merge that co
 
 {{SoCItem| title=Service Clients| description=The Service Clients concept has been around in the XMMS2 world for quite some time. There is even a [http://git.xmms.se/cgit.cgi/xmms2/xmms2-puzzles/log/?h=sc reference implementation available]. The project would be to bring this reference implementation into shape and integrate it with our generated IPC framework. The API might also need some clean up, analyze it and point out pros and cons in your proposal.| lang=C| level=Medium|mentor=N/A}} 
 
-{{SoCItem| title=Social Networking| description=Social Networks are the new hype - can you think of innovative ways to bring a social side to XMMS2, either as a new layer or using existing services (Last.Fm, Songkick, Musicbrainz, Twitter, Flickr, Facebook, Freebase, etc). Share music, talk about music, recommend new artists, share tags and ratings, possibilities are endless!| lang=Any| level=Medium| mentor=N/A}}
-
-{{SoCItem| title=Logtable| description=We miss the log table, let's bring it back, maybe as a service client.| lang=C| level=Medium| mentor=N/A}}
-
 {{SoCItem| title=Adaptive playlists| description=[http://imms.luminal.org/ IMMS] has brought smart song scheduling to several music players, including XMMS2's predecessor XMMS. It would be great to have this again. It need not be through IMMS. It requires thought on how to do this in a clean manner. (See [[Collections]], [[Collections_2.0 | Collections 2.0]], [[Smart_playlists | Smart Playlists]], Service Clients, ...) | lang=Any| level=Medium| mentor=N/A}}
 
 == Platform support ==
