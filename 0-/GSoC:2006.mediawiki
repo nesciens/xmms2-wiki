@@ -64,3 +64,4 @@ The following resources don't apply directly to XMMS2, but they have some helpfu
 * Adium's [http://trac.adiumx.com/wiki/ProposalGuidelines Proposal Guidelines]
 
 [[Category:Summer of Code 2006]]
+[[Category:GSoC]]
