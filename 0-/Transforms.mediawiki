@@ -68,44 +68,6 @@ I just pushed a preview to my tree. Basic stuff should work. Only file, mad and 
 ===2006-03-30===
 Everything reworked to new plugin api.
 
-===Todo===
-:&#10003; rework output to buffer.
-:&#10003; change other plugin types to use new api.
-:&#10003; seeking.
-:&#10003; fix so metadata can be set after init.
-:&#10063; playlistplugins.
-::&#10063; html
-::&#10003; pls
-::&#10003; m3u
-:&#10063; convert plugins (see section below).
-::&#10003; alsa
-::&#10003; coreaudio
-::&#10063; curl_ftp
-::&#10003; curl_http (split into curl + icy-metaint-parser)
-::&#10003; diskwrite
-::&#10003; faad
-::&#10003; file
-::&#10003; flac
-::&#10003; gnomevfs
-::&#10003; ices
-::&#10003; jack
-::&#10003; mad
-::&#10003; modplug
-::&#10003; musepack (no apetags)
-::&#10003; null
-::&#10003; oss
-::&#10003; samba
-::&#10003; sid
-::&#10063; speex
-::&#10063; sun
-::&#10003; wave
-::&#10003; wma (a new plugin)
-::&#10003; vorbis
-:&#10003; effects
-::&#10003; eq (replaced by more advanced equalizer plugin)
-::&#10003; replaygain
-:&#10003; config stuff
-
 ===Plugin conversion guidelines===
 ====Use xform metadata api====
 Old code like:
