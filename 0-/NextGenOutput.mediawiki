@@ -43,19 +43,21 @@ The output buffer:
 	
 Seek/jump in Dr. No:     ("Dump Buffer")
 
-Time:		----------s----------
+Time:   ----------s----------
 Output: ---------- ----------       << Glitch / Gap in output due to buffer dump
 
 Seek/jump in nextgen-output prebeta:	("Stacked Buffer")
 
-Time:		----------s----------
-Output: ---------------------				<< Output is gapless, but the seek or jump is delayed by the size of the output buffer
-									 ^									 There maybe a glitch in the sound, but it is generally less noticable due to no gap
-									 Seek Heard Here		 The delay depends on the size of the output buffer and the sample size and rate
-																			 The common case is the size of 32768 bytes and Stereo S16 Samples @ 44100khz
-																			 This comes out to 2 bytes per samples times 2 for stereo or 32768 / 4 = 8192 samples
-																			 8192 / 44.1 (samples per millisecond) = 185ms delay in hearing the seek 
-																			 So the delay is about 1/5th of a second
+Time:   ----------s----------
+Output: ---------------------	 << Output is gapless, but the seek or jump is delayed by the size of the output buffer
+                   ^ Seek heard here
+
+There maybe a glitch in the sound, but it is generally less noticable due to no gap
+The delay depends on the size of the output buffer and the sample size and rate
+The common case is the size of 32768 bytes and Stereo S16 Samples @ 44100khz
+This comes out to 2 bytes per samples times 2 for stereo or 32768 / 4 = 8192 samples
+8192 / 44.1 (samples per millisecond) = 185ms delay in hearing the seek 
+So the delay is about 1/5th of a second
 
 There is no pleasing some people, many, none of which have tested this, claim that its a long time, and will make things feel laggy, etc.
 In reality it ends up making the sound output more smooth and does not feel laggy. However I aim to please, and get this code into -devel
@@ -65,10 +67,12 @@ Here is some other strategies.
 
 Crosslap Seek / Jump	("Crosslap Stacked Buffer")
 
-Time:		----------s----------
+Time:   ----------s----------
 Output: -----------=---------
-									 ^ Some Samples from old audio and new are lapped
+	           ^ Some Samples from old audio and new are lapped
  
+See this page for information on crosslapping: http://xiph.org/vorbis/doc/vorbisfile/crosslap.html
+
 
 Crossfade Seek Jump ("Crossfade Crosslap Stacked Double Buffer")
 
@@ -80,22 +84,20 @@ Crossfade Seek Jump ("Crossfade Crosslap Stacked Double Buffer")
 	latency when seeking / jumping without a gap would happen, unlike the solo stacked buffer, we don't have to wait for it to
 	be played out, merely for the next samples to be ready, before we start outputing the mix
 
-Time:		----------s----------
+Time:   ----------s----------
 Output: -----------==--------
-									 ^ Samples are crossfaded and crosslapped
+		   ^ Samples are crossfaded and crosslapped
 
 
 Continous switch Seek/jump ("Switched Double Buffer")
 
 This is a compromise between the dumped buffer and stacked buffer, the buffer is not dumped, the output continues to output the old
 samples until the new ones are availible, as soon as they are the next read will be from the other buffer. Thus Output will be continous,
-and latency minimal. 
+and latency minimal. This should please the haters (if they can be pleased) of any additional delay, as the decoding/reading of the old audio can stop,
+and the new audio be read without so any old samples played are just taking the place of what would be a gap in the sound ie. buffer underrun.
 
 Crosslapped switch Seek/Jump ("Crosslapped Switched Double Buffer")
 The same as above but crosslapped.
-
-
-
 
 
 
