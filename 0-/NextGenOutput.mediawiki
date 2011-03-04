@@ -1,7 +1,8 @@
-== XMMS2 NextGen Output ==
+= XMMS2 NextGen Output =
 
+== David Richards aka oneman ==
 
-= David Richards aka oneman =
+<pre>
 
 Goals:
 
@@ -31,6 +32,9 @@ Testing:
 If you want to test this code, find me, oneman, in the xmms2 irc channel.
 
 
+Contribute to my efforts with cryptocash:
+
+I'm poor! I accept bitcoins at this address: 12c2o17PBug1zh5XxaGi3FB5BXETbcRobp
 
 
 The output buffer:
@@ -74,6 +78,7 @@ Output: -----------=---------
 See this page for information on crosslapping: http://xiph.org/vorbis/doc/vorbisfile/crosslap.html
 
 
+
 Crossfade Seek Jump ("Crossfade Crosslap Stacked Double Buffer")
 
 	This is the same as above, but samples are also crossfaded, meaning volume for old is going down and new is going up
@@ -98,3 +103,5 @@ and the new audio be read without so any old samples played are just taking the 
 
 Crosslapped switch Seek/Jump ("Crosslapped Switched Double Buffer")
 The same as above but crosslapped.
+
+</pre>
