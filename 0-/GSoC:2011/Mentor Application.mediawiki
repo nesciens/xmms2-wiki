@@ -17,7 +17,9 @@
 ** 6:th year!
 
 * Did your organization participate in past GSoCs? If so, please summarize your involvement and the successes and challenges of your participation.
-** TODO
+** '''TODO'''
+*** Challenge to get stuff merged (not without refactoring, devel changed in the meantime)
+*** Clients abandoned after GSoC?
 
 * If your organization participated in past GSoCs, please let us know the ratio of students passing to students allocated, e.g. 2006: 3/6 for 3 out of 6 students passed in 2006.
 ** 2006: 4/5
