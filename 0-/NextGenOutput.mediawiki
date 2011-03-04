@@ -1,7 +1,7 @@
-//
-// XMMS2 NextGen Output Doc
-// David Richards aka oneman
-//
+== XMMS2 NextGen Output ==
+
+
+= David Richards aka oneman =
 
 Goals:
 
@@ -12,17 +12,17 @@ Goals:
 	*	Fewest Copies of Bytes (doing fine here already)
 	*	Most sensible defaults, most users will not need to touch output settings
 	*	Optional, be it by compile time or runtime, crosslapping durring seeking or track jumping 
-																					(Manual track change, not natural track progression)
+						      (Manual track change, not natural track progression)
 	*	Optional Fade Down on pause, Fade In on Resume DONE RIGHT, optional length
-	* Optional skipping of calculating latency in playtime (Only important for jack users, where its known and
-																													ultimately irrelivant, and a long code path that could cause xrun)
+	*       Optional skipping of calculating latency in playtime (Only important for jack users, where its known and
+								      ultimately irrelivant, and a long code path that could cause xrun)
 
 	* Merge to -devel ASAP
 
-Next Level Potential Goals:
+Next Level ( NextGen+ ) Potential Goals: 
 
-	* Backwards playback (Possibly better done as an xform Not known yet)
-	*	Internal Mixer, X number of tracks going at once
+	*       Backwards playback (Possibly better done as an xform Not known yet)
+	*	Internal Mixer, X number of tracks going at once, volume control/crossfading, control effect parameters per chain
 	*	Multiple Outputs 
 
 
@@ -50,7 +50,7 @@ Seek/jump in nextgen-output prebeta:	("Stacked Buffer")
 
 Time:   ----------s----------
 Output: ---------------------	 << Output is gapless, but the seek or jump is delayed by the size of the output buffer
-                   ^ Seek heard here
+                   ^Seek heard here
 
 There maybe a glitch in the sound, but it is generally less noticable due to no gap
 The delay depends on the size of the output buffer and the sample size and rate
@@ -69,7 +69,7 @@ Crosslap Seek / Jump	("Crosslap Stacked Buffer")
 
 Time:   ----------s----------
 Output: -----------=---------
-	           ^ Some Samples from old audio and new are lapped
+	           ^Some Samples from old audio and new are lapped
  
 See this page for information on crosslapping: http://xiph.org/vorbis/doc/vorbisfile/crosslap.html
 
@@ -86,7 +86,7 @@ Crossfade Seek Jump ("Crossfade Crosslap Stacked Double Buffer")
 
 Time:   ----------s----------
 Output: -----------==--------
-		   ^ Samples are crossfaded and crosslapped
+		   ^Samples are crossfaded and crosslapped
 
 
 Continous switch Seek/jump ("Switched Double Buffer")
@@ -98,54 +98,3 @@ and the new audio be read without so any old samples played are just taking the 
 
 Crosslapped switch Seek/Jump ("Crosslapped Switched Double Buffer")
 The same as above but crosslapped.
-
-
-
-
-functions in output.c in nextgen-prebeta at this time:
-
-
-xmms_output_private_data_get (xmms_output_t *output)
-xmms_output_stream_type_add (xmms_output_t *output, ...)
-xmms_output_format_list_free_elem (gpointer data, gpointer user_data)
-xmms_output_format_list_clear(xmms_output_t *output)
-update_playtime (xmms_output_t *output, int advance)
-xmms_output_set_error (xmms_output_t *output, xmms_error_t *error)
-song_changed_arg_free (void *data)
-song_changed (void *data)
-seek_done (void *data)
-xmms_output_filler_state_nolock (xmms_output_t *output, xmms_output_filler_state_t state)
-xmms_output_filler_state (xmms_output_t *output, xmms_output_filler_state_t state)
-xmms_output_filler_seek_state (xmms_output_t *output, guint32 samples)
-xmms_output_filler (void *arg)
-xmms_output_read (xmms_output_t *output, char *buffer, gint len)
-xmms_output_read_wait (xmms_output_t *output, char *buffer, gint len)
-xmms_output_config_property_register (xmms_output_t *output, const gchar *name, const gchar *default_value, xmms_object_handler_t cb, gpointer userdata)
-xmms_output_config_lookup (xmms_output_t *output, const gchar *path)
-xmms_output_current_id (xmms_output_t *output)
-xmms_playback_client_xform_kill (xmms_output_t *output, xmms_error_t *error)
-xmms_playback_client_seekms (xmms_output_t *output, gint32 ms, gint32 whence, xmms_error_t *error)
-xmms_playback_client_seeksamples (xmms_output_t *output, gint32 samples, gint32 whence, xmms_error_t *error)
-xmms_playback_client_start (xmms_output_t *output, xmms_error_t *err)
-xmms_playback_client_stop (xmms_output_t *output, xmms_error_t *err)
-xmms_playback_client_pause (xmms_output_t *output, xmms_error_t *err)
-xmms_playback_client_status (xmms_output_t *output, xmms_error_t *error)
-xmms_playback_client_current_id (xmms_output_t *output, xmms_error_t *error)
-xmms_playback_client_volume_set (xmms_output_t *output, const gchar *channel,
-xmms_playback_client_volume_get (xmms_output_t *output, xmms_error_t *error)
-xmms_playback_client_playtime (xmms_output_t *output, xmms_error_t *error)
-xmms_output_latency (xmms_output_t *output)
-xmms_output_status_set (xmms_output_t *output, gint status)
-xmms_output_destroy (xmms_object_t *object)
-xmms_output_plugin_switch (xmms_output_t *output, xmms_output_plugin_t *new_plugin)
-xmms_output_new (xmms_output_plugin_t *plugin, xmms_playlist_t *playlist)
-xmms_output_flush (xmms_output_t *output)
-xmms_output_format_set (xmms_output_t *output, xmms_stream_type_t *fmt)
-set_plugin (xmms_output_t *output, xmms_output_plugin_t *plugin)
-xmms_volume_map_lookup (xmms_volume_map_t *vl, const gchar *name)
-xmms_volume_map_equal (xmms_volume_map_t *a, xmms_volume_map_t *b)
-xmms_volume_map_init (xmms_volume_map_t *vl)
-xmms_volume_map_free (xmms_volume_map_t *vl)
-xmms_volume_map_copy (xmms_volume_map_t *src, xmms_volume_map_t *dst)
-xmms_volume_map_to_dict (xmms_volume_map_t *vl)
-xmms_output_monitor_volume_thread (gpointer data)
