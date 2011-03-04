@@ -2,7 +2,7 @@
 ** XMMS2
 
 * Description:
-** XMMS2 is the spiritual successor to the very successful XMMS project. The creators of XMMS got together in 2002 and spun out the XMMS2 sister project, the idea was from the beginning to correct some of the early mistakes in XMMS design. The project grew and is now conceptually very different from XMMS. The team behind XMMS2 focuses on audio quality, freedom of choice and powerful organization features. Community-wise the team is around 10-20 regular contributors and over 95 people have at some time contributed to XMMS2.
+** XMMS2 is the spiritual successor to the very successful XMMS project. The creators of XMMS got together in 2002 and spun out the XMMS2 sister project. From the beginning the idea was to correct some of the early mistakes in XMMS design. The project grew and is now conceptually very different from XMMS. The team behind XMMS2 focuses on audio quality, freedom of choice and powerful organization features. Community-wise the team is around 10-20 regular contributors and over 95 people have at some time contributed to XMMS2. 
 
 * Home page:
 ** http://xmms2.org/wiki/Main_Page
