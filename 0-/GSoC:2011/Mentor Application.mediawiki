@@ -58,7 +58,7 @@
 : Not applicable
 
 ; Anything else you'd like to tell us?
-: '''TODO'''
+: Google Summer of Code is awesome!
 
 ; Backup Admin (Link ID):
-: '''TODO''': (Nesciens' link ID is emassop.)
+: Erik Massop, emassop
