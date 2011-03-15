@@ -105,3 +105,8 @@ Crosslapped switch Seek/Jump ("Crosslapped Switched Double Buffer")
 The same as above but crosslapped.
 
 </pre>
+
+
+[[File:P1060401.JPG]]
+
+[[File:P1060402.JPG]]
