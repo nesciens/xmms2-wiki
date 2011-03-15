@@ -1,0 +1,1 @@
+XMMS2 Being used on CDE in Solaris
