@@ -168,7 +168,7 @@ Description of the operators:
 
 * '''<code>idlist</code>''': a static list of media ids. If present, the <code>jumplist</code> property gives the name of the playlist to jump to after playback reaches the end of the list.
 * '''<code>queue</code>''': a static list of media ids ; when used as a playlist, played songs are popped out of it.  The <code>history</code> property specifies how many played songs are kept before they are removed.
-* '''<code>party shuffle</code>''': a static list of media ids, populated by a random selection of songs from the input collection until the list size reaches the <code>upcoming</code> property. Played songs are popped similarly to the idqueue operator, using the <code>history</code> property. More property could be added to further customize this operator.
+* '''<code>party shuffle</code>''': a static list of media ids, populated by a random selection of songs from the input collection until there is a certain number of entries after the current one. This is specified by the <code>upcoming</code> property. Played songs are popped similarly to the idqueue operator, using the <code>history</code> property. More property could be added to further customize this operator.
 
 Notes:
 * List operators are especially useful to include or exclude some given media from a collection (using the set operators), and to create playlists!
