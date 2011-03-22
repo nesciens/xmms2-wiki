@@ -13,7 +13,7 @@ Some of the issues with the current random playlists are:
 Because there are many different ways that people may want to manage their 'random' playlist, the idea is to delegate the required logic to some client(s) that run in the background. (These can for instance be started from the startup.d directory, from which [[Client:XMMS2-Scrobbler|XMMS2-Scrobbler]], [[ET|xmms2-et]] and [http://git.xmms.se/cgit.cgi/xmms2/xmms2-devel/tree/src/clients/medialib-updater xmms2-mlib-updater] are also typically run.) ''Soon there will be an example of such a client available here.''
 
 === Library for easily writing playlist managing clients ===
-All playlist managing client will mainly be doing the same thing, and solving the same issues. Hence it makes sense to factor out this common denominator into a library. Some issues this library might take care of are:
+All playlist managing clients will mainly be doing the same thing, and solving the same issues. Hence it makes sense to factor out this common denominator into a library. Some issues this library might take care of are:
 * Listening to the right signals from XMMS2, and checking if the affected playlist is managed by the client.
 * Ignoring signals caused by the updating done by the client itself.
 * Deleting songs from the top of the playlist according to the history-attribute
@@ -26,6 +26,7 @@ Some design considerations you might want to mention if you send a proposal:
 * Required porting efforts for library as well as clients when the Service Clients-feature sees the light.
 * Special requirements of clients that need internet connections.
 * Special requirements of clients that need to monitor the daemon to analyse user preferences. (Read: the hypothetical IMMS client)
+After/during the implementation of this library some simple playlist managing clients can be implemented as proofs of concept and test cases.
 
 === Integrated 'IMMS' ===
 It is probably not hard to write a client to provide IMMS support for XMMS2. (In fact nesciens had such a client before the Collections concept was introduced.)  However using IMMS has some drawbacks, namely that it needs its own separate database and that it uses its own set of music decoding and processing libraries to analyse the sound. Additionally it only supports (supported?) local files for its audio analysis. It is potentially nice to do the audio-analysis in the XMMS2 daemon, and use XMMS2's database instead of a separate one. This could make for a nice GSoC-project, '''but''', since this is a large duplication of effort, you need to have a strong rationale for the integrated approach if you want to take on this proposed project.
