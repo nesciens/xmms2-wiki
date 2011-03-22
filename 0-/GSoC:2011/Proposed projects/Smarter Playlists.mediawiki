@@ -1,0 +1,44 @@
+Back in 2005 SÃ©bastien Cevey, aka [[User:Theefer|theefer]] wrote his [http://bytes.inso.cc/wp/2005/07/11/better-music-player-manifesto/ Manifesto for a Better Music Player]. (Sadly this page is down as of 2010-03-21.) Then in [[SoC:Collections|GSoC 2006]] he went on and wrote [[Collections_Concept|Collections]] into XMMS2. Simply put, users can store media library queries at the server. These saved searches can then be used to randomly add items to a playlist as needed. This is where Smart Playlists come in, since, as it turns out, randomly adding songs is a bit, well, ''too'' random.
+
+== Issues ==
+Some of the issues with the current random playlists are:
+* With a bit of bad luck a song can be played several times in a row, or several times in a short time span.
+* It would sometimes be nicer to add whole albums or other types of volumes at a time.
+* Since songs are picked uniformly from the pool of songs, longer songs get more playtime than shorter ones.
+* Not any kind of rating is taken into account.
+* Advanced song scheduling techniques such as used by [http://imms.luminal.org/ IMMS] are not implemented.
+* ...
+
+== Project Ideas ==
+Because there are many different ways that people may want to manage their 'random' playlist, the idea is to delegate the required logic to some client(s) that run in the background. (These can for instance be started from the startup.d directory, from which [[Client:XMMS2-Scrobbler|XMMS2-Scrobbler]], [[ET|xmms2-et]] and [http://git.xmms.se/cgit.cgi/xmms2/xmms2-devel/tree/src/clients/medialib-updater xmms2-mlib-updater] are also typically run.) ''Soon there will be an example of such a client available here.''
+
+=== Library for easily writing playlist managing clients ===
+All playlist managing client will mainly be doing the same thing, and solving the same issues. Hence it makes sense to factor out this common denominator into a library. Some issues this library might take care of are:
+* Listening to the right signals from XMMS2, and checking if the affected playlist is managed by the client.
+* Ignoring signals caused by the updating done by the client itself.
+* Deleting songs from the top of the playlist according to the history-attribute
+* Optionally only calling into the client if there are fewer songs left than specified by the upcoming-attribute.
+Some design considerations you might want to mention if you send a proposal:
+* Race conditions
+* Language bindings
+* Updating inactive playlists as well as active playlists
+* Management of several playlist types by one client
+* Required porting efforts for library as well as clients when the Service Clients-feature sees the light.
+* Special requirements of clients that need internet connections.
+* Special requirements of clients that need to monitor the daemon to analyse user preferences. (Read: the hypothetical IMMS client)
+
+=== Integrated 'IMMS' ===
+It is probably not hard to write a client to provide IMMS support for XMMS2. (In fact nesciens had such a client before the Collections concept was introduced.)  However using IMMS has some drawbacks, namely that it needs its own separate database and that it uses its own set of music decoding and processing libraries to analyse the sound. Additionally it only supports (supported?) local files for its audio analysis. It is potentially nice to do the audio-analysis in the XMMS2 daemon, and use XMMS2's database instead of a separate one. This could make for a nice GSoC-project, '''but''', since this is a large duplication of effort, you need to have a strong rationale for the integrated approach if you want to take on this proposed project.
+
+== Technical bits ==
+In [[Collections_2.0|Collections 2.0]] there will be only one playlist operator left (IDLIST). The functionality of the other two (QUEUE and PSHUFFLE) is available through the type-attribute of the IDLIST-operator. With a minor patch other values than "list", "queue" and "pshuffle" can be allowed. This attribute can then be used to identify various playlist types that are managed by clients. A playlist managing client would only monitor playlists that have the type-attributes set to the right value (until [[GSoC:2011/Proposed_projects#Service_Clients|Service Clients]] comes around anyway).
+
+== See Also ==
+* [http://bytes.inso.cc/wp/2005/07/11/better-music-player-manifesto/ Manifesto for a Better Music Player]
+* [[Smart playlists]]
+* [http://bugs.xmms2.org/view.php?id=1783 bug 1783]
+* [http://bugs.xmms2.org/view.php?id=1659 bug 1659]
+* [http://lwn.net/Articles/237952/ comments on theefer's LWN-article]
+* [[Collections]]
+* [[Collections_2.0|Collections 2.0]]
+* [http://imms.luminal.org/ IMMS' website]
