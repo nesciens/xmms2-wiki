@@ -36,6 +36,7 @@ In [[Collections_2.0|Collections 2.0]] there will be only one playlist operator 
 == See Also ==
 * [http://bytes.inso.cc/wp/2005/07/11/better-music-player-manifesto/ Manifesto for a Better Music Player]
 * [[Smart playlists]]
+* [http://bugs.xmms2.xmms.se/view.php?id=1352 bug 1352]
 * [http://bugs.xmms2.org/view.php?id=1783 bug 1783]
 * [http://bugs.xmms2.org/view.php?id=1659 bug 1659]
 * [http://lwn.net/Articles/237952/ comments on theefer's LWN-article]
