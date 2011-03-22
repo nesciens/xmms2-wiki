@@ -26,7 +26,7 @@ mount point of a rockbox device and the name of a collection would merge that co
 
 {{SoCItem| title=Service Clients| description=The Service Clients concept has been around in the XMMS2 world for quite some time. There is even a [http://git.xmms.se/cgit.cgi/xmms2/xmms2-puzzles/log/?h=sc reference implementation available]. The project would be to bring this reference implementation into shape and integrate it with our generated IPC framework. The API might also need some clean up, analyze it and point out pros and cons in your proposal.| lang=C| level=Medium|mentor=N/A}} 
 
-{{SoCItem| title=Smarter playlists| description=Currently XMMS2 has some basic random play facilities. It would be nice to do smarter random play, taking for instance the music taste of the user into account. See [[GSoC:2011/Proposed_projects/Smarter_Playlists|Smarter Playlists]] for a more extended description. | lang=C, any| level=Medium| mentor=Possibly Nesciens}}
+{{SoCItem| title=Smarter Playlists| description=Currently XMMS2 has some basic random play facilities. It would be nice to do smarter random play, taking for instance the music taste of the user into account. See [[GSoC:2011/Proposed_projects/Smarter_Playlists|Smarter Playlists]] for a more extended description. | lang=C, any| level=Medium| mentor=Possibly Nesciens}}
 
 == Platform support ==
 
