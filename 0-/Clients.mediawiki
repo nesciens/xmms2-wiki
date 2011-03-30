@@ -94,6 +94,8 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:FluxboxKeys | Fluxbox keys]] a simple list of shortcut keys for ~/.fluxbox/keys, and a way to run xmms2 at startup
 * [[Client:dxmms2 | dxmms2]] shell script that allows you to browse playlist and medialib using dmenu menubar
 * [[Client:xmmsfs | xmmsfs]] allows you to browse your medialib in a fuse file system
+* [[Client:xmms2-OpenboxMenu | xmms2-OpenboxMenu]] An Openbox Pipe Menu client for xmms2
+
 = Integration Into Other Applications =
 
 == GKrellM2 ==
