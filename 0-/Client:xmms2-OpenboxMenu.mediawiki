@@ -7,7 +7,6 @@ Client
 |devlanguage=Python
 |ui=Openbox pipe menu
 }}
-''Copied from project wiki''
 =Using xmms2-OpenboxMenu =
 
 Add
