@@ -3,9 +3,9 @@ Client
 |name=xmms2-OpenboxMenu
 |version=0.1
 |author=Eli2
-|website=[https://github.com/Eli2/xmms2-OpenboxMenu]
+|website=[https://github.com/Eli2/xmms2-OpenboxMenu https://github.com/Eli2/xmms2-OpenboxMenu]
 |devlanguage=Python
-|ui=Openbox pipe menu
+|ui=Openbox Pipemenu
 }}
 =Using xmms2-OpenboxMenu =
 
@@ -14,3 +14,6 @@ Add
 
 To the Openbox menu config
  ~/.config/openbox/menu.xml
+
+==Links==
+http://openbox.org/wiki/Openbox:Pipemenus
