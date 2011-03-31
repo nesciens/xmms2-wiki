@@ -1,0 +1,174 @@
+Below is a mirror of [[User:Theefer|Theefer]]'s [http://bytes.inso.cc/wp/2005/07/11/better-music-player-manifesto/ Manifesto for a Better Music Player].
+==Introduction==
+
+No perfect music player exists yet.
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-amarok-interface|thumb|left|Amarok's neat interface]]
+
+Apart from your grandma and deaf people, few people do ''not'' use computers to play music.  It has become part of the digital experience to listen to music while surfing/chatting/coding/gaming.  And yet, if you ask people, most of those who care the least bit about the usability of the programs they use will agree that no music player is perfect.
+
+Windows users will curse in frustration about the unwanted bloat of [http://www.winamp.com/ Winamp 5] or the pathetic hegemony of the lesser "default" player, [http://www.microsoft.com/windows/windowsmedia/ Windows Media Player].  MacOS X users will point at [http://www.apple.com/itunes/ iTunes] with great pride, only to confess that its monolithic perfection is actually spoiled by loads of frustrating details.  Unix users will gladly demonstrate their contempt over the most popular player, [http://www.xmms.org/ XMMS], a convenient but over-simplistic clone of the Winamp 2.* series.  There exist alternative players, but for the sake of argumentative generalisation, let's wrap it up this way: they all suck, in some way.
+
+Maybe your 12-year-old sister does not languish for a better, more powerful music player.  Maybe ''you'' don't care about it either (in which case, it is time to close this tab and go back reading [http://www.thebestpageintheuniverse.net/ the best page in the universe]).  But if you think music players could use some improvement, read on.
+
+In this article, we will go through the history of music players, which will be split in three categories: the old playlist-based players (e.g. [http://www.xmms.org/ XMMS], early [http://www.winamp.com/ Winamp] versions), the present media-library-based players (e.g. [http://www.apple.com/itunes/ iTunes], [http://www.gnome.org/projects/rhythmbox/ Rhythmbox], [http://www.winamp.com/ Winamp 5]) and the alternative client/server-based players (e.g. [http://www.musicpd.org/ Music Player Daemon], [http://wiki.xmms2.xmms.se/ XMMS2]).  Studying this evolution and analysing the features of each generation should help us identify the flaws of current music players and design concepts that will bring music playing to a new level.
+
+==Vocabulary==
+
+Before we start discussing the history and future of music players, let's make sure we share the same definition of the most important concepts found in music players:
+Library
+The set of all the music the user has on his computer, or at least all the music he asks the music player to handle.
+Collection
+A subset of the library, that can be arbitrarily built by the user or correspond to a theme ("early Pink Floyd live sets", "jazz songs longer than 20 minutes") or any other criteria ("best rated songs", "never played songs").
+Playlist
+A sequential list of songs to be played. There can be one or several, but usually we refer to ''the playlist'' as the list of songs currently queued for playing.
+
+In some players, the boundaries between these different concepts are blurred. For instance, [http://www.apple.com/itunes/ iTunes]' ''Smart Playlists'' are obviously playlists (list of files to be played sequentially), but also a sort of collection (since they represent a dynamic subset of the library). We will see that this mix of concepts is at the root of the flaws of today's most advanced players.
+
+==Playlist players==
+
+===Simple needs, simple players===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-xmms-simple-3-pane|thumb|left|Classic 3-pane XMMS]]
+
+In the nineties, with the advent of Napster, CDs and fast personal computers, more and more people started to listen to music on their machine.  But due to the slowness of the 56k connections and the expensiveness of hard drives, they only had few files, usually a couple of hundreds.  Playlist-based players such as [http://www.winamp.com/ Winamp] (and its Unix equivalent, [http://www.xmms.org/ XMMS]) were suitable: loading files directly from the filesystem to a sequential list was manageable and the size of the library was small enough to be browsed linearly.
+
+Playlist saving/loading features made it possible to keep collections of songs, e.g. an album, a party playlist or songs of a given genre.  However, the process of saving/loading a physical file on the disk manually was cumbersome and not practical.  Moreover, the lists were static: you would have to update the "rock playlist" manually everytime you add a new rock song to your library...  These are the reasons why playlist files were not so popular among most users.
+
+===Hack features to break the sequential flow===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-xmms-jump-window|thumb|left|XMMS: Jump window]]
+
+The ''jump'' feature (the J key in [http://www.winamp.com/ Winamp] or [http://www.xmms.org/ XMMS]) is nothing but a hackish substitute for a decent search mechanism.  Basically, it involves looking for all song titles matching a string in the playlist; it is very fast and simple to use.  However, it quickly shows it limits when you want to look for all songs by a band called "M" or even "Air".  The other obvious limitation is that it only searches in the playlist, not the entire library, and it has no knowledge of the song metadata.
+
+The ''random play'' feature helps break the linearity of the playlist by randomly selecting the next song to play.  Although this feature is very popular, it also has its limitations.  First, it is not possible to preview the random queue, meaning that you only discover what song you jump to when you start playing it.  Not very convenient if you want to avoid jumping to that shameful Britney song you had forgotten to erase.  The second shortcoming is that you cannot introduce a factor (rating, genre, etc) in the randomness: songs are randomly chosen from the whole playlist.
+
+[[File:|thumb|left|XMMS: Queue in the playlist]]
+
+The most interesting feature introduced in the playlist-based players is the ''queue'' feature.  A late hack, which lets you specify a queue of songs to jump to in the playlist instead of just playing the list from top to bottom.  This allows you to avoid moving songs around in the playlist and therefore you can load all your library in the playlist, keep it ordered (e.g. by artist/album) and still impose a playing sequence.  But once again, the feature is a hack and has its flaws: it is impossible to view the queue (except by browsing the playlist and looking for the queued songs) and hard to manage it (reorder/edit).
+
+===Conclusion===
+
+Playlist-based players were efficient with small amounts of music files, but they don't scale with today's huge libraries. Various features have been hacked to try to improve the user experience, but none is really satisfying.
+
+Users need a better way to manage their music library, with powerful browsing and searching possibilities.  The queue feature also taught us that users want both quick browsing possibilities and control over the playing sequence; we will see that "real" collections can help solve this issue in a more natural manner.
+
+These issues have led to the next generation of players, based on a media-library.
+
+==Media-Library players==
+
+Players of the new generation (e.g. [http://www.winamp.com/ Winamp 5], [http://www.apple.com/itunes/ iTunes], [http://www.gnome.org/projects/rhythmbox/ Rhythmbox], [http://www.microsoft.com/windows/windowsmedia/ Windows Media Player]) now focus on a structured database of song metadata rather than just files in a sequence.  In addition to artist, album, year or genre fields, additional information can be stored for each song, such as the number of times the song has been played, a user-rating, when the files was added to the library, etc.
+
+===Efficient search and browsing===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-rhythmbox-main-window|thumb|left|Rhythmbox: main window]]
+
+The introduction of a database of metadata allows powerful search possibilities.  It is possible to search by artist, album, title, or with complex queries combining them and use other properties in the mix (rating, number of times played, etc).  The searches are now performed on the whole library, but remain fast thanks to the caching of the information in a database.  The only possible complaint is that sometimes, interfaces tend to make the search "too user-friendly", thus preventing the experienced users from using complex queries.
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-wmp-stupid-tree|thumb|right|Windows MediaPlayer: a lousy tree-based interface]]
+
+Another area that has been greatly improved by the media-library is the browsing experience.  Whereas playlist-based players only relied on a sequential playlist and the filesystem tree, players based on a media-library allow powerful visualisation of the library. Clever browsing through genre/artist/album filters has been introduced by [http://www.apple.com/itunes/ iTunes] (followed by [http://www.gnome.org/projects/rhythmbox/ Rhythmbox] and [http://www.winamp.com/ Winamp 5]), while some others have favoured a much poorer tree interface ([http://www.microsoft.com/windows/windowsmedia/ Windows Media Player], [http://www.musicpd.org/gmpc.shtml gmpc]).
+
+We now agree that the search and browsing possibilities allowed by the media-library are promising.  Let's have a look at various players implementing them in different ways.
+
+===Dumb and smart playlists===
+
+Thankfully, the players based on a media-library seem to have heard the complaint about the clumsiness of the saving/loading of playlist files: they all provide a way to directly access playlists from a side-menu.  Good, this makes the concept of playlists usable at last and we will need them, as we will see later on.
+
+More than that, they provide us with a much more powerful concept, ''Smart Playlists'' (in iTunes' vocabulary), which are dynamic subsets of the library matching a given set of constraints.  For example, a smart playlist can contain all songs by Led Zeppelin released in 1969, or all rock songs containing "paranoid" in their title.  The power of the filters varies between a user-friendly interface and complex, raw queries to the media-library database.  In any case, smart playlists are a very convenient way to create collections to provide selective views on the whole library, thus enhancing the browsing experience.
+
+===[http://www.apple.com/itunes/ iTunes] (and [http://www.gnome.org/projects/rhythmbox/ Rhythmbox])===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-itunes-party-shuffle|thumb|left|iTunes: party shuffle]]
+
+Apart from featuring Apple's clean and well thought-out interface, [http://www.apple.com/itunes/ iTunes] presents a unique concept: the ''[http://www.apple.com/itunes/playlists.html Party Shuffle]''.  Although the name clearly explains what it is all about, let's repeat the idea: you choose a playlist to shuffle from and you get a random list of songs.  The interest lies in the fact that you see the random sequence ''as a playlist'', i.e. you see what songs are playing next (and what songs have just been played)!  Of course, it is possible to edit the random list by adding/moving/removing entries, as well as shuffle it again.
+
+What merely sounds like a new feature actually pinpoints the major problem that all existing players suffer from: the clumsy separation of collections and playlists.  The key of the Party Shuffle is that it lets you use a collection you have prepared, without messing with the collection itself, which is better kept ordered. When a user wants to play his "70's Rock" collection (a Smart Playlist, in iTunes' vocabulary), he doesn't want to ruin the clean artist/album/track sorted list.  What he really wants to do is ''instantiate his collection as a playlist'', and modify the latter rather than the former.  If implemented in a clever interface, this idea will be much more natural than it sounds.
+
+===[http://madman.sourceforge.net/ Madman]===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-madman-interface|thumb|left|Madman interface]]
+
+[http://madman.sourceforge.net/ Madman] is an interesting music manager running on GNU/Linux.  It is mostly a media-library, as it uses [http://www.xmms.org/ XMMS] as a back-end player.  What is interesting about this project is that it does not try to copy any famous player, and is surprisingly successful in its own clever way.
+
+At first, the Qt interface looks a bit poor, with a disappointing tree widget to browse by artist or album. We notice that the interface is split in two: browse the library with filters and queries in the top pane, view the collections in the bottom pane.  The query features are very powerful (regular expressions, last time played, etc) and it is possible to bookmark a query from the browse pane into a new collection with a single button.  Neat.
+
+Among the features, right-clicking on a song allows to play (now, next or eventually) all the songs by the same artist or from the same album.  This shows the importance of the ability to act on groups of songs.  Last but not least, it is also possible to edit the content of a dynamic playlist by adding or removing songs, thus bypassing the filter.  Although it might seem contradictory with the very concept of query-generated playlists, it ends up being an agreable feature for the user.
+
+One minor feature could be added to the tree-structured dynamic playlists: it would be useful to allow inheritance of the filters down the tree, so as to refine the collections as we go deeper in the branches.
+
+Overall, [http://madman.sourceforge.net/ Madman] forms a very clever media-library tool, with loads of nice ideas and interaction choices.  The interface could be improved and should include the actual playlist (rather than relying on XMMS' playlist), but there is still a lot to learn from this project. 
+
+===[http://www.winamp.com/ Winamp 5]===
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-winamp5-medialibrary|thumb|left|Winamp 5: media-library and playlist]]
+
+The most obvious improvement from the Winamp 2.* versions is the media-library.  Just as other players, it supports filtered browsing, access to playlists from the interface, etc.  However, the rest of the player (the main window/equalizer/playlist trio) remains unchanged. This unfortunately introduces some confusion as playlists appear in two locations: in the media-library ''and'' in the old-style playlist pane.
+
+Surprisingly, Winamp 5 is one of the few players to offer "real" collections (i.e. impossible to play and to reorder). They really are just subsets of the library, specified by some constraints.  But for some reason, when you browse a view, you cannot use the iTunes-like filters anymore; these are only visible when you browse the whole library.  For the sake of ease of use and consistency, it would have been nicer to keep the same interface for both.  Another flaw of the views is that they ''have'' to be dynamic, you cannot have collections to which you manually add and remove songs.
+
+There is no concept of smart playlist at all, but if you double-click on a song in a view, it will replace the current playlist by the songs in the view and play the clicked song... Believe me, it is as awkward to use as it is to describe. In short, they have implemented interesting concepts but their usage and the user-interaction is confusing, at best.
+
+===Conclusion===
+
+A media-library is a must to improve the browse and search experience.  However, it is only a ''tool'' that can be used and presented in different ways.  The actual interface used by the user must be carefully thought-out and include powerful features to maximize the possibilities allowed by that tool.
+
+Almost all players based on a media-library provide acceptable to excellent library browsing, an accessible list of saved playlists, as well as more or less powerful smart playlists.  They still differ from each other in many ways, but they all share the same limitation: developpers fixed the problems from the previous generation of players without daring to add a whole new concept: collections.  It might not be obvious at first, but they are the missing piece to improve the browsing of the library.
+
+In today's players, the only way to group songs is by putting them in a playlist.  But when someone creates a smart playlist, he is interested in its content, in the resulting set of songs; he doesn't want to edit it directly to play it linearly.  This is why Apple has included the Party Shuffle feature: because it allows the user to build a playlist from a subset of her library.
+
+A better music player would introduce collections as a new concept, which would allow to browse and maintain dynamic or static subsets of the entire library.  Playlists could then be created from these collections, either as linear lists or "Party Shuffle"-like random lists.  Of course, it would still be possible to completely ignore the existence of collections and use playlists directly; but the availability of this new conceptual layer could prove itself a must for advanced users.
+
+In the next section, we will have a look at the existing client/server players and see whether they seem flexible enough to accomodate all the features and interface we can imagine for a better music player.
+
+==Client/Server players==
+
+[[File:Manifesto_for_a_Better_Music_Player:mp-xmms2-cli-snapshot|thumb|left|XMMS2: command-line interface]]
+
+Client/Server players are not really to be considered the "next generation" players.  The underlying architecture does not need to appear to the end-user; it is merely a new way to build music players, possibly allowing features otherwise impossible (multiple clients connected to one server, different client softwares, etc).  The main advantage is that the complexity of the audio decoding and the media-library is isolated in the server, which lets developpers focus on the usability of the clients.
+
+There are few working client/server player projects and all are primarily developped for GNU/Linux and Unix.  The oldest is [http://www.mserv.org/ mserv], which works perfectly fine although it is not maintained anymore.  It actually boasts the most advanced multi-user architecture of all, but its implementation makes it hard to interface with: telnet protocol, file-based database, few song properties.
+
+[http://www.musicpd.org/ Music Player Daemon (mpd)] is a popular alternative, with already plenty of clients, command-line or graphical interface.  It is quite stable, but lacks a real media-library database and advanced song properties.  It is therefore functional but too simple and not very extensible. [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans MPD2] will probably be better in every way, but its development doesn't even seem to have started yet.
+
+[http://wiki.xmms2.xmms.se/ XMMS2] is a convenient alternative, implementing many of MPD2's goals. It is still under heavy development but can already be used, although it doesn't really have a good client yet.  But as it looks like the most appropriate server to develop for, this might soon change!
+
+==A Better Player==
+
+We can now describe what a "better player" would need. However, the goal here is not to describe a concrete implementation of the ideas as a usable program; we will instead focus on the ''features and concepts'' that would make a better music player.  They should remain abstract and general enough to be used in very various clients, whatever the platform or the interface (command-line based or graphical).
+
+===A powerful media-library===
+
+As the basis for our player, we need a powerful media-library. It must indeed be fast and support powerful queries (DB back-end) so as to allow advanced and responsive browsing in the player.  It should also handle many song properties, such as the number of times the song has been played, when it was added to the library, etc.
+
+In a client/server architecture, the media-library is handled by the server, and the [http://wiki.xmms2.xmms.se/ XMMS2] server has all the features requested above.
+
+===Clever browsing===
+
+Now we have a powerful media-library, we need an equally good interface to browse it.  This depends heavily on the type of interface of the client, but there are enough existing players to learn from the best: favour [http://www.apple.com/itunes/ iTunes]-like filters over [http://www.microsoft.com/windows/windowsmedia/ Windows Media Player]'s tree-based interface; provide the customizability of [http://www.foobar2000.org/ Foobar2000]; or use completion in a command-line interface.  Defining a good interface is too vast a subject to be discussed here, but it should remain a main objective when developping a better music player.
+
+The search feature must also be both user-friendly and powerful, and all the fields (including extra song properties) should be queriable.  [http://madman.sourceforge.net/ Madman]'s query system is a good example of a powerful solution.
+
+===Easy playlist management===
+
+Once the library has been browsed, the user has chosen songs to play and wants to include them in some playlist.  It should be done naturally and allow multiple actions: play now (possibly stopping the current playback), add as the next song, or play eventually at the end of the current list.  A brilliant example of a bad interface in that regard is [http://www.winamp.com/ Winamp 5]'s: no "play next" option (you can only play or enqueue the song), and double-clicking a song in the media-library plays it at once, but it also replaces the content of the playlist by the current view of the media-library!
+
+===Collections and playlists: two main orthogonal concepts===
+
+Collections and playlists ought to be clearly separated and receive equal importance, for they represent two main orthogonal concept in music players.  Collections are unordered subsets of the library, meant to facilitate the browsing of a big library and build arbitrary groups of songs; they are not playable.  Playlists are ordered lists of songs, meant to be played linearly; they can be edited and reordered at any time.  Both collections and playlists are always editable (i.e. add/remove songs).  We will see later on that there are several ways to create playlists.
+
+When it comes to viewing, both concepts offer a different interface.  Collections are browsed in the same way as the library, through search and filters.  Actually, even the library is a collection, as it is just an alias for a top collection matching all the songs.  Playlists are browsed as a list, much the same way as you view the playlist in [http://www.xmms.org/ XMMS] or Winamp 2.*.
+
+Collections are organized as a tree structure, playlists as a flat list. As an analogy, collections can be seen as directories, thus forming a hierarchy, whereas playlists can be seen as radio stations. There is always one and only one "playing" playlist at any given time, and usually only one collection browsed at a time as well.
+
+There is only one type of collection, which resembles Madman's playlists: it can be filled by a subset of the library, specified by a set of constraints, and it can also be edited (add/remove songs) by hand.  Both ways are not exclusive: the collection is first filled with the query (if there is one) before songs are added and removed according to the user's modifications.  A simple yet powerful interface should be used to specify the query and view the user's modifications.
+
+On the other hand, there are several types of playlists, and more could be added later on.  The three main types are: the list, the queue and the shuffle.  The list corresponds to the usual definition of a playlist, i.e. a static list of songs with a pointer moving down to play the songs sequentially.  The queue is quite similar, except that songs which have been played disappear from the list.  It should be possible to view a short history of the ''n'' last played songs.  The shuffle is a dynamic version of the queue fed from the content of a collection: the next ''k'' songs to play are randomly chosen from a given collection.  This is the equivalent of [http://www.apple.com/itunes/ iTunes]' Party Shuffle.
+
+==Conclusion==
+
+I don't pretend that the ideas developped in this manifesto will lead to a perfect player.  However, I am convinced that they can help develop a ''better'' player based on what we can learn from the existing ones.  Proposal for more advanced or revolutionary features will be presented in a future article.
+
+Now in order to avoid sounding like one of these lazy wailers who dump ideas without ever developping them, I already started working on two music player projects which implement the ideas developped in the present article.  Both [http://wiki.xmms2.xmms.se/ XMMS2] clients, the first will be a command-line client and the second a graphical client.
+
+Stay tuned...
