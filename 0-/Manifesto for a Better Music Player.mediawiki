@@ -16,12 +16,12 @@ In this article, we will go through the history of music players, which will be 
 ==Vocabulary==
 
 Before we start discussing the history and future of music players, let's make sure we share the same definition of the most important concepts found in music players:
-Library
-The set of all the music the user has on his computer, or at least all the music he asks the music player to handle.
-Collection
-A subset of the library, that can be arbitrarily built by the user or correspond to a theme ("early Pink Floyd live sets", "jazz songs longer than 20 minutes") or any other criteria ("best rated songs", "never played songs").
-Playlist
-A sequential list of songs to be played. There can be one or several, but usually we refer to ''the playlist'' as the list of songs currently queued for playing.
+; Library
+: The set of all the music the user has on his computer, or at least all the music he asks the music player to handle.
+; Collection
+: A subset of the library, that can be arbitrarily built by the user or correspond to a theme ("early Pink Floyd live sets", "jazz songs longer than 20 minutes") or any other criteria ("best rated songs", "never played songs").
+; Playlist
+: A sequential list of songs to be played. There can be one or several, but usually we refer to ''the playlist'' as the list of songs currently queued for playing.
 
 In some players, the boundaries between these different concepts are blurred. For instance, [http://www.apple.com/itunes/ iTunes]' ''Smart Playlists'' are obviously playlists (list of files to be played sequentially), but also a sort of collection (since they represent a dynamic subset of the library). We will see that this mix of concepts is at the root of the flaws of today's most advanced players.
 
