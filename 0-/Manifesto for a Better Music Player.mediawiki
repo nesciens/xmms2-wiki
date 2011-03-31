@@ -3,7 +3,7 @@ Below is a mirror of [[User:Theefer|Theefer]]'s [http://bytes.inso.cc/wp/2005/07
 
 No perfect music player exists yet.
 
-[[File:Manifesto_for_a_Better_Music_Player-amarok-interface.png|thumb=Manifesto_for_a_Better_Music_Player-amarok-interface-thumb.png|left|Amarok's neat interface]]
+[[File:Manifesto_for_a_Better_Music_Player-amarok-interface.png|thumb=Manifesto_for_a_Better_Music_Player-amarok-interface-thumb.png|right|Amarok's neat interface]]
 
 Apart from your grandma and deaf people, few people do ''not'' use computers to play music.  It has become part of the digital experience to listen to music while surfing/chatting/coding/gaming.  And yet, if you ask people, most of those who care the least bit about the usability of the programs they use will agree that no music player is perfect.
 
@@ -29,7 +29,7 @@ In some players, the boundaries between these different concepts are blurred. Fo
 
 ===Simple needs, simple players===
 
-[[File:Manifesto_for_a_Better_Music_Player-xmms-simple-3-pane.png|thumb=Manifesto_for_a_Better_Music_Player-xmms-simple-3-pane-thumb.png|left|Classic 3-pane XMMS]]
+[[File:Manifesto_for_a_Better_Music_Player-xmms-simple-3-pane.png|thumb=Manifesto_for_a_Better_Music_Player-xmms-simple-3-pane-thumb.png|right|Classic 3-pane XMMS]]
 
 In the nineties, with the advent of Napster, CDs and fast personal computers, more and more people started to listen to music on their machine.  But due to the slowness of the 56k connections and the expensiveness of hard drives, they only had few files, usually a couple of hundreds.  Playlist-based players such as [http://www.winamp.com/ Winamp] (and its Unix equivalent, [http://www.xmms.org/ XMMS]) were suitable: loading files directly from the filesystem to a sequential list was manageable and the size of the library was small enough to be browsed linearly.
 
@@ -37,13 +37,13 @@ Playlist saving/loading features made it possible to keep collections of songs, 
 
 ===Hack features to break the sequential flow===
 
-[[File:Manifesto_for_a_Better_Music_Player-xmms-jump-window.png|thumb=Manifesto_for_a_Better_Music_Player-xmms-jump-window-thumb.png|right|XMMS: Jump window]]
+[[File:Manifesto_for_a_Better_Music_Player-xmms-jump-window.png|thumb=Manifesto_for_a_Better_Music_Player-xmms-jump-window-thumb.png|left|XMMS: Jump window]]
 
 The ''jump'' feature (the J key in [http://www.winamp.com/ Winamp] or [http://www.xmms.org/ XMMS]) is nothing but a hackish substitute for a decent search mechanism.  Basically, it involves looking for all song titles matching a string in the playlist; it is very fast and simple to use.  However, it quickly shows it limits when you want to look for all songs by a band called "M" or even "Air".  The other obvious limitation is that it only searches in the playlist, not the entire library, and it has no knowledge of the song metadata.
 
 The ''random play'' feature helps break the linearity of the playlist by randomly selecting the next song to play.  Although this feature is very popular, it also has its limitations.  First, it is not possible to preview the random queue, meaning that you only discover what song you jump to when you start playing it.  Not very convenient if you want to avoid jumping to that shameful Britney song you had forgotten to erase.  The second shortcoming is that you cannot introduce a factor (rating, genre, etc) in the randomness: songs are randomly chosen from the whole playlist.
 
-[[File:xmms-queue-playlist.png|thumb|left|XMMS: Queue in the playlist]]
+[[File:xmms-queue-playlist.png|thumb|right|XMMS: Queue in the playlist]]
 
 The most interesting feature introduced in the playlist-based players is the ''queue'' feature.  A late hack, which lets you specify a queue of songs to jump to in the playlist instead of just playing the list from top to bottom.  This allows you to avoid moving songs around in the playlist and therefore you can load all your library in the playlist, keep it ordered (e.g. by artist/album) and still impose a playing sequence.  But once again, the feature is a hack and has its flaws: it is impossible to view the queue (except by browsing the playlist and looking for the queued songs) and hard to manage it (reorder/edit).
 
@@ -61,11 +61,11 @@ Players of the new generation (e.g. [http://www.winamp.com/ Winamp 5], [http://w
 
 ===Efficient search and browsing===
 
-[[File:Manifesto_for_a_Better_Music_Player-rhythmbox-main-window.png|thumb=Manifesto_for_a_Better_Music_Player-rhythmbox-main-window-thumb.png|left|Rhythmbox: main window]]
+[[File:Manifesto_for_a_Better_Music_Player-rhythmbox-main-window.png|thumb=Manifesto_for_a_Better_Music_Player-rhythmbox-main-window-thumb.png|right|Rhythmbox: main window]]
 
 The introduction of a database of metadata allows powerful search possibilities.  It is possible to search by artist, album, title, or with complex queries combining them and use other properties in the mix (rating, number of times played, etc).  The searches are now performed on the whole library, but remain fast thanks to the caching of the information in a database.  The only possible complaint is that sometimes, interfaces tend to make the search "too user-friendly", thus preventing the experienced users from using complex queries.
 
-[[File:Manifesto_for_a_Better_Music_Player-wmp-stupid-tree.png|thumb=Manifesto_for_a_Better_Music_Player-wmp-stupid-tree-thumb.png|right|Windows MediaPlayer: a lousy tree-based interface]]
+[[File:Manifesto_for_a_Better_Music_Player-wmp-stupid-tree.png|thumb=Manifesto_for_a_Better_Music_Player-wmp-stupid-tree-thumb.png|left|Windows MediaPlayer: a lousy tree-based interface]]
 
 Another area that has been greatly improved by the media-library is the browsing experience.  Whereas playlist-based players only relied on a sequential playlist and the filesystem tree, players based on a media-library allow powerful visualisation of the library. Clever browsing through genre/artist/album filters has been introduced by [http://www.apple.com/itunes/ iTunes] (followed by [http://www.gnome.org/projects/rhythmbox/ Rhythmbox] and [http://www.winamp.com/ Winamp 5]), while some others have favoured a much poorer tree interface ([http://www.microsoft.com/windows/windowsmedia/ Windows Media Player], [http://www.musicpd.org/gmpc.shtml gmpc]).
 
@@ -79,7 +79,7 @@ More than that, they provide us with a much more powerful concept, ''Smart Playl
 
 ===[http://www.apple.com/itunes/ iTunes] (and [http://www.gnome.org/projects/rhythmbox/ Rhythmbox])===
 
-[[File:Manifesto_for_a_Better_Music_Player-itunes-party-shuffle.png|thumb=Manifesto_for_a_Better_Music_Player-itunes-party-shuffle-thumb.png|left|iTunes: party shuffle]]
+[[File:Manifesto_for_a_Better_Music_Player-itunes-party-shuffle.png|thumb=Manifesto_for_a_Better_Music_Player-itunes-party-shuffle-thumb.png|right|iTunes: party shuffle]]
 
 Apart from featuring Apple's clean and well thought-out interface, [http://www.apple.com/itunes/ iTunes] presents a unique concept: the ''[http://www.apple.com/itunes/playlists.html Party Shuffle]''.  Although the name clearly explains what it is all about, let's repeat the idea: you choose a playlist to shuffle from and you get a random list of songs.  The interest lies in the fact that you see the random sequence ''as a playlist'', i.e. you see what songs are playing next (and what songs have just been played)!  Of course, it is possible to edit the random list by adding/moving/removing entries, as well as shuffle it again.
 
@@ -87,7 +87,7 @@ What merely sounds like a new feature actually pinpoints the major problem that 
 
 ===[http://madman.sourceforge.net/ Madman]===
 
-[[File:Manifesto_for_a_Better_Music_Player-madman-interface.png|thumb=Manifesto_for_a_Better_Music_Player-madman-interface-thumb.png|left|Madman interface]]
+[[File:Manifesto_for_a_Better_Music_Player-madman-interface.png|thumb=Manifesto_for_a_Better_Music_Player-madman-interface-thumb.png|right|Madman interface]]
 
 [http://madman.sourceforge.net/ Madman] is an interesting music manager running on GNU/Linux.  It is mostly a media-library, as it uses [http://www.xmms.org/ XMMS] as a back-end player.  What is interesting about this project is that it does not try to copy any famous player, and is surprisingly successful in its own clever way.
 
@@ -101,7 +101,7 @@ Overall, [http://madman.sourceforge.net/ Madman] forms a very clever media-libra
 
 ===[http://www.winamp.com/ Winamp 5]===
 
-[[File:Manifesto_for_a_Better_Music_Player-winamp5-medialibrary.png|thumb=Manifesto_for_a_Better_Music_Player-winamp5-medialibrary-thumb.png|left|Winamp 5: media-library and playlist]]
+[[File:Manifesto_for_a_Better_Music_Player-winamp5-medialibrary.png|thumb=Manifesto_for_a_Better_Music_Player-winamp5-medialibrary-thumb.png|right|Winamp 5: media-library and playlist]]
 
 The most obvious improvement from the Winamp 2.* versions is the media-library.  Just as other players, it supports filtered browsing, access to playlists from the interface, etc.  However, the rest of the player (the main window/equalizer/playlist trio) remains unchanged. This unfortunately introduces some confusion as playlists appear in two locations: in the media-library ''and'' in the old-style playlist pane.
 
@@ -123,7 +123,7 @@ In the next section, we will have a look at the existing client/server players a
 
 ==Client/Server players==
 
-[[File:Manifesto_for_a_Better_Music_Player-xmms2-cli-snapshot.png|thumb=Manifesto_for_a_Better_Music_Player-xmms2-cli-snapshot-thumb.png|left|XMMS2: command-line interface]]
+[[File:Manifesto_for_a_Better_Music_Player-xmms2-cli-snapshot.png|thumb=Manifesto_for_a_Better_Music_Player-xmms2-cli-snapshot-thumb.png|right|XMMS2: command-line interface]]
 
 Client/Server players are not really to be considered the "next generation" players.  The underlying architecture does not need to appear to the end-user; it is merely a new way to build music players, possibly allowing features otherwise impossible (multiple clients connected to one server, different client softwares, etc).  The main advantage is that the complexity of the audio decoding and the media-library is isolated in the server, which lets developpers focus on the usability of the clients.
 
