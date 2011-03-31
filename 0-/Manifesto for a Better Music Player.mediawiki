@@ -37,13 +37,13 @@ Playlist saving/loading features made it possible to keep collections of songs, 
 
 ===Hack features to break the sequential flow===
 
-[[File:Manifesto_for_a_Better_Music_Player-xmms-jump-window.png|thumb|left|XMMS: Jump window]]
+[[File:Manifesto_for_a_Better_Music_Player-xmms-jump-window.png|thumb|right|XMMS: Jump window]]
 
 The ''jump'' feature (the J key in [http://www.winamp.com/ Winamp] or [http://www.xmms.org/ XMMS]) is nothing but a hackish substitute for a decent search mechanism.  Basically, it involves looking for all song titles matching a string in the playlist; it is very fast and simple to use.  However, it quickly shows it limits when you want to look for all songs by a band called "M" or even "Air".  The other obvious limitation is that it only searches in the playlist, not the entire library, and it has no knowledge of the song metadata.
 
 The ''random play'' feature helps break the linearity of the playlist by randomly selecting the next song to play.  Although this feature is very popular, it also has its limitations.  First, it is not possible to preview the random queue, meaning that you only discover what song you jump to when you start playing it.  Not very convenient if you want to avoid jumping to that shameful Britney song you had forgotten to erase.  The second shortcoming is that you cannot introduce a factor (rating, genre, etc) in the randomness: songs are randomly chosen from the whole playlist.
 
-[[File:.png|thumb|left|XMMS: Queue in the playlist]]
+[[File:xmms-queue-playlist.png|thumb|left|XMMS: Queue in the playlist]]
 
 The most interesting feature introduced in the playlist-based players is the ''queue'' feature.  A late hack, which lets you specify a queue of songs to jump to in the playlist instead of just playing the list from top to bottom.  This allows you to avoid moving songs around in the playlist and therefore you can load all your library in the playlist, keep it ordered (e.g. by artist/album) and still impose a playing sequence.  But once again, the feature is a hack and has its flaws: it is impossible to view the queue (except by browsing the playlist and looking for the queued songs) and hard to manage it (reorder/edit).
 
