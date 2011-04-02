@@ -3,6 +3,9 @@ __NOEDITSECTION__
 
 <div class="split-half">
 
+=== Get Started! ===
+[[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
+
 === XMMS2 will: ===
 * play your music.
 * manage your [[The Medialib|music library]]
@@ -11,11 +14,8 @@ __NOEDITSECTION__
 * [[Project Status#XMMS2_Platform_Support_Status|run]] on [[Download_XMMS2#Linux|Linux]], [[Download_XMMS2#BSD|*BSD]], [[Download_XMMS2#MacOSX|OS X]], Solaris, and [[Download_XMMS2#Windows|Windows]].
 
 <small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
-== Features ==
+=== Features ===
 {{FeatureList}}
-
-== Get Started! ==
-[[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
 
 </div>
 
