@@ -97,7 +97,7 @@ A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsr
 == Source ==
 '''Note''': you should read the [[Install instructions]] page as well.
 * Look at our sourceforge page for releases: http://sf.net/projects/xmms2
-* The GIT repository (with snapshots) is viewable at: http://git.xmms.se
+* The GIT repository (with snapshots) is viewable at: http://git.xmms2.org
 
 About the GIT repository:
 * You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
