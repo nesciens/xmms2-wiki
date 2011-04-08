@@ -10,7 +10,7 @@ Some of the issues with the current random playlists are:
 * ...
 
 == Project Ideas ==
-Because there are many different ways that people may want to manage their 'random' playlist, the idea is to delegate the required logic to some client(s) that run in the background. (These can for instance be started from the startup.d directory, from which [[Client:XMMS2-Scrobbler|XMMS2-Scrobbler]], [[ET|xmms2-et]] and [http://git.xmms.se/cgit.cgi/xmms2/xmms2-devel/tree/src/clients/medialib-updater xmms2-mlib-updater] are also typically run.) An example implementation of a client managing a playlist can be found [http://git.xmms.se/cgit.cgi/xmms2/xmms2-nesciens/log/?h=example-playlist-updating-client here] (needs Collections 2).
+Because there are many different ways that people may want to manage their 'random' playlist, the idea is to delegate the required logic to some client(s) that run in the background. (These can for instance be started from the startup.d directory, from which [[Client:XMMS2-Scrobbler|XMMS2-Scrobbler]], [[ET|xmms2-et]] and [http://git.xmms.se/cgit.cgi/xmms2/xmms2-devel/tree/src/clients/medialib-updater xmms2-mlib-updater] are also typically run.) An example implementation of a client managing a playlist can be found [http://git.xmms.se/xmms2/xmms2-nesciens/log/?h=example-playlist-updating-client here] (needs Collections 2).
 
 === Library for easily writing playlist managing clients ===
 All playlist managing clients will mainly be doing the same thing, and solving the same issues. Hence it makes sense to factor out this common denominator into a library. Some issues this library might take care of are:
