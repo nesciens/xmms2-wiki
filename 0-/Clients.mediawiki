@@ -118,7 +118,8 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 
 == Emacs ==
 
-* [[Client:lagn | lagn]] is a XMMS2 client for Emacs.
+* [[Client:GIMME | GIMME]] is an XMMS2 client for GNU Emacs with extra features.
+* [[Client:lagn | lagn]] is an XMMS2 client for GNU Emacs.
 
 = Special Input Methods =
 
