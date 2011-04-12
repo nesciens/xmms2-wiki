@@ -1,1 +1,15 @@
-{{Client| name=GIMME| author=Konrad Scorciapino| website=http://www.github.com/konr/GIMME| version=v1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=[http://i.imgur.com/ToZ7z.png playlist-view]| description=GIMME, originally developed for Google's Summer of Code in 2010, is a well-rounded XMMS2 interface for GNU Emacs that provides a minimalistic and intuitive user experience through searches, powered by collection operations. Checkout the website for details.}}
+{{Client| name=GIMME| author=Konrad Scorciapino| website=http://www.github.com/konr/GIMME| version=v1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=[http://i.imgur.com/ToZ7z.png playlist-view]| description=GIMME, which stands for ''GIMME Interesting Music in My Emacs, is a well-rounded XMMS2 interface for GNU Emacs that provides a minimalistic and intuitive user experience through searches, powered by collection operations.}}
+
+== Try it ==
+# '''Install XMMS2 v0.7.''' On Archlinux, you'd simply run `sudo pacman -S xmms2`, but on Debian, for example, you might have to compile it [[Install_instructions|by hand]]
+# '''Install the Sexp gem.''' Run `ruby -v`: If your system uses Ruby 1.8, you can simply run `gem install sexp`, otherwise you'll have to fetch it by hand and patch it. #FIXME
+# '''Clone GIMME from the [http://github.com/konr/GIMME repository].''' Simply run `git clone git://github.com/konr/GIMME.git`
+# '''Prepare Emacs'''. Add or link the directory to Emacs's path and add (require ‘gimme) to your .emacs or init.el file.
+# '''M-x gimme'''. And enjoy! :)
+
+== Explore it ==
+This area will contain tutorials or screencasts.
+
+== Hack it ==
+* [https://gimmeinterestingmusicinmyemacs.uservoice.com/forums/111021-general Suggest or hack new features.]
+* '''Add new color themes.''' GIMME uses [http://en.wikipedia.org/wiki/Traditional_colors_of_Japan traditional japanese colors] to colorize its playlist, but you can change that to whatever you like.
