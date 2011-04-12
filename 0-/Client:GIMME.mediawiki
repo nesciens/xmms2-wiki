@@ -1,4 +1,4 @@
-{{Client| name=GIMME| author=Konrad Scorciapino| website=http://www.github.com/konr/GIMME| version=v1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=[http://i.imgur.com/ToZ7z.png playlist-view]| description=GIMME, which stands for ''GIMME Interesting Music in My Emacs, is a well-rounded XMMS2 interface for GNU Emacs that provides a minimalistic and intuitive user experience through searches, powered by collection operations.}}
+{{Client| name=GIMME| author=Konrad Scorciapino| website=http://www.github.com/konr/GIMME| version=v1| devlanguage=Emacs Lisp| ui=Emacs| screenshots=[http://i.imgur.com/ToZ7z.png playlist-view]| description=GIMME, which stands for ''GIMME Interesting Music in My Emacs'', is a well-rounded XMMS2 interface for GNU Emacs that provides a minimalistic and intuitive user experience through searches, powered by collection operations.}}
 
 == Try it ==
 # '''Install XMMS2 v0.7.''' On Archlinux, you'd simply run `sudo pacman -S xmms2`, but on Debian, for example, you might have to compile it [[Install_instructions|by hand]]
