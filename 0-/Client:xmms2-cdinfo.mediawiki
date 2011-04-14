@@ -2,7 +2,7 @@
 Client
 |name=xmms2-cdinfo
 |author=Tomasz Sobczyk
-|website=[http://inumi.net/(+blog*8)]
+|website=[http://inumi.net/(+blog*7)]
 |version=0.2
 |devlanguage=C++
 |ui=Console
