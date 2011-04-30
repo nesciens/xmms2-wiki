@@ -1,0 +1,45 @@
+== Fetch-spec API ==
+
+Cluster-list should have an order attribute, which would be a list of the same as the Order collection type.
+
+ direction: ASC or DESC for ascending and descending ordering. The default-value is ASC.
+ collation: A collation to be used when the values are strings. The default-value is NATCOLL. Not implemented yet
+ type: Defines what to order by. Possible values value, id or random. The default value is value.
+ field: If type=value, defines which property to order by.
+
+ { 
+  "type": "cluster-list"
+  "order-by": [{ 
+    "type": "id", "position", "random", or "value",
+    "collation": "natcoll",
+    "direction": "ascending/descending",
+    "field": "artist" if type=value
+  }]
+ }
+
+== fetchspec.c ==
+
+Currently pretty tight, but should go over it again, and probably write some more tests for it. The idea is to reject an invalid spec here so that the query code can do a lot of assumptions.
+
+== fetchinfo.c ==
+
+This file is just weird.. I have a feeling it's not really needed and can be removed after some beard/head-scratching.
+
+== medialib.c ==
+
+This pretty much sums it up:
+
+ daniel@neutronstar:~/dev_home/xmms2-nano(s4-test)$ git checkout master
+ Switched to branch 'master'
+ daniel@neutronstar:~/dev_home/xmms2-nano(master)$ wc -l src/xmms/medialib.c 
+ 1548 src/xmms/medialib.c
+ daniel@neutronstar:~/dev_home/xmms2-nano(master)$ git checkout s4-test
+ Switched to branch 's4-test'
+ daniel@neutronstar:~/dev_home/xmms2-nano(s4-test)$ wc -l src/xmms/medialib.c 
+ 2844 src/xmms/medialib.c
+
+Almost twice the size.. the medialib_query call-graph really needs to be broken out into a separate file... or two files. One file that builds the query, and one that massages the result into the form that can be sent to the client.
+
+[[Image:medialib_query.png|center|700px|alt=medialib query call graph|call graph]]
+
+To break out in two files there are a couple structures currently stashed away as xmmsv bin-data (hack galore), used for aggregation functionality. I believe this can be replaced by xmmsv dicts instead which would fit much better into the code flow and reduce coupling. When doing this change, there should be performance tests available. Some performance might be ok to sacrifice for better readability, as long as it's not too much.
