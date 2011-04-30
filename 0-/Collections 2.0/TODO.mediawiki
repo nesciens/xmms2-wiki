@@ -48,6 +48,36 @@ Almost twice the size.. the medialib_query call-graph really needs to be broken 
 
 To break out in two files there are a couple structures currently stashed away as xmmsv bin-data (hack galore), used for aggregation functionality. I believe this can be replaced by xmmsv dicts instead which would fit much better into the code flow and reduce coupling. When doing this change, there should be performance tests available. Some performance might be ok to sacrifice for better readability, as long as it's not too much.
 
-== medialib-runner test framework ==
+Breaking out the code into separate files will also lead to much easier overview of test coverage status.
 
+== test framework ==
+
+=== medialib-runner ===
 To simplify testing I've written some stuff that mocks a medialib, builds a collection and a spec and compares the result against some expected value. The tests can be found in tests/server/medialib, and the runner is built as _build_/default/tests/medialib-runner. It will automatically find the tests if run from the top directory. When running it in performance-mode, -v performance, it will look for databases in tests/server/databases/ and run each of the test in the test directory against a real database. Currently it's all written in C, but I've pondered on reducing the amount of code written in C and just have the bare minimum in C and the rest in Python. This would allow for much easier addition of new features, and rapid development of storing old results for future comparisons etc.
+
+=== tests/server/t_medialib.c ===
+
+This is a bare bone unittest of functionality that should remain in medialib.c.
+
+=== generating coverage reports ===
+
+I use the following to run the tests:
+
+ #!/bin/sh
+ if ! ./waf build -v; then 
+ 	exit 1;
+ fi
+ 
+ G_SLICE=always-malloc G_DEBUG=gc-friendly
+ 
+ export G_DEBUG G_SLICE
+ 
+ valgrind --log-file=/tmp/test_medialib.log --leak-check=full --suppressions=x2.supp _build_/default/tests/test_* 2>&1 | grep -v profiling
+ 
+ if [ "x$1" = "xcov" ]; then
+ 	cd _build_
+ 	lcov -c -b . -d . -o coverage.info
+ 	genhtml -o cov coverage.info
+ fi
+
+The valgrind suppressions file can be found at: http://people.xmms2.org/~nano/x2.supp
