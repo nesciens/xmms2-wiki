@@ -88,6 +88,8 @@ I use the following to run the tests:
 
 The valgrind suppressions file can be found at: http://people.xmms2.org/~nano/x2.supp
 
+Each run appends statistics so it probably makes sense to nuke old gcda/gcno files before each run... but other than that, the different tests will append stats to a single report.
+
 == test program ==
 
 Simple python app that eval()'s the top box to a collection, and json-parses the middle box into a fetch spec dict, and when the button underneath is pressed, the bottom box dumps the output of xmmsc_coll_query:
