@@ -21,6 +21,8 @@ Cluster-list should have an order attribute, which would be a list of the same a
   }]
  }
 
+There might also be additional naming updates in the spec on [[Collections 2.0]] that hasn't been changed in the code yet.
+
 == src/xmms/xform.c ==
 
 xforms need a way to query the medialibrary, the same way they have methods for setting metadata, but they shouldn't do this via the medialib object api but rather specific methods in the xforms api. this is used in ices and ofa xforms, and is also of interest for output plugins like pulse audio that can update its metadata with currently playing song. this should probably be implemented in xmms2-devel.git first, and then ported to the S4/Coll2 branch.
