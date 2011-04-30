@@ -1,0 +1,7 @@
+I'm not sure xmmsc_sc_get_name should broadcast to all c2c-clients. It seems a waste of bandwidth. Also even though our libxmmsclient-sc checks the destination, people could implement their own library and send bogus information back. Personally I think the name should be stored on the server. (Quite possibly it already is.)
+
+What is more, is that I see some problems with using synchronous API as in this sketch. The client would only be able to respond during result_wait (res) calls and then it only expects to receive a message that belongs to res. Of course result_wait can be modified to catch and handle c2c messages internally, but then clients that do not use libxmmsclient-sc would also be affected. Maybe a separate c2c_result_wait would be more appropriate? What do you think?
+
+Perhaps we need some discussion on IRC?
+
+[[User:Nesciens|Nesciens]] 19:35, 30 April 2011 (UTC)
