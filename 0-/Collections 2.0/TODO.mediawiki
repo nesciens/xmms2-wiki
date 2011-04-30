@@ -1,3 +1,7 @@
+== General ==
+
+The order-attribute of the ORDER-operator should be replaced by direction. Same for corresponding attributes in the fetch-spec API.
+
 == Fetch-spec API ==
 
 Cluster-list should have an order attribute, which would be a list of the same as the Order collection type.
