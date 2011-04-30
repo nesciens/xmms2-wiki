@@ -17,15 +17,19 @@ Cluster-list should have an order attribute, which would be a list of the same a
   }]
  }
 
-== fetchspec.c ==
+== src/xmms/collection.c ==
+
+We have something that emulates query_infos here, but it's broken. Should be unbroken and decided if it should live client side or server side. Moving it to client side has the benefit of removing apis from the protocol, and probably also in the case of query_infos results in less data transferred to the client... some applies to query_ids.
+
+== src/xmms/fetchspec.c ==
 
 Currently pretty tight, but should go over it again, and probably write some more tests for it. The idea is to reject an invalid spec here so that the query code can do a lot of assumptions.
 
-== fetchinfo.c ==
+== src/xmms/fetchinfo.c ==
 
 This file is just weird.. I have a feeling it's not really needed and can be removed after some beard/head-scratching.
 
-== medialib.c ==
+== src/xmms/medialib.c ==
 
 This pretty much sums it up:
 
