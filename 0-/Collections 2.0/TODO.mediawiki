@@ -29,7 +29,7 @@ Currently pretty tight, but should go over it again, and probably write some mor
 
 == src/xmms/fetchinfo.c ==
 
-This file is just weird.. I have a feeling it's not really needed and can be removed after some beard/head-scratching.
+This file is just weird.. I have a feeling it's not really needed and can be removed after some beard/head-scratching. The fact that it's structure needs to be mutable in both the xmms_medialib_query_recurs and xmms_fetch_spec_new which is slightly annoying.. there must be a better way to handle that. Perhaps scan the collection for Order types up front would make sense. Then the fetch_info structure wouldn't need to be passed around at all in the query_recurs call-graph, but instead only the s4_fetchspec_t.
 
 == src/xmms/medialib.c ==
 
