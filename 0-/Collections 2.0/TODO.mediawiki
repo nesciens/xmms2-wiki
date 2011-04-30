@@ -66,6 +66,8 @@ To break out in two files there are a couple structures currently stashed away a
 
 Breaking out the code into separate files will also lead to much easier overview of test coverage status. Maybe we should create a new directory in src/xmms/query or something, that can wait a bit though.
 
+Strings that look like integers are stored as integers and they should not be. See xmms_medialib_entry_property_set_str_source. Should investigate if something goes wrong elsewhere if we just disable this. (Do you know, cippo?)
+
 == test framework ==
 
 === medialib-runner ===
