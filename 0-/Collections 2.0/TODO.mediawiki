@@ -89,5 +89,3 @@ The valgrind suppressions file can be found at: http://people.xmms2.org/~nano/x2
 Simple python app that eval()'s the top box to a collection, and json-parses the middle box into a fetch spec dict, and when the button underneath is pressed, the bottom box dumps the output of xmmsc_coll_query:
 
 http://c6a2166152571a9e.paste.se/
-
-http://c6a2166152571a9e.paste.se/
