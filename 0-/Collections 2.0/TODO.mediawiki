@@ -23,7 +23,7 @@ Currently tries to guess what metadata is int and can thus convert an artist or 
 
 == src/xmms/collection.c ==
 
-We have something that emulates query_infos here, but it's broken. Should be unbroken and decided if it should live client side or server side. Moving it to client side has the benefit of removing apis from the protocol, and probably also in the case of query_infos results in less data transferred to the client... some applies to query_ids.
+We have something that emulates query_infos here, but it's broken. Should be unbroken and decided if it should live client side or server side. Moving it to client side has the benefit of removing apis from the protocol, and probably also in the case of query_infos results in less data transferred to the client... same applies to query_ids.
 
 Later on it would probably be a good idea to tighten up xmms_collection_validate_recurs and fill in possible defaults etc so that more assumptions can be made when using the collection in medialib_query call graph, similar to how the fetchspec is normalized.
 
