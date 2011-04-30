@@ -29,7 +29,7 @@ Later on it would probably be a good idea to tighten up xmms_collection_validate
 
 == src/xmms/fetchspec.c ==
 
-Currently pretty tight, but should go over it again, and probably write some more tests for it. The idea is to reject an invalid spec here so that the query code can do a lot of assumptions.
+Currently pretty tight, but should go over it again, and probably write some more tests for it. The idea is to reject an invalid spec here so that the query code can do a lot of assumptions. Will need some updates when the ordering stuff to cluster-list is added.
 
 == src/xmms/fetchinfo.c ==
 
