@@ -56,7 +56,7 @@ This pretty much sums it up:
  daniel@neutronstar:~/dev_home/xmms2-nano(s4-test)$ wc -l src/xmms/medialib.c 
  2844 src/xmms/medialib.c
 
-Almost twice the size.. the medialib_query call-graph really needs to be broken out into a separate file... or two files. One file that builds the query, and one that massages the result into the form that can be sent to the client.
+Almost twice the size.. the medialib_query call-graph really needs to be broken out into a separate file... or two files. One file that builds the query, and one that massages the result into the form that can be sent to the client. The following image should be re-generated to reflect the current structure, but it's not any huge changes in the code.
 
 [[Image:medialib_query.png|center|700px|alt=medialib query call graph|call graph]]
 
