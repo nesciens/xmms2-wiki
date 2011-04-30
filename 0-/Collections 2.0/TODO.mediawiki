@@ -48,7 +48,7 @@ Almost twice the size.. the medialib_query call-graph really needs to be broken 
 
 To break out in two files there are a couple structures currently stashed away as xmmsv bin-data (hack galore), used for aggregation functionality. I believe this can be replaced by xmmsv dicts instead which would fit much better into the code flow and reduce coupling. When doing this change, there should be performance tests available. Some performance might be ok to sacrifice for better readability, as long as it's not too much.
 
-Breaking out the code into separate files will also lead to much easier overview of test coverage status.
+Breaking out the code into separate files will also lead to much easier overview of test coverage status. Maybe we should create a new directory in src/xmms/query or something, that can wait a bit though.
 
 == test framework ==
 
