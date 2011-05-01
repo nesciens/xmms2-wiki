@@ -1,3 +1,4 @@
+== A libxmmsclient-sc sketch ==
 This is a Service Client sketch illustrating some of the new ideas we had for a libxmmsclient-sc.
 
 <pre>
@@ -147,3 +148,18 @@ main (int argc, char **argv)
 	return EXIT_SUCCESS;
 }
 </pre>
+
+== First lower level sketch by nesciens ==
+This first sketch illustrates some ideas for the contents of a client-to-client message, a callback for service clients to receive calls and method dispatching:
+
+[http://e5239963acab7c70.paste.se/ some service client sketch or something]
+
+== nano-'s broken approach ==
+This other sketch adheres more strictly to the idea of using broadcasts to communicate between clients. Doesn't allow synchronous communication.
+
+[http://8d0939b7f618e224.paste.se/]
+
+== Second sketch by nesciens ==
+A sketch of the changes needed in libxmmsclient and the basic idea behind libxmmsclient-sc.
+
+[http://2af7060654a0a0b9.paste.se/ another sc sketch or something]
