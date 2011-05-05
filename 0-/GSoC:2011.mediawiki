@@ -1,6 +1,9 @@
 == Accepted projects ==
 
-* TBA
+* [http://www.google-melange.com/gsoc/project/google/gsoc2011/guilherme_pg/14003 Service Clients]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2011/juhovh/5001 Audio converter rewrite and multichannel support]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2011/konr/21001 GIMME 2 - My proposal for GSoC 2011]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2011/mantaraya36/17005 LADSPA plugin support and improved effects chain management ]
 
 == Portal ==
 
