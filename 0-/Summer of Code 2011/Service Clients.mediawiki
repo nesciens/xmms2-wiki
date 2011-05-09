@@ -174,5 +174,3 @@ It seems to be simpler and cleaner to implement message-passing between the clie
 This could be accomplished by storing client ids in the corresponding xmms_ipc_client_t and adding a new command (XMMS_IPC_CMD_C2C_MSG) to the XMMS_IPC_OBJECT_SIGNAL, which, in process_msg, would be processed by calling a new method xmms_ipc_c2c_msg_write.
 
 This xmms_ipc_c2c_msg_write method would locate and contact the destination client by searching for the client with the destination id (which should also be registered for a c2c broadcast in the regular way) in much the same way it happens in xmms_ipc_broadcast_cb.
-
-If the message expects a reply, its cookie should be stored in a pending pool of client-to-client messages so that the caller can be notified when the answer arrives.
