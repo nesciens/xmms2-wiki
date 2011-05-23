@@ -1,6 +1,6 @@
 == General ==
 
-The order-attribute of the ORDER-operator should be replaced by direction. Same for corresponding attributes in the fetch-spec API.
+The order-attribute of the ORDER-operator should be replaced by direction. Same for corresponding attributes in the fetch-spec API...
 
 == Fetch-spec API ==
 
