@@ -201,7 +201,7 @@ Formats a c2c message in the form of a dict:
 
 If the message expects a reply (i.e., expect_reply == 1), generates a unique id for the message, stores it in the dict and records this message as pending in the pool of pending messages. It is sufficient to record the message, sender and destination ids, along with the cookie.
 
-Then looks up the destination client's xmms_ipc_client_t using its id in the list of clients kept by the IPC object, and uses xmms_ipc_client_msg_write to actually send the message to the destination client.
+Then looks up the destination client's xmms_ipc_client_t using its id in the list of clients kept by the IPC object, and uses xmms_ipc_client_msg_write to actually send the message to the destination client, using the cookie stored in its xmms_ipc_client_t (i.e., the one it uses for receiving the broadcast with messages).
 
 ----
 
@@ -209,7 +209,7 @@ Then looks up the destination client's xmms_ipc_client_t using its id in the lis
 
 Looks for the destination using the provided msg_id in the pool of pending messages (and, once found, removes the entry corresponding to this id). Checks if the original message was really sent to the client which is trying to answer.
 
-Proceeds similarly to send_message.
+Proceeds similarly to send_message, with one fundamental difference: this time the ipc message sent should contain the cookie that was stored in the pool of pending messages instead of the one in the destination's xmms_ipc_client_t.
 
 In order to delegate replies to clients that call service methods until the service actually responds, thus associating a xmmsc_result_t to the result of the method call, the courrier object would need to be special-cased in process_msg in ipc.c, maybe like XMMS_IPC_OBJECT_SIGNAL currently is.
 The ipc message's cookie is passed along to both methods in process_msg so that it can be used to send back replies to clients.
