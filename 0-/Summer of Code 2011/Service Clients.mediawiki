@@ -221,3 +221,10 @@ The ipc message's cookie is passed along to both methods in process_msg so that 
 puzzles used objid = XMMS_IPC_OBJECT_SERVICE and cmdid = XMMS_IPC_CMD_BROADCAST for forwarding queries to services, objid = XMMS_IPC_OBJECT_SERVICE and cmdid = XMMS_IPC_CMD_REPLY when returning results.
 
 One advantage of using broadcasts would be that the cookies associated with the client callbacks would be kept in their xmms_ipc_client_t as usual, so they could easily be retrieved by the courier object's methods.
+
+== TODO ==
+* ipc_servers_lock is not needed in courier.c
+* Try to move code from courier.c to ipc.c and keep the structs opaque
+* Unlocked/locked versions of store_pending?
+* Make ids gint32
+* Documentation!
