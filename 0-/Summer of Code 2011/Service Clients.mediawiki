@@ -199,7 +199,7 @@ Formats a c2c message in the form of a dict:
 "expect_reply" : expect_reply
 </pre>
 
-If the message expects a reply (i.e., expect_reply == 1), generates a unique id for the message, stores it in the dict and records this message as pending in the pool of pending messages. It is sufficient to record the message, sender and destination ids, along with the cookie.
+If the message expects a reply (i.e., expect_reply == 1), generates a unique id for the message, stores it in the dict and records this message as pending in the pool of pending messages. It is sufficient to record the message, sender and destination ids, along with the cookie. Might make sense to record id = 0 in the c2c message does not accept replies.
 
 Then looks up the destination client's xmms_ipc_client_t using its id in the list of clients kept by the IPC object, and uses xmms_ipc_client_msg_write to actually send the message to the destination client, using the cookie stored in its xmms_ipc_client_t (i.e., the one it uses for receiving the broadcast with messages).
 
