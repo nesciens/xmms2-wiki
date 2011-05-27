@@ -227,6 +227,6 @@ One advantage of using broadcasts would be that the cookies associated with the 
 * Try to move code from courier.c to ipc.c and keep the structs opaque
 * Unlocked/locked versions of store_pending?
 * Move compare_uints to xmmsutil?
-* Make ids gint32
+* <del>Make ids gint32</del>
 * Documentation!
 * Replies should have XMMS_IPC_CMD_REPLY as cmdid
