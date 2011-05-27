@@ -229,4 +229,4 @@ One advantage of using broadcasts would be that the cookies associated with the 
 * Move compare_uints to xmmsutil?
 * <del>Make ids gint32</del>
 * Documentation!
-* Replies should have XMMS_IPC_CMD_REPLY as cmdid
+* <del>Replies should have XMMS_IPC_CMD_REPLY as cmdid</del>
