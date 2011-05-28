@@ -225,6 +225,8 @@ One advantage of using broadcasts would be that the cookies associated with the 
 == TODO ==
 * ipc_servers_lock is not needed in courier.c
 * Try to move code from courier.c to ipc.c and keep the structs opaque
+
+[http://pastebin.com/snbKbw3e An idea] for how to expose in ipc.c only what the courier object will really need
 * Unlocked/locked versions of store_pending?
 * Move compare_uints to xmmsutil?
 * <del>Make ids gint32</del>
