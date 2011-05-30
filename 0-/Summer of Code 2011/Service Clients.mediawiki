@@ -226,5 +226,5 @@ None right now :)
 * Unlocked/locked versions of store_pending?
 * Move compare_uints to xmmsutil?
 * <del>Make ids gint32</del>
-* Documentation!
+* <del>Documentation!</del>
 * <del>Replies should have XMMS_IPC_CMD_REPLY as cmdid</del>
