@@ -216,6 +216,8 @@ The ipc message's cookie is passed along to both methods in process_msg so that 
 
 ==== Unresolved issues ====
 
+None right now :)
+
 == TODO ==
 * ipc_servers_lock is not needed in courier.c
 * Try to move code from courier.c to ipc.c and keep the structs opaque
