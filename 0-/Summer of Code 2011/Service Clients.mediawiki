@@ -222,9 +222,9 @@ None right now :)
 * <del>ipc_servers_lock is not needed in courier.c</del>
 * <del>Try to move code from courier.c to ipc.c and keep the structs opaque</del>
 
-[http://pastebin.com/pzuQiM1F An idea] for how to expose in ipc.c only what the courier object will really need.
+<del>[http://pastebin.com/pzuQiM1F An idea] for how to expose in ipc.c only what the courier object will really need.</del>
 * Unlocked/locked versions of store_pending?
-* Move compare_uints to xmmsutil?
+* Move compare_int32 to xmmsutil?
 * <del>Make ids gint32</del>
 * <del>Documentation!</del>
 * <del>Replies should have XMMS_IPC_CMD_REPLY as cmdid</del>
