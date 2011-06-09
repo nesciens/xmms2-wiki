@@ -216,8 +216,7 @@ The ipc message's cookie is passed along to both methods in process_msg so that 
 
 ==== Unresolved issues ====
 
-1) How to generate client ids?
-A global counter in ipc.c seems to be enough. Does it need a lock?
+1) How to integrate the courier in main.c?
 
 == TODO ==
 * Make the courier a xmms_object_t
