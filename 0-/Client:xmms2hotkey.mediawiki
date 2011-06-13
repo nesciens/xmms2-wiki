@@ -1,18 +1,17 @@
 {{Client
-|name=xmms2-hotkey
+|name=xmms2hotkey
 |author=[[User:Malvineous|Adam Nielsen]]
-|website=http://www.shikadi.net/files/xmms2hotkey-0.2.tar.bz2
-|version=0.2 (2009-08-16)
+|website=http://github.com/Malvineous/xmms2hotkey
+|version=0.3 (2011-06-13)
 |devlanguage=C++
 |ui=Console
 |screenshots=(No UI)
-|description=xmms2-hotkey is a lightweight client for controlling XMMS2 via keyboard or mouse buttons (or combinations thereof.)  It works under X-Windows and can also use the Linux evdev system to allow hotkeys to be used in the console.
+|description=xmms2hotkey is a lightweight client for controlling XMMS2 via keyboard or mouse buttons (or combinations thereof.)  It works under X-Windows and can also use the Linux evdev system to allow hotkeys to be used in the console.
 }}
-
 == How it works ==
 
 The client is supplied with a list of devices to monitor, such as a local or remote X11 display (to use the keyboard and mouse attached to that display), or an evdev device (such as a keyboard, mouse or USB device with buttons on it.)
 
 A list of keys are then defined, with appropriate scancodes (which differ for each device.)  This allows multiple buttons across different devices to be treated as the same "key".
 
-Possible actions (play, pause, etc.) are then associated with each of the defined keys.  Each action can have multiple keys defined, to allow one key to "activate" the other.  For example you wouldn't want to use the mouse wheel to adjust the song volume, as you would then be unable to scroll web pages (the volume would just change whenever you tried.)  You could however set a thumb button to "activate" a second set of keys, so that holding down the thumb button then switches the wheel into volume-mode.  When you're not pressing the thumb button the mouse wheel can then be used to scroll normally.
+Possible actions (play, pause, etc.) are then associated with each of the defined keys.  Each action can have multiple keys defined, to allow one key to "activate" the other.  For example you wouldn't want to use the mouse wheel to adjust the song volume, as you would then be unable to scroll web pages (the volume would just change whenever you tried.)  You could however set a thumb button to "activate" a second set of hotkeys, so that holding down the thumb button then switches the wheel into volume-mode.  When you're not pressing the thumb button the mouse wheel can then be used to scroll normally.
