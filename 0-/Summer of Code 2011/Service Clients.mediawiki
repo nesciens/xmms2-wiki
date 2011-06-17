@@ -213,8 +213,3 @@ Proceeds similarly to send_message, with one fundamental difference: this time t
 
 In order to delegate replies to clients that call service methods until the service actually responds, thus associating a xmmsc_result_t to the result of the method call, the courrier object would need to be special-cased in process_msg in ipc.c, maybe like XMMS_IPC_OBJECT_SIGNAL currently is.
 The ipc message's cookie is passed along to both methods in process_msg so that it can be used to send back replies to clients.
-
-== TODO ==
-* <del>Make the courier a xmms_object_t</del>
-* Cleanup in ipc.c
-* Move compare_int32 to xmmsutil?
