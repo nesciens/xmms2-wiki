@@ -76,6 +76,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:xmms2-osd | xmms2-osd]] shows playing information as an On-Screen Display, intended to be used with beryl and the like.
 * [[Client:snett | snett]] provides a small icon with popup-menu
 * [[Client:xmms2_jump | xmms2_jump]] lets you quickly search your current playlist
+* [[Client:notify-xmms2 | notify-xmms2]] displays track information using desktop's notification system
 
 == Gnome ==
 
