@@ -1,0 +1,10 @@
+{{Client
+| name=notify-xmms2
+| author=[mailto:lmi@ift.uni.wroc.pl mama]
+| website=[http://eclipser.xmms2.org/~mama/notify-xmms2/]
+| version=0.2.1
+| ui=libnotify
+| devlanguage=C++
+}}
+
+notify-xmms2 is a desktop notification client that will pop up a notification on track change, on demand and on other events.
