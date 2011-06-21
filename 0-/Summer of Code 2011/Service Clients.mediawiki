@@ -166,6 +166,11 @@ A sketch of the changes needed in libxmmsclient and the basic idea behind libxmm
 
 [http://2af7060654a0a0b9.paste.se/ another sc sketch or something]
 
+=== A more detailed sketch for libxmmsclient-sc ===
+This one builds upon the previous paste and considers a few issues that may arise now that the server-side implementation took shape.
+
+[http://pastebin.com/MZ5p0Hae more detailed sc sketch]
+
 == Server-side sketches ==
 
 === Implement message-passing in ipc.c ===
