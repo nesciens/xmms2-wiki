@@ -1,9 +1,9 @@
 == Accepted projects ==
 
-* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2010/xmms2/t127230769916 Mergeable S4 with Coll 2.0]
-* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2010/xmms2/t127230769959 GIMME Interesting Music, Mr. Emacs!]
-* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2010/xmms2/t127230769984 Crossfade plugin & co for XMMS2]
-* [http://www.google-melange.com/gsoc/student_project/show/google/gsoc2010/xmms2/t127230770011 XMMS2 mobile web client for iPhone and Android devices]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2010/cippo/3001 Mergeable S4 with Coll 2.0]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2010/konr/24001 GIMME Interesting Music, Mr. Emacs!]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2010/bruno/2001 Crossfade plugin & co for XMMS2]
+* [http://www.google-melange.com/gsoc/project/google/gsoc2010/cherifyaya/2001 XMMS2 mobile web client for iPhone and Android devices]
 
 == Portal ==
 
