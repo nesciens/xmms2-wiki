@@ -72,3 +72,10 @@ Proceeds similarly to send_message, with one fundamental difference: this time t
 
 In order to delegate replies to clients that call service methods until the service actually responds, thus associating a xmmsc_result_t to the result of the method call, the courrier object would need to be special-cased in process_msg in ipc.c, maybe like XMMS_IPC_OBJECT_SIGNAL currently is.
 The ipc message's cookie is passed along to both methods in process_msg so that it can be used to send back replies to clients.
+
+== TODO/Ideas ==
+* The current c2c notifiers aren't really extensible when it comes to adding new metadata to c2c messages.
+  <nesciens> Maybe we want a c2c-extended version with a dict instead of extra arguments (too)?
+  That will be easier if we want to  extend the metadata passed around. (For instance a flag that several replies can be expected, for some kind of c2c-broadcast.)
+
+* Maybe versions of c2c_send and c2c_reply that unref the payload, so the client can just pass the return value of the xmmsv_*_new to them without intermediary variables?
