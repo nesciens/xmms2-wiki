@@ -78,4 +78,6 @@ The ipc message's cookie is passed along to both methods in process_msg so that 
   <nesciens> Maybe we want a c2c-extended version with a dict instead of extra arguments (too)?
   That will be easier if we want to  extend the metadata passed around. (For instance a flag that several replies can be expected, for some kind of c2c-broadcast.)
 
+How about deserializing c2c messages into structs and handing those to the callback? It's extensible and doesn't make clients parse the messages: [http://pastebin.com/7KfbEkYn xmmsc_c2c_message_t]
+
 * Maybe versions of c2c_send and c2c_reply that unref the payload, so the client can just pass the return value of the xmmsv_*_new to them without intermediary variables?
