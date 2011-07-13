@@ -29,7 +29,7 @@ xforms need a way to query the medialibrary, the same way they have methods for 
 
 == src/tools/sqlite2s4 ==
 
-Currently tries to guess what metadata is int and can thus convert an artist or album name to integer if it happens to be a full integer match. This is wrong as it is possible to differentiate between integers and strings in the old media library.
+<del>Currently tries to guess what metadata is int and can thus convert an artist or album name to integer if it happens to be a full integer match. This is wrong as it is possible to differentiate between integers and strings in the old media library.</del>
 
 == src/xmms/collection.c ==
 
