@@ -1,113 +1,35 @@
-==<center></center>==
-.
+__NOTOC__
+__NOEDITSECTION__
 
-.
+<div class="split-half">
 
-.
+=== Get Started! ===
+[[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
 
-.
+=== XMMS2 will: ===
+* play your music.
+* manage your [[The Medialib|music library]]
+* use [[collections]] to help you organise your music as you like
+* allow you to control it using a variety of [[XMMS2 Clients|clients]].
+* [[Project Status#XMMS2_Platform_Support_Status|run]] on [[Download_XMMS2#Linux|Linux]], [[Download_XMMS2#BSD|*BSD]], [[Download_XMMS2#MacOSX|OS X]], Solaris, and [[Download_XMMS2#Windows|Windows]].
 
-==<center>[http://findinform.com/red.php?v=2gnOTN8fDEzMTA1MDM4NzV8fDE5MDZ8fChFTkdJTkUpIE1lZGlhV2lraQ%3D%3D&s= <big>'''<u></u>'''</big>]</center>==
+<small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
+=== Features ===
+{{FeatureList}}
 
-.
+</div>
 
-.
+<div class="split-half">
+<!-- i've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
 
-.
+=== News and events ===
+<!-- placeholder for important announcements -->
+{{ShortNews}}
 
-.
+=== [http://planet.xmms.se Planet XMMS2] ===
+<feed items="5" showdesc="false" showtitle="false">http://planet.xmms.se/rss20.xml</feed>
+[http://planet.xmms.se/rss20.xml RSS Feed]
+</div>
 
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-
-.
-: 
-
-
-----
-
-
-====  ====
-
-* 
-** 
-*** 
-
-
-=====  =====
-
-''''''''''
-''''
-
-<pre style="color:blue"></pre>
-
-# 
-# 
-# 
-# 
-# 
-
-  f716cdf954  
-
-====== External links ======
-
-[http://en.wikipedia.org Wikipedia]
+<div class="visualClear"></div>
+<!-- placeholder for more stuff after the 2 columns -->
