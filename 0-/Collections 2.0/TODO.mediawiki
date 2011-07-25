@@ -25,8 +25,8 @@ There might also be additional naming updates in the spec on [[Collections 2.0]]
 
 == generic todo ==
 
-* verify xmms_medialib_t refcounting after global medialib removal.
-* verify that entry_* signals are emitted where they should.
+* <del>verify xmms_medialib_t refcounting after global medialib removal.</del>
+* <del>verify that entry_* signals are emitted where they should.</del> TODO: rehash
 * remove stale include statements.
 
 == src/xmms/xform.c ==
