@@ -29,6 +29,7 @@ There might also be additional naming updates in the spec on [[Collections 2.0]]
 * <del>verify that entry_* signals are emitted where they should.</del>
 * fix rehash
 * remove stale include statements.
+* check for races between medialib, mediainforeader and playlist when using client_add_url, and client_radd.
 
 == src/xmms/xform.c ==
 
