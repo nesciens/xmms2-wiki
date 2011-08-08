@@ -23,6 +23,8 @@ Cluster-list should have an order attribute, which would be a list of the same a
 
 There might also be additional naming updates in the spec on [[Collections 2.0]] that hasn't been changed in the code yet. The spec on the wiki should be considered the truth.
 
+This can be used to query random albums for example, ask nesciens for more.
+
 == generic todo ==
 
 * <del>verify xmms_medialib_t refcounting after global medialib removal.</del>
