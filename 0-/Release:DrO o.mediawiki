@@ -37,10 +37,10 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 * <mantis>2411</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>68da677aa101518298accab2e5c54622297f546b</git>
 '''Anders Waldenborg'''
-* <mantis>1690</mantis>
-** <git norepo=1 repo='xmms2-devel.git'>e9a897f95432df99aaf3a24dddc7bd81acb206bb</git>
 * <mantis>807</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>55f0a06467a8c82c7e4553f4d64f02a943281255</git>
+* <mantis>1690</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e9a897f95432df99aaf3a24dddc7bd81acb206bb</git>
 '''Anthony Garcia'''
 * <mantis>2332</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>71666f5ac8465fc40c8220043174f45e7088c3f0</git>
