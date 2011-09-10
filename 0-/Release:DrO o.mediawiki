@@ -88,9 +88,11 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 * <mantis>2443</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>478b68647584467af924632bad4be459ba0526cf</git>
 * <mantis>2452</mantis>
-** <git norepo=1 repo='xmms2-devel.git'>3a623e49b02466589d25e08172d7625516d521dc</git>
+** <git norepo=1 repo='xmms2-devel.git'>3edb5347946dfb1b32988a81ea185f834a694482</git>
 * <mantis>2454</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>661d59b7abaa9cffbb537234df4b3fb9900111e2</git>
+* <mantis>2455</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e4fb21f27f2f48b82fa04cc8c8a6d17d6bf3d374</git>
 '''David Richards'''
 * <mantis>2007</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>c43d637345f8b90d247426b26980926195601621</git>
@@ -119,6 +121,10 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 ** <git norepo=1 repo='xmms2-devel.git'>9b12296581b16183a9658f253ac8c51621405bac</git>
 * <mantis>2404</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>916a6644b808788c2883d485754255a666bd69ef</git>
+* <mantis>2452</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b2c5d7626444594f48a79e712eec5acf22cefd4e</git>
+* <mantis>2453</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>0b3fb165729f1ddee4437f2228919507085016a9</git>
 '''Frank Dischner'''
 * <mantis>2148</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>9c9e3823d87e5dcfbbdb5930ec3795c2521560d2</git>
