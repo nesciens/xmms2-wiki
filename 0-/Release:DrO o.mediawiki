@@ -26,8 +26,8 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 === Notes to xform authors ===
 
 === Notes to packagers ===
-* the visualization reference clients aren't installed by default, and probably shouldn't be packaged, enable with --with-vis-reference-clients.
-* xmms2-et only helps ous in the TEST phase, and there's really no point in packaging it.
+* The visualization reference clients aren't installed by default, and probably shouldn't be packaged, enable with --with-vis-reference-clients.
+* xmms2-et only helps us in the TEST phase, and there's really no point in packaging it.
 
 === Bug fixes ===
 
