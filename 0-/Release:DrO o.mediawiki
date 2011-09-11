@@ -1,6 +1,8 @@
 == Release Notes ==
 
-A long overdue release, mostly due to the developers having more fun with the next release, DrParnassus, instead of getting this release out. DrO_o can be considered a service/polish release to DrNo, and should not contain any big surprises to the end user. On the development side there are some new nice features that we've been wanting on for a long time now. As usual there was a lot of people...
+A long overdue release, mostly due to the developers having more fun with the next release, DrParnassus, instead of getting this release out (~300 commits screaming to be merged).
+
+DrO_o can be considered a service/polish release to DrNo, and should not contain any big surprises to the end user. On the development side there are some new nice features that we've been wanting on for a long time now. As usual there was a lot of people...
 
 Adam Nielsen, Anders Waldenborg, Anthony Garcia, Benjamin Drung, Benjamin Schmitz, Brad Jorsch, Christopher Rosell, Daniel Svensson, David Richards, Erik Massop, Fabian Roth, Frank Dischner, Frank Terbeck, Guilherme Gonçalves, Henrik Gustafsson, Hugh Davenport, Igor Byelogurov, Jan Braun, Jari Aalto, Juan Antonio Osorio, Juho Vähä-Herttua, Raphaël Bois, Rémi Vanicat, Sebastien Cevey, Sergei Trofimovich, Thomas Frauendorfer, Tilman Sauerbeck, Timo Paulssen, Tobias Hieta, Uli Franke, Yang Zhe
 
