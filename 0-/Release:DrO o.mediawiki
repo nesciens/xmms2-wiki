@@ -18,7 +18,7 @@ Upgrading should be smooth.
 * Server side IPC code is now generated, thus a whole lot more consistent and less prone to errors.
 * Better support for high quality (S32) audio, together with xform updates to output such formats.
 * Don't let ALSA resample as it consumes insane amount of resources which makes it look like XMMS2 is resource heavy.
-* More format support to CoreAudio and PulseAudio letting them decide when to resample as they're probably better at it anyway.
+* More format support to CoreAudio and PulseAudio letting them resample in their own processes instead, thus utilizing multi-core systems better.
 * A ton of man page updates so that we can hopefully answer most questions with RTFM.
 
 ==== For users ====
