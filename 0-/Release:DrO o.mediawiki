@@ -41,6 +41,16 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Bug fixes ===
 
+==== Between TEST1 and TEST2 ====
+
+'''Daniel Svensson'''
+* <mantis>2459</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>c19553f07ce5accb5a4b6ed18af15b3c05f7bf7e</git>
+* <mantis>2460</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2751f5b0f0a71339f48775638079c4f0b59fb48f</git>
+* <mantis>2463</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>d19e6d2f4684d714720a3bdf170acd99a8e464cb</git>
+
 ==== Between DrNo and TEST1 ====
 
 '''Adam Nielsen'''
