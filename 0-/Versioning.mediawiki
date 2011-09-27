@@ -15,7 +15,7 @@
 * [[Release:DrLecter|DrLecter]] <s>DrLivingstone (I presume)</s> - Released 2008-06-15
 * [[Release:DrMattDestruction|DrMattDestruction]] - Released 2009-04-23
 * [[Release:DrNo|DrNo]] - Released 2010-02-19
-* DrOnline
+* [[Release:DrO_o|DrO_o]] <s>DrOnline</s>
 * DrParnassus
 ...
 * DrStrangelove
@@ -34,7 +34,7 @@ Korv names?
 * jambalaya
 * caramba
 * chorizo
-* kieÅ‚basa
+* kie?basa
 * linguica
 * bratwurst
 * picaro
@@ -42,7 +42,7 @@ Korv names?
 * kolbasz
 * hiilos
 * malakoff
-* weiÃŸwurst
+* weißwurst
 * knakworst
 * rookworst
 * bockwurst
