@@ -1,2 +1,107 @@
- a experienced may possibly also advise other safe and seem metals.	http://www.pandorabutikk.com/	If you favor to not go through the trouble of whole body piercing,
-but nonetheless need to sustain up using the trend,	http://www.pandoraschmuckonline.de.com/	you may possibly look at placing on particular sorts of diamond jewelry that will allow it to be lookup as although piercing is becoming done.
+{{ReleaseStatus}}
+
+== Linux ==
+
+; Debian - Lenny / Unstable + Etch / Testing + Woody / Stable
+
+ apt-get install xmms2
+
+The official XMMS2 Debian packages maintained by [[User:rafl|Florian Ragwitz]]. Several popular clients and plugins are available, as well:
+
+ apt-cache search xmms2
+
+; Ubuntu - Hardy Heron and following
+
+ apt-get install xmms2
+
+; Fedora
+
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in tarballs from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
+
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 xmms2-gxmms2-fc5.i386.rpm.tar.bz2]
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 xmms2-fc6.i386.rpm.tar.bz2]
+* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4846 xmms2-gxmms2.fc7.i386.rpm.tar.bz2]
+
+''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
+
+; ALT Linux Sisyphus
+
+Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] and [[Client:nyello | nyello]] are available from repository. To install, respectively:
+ apt-get install xmms2
+ apt-get install gxmms2
+ apt-get install nyello
+
+; CRUX
+Rugek has a port repository with Xmms2 here: http://rugek.dirtyhack.net/crux-ports/rugek.httpup
+
+; Frugalware Linux
+
+xmms2 and gxmms2 packages are available in the frugalware-current repository. To install :
+ pacman-g2 -S xmms2
+ pacman-g2 -S gxmms2
+
+; Arch Linux
+Xmms2 is available in the ''community'' repository; various clients could be [http://aur.archlinux.org/packages.php?K=xmms2 found] in AUR.
+
+; Gentoo Linux
+* ''None of these are supported by XMMS2 team or Gentoo. You are pretty much on your own.''
+* '''If you ask for help on IRC when using some of the following ebuilds, start by saying that you are running gentoo and mentioning which ebuild you are using'''
+* There is some faad2 breakage in Gentoo. None of the following ebuilds depend on faad2, but they may still pick it up if already installed. (Which is horribly bad.)
+
+Ebuilds for latest testing versions (incl. latest git) are available at http://x4x.sourceforge.net/wiki/index.php/Ebuilds and http://x4x.cvs.sourceforge.net/x4x/x4x-portage. Those ebuilds use waf, tons of USE-flags and no more env-variables or init-scripts. In this repo you can also find ebuilds for x4x and esperanza.
+
+These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. As of the 0.2 DrAlban ebuild,  a new local "phonehome" USE flag that has to be set in order to enable the [[ET|xmms2-et]] client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
+
+Some alternate ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds] and [http://proaudio.tuxfamily.org proaudio overlay].
+
+There are plans to add xmms2 to Gentoo in the near future. You can track the progress at http://bugs.gentoo.org/show_bug.cgi?id=93583.
+Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=189646 0.6 ebuild] or [http://bugs.gentoo.org/attachment.cgi?id=206479 git ebuild].
+
+If you want to track the current development tree you can use this [http://bugs.xmms2.xmms.se/file_download.php?file_id=394&type=bug ebuild].
+A valid [http://dev.gentoo.org/~ferdy/overlay/eclass/git.eclass git.eclass] file is necessary.
+
+== Windows ==
+Getting XMMS2 to build/run on Windows is mostly working, but not all features of XMMS2 are currently available on Windows, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
+
+* [http://xmms2.xmms.se/~puzzles/win32/XMMS2-DrJekyll.7z Download]
+** With [[Client:Esperanza|Esperanza]] and [http://xmms2.xmms.se/~puzzles/win32/ installer].
+** You will need the free [http://www.7-zip.org/ 7-zip] utility to extract .7z files.
+** See the [http://xmms2.xmms.se/~puzzles/win32/plugin_list.txt plugin list] for a full list of what's supported.
+** Ruby, Python, and C++ bindings.
+* http://www.schrijnen.nl/auke/
+** With [[Client:Esperanza|Esperanza]]
+** With [[ET]]
+** And [[Component:DirectSound|DirectSound]]
+
+== Mac OS X ==
+
+; MacPorts
+xmms2 is included in [http://www.macports.org MacPorts], however the port does not allow to customize the installation via variants at the moment. To include optional features, required libraries need to be installed beforehand. To install:
+ sudo port install xmms2
+
+
+To have more control over the feature-set, download the source and configure xmms2 manually:
+ ./waf configure --prefix=/opt/local --conf-prefix=/opt/local --nocache
+
+And then:
+ ./waf build && ./waf install
+
+== BSD ==
+
+; FreeBSD
+xmms2 is now included in the FreeBSD ports tree. It can be found in audio/xmms2.
+
+; NetBSD
+A xmms2 pkgsrc package for NetBSD and other operating systems supported by pkgsrc is available at http://pkgsrc-wip.sourceforge.net/.
+
+== Source ==
+'''Note''': you should read the [[Install instructions]] page as well.
+* Look at our sourceforge page for releases: http://sf.net/projects/xmms2
+* The GIT repository (with snapshots) is viewable at: http://git.xmms2.org
+
+About the GIT repository:
+* You would usually want code from the ''xmms2-stable.git'' tree. The latest (possibly unstable and buggy) code is in the ''xmms2-devel.git'' tree.
+* If you have problems using snapshot tarballs, check the [[FAQ]] (e.g. ''[[FAQ#Snapshot_tarball_full_of_random_files_and_things_about_.27paxheader.27 | Snapshot tarball full of random files and things about paxheader]]'') and your relevant [[:Category:Platforms | platform]] page.
+
+[[Category:General]]
+[[Category:Users]]
