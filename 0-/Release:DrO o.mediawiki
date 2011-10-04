@@ -41,7 +41,7 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Bug fixes ===
 
-==== Between TEST2 and TEST3 ====
+==== Between TEST2 and TEST4 ====
 
 '''Daniel Svensson'''
 * <mantis>2464</mantis>
