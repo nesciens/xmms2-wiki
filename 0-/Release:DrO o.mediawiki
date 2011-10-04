@@ -41,6 +41,20 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Bug fixes ===
 
+==== Between TEST2 and TEST3 ====
+
+'''Daniel Svensson'''
+* <mantis>2464</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>a644c4179ccee966be0995f1ccdc784b7c34c46b</git>
+** <git norepo=1 repo='xmms2-devel.git'>89153777296e3e1bda42b1b2f669e41704a3bc2b</git>
+* <mantis>2465</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>16717504a6f90fc5b189510b18e51a75e54b20ae</git>
+* <mantis>2466</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>2472ae87fbdfcb515d75d96b0a8e312aae0740d1</git>
+'''Dries Harnie'''
+* <mantis>2461</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>cb4a8488435c124318a06b8df28d61c953687ebb</git>
+
 ==== Between TEST1 and TEST2 ====
 
 '''Daniel Svensson'''
