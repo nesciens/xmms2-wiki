@@ -41,6 +41,26 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 
 === Bug fixes ===
 
+==== Between TEST4 and TEST5 ====
+
+'''Daniel Svensson'''
+* <mantis>2040</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>ad93bc9e554bb226ef10ecc521de4389d13c7ad1</git>
+* <mantis>2270</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>f38d1606b893d0794382a76746eab81f6bbb737d</git>
+* <mantis>2462</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>e1c5b08237a323b9ca87e23899a71e315dd509cc</git>
+* <mantis>2470</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>f8ff91526fa88b0532d5aada67144fd7e39fe1ca</git>
+* <mantis>2471</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>79087723e3b873a441b080c99f7dc8c53b966b14</git>
+'''Raphaël Bois'''
+* <mantis>2469</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>14f40ad8874b51580b6542a993e31ad4a8cfbf27</git>
+'''Richard Kralovic'''
+* <mantis>2395</mantis>
+** <git norepo=1 repo='xmms2-devel.git'>b97139032c01f74853211feee72bdcd4c48780ee</git>
+
 ==== Between TEST2 and TEST4 ====
 
 '''Daniel Svensson'''
