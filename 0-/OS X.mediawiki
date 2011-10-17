@@ -13,7 +13,8 @@ Support for major plugins and formats require the following additional macports:
 == CoreAudio output ==
 XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hacked ESD.
 
-== Cocoa/Carbon glue for the CoreFoundation eventloop. ==
-Daniel has written a CF eventloop handler for the client lib. expect information about it here.
+== CoreFoundation eventloop. ==
+
+For client writers, the [http://git.xmms.se/xmms2/xmms2-stable/tree/src/include/xmmsclient/xmmsclient-cf.h libxmmsclient-cf] library contains glue to integrate libxmmsclient with the CoreFoundation main loop.
 
 [[Category:Platforms]]
