@@ -3,12 +3,19 @@ Download and install [http://www.macports.org/ macports]
 
 Install glib-2.0 and sqlite through macports with the command: "port install sqlite3 glib2". Then, make sure that '/opt/local/lib/pkgconfig' is on your PKG_CONFIG_PATH. Now you should be good to compile xmms2 on your Mac OS X Tiger.
 
+
 Support for major plugins and formats require the following additional macports:
-* python bindings: py25-pyrex
-* nycli: ?
+* python bindings: py26-cython
+* nycli: libreadline
 * mp3: libmad
 * flac: flac
 * vorbis: libvorbis
+
+Say you've installed MacPorts under /opt/local, the following should produce a xmms2 build for you once you've installed the dependencies:
+
+ ./waf configure --conf-prefix=/opt/local --prefix=/opt/local
+ ./waf build
+ sudo ./waf install
 
 == CoreAudio output ==
 XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hacked ESD.
