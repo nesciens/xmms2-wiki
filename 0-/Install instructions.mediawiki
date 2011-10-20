@@ -54,6 +54,13 @@ These libraries are '''not needed''' for building xmms2d itself, but will add ex
 
 As with the packages above, be sure to grab -dev or -headers packages if building on a binary distro!
 
+== Platform-specific notes ==
+Some supported platforms may have variations on build requirements:
+* [[FreeBSD]]
+* [[OS_X]]
+* [[Windows]]
+* [[NetBSD]]
+
 == Configure ==
 
  ./waf configure
@@ -67,13 +74,6 @@ Will configure your build. Interesting options:
 * -p : show a useless but cool progress bar when building!
 
 See ./waf --help for additional options.
-
-== Platform-specific notes ==
-Some supported platforms may have variations on build requirements:
-* [[FreeBSD]]
-* [[OS_X]]
-* [[Windows]]
-* [[NetBSD]]
 
 == Build ==
 
