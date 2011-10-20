@@ -68,6 +68,13 @@ Will configure your build. Interesting options:
 
 See ./waf --help for additional options.
 
+== Platform-specific notes ==
+Some supported platforms may have variations on build requirements:
+* [[FreeBSD]]
+* [[OS_X]]
+* [[Windows]]
+* [[NetBSD]]
+
 == Build ==
 
  ./waf build
