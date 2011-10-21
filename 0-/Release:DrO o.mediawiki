@@ -38,6 +38,7 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 === Notes to packagers ===
 * The visualization reference clients aren't installed by default, and probably shouldn't be packaged, enable with --with-vis-reference-clients.
 * xmms2-et only helps us in the TEST phase, and there's really no point in packaging it.
+* By default, python bindings are built for the version of /usr/bin/python, regardless of the version running waf. To build the bindings for a different version, you need to set the environment variable PYTHON to the right executable when configuring. (e.g. PYTHON=/usr/bin/python3 ./waf configure)
 
 === Bug fixes ===
 
