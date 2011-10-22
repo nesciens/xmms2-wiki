@@ -50,7 +50,7 @@ These libraries are '''not needed''' for building xmms2d itself, but will add ex
 ** [http://cython.org/ Cython] (>= 0.15.1) - For python bindings. If your cython is older, it makes sense to use the pre-generated bindings instead.
 ** [http://www.ruby-lang.org/ Ruby] (>= 1.8) - For Ruby bindings.
 ** [http://www.perl.org Perl] (>= 5.7.3) - For Perl bindings.
-** [http://www.boost.org Boost signals] - For C++ bindings.
+** [http://www.boost.org Boost signals] (>= 1.37, older versions work with gcc < 4.4) - For C++ bindings.
 
 As with the packages above, be sure to grab -dev or -headers packages if building on a binary distro!
 
