@@ -97,7 +97,7 @@ This is a bare bone unittest of functionality that should remain in medialib.c.
 
 === generating coverage reports ===
 
-I use the following to run the tests:
+<del>I use the following to run the tests:</del>
 
  #!/bin/sh
  if ! ./waf build -v; then 
