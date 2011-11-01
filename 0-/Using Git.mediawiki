@@ -10,7 +10,7 @@ To clone a fresh copy of the development repository:
 
  git clone git://git.xmms.se/xmms2/xmms2-devel.git
 
-This will create a new directory called "xmms2-devel" with contains the full code repository. It will have all files checked out and will also contain a ".git" subdirectory which contains the git metadata related to the repository.
+This will create a new directory called "xmms2-devel" which contains the full code repository. It will have all files checked out and will also contain a ".git" subdirectory which contains the git metadata related to the repository.
 
 ==Hacking==
 You started hacking away, and are satisfied with your changes and want to commit them!
