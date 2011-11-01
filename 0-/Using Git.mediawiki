@@ -1,5 +1,5 @@
 ==Other tutorials==
-You might want to check these aswell, they are probably more useful that this document:
+You might want to check these as well, they are probably more useful than this document:
 * [http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html A tutorial introduction to git]
 * [http://www.kernel.org/pub/software/scm/git/docs/everyday.html Everyday GIT with 20 commands or so]
 * [http://linux.yyz.us/git-howto.html Kernel hacker's guide to GIT]
