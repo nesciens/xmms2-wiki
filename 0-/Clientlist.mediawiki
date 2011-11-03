@@ -25,7 +25,6 @@ All current clients should be found here, but not every entry in this list is up
 {{ClientTableEntry|Promoe       | Graphical / QT4 (Skinnable) | C++ | development stalled (2010-03) | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|Remuco       | Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|SeaSerpent   | Graphical / QT4 | Python | development stalled (2010-09) | In version 1.0; stable - should not crash.  Always in development since always looking for new features ;-) }}
-{{ClientTableEntry|SeMMiX       | Graphical / GTK | C | Rewrite, development stalled (2010-04) | Client for media servers with xmms2 support. It allows to connect to several servers at the same time. }}
 {{ClientTableEntry|sisy         | Console | C | development stalled (2010-08) | Simple syntax collection pattern parser }}
 {{ClientTableEntry|Sonus        | Graphical / QT4 | Python | development stalled (2010-02) | Simple, yet full-featured player }}
 {{ClientTableEntry|Spring       | Graphical / Qt4 | Python | development stalled (2010-03) | multi-featured client with different media browsers }}
@@ -117,6 +116,7 @@ The following clients aren't worked on anymore, and might not work out of the bo
 {{ClientTableEntry|medialib-ui| Graphical / Qt | Python | abandoned | Standalone medialib and playlist client.}}
 {{ClientTableEntry|nxmms2| console / ncurses | C | doesn't compile anymore | rudimentary player functionality }}
 {{ClientTableEntry|RXmms2| Graphical / GTK+2 (Skinnable) | Ruby | deprecated (use Euphoria) | XMMS/Winamp/BMP clone }}
+{{ClientTableEntry|SeMMiX| Graphical / GTK | C | abandonned | Client for media servers with xmms2 support. It allows to connect to several servers at the same time. }}
 {{ClientTableEntry|Shhh| Graphical / GNUStep | C | unavailable | Little Player for the GNUStep desktop }}
 {{ClientTableEntry|x2cp| console / ncurses | C++ | last version May 2006 | rudimentary player functionality }}
 {{ClientTableEntry|X4X| Graphical / XWidgets | Java | discontinued | Almost complete player, works with Java Webstart }}
