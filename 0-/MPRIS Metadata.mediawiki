@@ -27,7 +27,7 @@ URIs should be sent as strings, and should be suitably encoded.
 ==== MPRIS-specific ====
 
 ===== mpris:trackid =====
-String: A unique identity for this track within the context of an MPRIS object (eg: tracklist).
+D-Bus path: A unique identity for this track within the context of an MPRIS object (eg: tracklist).
 
 ===== mpris:length =====
 64-bit integer: The duration of the track in microseconds.
