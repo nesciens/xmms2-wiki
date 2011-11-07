@@ -1,0 +1,16 @@
+All commands in CLI follow the same structure and needs to be documented in several places:
+* In the code, to provide help when the user type <code>help command</code> or <code>command --help</code>.
+* In the man page.
+* Other places that we didn't think about already.
+
+Right now, command descriptions (including available options) need be dupplicated and kept in sync by hand. A very fastidious work!
+
+This page describes a solution based on an xml-file to be processed to generate setup code and documentation. Another target would also be generated commandline validation to reduce the amount of validation code to write in functions actually running the command.
+
+==Generated contents==
+===Command setup code===
+===Command validation code===
+===Commands section in man page===
+==Generator==
+===Formatters===
+===Integration in WAF===
