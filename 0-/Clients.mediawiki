@@ -122,6 +122,9 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:GIMME | GIMME]] is an XMMS2 client for GNU Emacs with extra features.
 * [[Client:lagn | lagn]] is an XMMS2 client for GNU Emacs.
 
+== Skype ==
+* [https://github.com/zba/xmms2-skype XMMS2-skype] is a simple bash-python script to show current playing XMMS2 tune in skype mood
+
 = Special Input Methods =
 
 == Remote Control ==
