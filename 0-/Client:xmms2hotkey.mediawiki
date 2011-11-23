@@ -1,13 +1,20 @@
 {{Client
 |name=xmms2hotkey
 |author=[[User:Malvineous|Adam Nielsen]]
-|website=http://github.com/Malvineous/xmms2hotkey
-|version=0.3 (2011-06-13)
+|website=https://github.com/Malvineous/xmms2hotkey/downloads
+|version=0.4 (2011-11-23)
 |devlanguage=C++
 |ui=Console
 |screenshots=(No UI)
 |description=xmms2hotkey is a lightweight client for controlling XMMS2 via keyboard or mouse buttons (or combinations thereof.)  It works under X-Windows and can also use the Linux evdev system to allow hotkeys to be used in the console.
 }}
+
+== Main features ==
+
+* Can work without X11 (evdev can be used to have hotkeys in the Linux console)
+* Works with mice, keyboards, joysticks and other HID devices
+* Supports activation keys (one key/button must be held for others to control XMMS2)
+
 == How it works ==
 
 The client is supplied with a list of devices to monitor, such as a local or remote X11 display (to use the keyboard and mouse attached to that display), or an evdev device (such as a keyboard, mouse or USB device with buttons on it.)
