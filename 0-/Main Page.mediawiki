@@ -1,35 +1,114 @@
-__NOTOC__
-__NOEDITSECTION__
+==<center></center>==
+.
 
-<div class="split-half">
+.
 
-=== Get Started! ===
-[[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
+.
 
-=== XMMS2 will: ===
-* play your music.
-* manage your [[The Medialib|music library]]
-* use [[collections]] to help you organise your music as you like
-* allow you to control it using a variety of [[XMMS2 Clients|clients]].
-* [[Project Status#XMMS2_Platform_Support_Status|run]] on [[Download_XMMS2#Linux|Linux]], [[Download_XMMS2#BSD|*BSD]], [[Download_XMMS2#MacOSX|OS X]], Solaris, and [[Download_XMMS2#Windows|Windows]].
+.
 
-<small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
-=== Features ===
-{{FeatureList}}
+==<center>[http://findthisall.com/red.php?v=lc3MjE3fHwxMzIxOTk2ODM4fHwxOTUyfHwoRU5HSU5FKSBNZWRpYVdpa2k%3D&s= <big>'''<u></u>'''</big>]</center>==
 
-</div>
+.
 
-<div class="split-half">
-<!-- i've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
+.
 
-=== News and events ===
-<!-- placeholder for important announcements -->
-{{ShortNews}}
+.
 
-=== [http://planet.xmms.se Planet XMMS2] ===
-<feed items="5" showdesc="false" showtitle="false">http://planet.xmms.se/rss20.xml</feed>
-[http://planet.xmms.se/rss20.xml RSS Feed]
-</div>
+.
 
-<div class="visualClear"></div>
-<!-- placeholder for more stuff after the 2 columns -->
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+: 
+
+
+----
+
+
+====  ====
+
+* 
+** 
+*** 
+
+
+=====  =====
+
+''''''''''
+''''
+
+<pre style="color:red"></pre>
+
+# 
+# 
+# 
+# 
+# 
+
+  7645e1bff9  
+
+====== External links ======
+
+[http://en.wikipedia.org Wikipedia]
+[http://herbalwisdom.com.au/content/california-loans-bad-credit california loans for bad credit][http://facecristianos.com//index.php?p=blogs/viewstory/1152 high risk loans minnesota][http://opinionsbyu.com/thoughts2/index.php?p=blogs/viewstory/14159 home equity loans second][http://www.hoteldelasflores.com/cheapest-small-business-loans cheapest small business loans][http://clubclibel.com/redsocial/index.php?p=blogs/viewstory/347 e impovement loans][http://wiki.tf2rebels.net/index.php?title=Home_Loans_For_Public_Safety home loans for public safety][http://ravewebmedia.co.uk/Jcow/index.php?p=blogs/viewstory/24430 atv bad credit guaranteed loans][http://eridu-advertising.org/mediawiki/index.php?title=Bad_Credit_Loans_For_Education bad credit loans for education][http://www.scrollspedia.net/index.php?title=Charging_Interest_On_Loans charging interest on loans][http://askdocholmes.com/groups/government-of-canada-loans-and-grants/ government of canada loans and grants]
