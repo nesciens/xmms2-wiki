@@ -53,6 +53,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 
 == Web Clients ==
 
+* [[Client:shelfelf | shelfelf]] quite complex webapp designed for tablets (like the iPad)
 * [[Client:TurboX2 | TurboX2]] is a player accessible via your web browser
 * [[Client:XMMS2_Webterface | XMMS2 Webterface]] is a dead simple, configurable, themable web interface
 * [[Client:xmms2swi | XMMS2SWI]] Simple web interface, small and works well with ALL browsers!
