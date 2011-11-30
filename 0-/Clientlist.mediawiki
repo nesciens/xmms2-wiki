@@ -25,7 +25,7 @@ All current clients should be found here, but not every entry in this list is up
 {{ClientTableEntry|Promoe       | Graphical / QT4 (Skinnable) | C++ | development stalled (2010-03) | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|Remuco       | Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
 {{ClientTableEntry|SeaSerpent   | Graphical / QT4 | Python | development stalled (2010-09) | In version 1.0; stable - should not crash.  Always in development since always looking for new features ;-) }}
-{{ClientTableEntry|shelfelf | Browser | PHP, JavaScript | development stalled (2011-11) | complex web interface designed for tablets like the iPad, but working in most browsers }}
+{{ClientTableEntry|shelfelf | Browser / Webclient | PHP, JavaScript | development stalled (2011-11) | complex web interface designed for tablets like the iPad, but working in most browsers }}
 {{ClientTableEntry|sisy         | Console | C | development stalled (2010-08) | Simple syntax collection pattern parser }}
 {{ClientTableEntry|Sonus        | Graphical / QT4 | Python | development stalled (2010-02) | Simple, yet full-featured player }}
 {{ClientTableEntry|Spring       | Graphical / Qt4 | Python | development stalled (2010-03) | multi-featured client with different media browsers }}
