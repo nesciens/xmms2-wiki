@@ -4,7 +4,7 @@ documented, it is quite simple to analyze. RAOP is based on the Real Time Stream
 Protocol (RTSP) but with an extra challenge-response based authentication step. The<br> 
 description of RAOP here is partly based on previous reverse-engineering efforts<br> 
 [1, 2, 3]. I also independently analyzed RAOP by analyzing the network packets<br> 
-exchanged observed between an iTunes client (v6.0.4) and ApEx (firmware v6.3). Please<br> 
+exchanged between an iTunes client (v6.0.4) and ApEx (firmware v6.3). Please<br> 
 note that my understanding of the authentication step differs from [2] and is based<br> 
 on packet analysis and [3].
 
