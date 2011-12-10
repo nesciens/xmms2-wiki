@@ -1,0 +1,12 @@
+ # External URLs matching this list will be blocked when added to a page.
+ # This list affects only this wiki; refer also to the global blacklist.
+ # For documentation see http://www.mediawiki.org/wiki/Extension:SpamBlacklist
+ #<!-- leave this line exactly as it is --> <pre>
+#
+# Syntax is as follows:
+#   * Everything from a "#" character to the end of the line is a comment
+#   * Every non-blank line is a regex fragment which will only match hosts inside URLs
+
+\bfindthisall\.com\b
+
+ #</pre> <!-- leave this line exactly as it is -->
