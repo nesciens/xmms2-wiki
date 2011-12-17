@@ -3,7 +3,7 @@ __TOC__
 == Start here ==
 Before setting out to write an XMMS2 client, you should familiarise yourself with the  XMMS2 '[[Design of XMMS2#Middleware |middleware]]' (provided by ''libxmmsipc'' and used transparently by ''libxmmsclient''). 
 
-It is strongly recommended that you check out the code from the [http://git.xmms.se/cgit.cgi/xmms2/xmms2-tutorial/ xmms2-tutorial] Git repository to learn the basics of writing XMMS2 clients.
+It is strongly recommended that you check out the code from the [http://git.xmms.se/xmms2/xmms2-tutorial/ xmms2-tutorial] Git repository to learn the basics of writing XMMS2 clients.
 
 Please ensure that you use the latest stable xmms2 version when following the tutorials. 
 
