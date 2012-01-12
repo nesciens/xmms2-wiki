@@ -3,3 +3,7 @@ There was no information on how to build this in the git snapshot 02.03.06
 qmake-qt4; make
 
 You need latest -devel, and possibly latest -tru. Build dependencies are qt4 and libsigc++2 headers. the first line of promoe was written feb 12:th so it's still in early development, but it's progressing fast and is already very nice imho.
+
+----
+
+As of 2012-01-13 waf only works with Python2.  When building on a distro that has Python3 as the default version (e.g. Arch) the build will fail due to missing includes.  Running "python2 ./waf configure && python2 ./waf build" will work. -- [[User:Malvineous|Malvineous]] 14:51, 12 January 2012 (UTC)
