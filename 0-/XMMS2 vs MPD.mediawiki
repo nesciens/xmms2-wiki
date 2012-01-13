@@ -50,7 +50,7 @@ XMMS2 can load playlists in the following formats: M3U, PLS, HTML, XML, RSS, XSP
 ; Volume control (OSS, Alsa, and software mixers)
 Works in XMMS2, as well as any decent music player out there. ;)
 ; Wide range of audio devices supported:
-XMMS2 can output to the following: [[Component:ALSA | ALSA]], [[Component:OSS | OSS]], [[Component:Diskwriter | Disk]], [[Component:Jack | Jack]], [[Component:Sun | Sun]], [[Component:coreaudio | coreaudio]]. More output methods can be supported via appropriate plugins. The process of [http://www.marvelousessays.com essay writing] will be much easier with MarvelousEssays.Com as there are a lot of highly professional and talented writers who are always eager to help you out with any sort of academic assignments regardless of the complexity levels. I do know what I?m talking about!
+XMMS2 can output to the following: [[Component:ALSA | ALSA]], [[Component:OSS | OSS]], [[Component:Diskwriter | Disk]], [[Component:Jack | Jack]], [[Component:Sun | Sun]], [[Component:coreaudio | coreaudio]]. More output methods can be supported via appropriate plugins.
 ; Minimal hardware requirements:
 So far, development of XMMS2 has focused on making sure things work as they're supposed to, and on ensuring a consistent design of the system. There have been no real optimisations to make things run as fast as possible, but that can probably be achieved before a stable release. xmms2d is known to have worked on a Pentium 133MHz machine with 48MB RAM (running Debian Stable).
 ; Tested on Compatibility many different operating systems:
