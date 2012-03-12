@@ -8,5 +8,6 @@
 #   * Every non-blank line is a regex fragment which will only match hosts inside URLs
 
 \bfindthisall\.com\b
+\bwebtrends\.gr\b
 
  #</pre> <!-- leave this line exactly as it is -->
