@@ -5,6 +5,10 @@
 ;MPRIS
 :Media Player Remote Interfacing Specification
 
+== Current version and official website ==
+
+This page documents MPRIS version 1.0, which is now outdated. The most current specification of versions 2.1 or newer can be found on [[http://mpris.org/]]
+
 == Definitions ==
 
 === "TrackList" ===
