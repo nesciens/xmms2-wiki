@@ -28,7 +28,7 @@ __NOEDITSECTION__
 
 === [http://planet.xmms.se Planet XMMS2] ===
 <feed items="5" showdesc="false" showtitle="false">http://planet.xmms.se/rss20.xml</feed>
-[http://planet.xmms.se/rss20.xml RSS Feed]
+[http://planet.xmms.se/rss20.xml RSS Feed][http://www.bobsseo.com/seo-plans.htm .]
 </div>
 
 <div class="visualClear"></div>
