@@ -1,0 +1,1 @@
+{{Client|image=Client-LWXC.png| name=le wild XMMS2 client| author=Thomas Krug| website=https://github.com/phragment/lwxc| version= 0.1 | devlanguage=Python| ui=GTK| screenshots=[https://github.com/phragment/lwxc/raw/gh-pages/lwxc_full.png]| description=A simple media library browser for XMMS2, with a focus on keyboard operability.}}
