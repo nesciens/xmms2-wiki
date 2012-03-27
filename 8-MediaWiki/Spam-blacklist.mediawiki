@@ -9,5 +9,6 @@
 
 \bfindthisall\.com\b
 \bwebtrends\.gr\b
+\bthedailybell\.com\b
 
  #</pre> <!-- leave this line exactly as it is -->
