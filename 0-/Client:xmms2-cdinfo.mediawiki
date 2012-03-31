@@ -2,13 +2,12 @@
 Client
 |name=xmms2-cdinfo
 |author=Tomasz Sobczyk
-|website=[http://inumi.net/(+blog*7)]
-|version=0.2
+|website=[http://code.google.com/p/xmms2-cdinfo/]
 |devlanguage=C++
 |ui=Console
 }}
 === What is xmms2-cdinfo? ===
-xmms2-cdinfo is an XMMS2 client meant for updating your medialib entries with data from a CD database when you play a CD.
+xmms2-cdinfo is an XMMS2 client meant for updating your medialib entries with data from a remote CD database when you play a CD.
 
 === Requirements ===
 * glibc
