@@ -3,8 +3,10 @@
 /* the horizontal split on the main page */
 div.split-half {
     width: 47%;
-    float: left;
-    padding: 1%;
+    padding: 0 1% 0 1%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* wikitable/prettytable class for skinning normal tables */
