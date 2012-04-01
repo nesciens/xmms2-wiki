@@ -1,4 +1,12 @@
 /** CSS placed here will be applied to all skins */
+
+/* the horizontal split on the main page */
+div.split-half {
+    width: 47%;
+    float: left;
+    padding: 1%;
+}
+
 /* wikitable/prettytable class for skinning normal tables */
 
 table.wikitable,
