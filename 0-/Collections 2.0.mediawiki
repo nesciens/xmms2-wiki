@@ -186,6 +186,7 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 * <code>collation</code>: A collation to be used when the values are strings. The default-value is <code>NATCOLL</code>. '''Not implemented yet'''
 * <code>type</code>: Defines what to order by. Possible values <code>value</code>, <code>id</code> or <code>random</code>. The default value is <code>value</code>.
 * <code>field</code>: If <code>type=value</code>, an obligatory attribute, defining which property to order by.
+* <code>seed</code>: If <code>type=random</code>, an optional seed attribute, defining the seed to use when randomizing so that the same randomized order can be queried multiple times. '''Not implemented yet'''
 | operands=Exactly one
 }}
 
@@ -231,7 +232,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | attributes=
 * <code>cluster-by</code>: One of the strings "id", "position", or "value". Defaults to "value".
 * <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
-* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
+* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If set, is inherited down to child fetch-specs.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
@@ -242,7 +243,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | attributes=
 * <code>cluster-by</code> One of the strings "id", "position", or "value". Defaults to "value".
 * <code>cluster-field</code>: If cluster-by is set to "value", the name of the property which will be used.
-* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If not set it uses the server default.
+* <code>source-preference</code>: The source preference to use when fetching the info. See at [[#Has | Has]]. If set, is inherited down to child fetch-specs.
 * <code>data</code> A fetch-spec dict specifying what to fetch for every cluster.
 }}
 
@@ -252,6 +253,7 @@ The fetch specification tells XMMS2 what to fetch and how to store it. It is bui
 | desc=Organizes data in a dict. 
 | attributes=
 * <code>data</code> A dict with key-value pairs. The keys of the dicts will be used as keys in the returned dictionary and the values are fetch-specification used to fetch the value associated with the key.
+* <code>source-preference</code>: If set, is inherited down to child fetch-specs.
 }}
 
 {{Collections 2.0_Fetchdict
