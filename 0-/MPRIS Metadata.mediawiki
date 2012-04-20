@@ -33,7 +33,7 @@ D-Bus path: A unique identity for this track within the context of an MPRIS obje
 64-bit integer: The duration of the track in microseconds.
 
 ===== mpris:artUrl =====
-[[#URI|URI]]: The location of an image representing the track or album.
+[[#URI|URI]]: The location of an image representing the track or album.  Clients should not assume this will continue to exist when the media player stops giving out the URL.
 
 ==== Common Xesam properties ====
 Common audio properties from the Xesam specification:
