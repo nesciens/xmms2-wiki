@@ -11,5 +11,6 @@
 \bwebtrends\.gr\b
 \bthedailybell\.com\b
 \bhealthadvicevault\.com\b
+\-vault\.(info|com)\+
 
  #</pre> <!-- leave this line exactly as it is -->
