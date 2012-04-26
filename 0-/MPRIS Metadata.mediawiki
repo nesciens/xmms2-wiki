@@ -1,6 +1,6 @@
 == MPRIS v2.0 metadata guidelines ==
 
-See [[http://www.freedesktop.org/wiki/Specifications/mpris-spec/metadata|the freedesktop.org wiki]]
+See [http://www.freedesktop.org/wiki/Specifications/mpris-spec/metadata the freedesktop.org wiki]
 
 == MPRIS v1.0 Metadata guidelines ==
 
