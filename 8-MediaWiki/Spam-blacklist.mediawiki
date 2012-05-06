@@ -13,5 +13,6 @@
 \bhealthadvicevault\.com\b
 \-vault\.(info|com)
 \bcsoonline\.com\b
+\bizmirbayaneskort\.com\b
 
  #</pre> <!-- leave this line exactly as it is -->
