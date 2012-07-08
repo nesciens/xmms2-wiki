@@ -1,0 +1,41 @@
+== Release Notes ==
+
+Awesomeness as usual.. 
+
+The following contributers...
+
+Adam Nielsen, Andres Cabrera, Benjamin Schmitz, Daniel Svensson, Erik Massop, Guilherme Gonçalves, Hendrik Jaeger, Jean-Charles Papin, Jonne Lehtinen, Joonas Kuorilehto, Juho Vähä-Herttua, Raphaël Bois, Sivert Berg, Sébastien Cevey, Uli Franke, Yang Zhe
+
+...were involved in in getting this release out, they have our gratitude! 
+
+=== Upgrading ===
+
+Notes about medialib conversion...
+
+=== Noteworthy changes ===
+* New query api
+* New storage backend
+* Better metadata scraping
+==== For users ====
+
+...
+
+==== Bug fixes ====
+
+...
+
+=== New platforms ===
+
+* Android... 
+
+=== Notes to client authors ===
+
+* API changes.. 
+
+=== Notes to xform authors ===
+
+* Metadata scraper stuff
+
+=== Notes to packagers ===
+
+=== Bug fixes ===
