@@ -2,6 +2,6 @@
 <div style="border: #cc0000 solid 2px; padding: 1ex 1em;">
 [[File:Dialog-warning.png|left|alt=Warning sign]]
 = '''Warning!''' =
-We will not accept this change before you confirm your e-mailaddress. You can confirm your e-mailaddress from [[Special:Preferences| {{int:mypreferences}}]].
+We will not accept this change before you '''confirm your e-mailaddress'''. You can confirm your e-mailaddress from [[Special:Preferences| {{int:mypreferences}}]].
 <div style="clear:both;"></div>
 </div></div>
