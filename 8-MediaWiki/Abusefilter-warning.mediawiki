@@ -1,0 +1,3 @@
+{{warning
+ | msg = This action has been automatically identified as harmful. Unconstructive edits will be quickly reverted, and egregious or repeated unconstructive editing will result in your account or computer being blocked. If you believe this edit to be constructive, you may click {{int:savearticle}} again to confirm it. A brief description of the abuse rule which your action matched is: $1
+}}
