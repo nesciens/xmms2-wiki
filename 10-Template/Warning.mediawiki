@@ -1,7 +1,7 @@
 <div style="border: #cc0000 solid 2px; padding: 2px;">
 <div style="border: #cc0000 solid 2px; padding: 1ex 1em;">
 [[File:Dialog-warning.png|left|alt=Warning sign]]
-= '''{{{caption|Warning}}}!''' =
+= '''{{{caption|Warning!}}}''' =
 {{{msg|The [http://commons.wikimedia.org/wiki/Commons:Abuse_filter AbuseFilter] has detected that your action is possibly undesired. If you think this is not so, you may proceed by pressing "{{int:savearticle}}" again.}}}
 <div style="clear:both;"></div>
 </div></div>
