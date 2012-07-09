@@ -1,1 +1,5 @@
-<big>'''Warning'''</big>: We will not accept this change before you confirmed your e-mailaddress. You can confirm your e-mailaddres from your [[Special:Preferences|preferences]].
+<div style="border: #cc0000 solid 2px; padding: 2px;">
+<div style="border: #cc0000 solid 2px; padding: 1ex 1em;">
+[[File:Dialog-warning.png|float=left]]
+<big>'''Warning'''</big>: We will not accept this change before you confirm your e-mailaddress. You can confirm your e-mailaddress from [[Special:Preferences| {{int:mypreferences}}]].
+</div></div>
