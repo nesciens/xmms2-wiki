@@ -1,0 +1,5 @@
+{{warning
+ | msg = This action has been automatically identified as harmful: $1.
+
+'''If you do not amend your edit, it will be blocked.'''
+}}
