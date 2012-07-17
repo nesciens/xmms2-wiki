@@ -89,6 +89,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 
 == Openbox ==
 
+* [[Client:xmms2-OpenboxMenu(python3) | xmms2-OpenboxMenu (python3)]] An Enhanced Openbox Pipe Menu client for xmms2 (python3)
 * [[Client:xmms2-OpenboxMenu | xmms2-OpenboxMenu]] An Openbox Pipe Menu client for xmms2
 
 == Others ==
