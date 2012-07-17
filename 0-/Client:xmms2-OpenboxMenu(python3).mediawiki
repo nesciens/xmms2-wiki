@@ -1,0 +1,13 @@
+{{
+Client
+|name=xmms2-OpenboxMenu (Python 3)
+|version=0.9
+|author=P4l4cl][n
+|website=[https://github.com/volftomas/xmms2-OpenboxMenu https://github.com/volftomas/xmms2-OpenboxMenu]
+|devlanguage=Python
+|ui=Openbox Pipemenu
+}}
+
+Enhanced version of [[Client:xmms2-OpenboxMenu | xmms2-OpenboxMenu]], ported to python 3 and new functionality.
+
+You should read [https://github.com/volftomas/xmms2-OpenboxMenu/blob/master/README.markdown README].
