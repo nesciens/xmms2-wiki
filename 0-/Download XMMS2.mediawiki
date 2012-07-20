@@ -44,21 +44,17 @@ xmms2 and gxmms2 packages are available in the frugalware-current repository. To
 Xmms2 is available in the ''community'' repository; various clients could be [http://aur.archlinux.org/packages.php?K=xmms2 found] in AUR.
 
 ; Gentoo Linux
-* ''None of these are supported by XMMS2 team or Gentoo. You are pretty much on your own.''
-* '''If you ask for help on IRC when using some of the following ebuilds, start by saying that you are running gentoo and mentioning which ebuild you are using'''
-* There is some faad2 breakage in Gentoo. None of the following ebuilds depend on faad2, but they may still pick it up if already installed. (Which is horribly bad.)
+Lately ebuilds for XMMS2, [http://xmms2.org/wiki/Client:XMMS2-Scrobbler xmms2-scrobbler] and [http://xmms2.org/wiki/Client:LXMusic LXMmusic] were added to portage. To install:
+ emerge xmms2
+ emerge xmms2-scrobbler
+ emerge lxmusic
 
-Ebuilds for latest testing versions (incl. latest git) are available at http://x4x.sourceforge.net/wiki/index.php/Ebuilds and http://x4x.cvs.sourceforge.net/x4x/x4x-portage. Those ebuilds use waf, tons of USE-flags and no more env-variables or init-scripts. In this repo you can also find ebuilds for x4x and esperanza.
+As XMMS2 has a lot of USE-flags, you would want first to check them (and dependencies according to them), so you can set them before installation:
+ equery u xmms2
+ equery g xmms2
 
-These ebuilds have more USE flags for the optional packages that xmms2 can depend on but does not strictly require in order to compile. As of the 0.2 DrAlban ebuild,  a new local "phonehome" USE flag that has to be set in order to enable the [[ET|xmms2-et]] client that phones home to the developers. (xmms2-et is enabled by default in DrAlban everywhere else)
+For more clients you would need to [http://gpo.zugaina.org/Search?search=xmms2 check] custom overlays, but instead of adding them i would suggest just using ebuild for specific client you want.
 
-Some alternate ebuilds are available here: [http://www.zugaina.org/gentoo/media-sound.html.en Ycarus ebuilds] and [http://proaudio.tuxfamily.org proaudio overlay].
-
-There are plans to add xmms2 to Gentoo in the near future. You can track the progress at http://bugs.gentoo.org/show_bug.cgi?id=93583.
-Latest proposed [http://bugs.gentoo.org/attachment.cgi?id=189646 0.6 ebuild] or [http://bugs.gentoo.org/attachment.cgi?id=206479 git ebuild].
-
-If you want to track the current development tree you can use this [http://bugs.xmms2.xmms.se/file_download.php?file_id=394&type=bug ebuild].
-A valid [http://dev.gentoo.org/~ferdy/overlay/eclass/git.eclass git.eclass] file is necessary.
 
 == Windows ==
 Getting XMMS2 to build/run on Windows is mostly working, but not all features of XMMS2 are currently available on Windows, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
