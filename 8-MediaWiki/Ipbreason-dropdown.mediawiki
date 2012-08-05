@@ -1,0 +1,9 @@
+*Common block reasons
+** Inserting false information
+** Removing content from pages
+** Spamming links to external sites
+** Posting completely non-XMMS2-related content
+** Inserting nonsense/gibberish into pages
+** Intimidating behaviour/harassment
+** Abusing multiple accounts
+** Unacceptable username
