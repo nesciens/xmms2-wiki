@@ -1,3 +1,3 @@
 The IPC protocol is best documented in the source. But we encourage all developers to use the clientlib, is there something that the clientlib doesn't support or you don't like. Talk to us first before you start reversing our protocol.
 
-Use the [http://doxygen.xmms2.xmms.se/current/group__XMMSClient.html clientlib]
+Use the [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient/ clientlib]
