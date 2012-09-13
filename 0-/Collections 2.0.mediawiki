@@ -197,6 +197,8 @@ Client code dealing with xmmsv_coll_t directly will most probably break, as the 
 | attributes=
 * <code>start</code>: a non-negative integer. If not set it will start at 0.
 * <code>length</code>: a non-negative integer. If not set it will take all entries after <code>start</code>.
+* <code>type</code>: Defines what kind windowing should be applied. Possible values <code>position</code>, or <code>value</code>. The default value is <code>position</code>.
+* <code>fields</code>: If <code>type=value</code>, an obligatory attribute, defining which properties that should, when combined, create a unique key used for limitation.
 | operands=Exactly one (a medialist)
 }}
 
