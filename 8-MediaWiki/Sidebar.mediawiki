@@ -14,17 +14,17 @@
 ** Contact Us|Contact Us
 
 * Community
-** http://planet.xmms.se|Planet XMMS2
+** http://planet.xmms2.org|Planet XMMS2
 ** irc://chat.freenode.net/xmms2|#xmms2@Freenode
 
 * Development
 ** developers-url|DevsInfo
 ** Help Wanted|Help Wanted
-** http://git.xmms.se|Gitweb
-** http://bugs.xmms2.xmms.se|Bug tracker
-** http://buildbot.xmms2.xmms.se|Buildbot
-** http://test.xmms.se|Test coverage
-** http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel|Mailing list
+** http://git.xmms2.org|Gitweb
+** http://bugs.xmms2.org|Bug tracker
+** http://buildbot.xmms2.org|Buildbot
+** http://test.xmms2.org|Test coverage
+** http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel|Mailing list
 
 
 * Wiki
