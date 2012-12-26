@@ -1,15 +1,15 @@
 == Prebuilt Binaries ==
 The easiest way to get right into using XMMS2 on Windows is to download precompiled binaries.
 
-* http://xmms2.xmms.se/~puzzles/win32/ (With Ruby, Python, and C++ bindings, plus the [[Client:Esperanza|Esperanza]] client)
+* http://xmms2.org/~puzzles/win32/ (With Ruby, Python, and C++ bindings, plus the [[Client:Esperanza|Esperanza]] client)
 * http://www.schrijnen.nl/auke/ ([[Client:Esperanza|Esperanza]] with [[mDNS]] support built for win32 and xmms2d with [[Component:DirectSound|DirectSound]])
 
 == Building from Source ==
 Want to roll your own XMMS2 for Windows? [[Windows/Mingw|Compile on Mingw]]!
 
-Here is a [http://exodus.xmms.se/~tru/screens/esperanza/0.2/win32.png screenshot] of a real client running on Windows.
+Here is a [http://xmms2.org/~tru/screens/esperanza/0.2/win32.png screenshot] of a real client running on Windows.
 
-Development files can be found [http://exodus.xmms.se/~puzzles/win32/ here].
+Development files can be found [http://xmms2.org/~puzzles/win32/ here].
 
 XMMS2 actually works very well on Windows now. The only quirks are the need for a patched GLib, a few broken plugins, and no startup.d/shutdown.d. Most of the Windows work is contained in xmms2-puzzles (which compiles smoothly out-of-the box), and is awaiting the merge into xmms2-devel after the [[Release:DrJekyll|DrJekyll]] release.
 
