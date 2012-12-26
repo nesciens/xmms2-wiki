@@ -9,10 +9,10 @@ To create tools for building XMMS2 with the Mac OS X tools. For better integrati
 # Install macports (make sure they are installed in /opt/local)
 # install git, glib2, libmad, libvorbis
 # Checkout the code
-## git clone git.xmms.se:/xmms2/macosx/build.git
+## git clone git.xmms2.org:/xmms2/macosx/build.git
 ## cd build.git
-## git clone git.xmms.se:/xmms2/xmms2-tru.git#macbuild xmms2
-## git clone git.xmms.se:/xmms2/macosx/xmmsclient-objc.git
+## git clone git.xmms2.org:/xmms2/xmms2-tru.git#macbuild xmms2
+## git clone git.xmms2.org:/xmms2/macosx/xmmsclient-objc.git
 # Open xmms2-macbuild.xcodeproj in XCode
 # Build
 
