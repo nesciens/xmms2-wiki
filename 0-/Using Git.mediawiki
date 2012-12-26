@@ -8,7 +8,7 @@ You might want to check these as well, they are probably more useful than this d
 ==Grabbing the development tree==
 To clone a fresh copy of the development repository:
 
- git clone git://git.xmms.se/xmms2/xmms2-devel.git
+ git clone git://git.xmms2.org/xmms2/xmms2-devel.git
 
 This will create a new directory called "xmms2-devel" which contains the full code repository. It will have all files checked out and will also contain a ".git" subdirectory which contains the git metadata related to the repository.
 
@@ -62,14 +62,14 @@ lists things that are in branch2 but not in branch1. Including merge changesets 
 BTW, here is how you easily can setup remotes for everyone's trees, so that you can "git fetch nano" and get a "nano" branch in your tree that is equivalent to nano's public tree. But that is probably a more interesting case for integrators..
 
  for U in alex anders coledot danderson devel eleusis jlt juhovh nano puzzles rafl theefer tilman tru; do
-  echo -e "URL: git://git.xmms.se/xmms2/xmms2-$U.git\nPull: +master:$U" >.git/remotes/$U
+  echo -e "URL: git://git.xmms2.org/xmms2/xmms2-$U.git\nPull: +master:$U" >.git/remotes/$U
  done
 
 ==Getting updates==
 
 To keep in sync with the latest version:
 
- git pull git://git.xmms.se/xmms2/xmms2-devel.git
+ git pull git://git.xmms2.org/xmms2/xmms2-devel.git
 
 ==Rebase==
 
@@ -100,7 +100,7 @@ If you instead use rebase your local changes will be forwardported like this:
 Prerequisites:
 
  cat .git/remotes/origin 
- URL: git://git.xmms.se/xmms2/xmms2-devel.git
+ URL: git://git.xmms2.org/xmms2/xmms2-devel.git
  Pull: refs/heads/master:refs/heads/origin
 
 And then just
@@ -114,7 +114,7 @@ This is the more troublesome way to get rid of the ugly 'Merge' changesets and d
 
 First create an upstream branch in your tree:
 
- git pull git://git.xmms.se/xmms2/xmms2-devel +:upstream
+ git pull git://git.xmms2.org/xmms2/xmms2-devel +:upstream
 
 The + means that git should not try to merge or be smart or something.
 
@@ -159,4 +159,4 @@ And go there:
 
 There, now you're ready to push your changes to your public tree without an ugly merge changeset.
 
- git push -f git.xmms.se:/xmms2/xmms2-yourpublicrepository master
+ git push -f git.xmms2.org:/xmms2/xmms2-yourpublicrepository master
