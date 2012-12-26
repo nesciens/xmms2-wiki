@@ -18,7 +18,7 @@ Winamp classic clone.
 
 There is an official release: [http://home.in.tum.de/~frauendo/promoe-0.1.1.tar.gz Promoe 0.1.1]
 
-The source can be found at the [http://git.xmms.se/ XMMS2 git tree]. You can get the latest snapshot from the [http://git.xmms.se/?p=promoe.git;a=summary Promoe git tree].
+The source can be found at the [http://git.xmms2.org/ XMMS2 git tree]. You can get the latest snapshot from the [http://git.xmms2.org/?p=promoe.git;a=summary Promoe git tree].
 
 === Dependencies ===
 
@@ -39,4 +39,4 @@ To install new skins:
 
 == Bugtracker ==
 
-Report bugs and request features in the [http://bugs.xmms2.xmms.se/ XMMS2 bugtracker]. Please file bugs under project "Client - Promoe".
+Report bugs and request features in the [http://bugs.xmms2.org/ XMMS2 bugtracker]. Please file bugs under project "Client - Promoe".
