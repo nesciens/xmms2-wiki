@@ -59,10 +59,10 @@ For more clients you would need to [http://gpo.zugaina.org/Search?search=xmms2 c
 == Windows ==
 Getting XMMS2 to build/run on Windows is mostly working, but not all features of XMMS2 are currently available on Windows, and some plugins are missing/broken. Also note that these packages have not been thoroughly tested by the XMMS2 team. See also: [[Windows]].
 
-* [http://xmms2.xmms.se/~puzzles/win32/XMMS2-DrJekyll.7z Download]
-** With [[Client:Esperanza|Esperanza]] and [http://xmms2.xmms.se/~puzzles/win32/ installer].
+* [http://xmms2.org/~puzzles/win32/XMMS2-DrJekyll.7z Download]
+** With [[Client:Esperanza|Esperanza]] and [http://xmms2.org/~puzzles/win32/ installer].
 ** You will need the free [http://www.7-zip.org/ 7-zip] utility to extract .7z files.
-** See the [http://xmms2.xmms.se/~puzzles/win32/plugin_list.txt plugin list] for a full list of what's supported.
+** See the [http://xmms2.org/~puzzles/win32/plugin_list.txt plugin list] for a full list of what's supported.
 ** Ruby, Python, and C++ bindings.
 * http://www.schrijnen.nl/auke/
 ** With [[Client:Esperanza|Esperanza]]
