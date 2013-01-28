@@ -11,7 +11,7 @@ The equalizer plugin introduces the following configuration variables into XMMS2
 * equalizer.extra_filtering
 * equalizer.use_legacy
 * equalizer.legacy[0-9]
-* equaliser.gain[00-30]
+* equalizer.gain[00-30]
 
 
 Description of each configuration variable:
