@@ -1,8 +1,8 @@
-<feed items=5 showdate="d F Y H:i (T)" showtitle=false newsformat=true>http://xmms2-news.blogspot.com/feeds/posts/default?alt=rss</feed>
+<feed items=5 showdate="d F Y H:i (T)" showtitle=false newsformat=true>https://xmms2-news.blogspot.com/feeds/posts/default?alt=rss</feed>
 
 
-[http://xmms2-news.blogspot.com/ More news]
+[https://xmms2-news.blogspot.com/ More news]
 
-[http://xmms2-news.blogspot.com/feeds/posts/default Subscribe to atom feed]
+[https://xmms2-news.blogspot.com/feeds/posts/default Subscribe to atom feed]
 
 [[Template:OLDNews|Older news (before blogspot)]]
