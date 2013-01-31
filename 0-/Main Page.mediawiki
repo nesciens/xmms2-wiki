@@ -27,7 +27,7 @@ __NOEDITSECTION__
 {{ShortNews}}
 
 === [http://planet.xmms.se Planet XMMS2] ===
-<feed items="5" showdesc="false" showtitle="false">http://planet.xmms.se/rss20.xml</feed>
+<feed items="5" showdesc="false" showtitle="false">http://planet.xmms2.org/rss20.xml</feed>
 [http://planet.xmms.se/rss20.xml RSS Feed]
 </div>
 
