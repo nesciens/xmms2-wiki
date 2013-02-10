@@ -4,7 +4,7 @@
 |author=Thomas Frauendorfer
 |author2=Tobias RundstrÃ¶m
 |author3=Daniel Svensson
-|website=[http://git.xmms.se git.xmms.se]
+|website=[http://git.xmms2.org git.xmms2.org]
 |version=0.1.1
 |devlanguage=C++
 |ui=Qt4
