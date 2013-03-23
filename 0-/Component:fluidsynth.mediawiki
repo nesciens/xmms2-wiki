@@ -1,0 +1,12 @@
+{{ComponentHeader}}
+
+=Summary=
+Uses the FluidSynth library to play MIDI data.
+
+=Description=
+Uses FluidSynth to process MIDI data into digital audio.  This component relies on others to read MIDI files and only processes raw MIDI data.
+
+=Links=
+http://www.fluidsynth.org/
+
+[[Category:Components]]
