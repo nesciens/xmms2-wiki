@@ -1,0 +1,11 @@
+{{ComponentHeader}}
+
+=Summary=
+Adds support for reading standard MIDI files with a .mid extension.
+
+=Description=
+Reads type-0 (single track) and type-1 (multiple track) standard MIDI files.  Also supports Microsoft RMIDI (.rmi) files.  This component also reads song titles from MIDI events.
+
+This component outputs raw MIDI data and relies on another component like fluidsynth to perform the actual musical synthesis.
+
+[[Category:Components]]
