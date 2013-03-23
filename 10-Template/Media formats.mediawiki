@@ -40,6 +40,9 @@ XMMS2 can play a large selection of audio codecs contained in many different med
 
 * [[Wikipedia:FLAC | FLAC]]
 ** [[Component:FLAC | FLAC Decoder]]
+* [[Wikipedia:Musical Instrument Digital Interface#Standard MIDI files | MIDI]]
+** [[Component:mid1 | .mid decoder]]
+** [[Component:fluidsynth | FluidSynth MIDI synthesiser]] ([[MIDI playback|setup guide]])
 * [[Wikipedia:MOD_(file_format) | MOD]]
 ** [[Component:modplug | Modplug Decoder]]
 * [[Wikipedia:Monkey's_Audio| Monkey's Audio]]
