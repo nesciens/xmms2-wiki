@@ -50,3 +50,5 @@ For changes in the available commands, see src/ipc.xml.
 === Notes to packagers ===
 
 === Bug fixes ===
+
+[[Category:Releases]]
