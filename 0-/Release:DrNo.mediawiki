@@ -187,3 +187,5 @@ Many bugs were fixed, and probably more introduced. See the full Changelog below
 '''Åukasz P. Michalik'''
 * <mantis>2255</mantis>
 ** <git norepo=1 repo='xmms2-devel.git'>6df9dc1696108964dfcfb78783b3f0c5352a3dc4</git>
+
+[[Category:Releases]]
