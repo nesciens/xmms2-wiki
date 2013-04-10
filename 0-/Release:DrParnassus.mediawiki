@@ -49,6 +49,10 @@ For changes in the available commands, see src/ipc.xml.
 
 === Notes to packagers ===
 
+* GLib dependency bumped to 2.32.
+* sqlite2s4 tool converts Dr0.8  and older databases to S4. It should probably be marked as RECOMMENDED
+* There is a collection-migration tool as well, but for now that's only responsible of migrating in-development versions between eachother and not needed for upgrading stable versions for now.
+
 === Bug fixes ===
 
 [[Category:Releases]]
