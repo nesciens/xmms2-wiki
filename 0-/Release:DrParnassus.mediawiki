@@ -4,7 +4,7 @@ Awesomeness as usual..
 
 The following contributers...
 
-Adam Nielsen, Andres Cabrera, Benjamin Schmitz, Daniel Svensson, Erik Massop, Guilherme Gonçalves, Hendrik Jaeger, Jean-Charles Papin, Jonne Lehtinen, Joonas Kuorilehto, Juho Vähä-Herttua, Raphaël Bois, Sivert Berg, Sébastien Cevey, Uli Franke, Yang Zhe
+Adam Nielsen, Andres Cabrera, Andrew Potter, Benjamin Drung, Benjamin Schmitz, Christopher Rosell, Daniel Sheeler, Daniel Svensson, David Richards, Diego Biurrun, Erik Massop, Guilherme Gonçalves, Hendrik Jaeger, Jean-Charles Papin, Jonne Lehtinen, Joonas Kuorilehto, Juho Vähä-Herttua, Kyle Brantley, Rainer Wittmaack, Raphaël Bois, Sergei Trofimovich, Simonas Kazlauskas, Sivert Berg, Sébastien Cevey, Uli Franke, William Light, Yang Zhe
 
 ...were involved in in getting this release out, they have our gratitude! 
 
