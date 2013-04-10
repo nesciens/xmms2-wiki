@@ -16,13 +16,16 @@ The official XMMS2 Debian packages maintained by [[User:rafl|Florian Ragwitz]]. 
 
 ; Fedora
 
-Binary packages of XMMS2, as well as [[Client:gxmms2 | gxmms2]] are available in tarballs from [http://www.linuxfans.org Linux Fans] (Note: Chinese site):
+ yum install xmms2
 
-* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4288 xmms2-gxmms2-fc5.i386.rpm.tar.bz2]
-* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4587 xmms2-fc6.i386.rpm.tar.bz2]
-* [http://www.linuxfans.org/nuke/modules.php?name=Site_Downloads&op=mydown&did=4846 xmms2-gxmms2.fc7.i386.rpm.tar.bz2]
+You may wish to enable rpmfusion, as it provides these addon packages which cannot be included in Fedora for legal reasons:
 
-''These packages are based on git tree, they include neither the source rpm, nor the .spec file. It's recommended to install these packages with YUM utility. All the dependencies can be found at the [http://rpm.livna.org/ livna] and [http://freshrpms.net/ freshrpms] repos.''
+* xmms2-avcodec - Plugin for avcodec supported formats
+* xmms2-faad - Plugin for aac and mp4 audio formats
+* xmms2-freeworld - Upstream provided plugins for xmms2 that cannot be included in Fedora
+* xmms2-mad - Plugin for mpeg Audio files
+* xmms2-mms - Plugin for mms audio streams
+* xmms2-mp4 - Plugin for mp4 audio 
 
 ; ALT Linux Sisyphus
 
