@@ -28,6 +28,15 @@ Notes about medialib conversion...
 
 * Android... 
 
+=== Notes to client library authors ===
+
+* XMMSV_TYPE_INT32 is now XMMSV_TYPE_INT64, other ints in the header and so on are still 32bit.
+* XMMSV_TYPE_FLOAT has been added, which for now is only seen when using aggregate=avg in xmmsc_coll_query.
+* XMMSV_TYPE_LIST now has its restricted type before the size field. If the restricted type is set to something other than XMMSV_TYPE_NONE, the following entries will implicitly be of that type and not have their own type field.
+* XMMSV_TYPE_COLL now has its attributes written as a regular XMMSV_TYPE_DICT, its idlist written as a XMMSV_TYPE_INT64 restricted list, and operands written as an XMMSV_TYPE_COLL restricted list.
+
+For changes in the available commands, see src/ipc.xml.
+
 === Notes to client authors ===
 
 * API changes.. 
