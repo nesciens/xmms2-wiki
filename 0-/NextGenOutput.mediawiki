@@ -1,5 +1,24 @@
 = XMMS2 NextGen Output =
 
+=Design Idea Notes and Brain Thoughts for Nextgen Output II Turbo Edition=
+
+<pre>
+
+Separate output.c into output.c and playback.c
+
+output.c would take care of volume set/get and output plugin related matters
+playback.c would handle playback state matters
+
+Unify Output plugin operation to the pull style by using a pulling thread
+to drive push based output plugins.
+
+Remove locks in output by having play/pause/stop/seek/tickle commands
+'send a message' to the playback (output filler) thread, rather than
+using conds and critical sections
+
+
+</pre>
+
 == David Richards aka oneman ==
 
 <pre>
