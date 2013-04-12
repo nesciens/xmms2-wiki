@@ -12,10 +12,27 @@ playback.c would handle playback state matters
 Unify Output plugin operation to the pull style by using a pulling thread
 to drive push based output plugins.
 
-Remove locks in output by having play/pause/stop/seek/tickle commands
+Remove locks in by having play/pause/stop/seek/tickle commands
 'send a message' to the playback (output filler) thread, rather than
 using conds and critical sections
 
+Make playback speed and direction part of the overall playback state,
+even if these get handled by xforms down the chain, if the speed and direction
+state is not a part of the overall playback state, really awkward measures
+need to be taken to propagate information such as the actual position in time
+of the chain. These are the only 'effects' that modify the way playtime and position
+would be calculated.
+
+Other things:
+Unify speed, direction and resampling xform, this is the way to get optimal buffering
+and cpu usage.
+
+raw file xform should use 64k buffers on x86-64 linux systems, if not all linux systems. 
+This is the optimal size / context switch tradeoff for read/write calls on linux.
+
+
+Transitions Plugins
+Once the above exists, we can move on to transitions plugins ;)
 
 </pre>
 
