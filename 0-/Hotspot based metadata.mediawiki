@@ -1,0 +1,18 @@
+== Problems with the current design ==
+
+* Today xforms have direct access to the media library and writes to it when they see fit, this poses a problem since there might be buffering of the audio data that should really be played before the metadata is updated.
+* The global media library got removed after XMMS2 0.8, xform plugins now have no way of querying existing metadata (for example to check if an expensive value has already been cached).
+* All metadata must be routed via the medialibrary today, no room for volatile information such as soundcloud comments, lyrics, artist/title of streams etc.
+* xmms_xform_metadata_(set|get)* and xmms_xform_auxdata_(set|get)* APIs are practically identical and they can easily be unified.
+
+== Solution proposal ==
+
+* Access to the xmms_medialib_t object will be completely removed from xform.c as it is today, and will be handled only by a xmms_xform_chain_factory.
+* Metadata will be fetched from the media library on xform chain creation and xforms will thus not need the media library during their life time.
+* Metadata will be written to the chain using hotspots locked into a specific position in the buffer, the output object will consume the hotspot data from the xform chain tail and update the media library accordingly.
+* Metadata may be marked as volatile, non-volatile, or private (auxdata). only non-volatile will end up in the media library, and only volatile will end up being sent as a broadcast_playback_current_info.
+* Since no xform chain tail reads are performed when scanning for metadata, there must be a drain() function which drains the metadata from the hotspots queue that has been gathered up to that point.
+* Hotspots queues will remain like today, but their data will move to the next xform as it reads past a hotspot position with data in the previous xform.
+* An xform may have an internal buffer, so hotspot position should be bytes offset from start for hotspots to hit/migrate at correct time. 
+
+[[Category: Developer ideas]]
