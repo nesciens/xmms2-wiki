@@ -3,7 +3,7 @@
 * Today xforms have direct access to the media library and writes to it when they see fit, this poses a problem since there might be buffering of the audio data that should really be played before the metadata is updated.
 * The global media library got removed after XMMS2 0.8, xform plugins now have no way of querying existing metadata (for example to check if an expensive value has already been cached).
 * All metadata must be routed via the medialibrary today, no room for volatile information such as soundcloud comments, lyrics, artist/title of streams etc.
-* xmms_xform_metadata_(set|get)* and xmms_xform_auxdata_(set|get)* APIs are practically identical and they can easily be unified.
+* xmms_xform_metadata_(set|get)* and xmms_xform_auxdata_(set|get)* APIs are practically identical and they can easily be unified. (macros for compatibility)
 
 == Solution proposal ==
 
