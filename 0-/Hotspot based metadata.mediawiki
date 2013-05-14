@@ -7,7 +7,7 @@
 
 == Solution proposal ==
 
-* Access to the xmms_medialib_t object will be completely removed from xform.c as it is today, and will be handled only by a xmms_xform_chain_factory.
+* Access to the xmms_medialib_t object will be completely removed from xform.c as it is today, and will be handled only by a xmms_xform_chain_factory or some better name.
 * Metadata will be fetched from the media library on xform chain creation and xforms will thus not need the media library during their life time.
 * Metadata will be written to the chain using hotspots locked into a specific position in the buffer, the output object will consume the hotspot data from the xform chain tail and update the media library accordingly.
 * Metadata may be marked as volatile, non-volatile, or private (auxdata). only non-volatile will end up in the media library, and only volatile will end up being sent as a broadcast_playback_current_info.
