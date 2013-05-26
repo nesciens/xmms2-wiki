@@ -26,7 +26,7 @@
 * Hotspots queues will remain like today, but their data will move to the next xform as it reads past a hotspot position with data in the previous xform.
 * An xform may have an internal buffer, so hotspot position should be bytes offset from start for hotspots to hit/migrate at correct time.
 
-== Unresolved problems ==
+=== Unresolved problems ===
 
 The actual position to set the metadata on is fuzzy to say the least. The following list are not all problems, but taking care of them all in a pretty way is.
 
@@ -46,6 +46,6 @@ A ticket based solution:
 
 http://h.vdust.net/~vdust/xformtest/xformtoken.py (vdust)
 
-Both suffer from the above mentioned problems.
+Both suffer from the problems mentioned in Solution Proposal A.
 
 [[Category: Developer ideas]]
