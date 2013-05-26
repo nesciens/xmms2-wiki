@@ -1,7 +1,7 @@
 == Terminology ==
 
 * non-volatile metadata, or simply just metadata
-** Metadata that's written to the media library. Examples: artist, title, file size
+** Metadata that's written to the media library, most often (if not always) set from the plugin _init function. Examples: artist, title, file size
 
 * volatile metadata (does not exist yet)
 ** Metadata that's not written to the media library. Examples: lyrics, shoutcast artist/title, soundcloud comments
