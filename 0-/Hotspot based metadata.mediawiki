@@ -16,7 +16,7 @@
 * All metadata must be routed via the medialibrary today, no room for volatile information such as soundcloud comments, lyrics, artist/title of streams etc.
 * xmms_xform_metadata_(set|get)* and xmms_xform_auxdata_(set|get)* APIs are practically identical and they can easily be unified. (macros for compatibility)
 
-== Solution proposal A (nano) ==
+== Solution Proposal A (nano) ==
 
 * Access to the xmms_medialib_t object will be completely removed from xform.c as it is today, and will be handled only by a xmms_xform_chain_factory or some better name.
 * Metadata will be fetched from the media library on xform chain creation and xforms will thus not need the media library during their life time.
