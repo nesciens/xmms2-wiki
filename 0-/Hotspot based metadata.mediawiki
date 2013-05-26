@@ -15,4 +15,13 @@
 * Hotspots queues will remain like today, but their data will move to the next xform as it reads past a hotspot position with data in the previous xform.
 * An xform may have an internal buffer, so hotspot position should be bytes offset from start for hotspots to hit/migrate at correct time. 
 
+== Unresolved problems ==
+
+The actual position to set the metadata on is fuzzy to say the least
+* An xform may emit data that's processed into PCM-data by another xform, so metadata set on position 5 in the first, may actually be position 32768 in the PCM data. (midi xform for example)
+* An xform may need byte precision accuracy for technical reasons (what's auxdata is used for today).
+* An xform may buffer large amounts of data from the previous xform, and the metadata must still be emitted at the correct position.
+* An xform may alter playback speed, both faster and slower (really a more specific usecase of the first point)
+* An xform may alter playback direction (not sure if this means anything in this context)
+
 [[Category: Developer ideas]]
