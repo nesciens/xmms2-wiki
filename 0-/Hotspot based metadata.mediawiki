@@ -24,4 +24,16 @@ The actual position to set the metadata on is fuzzy to say the least
 * An xform may alter playback speed, both faster and slower (really a more specific usecase of the first point)
 * An xform may alter playback direction (not sure if this means anything in this context)
 
+== Prototypes ==
+
+Similar to the current hotspot based auxdata, but extended to use byte position and migrate metadata through the chain to the tail where it may be handled:
+
+http://676d276692d7ed83.paste.se/ (nano)
+
+A ticket based solution:
+
+http://h.vdust.net/~vdust/xformtest/xformtoken.py (vdust)
+
+Both suffer from the above mentioned problems.
+
 [[Category: Developer ideas]]
