@@ -7,7 +7,7 @@
 ** Metadata that's not written to the media library. Examples: lyrics, shoutcast artist/title, soundcloud comments
 
 * auxdata
-** Internal decoder specific metadata. Examples: decoder config passed from container xform to the xform doing the decoding.
+** Internal decoder specific metadata. Examples: a binary decoder config blob passed from container xform to the xform doing the decoding.
 
 == Problems with the current design ==
 
