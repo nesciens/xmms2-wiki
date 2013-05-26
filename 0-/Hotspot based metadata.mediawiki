@@ -17,7 +17,8 @@
 
 == Unresolved problems ==
 
-The actual position to set the metadata on is fuzzy to say the least
+The actual position to set the metadata on is fuzzy to say the least. The following list are not all problems, but taking care of them all in a pretty way is.
+
 * An xform may emit data that's processed into PCM-data by another xform, so metadata set on position 5 in the first, may actually be position 32768 in the PCM data. (midi xform for example)
 * An xform may need byte precision accuracy for technical reasons (what's auxdata is used for today).
 * An xform may buffer large amounts of data from the previous xform, and the metadata must still be emitted at the correct position.
