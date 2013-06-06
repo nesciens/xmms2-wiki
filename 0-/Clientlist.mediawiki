@@ -40,7 +40,7 @@ All current clients should be found here, but not every entry in this list is up
 {| class="wikitable"
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Muxic        | Graphical / Cocoa | Obj-C | development stalled (2009-11) | Minimal windowshade for Mac OS X }}
-{{ClientTableEntry|xmms2-cdinfo | Console | C++ | developement stalled (2012-09) | CD database client, updates cdda:// medialib entries}}
+{{ClientTableEntry|xmms2-cdinfo | Console | C++ | development stalled (2012-09) | CD database client, updates cdda:// medialib entries}}
 {{ClientTableEntry|xmms2-hotkey | Hotkeys (X11/console) | C++ | stable (since 2009-08) | Control XMMS2 via X11 and/or console keys/mouse, supports multi-key combinations }}
 {{ClientTableEntry|Azrael       | Graphical / GTK | C | development stalled (2009-07) | Basic player with nice additions }}
 {{ClientTableEntry|lagn         | Emacs Mode | emacs-lisp | development stalled (2009-07) | Control XMMS2 within emacs }}
