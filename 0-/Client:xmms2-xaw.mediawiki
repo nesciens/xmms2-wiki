@@ -1,0 +1,2 @@
+{{Client| name=xmms2-xaw| author=Julien Charles| website=[https://sourceforge.net/projects/xmms2-xaw/]| version=0.6| devlanguage=C| ui=Xaw}}
+xmms2-xaw is a gui for XMMS2 using the X Athena Widgets. It has 2 windows, one to handle the playback controls and another handling the playlist controls. It needs XMMS2 installed to work. It also looks prettier if it is launched using xcolorize.
