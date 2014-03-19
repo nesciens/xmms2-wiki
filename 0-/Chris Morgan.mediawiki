@@ -1,6 +1,6 @@
 Contributed the Jack plugin to connect to a [http://jackit.sf.net Jack audio server].  The author of [http://xmms-jack.sf.net xmms-jack], a jack output plugin for xmms.
 
-You can reach me at cmorgan@alum.wpi.edu
+You can reach me at chmorgan@gmail.com
 
 - Chris
 
