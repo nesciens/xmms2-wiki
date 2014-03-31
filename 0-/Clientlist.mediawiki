@@ -22,6 +22,7 @@ All current clients should be found here, but not every entry in this list is up
 {{ClientTableEntry|LWXC         | Graphical / GTK | Python | in development | Client with focus on Keyboard usability. }}
 {{ClientTableEntry|LXMusic      | Graphical / GTK | C | development stalled (2010-04) | Very simple player, integrated into LXDE }}
 {{ClientTableEntry|nymp         | console / curses | Python | in development | A graphical cli client providing a tree view on your collection.  }}
+{{ClientTableEntry|Octopus      | Graphical / GTK | C, Javascript | in development | Intuitive graphical client based on browsing album art }}
 {{ClientTableEntry|Oritide      | Handheld / Web | Python, Javascript (Sproutcore) | development stalled (2010-08) | Mobile web client for iPhone and Android devices }}
 {{ClientTableEntry|Promoe       | Graphical / QT4 (Skinnable) | C++ | development stalled (2010-03) | Clone of classic Winamp / XMMS }}
 {{ClientTableEntry|Remuco       | Mobile Phone / MIDP | JavaME, Python | in development | Remote control of XMMS2 with mobile devices supporting Bluetooth or WiFi and JavaME }}
