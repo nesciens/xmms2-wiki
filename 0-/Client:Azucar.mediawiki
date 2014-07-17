@@ -1,0 +1,4 @@
+[[File:azucar.jpg]]
+Azucar is a minimalist client that provides the ability to control the player through a series of key combination. 
+
+Currently the development of this frontend is abandoned.
