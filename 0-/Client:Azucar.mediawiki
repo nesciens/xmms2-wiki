@@ -1,4 +1,14 @@
-[[File:azucar.jpg]]
+{{Client
+|name=Azucar
+|image=azucar-logo.png
+|author=Jorge Hernandez
+|website=
+|version=0.1
+|devlanguage=Python
+|ui=GTK+
+}}
+
+[[File:Azucar.png|left|thumb|200px]]
 Azucar is a minimalist client that provides the ability to control the player through a series of key combination. 
 
 Currently the development of this frontend is abandoned.
