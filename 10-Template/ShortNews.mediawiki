@@ -1,5 +1,4 @@
-<feed items=5 showdate="d F Y H:i (T)" showtitle=false newsformat=true>https://xmms2-news.blogspot.com/feeds/posts/default?alt=rss</feed>
-
+<rss number=1 title="off" text>https://www.blogger.com/feeds/1933091218488489059/posts/default?alt=rss</rss>
 
 [https://xmms2-news.blogspot.com/ More news]
 
