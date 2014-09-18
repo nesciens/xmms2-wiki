@@ -1,53 +1,10 @@
-Dxmms2 is a shell script that allows you to browse and search current playlist, all playlist and whole medialib. It is handy for integrating to keyboard-shortcut based enviroment.
-
-It uses [http://www.suckless.org/programs/dmenu.html dmenu] with [http://bbs.archlinux.org/viewtopic.php?id=54086 multiline patch]. Gentoo ebuild patches can be found [http://bugs.gentoo.org/show_bug.cgi?id=242886 here].
-
-Usage:
-
- dxmms2 list
-  to list current playlist. Selecting song jumps to it.
- dxmms2 playlist
-   to list playlists. Selecting one activates it.
- dxmms2 medialib
-   to search medialib. Selecting song adds them to active playlist.
-
-<pre>
-#!/bin/bash
-
-## if you wish to start g2xosd here
-#pidof gx2osd || nohup gx2osd &>/dev/null &
-
-menu() {
-	STYLE="$1"
-	shift
-	TITLE="$1"
-	shift
-	DATA="$1"
-	shift
-
-	LINES=$(( `wc -l <<<"$DATA"` ))
-	LINES=$(( $LINES > 35 ? 35 : $LINES ))
-	case "$STYLE" in
-		(multi) dmenu -i -ms -nl -p "$TITLE" -l "$LINES" "$@" <<<"$DATA";;
-		(single) dmenu -i -nl -p "$TITLE" -l "$LINES" "$@" <<<"$DATA";;
-		(line) dmenu -i -p "$TITLE" "$@" <<<"$DATA";;
-	esac
-}
-
-list(){
-	menu single "XMMS2 playlist `xmms2 playlist active`:" "`xmms2 list "$@" | grep '\['`" | sed 's|^..\[\([^/]*\).*$|\1|' | xargs -L1 xmms2 jump
-	xmms2 play
-}
-
-playlist() {
-	menu single "XMMS2 playlists:" "`xmms2 playlist list`" "$@" | sed 's/^[ ->]*//' | xargs -L1 xmms2 playlist load
-}
-
-medialib() {
-	menu multi "XMMS2 Search:" "`xmms2 mlib search '*'`" "$@" | awk -F '|' '{print $1}' | xargs -L1 xmms2 addid
-}
-
-RUN="$1"
-shift
-"$RUN" "$@"
-</pre>
+{{
+Client
+|name=dxmms2
+|version=1.0
+|author=markw
+|website=https://github.com/mwatts15/xmms2-stuff
+|devlanguage=Ruby
+|ui=dmenu
+|description=Shows you your playlist for jumping to songs. A minimal search feature is available. Add "favorites" to your songs (only visible from xmms2).
+}}
