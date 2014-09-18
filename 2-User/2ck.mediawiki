@@ -1,1 +1,5 @@
-Yeah.
+Hello!
+
+I have these clients for xmms2: https://github.com/mwatts15/xmms2-stuff
+
+I once unsuccessfully tried to use xmms2 for an internet radio. xmms2 worked well, but nobody listened. So it goes.
