@@ -1,5 +1,6 @@
 {{
 Client
+|image=Client-dxmms2.png
 |name=dxmms2
 |version=1.0
 |author=markw
