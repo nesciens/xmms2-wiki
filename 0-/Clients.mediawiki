@@ -68,6 +68,7 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 * [[Client:kuechenstation | kuechenstation]] is a text mode client with scrolling title, playlist and medialib query
 * [[Client:bnxc | bnxc]] is a minimalistic ncurses client with a focus on browsing through music
 * [[Client:nymp | nymp]] is a graphical cli client providing a tree view on your collection.
+* [[Client:xmms2hotkey|xmms2hotkey]] allows hotkey control in the Linux console via the keyboard, mouse or other evdev input device
 
 = Desktop Integration =
 
@@ -132,14 +133,14 @@ You can find lots of other players in the [[Clientlist | Client matrix]]. Here a
 
 = Special Input Methods =
 
-== Remote Control ==
+== Peripherals ==
 
-* [[Client:lxmms2 | lxmms2]] lets you control XMMS2 with LIRC
+* [[Client:lxmms2 | lxmms2]] lets you control XMMS2 with an infrared remote control using LIRC
+* [[Client:xmms2hotkey|xmms2hotkey]] provides global hotkeys which can work independently of Xorg session (even if you are in a game or in the console).  Buttons on any Xorg or evdev device can be used (keyboard, mouse, joystick, etc.)
 
 == Mobile Phones ==
 
 * [[Client:Harald | Harald]] uses JavaME and Bluetooth to be your music player on the phone
-
 * [[Client:Remuco | Remuco]] is a system to remotely control XMMS2 (and other music player) with mobile devices supporting Bluetooth and JavaME.
 
 [[Category: General]]
