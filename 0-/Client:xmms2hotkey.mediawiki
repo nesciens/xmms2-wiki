@@ -2,7 +2,7 @@
 |name=xmms2hotkey
 |author=[[User:Malvineous|Adam Nielsen]]
 |website=https://github.com/Malvineous/xmms2hotkey/downloads
-|version=0.4 (2011-11-23)
+|version=0.4 (2011-11-23), stable and working well as at 2014-10-04
 |devlanguage=C++
 |ui=Console
 |screenshots=(No UI)
@@ -14,6 +14,7 @@
 * Can work without X11 (evdev can be used to have hotkeys in the Linux console)
 * Works with mice, keyboards, joysticks and other HID devices
 * Supports activation keys (one key/button must be held for others to control XMMS2)
+* Automatically reconnects to input devices if they are lost (e.g. docking/undocking a laptop or switching off a monitor with USB hub causing device disconnection)
 
 == How it works ==
 
