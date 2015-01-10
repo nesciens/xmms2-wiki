@@ -15,6 +15,6 @@
 ** Why are you well suited to complete this project?
 
 === Proposal Example ===
-For an example of what your proposal could look like, see [http://exodus.xmms.se/~andersg/SoC_example.txt SoC_example.txt]. Make sure your proposal is correctly linewrapped to fit in 80 cols (as google's interface doesn't reflow text).
+For an example of what your proposal could look like, see [http://people.xmms2.org/~andersg/SoC_example.txt SoC_example.txt]. Make sure your proposal is correctly linewrapped to fit in 80 cols (as google's interface doesn't reflow text).
 
 [[Category:Summer of Code 2006]]
