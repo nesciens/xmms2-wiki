@@ -62,7 +62,7 @@ to handle sources and some other minor changes.
 * Using older versions of SQLite (< 3.2.6) could cause strange problems. Please upgrade.
 
 == Phone home feature ==
-This release also includes a [http://git.xmms.se/?p=xmms2-stable.git;a=blob;h=88aa60a9254dd8f560342a29bdc45c2708d751cb;hb=dfeb13c8dca6f2c15b945cea1919528f4a3d53d9;f=src/clients/et/xmms2-et.c phone-home agent], which provides
+This release also includes a [http://git.xmms2.org/xmms2/xmms2-stable/log/src/clients/et phone-home agent], which provides
 the developers (and other interested parties) basic test
 coverage data. It sends an udp packet for each song played with
 information about which output-, decoder- and transport plugin
