@@ -21,7 +21,7 @@ Play button flashing when 30~ secs are left in track, show time left in track, s
 
 Download: http://media.kradradio.com/rb/radiobar.rb
 
-Mailinglist post: http://lists.xmms.se/pipermail/xmms2-devel/2007/000447.html
+Mailinglist post: http://lists.xmms2.org/pipermail/xmms2-devel/2007/000447.html
 
 Contact me on irc, nick is oneman.}}
 
