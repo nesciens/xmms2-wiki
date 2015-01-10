@@ -4,9 +4,9 @@ Some services associated with the XMMS2 Project may require some personal or oth
 ''This is not a legal document, and has not been approved by any legal counsel. However, we believe it outlines good-faith measures to inform users of web sites and services associated with the XMMS2 Project about how their personal information may be collected and used.''
 
 == Information Collected ==
-* Whenever you browse this wiki, or associated XMMS2 web sites/services (under the ''.xmms.se'' domain), your IP address and time of visit are logged. Some information about your browser and operating system is also recorded, as well as any referral information (HTTP ''[http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.36 Referer]'' request header) sent by your browser.
-* Some more information (such as search queries, returning visits, etc) is also collected via [http://google.com/analytics Google Analytics] about usage of this wiki and http://git.xmms.se if you have javascript turned on.
-* Your name (nickname, or otherwise) and e-mail address are required as part of the registration process for some XMMS2 Project services - for example, this wiki, [http://bugs.xmms2.xmms.se the bug tracker] and [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel the mailing list].
+* Whenever you browse this wiki, or associated XMMS2 web sites/services (under the ''.xmms2.org'' domain), your IP address and time of visit are logged. Some information about your browser and operating system is also recorded, as well as any referral information (HTTP ''[http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.36 Referer]'' request header) sent by your browser.
+* Some more information (such as search queries, returning visits, etc) is also collected via [http://google.com/analytics Google Analytics] about usage of this wiki and http://git.xmms2.org if you have javascript turned on.
+* Your name (nickname, or otherwise) and e-mail address are required as part of the registration process for some XMMS2 Project services - for example, this wiki, [http://bugs.xmms2.org the bug tracker] and [http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel the mailing list].
 
 == Usage of information ==
 * Anonymous records of web browsing activity may be analysed at times, to determine the overall popularity of various sites, pages and services.
@@ -14,7 +14,7 @@ Some services associated with the XMMS2 Project may require some personal or oth
 * Names, e-mail addresses and other personal information collected (apart from being used as unique identification to log in to some services) is used primarily to enable XMMS2 Project members to contact registered users when needed. Such information is neither normally disclosed to any third parties, nor is it used to market specific commercial products.
 
 == [[ET|XMMS2 ET Phone Home Agent]] ==
-While not relating specifically to the use of XMMS2 Project web sites, as an XMMS2 user, you might like to be aware of [[ET|xmms2-et]], a small XMMS2 client which sends anonymous data about your usage of XMMS2. This data is used primarily to give developers an idea about how (and how much) various components of XMMS2 are being used. The data collected is not released to any third parties (other than aggregate statistics via http://test.xmms.se). Read more about it on the [[ET]] page.
+While not relating specifically to the use of XMMS2 Project web sites, as an XMMS2 user, you might like to be aware of [[ET|xmms2-et]], a small XMMS2 client which sends anonymous data about your usage of XMMS2. This data is used primarily to give developers an idea about how (and how much) various components of XMMS2 are being used. The data collected is not released to any third parties (other than aggregate statistics via http://test.xmms2.org). Read more about it on the [[ET]] page.
 
 == DISCLAIMER ==
 The XMMS2 Project does not claim to hold your information safe from any kind of harm. While we endeavour to keep your information secure, the XMMS2 Project may not be held responsible for the loss of security of your information - YOU SUBMIT INFORMATION AT YOUR OWN RISK.
