@@ -9,7 +9,7 @@ The server is the part of XMMS2 that outputs music and keeps track of the playli
 
 ''Block diagram showing the XMMS2 daemon's internals''
 
-http://exodus.xmms.se/~tru/xmms2-core.png
+http://people.xmms2.org/~tru/xmms2-core.png
 
 ''A fancier block diagram showing the daemon's internals while playing an ogg file''
 
@@ -99,6 +99,6 @@ The `xmmsc_result_wait` will block until the answer is ready.
 === Extracting data from a resultset ===
 As mentioned above, some methodcalls return data in resultsets. You can (after the resultset is filled) extract information from the resultset with different calls. You must know what data type is returned in the resultset to do so (see the doxygen manual for information about the different methodcalls).
 
-The functions for value extractions are described in the ''ResultValueRetrieval'' section of the [http://xmms2.xmms.se/doxygen/ XMMS2 doxygen documentation]
+The functions for value extractions are described in the ''ResultValueRetrieval'' section of the [http://doxygen.xmms2.org/ XMMS2 doxygen documentation]
 
 [[Category:XMMS2 Technical Details]]
