@@ -3,11 +3,11 @@ This is a guide, which should help to setup a Windows Build Environment for Xmms
 == prerequisites ==
 * Download current Qt4 OpenSource Edition from trolltech ==> http://trolltech.com/developer/downloads/qt/windows/ (get yourself a qt-win-opensource-X.X.X-mingw.exe )
 
-* Download DrJekyll from Puzzles ==> http://xmms2.xmms.se/~puzzles/win32/XMMS2.7z
+* Download DrJekyll from Puzzles ==> http://people.xmms2.org/~puzzles/win32/XMMS2.7z
 
-* Download Msys from Puzzles ==> http://xmms2.xmms.se/~puzzles/win32/MSys.7z
+* Download Msys from Puzzles ==> http://people.xmms2.org/~puzzles/win32/MSys.7z
 
-* Download the Esperanza Source ==> e.g. http://git.xmms.se/snapshot.cgi?tree=esperanza.git&commit=HEAD
+* Download the Esperanza Source ==> e.g. http://git.xmms2.org/xmms2/esperanza/
 
 
 
