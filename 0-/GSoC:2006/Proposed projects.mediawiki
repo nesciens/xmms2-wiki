@@ -1,7 +1,7 @@
 Here is a list of proposed projects for the Summer of Code 2006.  Feel free to suggest other ideas, features or client works (see #xmms2 on freenode)! IRC is heavily used among xmms2 developers, so that should be your first choice for discussing SoC projects. Please note that the XMMS2 team reserves the right to limit the number of projects accepted to ensure that mentors don't have to keep track of too many students.
 
 You might also want to check out: 
-[http://bugs.xmms2.xmms.se/view.php?id=520 Long Term wishlist]
+[http://bugs.xmms2.org/view.php?id=520 Long Term wishlist]
 
 {{SoCItem| title=[[Generated IPC | Auto-generated API and bindings]]| description=Currently, the C client library and the bindings (Python, Ruby, etc) have to be manually updated whenever a new function is introduced on the server. This work is tedious and mechanical, and the whole client API could in fact be automatically generated from a high-level description of the functions. The goal is therefore to determine the semantics of these descriptions (possibly using XML), and then use them to generate the different API source files.| lang=Python / XML| level=Advanced| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
@@ -31,7 +31,7 @@ You might also want to check out:
 * Provide recommendations on how to change the development workflow to actively use and maintain the test suite. (to ensure that the test suite doesn't go stale within a few weeks)
 * Optionally devise a method for maintaining a 'component status' page based on automated test results. (For an example, see [[Project Status]])| lang=C / Python / Ruby| level=Medium| mentor=[[Sham Chukoury]]}}
 
-{{SoCItem| title=Handle temporarily unavailable media better than removing from medialib| description=This task is fully described with context in [http://bugs.xmms2.xmms.se/view.php?id=519 Bug #519]| lang=C| level=Medium| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
+{{SoCItem| title=Handle temporarily unavailable media better than removing from medialib| description=This task is fully described with context in [http://bugs.xmms2.org/view.php?id=519 Bug #519]| lang=C| level=Medium| mentor=[[User:Anders Gustafsson | Anders Gustafsson]]}}
 
 == Other Ideas? ==
 
