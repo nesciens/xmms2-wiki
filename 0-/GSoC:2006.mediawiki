@@ -15,7 +15,7 @@ Current deadlines:
 
 == News ==
 
-{{Newsitem| date=26 May 2006 WST (2006-05-26)| author=[[Sham Chukoury]]| title=SoC blogs| text=Now that SoC2006 is really under way, students and mentors are chronicling their summer coding adventures on their blogs, and it's all being collected at [http://planet.xmms.se Planet XMMS2]! If you're an accepted XMMS2 SoC student and you have a blog, you might want to e-mail ''eleusis@xmms.org'' to be added to the planet.}}
+{{Newsitem| date=26 May 2006 WST (2006-05-26)| author=[[Sham Chukoury]]| title=SoC blogs| text=Now that SoC2006 is really under way, students and mentors are chronicling their summer coding adventures on their blogs, and it's all being collected at [http://planet.xmms2.org Planet XMMS2]! If you're an accepted XMMS2 SoC student and you have a blog, you might want to e-mail ''eleusis@xmms.org'' to be added to the planet.}}
 
 {{Newsitem| date=3 May 2006 WST (2006-05-03)| author=[[Sham Chukoury]]| title=Proposals trickling in| text=So, the floodgates have opened to student applications and XMMS2 has received a small handful of them so far. From what I've seen, it seems students aren't reading the [[#Student Requirements | Student Requirements]] section carefully: your proposal is exactly what it says it is - a '''proposal'''. Propose a task and detail it for us, don't simply say "I'd like to work on task X because I really really like you."
 
