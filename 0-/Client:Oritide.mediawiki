@@ -1,7 +1,7 @@
 {{Client
 |name=Oritide
 |author=Cherif Yaya 
-|website=[http://git.xmms.se/xmms2/x2web-allad/ source], [http://cherif.ycsoft.org/blog/category/gsoc-2010/ blog], [http://oritide.lighthouseapp.com/ bugtracker]
+|website=[http://git.xmms2.org/xmms2/x2web-allad/ source], [http://cherif.ycsoft.org/blog/category/gsoc-2010/ blog], [http://oritide.lighthouseapp.com/ bugtracker]
 |devlanguage=Python / Javascript
 |ui=Sproutcore
 }}
