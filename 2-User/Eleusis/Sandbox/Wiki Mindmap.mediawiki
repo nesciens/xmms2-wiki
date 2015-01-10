@@ -1,4 +1,4 @@
-http://exodus.xmms.se/~theefer/xmms2-wiki-mindmap.jpg
+http://people.xmms2.org/~theefer/xmms2-wiki-mindmap.jpg
 
 <graphviz dotcmd="twopi">
 graph wikiMindmap {
