@@ -22,7 +22,7 @@ Just make sure the prerequisites are met and scons will build the bindings with 
 
 == Usage ==
 
-There are tutorials for the C++ bindings in [http://git.xmms.se/?p=xmms2-tutorial.git;a=tree;f=c%2B%2B xmms2-tutorial.git] tree.
+There are tutorials for the C++ bindings in [http://git.xmms2.org/xmms2/xmms2-tutorial/ xmms2-tutorial.git] tree.
 
 == Notes ==
 
