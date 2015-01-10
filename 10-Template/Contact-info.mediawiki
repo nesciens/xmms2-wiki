@@ -1,9 +1,6 @@
 ;E-Mail :
 * [http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel xmms2-devel mailing list] (also carried by gmane; [http://dir.gmane.org/gmane.comp.multimedia.xmms2.devel gmane.comp.multimedia.xmms2.devel])
-* ''[http://lists.xmms.org/pipermail/xmms2-devel/ old mailing list archives]''
 * If you have a very good reason you could try and mail Tobias or Anders directly, but only if you absolutely can't use the mailinglist;
-**tru at xmms dot org
-**andersg at xmms dot org
 
 ;IRC :
 * irc.freenode.net:6667 #xmms2
