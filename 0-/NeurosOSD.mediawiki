@@ -2,7 +2,7 @@
 
 *Make sure you have sourced neuros-env
 ** source /wherever/it/is/installed/neuros-bsp/neuros-env
-* Grab http://exodus.xmms.se/~andersg/xmms2-DrHouse-neuros-OSD-buildenv.tar.gz
+* Grab http://people.xmms2.org/~andersg/xmms2-DrHouse-neuros-OSD-buildenv.tar.gz
 * Untar it
 ** tar xzf xmms2-DrHouse-neuros-OSD-buildenv.tar.gz
 *enter the directory
@@ -25,7 +25,7 @@
 *enter the XMMS2 directory
 *Run run-xmms2.sh in that directory
 **sh run-xmms2.sh
-*On your host computer connect to the osd with an xmms2 client, such as esperanza http://exodus.xmms.se/~tru/esperanza/0.2/esperanza-0.2.2-winxp.exe using tcp://192.168.1.100:9667/ as path.
+*On your host computer connect to the osd with an xmms2 client, such as esperanza http://people.xmms2.org/~tru/esperanza/0.2/esperanza-0.2.2-winxp.exe using tcp://192.168.1.100:9667/ as path.
 *Time to make a nice client to be run _on_ the OSD! / integrate a client in the mainapp.
 
 
