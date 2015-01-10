@@ -2,7 +2,7 @@
 
 Grab the following 7zip and extract it somewhere (lets call it $MINGW_ROOT)
 
- http://exodus.xmms.se/~puzzles/win32/MSys.7z
+ http://people.xmms2.org/~puzzles/win32/MSys.7z
 
 And then get mingw:
 
