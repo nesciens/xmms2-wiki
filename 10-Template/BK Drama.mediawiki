@@ -1,7 +1,7 @@
 <div style="border: double 3px #b66; text-align: center; padding:0.5em">
 '''''(End of) BitKeeper Drama'''''
 
-Since [http://www.bitkeeper.com BitMover] decided to [http://www.bitkeeper.com/press/2005-04-05.html cease supporting] the free (as in beer) version of BitKeeper, we decided to switch to an alternative SCM that would match our workflow with BK as closely as possible. Since releasing [[Release:DR1 | DR1]], the XMMS2 team has switched to using Git/Cogito. The repository is accessible via the web at http://git.xmms.se
+Since [http://www.bitkeeper.com BitMover] decided to [http://www.bitkeeper.com/press/2005-04-05.html cease supporting] the free (as in beer) version of BitKeeper, we decided to switch to an alternative SCM that would match our workflow with BK as closely as possible. Since releasing [[Release:DR1 | DR1]], the XMMS2 team has switched to using Git/Cogito. The repository is accessible via the web at http://git.xmms2.org
 
 </div>
-<!-- http://wiki.xmms2.xmms.se/index.php?title=Template:BK_Drama&action=edit -->
+<!-- https://xmms2.org/wiki/index.php?title=Template:BK_Drama&action=edit -->
