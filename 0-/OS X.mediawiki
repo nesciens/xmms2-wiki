@@ -22,6 +22,6 @@ XMMS2 has Native support for CoreAudio, no more fulhack as in XMMS1 using a hack
 
 == CoreFoundation eventloop. ==
 
-For client writers, the [http://git.xmms.se/xmms2/xmms2-stable/tree/src/include/xmmsclient/xmmsclient-cf.h libxmmsclient-cf] library contains glue to integrate libxmmsclient with the CoreFoundation main loop.
+For client writers, the [http://git.xmms2.org/xmms2/xmms2-stable/tree/src/include/xmmsclient/xmmsclient-cf.h libxmmsclient-cf] library contains glue to integrate libxmmsclient with the CoreFoundation main loop.
 
 [[Category:Platforms]]
