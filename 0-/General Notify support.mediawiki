@@ -7,7 +7,7 @@ Listen to all songs in medialib and update the mediainfo in the db if a file cha
 Automatically add songs to the medialib when you upload files to a specific directory. Configvalue for the path. Should we watch all recursive directories for new files? Or should we be able to add multiple paths to the configuration? It should also check the directory on xmms2d startup to see if any changes have occurred and add those songs/update those songs in the medialib.
 
 === Implementations ===
-- [http://git.xmms.se/?p=xmms2.git;a=tree;h=f137ce378efae0a05de4a941fec66592ef5f026d;hb=6c33fad5dd262d183d700aabda34943e995b10d7;f=src/clients/medialib-updater gamin]
+- [http://git.xmms2.org/xmms2/xmms2-devel/log/src/clients/medialib-updater gamin]
 
 
 [[Category:Developer ideas]]
