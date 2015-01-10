@@ -8,7 +8,7 @@ With the increasing popularity of Apple's iTunes, many media players are attempt
 
 '''2006/06/07''' -- Get a basic DAAP standalone client up and running. It should be able to, at minimum, stream a requested song.
 
-'''2006/06/23''' -- DAAP client updated to be more robust and can successfully communicate with iTunes. The code is available from my git repository at git://git.xmms.se/xmms2/xmms2-coledot.git. Next: convert this client to a transform plugin.
+'''2006/06/23''' -- DAAP client updated to be more robust and can successfully communicate with iTunes. The code is available from my git repository at https://github.com/XMMS2/xmms2-alumni/tree/coledot-master. Next: convert this client to a transform plugin.
 
 == TODO ==
 
