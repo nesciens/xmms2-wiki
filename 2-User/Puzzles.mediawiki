@@ -1,7 +1,7 @@
 My real name is Dan Chokola. I code as a hobby and for relaxation, not as a profession, though I've coded a handful of things for xmms2. I hang around in #xmms2 all the time, and I try to contribute code, moral support, and insight whenever possible.
 
-I '''love''' Ruby and i ''hate'' Python, so you'll see me working on the Ruby bindings and Ruby clients a lot and they'll always be better than their Python counterparts. ;)
+I '''love''' Ruby and I ''hate'' Python, so you'll see me working on the Ruby bindings and Ruby clients a lot and they'll always be better than their Python counterparts. ;)
 
-You can find my website at [http://dan.chokola.com dan.chokola.com] (big surprise!) with all sorts of cool stuff on it.
+You can find my website at <strike>[http://dan.chokola.com dan.chokola.com]</strike> (big surprise!) with all sorts of cool stuff on it.
 
 [[Category:People]]
