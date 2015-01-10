@@ -47,7 +47,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 * [mailto:jarno@huittinen.com Jarno] , [http://www.huittinen.com/~jarno/xmms2/xmms2-vers1.jpg 1. proposal], [http://www.huittinen.com/~jarno/xmms2/xmms2-vers2.jpg 2. proposal]
 * [mailto:jiobel.c@gmail.com Jiobel][http://jiobel.jogger.pl MyPage] - [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos.png Logo01], [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_2.png Logo02], [http://www.phrack.only.pl/jiobel/new/xmms2/xmms2_logos_3.png Logo03].
 * [mailto:jaral.info@gmail.com JarAl concept], just a small concept using 2 as a multiplier ( as in "2 x 3 = 6") -  [http://geocities.yahoo.com.br/fijaral/x2ms.png (x2ms.png - big-file)], [http://geocities.yahoo.com.br/fijaral/x2ms-2.png (x2ms-2.png - small-file)], [http://geocities.yahoo.com.br/fijaral/x2ms.inkscape.svg (InkScape SVG File)]
-* [mailto:jesus@jhuss.com Jhuss] - [http://wiki.xmms2.xmms.se/index.php/User:Jhuss jhuss's] proposals: [http://jhuss.com/2006/09/26/xmms2/ concept] big image and 32x32 concept of xmms2, and source in svg.
+* [mailto:jesus@jhuss.com Jhuss] - [http://xmms2.org/wiki/User:Jhuss jhuss's] proposals: [http://jhuss.com/2006/09/26/xmms2/ concept] big image and 32x32 concept of xmms2, and source in svg.
 
 '''K'''
 * [mailto:kropemann@users.sf.net Kropemann's Retro Propaganda] comments and suggestions welcome - [http://nosuchdomain.net/xmms2_v1.png xmms2_v1.png], [http://nosuchdomain.net/xmms2_v2.png xmms2_v2.png], [http://nosuchdomain.net/xmms2_v3.png xmms2_v3.png], [http://nosuchdomain.net/xmms2_v4.png xmms2_v4.png], [http://nosuchdomain.net/xmms2_v5.png xmms2_v5.png], [http://nosuchdomain.net/xmms2_v1.svg Inkscape .svg for the first version]
@@ -64,7 +64,7 @@ To submit a logo, you may edit this wiki page to link to your proposal(s). Howev
 '''N'''
 '''O'''
 '''P'''
-* [http://wiki.xmms2.xmms.se/index.php/User:Pete Pete's] Proposals 
+* [http://xmms2.org/wiki/User:Pete Pete's] Proposals 
 *First Proposal. [http://img85.imageshack.us/img85/3687/xmms2logopete5bx.png Abstract / SCFI Logo]
 *Second Proposal. [http://img212.imageshack.us/img212/566/petexmms2abstract1tq1.png Second Abstract / SCFI Logo - Dark] [http://img54.imageshack.us/img54/782/petexmms2abstract2fa4.png Second Abstract / SCFI Logo - Light]
 
