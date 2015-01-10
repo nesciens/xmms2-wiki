@@ -174,6 +174,6 @@ It could also allow bypassing the conversion we do to day, by getting data direc
  	return list->curr_val;
  }
 
-Examples of ruby bindings [http://exodus.xmms.se/~nano/ruby.xsl ruby.xsl], [http://exodus.xmms.se/~tilman/libxmmsclient.xml libxmmsclient.xml] gives the following [http://exodus.xmms.se/~nano/test.out output].
+Examples of ruby bindings [http://people.xmms2.org/~nano/ruby.xsl ruby.xsl], [http://people.xmms2.org/~tilman/libxmmsclient.xml libxmmsclient.xml] gives the following [http://people.xmms2.org/~nano/test.out output].
 
 [[Category:Developer ideas]]
