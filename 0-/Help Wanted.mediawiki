@@ -6,7 +6,7 @@ The XMMS2 Project has come a long way since 2003, but there are still a lot of r
 Some easy tasks that can be well suited for familiarizing with the XMMS2 codebase (and patch nazis) can be found in our bugtracker. <mantis>1638</mantis>.
 
 == Long term wishlist ==
-We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.xmms.se/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
+We have a whole bunch of feature requests (and possibly bugs) filed away on our [http://bugs.xmms2.org/view.php?id=520 Long term wishlist] that we haven't gotten around to implementing or fixing yet. You could poke around there and see if there's anything that interests you.
 
 == Clients without maintainers ==
 
@@ -20,4 +20,4 @@ While XMMS2 steadily moves forward, the Wiki is not always treated with the same
 
 == Testing and Bugreports ==
 
-You have found a bug in XMMS2 or maybe a client? Great! Report it on the [http://bugs.xmms2.xmms.se/ Bug Tracker] or on the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel Mailing List]. Alternatively, see if you can [http://bugs.xmms2.xmms.se/search.php?project_id=0&status_id=10&sticky_issues=off&sortby=last_updated&dir=DESC&hide_status_id=-2 find a bug to reproduce and further describe] on the bug tracker.
+You have found a bug in XMMS2 or maybe a client? Great! Report it on the [http://bugs.xmms2.org/ Bug Tracker] or on the [http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel Mailing List]. Alternatively, see if you can [http://bugs.xmms2.org/search.php?project_id=0&status_id=10&sticky_issues=off&sortby=last_updated&dir=DESC&hide_status_id=-2 find a bug to reproduce and further describe] on the bug tracker.
