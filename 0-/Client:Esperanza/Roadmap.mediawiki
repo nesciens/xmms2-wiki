@@ -45,7 +45,7 @@ This page tries to collect the future of Esperanza. Please put new ideas in the 
 * make the language selectable, or even let the user overrule the systems language setting
 
 == Older versions ==
-=== [http://git.xmms.se/?p=esperanza.git;a=shortlog;h=0.4 Version 0.4] ===
+=== [http://git.xmms2.org/xmms2/esperanza/log/?h=5ac9bc14536492b483c479d75644500bd596c258 Version 0.4] ===
 * &#10003; A shortcut to go to mini-mode. Because now you have to click on the icon to do that.
 * &#10003; First time Wizard - A wizard that pops up the first time a user starts esperanza. It should handle some basic configuration of Esperanza and the server. Importing musicfiles, setting the unix path, asking if the user wants to see the server browser all times, if the colors are good (ignore desktop aware...) on linux. and so on.
 ** &#10003; add a skip wizard button
