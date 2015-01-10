@@ -13,7 +13,7 @@
 * What license does your project use?
 ** The core of XMMS2 is LGPL and some plugins are GPL because they depend on libraries that are strict GPL. We prefer LGPL where possible.
 * URL for your ideas page
-** http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2008/Proposed_projects
+** http://xmms2.org/wiki/Summer_of_Code_2008/Proposed_projects
 * What is the main development mailing list for your organization?
 ** xmms2-devel@lists.xmms.se
 * Where is the main IRC channel for your organization?
