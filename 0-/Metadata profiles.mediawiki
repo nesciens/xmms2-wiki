@@ -14,7 +14,7 @@ I'm still adjusting to the codebase, concepts, and terminology used by xmms2 and
 
 An MP3 file tagged with id3v2 may have values in the TCOM (composer), TOPE (original artist/performer), TPE1 (lead performer), TPE2 (ensemble/accompaniment), TPE3 (conductor/specific performer), and TPE4 (remixer or whatever else you want) fields.  An Ogg Vorbis file may have its own Vorbis comments with keys "composer", "artist", "soloist", "ensemble", "conductor", and "performer".
 
-A power user who really cares about how their data are presented (or someone who is as neurotic about tagging their music as I am) will want to be able to search their music library according to these fields.  They may even go so far as to want their playlists or "currently playing" items to be labeled according to metadata pulled from these fields.  There are bugs like [http://bugs.xmms2.xmms.se/view.php?id=384 this one] indicating as much.
+A power user who really cares about how their data are presented (or someone who is as neurotic about tagging their music as I am) will want to be able to search their music library according to these fields.  They may even go so far as to want their playlists or "currently playing" items to be labeled according to metadata pulled from these fields.  There are bugs like [http://bugs.xmms2.org/view.php?id=384 this one] indicating as much.
 
 {| border="1" cellspacing="0" cellpadding="5" align="center"
 |+ Example metadata mapping -- power user
