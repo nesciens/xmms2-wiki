@@ -90,7 +90,7 @@ These are the contents of the xmms2-puzzles playground branch before the release
  <puzzles> say conf.env["FOODIR"] = '/a/b/c'
  <puzzles> does it understand that FOODIR is a directory?
  <ita> no
-*** It has nothing to do with directories, just quoting stuff properly. You have the same problem when a directory happens to contain a ". What I'm trying to say that my impression is that the fix is something like http://exodus.xmms.se/~andersg/waf-proper-quoting-write_config_header.patch.txt [[User:Anders Gustafsson|Anders Gustafsson]] 23:13, 19 May 2007 (CEST)
+*** It has nothing to do with directories, just quoting stuff properly. You have the same problem when a directory happens to contain a ". What I'm trying to say that my impression is that the fix is something like http://people.xmms2.org/~andersg/waf-proper-quoting-write_config_header.patch.txt [[User:Anders Gustafsson|Anders Gustafsson]] 23:13, 19 May 2007 (CEST)
 *** The code makes it much clearer. Now we just need to wait for Waf to get this merged and possibly migrate to waf 1.1.1. [[User:Puzzles|Puzzles]] Sat May 19 17:43:54 EDT 2007
 
 ----
