@@ -13,4 +13,4 @@ $ svn co https://blastwave.svn.sourceforge.net/svnroot/blastwave/trunk blastwave
 As for now, Blastwave uses XMMS2-DrJekyll, but it's being developed around latest xmms2 git code.
 
 == Support ==
-If you happen to encounter a bug/problem, please drop an email to the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel xmms2-mailing-list] or contact me on [irc://irc.freenode.net #xmms2] channel on Freenode (nick:amihuman).
+If you happen to encounter a bug/problem, please drop an email to the [http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel xmms2-mailing-list] or contact me on [irc://irc.freenode.net #xmms2] channel on Freenode (nick:amihuman).
