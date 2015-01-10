@@ -1,4 +1,4 @@
 <div style="float: right; border: dotted 1px grey; text-align: left; padding:0.5em; background-color:#fff">
 '''''Planet XMMS2 News'''''
-<feed>http://planet.xmms.se/rss20.xml</feed>
+<feed>http://planet.xmms2.org/rss20.xml</feed>
 </div>
