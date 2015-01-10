@@ -2,7 +2,7 @@ This is an idea that would boost the sharing of album art between xmms2 users. T
 
 The initial implementation could easily be done in Python with [ftp://ftp.tummy.com/pub/tummy/Python/netstring/ netstrings] and send dicts back and forth. An option that would only require stdlib could use ThreadingSocketServer and a simple socket based client.
 
-An untested proof of concept implementation of the server (not totally feature complete) using ThreadingSocketServer and cPickle is available at: http://exodus.xmms.se/~alex/ArtDealer.py.txt
+An untested proof of concept implementation of the server (not totally feature complete) using ThreadingSocketServer and cPickle is available at: http://people.xmms2.org/~alex/ArtDealer.py.txt
 
 === protocol ===
  ''helo command''
