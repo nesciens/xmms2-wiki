@@ -56,6 +56,6 @@
 
 == See Also ==
 * [[Versioning]]
-* [http://bugs.xmms2.xmms.se/view.php?id=520 Long Term Wishlist]
+* [http://bugs.xmms2.org/view.php?id=520 Long Term Wishlist]
 
 [[Category:General]]
