@@ -9,7 +9,7 @@
 * Services are registered as a whole, not method-by-method.
 * Service methods will use the new ''xmmsc_value_t'' where applicable instead of using ''xmmsc_result_t''. 
 * No need to provide remove/unset functionality as services will provide static functionality.
-* See [http://numbers.xmms.se/~puzzles/sc/rbsc.rb.txt] and [http://numbers.xmms.se/~puzzles/sc/doc/] for details.
+* See [http://people.xmms2.org/~puzzles/sc/rbsc.rb.txt] and [http://people.xmms2.org/~puzzles/sc/doc/] for details.
 
 == Make a ''service_t'' Available on Client and Server ==
 * Previously, a service was referenced by its name and methods were registered directly to the server.
