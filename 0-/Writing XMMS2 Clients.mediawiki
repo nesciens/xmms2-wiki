@@ -3,7 +3,7 @@ __TOC__
 == Start here ==
 Before setting out to write an XMMS2 client, you should familiarise yourself with the  XMMS2 '[[Design of XMMS2#Middleware |middleware]]' (provided by ''libxmmsipc'' and used transparently by ''libxmmsclient''). 
 
-It is strongly recommended that you check out the code from the [http://git.xmms.se/xmms2/xmms2-tutorial/ xmms2-tutorial] Git repository to learn the basics of writing XMMS2 clients.
+It is strongly recommended that you check out the code from the [http://git.xmms2.org/xmms2/xmms2-tutorial/ xmms2-tutorial] Git repository to learn the basics of writing XMMS2 clients.
 
 Please ensure that you use the latest stable xmms2 version when following the tutorials. 
 
@@ -34,7 +34,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 * To enable drag & drop between clients some guidelines must be followed. The target entry for medialib ids is "application/x-xmms2mlibid", and "application/x-xmms2poslist" for playlist positions. Both should be of type int32_t array. 
 
 === Cover art ===
-* XMMS2 clients can store and retrieve binary data from the daemon (using the so-called ''bindata'' API). A suitable client (such as [http://git.xmms.se/?p=xmms2covers.git;a=summary xmms2covers]) may store image data and set the appropriate [[Generic properties policy#Album_Art | album art]] related properties after querying suitable web services and matching songs with album covers (or via some equivalent mechanism). Other clients may then retrieve the stored image data for display.
+* XMMS2 clients can store and retrieve binary data from the daemon (using the so-called ''bindata'' API). A suitable client (such as [http://git.xmms2.org/xmms2/xmms2covers/ xmms2covers]) may store image data and set the appropriate [[Generic properties policy#Album_Art | album art]] related properties after querying suitable web services and matching songs with album covers (or via some equivalent mechanism). Other clients may then retrieve the stored image data for display.
 
 === Threads ===
 * It is generally discouraged to use threads in XMMS2 clients - especially graphical clients, where race conditions could disrupt the proper functioning of a graphical toolkit's event loop (and the process of moving messages back and forth over xmmsipc). If you must absolutely use threads, you must make sure to implement proper locking and mutual exclusions to maintain the consistent state of your program.
@@ -51,6 +51,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 == See Also ==
 * [[Design of XMMS2]]
 * [[Generic properties policy]]
-* [http://doxygen.xmms2.xmms.se/ Doxygen documentation]
+* [http://doxygen.xmms2.org/ Doxygen documentation]
 
 [[Category:XMMS2 Technical Details]]
