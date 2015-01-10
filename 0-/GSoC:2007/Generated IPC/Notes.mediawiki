@@ -41,7 +41,7 @@ Objects - These usually map 1-1 to objects on the server, like output-output or 
 
 Method - These are requests that operate on its parent object, like "hello" for the main object.
 
-Properties - These are readable and/or writeable properties of objects that can be requested from a client. See [http://wiki.xmms2.xmms.se/index.php/Talk:Summer_of_Code_2007/Generated_IPC]
+Properties - These are readable and/or writeable properties of objects that can be requested from a client. See [http://xmms2.org/wiki/Talk:Summer_of_Code_2007/Generated_IPC]
 
 ----
 [[User:Tcoppi|tcoppi]] 19:03, 29 June 2007 (CEST)
