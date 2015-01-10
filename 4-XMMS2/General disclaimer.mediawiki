@@ -2,7 +2,7 @@
 ''This is not a legal document, and has not been approved by any legal counsel. However, we believe it outlines good-faith measures to inform users of web sites and services associated with the XMMS2 Project.''
 
 == Online services ==
-* While the XMMS2 Project endeavours to provide correct and accurate information via its various web services (this wiki, the [http://bugs.xmms2.xmms.se bug tracker], the [http://git.xmms.se gitweb repository viewer]) in good faith, it cannot be held responsible for erroneous or malicious information set up by third parties vandalising or otherwise attacking these services.
+* While the XMMS2 Project endeavours to provide correct and accurate information via its various web services (this wiki, the [http://bugs.xmms2.org bug tracker], the [http://git.xmms2.org gitweb repository viewer]) in good faith, it cannot be held responsible for erroneous or malicious information set up by third parties vandalising or otherwise attacking these services.
 * The use of information posted on these services, such as (but not limited to) software configuration information, changes to your operating system and system tools and utilities - is ENTIRELY AT YOUR OWN RISK. You are solely responsible for ensuring the validity and safety of any actions you carry out based on information posted here.
 * Your submission of information to XMMS2 Project web sites and services is AT YOUR OWN RISK. There is no warranty on the safety or security of submitted information. (''See also: [[XMMS2:Privacy policy|Privacy policy]]'')
 
