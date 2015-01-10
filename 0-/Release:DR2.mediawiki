@@ -9,8 +9,8 @@
 Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Release:DR2 | Developer Release 2]]. Delayed for a couple of weeks due to summer, beer, (plastic) women and other real life nonsense, we release a feature-packed second version of XMMS2. This release is the direct result of feedback from DR1 on both APIs, functionality and behaviour. We would like to thank everyone who provided us with feedback, patches and encouragement.
 
 We've come quite a long way since DR1 and DR1.1, and not just code-wise.. Our ''#xmms2'' channel on Freenode has grown considerably, with users and client developers frequently coming and going, or simply lurking around. Project-wise, there have been a number of small improvements here and there:
-* A new mini-homepage at http://xmms2.xmms.org/ (featuring a cool map, of all things!)
-* A new 'contribs' page at http://xmms2.xmms.org/contrib/
+* A new mini-homepage at xmms2.xmms.org (featuring a cool map, of all things!)
+* A new 'contribs' page at xmms2.xmms.org/contrib/
 * The [http://bugs.xmms2.org Bug tracker] becoming more and more integral to the process of working on XMMS2 code, especially with:
 * The use of specific [[ChangeLog Format | commit tags]] to categorise changes to the code tree.
 * Not related specifically to the XMMS2 team, but new [[ XMMS2 Clients]] have been popping up like mushrooms, as developers have dared to install XMMS2 and been inspired to create some funky clients.
