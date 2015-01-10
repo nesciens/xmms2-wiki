@@ -1,4 +1,4 @@
-This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.xmms.se bug tracker] is the to-do list for XMMS2 - see [[Reporting bugs]] for details. If you're new to this wiki, see the [[XMMS2:Wikiguidelines | wiki guidelines]].
+This is a to-do list for the wiki, not XMMS2 itself. The [http://bugs.xmms2.org bug tracker] is the to-do list for XMMS2 - see [[Reporting bugs]] for details. If you're new to this wiki, see the [[XMMS2:Wikiguidelines | wiki guidelines]].
 
 * (continuously) improve navigation around the wiki.
 * [[Project Status]] is very poorly maintained. It probably needs to be replaced with something that is semi-automatically updated - possibly with integration with mantis.
@@ -32,7 +32,7 @@ These are a few more specific things relating to certain pages.
 ** Init Scripts
 *** the bug has since been rejected, remove this, too?
 ** BSD init scripts
-*** the contrib folder on xmms2.xmms.se 404s.
+*** the contrib folder on xmms2.xmms2.org 404s.
 ** Play-Pause toggle client (python, C)
 *** nycli does this perfectly, does it not? why have it?
 ** XChat2 info script
