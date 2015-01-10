@@ -8,9 +8,9 @@ purpose projects.
 
 == Services ==
 XMMS2Forge will offer the following services:
-* A git repository, viewable and accessible via git.xmms.se
-* Limited user accounts and groups on xmms2.xmms.se (restricted to git-shell)
-* Project access on the XMMS2 bug tracker: bugs.xmms2.xmms.se
+* A git repository, viewable and accessible via git.xmms2.org
+* Limited user accounts and groups on xmms2.xmms2.org (restricted to git-shell)
+* Project access on the XMMS2 bug tracker: bugs.xmms2.org
 * [Optional?] mailing list
 * [Optional?] Hosting of small web site about project
 
