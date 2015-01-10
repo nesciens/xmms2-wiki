@@ -6,7 +6,7 @@ Java bindings for the client library.
 == Big Mark ==
 The javabindings were temporary removed from xmms2 due to problems with waf. They will come back as soon as we get up with waf/swig, get genIPC working with java or the buildsystem changes again ;). For now the javabindings are in [http://x4x.sourceforge.net x4x] in a cvs module.
 
-See [http://bugs.xmms2.xmms.se/view.php?id=1436]
+See [http://bugs.xmms2.org/view.php?id=1436]
 
 ==Prerequisites==
 
@@ -28,7 +28,7 @@ Build the doxygen docs by simply running
 
  doxygen
 
-in the main directory (or simply look at [http://xmms2.xmms.se/doxygen/current/]) and build javadoc by running
+in the main directory (or simply look at [http://doxygen.xmms2.org/clientlib/stable/xmmsclient/]) and build javadoc by running
 
  javadoc -d doc/html/javadoc src/clients/lib/java/src/org/xmms2/*java src/clients/lib/java/src/org/xmms2/xmms2bindings/*java
 
@@ -72,7 +72,7 @@ Since I think that there are still some needs of calling things sync but with bl
 But be careful when doing such things with mlibSelectSync() e.g. which could probably return a huge list and therefor take some time.
 
 
-For some more examples have a look at the [http://git.xmms.se/?p=xmms2-tutorial.git;a=tree xmms2-tutorial] project which explains step by step almost all possible api uses.
+For some more examples have a look at the [http://git.xmms2.org/xmms2/xmms2-tutorial/ xmms2-tutorial] project which explains step by step almost all possible api uses.
 
 
 ===Latest news/changes===
