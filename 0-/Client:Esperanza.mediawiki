@@ -1,66 +1,66 @@
 __NOTOC__
-{{Client | name=Esperanza| author=Tobias RundstrÃ¶m| website=(this page)| version=0.4.0| devlanguage=C++| ui=Qt4| screenshots=See [[#Features|below]]| description=
+{{Client | name=Esperanza| author=Tobias Rundström| website=(this page)| version=0.4.0| devlanguage=C++| ui=Qt4| screenshots=See [[#Features|below]]| description=
 == Intro ==
-Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundstrÃ¶m|Tobias RundstrÃ¶m]].
+Esperanza is a client written with C++ / Qt4 and aims to be cross-platform goodness for everyone. The client is written by [[User:TobiasRundström|Tobias Rundström]].
 
 Please see the [[Client:Esperanza/Roadmap|Roadmap]] for new and upcoming features.
 
 == Features ==
 
-* Sleek, uncomplicated UI ([http://xmms2.org/~tru/screens/esperanza/0.2/ui.png screen])
-* Albumart in the playlist ([http://xmms2.org/~tru/screens/esperanza/0.2/ui.png screen])
-* Medialib search window ([http://xmms2.org/~tru/screens/esperanza/0.2/mlib.png screen])
+* Sleek, uncomplicated UI ([http://people.xmms2.org/~tru/screens/esperanza/0.2/ui.png screen])
+* Albumart in the playlist ([http://people.xmms2.org/~tru/screens/esperanza/0.2/ui.png screen])
+* Medialib search window ([http://people.xmms2.org/~tru/screens/esperanza/0.2/mlib.png screen])
 * Medialib browse window
 * Strong focus on keyboard handling
-* [http://www.growl.info Growl] support on MacOSX ([http://xmms2.org/~tru/screens/esperanza/0.1/growl.png screen])
-* Server browser (with mDNS support) ([http://xmms2.org/~tru/screens/esperanza/0.2/server.png screen])
-* Customization support ([http://xmms2.org/~tru/screens/esperanza/0.2/pref.png screen])
-* Windows support ([http://xmms2.org/~tru/screens/esperanza/0.2/win32.png screen])
-* Mini-mode ([http://xmms2.org/~tru/screens/esperanza/0.2/mini.png screen])
+* [http://www.growl.info Growl] support on MacOSX ([http://people.xmms2.org/~tru/screens/esperanza/0.1/growl.png screen])
+* Server browser (with mDNS support) ([http://people.xmms2.org/~tru/screens/esperanza/0.2/server.png screen])
+* Customization support ([http://people.xmms2.org/~tru/screens/esperanza/0.2/pref.png screen])
+* Windows support ([http://people.xmms2.org/~tru/screens/esperanza/0.2/win32.png screen])
+* Mini-mode ([http://people.xmms2.org/~tru/screens/esperanza/0.2/mini.png screen])
 * Last.fm browser
 
 == News ==
-[http://git.xmms2.org/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog] (will be updated with any version)
+[http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog ChangeLog] (will be updated with any version)
 
 === Esperanza 0.4.0 (2007-08-13) ===
 Finally 0.4.0 is released. Thanks for all help finding bugs and testing.
 
-[http://xmms2.org/~tru/esperanza/0.4/ Download.]
+[http://people.xmms2.org/~tru/esperanza/0.4/ Download.]
 
 === Esperanza 0.4.0rc1 (2007-08-01) ===
 A new Release Candidate is up. Please test and report bugs.
 
-[http://xmms2.org/~tru/esperanza/0.4/ Download.]
+[http://people.xmms2.org/~tru/esperanza/0.4/ Download.]
 
 === Esperanza 0.3.0 (2007-04-20) ===
 Release is up.
 
-[http://git.xmms2.org/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.]
+[http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog ChangeLog.]
 
-[http://xmms2.org/~tru/esperanza/0.3/ Download.]
+[http://people.xmms2.org/~tru/esperanza/0.3/ Download.]
 
 === Esperanza 0.3.0rc1 (2007-04-10) ===
 This is the first release candidate for the 0.3.0 that probably will happen together with DrJekyll. Please test this. But be aware that it only works with DrI+WIP+TEST4.
 
-[http://git.xmms2.org/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.]
+[http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog ChangeLog.]
 
-[http://xmms2.org/~tru/esperanza/0.3/ Download.]
+[http://people.xmms2.org/~tru/esperanza/0.3/ Download.]
 
 === Esperanza 0.2.2 (2006-12-01) ===
 
 Early Christmas present, Esperanza 0.2.2 is released. It's just a accumulated features / bugfixes release. This release required a new XMMS2D (DrHouse).
 
-[http://git.xmms.se/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.]
+[http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog ChangeLog.]
 
-[http://xmms2.org/~tru/esperanza/0.2/ Download.]
+[http://people.xmms2.org/~tru/esperanza/0.2/ Download.]
 
 === Esperanza 0.2.1 (2006-11-10) ===
 
-Esperanza 0.2.1 is released. Just bugfixes and small additions. See the [http://git.xmms2.org/?p=esperanza.git;a=blob;f=ChangeLog ChangeLog.] And download: [http://exodus.xmms.se/~tru/esperanza/0.2/ here]
+Esperanza 0.2.1 is released. Just bugfixes and small additions. See the [http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog ChangeLog.] And download: [http://people.xmms2.org/~tru/esperanza/0.2/ here]
 
 === Esperanza 0.2.0 (2006-11-07) ===
 
-New version with a lot of [http://git.xmms2.org/?p=esperanza.git;a=blob;f=ChangeLog news]. Download [http://xmms2.org/~tru/esperanza/0.2/ here]. Observe that it now requires Qt4.2.x
+New version with a lot of [http://git.xmms2.org/xmms2/esperanza/tree/ChangeLog news]. Download [http://people.xmms2.org/~tru/esperanza/0.2/ here]. Observe that it now requires Qt4.2.x
 
 === Esperanza 0.1.1 (2006-11-01) ===
 
@@ -68,13 +68,13 @@ Missing files in 0.1 makes me release 0.1.1, same place as before.
 
 === Esperanza 0.1 (2006-11-01) ===
 
-0.1 is released today. You can download the release (source) here: http://xmms2.org/~tru/esperanza/ and MacOSX binaries from the same URL. OBSERVE that this is not XMMS2, just the Esperanza client!
+0.1 is released today. You can download the release (source) here: http://people.xmms2.org/~tru/esperanza/ and MacOSX binaries from the same URL. OBSERVE that this is not XMMS2, just the Esperanza client!
 
 == Install and build ==
 
 === Source ===
 
-Releases can be found at http://xmms2.org/~tru/esperanza/ and the latest devel can be found in [http://git.xmms2.org XMMS2 git tree]. Take a look at the info about [[Client:Esperanza/Git_Usage|git usage]] if you're new to git.
+Releases can be found at http://people.xmms2.org/~tru/esperanza/ and the latest devel can be found in [http://git.xmms2.org/xmms2/esperanza/ XMMS2 git tree]. Take a look at the info about [[Client:Esperanza/Git_Usage|git usage]] if you're new to git.
 
 === Dependencies ===
 
