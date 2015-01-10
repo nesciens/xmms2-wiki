@@ -318,7 +318,7 @@ Because playlists are collections (or, to be accurate, <code>idlists</code>), th
 
 However, this is often suboptimal as most operations are performed on a limited number of entries, and retrieving the collection structure containing the whole list of ids is costly.  It also makes it harder to track atomic changes to the playlist.
 
-The alternative is to keep a '''dedicated API to modify playlists''', similar to the [http://xmms2.xmms.se/doxygen/DrDolittle/group__PlaylistControl.html current one].  The functions available can basically remain unchanged, though with the difference that the actions can be performed on ''any'' of the saved playlist, not just the active playlist.
+The alternative is to keep a '''dedicated API to modify playlists''', similar to the current one.  The functions available can basically remain unchanged, though with the difference that the actions can be performed on ''any'' of the saved playlist, not just the active playlist.
 
 
 = Sample Use Cases =
