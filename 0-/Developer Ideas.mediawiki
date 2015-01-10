@@ -1,7 +1,7 @@
 Here are some ideas about XMMS2 (or XEPs - ''XMMS2 Enhancement Proposals''), if you want to hack on them or comment them please follow the links.
 
 ;Notes:
-* Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [http://lists.xmms.se/cgi-bin/mailman/listinfo/xmms2-devel mailing list] or on [[About#Contact_info|irc]] first.
+* Don't just add something new here, make sure it doesn't exist (don't forget to look at the [[Contribs]] page) and preferrably discuss the matter on the [http://lists.xmms2.org/cgi-bin/mailman/listinfo/xmms2-devel mailing list] or on [[About#Contact_info|irc]] first.
 * Ideas that have already been implemented (or are well on their way to being implemented) are in '''bold'''.
 
 == Architecture ==
