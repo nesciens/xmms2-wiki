@@ -111,7 +111,7 @@ XMMS2 [[Release:DR1.1 | Developer Release 1.1]] is done - mostly a bugfix releas
 [[Release:DrAlban | DrAlban]] is done, adding a number of features, bug fixes and some client API changes.
 
 ;21st:
-[http://planet.xmms.se Planet XMMS2] goes live.
+[http://planet.xmms2.org Planet XMMS2] goes live.
 
 = 2006 =
 == January ==
