@@ -1,4 +1,4 @@
-{{Client| name=XMMS2Musica| author=[[Alexander Botero-Lowry]] | website=[http://exodus.xmms.se/~alex/XMMS2Musica-1.0.tar.gz XMMS2Musica-1.0.tar.gz]| version=''1.0''| devlanguage=Python| ui=GTK2/Cairo| screenshots=[http://alex.foxybanana.com/cairo_craze.png cairo_craze.png]| description=XMMS2Musica is a skinned client using Cairo as a backend for skinning. This could serve as the foundation for a more complete skinning client if someone wanted to go that route. 
+{{Client| name=XMMS2Musica| author=[[Alexander Botero-Lowry]] | website=[http://people.xmms2.org/~alex/XMMS2Musica-1.0.tar.gz XMMS2Musica-1.0.tar.gz]| version=''1.0''| devlanguage=Python| ui=GTK2/Cairo| screenshots=[http://alex.foxybanana.com/cairo_craze.png cairo_craze.png]| description=XMMS2Musica is a skinned client using Cairo as a backend for skinning. This could serve as the foundation for a more complete skinning client if someone wanted to go that route. 
 
 The skin used is the Winamp Modern skin Musica by Stephen Boothe, to whom much thanks are given. 
 }}
