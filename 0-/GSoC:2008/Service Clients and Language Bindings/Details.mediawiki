@@ -1,4 +1,4 @@
-This is a slightly abridged overview and abstract from my original proposal [http://numbers.xmms.se/~puzzles/sc/SoC XMMS2 Service Clients Proposal.pdf]:
+This is a slightly abridged overview and abstract from my original proposal [http://people.xmms2.org/~puzzles/sc/SoC XMMS2 Service Clients Proposal.pdf]:
 
 == Overview ==
 Service clients are very simple, but very powerful clients which provide
