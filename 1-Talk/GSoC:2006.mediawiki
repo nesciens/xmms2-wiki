@@ -19,7 +19,7 @@ skin and may include a new colour scheme, graphical elements, new layout for var
 open source projects that have done so with Mediawiki, for example,
 http://www.hula-project.org/Hula_Project and http://www.mono-project.com/Main_Page
 - Choose a logo for the XMMS2 project. As you can see on
-http://wiki.xmms2.xmms.se/index.php/Logo we've had a number of logo ideas submitted, but
+http://xmms2.org/wiki/Logo we've had a number of logo ideas submitted, but
 1) quite a few of them are fairly low quality, 2) of the decent quality ones, we can't figure 
 out which one to pick, 3) we haven't yet established a process for the community to pick a logo 
 from the submitted ones. So, your mission, should you choose to apply for it, would be to either 
@@ -33,19 +33,19 @@ complex as we add more extensions, such as the poll extension mentioned above, a
 http://www.wickle.com/wiki/index.php/Graphviz_extension (We also have a custom CAPTCHA hack on 
 the account registration page, to help keep automated spammers at bay) I've been thinking about 
 creating a new Git repository for managing this task, much like we've done fairly successfully 
-with gitweb (http://git.xmms.se/?p=gitweb-xmms2.git;a=summary) I haven't started on this task 
+with gitweb (http://git.xmms2.org/xmms2/gitweb-xmms2/) I haven't started on this task 
 yet, so I'm imagining it will take a bit of work.. *However* I don't know whether this can be 
 worked into a SoC project - remember, you have to have enough to do for 3 months. ;)
 - Improve the organisation of XMMS2 project-related resources. This is pretty much a continuous 
 process, but it might be possible that a significant reorganisation of current resources will 
 make it easier to add new resources later, as well as improve navigability for users. For 
 example, we currently have:
-  - the wiki (wiki.xmms2.xmms.se)
-  - planet.xmms.se - aggregates blog feeds from multiple developers and related people
-  - test.xmms.se - displays results of current testing cycle, prior to release - may be replaced 
+  - the wiki (xmms2.org)
+  - planet.xmms2.org - aggregates blog feeds from multiple developers and related people
+  - test.xmms2.org - displays results of current testing cycle, prior to release - may be replaced 
 by a wiki bot at some stage
-  - bugs.xmms2.xmms.se - the bug tracker
-  - git.xmms.se - the repository web interface
+  - bugs.xmms2.org - the bug tracker
+  - git.xmms2.org - the repository web interface
 As part of this, the main page could also benefit from a facelift, not just style-wise (as 
 described above), but in terms of content and links provided.
 
@@ -55,6 +55,6 @@ for the SoC, I suggest you be creative with your proposal. You need to be able t
 project that 1) is going to provide enough work to be done for about 3 months (try not to fall 
 short of this target, or overshoot it) and 2) involves a fair amount of coding, I imagine (for 
 example, the guidelines forbid documentation projects).
-See also: http://wiki.xmms2.xmms.se/index.php/Summer_of_Code_2006#Student_Requirements 
+See also: http://xmms2.org/wiki/Summer_of_Code_2006#Student_Requirements 
 </pre>
 [[User:Eleusis|Eleusis]] 20:36, 1 May 2006 (CEST)
