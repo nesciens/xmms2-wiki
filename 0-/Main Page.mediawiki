@@ -26,9 +26,9 @@ __NOEDITSECTION__
 <!-- placeholder for important announcements -->
 {{ShortNews}}
 
-=== [http://planet.xmms.se Planet XMMS2] ===
+=== [http://planet.xmms2.org Planet XMMS2] ===
 <rss number=5 desc="off" title="off">http://planet.xmms2.org/rss20.xml</rss>
-[http://planet.xmms.se/rss20.xml RSS Feed]
+[http://planet.xmms2.org/rss20.xml RSS Feed]
 </div>
 
 <div class="visualClear"></div>
