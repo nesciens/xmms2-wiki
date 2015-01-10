@@ -1,5 +1,3 @@
-Email at tru at xmms dot org
-
 Does most of the hacking on XMMS2 and tries to organize the ones that want to help out. Is together with [[User:Anders Gustafsson|Anders Gustafsson]] dictator of all code that should be commited to the main tree. A mac-only users these days.
 
 Listen to wierd EBM, Synth and Metal music. Look at my [http://www.last.fm/user/tru/ last.fm profile] for more tips.
