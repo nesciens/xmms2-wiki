@@ -19,7 +19,7 @@ XMMS2 is, quite simply, [[About|a music player]]. It does have a number of [[fea
 * [[Wikipedia:Steve Irwin|wrestle crocodiles]]
 ** ... crocodile wrestling is xmms1 only.
 * make you [[Wikipedia:Immortality|live forever]].
-** ... unless you're mentioned in [http://git.xmms.se/?p=xmms2-devel.git;a=blob;f=AUTHORS AUTHORS].
+** ... unless you're mentioned in [http://git.xmms2.org/xmms2/xmms2-devel/plain/AUTHORS AUTHORS].
 * come out of a shiny box and install itself in your heart forever.
 * make you rich.
 ** ... unless you're a [[Summer of Code 2007|SoC student]]. :)
