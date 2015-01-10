@@ -11,7 +11,7 @@ Windows users will curse in frustration about the unwanted bloat of [http://www.
 
 Maybe your 12-year-old sister does not languish for a better, more powerful music player.  Maybe ''you'' don't care about it either (in which case, it is time to close this tab and go back reading [http://www.thebestpageintheuniverse.net/ the best page in the universe]).  But if you think music players could use some improvement, read on.
 
-In this article, we will go through the history of music players, which will be split in three categories: the old playlist-based players (e.g. [http://legacy.xmms2.org/ XMMS], early [http://www.winamp.com/ Winamp] versions), the present media-library-based players (e.g. [http://www.apple.com/itunes/ iTunes], [http://www.gnome.org/projects/rhythmbox/ Rhythmbox], [http://www.winamp.com/ Winamp 5]) and the alternative client/server-based players (e.g. [http://www.musicpd.org/ Music Player Daemon], [http://wiki.xmms2.xmms.se/ XMMS2]).  Studying this evolution and analysing the features of each generation should help us identify the flaws of current music players and design concepts that will bring music playing to a new level.
+In this article, we will go through the history of music players, which will be split in three categories: the old playlist-based players (e.g. [http://legacy.xmms2.org/ XMMS], early [http://www.winamp.com/ Winamp] versions), the present media-library-based players (e.g. [http://www.apple.com/itunes/ iTunes], [http://www.gnome.org/projects/rhythmbox/ Rhythmbox], [http://www.winamp.com/ Winamp 5]) and the alternative client/server-based players (e.g. [http://www.musicpd.org/ Music Player Daemon], [http://xmms2.org/ XMMS2]).  Studying this evolution and analysing the features of each generation should help us identify the flaws of current music players and design concepts that will bring music playing to a new level.
 
 ==Vocabulary==
 
@@ -131,7 +131,7 @@ There are few working client/server player projects and all are primarily develo
 
 [http://www.musicpd.org/ Music Player Daemon (mpd)] is a popular alternative, with already plenty of clients, command-line or graphical interface.  It is quite stable, but lacks a real media-library database and advanced song properties.  It is therefore functional but too simple and not very extensible. [http://mpd.wikicities.com/wiki/MusicPlayerDaemonVersion2Plans MPD2] will probably be better in every way, but its development doesn't even seem to have started yet.
 
-[http://wiki.xmms2.xmms.se/ XMMS2] is a convenient alternative, implementing many of MPD2's goals. It is still under heavy development but can already be used, although it doesn't really have a good client yet.  But as it looks like the most appropriate server to develop for, this might soon change!
+[http://xmms2.org/ XMMS2] is a convenient alternative, implementing many of MPD2's goals. It is still under heavy development but can already be used, although it doesn't really have a good client yet.  But as it looks like the most appropriate server to develop for, this might soon change!
 
 ==A Better Player==
 
@@ -141,7 +141,7 @@ We can now describe what a "better player" would need. However, the goal here is
 
 As the basis for our player, we need a powerful media-library. It must indeed be fast and support powerful queries (DB back-end) so as to allow advanced and responsive browsing in the player.  It should also handle many song properties, such as the number of times the song has been played, when it was added to the library, etc.
 
-In a client/server architecture, the media-library is handled by the server, and the [http://wiki.xmms2.xmms.se/ XMMS2] server has all the features requested above.
+In a client/server architecture, the media-library is handled by the server, and the [http://xmms2.org/ XMMS2] server has all the features requested above.
 
 ===Clever browsing===
 
@@ -169,6 +169,6 @@ On the other hand, there are several types of playlists, and more could be added
 
 I don't pretend that the ideas developped in this manifesto will lead to a perfect player.  However, I am convinced that they can help develop a ''better'' player based on what we can learn from the existing ones.  Proposal for more advanced or revolutionary features will be presented in a future article.
 
-Now in order to avoid sounding like one of these lazy wailers who dump ideas without ever developping them, I already started working on two music player projects which implement the ideas developped in the present article.  Both [http://wiki.xmms2.xmms.se/ XMMS2] clients, the first will be a command-line client and the second a graphical client.
+Now in order to avoid sounding like one of these lazy wailers who dump ideas without ever developping them, I already started working on two music player projects which implement the ideas developped in the present article.  Both [http://xmms2.org/ XMMS2] clients, the first will be a command-line client and the second a graphical client.
 
 Stay tuned...
