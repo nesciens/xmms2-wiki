@@ -12,7 +12,7 @@ This is useful to determine where new log output begins and old log output has e
  DEBUG: src/xmms/plugin.c:578: Scanning directory: /usr/lib/xmms2
  DEBUG: src/xmms/plugin.c:599: Trying to load file: /usr/lib/xmms2/libxmms_eq.so
  DEBUG: src/xmms/plugin.c:927: Registering plugin: Equalizer effect 0.2 DrAlban+WIP (git commit: 38db2c711ac53dcd71228191873e5d7e0b055d9f + local changes)
- DEBUG: src/xmms/plugin.c:957: INFO: URL = http://www.xmms.org/
+ DEBUG: src/xmms/plugin.c:957: INFO: URL = [http://lwn.net/Articles/388181/ an url long defunct]
  DEBUG: src/xmms/plugin.c:957: INFO: Author = XMMS Team
 
 These are the plugins that are being loaded. This can be very valuable if certain plugin features aren't working for you and you want to see if the plugin is even loading on startup. You may also notice that some plugins add debug output like the following:
