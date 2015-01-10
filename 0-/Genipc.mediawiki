@@ -14,7 +14,7 @@ Instead of generating C glue code that calls into libxmmsclient, GenIPC could al
 === Show me the code ===
 
 There's a working implementation (partially based on Thomas Coppi's SoC 2007 work) in [[Tilman Sauerbeck | Tilman]]'s git tree:
-http://git.xmms.se/?p=xmms2-tilman.git;a=shortlog;h=refs/heads/genipc
+https://github.com/XMMS2/xmms2-alumni/tree/tilman-genipc
 The IPC object/method description lives in src/ipc.xml. Then there's a Python script in src/genipc.py that will take that XML file, parse the input into an object model of that description and feed it to a code generator.
 
 At the moment, there's a code generator for libxmmsclient, native Ruby bindings (src/clients/lib/ruby2) and native Python bindings (src/clients/lib/python2). The libxmmsclient code generator tries to emit code that's API compatible to the manually-written stuff, but it's possible that the API will be different in a few (minor?) cases.
