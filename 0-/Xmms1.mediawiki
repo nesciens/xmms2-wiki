@@ -5,100 +5,100 @@
 == opengl ==
 do we _really_ want to keep this plugin around in xmms anylonger? sure, it's a simple demo plugin, but.. really.. we should nuke it :) This is one of those headaches we shouldn't bother with (nowadays)
 
-http://bugs.xmms.org/show_bug.cgi?id=2100
-http://bugs.xmms.org/show_bug.cgi?id=1855
-http://bugs.xmms.org/show_bug.cgi?id=1386
-http://bugs.xmms.org/show_bug.cgi?id=2355
+bugs.xmms.org/show_bug.cgi?id=2100
+bugs.xmms.org/show_bug.cgi?id=1855
+bugs.xmms.org/show_bug.cgi?id=1386
+bugs.xmms.org/show_bug.cgi?id=2355
 
 probably this one aswell
 
-http://bugs.xmms.org/show_bug.cgi?id=2179
+bugs.xmms.org/show_bug.cgi?id=2179
 
 :I think that most of the problems with the GL plugin relates to people that have shot themselves in the foot, often by using the wrong version of libGL.  On the other hand, I wouldn't be sad to see the GL plugin go.  It would be nice to pacage it separately if we do though. - havardk
 
 == time bug(s) ==
 this ought to be sorted out, which are mad plugins, which are caused by the "old" time bug that's bee around in the cvs since _after_ the release of 1.2.10 (you know the one you fixed the other day)
 
-http://bugs.xmms.org/show_bug.cgi?id=2275
-http://bugs.xmms.org/show_bug.cgi?id=2153
-http://bugs.xmms.org/show_bug.cgi?id=2075
-http://bugs.xmms.org/show_bug.cgi?id=2297
-http://bugs.xmms.org/show_bug.cgi?id=2351
+bugs.xmms.org/show_bug.cgi?id=2275
+bugs.xmms.org/show_bug.cgi?id=2153
+bugs.xmms.org/show_bug.cgi?id=2075
+bugs.xmms.org/show_bug.cgi?id=2297
+bugs.xmms.org/show_bug.cgi?id=2351
 
 :I'm quite confident that we don't have a problem with this any more -havardk
 
 == Important ==
 
-[http://bugs.xmms.org/show_bug.cgi?id=1079 1079]
+bugs.xmms.org/show_bug.cgi?id=1079
 Multiple tags in ogg files gets deleted, ie title=hello title=korv will be reduced to only title=hello if tag is saved.
 
-[http://bugs.xmms.org/show_bug.cgi?id=1874 1874] Possible callback race, verify and fix, or disprove and close
+bugs.xmms.org/show_bug.cgi?id=1874 Possible callback race, verify and fix, or disprove and close
 
-[http://bugs.xmms.org/show_bug.cgi?id=1933 1933] Fix .spec and close
+bugs.xmms.org/show_bug.cgi?id=1933 Fix .spec and close
 
-[http://bugs.xmms.org/show_bug.cgi?id=2067 2067] '''PATCH''' frame size assumption by xmms (could this be related to bug [http://bugs.xmms.org/show_bug.cgi?id=989 989]?)
+bugs.xmms.org/show_bug.cgi?id=2067 '''PATCH''' frame size assumption by xmms (could this be related to bug bugs.xmms.org/show_bug.cgi?id=989?)
 
-[http://bugs.xmms.org/show_bug.cgi?id=1541 1541] '''PATCH''' Analyzer stops working
+bugs.xmms.org/show_bug.cgi?id=1541 '''PATCH''' Analyzer stops working
 
-[http://bugs.xmms.org/show_bug.cgi?id=1776 1776] INSTALLPREFIX undeclared in config.h.in/config.h
+bugs.xmms.org/show_bug.cgi?id=1776 INSTALLPREFIX undeclared in config.h.in/config.h
 
-[http://bugs.xmms.org/show_bug.cgi?id=1874 1874] Possible double free (race) in mainwin_quit_cb().
+bugs.xmms.org/show_bug.cgi?id=1874 Possible double free (race) in mainwin_quit_cb().
 
 == Interesting ==
-[http://bugs.xmms.org/show_bug.cgi?id=305 305] '''PATCH'''
+bugs.xmms.org/show_bug.cgi?id=305 '''PATCH'''
 Reads playlist song title entries from .pls files
 
-[http://bugs.xmms.org/show_bug.cgi?id=333 333] '''PATCH'''
+bugs.xmms.org/show_bug.cgi?id=333 '''PATCH'''
 Ignore missing files when skipping backwards. Current behavior is if song a exists, b is missing and c is playing. Press back and xmms jumps to b, finds it missing and jumps forward to c again. Patch alters this to allow the user to skip from c to a by pressing back
 
 * This thing just almost works, buggy wrt to cdaudio files.  Not 1.2.11 material.
 
-[http://bugs.xmms.org/show_bug.cgi?id=909 909] '''PATCH'''
+bugs.xmms.org/show_bug.cgi?id=909 '''PATCH'''
 Uses the xfont in the minimized playlist. Not sure if we should apply this or not, as the minimized playlist has very limited space. However, this might just aswell be up to the user.
 
-[http://bugs.xmms.org/show_bug.cgi?id=1389 1389]
+bugs.xmms.org/show_bug.cgi?id=1389
 We save CDDB queries in ~/.xmms/cdinfo instead of "standard" ~/.cddb/[ID]
 
-[http://bugs.xmms.org/show_bug.cgi?id=969 969] '''PATCH'''
+bugs.xmms.org/show_bug.cgi?id=969 '''PATCH'''
 Having title data enabled while streaming through proxy removes headers and as such causes bleeps and blops
 
-[http://bugs.xmms.org/show_bug.cgi?id=893 893] '''PATCH''' Alters the way we select multiple entries in the playlist. Please test
+bugs.xmms.org/show_bug.cgi?id=893 '''PATCH''' Alters the way we select multiple entries in the playlist. Please test
 
-[http://bugs.xmms.org/show_bug.cgi?id=1972 1972] When streaming files we should honour the header for filename instead of the url? I'm torn...
+bugs.xmms.org/show_bug.cgi?id=1972 When streaming files we should honour the header for filename instead of the url? I'm torn...
 
-[http://bugs.xmms.org/show_bug.cgi?id=296 296] '''PATCH''' Seek in streams, olden golden
+bugs.xmms.org/show_bug.cgi?id=296 '''PATCH''' Seek in streams, olden golden
 
-[http://bugs.xmms.org/show_bug.cgi?id=2194 2194] Allow overriding user agent for http streaming, should be trivial enough, and we already allow something simmilar for the CDDB query
+bugs.xmms.org/show_bug.cgi?id=2194 Allow overriding user agent for http streaming, should be trivial enough, and we already allow something simmilar for the CDDB query
 
-[http://bugs.xmms.org/show_bug.cgi?id=1293 1293] GET http request doesn't follow RFC 1945
+bugs.xmms.org/show_bug.cgi?id=1293 GET http request doesn't follow RFC 1945
 
-[http://bugs.xmms.org/show_bug.cgi?id=1538 1538] xmms /dev/ hangs :) and play location aswell
-[http://bugs.xmms.org/show_bug.cgi?id=1720 1720] xmms hangs when adding a fifo (or dir with fifo)
+bugs.xmms.org/show_bug.cgi?id=1538 xmms /dev/ hangs :) and play location aswell
+bugs.xmms.org/show_bug.cgi?id=1720 xmms hangs when adding a fifo (or dir with fifo)
 
-[http://bugs.xmms.org/show_bug.cgi?id=1600 1600] Equalizer jumps after pressing apply or ok in preferences under, ... *artistic pause*  vtwm :)
+bugs.xmms.org/show_bug.cgi?id=1600 Equalizer jumps after pressing apply or ok in preferences under, ... *artistic pause*  vtwm :)
 
-[http://bugs.xmms.org/show_bug.cgi?id=1641 1641] Rewinding freeze the visualizations (both alsa and oss on knirchs system) http://bugs.xmms.org/show_bug.cgi?id=1541 related?
+bugs.xmms.org/show_bug.cgi?id=1641 Rewinding freeze the visualizations (both alsa and oss on knirchs system) http://bugs.xmms.org/show_bug.cgi?id=1541 related?
 
-[http://bugs.xmms.org/show_bug.cgi?id=1937 1937] '''PATCH''' Handle SIGINT, SIGTERM
+bugs.xmms.org/show_bug.cgi?id=1937 '''PATCH''' Handle SIGINT, SIGTERM
 
-[http://bugs.xmms.org/show_bug.cgi?id=1956 1956] '''PATCH''' song_change plugin doesn't update when a stream title changes
+bugs.xmms.org/show_bug.cgi?id=1956 '''PATCH''' song_change plugin doesn't update when a stream title changes
 
 
 
 === Possible dupes ===
 
 Equalizer, not applied at start type of bugs:
-http://bugs.xmms.org/show_bug.cgi?id=965, http://bugs.xmms.org/show_bug.cgi?id=788, http://bugs.xmms.org/show_bug.cgi?id=1896
+bugs.xmms.org/show_bug.cgi?id=965, bugs.xmms.org/show_bug.cgi?id=788, bugs.xmms.org/show_bug.cgi?id=1896
 
 = Mails =
 
-http://lists.xmms.org/pipermail/xmms-devel/2005-August/003135.html (whole thread) about ipv6 crud
+lists.xmms.org/pipermail/xmms-devel/2005-August/003135.html (whole thread) about ipv6 crud
 
-http://lists.xmms.org/pipermail/xmms-devel/2005-July/003115.html alter -Q behaviour, looks sane enough
+lists.xmms.org/pipermail/xmms-devel/2005-July/003115.html alter -Q behaviour, looks sane enough
 
-http://lists.xmms.org/pipermail/xmms-devel/2005-October/003185.html (whole thread)
-http://lists.xmms.org/pipermail/xmms-devel/2005-November/003195.html (continued) improved decoding of URL special characters, relates to [http://bugs.xmms.org/show_bug.cgi?id=366 366]
+lists.xmms.org/pipermail/xmms-devel/2005-October/003185.html (whole thread)
+lists.xmms.org/pipermail/xmms-devel/2005-November/003195.html (continued) improved decoding of URL special characters, relates to [http://bugs.xmms.org/show_bug.cgi?id=366 366]
 
-http://lists.xmms.org/pipermail/xmms-devel/2006-February/003228.html dueling playlists.. looks interesting, should read this patch
+lists.xmms.org/pipermail/xmms-devel/2006-February/003228.html dueling playlists.. looks interesting, should read this patch
 
-http://lists.xmms.org/pipermail/xmms-devel/2006-March/003247.html interesting patch about getting status about a bunch of things from the commandline.. look at
+lists.xmms.org/pipermail/xmms-devel/2006-March/003247.html interesting patch about getting status about a bunch of things from the commandline.. look at
