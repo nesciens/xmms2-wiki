@@ -75,8 +75,8 @@ Opera 9 support is in tree. It's not 100%, and probably won't ever be. Opera is 
 ::&#10063; FreeBSD port!
 
 ==Resources==
-* [http://exodus.xmms.se/~alex/benchmark/test.html Benchmark of PropDict implementations] - The first five are PropDict using MochiKit's findValue() to find indicies of values in an array, the second is using my own method.
-* [http://bugs.xmms2.xmms.se/ TurboX2's Mantis page] TurboX2's Mantis page to be used during the testing phase of the Summer of Code.
-* [http://exodus.xmms.se/~alex/lazy/test.html Lazy Loading widget example] - This is an example of my lazy loading widget in action.
+* [http://people.xmms2.org/~alex/benchmark/test.html Benchmark of PropDict implementations] - The first five are PropDict using MochiKit's findValue() to find indicies of values in an array, the second is using my own method.
+* [http://bugs.xmms2.org/ TurboX2's Mantis page] TurboX2's Mantis page to be used during the testing phase of the Summer of Code.
+* [http://people.xmms2.org/~alex/lazy/test.html Lazy Loading widget example] - This is an example of my lazy loading widget in action.
 
 [[Category:Summer of Code 2006]]
