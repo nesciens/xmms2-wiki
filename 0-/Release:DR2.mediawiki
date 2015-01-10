@@ -11,7 +11,7 @@ Hello intrawebb. The XMMS2 Team is happy to announce the release of XMMS2 [[Rele
 We've come quite a long way since DR1 and DR1.1, and not just code-wise.. Our ''#xmms2'' channel on Freenode has grown considerably, with users and client developers frequently coming and going, or simply lurking around. Project-wise, there have been a number of small improvements here and there:
 * A new mini-homepage at http://xmms2.xmms.org/ (featuring a cool map, of all things!)
 * A new 'contribs' page at http://xmms2.xmms.org/contrib/
-* The [http://bugs.xmms2.xmms.se Bug tracker] becoming more and more integral to the process of working on XMMS2 code, especially with:
+* The [http://bugs.xmms2.org Bug tracker] becoming more and more integral to the process of working on XMMS2 code, especially with:
 * The use of specific [[ChangeLog Format | commit tags]] to categorise changes to the code tree.
 * Not related specifically to the XMMS2 team, but new [[ XMMS2 Clients]] have been popping up like mushrooms, as developers have dared to install XMMS2 and been inspired to create some funky clients.
 * An increased rate of contributions and bug fixes from other users and developers than just the XMMS2 team. (keep them coming!)
@@ -19,7 +19,7 @@ We've come quite a long way since DR1 and DR1.1, and not just code-wise.. Our ''
 
 This release breaks the client API, the plugin API, as well as your current medialib. Please understand that this is pre-release software and should only be downloaded and used by developers not end-users.
 
-To review the ChangeLog please check the wiki http://wiki.xmms2.xmms.se/
+To review the ChangeLog please check the wiki http://xmms2.org/
 To download source code please surf to the [[Download XMMS2 | Download]] page.
 
 Oh, and happy birthday to Sham!
