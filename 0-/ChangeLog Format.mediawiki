@@ -70,7 +70,7 @@ Perhaps not so useful, but I'll list them anyway...
 * HEADER: changes to include files?
 
 == See Also ==
-* http://exodus.xmms.se/~andersg/changelog-propolas.txt
+* http://people.xmms2.org/~andersg/changelog-propolas.txt
 * [[XMMS2 Development Process]]
 
 [[Category:Developer info]]
