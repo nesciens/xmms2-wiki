@@ -429,7 +429,7 @@ it to support additional features, like orderby fields, playlist
 sequences, pattern references or current position sequences.  Many of
 these could be inspired from the syntax used in nyello, which is
 described
-[http://git.xmms.se/?p=nyello.git;a=blob;hb=HEAD;f=src/command.cc#l_113 in the code].
+[http://git.xmms2.org/xmms2/nyello/plain/src/command.cc in the code].
 
 '''Much more extensive description to come here.'''
 
