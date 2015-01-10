@@ -166,7 +166,7 @@ The seperator between different sockets here is ';'.
 === When I add my media collection to the playlist, x files don't show up. ===
 * A: One cause is that you're missing a plugin required to decode the file. If you notice a certain type of file is missing, such as all your MP3s or Oggs, you should read the [[Install instructions]] or read above for help. This is where your log can come in handy.
 
-* A2: Another possible cause is that your file has an uncommon mix of formats. If you notice that only certain files are missing, such as certain MP3s, this is likely the case. As of this writing, certain MP3s have a [http://bugs.xmms2.xmms.se/view.php?id=495 known bug] which causes them to fail detection. This type of file is pretty rare, however, so you can probably just hang tight and you won't miss these MP3s too much.
+* A2: Another possible cause is that your file has an uncommon mix of formats. If you notice that only certain files are missing, such as certain MP3s, this is likely the case. As of this writing, certain MP3s have a [http://bugs.xmms2.org/view.php?id=495 known bug] which causes them to fail detection. This type of file is pretty rare, however, so you can probably just hang tight and you won't miss these MP3s too much.
 
 === When I start xmms2d or xmms2-launcher I get ''ERROR: Couldn't initialize IPC socket'' or ''startup failed!'' ===
 : There are a few possible causes for this. Check that the user running xmms2d has read/write permission on /tmp. Check that there is no currently-running xmms2d process (''ps ax | grep xmms2d'' should do it). Finally, make sure the ipcsocket in your ~/.xmms2/xmms2.conf is read/writable if you've changed the default IPC socket (unix:///tmp/xmms-ipc-<user>).
