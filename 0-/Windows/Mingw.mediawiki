@@ -15,7 +15,7 @@ Windows versions earlier than 2000 are known to have some trivial, but fatal, is
 
 ==Prepare the Environment==
 ===Easy Route===
-Grab zipped-up MinGW and MSys from [http://exodus.xmms.se/~puzzles/win32/ http://exodus.xmms.se/~puzzles/win32/] and skip to [[#Pre-XP Support|Pre-XP Support]]. These packages contain almost everything you need to hop right into building, including an XMMS2 snapshot.
+Grab zipped-up MinGW and MSys from [http://people.xmms2.org/~puzzles/win32/ http://people.xmms2.org/~puzzles/win32/] and skip to [[#Pre-XP Support|Pre-XP Support]]. These packages contain almost everything you need to hop right into building, including an XMMS2 snapshot.
 It's suggested you unzip both of these to X:\MinGW and X:\MSys, where X is your drive letter. If you choose some other paths, update /etc/fstab in MSys to reflect the location of MinGW.
 
 TODO: List cool things included in these zips.
@@ -32,7 +32,7 @@ Install these in order! Program versions used in this howto are in parentheses.
 ====Set up Source and Dependencies====
 The order here is not so important. :)
 
-*Download the XMMS2 source from one of the git trees [http://git.xmms.se/ here] and unpack it in your user directory. Note that xmms2-puzzles git commit 8b7ca4b48df23d463f88473f03439dbca827dbb8 (Playground branch) is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSys to extract this properly.
+*Download the XMMS2 source from one of the git trees [http://git.xmms2.org/ here] and unpack it in your user directory. Note that xmms2-puzzles git commit 8b7ca4b48df23d463f88473f03439dbca827dbb8 (Playground branch) is being used for this howto and (as of this writing) it is the only one that contains certain patches that will ease the build process. Also note that you will probably need to use the tar or bzip tool from MSys to extract this properly.
 
 *Download and unpack the required libraries. It's a good idea to unpack them first into an empty temporary directory as a sandbox since some of the files have READMEs and some unzip into unexpected directories.
 **[http://www.gimp.org/~tml/gimp/win32/downloads.html GLib and GLib-dev] (2.12.11)
@@ -98,7 +98,7 @@ Edit the main wscript (the one in the root of your xmms2 directory):
  waf
 *Install
  waf install
-*Copy [http://exodus.xmms.se/~juhovh/win32/libglib-2.0-0.dll patched GLib] to \temp\bin\
+*Copy [http://people.xmms2.org/~juhovh/win32/libglib-2.0-0.dll patched GLib] to \temp\bin\
 **GLib contains a [http://bugzilla.gnome.org/show_bug.cgi?id=425156 known bug] in its GIOChannel code, which XMMS2 uses for inter-process communication (IPC). XMMS2 will build fine and even run with another GLib, but this binary fixes some critical bugs and should be used instead of another GLib version.
 **Please visit the [http://bugzilla.gnome.org/show_bug.cgi?id=425156 bug report] and tell Tor Lillqvist how much you love XMMS2 and would like him to merge the patches with GLib. :)
 *Enjoy
