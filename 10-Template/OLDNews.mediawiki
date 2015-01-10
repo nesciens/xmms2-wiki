@@ -2,7 +2,7 @@
 # We make it abundantly clear exactly what [[ET | xmms2-et]] is, why it exists and what it does.
 # xmms2-et does get installed by default, but it makes no attempt to hide the fact.
 # The is no obscure EULA aimed at misleading you and tricking you into getting xmms2-et installed.
-# The XMMS2 system and associated utilities are all available under open source licences. If you don't feel safe, you can look at the [http://git.xmms.se code] yourself and make up your own mind.
+# The XMMS2 system and associated utilities are all available under open source licences. If you don't feel safe, you can look at the [http://git.xmms2.org code] yourself and make up your own mind.
 
 In short, we might be dropping aliens on your computer, but they're friendly and harmless, and you can ask them to leave at any time!
 }}
@@ -10,7 +10,7 @@ In short, we might be dropping aliens on your computer, but they're friendly and
 {{Newsitem| date=02 December 2006 CLST (2006-12-02)| author=[[Tobias RundstrÃ¶m]]| title=New release. [[Release:DrHouse|DrHouse]] is out.| text=We (the XMMS2 Team) have released [[Release:DrHouse|DrHouse]] which includes some minor feature additions and bugfixes, prior to some major changes in the next release cycle. (See [[Release:DrHouse#Release_Notes|release notes]] for full details.)
 }}
 
-{{Newsitem| date=26 September 2006 CLST (2006-09-26)| author=[[Tobias RundstrÃ¶m]]| title=*Bzz* *bzz* Don't try to adjust your radio, we are in control *bzz* - DrGonzo is released |text=This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed [[Release:DrGonzo|DrGonzo]] and includes a heap of new exciting bugs (a.k.a. features). This is the first release of XMMS2 that contains code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the full release notes [http://wiki.xmms2.xmms.se/index.php/Release:DrGonzo here].
+{{Newsitem| date=26 September 2006 CLST (2006-09-26)| author=[[Tobias RundstrÃ¶m]]| title=*Bzz* *bzz* Don't try to adjust your radio, we are in control *bzz* - DrGonzo is released |text=This is a live broadcast from the XMMS2 Team! We are releasing a new Developer Release to the wild. This one is dubbed [[Release:DrGonzo|DrGonzo]] and includes a heap of new exciting bugs (a.k.a. features). This is the first release of XMMS2 that contains code sponsored by Google Summer of Code. Download at the usual places over at [http://sourceforge.net/projects/xmms2 sourceforge] and read the full release notes [https://xmms2.org/wiki/Release:DrGonzo here].
 }}
 
 {{Newsitem| date=8 September 2006 WST (2006-09-08)| author=[[Sham Chukoury]]| title=End of SoC 2006| text=Google's [[Summer of Code 2006]] ended a couple of weeks ago, and we're still wrapping up some of the successful XMMS2 projects. All in all, we achieved a success rate of about 80%. You can now look forward to [[SoC:DAAP|DAAP]] support in XMMS2, and a polished up [[Client:TurboX2|TurboX2]] client for the [[Release:DrGonzo|next release]]. Hot on the heels of these projects is the [[Collections]] project by [[SÃ©bastien Cevey]] which is still in its final stages of integration, and is planned for release with [[Release:DrHouse|DrHouse]].
