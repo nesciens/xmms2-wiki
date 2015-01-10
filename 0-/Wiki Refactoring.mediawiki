@@ -51,7 +51,7 @@ That's user-centric.  We can have a second developer-oriented menu underneath, b
 * Roadmap  (link to roadmap page)
 * Bug Tracker  (link to mantis)
 * Documentation  (link to doxygen)
-* Git repository  (link to git.xmms.se)
+* Git repository  (link to git.xmms2.org)
 
 Note: The second level in Dev Corner does not appear in the menu!
 
