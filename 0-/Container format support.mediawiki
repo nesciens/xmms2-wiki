@@ -1,7 +1,7 @@
 A container format can hold different types of metadata describing media-files.
 For example, a CD can have a tracklist, an albumcover, lyrics, and so on.
 
-The significance being, that some people prefer to keep one CD as one file (for various reasons, most notably pregaps and gapless playback), and [http://matroska.org matroska]caters to this by allowing you to keep a CUE-file (single-CD playlist) in the container-file.
+The significance being, that some people prefer to keep one CD as one file (for various reasons, most notably pregaps and gapless playback), and [http://matroska.org matroska] caters to this by allowing you to keep a CUE-file (single-CD playlist) in the container-file.
 
 It would be nice if XMMS2 could accomodate reading mka-files, and display the tracks within in the playlist, preferably hierarchically - expand the track-titles for a CD on double-click, else keep the entry for each CD to a single line.
 
@@ -9,7 +9,7 @@ There is currently a plugin for XMMS which allows you to play a single media-fil
 
 ----
 
-* http://bugs.xmms2.xmms.se/view.php?id=144
+* http://bugs.xmms2.org/view.php?id=144
 [[User:Eleusis|Eleusis]] 12:01, 25 Sep 2005 (CEST)
 
 == See Also ==
