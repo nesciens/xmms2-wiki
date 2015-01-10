@@ -6,7 +6,7 @@ Good news everyone! The XMMS2 Team is releasing a bugfix release of the current 
 
 This release is compatible with DR2 and will not break the plugin API, medialib or client communication (we think).
 
-We are now focusing on the last planned DR ([[Release:DR3|DR3]]). Starting with the release of DR2.1, we now have two main trees - the [http://git.xmms.se/?p=xmms2-devel.git;a=summary devel tree], where more radical changes take place, and the [http://git.xmms.se/?p=xmms2-stable.git;a=summary stable tree]. The planned features and changes for DR3 are tracked on our Mantis bug tracker under under {{Bug|317}}. Your feedback is important for DR3 since we are aiming to stabilise the API after this.
+We are now focusing on the last planned DR ([[Release:DR3|DR3]]). Starting with the release of DR2.1, we now have two main trees - the [http://git.xmms2.org/xmms2/xmms2-devel/ devel tree], where more radical changes take place, and the [http://git.xmms2.org/xmms2/xmms2-stable/ stable tree]. The planned features and changes for DR3 are tracked on our Mantis bug tracker under under {{Bug|317}}. Your feedback is important for DR3 since we are aiming to stabilise the API after this.
 
 Source is available at [[Download XMMS2#Source | sourceforge]] as usual.
 
