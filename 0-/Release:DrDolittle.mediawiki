@@ -8,7 +8,7 @@ XMMS2 Team would like to thank everyone involved in this release, your efforts a
 
 === Upgrading ===
 
-Due to significant changes to the SQLite schema the medialib will (once again) be totaly removed if you upgrade. Tilman provided a [http://exodus.xmms.se/~tilman/playlist-import.rb ruby script] for moving your old medialib into the new one.
+Due to significant changes to the SQLite schema the medialib will (once again) be totaly removed if you upgrade. Tilman provided a [http://people.xmms2.org/~tilman/playlist-import.rb ruby script] for moving your old medialib into the new one.
 
 === Noteworthy changes ===
 
