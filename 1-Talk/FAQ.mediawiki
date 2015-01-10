@@ -1,6 +1,6 @@
 === DBUS ===
 
-Isn't DBUS a better choice than a [http://git.xmms.se/?p=xmms2-devel.git;a=tree;h=82edc1f7fb700ae505455672fc6c1293bfd9dc2c;hb=708a7db5cedbd6f7d1559835079368d7e4134cf8;f=src/lib/xmmsipc proprietary] IPC protocol?
+Isn't DBUS a better choice than a [http://git.xmms2.org/xmms2/xmms2-devel/tree/src/lib/xmmsipc proprietary] IPC protocol?
 
 [[Wikipedia:Proprietary Software | Proprietary Software]]:
  Software which is privately owned or controlled is known as proprietary software.
