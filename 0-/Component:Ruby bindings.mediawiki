@@ -4,7 +4,7 @@ For an example on how to write a client in ruby you can have a look at the [http
 
 = rdoc =
 
-rdoc generated documentation can be found at [http://numbers.xmms.se/~tilman/ruby-api-docs-0.7/ http://numbers.xmms.se/~tilman/ruby-api-docs-0.7/].
+rdoc generated documentation can be found at [http://people.xmms2.org/~tilman/ruby-api-docs-0.7/ http://people.xmms2.org/~tilman/ruby-api-docs-0.7/].
 
 = Basics =
 
