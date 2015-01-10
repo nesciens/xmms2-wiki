@@ -2,7 +2,7 @@ This is a quick guide on how to work on Esperanza with Git.
 
 
 == Clone ==
- git clone git://git.xmms.se/xmms2/esperanza.git
+ git clone git://git.xmms2.org/xmms2/esperanza.git
 
 this will create "esperanza" locally and you will have the default branch checked out.
 
@@ -39,7 +39,7 @@ To start working with a specific branch it's recommended that you don't work in 
 
 if you want to add multiple remotes to your tree, for example the master tree, do the following:
 
- git remote add main git.xmms.se:/xmms2/esperanza.git
+ git remote add main git.xmms2.org:/xmms2/esperanza.git
 
 the string "main" can be choosen as you want it. But remember the next commands use the choosen string, so replace all "main" with your namespace name.
 
