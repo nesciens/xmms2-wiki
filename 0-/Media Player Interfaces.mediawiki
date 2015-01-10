@@ -33,7 +33,7 @@ Thus [http://bmpx.beep-media-player.org/site/MPRIS_Interfacing_Specification MPR
 === Chalyx ===
 Meanwhile, [[Sham Chukoury]] (eleusis) was working on an XMMS2 client named HaX (now known as [[Client:Chalyx|Chalyx]]). At some point, he decided it would be a great idea to be able to have a single client that could control multiple players, such as XMMS2, MPD and maybe even BMPx. So he made an [[Media Player Interfaces/Chalyx API Comparison|API comparison table]].
 
-Most of the actions defined in the table were eventually defined in the [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms.se/?p=chalyx-eleusis.git;a=blob;f=src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms.se/?p=kjell.git;a=summary Kjell] and [[Client:Insanity|Insanity]]) is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
+Most of the actions defined in the table were eventually defined in the [http://git.xmms2.org/xmms2/chalyx-eleusis/log/src/Chalyx/services/service.py Service] abstract class in Chalyx (and subsequently [http://git.xmms2.org/xmms2/chalyx-eleusis/log/src/Chalyx/services/xmms2.py XMMS2] and [http://git.xmms2.org/xmms2/chalyx-eleusis/log/src/Chalyx/services/mpd.py MPD] service modules were developed). As such, any client that uses the Chalyx library (such as [http://git.xmms2.org/xmms2/kjell/ Kjell] and [[Client:Insanity|Insanity]]) is able to control both XMMS2 and MPD. The design of Chalyx permits the development of additional 'service' modules to allow clients to control other music player backends.
 
 === VLC ===
 Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decided to implement a DBUS control interface for VLC. He discovered MPRIS and decided to adapt it to his needs. RafaÃ«l also decided to mail other media player projects to revive the spirit of MPRIS, and all hell broke loose across 10 different mailing lists. Then, Mirsal Ennaime tried to bring the project back from the grave, with RafaÃ«l CarrÃ© and BMPx developers.
@@ -50,7 +50,7 @@ Fast forward to November 2006 and RafaÃ«l CarrÃ© from the VLC project decide
 * Doesn't work well over TCP? (e.g. compare with MPD's & XMMS2's support for tcp sockets)
 
 == Projects involved ==
-=== [http://xmms2.xmms.se XMMS2] ===
+=== [http://xmms2.xmms2.org XMMS2] ===
 For XMMS2, a proxy could be developed to translate between DBUS and XMMS2's own [[Design of XMMS2#Middleware | IPC mechanism]]. ([[User:Anders Gustafsson|Anders]] may have already done some work on this)
 
 === [http://bmpx.beep-media-player.org BMPx] ===
