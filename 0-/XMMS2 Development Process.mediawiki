@@ -17,7 +17,7 @@ In summary: The Mantis issue tracker is a '''vital''' component of, and primary 
 
 === Repository-tracker integration ===
 
-The XMMS2 [http://bugs.xmms2.xmms.se Mantis issue tracker] and [http://git.xmms.se gitweb repository interface] are integrated web services that refer to each other:
+The XMMS2 [http://bugs.xmms2.org Mantis issue tracker] and [http://git.xmms2.org gitweb repository interface] are integrated web services that refer to each other:
 * When resolving an issue, a git commit ID is required, which allows us to easily track down which commit reportedly fixed a certain issue.
 * The gitweb interface parses the various [[ChangeLog Format | commit tags]] and provides hyperlinks back to the issue tracker so that anyone can figure out exactly what bug is fixed, or what feature is implemented, by a specific commit.
 
@@ -47,22 +47,22 @@ There is no firm release calendar or roadmap for XMMS2. The release cycle is typ
 #* Some issues may be re-categorised as low-priority issues, dropped from the current release cycle and moved forward to the next release cycle. This can happen especially if there have been a number of important updates to the codebase and no releases have been made for a fairly long time.
 
 == Code trees ==
-These are the trees found at http://git.xmms.se
-* [http://git.xmms.se/?p=xmms2-anders.git;a=summary xmms2-anders]
+These are the trees found at http://git.xmms2.org
+* [http://git.xmms2.org/xmms2/xmms2-anders/ xmms2-anders]
 ** [[User:Anders_Gustafsson | Anders]]' tree - where lots of code ninja happens.
-* [http://git.xmms.se/?p=xmms2-devel.git;a=summary xmms2-devel]
+* [http://git.xmms2.org/xmms2/xmms2-devel/ xmms2-devel]
 ** The main development tree, where all approved changes end up.
-* [http://git.xmms.se/?p=xmms2-eleusis.git;a=summary xmms2-eleusis]
+* [http://git.xmms2.org/xmms2/xmms2-eleusis/ xmms2-eleusis]
 ** [[Sham Chukoury | Sham]]'s tree - where minor bug fixes and documentation fixes are occasionally committed.
-* [http://git.xmms.se/?p=xmms2-jlt.git;a=summary xmms2-jlt]
+* [http://git.xmms2.org/xmms2/xmms2-jlt/ xmms2-jlt]
 ** [[Jens Taprogge | Jens]]' tree - where changes relating to Debian packaging are made.
-* [http://git.xmms.se/?p=xmms2-nano.git;a=summary xmms2-nano]
+* [http://git.xmms2.org/xmms2/xmms2-nano/ xmms2-nano]
 ** [[Daniel Svensson | Daniel]]'s tree.
-* [http://git.xmms.se/?p=xmms2-stable.git;a=summary xmms2-stable]
+* [http://git.xmms2.org/xmms2/xmms2-stable/ xmms2-stable]
 ** The stable tree, where code from the ''xmms2-devel'' tree ends up prior to a release.
-* [http://git.xmms.se/?p=xmms2-tilman.git;a=summary xmms2-tilman]
+* [http://git.xmms2.org/xmms2/xmms2-tilman/ xmms2-tilman]
 ** [[Tilman Sauerbeck | Tilman]]'s tree - where some code ninja happens.
-* [http://git.xmms.se/?p=xmms2-tru.git;a=summary xmms2-tru]
+* [http://git.xmms2.org/xmms2/xmms2-tru/ xmms2-tru]
 ** [[Tobias RundstrÃ¶m | Tobias]]'s tree - where even more code ninja happens.
 
 
