@@ -98,7 +98,7 @@ Note that if CAN_HAS_TRACKLIST is false, the methods described below must be imp
 ==== GetMetadata ====
 Gives all meta data available for element at given position in the [[#"TrackList"|TrackList]], counting from 0.
 
-Guidelines for field names are at http://wiki.xmms2.xmms.se/wiki/MPRIS_Metadata .
+Guidelines for field names are at http://xmms2.org/wiki/MPRIS_Metadata .
 
 Each dict entry is organized as follows
 * string: Metadata item name
@@ -279,7 +279,7 @@ Return the status of "Media Player" as a struct of 4 ints:
 ==== GetMetadata ====
 Gives all meta data available for the currently played element.
 
-Guidelines for field names are at http://wiki.xmms2.xmms.se/wiki/MPRIS_Metadata . 
+Guidelines for field names are at http://xmms2.org/wiki/MPRIS_Metadata . 
 
   <method name="GetMetadata">
     <arg type="a{sv}" direction="out" />
