@@ -6,8 +6,8 @@ For those who want to know more about how it works, and how to get clients to pl
 
 * [[Design of XMMS2]]
 ** [[The Medialib]]
-* [http://doxygen.xmms2.xmms.se/ Doxygen documentation]
-** [http://doxygen.xmms2.xmms.se/clientlib/stable/xmmsclient-python/ Python bindings documentation]
+* [http://doxygen.xmms2.org/ Doxygen documentation]
+** [http://doxygen.xmms2.org/clientlib/stable/xmmsclient-python/ Python bindings documentation]
 * [[Writing XMMS2 Clients]]
 ** [[XMMS2 IPC Protocol]]
 
@@ -16,16 +16,16 @@ For those who want to know more about how it works, and how to get clients to pl
 For those who want to hack on XMMS2 itself, or report bugs and such things. Before you start to hack you should read the [[XMMS2 Coding Style]].
 
 * [[Reporting bugs]]
-** [http://bugs.xmms2.xmms.se/ XMMS2 Bug Tracking System]
+** [http://bugs.xmms2.org/ XMMS2 Bug Tracking System]
 * [[Submitting code]]
 ** [[Download_XMMS2|Source Code]]
 ** [[XMMS2 Coding Style]]
 ** [[Writing XMMS2 Plugins]]
 ** [[Using Git]]
-*** [http://git.xmms.se/merge/ git trees merge status]
+*** [http://git.xmms2.org/merge/ git trees merge status]
 ** [[ChangeLog Format]]
 * [[Help Wanted]]
-** We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms.se tested].
+** We collect anonymous usage data sent by [[ET|xmms2-et]] to determine the extent to which various components are being used and [http://test.xmms2.org tested].
 * [[:Category:GSoC|Google Summer of Code]] pages.
 
 == Policies and guidelines ==
