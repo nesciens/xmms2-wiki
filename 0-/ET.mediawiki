@@ -1,4 +1,4 @@
-xmms2-et is a [http://git.xmms.se/?p=xmms2-stable.git;a=blob;f=src/clients/et/xmms2-et.c phone-home agent] (named after [[wikipedia:E.T. the Extra-Terrestrial |ET the extra terrestrial]]), which provides the developers (and other interested parties) basic test coverage data.
+xmms2-et is a [http://git.xmms2.org/xmms2/xmms2-devel/log/src/clients/et/xmms2-et.c phone-home agent] (named after [[wikipedia:E.T. the Extra-Terrestrial |ET the extra terrestrial]]), which provides the developers (and other interested parties) basic test coverage data.
 
 == What xmms2-et does ==
 It sends a UDP packet for each song played with information about which output and [[Transforms | xform]] plugins are used and what operating system xmms2 is running on. The information is sent anonymously and doesn't even contain the name of the song.
@@ -16,4 +16,4 @@ If you, for some reason, don't want the phone home feature, you can disable it b
 If you installed xmms2 from Debian packages, xmms2-et will not be installed by default - it is available in a separate <tt>[http://packages.debian.org/unstable/sound/xmms2-et xmms2-et]</tt> package.
 
 == Test data ==
-The result of xmms2-et can be seen at [http://test.xmms.se/ http://test.xmms.se/]
+The result of xmms2-et can be seen at [http://test.xmms2.org/ http://test.xmms2.org/]
