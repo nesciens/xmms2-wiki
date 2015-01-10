@@ -5,9 +5,9 @@ My xmms2-related work:
 * [[Client:XMMS2-Scrobbler | XMMS2-Scrobbler]], an Audioscrobbler/last.fm client
 
 Misc. clients/scripts:
-* [http://exodus.xmms.se/~tilman/playlist-import.rb playlist-import.rb] imports playlists from an old medialib.db
-* [http://exodus.xmms.se/~tilman/punch.rb punch.rb] adds a song to the playlist and queues it as the next song to play
-* Maybe more in http://exodus.xmms.se/~tilman
+* [http://people.xmms2.org/~tilman/playlist-import.rb playlist-import.rb] imports playlists from an old medialib.db
+* [http://people.xmms2.org/~tilman/punch.rb punch.rb] adds a song to the playlist and queues it as the next song to play
+* Maybe more in http://people.xmms2.org/~tilman
 
 There's probably more information at my website, http://code-monkey.de
 
