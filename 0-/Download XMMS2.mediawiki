@@ -78,12 +78,18 @@ Getting XMMS2 to build/run on Windows is mostly working, but not all features of
 == Mac OS X ==
 
 ; MacPorts
-xmms2 is included in [http://www.macports.org MacPorts], however the port does not allow to customize the installation via variants at the moment. To include optional features, required libraries need to be installed beforehand. To install:
+xmms2 is included in [https://www.macports.org MacPorts]. To install:
  sudo port install xmms2
 
+To see which optional features are available:
+ port variants xmms2
 
-To have more control over the feature-set, download the source and configure xmms2 manually:
- ./waf configure --prefix=/opt/local --conf-prefix=/opt/local --nocache
+If the MacPorts port of xmms2 is out of date or needs to be enhanced in some way, please [https://guide.macports.org/chunked/project.html file a ticket in the MacPorts issue tracker].
+
+; Build from source
+
+If you prefer, you can install xmms2's dependencies, and then download the xmms2 source and configure it manually:
+ ./waf configure --prefix=/opt/xmms2 --conf-prefix=/opt/xmms2 --nocache
 
 And then:
  ./waf build && ./waf install
