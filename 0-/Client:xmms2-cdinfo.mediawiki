@@ -1,8 +1,8 @@
 {{
 Client
 |name=xmms2-cdinfo
-|author=Tomasz Sobczyk
-|website=[http://code.google.com/p/xmms2-cdinfo/]
+|author=Kagomeko
+|website=[http://github.com/kagomeko/xmms2-cdinfo/]
 |devlanguage=C++
 |ui=Console
 }}
