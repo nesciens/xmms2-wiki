@@ -2,7 +2,7 @@
 Client
 |name=xmms2-cdinfo
 |author=Kagomeko
-|website=[http://github.com/kagomeko/xmms2-cdinfo/]
+|website=[http://github.com/mada-yumi/xmms2-cdinfo/]
 |devlanguage=C++
 |ui=Console
 }}
