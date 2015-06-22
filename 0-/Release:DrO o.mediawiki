@@ -13,6 +13,7 @@ Adam Nielsen, Anders Waldenborg, Anthony Garcia, Benjamin Drung, Benjamin Schmit
 Upgrading should be smooth.
 
 === Noteworthy changes ===
+* Old deprecated xmms2 client removed, nyxmms2 renamed to xmms2
 * Waf build system updated to version 1.6, which brings Python 3.x compatibility to the build system.
 * Python bindings migrated to cython which brings Python 3.x compatibility to Python clients.
 * Server side IPC code is now generated, thus a whole lot more consistent and less prone to errors.
