@@ -5,8 +5,8 @@ Please also view the manual pages - if you have the XMMS2 source they're in doc/
 
 = Quick Start =
 # Start the daemon: <code>xmms2-launcher</code>
-# Add some music: <code>nyxmms2 add /home/foo/music/awesome.ogg</code>
-# Play: <code>nyxmms2 play</code>
+# Add some music: <code>xmms2 add /home/foo/music/awesome.ogg</code>
+# Play: <code>xmms2 play</code>
 
 = The Daemon =
 
@@ -15,11 +15,11 @@ xmms2d can be started by typing 'xmms2d' after installing the application. (To d
 == Configuring the daemon ==
 Changing output plugin:
 
- nyxmms2 server config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
+ xmms2 server config output.plugin oss-or-alsa-or-whatever-plugin-you-should-use
 
 Making xmms2d listen for requests via TCP:
 
- nyxmms2 server config core.ipcsocket tcp://192.168.2.20:<port> 
+ xmms2 server config core.ipcsocket tcp://192.168.2.20:<port> 
 
 and then restart xmms2d. (replace ''192.168.2.20'' with your IP address as appropriate) xmms2d will then listen on that port for requests from remote clients.
 
@@ -32,11 +32,11 @@ It is possible to get the daemon to listen on multiple sockets by setting core.i
 Note that, when using ipv6 and wildcards (address "::"), you might get problems depending on your system. Under Linux, letting a socket listen on "::" also means to listen on ipv4 (unless <code>/proc/sys/net/ipv6/bindv6only</code> is set to 1).
 
 = The clients =
-You can interact with the daemon using the 'nyxmms2' command-line client, which comes in the source tree, or [[XMMS2_Clients | other clients]].
+You can interact with the daemon using the 'xmms2' command-line client, which comes in the source tree, or [[XMMS2_Clients | other clients]].
 
 == xmms2 client options ==
 
-The basic CLI (command line interface) nyxmms2 client can use alternative paths for IPC. Simply set the <code>XMMS_PATH</code> environment variable to the appropriate path and then use the client.
+The basic CLI (command line interface) xmms2 client can use alternative paths for IPC. Simply set the <code>XMMS_PATH</code> environment variable to the appropriate path and then use the client.
 
 Alternative Unix socket path (using Bash shell):
 
@@ -45,61 +45,61 @@ Alternative Unix socket path (using Bash shell):
 equivalent:
 
   export XMMS_PATH="unix:///tmp/my-socket"
-  nyxmms2 list
+  xmms2 list
 
 for (t)csh users:
 
   setenv XMMS_PATH "unix:///tmp/my-socket"
-  nyxmms2 list
+  xmms2 list
 
 == Example usage of xmms2 client ==
 
 Add all files in a directory to the medialib (recursively adds files in subdirectories as well):
 
-  nyxmms2 server import /path/to/music
+  xmms2 server import /path/to/music
 
 Add files to the playlist:
 
-  nyxmms2 add /some/path/*.ogg
+  xmms2 add /some/path/*.ogg
 
 Play:
 
-  nyxmms2 play
+  xmms2 play
 
 Query the medialib database (e.g. your favourite band):
 
-  nyxmms2 search artist:"Kultiration"
+  xmms2 search artist:"Kultiration"
 
 Query the medialib database and add the result to your playlist:
 
-  nyxmms2 add -t artist:"Kultiration"
+  xmms2 add -t artist:"Kultiration"
 
 Note that search is case insensitive and that you can use "*" and "?" as wildcards (* being 0 or more wild characters, ? being 0 or 1 wild character):
 
-  nyxmms2 search artist:"red hot*"
+  xmms2 search artist:"red hot*"
 
 Will find all artists that begin with "red hot"
 
-  nyxmms2 search artist:"red?hot"
+  xmms2 search artist:"red?hot"
 
 Will match "redhot" and "red hot".
 
 Listen to a shoutcast stream (assuming curl plugin is installed) using the direct url (ie NOT a playlist file, but the url inside the playlist file, the playlist importing code is currently disabled). If you don't require a proxy, skip the "config" lines:
 
-  nyxmms2 server config curl.proxyaddress your.proxy.address.com:1080
-  nyxmms2 server config curl.useproxy 1
-  nyxmms2 add http://207.200.96.225:8020
-  nyxmms2 play
+  xmms2 server config curl.proxyaddress your.proxy.address.com:1080
+  xmms2 server config curl.useproxy 1
+  xmms2 add http://207.200.96.225:8020
+  xmms2 play
 
 Enabling an effect:
 
-  nyxmms2 server config effect.order.0 some-effect-name
-  nyxmms2 server config some-effect-name.enabled 1
+  xmms2 server config effect.order.0 some-effect-name
+  xmms2 server config some-effect-name.enabled 1
 
 Example of enabling replaygain. When enabled, adjusts volume to normalized level when replaygain metadata found in flac, mad, mp3, mp4, musepack, vorbis and wavpack files, inserted by mp3gain, aacgain, vorbisgain, metaflac etc utilities. When metadata is not found no adjustment is done.
 
-  nyxmms2 server config effect.order.0 replaygain
-  nyxmms2 server config replaygain.enabled 1
-  nyxmms2 play
+  xmms2 server config effect.order.0 replaygain
+  xmms2 server config replaygain.enabled 1
+  xmms2 play
 
 [[Category: Users]]
