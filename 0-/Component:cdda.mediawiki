@@ -4,7 +4,7 @@
 Adds support for playing CD Audio.
 =Usage=
 Browsing the cdda:// will show all valid urls for tracks on the currently inserted CD.
- $ nyxmms2 server browse cdda://
+ $ xmms2 server browse cdda://
  cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/1 
  cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/2 
  cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/3 
@@ -18,14 +18,14 @@ Browsing the cdda:// will show all valid urls for tracks on the currently insert
  cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/11 
 
 You can add the whole CD to the playlist with the add -P command.
- $ nyxmms2 add -P cdda://
+ $ xmms2 add -P cdda://
 
 Or you can add a single song by specifying its full path from the browse.
- $ nyxmms2 add cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/8
+ $ xmms2 add cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/8
 
 Or you can use * instead of track number to add whole CD in reverse order.
 
- $ nyxmms2 add cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/*
+ $ xmms2 add cdda://h4JxJj8jIp_HtscYOua_TZxNe9g-/*
 
 You can specify the device which the plugin should use by modifying the cdda.device config value.
 
