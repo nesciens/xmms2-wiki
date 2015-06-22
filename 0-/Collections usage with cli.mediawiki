@@ -41,7 +41,7 @@ We will now show how to use the collection commands of the CLI.  To
 get some help, you can simply type:
 
  % xmms2 help collection                           
- usage: nyxmms2 collection <subcommand> [args]
+ usage: xmms2 collection <subcommand> [args]
  
  Available 'collection' subcommands:
     list
