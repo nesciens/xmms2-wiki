@@ -96,7 +96,7 @@ Enabling an effect:
   nyxmms2 server config effect.order.0 some-effect-name
   nyxmms2 server config some-effect-name.enabled 1
 
-Example of enabling replaygain:
+Example of enabling replaygain. When enabled, adjusts volume to normalized level when replaygain metadata found in flac, mad, mp3, mp4, musepack, vorbis and wavpack files, inserted by mp3gain, aacgain, vorbisgain, metaflac etc utilities. When metadata is not found no adjustment is done.
 
   nyxmms2 server config effect.order.0 replaygain
   nyxmms2 server config replaygain.enabled 1
