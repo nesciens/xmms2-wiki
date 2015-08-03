@@ -4,7 +4,7 @@
 |website=http://home.gna.org/garma/shhh/
 |version=N/A
 |devlanguage=Unknown (C?)
-|ui=GNUStep
+|ui=GNUstep
 |screenshots=See homepage
 |description=A GNUstep client called Shhh is being developed by Banlu Kemiyatorn.
 }}
