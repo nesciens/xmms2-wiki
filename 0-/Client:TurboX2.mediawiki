@@ -1,9 +1,10 @@
-{{Client|
-name=TurboX2|
-author=drax,nano,tru|
-website=http://people.xmms2.org/~alex/turbox2/index.html|
-version=http://people.xmms2.org/~alex/turbox2/turbox2-0.5.tar.gz|
-devlanguage=Python, Javascript|
-ui=Web|
-screenshots=http://people.xmms2.org/~alex/turbox2/tx2devel.png|
-description=XMMS2 web interface with all the bling bling that comes with the evil buzzword "Web 2.0". If you have some sort of artistic skills and want to contribute, feel free to contact any of us at #xmms2@freenode. The theming support is not there yet but will apper in the near future. 0.5 was released on 14 Aug 2006 as the result of the [[Summer of Code 2006]].}}
+{{Client
+|name=TurboX2
+|author=drax,nano,tru
+|website=http://people.xmms2.org/~alex/turbox2/index.html
+|version=http://people.xmms2.org/~alex/turbox2/turbox2-0.5.tar.gz
+|devlanguage=Python, Javascript
+|ui=Web
+|screenshots=http://people.xmms2.org/~alex/turbox2/tx2devel.png
+|description=XMMS2 web interface with all the bling bling that comes with the evil buzzword "Web 2.0". If you have some sort of artistic skills and want to contribute, feel free to contact any of us at #xmms2@freenode. The theming support is not there yet but will apper in the near future. 0.5 was released on 14 Aug 2006 as the result of the [[Summer of Code 2006]].
+}}
