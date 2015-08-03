@@ -1,19 +1,14 @@
-===Bluegroove===
-by ''Todd Bayley''
-
-'''Homepage''': http://www.bayles.id.au/bluegroove/<br />
-'''Latest version''': 0.2<br />
-'''Development language''': ruby<br />
-'''User Interface''': GTK+2<br />
-'''Screenshots''': [http://www.bayles.id.au/bluegroove/images/screenshot_playlist.png][http://www.bayles.id.au/bluegroove/images/screenshot_medialib.png]<br />
-[[Talk:Client:bluegroove | Discuss]]
-
-Bluegroove is a client written in ruby and gtk. It supports a medialib and playlists as well as
+{{Client
+|name=Bluegroove
+|author=Todd Bayley
+|website=http://www.bayles.id.au/bluegroove/
+|version=0.2
+|devlanguage=Ruby
+|ui=GTK+2
+|screenshots=[http://www.bayles.id.au/bluegroove/images/screenshot_playlist.png][http://www.bayles.id.au/bluegroove/images/screenshot_medialib.png]
+|description=Bluegroove is a client written in ruby and gtk. It supports a medialib and playlists as well as
 song queuing. It also supports a tray icon with libnotify support for song changes.
 
 This client is currently being Replaced by a Similar client written in C and gtk. http://bayles.id.au/dugite/
 It's still in development and once it's moved forward a bit more it'll be properly released here.
-
-[[XMMS2 Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+}}
