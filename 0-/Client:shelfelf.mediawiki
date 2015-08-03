@@ -3,7 +3,8 @@
 |author=[http://vaubeh.de/ vaubeh]
 |website=http://sourceforge.net/projects/shelfelf/
 |version=15.15
-|devlanguage=PHP, JavaScript
+|devlanguage=PHP
+|devlanguage2=JavaScript
 |ui=Browser / iPad
 |screenshots=[http://sourceforge.net/projects/shelfelf/ SF project page]
 |description=The shelfelf is a web frontend to send commands to xmms2. It works with all tested browsers, but the interface is designed for use with tablets with a browser running in fullscreen mode. Features are a coverflow, fulltext search, a record stack and communication with other shelfelves.
