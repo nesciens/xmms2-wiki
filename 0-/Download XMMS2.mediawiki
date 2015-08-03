@@ -2,7 +2,7 @@
 
 == Linux ==
 
-; Debian - Lenny / Unstable + Etch / Testing + Woody / Stable
+; Debian
 
  apt-get install xmms2
 
@@ -57,7 +57,6 @@ As XMMS2 has a lot of USE-flags, you would want first to check them (and depende
  equery g xmms2
 
 For more clients you would need to [http://gpo.zugaina.org/Search?search=xmms2 check] custom overlays, but instead of adding them i would suggest just using ebuild for specific client you want.
-
 
 == Windows ==
 
