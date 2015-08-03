@@ -1,1 +1,10 @@
-{{Client| name=nxmms2| author=[[Marko Kotar]]| website=http://www.geocities.com/kotarmarko/| version=0.01| devlanguage=C| ui=Console (ncurses)| screenshots=http://people.xmms2.org/~alex/nxmms2.png| description= nxmms2 is a very primitive but powerful xmms2 client. It can be controlled by pressing keys. Search in media library is the best feature of this client. I have to make a website too. It will take some time. Maybe one day or just a few hours.}}
+{{Client
+|name=nxmms2
+|author=[[Marko Kotar]]
+|website=http://www.geocities.com/kotarmarko/
+|version=0.01
+|devlanguage=C
+|ui=Console (ncurses)
+|screenshots=http://people.xmms2.org/~alex/nxmms2.png
+|description= nxmms2 is a very primitive but powerful xmms2 client. It can be controlled by pressing keys. Search in media library is the best feature of this client. I have to make a website too. It will take some time. Maybe one day or just a few hours.
+}}
