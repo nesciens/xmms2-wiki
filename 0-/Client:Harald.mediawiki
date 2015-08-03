@@ -3,7 +3,7 @@
 |author=[[Daniel Svensson]]
 |website=N/A
 |version=Unreleased
-|devlanguage=JavaME/C
+|devlanguage=Java
 |ui=MIDP 2.0
 |screenshots=[http://people.xmms2.org/~nano/harald-060706.jpg]
 |description=This client is aimed to improve the comfort of all the chillaxed people who get stuck all day long in their sofas listening to the most awesome music ever made without moving an inch.
