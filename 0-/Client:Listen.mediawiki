@@ -1,4 +1,4 @@
-{{Client| name=Listen| author=Mehdi abaakouk| website=http://theli.free.fr| version=0.5-14| devlanguage=python| ui=GTK| screenshots=[http://theli.free.fr/img/screenshot.png]| description=Listen is a pyGTK client for XMMS2
+{{Client| name=Listen| author=Mehdi abaakouk| website=http://theli.free.fr| version=0.5-14| devlanguage=Python| ui=GTK| screenshots=[http://theli.free.fr/img/screenshot.png]| description=Listen is a pyGTK client for XMMS2
 
 '''''As noted in the discussion, this app may look great... but isn't available anywhere!'''''
 
