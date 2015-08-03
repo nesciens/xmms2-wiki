@@ -3,7 +3,8 @@
 |author=David Richards
 |website=rawdod (http://rawdod.com ?)
 |version=[http://media.kradradio.com/ruby-php-xmms2-xml-rpc-funpack.tar.bz2  .666]
-|devlanguage=Ruby, PHP
+|devlanguage=Ruby
+|devlanguage2=PHP
 |ui=Unknown
 |screenshots=N/A
 |description=A ruby client thats an xml-rpc server, Also included is a php xml-rpc client. This project is totally dead and will probably remain dead forever, and if you download the funpack, you could wind up dead too. Word to the unnamed php client that is kind of dead at this time.
