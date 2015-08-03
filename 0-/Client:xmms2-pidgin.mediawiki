@@ -1,16 +1,10 @@
-__NOEDITSECTION__
-===xmms2-pidgin===
-by ''Jitu Das''
-
-'''Homepage''': http://code.google.com/p/xmms2-pidgin/<br />
-'''Latest version''': 0.3<br />
-'''Development language''': C<br />
-'''User Interface''': Pidgin Plugin<br />
-'''Screenshots''': [http://img299.imageshack.us/img299/1088/xmms2pidginxe4.png]<br />
-[[Talk:Client:xmms2-pidgin | Discuss]]
-
-Pidgin plugin that displays info for current song playing in XMMS2
-
-[[Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+{{Client
+|name=xmms2-pidgin
+|author=Jitu Das
+|website=http://code.google.com/p/xmms2-pidgin/
+|version=0.3
+|devlanguage=C
+|ui=Pidgin Plugin
+|screenshots=[http://img299.imageshack.us/img299/1088/xmms2pidginxe4.png]
+|description=Pidgin plugin that displays info for current song playing in XMMS2.
+}}
