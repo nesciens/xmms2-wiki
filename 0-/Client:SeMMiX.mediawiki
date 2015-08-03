@@ -1,16 +1,11 @@
-===SeMMiX===
-by ''RaphaÃ«l Bois''
-
-'''Homepage''': http://vdust.github.com/semmix<br />
-'''Latest version''': 0.1<br />
-'''Development language''': C<br />
-'''User Interface''': GTK2<br />
-'''Screenshots''': none<br />
-[[Talk:Client:SeMMiX | Discuss]]
-
-SeMMiX is a GTK2-based client for media servers, written in C.
+{{Client
+|name=SeMMiX
+|author=Raphaël Bois
+|website=http://vdust.github.com/semmix
+|version=0.1
+|devlanguage=C
+|ui=GTK2
+|screenshots=
+|description=SeMMiX is a GTK2-based client for media servers, written in C.
 The main reason for this project to exist, is to provide a way to connect to several servers and to show them in a single GUI. Currently, the development is centered on XMMS2 support, and it tries to integrate most of the features provided by the xmmsclient lib.
-
-[[XMMS2 Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+}}
