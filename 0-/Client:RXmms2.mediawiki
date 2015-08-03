@@ -4,7 +4,7 @@
 |website=http://dan.chokola.com/software/rxmms2.rhtml
 |version=Check the [http://git.xmms2.org/xmms2/rxmms2/ Git Repository]
 |devlanguage=Ruby
-|ui=Gtk2
+|ui=GTK2
 |screenshots=[http://dan.chokola.com/images/rxmms2/rxmms2.png Default Skin]
 |description=Rxmms2 is an XMMS/BMP clone written using Ruby and Gtk2. It aims to provide the look & feel of XMMS that you're used to while adding new advanced features like medialib operations, a more advanced display string parser, and regular expression searches. Rxmms2 was conceived and is maintained by [[Daniel Chokola]]. The Rxmms2 homepage can be found at http://dan.chokola.com/software/rxmms2.rhtml.
 }}
