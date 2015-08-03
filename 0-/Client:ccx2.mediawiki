@@ -1,15 +1,10 @@
-===ccx2===
-by ''pablo flouret''
-
-'''Homepage''': http://palbo.github.com/ccx2<br />
-'''Latest version''': [http://github.com/palbo/ccx2/downloads 0.2.0]<br />
-'''Development language''': Python<br />
-'''User Interface''': ncurses<br />
-'''Screenshots''': [http://palbo.github.com/ccx2/#s]<br />
-[[Talk:Client:ccx2 | Discuss]]
-
-A console client with support for playlists, collections, lyrics, customizable keybindings and metadata formatting, and ascii cover art display for your degree of useless flashyness.
-
-[[Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+{{Client
+|name=ccx2
+|author=Pablo Flouret
+|website=http://palbo.github.com/ccx2
+|version=[http://github.com/palbo/ccx2/downloads 0.2.0]
+|devlanguage=Python
+|ui=ncurses
+|screenshots=[http://palbo.github.com/ccx2/#s]
+|description=A console client with support for playlists, collections, lyrics, customizable keybindings and metadata formatting, and ascii cover art display for your degree of useless flashyness.
+}}
