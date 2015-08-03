@@ -1,15 +1,10 @@
-===gx2osd===
-by ''Jonne Lehtinen''
-
-'''Homepage''': http://eclipser.xmms2.org/gx2osd.xhtml<br />
-'''Latest version''': 0.2<br />
-'''Development language''': C++<br />
-'''User Interface''': GTK+2<br />
-'''Screenshots''': [http://eclipser.xmms2.org/gx2osd.png]<br />
-[[Talk:Client:gx2osd | Discuss]]
-
-gx2osd is a skinnable on-screen display client for xmms2 written in C++ and GTKmm.
-
-[[XMMS2 Clients | More xmms2 clients]]
-
-[[Category:Clients]]
+{{Client
+|name=gx2osd
+|author=Jonne Lehtinen
+|website=[http://eclipser.xmms2.org/gx2osd.xhtml]
+|version=0.2
+|devlanguage=C++
+|ui=GTK+2
+|screenshots=[http://eclipser.xmms2.org/gx2osd.png]
+|description=gx2osd is a skinnable on-screen display client for xmms2 written in C++ and GTKmm.
+}}
