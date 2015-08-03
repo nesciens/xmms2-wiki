@@ -1,2 +1,11 @@
-{{Client| name=xmms2-osd| author=[[Sham Chukoury]], [https://gna.org/users/deepspawn Carlos Perilla] | https://gna.org/projects/xmms2-osd/|version=1.1a|
-devlanguage=Python, pyGtk and pyCairo| ui=X OSD| screenshots=[http://www.flickr.com/photos/93644465@N00/60011223/  1]| description= The xmms2-osd has suffered a major rewrite and has dropped the old osd interface and now it works with pygtk and pycairo, the main advantage is seamless integration with compositing managers of beryl,compiz, and xcompmgr. Now we're getting true transparency and a more updated client. Currently you can change font face, size , background color, foreground color and the OSD placement from the configuration file. In the future you will be able to set a custom format for the OSD. | website=https://gna.org/projects/xmms2-osd/}}
+{{Client
+|name=xmms2-osd
+|author=[[Sham Chukoury]], [https://gna.org/users/deepspawn Carlos Perilla]
+|website=https://gna.org/projects/xmms2-osd/
+|version=1.1a
+|devlanguage=Python, pyGtk and pyCairo
+|ui=X OSD
+|screenshots=[http://www.flickr.com/photos/93644465@N00/60011223/  1]
+|description= The xmms2-osd has suffered a major rewrite and has dropped the old osd interface and now it works with pygtk and pycairo, the main advantage is seamless integration with compositing managers of beryl,compiz, and xcompmgr. Now we're getting true transparency and a more updated client. Currently you can change font face, size , background color, foreground color and the OSD placement from the configuration file. In the future you will be able to set a custom format for the OSD.
+
+}}
