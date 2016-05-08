@@ -1,8 +1,8 @@
 {{
 Client
 |name=xmms2-cdinfo
-|author=Kagomeko
-|website=[http://github.com/mada-yumi/xmms2-cdinfo/]
+|author=Fumu_no_Kagomeko::Yumiko
+|website=[https://github.com/fumu-no-kagomeko/xmms2-cdinfo/]
 |devlanguage=C++
 |ui=Console
 }}
