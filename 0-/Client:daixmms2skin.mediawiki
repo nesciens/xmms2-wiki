@@ -1,1 +1,3 @@
 A simple Xmms2 client to enable users to easily manage their music collection into play lists
+
+Main site: [http://www.dsbnet.tk Dai's Home Page]
