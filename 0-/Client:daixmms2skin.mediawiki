@@ -1,3 +1,1 @@
-A simple Xmms2 client to enable users to easily manage their music collection into play lists
-
-Main site: [http://www.dsbnet.tk Dai's Home Page]
+{{Client| name=daixmms2skin| author=[[Dai Trying]]| website=http://http://dsbnet.tk/pages/Xmms2_skin.php| version=0.0.1-2[https://github.com/Dai-trying/daixmms2skin.git] (works with 0.8)| devlanguage=Python| ui=Qt| screenshots=[http://dsbnet.tk/skin_images/skin_Mlibrary.png] [http://dsbnet.tk/skin_images/skin_settings.png]| description=daixmms2skin is a graphical client that features a play list manager. daixmms2skin is developed by [[Dai Trying]] and its [https://github.com/Dai-trying/daixmms2skin.git development tree] is hosted in GitHub.}}
