@@ -1,15 +1,12 @@
 {{
 Client
+|image=Client-daixmms2skin.png? 
 |name=daixmms2skin
-|author=Dai Trying
-|website=[http://dsbnet.tk/pages/Xmms2_skin.php]
+|author=[[User:WikiUsername|Dai Trying]]
+|website=[http://dsbnet.tk/pages/Xmms2_skin.php dsbnet.tk]
 |version=0.0.1-2
 |devlanguage=Python
 |ui=Qt
-|screenshots=[http://dsbnet.tk/skin_images/skin_Mlibrary.png] [http://dsbnet.tk/skin_images/skin_settings.png]
+|screenshots=[http://dsbnet.tk/skin_images/skin_Mlibrary.png] [http://dsbnet.tk/skin_images/skin_playlist.png] [http://dsbnet.tk/skin_images/skin_nowplaying.png] [http://dsbnet.tk/skin_images/skin_settings.png]
+|description=Source available at [https://github.com/Dai-trying/daixmms2skin.git GitHub]
 }}
-
-
-
-
-[https://github.com/Dai-trying/daixmms2skin.git development tree] is hosted in GitHub.}}
