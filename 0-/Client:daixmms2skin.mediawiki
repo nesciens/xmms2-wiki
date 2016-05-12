@@ -1,6 +1,6 @@
 {{
 Client
-|image=Client-daixmms2skin.png? 
+|image=Client-daixmms2skin.png
 |name=daixmms2skin
 |author=[[User:WikiUsername|Dai Trying]]
 |website=[http://dsbnet.tk/pages/Xmms2_skin.php dsbnet.tk]
