@@ -4,7 +4,7 @@ Client
 |name=daixmms2skin
 |author=[[User:WikiUsername|Dai Trying]]
 |website=[http://dsbnet.tk/pages/Xmms2_skin.php dsbnet.tk]
-|version=0.0.1-5
+|version=0.0.1-7
 |devlanguage=Python
 |ui=Qt
 |screenshots=[http://dsbnet.tk/skin_images/skin_Mlibrary.png] [http://dsbnet.tk/skin_images/skin_playlist.png] [http://dsbnet.tk/skin_images/skin_nowplaying.png] [http://dsbnet.tk/skin_images/skin_settings.png]
