@@ -11,3 +11,4 @@ Client
 |description=Source available at [https://github.com/Dai-trying/daixmms2skin.git GitHub]
 }}
 This client has the full media library available in one tab, the Playlists in another, the current playlist in the next, and a 15 band equalizer in the fourth. It has settings to show/hide the displayed columns/row numbers in each of the tabs accessible from the settings icon next to the progress bar.
+Please visit my homepage for some useful information on usage, it can be found here [http://www.dsbnet.tk/Ccount/click.php?id=X_skin dsbnet.tk]
