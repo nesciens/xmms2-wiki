@@ -8,7 +8,7 @@ All current clients should be found here, but not every entry in this list is up
 !                  Name         || Kind || Language || Status || Description
 {{ClientTableEntry|Abraca       | Graphical / GTK | C | in development | Usable client with collection support }}
 {{ClientTableEntry|ccx2         | Console / ncurses | Python | development stalled (2010-03) | Customizable console client with good support for playlists and searching }}
-{{ClientTableEntry|daixmms2client | Graphical / Qt5 | Python | in development | Simple client designed to easily manage playlists}}
+{{ClientTableEntry|daixmms2client | Graphical / Qt5 | Python | in development | Simple client designed to easily manage playlists with 15 band equalizer and id3 tag editing}}
 {{ClientTableEntry|eq           | Graphical / GTK | Python | in development | Simple equalizer frontend }}
 {{ClientTableEntry|Etude        | Graphical / GTK | Python | in development | Client with graphical collection editor }}
 {{ClientTableEntry|Euphoria     | Graphical / EFL | Ruby | rewrite | Slick themeable client }}
