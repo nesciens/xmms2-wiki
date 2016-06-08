@@ -3,14 +3,13 @@ Client
 |image=Client-daixmms2client.png
 |name=daixmms2client
 |author=[[User:WikiUsername|Dai Trying]]
-|website=[http://dsbnet.tk/pages/Xmms2_skin.php dsbnet.tk]
+|website=[]
 |version=0.0.1-11
 |devlanguage=Python
 |ui=Qt
-|screenshots=[http://dsbnet.tk/skin_images/skin_Mlibrary.png] [http://dsbnet.tk/skin_images/skin_playlist.png] [http://dsbnet.tk/skin_images/skin_nowplaying.png] [http://dsbnet.tk/skin_images/skin_settings.png]
 |description=Source available at [https://github.com/Dai-trying/daixmms2client.git GitHub]
 }}
 This client has the full media library available in one tab, the Playlists in another, the current playlist in the next, and a 15 band equalizer in the fourth. It has settings to show/hide the displayed columns/row numbers in each of the tabs accessible from the settings icon next to the progress bar.
-Please visit my homepage for some useful information on usage, it can be found here [http://www.dsbnet.tk/Ccount/click.php?id=X_skin dsbnet.tk]
+Please visit my homepage for some useful information on usage, it can be found here [taken down due to hackers :( ]
 
-I have added the ability to edit id3 tag information from version 0.0.1-11, for more information please see [http://www.dsbnet.tk/Ccount/click.php?id=X_skin my website] and download the latest version, available in a tidy ESH installer for those using [http://www.q4os.org Q4OS], or as a .deb file for those using a [http://www.debian.org debian] based distribution. There is also instructions for any other linux distribution on my website if you would like to try it.
+I have added the ability to edit id3 tag information from version 0.0.1-11, for more information please see [taken down due to hackers :(] and download the latest version, available in a tidy ESH installer for those using [http://www.q4os.org Q4OS], or as a .deb file for those using a [http://www.debian.org debian] based distribution. There is also instructions for any other linux distribution on my website if you would like to try it.
