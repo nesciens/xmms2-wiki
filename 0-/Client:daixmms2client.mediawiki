@@ -3,13 +3,13 @@ Client
 |image=Client-daixmms2client.png
 |name=daixmms2client
 |author=[[User:WikiUsername|Dai Trying]]
-|website=[]
+|website=[https://dsbnet.tk dsbnet.tk]
 |version=0.0.1-11
 |devlanguage=Python
 |ui=Qt
 |description=Source available at [https://github.com/Dai-trying/daixmms2client.git GitHub]
 }}
 This client has the full media library available in one tab, the Playlists in another, the current playlist in the next, and a 15 band equalizer in the fourth. It has settings to show/hide the displayed columns/row numbers in each of the tabs accessible from the settings icon next to the progress bar.
-Please visit my homepage for some useful information on usage, it can be found here [taken down due to hackers :( ]
+Please visit my homepage for some useful information on usage, it can be found here [https://dsbnet.tk dsbnet.tk]
 
 I have added the ability to edit id3 tag information from version 0.0.1-11, for more information please see [taken down due to hackers :(] and download the latest version, available in a tidy ESH installer for those using [http://www.q4os.org Q4OS], or as a .deb file for those using a [http://www.debian.org debian] based distribution. There is also instructions for any other linux distribution on my website if you would like to try it.
