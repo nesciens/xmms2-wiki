@@ -2,7 +2,7 @@
 |name=shelfelf
 |author=[http://vaubeh.de/ vaubeh]
 |website=http://sourceforge.net/projects/shelfelf/
-|version=15.15
+|version=16.16
 |devlanguage=PHP
 |devlanguage2=JavaScript
 |ui=Browser / iPad
