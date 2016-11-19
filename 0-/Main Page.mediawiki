@@ -20,7 +20,7 @@ __NOEDITSECTION__
 </div>
 
 <div class="split-half">
-<!-- i've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
+<!-- I've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
 
 === News and events ===
 <!-- placeholder for important announcements -->
