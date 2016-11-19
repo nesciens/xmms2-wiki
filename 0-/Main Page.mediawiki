@@ -1,8 +1,6 @@
 __NOTOC__
 __NOEDITSECTION__
 
-<div class="split-half">
-
 === Get Started! ===
 [[Getting Started|Getting started]] with XMMS2 is as easy as: [[Download XMMS2|download]], [[Install instructions|install]], [[Using the application|use]]!
 
@@ -16,20 +14,3 @@ __NOEDITSECTION__
 <small>[[what XMMS2 will not do | XMMS2 will not...]]</small>
 === Features ===
 {{FeatureList}}
-
-</div>
-
-<div class="split-half">
-<!-- I've got an idea.. let's replace this with a web 2.0 style jumble of irregularly sized tags! -->
-
-=== News and events ===
-<!-- placeholder for important announcements -->
-{{ShortNews}}
-
-=== [http://planet.xmms2.org Planet XMMS2] ===
-<rss number=5 desc="off" title="off">http://planet.xmms2.org/rss20.xml</rss>
-[http://planet.xmms2.org/rss20.xml RSS Feed]
-</div>
-
-<div class="visualClear"></div>
-<!-- placeholder for more stuff after the 2 columns -->
